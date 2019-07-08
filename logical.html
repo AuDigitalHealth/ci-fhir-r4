@@ -1,0 +1,129 @@
+---
+# jekyll header
+level: 2
+active: profiles
+---
+
+{% include header.html %}
+
+{% include container-start.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include breadcrumbs.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<ul class="nav nav-tabs">
+	<li class="active"><a href="#">Content</a></li>
+	<li><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
+	<li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
+	<li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+	<li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+	<li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
+</ul>
+
+<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"> </a></span>{{[type]}}-{{[id]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a></h3>
+
+
+<!-- introductiontext here-->
+<a name="introduction"> </a>
+
+
+{% capture my-include %}{% include {{[id]}}-intro.md %}{% endcapture %}{{ my-include | markdownify }}
+
+
+<!-- example here
+<a name="example"> </a>-->
+<!--
+<h5>Example: <a href="daf-{{page.code}}-{{page.example}}.html">{{page.tcode}} Example: {{page.example}}</a></h5>
+-->
+<!--  try build generated templates
+<h5>Example: <a href="{{[title]}}.example.html">{{[title]}} Example</a></h5> -->
+<!-- <p> example here </p> -->
+
+
+<a name="logical"> </a>
+<h4><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.1</span>
+Formal View of Logical Model
+ <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#logical"><img src="target.png"/></a>
+</h4>
+<!-- uri -->
+{% include {{[type]}}-{{[id]}}-header.xhtml %}
+
+<!-- uri -->
+<p>
+<a href="{{site.data.fhir.path}}profiling.html#representation">Description of Logical Models and how the XML and JSON presentations work</a>.
+</p>
+
+<div id="tabs">
+ <ul>
+  <li><a href="#tabs-summ">Text Summary</a></li>
+  <!-- <li><a href="#tabs-diff">Differential Table</a></li> -->
+  <li><a href="#tabs-snap">Snapshot Table</a></li>
+<!--
+  <li><a href="#tabs-xml">XML Template</a></li>
+  <li><a href="#tabs-json">JSON Template</a></li>
+
+  <li><a href="#tabs-all">All</a></li> -->
+ </ul>
+
+ <div id="tabs-summ">
+  <div id="tbl-summ">
+   <div id="tbl-diff-inner">
+     <a name="summary"> </a>
+<!--{% include {{[type]}}-{{[id]}}-summary.xhtml %}-->
+
+{% capture my-include %}{% include {{[id]}}-summary.md %}{% endcapture %}{{ my-include | markdownify }}
+   </div>
+  </div>
+ </div>
+ <div id="tabs-snap">
+  <div id="tbl-snap">
+   <div id="tbl-snap-inner">
+{% include {{[type]}}-{{[id]}}-snapshot.xhtml %}
+   </div>
+  </div>
+ </div>
+ </div>
+</div>
+
+
+<a name="downloads"> </a>
+<p>Downloads: Table: <a href="{{[id]}}.csv" download>CSV File</a>, StructureDefinition: (<a href="{{[type]}}-{{[id]}}.xml" download>XML</a>, <a href="{{[type]}}-{{[id]}}.json" download>JSON</a>), Schema:  <a href="{{[id]}}.sch" download>XML Schematron</a></p>
+
+<p>&nbsp;</p>
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+<!--
+<script src="jquery.js"> </script>
+<script src="jquery-ui.min.js"> </script>
+-->
+<script>
+try {
+  var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+}
+catch(exception){
+}
+
+if (!currentTabIndex)
+  currentTabIndex = '0';
+
+$( '#tabs' ).tabs({
+         active: currentTabIndex,
+         activate: function( event, ui ) {
+             var active = $('.selector').tabs('option', 'active');
+             currentTabIndex = ui.newTab.index();
+             document.activeElement.blur();
+             try {
+               sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+             }
+             catch(exception){
+             }
+         }
+     });
+</script>
+
+{% include footer.html %}

@@ -1,0 +1,49 @@
+---
+# jekyll header
+level: 2
+active: mappings
+---
+
+{% include header.html %}
+
+{% include container-start.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include breadcrumbs.html %}
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+
+<p>
+Thise is the mapping between FHIR resources and the Logical Model:
+</p>
+
+<p>
+Formats: <a href="{{[type]}}-{{[id]}}.xml.html">XML</a>, <a href="{{[type]}}-{{[id]}}.json.html">JSON</a>, <a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a>
+</p>
+
+
+
+
+<a name="summary"> </a>
+<h2>Summary</h2>
+{% include {{[type]}}-{{[id]}}-summary.xhtml %}
+<br/>
+
+<h2>Content</h2>
+{%  include {{[type]}}-{{[id]}}-content.xhtml %}
+<br/>
+
+<a name="script"> </a>
+<h2>Script</h2>
+<pre>
+{% include {{[type]}}-{{[id]}}-script.xhtml %}
+</pre>
+
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}
