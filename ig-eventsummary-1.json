@@ -1,0 +1,120 @@
+{
+    "version": "4.0.0",
+    "paths": {
+        "output": "output/EventSummary",
+        "pages": "pages/EventSummary",
+        "resources": [
+            "resources",
+            "examples"
+        ],
+        "temp": "temp",
+        "qa": "qa",
+        "specification": "http://hl7.org/fhir/R4",
+        "txCache": "txCache"
+    },
+    "sct-edition": "http://snomed.info/sct/32506021000036107",
+    "extraTemplates": ["mappings","examples"],
+    "do-transforms": "true",
+    "spreadsheets": [],
+    "source": "implementationguide-eventsummary-1.xml",
+	"npm-name": "ns.electronichealth.net.au.ci.fhir.4.0.eventsummary",
+    "tool": "jekyll",
+    "license": "CC0-1.0",
+    "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir/4.0",
+    "logging": [
+        "init",
+        "progress",
+        "context",
+        "html",
+        "tx"
+    ],
+    "dependencyList": [{
+        "name": "aubase4",
+        "location": "http://hl7.org.au/fhir/base",
+        "version": "current"
+    }],
+	"defaults": {
+        "CapabilityStatement": {"template-base": "capst.html"},
+        "ValueSet": {"template-base": "vs.html"},
+        "Any": {
+            "template-base": "base.html",
+            "template-format": "format.html"
+        },
+        "StructureDefinition": {
+            "template-defns": "sd-definitions.html",
+            "template-base": "sd.html",
+            "template-examples": "sd-examples.html",
+            "template-mappings": "sd-mappings.html"
+        },
+        "StructureMap": {"template-base": "sm.html"},
+        "Basic": {"template-base": "ex.html"},
+        "CodeSystem": {"template-base": "codesys.html"},
+        "ConceptMap": {"template-base": "cm.html"}
+    },
+    "resources": {
+         "StructureDefinition/patient-dh-base-1": {
+            "base": "StructureDefinition-patient-dh-base-1.html",
+            "defns": "StructureDefinition-patient-dh-base-1-definitions.html"
+        },
+        "StructureDefinition/organization-dh-base-1": {
+            "base": "StructureDefinition-organization-dh-base-1.html",
+            "defns": "StructureDefinition-organization-dh-base-1-definitions.html"
+        },
+        "StructureDefinition/humanname-dh-base-1": {
+            "base": "StructureDefinition-humanname-dh-base-1.html",
+            "defns": "StructureDefinition-humanname-dh-base-1-definitions.html"
+        },
+        "StructureDefinition/relatedperson-dh-base-1": {
+            "base": "StructureDefinition-relatedperson-dh-base-1.html",
+            "defns": "StructureDefinition-relatedperson-dh-base-1-definitions.html"
+        },
+        "StructureDefinition/composition-es-1": {
+            "base": "StructureDefinition-composition-es-1.html",
+            "defns": "StructureDefinition-composition-es-1-definitions.html"
+        },
+       "StructureDefinition/encounter-es-1": {
+            "base": "StructureDefinition-encounter-es-1.html",
+            "defns": "StructureDefinition-encounter-es-1-definitions.html"
+        },
+        "StructureDefinition/patient-ident-1": {
+            "base": "StructureDefinition-patient-ident-1.html",
+            "defns": "StructureDefinition-patient-ident-1-definitions.html"
+        },
+         "StructureDefinition/practitioner-ident-1": {
+            "base": "StructureDefinition-practitioner-ident-1.html",
+            "defns": "StructureDefinition-practitioner-ident-1-definitions.html"
+        },
+          "StructureDefinition/organization-ident-1": {
+            "base": "StructureDefinition-organization-ident-1.html",
+            "defns": "StructureDefinition-organization-ident-1-definitions.html"
+        },
+         "StructureDefinition/allergyintolerance-summary-1": {
+            "base": "StructureDefinition-allergyintolerance-summary-1.html",
+            "defns": "StructureDefinition-allergyintolerance-summary-1-definitions.html"
+        },
+        "StructureDefinition/procedure-summary-1": {
+            "base": "StructureDefinition-procedure-summary-1.html",
+            "defns": "StructureDefinition-procedure-summary-1-definitions.html"
+        },
+        "StructureDefinition/condition-summary-1": {
+            "base": "StructureDefinition-condition-summary-1.html",
+            "defns": "StructureDefinition-condition-summary-1-definitions.html"
+        },
+        "StructureDefinition/immunization-summary-1": {
+            "base": "StructureDefinition-immunization-summary-1.html",
+            "defns": "StructureDefinition-immunization-summary-1-definitions.html"
+        },
+        "StructureDefinition/list-medseventchanges-1": {
+            "base": "StructureDefinition-list-medseventchanges-1.html",
+            "defns": "StructureDefinition-list-medseventchanges-1-definitions.html"
+        },
+        "StructureDefinition/observation-norelevantfinding-1": {
+            "base": "StructureDefinition-observation-norelevantfinding-1.html",
+            "defns": "StructureDefinition-observation-norelevantfinding-1-definitions.html"
+        },
+        "StructureDefinition/medicationstatement-summary-1": {
+            "base": "StructureDefinition-medicationstatement-summary-1.html",
+            "defns": "StructureDefinition-medicationstatement-summary-1-definitions.html"
+        }
+ }
+}
