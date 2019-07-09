@@ -18,13 +18,13 @@ The disadvantage is that the content is a snapshot at the moment of your downloa
 
 #### Cloning
 This option uses the capability of git version control system to obtain any updates on your local device. It does presume a basic understanding of git, which is outside the scope of this readme. For further information on cloning a repository, refer to [this GitHub help page](https://help.github.com/en/articles/cloning-a-repository). Essentially, 
-* click on the `Clone or download` button and then copy the URL of this repository (https://github.com/AuDigitalHealth/ci-fhir-stu3.git)
+* click on the `Clone or download` button and then copy the URL of this repository (https://github.com/AuDigitalHealth/ci-fhir-r4.git)
 * use your git client of choice to clone to a location on your device
 
 ### Viewing content on your device
-The raw profile content can be opened in xml-friendly editor or even opened using the Forge application.
+The raw profile content can be opened in xml-friendly editor or even opened using the [Forge application](https://fire.ly/products/forge/).
 
-#### Viewing the implementation guide as html pages
-The FHIR IG publisher generates a set of html files in the respective output folders. These are found in the repository directory `ci-fhir-stu3/output` with a subdirectory for each implementation guide, for example `ci-fhir-stu3/output/SharedHealthSummary/`.
+#### Viewing the implementation guide in a browser as html pages
+The FHIR IG publisher generates a set of html files in the respective output folders. These are found in the repository directory `ci-fhir-r4/output` with a subdirectory for each implementation guide, for example `ci-fhir-r4/output/SharedHealthSummary/`.
 
 To view in a browser, navigate to the `index.html` file in that folder and open in a browser. To view the standard FHIR layout of a profile, click on the `profiles` tab and choose a particular profile.

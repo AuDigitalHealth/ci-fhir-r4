@@ -6,7 +6,7 @@ Issues can be used to:
 * Request a new feature or enhancement
 * Ask a question
 
-First, please search the [open issues](https://github.com/AuDigitalHealth/ci-fhir-stu3/issues?q=is%3Aopen) and [closed issues](https://github.com/AuDigitalHealth/ci-fhir-stu3/issues?q=is%3Aclosed) to see if your issue hasn't already been reported (it may also be fixed).
+First, please search the [open issues](https://github.com/AuDigitalHealth/ci-fhir-r4/issues?q=is%3Aopen) and [closed issues](https://github.com/AuDigitalHealth/ci-fhir-r4/issues?q=is%3Aclosed) to see if your issue hasn't already been reported (it may also be fixed).
 
 If you can't find an issue that matches what you're seeing, open a new issue and select from the following two options:
 

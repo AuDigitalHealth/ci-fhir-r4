@@ -12,7 +12,7 @@ assignees: ''
 # Prerequisites
 
 - [ ] I have verified the problem exists in the available content
-- [ ] I have searched [open](https://github.com/ci-fhir-stu3/Issues/issues) and [closed](https://github.com/ci-fhir-stu3/Issues/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed) issues to make sure it isn't already reported
+- [ ] I have searched [open](https://github.com/ci-fhir-r4/Issues/issues) and [closed](https://github.com/ci-fhir-r4/Issues/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed) issues to make sure it isn't already reported
 - [ ] I have written a descriptive issue title
 
 # The bug

@@ -10,7 +10,7 @@ assignees: ''
 <!-- Make sure to NOT include any sensitive or personally identifiable information. -->
 
 # Prerequisites
-- [ ] I have searched [open](https://github.com/ci-fhir-stu3/Issues/issues) and [closed](https://github.com/ci-fhir-stu3/Issues/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed) issues to make sure it isn't already requested or reported
+- [ ] I have searched [open](https://github.com/ci-fhir-r4/Issues/issues) and [closed](https://github.com/ci-fhir-r4/Issues/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed) issues to make sure it isn't already requested or reported
 - [ ] I have written a descriptive issue title
 
 # The issue / feature

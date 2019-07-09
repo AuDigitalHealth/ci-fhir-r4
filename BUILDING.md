@@ -6,7 +6,7 @@ The steps to do this are:
 
 ## Clone the repository onto your local device
 This option uses the capability of git version control system to obtain any updates on your local device. It does presume a basic understanding of git, which is outside the scope of this readme. For further information on cloning a repository, refer to [this GitHub help page](https://help.github.com/en/articles/cloning-a-repository). Essentially, 
-* click on the `Clone or download` button and then copy the URL of this repository (https://github.com/AuDigitalHealth/ci-fhir-stu3.git)
+* click on the `Clone or download` button and then copy the URL of this repository (https://github.com/AuDigitalHealth/ci-fhir-r4.git)
 * use your git client of choice to clone to a location on your device
 
 ## Set up the FHIR IG Publisher tooling
