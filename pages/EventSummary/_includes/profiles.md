@@ -47,12 +47,12 @@
                         <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-contents" height="80">
+                        <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></li>
                             </ul>
-                        </td>
-                        <td class="frm-null"/>                        
+                        </td>                                                
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
