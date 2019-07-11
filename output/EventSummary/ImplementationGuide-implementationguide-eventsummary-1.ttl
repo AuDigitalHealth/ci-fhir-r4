@@ -51,6 +51,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-organization-ident-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-ident-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization with Mandatory Identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-organization-dh-base-1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
