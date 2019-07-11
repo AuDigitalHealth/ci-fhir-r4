@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "implementationguide-eventsummary-1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EventSummary</h2><p>The official URL for this implementation guide is: </p><pre>http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1</pre><div><p>This implementation guide is an HL7® FHIR® specification to represent an Event Summary (ES).</p>\n<p>The primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR document can be used for the electronic exchange of ES information between healthcare providers.</p>\n<p>This document is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred from this document.</p>\n<p>This document does not describe transport or persistence mechanism of the resources described by it.</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
+  fhir:ImplementationGuide.name [ fhir:value "EventSummary"];
+  fhir:ImplementationGuide.title [ fhir:value "Event Summary"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "help@digitalhealth.gov.au" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "This implementation guide is an HL7® FHIR® specification to represent an Event Summary (ES).\n \nThe primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR document can be used for the electronic exchange of ES information between healthcare providers.\n \nThis document is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred from this document.\n \nThis document does not describe transport or persistence mechanism of the resources described by it."];
+  fhir:ImplementationGuide.copyright [ fhir:value "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."];
+  fhir:ImplementationGuide.packageId [ fhir:value "ns.electronichealth.net.au.ci.fhir.4.0.eventsummary"];
+  fhir:ImplementationGuide.license [ fhir:value "Apache-2.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.0";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "aubaser4" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org.au/fhir/base";
+       fhir:link <http://hl7.org.au/fhir/base>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.au.base" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-organization-dh-base-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-dh-base-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "TBD" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

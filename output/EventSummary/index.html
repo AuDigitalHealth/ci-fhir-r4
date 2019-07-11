@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Event Summary</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Event Summary Implemenation Guide" />
+  <meta name="author" content="http://argonautwiki.hl7.org"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+   <!-- Bootstrap core CSS -->
+
+   <!-- Latest compiled and minified CSS -->
+
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <link href="assets/css/ci-styles-fig.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+</head>
+
+<body markdown="1"/>
+
+</html>
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
+
+   <div id="ig-status">
+    <b>Event Summary FHIR Implementation Guide  1.0.0</b>
+</div>
+
+  </div>
+  <div class="container">  <!-- container -->
+ </div>
+ </div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4//index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guidance.html">Guidance</a></li>
+       <li><a href="conformance.html">Conformance</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <!--<li><a href="structuremaps.html">Mappings</a></li>-->
+        <li><a href="extensions.html">Extensions</a></li>
+       <li><a href="mappings.html">Mapping from Requirements</a></li>
+       <!-- <li><a href="terminology.html">Terminology</a></li>-->
+        <!--<li><a href="searchparams.html">Search Parameters</a></li>-->
+        <!--<li><a href="capstatements.html">Capability Statements</a></li>-->
+        <!--<li><a href="security.html">Security</a></li>-->
+        <li><a href="downloads.html">Downloads</a></li>
+       <li><a href="disclaimers.html">Disclaimers</a></li>
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
+
+<div id="segment-content" class="segment">  <!-- segment-content -->
+<div class="container">  <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+
+<!-- ============BreadCrumb=============== -->
+
+<!--<nav class="breadcrumb">
+  
+    
+      <a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <span class="breadcrumb-item active">Event Summary implementation guide</span>
+    
+    
+    
+    
+    
+
+</nav>
+-->
+
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<h2 id="event-summary-fhir-implementation-guide">Event Summary FHIR Implementation Guide</h2>
+<h3 style="color:#ff0000;" class="no_toc">Draft for internal use</h3>
+
+<p id="publish-box">
+    This is release 1.0.0 of Event Summary FHIR Implementation Guide. It is based on  <a href="http://hl7.org/fhir/R4/">FHIR version 4.0.0</a>. 
+</p>
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+<ul id="markdown-toc">
+  <li><a href="#event-summary-fhir-implementation-guide" id="markdown-toc-event-summary-fhir-implementation-guide">Event Summary FHIR Implementation Guide</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#document-purpose-and-scope" id="markdown-toc-document-purpose-and-scope">Document purpose and scope</a></li>
+  <li><a href="#context-and-use" id="markdown-toc-context-and-use">Context and use</a></li>
+  <li><a href="#how-to-read-this-document" id="markdown-toc-how-to-read-this-document">How to read this document</a></li>
+  <li><a href="#editorial-note" id="markdown-toc-editorial-note">Editorial note</a></li>
+  <li><a href="#intended-audience" id="markdown-toc-intended-audience">Intended audience</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+<!-- end TOC -->
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This implementation guide is an HL7<sup>®</sup> FHIR<sup>®</sup> specification to represent an <a href="StructureDefinition-composition-es-1.html">Event Summary (ES)</a>.</p>
+
+<p>This <a href="http://hl7.org/fhir/R4/implementationguide.html#scope">implementation guide</a> is based on <a href="#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a>.</p>
+
+<h2 id="document-purpose-and-scope">Document purpose and scope</h2>
+
+<p>The primary aim of this implementation guide is to support implementing ES in <a href="#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a>. The resulting FHIR document can be used for the electronic exchange of ES information between healthcare providers.</p>
+
+<p>This document is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred from this document.</p>
+
+<p>This document does not describe transport or persistence mechanism of the resources described by it.</p>
+
+<p>Reference has been made to International and Australian Standards, and to Standards from Health Level Seven. The following standards are referred to in the text in such a way that some or all of its content constitutes requirements for the purposes of this specification:</p>
+<ul>
+  <li><a href="#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a></li>
+  <li><a href="#HL7AUBIG">Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]</a></li>
+</ul>
+
+<p>Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards (<a href="#HL7AUBIG">Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]</a>) to provide for system interoperability and compatibility with other profiles. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</p>
+
+<p>This implementation guide is the basis for the corresponding <a href="#DH2019i">Event Summary CDA implementation guide [DH2019i]</a>. The profiles referenced by this FHIR implementation guide are the ‘models’ that are mapped into CDA.</p>
+
+<p>This implementation guide makes reference to the set of profiles and extensions (StructureDefinitions) that form part of this implementation guide. Some profiles and extensions are described by this implementation guide, and some are described by other published sources such as the <a href="#HL7AUBIG">Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]</a> or <a href="#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a>. The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. Any profile-specific mappings to another format is the subject of an implementation guide for that particular format, e.g. a ES CDA implementation guide. The base FHIR® R4 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the <a href="#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a>.</p>
+
+<h2 id="context-and-use">Context and use</h2>
+<p>A FHIR implementation guide is part of a package of documents and files that support the development of software to exchange a type of clinical document, a specification package.</p>
+
+<p>An Agency clinical document specification package supports software developers to create and interpret instances of a clinical document. The core of each package is a specification of the information content of instances of the clinical document.</p>
+
+<p>Supplementary contents of the package include statements of scenarios for which the specification is appropriate, guidance on implementing the specification, and guidance on testing purported instances.</p>
+
+<p>The contents may include:</p>
+<ul>
+  <li>Information Requirements - statement of requirements for <a href="#NEHT2015a">Event Summary Information Requirements [NEHT2015a]</a></li>
+  <li>CDA implementation guide (CDA IG) – a statement of constraints and custom extensions on <a href="#HL7CDAR2">HL7 Clinical Document Architecture [HL7CDAR2]</a></li>
+  <li>FHIR implementation guide (FHIR IG) - a statement of constraints and custom extensions on <a href="#HL7FHIR4">HL7 FHIR [HL7FHIR4]</a></li>
+  <li>template package library – a set of Schematron schema to test conformance of CDA documents with the specification</li>
+  <li>conformance profile – a statement of conformance requirements for exchanging documents within a particular scenario such as the My Health Record</li>
+  <li>A set of release notes</li>
+</ul>
+
+<p>Specification packages contain only files relevant to the particular clinical document. Specifications that are common to many clinical documents and should be considered part of the specification package, as directed by the relevant release note and conformance profile, may be contained elsewhere.</p>
+
+<h2 id="how-to-read-this-document">How to read this document</h2>
+<p>This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of ES. These descriptions are defined as a set of FHIR <a href="http://hl7.org/fhir/r4/profiling.html">profiles</a>.</p>
+
+<p>The starting point for the profiles included in this implementation guide is the <a href="StructureDefinition-composition-es-1.html">Event Summary</a> profile, which references the additional profiles necessary to assert <a href="conformance.html">conformance</a> for this implementation guide.</p>
+
+<h2 id="editorial-note">Editorial note</h2>
+<p>This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.</p>
+
+<p>This implementation guide may not considered to be complete enough or sufficiently reviewed to be safe for implementation and use in production systems. It may have known issues and still be in development.</p>
+
+<h2 id="intended-audience">Intended audience</h2>
+<p>This implementation guide is aimed at software development teams, architects, designers, clinicians and informatics researchers who are responsible for the delivery of clinical applications, infrastructure components and messaging interfaces, and also for those who wish to evaluate the clinical suitability of the Agency-endorsed specifications.</p>
+
+<p>This implementation guide and related artefacts are technical in nature and the audience is expected to be familiar with the language of health data specifications and to have some familiarity with health information standards and specifications, such as FHIR and Standards Australia IT-014 documents. Definitions and examples are provided to clarify relevant terminology usage and intent.</p>
+
+<h2 id="references">References</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="NEHT2015a">NEHT2015a</a>]</td>
+      <td>National E-Health Transition Authority, 10 April 2015, Event Summary Information Requirements, Version 1.2.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1817-2015/nehta-1845-2015">https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1817-2015/nehta-1845-2015</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!--|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Event Summary CDA Implementation Guide, Version 2.0.|
+||[https://developer.digitalhealth.gov.au/specifications/clinical-documents](https://developer.digitalhealth.gov.au/specifications/clinical-documents)|-->
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7AUBIG">HL7AUBIG</a>]</td>
+      <td>HL7 Australia, Continuous Integration Build, Australian Base Profiles Implementation Guide (AU Base 3), v1.0.0 (Standard for Trial Use), accessed 8 July 2019</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">http://build.fhir.org/ig/hl7au/au-fhir-base/index.html</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7CDAR2">HL7CDAR2</a>]</td>
+      <td>Health Level Seven, Inc., January 2010, HL7 Clinical Document Architecture, Release 2.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7</a>]</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="DH2019a">DH2019a</a>]</td>
+      <td>Australian Digital Health Agency, 28 February 2019, Common - Clinical Document, Version 1.5.2.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2807-2019">https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2807-2019</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7FHIR">HL7FHIR</a>]</td>
+      <td>Health Level Seven, Inc., FHIR - HL7Wiki, accessed 10 March 2019</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://wiki.hl7.org/index.php?title=FHIR">http://wiki.hl7.org/index.php?title=FHIR</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="HL7FHIR4">HL7FHIR4</a>]</td>
+      <td>Health Level Seven, Inc., 27 December 2018, FHIR, Release 4 (First Normative content), accessed 8 July 2019</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="http://hl7.org/fhir/R4/">http://hl7.org/fhir/R4/</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+
+</div>
+
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+
+</div>  <!-- /segment-content -->
+
+
+
+
+
+
+
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+        <div class="inner-wrapper">
+            <p>Document ID: DH-xxx:2019</p>
+            <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
+            <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
+            <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+            <p>Event Summary FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.0</a> (IG Publisher v4.0.0-a53ec6ee1b) generated on Thu, Jul 11, 2019 12:21+1000. |
+                <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                </span>
+            </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>
+
+

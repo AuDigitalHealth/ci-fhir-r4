@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Event Summary</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Event Summary Implemenation Guide" />
+  <meta name="author" content="http://argonautwiki.hl7.org"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+   <!-- Bootstrap core CSS -->
+
+   <!-- Latest compiled and minified CSS -->
+
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <link href="assets/css/ci-styles-fig.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+</head>
+
+<body markdown="1"/>
+
+</html>
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
+
+   <div id="ig-status">
+    <b>Event Summary FHIR Implementation Guide  1.0.0</b>
+</div>
+
+  </div>
+  <div class="container">  <!-- container -->
+ </div>
+ </div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4//index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guidance.html">Guidance</a></li>
+       <li><a href="conformance.html">Conformance</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <!--<li><a href="structuremaps.html">Mappings</a></li>-->
+        <li><a href="extensions.html">Extensions</a></li>
+       <li><a href="mappings.html">Mapping from Requirements</a></li>
+       <!-- <li><a href="terminology.html">Terminology</a></li>-->
+        <!--<li><a href="searchparams.html">Search Parameters</a></li>-->
+        <!--<li><a href="capstatements.html">Capability Statements</a></li>-->
+        <!--<li><a href="security.html">Security</a></li>-->
+        <li><a href="downloads.html">Downloads</a></li>
+       <li><a href="disclaimers.html">Disclaimers</a></li>
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
+
+<div id="segment-content" class="segment">  <!-- segment-content -->
+<div class="container">  <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+
+<!-- ============BreadCrumb=============== -->
+
+<!--<nav class="breadcrumb">
+  
+    
+      <a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <span class="breadcrumb-item active">Conformance</span>
+    
+    
+    
+    
+    
+
+</nav>
+-->
+
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+<ul class="no_toc" id="markdown-toc">
+  <li><a href="#conformance" id="markdown-toc-conformance">Conformance</a>    <ul>
+      <li><a href="#conformance-requirements" id="markdown-toc-conformance-requirements">Conformance requirements</a></li>
+      <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
+    </ul>
+  </li>
+</ul>
+<h1 id="conformance">Conformance</h1>
+
+<h2 id="conformance-requirements">Conformance requirements</h2>
+<p>Any FHIR resource that claims conformance to a profile in this implementation guide, or any derived profile, SHALL meet these requirements:</p>
+
+<ul>
+  <li>It SHALL be a valid HL7 FHIR instance. In particular:
+    <ul>
+      <li>It SHALL conform to <a href="index.html#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a></li>
+      <li>It SHALL conform to the profile it claims conformance to including:
+        <ul>
+          <li>conforming to the requirements described on the corresponding profile or extension page of this implementation guide</li>
+          <li>conforming to the requirements in the base resource as specified in <a href="index.html#HL7FHIR4">FHIR, Release 4 (v4.0.0) [HL7FHIR4]</a></li>
+          <li>conforming to the requirements in the base profile where the profile described in this implementation guide is derived from a base profile</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>It SHALL conform to the requirements specified in the Must Support section below.</li>
+  <li>Where additional content beyond that flagged with must support is provided it:
+    <ul>
+      <li>SHALL NOT qualify or negate content described by this profile as must support</li>
+      <li>SHALL be clinically safe for receivers of the document to ignore the non-narrative additions when interpreting the existing content</li>
+    </ul>
+  </li>
+</ul>
+
+<p>A profile, derived from a profile described in this implementation guide may make additional rules that override this implementation guide:</p>
+
+<ul>
+  <li>A derived profile SHALL be derived in accordance with the rules on profiling</li>
+  <li>A FHIR resource that is conformant to the derived profile SHALL be conformant to the profile in this implementation guide it was derived from</li>
+</ul>
+
+<h2 id="must-support">Must Support</h2>
+<p>A <a href="http://hl7.org/fhir/r4/conformance-rules.html#mustSupport">Must Support</a> (see <a href="guidance.html#conformance-conventions">Conformance conventions</a>) specifies that an element must be supported. This section defines the support required from systems and applications wanting to claim conformance to a profile described in this implementation guide. This definition of support is present in the profile StructureDefinition.</p>
+
+<p>In the context of this implementation guide, must support SHALL be interpreted as follows:</p>
+
+<ul>
+  <li>The system SHALL be able to include the element when authoring a resource where data is available</li>
+  <li>The system SHALL be able to store and retrieve the element</li>
+  <li>The system SHALL be able to process resources containing the element</li>
+</ul>
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+
+</div>
+
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+
+</div>  <!-- /segment-content -->
+
+
+
+
+
+
+
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+        <div class="inner-wrapper">
+            <p>Document ID: DH-xxx:2019</p>
+            <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
+            <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
+            <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+            <p>Event Summary FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.0</a> (IG Publisher v4.0.0-a53ec6ee1b) generated on Thu, Jul 11, 2019 12:21+1000. |
+                <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                </span>
+            </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>
+
+

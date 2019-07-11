@@ -16,7 +16,7 @@
         </telecom>
     </contact>
     <description
-        value="Australian realm implementation guide of the FHIR specification to represent Event Summary records in the My Health Record system and related applications."/>
+        value="This implementation guide is an HL7&#xae; FHIR&#xae; specification to represent an Event Summary (ES).&#xa; &#xa;The primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR document can be used for the electronic exchange of ES information between healthcare providers.&#xa; &#xa;This document is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred from this document.&#xa; &#xa;This document does not describe transport or persistence mechanism of the resources described by it."/>
     <copyright
         value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
     <packageId value="ns.electronichealth.net.au.ci.fhir.4.0.eventsummary"/>
@@ -28,9 +28,9 @@
         <version value="current"/>
     </dependsOn>
     <definition>
-        
+
         <!-- PROFILE DEFINITIONS -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="StructureDefinition/composition-es-1"/>
@@ -136,13 +136,13 @@
             <name value="Base RelatedPerson"/>
             <exampleBoolean value="false"/>
         </resource>-->
-        <!--<resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/organization-dh-base-1"/>
             </reference>
             <name value="Base Organization"/>
             <exampleBoolean value="false"/>
-        </resource>-->
+        </resource>
         <!--<resource>
             <reference>
                 <reference value="StructureDefinition/practitioner-dh-base-1"/>
@@ -152,7 +152,7 @@
         </resource>-->
 
         <!-- BUNDLE EXAMPLES -->
-        
+
         <!--<resource>        
             <reference>
                 <reference value="Bundle/3bb44f10-4350-498c-a629-4bf43df620e9"/>
@@ -176,7 +176,7 @@
         </resource>-->
 
         <!-- COMPOSITION EXAMPLES -->
-        
+
         <!--<resource>      
             <reference>
                 <reference value="Composition/565b1e7e-01c1-4379-a3d6-6e21cdea43e9"/>
@@ -200,7 +200,7 @@
         </resource>-->
 
         <!-- PATIENT EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="Patient/792b4811-2ce7-4531-8893-af827175bcfe"/>
@@ -230,9 +230,9 @@
             <name value="sdfsdfsd"/>
             <exampleBoolean value="true"/>
         </resource>-->
-        
+
         <!-- ORGANIZATION EXAMPLES -->
-        
+
         <!--<resource>         
             <reference>
                 <reference value="Organization/021fff67-c5ec-438f-9520-ce9bafee1306"/>
@@ -254,9 +254,9 @@
             <name value="Organization example 3"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- PRACTITIONER EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="Practitioner/40a94071-8373-4d53-a788-63b79c75a3c1"/>
@@ -285,9 +285,9 @@
             <name value="Practitioner example 4"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- ENCOUNTER EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="Encounter/98900f15-67f8-48a1-9345-6d5968f2c23e"/>
@@ -309,9 +309,9 @@
             <name value="Encounter example 3"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- PRACTITIONERROLE EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="PractitionerRole/45cad6ac-e9a3-418a-8480-4e64132849f2"/>
@@ -326,16 +326,16 @@
             <name value="PractitionerRole example 2"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- MEDICATIONSTATEMENT EXAMPLES -->
-        
+
         <!--<resource>          
             <reference>
                 <reference value="MedicationStatement/32def593-e104-4cee-b8f5-d1f923efd94b"/>
             </reference>
             <name value="MedicationStatement example 1"/>
             <exampleBoolean value="true"/>   
-        </resource>-->        
+        </resource>-->
         <!--<resource>           
             <reference>
                 <reference value="MedicationStatement/9db8a050-0c25-4192-834d-bca1da8ff250"/>
@@ -371,9 +371,9 @@
             <name value="MedicationStatement example 6"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- LIST EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="List/fa11a4f8-9ecc-4a65-9643-74c3c84880f4"/>
@@ -395,9 +395,9 @@
             <name value="List example 3"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- ALLERGYINTOLERANCE EXAMPLES -->
-        
+
         <!--<resource> 
             <reference>
                 <reference value="AllergyIntolerance/a5e03840-1be4-43e0-acd2-c9e288adc4f9"/>
@@ -419,9 +419,9 @@
             <name value="AllergyIntolerance example 3"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- CONDITION EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="Condition/ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
@@ -436,9 +436,9 @@
             <name value="Condition example 2"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- PROCEDURE EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="Procedure/fed6e796-ac88-459c-af61-de718a48423d"/>
@@ -446,9 +446,9 @@
             <name value="Procedure example 1"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <!-- IMMUNIZATION EXAMPLES -->
-        
+
         <!--<resource>
             <reference>
                 <reference value="Immunization/d2b71673-d1a5-4e1d-9b25-bba47aa26036"/>
@@ -456,12 +456,12 @@
             <name value="Immunization example 1"/>
             <exampleBoolean value="true"/>   
         </resource>-->
-        
+
         <page>
             <nameUrl value="index.html"/>
             <title value="TBD"/>
             <generation value="html"/>
         </page>
     </definition>
-   
+
 </ImplementationGuide>
