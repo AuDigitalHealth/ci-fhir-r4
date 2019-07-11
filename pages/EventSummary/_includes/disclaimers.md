@@ -25,7 +25,7 @@ The Australian Digital Health Agency is jointly funded by the Australian Governm
 
 **Regenstrief Institute (LOINC)**
 
-This material contains content from LOINC<sup>TM</sup> ([http://loinc.org](http://loinc.org)). The LOINC table, LOINC codes, LOINC panels and forms file, and LOINC linguistic variants file are copyright © 1995-2015, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at [https://loinc.org/-terms-of-use/](https://loinc.org/-terms-of-use/). LOINC is a trademark of Regenstrief Institute, Inc., registered in the United States.
+This material contains content from [LOINC](http://loinc.org)<sup>TM</sup>. The LOINC table, LOINC codes, LOINC panels and forms file, and LOINC linguistic variants file are copyright © 1995-2015, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at the [LOINC Terms of Use](https://loinc.org/terms-of-use/). LOINC is a trademark of Regenstrief Institute, Inc., registered in the United States.
 
 
 **IHTSDO (SNOMED CT)**
