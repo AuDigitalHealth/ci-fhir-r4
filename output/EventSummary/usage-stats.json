@@ -1,0 +1,45 @@
+{
+  "package": "ns.electronichealth.net.au.ci.fhir.4.0.eventsummary",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.0",
+  "extensions": [],
+  "profiles": {
+    "Organization": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1",
+        "title": "Base Organization"
+      },
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1",
+        "title": "Organization with Mandatory Identifier"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ]
+  }
+}
