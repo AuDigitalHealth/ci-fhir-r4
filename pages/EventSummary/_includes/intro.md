@@ -42,7 +42,7 @@ An Agency clinical document specification package supports software developers t
 Supplementary contents of the package include statements of scenarios for which the specification is appropriate, guidance on implementing the specification, and guidance on testing purported instances.
 
 The contents may include:
-* Information Requirements - statement of requirements for [Event Summary Information Requirements [NEHT2015a]](#NEHT2015a)
+* Information Requirements - statement of requirements
 * CDA implementation guide (CDA IG) – a statement of constraints and custom extensions on [HL7 Clinical Document Architecture [HL7CDAR2]](#HL7CDAR2)
 * FHIR implementation guide (FHIR IG) - a statement of constraints and custom extensions on [HL7 FHIR [HL7FHIR4]](#HL7FHIR4)
 * template package library – a set of Schematron schema to test conformance of CDA documents with the specification
