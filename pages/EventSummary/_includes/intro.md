@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> specification to represent an [Event Summary (ES)](StructureDefinition-composition-es-1.html).
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent an [Event Summary (ES)](StructureDefinition-composition-es-1.html).
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4).
 
