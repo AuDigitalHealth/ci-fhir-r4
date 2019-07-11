@@ -116,7 +116,7 @@ The following resources are available to raise questions or issues relating to F
 ## Conformance conventions
 
 ### StructureDefinition
-The content of this implementation guide is a set of FHIR [StructureDefinition](http://hl7.org/fhir/r4/structuredefinition.html) resources for implementing the document model that is the subject of this implementation guide, i.e. Event Summary.
+The content of this implementation guide is a set of FHIR [StructureDefinition](http://hl7.org/fhir/r4/structuredefinition.html) resources for implementing the document model that is the subject of this implementation guide.
 
 This implementation guide includes FHIR profiles that are a set of constraints and/or extensions to FHIR base resources or a data types in the format of a StructureDefinition resource. A StructureDefinition describes a structure - a set of data element definitions, and their associated rules of usage – and is hereafter referred to as a ‘profile’ or an ‘extension’.
 
