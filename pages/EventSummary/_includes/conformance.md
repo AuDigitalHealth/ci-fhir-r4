@@ -25,7 +25,7 @@ A profile, derived from a profile described in this implementation guide may mak
 
 
 ## Must Support
-A [Must Support](http://hl7.org/fhir/r4/conformance-rules.html#mustSupport) (see [Conformance conventions](guidance.html#conformance-conventions)) specifies that an element must be supported. This section defines the support required from systems and applications wanting to claim conformance to a profile described in this implementation guide. This definition of support is present in the profile StructureDefinition.
+A [Must Support](http://hl7.org/fhir/r4/conformance-rules.html#mustSupport) flag (see [Conformance conventions](guidance.html#conformance-conventions)) specifies that an element must be supported. This section defines the support required from systems and applications wanting to claim conformance to a profile described in this implementation guide. This definition of support is present in the profile StructureDefinition.
 
 In the context of this implementation guide, must support SHALL be interpreted as follows:
 
