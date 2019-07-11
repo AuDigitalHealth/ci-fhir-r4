@@ -186,7 +186,7 @@ The table below demonstrates a representative set of examples of cardinality ran
 ### Slicing 
 Slicing rules in FHIR are defined in [Profiling FHIR](http://hl7.org/fhir/r4/profiling.html). This section provides a description of slicing as present in this implementation guide.
 
-Slicing is a mechanism to describe patterns of restrictions (i.e. conformance requirements). Slicing, usually on resource elements that can appear more than once in a profile, or on elements that do not repeat but have a choice of data types, where each slice has a different definition of the element. For example, the section element in the [Event Summary](StructureDefinition-composition-es-1.html) profile is sliced into a list of slices in order to give each section slice a different set of restrictions.
+Slicing is a mechanism to describe patterns of restrictions (i.e. conformance requirements). Slicing, usually on resource elements that can appear more than once in a profile, or on elements that do not repeat but have a choice of data types, where each slice has a different definition of the element. For example, the section element in the Event Summary profile is sliced into a list of slices in order to give each section slice a different set of restrictions.
 
 A sliced element can be identified by the following icon <span style="padding-left: 3px; padding-right: 3px"><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit"/></span> in the Name column of the Differential and Snapshot views of the Differential Table and Snapshot Table of a profile or extension.
 
