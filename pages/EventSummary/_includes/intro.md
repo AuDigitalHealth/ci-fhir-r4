@@ -17,11 +17,11 @@ This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scop
 
 ## Document purpose and scope
 
-The primary aim of this implementation guide is to support implementing ES in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR document can be used for the electronic exchange of ES information between healthcare providers.
+The primary aim of this implementation guide is to support implementing ES in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of ES information between healthcare providers.
 
-This document is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred from this document.
+This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
-This document does not describe transport or persistence mechanism of the resources described by it.
+This implementation guide does not describe transport or persistence mechanism of the resources described by it.
 
 Reference has been made to International and Australian Standards, and to Standards from Health Level Seven. The following standards are referred to in the text in such a way that some or all of its content constitutes requirements for the purposes of this specification:
 * [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4)
