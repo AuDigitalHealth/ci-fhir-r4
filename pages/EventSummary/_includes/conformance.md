@@ -13,10 +13,10 @@ Any FHIR resource that claims conformance to a profile in this implementation gu
         * conforming to the requirements described on the corresponding profile or extension page of this implementation guide
         * conforming to the requirements in the base resource as specified in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
         * conforming to the requirements in the base profile where the profile described in this implementation guide is derived from a base profile
-* It SHALL conform to the requirements specified in the Must Support section below.
 * Where additional content beyond that flagged with must support is provided it:
     * SHALL NOT qualify or negate content described by this profile as must support
     * SHALL be clinically safe for receivers of the document to ignore the non-narrative additions when interpreting the existing content
+* It SHALL conform to the requirements specified in the Must Support section below.
 
 A profile, derived from a profile described in this implementation guide may make additional rules that override this implementation guide:
 
