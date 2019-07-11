@@ -46,9 +46,13 @@
                         <td class="frm-category">Management</td>
                         <td class="frm-null"/>
                     </tr> 
-                    <tr class="frm-contents" height="80">
+                    <tr class="frm-contents">
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>
+                            </ul>
+                         </td>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
