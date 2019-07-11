@@ -20,7 +20,7 @@ Any FHIR resource that claims conformance to a profile in this implementation gu
 
 A profile, derived from a profile described in this implementation guide may make additional rules that override this implementation guide:
 
-* A derived profile SHALL be derived in accordance with the rules on profiling
+* A derived profile SHALL be derived in accordance with the rules on profiling in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
 * A FHIR resource that is conformant to the derived profile SHALL be conformant to the profile in this implementation guide it was derived from
 
 
