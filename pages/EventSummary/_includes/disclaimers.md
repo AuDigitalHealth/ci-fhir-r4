@@ -30,9 +30,7 @@ This material contains content from [LOINC](http://loinc.org)<sup>TM</sup>. The 
 
 **IHTSDO (SNOMED CT)**
 
-This material includes SNOMED Clinical Terms<sup>TM</sup> (SNOMED CT<sup>&reg;</sup>) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT<sup>&reg;</sup> was originally created by The College of American Pathologists.
-
-“SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO, ([http://www.ihtsdo.org/](http://www.ihtsdo.org/)).
+This material includes SNOMED Clinical Terms<sup>TM</sup> (SNOMED CT<sup>&reg;</sup>) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT<sup>&reg;</sup> was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the [IHTSDO](http://www.ihtsdo.org/).
 
 
 **HL7 FHIR**
