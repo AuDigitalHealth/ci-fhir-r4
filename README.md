@@ -18,7 +18,7 @@ This repository has the following structure:
 - an output folder that contains subfolders for each FHIR implementation guide containing the actual implementation guide as a downloadable zip and the extracted files
 - a pages folder that contains the subfolders for each FHIR implementation guide containing the implementation guide specific markdown files e.g. header and footer
 - multiple JSON control files in the root level folder (e.g. ig-sharedhealthsummary-1.json)
-- repository files, e.g. .gitignore.md, README.md and etc.
+- repository files, e.g. .gitignore, README.md and etc.
 - implementation guide build files, e.g. base.html, format.html and etc.
 
  
