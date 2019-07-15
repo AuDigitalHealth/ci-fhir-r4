@@ -41,10 +41,10 @@
                     <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Base</div></td>
                         <td class="frm-category">Individuals</td>
-                        <td class="frm-category">Entities</td>
+                        <td class="frm-category">Entities #1</td>
+                        <td class="frm-category">Entities #2</td>
                         <td class="frm-category">Workflow</td>
                         <td class="frm-category">Management</td>
-                        <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-contents">
                         <td class="frm-null"/>
@@ -95,9 +95,9 @@
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
                         <td class="frm-category">Public Health &amp; Research</td>
                         <td class="frm-category">Definitional Artifacts</td>
-                        <td class="frm-category">Clinical Decision Support</td>
-                        <td class="frm-category">Quality Reporting</td>
-                        <td class="frm-category">Testing</td>
+                        <td class="frm-category">Evidence-Based Medicine</td>
+                        <td class="frm-category">Quality Reporting &amp; Testing</td>
+                        <td class="frm-category">Medication Definition</td>
                     </tr> 
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
