@@ -45,7 +45,6 @@
                         <td class="frm-category">Entities #2</td>
                         <td class="frm-category">Workflow</td>
                         <td class="frm-category">Management</td>
-                        <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-contents">
                         <td class="frm-null"/>
@@ -98,7 +97,7 @@
                         <td class="frm-category">Definitional Artifacts</td>
                         <td class="frm-category">Evidence-Based Medicine</td>
                         <td class="frm-category">Quality Reporting &amp; Testing</td>
-                        <td class="frm-category">Medication Definition</td>>
+                        <td class="frm-category">Medication Definition</td>
                     </tr> 
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
