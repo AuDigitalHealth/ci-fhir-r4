@@ -67,6 +67,42 @@ This implementation guide is aimed at software development teams, architects, de
 
 This implementation guide and related artefacts are technical in nature and the audience is expected to be familiar with the language of health data specifications and to have some familiarity with health information standards and specifications, such as FHIR and Standards Australia IT-014 documents. Definitions and examples are provided to clarify relevant terminology usage and intent.
 
+## Document Information
+
+### Key Information
+
+<table class="list" width="100%" cellspacing="6">
+    <tbody>
+        <tr>
+            <td><b>Owner</b></td>
+            <td>National Health Chief Information Officer, Infrastructure Operations</td>
+        </tr>
+        <tr>
+            <td><b>Contact for enquiries</b></td>
+            <td>
+                <p>Australian Digital Health Agency Help Centre <br />
+                t:   1300 901 001<br />
+                e:  <a href ="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>    
+            </td>
+        </tr>
+    </tbody>
+</table> 
+
+### Product Version History
+<table class="list" width="100%" cellspacing="6">
+    <tbody>
+        <tr>
+            <th>Product version</th>
+            <th>Date</th>
+            <th>Release comments</th>
+        </tr>
+        <tr>
+            <td>1.0</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+    </tbody>
+</table> 
 
 ## References
 
