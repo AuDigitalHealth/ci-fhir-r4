@@ -8,11 +8,11 @@
                 <td></td>
             </tr>
             <tr>
-                <td><a href="Organization-OID-blah-blah-blah.html">Organization example 2</a></td>
-                <td>OID-blah-blah-blah</td>
-                <td><a href="Organization-OID-blah-blah-blah.xml.html">XML</a></td>
-                <td><a href="Organization-OID-blah-blah-blah.json.html">JSON</a></td>
-                <td><a href="Organization-OID-blah-blah-blah.ttl.html">Turtle</a></td>
+                <td><a href="Organization-1.2.36.1.2001.1001.105.100000.html">Organization example 2</a></td>
+                <td>1.2.36.1.2001.1001.105.100000</td>
+                <td><a href="Organization-1.2.36.1.2001.1001.105.100000.xml.html">XML</a></td>
+                <td><a href="Organization-1.2.36.1.2001.1001.105.100000.json.html">JSON</a></td>
+                <td><a href="Organization-1.2.36.1.2001.1001.105.100000.ttl.html">Turtle</a></td>
                 <td></td>
             </tr>
 			<tr>
