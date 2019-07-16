@@ -50,7 +50,7 @@ Some rules may be defined in a machine-processable manner and thus can be checke
 
 Existing validation tools differ in their support for machine-processable rules. These tools continue to evolve and progressively implement the FHIR standard; it should be noted that different servers and tools may not provide equivalent responses when executing the same operation.
 
-The profiles and extensions described in this implementation guide have been developed using [Forge](https://fire.ly/products/forge/), [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) and the [FHIR Validator](http://build.fhir.org/validation.html#jar).
+The validation tools used in the development of these profiles and extensions described in this implementation guide include [Forge](https://fire.ly/products/forge/) and the [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) (with its in-built validation process).
 
 ## Known issues relating to the support and implementation of FHIR
 
