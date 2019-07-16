@@ -16,11 +16,11 @@
                 <td></td>
             </tr>
 			<tr>
-                <td><a href="Organization-topend-medical-clinic.html">Organization example 3</a></td>
-                <td>topend-medical-clinic</td>
-                <td><a href="Organization-topend-medical-clinic.xml.html">XML</a></td>
-                <td><a href="Organization-topend-medical-clinic.json.html">JSON</a></td>
-                <td><a href="Organization-topend-medical-clinic.ttl.html">Turtle</a></td>
+                <td><a href="Organization-hallam-medical-clinic.html">Organization example 3</a></td>
+                <td>hallam-medical-clinic</td>
+                <td><a href="Organization-hallam-medical-clinic.xml.html">XML</a></td>
+                <td><a href="Organization-hallam-medical-clinic.json.html">JSON</a></td>
+                <td><a href="Organization-hallam-medical-clinic.ttl.html">Turtle</a></td>
                 <td></td>
             </tr>
  </table>
