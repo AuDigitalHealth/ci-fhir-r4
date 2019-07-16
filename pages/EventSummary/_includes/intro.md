@@ -47,7 +47,7 @@ The contents may include:
 * FHIR implementation guide (FHIR IG) - a statement of constraints and custom extensions on [HL7 FHIR [HL7FHIR4]](#HL7FHIR4)
 * template package library – a set of Schematron schema to test conformance of CDA documents with the specification
 * conformance profile – a statement of conformance requirements for exchanging documents within a particular scenario such as the My Health Record
-* A set of release notes
+* a set of release notes
 
 Specification packages contain only files relevant to the particular clinical document. Specifications that are common to many clinical documents and should be considered part of the specification package, as directed by the relevant release note and conformance profile, may be contained elsewhere.
 
