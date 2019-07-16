@@ -16,12 +16,12 @@ Any FHIR resource that claims conformance to a profile in this implementation gu
 * Where additional content beyond that flagged with must support is provided it:
     * SHALL NOT qualify or negate content described by this profile as must support
     * SHALL be clinically safe for receivers of the document to ignore the non-narrative additions when interpreting the existing content
-* It SHALL conform to the requirements specified in the Must Support section below.
+* It SHALL conform to the requirements specified in the Must Support section below
 
 A profile, derived from a profile described in this implementation guide may make additional rules that override this implementation guide:
 
 * A derived profile SHALL be derived in accordance with the rules on profiling in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
-* A FHIR resource that is conformant to the derived profile SHALL be conformant to the profile in this implementation guide it was derived from
+* A FHIR resource that is conformant to the derived profile SHALL be conformant to the profile in this implementation guide it is derived from
 
 
 ## Must Support
