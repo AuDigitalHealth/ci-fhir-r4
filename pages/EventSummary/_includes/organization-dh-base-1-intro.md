@@ -1,5 +1,5 @@
-### Base Organization *[[Draft](http://hl7.org/fhir/r4/versions.html#maturity)]*
+### Base Organization *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
 
-##### Implementation guidance
+#### Implementation guidance
 No additional guidance is suggested to support implementation of this profile for the expected usage scenarios of this implementation guide.
 
