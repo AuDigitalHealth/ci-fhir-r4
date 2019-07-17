@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/territory-medical-centre-0810> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "territory-medical-centre-0810"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2015-07-15T13:28:17.239+10:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en-AU\">\n            <p><b>Name</b>: Territory Medical Centre</p>\n            <p><b>Phone</b>: (08) 8948 9999 (work)</p>\n            <p><b>Website</b>: https://territorymedicalcentre.example.com</p>\n            <p><b>Address</b>: 159 Clematis Street, Nightcliff NT 0810</p>\n        </div>"
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.name [ fhir:value "Territory Medical Centre"];
+  fhir:Organization.alias [
+     fhir:value "Northern Territory Family Medical Centre";
+     fhir:index 0
+  ];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(08) 5550 9999" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "url" ];
+     fhir:ContactPoint.value [ fhir:value "https://territorymedicalcentre.example.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.line [
+       fhir:value "159 Clematis Street";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Nightcliff" ];
+     fhir:Address.state [ fhir:value "NT" ];
+     fhir:Address.postalCode [ fhir:value "0810" ];
+     fhir:Address.country [ fhir:value "AU" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/territory-medical-centre-0810.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

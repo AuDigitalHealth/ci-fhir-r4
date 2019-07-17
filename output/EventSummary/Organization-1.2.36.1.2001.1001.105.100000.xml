@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="1.2.36.1.2001.1001.105.100000"/>
+  <meta>
+    <versionId value="0627355b-b2d2-4e50-ab42-d8c7a41bafbd"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1.2.36.1.2001.1001.105.100000</p><p><b>meta</b>: </p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider)</span></p><p><b>name</b>: Devonport Family Medicine Clinic</p><p><b>telecom</b>: reception@dfmc.example.com(WORK), fax: (03) 5550 5557(WORK), ph: (03) 5550 5556(WORK)</p><p><b>address</b>: LPO Box 235 Strahan TAS 7468 AU </p></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+    </coding>
+  </type>
+  <name value="Devonport Family Medicine Clinic"/>
+  <telecom>
+    <system value="email"/>
+    <value value="reception@dfmc.example.com"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="(03) 5550 5557"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="(03) 5550 5556"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <type value="postal"/>
+    <line value="LPO Box 235"/>
+    <city value="Strahan"/>
+    <state value="TAS"/>
+    <postalCode value="7468"/>
+    <country value="AU"/>
+  </address>
+</Organization>

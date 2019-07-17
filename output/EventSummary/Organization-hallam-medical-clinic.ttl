@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/hallam-medical-clinic> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hallam-medical-clinic"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "0903c2ea-252f-4b03-85f4-2ddcf046fbc3" ]
+  ];
+  fhir:Resource.language [ fhir:value "en-AU"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: hallam-medical-clinic</p><p><b>meta</b>: </p><p><b>language</b>: en-AU</p><p><b>identifier</b>: HPI-O = 8005621366684433</p><p><b>name</b>: Hallam Medical Clinic</p><p><b>telecom</b>: hallammedicalclinic@example.com</p><p><b>address</b>: 1002 Sterling Road Hallam VIC 3803 AU </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org.au/fhir/v2/0203" ];
+         fhir:Coding.code [ fhir:value "NOI" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HPI-O" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/hpio/1.0" ];
+     fhir:Identifier.value [ fhir:value "8005621366684433" ]
+  ];
+  fhir:Organization.name [ fhir:value "Hallam Medical Clinic"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "hallammedicalclinic@example.com" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.line [
+       fhir:value "1002 Sterling Road";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Hallam" ];
+     fhir:Address.state [ fhir:value "VIC" ];
+     fhir:Address.postalCode [ fhir:value "3803" ];
+     fhir:Address.country [ fhir:value "AU" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/hallam-medical-clinic.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
