@@ -1,5 +1,7 @@
 # {{ page.title }}
 
+The following profiles form part of this implementation guide:
+
 <html>
   <div id="segment-content" class="segment"> 
   <div class="container">
@@ -7,10 +9,6 @@
   <div class="inner-wrapper">
 
 <div class="col-12">
-
-<!-- <h2>Profiles</h2> -->
-
-<p>The following profiles form part of this implementation guide:</p>
 
     <div style="border-right-style: none;" id="tabs">
       <div style="border-right-style: none;" id="tabs">

@@ -44,13 +44,13 @@ The fields used to present the Differential Table and the Snapshot Table in this
 
 ## Validating resources using profiles from this implementation guide
 
-There are several means of validating resources against a set of rules, each with differing coverage and capabilities.
+There are several means of [validating resources](http://hl7.org/fhir/validation.html) against a set of rules, each with differing coverage and capabilities.
 
 Some rules may be defined in a machine-processable manner and thus can be checked by automated means, however some rules are defined solely in human-readable descriptions. The profiles and extensions described by this implementation guide can contain both.
 
 Existing validation tools differ in their support for machine-processable rules. These tools continue to evolve and progressively implement the FHIR standard; it should be noted that different servers and tools may not provide equivalent responses when executing the same operation.
 
-The profiles and extensions described in this implementation guide have been developed using [Forge](https://fire.ly/products/forge/), [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) and the [FHIR Validator](http://build.fhir.org/validation.html#jar).
+The validation tools used during development of the profiles and extensions described in this implementation guide include [Forge](https://fire.ly/products/forge/) and the [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation) (with its in-built validation process).
 
 ## Known issues relating to the support and implementation of FHIR
 
@@ -116,7 +116,7 @@ The following resources are available to raise questions or issues relating to F
 ## Conformance conventions
 
 ### StructureDefinition
-The content of this implementation guide is a set of FHIR [StructureDefinition](http://hl7.org/fhir/r4/structuredefinition.html) resources for implementing the document model that is the subject of this implementation guide, i.e. Event Summary.
+The content of this implementation guide is a set of FHIR [StructureDefinition](http://hl7.org/fhir/r4/structuredefinition.html) resources for implementing the document model that is the subject of this implementation guide.
 
 This implementation guide includes FHIR profiles that are a set of constraints and/or extensions to FHIR base resources or a data types in the format of a StructureDefinition resource. A StructureDefinition describes a structure - a set of data element definitions, and their associated rules of usage – and is hereafter referred to as a ‘profile’ or an ‘extension’.
 
@@ -186,7 +186,7 @@ The table below demonstrates a representative set of examples of cardinality ran
 ### Slicing 
 Slicing rules in FHIR are defined in [Profiling FHIR](http://hl7.org/fhir/r4/profiling.html). This section provides a description of slicing as present in this implementation guide.
 
-Slicing is a mechanism to describe patterns of restrictions (i.e. conformance requirements). Slicing, usually on resource elements that can appear more than once in a profile, or on elements that do not repeat but have a choice of data types, where each slice has a different definition of the element. For example, the section element in the [Event Summary](StructureDefinition-composition-es-1.html) profile is sliced into a list of slices in order to give each section slice a different set of restrictions.
+Slicing is a mechanism to describe patterns of restrictions (i.e. conformance requirements). Slicing, usually on resource elements that can appear more than once in a profile, or on elements that do not repeat but have a choice of data types, where each slice has a different definition of the element. For example, the section element in a composition profile may be sliced into a list of slices in order to give each section slice a different set of restrictions.
 
 A sliced element can be identified by the following icon <span style="padding-left: 3px; padding-right: 3px"><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit"/></span> in the Name column of the Differential and Snapshot views of the Differential Table and Snapshot Table of a profile or extension.
 
