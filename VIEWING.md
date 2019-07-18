@@ -57,7 +57,7 @@ All downloaded content, that is text-based (e.g. xml, markdown) may also be view
 ### Opening profiles with Forge (advanced)
 Profiles can be opened with the [Forge application](https://simplifier.net/forge) in order to view the technical constraints applied in the profile. This advanced option requires additional setup, which is:
  1. Clone the [HL7 AU au-fhir-base repository](https://github.com/hl7au/au-fhir-base) onto your computer. This is required as our repositories are technically derived from HL7 AU `au-fhir-base` which must be present on your computer in order for Forge to collect all of the upstream constraints.
- 2. A symbolic link must be created between the 2 repositories, specifically from within the `ci-fhir-r4` resources folder to the resources folder of the HL7 AU `au-fhir-base` resources folder. This can be achieved with the following command (executed in an adminstrator-enabled command terminal window and update command with file paths specific to your computer):
+ 2. A symbolic link must be created between the 2 repositories, specifically from within the `ci-fhir-r4` resources folder to the HL7 AU `au-fhir-base` resources folder. This can be achieved with the following command (executed in an adminstrator-enabled command terminal window and update command with file paths specific to your computer):
 ```
 mklink /D C:\path\to\folder\ci-fhir-r4\resources\link_to_au-fhir-base-r4_resources C:\path\to\folder\au-fhir-base-r4\resources
 ```
