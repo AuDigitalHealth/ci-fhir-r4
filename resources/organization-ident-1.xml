@@ -67,7 +67,7 @@
       <constraint>
         <key value="inv-dh-org-01" />
         <severity value="error" />
-        <human value="This reference shall at least have a reference, an identifier or text that identifies the referent" />
+        <human value="This reference shall at least have a reference, an identifier or a display" />
         <expression value="reference.exists() or identifier.exists() or display.exists()" />
       </constraint>
       <mustSupport value="true" />
