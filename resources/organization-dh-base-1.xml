@@ -63,6 +63,12 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1" />
       </type>
+      <constraint>
+        <key value="inv-dh-org-01" />
+        <severity value="error" />
+        <human value="This reference shall at least have a reference, an identifier or text that identifies the referent" />
+        <expression value="reference.exists() or identifier.exists() or display.exists()" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Organization.contact">
