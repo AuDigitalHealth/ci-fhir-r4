@@ -25,6 +25,12 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
+      <constraint>
+        <key value="inv-dh-org-02" />
+        <severity value="error" />
+        <human value="The organisation shall at least have one identifier with a system and a value" />
+		<expression value="identifier.where(system.count() + value.count() >1).exists()" />
+      </constraint>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
