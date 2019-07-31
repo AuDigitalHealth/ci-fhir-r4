@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="jane-eyrewright"/>
+    <meta>
+        <source value="http://example.com/brookelanehospital"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+            <p><b>Name</b>: Miss Jane Eyrewright (official)</p>
+            <p><b>Gender</b>: female</p>
+            <p><b>Communication</b>: Auslan</p>
+        </div>
+    </text>
+    <name>
+        <use value="official"/>
+        <family value="Eyre"/>
+        <given value="Jane"/>
+        <prefix value="Miss"/>
+    </name>
+    <gender value="female"/>
+    <communication>
+        <coding>
+            <system value="urn:ietf:bcp:47"/>
+            <code value="asf"/>
+            <display value="Auslan"/>
+        </coding>
+        <text value="Auslan"/>
+    </communication>
+</Practitioner>
