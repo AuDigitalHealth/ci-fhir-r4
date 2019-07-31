@@ -24,7 +24,13 @@
   <derivation value="constraint" />
   <differential>
     <element id="Organization">
-      <path value="Organization" />
+      <path value="Organization" />	  
+      <constraint>
+        <key value="inv-dh-org-01" />
+        <severity value="error" />
+        <human value="The organization of which this organization forms a part shall at least have a reference, an identifier or a display" />
+        <expression value="partOf.reference.exists() or partOf.identifier.exists() or partOf.display.exists()" />
+      </constraint>
       <constraint>
         <key value="inv-dh-org-02" />
         <severity value="error" />
@@ -70,12 +76,6 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1" />
       </type>
-      <constraint>
-        <key value="inv-dh-org-01" />
-        <severity value="error" />
-        <human value="This reference shall at least have a reference, an identifier or a display" />
-        <expression value="reference.exists() or identifier.exists() or display.exists()" />
-      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Organization.contact">
