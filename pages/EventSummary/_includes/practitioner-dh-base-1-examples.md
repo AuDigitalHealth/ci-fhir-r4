@@ -18,9 +18,9 @@
 			<tr>
                 <td><a href="Practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.html">Practitioner example 3</a></td>
                 <td>40a94071-8373-4d53-a788-63b79c75a3c1</td>
-                <td><a href="40a94071-8373-4d53-a788-63b79c75a3c1.xml.html">XML</a></td>
-                <td><a href="40a94071-8373-4d53-a788-63b79c75a3c1.json.html">JSON</a></td>
-                <td><a href="40a94071-8373-4d53-a788-63b79c75a3c1.ttl.html">Turtle</a></td>
+                <td><a href="Practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.xml.html">XML</a></td>
+                <td><a href="Practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.json.html">JSON</a></td>
+                <td><a href="Practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.ttl.html">Turtle</a></td>
                 <td></td>
             </tr>
             <tr>
