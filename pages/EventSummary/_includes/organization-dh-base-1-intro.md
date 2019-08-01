@@ -1,5 +1,5 @@
 ### Base Organization *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
 
 #### Implementation guidance
-No additional guidance is suggested to support implementation of this profile for the expected usage scenarios of this implementation guide.
-
+For the supported usage scenarios in this implementation guide it is recommended that:
+* an Australian address conforms to the [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html) Profile
