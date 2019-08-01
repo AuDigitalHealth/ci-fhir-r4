@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Practitioner/54a065dc-8666-11e9-bc42-526af7764f64> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "54a065dc-8666-11e9-bc42-526af7764f64"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1185fcbc-4b80-45c9-9e6b-854104d9de48" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-07-15T13:28:17.239+10:00"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 54a065dc-8666-11e9-bc42-526af7764f64</p><p><b>meta</b>: </p><p><b>name</b>: Mosenna Joanne </p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Joanne" ];
+     fhir:HumanName.given [
+       fhir:value "Mosenna";
+       fhir:index 0
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Practitioner/54a065dc-8666-11e9-bc42-526af7764f64.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

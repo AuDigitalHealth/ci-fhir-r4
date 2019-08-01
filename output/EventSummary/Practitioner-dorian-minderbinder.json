@@ -1,0 +1,63 @@
+{
+  "resourceType": "Practitioner",
+  "id": "dorian-minderbinder",
+  "meta": {
+    "versionId": "85e9876d-bb9b-483d-b5a0-57bee38efc66",
+    "profile": [
+      "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dorian-minderbinder</p><p><b>meta</b>: </p><p><b>name</b>: Dr Dorian Minderbinder</p><p><b>telecom</b>: ph: 0491576801(MOBILE), dorian.gray.089@example.com(WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>AHPRA Registration Number = MED2222222222</td><td>Cardiologist <span style=\"background: LightGoldenRodYellow\">(Details : {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 code '253312' = '253312)</span></td><td>AHPRA</td></tr></table></div>"
+  },
+  "name": [
+    {
+      "text": "Dr Dorian Minderbinder"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0491576801",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "dorian.gray.089@example.com",
+      "use": "work"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203",
+                "code": "AHPRA",
+                "display": "Australian Health Practitioner Regulation Agency Registration Number"
+              }
+            ],
+            "text": "AHPRA Registration Number"
+          },
+          "system": "http://hl7.org.au/id/ahpra-registration-number",
+          "value": "MED2222222222"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0",
+            "code": "253312"
+          }
+        ],
+        "text": "Cardiologist"
+      },
+      "issuer": {
+        "display": "AHPRA"
+      }
+    }
+  ]
+}

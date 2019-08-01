@@ -24,7 +24,7 @@
   ],
   "description": "This implementation guide is an HL7™ FHIR® specification to represent an Event Summary (ES).\n \nThe primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR can be used for the electronic exchange of ES information between healthcare providers.\n \nThis implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.\n \nThis implementation guide does not describe transport or persistence mechanism of the resources described by it.",
   "copyright": "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
-  "packageId": "ns.electronichealth.net.au.ci.fhir.4.0.eventsummary",
+  "packageId": "au.electronichealth.eventsummary",
   "license": "Apache-2.0",
   "fhirVersion": [
     "4.0.0"
@@ -173,6 +173,108 @@
           "reference": "Organization/hallam-medical-clinic"
         },
         "name": "Organization example 3",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-dorian-minderbinder.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/dorian-minderbinder"
+        },
+        "name": "Base Practitioner example 1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-jane-eyrewright.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/jane-eyrewright"
+        },
+        "name": "Base Practitioner example 2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/40a94071-8373-4d53-a788-63b79c75a3c1"
+        },
+        "name": "Base Practitioner example 3",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-54a065dc-8666-11e9-bc42-526af7764f64.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/54a065dc-8666-11e9-bc42-526af7764f64"
+        },
+        "name": "Base Practitioner example 4",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1.2.36.1.2001.1001.105.100001.1001.275.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1.2.36.1.2001.1001.105.100001.1001.275"
+        },
+        "name": "Base Practitioner example 5",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1.2.36.1.2001.1001.105.100002.1.671.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1.2.36.1.2001.1001.105.100002.1.671"
+        },
+        "name": "Base Practitioner example 6",
         "exampleBoolean": true
       }
     ],

@@ -24,7 +24,7 @@
   </contact>
   <description value="This implementation guide is an HL7&#x2122; FHIR&#xAE; specification to represent an Event Summary (ES).&#xA; &#xA;The primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR can be used for the electronic exchange of ES information between healthcare providers.&#xA; &#xA;This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.&#xA; &#xA;This implementation guide does not describe transport or persistence mechanism of the resources described by it."/>
   <copyright value="Copyright &#xA9; 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
-  <packageId value="ns.electronichealth.net.au.ci.fhir.4.0.eventsummary"/>
+  <packageId value="au.electronichealth.eventsummary"/>
   <license value="Apache-2.0"/>
   <fhirVersion value="4.0.0"/>
   <dependsOn id="aubaser4">
@@ -135,6 +135,84 @@
         <reference value="Organization/hallam-medical-clinic"/>
       </reference>
       <name value="Organization example 3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-dorian-minderbinder.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/dorian-minderbinder"/>
+      </reference>
+      <name value="Base Practitioner example 1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-jane-eyrewright.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/jane-eyrewright"/>
+      </reference>
+      <name value="Base Practitioner example 2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/40a94071-8373-4d53-a788-63b79c75a3c1"/>
+      </reference>
+      <name value="Base Practitioner example 3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-54a065dc-8666-11e9-bc42-526af7764f64.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/54a065dc-8666-11e9-bc42-526af7764f64"/>
+      </reference>
+      <name value="Base Practitioner example 4"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1.2.36.1.2001.1001.105.100001.1001.275.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1.2.36.1.2001.1001.105.100001.1001.275"/>
+      </reference>
+      <name value="Base Practitioner example 5"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1.2.36.1.2001.1001.105.100002.1.671.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1.2.36.1.2001.1001.105.100002.1.671"/>
+      </reference>
+      <name value="Base Practitioner example 6"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
