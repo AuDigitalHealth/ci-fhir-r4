@@ -25,6 +25,12 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
+	  <constraint>
+        <key value="inv-dh-org-01" />
+        <severity value="error" />
+        <human value="If present, the organization of which this organization forms a part shall at least have a reference, an identifier or a display" />
+        <expression value="partOf.exists() implies (partOf.reference.exists() or partOf.identifier.exists() or partOf.display.exists())" />
+      </constraint>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
