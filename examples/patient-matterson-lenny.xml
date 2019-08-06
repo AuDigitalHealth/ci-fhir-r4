@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="matterson-lenny"/>
+    <meta>
+        <versionId value="1"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
+    </meta>
+    <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+        <valueCoding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+            <code value="1"/>
+            <display value="Aboriginal but not Torres Strait Islander origin"/>
+        </valueCoding>
+    </extension>
+    <identifier>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+        <value value="8003608166895854"/>
+    </identifier>
+    <identifier>
+        <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+        <value value="5950890021"/>
+    </identifier>
+    <name>
+        <family value="MATTERSON"/>
+        <given value="Lenny"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="0491 570 006"/>
+        <use value="mobile"/>
+        <rank value="1"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="(08) 5550 1234"/>
+        <use value="home"/>
+        <rank value="2"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime">
+            <valueDateTime value="1955-02-06"/>    
+        </extension>
+    </birthDate>
+    <communication>
+        <language>
+            <coding>
+                <system value="urn:ietf:bcp:47"/>
+                <code value="pjt"/>
+                <display value="Pitjantjatjara"/>    
+            </coding>
+        </language>
+    </communication>
+    </Patient>
