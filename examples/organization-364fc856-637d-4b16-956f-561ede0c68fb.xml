@@ -3,18 +3,15 @@
 <Organization xmlns="http://hl7.org/fhir">
     <id value="364fc856-637d-4b16-956f-561ede0c68fb"/>
     <meta>
-        <versionId value="v2"/>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1"/>
-        <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1"
-        />
+            value="http://hl7.org.au/fhir/StructureDefinition/au-organization"/>
     </meta>
     <identifier>
         <type>
             <coding>
                 <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
                 <code value="NOI"/>
+                <display value="National Organisation Identifier"/>
             </coding>
             <text value="HPI-O"/>
         </type>
@@ -31,7 +28,7 @@
     <name value="Test Org -DigitalHealth 2"/>
     <alias value="Digital Health 2"/>
     <address>
-        <type value="physical"/>
+        <use value="work"/>
         <line value="23 Johnsson Lane"/>
         <city value="ULTIMO"/>
         <state value="NSW"/>

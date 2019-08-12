@@ -3,13 +3,10 @@
 <Organization xmlns="http://hl7.org/fhir">
     <id value="0867b29b-f1ed-4a05-96b1-ab87003a0ace"/>
     <meta>
-        <versionId value="v2"/>
+        <versionId value="2"/>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1"/>
-        <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1"
-        />
-    </meta>
+            value="http://hl7.org.au/fhir/StructureDefinition/au-organization"/>
+     </meta>
     <identifier>
         <type>
             <coding>
@@ -27,6 +24,7 @@
             <code value="8601"/>
             <display value="Aged Care Residential Services"/>
         </coding>
+        <text value="Aged Care Residential Services"/>
     </type>
     <name value="Test Org -DigitalHealth 1"/>
     <telecom>
@@ -40,6 +38,7 @@
         <use value="temp"/>
     </telecom>
     <address>
+        <use value="work"/>
         <type value="physical"/>
         <line value="12 Hoseason St"/>
         <city value="FREMANTLE"/>
