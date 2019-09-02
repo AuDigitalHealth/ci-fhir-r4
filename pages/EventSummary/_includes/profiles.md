@@ -47,6 +47,10 @@ The following profiles form part of this implementation guide:
                     <tr class="frm-contents">
                         <td class="frm-null"/>
                         <td class="frm-set">
+                        <ul class="frm-set">
+                                <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>                                
+                            </ul>
+                        <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>
                                 <li><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></li>
@@ -129,6 +133,11 @@ The following profiles form part of this implementation guide:
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organisation.html">AU Base Organization</a></td>
             <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
+          </tr>
+          <tr>
+              <td><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></td>
+              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitioner.html">AU Base Practitioner</a></td>
+              <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
           </tr>
         </table>
       </div>
