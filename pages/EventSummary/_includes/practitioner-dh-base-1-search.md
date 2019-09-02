@@ -6,7 +6,7 @@ Search parameters have not been defined.
   <tr>
     <th>Reference</th>
     <th>Description</th>
-    <th>Issue No.</th>
+    <th>Issue link</th>
   </tr>
   <tr>
         <td>qualification</td>
