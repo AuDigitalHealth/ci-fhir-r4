@@ -17,7 +17,7 @@ This document contains information which is protected by copyright. All Rights R
 
 **Regenstrief Institute (LOINC)**
 
-This material contains content from [LOINC](http://loinc.org)<sup>TM</sup>. The LOINC table, LOINC codes, LOINC panels and forms file, and LOINC linguistic variants file are copyright © 1995-2015, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at the [LOINC Terms of Use](https://loinc.org/terms-of-use/). LOINC is a trademark of Regenstrief Institute, Inc., registered in the United States.
+This material contains content from [LOINC](http://loinc.org)<sup>TM</sup>. The LOINC Table, LOINC Table Core, LOINC Panels and Forms File, LOINC Answer File, LOINC Part File, LOINC Group File, LOINC Document Ontology File, LOINC Hierarchies, LOINC Linguistic Variants File, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright © 1995-2017, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [LOINC Terms of Use](https://loinc.org/terms-of-use/).
 
 
 **IHTSDO (SNOMED CT)**
