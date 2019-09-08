@@ -15,7 +15,7 @@
   <title value="Event Summary"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2019-09-05T14:38:16+10:00"/>
+  <date value="2019-09-09T09:40:46+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -58,6 +58,19 @@
         <reference value="StructureDefinition/organization-dh-base-1"/>
       </reference>
       <name value="Base Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-practitioner-dh-base-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-dh-base-1"/>
+      </reference>
+      <name value="Base Practitioner"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -11,7 +11,7 @@
   "title": "Event Summary",
   "status": "draft",
   "experimental": true,
-  "date": "2019-09-05T14:38:16+10:00",
+  "date": "2019-09-09T09:40:46+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -72,6 +72,23 @@
           "reference": "StructureDefinition/organization-dh-base-1"
         },
         "name": "Base Organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-practitioner-dh-base-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/practitioner-dh-base-1"
+        },
+        "name": "Base Practitioner",
         "exampleBoolean": false
       },
       {

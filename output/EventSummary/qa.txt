@@ -1,10 +1,10 @@
 ﻿EventSummary : Validation Results
 =========================================
 
-err = 0, warn = 12, info = 2
-Generated Thu Sep 05 14:38:40 AEST 2019. FHIR version 4.0.0 for au.electronichealth.eventsummary# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+err = 0, warn = 8, info = 4
+Generated Mon Sep 09 09:41:44 AEST 2019. FHIR version 4.0.0 for au.electronichealth.eventsummary# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
- Build Errors : 79 / 1
+ Build Errors : 86 / 1
  C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100000 : 0 / 0
  C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100001.5437512835128 : 0 / 1
@@ -12,14 +12,15 @@ Generated Thu Sep 05 14:38:40 AEST 2019. FHIR version 4.0.0 for au.electronichea
  C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-territory-medical-centre-0810 : 0 / 0
  C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100001.1001.275 : 0 / 0
- C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671 : 0 / 1
- C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1 : 0 / 1
+ C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671 : 0 / 2
+ C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1 : 0 / 0
  C:\work\git\ci-fhir-r4\examples\practitioner-54a065dc-8666-11e9-bc42-526af7764f64 : 0 / 0
- C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder : 0 / 1
+ C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder : 0 / 0
  C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright : 0 / 1
  C:\work\git\ci-fhir-r4\resources\implementationguide-eventsummary-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-dh-base-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-ident-1 : 0 / 0
+ C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1 : 0 / 0
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be au.electronichealth.eventsummary
@@ -89,6 +90,13 @@ ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organizati
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organization-ident-1.json.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organization-ident-1.ttl.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organization-ident-1.xml.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1-definitions.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1-examples.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1-mappings.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1.json.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1.ttl.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1.xml.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\capstatements.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\conformance.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\disclaimers.html: The html source does not contain the publish box
@@ -103,24 +111,24 @@ ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\security.html: The html source
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\structuremaps.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\terminology.html: The html source does not contain the publish box
 == C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306.xml ==
-WARNING: Organization/021fff67-c5ec-438f-9520-ce9bafee1306: Organization.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
+WARNING: Organization/021fff67-c5ec-438f-9520-ce9bafee1306: Organization.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type
 == C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100000.xml ==
 == C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100001.5437512835128.xml ==
-WARNING: Organization/1.2.36.1.2001.1001.105.100001.5437512835128: Organization.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
+WARNING: Organization/1.2.36.1.2001.1001.105.100001.5437512835128: Organization.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type
 == C:\work\git\ci-fhir-r4\examples\organization-8338f6a2-e710-4a43-8318-f02514c3c709.xml ==
 == C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic.xml ==
 WARNING: Organization/hallam-medical-clinic: Organization: Resource has a language, but the XHTML does not have a language tag
 == C:\work\git\ci-fhir-r4\examples\organization-territory-medical-centre-0810.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100001.1001.275.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671.xml ==
-WARNING: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.meta.profile[0]: StructureDefinition reference "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1" could not be resolved
+INFORMATION: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0]: This element does not match any known slice for the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1
+WARNING: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.communication[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 not found
 == C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.xml ==
-WARNING: Practitioner/40a94071-8373-4d53-a788-63b79c75a3c1: Practitioner.meta.profile[0]: StructureDefinition reference "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1" could not be resolved
 == C:\work\git\ci-fhir-r4\examples\practitioner-54a065dc-8666-11e9-bc42-526af7764f64.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder.xml ==
-WARNING: Practitioner/dorian-minderbinder: Practitioner.meta.profile[0]: StructureDefinition reference "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1" could not be resolved
 == C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright.xml ==
 INFORMATION: Practitioner/jane-eyrewright: Practitioner.communication[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (codes = urn:ietf:bcp:47#asf)
 == C:\work\git\ci-fhir-r4\resources\implementationguide-eventsummary-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\organization-dh-base-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\organization-ident-1.xml ==
+== C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1.xml ==

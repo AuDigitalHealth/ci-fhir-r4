@@ -11,7 +11,7 @@
   "title": "Organization with Mandatory Identifier",
   "status": "draft",
   "experimental": true,
-  "date": "2019-09-05T14:38:16+10:00",
+  "date": "2019-09-09T09:40:46+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -470,20 +470,20 @@
           {
             "key": "inv-hpio-0",
             "severity": "error",
-            "human": "HPI-O shall be an exactly 16 digit number",
+            "human": "HPI-O shall be 16 digits",
             "expression": "value.matches('^([0-9]{16})$')"
           },
           {
             "key": "inv-hpio-1",
             "severity": "error",
-            "human": "HPI-O prefix is 800362",
+            "human": "HPI-O prefix shall be 800362",
             "expression": "value.startsWith('800362')"
           },
           {
             "key": "inv-hpio-2",
-            "requirements": "HPI-O shall pass the Luhn algorithm check",
+            "requirements": "HPI-O shall pass the Luhn algorithm",
             "severity": "error",
-            "human": "The identifier shall pass the Luhn algorithm check",
+            "human": "The identifier shall pass the Luhn algorithm",
             "expression": "(((select(value.substring(0,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(1,1).toInteger())+(select(value.substring(2,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(3,1).toInteger())+(select(value.substring(4,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(5,1).toInteger())+(select(value.substring(6,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(7,1).toInteger())+(select(value.substring(8,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(9,1).toInteger())+(select(value.substring(10,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(11,1).toInteger())+(select(value.substring(12,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(13,1).toInteger())+(select(value.substring(14,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(15,1).toInteger()))mod 10=0)"
           }
         ],
@@ -1013,7 +1013,7 @@
           {
             "key": "inv-abn-0",
             "severity": "error",
-            "human": "ABN shall be exactly 11 digits",
+            "human": "ABN shall be 11 digits",
             "expression": "value.length()=11"
           }
         ],
@@ -1530,7 +1530,7 @@
           {
             "key": "inv-acn-0",
             "severity": "error",
-            "human": "ACN shall be exactly 9 digits",
+            "human": "ACN shall be 9 digits",
             "expression": "value.length()=9"
           }
         ],
@@ -2047,7 +2047,7 @@
           {
             "key": "inv-arbn-0",
             "severity": "error",
-            "human": "ARBN shall be exactly 9 digits",
+            "human": "ARBN shall be 9 digits",
             "expression": "value.length()=9"
           }
         ],
@@ -2553,20 +2553,20 @@
           {
             "key": "inv-paio-0",
             "severity": "error",
-            "human": "PAI-O shall be an exactly 16 digit number",
+            "human": "PAI-O shall be 16 digits",
             "expression": "value.matches('^([0-9]{16})$')"
           },
           {
             "key": "inv-paio-1",
             "severity": "error",
-            "human": "PAI-O prefix is 800364",
+            "human": "PAI-O prefix shall be 800364",
             "expression": "value.startsWith('800364')"
           },
           {
             "key": "inv-paio-2",
-            "requirements": "PAI-O shall pass the Luhn algorithm check",
+            "requirements": "PAI-O shall pass the Luhn algorithm",
             "severity": "error",
-            "human": "The identifier shall pass the Luhn algorithm check",
+            "human": "The identifier shall pass the Luhn algorithm",
             "expression": "(((select(value.substring(0,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(1,1).toInteger())+(select(value.substring(2,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(3,1).toInteger())+(select(value.substring(4,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(5,1).toInteger())+(select(value.substring(6,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(7,1).toInteger())+(select(value.substring(8,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(9,1).toInteger())+(select(value.substring(10,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(11,1).toInteger())+(select(value.substring(12,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(13,1).toInteger())+(select(value.substring(14,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(15,1).toInteger()))mod 10=0)"
           }
         ],
@@ -3088,13 +3088,13 @@
           {
             "key": "inv-csp-0",
             "severity": "error",
-            "human": "CSP number is exactly 16 characters",
+            "human": "CSP number shall be 16 characters",
             "expression": "value.length() = 16"
           },
           {
             "key": "inv-csp-1",
             "severity": "error",
-            "human": "CSP number prefix is 800363",
+            "human": "CSP number prefix shall be 800363",
             "expression": "value.startsWith('800363')"
           }
         ],

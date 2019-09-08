@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Base Organization"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2019-09-05T14:38:16+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-09-09T09:40:46+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -477,20 +477,20 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-hpio-0" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "HPI-O shall be an exactly 16 digit number" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "HPI-O shall be 16 digits" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^([0-9]{16})$')" ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-hpio-1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "HPI-O prefix is 800362" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "HPI-O prefix shall be 800362" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.startsWith('800362')" ]
        ], [
          fhir:index 2;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-hpio-2" ];
-         fhir:ElementDefinition.constraint.requirements [ fhir:value "HPI-O shall pass the Luhn algorithm check" ];
+         fhir:ElementDefinition.constraint.requirements [ fhir:value "HPI-O shall pass the Luhn algorithm" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "The identifier shall pass the Luhn algorithm check" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "The identifier shall pass the Luhn algorithm" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "(((select(value.substring(0,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(1,1).toInteger())+(select(value.substring(2,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(3,1).toInteger())+(select(value.substring(4,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(5,1).toInteger())+(select(value.substring(6,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(7,1).toInteger())+(select(value.substring(8,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(9,1).toInteger())+(select(value.substring(10,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(11,1).toInteger())+(select(value.substring(12,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(13,1).toInteger())+(select(value.substring(14,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(15,1).toInteger()))mod 10=0)" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -1002,7 +1002,7 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-abn-0" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "ABN shall be exactly 11 digits" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "ABN shall be 11 digits" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.length()=11" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -1502,7 +1502,7 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-acn-0" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "ACN shall be exactly 9 digits" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "ACN shall be 9 digits" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.length()=9" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -2002,7 +2002,7 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-arbn-0" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "ARBN shall be exactly 9 digits" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "ARBN shall be 9 digits" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.length()=9" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -2492,20 +2492,20 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-paio-0" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "PAI-O shall be an exactly 16 digit number" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "PAI-O shall be 16 digits" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^([0-9]{16})$')" ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-paio-1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "PAI-O prefix is 800364" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "PAI-O prefix shall be 800364" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.startsWith('800364')" ]
        ], [
          fhir:index 2;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-paio-2" ];
-         fhir:ElementDefinition.constraint.requirements [ fhir:value "PAI-O shall pass the Luhn algorithm check" ];
+         fhir:ElementDefinition.constraint.requirements [ fhir:value "PAI-O shall pass the Luhn algorithm" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "The identifier shall pass the Luhn algorithm check" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "The identifier shall pass the Luhn algorithm" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "(((select(value.substring(0,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(1,1).toInteger())+(select(value.substring(2,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(3,1).toInteger())+(select(value.substring(4,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(5,1).toInteger())+(select(value.substring(6,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(7,1).toInteger())+(select(value.substring(8,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(9,1).toInteger())+(select(value.substring(10,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(11,1).toInteger())+(select(value.substring(12,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(13,1).toInteger())+(select(value.substring(14,1).toInteger()).select(iif($this<5, $this*2, (($this*2)-9))))+(value.substring(15,1).toInteger()))mod 10=0)" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -3010,13 +3010,13 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-csp-0" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "CSP number is exactly 16 characters" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "CSP number shall be 16 characters" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.length() = 16" ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-csp-1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "CSP number prefix is 800363" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "CSP number prefix shall be 800363" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.startsWith('800363')" ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
