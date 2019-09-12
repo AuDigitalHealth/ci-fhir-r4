@@ -45,18 +45,18 @@ The following profiles form part of this implementation guide:
                         <td class="frm-category">Management</td>
                     </tr> 
                     <tr class="frm-contents">
-                        <td class="frm-null"/>
                         <td class="frm-set">
-                        <ul class="frm-set">
+                            <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>                                
                             </ul>
+                        </td>   
+                        <td class="frm-null"/> 
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>
                                 <li><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></li>
                             </ul>
-                        </td> 
-                        <td class="frm-null"/>
+                        </td>                         
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                     </tr> 
