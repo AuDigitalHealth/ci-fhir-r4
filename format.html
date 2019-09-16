@@ -7,9 +7,16 @@ active: profiles
 
 {% include container-start.html %}
 
-<!-- ============BreadCrumb=============== -->
-
-{% include breadcrumbs.html %}
+<!-- ============Tabs=============== -->
+<ul class="nav nav-tabs">
+  <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
+  <li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
+  <li><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
+  <li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
+  <li class="{% if '{{[fmt]}}' == 'xml' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+  <li class="{% if '{{[fmt]}}' == 'json' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+  <li class="{% if '{{[fmt]}}' == 'ttl' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
+</ul>
 
   <!-- ============CONTENT CONTENT=============== -->
 
