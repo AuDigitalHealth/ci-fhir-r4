@@ -1,5 +1,5 @@
 # {{ page.title }}
-
+{% include publish-box.html %}
 **Validator pack and definitions**
 
 The following file contains all the value sets, profiles, extensions, list of pages and urls, etc defined as part of this implementation guide:

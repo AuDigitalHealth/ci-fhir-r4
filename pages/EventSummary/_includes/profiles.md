@@ -9,7 +9,8 @@ The following profiles form part of this implementation guide:
   <div class="inner-wrapper">
 
 <div class="col-12">
-
+    <h1>Profiles</h1>
+    {% include publish-box.html %}
     <div style="border-right-style: none;" id="tabs">
       <div style="border-right-style: none;" id="tabs">
             <ul>
