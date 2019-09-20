@@ -1,6 +1,7 @@
 # {{ page.title }}
+{% include publish-box.html %}
 
-The following profiles form part of this implementation guide:
+<p>The following profiles form part of this implementation guide: </p>
 
 <html>
   <div id="segment-content" class="segment"> 
@@ -9,7 +10,6 @@ The following profiles form part of this implementation guide:
   <div class="inner-wrapper">
 
 <div class="col-12">
-
     <div style="border-right-style: none;" id="tabs">
       <div style="border-right-style: none;" id="tabs">
             <ul>
