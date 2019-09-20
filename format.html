@@ -7,7 +7,8 @@ active: profiles
 
 {% include container-start.html %}
 {% include publish-box.html %}
-<!-- ============Tabs=============== -->
+<!-- ============Tabs (only on Profile StructureDefinition Pages =============== -->
+{% if '{{[type]}}'=='StructureDefinition' %}
 <ul class="nav nav-tabs">
   <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
   <li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
@@ -17,7 +18,7 @@ active: profiles
   <li class="{% if '{{[fmt]}}' == 'json' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
   <li class="{% if '{{[fmt]}}' == 'ttl' %}active{% endif %}" ><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
-
+{% endif %}
   <!-- ============CONTENT CONTENT=============== -->
 
 <h1>{{[type]}}-{{[id]}}</h1>
