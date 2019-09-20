@@ -6,7 +6,7 @@ active: profiles
 {% include header.html %}
 
 {% include container-start.html %}
-
+{% include publish-box.html %}
 <!-- ============Tabs=============== -->
 <ul class="nav nav-tabs">
   <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
@@ -20,7 +20,7 @@ active: profiles
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h2>Example: {{[type]}}-{{[id]}}</h2>
+<h1>{{[type]}}-{{[id]}}</h1>
 
 <p>
 Formats: <a href="{{[type]}}-{{[id]}}.html">Narrative</a>, <a href="{{[type]}}-{{[id]}}.xml.html">XML</a>, <a href="{{[type]}}-{{[id]}}.json.html">JSON</a>, <a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a>
