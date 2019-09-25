@@ -1,9 +1,9 @@
+# {{ page.title }}
+{% include publish-box.html %}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
-# {{ page.title }}
-{% include publish-box.html %}
 ## FHIR (Fast Healthcare Interoperability Resources)
 
 FHIR is a standard developed by HL7. The standard describes data formats and elements, known as [Resources](http://hl7.org/fhir/r4/resourcelist.html), by which content is exchanged.

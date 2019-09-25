@@ -1,9 +1,9 @@
+# {{ page.title }}
+{% include publish-box.html %}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
-# {{ page.title }}
-{% include publish-box.html %}
 ## Conformance requirements
 Any FHIR resource that claims conformance to a profile in this implementation guide, or any derived profile, SHALL meet these requirements:
 
