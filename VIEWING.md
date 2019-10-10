@@ -66,3 +66,8 @@ mklink /D C:\path\to\folder\ci-fhir-r4\resources\link_to_au-fhir-base-r4_resourc
  5. Double click on one of the listed profiles
 
 For further information please refer to the comprehensive [Forge documentation](http://docs.simplifier.net/forge/).
+
+### Viewing the Clinical Document Architecture (CDA) Implementation Guides
+
+The (CDA) Implementation Guides associated with each publication in this repository are not automatically included in the 'full-ig.zip' files but can be found in the 'output' folder of the desired publication. For example the CDA-IG for Shared Medicines List will be found here" ci-fhir-r4/output/EventSummary/DH_xxxx_EventSummary_CDA_IG_v2.0.pdf".
+
