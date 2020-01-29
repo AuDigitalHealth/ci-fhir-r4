@@ -10,12 +10,12 @@ FHIR is a standard developed by HL7. The standard describes data formats and ele
 
 A FHIR resource may be supplied in one of the following formats: [XML](http://hl7.org/fhir/r4/xml.html), [JSON](http://hl7.org/fhir/r4/json.html) and [Turtle](http://hl7.org/fhir/r4/rdf.html). FHIR supports four paradigms for exchange: the RESTful API (Application Programming Interface), messaging, documents, and services.
 
-This implementation guide describes FHIR resources built following the rules described in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4).
+This implementation guide describes FHIR resources built following the rules described in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](index.html#HL7FHIR4).
 
 The FHIR specification is evolving; the current FHIR specification is available at [http://hl7.org/fhir](http://hl7.org/fhir). A [Publication (Version) History](http://www.hl7.org/fhir/directory.cfml) of past and current working versions, including [FHIR Release 4 (First Normative content) [HL7FHIR4]](index.html#HL7FHIR4) is available.
 
 The following references are recommended to gain a better understanding of FHIR:
-* [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
+* [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](index.html#HL7FHIR4)
 * [FHIR Overview](https://www.hl7.org/fhir/r4/overview.html)
 * [HL7 International FHIR Wiki [HL7FHIR]](index.html#HL7FHIR)
  
@@ -80,7 +80,7 @@ Readers of this implementation guide are encouraged to actively participate in t
         <p>The human friendly rendered format of Composition examples in this implementation guide may be missing content, e.g. section narrative, forcing the reader to refer to XML or JSON format to view the full example narrative. Alternatively in order to demonstrate example narrative rendering the construction of the narrative is against good practice in order to provide complete readable content.</p>
     </td>
     <td>
-        <p>gForge Change Request <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=17401">#17401</a></p>
+        <p>gForge Change Request <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id;=17401">#17401</a></p>
     </td>
   </tr>
   <tr>
@@ -91,7 +91,7 @@ Readers of this implementation guide are encouraged to actively participate in t
         <p>Designs that use slicing on value set binding are not supported by the FHIR Validator or IG Publisher.</p>
     </td>
     <td>
-        <p>gForge Change Request <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=20572">#20572</a></p>
+        <p>gForge Change Request <a href="https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id;=20572">#20572</a></p>
     </td>
   </tr>
   <tr>
