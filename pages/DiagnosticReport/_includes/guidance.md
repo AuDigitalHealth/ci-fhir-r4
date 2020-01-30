@@ -111,7 +111,7 @@ The following resources are available to raise questions or issues relating to F
 * [FHIR Chat Channel Zulip](https://chat.fhir.org/)
 * [FHIR Community Forum](http://community.fhir.org/)
 * [StackOverflow](https://stackoverflow.com/questions/tagged/hl7_fhir)
-* [gForge](https://gforge.hl7.org/gf/project/fhir/)
+* [FHIR Specification Feedback](https://jira.hl7.org/projects/FHIR/issues/)
 
 
 ## Conformance conventions

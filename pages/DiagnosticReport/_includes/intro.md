@@ -25,7 +25,7 @@ This implementation guide does not describe transport or persistence mechanism o
 
 Reference has been made to International and Australian Standards, and to Standards from Health Level Seven. The following standards are referred to in the text in such a way that some or all of its content constitutes requirements for the purposes of this specification:
 * [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4)
-* [Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]](#HL7AUBIG)
+* [Australian Base Profiles Implementation Guide (AU Base 2) [HL7AUBIG]](#HL7AUBIG)
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards ([Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]](#HL7AUBIG)) to provide for system interoperability and compatibility with other profiles. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.
 
