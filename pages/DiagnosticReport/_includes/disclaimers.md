@@ -12,7 +12,7 @@ This document is maintained in electronic form and is uncontrolled in printed fo
 
 **Copyright © 2020 Australian Digital Health Agency**
 
-This document contains information which is protected by copyright. All Rights Reserved. No part of this work may be reproduced or used in any form or by any means – graphic, electronic, or mechanical, including photocopying, recording, taping, or information storage and retrieval systems – without the permission of the Australian Digital Health Agency. All copies of this document must include the copyright statement and other information contained on this page.
+This document contains information which is protected by copyright. All Rights Reserved. No part of this work may be reproduced or used in any form or by any means – graphic, electronic, or mechanical, including photocopying, recording, taping, or information storage and retrieval systems – without the permission of the Australian Digital Health Agency. All copies of this document must include the copyright and other information contained on this page.
 
 
 **Regenstrief Institute (LOINC)**
