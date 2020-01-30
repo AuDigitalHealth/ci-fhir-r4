@@ -45,7 +45,7 @@ The fields used to present the Differential Table and the Snapshot Table in this
 
 ## Validating resources using profiles from this implementation guide
 
-There are several means of [validating resources](http://hl7.org/fhir/validation.html) against a set of rules, each with differing coverage and capabilities.
+There are several means of [validating resources](http://hl7.org/fhir/r4/validation.html) against a set of rules, each with differing coverage and capabilities.
 
 Some rules may be defined in a machine-processable manner and thus can be checked by automated means, however some rules are defined solely in human-readable descriptions. The profiles and extensions described by this implementation guide can contain both.
 
