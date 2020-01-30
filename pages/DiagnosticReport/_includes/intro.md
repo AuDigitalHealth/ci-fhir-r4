@@ -10,14 +10,14 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a Diagnostic Report, including Pathology, Diagnostic Imaging, and other diagnostic reports.
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a Diagnostic Report, including Pathology Report (PR) and Diagnostic Imaging Report (DIR). A diagnostic report is the information provided by a diagnostic provider (pathology or diagnostic imaging) when the investigation has been completed. 
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
 
 ## Document purpose and scope
 
-The primary aim of this implementation guide is to support implementing DR in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of diagnostic report information between healthcare providers.
+The primary aim of this implementation guide is to support implementing DR in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of diagnostic reports information between healthcare providers.
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
