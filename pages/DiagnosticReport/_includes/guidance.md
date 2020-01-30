@@ -33,7 +33,7 @@ The content of each page is structured as follows:
 * Known Issues includes the list of unintended or unexpected behaviours associated with that profile we are aware of that have an impact that implementers should take note of.
 
 The Formal Views of Profile Content contains:
-* The canonical url e.g. http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-es-1 
+* The canonical url e.g. http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-dr-1 
 * A free text natural language description of the structure and its use that also includes the information on meaning of must support
 * Identification of the base resource from which this profile is derived from; included in this implementation guide as “This profile builds on [base resource]”
 * A set of metadata that describes the version of the profile, publisher and the date of publishing; included as “This profile was published on [date] as a [status] by [publisher “Australian Digital Health Agency”].”
