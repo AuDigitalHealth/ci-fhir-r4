@@ -10,14 +10,14 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a Diagnostic Report, including Pathology Report (PR) and Diagnostic Imaging Report (DIR). A diagnostic report is the information provided by a diagnostic provider (pathology or diagnostic imaging) when the investigation has been completed. 
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including Pathology Report (PR) and Diagnostic Imaging Report (DIR). A diagnostic report is the information provided by a diagnostic provider (pathology or diagnostic imaging) when the investigation has been completed. 
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
 
 ## Document purpose and scope
 
-The primary aim of this implementation guide is to support implementing DR in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of diagnostic reports information between healthcare providers.
+The primary aim of this implementation guide is to support implementing diagnostic report in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of diagnostic reports information between healthcare providers.
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
@@ -31,7 +31,7 @@ Wherever possible, material in this specification is based on existing standards
 
 This implementation guide is the basis for the corresponding [Diagnostic Report CDA implementation guide [DH2019i]](#DH2019i). The profiles referenced by this FHIR implementation guide are the 'models' that are mapped into CDA.
 
-This implementation guide makes reference to the set of profiles and extensions (StructureDefinitions) that form part of this implementation guide. Some profiles and extensions are described by this implementation guide, and some are described by other published sources such as the [Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]](#HL7AUBIG) or [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. Any profile-specific mappings to another format is the subject of an implementation guide for that particular format, e.g. a DR CDA implementation guide. The base FHIR® R4 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4).
+This implementation guide makes reference to the set of profiles and extensions (StructureDefinitions) that form part of this implementation guide. Some profiles and extensions are described by this implementation guide, and some are described by other published sources such as the [Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]](#HL7AUBIG) or [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. Any profile-specific mappings to another format is the subject of an implementation guide for that particular format, e.g. a diagnostic report CDA implementation guide. The base FHIR® R4 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4).
 
 
 ## Context and use
@@ -52,7 +52,7 @@ The contents may include:
 Specification packages contain only files relevant to the particular clinical document. Specifications that are common to many clinical documents and should be considered part of the specification package, as directed by the relevant release note and conformance profile, may be contained elsewhere.
 
 ## How to read this document
-This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of DR. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/r4/profiling.html).  
+This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of diagnostic report. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/r4/profiling.html).  
 
 <!-- The starting point for the profiles included in this implementation guide is the Diagnostic Report profile, which references the additional profiles necessary to assert [conformance](conformance.html) for this implementation guide. -->
 
