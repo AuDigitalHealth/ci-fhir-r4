@@ -1,6 +1,5 @@
 # {{ page.title }}
 {% include publish-box.html %}
-As yet, no mappings from requirement specifications are available for this implementation guide.
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
@@ -14,9 +13,10 @@ This informative section provides a mapping from the requirements of each end-pr
 
 The mapping from requirements table below demonstrates the logical decomposition of each requirement to the lowest possible element in an applicable profile. 
 
-## Mapping from ?? business requirements
+## Mapping from eHealth Pathology Report - Information Requirements v1.1 information requirements
+This informative section provides mapping from the data items (i.e. requirements) in [eHealth Pathology Report - Information Requirements v1.1 [NEHT2013am]](index.html#NEHT2013am).
 
-The table below provides mapping from the requirements in [Diagnostic Report Scenarios and business requirements v2.0 [NEHT2015a]](index.html#NEHT2015a) to the corresponding supported element in the [??](??) profile, or referenced profile (e.g. [??](??)).
+The table below matches the data items to the corresponding supported element in the [TBD profile](??) profile, or referenced profile (e.g. [TBD](TBD)). The hierarchy column demonstrates the path to that supported element from the root Composition. 
 
 See the [legend](mappings.html#legend-for-mapping-from-requirements) for information on the columns used to present the mapping content.
 
@@ -38,18 +38,18 @@ See the [legend](mappings.html#legend-for-mapping-from-requirements) for informa
             <tbody>
                 <tr>
                     <td></td>
-                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-               </tr>
+                    <td></td>
+                </tr>
              </tbody>
 </table>               
 
-## Mapping from ?? information requirements
-This informative section provides mapping from the data items (i.e. requirements) in [?? [??]](index.html#??).
+## Mapping from eHealth Diagnostic Imaging Report - Information Requirements v1.1 information requirements
+This informative section provides mapping from the data items (i.e. requirements) in [eHealth Diagnostic Imaging Report - Information Requirements v1.1 [TBD]](index.html#TBD).
 
-The table below matches the data items to the corresponding supported element in the [?? profile](??) profile, or referenced profile (e.g. [??](??)). The hierarchy column demonstrates the path to that supported element from the root Composition. 
+The table below matches the data items to the corresponding supported element in the [TBD profile](TBD) profile, or referenced profile (e.g. [TBD](TBD)). The hierarchy column demonstrates the path to that supported element from the root Composition. 
 
 See the [legend](mappings.html#legend-for-mapping-from-requirements) for information on the columns used to present the mapping content.
 

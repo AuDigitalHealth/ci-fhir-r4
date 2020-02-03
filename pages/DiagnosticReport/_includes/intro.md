@@ -10,14 +10,14 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including Pathology Report (PR) and Diagnostic Imaging Report (DIR). A diagnostic report is the information provided by a diagnostic provider (pathology or diagnostic imaging) when the investigation has been completed. 
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including pathology report and diagnostic imaging report. A diagnostic report is the information provided by a diagnostic provider (pathology or diagnostic imaging) when the investigation has been completed. 
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
 
 ## Document purpose and scope
 
-The primary aim of this implementation guide is to support implementing diagnostic report in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of diagnostic reports information between healthcare providers.
+The primary aim of this implementation guide is to support implementing diagnostic report in [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The resulting FHIR can be used for the electronic exchange of diagnostic report information between healthcare providers.
 
 This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.
 
@@ -29,7 +29,7 @@ Reference has been made to International and Australian Standards, and to Standa
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards ([Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]](#HL7AUBIG)) to provide for system interoperability and compatibility with other profiles. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.
 
-This implementation guide is the basis for the corresponding [Diagnostic Report CDA implementation guide [DH2019i]](#DH2019i). The profiles referenced by this FHIR implementation guide are the 'models' that are mapped into CDA.
+This implementation guide is the basis for the corresponding [Diagnostic Report CDA implementation guide [TBD]](#). The profiles referenced by this FHIR implementation guide are the 'models' that are mapped into CDA.
 
 This implementation guide makes reference to the set of profiles and extensions (StructureDefinitions) that form part of this implementation guide. Some profiles and extensions are described by this implementation guide, and some are described by other published sources such as the [Australian Base Profiles Implementation Guide (AU Base 3) [HL7AUBIG]](#HL7AUBIG) or [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). The profiles described in this implementation guide do not include profile-specific mappings to another format as part of their description. Any profile-specific mappings to another format is the subject of an implementation guide for that particular format, e.g. a diagnostic report CDA implementation guide. The base FHIR® R4 mapping content for each of the resources referenced in this implementation guide can be found on the applicable resource documentation in the [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](#HL7FHIR4).
 
@@ -97,19 +97,42 @@ This implementation guide and related artefacts are technical in nature and the 
             <th>Release comments</th>
         </tr>
         <tr>
-            <td>1.0</td>
+            <td>1.0.0</td>
             <td>TBD</td>
             <td>TBD</td>
         </tr>
     </tbody>
 </table> 
 
+## Known issues
+This table lists known issues with this specification at the time of publishing. We are working on solutions to these issues and encourage comments to help us develop these solutions.
+
+<table border="1" cellpadding="1" valign="middle">
+<tbody>
+  <tr bgcolor="#DCDCDC">
+    <th>Reference</th>
+    <th>Description</th>
+  </tr>
+    <tr>
+        <td>Source material errors</td>
+        <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
+    </tr>
+    <tr>
+        <td>Non-resolving profile URLs</td>
+        <td>Canonical URLs with the prefix of <span style="font-family:courier;">http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/</span> do not resolve. All profiles have an associated <a href="http://hl7.org/fhir/STU3/structuredefinition-definitions.html#StructureDefinition.url">canonical URL</a> that is used to uniquely identify that structure definition (i.e. profile) and is expected to be an address at which that structure definition is (or will be) published. Work is underway to ensure that these URLs resolve or redirect to a meaningful end point in the future.</td>
+    </tr>
+ </tbody>
+</table> 
+
 ## References
 
-|[<a name="NEHT2015a">NEHT2015a</a>]| National E-Health Transition Authority, 10 April 2015, Diagnostic Report Information Requirements, Version 1.2.|
-||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1817-2015/nehta-1845-2015](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1817-2015/nehta-1845-2015)|
+|[<a name="NEHT2013am">NEHT2013am</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Pathology Report - Information Requirements, Version 1.1.|
+||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2558-2017/nehta-1884-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2558-2017/nehta-1884-2014)|
 
-|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 2.0.|
+|[<a name="NEHT2013xx">NEHT2013xx</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Diagnostic Imaging Report - Information Requirements, Version 1.1.|
+||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014)|
+
+<!--|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 2.0.|-->
 
 |[<a name="HL7AUBIG">HL7AUBIG</a>]| HL7 Australia, Continuous Integration Build, Australian Base Profiles Implementation Guide (AU Base 2), v1.0.0 (Standard for Trial Use), accessed 8 July 2019|
 ||[http://build.fhir.org/ig/hl7au/au-fhir-base/index.html](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html)|    

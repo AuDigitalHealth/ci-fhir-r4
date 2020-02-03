@@ -28,7 +28,6 @@ The content of each page is structured as follows:
 * Profile title followed by the profile status hyperlinked to FHIR [PublicationStatus](http://hl7.org/fhir/r4/valueset-publication-status.html).
 * Usage scenarios, if present, includes a short description of the example or expected usage scenarios for that profile that are supported by this implementation guide. Usage scenarios are only present if a profile is of the primary grouping resource for exchange purposes.
 * Implementation guidance includes guidance specific to the usage scenarios supported by this implementation guide. This content is informative; there may be valid reasons not to follow this guidance, but the full implications must be understood and carefully weighed before choosing a different course.
-* Examples includes links to example resources that conform to the profile or extension and that support implementation by demonstrating one or more usage scenarios supported by this implementation guide.
 * Formal Views of Profile Content includes the human readable view of the normative definition of the profile or extension.
 * Known Issues includes the list of unintended or unexpected behaviours associated with that profile we are aware of that have an impact that implementers should take note of.
 

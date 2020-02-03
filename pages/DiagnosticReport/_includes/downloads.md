@@ -2,7 +2,7 @@
 {% include publish-box.html %}
 **Validator pack and definitions**
 
-The following file contains all the value sets, profiles, extensions, list of pages and urls, etc defined as part of this implementation guide:
+The following file contains the profiles and extensions described as part of this implementation guide:
 - [Validator Pack](validator.pack)
 
 In addition there are format specific definitions files:
@@ -22,6 +22,8 @@ All examples included in this implementation guide are available for download in
 
 **CDA implementation guide**
 
-The corresponding CDA implementation guide that uses the profiles referenced by this FHIR implementation guide as ‘models’ that are mapped into CDA is available for download: _to be completed_
+CDA implementation guides that use the profiles referenced by this FHIR implementation guide as ‘models’ that are mapped into CDA are available for download:
 
-<!-- - [DH_xxxx_EventSummary_CDA_IG_v2.0.pdf](..\..\..\ci-fhir-r4\pages\EventSummary\_includes\DH_xxxx_EventSummary_CDA_IG_v2.0.pdf) -->
+TBD <!-- - [DH_xxxx_DianosticReport_CDA_IG_v2.0.pdf](..\..\..\ci-fhir-r4\pages\DiagnosticReport\_includes\DH_xxxx_DiagnosticReport_CDA_IG_v2.0.pdf)-->
+- 
+- Approved releases of CDA implementation guides for use in implementation are published on the Agency’s [developer centre]{https://developer.digitalhealth.gov.au/).
