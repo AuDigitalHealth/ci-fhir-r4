@@ -126,13 +126,13 @@
             <td class="frm-null"/>
 <!--
               <td><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></td>
-              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organisation.html">AU Base Organization</a></td>
+              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
               <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
 -->              
           </tr> 
           <tr>
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organisation.html">AU Base Organization</a></td>
+            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
             <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
           </tr>
         </table>
