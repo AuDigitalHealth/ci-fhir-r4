@@ -9,7 +9,7 @@
 
 The Diagnostic Report implementation guide is intended to support multiple usage scenarios; some profiles described within this implementation guide are reused across usage scenarios and other implementation guides.
 
-This informative section provides a mapping from the requirements of each end-product clinical specification to elements in a profiled FHIR resource. At the time of publication of this implementation guide the only end-product clinical specification supported is ?? (??).
+This informative section provides a mapping from the requirements of each end-product clinical specification to elements in a profiled FHIR resource. At the time of publication of this implementation guide the only end-product clinical specification supported is TBD (TBD).
 
 The mapping from requirements table below demonstrates the logical decomposition of each requirement to the lowest possible element in an applicable profile. 
 

@@ -109,7 +109,9 @@ This table lists known issues with this specification at the time of publishing.
 
 <table border="1" cellpadding="1" valign="middle">
 <tbody>
-  <tr bgcolor="#DCDCDC">
+   <col width="15%">
+  <col width="auto">
+ <tr bgcolor="#DCDCDC">
     <th>Reference</th>
     <th>Description</th>
   </tr>
