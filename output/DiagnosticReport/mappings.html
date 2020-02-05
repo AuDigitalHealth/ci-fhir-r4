@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Diagnostic Report</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Diagnostic Report Implemenation Guide" />
+  <meta name="author" content="http://argonautwiki.hl7.org"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+   <!-- Bootstrap core CSS -->
+
+   <!-- Latest compiled and minified CSS -->
+
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <link href="assets/css/ci-styles-fig.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+</head>
+
+<body markdown="1"/>
+
+</html>
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
+
+   <div id="ig-status">
+    <b>Diagnostic Report FHIR Implementation Guide  1.0.0</b>
+</div>
+
+  </div>
+  <div class="container">  <!-- container -->
+ </div>
+ </div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4//index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guidance.html">Guidance</a></li>
+       <li><a href="conformance.html">Conformance</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <!--<li><a href="structuremaps.html">Mappings</a></li>-->
+        <li><a href="extensions.html">Extensions</a></li>
+       <li><a href="mappings.html">Mapping from requirements</a></li>
+       <!-- <li><a href="terminology.html">Terminology</a></li>-->
+        <!--<li><a href="searchparams.html">Search Parameters</a></li>-->
+        <!--<li><a href="capstatements.html">Capability Statements</a></li>-->
+        <!--<li><a href="security.html">Security</a></li>-->
+        <li><a href="downloads.html">Downloads</a></li>
+       <li><a href="disclaimers.html">Disclaimers</a></li>
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
+
+<div id="segment-content" class="segment">  <!-- segment-content -->
+<div class="container">  <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+
+<!-- ============BreadCrumb=============== -->
+
+<!--<nav class="breadcrumb">
+  
+    
+      <a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <span class="breadcrumb-item active">Mapping from requirements</span>
+    
+    
+    
+    
+    
+
+</nav>
+-->
+
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<h1 id="mapping-from-requirements">Mapping from requirements</h1>
+<p id="publish-box">
+    This is release  1.0.0 of Diagnostic Report FHIR Implementation Guide. It is based on  <a href="http://hl7.org/fhir/R4/">FHIR version 4.0.1</a>. 
+</p>
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+<ul class="no_toc" id="markdown-toc">
+  <li><a href="#mapping-from-requirements" id="markdown-toc-mapping-from-requirements">Mapping from requirements</a>    <ul>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#mapping-from-ehealth-pathology-report---information-requirements-v11-information-requirements" id="markdown-toc-mapping-from-ehealth-pathology-report---information-requirements-v11-information-requirements">Mapping from eHealth Pathology Report - Information Requirements v1.1 information requirements</a></li>
+      <li><a href="#mapping-from-ehealth-diagnostic-imaging-report---information-requirements-v11-information-requirements" id="markdown-toc-mapping-from-ehealth-diagnostic-imaging-report---information-requirements-v11-information-requirements">Mapping from eHealth Diagnostic Imaging Report - Information Requirements v1.1 information requirements</a></li>
+      <li><a href="#legend-for-mapping-from-requirements" id="markdown-toc-legend-for-mapping-from-requirements">Legend for mapping from requirements</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The Diagnostic Report implementation guide is intended to support multiple usage scenarios; some profiles described within this implementation guide are reused across usage scenarios and other implementation guides.</p>
+
+<p>This informative section provides a mapping from the requirements of each end-product clinical specification to elements in a profiled FHIR resource. At the time of publication of this implementation guide the only end-product clinical specification supported is TBD (TBD).</p>
+
+<p>The mapping from requirements table below demonstrates the logical decomposition of each requirement to the lowest possible element in an applicable profile.</p>
+
+<h2 id="mapping-from-ehealth-pathology-report---information-requirements-v11-information-requirements">Mapping from eHealth Pathology Report - Information Requirements v1.1 information requirements</h2>
+<p>This informative section provides mapping from the data items (i.e. requirements) in <a href="index.html#NEHT2013am">eHealth Pathology Report - Information Requirements v1.1 [NEHT2013am]</a>.</p>
+
+<p>The table below matches the data items to the corresponding supported element in the <a href="??">TBD profile</a> profile, or referenced profile (e.g. <a href="TBD">TBD</a>). The hierarchy column demonstrates the path to that supported element from the root Composition.</p>
+
+<p>See the <a href="mappings.html#legend-for-mapping-from-requirements">legend</a> for information on the columns used to present the mapping content.</p>
+
+<table class="list" width="100%">
+	<col style="width:20%" />
+	<col style="width:7%" />
+	<col style="width:20%" />
+	<col style="width:25%" />
+	<col style="width:28%" />
+            <thead>
+                <tr>
+                    <th>Requirement</th>
+                    <th>Req. No</th>
+                    <th>Element name</th>
+                    <th>Hierarchy</th>
+                    <th>Additional notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+             </tbody>
+</table>
+
+<h2 id="mapping-from-ehealth-diagnostic-imaging-report---information-requirements-v11-information-requirements">Mapping from eHealth Diagnostic Imaging Report - Information Requirements v1.1 information requirements</h2>
+<p>This informative section provides mapping from the data items (i.e. requirements) in <a href="index.html#TBD">eHealth Diagnostic Imaging Report - Information Requirements v1.1 [TBD]</a>.</p>
+
+<p>The table below matches the data items to the corresponding supported element in the <a href="TBD">TBD profile</a> profile, or referenced profile (e.g. <a href="TBD">TBD</a>). The hierarchy column demonstrates the path to that supported element from the root Composition.</p>
+
+<p>See the <a href="mappings.html#legend-for-mapping-from-requirements">legend</a> for information on the columns used to present the mapping content.</p>
+
+<table class="list" width="100%">
+	<col style="width:20%" />
+	<col style="width:7%" />
+	<col style="width:20%" />
+	<col style="width:25%" />
+	<col style="width:28%" />
+            <thead>
+                <tr>
+                    <th>Requirement</th>
+                    <th>Req. No</th>
+                    <th>Element name</th>
+                    <th>Hierarchy</th>
+                    <th>Additional notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+             </tbody>
+</table>
+
+<h2 id="legend-for-mapping-from-requirements">Legend for mapping from requirements</h2>
+
+<p>A mappings from requirements table demonstrates the logical decomposition of each requirement to the lowest possible element in an applicable profile.</p>
+
+<table class="list" width="100%">
+	<col style="width:20%" />
+	<col style="width:20%" />
+	<col style="width:20%" />
+	<col style="width:20%" />
+	<col style="width:20%" />
+            <thead>
+                <tr>
+                    <th>Requirement</th>
+                    <th>Req. No</th>
+                    <th>Element name</th>
+                    <th>Hierarchy</th>
+                    <th>Additional notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p>The heading text of the requirement as taken from the requirements specification.</p></td>
+                    <td><p>The requirement number as taken from the requirements specification.</p></td>
+                    <td>
+                        <p>Either the name of the lowest element in a profiled FHIR resource that addresses the requirement or 'N/A' where 
+                        the requirement has been deemed not applicable to a FHIR profile.</p>
+                       <p>If the lowest possible decomposition is to the resource then only the resource name (e.g. Patient) is present. 
+                    If the lowest possible decomposition is to one or more child elements of a FHIR resource then a dot notation is 
+                    used to indicate the hierarchical relationship.</p>
+                       <p>For example Patient.communication.language indicates 
+                    the requirement maps to the language element, that is a child of the communication element, 
+                    in the Patient FHIR resource.</p>
+                    </td>
+                    <td>
+                        <p>Either the full hierarchical path from the root FHIR resource (e.g. Composition) to the element 
+                    the requirement is mapped to or 'N/A' where the requirement has been deemed not applicable to a FHIR profile.</p>
+                        <p>A dot notation is used to demonstrate hierarchy within a FHIR resource.</p>
+                        <p>An arrow '<span style="font-family:courier;">&#62;</span>' is used to denote the reference connecting one FHIR resource 
+                    to another from the linking element. For example Composition.subject&gt; Patient or Composition.author&gt; Patient.</p>
+                    <p>Where a requirement is addressed by multiple elements, the elements are presented in order of appearance in the profiled FHIR resource.</p>
+                    </td>
+                    <td>
+                        <p>Additional notes are provided where a gap between a requirement, or parts of a requirement, and the 
+                    profiles is identified. Where a requirement is fully addressed by the mapped elements then no entry in this 
+                    column is expected.</p>
+                    </td>
+                </tr>
+             </tbody>
+</table>
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+
+</div>
+
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+
+</div>  <!-- /segment-content -->
+
+
+
+
+
+
+
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+        <div class="inner-wrapper">
+            <p>Document ID: DH-xxx:2020</p>
+            <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
+            <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
+            <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Wed, Feb 5, 2020 13:22+1000. |
+                <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                </span>
+            </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "implementationguide-diagnosticreport-1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DiagnosticReport</h2><p>The official URL for this implementation guide is: </p><pre>http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1</pre><div><p>This implementation guide is an HL7™ FHIR® specification to represent a Diagnostic Report (DR).</p>\n<p>The primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.</p>\n<p>This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.</p>\n<p>This implementation guide does not describe transport or persistence mechanism of the resources described by it.</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
+  fhir:ImplementationGuide.name [ fhir:value "DiagnosticReport"];
+  fhir:ImplementationGuide.title [ fhir:value "Diagnostic Report"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ImplementationGuide.date [ fhir:value "2020-02-05T13:22:05+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "help@digitalhealth.gov.au" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "This implementation guide is an HL7™ FHIR® specification to represent a Diagnostic Report (DR).\n \nThe primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.\n \nThis implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.\n \nThis implementation guide does not describe transport or persistence mechanism of the resources described by it."];
+  fhir:ImplementationGuide.copyright [ fhir:value "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."];
+  fhir:ImplementationGuide.packageId [ fhir:value "au.electronichealth.diagnosticreport"];
+  fhir:ImplementationGuide.license [ fhir:value "Apache-2.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "aubaser4" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org.au/fhir/base";
+       fhir:link <http://hl7.org.au/fhir/base>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.au.base" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-organization-ident-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-ident-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization with Mandatory Identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-1.2.36.1.2001.1001.105.100001.5437512835128.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/1.2.36.1.2001.1001.105.100001.5437512835128>;
+         fhir:Reference.reference [ fhir:value "Organization/1.2.36.1.2001.1001.105.100001.5437512835128" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization example 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-021fff67-c5ec-438f-9520-ce9bafee1306.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/021fff67-c5ec-438f-9520-ce9bafee1306>;
+         fhir:Reference.reference [ fhir:value "Organization/021fff67-c5ec-438f-9520-ce9bafee1306" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization example 2" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-hallam-medical-clinic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/hallam-medical-clinic>;
+         fhir:Reference.reference [ fhir:value "Organization/hallam-medical-clinic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization example 3" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "TBD" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
