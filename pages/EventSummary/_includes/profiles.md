@@ -49,6 +49,9 @@
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>                                
                             </ul>
+                              <ul class="frm-set">
+                                <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>                                
+                            </ul>
                         </td>   
                         <td class="frm-null"/> 
                         <td class="frm-set">
@@ -138,6 +141,11 @@
               <td><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></td>
               <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitioner.html">AU Base Practitioner</a></td>
               <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
+          </tr>
+          <tr>
+              <td><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
+              <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           </tr>
         </table>
       </div>
