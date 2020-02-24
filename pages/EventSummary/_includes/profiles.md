@@ -49,7 +49,7 @@
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>                                
                             </ul>
-                              <ul class="frm-set">
+                            <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>                                
                             </ul>
                         </td>   
