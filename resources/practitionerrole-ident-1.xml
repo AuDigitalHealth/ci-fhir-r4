@@ -44,7 +44,7 @@
         <human
           value="If present, a practitioner shall at least have a reference, an identifier or a display"/>
         <expression
-          value="practitioner.exists() implies (practitioner.reference.exists() or practitioner.identifier.exists() or practitioner.display.exists())"/>
+          value="practitioner.exists() implies practitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
           value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
         />
@@ -55,7 +55,7 @@
         <human
           value="If present, an organization shall at least have a reference, an identifier or a display"/>
         <expression
-          value="organization.exists() implies (organization.reference.exists() or organization.identifier.exists() or organization.display.exists())"/>
+          value="organization.exists() implies organization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
           value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
         />
