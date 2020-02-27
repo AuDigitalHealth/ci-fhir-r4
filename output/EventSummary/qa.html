@@ -1,14 +1,30 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 87, errors = 0, warn = 4, info = 2 -->
+<!-- broken links = 94, errors = 5, warn = 5, info = 4 -->
 <head>
   <title>EventSummary : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for EventSummary</h1>
- <p>Generated Wed Sep 25 14:18:19 AEST 2019, FHIR version 4.0.0 for au.electronichealth.eventsummary# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
-<p style="background-color: #ffcccc">IG Publisher Version: v0.9.81-SNAPSHOT, which is out of date. The current version is v0.9.82-SNAPSHOT <a hhef="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
+ <p>Generated Thu Feb 27 12:05:41 AEST 2020, FHIR version 4.0.1 for au.electronichealth.eventsummary# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
+<p style="background-color: #ffcccc">IG Publisher Version: v1.0.64-SNAPSHOT, which is out of date. The current version is v1.0.67-SNAPSHOT <a href="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -17,7 +33,7 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>86</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>93</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_examples_organization-021fff67-c5ec-438f-9520-ce9bafee1306"><b>C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306</b></a></td><td><b>0</b></td><td><b>1</b></td>
@@ -32,7 +48,7 @@
      <td><a href="#C__work_git_ci-fhir-r4_examples_organization-8338f6a2-e710-4a43-8318-f02514c3c709"><b>C:\work\git\ci-fhir-r4\examples\organization-8338f6a2-e710-4a43-8318-f02514c3c709</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_examples_organization-hallam-medical-clinic"><b>C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_examples_organization-hallam-medical-clinic"><b>C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_examples_organization-territory-medical-centre-0810"><b>C:\work\git\ci-fhir-r4\examples\organization-territory-medical-centre-0810</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -41,7 +57,7 @@
      <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-1.2.36.1.2001.1001.105.100001.1001.275"><b>C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100001.1001.275</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-1.2.36.1.2001.1001.105.100002.1.671"><b>C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671</b></a></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-1.2.36.1.2001.1001.105.100002.1.671"><b>C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671</b></a></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-40a94071-8373-4d53-a788-63b79c75a3c1"><b>C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -50,10 +66,10 @@
      <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-54a065dc-8666-11e9-bc42-526af7764f64"><b>C:\work\git\ci-fhir-r4\examples\practitioner-54a065dc-8666-11e9-bc42-526af7764f64</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-dorian-minderbinder"><b>C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-dorian-minderbinder"><b>C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-jane-eyrewright"><b>C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_examples_practitioner-jane-eyrewright"><b>C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright</b></a></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_resources_implementationguide-eventsummary-1"><b>C:\work\git\ci-fhir-r4\resources\implementationguide-eventsummary-1</b></a></td><td><b>0</b></td><td><b>0</b></td>
@@ -64,8 +80,11 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_resources_organization-ident-1"><b>C:\work\git\ci-fhir-r4\resources\organization-ident-1</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-fhir-r4_resources_practitioner-dh-base-1"><b>C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1</b></a></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_resources_practitioner-dh-base-1"><b>C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_resources_practitionerrole-ident-1"><b>C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
@@ -295,6 +314,27 @@
      <td><b>StructureDefinition-practitioner-dh-base-1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition-practitionerrole-ident-1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b>capstatements.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -377,10 +417,7 @@
 <h2><a href="Organization-hallam-medical-clinic.html">C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic.xml</a></h2>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Organization/hallam-medical-clinic: Organization</b></td><td><b>warning</b></td><td><b>Resource has a language, but the XHTML does not have a language tag</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -407,7 +444,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0]</b></td><td><b>information</b></td><td><b>This element does not match any known slice for the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1</b></td>
+     <td><b>Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0].code.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1</b> <span id="sl97" class="flip" onclick="flip('l97')">Show Reasoning</span><div id="l97" style="display: none"><p>&nbsp;</p>This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1: <ul><li>Practitioner.qualification[0]: discriminator = true and ('http://hl7.org.au/id/ahpra-registration-number' in identifier.system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.communication[0]</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 not found by validator</b></td>
@@ -434,7 +474,10 @@
 <h2><a href="Practitioner-dorian-minderbinder.html">C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder.xml</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner/dorian-minderbinder: Practitioner.qualification[0].code.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -445,7 +488,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Practitioner/jane-eyrewright: Practitioner.communication[0]</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (codes = urn:ietf:bcp:47#asf)</b> (<a href="qa-tx.html#l6">see Tx log</a>)</td>
+     <td><b>Practitioner/jane-eyrewright: Practitioner.communication[0]</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (codes = urn:ietf:bcp:47#asf)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner/jane-eyrewright: Practitioner.communication[0].coding[0]</b></td><td><b>warning</b></td><td><b>The display &quot;Auslan&quot; is not a valid display for the code {urn:ietf:bcp:47}asf - should be one of [&quot;Australian Sign Language&quot;]</b></td>
    </tr>
 </table>
 <hr/>
@@ -477,7 +523,33 @@
 <h2><a href="StructureDefinition-practitioner-dh-base-1.html">C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1.xml</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1#Practitioner.qualification.identifier</b></td><td><b>error</b></td><td><b>No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1#Practitioner.qualification.code</b></td><td><b>error</b></td><td><b>No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1#Practitioner.qualification.period</b></td><td><b>error</b></td><td><b>No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1#Practitioner.qualification.issuer</b></td><td><b>error</b></td><td><b>No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1</b></td><td><b>error</b></td><td><b>The profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1 has 4 elements in the differential (id: Practitioner.qualification.identifier, id: Practitioner.qualification.code, id: Practitioner.qualification.period, id: Practitioner.qualification.issuer) that don't have a matching element in the snapshot: check that the path and definitions are legal in the differential (including order)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-fhir-r4_resources_practitionerrole-ident-1"> </a>
+<h2><a href="StructureDefinition-practitionerrole-ident-1.html">C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 </body>

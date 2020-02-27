@@ -11,7 +11,7 @@
   "title": "Event Summary",
   "status": "draft",
   "experimental": true,
-  "date": "2019-09-25T14:17:39+10:00",
+  "date": "2020-02-27T12:00:46+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -28,7 +28,7 @@
   "packageId": "au.electronichealth.eventsummary",
   "license": "Apache-2.0",
   "fhirVersion": [
-    "4.0.0"
+    "4.0.1"
   ],
   "dependsOn": [
     {
@@ -89,6 +89,23 @@
           "reference": "StructureDefinition/practitioner-dh-base-1"
         },
         "name": "Base Practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-practitionerrole-ident-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/practitionerrole-ident-1"
+        },
+        "name": "PractitionerRole with Mandatory Identifier",
         "exampleBoolean": false
       },
       {

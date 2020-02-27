@@ -15,7 +15,7 @@
   <title value="Event Summary"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2019-09-25T14:17:39+10:00"/>
+  <date value="2020-02-27T12:00:46+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
   <copyright value="Copyright &#xA9; 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <packageId value="au.electronichealth.eventsummary"/>
   <license value="Apache-2.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="aubaser4">
     <uri value="http://hl7.org.au/fhir/base"/>
     <packageId value="hl7.fhir.au.base"/>
@@ -71,6 +71,19 @@
         <reference value="StructureDefinition/practitioner-dh-base-1"/>
       </reference>
       <name value="Base Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-practitionerrole-ident-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitionerrole-ident-1"/>
+      </reference>
+      <name value="PractitionerRole with Mandatory Identifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
