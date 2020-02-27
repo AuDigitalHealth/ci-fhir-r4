@@ -45,7 +45,11 @@
                         <td class="frm-category">Management</td>
                     </tr> 
                     <tr class="frm-contents">
-                        <td class="frm-null" />
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>                                
+                            </ul>
+                        </td>
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <!--<li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>-->
@@ -134,6 +138,11 @@
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
             <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
+          </tr>
+          <tr>
+              <td><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
+              <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           </tr>
         </table>
       </div>
