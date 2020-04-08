@@ -47,6 +47,9 @@
                     <tr class="frm-contents">
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></li>                                
+                            </ul>
+                            <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>                                
                             </ul>
                             <ul class="frm-set">
@@ -136,6 +139,11 @@
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organisation.html">AU Base Organization</a></td>
             <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
+          </tr>
+          <tr>
+              <td><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></td>
+              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-patient.html">AU Base Patient</a></td>
+              <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
           </tr>
           <tr>
               <td><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></td>
