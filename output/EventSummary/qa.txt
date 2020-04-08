@@ -1,11 +1,11 @@
 ﻿EventSummary : Validation Results
 =========================================
 
-err = 10, warn = 10, info = 8
-IG Publisher Version: v1.0.64-SNAPSHOT Out of date - current version is v1.0.67-SNAPSHOT
-Generated Thu Feb 27 12:05:47 AEST 2020. FHIR version 4.0.1 for au.electronichealth.eventsummary# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+err = 10, warn = 14, info = 8
+IG Publisher Version: v1.0.76-SNAPSHOT Out of date - current version is v1.0.78-SNAPSHOT
+Generated Wed Apr 08 17:41:13 AEST 2020. FHIR version 4.0.1 for au.electronichealth.eventsummary# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
- Build Errors : 93 / 1
+ Build Errors : 100 / 1
  C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100000 : 0 / 0
  C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100001.5437512835128 : 0 / 1
@@ -21,6 +21,7 @@ Generated Thu Feb 27 12:05:47 AEST 2020. FHIR version 4.0.1 for au.electronichea
  C:\work\git\ci-fhir-r4\resources\implementationguide-eventsummary-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-dh-base-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-ident-1 : 0 / 0
+ C:\work\git\ci-fhir-r4\resources\patient-mhr-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1 : 5 / 0
  C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1 : 0 / 1
 </table>
@@ -92,6 +93,13 @@ ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organizati
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organization-ident-1.json.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organization-ident-1.ttl.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-organization-ident-1.xml.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1-definitions.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1-examples.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1-mappings.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1.json.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1.ttl.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-patient-mhr-1.xml.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1-definitions.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1-examples.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\EventSummary\StructureDefinition-practitioner-dh-base-1-mappings.html: The html source does not contain the publish box
@@ -129,19 +137,22 @@ WARNING: Organization/1.2.36.1.2001.1001.105.100001.5437512835128: Organization.
 == C:\work\git\ci-fhir-r4\examples\organization-territory-medical-centre-0810.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100001.1001.275.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671.xml ==
-INFORMATION: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0].code.coding[0]: Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0' is unknown so the code cannot be validated
+INFORMATION: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0].code.coding[0]: Code System URI "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0" is unknown so the code cannot be validated
 INFORMATION: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0]: This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1
 WARNING: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.communication[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 not found by validator
 == C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-54a065dc-8666-11e9-bc42-526af7764f64.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder.xml ==
-INFORMATION: Practitioner/dorian-minderbinder: Practitioner.qualification[0].code.coding[0]: Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0' is unknown so the code cannot be validated
+INFORMATION: Practitioner/dorian-minderbinder: Practitioner.qualification[0].code.coding[0]: Code System URI "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0" is unknown so the code cannot be validated
 == C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright.xml ==
 INFORMATION: Practitioner/jane-eyrewright: Practitioner.communication[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (codes = urn:ietf:bcp:47#asf)
 WARNING: Practitioner/jane-eyrewright: Practitioner.communication[0].coding[0]: The display "Auslan" is not a valid display for the code {urn:ietf:bcp:47}asf - should be one of ["Australian Sign Language"]
 == C:\work\git\ci-fhir-r4\resources\implementationguide-eventsummary-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\organization-dh-base-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\organization-ident-1.xml ==
+== C:\work\git\ci-fhir-r4\resources\patient-mhr-1.xml ==
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1#Patient.generalPractitioner: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/PractitionerRole-dh-base-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1.xml ==
 ERROR: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1#Practitioner.qualification.identifier: No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
 ERROR: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1#Practitioner.qualification.code: No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)

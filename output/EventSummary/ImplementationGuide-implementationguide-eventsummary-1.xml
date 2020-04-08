@@ -15,7 +15,7 @@
   <title value="Event Summary"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-02-27T12:00:46+10:00"/>
+  <date value="2020-04-08T17:40:16+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -84,6 +84,19 @@
         <reference value="StructureDefinition/practitionerrole-ident-1"/>
       </reference>
       <name value="PractitionerRole with Mandatory Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-patient-mhr-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-mhr-1"/>
+      </reference>
+      <name value="patient-mhr-1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

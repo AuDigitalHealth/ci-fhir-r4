@@ -11,7 +11,7 @@
   "title": "Event Summary",
   "status": "draft",
   "experimental": true,
-  "date": "2020-02-27T12:00:46+10:00",
+  "date": "2020-04-08T17:40:16+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -106,6 +106,23 @@
           "reference": "StructureDefinition/practitionerrole-ident-1"
         },
         "name": "PractitionerRole with Mandatory Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-patient-mhr-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-mhr-1"
+        },
+        "name": "patient-mhr-1",
         "exampleBoolean": false
       },
       {

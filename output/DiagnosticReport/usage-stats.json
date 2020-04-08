@@ -6,8 +6,18 @@
   "profiles": {
     "Organization": [
       {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1",
+        "title": "Base Organization"
+      },
+      {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1",
         "title": "Organization with Mandatory Identifier"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1",
+        "title": "My Health Record Patient"
       }
     ],
     "PractitionerRole": [
@@ -18,6 +28,22 @@
     ]
   },
   "usage": {
+    "http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration": [
+      "Patient"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator": [
+      "Patient.birthDate",
+      "Patient.deceased[x]"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/ihi-record-status": [
+      "Patient.identifier"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/ihi-status": [
+      "Patient.identifier"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/indigenous-status": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -34,6 +60,24 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
