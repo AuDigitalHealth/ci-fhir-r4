@@ -47,12 +47,15 @@
                     <tr class="frm-contents">
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></li>                                
+                            </ul>
+                            <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>                                
                             </ul>
                         </td>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <!--<li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>-->
+                                <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>
                                 <li><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></li>
                             </ul>
                         </td>                         
@@ -125,19 +128,19 @@
             <td class="frm-null"/>
           </tr>
           <tr>
-            <td class="frm-null"/>
-            <td class="frm-null"/>
-            <td class="frm-null"/>
-<!--
               <td><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></td>
               <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
               <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
--->              
           </tr> 
           <tr>
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
             <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
+          </tr>
+          <tr>
+              <td><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></td>
+              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-patient.html">AU Base Patient</a></td>
+              <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
           </tr>
           <tr>
               <td><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></td>

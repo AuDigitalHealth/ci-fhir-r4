@@ -30,10 +30,5 @@
         <td>The binding of contact.relationship will be done in AU Base.</td>
         <td>TBD</td>
   </tr>
-  <tr>
-        <td>generalPractitioner</td>
-        <td>The profile Base PractitionerRole will be added to this IG.</td>
-        <td>TBD</td>
-  </tr>
  </tbody>
 </table>
