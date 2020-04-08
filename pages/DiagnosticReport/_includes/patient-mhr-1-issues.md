@@ -8,7 +8,7 @@
   <tr>
         <td>Profile URL</td>
         <td>The canonical URL for this profile may move to a version independent canonical URL pending design decisions around the support of additional elements.</td>
-        <td>TBD</td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/17">ci-fhir-r4/issues/17</a></td>
   </tr>
   <tr>
         <td>Patient (biological sex)</td>

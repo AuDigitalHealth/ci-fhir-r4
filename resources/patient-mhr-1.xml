@@ -82,14 +82,6 @@
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Patient.identifier:ihiNumber.extension:ihiStatus">
-      <path value="Patient.identifier.extension"/>
-      <sliceName value="ihiStatus"/>
-    </element>
-    <element id="Patient.identifier:ihiNumber.extension:ihiRecordStatus">
-      <path value="Patient.identifier.extension"/>
-      <sliceName value="ihiRecordStatus"/>
-    </element>
     <element id="Patient.active">
       <path value="Patient.active"/>
       <fixedBoolean value="true"/>
@@ -190,6 +182,10 @@
     </element>
     <element id="Patient.contact.organization">
       <path value="Patient.contact.organization"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1"/>
+      </type>
       <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.period">
