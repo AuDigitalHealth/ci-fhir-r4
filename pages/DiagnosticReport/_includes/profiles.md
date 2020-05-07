@@ -74,7 +74,11 @@
                     </tr> 
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                         <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observatio (Simple Pathology Observation)</a></li>                                
+                            </ul>
+                        </td>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
@@ -147,7 +151,12 @@
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
               <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           </tr>
-        </table>
+           <tr>
+              <td><a href="StructureDefinition-observation-path-simple-1.html">Simple Pathology Observation</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
+              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
+          </tr>
+       </table>
       </div>
   </div>  <!-- /inner-wrapper -->
   </div>  <!-- /row -->
