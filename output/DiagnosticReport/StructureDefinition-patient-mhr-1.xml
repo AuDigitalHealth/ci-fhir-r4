@@ -46,7 +46,7 @@
   <name value="PatientMHR"/>
   <title value="My Health Record Patient"/>
   <status value="draft"/>
-  <date value="2020-04-09T11:03:09+10:00"/>
+  <date value="2020-05-07T14:37:37+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -1752,7 +1752,7 @@
       <path value="Patient.identifier.period"/>
       <short value="Medicare number validity period"/>
       <definition value="Time period during which identifier is/was valid for use."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <base>
         <path value="Identifier.period"/>
@@ -1898,7 +1898,7 @@
       <short value="Medicare number expiry date"/>
       <definition value="Expiry date for Medicare number. This is typically month and year only, but may incude day date part when this is a temporary Medicare number."/>
       <comment value="The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <base>
         <path value="Period.end"/>

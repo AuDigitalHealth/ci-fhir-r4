@@ -94,6 +94,13 @@
             <name value="patient-mhr-1"/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/servicerequest-path-report-1"/>
+            </reference>
+            <name value="servicerequest-path-report-1"/>
+            <exampleBoolean value="false"/>
+        </resource>
         <!--<resource>
             <reference>
                 <reference value="StructureDefinition/allergyintolerance-summary-1"/>
@@ -164,6 +171,13 @@
             <name value="Base Practitioner"/>
             <exampleBoolean value="false"/>
         </resource>-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/composition-pathreport-1"/>
+            </reference>
+            <name value="Base Practitioner"/>
+            <exampleBoolean value="false"/>
+        </resource>
 
         <!-- BUNDLE EXAMPLES -->
 
@@ -268,29 +282,29 @@
             <name value="Organization example 3"/>
             <exampleBoolean value="true"/>
         </resource>-->
-        
+
         <!-- ORGANIZATION WITH MANDATORY IDENTIFIER EXAMPLES -->
-        
-        <resource>         
+
+        <resource>
             <reference>
                 <reference value="Organization/1.2.36.1.2001.1001.105.100001.5437512835128"/>
             </reference>
             <name value="Organization example 1"/>
-            <exampleBoolean value="true"/>   
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Organization/021fff67-c5ec-438f-9520-ce9bafee1306"/>
             </reference>
             <name value="Organization example 2"/>
-            <exampleBoolean value="true"/>   
+            <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Organization/hallam-medical-clinic"/>
             </reference>
             <name value="Organization example 3"/>
-            <exampleBoolean value="true"/>   
+            <exampleBoolean value="true"/>
         </resource>
 
         <!-- BASE PRACTITIONER EXAMPLES -->

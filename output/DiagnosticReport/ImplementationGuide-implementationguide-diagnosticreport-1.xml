@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-04-09T11:03:09+10:00"/>
+  <date value="2020-05-07T14:37:37+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -78,12 +78,38 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-servicerequest-path-report-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/servicerequest-path-report-1"/>
+      </reference>
+      <name value="servicerequest-path-report-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-organization-dh-base-1.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/organization-dh-base-1"/>
       </reference>
       <name value="Base Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-composition-pathreport-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/composition-pathreport-1"/>
+      </reference>
+      <name value="Base Practitioner"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

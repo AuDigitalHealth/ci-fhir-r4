@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-04-09T11:03:09+10:00",
+  "date": "2020-05-07T14:37:37+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -99,6 +99,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-servicerequest-path-report-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/servicerequest-path-report-1"
+        },
+        "name": "servicerequest-path-report-1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-organization-dh-base-1.html"
           }
         ],
@@ -106,6 +123,23 @@
           "reference": "StructureDefinition/organization-dh-base-1"
         },
         "name": "Base Organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-composition-pathreport-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/composition-pathreport-1"
+        },
+        "name": "Base Practitioner",
         "exampleBoolean": false
       },
       {
