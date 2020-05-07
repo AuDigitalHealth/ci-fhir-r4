@@ -1,19 +1,21 @@
 ﻿DiagnosticReport : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 0
-IG Publisher Version: v1.0.78-SNAPSHOT
-Generated Thu Apr 09 11:06:33 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+err = 0, warn = 13, info = 2
+IG Publisher Version: v1.0.89-SNAPSHOT
+Generated Thu May 07 14:38:24 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
- Build Errors : 57 / 1
+ Build Errors : 71 / 1
  C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100001.5437512835128 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic : 0 / 0
+ C:\work\git\ci-fhir-r4\resources\composition-pathreport-1 : 0 / 6
  C:\work\git\ci-fhir-r4\resources\implementationguide-diagnosticreport-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-dh-base-1 : 0 / 1
  C:\work\git\ci-fhir-r4\resources\organization-ident-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\patient-mhr-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1 : 0 / 2
+ C:\work\git\ci-fhir-r4\resources\servicerequest-path-report-1 : 0 / 2
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be au.electronichealth.diagnosticreport
@@ -33,6 +35,13 @@ ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\Organization-hallam-medica
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\Organization-hallam-medical-clinic.json.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\Organization-hallam-medical-clinic.ttl.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\Organization-hallam-medical-clinic.xml.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1-definitions.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1-examples.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1-mappings.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1.json.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1.ttl.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-composition-pathreport-1.xml.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-organization-dh-base-1-definitions.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-organization-dh-base-1-examples.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-organization-dh-base-1-mappings.html: The html source does not contain the publish box
@@ -61,6 +70,13 @@ ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-practi
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-practitionerrole-ident-1.json.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-practitionerrole-ident-1.ttl.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-practitionerrole-ident-1.xml.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1-definitions.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1-examples.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1-mappings.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1.json.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1.ttl.html: The html source does not contain the publish box
+ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\StructureDefinition-servicerequest-path-report-1.xml.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\capstatements.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\conformance.html: The html source does not contain the publish box
 ERROR: C:\work\git\ci-fhir-r4\output\DiagnosticReport\disclaimers.html: The html source does not contain the publish box
@@ -79,6 +95,13 @@ WARNING: Organization/021fff67-c5ec-438f-9520-ce9bafee1306: Organization.identif
 == C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100001.5437512835128.xml ==
 WARNING: Organization/1.2.36.1.2001.1001.105.100001.5437512835128: Organization.identifier[0].type: No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)
 == C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic.xml ==
+== C:\work\git\ci-fhir-r4\resources\composition-pathreport-1.xml ==
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.section.entry: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.section.entry: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1 is valid constraint on the base because it is not known
+INFORMATION: StructureDefinition/composition-pathreport-1: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]: Code System URI "https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/composition-pathreport-1: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]: Code System URI "https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" is unknown so the code cannot be validated
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\implementationguide-diagnosticreport-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\organization-dh-base-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1: The Implementation Guide contains no examples for this profile
@@ -89,3 +112,6 @@ WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patie
 == C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1#PractitionerRole.practitioner: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1: The Implementation Guide contains no examples for this profile
+== C:\work\git\ci-fhir-r4\resources\servicerequest-path-report-1.xml ==
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1#ServiceRequest.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1: The Implementation Guide contains no examples for this profile

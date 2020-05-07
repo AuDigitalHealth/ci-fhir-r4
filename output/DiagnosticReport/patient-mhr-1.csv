@@ -145,7 +145,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.identifier.value","","","",1,1,"","","Y","string {[]} {[]}
 ","Medicare number including optional individual reference number","10 digit Medicare number with optional 11th digit individual reference number (IRN).","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",11,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","CX.1 / EI.1"
-"Patient.identifier.period","","","",1,1,"","","Y","Period {[]} {[]}
+"Patient.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Medicare number validity period","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.effectiveTime or implied by context","CX.7 + CX.8"
 "Patient.identifier.period.id","","","",0,1,"","","","string {[]} {[]}
@@ -159,7 +159,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./low","DR.1"
-"Patient.identifier.period.end","","","",1,1,"","","Y","dateTime {[]} {[]}
+"Patient.identifier.period.end","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","Medicare number expiry date","Expiry date for Medicare number. This is typically month and year only, but may incude day date part when this is a temporary Medicare number.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./high","DR.2"
