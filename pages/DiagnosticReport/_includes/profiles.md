@@ -164,7 +164,6 @@
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
               <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           </tr>
-          </tr>
          <tr>
               <td><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></td>
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
@@ -174,7 +173,8 @@
               <td><a href="StructureDefinition-observation-path-simple-1.html">Simple Pathology Observation</a></td>
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
               <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-        </table>
+        </tr>
+      </table>
       </div>
   </div>  <!-- /inner-wrapper -->
   </div>  <!-- /row -->
