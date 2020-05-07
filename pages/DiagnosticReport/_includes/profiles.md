@@ -76,7 +76,11 @@
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                      <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></li>
+                            </ul>
+                        </td>
                         <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-break"><td colspan="6"/></tr>
@@ -146,6 +150,11 @@
               <td><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></td>
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
               <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
+          </tr>
+        <tr>
+              <td><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
+              <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
           </tr>
         </table>
       </div>
