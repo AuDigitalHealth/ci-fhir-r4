@@ -23,6 +23,24 @@
   <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-diagnosticreport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport">
+      <path value="DiagnosticReport" />
+      <short value="Pathology Report" />
+      <definition value="A pathology report sent from the service provider to the requester, i.e. the results including any interpretation provided, for an individual‘s pathology test." />
+    </element>
+    <element id="DiagnosticReport.meta">
+      <path value="DiagnosticReport.meta" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.meta.profile">
+      <path value="DiagnosticReport.meta.profile" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.language">
+      <path value="DiagnosticReport.language" />
+      <min value="1" />
+      <fixedCode value="en-AU" />
+    </element>
     <element id="DiagnosticReport.identifier">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -183,6 +201,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="DiagnosticReport.presentedForm" />
+      <short value="Attached pathology report" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />

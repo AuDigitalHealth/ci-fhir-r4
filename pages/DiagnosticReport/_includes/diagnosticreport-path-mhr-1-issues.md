@@ -10,7 +10,7 @@
     <td><p>Some consideration required for supporting in this profile how to support the requirement that the diagnostic report should store one URI per report or test referencing the externally images or other useful content. Where a URI is not available, additional narrative might be included stating a phone number or other contact details for further enquiry.</p>
         <p>This is a requirement in Diagnostic Imaging Report but still under consideration as to whether or not this is to be supported for Pathology Reports.</p>
         <p>Possibly an endPoint extension may be useful, possibly a simple extension for only the use case is appropriate.</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/32">ci-fhir-r4/issues/32</a></td>
    </tr>
   <tr>
     <td>meta.profile (invariant on profile value)</td>
@@ -18,7 +18,7 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a></td>
    </tr>
   <tr>
-    <td>status (terminology binding missing)</td>
+    <td>status (terminology binding)</td>
     <td><p>We need to create a more constrained value set for reporting the status of a service request for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics reports.</p>
         <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-request-status.html">http://hl7.org/fhir/R4/valueset-request-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" & "unknown".</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
@@ -32,10 +32,10 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/28">ci-fhir-r4/issues/28</a></td>
    </tr>
    <tr>
-    <td>code (terminology binding missing)</td>
+    <td>category (terminology binding)</td>
     <td><p>The example value set is too broad for pathology reporting - we need a value set that is a constrained value set from that example set <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html"Diagnostic Service Section Codes</a> that is restricted to the pathology appropriate codes. This value set would become required.</p>
         <p>Codes from this value set are implemented in current CDA implementations for the My Health Record system.</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-248">jira.aws.tooling/browse/FTR-248</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/25">ci-fhir-r4/issues/25</a>, and <a href="https://jira.aws.tooling/browse/FTR-953">jira.aws.tooling/browse/FTR-953</a></td>
    </tr> 
    <tr>
     <td>code (terminology binding)</td>
