@@ -78,7 +78,11 @@
                     </tr> 
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a></li>
+                            </ul>
+                        </td>
                         <td class="frm-null"/>
                       <td class="frm-set">
                             <ul class="frm-set">
