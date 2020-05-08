@@ -39,7 +39,7 @@
    <tr>
     <td>subject (Reference type too open)</td>
     <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/31">ci-fhir-r4/issues/20</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/20">ci-fhir-r4/issues/20</a></td>
    </tr>
 </tbody>
 </table>
