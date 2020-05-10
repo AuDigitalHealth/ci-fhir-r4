@@ -57,6 +57,7 @@
     </element>
     <element id="Specimen.subject">
       <path value="Specimen.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1" />
@@ -80,6 +81,7 @@
     <element id="Specimen.collection.collected[x]">
       <path value="Specimen.collection.collected[x]" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Specimen.collection.method">
       <path value="Specimen.collection.method" />
