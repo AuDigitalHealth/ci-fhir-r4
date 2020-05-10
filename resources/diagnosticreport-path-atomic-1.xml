@@ -130,6 +130,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="DiagnosticReport.code" />
+      <short value="Pathology test or test group" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:snomedImagingProcedures">
@@ -252,50 +253,6 @@
       </extension>
       <path value="DiagnosticReport.presentedForm" />
       <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.presentedForm.contentType">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="DiagnosticReport.presentedForm.contentType" />
-      <min value="1" />
-      <fixedCode value="application/pdf" />
-    </element>
-    <element id="DiagnosticReport.presentedForm.url">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="DiagnosticReport.presentedForm.url" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.presentedForm.hash">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="DiagnosticReport.presentedForm.hash" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.presentedForm.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="DiagnosticReport.presentedForm.title" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
