@@ -142,7 +142,7 @@
           <tr>
             <td><a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">Diagnostic Report</a></td>
+            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
           </tr>
 		  <tr>
             <td><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></td>
