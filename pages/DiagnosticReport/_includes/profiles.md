@@ -144,6 +144,11 @@
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base-stu3/StructureDefinition-au-composition.html">AU Base Composition</a></td>
             <td><a href="http://hl7.org/fhir/STU3/composition.html">Composition</a></td>
           </tr>
+           <tr>
+              <td><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
+              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
+        </tr>
           <tr>
               <td><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></td>
               <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
@@ -169,11 +174,6 @@
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
               <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
           </tr>
-           <tr>
-              <td><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-        </tr>
       </table>
       </div>
   </div>  <!-- /inner-wrapper -->
