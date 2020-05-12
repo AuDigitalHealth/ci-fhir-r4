@@ -19,6 +19,7 @@
     "tool": "jekyll",
     "license": "Apache-2.0",
     "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir/4.0",
+    "special-urls": ["http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1"],
     "logging": [
         "init",
         "progress",
@@ -50,7 +51,11 @@
         "ConceptMap": {"template-base": "cm.html"}
     },
     "resources": {
-         "StructureDefinition/organization-ident-1": {
+         "StructureDefinition/observation-path-simple-1": {
+            "base": "StructureDefinition-observation-path-simple-1.html",
+            "defns": "StructureDefinition-observation-path-simple-1-definitions.html"
+        },
+          "StructureDefinition/organization-ident-1": {
             "base": "StructureDefinition-organization-ident-1.html",
             "defns": "StructureDefinition-organization-ident-1-definitions.html"
         },
@@ -77,6 +82,10 @@
         "StructureDefinition/servicerequest-path-report-1": {
             "base": "StructureDefinition-servicerequest-path-report-1.html",
             "defns": "StructureDefinition-servicerequest-path-report-1-definitions.html"
+        },        
+        "StructureDefinition/specimen-collect-1": {
+            "base": "StructureDefinition-specimen-collect-1.html",
+            "defns": "StructureDefinition-specimen-collect-1-definitions.html"
         }
  }
 }
