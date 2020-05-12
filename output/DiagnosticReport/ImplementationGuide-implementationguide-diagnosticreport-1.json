@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-11T15:03:46+10:00",
+  "date": "2020-05-12T10:45:24+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -123,6 +123,23 @@
           "reference": "StructureDefinition/organization-dh-base-1"
         },
         "name": "Base Organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-observation-path-simple-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/observation-path-simple-1"
+        },
+        "name": "Simple Pathology Observation",
         "exampleBoolean": false
       },
       {
