@@ -33,7 +33,7 @@
    </tr>
    <tr>
     <td>category (terminology binding)</td>
-    <td><p>The example value set is too broad for pathology reporting - we need a value set that is a constrained value set from that example set <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html"Diagnostic Service Section Codes</a> that is restricted to the pathology appropriate codes. This value set would become required.</p>
+    <td><p>The example value set is too broad for pathology reporting - we need a value set that is a constrained value set from that example set <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a> that is restricted to the pathology appropriate codes. This value set would become required.</p>
         <p>Codes from this value set are implemented in current CDA implementations for the My Health Record system.</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/25">ci-fhir-r4/issues/25</a>, and <a href="https://jira.aws.tooling/browse/FTR-953">jira.aws.tooling/browse/FTR-953</a></td>
    </tr> 
