@@ -37,6 +37,12 @@
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1",
         "title": "Order Details for Pathology Report"
       }
+    ],
+    "Observation": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1",
+        "title": "Simple Pathology Observation"
+      }
     ]
   },
   "usage": {
@@ -58,6 +64,9 @@
     ],
     "http://hl7.org.au/fhir/StructureDefinition/information-recipient": [
       "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Observation"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -95,6 +104,9 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -104,6 +116,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
