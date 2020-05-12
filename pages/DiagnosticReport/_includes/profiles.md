@@ -77,19 +77,22 @@
                         <td class="frm-category">Request &amp; Response</td>
                     </tr> 
                     <tr class="frm-contents" height="80">
-                      <td class="frm-null"/>
-                      <td class="frm-set">
+                        <td class="frm-null"/>
+                        <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></li>
-                            </ul>
-                        </td>
-                      <td class="frm-null"/>
-                      <td class="frm-set">
+                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li> 
+                                <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a></li>
+                               <li><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></li>
+                            </ul> 
+                         </td>
+                         <td class="frm-null"/>
+                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></li>
                             </ul>
-                        </td>
-                        <td class="frm-null"/>
+                         </td>
+                         <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">
@@ -149,11 +152,21 @@
             <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
             <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
           </tr>
+           <tr>
+              <td><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
+              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
+        </tr>
           <tr>
               <td><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></td>
               <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
               <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
           </tr> 
+          <tr>
+            <td><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a></td>
+            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
+            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
+          </tr>
           <tr>
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
@@ -169,10 +182,15 @@
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
               <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           </tr>
-        <tr>
+         <tr>
               <td><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></td>
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
               <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
+          </tr>
+          <tr>
+              <td><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen Profile</a></td>
+              <td><a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a></td>
           </tr>
         </table>
       </div>
