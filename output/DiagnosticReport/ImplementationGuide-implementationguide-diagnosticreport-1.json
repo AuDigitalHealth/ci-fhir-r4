@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-12T11:14:28+10:00",
+  "date": "2020-05-12T15:33:26+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -116,6 +116,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-diagnosticreport-path-mhr-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-path-mhr-1"
+        },
+        "name": "diagnosticreport-path-mhr-1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-organization-dh-base-1.html"
           }
         ],
@@ -174,6 +191,23 @@
           "reference": "StructureDefinition/specimen-collect-1"
         },
         "name": "Collected Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-observation-path-atomic-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/observation-path-atomic-1"
+        },
+        "name": "Atomic Pathology Observation",
         "exampleBoolean": false
       },
       {
