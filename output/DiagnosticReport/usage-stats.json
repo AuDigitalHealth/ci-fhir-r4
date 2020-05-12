@@ -44,7 +44,17 @@
         "title": "Collected Specimen"
       }
     ],
+    "DiagnosticReport": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1",
+        "title": "My Health Record Pathology Report"
+      }
+    ],
     "Observation": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1",
+        "title": "Atomic Pathology Observation"
+      },
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1",
         "title": "Simple Pathology Observation"
@@ -90,6 +100,7 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
@@ -123,7 +134,11 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.differential.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
