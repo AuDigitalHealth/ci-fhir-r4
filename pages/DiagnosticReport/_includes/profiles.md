@@ -78,18 +78,19 @@
                     </tr> 
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
-                         <td class="frm-set">
+                        <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li>                                
+                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li>  
+                                <li><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></li>
                             </ul>
-                        </td>
-                        <td class="frm-null"/>
-                      <td class="frm-set">
+                         </td>
+                         <td class="frm-null"/>
+                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></li>
                             </ul>
-                        </td>
-                        <td class="frm-null"/>
+                         </td>
+                         <td class="frm-null"/>
                     </tr> 
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">
@@ -174,7 +175,12 @@
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
               <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
           </tr>
-      </table>
+          <tr>
+              <td><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen Profile</a></td>
+              <td><a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a></td>
+          </tr>
+        </table>
       </div>
   </div>  <!-- /inner-wrapper -->
   </div>  <!-- /row -->
