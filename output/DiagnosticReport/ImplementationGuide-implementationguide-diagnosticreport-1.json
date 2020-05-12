@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-07T14:37:37+10:00",
+  "date": "2020-05-12T11:14:28+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -133,6 +133,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-observation-path-simple-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/observation-path-simple-1"
+        },
+        "name": "Simple Pathology Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-composition-pathreport-1.html"
           }
         ],
@@ -140,6 +157,23 @@
           "reference": "StructureDefinition/composition-pathreport-1"
         },
         "name": "Base Practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-specimen-collect-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/specimen-collect-1"
+        },
+        "name": "Collected Specimen",
         "exampleBoolean": false
       },
       {
