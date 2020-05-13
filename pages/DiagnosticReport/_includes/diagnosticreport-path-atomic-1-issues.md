@@ -6,22 +6,19 @@
     <th>Issue No.</th>
   </tr>
     <tr>
-    <td>URI of location of referred to content</td>
-    <td><p>Some consideration required for supporting in this profile how to support the requirement that the diagnostic report should store one URI per report or test referencing the externally images or other useful content. Where a URI is not available, additional narrative might be included stating a phone number or other contact details for further enquiry.</p>
-        <p>This is a requirement in Diagnostic Imaging Report but still under consideration as to whether or not this is to be supported for Pathology Reports.</p>
-        <p>Possibly an endPoint extension may be useful, possibly a simple extension for only the use case is appropriate.</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/32">ci-fhir-r4/issues/32</a></td>
+    <td>Usage of "Atomic" in description</td>
+    <td>The term "Atomic" is used to describe data at the element level allowing element names and values to be represented in the report. Whether "Atomic" is the appropriate descriptive term to be used needs to be determined by the stakeholders and changes made if necessary.</td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/27">ci-fhir-r4/issues/27</a></td>
    </tr>
   <tr>
     <td>meta.profile (invariant on profile value)</td>
     <td>Invariant enforcing the canonical url for this profile is missing - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a></td>
    </tr>
   <tr>
     <td>status (terminology binding)</td>
-    <td><p>We need to create a more constrained value set for reporting the status of a service request for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics reports.</p>
-        <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" & "unknown".</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
+    <td>We need to create a more constrained value set for the Agency FHIR Pathology Report (DiagnsoticReport) profile. We would like to constrain the FHIR element DiagnosticReport.status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" & "unknown".</td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
    </tr>
    <tr>
     <td>category (potential code system redundancy / duplication)</td>
@@ -39,9 +36,8 @@
    </tr> 
    <tr>
     <td>code (terminology binding)</td>
-    <td><p>We need to create a value set for coding pathology. This will be SNOMED CT-AU content and will be interim until the RCPA value set(s) becomes available.</p>
-        <p>This would be used in DiagnosticReport.code, Observation.code, and ServiceRequest.code.</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-248">jira.aws.tooling/browse/FTR-248</a></td>
+    <td>We need to create a value set for the pathology reporting. This will be SNOMED CT-AU content and will be interim until the RCPA value set(s) becomes available.</td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a>, and <a href="https://jira.aws.tooling/browse/FTR-248">jira.aws.tooling/browse/FTR-248</a></td>
    </tr> 
     <tr>
     <td>code (RCPA terminology)</td>
@@ -52,17 +48,12 @@
    <tr>
     <td>subject (Reference type too open)</td>
     <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a></td>
-   </tr>
-   <tr>
-    <td>effective[x] (period)</td>
-    <td>The My Health Record system expects only a dateTime; period is a relevant type for some imaging examinations. The constraining of types should be reconfirmed.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/26">ci-fhir-r4/issues/26</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a></td>
    </tr>
    <tr>
     <td>performer (Reference type too open)</td>
     <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a></td>
    </tr>
    <tr>
     <td>Constraint presentation</td>
