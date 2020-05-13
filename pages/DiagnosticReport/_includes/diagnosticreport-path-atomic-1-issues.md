@@ -17,7 +17,7 @@
    </tr>
   <tr>
     <td>status (terminology binding)</td>
-    <td>We need to create a more constrained value set for the Agency FHIR Pathology Report (DiagnsoticReport) profile. We would like to constrain the FHIR element DiagnosticReport.status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-request-status.html">http://hl7.org/fhir/R4/valueset-request-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" & "unknown".</td>
+    <td>We need to create a more constrained value set for the Agency FHIR Pathology Report (DiagnsoticReport) profile. We would like to constrain the FHIR element DiagnosticReport.status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" & "unknown".</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
    </tr>
    <tr>
@@ -36,7 +36,7 @@
    </tr> 
    <tr>
     <td>code (terminology binding)</td>
-    <td>We need to create a value set for coding pathology. This will be SNOMED CT-AU content and will be interim until the RCPA value set(s) becomes available.</td>
+    <td>We need to create a value set for the pathology reporting. This will be SNOMED CT-AU content and will be interim until the RCPA value set(s) becomes available.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/21">ci-fhir-r4/issues/21</a>, and <a href="https://jira.aws.tooling/browse/FTR-248">jira.aws.tooling/browse/FTR-248</a></td>
    </tr> 
     <tr>
