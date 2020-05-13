@@ -80,10 +80,10 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">DiagnosticReport (My Health Record Pathology Report)</a></li>
                                 <li><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></li>
-                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li> 
-                                <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a></li>
-                               <li><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></li>
+                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li>                                
+                                <li><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></li>
                             </ul> 
                          </td>
                          <td class="frm-null"/>
@@ -146,6 +146,11 @@
             <td><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
             <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
+          </tr>          
+          <tr>
+            <td><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">DiagnosticReport (My Health Record Pathology Report)</a></td>
+            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
+            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
           </tr>
           <tr>
             <td><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></td>
@@ -162,11 +167,6 @@
               <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
               <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
           </tr> 
-          <tr>
-            <td><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-          </tr>
           <tr>
             <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
