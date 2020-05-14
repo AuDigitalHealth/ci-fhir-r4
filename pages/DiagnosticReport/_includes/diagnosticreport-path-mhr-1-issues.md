@@ -41,7 +41,7 @@
     <td>code (terminology binding)</td>
     <td><p>We need to create a value set for coding pathology. This will be SNOMED CT-AU content and will be interim until the RCPA value set(s) becomes available.</p>
         <p>This would be used in DiagnosticReport.code, Observation.code, and ServiceRequest.code.</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-248">jira.aws.tooling/browse/FTR-248</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-961">jira.aws.tooling/browse/FTR-961</a></td>
    </tr> 
     <tr>
     <td>code (RCPA terminology)</td>
