@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-05-12T15:33:26+10:00"/>
+  <date value="2020-05-14T13:56:08+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -84,6 +84,19 @@
         <reference value="StructureDefinition/servicerequest-path-report-1"/>
       </reference>
       <name value="servicerequest-path-report-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-diagnosticreport-path-atomic-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-path-atomic-1"/>
+      </reference>
+      <name value="diagnosticreport-path-atomic-1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
