@@ -133,7 +133,7 @@
   <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.ttl.html">Turtle</a></li>
 </ul>
 
-<h3><span class="sectioncount">SD.5<a name="SD.5"> </a></span>StructureDefinition-diagnosticreport-path-mhr-1<a title="link to here" class="self-link" href="StructureDefinition-diagnosticreport-path-mhr-1.html#SD.5"><img src="target.png"/></a></h3>
+<h3><span class="sectioncount">SD.6<a name="SD.6"> </a></span>StructureDefinition-diagnosticreport-path-mhr-1<a title="link to here" class="self-link" href="StructureDefinition-diagnosticreport-path-mhr-1.html#SD.6"><img src="target.png"/></a></h3>
 
 <!-- introductiontext here-->
 <!--<p><b>These variables can be used in the template files (for example <code>sd.html</code>):</b></p>
@@ -173,7 +173,7 @@
 
 
 <a name="profile"> </a>
-<h4><span class="sectioncount">SD.5.1</span>
+<h4><span class="sectioncount">SD.6.1</span>
   Formal Views of Profile Content
   <a title="link to here" class="self-link" href="StructureDefinition-diagnosticreport-path-mhr-1.html#profile"><img src="target.png"/></a>
 </h4>
@@ -201,7 +201,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AUBaseDiagnosticReport</a>.</p>
 <p>
-This profile was published on Tue May 12 15:33:26 AEST 2020 as a draft by Australian Digital Health Agency.
+This profile was published on Thu May 14 13:56:08 AEST 2020 as a draft by Australian Digital Health Agency.
 </p>
 
 
@@ -819,7 +819,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
 <!--Known issues-->
 <a name="issues"> </a>
-<h4><span class="sectioncount">SD.5.2 - </span> Known Issues <a title="link to here" class="self-link" href="StructureDefinition-diagnosticreport-path-mhr-1.html#issues"><img src="target.png"/></a></h4>
+<h4><span class="sectioncount">SD.6.2 - </span> Known Issues <a title="link to here" class="self-link" href="StructureDefinition-diagnosticreport-path-mhr-1.html#issues"><img src="target.png"/></a></h4>
 <table class="list" width="100%">
 <tbody>
   <tr>
@@ -842,7 +842,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   <tr>
     <td>status (terminology binding)</td>
     <td><p>We need to create a more constrained value set for reporting the status of a service request for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics reports.</p>
-        <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-request-status.html">http://hl7.org/fhir/R4/valueset-request-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" &amp; "unknown".</p></td>
+        <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", cancelled", "entered-in-error" &amp; "unknown".</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/23">ci-fhir-r4/issues/23</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
    </tr>
    <tr>
@@ -855,7 +855,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
    </tr>
    <tr>
     <td>category (terminology binding)</td>
-    <td><p>The example value set is too broad for pathology reporting - we need a value set that is a constrained value set from that example set &lt;a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html"Diagnostic Service Section Codes&lt;/a&gt; that is restricted to the pathology appropriate codes. This value set would become required.</p>
+    <td><p>The example value set is too broad for pathology reporting - we need a value set that is a constrained value set from that example set <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a> that is restricted to the pathology appropriate codes. This value set would become required.</p>
         <p>Codes from this value set are implemented in current CDA implementations for the My Health Record system.</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/25">ci-fhir-r4/issues/25</a>, and <a href="https://jira.aws.tooling/browse/FTR-953">jira.aws.tooling/browse/FTR-953</a></td>
    </tr> 
@@ -1073,7 +1073,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, May 12, 2020 15:33+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Thu, May 14, 2020 13:56+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>
