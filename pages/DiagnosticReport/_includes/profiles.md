@@ -32,6 +32,7 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul>
+                                <li><a href="StructureDefinition-composition-otherdiagreport-1.html">Composition (Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></li>
                             </ul>
                         </td>
@@ -143,6 +144,11 @@
             <td class="frm-null"/>
             <td class="frm-null"/>
             <td class="frm-null"/>
+          </tr>
+		  <tr>
+            <td><a href="StructureDefinition-composition-otherdiagreport-1.html">Composition (Other Diagnostic Report)</a></td>
+            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
+            <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
           </tr>
 		  <tr>
             <td><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></td>
