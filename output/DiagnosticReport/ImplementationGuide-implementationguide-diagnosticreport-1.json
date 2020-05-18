@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-18T10:10:52+10:00",
+  "date": "2020-05-18T12:10:50+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -243,6 +243,22 @@
         },
         "name": "Atomic Pathology Observation",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-observation-otherdiag-simple-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/observation-otherdiag-simple-1"
+        },
+        "name": "Simple Other Diagnostic Observation"
       },
       {
         "extension": [
