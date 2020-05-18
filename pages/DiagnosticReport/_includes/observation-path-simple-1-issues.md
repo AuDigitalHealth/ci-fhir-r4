@@ -8,7 +8,7 @@
     <tr>
         <td>status (terminology binding)</td>
         <td><p>We need to create a more constrained value set for reporting the status of a diagnostic observation for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics.</p>
-        <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-observation-status.html">http://hl7.org/fhir/R4/valueset-observation-status.html</a> to just contain the codes of "preliminary", "final", "amended", "corrected" ie remove "registered", cancelled", entered-in-error" & "unknown".</p>
+        <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-observation-status.html">http://hl7.org/fhir/R4/valueset-observation-status.html</a> to just contain the codes of "preliminary", "final", "amended", "corrected" ie remove "registered", "cancelled", "entered-in-error" & "unknown".</p>
         </td>
         <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/20">ci-fhir-r4/issues/20</a>, and <a href="https://jira.aws.tooling/browse/FTR-943">jira.aws.tooling/browse/FTR-938</a></td>
    </tr>
