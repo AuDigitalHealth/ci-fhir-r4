@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 0, warn = 24, info = 2 -->
+<!-- broken links = 2, errors = 0, warn = 27, info = 2 -->
 <head>
   <title>DiagnosticReport : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DiagnosticReport</h1>
- <p>Generated Fri May 15 16:02:27 AEST 2020, FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
+ <p>Generated Mon May 18 10:11:56 AEST 2020, FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
 <p>IG Publisher Version: v1.0.94-SNAPSHOT</p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -45,10 +45,13 @@
      <td><a href="#C__work_git_ci-fhir-r4_examples_organization-hallam-medical-clinic"><b>C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_resources_composition-otherdiagreport-1"><b>C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1</b></a></td><td><b>0</b></td><td><b>4</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_resources_composition-otherdiagreport-1"><b>C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1</b></a></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_resources_composition-pathreport-1"><b>C:\work\git\ci-fhir-r4\resources\composition-pathreport-1</b></a></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__work_git_ci-fhir-r4_resources_diagnosticreport-otherdiag-mhr-1"><b>C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1</b></a></td><td><b>0</b></td><td><b>4</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_resources_diagnosticreport-path-atomic-1"><b>C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1</b></a></td><td><b>0</b></td><td><b>2</b></td>
@@ -139,9 +142,6 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1#Composition.section.entry</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1#Composition.section.entry</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1 is valid constraint on the base because it is not known</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
@@ -163,6 +163,26 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-fhir-r4_resources_diagnosticreport-otherdiag-mhr-1"> </a>
+<h2><a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.basedOn</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1 is valid constraint on the base because it is not known</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.result</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1 is valid constraint on the base because it is not known</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.result</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1 is valid constraint on the base because it is not known</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
