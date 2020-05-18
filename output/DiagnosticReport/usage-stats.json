@@ -6,6 +6,10 @@
   "profiles": {
     "Composition": [
       {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1",
+        "title": "Other Diagnostic Report"
+      },
+      {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1",
         "title": "Pathology Report"
       }
@@ -45,6 +49,10 @@
       }
     ],
     "DiagnosticReport": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1",
+        "title": "My Health Record Other Diagnostic Report"
+      },
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1",
         "title": "Atomic Pathology Report"
@@ -129,6 +137,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [

@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-05-14T17:17:46+10:00"/>
+  <date value="2020-05-18T10:10:52+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -117,6 +117,19 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-otherdiag-mhr-1"/>
+      </reference>
+      <name value="diagnosticreport-otherdiag-mhr-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-organization-dh-base-1.html"/>
       </extension>
       <reference>
@@ -175,6 +188,19 @@
         <reference value="StructureDefinition/observation-path-atomic-1"/>
       </reference>
       <name value="Atomic Pathology Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-composition-otherdiagreport-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/composition-otherdiagreport-1"/>
+      </reference>
+      <name value="Other Diagnostic Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

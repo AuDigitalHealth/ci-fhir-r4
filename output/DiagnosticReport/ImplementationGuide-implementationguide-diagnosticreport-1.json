@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-14T17:17:46+10:00",
+  "date": "2020-05-18T10:10:52+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -150,6 +150,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-diagnosticreport-otherdiag-mhr-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-otherdiag-mhr-1"
+        },
+        "name": "diagnosticreport-otherdiag-mhr-1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-organization-dh-base-1.html"
           }
         ],
@@ -225,6 +242,23 @@
           "reference": "StructureDefinition/observation-path-atomic-1"
         },
         "name": "Atomic Pathology Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-composition-otherdiagreport-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/composition-otherdiagreport-1"
+        },
+        "name": "Other Diagnostic Report",
         "exampleBoolean": false
       },
       {
