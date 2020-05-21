@@ -58,21 +58,31 @@
       <short value="A diagnostic imaging examination observation for a patient" />
       <definition value="An observation of a diagnostic imaging examination for a patient. This observation may represent a single examination, or a group of examinations." />
     </element>
+    <element id="Observation.extension:bodySite">
+      <path value="Observation.extension" />
+      <sliceName value="bodySite" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.extension:bodySite.value[x]">
+      <path value="Observation.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1" />
+      </type>
+    </element>
+    <element id="Observation.extension:bodySite.value[x].reference">
+      <path value="Observation.extension.value[x].reference" />
+      <min value="1" />
+    </element>
     <element id="Observation.partOf">
       <path value="Observation.partOf" />
       <min value="1" />
       <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.partOf.reference">
-      <path value="Observation.partOf.reference" />
-      <min value="1" />
-    <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="imaging" />
-        </coding>
-      </patternCodeableConcept>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/imagingstudy-diag-1" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
@@ -85,6 +95,12 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="imaging" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">

@@ -14,6 +14,8 @@
    </tr>
    <tr>
     <td>code (terminology support)</td>
+    <td>It is unclear if the slice from <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">HL7 AU Diagnostic Observation</a> coding:snomedImagingProcedure is sufficient for supporting electronic exchange of diagnostic imaging observations in Australia.</td>
+    <td>TBD</td>
     <td>TBD</td>
    </tr> 
    <tr>
