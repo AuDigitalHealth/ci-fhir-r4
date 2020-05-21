@@ -1,16 +1,17 @@
 ﻿DiagnosticReport : Validation Results
 =========================================
 
-err = 0, warn = 29, info = 2
-IG Publisher Version: v1.0.92-SNAPSHOT Out of date - current version is v1.0.94-SNAPSHOT
-Generated Wed May 20 11:34:46 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+err = 0, warn = 32, info = 2
+IG Publisher Version: v1.0.94-SNAPSHOT
+Generated Thu May 21 16:55:43 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 2
  C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-1.2.36.1.2001.1001.105.100001.5437512835128 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic : 0 / 0
- C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\composition-pathreport-1 : 0 / 4
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1 : 0 / 4
  C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-mhr-1 : 0 / 1
@@ -36,13 +37,17 @@ WARNING: Organization/1.2.36.1.2001.1001.105.100001.5437512835128: Organization.
 == C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic.xml ==
 == C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1#Composition.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1#Composition.section.entry: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\composition-pathreport-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
 INFORMATION: StructureDefinition/composition-pathreport-1: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]: Code System URI "https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/composition-pathreport-1: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]: Code System URI "https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" is unknown so the code cannot be validated
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1: The Implementation Guide contains no examples for this profile
+== C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1.xml ==
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.result: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.result: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.result: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1: The Implementation Guide contains no examples for this profile
