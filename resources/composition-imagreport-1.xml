@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="composition-imagreport-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1" />
+  <version value="1.0.0" />
+  <name value="CompositionImagReport" />
+  <title value="Diagnostic Imaging Report" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <description value="The purpose of this profile is to define a representation of a diagnostic imaging report, as a document, to be electronically exchanged between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &amp;#xA; &amp;#xA;#### Must Support&amp;#xA; &amp;#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&amp;#xA; &amp;#xA;* The system SHALL be able to include the element when authoring a resource where data is available&amp;#xA; &amp;#xA;* The system SHALL be able to store and retrieve the element&amp;#xA; &amp;#xA;* The system SHALL be able to process resources containing the element" />
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. This resource contains content from LOINC™ (http://loinc.org). The LOINC Table, LOINC Table Core, LOINC Panels and Forms File, LOINC Answer File, LOINC Part File, LOINC Group File, LOINC Document Ontology File, LOINC Hierarchies, LOINC Linguistic Variants File, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright © 1995-2017, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <short value="Diagnostic Imaging Report" />
+      <definition value="A diagnostic imaging report sent from the service provider to the requester, i.e. the results including any images/empirical data plus any interpretation provided, for an individual‘s diagnostic imaging examination." />
+    </element>
+    <element id="Composition.meta">
+      <path value="Composition.meta" />
+      <min value="1" />
+    </element>
+    <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile" />
+      <min value="1" />
+    </element>
+    <element id="Composition.language">
+      <path value="Composition.language" />
+      <fixedCode value="en-AU" />
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+          <code value="100.16957" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <short value="Legal Attester" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester.mode">
+      <path value="Composition.attester.mode" />
+      <fixedCode value="legal" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester.time">
+      <path value="Composition.attester.time" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester.party">
+      <path value="Composition.attester.party" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <short value="Diagnostic Imaging" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="18748-4" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section.text">
+      <path value="Composition.section.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section.entry">
+      <path value="Composition.section.entry" />
+      <short value="Diagnostic Imaging Report" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
