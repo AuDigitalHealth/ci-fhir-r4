@@ -46,7 +46,7 @@
   <name value="PatientMHR"/>
   <title value="My Health Record Patient"/>
   <status value="draft"/>
-  <date value="2020-05-21T16:54:50+10:00"/>
+  <date value="2020-05-22T11:01:42+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -585,6 +585,49 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Patient.extension:yearOfArrival">
+      <path value="Patient.extension"/>
+      <sliceName value="yearOfArrival"/>
+      <short value="The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more"/>
+      <definition value="The year of arrival in Australia from the Australian Bureau of Statics (ABS) and the Australian Institute of Health and Wealfare (AIHW). The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more."/>
+      <comment value="See [Australian Bureau of Statics (ABS) 1200.0.55.007 - Year of Arrival Standard, 2014, Version 1.5](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1200.0.55.007Main+Features12014,%20Version%201.5?OpenDocument)  and the [Australian Institute of Health and Wealfare (AIHW) Person&#x2014;year of first arrival in Australia](https://meteor.aihw.gov.au/content/index.phtml/itemId/269447) for further materials."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/year-of-arrival"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <constraint>
+        <key value="inv-yoa-value-0"/>
+        <severity value="error"/>
+        <human value="Year shall only be a year"/>
+        <expression value="valueDate.matches(&#39;^[0-9]{4}$&#39;)"/>
+        <source value="http://hl7.org.au/fhir/StructureDefinition/year-of-arrival"/>
+      </constraint>
       <isModifier value="false"/>
     </element>
     <element id="Patient.modifierExtension">
