@@ -25,7 +25,7 @@
   <differential>
     <element id="DiagnosticReport">
       <path value="DiagnosticReport" />
-      <short value="Diagnostic Report" />
+      <short value="Diagnostic Imaging Report" />
       <definition value="A diagnostic imaging report sent from the service provider to the requester, i.e. the results including any images/empirical data plus any interpretation provided, for an individual‘s diagnostic imaging examination." />
     </element>
     <element id="DiagnosticReport.meta">
@@ -97,7 +97,6 @@
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer">
