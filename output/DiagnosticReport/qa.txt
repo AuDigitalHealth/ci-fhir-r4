@@ -1,9 +1,9 @@
 ﻿DiagnosticReport : Validation Results
 =========================================
 
-err = 0, warn = 32, info = 2
-IG Publisher Version: v1.0.94-SNAPSHOT
-Generated Thu May 21 16:55:43 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+err = 0, warn = 34, info = 2
+IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.95-SNAPSHOT
+Generated Fri May 22 11:03:37 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 2
  C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306 : 0 / 1
@@ -11,11 +11,12 @@ Generated Thu May 21 16:55:43 AEST 2020. FHIR version 4.0.1 for au.electronichea
  C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic : 0 / 0
  C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\composition-pathreport-1 : 0 / 4
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1 : 0 / 4
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1 : 0 / 2
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1 : 0 / 1
  C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-mhr-1 : 0 / 1
  C:\work\git\ci-fhir-r4\resources\implementationguide-diagnosticreport-1 : 0 / 0
+ C:\work\git\ci-fhir-r4\resources\observation-imag-simple-1 : 0 / 4
  C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1 : 2 / 2
  C:\work\git\ci-fhir-r4\resources\observation-path-atomic-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\observation-path-simple-1 : 0 / 2
@@ -46,10 +47,8 @@ WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/compo
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.result: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.result: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1.xml ==
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.result: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1#DiagnosticReport.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
@@ -57,6 +56,11 @@ WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosti
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-mhr-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\implementationguide-diagnosticreport-1.xml ==
+== C:\work\git\ci-fhir-r4\resources\observation-imag-simple-1.xml ==
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1#Observation.extension.value[x]: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1#Observation.partOf: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/imagingstudy-diag-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1#Observation.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1: The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1#Observation.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1: The Implementation Guide contains no examples for this profile
