@@ -8,4 +8,4 @@ The following are the overarching usage scenarios this profile is intended to su
 #### Implementation guidance
 TBD
 
-This profile is referenced by [Pathology Report](StructureDefinition-composition-pathreport-1.html).
+This profile is referenced by [Diagnostic Imaging Report](StructureDefinition-composition-imagreport-1.html).
