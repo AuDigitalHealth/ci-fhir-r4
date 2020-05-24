@@ -54,6 +54,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/patient-ident-1"/>
+            </reference>
+            <name value="Patient with Mandatory Identifier"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/servicerequest-path-report-1"/>
             </reference>
             <name value="servicerequest-path-report-1"/>
@@ -78,6 +85,13 @@
                 <reference value="StructureDefinition/diagnosticreport-otherdiag-mhr-1"/>
             </reference>
             <name value="diagnosticreport-otherdiag-mhr-1"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/diagnosticreport-otherdiag-atomic-1"/>
+            </reference>
+            <name value="diagnosticreport-otherdiag-atomic-1"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -141,6 +155,13 @@
             <name value="Order Details for Other Diagnostic Report"/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/observation-imag-simple-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+            <name value="Simple Imaging Observation"/>
+        </resource>
 
         <!-- EXAMPLES -->
         
@@ -172,5 +193,4 @@
             <generation value="html"/>
         </page>
     </definition>
-
 </ImplementationGuide>

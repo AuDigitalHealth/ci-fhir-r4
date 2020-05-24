@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-20T11:33:07+10:00",
+  "date": "2020-05-22T11:01:42+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -167,6 +167,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-diagnosticreport-otherdiag-atomic-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-otherdiag-atomic-1"
+        },
+        "name": "diagnosticreport-otherdiag-atomic-1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-organization-dh-base-1.html"
           }
         ],
@@ -292,6 +309,23 @@
           "reference": "StructureDefinition/servicerequest-otherdiag-report-1"
         },
         "name": "Order Details for Other Diagnostic Report",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-observation-imag-simple-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/observation-imag-simple-1"
+        },
+        "name": "Simple Imaging Observation",
         "exampleBoolean": false
       },
       {
