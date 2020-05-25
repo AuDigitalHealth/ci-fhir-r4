@@ -119,7 +119,7 @@
             <reference>
                 <reference value="StructureDefinition/composition-pathreport-1"/>
             </reference>
-            <name value="Base Practitioner"/>
+            <name value="Pathology Report"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -164,10 +164,17 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/observation-imag-simple-1"/>
+                <reference value="StructureDefinition/composition-imagreport-1"/>
             </reference>
+            <name value="Diagnostic Imaging Report"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/observation-imag-simple-1"/>
+            </reference>            
             <name value="Simple Imaging Observation"/>
+            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>

@@ -3,15 +3,15 @@
   "id" : "implementationguide-diagnosticreport-1",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\work\\git\\ci-fhir-r4\\resources"
+    "valueString" : "C:\\Git repositories\\ci-fhir-r4\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\work\\git\\ci-fhir-r4\\examples"
+    "valueString" : "C:\\Git repositories\\ci-fhir-r4\\examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\work\\git\\ci-fhir-r4\\pages\\DiagnosticReport"
+    "valueString" : "C:\\Git repositories\\ci-fhir-r4\\pages\\DiagnosticReport"
   }],
   "url" : "http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1",
   "version" : "1.0.0",
@@ -69,6 +69,13 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/diagnosticreport-imag-atomic-1"
+      },
+      "name" : "diagnosticreport-imag-atomic-1",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/diagnosticreport-path-atomic-1"
       },
       "name" : "diagnosticreport-path-atomic-1",
@@ -113,7 +120,7 @@
       "reference" : {
         "reference" : "StructureDefinition/composition-pathreport-1"
       },
-      "name" : "Base Practitioner",
+      "name" : "Pathology Report",
       "exampleBoolean" : false
     },
     {
@@ -148,6 +155,27 @@
         "reference" : "StructureDefinition/servicerequest-otherdiag-report-1"
       },
       "name" : "Order Details for Other Diagnostic Report",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/composition-imagreport-1"
+      },
+      "name" : "Diagnostic Imaging Report",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/observation-imag-simple-1"
+      },
+      "name" : "Simple Imaging Observation",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/servicerequest-imag-report-1"
+      },
+      "name" : "Order Details for Diagnostic Imaging Report",
       "exampleBoolean" : false
     },
     {
