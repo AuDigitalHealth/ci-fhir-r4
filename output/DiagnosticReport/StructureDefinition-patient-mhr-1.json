@@ -10,7 +10,7 @@
   "name": "PatientMHR",
   "title": "My Health Record Patient",
   "status": "draft",
-  "date": "2020-05-22T11:01:42+10:00",
+  "date": "2020-05-25T12:01:35+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -666,10 +666,10 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:yearOfArrival",
+        "id": "Patient.extension:dateOfArrival",
         "path": "Patient.extension",
-        "sliceName": "yearOfArrival",
-        "short": "The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more",
+        "sliceName": "dateOfArrival",
+        "short": "The date a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more",
         "definition": "The year of arrival in Australia from the Australian Bureau of Statics (ABS) and the Australian Institute of Health and Wealfare (AIHW). The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more.",
         "comment": "See [Australian Bureau of Statics (ABS) 1200.0.55.007 - Year of Arrival Standard, 2014, Version 1.5](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1200.0.55.007Main+Features12014,%20Version%201.5?OpenDocument)  and the [Australian Institute of Health and Wealfare (AIHW) Person—year of first arrival in Australia](https://meteor.aihw.gov.au/content/index.phtml/itemId/269447) for further materials.",
         "min": 0,
@@ -683,7 +683,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.au/fhir/StructureDefinition/year-of-arrival"
+              "http://hl7.org.au/fhir/StructureDefinition/date-of-arrival"
             ]
           }
         ],
@@ -706,13 +706,6 @@
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
             "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          },
-          {
-            "key": "inv-yoa-value-0",
-            "severity": "error",
-            "human": "Year shall only be a year",
-            "expression": "valueDate.matches('^[0-9]{4}$')",
-            "source": "http://hl7.org.au/fhir/StructureDefinition/year-of-arrival"
           }
         ],
         "isModifier": false
