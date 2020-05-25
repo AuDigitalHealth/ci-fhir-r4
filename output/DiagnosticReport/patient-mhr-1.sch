@@ -18,7 +18,7 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration']) &lt;= 1">extension with URL = 'http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org.au/fhir/StructureDefinition/year-of-arrival']) &lt;= 1">extension with URL = 'http://hl7.org.au/fhir/StructureDefinition/year-of-arrival': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org.au/fhir/StructureDefinition/date-of-arrival']) &lt;= 1">extension with URL = 'http://hl7.org.au/fhir/StructureDefinition/date-of-arrival': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:telecom) &lt;= 0">telecom: maximum cardinality of 'telecom' is 0</sch:assert>
       <sch:assert test="count(f:gender) &gt;= 1">gender: minimum cardinality of 'gender' is 1</sch:assert>

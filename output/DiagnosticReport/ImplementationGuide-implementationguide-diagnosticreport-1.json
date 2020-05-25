@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-22T11:01:42+10:00",
+  "date": "2020-05-25T12:01:35+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -326,6 +326,23 @@
           "reference": "StructureDefinition/observation-imag-simple-1"
         },
         "name": "Simple Imaging Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-servicerequest-imag-report-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/servicerequest-imag-report-1"
+        },
+        "name": "Order Details for Diagnostic Imaging Report",
         "exampleBoolean": false
       },
       {
