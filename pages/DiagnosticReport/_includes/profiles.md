@@ -31,7 +31,8 @@
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-set">
-                            <ul>
+                            <ul>                            
+                                <li><a href="StructureDefinition-composition-imagreport-1.html">Composition (Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-composition-otherdiagreport-1.html">Composition (Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></li>
                             </ul>
@@ -80,12 +81,14 @@
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
                         <td class="frm-set">
-                            <ul class="frm-set">                                
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">DiagnosticReport (Atomic Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-path-atomic-1.html">DiagnosticReport (Atomic Pathology Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">DiagnosticReport (My Health Record Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">DiagnosticReport (My Health Record Pathology Report)</a></li>
                                 <li><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></li>
+								<li><a href="StructureDefinition-observation-imag-simple-1.html">Observation (Simple Imaging Observation)</a></li>
 								<li><a href="StructureDefinition-observation-otherdiag-simple-1.html">Observation (Simple Other Diagnostic Observation)</a></li>
                                 <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li>
                                 <li><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></li>
@@ -94,6 +97,7 @@
                          <td class="frm-null"/>
                          <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-servicerequest-imag-report-1.html">ServiceRequest (Order Details for Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.html">ServiceRequest (Order Details for Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></li>
                             </ul>
@@ -148,6 +152,11 @@
             <td class="frm-null"/>
             <td class="frm-null"/>
           </tr>
+          <tr>
+            <td><a href="StructureDefinition-composition-imagreport-1.html">Composition (Diagnostic Imaging Report)</a></td>
+            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
+            <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
+          </tr>
 		  <tr>
             <td><a href="StructureDefinition-composition-otherdiagreport-1.html">Composition (Other Diagnostic Report)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
@@ -158,7 +167,15 @@
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
             <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
           </tr>
+          <tr>
+<<<<<<< HEAD
+=======
+            <td><a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">DiagnosticReport (Atomic Diagnostic Imaging Report)</a></td>
+            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
+            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
+          </tr>
          <tr>
+>>>>>>> master
             <td><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
             <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
@@ -184,6 +201,11 @@
             <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
           </tr>
 		  <tr>
+              <td><a href="StructureDefinition-observation-imag-simple-1.html">Observation (Simple Imaging Observation)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
+              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
+        </tr>
+        <tr>
             <td><a href="StructureDefinition-observation-otherdiag-simple-1.html">Observation (Simple Other Diagnostic Observation)</a></td>
             <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
             <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
@@ -214,6 +236,11 @@
               <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           </tr>
          <tr>
+              <td><a href="StructureDefinition-servicerequest-imag-report-1.html">ServiceRequest (Order Details for Diagnostic Imaging Report)</a></td>
+              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
+              <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
+          </tr>
+          <tr>
               <td><a href="StructureDefinition-servicerequest-otherdiag-report-1.html">ServiceRequest (Order Details for Other Diagnostic Report)</a></td>
               <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
               <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
