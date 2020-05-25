@@ -68,6 +68,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/diagnosticreport-imag-atomic-1"/>
+            </reference>
+            <name value="diagnosticreport-imag-atomic-1"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/diagnosticreport-path-atomic-1"/>
             </reference>
             <name value="diagnosticreport-path-atomic-1"/>
@@ -112,7 +119,7 @@
             <reference>
                 <reference value="StructureDefinition/composition-pathreport-1"/>
             </reference>
-            <name value="Base Practitioner"/>
+            <name value="Pathology Report"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -151,10 +158,24 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/observation-imag-simple-1"/>
+                <reference value="StructureDefinition/composition-imagreport-1"/>
             </reference>
+            <name value="Diagnostic Imaging Report"/>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/observation-imag-simple-1"/>
+            </reference>            
             <name value="Simple Imaging Observation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/servicerequest-imag-report-1"/>
+            </reference>
+            <name value="Order Details for Diagnostic Imaging Report"/>
+            <exampleBoolean value="false"/>
         </resource>
 
         <!-- EXAMPLES -->

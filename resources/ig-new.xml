@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="implementationguide-diagnosticreport-1"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\work\git\ci-fhir-r4\resources"/>
+    <valueString value="C:\Git repositories\ci-fhir-r4\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\work\git\ci-fhir-r4\examples"/>
+    <valueString value="C:\Git repositories\ci-fhir-r4\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\work\git\ci-fhir-r4\pages\DiagnosticReport"/>
+    <valueString value="C:\Git repositories\ci-fhir-r4\pages\DiagnosticReport"/>
   </extension>
   <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1"/>
   <version value="1.0.0"/>
@@ -66,6 +66,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/diagnosticreport-imag-atomic-1"/>
+      </reference>
+      <name value="diagnosticreport-imag-atomic-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/diagnosticreport-path-atomic-1"/>
       </reference>
       <name value="diagnosticreport-path-atomic-1"/>
@@ -110,7 +117,7 @@
       <reference>
         <reference value="StructureDefinition/composition-pathreport-1"/>
       </reference>
-      <name value="Base Practitioner"/>
+      <name value="Pathology Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -145,6 +152,27 @@
         <reference value="StructureDefinition/servicerequest-otherdiag-report-1"/>
       </reference>
       <name value="Order Details for Other Diagnostic Report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/composition-imagreport-1"/>
+      </reference>
+      <name value="Diagnostic Imaging Report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/observation-imag-simple-1"/>
+      </reference>
+      <name value="Simple Imaging Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/servicerequest-imag-report-1"/>
+      </reference>
+      <name value="Order Details for Diagnostic Imaging Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
