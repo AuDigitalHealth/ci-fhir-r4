@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-05-25T18:11:20+10:00"/>
+  <date value="2020-05-26T13:04:36+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -227,6 +227,18 @@
         <reference value="StructureDefinition/observation-otherdiag-simple-1"/>
       </reference>
       <name value="Simple Other Diagnostic Observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-observation-otherdiag-atomic-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-otherdiag-atomic-1"/>
+      </reference>
+      <name value="Atomic Other Diagnostic Observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

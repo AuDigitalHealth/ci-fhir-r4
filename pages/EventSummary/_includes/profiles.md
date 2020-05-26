@@ -45,7 +45,10 @@
                         <td class="frm-category">Management</td>
                     </tr>
                     <tr class="frm-contents">
-                        <td class="frm-set">                            
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-organization-dh-base-1.html">Patient (My Health Record Patient)</a></li>                                
+                            </ul>                            
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>                                
                             </ul>
