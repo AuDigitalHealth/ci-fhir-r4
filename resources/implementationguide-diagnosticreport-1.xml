@@ -54,13 +54,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/patient-ident-1"/>
-            </reference>
-            <name value="Patient with Mandatory Identifier"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/servicerequest-path-report-1"/>
             </reference>
             <name value="servicerequest-path-report-1"/>
@@ -142,6 +135,12 @@
             </reference>
             <name value="Simple Other Diagnostic Observation"/>
 		</resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/observation-otherdiag-atomic-1"/>
+            </reference>
+            <name value="Atomic Other Diagnostic Observation"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/composition-otherdiagreport-1"/>
