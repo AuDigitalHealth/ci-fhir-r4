@@ -10,7 +10,7 @@
   "name": "PatientMHR",
   "title": "My Health Record Patient",
   "status": "draft",
-  "date": "2020-04-09T11:10:29+10:00",
+  "date": "2020-05-26T13:15:43+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -2081,7 +2081,7 @@
         "path": "Patient.identifier.period",
         "short": "Medicare number validity period",
         "definition": "Time period during which identifier is/was valid for use.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Identifier.period",
@@ -2264,7 +2264,7 @@
         "short": "Medicare number expiry date",
         "definition": "Expiry date for Medicare number. This is typically month and year only, but may incude day date part when this is a temporary Medicare number.",
         "comment": "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Period.end",

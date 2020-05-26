@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "PatientMHR"];
   fhir:StructureDefinition.title [ fhir:value "My Health Record Patient"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-09T11:10:29+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-26T13:15:43+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2197,7 +2197,7 @@
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Medicare number validity period" ];
        fhir:ElementDefinition.definition [ fhir:value "Time period during which identifier is/was valid for use." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Identifier.period" ];
@@ -2384,7 +2384,7 @@
        fhir:ElementDefinition.short [ fhir:value "Medicare number expiry date" ];
        fhir:ElementDefinition.definition [ fhir:value "Expiry date for Medicare number. This is typically month and year only, but may incude day date part when this is a temporary Medicare number." ];
        fhir:ElementDefinition.comment [ fhir:value "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Period.end" ];
