@@ -170,14 +170,11 @@
             <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
           </tr>
           <tr>
-<<<<<<< HEAD
-=======
             <td><a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">DiagnosticReport (Atomic Diagnostic Imaging Report)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
             <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
           </tr>
          <tr>
->>>>>>> master
             <td><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
             <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
