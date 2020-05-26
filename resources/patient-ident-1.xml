@@ -42,6 +42,7 @@
         <key value="inv-dh-pat-03" />
         <severity value="error" />
         <human value="At least one patient identifier shall at least have a system and a value" />
+        <expression value="identifier.where(system.count() + value.count() &gt;1).exists()" />
       </constraint>
       <constraint>
         <key value="inv-dh-pat-04" />
