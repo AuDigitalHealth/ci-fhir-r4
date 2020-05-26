@@ -55,6 +55,7 @@ This profile is referenced by
 [Base BodyStructure](StructureDefinition-bodystructure-dh-base-1.html),
 [Collected Specimen](StructureDefinition-specimen-collect-1.html),
 [Diagnostic Imaging Report](StructureDefinition-composition-imagreport-1.html),
+[Diagnostic Imaging Study](StructureDefinition-imagingstudy-diag-1.html),
 [Order Details for Diagnostic Imaging Report](StructureDefinition-servicerequest-imag-report-1.html),
 [Order Details for Other Diagnostic Report](StructureDefinition-servicerequest-otherdiag-report-1.html),
 [Order Details for Pathology Report](StructureDefinition-servicerequest-path-report-1.html),
