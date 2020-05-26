@@ -165,16 +165,20 @@
     </element>
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
-      <short value="Diagnostic examination / panel name" />
+      <short value="Individual examinations in a panel / group" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.hasMember.reference">
       <path value="Observation.hasMember.reference" />
       <min value="1" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
