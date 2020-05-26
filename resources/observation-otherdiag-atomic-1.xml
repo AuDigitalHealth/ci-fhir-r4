@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-otherdiag-atomic-1" />
-  <url value="http://example.org/fhir/StructureDefinition/MyAUDiagnosticObservation" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
   <version value="1.0.0" />
   <name value="ObservationOtherDiagAtomic" />
   <title value="Atomic Other Diagnostic Observation" />
@@ -59,6 +59,8 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
+      <min value="1" />
+       <mustSupport value="true" />
       <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
