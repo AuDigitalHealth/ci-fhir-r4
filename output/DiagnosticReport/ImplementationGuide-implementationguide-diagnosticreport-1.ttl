@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Diagnostic Report"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-22T11:01:42+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-05-25T18:11:20+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -44,7 +44,7 @@
        fhir:link <http://hl7.org.au/fhir/base>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.au.base" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.1.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.resource [
@@ -124,6 +124,23 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-diagnosticreport-imag-atomic-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/diagnosticreport-imag-atomic-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-imag-atomic-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-imag-atomic-1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-diagnosticreport-path-atomic-1.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -133,7 +150,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-path-atomic-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -150,7 +167,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-path-mhr-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -167,7 +184,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-otherdiag-mhr-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -184,7 +201,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-otherdiag-atomic-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -201,7 +218,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base Organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -218,7 +235,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simple Pathology Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -232,10 +249,10 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/composition-pathreport-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pathology Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -252,7 +269,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collected Specimen" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -269,7 +286,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atomic Pathology Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -285,7 +302,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simple Other Diagnostic Observation" ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -302,7 +319,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Other Diagnostic Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -319,7 +336,24 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Order Details for Other Diagnostic Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-composition-imagreport-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-imagreport-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Imaging Report" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -336,7 +370,24 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simple Imaging Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-servicerequest-imag-report-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/servicerequest-imag-report-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Order Details for Diagnostic Imaging Report" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -353,7 +404,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization example 1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -370,7 +421,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization example 2" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

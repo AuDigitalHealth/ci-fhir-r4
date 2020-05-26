@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-22T11:01:42+10:00",
+  "date": "2020-05-25T18:11:20+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -35,7 +35,7 @@
       "id": "aubaser4",
       "uri": "http://hl7.org.au/fhir/base",
       "packageId": "hl7.fhir.au.base",
-      "version": "2.1.0"
+      "version": "current"
     }
   ],
   "definition": {
@@ -106,6 +106,23 @@
           "reference": "StructureDefinition/servicerequest-path-report-1"
         },
         "name": "servicerequest-path-report-1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-diagnosticreport-imag-atomic-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-imag-atomic-1"
+        },
+        "name": "diagnosticreport-imag-atomic-1",
         "exampleBoolean": false
       },
       {
@@ -224,7 +241,7 @@
         "reference": {
           "reference": "StructureDefinition/composition-pathreport-1"
         },
-        "name": "Base Practitioner",
+        "name": "Pathology Report",
         "exampleBoolean": false
       },
       {
@@ -319,6 +336,23 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-composition-imagreport-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/composition-imagreport-1"
+        },
+        "name": "Diagnostic Imaging Report",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-observation-imag-simple-1.html"
           }
         ],
@@ -326,6 +360,23 @@
           "reference": "StructureDefinition/observation-imag-simple-1"
         },
         "name": "Simple Imaging Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-servicerequest-imag-report-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/servicerequest-imag-report-1"
+        },
+        "name": "Order Details for Diagnostic Imaging Report",
         "exampleBoolean": false
       },
       {

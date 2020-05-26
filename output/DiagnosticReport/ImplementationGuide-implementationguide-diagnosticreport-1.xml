@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-05-22T11:01:42+10:00"/>
+  <date value="2020-05-25T18:11:20+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -31,7 +31,7 @@
   <dependsOn id="aubaser4">
     <uri value="http://hl7.org.au/fhir/base"/>
     <packageId value="hl7.fhir.au.base"/>
-    <version value="2.1.0"/>
+    <version value="current"/>
   </dependsOn>
   <definition>
     <resource>
@@ -84,6 +84,19 @@
         <reference value="StructureDefinition/servicerequest-path-report-1"/>
       </reference>
       <name value="servicerequest-path-report-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-diagnosticreport-imag-atomic-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-imag-atomic-1"/>
+      </reference>
+      <name value="diagnosticreport-imag-atomic-1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -174,7 +187,7 @@
       <reference>
         <reference value="StructureDefinition/composition-pathreport-1"/>
       </reference>
-      <name value="Base Practitioner"/>
+      <name value="Pathology Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -246,12 +259,38 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-composition-imagreport-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/composition-imagreport-1"/>
+      </reference>
+      <name value="Diagnostic Imaging Report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-observation-imag-simple-1.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/observation-imag-simple-1"/>
       </reference>
       <name value="Simple Imaging Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-servicerequest-imag-report-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/servicerequest-imag-report-1"/>
+      </reference>
+      <name value="Order Details for Diagnostic Imaging Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
