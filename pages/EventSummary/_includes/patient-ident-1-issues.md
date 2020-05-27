@@ -6,29 +6,29 @@
     <th>Issue No.</th>
   </tr>
   <tr>
-    <td>Patient (biological sex)</td>
-    <td>FHIR Patient model allows for recording administrative gender for a patient. It does not allow recording sex for a patient. We have a requirement to record patient's biological sex (sex at birth) as well as gender. We are working on solutions for recording a patient's biological sex.</td>
-    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/321">au-fhir-base/issues/321</a> See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/15">ci-fhir-r4/issues/15</a></td>
+    <td>Invariants on references</td>
+    <td>At present there are 4 invariants to control the quality of reference content. For simplicity, we prefer a single generic invariant that applies to all references. This solution has not yet been deteremined.</td>
+    <td>See TODO</td>
+  </tr>
+  <tr>
+    <td>Patient (birthPlace)</td>
+    <td>There are multiple ways to send a patient's country of birth, using the birthPlace extension - e.g. using Address.text or Address.country. At this time there is no optimal preference identified.</td>
+    <td>See TODO</td>
+  </tr>
+  <tr>
+    <td>Patient (birth plurality)</td>
+    <td>The patient resource contains an element for multipleBirth - as a choice of multipleBirthBoolean (yes/no) or multipleBirthInteger (e.g. '3rd'). However, there is no means to record the total number of births from one pregnancy - eg '3rd of 4'. Clinical and jurisdiction feedback indicate that this is a useful data point to collect. Forthcoming work on these related attributes in collaboration with HL7 AU is expected to result in an extension being added to the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a>.</td>
+    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/417">au-fhir-base/issues/417</a></td>
   </tr>
   <tr>
     <td>contact (use cases)</td>
-    <td>At this time the usage scenarios are undefined for exchanging a patient's contact information with the My Health Record system.</td>
+    <td>At this time the usage scenarios, such as federal or state agencies managing children in care, are undefined for exchanging a patient's contact information with the My Health Record system.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/16">ci-fhir-r4/issues/16</a></td>
   </tr>
   <tr>
     <td>contact.relationship (terminology)</td>
     <td>Work is underway to bind to terminology supporting contact relationship types in an Australian healthcare context. This work is expected to result in support for values from <a href="https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-1">Contact Relationship Type</a></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/16">ci-fhir-r4/issues/16</a></td>
-  </tr>
-  <tr>
-    <td>generalPractitioner (PractitionerRole)</td>
-    <td>PractitionerRole profiles are not yet available.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/7">ci-fhir-r4/issues/7</a></td>
-  </tr>
-  <tr>
-    <td>TODO</td>
-    <td>TODO</td>
-    <td>TODO See</td>
   </tr>
 </tbody>
 </table>
