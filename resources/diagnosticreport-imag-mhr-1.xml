@@ -51,7 +51,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1" />
       </type>
       <mustSupport value="true" />
     </element>      
@@ -92,11 +92,11 @@
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
+      <short value="Diagnostic imaging report date time" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer">
-      <path value="DiagnosticReport.performer" />      
-      <short value="Diagnostic imaging report date time" />
+      <path value="DiagnosticReport.performer" />
       <min value="1" />
       <type>
         <code value="Reference" />
