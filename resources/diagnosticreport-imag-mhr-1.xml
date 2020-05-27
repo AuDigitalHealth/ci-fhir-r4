@@ -116,6 +116,30 @@
     <element id="DiagnosticReport.result.reference">
       <path value="DiagnosticReport.result.reference" />
       <min value="1" />
+    </element>    
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm" />
+      <short value="Attached diagnostic imaging report" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.presentedForm.contentType">
+      <path value="DiagnosticReport.presentedForm.contentType" />
+      <min value="1" />
+      <fixedCode value="application/pdf" />
+    </element>
+    <element id="DiagnosticReport.presentedForm.url">
+      <path value="DiagnosticReport.presentedForm.url" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.presentedForm.hash">
+      <path value="DiagnosticReport.presentedForm.hash" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.presentedForm.title">
+      <path value="DiagnosticReport.presentedForm.title" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
