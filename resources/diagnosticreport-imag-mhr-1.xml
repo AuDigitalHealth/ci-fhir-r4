@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a short form representation of a diagnostic imaging report, providing a rich text representation of the report as issued by the diagnostic service provider with supporting key elements of clinical relevance. This profile is intended to support the electronic exchange of diagnostic imaging reports between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the elementThe purpose of this profile is to define a short form representation of a diagnostic imaging report, providing a rich text representation of the report as issued by the diagnostic service provider with supporting key elements of clinical relevance. This profile is intended to support the electronic exchange of diagnostic imaging reports between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to define a short form representation of a diagnostic imaging report, providing a rich text representation of the report as issued by the diagnostic service provider with supporting key elements of clinical relevance. This profile is intended to support the electronic exchange of diagnostic imaging reports between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element"/>
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -49,12 +49,13 @@
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1" />
       </type>
       <mustSupport value="true" />
-    </element>      
+    </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
       <mustSupport value="true" />
@@ -93,6 +94,7 @@
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
       <short value="Diagnostic imaging report date time" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer">
@@ -116,7 +118,7 @@
     <element id="DiagnosticReport.result.reference">
       <path value="DiagnosticReport.result.reference" />
       <min value="1" />
-    </element>    
+    </element>
     <element id="DiagnosticReport.presentedForm">
       <path value="DiagnosticReport.presentedForm" />
       <short value="Attached diagnostic imaging report" />
