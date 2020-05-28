@@ -6,7 +6,7 @@
         <th>Issue No.</th>
       </tr>
     <tr>
-        <td>Usage of "Atomic" in description</td>
+        <td>Usage of "Atomic"</td>
         <td>
             <p>The term "Atomic" is used to describe data at the element level allowing element names and values to be represented in the report. Whether "Atomic" is the appropriate descriptive term to be used needs to be determined by the stakeholders and changes made if necessary.</p>
         </td>
