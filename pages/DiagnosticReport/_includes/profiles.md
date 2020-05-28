@@ -82,6 +82,7 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-bodystructure-dh-base-1.html">BodyStructure (Base BodyStructure)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">DiagnosticReport (Atomic Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-path-atomic-1.html">DiagnosticReport (Atomic Pathology Report)</a></li>
@@ -154,6 +155,11 @@
             <td class="frm-null"/>
           </tr>
           <tr>
+            <td><a href="StructureDefinition-bodystructure-dh-base-1.html">BodyStructure (Base BodyStructure)</a></td>
+            <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-bodystructure.html">AU Base BodyStucture</a></td>
+            <td><a href="http://hl7.org/fhir/R4/bodystructure.html">BodyStructure</a></td>
+          </tr>
+		  <tr>
             <td><a href="StructureDefinition-composition-imagreport-1.html">Composition (Diagnostic Imaging Report)</a></td>
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
             <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
