@@ -53,6 +53,9 @@
                     <tr class="frm-contents">
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></li>
+                            </ul>
+                            <ul class="frm-set">
                                 <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>                                
                             </ul>
                         </td>
