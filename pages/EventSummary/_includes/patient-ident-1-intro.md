@@ -39,14 +39,14 @@ When sending communication preferences for a patient the guidance in the followi
       </tr>
       <tr>
         <td>Preferred language is other than English</td>
-        <td>language, as language.coding</td>
+        <td>language.coding</td>
         <td>'true'</td>
         <td></td>
         <td></td>
       </tr>
       <tr>
         <td>Interpreter required, language is known</td>
-        <td>language, as language.coding</td>
+        <td>language.coding</td>
         <td>'true'</td>
         <td>'true'</td>
         <td></td>
@@ -60,7 +60,7 @@ When sending communication preferences for a patient the guidance in the followi
       </tr>
       <tr>
         <td>Communicates with multiple languages</td>
-        <td>language, as language.coding</td>
+        <td>language.coding</td>
         <td></td>
         <td></td>
         <td>Each language instantiated in separate communication nodes</td>
