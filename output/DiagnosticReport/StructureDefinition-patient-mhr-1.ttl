@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "PatientMHR"];
   fhir:StructureDefinition.title [ fhir:value "My Health Record Patient"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2020-05-28T15:43:54+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-29T11:07:42+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -742,58 +742,6 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
-       fhir:Element.id [ fhir:value "Patient.extension:dateOfArrival" ];
-       fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "dateOfArrival" ];
-       fhir:ElementDefinition.short [ fhir:value "The date a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more" ];
-       fhir:ElementDefinition.definition [ fhir:value "The year of arrival in Australia from the Australian Bureau of Statics (ABS) and the Australian Institute of Health and Wealfare (AIHW). The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more." ];
-       fhir:ElementDefinition.comment [ fhir:value "See [Australian Bureau of Statics (ABS) 1200.0.55.007 - Year of Arrival Standard, 2014, Version 1.5](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1200.0.55.007Main+Features12014,%20Version%201.5?OpenDocument)  and the [Australian Institute of Health and Wealfare (AIHW) Person—year of first arrival in Australia](https://meteor.aihw.gov.au/content/index.phtml/itemId/269447) for further materials." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org.au/fhir/StructureDefinition/date-of-arrival";
-           fhir:index 0;
-           fhir:link <http://hl7.org.au/fhir/StructureDefinition/date-of-arrival>
-         ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
        fhir:Element.id [ fhir:value "Patient.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -850,7 +798,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.slicing [
@@ -912,7 +860,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "ihiNumber" ];
@@ -993,7 +941,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -1026,7 +974,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1077,7 +1025,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.extension:ihiStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "ihiStatus" ];
@@ -1125,7 +1073,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.extension:ihiRecordStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "ihiRecordStatus" ];
@@ -1173,7 +1121,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -1229,7 +1177,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for IHI" ];
@@ -1286,7 +1234,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -1319,7 +1267,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1383,7 +1331,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -1429,7 +1377,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1481,7 +1429,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Namespace for IHI" ];
@@ -1533,7 +1481,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "IHI number" ];
@@ -1588,7 +1536,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1632,7 +1580,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Patient.identifier:ihiNumber.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -1682,7 +1630,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "medicareNumber" ];
@@ -1732,7 +1680,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -1765,7 +1713,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1829,7 +1777,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -1885,7 +1833,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for Medicare number" ];
@@ -1942,7 +1890,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -1975,7 +1923,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2039,7 +1987,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -2085,7 +2033,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2137,7 +2085,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Namespace for Medicare number" ];
@@ -2189,7 +2137,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "Medicare number including optional individual reference number" ];
@@ -2244,7 +2192,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Medicare number validity period" ];
@@ -2288,7 +2236,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.period.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period.id" ];
        fhir:ElementDefinition.representation [
@@ -2321,7 +2269,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.period.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2385,7 +2333,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.period.start" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period.start" ];
        fhir:ElementDefinition.short [ fhir:value "Starting time with inclusive boundary" ];
@@ -2430,7 +2378,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./low" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.period.end" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period.end" ];
        fhir:ElementDefinition.short [ fhir:value "Medicare number expiry date" ];
@@ -2476,7 +2424,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./high" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Patient.identifier:medicareNumber.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -2526,7 +2474,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "dvaNumber" ];
@@ -2636,7 +2584,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -2669,7 +2617,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2733,7 +2681,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -2789,7 +2737,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for DVA number" ];
@@ -2839,7 +2787,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -2872,7 +2820,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2936,7 +2884,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -2982,7 +2930,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3033,7 +2981,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Namespace for DVA number" ];
@@ -3085,7 +3033,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "DVA number" ];
@@ -3140,7 +3088,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -3184,7 +3132,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Patient.identifier:dvaNumber.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -3234,7 +3182,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "healthcareCard" ];
@@ -3284,7 +3232,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -3317,7 +3265,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3381,7 +3329,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -3437,7 +3385,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for Health Care Card number" ];
@@ -3494,7 +3442,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -3527,7 +3475,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3591,7 +3539,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -3637,7 +3585,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3689,7 +3637,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Namespace for Centrelink Customer Reference Number (CRN)" ];
@@ -3741,7 +3689,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "Centrelink CRN" ];
@@ -3796,7 +3744,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -3840,7 +3788,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Patient.identifier:healthcareCard.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -3890,7 +3838,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "pensionerConcessionCard" ];
@@ -3940,7 +3888,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -3973,7 +3921,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4037,7 +3985,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -4093,7 +4041,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for Pensioner Concession Card number" ];
@@ -4150,7 +4098,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -4183,7 +4131,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4247,7 +4195,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -4293,7 +4241,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4345,7 +4293,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Namespace for Centrelink Customer Reference Number (CRN)" ];
@@ -4397,7 +4345,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "Centrelink CRN" ];
@@ -4452,7 +4400,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -4496,7 +4444,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "Patient.identifier:pensionerConcessionCard.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -4546,7 +4494,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "commonwealthSeniorsHealthCard" ];
@@ -4596,7 +4544,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -4629,7 +4577,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4693,7 +4641,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -4749,7 +4697,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for Commonwealth Seniors Health Card number" ];
@@ -4806,7 +4754,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -4839,7 +4787,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4903,7 +4851,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -4949,7 +4897,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5001,7 +4949,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Namespace for Centrelink Customer Reference Number (CRN)" ];
@@ -5053,7 +5001,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "Centrelink CRN" ];
@@ -5108,7 +5056,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -5152,7 +5100,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "Patient.identifier:commonwealthSeniorsHealthCard.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -5202,7 +5150,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "medicalRecordNumber" ];
@@ -5252,7 +5200,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -5285,7 +5233,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5349,7 +5297,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -5405,7 +5353,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for MRN" ];
@@ -5462,7 +5410,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -5495,7 +5443,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5559,7 +5507,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -5605,7 +5553,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5657,7 +5605,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "Medical record number system namespace" ];
@@ -5708,7 +5656,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 110;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "Medical record number" ];
@@ -5758,7 +5706,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 111;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -5802,7 +5750,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 112;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "Patient.identifier:medicalRecordNumber.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Medical record number assigning entity" ];
@@ -5852,7 +5800,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 113;
+       fhir:index 112;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier" ];
        fhir:ElementDefinition.sliceName [ fhir:value "insurerNumber" ];
@@ -5902,7 +5850,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".id" ]
        ]
      ], [
-       fhir:index 114;
+       fhir:index 113;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -5935,7 +5883,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 115;
+       fhir:index 114;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5999,7 +5947,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 116;
+       fhir:index 115;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.use" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -6055,7 +6003,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 117;
+       fhir:index 116;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Coded identifier type for private health insurance member number" ];
@@ -6112,7 +6060,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 118;
+       fhir:index 117;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -6145,7 +6093,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 119;
+       fhir:index 118;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6209,7 +6157,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 120;
+       fhir:index 119;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -6255,7 +6203,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 121;
+       fhir:index 120;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6307,7 +6255,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 122;
+       fhir:index 121;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.system" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -6358,7 +6306,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 123;
+       fhir:index 122;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "Private health insurance member number" ];
@@ -6408,7 +6356,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 124;
+       fhir:index 123;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -6452,7 +6400,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 125;
+       fhir:index 124;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Private health insurer" ];
@@ -6502,7 +6450,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 126;
+       fhir:index 125;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner.id" ];
        fhir:ElementDefinition.representation [
@@ -6535,7 +6483,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 127;
+       fhir:index 126;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6599,7 +6547,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 128;
+       fhir:index 127;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner.reference" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Literal reference, Relative, internal or absolute URL" ];
@@ -6640,7 +6588,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 129;
+       fhir:index 128;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner.type" ];
        fhir:ElementDefinition.short [ fhir:value "Type the reference refers to (e.g. \"Patient\")" ];
@@ -6690,7 +6638,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 130;
+       fhir:index 129;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.identifier.assigner.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Logical reference, when literal reference is not known" ];
@@ -6727,7 +6675,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier" ]
        ]
      ], [
-       fhir:index 131;
+       fhir:index 130;
        fhir:Element.id [ fhir:value "Patient.identifier:insurerNumber.assigner.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6769,7 +6717,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 132;
+       fhir:index 131;
        fhir:Element.id [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.active" ];
        fhir:ElementDefinition.short [ fhir:value "Whether this patient's record is in active use" ];
@@ -6818,7 +6766,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 133;
+       fhir:index 132;
        fhir:Element.id [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the patient" ];
@@ -6865,7 +6813,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.name" ]
        ]
      ], [
-       fhir:index 134;
+       fhir:index 133;
        fhir:Element.id [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the individual" ];
@@ -6911,7 +6859,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".telecom" ]
        ]
      ], [
-       fhir:index 135;
+       fhir:index 134;
        fhir:Element.id [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -6975,7 +6923,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.administrativeGenderCode" ]
        ]
      ], [
-       fhir:index 136;
+       fhir:index 135;
        fhir:Element.id [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate" ];
        fhir:ElementDefinition.short [ fhir:value "Date of birth extended for time and accuracy indicator" ];
@@ -7026,7 +6974,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "21112-8" ]
        ]
      ], [
-       fhir:index 137;
+       fhir:index 136;
        fhir:Element.id [ fhir:value "Patient.birthDate.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.id" ];
        fhir:ElementDefinition.representation [
@@ -7054,7 +7002,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 138;
+       fhir:index 137;
        fhir:Element.id [ fhir:value "Patient.birthDate.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension" ];
        fhir:ElementDefinition.slicing [
@@ -7104,7 +7052,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 139;
+       fhir:index 138;
        fhir:Element.id [ fhir:value "Patient.birthDate.extension:accuracyIndicator" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "accuracyIndicator" ];
@@ -7157,7 +7105,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 140;
+       fhir:index 139;
        fhir:Element.id [ fhir:value "Patient.birthDate.extension:birthTime" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "birthTime" ];
@@ -7209,7 +7157,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 141;
+       fhir:index 140;
        fhir:Element.id [ fhir:value "Patient.birthDate.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.birthDate.value" ];
        fhir:ElementDefinition.representation [
@@ -7241,7 +7189,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 142;
+       fhir:index 141;
        fhir:Element.id [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.slicing [
@@ -7301,7 +7249,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 143;
+       fhir:index 142;
        fhir:Element.id [ fhir:value "Patient.deceased[x]:deceasedBoolean" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.sliceName [ fhir:value "deceasedBoolean" ];
@@ -7350,7 +7298,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 144;
+       fhir:index 143;
        fhir:Element.id [ fhir:value "Patient.deceased[x]:deceasedDateTime" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x]" ];
        fhir:ElementDefinition.sliceName [ fhir:value "deceasedDateTime" ];
@@ -7399,7 +7347,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 145;
+       fhir:index 144;
        fhir:Element.id [ fhir:value "Patient.deceased[x]:deceasedDateTime.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x].id" ];
        fhir:ElementDefinition.representation [
@@ -7427,7 +7375,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 146;
+       fhir:index 145;
        fhir:Element.id [ fhir:value "Patient.deceased[x]:deceasedDateTime.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x].extension" ];
        fhir:ElementDefinition.slicing [
@@ -7477,7 +7425,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 147;
+       fhir:index 146;
        fhir:Element.id [ fhir:value "Patient.deceased[x]:deceasedDateTime.extension:accuracyIndicator" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x].extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "accuracyIndicator" ];
@@ -7530,7 +7478,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 148;
+       fhir:index 147;
        fhir:Element.id [ fhir:value "Patient.deceased[x]:deceasedDateTime.value" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.deceased[x].value" ];
        fhir:ElementDefinition.representation [
@@ -7562,7 +7510,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 149;
+       fhir:index 148;
        fhir:Element.id [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.address" ];
        fhir:ElementDefinition.short [ fhir:value "An address for the individual" ];
@@ -7608,7 +7556,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".addr" ]
        ]
      ], [
-       fhir:index 150;
+       fhir:index 149;
        fhir:Element.id [ fhir:value "Patient.maritalStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.maritalStatus" ];
        fhir:ElementDefinition.short [ fhir:value "Marital (civil) status of a patient" ];
@@ -7671,7 +7619,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".patient.maritalStatusCode" ]
        ]
      ], [
-       fhir:index 151;
+       fhir:index 150;
        fhir:Element.id [ fhir:value "Patient.multipleBirth[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.multipleBirth[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Whether patient is part of a multiple birth" ];
@@ -7721,7 +7669,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 152;
+       fhir:index 151;
        fhir:Element.id [ fhir:value "Patient.photo" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.photo" ];
        fhir:ElementDefinition.short [ fhir:value "Image of the patient" ];
@@ -7767,7 +7715,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 153;
+       fhir:index 152;
        fhir:Element.id [ fhir:value "Patient.contact" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7832,7 +7780,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 154;
+       fhir:index 153;
        fhir:Element.id [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.id" ];
        fhir:ElementDefinition.representation [
@@ -7865,7 +7813,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 155;
+       fhir:index 154;
        fhir:Element.id [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -7920,7 +7868,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 156;
+       fhir:index 155;
        fhir:Element.id [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -7980,7 +7928,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 157;
+       fhir:index 156;
        fhir:Element.id [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.relationship" ];
        fhir:ElementDefinition.short [ fhir:value "The kind of relationship" ];
@@ -8039,7 +7987,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 158;
+       fhir:index 157;
        fhir:Element.id [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.name" ];
        fhir:ElementDefinition.short [ fhir:value "A name associated with the contact person" ];
@@ -8085,7 +8033,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 159;
+       fhir:index 158;
        fhir:Element.id [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the person" ];
@@ -8132,7 +8080,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 160;
+       fhir:index 159;
        fhir:Element.id [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address for the contact person" ];
@@ -8178,7 +8126,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 161;
+       fhir:index 160;
        fhir:Element.id [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -8241,7 +8189,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 162;
+       fhir:index 161;
        fhir:Element.id [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.organization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is associated with the contact" ];
@@ -8296,7 +8244,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 163;
+       fhir:index 162;
        fhir:Element.id [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.contact.period" ];
        fhir:ElementDefinition.short [ fhir:value "The period during which this contact person or organization is valid to be contacted relating to this patient" ];
@@ -8337,7 +8285,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 164;
+       fhir:index 163;
        fhir:Element.id [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication" ];
        fhir:ElementDefinition.short [ fhir:value "A language which may be used to communicate with the patient about his or her health" ];
@@ -8380,7 +8328,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "patient.languageCommunication" ]
        ]
      ], [
-       fhir:index 165;
+       fhir:index 164;
        fhir:Element.id [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.id" ];
        fhir:ElementDefinition.representation [
@@ -8413,7 +8361,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 166;
+       fhir:index 165;
        fhir:Element.id [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -8468,7 +8416,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 167;
+       fhir:index 166;
        fhir:Element.id [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -8528,7 +8476,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 168;
+       fhir:index 167;
        fhir:Element.id [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.language" ];
        fhir:ElementDefinition.short [ fhir:value "The language which can be used to communicate with the patient about his or her health" ];
@@ -8582,7 +8530,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".languageCode" ]
        ]
      ], [
-       fhir:index 169;
+       fhir:index 168;
        fhir:Element.id [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.communication.preferred" ];
        fhir:ElementDefinition.short [ fhir:value "Language preference indicator" ];
@@ -8629,7 +8577,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".preferenceInd" ]
        ]
      ], [
-       fhir:index 170;
+       fhir:index 169;
        fhir:Element.id [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.generalPractitioner" ];
        fhir:ElementDefinition.short [ fhir:value "Patient's nominated primary care provider" ];
@@ -8688,7 +8636,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 171;
+       fhir:index 170;
        fhir:Element.id [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.managingOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that is the custodian of the patient record" ];
@@ -8736,7 +8684,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".providerOrganization" ]
        ]
      ], [
-       fhir:index 172;
+       fhir:index 171;
        fhir:Element.id [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link" ];
        fhir:ElementDefinition.short [ fhir:value "Link to another patient resource that concerns the same actual person" ];
@@ -8779,7 +8727,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 173;
+       fhir:index 172;
        fhir:Element.id [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.id" ];
        fhir:ElementDefinition.representation [
@@ -8812,7 +8760,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 174;
+       fhir:index 173;
        fhir:Element.id [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -8867,7 +8815,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 175;
+       fhir:index 174;
        fhir:Element.id [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -8927,7 +8875,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 176;
+       fhir:index 175;
        fhir:Element.id [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.other" ];
        fhir:ElementDefinition.short [ fhir:value "The other patient or related person resource that the link refers to" ];
@@ -8986,7 +8934,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 177;
+       fhir:index 176;
        fhir:Element.id [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.path [ fhir:value "Patient.link.type" ];
        fhir:ElementDefinition.short [ fhir:value "replaced-by | replaces | refer | seealso" ];
