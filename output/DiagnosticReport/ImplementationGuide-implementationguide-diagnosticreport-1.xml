@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-05-29T11:07:42+10:00"/>
+  <date value="2020-06-01T09:28:36+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -97,6 +97,19 @@
         <reference value="StructureDefinition/diagnosticreport-imag-atomic-1"/>
       </reference>
       <name value="diagnosticreport-imag-atomic-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-diagnosticreport-imag-mhr-1.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-imag-mhr-1"/>
+      </reference>
+      <name value="diagnosticreport-imag-mhr-1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
