@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-29T11:07:42+10:00",
+  "date": "2020-06-01T09:28:36+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -123,6 +123,23 @@
           "reference": "StructureDefinition/diagnosticreport-imag-atomic-1"
         },
         "name": "diagnosticreport-imag-atomic-1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-diagnosticreport-imag-mhr-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-imag-mhr-1"
+        },
+        "name": "diagnosticreport-imag-mhr-1",
         "exampleBoolean": false
       },
       {
