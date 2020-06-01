@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "implementationguide-eventsummary-1",
   "text": {
-    "status": "generated",
+    "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EventSummary</h2><p>The official URL for this implementation guide is: </p><pre>http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1</pre><div><p>This implementation guide is an HL7™ FHIR® specification to represent an Event Summary (ES).</p>\n<p>The primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR can be used for the electronic exchange of ES information between healthcare providers.</p>\n<p>This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.</p>\n<p>This implementation guide does not describe transport or persistence mechanism of the resources described by it.</p>\n</div></div>"
   },
   "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1",
@@ -11,7 +11,7 @@
   "title": "Event Summary",
   "status": "draft",
   "experimental": true,
-  "date": "2020-05-26T13:15:43+10:00",
+  "date": "2020-06-01T10:07:53+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -40,6 +40,23 @@
   ],
   "definition": {
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-patient-ident-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-ident-1"
+        },
+        "name": "Patient with Mandatory Identifier",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
