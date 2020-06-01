@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="imagingstudy-diag-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1" />  
+  <version value="1.0.0" />
+  <name value="ImagingStudyDiag" />
+  <title value="Diagnostic Imaging Study" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to represent key elements of clinical relevance of an imaging study in a diagnostic imaging report context. This profile is intended to support the electronic exchange of diagnostic imaging reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ImagingStudy" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ImagingStudy">
+      <path value="ImagingStudy" />
+      <short value="A diagnostic imaging study concerning a patient" />
+    </element>
+    <element id="ImagingStudy.identifier">
+      <path value="ImagingStudy.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.status">
+      <path value="ImagingStudy.status" />
+      <fixedCode value="available" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.modality">
+      <path value="ImagingStudy.modality" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html" />
+      </extension>
+      <path value="ImagingStudy.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.started">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1" />
+      </extension>
+      <path value="ImagingStudy.started" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.endpoint">
+      <path value="ImagingStudy.endpoint" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.procedureCode">
+      <path value="ImagingStudy.procedureCode" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.series">
+      <path value="ImagingStudy.series" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.series.uid">
+      <path value="ImagingStudy.series.uid" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.series.modality">
+      <path value="ImagingStudy.series.modality" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.series.instance">
+      <path value="ImagingStudy.series.instance" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.series.instance.uid">
+      <path value="ImagingStudy.series.instance.uid" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ImagingStudy.series.instance.sopClass">
+      <path value="ImagingStudy.series.instance.sopClass" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
