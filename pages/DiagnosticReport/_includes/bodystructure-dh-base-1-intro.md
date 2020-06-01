@@ -1,4 +1,4 @@
-#### Base BodyStructure *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Base BodyStructure
 TBD
 
 #### Implementation guidance

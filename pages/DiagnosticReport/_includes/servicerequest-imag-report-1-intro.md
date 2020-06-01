@@ -1,4 +1,4 @@
-#### Order Details for Diagnostic Imaging Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Order Details for Diagnostic Imaging Report
 TBD
 
 #### Implementation guidance

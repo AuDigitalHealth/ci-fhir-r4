@@ -1,4 +1,4 @@
-#### Pathology Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Pathology Report
 TBD
 
 #### Usage scenarios

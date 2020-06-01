@@ -1,4 +1,4 @@
-#### My Health Record Pathology Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### My Health Record Pathology Report
 TBD
 
 #### Usage scenarios
