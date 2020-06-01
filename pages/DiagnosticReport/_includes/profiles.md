@@ -88,7 +88,6 @@
                                 <li><a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">DiagnosticReport (My Health Record Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">DiagnosticReport (My Health Record Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">DiagnosticReport (My Health Record Pathology Report)</a></li>
-								<li><a href="StructureDefinition-imagingstudy-diag-1.html">ImagingStudy (Diagnostic Imaging Study)</a></li>
 								<li><a href="StructureDefinition-observation-imag-atomic-1.html">Observation (Atomic Imaging Observation)</a></li>
 								<li><a href="StructureDefinition-observation-otherdiag-atomic-1.html">Observation (Atomic Other Diagnostic Observation)</a></li>
                                 <li><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></li>
@@ -206,11 +205,6 @@
             <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
             <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
           </tr>
-          <tr>
-            <td><a href="StructureDefinition-imagingstudy-diag-1.html">ImagingStudy (Diagnostic Imaging Study)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-imagingstudy.html">TBD</a></td>
-            <td><a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a></td>
-          </tr>          
           <tr>
             <td><a href="StructureDefinition-observation-imag-atomic-1.html">Observation (Atomic Imaging Observation)</a></td>
             <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
