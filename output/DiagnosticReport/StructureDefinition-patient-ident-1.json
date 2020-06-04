@@ -11,7 +11,7 @@
   "title": "Patient with Mandatory Identifier",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-03T09:32:48+10:00",
+  "date": "2020-06-04T20:44:48+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -670,6 +670,58 @@
           }
         ],
         "mustSupport": true,
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:yearOfArrival",
+        "path": "Patient.extension",
+        "sliceName": "yearOfArrival",
+        "short": "The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more",
+        "definition": "The year of arrival in Australia from the Australian Bureau of Statics (ABS) and the Australian Institute of Health and Wealfare (AIHW). The year a person first arrived in Australia, from another country, with the intention of living in Australia for one year or more.",
+        "comment": "See [Australian Bureau of Statics (ABS) 1200.0.55.007 - Year of Arrival Standard, 2014, Version 1.5](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1200.0.55.007Main+Features12014,%20Version%201.5?OpenDocument)  and the [Australian Institute of Health and Wealfare (AIHW) Person—year of first arrival in Australia](https://meteor.aihw.gov.au/content/index.phtml/itemId/269447) for further materials.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/year-of-arrival"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          },
+          {
+            "key": "inv-yoa-value-0",
+            "severity": "error",
+            "human": "Year shall only be a year",
+            "expression": "valueDate.matches('^[0-9]{4}$')",
+            "source": "http://hl7.org.au/fhir/StructureDefinition/year-of-arrival"
+          }
+        ],
         "isModifier": false
       },
       {
