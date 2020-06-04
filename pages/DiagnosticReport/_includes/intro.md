@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including pathology report and diagnostic imaging report. A diagnostic report is the information provided by a diagnostic provider (pathology or diagnostic imaging) when the investigation has been completed. 
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including Pathology Reports (PR), Diagnostic Imaging Reports (DIR), and Specialist and Other Diagnostic Reports (SODR). A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
@@ -54,7 +54,73 @@ Specification packages contain only files relevant to the particular clinical do
 ## How to read this document
 This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of diagnostic report. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/r4/profiling.html).  
 
-The starting point for the profiles included in this implementation guide is the TBD profile, which references the additional profiles necessary to assert [conformance](conformance.html) for this implementation guide.
+The table below identifies the profile that is the starting point for an implementer. That starting profile will reference the additional profiles necessary to assert [conformance](conformance.html) for this implementation guide.
+
+<table border="1" cellpadding="1" valign="middle">
+<tbody>
+   <col width="15%" />
+   <col width="15%" />
+  <col width="auto" />
+ <tr bgcolor="#DCDCDC">
+    <th>Domain</th>
+    <th>Profiled resource</th>
+    <th>Scenario</th>
+  </tr>
+
+    <tr>
+        <td rowspan="3">Pathology  </td>
+        <td>Composition</td>
+        <td>For exchanging a pathology report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a> profile is the starring point. </td> 
+    </tr>
+
+    <tr>
+
+        <td>DiagnosticReport</td>
+        <td>For exchanging a pathology report as a diagnostic report, the <a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a> profile is the starring point.</td> 
+    </tr>
+
+    <tr>
+        <td>DiagnosticReport</td>
+        <td>For exchanging a pathology report as a document (containing a diagnostic report), the <a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a> profile is the starring point. </td> 
+    </tr>
+
+    <tr>
+        <td rowspan="3">Diagnostic Imaging</td>
+        <td>Composition</td>
+        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a> profile is the starting point.</td> 
+    </tr>
+
+    <tr>
+        <td>DiagnosticReport</td>
+        <td>For exchanging a diagnostic imaging report as a diagnostic report, <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
+    </tr>
+
+    <tr>
+        <td>DiagnosticReport</td>
+        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
+    </tr>
+
+ 
+    <tr>
+        <td rowspan="3">Specialist and Other Diagnostic</td>
+        <td>Composition</td>
+        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
+    </tr>
+
+    <tr>
+        <td>DiagnosticReport</td>
+        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a diagnostic report, <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
+    </tr>
+
+    <tr>
+        <td>DiagnosticReport</td>
+        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
+    </tr>
+    
+
+
+ </tbody>
+</table> 
 
 ## Editorial note
 This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.
@@ -115,6 +181,15 @@ This table lists known issues with this specification at the time of publishing.
     <th>Reference</th>
     <th>Description</th>
   </tr>
+      <tr>
+        <td>Diagnostic Report FHIR implementation guide roadmap</td>
+        <td>This implementation is being developed as part of the Diagnostics in FHIR R4 - June 30 project. This project will establish a suite of profiles to support diagnostics reporting in FHIR R4 including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports.  <br/><br/>
+
+Intended outcomes include an initial set of working profiles (including terminology) to support engagement with industry and other stakeholders; identification of issues / topics for wider engagement; provide foundation for mapping into CDA; demonstrate a means of meeting requirements of current eHealth diagnostic reporting specifications in R4 FHIR. <br/><br/>
+HL7 AU Base profiles that this implementation guide is based on are undergoing development. Improvements out of that work are expected to be incorporated into this implementation guide.<br/><br/>
+Stakeholder feedback is sought on a number of extant issues described on the pages of each profile. As engagement is progressed the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues.    </td>
+    </tr>
+    
     <tr>
         <td>Source material errors</td>
         <td>Material in this specification is based on existing standards and all efforts have been made to minimise divergence. Issues of an editorial nature in the source material (such as spelling or punctuation errors) are intentionally reproduced.</td>
