@@ -54,7 +54,7 @@ Specification packages contain only files relevant to the particular clinical do
 ## How to read this document
 This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of diagnostic report. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/r4/profiling.html).  
 
-The table below identifies the profile that is the starting point for an implementer. That starting profile will reference the which references the additional profiles necessary to assert [Conformance](conformance.html) for this implementation guide.
+The table below identifies the profile that is the starting point for an implementer. That starting profile will reference the additional profiles necessary to assert [conformance](conformance.html) for this implementation guide.
 
 <table border="1" cellpadding="1" valign="middle">
 <tbody>
@@ -62,7 +62,7 @@ The table below identifies the profile that is the starting point for an impleme
    <col width="15%" />
   <col width="auto" />
  <tr bgcolor="#DCDCDC">
-    <th>Profile</th>
+    <th>Domain</th>
     <th>Profiled resource</th>
     <th>Scenario</th>
   </tr>
@@ -92,29 +92,29 @@ The table below identifies the profile that is the starting point for an impleme
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For implementers interested in representing a diagnostic imaging report as a diagnostic report, <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchange a diagnostic imaging report as a diagnostic report, <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For implementers interested in representing a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchange a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
  
     <tr>
         <td rowspan="3">Specialist and Other Diagnostic</td>
         <td>Composition</td>
-        <td>For implementers interested in representing specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
+        <td>For exchange a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For implementers interested in representing specialist and other diagnostic report (not pathology, not diagnostic imaging) as a diagnostic report, <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
+        <td>For exchange a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a diagnostic report, <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For implementers interested in representing specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
+        <td>For exchange a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
     </tr>
     
 
