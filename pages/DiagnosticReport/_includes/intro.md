@@ -87,34 +87,34 @@ The table below identifies the profile that is the starting point for an impleme
     <tr>
         <td rowspan="3">Diagnostic Imaging</td>
         <td>Composition</td>
-        <td>For implementers interested in representing a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchange a diagnostic imaging report as a diagnostic report, <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchanging a diagnostic imaging report as a diagnostic report, <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchange a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
  
     <tr>
         <td rowspan="3">Specialist and Other Diagnostic</td>
         <td>Composition</td>
-        <td>For exchange a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
+        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchange a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a diagnostic report, <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
+        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a diagnostic report, <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchange a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
+        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
     </tr>
     
 
