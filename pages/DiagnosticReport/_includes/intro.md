@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including Diagnostic Imaging report, Other Diagnsotic Report and a Pathology Report. A diagnostic report is the information provided by a diagnostic provider (diagnostic imaging, other diagnostic or pathology) when the investigation has results available. 
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including Pathology Reports (PR), Diagnostic Imaging Reports (DIR), and Specialist and Other Diagnsotic Reports (SODR). A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
