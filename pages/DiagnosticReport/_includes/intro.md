@@ -183,7 +183,7 @@ This table lists known issues with this specification at the time of publishing.
   </tr>
       <tr>
         <td>Diagnostic Repoort FHIR implementation guide roadmap</td>
-        <td>This implementation is being developed as part of the Diagnostics in FHIR R4 - June 30 project. This project will establish of a suite of profiles to support diagnostics reporting in FHIR R4 including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports.  <br/><br/>
+        <td>This implementation is being developed as part of the Diagnostics in FHIR R4 - June 30 project. This project will establish a suite of profiles to support diagnostics reporting in FHIR R4 including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports.  <br/><br/>
 
 Intended outcomes include an initial set of working profiles (including terminology) to support engagement with industry and other stakeholders; identification of issues / topics for wider engagement; provide foundation for mapping into CDA; demonstrate a means of meeting requirements of current eHealth diagnostic reporting specifications in R4 FHIR. <br/><br/>
 HL7 AU Base profiles that this implementation guide is based on are undergoing development. Improvements out of that work are expected to be incorporated into this implementation guide.<br/><br/>
