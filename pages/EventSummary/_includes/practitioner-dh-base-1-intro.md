@@ -1,4 +1,4 @@
-### Base Practitioner *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+### Base Practitioner
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is recommended that:

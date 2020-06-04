@@ -1,4 +1,4 @@
-#### My Health Record Other Diagnostic Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### My Health Record Other Diagnostic Report
 TBD
 
 #### Usage scenarios

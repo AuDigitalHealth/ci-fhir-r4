@@ -24,8 +24,8 @@ active: profiles
   <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
 
-<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"> </a></span>{{[type]}}-{{[id]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a></h3>
-
+<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"> </a></span>{{[type]}}-{{[id]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.structuredefinitions.{{[id]}}.status | capitalize}}]</h3>
+</a>
 <!-- introductiontext here-->
 <!--<p><b>These variables can be used in the template files (for example <code>sd.html</code>):</b></p>
 
@@ -36,8 +36,6 @@ active: profiles
   <li>The type of the resource { {[type]}} = {{[type]}}</li>
   <li>Type-id (combination) { {[uid]}} = {{[uid]}}</li>
 </ul>-->
-
-<a name="introduction"> </a>
 
 {% capture my-include %}{% include {{[id]}}-intro.md %}{% endcapture %}{{ my-include | markdownify }}
 

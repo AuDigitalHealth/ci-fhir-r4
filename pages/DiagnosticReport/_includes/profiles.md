@@ -12,11 +12,7 @@
 <div class="col-12">
     <div style="border-right-style: none;" id="tabs">
       <div style="border-right-style: none;" id="tabs">
-            <ul>
-                <li><a href="#tabs-1">Categorized</a></li>
-                <li><a href="#tabs-2">Based on</a></li>
-            </ul>
-            <div id="tabs-1">
+          <div>
                 <table width="100%">
                     <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Foundation</div></td>
@@ -144,150 +140,7 @@
                 </table>
             </div>
       </div>
-      <div id="tabs-2">
-        <table width="100%">
-          <tr>
-            <th>Implementation guide profile</th>
-            <th>Implementation guide profile base</th>
-            <th>FHIR base resource</th>
-          </tr>
-          <tr>
-            <td class="frm-null"/>
-            <td class="frm-null"/>
-            <td class="frm-null"/>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-bodystructure-dh-base-1.html">BodyStructure (Base BodyStructure)</a></td>
-            <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-bodystructure.html">AU Base BodyStucture</a></td>
-            <td><a href="http://hl7.org/fhir/R4/bodystructure.html">BodyStructure</a></td>
-          </tr>
-		  <tr>
-            <td><a href="StructureDefinition-composition-imagreport-1.html">Composition (Diagnostic Imaging Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
-            <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
-          </tr>
-		  <tr>
-            <td><a href="StructureDefinition-composition-otherdiagreport-1.html">Composition (Other Diagnostic Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
-            <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
-          </tr>
-		  <tr>
-            <td><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-composition.html">AU Base Composition</a></td>
-            <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
-          </tr>
-         <tr>
-            <td><a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">DiagnosticReport (Atomic Diagnostic Imaging Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-         </tr>
-         <tr>
-            <td><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-diagnosticreport-path-atomic-1.html">DiagnosticReport (Atomic Pathology Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-          </tr>          
-          <tr>
-            <td><a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">DiagnosticReport (My Health Record Diagnostic Imaging Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">DiagnosticReport (My Health Record Other Diagnostic Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-          </tr>          
-          <tr>
-            <td><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">DiagnosticReport (My Health Record Pathology Report)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></td>
-            <td><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-imagingstudy-diag-1.html">ImagingStudy (Diagnostic Imaging Study)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-imagingstudy.html">TBD</a></td>
-            <td><a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a></td>
-          </tr>          
-          <tr>
-            <td><a href="StructureDefinition-observation-imag-atomic-1.html">Observation (Atomic Imaging Observation)</a></td>
-            <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-            <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-observation-otherdiag-atomic-1.html">Observation (Atomic Other Diagnostic Observation)</a></td>
-            <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-            <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></td>
-            <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-            <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
-          </tr>
-		  <tr>
-              <td><a href="StructureDefinition-observation-imag-simple-1.html">Observation (Simple Imaging Observation)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-        </tr>
-        <tr>
-            <td><a href="StructureDefinition-observation-otherdiag-simple-1.html">Observation (Simple Other Diagnostic Observation)</a></td>
-            <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-            <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-          </tr>
-           <tr>
-              <td><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a></td>
-              <td><a href="https://hl7.org/fhir/R4/observation.html">Observation</a></td>
-        </tr>
-          <tr>
-              <td><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></td>
-              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
-              <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
-          </tr>
-          <tr>
-            <td><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></td>
-            <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-organization.html">AU Base Organization</a></td>
-            <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
-          </tr>
-          <tr>
-              <td><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></td>
-              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-patient.html">AU Base Patient</a></td>
-              <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
-          </tr>
-          <tr>
-              <td><a href="StructureDefinition-patient-ident-1.html">Patient (Patient with Mandatory Identifier)</a></td>
-              <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-patient.html">AU Base Patient</a></td>
-              <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
-          </tr>
-          <tr>
-              <td><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a></td>
-              <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
-          </tr>
-         <tr>
-              <td><a href="StructureDefinition-servicerequest-imag-report-1.html">ServiceRequest (Order Details for Diagnostic Imaging Report)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
-              <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
-          </tr>
-          <tr>
-              <td><a href="StructureDefinition-servicerequest-otherdiag-report-1.html">ServiceRequest (Order Details for Other Diagnostic Report)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
-              <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
-          </tr>
-         <tr>
-              <td><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a></td>
-              <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
-          </tr>
-          <tr>
-              <td><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></td>
-              <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen Profile</a></td>
-              <td><a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a></td>
-          </tr>
-        </table>
-      </div>
+     
   </div>  <!-- /inner-wrapper -->
   </div>  <!-- /row -->
   </div>  <!-- /container -->
@@ -298,46 +151,6 @@
 		</div>  <!-- /container -->
 	</div>  <!-- /segment-post-footer -->
 
-      <!-- JS and analytics only. -->
-      <!-- Bootstrap core JavaScript
-================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script src="./dist/js/bootstrap.min.js"> </script>
-<script src="./assets/js/respond.min.js"> </script>
-
-<script src="./assets/js/fhir.js"> </script>
-
-  <!-- Analytics Below
-================================================== -->
-
-
-<script src="external/jquery/jquery.js"> </script>
-<script src="jquery-ui.min.js"> </script>
-<script>
-try {
-  var currentTabIndex = sessionStorage.getItem('fhir-resourcelist-tab-index');
-}
-catch(exception){
-}
-
-if (!currentTabIndex)
-  currentTabIndex = '0';
-
-$( '#tabs' ).tabs({
-         active: currentTabIndex,
-         activate: function( event, ui ) {
-             var active = $('.selector').tabs('option', 'active');
-             currentTabIndex = ui.newTab.index();
-             document.activeElement.blur();
-             try {
-               sessionStorage.setItem('fhir-resourcelist-tab-index', currentTabIndex);
-             }
-             catch(exception){
-             }
-         }
-     });
-</script>
-</div>
+ </div>
 </div>
 </html>

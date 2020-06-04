@@ -1,4 +1,4 @@
-#### Simple Imaging Observation *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Simple Imaging Observation
 TBD
 
 #### Implementation guidance

@@ -1,4 +1,4 @@
-#### My Health Record Diagnostic Imaging Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### My Health Record Diagnostic Imaging Report
 TBD
 
 #### Usage scenarios

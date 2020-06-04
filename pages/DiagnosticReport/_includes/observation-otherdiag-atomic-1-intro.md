@@ -1,4 +1,4 @@
-#### Atomic Other Diagnostic Observation *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Atomic Other Diagnostic Observation
 TBD
 
 #### Implementation guidance

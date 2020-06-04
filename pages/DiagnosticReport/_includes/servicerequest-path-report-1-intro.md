@@ -1,4 +1,4 @@
-#### Order Details for Pathology Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Order Details for Pathology Report
 TBD
 
 #### Implementation guidance

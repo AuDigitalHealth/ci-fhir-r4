@@ -1,4 +1,4 @@
-### Base Organization *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+### Base Organization
 
 #### Implementation guidance
 For the supported usage scenarios in this implementation guide it is recommended that:

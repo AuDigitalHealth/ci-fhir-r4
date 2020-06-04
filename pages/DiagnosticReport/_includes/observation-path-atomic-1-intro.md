@@ -1,4 +1,4 @@
-#### Atomic Pathology Observation *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Atomic Pathology Observation
 TBD
 
 #### Implementation guidance

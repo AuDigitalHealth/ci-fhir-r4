@@ -1,4 +1,4 @@
-#### Atomic Other Diagnostic Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Atomic Other Diagnostic Report
 TBD
 
 #### Usage scenarios

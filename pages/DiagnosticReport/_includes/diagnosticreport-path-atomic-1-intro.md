@@ -1,4 +1,4 @@
-#### Atomic Pathology Report *[[Draft](http://hl7.org/fhir/r4/valueset-publication-status.html)]*
+#### Atomic Pathology Report
 TBD
 
 #### Usage scenarios
