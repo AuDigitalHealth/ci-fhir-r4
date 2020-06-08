@@ -1,15 +1,25 @@
 #### My Health Record Patient 
-The purpose of this profile is to define a representation of a patient for exchange usage scenarios in an Australian context where unambiguous identification of a patient is mandatory. This profile is intended to support the electronic exchange of health information with the My Health Record system.
+The purpose of this profile is to define a representation of a patient for exchange usage scenarios to support the electronic exchange of healthcare information between healthcare providers and the My Health Record system infrastructure in Australia.
 
 This profile supports the exchange of some of the Cultural and Linguistic Diversity (CALD) data set [<sup>[1]</sup>](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1289.0Main%20Features11999) [<sup>[2]</sup>](https://meteor.aihw.gov.au/content/index.phtml/itemId/491352), including a country of birth, year of arrival and preferred language.
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
 <ul>
-  <li>country of birth is sent in <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace">extension:birthPlace</a></li>
-  <li>an Australian address conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
-  <li>generalPractitioner is sent as a PractitionerRole, unless a practitioner is not able to be nominated, in that case an Organization is sent instead</li>
- </ul>
+  <li>if sent, country of birth is sent in <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace">extension:birthPlace</a></li>
+  <li>if sent, a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
+  <li>if sent, a generalPractitioner is sent as a reference to a PractitionerRole resource with:
+      <ul>
+         <li>a PractitionerRole.code, e.g. 62247001 |General practitioner|</li> 
+         <li>a PractitionerRole.organization as either:
+             <ul>
+               <li>a reference to an Organization resource with Organization.name, or</li>
+                <li>organization.display with the organisation's name</li>   
+            </ul>
+        </li>
+      </ul>
+</li>
+</ul>  
 
 When sending communication preferences for a patient the guidance in the following table applies.
 <table class="list" style="width:100%">
