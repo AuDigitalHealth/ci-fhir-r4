@@ -1,7 +1,7 @@
 #### Pathology Report
 The purpose of this profile is to define a representation of a pathology report, as a document, to be electronically exchanged between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
-A Pathology Report is created by an authoring pathology provider in response to a pathology order and contains a pathologist’s analysis of one or more test results. The original diagnostic report may be attached in one or more formats (e.g. a PDF and MS Word formats) that may contain one or more pathology test results.
+A Pathology Report is created by an authoring pathology provider in response to a pathology order and contains a pathologist’s analysis of one or more test results. The original diagnostic report may be attached in one or more formats (e.g. PDF and MS Word format) that may contain one or more pathology test results.
 
 A registered portal or registered repository shall not be a producer of a pathology report.
 
@@ -68,4 +68,4 @@ When sending to the My Health Record system it is expected that:
 * the diagnostic report conforms to [My Health Record Pathology Report](StructureDefinition-diagnosticreport-path-mhr-1.html)
 
 #### Boundaries and relationships
-This Composition profile is intended to support exchange using a document wrapper to enclose the diagnostic report, thus the values of diagnostic report elements that are present in both the DiagnosticReport resource and the Composition resource shall be consistent. [My Health Record Pathology Report](StructureDefinition-diagnosticreport-path-mhr-1.html) or [Atomic Pathology Observation](StructureDefinition-observation-path-atomic-1.html) may also be used in sending a diagnostic report without a document wrapper.
+This Composition profile is intended to support exchange using a document wrapper to enclose the diagnostic report, thus the values of diagnostic report elements that are present in both the DiagnosticReport resource and the Composition resource shall be consistent. [My Health Record Pathology Report](StructureDefinition-diagnosticreport-path-mhr-1.html) or [Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html) may also be used in sending a diagnostic report without a document wrapper.
