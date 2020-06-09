@@ -74,7 +74,7 @@
     <element id="Composition.meta">
       <path value="Composition.meta" />
       <min value="1" />
-    <constraint>
+      <constraint>
         <key value="inv-dh-cmp-04" />
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1'" />
@@ -110,6 +110,7 @@
     </element>
     <element id="Composition.status">
       <path value="Composition.status" />
+      <short value="preliminary | final | amended" />
       <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
