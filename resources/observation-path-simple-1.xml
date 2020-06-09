@@ -62,6 +62,7 @@
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1" />
       </constraint>
     </element>
     <element id="Observation.status">
@@ -69,6 +70,7 @@
         <valueString value="default: final" />
       </extension>
       <path value="Observation.status" />
+      <short value="preliminary | final | amended +" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
