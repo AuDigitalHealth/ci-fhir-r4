@@ -57,10 +57,26 @@
       <path value="Observation" />
       <short value="A pathology test observation for a patient" />
       <definition value="An observation of a pathology test for a patient. This observation may be a simple test or a panel/study." />
+      <constraint>
+        <key value="inv-dh-obs-01" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
     </element>
     <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
       <path value="Observation.status" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1" />
+      </binding>
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
@@ -77,6 +93,13 @@
       <path value="Observation.code" />
       <short value="Pathology test / panel" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationCode" />
+        </extension>
+        <strength value="preferred" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1" />
+      </binding>
     </element>
     <element id="Observation.code.coding:snomedImagingProcedure">
       <path value="Observation.code.coding" />
@@ -88,8 +111,8 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
       </type>
       <mustSupport value="true" />
     </element>
