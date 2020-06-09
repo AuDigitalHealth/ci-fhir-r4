@@ -71,9 +71,6 @@
       <path value="Observation.status" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationStatus" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1" />
       </binding>
@@ -94,9 +91,6 @@
       <short value="Pathology test / panel" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
-        </extension>
         <strength value="preferred" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1" />
       </binding>
