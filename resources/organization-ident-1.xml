@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of an organisation where unambiguous identification of an organisation is mandatory. The profile is intended to support the electronic exchange of health information between healthcare providers in Australia.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to define a representation of an organisation where unambiguous identification of an organisation is mandatory. This profile is intended to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xA;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -25,7 +25,7 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <short value="An organisation in the context of electronic exchange of health information" />
+      <short value="An organisation or an organisational unit" />
       <constraint>
         <key value="inv-dh-org-01" />
         <severity value="error" />
@@ -36,7 +36,7 @@
       <constraint>
         <key value="inv-dh-org-02" />
         <severity value="error" />
-        <human value="The organisation shall at least have one identifier with a system and a value" />
+        <human value="At least one organisation identifier shall at least have a system and a value" />
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1" />
       </constraint>
