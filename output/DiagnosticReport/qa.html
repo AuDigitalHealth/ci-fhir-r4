@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 6, warn = 69, info = 5 -->
+<!-- broken links = 0, errors = 6, warn = 71, info = 5 -->
 <head>
   <title>DiagnosticReport : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DiagnosticReport</h1>
- <p>Generated Wed Jun 10 13:22:58 AEST 2020, FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
+ <p>Generated Thu Jun 11 08:00:58 AEST 2020, FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
 <p style="background-color: #ffcccc">IG Publisher Version: v1.0.99-SNAPSHOT, which is out of date. The current version is v1.0.100-SNAPSHOT <a href="https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -54,7 +54,7 @@
      <td><a href="#C__work_git_ci-fhir-r4_resources_composition-otherdiagreport-1"><b>C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1</b></a></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__work_git_ci-fhir-r4_resources_composition-pathreport-1"><b>C:\work\git\ci-fhir-r4\resources\composition-pathreport-1</b></a></td><td><b>0</b></td><td><b>5</b></td>
+     <td><a href="#C__work_git_ci-fhir-r4_resources_composition-pathreport-1"><b>C:\work\git\ci-fhir-r4\resources\composition-pathreport-1</b></a></td><td><b>0</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_resources_diagnosticreport-imag-atomic-1"><b>C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-atomic-1</b></a></td><td><b>0</b></td><td><b>2</b></td>
@@ -229,10 +229,16 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
+     <td><b>Pathology Report.Composition.status</b></td><td><b>warning</b></td><td><b>Binding https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1 could not be located</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.author</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.attester.party</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1#Composition.custodian</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>StructureDefinition/composition-pathreport-1: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
