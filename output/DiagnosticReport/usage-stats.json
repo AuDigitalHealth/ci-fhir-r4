@@ -34,12 +34,6 @@
         "title": "Organization with Mandatory Identifier"
       }
     ],
-    "Patient": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1",
-        "title": "Patient with Mandatory Identifier"
-      }
-    ],
     "PractitionerRole": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1",
@@ -123,6 +117,16 @@
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1",
         "title": "Simple Pathology Observation"
       }
+    ],
+    "Patient": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1",
+        "title": "Patient with Mandatory Identifier"
+      },
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1",
+        "title": "My Health Record Patient"
+      }
     ]
   },
   "usage": {
@@ -132,6 +136,9 @@
     "http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator": [
       "Patient.birthDate",
       "Patient.deceased[x]"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/date-of-arrival": [
+      "Patient"
     ],
     "http://hl7.org.au/fhir/StructureDefinition/ihi-record-status": [
       "Patient.identifier"

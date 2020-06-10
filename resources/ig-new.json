@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "implementationguide-diagnosticreport-1",
+  "id" : "implementationguide-eventsummary-1",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
     "valueString" : "C:\\work\\git\\ci-fhir-r4\\resources"
@@ -11,12 +11,12 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\work\\git\\ci-fhir-r4\\pages\\DiagnosticReport"
+    "valueString" : "C:\\work\\git\\ci-fhir-r4\\pages\\EventSummary"
   }],
-  "url" : "http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1",
+  "url" : "http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-eventsummary-1",
   "version" : "1.0.0",
-  "name" : "DiagnosticReport",
-  "title" : "Diagnostic Report",
+  "name" : "EventSummary",
+  "title" : "Event Summary",
   "status" : "draft",
   "experimental" : true,
   "publisher" : "Australian Digital Health Agency",
@@ -26,9 +26,9 @@
       "value" : "help@digitalhealth.gov.au"
     }]
   }],
-  "description" : "This implementation guide is an HL7™ FHIR® specification to represent a Diagnostic Report (DR).\n \nThe primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.\n \nThis implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.\n \nThis implementation guide does not describe transport or persistence mechanism of the resources described by it.",
-  "copyright" : "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
-  "packageId" : "au.electronichealth.diagnosticreport",
+  "description" : "This implementation guide is an HL7™ FHIR® specification to represent an Event Summary (ES).\n \nThe primary aim of this implementation guide is to support implementing ES in FHIR, Release 4 (v4.0.0). The resulting FHIR can be used for the electronic exchange of ES information between healthcare providers.\n \nThis implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.\n \nThis implementation guide does not describe transport or persistence mechanism of the resources described by it.",
+  "copyright" : "Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "packageId" : "au.electronichealth.eventsummary",
   "license" : "Apache-2.0",
   "fhirVersion" : ["4.0.1",
   "4.0.1"],
@@ -41,9 +41,30 @@
   "definition" : {
     "resource" : [{
       "reference" : {
+        "reference" : "StructureDefinition/patient-ident-1"
+      },
+      "name" : "Patient with Mandatory Identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/organization-ident-1"
       },
       "name" : "Organization with Mandatory Identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/organization-dh-base-1"
+      },
+      "name" : "Base Organization",
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/practitioner-dh-base-1"
+      },
+      "name" : "Base Practitioner",
       "exampleBoolean" : false
     },
     {
@@ -62,161 +83,24 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/patient-ident-1"
+        "reference" : "Organization/8338f6a2-e710-4a43-8318-f02514c3c709"
       },
-      "name" : "Patient with Mandatory Identifier",
-      "exampleBoolean" : false
+      "name" : "Organization example 1",
+      "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/servicerequest-path-report-1"
+        "reference" : "Organization/1.2.36.1.2001.1001.105.100000"
       },
-      "name" : "servicerequest-path-report-1",
-      "exampleBoolean" : false
+      "name" : "Organization example 2",
+      "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-imag-atomic-1"
+        "reference" : "Organization/territory-medical-centre-0810"
       },
-      "name" : "diagnosticreport-imag-atomic-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-imag-mhr-1"
-      },
-      "name" : "diagnosticreport-imag-mhr-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-path-atomic-1"
-      },
-      "name" : "diagnosticreport-path-atomic-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-path-mhr-1"
-      },
-      "name" : "diagnosticreport-path-mhr-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-otherdiag-mhr-1"
-      },
-      "name" : "diagnosticreport-otherdiag-mhr-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-otherdiag-atomic-1"
-      },
-      "name" : "diagnosticreport-otherdiag-atomic-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/organization-dh-base-1"
-      },
-      "name" : "Base Organization",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/observation-path-simple-1"
-      },
-      "name" : "Simple Pathology Observation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/composition-pathreport-1"
-      },
-      "name" : "Pathology Report",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/specimen-collect-1"
-      },
-      "name" : "Collected Specimen",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/observation-path-atomic-1"
-      },
-      "name" : "Atomic Pathology Observation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/observation-otherdiag-simple-1"
-      },
-      "name" : "Simple Other Diagnostic Observation"
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/observation-otherdiag-atomic-1"
-      },
-      "name" : "Atomic Other Diagnostic Observation"
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/observation-imag-atomic-1"
-      },
-      "name" : "Atomic Imaging Observation"
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/composition-otherdiagreport-1"
-      },
-      "name" : "Other Diagnostic Report",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/servicerequest-otherdiag-report-1"
-      },
-      "name" : "Order Details for Other Diagnostic Report",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/composition-imagreport-1"
-      },
-      "name" : "Diagnostic Imaging Report",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/observation-imag-simple-1"
-      },
-      "name" : "Simple Imaging Observation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/servicerequest-imag-report-1"
-      },
-      "name" : "Order Details for Diagnostic Imaging Report",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/bodystructure-dh-base-1"
-      },
-      "name" : "Base BodyStructure",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/imagingstudy-diag-1"
-      },
-      "name" : "ImagingStudy (Diagnostic Imaging Study)",
-      "exampleBoolean" : false
+      "name" : "Organization example 3",
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -237,6 +121,48 @@
         "reference" : "Organization/hallam-medical-clinic"
       },
       "name" : "Organization example 3",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/dorian-minderbinder"
+      },
+      "name" : "Base Practitioner example 1",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/jane-eyrewright"
+      },
+      "name" : "Base Practitioner example 2",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/40a94071-8373-4d53-a788-63b79c75a3c1"
+      },
+      "name" : "Base Practitioner example 3",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/54a065dc-8666-11e9-bc42-526af7764f64"
+      },
+      "name" : "Base Practitioner example 4",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1.2.36.1.2001.1001.105.100001.1001.275"
+      },
+      "name" : "Base Practitioner example 5",
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1.2.36.1.2001.1001.105.100002.1.671"
+      },
+      "name" : "Base Practitioner example 6",
       "exampleBoolean" : true
     }],
     "page" : {
