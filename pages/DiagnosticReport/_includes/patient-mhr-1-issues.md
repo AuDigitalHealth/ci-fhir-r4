@@ -5,35 +5,20 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-  <tr>
-    <td>Profile URL</td>
-    <td>The canonical URL for this profile may move to a version independent canonical URL pending design decisions around the support of additional elements.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/17">ci-fhir-r4/issues/17</a></td>
+   <tr>
+    <td>Country of birth (missing implementation guidance)</td>
+    <td>A patient's country of birth can be sent multiple ways using the birthPlace extension - e.g. using Address.text or Address.country. At this time the preferred option has not been identified.</td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/62">ci-fhir-r4/issues/62</a></td>
   </tr>
   <tr>
-    <td>Patient (biological sex)</td>
-    <td>FHIR Patient model allows for recording administrative gender for a patient. It does not allow recording sex for a patient. We have a requirement to record patient's biological sex (sex at birth) as well as gender. We are working on solutions for recording a patient's biological sex.</td>
-    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/321">au-fhir-base/issues/321</a> See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/15">ci-fhir-r4/issues/15</a></td>
-  </tr>
+    <td>multipleBirth[x] (missing support for birth plurality)</td>
+    <td>The element multipleBirth[x] offers a choice between multipleBirthBoolean or multipleBirthInteger (e.g. '2' to indicate the 2nd born), but does not allow recording the total number of births from one pregnancy - e.g. 2nd of 4. Clinical and jurisdiction feedback indicate that this is a useful data point to collect, to facilitate identification. This work is expected to be progressed via HL7 AU, with an extension being added to the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a>.</td>
+    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/417">au-fhir-base/issues/417</a> See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/66">ci-fhir-r4/issues/66</a></td>
+  </tr>  
   <tr>
-    <td>Patient (year of arrival)</td>
-    <td>We are working on supporting year of arrival in Australia as part of the minimum CALD (Cultural and Linguistic Diversity) data set in electronic health.</td>
-    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/357">au-fhir-base/issues/357</a> See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/13">ci-fhir-r4/issues/13</a></td>
-  </tr>
-  <tr>
-    <td>contact (use cases)</td>
-    <td>At this time the usage scenarios are undefined for exchanging a patient's contact information with the My Health Record system.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/16">ci-fhir-r4/issues/16</a></td>
-  </tr>
-  <tr>
-    <td>contact.relationship (terminology)</td>
-    <td>Work is underway to bind to terminology supporting contact relationship types in an Australian healthcare context. This work is expected to result in support for values from <a href="https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-1">Contact Relationship Type</a></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/16">ci-fhir-r4/issues/16</a></td>
-  </tr>
-  <tr>
-    <td>generalPractitioner (PractitionerRole)</td>
-    <td>PractitionerRole profiles are not yet available.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/7">ci-fhir-r4/issues/7</a></td>
-  </tr>
+    <td>Constraint presentation</td>
+    <td>The full set of constraints (i.e. invariants) defined in this profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.</td>
+    <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Derived.20profile.20snapshot.20missing.20upstream.20invariants">Derived profile snapshot missing upstream invariants</a> stream</td>
+  </tr> 
 </tbody>
 </table>
