@@ -12,16 +12,16 @@ When sending to the My Health Record system it is expected that:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Atomic Diagnostic Imaging Report](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1),
-[Atomic Imaging Observation](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1),
-[Atomic Other Diagnostic Observation](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1),
-[Atomic Other Diagnostic Report](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1),
-[Atomic Pathology Observation](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1),
-[Atomic Pathology Report](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1),
-[Diagnostic Imaging Report](http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1),
-[Order Details for Diagnostic Imaging Report](http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1),
-[Order Details for Other Diagnostic Report](http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1),
-[Order Details for Pathology Report](http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1),
-[Other Diagnostic Report](http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1),
-[Pathology Report](http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1),
-[Simple Other Diagnostic Observation](http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1).
+[Atomic Diagnostic Imaging Report](StructureDefinition-diagnosticreport-imag-atomic-1.html),
+[Atomic Imaging Observation](StructureDefinition-observation-imag-atomic-1.html),
+[Atomic Other Diagnostic Observation](StructureDefinition-observation-otherdiag-atomic-1.html),
+[Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html),
+[Atomic Pathology Observation](StructureDefinition-observation-path-atomic-1.html),
+[Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html),
+[Diagnostic Imaging Report](StructureDefinition-composition-imagreport-1.html),
+[Order Details for Diagnostic Imaging Report](StructureDefinition-servicerequest-imag-report-1.html),
+[Order Details for Other Diagnostic Report](StructureDefinition-servicerequest-otherdiag-report-1.html),
+[Order Details for Pathology Report](StructureDefinition-servicerequest-path-report-1.html),
+[Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html),
+[Pathology Report](StructureDefinition-composition-pathreport-1.html),
+[Simple Other Diagnostic Observation](StructureDefinition-observation-otherdiag-simple-1.html).
