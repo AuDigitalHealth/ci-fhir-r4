@@ -24,16 +24,6 @@
         "title": "Diagnostic Imaging Study"
       }
     ],
-    "Organization": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1",
-        "title": "Base Organization"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1",
-        "title": "Organization with Mandatory Identifier"
-      }
-    ],
     "PractitionerRole": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1",
@@ -118,6 +108,16 @@
         "title": "Simple Pathology Observation"
       }
     ],
+    "Organization": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1",
+        "title": "Base Organization"
+      },
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1",
+        "title": "Organization with Mandatory Identifier"
+      }
+    ],
     "Patient": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1",
@@ -162,6 +162,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
