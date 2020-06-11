@@ -44,8 +44,8 @@
       <constraint>
         <key value="inv-dh-dir-4" />
         <severity value="error" />
-        <human value="The requester of order details for pathology report on which this diagnostic report is based on shall be a practitionerrole only" />
-        <expression value="basedOn.resolve().where($this is requester).exists() implies requester.resolve().where($this is PractitionerRole).exists()" />
+        <human value="The requester of order details for pathology report that this diagnostic report is based on shall be a practitionerRole" />
+        <expression value="basedOn.resolve().requester.resolve().where($this is PractitionerRole).exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
     </element>
