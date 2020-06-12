@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="a971cabe-bab5-4e12-b6cb-39f526d17093"/>
+    <meta>
+        <versionId value="1.2.2.3.0"/>
+    </meta>    
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003619900041630"/>
+    </identifier>
+    <practitioner>
+        <reference value="Practitioner/21bf7f1d-f171-45ff-9f6d-3481f48ad468"/>
+    </practitioner> 
+    <organization>
+        <reference value="Organization/e0c5fa86-2184-4a5b-8c47-041422643440"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="159138004"/>
+        </coding>
+        <text value="Microbiologist"/>
+    </code>    
+</PractitionerRole>
