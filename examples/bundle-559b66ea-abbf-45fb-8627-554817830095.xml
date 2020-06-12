@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="559b66ea-abbf-45fb-8627-554817830095"/>
+    <meta>
+        <lastUpdated value="2020-03-17T11:46:00+11:00"/>
+    </meta>
+    <type value="collection"/>
+
+    <entry>
+        <fullUrl value="urn:uuid:59033ee7-1950-4a04-abb3-6a232d5f62fd"/>
+        <resource>
+            <DiagnosticReport>
+                <id value="59033ee7-1950-4a04-abb3-6a232d5f62fd"/>
+                <language value="en-AU"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                            <tr>
+                                <th
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;font-size:20px;background-color:#333333;color:#ffffff;border:none;text-align:center;vertical-align:top"
+                                    colspan="5">My Health Record Pathology Report</th>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                                    colspan="5">017 Mar 2020 11:45 AM </td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                                    > Ms Sally FIELD</td>
+                                <td
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                                    >14 February 1984</td>
+                                <td
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                                    >GENDER Female</td>
+                                <td
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                                    >IHI 8003608000228437</td>
+                                <td
+                                    style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                                    >INDIGENOUS STATUS Neither Aboriginal nor Torres Strait Islander
+                                    origin</td>
+                            </tr>
+                        </table>
+
+                        <h3>2019-Novel Coronavirus PCR Report</h3>
+                        <p><b>Time Collected: </b>10:40 AM</p>
+                        <p><b>Date Collected: </b>16-Mar-20</p>
+                        <p><b>Consultant:</b>8003619900041630</p>
+                        <p>Doomben Pathology QLD, signed: Adam Meyer</p>
+                        <p>
+                            <a href="">2019-Novel Coronavirus PCR Report</a>
+                        </p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="FILL"/>
+                            <display value="Filler Identifier"/>
+                        </coding>
+                    </type>
+                    <system
+                        value="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565"/>
+                    <value value="DOO3P978"/>
+                </identifier>
+                <basedOn>
+                    <reference value="urn:uuid:f606666a-23bf-4947-87ba-688824c12c08"/>
+                </basedOn>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="LAB"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="MB"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1445431000168101"/>
+                        <display value="COVID-19 nucleic acid assay"/>
+                    </coding>
+                    <text value="2019-Novel Coronavirus PCR"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
+                </subject>
+                <effectiveDateTime value="2020-03-16T10:40:00+11:00"/>
+                <issued value="2020-03-17T11:45:00+11:00"/>
+                <performer>
+                    <reference value="urn:uuid:a971cabe-bab5-4e12-b6cb-39f526d17093"/>
+                </performer>
+                <result>
+                    <reference value="urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283"/>
+                </result>
+                <presentedForm>
+                    <contentType value="application/pdf"/>
+                    <!--NOTE - update url, PDF to match the example, regenerate hash in the final example -->
+                    <!--<url
+            value="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/COVID-Neg-simple.pdf"/>-->
+                    <url value="C:\work\git\ci-fhir-r4\examples\2019-Novel_Coronavirus_PCR.pdf"/>
+                    <hash value="93C7492222543592204832919D25A1A4604B2D0D"/>
+                    <title value="2019-Novel Coronavirus PCR Report"/>
+                </presentedForm>
+            </DiagnosticReport>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283"/>
+        <resource>
+            <Observation>
+                <id value="21b82b5b-9acc-49c8-8634-2fdb7b18b283"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="MB"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1445431000168101"/>
+                        <display value="COVID-19 nucleic acid assay"/>
+                    </coding>
+                    <text value="2019-Novel Coronavirus PCR"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
+                </subject>
+                <effectiveDateTime value="2020-03-16T10:40:12+11:00"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f606666a-23bf-4947-87ba-688824c12c08"/>
+        <resource>
+            <ServiceRequest>
+                <id value="f606666a-23bf-4947-87ba-688824c12c08"/>
+                <!--  use local identifier -->
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system
+                        value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003621566699776"/>
+                    <value value="SR-34L6-804"/>
+                </identifier>
+                <status value="completed"/>
+                <intent value="order"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="108252007"/>
+                        <display value="Laboratory procedure"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1445431000168101"/>
+                        <display value="COVID-19 nucleic acid assay"/>
+                    </coding>
+                    <text value="2019-Novel Coronavirus PCR"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
+                </subject>
+                <authoredOn value="2020-03-16T08:54:00+11:00"/>
+                <requester>
+                    <reference value="urn:uuid:f1d5844f-dd39-457d-867b-f50a00f91731"/>
+                </requester>
+            </ServiceRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
+        <resource>
+            <Patient>
+                <id value="mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
+                <meta>
+                    <versionId value="02"/>
+                </meta>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <table>
+                            <tr>
+                                <td>NAME</td>
+                                <td>Ms Sally FIELD</td>
+                            </tr>
+                            <tr>
+                                <td>IHI NUMBER</td>
+                                <td>8003608000228437</td>
+                            </tr>
+                            <tr>
+                                <td>DOB</td>
+                                <td>14 February 1984</td>
+                            </tr>
+                            <tr>
+                                <td>GENDER</td>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <td>INDIGENOUS STATUS</td>
+                                <td>Neither Aboriginal nor Torres Strait Islander origin</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+                    <valueCoding>
+                        <system
+                            value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="4"/>
+                        <display value="Neither Aboriginal nor Torres Strait Islander origin"/>
+                    </valueCoding>
+                </extension>
+                <identifier>
+                    <use value="official"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NI"/>
+                            <display value="National unique individual identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                    <value value="8003608333563104"/>
+                </identifier>
+                <name>
+                    <use value="usual"/>
+                    <family value="FIELD"/>
+                    <given value="Sally"/>
+                    <prefix value="Ms"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="1984-02-14"/>
+            </Patient>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:a971cabe-bab5-4e12-b6cb-39f526d17093"/>
+        <resource>
+            <PractitionerRole>
+                <id value="a971cabe-bab5-4e12-b6cb-39f526d17093"/>
+                <meta>
+                    <versionId value="1.2.2.3.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NPI"/>
+                            <display value="National provider identifier"/>
+                        </coding>
+                        <text value="HPI-I"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                    <value value="8003619900041630"/>
+                </identifier>
+                <practitioner>
+                    <reference value="urn:uuid:21bf7f1d-f171-45ff-9f6d-3481f48ad468"/>
+                </practitioner>
+                <organization>
+                    <reference value="urn:uuid:e0c5fa86-2184-4a5b-8c47-041422643440"/>
+                </organization>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="159138004"/>
+                    </coding>
+                    <text value="Microbiologist"/>
+                </code>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:21bf7f1d-f171-45ff-9f6d-3481f48ad468"/>
+        <resource>
+            <Practitioner>
+                <id value="21bf7f1d-f171-45ff-9f6d-3481f48ad468"/>
+                <meta>
+                    <versionId value="1.2.2.3.2"/>
+                </meta>
+                <name>
+                    <use value="usual"/>
+                    <family value="Meyer"/>
+                    <given value="Adam"/>
+                    <prefix value="Dr."/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(07) 7010 3453"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <line value="75 Hampden St"/>
+                    <city value="DOOMBEN"/>
+                    <state value="QLD"/>
+                    <postalCode value="4007"/>
+                    <country value="AU"/>
+                </address>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:e0c5fa86-2184-4a5b-8c47-041422643440"/>
+        <resource>
+            <Organization>
+                <id value="e0c5fa86-2184-4a5b-8c47-041422643440"/>
+                <meta>
+                    <versionId value="2"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                            <code value="NOI"/>
+                        </coding>
+                        <text value="HPI-O"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+                    <value value="8003623233366565"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <text value="NATA Accreditation Number"/>
+                    </type>
+                    <system value="http://hl7.org.au/id/nata-accreditation"/>
+                    <!--In Australia NATA numbers are an
+        incremental number that have been incremented to 5 digits, this example uses a fictional
+        NATA number from 100,000 + to ensure no conflict with real world values-->
+                    <value value="100101"/>
+                </identifier>
+                <type>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
+                        <code value="8520"/>
+                        <display value="Pathology and Diagnostic Imaging Services"/>
+                    </coding>
+                    <text value="Pathology Laboratory"/>
+                </type>
+                <name value="Doomben Pathology QLD"/>
+                <telecom>
+                    <system value="email"/>
+                    <value value="info@doombenpathlabs.example.com"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(07) 5550 3427"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <type value="physical"/>
+                    <line value="75 Hampden St"/>
+                    <city value="DOOMBEN"/>
+                    <state value="QLD"/>
+                    <postalCode value="4007"/>
+                    <country value="AU"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f1d5844f-dd39-457d-867b-f50a00f91731"/>
+        <resource>
+            <PractitionerRole>
+                <id value="f1d5844f-dd39-457d-867b-f50a00f91731"/>
+                <meta>
+                    <versionId value="1.0.0.3.0"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="EI"/>
+                            <display value="Employee number"/>
+                        </coding>
+                        <text value="Employee Number"/>
+                    </type>
+                    <system
+                        value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/8003621566699776"/>
+                    <value value="AMC-GA-001"/>
+                    <assigner>
+                        <display value="Algregster Medical Center QLD"/>
+                    </assigner>
+                </identifier>
+                <practitioner>
+                    <display value="Dr Greg Algregster"/>
+                </practitioner>
+                <organization>
+                    <display value="Algregster Medical Center QLD"/>
+                </organization>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="62247001"/>
+                    </coding>
+                    <text value="General Practitioner"/>
+                </code>
+            </PractitionerRole>
+        </resource>
+    </entry>
+</Bundle>

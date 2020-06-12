@@ -30,7 +30,7 @@
     <definition>
 
         <!-- PROFILE DEFINITIONS -->
-       
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/organization-ident-1"/>
@@ -86,7 +86,7 @@
             </reference>
             <name value="diagnosticreport-path-atomic-1"/>
             <exampleBoolean value="false"/>
-        </resource>        
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/diagnosticreport-path-mhr-1"/>
@@ -122,7 +122,7 @@
             <name value="Simple Pathology Observation"/>
             <exampleBoolean value="false"/>
         </resource>
-                <resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/composition-pathreport-1"/>
             </reference>
@@ -138,17 +138,17 @@
         </resource>
         <resource>
             <reference>
-                 <reference value="StructureDefinition/observation-path-atomic-1"/>
+                <reference value="StructureDefinition/observation-path-atomic-1"/>
             </reference>
             <name value="Atomic Pathology Observation"/>
             <exampleBoolean value="false"/>
         </resource>
-		<resource>
+        <resource>
             <reference>
                 <reference value="StructureDefinition/observation-otherdiag-simple-1"/>
             </reference>
             <name value="Simple Other Diagnostic Observation"/>
-		</resource>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/observation-otherdiag-atomic-1"/>
@@ -185,7 +185,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/observation-imag-simple-1"/>
-            </reference>            
+            </reference>
             <name value="Simple Imaging Observation"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -212,7 +212,7 @@
         </resource>
 
         <!-- EXAMPLES -->
-        
+
         <!-- ORGANIZATION WITH MANDATORY IDENTIFIER EXAMPLES -->
         <resource>
             <reference>
@@ -235,6 +235,15 @@
             <name value="Organization example 3"/>
             <exampleBoolean value="true"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/559b66ea-abbf-45fb-8627-554817830095"/>
+            </reference>
+            <name value="2019 Novel Coronavirus PCR (short form)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+
+
         <page>
             <nameUrl value="index.html"/>
             <title value="TBD"/>
