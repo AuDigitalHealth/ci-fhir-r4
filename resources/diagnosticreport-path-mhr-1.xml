@@ -27,10 +27,38 @@
       <path value="DiagnosticReport" />
       <short value="Pathology Report" />
       <definition value="A pathology report sent from the service provider to the requester, i.e. the results including any interpretation provided, for an individual‘s pathology test." />
+      <constraint>
+        <key value="inv-dh-dir-2" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-dir-3" />
+        <severity value="error" />
+        <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-dir-4" />
+        <severity value="error" />
+        <human value="The requester of order details for pathology report that this diagnostic report is based on shall be a practitionerRole" />
+        <expression value="basedOn.resolve().requester.resolve().where($this is PractitionerRole).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
+      </constraint>
     </element>
     <element id="DiagnosticReport.meta">
       <path value="DiagnosticReport.meta" />
       <min value="1" />
+      <constraint>
+        <key value="inv-dh-dir-1" />
+        <severity value="error" />
+        <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1'" />
+        <xpath value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1').exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
+      </constraint>
     </element>
     <element id="DiagnosticReport.meta.profile">
       <path value="DiagnosticReport.meta.profile" />
@@ -59,6 +87,13 @@
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DiagnosticReportStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1" />
+      </binding>
     </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
@@ -70,11 +105,22 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1" />
+      </binding>
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
       <short value="Pathology test or test group" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DiagnosticReportCodes" />
+        </extension>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1" />
+      </binding>
     </element>
     <element id="DiagnosticReport.code.coding:snomedImagingProcedures">
       <path value="DiagnosticReport.code.coding" />
@@ -86,7 +132,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -107,7 +153,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
       </type>
       <mustSupport value="true" />
     </element>
