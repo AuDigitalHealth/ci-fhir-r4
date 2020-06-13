@@ -17,6 +17,23 @@
         <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
         <value value="8003614900041243"/>
     </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="EI"/>
+                <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+        </type>
+        <!--Invalid ABN format that passes profile validation used as the fictious ABN to avoid introducing ambiguity with real world organisations-->
+        <system
+            value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753000"/>
+        <value value="RBRLSNSW765301"/>
+        <assigner>
+            <display value="Randwick Laboratories Sydney"/>
+        </assigner>
+    </identifier>
     <practitioner>
         <reference value="Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"/>
         <display value="Dr. Robert Brown"/>
