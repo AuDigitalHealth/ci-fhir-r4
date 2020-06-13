@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="e27d1ae9-50c1-444c-bd1c-237cb4ffe137"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h4>Flemington Pathology (Flemington Laboratories)</h4>
+            <p>NATA Accreditation Number: 100302</p>
+            <p>ABN: 51824994455</p>
+            <p>(03) 5550 4724</p>
+            <p>41 Epsom court, FLEMINGTON, VIC, 3031</p>
+        </div>
+    </text>
+    <identifier>
+        <type>
+            <text value="NATA Accreditation Number"/>
+        </type>
+        <system value="http://hl7.org.au/id/nata-accreditation"/> 
+        <!--In Australia NATA numbers are an
+        incremental number that have been incremented to 5 digits, this example uses a fictional
+        NATA number from 100,000 + to ensure no conflict with real world values--> 
+        <value value="100302"/>
+    </identifier>
+    <identifier>
+        <type>
+            <text value="ABN"/>
+        </type>
+        <system value="http://hl7.org.au/id/abn"/>
+        <value value="51824994455"/>
+    </identifier>
+    <name value="Flemington Pathology"/>
+    <alias value="Flemington Laboratories"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(03) 5550 4724"/>
+    </telecom>
+    <address>
+        <line value="41 Epsom court"/>
+        <city value="FLEMINGTON"/>
+        <state value="VIC"/>
+        <postalCode value="3031"/>
+        <country value="AU"/>
+    </address>
+</Organization>
