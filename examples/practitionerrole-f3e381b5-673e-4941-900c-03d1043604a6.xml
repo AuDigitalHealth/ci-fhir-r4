@@ -4,7 +4,37 @@
     <meta>
         <versionId value="2020-1.1.2Q3"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
-    </meta>    
+    </meta>  
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h3>Dr. Robert Brown</h3>
+            <p>Haematologist</p>
+            <p>Randwick Laboratories Sydney</p>
+            <table>
+                <tr>
+                    <td>HPI-I</td>
+                    <td>8003614900041243</td>
+                </tr>
+                <tr>
+                    <td>Employee Id.</td>
+                    <td>RBRLSNSW765301</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>0491 578 888</td>
+                </tr>
+                <tr>
+                    <td>Fax</td>
+                    <td>(02) 5550 9994</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>1342 Sydney St, Randwick, NSW, 2031</td>
+                </tr>
+            </table>
+        </div>
+    </text>
     <identifier>
         <type>
             <coding>
@@ -26,7 +56,7 @@
             </coding>
             <text value="Employee Number"/>
         </type>
-        <!--Invalid ABN format that passes profile validation used as the fictious ABN to avoid introducing ambiguity with real world organisations-->
+        <!--Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations-->
         <system
             value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753000"/>
         <value value="RBRLSNSW765301"/>
