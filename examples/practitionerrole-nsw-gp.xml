@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="f1d5844f-dd39-457d-867b-f50a00f91731"/>
+    <meta>
+        <versionId value="203"/>
+    </meta>    
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="EI"/>
+                <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+        </type>
+        <system value="http://bondigpmedicalcenter.example.com/providers" />
+        <value value="8223NSW" />
+        <assigner>
+            <display value="Bondi GP Medical Center NSW"/>
+        </assigner>
+    </identifier>
+    <practitioner>
+        <display value="Dr Sarah Bondiali"/>
+    </practitioner> 
+    <organization>
+        <display value="Bondi GP Medical Center NSW"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="62247001"/>
+        </coding>
+        <text value="General Practitioner"/>
+    </code>    
+</PractitionerRole>
