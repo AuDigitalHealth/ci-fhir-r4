@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="312d50a5-a941-4730-b232-abc32be0b9a0"/>
+    <meta>
+        <versionId value="2020-1.1"/>
+    </meta>    
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003619900015717"/>
+    </identifier>
+    <practitioner>
+        <reference value="Practitioner/024009f6-e522-4253-ad90-bb9ff49cc4a3"/>
+        <display value="Dr. Patricia Tulio"/>
+    </practitioner> 
+    <organization>
+        <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+        <display value="Randwick Laboratories Sydney"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="61207006"/>
+            <display value="Medical pathologist"/>
+        </coding>
+        <text value="Pathologist"/>
+    </code>    
+</PractitionerRole>
