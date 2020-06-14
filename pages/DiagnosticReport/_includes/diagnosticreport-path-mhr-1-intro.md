@@ -9,19 +9,24 @@ A registered portal or registered repository shall not be a producer of a pathol
 
 #### Usage scenarios
 The following are the overarching usage scenarios this profile is intended to support:
-* A clinical information system (CIS) sends or receives a pathology report document with the My Health Record system
-*	A contracted service provider (CSP) sends or receives a pathology report document with the My Health Record system
-*	A CSP sends or receives a pathology report document with a CIS or another CSP
-*	A registered portal or registered repository receives a pathology report document
+* A clinical information system (CIS) sends or receives a pathology report with the My Health Record system
+* A contracted service provider (CSP) sends or receives a pathology report with the My Health Record system
+* A CSP sends or receives a pathology report with a CIS or another CSP
+* A registered portal or registered repository receives a pathology report
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-*	identifier - if there isn’t a local identifier namespace available then an identifier can be sent with a HPI-O scoped identifier namespace (see the FAQ for more information)
-*	status will be 'preliminary', 'final', or 'amended'
-*	category will be the list of diagnostic services that performed the tests included in this report
-*	code will be the pathology test group name or individual test name where only one test was performed; code will typically match one Observation.code
-*	effective[x] is the earliest specimen collection date time
-*	performer will be the performing pathologist including their employing organisation. The list of performers in the DiagnosticReport should be consistent with the each result observation performer referenced in the report.
-*	the attached pdf is viewable by any individual that is a My Health Record participant. It should not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)
+* a local identifier is sent with a [HPI-O scoped](http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/index.html) if there isn't a local namespace available (see the [FAQ](https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions) for more information)
+* status is 'preliminary', 'final', or 'amended'
+* code matches one Observation.code referenced in result
+* effective[x] is the earliest specimen collection date time
+* performer is the performing pathologist including their employing organisation. The list of performers in the DiagnosticReport should be consistent with the each result observation performer referenced in the report.
+* the attached PDF is viewable by any individual that is a My Health Record participant. It should not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)
 
+When sending a report of a multi-test study or panel:
+* result is sent with the Observation representing the study / panel
+* code is sent with the same code in that study / panel Observation
+* the individual component tests are referenced by that Observation (Observtion.hasMember) and not directly referenced by the DiagnosticReport
+
+#### Boundaries and relationships
 This profile is referenced by [Pathology Report](StructureDefinition-composition-pathreport-1.html).
