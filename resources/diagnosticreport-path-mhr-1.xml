@@ -28,23 +28,23 @@
       <short value="Pathology Report" />
       <definition value="A pathology report sent from the service provider to the requester, i.e. the results including any interpretation provided, for an individual‘s pathology test." />
       <constraint>
-        <key value="inv-dh-dir-2" />
+        <key value="inv-dh-dir-02" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-dir-3" />
+        <key value="inv-dh-dir-03" />
         <severity value="error" />
         <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-dir-4" />
+        <key value="inv-dh-dir-04" />
         <severity value="error" />
-        <human value="The requester of order details for pathology report that this diagnostic report is based on shall be a practitionerRole" />
+        <human value="The requester of the pathology order shall be a PractitionerRole" />
         <expression value="basedOn.resolve().requester.resolve().where($this is PractitionerRole).exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
@@ -53,7 +53,7 @@
       <path value="DiagnosticReport.meta" />
       <min value="1" />
       <constraint>
-        <key value="inv-dh-dir-1" />
+        <key value="inv-dh-dir-01" />
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1'" />
         <xpath value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1').exists()" />
