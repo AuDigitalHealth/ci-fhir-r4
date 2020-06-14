@@ -16,17 +16,25 @@ The following are the overarching usage scenarios this profile is intended to su
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* a local identifier is sent with a [HPI-O scoped](http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/index.html) if there isn't a local namespace available (see the [FAQ](https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions) for more information)
-* status is 'preliminary', 'final', or 'amended'
-* code matches one Observation.code referenced in result
-* effective[x] is the earliest specimen collection date time
-* performer is the performing pathologist including their employing organisation. The list of performers in the DiagnosticReport should be consistent with the each result observation performer referenced in the report.
-* the attached PDF is viewable by any individual that is a My Health Record participant. It should not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)
+<ul>
+<li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/index.html">HPI-O scoped</a> if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a>) for more information)</li>
+<li>status is 'preliminary', 'final', or 'amended'</li>
+<li>code matches one Observation.code referenced in result</li>
+<li>effective[x] is the earliest specimen collection date time</li>
+<li>performer is sent as a reference to a PractitionerRole resource with PractitionerRole.practitioner as either:
+     <ul>
+        <li>a reference to a Practitioner resource with Practitioner.name.family, or</li>
+        <li>practitioner.display with the at least the practitioner's family name</li>   
+     </ul></li>
+<li>The set of performers is consistent with each Observation.performer referenced in the report
+<li>the attached PDF is viewable by any individual that is a My Health Record participant; it does not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)</li>
+</ul>
 
 When sending a report of a multi-test study or panel:
-* result is sent with the Observation representing the study / panel
-* code is sent with the same code in that study / panel Observation
-* the individual component tests are referenced by that Observation (Observtion.hasMember) and not directly referenced by the DiagnosticReport
-
+<ul>
+<li>result is sent with the Observation representing the study / panel</li>  
+<li>code is sent with the same code in that study / panel Observation</li>  
+<li>the individual component tests are referenced by that Observation (Observtion.hasMember) and not directly referenced by the DiagnosticReport</li>  
+</ul>
 #### Boundaries and relationships
 This profile is referenced by [Pathology Report](StructureDefinition-composition-pathreport-1.html).
