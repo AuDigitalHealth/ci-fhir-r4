@@ -1,9 +1,9 @@
 ﻿EventSummary : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 5
-IG Publisher Version: v1.0.99-SNAPSHOT Out of date - current version is v1.0.100-SNAPSHOT
-Generated Wed Jun 10 13:25:24 AEST 2020. FHIR version 4.0.1 for au.electronichealth.eventsummary# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+err = 0, warn = 14, info = 4
+IG Publisher Version: v1.0.100-SNAPSHOT
+Generated Mon Jun 15 10:47:36 AEST 2020. FHIR version 4.0.1 for au.electronichealth.eventsummary# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 2
  C:\work\git\ci-fhir-r4\examples\organization-021fff67-c5ec-438f-9520-ce9bafee1306 : 0 / 1
@@ -13,18 +13,18 @@ Generated Wed Jun 10 13:25:24 AEST 2020. FHIR version 4.0.1 for au.electronichea
  C:\work\git\ci-fhir-r4\examples\organization-hallam-medical-clinic : 0 / 0
  C:\work\git\ci-fhir-r4\examples\organization-territory-medical-centre-0810 : 0 / 0
  C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100001.1001.275 : 0 / 0
- C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671 : 0 / 3
- C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1 : 0 / 0
+ C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671 : 0 / 2
+ C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1 : 0 / 1
  C:\work\git\ci-fhir-r4\examples\practitioner-54a065dc-8666-11e9-bc42-526af7764f64 : 0 / 0
- C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder : 0 / 1
+ C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder : 0 / 2
  C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright : 0 / 2
  C:\work\git\ci-fhir-r4\resources\implementationguide-eventsummary-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-dh-base-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\organization-ident-1 : 0 / 0
- C:\work\git\ci-fhir-r4\resources\patient-ident-1 : 0 / 5
- C:\work\git\ci-fhir-r4\resources\patient-mhr-1 : 0 / 3
- C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1 : 0 / 0
- C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1 : 0 / 1
+ C:\work\git\ci-fhir-r4\resources\patient-ident-1 : 0 / 2
+ C:\work\git\ci-fhir-r4\resources\patient-mhr-1 : 0 / 2
+ C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1 : 0 / 1
+ C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1 : 0 / 2
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be au.electronichealth.eventsummary
@@ -40,12 +40,13 @@ WARNING: Organization/1.2.36.1.2001.1001.105.100001.5437512835128: Organization.
 == C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100001.1001.275.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-1.2.36.1.2001.1001.105.100002.1.671.xml ==
 INFORMATION: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0].code.coding[0]: Code System URI "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0" is unknown so the code cannot be validated
-INFORMATION: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.qualification[0]: This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1
-WARNING: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.communication[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 not found by validator
+WARNING: Practitioner/1.2.36.1.2001.1001.105.100002.1.671: Practitioner.meta.profile[0]: Profile reference "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" could not be resolved, so has not been checked
 == C:\work\git\ci-fhir-r4\examples\practitioner-40a94071-8373-4d53-a788-63b79c75a3c1.xml ==
+WARNING: Practitioner/40a94071-8373-4d53-a788-63b79c75a3c1: Practitioner.meta.profile[0]: Profile reference "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" could not be resolved, so has not been checked
 == C:\work\git\ci-fhir-r4\examples\practitioner-54a065dc-8666-11e9-bc42-526af7764f64.xml ==
 == C:\work\git\ci-fhir-r4\examples\practitioner-dorian-minderbinder.xml ==
 INFORMATION: Practitioner/dorian-minderbinder: Practitioner.qualification[0].code.coding[0]: Code System URI "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0" is unknown so the code cannot be validated
+WARNING: Practitioner/dorian-minderbinder: Practitioner.meta.profile[0]: Profile reference "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" could not be resolved, so has not been checked
 == C:\work\git\ci-fhir-r4\examples\practitioner-jane-eyrewright.xml ==
 INFORMATION: Practitioner/jane-eyrewright: Practitioner.communication[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (codes = urn:ietf:bcp:47#asf)
 WARNING: Practitioner/jane-eyrewright: Practitioner.communication[0].coding[0]: The display "Auslan" is not a valid display for the code {urn:ietf:bcp:47}asf - should be one of ["Australian Sign Language"]
@@ -53,15 +54,13 @@ WARNING: Practitioner/jane-eyrewright: Practitioner.communication[0].coding[0]: 
 == C:\work\git\ci-fhir-r4\resources\organization-dh-base-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\organization-ident-1.xml ==
 == C:\work\git\ci-fhir-r4\resources\patient-ident-1.xml ==
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1#Patient.contact.organization: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1#Patient.generalPractitioner: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1 is valid constraint on the base because it is not known
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1#Patient.generalPractitioner: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1#Patient.managingOrganization: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1: The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\patient-mhr-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1#Patient.generalPractitioner: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1#Patient.managingOrganization: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1 is valid constraint on the base because it is not known
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1: The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1.xml ==
+WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1.xml ==
-WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1: The Implementation Guide contains no examples for this profile
+WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1#PractitionerRole.organization: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1 is valid constraint on the base because it is not known
+WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1'): The Implementation Guide contains no examples for this profile
