@@ -9,19 +9,46 @@ A registered portal or registered repository shall not be a producer of a pathol
 
 #### Usage scenarios
 The following are the overarching usage scenarios this profile is intended to support:
-* A clinical information system (CIS) sends or receives a pathology report document with the My Health Record system
-*	A contracted service provider (CSP) sends or receives a pathology report document with the My Health Record system
-*	A CSP sends or receives a pathology report document with a CIS or another CSP
-*	A registered portal or registered repository receives a pathology report document
+* A clinical information system (CIS) sends or receives a pathology report with the My Health Record system
+* A contracted service provider (CSP) sends or receives a pathology report with the My Health Record system
+* A CSP sends or receives a pathology report with a CIS or another CSP
+* A registered portal or registered repository receives a pathology report
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-*	identifier - if there isn’t a local identifier namespace available then an identifier can be sent with a HPI-O scoped identifier namespace (see the FAQ for more information)
-*	status will be 'preliminary', 'final', or 'amended'
-*	category will be the list of diagnostic services that performed the tests included in this report
-*	code will be the pathology test group name or individual test name where only one test was performed; code will typically match one Observation.code
-*	effective[x] is the earliest specimen collection date time
-*	performer will be the performing pathologist including their employing organisation. The list of performers in the DiagnosticReport should be consistent with the each result observation performer referenced in the report.
-*	the attached pdf is viewable by any individual that is a My Health Record participant. It should not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)
+<ul>
+<li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/index.html">HPI-O scoped</a> if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a>) for more information)</li>
+<li>status is 'preliminary', 'final', or 'amended'</li>
+<li>category is sent with additional categories indicating the diagnostic service that performed each pathology test observation referenced in the report</li>
+<li>code matches one Observation.code referenced in result</li>
+<li>effective[x] is the earliest specimen collection date time</li>
+<li>performer is sent as a reference to a PractitionerRole resource with:
+    <ul>
+        <li>PractitionerRole.identifier as a HPI-I</li>
+        <li>PractitionerRole.practitioner as reference to a Practitioner resource with:
+        <ul>
+            <li>Practitioner.name.family</li>
+            <li>Practitioner.telecom</li>   
+            <li>Practitioner.address</li>   
+        </ul></li>
+        <li>PractitionerRole.organization as reference to an Organization resource with:
+        <ul>
+            <li>Organization.identifier as a HPI-O</li>
+            <li>Organization.name</li>
+            <li>Organization.address</li> 
+         </ul></li>
+        <li>PractitionerRole.code describing the professional role, e.g. 40204001 |Haematologist|</li>
+    </ul></li>
+<li>The set of performers is consistent with each Observation.performer referenced in the report</li>
+<li>the attached PDF is viewable by any individual that is a My Health Record participant; it does not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)</li>
+</ul>
 
+When sending a report of a multi-test study or panel:
+<ul>
+<li>result is sent with the Observation representing the study / panel</li>  
+<li>code is sent with the same code in that study / panel Observation</li>  
+<li>the individual component tests are referenced by that Observation (Observtion.hasMember) and not directly referenced by the DiagnosticReport</li>  
+</ul>
+
+#### Boundaries and relationships
 This profile is referenced by [Pathology Report](StructureDefinition-composition-pathreport-1.html).
