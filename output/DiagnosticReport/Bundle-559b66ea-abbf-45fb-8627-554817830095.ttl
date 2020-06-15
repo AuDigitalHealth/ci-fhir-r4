@@ -1,0 +1,442 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/559b66ea-abbf-45fb-8627-554817830095> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "559b66ea-abbf-45fb-8627-554817830095"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-17T11:46:00+11:00"^^xsd:dateTime ]
+  ];
+  fhir:Bundle.type [ fhir:value "collection"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:59033ee7-1950-4a04-abb3-6a232d5f62fd" ];
+     fhir:Bundle.entry.resource <urn:uuid:59033ee7-1950-4a04-abb3-6a232d5f62fd>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283" ];
+     fhir:Bundle.entry.resource <urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f606666a-23bf-4947-87ba-688824c12c08" ];
+     fhir:Bundle.entry.resource <urn:uuid:f606666a-23bf-4947-87ba-688824c12c08>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c" ];
+     fhir:Bundle.entry.resource <urn:uuid:7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a971cabe-bab5-4e12-b6cb-39f526d17093" ];
+     fhir:Bundle.entry.resource <urn:uuid:a971cabe-bab5-4e12-b6cb-39f526d17093>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:21bf7f1d-f171-45ff-9f6d-3481f48ad468" ];
+     fhir:Bundle.entry.resource <urn:uuid:21bf7f1d-f171-45ff-9f6d-3481f48ad468>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:e0c5fa86-2184-4a5b-8c47-041422643440" ];
+     fhir:Bundle.entry.resource <urn:uuid:e0c5fa86-2184-4a5b-8c47-041422643440>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f1d5844f-dd39-457d-867b-f50a00f91731" ];
+     fhir:Bundle.entry.resource <urn:uuid:f1d5844f-dd39-457d-867b-f50a00f91731>
+  ] .
+
+<urn:uuid:59033ee7-1950-4a04-abb3-6a232d5f62fd> a fhir:DiagnosticReport;
+  fhir:Resource.id [ fhir:value "59033ee7-1950-4a04-abb3-6a232d5f62fd"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-AU"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en-AU\">\n                        <table style=\"border-collapse:collapse;border-spacing:0;width:100%;background-color:#000000\">\n                            <tr>\n                                <th colspan=\"9\" style=\"padding-top: 40px;                                     vertical-align: top;                                     text-align: center;                                     margin 0px;                                     font-size: 20px;                                     font-family: Helvetica;                                     color: #FFFFFF;                                     font-weight: bold;                                     word-wrap: break-word;\">Pathology Report</th>\n                            </tr>\n                            <tr>\n                                <td colspan=\"9\" style=\"vertical-align: top;                                     text-align: center;                                     margin 0px;                                     font-size: 15px;                                     font-family: Helvetica;                                     color: #FFFFFF;                                     font-weight: bold;\">17 Mar 2020 11:45</td>\n                            </tr>\n                            <tr>\n                                <td style=\"display: inline;                                      margin-right: 20px;                                      font-size: 13px;                                     color: #FFFFFF;\">Ms Sally <span class=\"bold\">FIELD</span></td>\n                                <td style=\"display: inline;                                     font-size: 11px;                                     color: #FFFFFF;\">DoB</td>\n                                <td style=\"margin-left: 0px;                                     display: inline;                                     font-size: 11px;                                     margin-right: 30px;                                     color: #FFFFFF;\">14 Feb 1984</td>\n                                <td style=\"display: inline;                                     font-size: 11px;                                     color: #FFFFFF;\">GENDER</td>\n                                <td style=\"margin-left: 0px;                                     display: inline;                                     font-size: 11px;                                     margin-right: 30px;                                     color: #FFFFFF;\">Female</td>\n                                <td style=\"display: inline;                                     font-size: 11px;                                     color: #FFFFFF;\">IHI</td>\n                                <td style=\"margin-left: 0px;                                     display: inline;                                     font-size: 11px;                                     margin-right: 30px;                                     color: #FFFFFF;\">8003 6080 0022 8437</td>\n                                <td style=\"display: inline;                                     font-size: 11px;                                     color: #FFFFFF;\">INDIGENOUS STATUS</td>\n                                <td style=\"margin-left: 0px;                                     display: inline;                                     font-size: 11px;                                     margin-right: 30px;                                     color: #FFFFFF;                                     word-wrap: break-word;\">Neither Aboriginal nor Torres Strait Islander origin</td>\n                            </tr>\n                        </table>\n                        <table style=\"width:100%\">\n                            <tbody>\n                                <tr>\n                                    <td style=\"width:50%\">\n                                        <table>\n                                            <thead>\n                                                <tr>\n                                                  <th colspan=\"1\" style=\"padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;\">Requester</th>\n                                                </tr>\n                                            </thead>\n                                            <tbody>\n                                                <tr>\n                                                  <td>Dr Greg Algregster (General Practitioner)\n                                                  (Employee ID: AMC-GA-001)</td>\n                                                </tr>\n                                                <tr>\n                                                  <td>Algregster Medical Center QLD</td>\n                                                </tr>\n                                            </tbody>\n                                        </table>\n                                        <table>\n                                            <thead>\n                                                <tr>\n                                                  <th colspan=\"2\" style=\"padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;\">Request Details</th>\n                                                </tr>\n                                            </thead>\n                                            <tbody>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Request ID:</td>\n                                                  <td>SR-34L6-804</td>\n                                                </tr>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Request\n                                                  Date/Time:</td>\n                                                  <td>16 Mar 2020 8:54</td>\n                                                </tr>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Requested\n                                                  Test:</td>\n                                                  <td>2019-Novel Coronavirus PCR</td>\n                                                </tr>\n                                            </tbody>\n                                        </table>\n                                    </td>\n                                    <td>\n                                        <table>\n                                            <thead>\n                                                <tr>\n                                                  <th colspan=\"2\" style=\"padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;\">Author</th>\n                                                </tr>\n                                            </thead>\n                                            <tbody>\n                                                <tr>\n                                                  <td>Dr Adam Meyer (Microbiologist) (HPI-I:\n                                                  8003619900041630)</td>\n                                                </tr>\n                                                <tr>\n                                                  <td>75 Hampden St, DOOMBEN, QLD, 4007</td>\n                                                </tr>\n                                                <tr>\n                                                  <td>(07) 7010 3453</td>\n                                                </tr>\n                                                <tr>\n                                                  <td/>\n                                                </tr>\n                                                <tr>\n                                                  <td>Doomben Pathology QLD (HPI-O:\n                                                  8003623233366565) (NATA: 100101)</td>\n                                                </tr>\n                                                <tr>\n                                                  <td>75 Hampden St, DOOMBEN, QLD, 4007</td>\n                                                </tr>\n                                                <tr>\n                                                  <td>(07) 5550 3427\n                                                  info@doombenpathlabs.example.com</td>\n                                                </tr>\n                                            </tbody>\n                                        </table>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <table>\n                                            <thead>\n                                                <tr>\n                                                  <th colspan=\"2\" style=\"padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;\">Report Details</th>\n                                                </tr>\n                                            </thead>\n                                            <tbody>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Report\n                                                  Date/Time:</td>\n                                                  <td>17 Mar 2020 11:45</td>\n                                                </tr>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Report Name:</td>\n                                                  <td>2019-Novel Coronavirus PCR</td>\n                                                </tr>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Report ID:</td>\n                                                  <td>DOO3Q978</td>\n                                                </tr>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Report Status:</td>\n                                                  <td>Final</td>\n                                                </tr>\n                                                <tr>\n                                                  <td style=\"font-weight: bold;\">Diagnostice\n                                                  Service(s):</td>\n                                                  <td>Microbiology</td>\n                                                </tr>\n                                            </tbody>\n                                        </table>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                        <h1 style=\" width: 100%;                             font-size: 17px;                             font-weight: bold;                             color: #000000;                             margin-bottom: 5px;                             margin-top: 0px;                             border-bottom: 1px SOLID #000000;;                             padding: 0px;                             word-wrap: break-word;\">Test Results</h1>\n                        <table style=\"border-collapse:collapse;border-spacing:0;width:100%;\">\n                            <thead>\n                                <tr>\n                                    <th>\n                                        <tr>\n                                            <th style=\"padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-weight: bold;                                             text-decoration: underline;                                             text-align: left;                                             word-wrap: break-word;\">Test Name</th>\n                                            <th style=\"padding-top: 15px;                                                 vertical-align: top;                                                 text-align: center;                                                 margin 0px;                                                 font-family: Helvetica;                                                 font-weight: bold;                                                 text-decoration: underline;                                                 text-align: left;                                                 word-wrap: break-word;\">Diagnostic Service</th>\n                                            <th style=\"padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-weight: bold;                                             text-decoration: underline;                                             text-align: left;                                             word-wrap: break-word;\">Sample Collected Date/Time</th>\n                                            <th style=\"padding-top: 15px;                                                 vertical-align: top;                                                 text-align: center;                                                 margin 0px;                                                 font-family: Helvetica;                                                 font-weight: bold;                                                 text-decoration: underline;                                                 text-align: left;                                                 word-wrap: break-word;\">Status</th>\n                                        </tr>\n                                    </th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tbody>\n                                    <tr>\n                                        <td>2019-Novel Coronavirus PCR</td>\n                                        <td>Microbiology</td>\n                                        <td>16 Mar 2020 10:40:00</td>\n                                        <td>Final</td>\n                                    </tr>\n                                </tbody>\n                            </tbody>\n                        </table>\n                        <p>\n                            <a href=\"https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/2019-Novel_Coronavirus_PCR.pdf\">Link to PDF document</a>\n                        </p>\n                    </div>"
+  ];
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "FILL" ];
+         fhir:Coding.display [ fhir:value "Filler Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565" ];
+     fhir:Identifier.value [ fhir:value "DOO3Q978" ]
+  ];
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:f606666a-23bf-4947-87ba-688824c12c08" ]
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "LAB" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "MB" ]
+     ]
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1445431000168101;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1445431000168101" ];
+       fhir:Coding.display [ fhir:value "COVID-19 nucleic acid assay" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "2019-Novel Coronavirus PCR" ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c" ]
+  ];
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2020-03-16T10:40:00+11:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.issued [ fhir:value "2020-03-17T11:45:00+11:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.performer [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:a971cabe-bab5-4e12-b6cb-39f526d17093" ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283" ]
+  ];
+  fhir:DiagnosticReport.presentedForm [
+     fhir:index 0;
+     fhir:Attachment.contentType [ fhir:value "application/pdf" ];
+     fhir:Attachment.url [ fhir:value "https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/2019-Novel_Coronavirus_PCR.pdf" ];
+     fhir:Attachment.hash [ fhir:value "9F692CB7D03EE6FE8E0500740446262F55FBADBC"^^xsd:base64Binary ];
+     fhir:Attachment.title [ fhir:value "2019-Novel Coronavirus PCR Report" ]
+  ] .
+
+<urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "21b82b5b-9acc-49c8-8634-2fdb7b18b283"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "MB" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1445431000168101;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1445431000168101" ];
+       fhir:Coding.display [ fhir:value "COVID-19 nucleic acid assay" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "2019-Novel Coronavirus PCR" ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-03-16T10:40:00+11:00"^^xsd:dateTime] .
+
+<urn:uuid:f606666a-23bf-4947-87ba-688824c12c08> a fhir:ServiceRequest;
+  fhir:Resource.id [ fhir:value "f606666a-23bf-4947-87ba-688824c12c08"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:ServiceRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "PLAC" ];
+         fhir:Coding.display [ fhir:value "Placer Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003621566699776" ];
+     fhir:Identifier.value [ fhir:value "SR-34L6-804" ]
+  ];
+  fhir:ServiceRequest.status [ fhir:value "completed"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:108252007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "108252007" ];
+       fhir:Coding.display [ fhir:value "Laboratory procedure" ]
+     ]
+  ];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1445431000168101;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1445431000168101" ];
+       fhir:Coding.display [ fhir:value "COVID-19 nucleic acid assay" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "2019-Novel Coronavirus PCR" ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c" ]
+  ];
+  fhir:ServiceRequest.authoredOn [ fhir:value "2020-03-16T08:54:00+11:00"^^xsd:dateTime];
+  fhir:ServiceRequest.requester [
+     fhir:Reference.reference [ fhir:value "urn:uuid:f1d5844f-dd39-457d-867b-f50a00f91731" ]
+  ] .
+
+<urn:uuid:7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/indigenous-status" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1" ];
+       fhir:Coding.code [ fhir:value "4" ];
+       fhir:Coding.display [ fhir:value "Neither Aboriginal nor Torres Strait Islander origin" ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NI" ];
+         fhir:Coding.display [ fhir:value "National unique individual identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/ihi/1.0" ];
+     fhir:Identifier.value [ fhir:value "8003608333563104" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.family [ fhir:value "FIELD" ];
+     fhir:HumanName.given [
+       fhir:value "Sally";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Ms";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1984-02-14"^^xsd:date] .
+
+<urn:uuid:a971cabe-bab5-4e12-b6cb-39f526d17093> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "a971cabe-bab5-4e12-b6cb-39f526d17093"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NPI" ];
+         fhir:Coding.display [ fhir:value "National provider identifier" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HPI-I" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/hpii/1.0" ];
+     fhir:Identifier.value [ fhir:value "8003619900041630" ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.reference [ fhir:value "urn:uuid:21bf7f1d-f171-45ff-9f6d-3481f48ad468" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e0c5fa86-2184-4a5b-8c47-041422643440" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:159138004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "159138004" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Microbiologist" ]
+  ] .
+
+<urn:uuid:21bf7f1d-f171-45ff-9f6d-3481f48ad468> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "21bf7f1d-f171-45ff-9f6d-3481f48ad468"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.family [ fhir:value "Meyer" ];
+     fhir:HumanName.given [
+       fhir:value "Adam";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Dr.";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(07) 7010 3453" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.line [
+       fhir:value "75 Hampden St";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "DOOMBEN" ];
+     fhir:Address.state [ fhir:value "QLD" ];
+     fhir:Address.postalCode [ fhir:value "4007" ];
+     fhir:Address.country [ fhir:value "AU" ]
+  ] .
+
+<urn:uuid:e0c5fa86-2184-4a5b-8c47-041422643440> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "e0c5fa86-2184-4a5b-8c47-041422643440"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org.au/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NOI" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "HPI-O" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/hpio/1.0" ];
+     fhir:Identifier.value [ fhir:value "8003623233366565" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.text [ fhir:value "NATA Accreditation Number" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://hl7.org.au/id/nata-accreditation" ];
+     fhir:Identifier.value [ fhir:value "100101" ]
+  ];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0" ];
+       fhir:Coding.code [ fhir:value "8520" ];
+       fhir:Coding.display [ fhir:value "Pathology and Diagnostic Imaging Services" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Pathology Laboratory" ]
+  ];
+  fhir:Organization.name [ fhir:value "Doomben Pathology QLD"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "info@doombenpathlabs.example.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(07) 5550 3427" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.line [
+       fhir:value "75 Hampden St";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "DOOMBEN" ];
+     fhir:Address.state [ fhir:value "QLD" ];
+     fhir:Address.postalCode [ fhir:value "4007" ];
+     fhir:Address.country [ fhir:value "AU" ]
+  ] .
+
+<urn:uuid:f1d5844f-dd39-457d-867b-f50a00f91731> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "f1d5844f-dd39-457d-867b-f50a00f91731"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "EI" ];
+         fhir:Coding.display [ fhir:value "Employee number" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Employee Number" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003621566699776" ];
+     fhir:Identifier.value [ fhir:value "AMC-GA-001" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Algregster Medical Center QLD" ]
+     ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.display [ fhir:value "Dr Greg Algregster" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:Reference.display [ fhir:value "Algregster Medical Center QLD" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:62247001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "62247001" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "General Practitioner" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/559b66ea-abbf-45fb-8627-554817830095.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

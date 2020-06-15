@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-06-15T13:23:56+10:00"/>
+  <date value="2020-06-16T06:29:00+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -368,6 +368,19 @@
       </reference>
       <name value="ImagingStudy (Diagnostic Imaging Study)"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-559b66ea-abbf-45fb-8627-554817830095.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/559b66ea-abbf-45fb-8627-554817830095"/>
+      </reference>
+      <name value="2019 Novel Coronavirus PCR (short form)"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>

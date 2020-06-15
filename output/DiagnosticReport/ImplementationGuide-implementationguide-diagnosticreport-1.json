@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-15T13:23:56+10:00",
+  "date": "2020-06-16T06:29:00+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -478,6 +478,23 @@
         },
         "name": "ImagingStudy (Diagnostic Imaging Study)",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-559b66ea-abbf-45fb-8627-554817830095.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/559b66ea-abbf-45fb-8627-554817830095"
+        },
+        "name": "2019 Novel Coronavirus PCR (short form)",
+        "exampleBoolean": true
       }
     ],
     "page": {

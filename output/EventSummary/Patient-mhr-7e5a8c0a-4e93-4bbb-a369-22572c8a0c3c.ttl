@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "02" ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <tr>\n                    <td>NAME</td>\n                    <td>Ms Sally FIELD</td>\n                </tr>\n                <tr>\n                    <td>IHI NUMBER</td>\n                    <td>8003608000228437</td>\n                </tr>\n                <tr>\n                    <td>DOB</td>\n                    <td>14 February 1984</td>\n                </tr>\n                <tr>\n                    <td>GENDER</td>\n                    <td>Female</td>\n                </tr>\n                <tr>\n                    <td>INDIGENOUS STATUS</td>\n                    <td>Neither Aboriginal nor Torres Strait Islander origin</td>\n                </tr>\n            </table>\n        </div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/indigenous-status" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1" ];
+       fhir:Coding.code [ fhir:value "4" ];
+       fhir:Coding.display [ fhir:value "Neither Aboriginal nor Torres Strait Islander origin" ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NI" ];
+         fhir:Coding.display [ fhir:value "National unique individual identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/ihi/1.0" ];
+     fhir:Identifier.value [ fhir:value "8003608333563104" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.family [ fhir:value "FIELD" ];
+     fhir:HumanName.given [
+       fhir:value "Sally";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Ms";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1984-02-14"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

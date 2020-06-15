@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 6, warn = 80, info = 5 -->
+<!-- broken links = 0, errors = 15, warn = 86, info = 14 -->
 <head>
   <title>DiagnosticReport : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,8 +23,8 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DiagnosticReport</h1>
- <p>Generated Mon Jun 15 13:25:59 AEST 2020, FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
-<p>IG Publisher Version: v1.0.100-SNAPSHOT</p>
+ <p>Generated Tue Jun 16 06:30:22 AEST 2020, FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = <a href="http://ns.electronichealth.net.au/ci/fhir/4.0">http://ns.electronichealth.net.au/ci/fhir/4.0</a> (<a href="http://ns.electronichealth.net.au/ci/fhir/4.0/history.html">history</a>))</p>
+<p style="background-color: #ffcccc">IG Publisher Version: v1.0.99-SNAPSHOT, which is out of date. The current version is v1.0.100-SNAPSHOT <a href="https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p>No Suppressed Errors</p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -34,6 +34,9 @@
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__work_git_ci-fhir-r4_examples_bundle-559b66ea-abbf-45fb-8627-554817830095"><b>C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095</b></a></td><td><b>9</b></td><td><b>15</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__work_git_ci-fhir-r4_resources_bodystructure-dh-base-1"><b>C:\work\git\ci-fhir-r4\resources\bodystructure-dh-base-1</b></a></td><td><b>0</b></td><td><b>2</b></td>
@@ -125,7 +128,87 @@
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be au.electronichealth.diagnosticreport</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide-implementationguide-diagnosticreport-1.html</b></td><td><b>information</b></td><td><b>The html source does not contain the publish box; this is recommended for publishing support  (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations). Note that this is mandatory for HL7 specifications, and on the ci-build, but in other cases it's still recommended (this is only reported once, but applies for all pages)</b></td>
+     <td><b>Bundle-559b66ea-abbf-45fb-8627-554817830095.html</b></td><td><b>information</b></td><td><b>The html source does not contain the publish box; this is recommended for publishing support  (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations). Note that this is mandatory for HL7 specifications, and on the ci-build, but in other cases it's still recommended (this is only reported once, but applies for all pages)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__work_git_ci-fhir-r4_examples_bundle-559b66ea-abbf-45fb-8627-554817830095"> </a>
+<h2><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).basedOn[0] (l362/c26)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:f606666a-23bf-4947-87ba-688824c12c08 matching against Profilehttp://hl7.org/fhir/StructureDefinition/ServiceRequest</b> <span id="sl2" class="flip" onclick="flip('l2')">Show Reasoning</span><div id="l2" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.ofType(ServiceRequest).code.coding[0]: unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).code (l378/c23)</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#1445431000168101)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).code.coding[0] (l379/c29)</b></td><td><b>error</b></td><td><b>unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).result[0] (l394/c25)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl5" class="flip" onclick="flip('l5')">Show Reasoning</span><div id="l5" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[1].resource.ofType(Observation).code.coding[0]: unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport) (l21/c76)</b></td><td><b>warning</b></td><td><b>Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).basedOn[0] (l362/c26)</b></td><td><b>error</b></td><td><b>Unable to find matching profile for urn:uuid:f606666a-23bf-4947-87ba-688824c12c08 among choices: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).basedOn[0] (l362/c26)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:f606666a-23bf-4947-87ba-688824c12c08 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1</b> <span id="sl8" class="flip" onclick="flip('l8')">Show Reasoning</span><div id="l8" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.ofType(ServiceRequest).code.coding[0]: unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</li>, <li>Bundle.entry[2].resource.ofType(ServiceRequest).code.coding[0]: Could not match any discriminators ([system, code]) for slice ServiceRequest.code.coding:snomedImagingProcedure in profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1 - None of the discriminator [system, code] have fixed value, binding or existence assertions</li>, <li>Bundle.entry[2].resource.ofType(ServiceRequest).requester: Unable to resolve the profile reference &quot;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1&quot;</li>, <li>Bundle.entry[2].resource.ofType(ServiceRequest).requester: Invalid Resource target type. Found PractitionerRole, but expected one of ([Organization])</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).status (l365/c40)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).category[0] (l366/c27)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).category[1] (l372/c27)</b></td><td><b>error</b></td><td><b>Expected CodeableConcept pattern not found for system: http://terminology.hl7.org/CodeSystem/v2-0074 code: LAB display: null - Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Bundle.entry[0].resource.ofType(DiagnosticReport).category[1].coding.code,message=Value is &quot;MB&quot; but must be &quot;LAB&quot;]]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).category[1] (l372/c27)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).code (l378/c23)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).code.coding[0] (l379/c29)</b></td><td><b>error</b></td><td><b>Could not match any discriminators ([system, code]) for slice DiagnosticReport.code.coding:snomedImagingProcedures in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1 - None of the discriminator [system, code] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).performer[0] (l391/c28)</b></td><td><b>error</b></td><td><b>Unable to resolve the profile reference &quot;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).performer[0] (l391/c28)</b></td><td><b>error</b></td><td><b>Invalid Resource target type. Found PractitionerRole, but expected one of ([])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).result[0] (l394/c25)</b></td><td><b>error</b></td><td><b>Unable to find matching profile for urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.ofType(DiagnosticReport).result[0] (l394/c25)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1</b> <span id="sl18" class="flip" onclick="flip('l18')">Show Reasoning</span><div id="l18" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[1].resource.ofType(Observation).category[1]: Expected CodeableConcept pattern not found for system: http://terminology.hl7.org/CodeSystem/observation-category code: laboratory display: null - Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Bundle.entry[1].resource.ofType(Observation).category[1].coding.system,message=Value is &quot;http://terminology.hl7.org/CodeSystem/v2-0074&quot; but must be &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;], ValidationMessage[level=ERROR,type=VALUE,location=Bundle.entry[1].resource.ofType(Observation).category[1].coding.code,message=Value is &quot;MB&quot; but must be &quot;laboratory&quot;]]</li>, <li>Bundle.entry[1].resource.ofType(Observation).code.coding[0]: unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</li>, <li>Bundle.entry[1].resource.ofType(Observation).code.coding[0]: Could not match discriminator ([system]) for slice Observation.code.coding:snomedImagingProcedure in profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1 - the discriminator [system] does not have fixed value, binding or existence assertions</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[1].resource.ofType(Observation).category[1] (l420/c27)</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category), and a code is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/v2-0074#MB)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[1].resource.ofType(Observation).code.coding[0] (l427/c29)</b></td><td><b>error</b></td><td><b>unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[2].resource.ofType(ServiceRequest).code.coding[0] (l468/c29)</b></td><td><b>error</b></td><td><b>unable to find code 1445431000168101 in http://snomed.info/sct (version http://snomed.info/sct/32506021000036107/version/20191231) for &quot;http://snomed.info/sct#1445431000168101&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[3].resource.ofType(Patient).extension[0].value.ofType(Coding) (l491/c34)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[3].resource.ofType(Patient).extension[0].value.ofType(Coding) (l491/c34)</b></td><td><b>warning</b></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[6].resource.ofType(Organization).identifier[1].type (l598/c27)</b></td><td><b>warning</b></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[6].resource.ofType(Organization).type[0].coding[0] (l608/c29)</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0&quot; is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -139,7 +222,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1#BodyStructure.patient</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -165,7 +248,7 @@
      <td><b>StructureDefinition/composition-imagreport-1: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -185,7 +268,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1#Composition.custodian</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -211,7 +294,7 @@
      <td><b>StructureDefinition/composition-pathreport-1: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -228,7 +311,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1#DiagnosticReport.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -242,7 +325,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1#DiagnosticReport.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -259,7 +342,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -273,7 +356,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -293,7 +376,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1#DiagnosticReport.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -316,7 +399,7 @@
      <td><b>StructureDefinition/diagnosticreport-path-mhr-1: StructureDefinition.differential.element[1].constraint[0]</b></td><td><b>warning</b></td><td><b>eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -330,7 +413,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1#ImagingStudy.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -355,7 +438,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1#Observation.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -375,7 +458,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1#Observation.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -386,7 +469,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1')</b></td><td><b>error</b></td><td><b>Conformance resource C:\work\git\ci-fhir-r4\resources\observation-otherdiag-atomic-1.xml - the canonical URL (http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-atomic-1) does not match the URL (http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1)</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1</b></td><td><b>error</b></td><td><b>Conformance resource C:\work\git\ci-fhir-r4\resources\observation-otherdiag-atomic-1.xml - the canonical URL (http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-atomic-1) does not match the URL (http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1#Observation.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
@@ -398,7 +481,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1#Observation.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>C:\work\git\ci-fhir-r4\resources\observation-otherdiag-atomic-1</b></td><td><b>error</b></td><td><b>URL Mismatch http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-atomic-1 vs http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1</b></td>
@@ -412,7 +495,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1')</b></td><td><b>error</b></td><td><b>Conformance resource C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1.xml - the canonical URL (http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-simple-1) does not match the URL (http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1)</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1</b></td><td><b>error</b></td><td><b>Conformance resource C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1.xml - the canonical URL (http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-simple-1) does not match the URL (http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1#Observation.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
@@ -424,7 +507,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1#Observation.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1</b></td><td><b>error</b></td><td><b>URL Mismatch http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-simple-1 vs http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1</b></td>
@@ -447,7 +530,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1#Observation.performer</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -461,7 +544,7 @@
      <td><b>Simple Pathology Observation.Observation.status</b></td><td><b>warning</b></td><td><b>Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -472,7 +555,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -483,7 +566,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -497,7 +580,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1#Patient.generalPractitioner</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -511,7 +594,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1#Patient.generalPractitioner</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -528,7 +611,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1#PractitionerRole.organization</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -548,7 +631,7 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1#ServiceRequest.requester</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -574,7 +657,7 @@
      <td><b>StructureDefinition/servicerequest-otherdiag-report-1: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td><b>The system URL 'https://snomed.info/sct' wrongly starts with https: not http:</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -590,8 +673,8 @@
    <tr style="background-color: #ffebcc">
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1#ServiceRequest.requester</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -608,13 +691,21 @@
      <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/specimen-collect-1#Specimen.subject</b></td><td><b>warning</b></td><td><b>Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/specimen-collect-1')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/specimen-collect-1</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Language_XHTML_Lang_Missing3"> </a>
+<h2>Language_XHTML_Lang_Missing3</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)</b></td>
+   </tr>
+</table>
 <hr/>
 <a name="RESOURCE_CANONICAL_MISMATCH"> </a>
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
@@ -624,6 +715,33 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-observation-otherdiag-simple-1.html">C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1.xml</a></td><td><b>Conformance resource C:\work\git\ci-fhir-r4\resources\observation-otherdiag-simple-1.xml - the canonical URL (http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/observation-otherdiag-simple-1) does not match the URL (http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_BadTargetType"> </a>
+<h2>Reference_REF_BadTargetType</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Invalid Resource target type. Found PractitionerRole, but expected one of ([])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantMatchChoice"> </a>
+<h2>Reference_REF_CantMatchChoice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Unable to find matching profile for urn:uuid:f606666a-23bf-4947-87ba-688824c12c08 among choices: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Unable to find matching profile for urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolveProfile"> </a>
+<h2>Reference_REF_CantResolveProfile</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Unable to resolve the profile reference &quot;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1&quot;</b></td>
    </tr>
 </table>
 <hr/>
@@ -638,10 +756,35 @@
    </tr>
 </table>
 <hr/>
+<a name="Terminology_TX_Code_ValueSet_Ext"> </a>
+<h2>Terminology_TX_Code_ValueSet_Ext</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>No code provided, and a code should be provided from the value set http://hl7.org/fhir/ValueSet/identifier-type (http://hl7.org/fhir/ValueSet/identifier-type)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_3"> </a>
+<h2>Terminology_TX_NoValid_3</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#1445431000168101)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category), and a code is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/v2-0074#MB)</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Terminology_TX_System_NotKnown"> </a>
 <h2>Terminology_TX_System_NotKnown</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>Code System URI &quot;http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-composition-imagreport-1.html">C:\work\git\ci-fhir-r4\resources\composition-imagreport-1.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
@@ -652,6 +795,31 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-composition-pathreport-1.html">C:\work\git\ci-fhir-r4\resources\composition-pathreport-1.xml</a></td><td><b>Code System URI &quot;https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound2"> </a>
+<h2>Terminology_TX_ValueSet_NotFound2</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-559b66ea-abbf-45fb-8627-554817830095.html">C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml</a></td><td><b>ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator</b></td>
    </tr>
 </table>
 </body>
