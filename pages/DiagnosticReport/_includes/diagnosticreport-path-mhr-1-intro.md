@@ -21,12 +21,24 @@ For the overarching usage scenarios in this implementation guide it is expected 
 <li>status is 'preliminary', 'final', or 'amended'</li>
 <li>code matches one Observation.code referenced in result</li>
 <li>effective[x] is the earliest specimen collection date time</li>
-<li>performer is sent as a reference to a PractitionerRole resource with PractitionerRole.practitioner as either:
-     <ul>
-        <li>a reference to a Practitioner resource with Practitioner.name.family, or</li>
-        <li>practitioner.display with the at least the practitioner's family name</li>   
-     </ul></li>
-<li>The set of performers is consistent with each Observation.performer referenced in the report
+<li>performer is sent as a reference to a PractitionerRole resource with:
+    <ul>
+        <li>PractitionerRole.identifier as a HPI-I</li>
+        <li>PractitionerRole.practitioner as reference to a Practitioner resource with:
+        <ul>
+            <li>Practitioner.name.family</li>
+            <li>Practitioner.telecom</li>   
+            <li>Practitioner.address</li>   
+        </ul></li>
+        <li>PractitionerRole.organization as reference to an Organization resource with:
+        <ul>
+            <li>Organization.identifier as a HPI-O</li>
+            <li>Organization.name</li>
+            <li>Organization.address</li> 
+         </ul></li>
+        <li>PractitionerRole.code describing the professional role, e.g. 40204001 |Haematologist|</li>
+    </ul></li>
+<li>The set of performers is consistent with each Observation.performer referenced in the report</li>
 <li>the attached PDF is viewable by any individual that is a My Health Record participant; it does not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)</li>
 </ul>
 
@@ -36,5 +48,6 @@ When sending a report of a multi-test study or panel:
 <li>code is sent with the same code in that study / panel Observation</li>  
 <li>the individual component tests are referenced by that Observation (Observtion.hasMember) and not directly referenced by the DiagnosticReport</li>  
 </ul>
+
 #### Boundaries and relationships
 This profile is referenced by [Pathology Report](StructureDefinition-composition-pathreport-1.html).
