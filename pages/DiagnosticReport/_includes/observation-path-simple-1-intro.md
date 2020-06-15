@@ -7,8 +7,8 @@ The observation may represent the result of a simple test such as haemoglobin or
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* status will be 'preliminary', 'final', or 'amended'
-* category will be sent with an additional category indicating the diagnostic service that performed the pathology test
+* status is sent as 'preliminary', 'final', or 'amended'
+* category is sent with an additional category indicating the diagnostic service that performed the pathology test
 * effective[x] is the specimen collection date time
  
 When sending observations that group the set of results by a multi-test study or panel:
