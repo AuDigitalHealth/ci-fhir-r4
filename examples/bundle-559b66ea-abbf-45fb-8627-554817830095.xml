@@ -10,6 +10,10 @@
         <resource>
             <DiagnosticReport>
                 <id value="59033ee7-1950-4a04-abb3-6a232d5f62fd"/>
+                <meta>
+                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"
+                    />
+                </meta>
                 <language value="en-AU"/>
                 <text>
                     <status value="generated"/>
@@ -38,88 +42,66 @@
                                     font-family: Helvetica;
                                     color: #FFFFFF;
                                     font-weight: bold;"
-                                    colspan="9">17 Mar 2020 11:45:00</td>
+                                    colspan="9">17 Mar 2020 11:45</td>
                             </tr>
                             <tr>
                                 <td
                                     style="display: inline; 
                                     margin-right: 20px; 
-                                    font-size: 22px;
+                                    font-size: 13px;
                                     color: #FFFFFF;"
                                     >Ms Sally <span class="bold">FIELD</span></td>
                                 <td
                                     style="display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     color: #FFFFFF;"
                                     >DoB</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     margin-right: 30px;
                                     color: #FFFFFF;"
                                     >14 Feb 1984</td>
                                 <td
                                     style="display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     color: #FFFFFF;"
                                     >GENDER</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     margin-right: 30px;
                                     color: #FFFFFF;"
                                     >Female</td>
                                 <td
                                     style="display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     color: #FFFFFF;"
                                     >IHI</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     margin-right: 30px;
                                     color: #FFFFFF;"
                                     >8003 6080 0022 8437</td>
                                 <td
                                     style="display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     color: #FFFFFF;"
                                     >INDIGENOUS STATUS</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 13px;
+                                    font-size: 11px;
                                     margin-right: 30px;
                                     color: #FFFFFF;
                                     word-wrap: break-word;"
                                     >Neither Aboriginal nor Torres Strait Islander origin</td>
                             </tr>
                         </table>
-                        <h1
-                            style=" width: 100%;
-                            font-size: 20px;
-                            font-weight: bold;
-                            color: #000000;
-                            margin-bottom: 5px;
-                            margin-top: 0px;
-                            border-bottom: 1px SOLID #000000;;
-                            padding: 0px;
-                            word-wrap: break-word;"
-                            >Doomben Pathology QLD</h1>
-                        <h1
-                            style=" width: 100%;
-                            font-size: 17px;
-                            font-weight: bold;
-                            color: #000000;
-                            margin-bottom: 5px;
-                            margin-top: 0px;
-                            border-bottom: 1px SOLID #000000;;
-                            padding: 0px;
-                            word-wrap: break-word;"
-                            >Pathology Report</h1>
                         <table style="width:100%">
                             <tbody>
                                 <tr>
@@ -133,26 +115,54 @@
                                                         text-align: center;
                                                         margin 0px;
                                                         font-family: Helvetica;
+                                                        font-size:14px;
                                                         font-weight: bold;
                                                         text-decoration: underline;
                                                         text-align: left;
                                                         word-wrap: break-word;"
-                                                  colspan="2">Requesting Healthcare Provider</th>
+                                                  colspan="1">Requester</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Organisation:</td>
-                                                  <td>Algregster Medical Center QLD</td>
+                                                    <td>Dr Greg Algregster (General Practitioner) (Employee
+                                                        ID: AMC-GA-001)</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Requested by:</td>
-                                                  <td>Dr Greg Algregster (General Practitioner)</td>
+                                                    <td>Algregster Medical Center QLD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th
+                                                        style="padding-top: 15px;
+                                                        vertical-align: top;
+                                                        text-align: center;
+                                                        margin 0px;
+                                                        font-family: Helvetica;
+                                                        font-size:14px;
+                                                        font-weight: bold;
+                                                        text-decoration: underline;
+                                                        text-align: left;
+                                                        word-wrap: break-word;"
+                                                        colspan="2">Request Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="font-weight: bold;">Request ID:</td>
+                                                    <td>SR-34L6-804</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Employee
-                                                  number:</td>
-                                                  <td>AMC-GA-001</td>
+                                                    <td style="font-weight: bold;">Request Date/Time:</td>
+                                                    <td>16 Mar 2020 8:54</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold;">Requested
+                                                        Test:</td>
+                                                    <td>2019-Novel Coronavirus PCR</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -167,92 +177,33 @@
                                                         text-align: center;
                                                         margin 0px;
                                                         font-family: Helvetica;
+                                                        font-size:14px;
                                                         font-weight: bold;
                                                         text-decoration: underline;
                                                         text-align: left;
                                                         word-wrap: break-word;"
-                                                  colspan="2">Authoring Pathology Provider</th>
+                                                  colspan="2">Author</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Organisation:</td>
-                                                  <td>Doomben Pathology QLD (Pathology
-                                                  Laboratory)</td>
+                                                    <td>Dr Adam Meyer (Microbiologist) (HPI-I: 8003619900041630)</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">HPI-O:</td>
-                                                  <td>8003623233366565</td>
+                                                    <td>75 Hampden St, DOOMBEN, QLD, 4007</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">NATA Accreditation
-                                                  Number:</td>
-                                                  <td>100101</td>
+                                                    <td>(07) 7010 3453</td>
+                                                </tr>
+                                                <tr><td></td></tr>
+                                                <tr>
+                                                  <td>Doomben Pathology QLD (HPI-O: 8003623233366565) (NATA: 100101)</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Address:</td>
-                                                  <td>75 Hampden St,DOOMBEN, QLD 4007</td>
+                                                  <td>75 Hampden St, DOOMBEN, QLD, 4007</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Phone: </td>
-                                                  <td>(07) 5550 3427</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold;">Email: </td>
-                                                  <td>info@doombenpathlabs.example.com</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold;">Authored by:</td>
-                                                  <td>Dr Adam Meyer (Microbiologist)</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold;">HPI-I:</td>
-                                                  <td>8003619900041630</td>
-                                                </tr>
-
-                                                <tr>
-                                                  <td style="font-weight: bold;">Address:</td>
-                                                  <td>75 Hampden St,DOOMBEN, QLD 4007</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold;">Phone:</td>
-                                                  <td>(07) 7010 3453</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width:50%">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                  <th
-                                                  style="padding-top: 15px;
-                                                        vertical-align: top;
-                                                        text-align: center;
-                                                        margin 0px;
-                                                        font-family: Helvetica;
-                                                        font-weight: bold;
-                                                        text-decoration: underline;
-                                                        text-align: left;
-                                                        word-wrap: break-word;"
-                                                  colspan="2">Request Details</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                  <td style="font-weight: bold;">Request ID:</td>
-                                                  <td>SR-34L6-804</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold;">Request Date:</td>
-                                                  <td>16 Mar 2020 8:54:00</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold;">Requested
-                                                  Test:</td>
-                                                  <td>2019-Novel Coronavirus PCR</td>
+                                                    <td>(07) 5550 3427     info@doombenpathlabs.example.com</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -269,6 +220,7 @@
                                                         text-align: center;
                                                         margin 0px;
                                                         font-family: Helvetica;
+                                                        font-size:14px;
                                                         font-weight: bold;
                                                         text-decoration: underline;
                                                         text-align: left;
@@ -278,8 +230,8 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Report Date:</td>
-                                                  <td>17 Mar 2020 11:45:00</td>
+                                                    <td style="font-weight: bold;">Report Date/Time:</td>
+                                                  <td>17 Mar 2020 11:45</td>
                                                 </tr>
                                                 <tr>
                                                   <td style="font-weight: bold;">Report Name:</td>
@@ -290,11 +242,11 @@
                                                   <td>DOO3Q978</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Status:</td>
+                                                  <td style="font-weight: bold;">Report Status:</td>
                                                   <td>Final</td>
                                                 </tr>
                                                 <tr>
-                                                  <td style="font-weight: bold;">Service:</td>
+                                                  <td style="font-weight: bold;">Diagnostice Service(s):</td>
                                                   <td>Microbiology</td>
                                                 </tr>
                                             </tbody>
@@ -314,24 +266,53 @@
                             padding: 0px;
                             word-wrap: break-word;"
                             >Test Results</h1>
-                        <table>
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                            <thead>
+                                <tr>
+                                    <th
+                                        ><tr> <th style="padding-top: 15px;
+                                            vertical-align: top;
+                                            text-align: center;
+                                            margin 0px;
+                                            font-family: Helvetica;
+                                            font-weight: bold;
+                                            text-decoration: underline;
+                                            text-align: left;
+                                            word-wrap: break-word;">Test Name</th>
+                                            <th style="padding-top: 15px;
+                                                vertical-align: top;
+                                                text-align: center;
+                                                margin 0px;
+                                                font-family: Helvetica;
+                                                font-weight: bold;
+                                                text-decoration: underline;
+                                                text-align: left;
+                                                word-wrap: break-word;">Diagnostic Service</th>
+                                            <th style="padding-top: 15px;
+                                            vertical-align: top;
+                                            text-align: center;
+                                            margin 0px;
+                                            font-family: Helvetica;
+                                            font-weight: bold;
+                                            text-decoration: underline;
+                                            text-align: left;
+                                            word-wrap: break-word;">Sample Collected Date/Time</th>
+                                            <th style="padding-top: 15px;
+                                                vertical-align: top;
+                                                text-align: center;
+                                                margin 0px;
+                                                font-family: Helvetica;
+                                                font-weight: bold;
+                                                text-decoration: underline;
+                                                text-align: left;
+                                                word-wrap: break-word;">Status</th>
+                                        </tr></th>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tbody>
                                     <tr>
-                                        <td style="font-weight: bold;">Sample Collected Date:</td>
-                                        <td>16 Mar 2020 10:40:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bold;">Test:</td>
-                                        <td>2019-Novel Coronavirus PCR</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bold;">Status:</td>
-                                        <td>Final</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight: bold;">Category:</td>
-                                        <td>Microbiology</td>
+                                        <td>2019-Novel Coronavirus PCR</td><td>Microbiology</td><td>16 Mar 2020 10:40:00</td><td>Final</td>
                                     </tr>
                                 </tbody>
                             </tbody>
@@ -394,7 +375,7 @@
                 <presentedForm>
                     <contentType value="application/pdf"/>
                     <!-- NOTE - update url, PDF to match the example, regenerate hash in the final example -->
-                    <!-- Absolute URL to a placeholder repisotory for attachment is provided as a workaround for demonstration purposes only  -->
+                    <!-- Placeholder url value: Absolute URL to GitHub repository for attachment is provided as a workaround for demonstration purposes only  -->
                     <url
                         value="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/2019-Novel_Coronavirus_PCR.pdf"/>
                     <hash value="CD951DC83CC65ACE685BCC2D25A7CEFCD96E6BA0"/>
