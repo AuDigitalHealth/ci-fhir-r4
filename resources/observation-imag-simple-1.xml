@@ -75,7 +75,7 @@
       <path value="Observation.extension.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1" />
       </type>
     </element>
     <element id="Observation.extension:bodySite.value[x].reference">
@@ -122,7 +122,7 @@
     <element id="Observation.code">
       <path value="Observation.code" />
       <short value="Imaging examination or group" />
-    <mustSupport value="true" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
