@@ -5,52 +5,30 @@
         <th>Description</th>
         <th>Issue No.</th>
       </tr>
-        <tr>
-            <td>status (terminology binding)</td>
-            <td><p>We need to create a more constrained value set for reporting the status of a diagnostic observation for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics.</p>
-            <p>Thinking to constrain the status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-observation-status.html">http://hl7.org/fhir/R4/valueset-observation-status.html</a> to just contain the codes of "preliminary", "final", "amended", "corrected" ie remove "registered", "cancelled", "entered-in-error" & "unknown".</p>
-            </td>
-            <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/45">ci-fhir-r4/issues/45</a>, and <a href="https://jira.aws.tooling/browse/FTR-938">jira.aws.tooling/browse/FTR-938</a>
-            </td>
-       </tr>
+      <tr>
+        <td>status (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1">ObservationStatus Result Available</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/48">ci-fhir-r4/issues/48</a></td>
+      </tr>
+      <tr>
+        <td>category (pattern)</td>
+        <td><p>The use of pattern on category is in conflict with the intended design and implementation guidance. We want to fix a domain category, e.g. imaging, and encourage the sending of a second finer grained category, but current profile forces all instances of category to match the fixed pattern or an error is thrown. We need to change this design, possibly slicing on category or using an invariant would be better.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/87">ci-fhir-r4/issues/87</a></td>
+   </tr>
        <tr>
-            <td>category (terminology binding)</td>
-            <td><p>The 'other diagnostic' profiles intend to support all 'other' diagnostic reports which is broad.</p>
-                <p>We are considering whether category is better supported as a value set including a set of diagnostic report types, or whether it has to be fixed to be a catch-all code and with the referencing diagnostic report provides the finer grain.</p>
-            </td>
-            <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a>
-            </td>
-        </tr>
+       <td>category (appropriateness of code)</td>
+       <td><p>This profile is intended to support all 'other' diagnostic reports which is broad.</p>
+	   <p>We are considering whether category is better supported as a value set including a set of diagnostic report types, or whether it has to be fixed to be a catch-all code and with the referencing diagnostic report provides the finer grain.</p>
+	   <p>This issue applies to DiagnosticReport.category, ServiceRequest.category, and Observation.category.</p></td>
+       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
+   </tr>
        <tr>
             <td>code (missing terminology)</td>
-            <td><p>We need a value set whose permissible values represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test. Common examples of these tests are:
-                <ul>
-                    <li>cardiology field - ECG, echo cardiogram, angiocardiography</li>
-                    <li>neurology field - EEG, EMG, evoked potentials, nerve conduction tests</li>
-                    <li>gastroenterology field - endoscopy, colonoscopy</li>
-                    <li>respiratory field - pulmonary function tests</li>
-                    <li>audiology - hearing tests</li>
-                    <li>sleep studies</li>
-                </ul>
-                </p>
-               <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (ie cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
-                <p>This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p>
+            <td><p>We need <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p>
             </td>
             <td>See <a href="https://jira.aws.tooling/browse/FTR-898">jira.aws.tooling/browse/FTR-898</a>, and <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a>
             </td>
        </tr> 
-       <tr>
-            <td>subject (Reference type too open)</td>
-            <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-            <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/45">ci-fhir-r4/issues/45</a>
-            </td>
-       </tr>
-       <tr>
-           <td>performer (Reference type too open)</td>
-           <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-           <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/45">ci-fhir-r4/issues/45</a>
-           </td>
-       </tr>
         <tr>
           <td>bodySite (terminology binding)</td>
            <td><p>This element should be bound to <a href="https://api.healthterminologies.gov.au/integration/v2/fhir/ValueSet/body-site-1">https://healthterminologies.gov.au/fhir/ValueSet/body-site-1</a> <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">(extensible)</a>.</p>
