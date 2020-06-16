@@ -27,7 +27,7 @@ For the overarching usage scenarios in this implementation guide it is expected 
     </ul></li>
 </ul>
 
-When sending observations that group the set of results by of a multi-modality procedure or multi-test study / panel:
+When sending observations that group the set of results of a multi-modality procedure or multi-test study / panel:
 * a multi-modality procedure or multi-test study / panel observation is sent with individual component examinations in Observation.hasMember
 * an individual component examination observation is referenced by that multi-modality procedure or multi-test study / panel observation (Observation.hasMember) rather than directly at the diagnostic report level (DiagnosticReport.result)
 
