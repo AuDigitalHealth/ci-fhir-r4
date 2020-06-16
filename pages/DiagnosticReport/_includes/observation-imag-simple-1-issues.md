@@ -8,7 +8,7 @@
       <tr>
         <td>status (terminology binding)</td>
         <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1">ObservationStatus Result Available</a> value set is pending.</p></td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/48">ci-fhir-r4/issues/48</a></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/59">ci-fhir-r4/issues/59</a></td>
       </tr>
       <tr>
        <td>category (pattern)</td>

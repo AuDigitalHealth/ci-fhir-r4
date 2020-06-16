@@ -9,7 +9,7 @@ For the overarching usage scenarios in this implementation guide it is expected 
 * category is sent with an additional category indicating the diagnostic service that performed the imaging examination
 * effective[x] is the date time the imaging study was performed
 
-When sending observations that group the set of results by of a multi-modality procedure:
+When sending observations that group the set of results of a multi-modality procedure:
 * a multi-modality procedure observation is sent with individual component examinations in Observation.hasMember
 * an individual component examination observation is referenced by that multi-modality procedure observation (Observation.hasMember) rather than directly at the diagnostic report level (DiagnosticReport.result)
 
