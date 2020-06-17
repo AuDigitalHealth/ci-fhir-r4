@@ -69,6 +69,7 @@
     </element>
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
+      <short value="Diagnostic investigation order" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1" />
@@ -148,6 +149,8 @@
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1" />
       </type>
       <mustSupport value="true" />
     </element>
