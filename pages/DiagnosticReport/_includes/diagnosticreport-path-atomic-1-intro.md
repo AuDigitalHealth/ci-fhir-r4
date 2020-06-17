@@ -14,7 +14,7 @@ The following are the overarching usage scenarios this profile is intended to su
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
 <ul>
-<li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/index.html">HPI-O scoped</a> if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a>) for more information</li>
+<li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/index.html">HPI-O scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a>) for more information</li>
 <li>status is 'preliminary', 'final', or 'amended'</li>
 <li>category is sent with additional categories indicating the diagnostic service that performed each pathology test observation referenced in the report</li>
 <li>code matches one Observation.code referenced in result</li>

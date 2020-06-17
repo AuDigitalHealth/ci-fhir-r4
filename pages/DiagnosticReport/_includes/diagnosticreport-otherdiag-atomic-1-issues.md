@@ -25,11 +25,6 @@
     <td>We need to create a more constrained value set that at least removes imaging and pathology.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
    </tr> 
-   <tr>
-    <td>category (fixed code for implementation)</td>
-    <td>There is likely a need for a single fixed code to indicate that this is 'other diagnostics' for a similar use case in the My Health Record to identifying and retrieving 'pathology' and 'imaging'.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
-   </tr> 
     <tr>
     <td>code (missing terminology)</td>
     <td><p>We need a value set whose permissible values represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test. Common examples of these tests are:</p>
