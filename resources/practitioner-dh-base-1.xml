@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="practitioner-dh-base-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" />
   <version value="1.0.0" />
   <name value="PractitionerBase" />
   <title value="Base Practitioner" />
@@ -14,9 +14,9 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a base model for the concept of a practitioner, defining fundamental concepts that form a conforming representation of a practitioner. It is used as a base model from which to further derive models for specific usage scenarios in an Australian context.&#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
-  <copyright value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.0" />
+  <description value="The purpose of this profile is to provide a base model for the concept of a practitioner; defining fundamental concepts that form a conforming representation of a practitioner to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Practitioner" />
@@ -24,15 +24,14 @@
   <derivation value="constraint" />
   <differential>
     <element id="Practitioner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use" />
-      </extension>
       <path value="Practitioner" />
+      <short value="A practitioner in the context of electronic exchange of health information" />
       <constraint>
         <key value="inv-dh-prac-01" />
         <severity value="error" />
         <human value="The practitioner shall at least have an identifier or a name" />
         <expression value="identifier.exists() or name.exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" />
       </constraint>
     </element>
     <element id="Practitioner.identifier">
@@ -41,7 +40,8 @@
     </element>
     <element id="Practitioner.active">
       <path value="Practitioner.active" />
-      <mustSupport value="true" />
+      <fixedBoolean value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
@@ -72,32 +72,27 @@
       <constraint>
         <key value="inv-dh-prac-02" />
         <severity value="error" />
-        <human value="If present, an issuer shall at least have a reference, an identifier or a display" />
-        <expression value="issuer.exists() implies issuer.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-prac-03" />
-        <severity value="error" />
-        <human value="If present, an issuer organisation shall conform to Base Organization" />
-        <expression value="issuer.reference.exists() implies issuer.all($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1'))" />
+        <human value="If present, an issuer shall at least have a reference that conforms to Base Organization, an identifier or a display" />
+        <expression value="issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1')) or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" />
       </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.qualification.identifier">
-      <path value="Practitioner.qualification.identifier"/>
-      <mustSupport value="true"/>
+      <path value="Practitioner.qualification.identifier" />
+      <mustSupport value="true" />
     </element>
     <element id="Practitioner.qualification.code">
-      <path value="Practitioner.qualification.code"/>
-      <mustSupport value="true"/>
+      <path value="Practitioner.qualification.code" />
+      <mustSupport value="true" />
     </element>
     <element id="Practitioner.qualification.period">
-      <path value="Practitioner.qualification.period"/>
-      <mustSupport value="true"/>
+      <path value="Practitioner.qualification.period" />
+      <mustSupport value="true" />
     </element>
     <element id="Practitioner.qualification.issuer">
-      <path value="Practitioner.qualification.issuer"/>
-      <mustSupport value="true"/>
+      <path value="Practitioner.qualification.issuer" />
+      <mustSupport value="true" />
     </element>
     <element id="Practitioner.communication">
       <path value="Practitioner.communication" />
