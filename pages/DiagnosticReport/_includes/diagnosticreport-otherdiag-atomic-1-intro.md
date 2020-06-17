@@ -5,6 +5,14 @@ This profile is intended to support point-to-point exchange between an authoring
 
 A Specialist or Other Diagnostic Report is created by an authoring diagnostic provider in response to an order for a diagnostic investigation and contains specialist or other healthcare provider’s analysis of one or more diagnostic investigation results. The original diagnostic report may be attached in one or more formats (e.g. PDF and MS Word) that may contain one or more diagnostic investigation results. Thus the values of diagnostic report elements that are present in both a FHIR resource and an attached report shall be consistent.
 
+A Specialist or Other Diagnostic Report is intended to support a broad set of diagnostic reports including:
+* cardiology field - ECG, echo cardiogram, angiocardiography
+* neurology field - EEG, EMG, evoked potentials, nerve conduction tests
+* gastroenterology field - endoscopy, colonoscopy
+* respiratory field - pulmonary function tests
+* audiology - hearing tests
+* sleep studies
+
 #### Usage scenarios
 The following are the overarching usage scenarios this profile is intended to support:
 * A CIS sends or receives a specialist or other diagnostic report with another CIS
