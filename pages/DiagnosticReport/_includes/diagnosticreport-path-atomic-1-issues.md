@@ -40,8 +40,8 @@
     <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/399">au-fhir-base/issues/399</a></td>
    </tr>
     <tr>
-    <td>Support aggregation of multiple diagnotic investigations?</td>
-    <td><p>This profile is intended to support one DiagnosticReport per test or panel - it is unclear if support for the aggregation of multiple investigations (including different diagnsotic services) is desired. Feedback from stakeholders will be sought on whether this is to be supported.</p></td>
+    <td>Support aggregation of multiple diagnostic investigations?</td>
+    <td><p>This profile is intended to support one DiagnosticReport per test or panel - it is unclear if support for the aggregation of multiple investigations (including different diagnostic services) is desired. Feedback from stakeholders will be sought on whether this is to be supported.</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/88">ci-fhir-r4/issues/88</a></td>
    </tr>
    <tr>

@@ -41,7 +41,7 @@
             <li>audiology - hearing tests</li>
             <li>sleep studies</li>
         </ul>
-        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (ie cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
+        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (i.e. cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
         <p> This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></p></td>
     <td>See <a href="https://jira.aws.tooling/browse/FTR-898">jira.aws.tooling/browse/FTR-898</a>, and <a href="https://github.com/hl7au/au-fhir-base/issues/402">au-fhir-base/issues/402</a></td>
    </tr>
