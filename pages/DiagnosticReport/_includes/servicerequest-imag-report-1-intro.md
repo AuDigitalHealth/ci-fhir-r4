@@ -1,5 +1,5 @@
 #### Order Details for Diagnostic Imaging Report
-The purpose of this profile is to represent key elements of clinical relevance of a request for an imaging diagnostic investigation in a diagnostic imaging report context. This profile is intended to support the electronic exchange of diagnostic imaging reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to represent key elements of clinical relevance of a request for a diagnostic imaging investigation in a diagnostic report context. This profile is intended to support the electronic exchange of diagnostic imaging reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 The context of this profile is reporting.
 
@@ -20,6 +20,6 @@ When sending to the My Health Record system it is expected that:
 </ul>
 
 #### Boundaries and relationships
-Requesting of imaginag services is not supported by this implementation guide and may in future be handled in a referral or service requesting implementation guide.
+Requesting of imaging services is not supported by this implementation guide and may in future be handled in a referral or service requesting implementation guide.
 
 This profile is referenced by [My Health Record Diagnostic Imaging Report](StructureDefinition-diagnosticreport-imag-mhr-1.html), and [Atomic Diagnostic Imaging Report](StructureDefinition-diagnosticreport-imag-atomic-1.html).
