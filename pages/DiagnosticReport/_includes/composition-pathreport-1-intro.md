@@ -58,7 +58,7 @@ For the overarching usage scenarios in this implementation guide the guidance in
     </tr>    
        <tr>
         <td>custodian</td>
-        <td>Will be the performing lab as the long term custodian of the report; even where the receiving laboratory may have (in a My Health Record scenario) uploaded the report</td>
+        <td>Will be the performing lab as the long term custodian of the report; even where the receiving laboratory may have (in a My Health Record scenario) uploaded the report and is sent as a reference to an Organization resource with Organization.name, Organization.identifier, and Organization.telecom.</td>
     </tr>  
     </tbody>
   </table> 
