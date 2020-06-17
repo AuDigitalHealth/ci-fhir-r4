@@ -1,7 +1,7 @@
 #### Diagnostic Imaging Report
 The purpose of this profile is to define a representation of a diagnostic imaging report, as a document, to be electronically exchanged between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
-A Diagnostic Imaging Report is created by an authoring imaging provider in response to a diagnostic imaging order and contains a radiologist’s analysis of one or more test results. The original diagnostic report may be attached in one or more formats (e.g. PDF and MS Word format) that may contain one or more diagnostic imaging examination results.
+A Diagnostic Imaging Report is created by an authoring imaging provider in response to a diagnostic imaging order and contains a radiologist’s analysis of one or more examination results. The original diagnostic report may be attached in one or more formats (e.g. PDF and MS Word format) that may contain one or more diagnostic imaging examination results.
 
 A registered portal or registered repository shall not be a producer of a diagnostic imaging report.
 
@@ -54,7 +54,7 @@ For the overarching usage scenarios in this implementation guide the guidance in
     </tr>    
        <tr>
         <td>attester</td>
-        <td>Will be the person who approved the release of the pathology report</td>
+        <td>Will be the person who approved the release of the diagnostic imaging report</td>
     </tr>    
        <tr>
         <td>custodian</td>

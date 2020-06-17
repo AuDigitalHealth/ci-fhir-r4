@@ -52,7 +52,7 @@ For the overarching usage scenarios in this implementation guide the guidance in
     </tr>    
        <tr>
         <td>attester</td>
-        <td>Will be the person who approved the release of the pathology report</td>
+        <td>Will be the person who approved the release of the diagnostic report</td>
     </tr>    
        <tr>
         <td>custodian</td>
