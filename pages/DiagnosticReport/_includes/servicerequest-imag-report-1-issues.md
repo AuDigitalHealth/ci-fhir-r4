@@ -6,37 +6,26 @@
     <th>Issue No.</th>
   </tr>
   <tr>
-    <td>status (terminology binding)</td>
-    <td><p>We need to create a more constrained value set for reporting the status of a service request for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics reports.</p>
-        <p>Thinking to constrain <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus﻿</a> to only "active", "on-hold" & "completed" and remove "draft", "revoked", "entered-in-error" and "unknown".</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/43">ci-fhir-r4/issues/43</a>, and <a href="https://jira.aws.tooling/browse/FTR-943">jira.aws.tooling/browse/FTR-943</a></td>
+        <td>status (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/requeststatus-reporting-1">RequestStatus Reporting</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/60">ci-fhir-r4/issues/60</a></td>
    </tr>
    <tr>
     <td>category (potential code system redundancy / duplication)</td>
-    <td><p>The element category is present in <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, and <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>. A rationalisation of the codes used for categorisation needs to be performed - work in progress.</p>
+    <td><p>The element category is present in <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, and <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>. A rationalisation of the codes used for categorisation needs to be performed.</p>
         <p>Observation.category: "imaging" <a href="http://hl7.org/fhir/R4/codesystem-observation-category.html">http://terminology.hl7.org/CodeSystem/observation-category</a></p>
         <p>DiagnosticReport.category: "RAD" <a href="http://hl7.org/fhir/R4/v2/0074/index.html">http://terminology.hl7.org/CodeSystem/v2-0074</a></p>
         <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> Imaging (procedure)</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/28">ci-fhir-r4/issues/28</a></td>
    </tr>
-   <tr>
-    <td>subject (Reference type too open)</td>
-    <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/43">ci-fhir-r4/issues/43</a></td>
-   </tr>
-   <tr>
-    <td>requester (Reference type too open)</td>
-    <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/43">ci-fhir-r4/issues/43</a></td>
-   </tr>
   <tr>
     <td>Support for screening programs initiated requests</td>
-    <td>Not yet clear how requests that are initiated by a national program, e.g. National Breast Cancer Screening Program, are well supported with this model beyond allowing an organization as a requester - work in progress.</td>
+    <td>Not yet clear how requests that are initiated by a national program, e.g. National Breast Cancer Screening Program, are well supported with this model beyond allowing an organization as a requester.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/29">ci-fhir-r4/issues/29</a></td>
    </tr>
   <tr>
     <td>Support for self initiated requests</td>
-    <td>Not yet clear how requests that are initiated by a patient or related person should be supported - work in progress.</td>
+    <td>Not yet clear how requests that are initiated by a patient or related person should be supported. ServiceRequest.requester does allow for a Patient or RelatedPerson resource though currently constrained out in this profile. We need to investigate the need for supporting self-initiated requests in the usage scenarios this profile is intended to support.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/56">ci-fhir-r4/issues/56</a></td>
    </tr>
   <tr>
