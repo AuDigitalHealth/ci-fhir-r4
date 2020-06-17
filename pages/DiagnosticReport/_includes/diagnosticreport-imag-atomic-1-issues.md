@@ -11,18 +11,18 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/27">ci-fhir-r4/issues/27</a></td>
    </tr>
     <tr>
-    <td>meta.profile (invariant on profile value)</td>
-    <td>Invariant enforcing the canonical url for this profile is missing - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/50">ci-fhir-r4/issues/50</a></td>
-   </tr>
+        <td>status (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1">DiagnosticReportStatus Report Available</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/58">ci-fhir-r4/issues/58</a></td>
+      </tr>
    <tr>
-    <td>status (terminology binding)</td>
-    <td>We need to create a more constrained value set for the Agency FHIR Pathology Report (DiagnsoticReport) profile. We would like to constrain the FHIR element DiagnosticReport.status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html</a> to just contain the codes of "partial", "preliminary", "final", "amended", "corrected", "appended" i.e remove "registered", "cancelled", "entered-in-error" & "unknown".</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/50">ci-fhir-r4/issues/50</a>, and <a href="https://jira.aws.tooling/browse/FTR-933">jira.aws.tooling/browse/FTR-933</a></td>
+    <td>category (pattern)</td>
+    <td><p>The use of pattern on category is in conflict with the intended design and implementation guidance. We want to fix a domain category, e.g. imaging, and encourage the sending of a second finer grained category, but current profile forces all instances of category to match the fixed pattern or an error is thrown. We need to change this design, possibly slicing on category or using an invariant would be better.</p></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/87">ci-fhir-r4/issues/87</a></td>
    </tr>
       <tr>
     <td>category (potential code system redundancy / duplication)</td>
-    <td><p>The element category is present in DiagnosticReport, Observation, and ServiceRequest. A rationalisation of the codes used for categorisation needs to be performed - work in progress.</p>
+    <td><p>The element category is present in DiagnosticReport, Observation, and ServiceRequest. A rationalisation of the codes used for categorisation needs to be performed.</p>
         <p>Observation.category: "imaging" <a href="http://hl7.org/fhir/R4/codesystem-observation-category.html">http://terminology.hl7.org/CodeSystem/observation-category</a></p>
         <p>DiagnosticReport.category: "RAD" <a href="http://hl7.org/fhir/R4/v2/0074/index.html">http://terminology.hl7.org/CodeSystem/v2-0074</a></p>
         <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> (Laboratory procedure)</p></td>
@@ -42,14 +42,9 @@
     <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/407">au-fhir-base/issues/407</a></td>
    </tr>
    <tr>
-    <td>subject (Reference type too open)</td>
-    <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/50">ci-fhir-r4/issues/50</a></td>
-   </tr>
-   <tr>
-    <td>performer (Reference type too open)</td>
-    <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/50">ci-fhir-r4/issues/50</a></td>
+    <td>Support aggregation of multiple diagnotic investigations?</td>
+    <td><p>This profile is intended to support one DiagnosticReport per diagnostic investigation / procedure - it is unclear if support for the aggregation of multiple investigations / procedures is desired. Feedback from stakeholders will be sought on whether this is to be supported.</p></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/88">ci-fhir-r4/issues/88</a></td>
    </tr>
    <tr>
     <td>Constraint presentation</td>
