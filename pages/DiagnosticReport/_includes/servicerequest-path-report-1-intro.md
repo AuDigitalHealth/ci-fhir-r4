@@ -5,7 +5,7 @@ The context of this profile is reporting.
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
-* one identifier is the local identifier assigned to the order by the order requester (i.e. placer identifier)
+* if sent, one identifier is the local identifier assigned to the order by the order requester (i.e. placer identifier)
 * a local identifier is sent with a [HPI-O scoped](http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/index.html) identifier namespace if there isn't a local namespace available (see the [FAQ](https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions) for more information) 
 * status is ‘completed’
  
