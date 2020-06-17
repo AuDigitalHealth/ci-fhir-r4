@@ -57,10 +57,32 @@
       <path value="Observation" />
       <short value="A pathology test observation for a patient" />
       <definition value="An observation of a pathology test for a patient. This observation may be a simple test or a panel/study." />
+      <constraint>
+        <key value="inv-dh-obs-01" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="performer.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-obs-03" />
+        <severity value="error" />
+        <human value="The Observation shall at least have one entry or an empty reason, but not both" />
+        <expression value="entry.exists() xor dataAbsentReason.exists()" />
+      </constraint>
     </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1" />
+      </binding>
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
@@ -77,6 +99,10 @@
       <path value="Observation.code" />
       <short value="Pathology test or test group" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1" />
+      </binding>
     </element>
     <element id="Observation.code.coding:snomedImagingProcedure">
       <path value="Observation.code.coding" />
