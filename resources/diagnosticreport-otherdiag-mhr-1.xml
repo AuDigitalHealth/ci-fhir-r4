@@ -53,7 +53,7 @@
         <key value="inv-dh-dir-04" />
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1'" />
-        <xpath value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1').exists()" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1').exists()" />
       </constraint>
     </element>
     <element id="DiagnosticReport.meta.profile">
