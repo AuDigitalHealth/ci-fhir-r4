@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a base model for the concept of a practitioner; defining fundamental concepts that form a conforming representation of a practitioner to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to provide a base model for the concept of a practitioner; defining fundamental concepts that form the representation of a practitioner to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -25,7 +25,7 @@
   <differential>
     <element id="Practitioner">
       <path value="Practitioner" />
-      <short value="A practitioner in the context of electronic exchange of health information" />
+      <short value="A person with a formal responsibility in the provisioning of services" />
       <constraint>
         <key value="inv-dh-prac-01" />
         <severity value="error" />
@@ -57,10 +57,6 @@
     </element>
     <element id="Practitioner.gender">
       <path value="Practitioner.gender" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Practitioner.birthDate">
-      <path value="Practitioner.birthDate" />
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.photo">
