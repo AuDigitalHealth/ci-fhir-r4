@@ -1,7 +1,7 @@
 #### My Health Record Pathology Report
 The purpose of this profile is to define a short form representation of a pathology report, providing a rich text representation of the report as issued by the diagnostic service provider with supporting key elements of clinical relevance.  This profile is intended to support the electronic exchange of pathology reports between healthcare providers and the My Health Record system infrastructure in Australia.
 
-A My Health Record Pathology Report is created by an authoring pathology provider and contains the pathologist’s analysis of one or more test results. There is a single PDF attachment of the original diagnostic report that may itself contain one or more pathology test results. Thus the values of diagnostic report elements that are present in both the FHIR resource and the PDF document shall be consistent.
+A My Health Record Pathology Report is created by an authoring pathology provider and contains the pathologist’s analysis of one or more test results. There is a single PDF attachment of the original diagnostic report that may itself contain one or more pathology test results. Thus the values of diagnostic report elements that are present in both a FHIR resource and the PDF document shall be consistent.
 
 There are specific requirements related to the management of pathology results provided to the My Health Record system, which are managed by the My Health Record system itself.
 
