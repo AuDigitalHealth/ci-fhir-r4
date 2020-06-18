@@ -6,10 +6,14 @@
     <th>Issue No.</th>
   </tr>
   <tr>
-    <td>status (terminology binding)</td>
-    <td><p>We need to create a more constrained value set for reporting the status of a service request for the overarching usage scenarios - this value set would be used for pathology, imaging, and other diagnostics reports.</p>
-    <p>Constrain the terminology <a href="http://hl7.org/fhir/R4/valueset-request-status.html">http://hl7.org/fhir/R4/valueset-request-status.html</a> to "active", "on-hold" & "completed" and remove "draft", "revoked", "entered-in-error" and "unknown".</p></td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/39">ci-fhir-r4/issues/39</a>, and <a href="https://jira.aws.tooling/browse/FTR-943">jira.aws.tooling/browse/FTR-943</a></td>
+        <td>status (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/requeststatus-reporting-1">RequestStatus Reporting</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/60">ci-fhir-r4/issues/60</a></td>
+   </tr>
+   <tr>
+    <td>category (pattern)</td>
+    <td><p>The use of pattern on category is in conflict with the intended design and implementation guidance. We want to fix a domain category, e.g. imaging, and encourage the sending of a second finer grained category, but current profile forces all instances of category to match the fixed pattern or an error is thrown. We need to change this design, possibly slicing on category or using an invariant would be better.</p></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/87">ci-fhir-r4/issues/87</a></td>
    </tr>
    <tr>
        <td>category (appropriateness of code)</td>
@@ -29,20 +33,16 @@
                <li>audiology - hearing tests</li>
                <li>sleep studies</li>
             </ul></p>
-        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (ie cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
+        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (e.g. cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
         <p>This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a>.</p></td>
         <td>See <a href="https://jira.aws.tooling/browse/FTR-898">jira.aws.tooling/browse/FTR-898</a>, and <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td>
    </tr>
    <tr>
-    <td>subject (Reference type too open)</td>
-    <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/39">ci-fhir-r4/issues/39</a></td>
+    <td>Support for self initiated requests</td>
+    <td>Not yet clear how requests that are initiated by a patient or related person should be supported. ServiceRequest.requester does allow for a Patient or RelatedPerson resource though currently constrained out in this profile. We need to investigate the need for supporting self-initiated requests in the usage scenarios this profile is intended to support.</td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/56">ci-fhir-r4/issues/56</a></td>
    </tr>
-   <tr>
-    <td>requester (Reference type too open)</td>
-    <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/39">ci-fhir-r4/issues/39</a></td>
-   </tr>
+
   <tr>
     <td>Constraint presentation</td>
     <td>The full set of constraints (i.e. invariants) defined in this profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.</td>
