@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to represent key elements of clinical relevance of a request for a diagnostic investigation (such as echo cardiogram or colonoscopy or hearing test) in a diagnostic report context. This profile is intended to support the electronic exchange of other diagnostic reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to represent key elements of clinical relevance of a request for a specialist or other diagnostic investigation (such as echo cardiogram or colonoscopy or hearing test) in a diagnostic report context. This profile is intended to support the electronic exchange of other diagnostic reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement."/>
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -52,15 +52,31 @@
       <path value="ServiceRequest" />
       <short value="An order for a diagnostic investigation" />
       <definition value="A record of a request for a diagnostic investigation to be performed." />
+      <constraint>
+        <key value="inv-dh-prr-01" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-prr-02" />
+        <severity value="error" />
+        <human value="The requester shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="requester.reference.exists() or requester.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
     </element>
     <element id="ServiceRequest.identifier">
       <path value="ServiceRequest.identifier" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status" />
+      <short value="active | on-hold | completed" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/requeststatus-reporting-1" />
+      </binding>
     </element>
     <element id="ServiceRequest.intent">
       <path value="ServiceRequest.intent" />
@@ -72,7 +88,7 @@
       <min value="1" />
       <patternCodeableConcept>
         <coding>
-          <system value="https://snomed.info/sct" />
+          <system value="http://snomed.info/sct" />
           <code value="276341003" />
         </coding>
       </patternCodeableConcept>
@@ -86,8 +102,8 @@
       <path value="ServiceRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -98,12 +114,12 @@
     </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
-      <short value="Authorising healthcare provider or organisation / program" />
+      <short value="Authorising healthcare provider or organisation / program ( e.g. National Breast Cancer Screening Program)" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1" />
       </type>
       <mustSupport value="true" />
     </element>
