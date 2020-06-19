@@ -5,11 +5,6 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-    <tr>
-    <td>meta.profile (invariant on profile value)</td>
-    <td>Invariant enforcing the canonical url for this profile is missing - work in progress.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/47">ci-fhir-r4/issues/47</a></td>
-   </tr>
    <tr>
         <td>status (terminology binding)</td>
         <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1">DiagnosticReportStatus Report Available</a> value set is pending.</p></td>
@@ -25,7 +20,7 @@
     <td><p>The element category is present in DiagnosticReport, Observation, and ServiceRequest. A rationalisation of the codes used for categorisation needs to be performed - work in progress.</p>
         <p>Observation.category: "imaging" <a href="http://hl7.org/fhir/R4/codesystem-observation-category.html">http://terminology.hl7.org/CodeSystem/observation-category</a></p>
         <p>DiagnosticReport.category: "RAD" <a href="http://hl7.org/fhir/R4/v2/0074/index.html">http://terminology.hl7.org/CodeSystem/v2-0074</a></p>
-        <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> (Laboratory procedure)</p></td>
+        <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> Imaging (procedure)</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/28">ci-fhir-r4/issues/28</a></td>
    </tr>
     <tr>

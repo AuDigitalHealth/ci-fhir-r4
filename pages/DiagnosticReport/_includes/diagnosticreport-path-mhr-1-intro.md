@@ -51,4 +51,6 @@ When sending a report of a multi-test study or panel:
 </ul>
 
 #### Boundaries and relationships
+This profile supports the identification of tests performed for a patient enabling an individual to determine if the attached Pathology Report is of interest but does not directly support reporting of the actual results of pathology tests (see [Atomic Pathology Report](StructureDefinition-diagnosticreport-imag-atomic-1.html) for atomic reporting).
+
 This profile is referenced by [Pathology Report](StructureDefinition-composition-pathreport-1.html).

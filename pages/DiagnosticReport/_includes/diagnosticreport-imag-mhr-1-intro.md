@@ -52,4 +52,6 @@ When sending a report of a multi-modality procedure:
 </ul>
 
 #### Boundaries and relationships
+This profile supports the identification of examinations performed for a patient enabling an individual to determine if the attached Diagnostic Imaging Report is of interest but does not directly support reporting of the actual results of imaging examinations (see [Atomic Diagnostic Imaging Report](StructureDefinition-diagnosticreport-imag-atomic-1.html) for atomic reporting).
+
 This profile is referenced by [Diagnostic Imaging Report](StructureDefinition-composition-imagreport-1.html).

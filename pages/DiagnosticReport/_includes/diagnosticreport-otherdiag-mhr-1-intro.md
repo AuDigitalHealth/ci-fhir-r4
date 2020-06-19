@@ -49,4 +49,6 @@ For the overarching usage scenarios in this implementation guide it is expected 
 </ul>
 
 #### Boundaries and relationships
+This profile supports the identification of tests performed for a patient enabling an individual to determine if the attached Diagnostic Report is of interest but does not directly support reporting of the actual results of diagnostic investigations (see [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html) for atomic reporting).
+
 This profile is referenced by [Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html).

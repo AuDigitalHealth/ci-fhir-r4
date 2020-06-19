@@ -43,7 +43,7 @@
    </tr>
    <tr>
     <td>effective[x] (period)</td>
-    <td>The My Health Record system expects only a dateTime; period is a relevant type for some imaging examinations. The constraining of types should be reconfirmed.</td>
+    <td>The My Health Record system expects only a dateTime; period is a relevant type for some pathology tests. The constraining of types should be reconfirmed.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/47">ci-fhir-r4/issues/47</a></td>
    </tr>
    <tr>
