@@ -7,244 +7,118 @@
         />
     </meta>-->
     <language value="en-AU"/>
-    <!--WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
+    <!--WORKAROUND: The contents of DiagnoticReport.text are a workaround to enable the tooling used to generate this implementation guide
     to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
     The contents below is not consitent with good or recommended practice. -->
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
-            <table>
-                <tr>
-                    <th>Echocardiography Report</th>
-                </tr>
-                <tr>
-                    <td>06 Jan 2019 10:12</td>
-                </tr>
-                
-            </table>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>START OF DOCUMENT</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table style="width:100%">
-                <tbody>
-                    <tr>
-                        <td>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Requester</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Dr David George (Oncologist) (HPI-I:
-                                            8003608833564727)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fred Hope Cancer Centre</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Request Details</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Request Date/Time:</td>
-                                        <td>05 Jan 2019 0:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Requested Test:</td>
-                                        <td>ECG procedure</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Author</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Dr Fredrika Bremer (Cardiologist)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>(02) 5550 4111</td>
-                                    </tr>
-                                    <tr>
-                                        <td/>
-                                    </tr>
-                                    <tr>
-                                        <td>NSW Hospital - Cardiology (HPI-O: 8003626566699734)
-                                            (ABN: 41824753557)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2325 Rocklands Rd, North Sydney, NSW, 2060</td>
-                                    </tr>
-                                    <tr>
-                                        <td>(02) 5550 4444
-                                            https://www.health.nsw.example.org/nsw-hospital</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Report Details</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Report Date/Time:</td>
-                                        <td>06 Jan 2019 10:12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Report Name:</td>
-                                        <td>Echocardiography - pre chemo</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Report ID:</td>
-                                        <td>3143079143</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Report Status:</td>
-                                        <td>Final</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Diagnostice Service(s):</td>
-                                        <td>Cardiac Ultrasound</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <h1>Diagnostic Test / Investigation Results</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <tr>
-                                <th>Test Name</th>
-                                <th>Diagnostic Service</th>
-                                <th>Test Date/Time</th>
-                                <th>Status</th>
-                            </tr>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tbody>
-                        <tr>
-                            <td>ECG procedure</td>
-                            <td>Cardiac Ultrasound</td>
-                            <td>06 Jan 2019 09:45</td>
-                            <td>Final</td>
-                        </tr>
-                    </tbody>
-                </tbody>
-            </table>
-            <p>
-                <a
-                    href="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/Echocardiography-pre-chemo.pdf"
-                    >Link to PDF document</a>
-            </p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>ADMINISTRATIVE DETAILS</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h1>NSW CARDIOVASCULAR GROUP</h1>
+            <h2>ECHOCARDIOGRAPHY REPORT</h2>
+            <p>Phone: 1300 975 708</p>
             <table>
                 <tbody>
                     <tr>
                         <td>
                             <table>
-                                <thead>
-                                    <tr>
-                                        <th>Patient</th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
                                         <td>Name</td>
-                                        <td>Mr Wei ZHANG</td>
+                                        <td>Mr Wei Zhang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td>6 Macquarie Street, Sydney, NSW, 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DOB</td>
+                                        <td>03/05/1969</td>
                                     </tr>
                                     <tr>
                                         <td>Gender</td>
                                         <td>Male</td>
                                     </tr>
                                     <tr>
-                                        <td>Indigenous
-                                            Status</td>
+                                        <td>Indigenous Status</td>
                                         <td>Neither Aboriginal nor Torres Strait Islander
                                             origin</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p></p></td>
+                                        <td><p></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p></p></td>
+                                        <td><p></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Test</td>
+                                        <td>Echocardiography</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Requested</td>
+                                        <td>05/01/2019 0:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Collected</td>
+                                        <td>06/01/2019 09:45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reported</td>
+                                        <td>06/01/2019 10:12</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <td>
                             <table>
-                                <thead>
-                                    <tr>
-                                        <th>Author</th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Name</td>
-                                        <td>Dr Fredrika Bremer (Cardiologist) (HPI-I:
-                                            8003608833357361)</td>
+                                        <td>File ID</td>
+                                        <td>2338172</td>
                                     </tr>
                                     <tr>
-                                        <td>Phone</td>
-                                        <td>(02) 5550 4111</td>
+                                        <td>Medicare No.</td>
+                                        <td>29533070311</td>
                                     </tr>
                                     <tr>
-                                        <td>Organisation</td>
-                                        <td>NSW Hospital - Cardiology (HPI-O: 8003626566699734)
-                                            (ABN: 41824753557)</td>
+                                        <td>IHI</td>
+                                        <td>8003608000228437</td>
                                     </tr>
                                     <tr>
-                                        <td>Work Place</td>
-                                        <td>2325 Rocklands Rd, North Sydney NSW 2060</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Other Details</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Date/Time Authored</td>
-                                        <td>06 Jan 2019 10:12</td>
+                                        <td>Country of birth</td>
+                                        <td>China</td>
                                     </tr>
                                     <tr>
-                                        <td>Date/Time Attested</td>
-                                        <td>06 Jan 2019 10:12</td>
+                                        <td>Year of arrival</td>
+                                        <td>2017</td>
                                     </tr>
                                     <tr>
-                                        <td>Status</td>
-                                        <td>Final</td>
+                                        <td>Interpeter required?</td>
+                                        <td>Y (Cantonese)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p></p></td>
+                                        <td><p></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Laboratory Enquiries #</td>
+                                        <td>3143079143</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p></p></td>
+                                        <td><p></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Requested by</td>
+                                        <td>Dr David George (Oncologist)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reports to</td>
+                                        <td>
+                                            <p>Dr David George (Oncologist)</p>
+                                            <p>Dr Sarah Bondiali (General Practitioner)</p>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -252,9 +126,98 @@
                     </tr>
                 </tbody>
             </table>
-            
+            <table>
+                <tr>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>Observation</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>3143079143</td>
+                    <td>Echocardiography</td>
+                    <td>
+                        <p>NSW CARDIOVASCULAR GROUP</p>
+                        <p>ECHOCARDIOGRAPHY REPORT</p>
+                        <p>Phone: 1300 975 708</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p>Patient Name: Mr Zhang Wei</p>
+                        <p>Date of Birth: 03/05/1969</p>
+                        <p>Ht/Wt/BSA: 174 cm, 72 kg, 2.05 m2.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p>Date of Study: 06/01/2019</p>
+                        <p>Site: NSW Hospital - Cardiology</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p>Indications: Pre-chemotherapy.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p>Sonographer: Ms Linda Howard</p>
+                        <p>Referring physician: Dr David George</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p/>
+                        <p/>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p>Summary:</p>
+                        <p>1. Normal left ventricular size. LV voi 119 ml.</p>
+                        <p>2. Normal overall left ventricular systolic function. EF = 61
+                            %.</p>
+                        <p>3. There were no resting regional wall motion abnormalities
+                            detected.</p>
+                        <p>4. Normal GLS (Global Longitudinal Strain) —21 %.</p>
+                        <p>5. Normal right ventricular size and systolic function.</p>
+                        <p>6. Mildly dilated Left atrium. 21 cm2.</p>
+                        <p>7. Mild dilatation of the aortic root (43mm).</p>
+                        <p>8. Mild aortic valve sclerosis without stenosis.</p>
+                        <p>9. Trivial (0—1/4) mitral valve regurgitation.</p>
+                        <p>10. Trivial (0—1/4) tricuspid regurgitation.</p>
+                        <p>11.Normal pulmonary artery systolic pressure. RVSP = 23
+                            mmHg.</p>
+                        <p>12. The interatrial septum appears intact.</p>
+                        <p>13. Normal pericardium.</p>
+                        <p>14. Patient was in sinus bradycardia at a rate of 54 bpm.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td/>
+                    <td/>
+                    <td>
+                        <p>CARDIOLOGISTS INTERPRETATION:</p>
+                        <p>Patient was in sinus bradycardia at a rate of 54 bpm.</p>
+                    </td>
+                </tr>
+            </table>
         </div>
-
     </text>
     <identifier>
         <type>
