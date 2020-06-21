@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+    <id value="6685a24a-1606-4d1e-a212-fc456a71300f"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1"
+        />
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="procedure"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="EC"/>
+        </coding>
+        <text value="Electrocardiac"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="29303009"/>
+            <display value="ECG procedure"/>
+        </coding>
+        <text value="Echocardiograph"/>
+    </code>
+    <subject>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </subject>
+    <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+</Observation>
