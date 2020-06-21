@@ -2,20 +2,28 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="94f75158-f8b9-4c08-b96e-4306580c2add"/>
     <meta>
-        <lastUpdated value="2020-03-17T11:46:00+11:00"/>
+        <lastUpdated value="2020-03-17T11:46:00+10:00"/>
     </meta>
+    <identifier> 
+        <system value="urn:ietf:rfc:3986"/> 
+        <value value="urn:uuid:94f75158-f8b9-4c08-b96e-4306580c2add"/> 
+    </identifier> 
     <type value="document"/>
     <entry>
-        <fullUrl value="urn:uuid:59033ee7-1950-4a04-abb3-6a232d5f62fd"/>
+        <fullUrl value="urn:uuid:ca476713-74eb-4700-8ed6-f0087a5b513a"/>
         <resource>
             <Composition>
                 <id value="ca476713-74eb-4700-8ed6-f0087a5b513a"/>
                 <meta>
+                    <lastUpdated value="2020-03-17T11:46:00+10:00"/>
                     <profile
                         value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1"
                     />
                 </meta>
                 <language value="en-AU"/>
+                <!--WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
+                to generate a human friendly rednering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
+                The contents below is not consitent with good or recommended practice. -->
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
@@ -54,25 +62,25 @@
                                     >Mr Wei <span class="bold">ZHANG</span></td>
                                 <td
                                     style="display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     color: #FFFFFF;"
                                     >DoB</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     margin-right: 30px;
                                     color: #FFFFFF;"
                                     >03 May 1969</td>
                                 <td
                                     style="display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     color: #FFFFFF;"
                                     >GENDER</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     margin-right: 30px;
                                     color: #FFFFFF;"
                                     >Male</td>
@@ -84,19 +92,19 @@
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     margin-right: 30px;
                                     color: #FFFFFF;"
                                     >8003 6080 0022 8437</td>
                                 <td
                                     style="display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     color: #FFFFFF;"
                                     >INDIGENOUS STATUS</td>
                                 <td
                                     style="margin-left: 0px;
                                     display: inline;
-                                    font-size: 11px;
+                                    font-size: 12px;
                                     margin-right: 30px;
                                     color: #FFFFFF;
                                     word-wrap: break-word;"
@@ -295,6 +303,7 @@
                                             text-align: center;
                                             margin 0px;
                                             font-family: Helvetica;
+                                            font-size: 14px;
                                             font-weight: bold;
                                             text-align: left;
                                             word-wrap: break-word;"
@@ -305,6 +314,7 @@
                                                 text-align: center;
                                                 margin 0px;
                                                 font-family: Helvetica;
+                                                font-size: 14px;
                                                 font-weight: bold;
                                                 text-align: left;
                                                 word-wrap: break-word;"
@@ -316,6 +326,7 @@
                                             margin 0px;
                                             font-family: Helvetica;
                                             font-weight: bold;
+                                            font-size: 14px;
                                             text-align: left;
                                             word-wrap: break-word;"
                                                 >Test Date/Time</th>
@@ -325,6 +336,7 @@
                                                 text-align: center;
                                                 margin 0px;
                                                 font-family: Helvetica;
+                                                font-size: 14px;
                                                 font-weight: bold;
                                                 text-align: left;
                                                 word-wrap: break-word;"
@@ -515,8 +527,13 @@
                                                 </tr>
                                                 <tr>
                                                   <td style="font-weight: bold; color:#808080"
-                                                  >Document Date/Time</td>
-                                                  <td>06 Jan 2019 10:12</td>
+                                                  >Document Created Date/Time</td>
+                                                    <td>17 March 2020 11:46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; color:#808080"
+                                                        >Date/Time Authored</td>
+                                                    <td>06 Jan 2019 10:12</td>
                                                 </tr>
                                                 <tr>
                                                   <td style="font-weight: bold; color:#808080"
@@ -526,18 +543,12 @@
                                                 <tr>
                                                   <td style="font-weight: bold; color:#808080"
                                                   >Document ID</td>
-                                                  <td>34902
-                                                  (9ad78a95-80b3-4f0d-b106-ff9192753b34)</td>
+                                                    <td>94f75158-f8b9-4c08-b96e-4306580c2add</td>
                                                 </tr>
                                                 <tr>
                                                   <td style="font-weight: bold; color:#808080"
                                                   >Document Business ID</td>
-                                                  <td>9ad78a95-80b3-4f0d-b106-ff9192753b34</td>
-                                                </tr>
-                                                <tr>
-                                                  <td style="font-weight: bold; color:#808080"
-                                                  >Document Version</td>
-                                                  <td>1</td>
+                                                    <td>ca476713-74eb-4700-8ed6-f0087a5b513a</td>
                                                 </tr>
                                                 <tr>
                                                   <td style="font-weight: bold; color:#808080"
@@ -569,6 +580,10 @@
                     </div>
 
                 </text>
+                <identifier> 
+                    <system value="urn:ietf:rfc:3986"/> 
+                    <value value="urn:uuid:ca476713-74eb-4700-8ed6-f0087a5b513a"/> 
+                </identifier>
                 <status value="final"/>
                 <type>
                     <coding>
@@ -892,9 +907,6 @@
         <resource>
             <PractitionerRole xmlns="http://hl7.org/fhir">
                 <id value="46d552b7-88a9-427b-9d62-8b0727de91f9"/>
-                <meta>
-                    <versionId value="2020-1.1.2Q3"/>
-                </meta>  
                 <identifier>
                     <type>
                         <coding>
@@ -948,9 +960,6 @@
         <resource>
             <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
-                <meta>
-                    <versionId value="2020-1.1.2Q3"/>
-                </meta>
                 <name>
                     <use value="usual"/>
                     <family value="Bremer"/>
@@ -969,10 +978,7 @@
         <fullUrl value="urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
         <resource>
             <PractitionerRole xmlns="http://hl7.org/fhir">
-                <id value="04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
-                <meta>
-                    <versionId value="2020-1.1.2Q3"/>
-                </meta>  
+                <id value="04ac8978-bc60-4492-aa07-f62568ebe5c6"/> 
                 <identifier>
                     <type>
                         <coding>
@@ -1026,9 +1032,6 @@
         <resource>
             <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="e6de10ad-8dba-4250-8399-311da99e8c30"/>
-                <meta>
-                    <versionId value="2020-1.1.2Q3"/>
-                </meta>
                 <name>
                     <use value="usual"/>
                     <family value="Bremer"/>
@@ -1106,11 +1109,7 @@
         <fullUrl value="urn:uuid:cb084861-dd87-48ff-b645-5cb620a00e8e"/>
         <resource>
             <PractitionerRole xmlns="http://hl7.org/fhir">
-                <id value="cb084861-dd87-48ff-b645-5cb620a00e8e"/>
-                <meta>
-                    <versionId value="1.0.1.0"/>
-                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
-                </meta>    
+                <id value="cb084861-dd87-48ff-b645-5cb620a00e8e"/>  
                 <identifier>
                     <type>
                         <coding>
