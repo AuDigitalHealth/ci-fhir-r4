@@ -13,6 +13,16 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/32">ci-fhir-r4/issues/32</a></td>
    </tr>
    <tr>
+        <td>status (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1">DiagnosticReportStatus Report Available</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/58">ci-fhir-r4/issues/58</a></td>
+      </tr>
+      <tr>
+        <td>category (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1">Pathology Diagnostic Service Category</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/61">ci-fhir-r4/issues/61</a></td>
+      </tr>
+   <tr>
     <td>category (pattern)</td>
     <td><p>The use of pattern on category is in conflict with the intended design and implementation guidance. We want to fix a domain category, e.g. imaging, and encourage the sending of a second finer grained category, but current profile forces all instances of category to match the fixed pattern or an error is thrown. We need to change this design, possibly slicing on category or using an invariant would be better.</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/87">ci-fhir-r4/issues/87</a></td>
@@ -33,13 +43,18 @@
    </tr>
    <tr>
     <td>effective[x] (period)</td>
-    <td>The My Health Record system expects only a dateTime; period is a relevant type for some imaging examinations. The constraining of types should be reconfirmed.</td>
+    <td>The My Health Record system expects only a dateTime; period is a relevant type for some pathology tests. The constraining of types should be reconfirmed.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/47">ci-fhir-r4/issues/47</a></td>
    </tr>
    <tr>
     <td>presentedForm (PDF packaging requirements)</td>
     <td>Not yet clear what the packaging requirements are for attachments when sending FHIR to the My Health Record system infrastructure. In lieu of a FHIR equivalent of the <a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1962-2014/nehta-1229-2011">Clinical Documents - CDA Package v1.0</a> specification, examples for this profile will include workarounds (e.g. absolute url to a placeholder repository for attachment) or inclusion as base64 binary in a bundle.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/74">ci-fhir-r4/issues/74</a></td>
+   </tr>
+      <tr>
+    <td>Support aggregation of multiple diagnostic investigations?</td>
+    <td><p>This profile is intended to support one DiagnosticReport per diagnostic investigation / procedure - it is unclear if support for the aggregation of multiple investigations / procedures is desired. Feedback from stakeholders will be sought on whether this is to be supported.</p></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/88">ci-fhir-r4/issues/88</a></td>
    </tr>
    <tr>
     <td>Constraint presentation</td>
