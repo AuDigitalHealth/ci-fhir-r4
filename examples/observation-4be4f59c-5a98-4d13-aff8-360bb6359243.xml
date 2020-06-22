@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="4be4f59c-5a98-4d13-aff8-360bb6359243"/>
+    <status value="final"/>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="FILL"/>
+                <display value="Filler Identifier"/>
+            </coding>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565"/>
+        <value value="3143079143"/>
+    </identifier>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="procedure"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="CUS"/>
+            <display value="Cardiac Ultrasound"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="40701008"/>
+            <display value="Echocardiography"/>
+        </coding>
+        <text value="Echocardiography"/>
+    </code>
+    <subject>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </subject>
+    <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+</Observation>

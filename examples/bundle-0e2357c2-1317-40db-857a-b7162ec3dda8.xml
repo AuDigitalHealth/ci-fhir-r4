@@ -208,7 +208,7 @@
                                 <td/>
                                 <td>
                                     <p><b>Summary:</b></p>
-                                    <p>1. Normal left ventricular size. LV voi 119 ml.</p>
+                                    <p>1. Normal left ventricular size. LV vol 119 ml.</p>
                                     <p>2. Normal overall left ventricular systolic function. EF = 61
                                         %.</p>
                                     <p>3. There were no resting regional wall motion abnormalities
@@ -408,6 +408,14 @@
                                 <td/>
                                 <td/>
                                 <td>
+                                    <p/>
+                                    <p/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
                                     <p>Mr Wei Zhang, DOB 03/05/1969, File ID 2338172</p>
                                     <p style="font-weight: bold;">06/01/2019 Final</p>
                                 </td>
@@ -469,12 +477,23 @@
             </DiagnosticReport>
         </resource>
     </entry>
-    <!--Observation referenced in DiagnosticReport.result-->
+    <!-- Echocardiography Observation referenced in DiagnosticReport.result-->
     <entry>
         <fullUrl value="urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243"/>
         <resource>
             <Observation>
                 <id value="4be4f59c-5a98-4d13-aff8-360bb6359243"/>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="FILL"/>
+                            <display value="Filler Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565"/>
+                    <value value="3143079143"/>
+                </identifier>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -612,6 +631,21 @@
                     <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
                     <value value="29533070311"/>
                 </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                        <text value="Medical Record Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003626566699734" />
+                    <value value="2338172" />
+                    <assigner>
+                        <display value="NSW Hospital"/>
+                    </assigner>
+                </identifier>
                 <name>
                     <family value="Zhang"/>
                     <given value="Wei"/>
@@ -629,6 +663,13 @@
                         </valueCoding>
                     </extension>
                 </birthDate>
+                <address>
+                    <use value="home"/>
+                    <line value="6 Macquarie Street"/>
+                    <city value="Sydney"/>
+                    <state value="NSW"/>
+                    <postalCode value="2000"/>
+                </address>
                 <communication>
                     <language>
                         <coding>
