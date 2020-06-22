@@ -1,9 +1,9 @@
 ﻿DiagnosticReport : Validation Results
 =========================================
 
-err = 9, warn = 87, info = 14
+err = 9, warn = 81, info = 14
 IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Thu Jun 18 13:47:20 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+Generated Mon Jun 22 16:30:50 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 2
  C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095 : 9 / 15
@@ -11,12 +11,12 @@ Generated Thu Jun 18 13:47:20 AEST 2020. FHIR version 4.0.1 for au.electronichea
  C:\work\git\ci-fhir-r4\resources\composition-imagreport-1 : 0 / 6
  C:\work\git\ci-fhir-r4\resources\composition-otherdiagreport-1 : 0 / 4
  C:\work\git\ci-fhir-r4\resources\composition-pathreport-1 : 0 / 6
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-atomic-1 : 0 / 5
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-mhr-1 : 0 / 2
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1 : 0 / 5
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1 : 0 / 2
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1 : 0 / 5
- C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-mhr-1 : 0 / 5
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-atomic-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-mhr-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1 : 0 / 3
+ C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-mhr-1 : 0 / 3
  C:\work\git\ci-fhir-r4\resources\imagingstudy-diag-1 : 0 / 2
  C:\work\git\ci-fhir-r4\resources\implementationguide-diagnosticreport-1 : 0 / 0
  C:\work\git\ci-fhir-r4\resources\observation-imag-atomic-1 : 0 / 3
@@ -88,32 +88,26 @@ WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/f
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-atomic-1.xml ==
 WARNING: Atomic Diagnostic Imaging Report.DiagnosticReport.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1#DiagnosticReport.performer: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known
-WARNING: StructureDefinition/diagnosticreport-imag-atomic-1: StructureDefinition.snapshot.element[2].constraint[1]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
-WARNING: StructureDefinition/diagnosticreport-imag-atomic-1: StructureDefinition.differential.element[1].constraint[0]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-imag-mhr-1.xml ==
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1#DiagnosticReport.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known
+WARNING: My Health Record Diagnostic Imaging Report.DiagnosticReport.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1#DiagnosticReport.performer: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-atomic-1.xml ==
 WARNING: Atomic Other Diagnostic Report.DiagnosticReport.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1#DiagnosticReport.performer: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known
-WARNING: StructureDefinition/diagnosticreport-otherdiag-atomic-1: StructureDefinition.snapshot.element[2].constraint[1]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
-WARNING: StructureDefinition/diagnosticreport-otherdiag-atomic-1: StructureDefinition.differential.element[1].constraint[0]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-otherdiag-mhr-1.xml ==
-WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known
+WARNING: My Health Record Other Diagnostic Report.DiagnosticReport.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
+WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1#DiagnosticReport.performer: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-atomic-1.xml ==
 WARNING: Atomic Pathology Report.DiagnosticReport.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1#DiagnosticReport.performer: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known
-WARNING: StructureDefinition/diagnosticreport-path-atomic-1: StructureDefinition.snapshot.element[2].constraint[1]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
-WARNING: StructureDefinition/diagnosticreport-path-atomic-1: StructureDefinition.differential.element[1].constraint[0]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\diagnosticreport-path-mhr-1.xml ==
 WARNING: My Health Record Pathology Report.DiagnosticReport.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
 WARNING: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1#DiagnosticReport.performer: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1 is valid constraint on the base because it is not known
-WARNING: StructureDefinition/diagnosticreport-path-mhr-1: StructureDefinition.snapshot.element[2].constraint[1]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
-WARNING: StructureDefinition/diagnosticreport-path-mhr-1: StructureDefinition.differential.element[1].constraint[0]: eld-21: Constraints should have an expression or else validators will not be able to enforce them [expression.exists()]
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\imagingstudy-diag-1.xml ==
 WARNING: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1#ImagingStudy.subject: Connect check whether the target profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1 is valid constraint on the base because it is not known

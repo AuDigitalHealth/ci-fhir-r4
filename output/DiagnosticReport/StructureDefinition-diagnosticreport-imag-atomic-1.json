@@ -11,7 +11,7 @@
   "title": "Atomic Diagnostic Imaging Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-18T13:46:17+10:00",
+  "date": "2020-06-22T16:29:49+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -220,7 +220,7 @@
             "key": "inv-dh-dir-03",
             "severity": "error",
             "human": "One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'",
-            "xpath": "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()",
+            "expression": "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()",
             "source": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1"
           }
         ],
@@ -4022,7 +4022,7 @@
             "key": "inv-dh-dir-03",
             "severity": "error",
             "human": "One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'",
-            "xpath": "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()",
+            "expression": "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()",
             "source": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1"
           }
         ]

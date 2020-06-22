@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Atomic Diagnostic Imaging Report"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-18T13:46:17+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-22T16:29:49+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -256,7 +256,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-dh-dir-03" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1";
            fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1>
@@ -4264,7 +4264,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "inv-dh-dir-03" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1";
            fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1>

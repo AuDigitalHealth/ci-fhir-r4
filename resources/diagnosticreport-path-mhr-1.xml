@@ -32,21 +32,18 @@
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-dir-03" />
         <severity value="error" />
         <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-dir-04" />
         <severity value="error" />
         <human value="The requester of the pathology order shall be a PractitionerRole" />
         <expression value="basedOn.resolve().requester.resolve().where($this is PractitionerRole).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
       </constraint>
     </element>
     <element id="DiagnosticReport.meta">
@@ -56,8 +53,7 @@
         <key value="inv-dh-dir-01" />
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1'" />
-        <xpath value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1').exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1" />
+        <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1').exists()" />
       </constraint>
     </element>
     <element id="DiagnosticReport.meta.profile">
@@ -76,6 +72,7 @@
     </element>
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
+      <short value="Pathology order" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -84,14 +81,15 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="DiagnosticReport.basedOn.reference">
+      <path value="DiagnosticReport.basedOn.reference" />
+      <min value="1" />
+    </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
       <short value="partial | preliminary | final +" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DiagnosticReportStatus" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1" />
       </binding>

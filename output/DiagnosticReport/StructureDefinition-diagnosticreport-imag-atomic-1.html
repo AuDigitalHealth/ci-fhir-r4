@@ -240,7 +240,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-diagnosticreport.html">AUBaseDiagnosticReport</a>.</p>
 <p>
-This profile was published on Thu Jun 18 13:46:17 AEST 2020 as a draft by Australian Digital Health Agency.
+This profile was published on Mon Jun 22 16:29:49 AEST 2020 as a draft by Australian Digital Health Agency.
 </p>
 
 
@@ -874,13 +874,13 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     <td><p>The element category is present in DiagnosticReport, Observation, and ServiceRequest. A rationalisation of the codes used for categorisation needs to be performed.</p>
         <p>Observation.category: "imaging" <a href="http://hl7.org/fhir/R4/codesystem-observation-category.html">http://terminology.hl7.org/CodeSystem/observation-category</a></p>
         <p>DiagnosticReport.category: "RAD" <a href="http://hl7.org/fhir/R4/v2/0074/index.html">http://terminology.hl7.org/CodeSystem/v2-0074</a></p>
-        <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> (Laboratory procedure)</p></td>
+        <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> Imaging (procedure)</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/28">ci-fhir-r4/issues/28</a></td>
    </tr>
     <tr>
     <td>category (terminology binding)</td>
     <td><p>The example value set is too broad for diagnostic imaging reporting - we need a value set that is a constrained value set from that example set <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a> that is restricted to the diagnostic imaging appropriate codes. This value set would become required.</p>
-        <p>Stakeholder feedback is required to determine in <a href="https://www.rsna.org/en/practice-tools/data-tools-and-standards/radlex-radiology-lexicon">Radlex</a> or the output from the work with RSNA and LOINC would be more appropriate</p></td>
+        <p>Stakeholder feedback is required to determine if <a href="https://www.rsna.org/en/practice-tools/data-tools-and-standards/radlex-radiology-lexicon">Radlex</a> or the output from the work with RSNA and LOINC would be more appropriate</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/55">ci-fhir-r4/issues/55</a>, and <a href="https://jira.aws.tooling/browse/FTR-954">jira.aws.tooling/browse/FTR-954</a></td>
    </tr>
    <tr>
@@ -938,7 +938,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <tr><td>inv-dh-dir-01</td><td>DiagnosticReport</td><td>The subject shall at least have a reference or an identifier with at least a system and a value<br/>: subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()</td><td></td></tr>
 <tr><td>inv-dh-dir-02</td><td>DiagnosticReport</td><td>The performer shall at least have a reference or an identifier with at least a system and a value<br/>: performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>DiagnosticReport.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>inv-dh-dir-03</td><td>DiagnosticReport.meta</td><td>One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'<br/>: </td><td></td></tr>
+<tr><td>inv-dh-dir-03</td><td>DiagnosticReport.meta</td><td>One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'<br/>: profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>DiagnosticReport.meta.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>DiagnosticReport.meta.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>DiagnosticReport.meta.versionId</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
@@ -1081,7 +1081,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Thu, Jun 18, 2020 13:46+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Jun 22, 2020 16:29+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>
