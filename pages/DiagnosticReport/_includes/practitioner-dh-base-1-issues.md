@@ -7,8 +7,8 @@
     <th>Issue link</th>
   </tr>
    <tr>
-     <td>qualification (terminology binding)</td>
-     <td>The example value set does not include some key Australian qualifications such as AHPRA and MBBS. We need a broader value set that includes a set of codes which represent the possible qualifications, licences or registrations that a health practitioner may hold in Australia.</td>
+     <td>qualification (use case)</td>
+     <td>At this time specific usage scenarios are undefined for exchanging types of practitioner qualification information.</td>
      <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/314">au-fhir-base/issues/314</a><br/>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/90">ci-fhir-r4/issues/90</a></td>
   </tr> 
    <tr>
