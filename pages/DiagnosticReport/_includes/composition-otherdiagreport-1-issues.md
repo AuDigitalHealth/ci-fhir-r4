@@ -5,17 +5,11 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-  <tr>
-      <td>meta.profile (invariant on profile value)</td>
-      <td>Invariant enforcing the canonical url for this profile is missing - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/33">ci-fhir-r4/issues/33</a></td>
-  </tr>
-  <tr>
-      <td>status (terminology binding missing)</td>
-      <td>Thinking to constrain the FHIR element Composition.status with the current required valueset of <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">http://hl7.org/fhir/R4/valueset-composition-status.html</a> to just contain the codes of "final" and "amended" and exclude the codes of "preliminary" and "entered-in-error". For the usage scenarios it doesn't make sense to support "entered-in-error" however there may be a requirement to allow for "preliminary".<br/><br/>
-	  This binding is expected to shared by <a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a>, <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a>, <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a>, and likely other documents such as Event Summary.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/41">ci-fhir-r4/issues/41</a>, and <a href="https://jira.aws.tooling/browse/FTR-928">jira.aws.tooling/browse/FTR-928</a></td>
-  </tr>
+     <tr>
+        <td>status (terminology binding)</td>
+        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1">CompositionStatus Document Available</a> value set is pending.</p></td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/57">ci-fhir-r4/issues/57</a></td>
+      </tr>
   <tr>
       <td>type (missing terminology)</td>
       <td>This profile is intended to support all 'other' diagnostic reports which is broad.<br/><br/>
@@ -25,30 +19,10 @@
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/35">ci-fhir-r4/issues/35</a></td>
   </tr>
   <tr>
-      <td>subject (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/33">ci-fhir-r4/issues/33</a></td>
-  </tr>
-  <tr>
       <td>encounter</td>
       <td>Not enough is known about the encounter in the Composition - Other Diagnostic Report to determine if there needs to be any specialisations/constraints on encounter.<br/><br/>
       This will need to be determined with stakeholder engagement.</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/34">ci-fhir-r4/issues/34</a></td>
-  </tr>
-  <tr>
-      <td>author (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/33">ci-fhir-r4/issues/33</a></td>
-  </tr>
-  <tr>
-      <td>attester.party (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/33">ci-fhir-r4/issues/33</a></td>
-  </tr>
-  <tr>
-      <td>custodian (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/33">ci-fhir-r4/issues/33</a></td>
   </tr>
   <tr>
       <td>Constraint presentation</td>
