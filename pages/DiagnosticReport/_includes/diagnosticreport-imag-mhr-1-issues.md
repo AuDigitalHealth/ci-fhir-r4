@@ -17,7 +17,7 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/87">ci-fhir-r4/issues/87</a></td>
    </tr>
     <td>category (potential code system redundancy / duplication)</td>
-    <td><p>The element category is present in DiagnosticReport, Observation, and ServiceRequest. A rationalisation of the codes used for categorisation needs to be performed - work in progress.</p>
+    <td><p>The element category is present in DiagnosticReport, Observation, and ServiceRequest. A rationalisation of the codes used for categorisation needs to be performed.</p>
         <p>Observation.category: "imaging" <a href="http://hl7.org/fhir/R4/codesystem-observation-category.html">http://terminology.hl7.org/CodeSystem/observation-category</a></p>
         <p>DiagnosticReport.category: "RAD" <a href="http://hl7.org/fhir/R4/v2/0074/index.html">http://terminology.hl7.org/CodeSystem/v2-0074</a></p>
         <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> Imaging (procedure)</p></td>
@@ -26,7 +26,7 @@
     <tr>
     <td>category (terminology binding)</td>
     <td><p>The example value set is too broad for diagnostic imaging reporting - we need a value set that is a constrained value set from that example set <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a> that is restricted to the diagnostic imaging appropriate codes. This value set would become required.</p>
-        <p>Stakeholder feedback is required to determine in <a href="https://www.rsna.org/en/practice-tools/data-tools-and-standards/radlex-radiology-lexicon">Radlex</a> or the output from the work with RSNA and LOINC would be more appropriate</p>
+        <p>Stakeholder feedback is required to determine if <a href="https://www.rsna.org/en/practice-tools/data-tools-and-standards/radlex-radiology-lexicon">Radlex</a> or the output from the work with RSNA and LOINC would be more appropriate</p>
         <p>Codes from this value set are implemented in current CDA implementations for the My Health Record system.</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/55">ci-fhir-r4/issues/55</a>, and <a href="https://jira.aws.tooling/browse/FTR-954">jira.aws.tooling/browse/FTR-954</a></td>
    </tr>
