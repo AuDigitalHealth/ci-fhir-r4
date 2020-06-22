@@ -46,7 +46,6 @@
     <sch:title>DiagnosticReport.meta</sch:title>
     <sch:rule context="f:DiagnosticReport/f:meta">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1').exists()">One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1'</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

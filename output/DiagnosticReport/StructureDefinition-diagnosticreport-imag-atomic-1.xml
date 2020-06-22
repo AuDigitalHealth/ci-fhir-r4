@@ -33,7 +33,7 @@
   <title value="Atomic Diagnostic Imaging Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-06-18T13:46:17+10:00"/>
+  <date value="2020-06-22T16:29:49+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -214,7 +214,7 @@
         <key value="inv-dh-dir-03"/>
         <severity value="error"/>
         <human value="One profile shall be &#39;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1&#39;"/>
-        <xpath value="profile.where($this=&#39;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1&#39;).exists()"/>
+        <expression value="profile.where($this=&#39;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1&#39;).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1"/>
       </constraint>
       <isModifier value="false"/>
@@ -3291,7 +3291,7 @@
         <key value="inv-dh-dir-03"/>
         <severity value="error"/>
         <human value="One profile shall be &#39;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1&#39;"/>
-        <xpath value="profile.where($this=&#39;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1&#39;).exists()"/>
+        <expression value="profile.where($this=&#39;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1&#39;).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1"/>
       </constraint>
     </element>
