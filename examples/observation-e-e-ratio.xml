@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="leftventricle-dystolicfunction"/>
+    <id value="e-e-ratio"/>
     <meta>
         <profile
             value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
@@ -29,10 +29,10 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="250907009"/>
-            <display value="Left ventricular function"/>
+            <code value="399140004"/>
+            <display value="Ratio of mitral valve peak velocity to left ventricular peak tissue velocity e-wave"/>
         </coding>
-        <text value="LV DIASTOLIC FUNCTION"/>
+        <text value="E/e' ratio"/>
     </code>
     <subject>
         <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
@@ -41,11 +41,14 @@
     <performer>
         <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
     </performer>
+    <valueQuantity> 
+        <value value="8"/> 
+    </valueQuantity>
     <bodySite>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="87878005"/>
-            <display value="Left ventricle structure"/>
+            <code value="91134007"/>
+            <display value="Mitral valve structure"/>
         </coding>
     </bodySite>
     <method>
@@ -55,34 +58,4 @@
             <display value="Ultrasound imaging"/>
         </coding>
     </method>
-    <hasMember> 
-        <reference value="Observation/mvpeak"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/mvpeaka"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/deceltime"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/mvadur"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/e-mvann"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/e-e-ratio"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/e-a-ratio"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/rupvavmax"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/rupvsvmax"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/rupvdvmax"/> 
-    </hasMember>
 </Observation>
