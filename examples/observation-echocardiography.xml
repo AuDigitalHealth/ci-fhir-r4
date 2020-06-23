@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="4be4f59c-5a98-4d13-aff8-360bb6359243"/>
+    <id value="echocardiography"/>
     <meta>
         <profile
             value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
         />
     </meta>
-    <status value="final"/>
     <identifier>
         <type>
             <coding>
@@ -18,10 +17,17 @@
         <system value="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565"/>
         <value value="3143079143"/>
     </identifier>
+    <status value="final"/>
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
             <code value="procedure"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="imaging"/>
         </coding>
     </category>
     <category>
@@ -40,7 +46,7 @@
         <text value="Echocardiography"/>
     </code>
     <subject>
-        <reference value="Patient/mhr-zhang-wei"/>
+        <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
     </subject>
     <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
     <performer>
@@ -102,4 +108,42 @@
     <note>
         <text value="Shunts: The interatrial septum appears intact."/>
     </note>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="80891009"/>
+            <display value="Heart structure"/>
+        </coding>
+    </bodySite>
+    <method>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="278292003"/>
+            <display value="Ultrasound imaging"/>
+        </coding>
+    </method>
+    <hasMember> 
+        <reference value="Observation/leftventricle-structure"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/atrialarea"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/leftventricle-systolicfunction"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/leftventricle-dystolicfunction"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/mitralvalve"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/aorticvalve"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/tricupsid-parvpressure"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/pulmonaryvalve"/> 
+    </hasMember>
 </Observation>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
     <id value="b980048e-890c-4a4a-afbb-87742509dfb5"/>
-    <!--    <meta>
+        <meta>
         <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1"
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1"
         />
-    </meta>-->
+    </meta>
     <language value="en-AU"/>
     <!--WORKAROUND: The contents of DiagnoticReport.text are a workaround to enable the tooling used to generate this implementation guide
     to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
@@ -450,7 +450,7 @@
         <text value="Echocardiography"/>
     </code>
     <subject>
-        <reference value="Patient/mhr-zhang-wei"/>
+        <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
     </subject>
     <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
     <issued value="2019-01-06T10:12:00+10:00"/>
@@ -461,7 +461,7 @@
         <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
     </performer>
     <result>
-        <reference value="Observation/6685a24a-1606-4d1e-a212-fc456a71300f"/>
+        <reference value="Observation/echocardiography"/>
     </result>
     <conclusion
         value="Summary: 1. Normal left ventricular size. LV vol 119 ml. 2. Normal overall left ventricular systolic function. EF = 61 %. 3. There were no resting regional wall motion abnormalities detected. 4. Normal GLS (Global Longitudinal Strain) —21 %. 5. Normal right ventricular size and systolic function. 6. Mildly dilated Left atrium. 21 cm2. 7. Mild dilatation of the aortic root (43mm). 8. Mild aortic valve sclerosis without stenosis. 9. Trivial (0—1/4) mitral valve regurgitation. 10. Trivial (0—1/4) tricuspid regurgitation. 11.Normal pulmonary artery systolic pressure. RVSP = 23 mmHg. 12. The interatrial septum appears intact. 13. Normal pericardium. 14. Patient was in sinus bradycardia at a rate of 54 bpm."

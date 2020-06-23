@@ -563,7 +563,7 @@
             </ServiceRequest>
         </resource>
     </entry>
-    <!--Patient referenced in Composition.subject; DiagnosticReport.subject; ServiceRequest.subject; Observation.subject-->
+    <!--Patient referenced in CDiagnosticReport.subject; ServiceRequest.subject; Observation.subject-->
     <entry>
         <fullUrl value="urn:uuid:995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
         <resource>
@@ -571,7 +571,7 @@
                 <id value="995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
                 <meta>
                     <profile
-                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1"
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"
                     />
                 </meta>
                 <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
