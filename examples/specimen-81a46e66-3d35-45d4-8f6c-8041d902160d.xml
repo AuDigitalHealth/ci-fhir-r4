@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+    <id value="81a46e66-3d35-45d4-8f6c-8041d902160d"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/specimen-collect-1"
+        />
+    </meta>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="257261003"/>
+            <display value="Swab"/>
+        </coding>
+    </type>
+    <!--TBD-->
+    <subject>
+        <reference value="Patient/"/>
+    </subject>
+    <collection>
+        <collector>
+            <!--    TBD in practice, collecter is almost always recorded    -->
+            <reference value="PractitionerRole/"/>
+        </collector>
+        <!-- TBD the time of collection is usually required. Usually a point in time, but can be a period
+      (collectedPeriod) if it's a timed collection (e.g. a 24 hour urine)    -->
+        <collectedDateTime value=""/>
+        <bodySite>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="71836000"/>
+                <display value="Nasopharyngeal structure"/>
+            </coding>
+            <text value="Nasopharyngeal"/>
+        </bodySite>
+    </collection>
+</Specimen>

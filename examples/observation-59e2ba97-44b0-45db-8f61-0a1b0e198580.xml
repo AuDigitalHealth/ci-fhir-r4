@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="59e2ba97-44b0-45db-8f61-0a1b0e198580"/>
+    <meta>
+        <profile
+            value=" http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+        />
+    </meta>
+
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="MB"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="94759-8"/>
+            <display value="SARS-CoV-2 (COVID-19) RNA NAA+probe Ql (Nph)"/>
+        </coding>
+    </code>
+    <!--TBD-->
+    <effectiveDateTime value=""/>
+    <performer>
+        <!-- TBD-->
+        <reference value=""/>
+    </performer>
+    
+    <!--TBD-->
+    <specimen>
+        <reference value="Specimen/"/>
+    </specimen>
+    <!--TBD-->
+    <hasMember>
+        <reference value=""/>
+    </hasMember>
+</Observation>

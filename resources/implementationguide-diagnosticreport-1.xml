@@ -212,7 +212,14 @@
             <name value="ImagingStudy (Diagnostic Imaging Study)"/>
             <exampleBoolean value="false"/>
         </resource>
-
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/practitioner-dh-base-1"/>
+            </reference>
+            <name value="Base Practitioner"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        
         <!-- EXAMPLES -->
         <resource>
             <reference>
@@ -221,6 +228,7 @@
             <name value="2019 Novel Coronavirus PCR (short form)"/>
             <exampleBoolean value="true"/>
         </resource>
+<<<<<<< HEAD
         <resource>
             <reference>
                 <reference value="Bundle/94f75158-f8b9-4c08-b96e-4306580c2add"/>
@@ -375,6 +383,11 @@
             <name value="NSW Hospital"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"/>
         </resource>
+=======
+        
+
+        
+>>>>>>> master
 
         <page>
             <nameUrl value="index.html"/>
