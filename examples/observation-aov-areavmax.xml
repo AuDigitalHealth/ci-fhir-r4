@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="atrialarea"/>
+    <id value="aov-areavmax"/>
     <meta>
         <profile
             value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
@@ -27,7 +27,12 @@
         </coding>
     </category>
     <code>
-        <text value="Atrial Areas/Volume"/>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="79956-9"/>
+            <display value="Aortic valve area (Continuity Vmax)"/>
+        </coding>
+        <text value="AoV Area Vmax"/>
     </code>
     <subject>
         <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
@@ -36,11 +41,17 @@
     <performer>
         <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
     </performer>
+    <valueQuantity> 
+        <value value="4.8"/> 
+        <unit value="cm2"/> 
+        <system value="http://unitsofmeasure.org"/> 
+        <code value="cm2"/> 
+    </valueQuantity>
     <bodySite>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="82471001"/>
-            <display value="Atrial structure"/>
+            <code value="34202007"/>
+            <display value="Aortic valve structure"/>
         </coding>
     </bodySite>
     <method>
@@ -49,16 +60,5 @@
             <code value="278292003"/>
             <display value="Ultrasound imaging"/>
         </coding>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="2D mode ultrasound"/>
-            <display value="399064001"/>
-        </coding>
     </method>
-    <hasMember> 
-        <reference value="Observation/la-area"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/ra-area"/> 
-    </hasMember>
 </Observation>

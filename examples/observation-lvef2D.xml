@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="atrialarea"/>
+    <id value="lvef2D"/>
     <meta>
         <profile
             value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
@@ -27,7 +27,12 @@
         </coding>
     </category>
     <code>
-        <text value="Atrial Areas/Volume"/>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="8806-2"/>
+            <display value="Left ventricular Ejection fraction by 2D echo"/>
+        </coding>
+        <text value="LVEF 2D"/>
     </code>
     <subject>
         <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
@@ -36,11 +41,17 @@
     <performer>
         <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
     </performer>
+    <valueQuantity> 
+        <value value="64"/> 
+        <unit value="%"/> 
+        <system value="http://unitsofmeasure.org"/> 
+        <code value="%"/> 
+    </valueQuantity>
     <bodySite>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="82471001"/>
-            <display value="Atrial structure"/>
+            <code value="87878005"/>
+            <display value="Left ventricle structure"/>
         </coding>
     </bodySite>
     <method>
@@ -55,10 +66,4 @@
             <display value="399064001"/>
         </coding>
     </method>
-    <hasMember> 
-        <reference value="Observation/la-area"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/ra-area"/> 
-    </hasMember>
 </Observation>

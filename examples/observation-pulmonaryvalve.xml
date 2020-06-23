@@ -29,79 +29,23 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="40701008"/>
-            <display value="Echocardiography"/>
+            <code value="399222008"/>
+            <display value="Pulmonary valve feature"/>
         </coding>
-        <text value="Echocardiography"/>
+        <text value="Pulmonary Valve"/>
     </code>
     <subject>
         <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
     </subject>
     <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
     <performer>
-        <reference value="PractitionerRole/46d552b7-88a9-427b-9d62-8b0727de91f9"/>
-    </performer>
-    <performer>
         <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
     </performer>
-    <note>
-        <text value="Patient was in sinus bradycardia at a rate of 54 bpm."/>
-    </note>
-    <note>
-        <text
-            value="Left Ventricle: The left ventricular internal cavity size was normal. LV vol 119 ml. Overall LV systolic function was normal. EF = 61 % . No evidence of left ventricular hypertrophy. There were no resting regional wall motion abnormalities detected. Indeterminant LV filling pressure based E/e' ratio = 8 %. Normal GLS (Global Longitudinal Strain) = —21 % Philips Epiq 5c."
-        />
-    </note>
-    <note>
-        <text
-            value="Right Ventricle: Normal right ventricular size, wall thickness, and systolic function. RV S' 11 cm/s."
-        />
-    </note>
-    <note>
-        <text value="Left Atrium: The left atrium was mildly dilated. 21 cm2."/>
-    </note>
-    <note>
-        <text
-            value="Right Atrium: The right atrium was at the upper limits of normal dimension. 20 cm2."
-        />
-    </note>
-    <note>
-        <text value="Pericardium: The pericardium appears normal."/>
-    </note>
-    <note>
-        <text
-            value="Aortic Valve: The aortic valve was tricuspid. There was mild aortic valve sclerosis, with no evidence of aortic valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4.
-            6 cm2. No evidence of aortic valve regurgitation was seen. Resting LVOFT SV = 115 ml. Indexed = 56 ml/m2."
-        />
-    </note>
-    <note>
-        <text
-            value="Mitral Valve: The mitral valve is sclerotic. Trivial (0—1/4) mitral valve regurgitation was seen."
-        />
-    </note>
-    <note>
-        <text
-            value="Tricuspid Valve: The tricuspid valve was normal in structure. Trivial (O—1/4) tricuspid regurgitation was visualised. The tricuspid regurgitant velocity is 2.2 m/s, and with an assumed right atrial pressure of 3 mmHg, the estimated right ventricular systolic pressure normal at 23 mmHg."
-        />
-    </note>
-    <note>
-        <text
-            value="Pulmonic Valve: Structurally normal pulmonic valve, with normal leaflet excursion."
-        />
-    </note>
-    <note>
-        <text
-            value="Aorta: There is mild dilatation of the aortic root. The trans sinus diameter measures at 4.3 cm. The ascending aorta measures at 3.6 cm."
-        />
-    </note>
-    <note>
-        <text value="Shunts: The interatrial septum appears intact."/>
-    </note>
     <bodySite>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="80891009"/>
-            <display value="Heart structure"/>
+            <code value="39057004"/>
+            <display value="Pulmonary valve structure"/>
         </coding>
     </bodySite>
     <method>
@@ -110,29 +54,16 @@
             <code value="278292003"/>
             <display value="Ultrasound imaging"/>
         </coding>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="LP6617-7"/>
+            <display value="Doppler"/>
+        </coding>
     </method>
     <hasMember> 
-        <reference value="Observation/leftventricle-structure"/> 
+        <reference value="Observation/pvmaxvelocity"/> 
     </hasMember>
     <hasMember> 
-        <reference value="Observation/atrialarea"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/leftventricle-systolicfunction"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/leftventricle-dystolicfunction"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/mitralvalve"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/aorticvalve"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/tricupsid-parvpressure"/> 
-    </hasMember>
-    <hasMember> 
-        <reference value="Observation/pulmonaryvalve"/> 
+        <reference value="Observation/pvmaxpg"/> 
     </hasMember>
 </Observation>
