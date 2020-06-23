@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Diagnostic Report"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-22T16:29:49+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-23T13:06:50+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -490,6 +490,23 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-practitioner-dh-base-1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/practitioner-dh-base-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-22T16:29:49+10:00",
+  "date": "2020-06-23T13:06:50+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -479,6 +479,23 @@
           "reference": "StructureDefinition/imagingstudy-diag-1"
         },
         "name": "ImagingStudy (Diagnostic Imaging Study)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-practitioner-dh-base-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/practitioner-dh-base-1"
+        },
+        "name": "Base Practitioner",
         "exampleBoolean": false
       },
       {
