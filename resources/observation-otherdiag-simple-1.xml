@@ -66,8 +66,8 @@
       <constraint>
         <key value="inv-dh-obs-02" />
         <severity value="error" />
-        <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="performer.exists() implies (performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists())" />
       </constraint>
     </element>
     <element id="Observation.partOf">
