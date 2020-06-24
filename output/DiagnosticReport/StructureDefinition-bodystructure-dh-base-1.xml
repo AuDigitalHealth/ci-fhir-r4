@@ -20,7 +20,7 @@
   <title value="Base BodyStructure"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-06-17T09:02:35+10:00"/>
+  <date value="2020-06-23T13:06:50+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -493,7 +493,11 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
-        <strength value="preferred"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="BodyStructureCode"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Codes describing anatomic morphology."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/bodystructure-code"/>
       </binding>
       <mapping>
