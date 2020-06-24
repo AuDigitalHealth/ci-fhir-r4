@@ -17,5 +17,12 @@
       <td><a href="bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.xml.html">XML</a></td>
       <td><a href="bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.json.html">JSON</a></td>
       <td><a href="bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.ttl.html">Turtle</a></td>
-   </tr>               
+   </tr> 
+   <tr>
+      <td><a href="organization-nsw-hospital.html">NSW Hospital (referenced)</a></td>
+      <td>nsw-hospital</td>
+      <td><a href="organization-nsw-hospital.xml.html">XML</a></td>
+      <td><a href="organization-nsw-hospital.json.html">JSON</a></td>
+      <td><a href="organization-nsw-hospital.ttl.html">Turtle</a></td>
+   </tr>                     
 </table>
