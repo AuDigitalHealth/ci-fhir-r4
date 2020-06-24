@@ -67,7 +67,7 @@
         <key value="inv-dh-obs-02" />
         <severity value="error" />
         <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="performer.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+        <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt; 1).exists()" />
       </constraint>
       <constraint>
         <key value="inv-dh-obs-03" />
@@ -155,7 +155,7 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
       </type>
     </element>
     <element id="Observation.performer:organization">
