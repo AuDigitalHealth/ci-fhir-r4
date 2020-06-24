@@ -127,6 +127,12 @@
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1",
         "title": "My Health Record Patient"
       }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1",
+        "title": "Base Practitioner"
+      }
     ]
   },
   "usage": {
@@ -209,11 +215,7 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
-      "StructureDefinition.differential.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
