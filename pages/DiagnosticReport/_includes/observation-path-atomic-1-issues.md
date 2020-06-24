@@ -25,16 +25,6 @@
     <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/399">au-fhir-base/issues/399</a></td>
    </tr>
   <tr>
-      <td>subject (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/30">ci-fhir-r4/issues/30</a></td>
-  </tr>
-  <tr>
-      <td>performer (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/30">ci-fhir-r4/issues/30</a></td>
-  </tr>
-  <tr>
       <td>referenceRange (too broad)</td>
       <td>Investigation on usage scenario support for reference ranges is required - can some more meaningful modelling be done here to clarify how this structure should be used for some common scenarios.</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/37">ci-fhir-r4/issues/37</a></td>
