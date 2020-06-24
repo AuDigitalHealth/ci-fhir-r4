@@ -86,6 +86,12 @@
                                                   <td>Reported</td>
                                                   <td>06/01/2019 10:12</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Images</td>
+                                                    <td><a
+                                                        href="https://www.health.nsw.example.org/nsw-hospital/wado-rs/studies/1.2.36.1.2001.1001.105.100007.30246.19789.3503430046"
+                                                        >Link to imaging study</a></td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </td>
@@ -113,7 +119,7 @@
                                                   <td>2017</td>
                                                 </tr>
                                                 <tr>
-                                                  <td>Interpeter required?</td>
+                                                  <td>Interpreter required?</td>
                                                   <td>Y (Cantonese)</td>
                                                 </tr>
                                                 <tr>
@@ -463,12 +469,6 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-                        <code value="procedure"/>
-                    </coding>
-                </category>
-                <category>
-                    <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
                         <code value="CUS"/>
                         <display value="Cardiac Ultrasound"/>
@@ -505,6 +505,9 @@
         <resource>
             <Observation>
                 <id value="4be4f59c-5a98-4d13-aff8-360bb6359243"/>
+                <partOf>
+                    <reference value="ImagingStudy/echodicom-for-report"/>
+                </partOf>
                 <identifier>
                     <type>
                         <coding>
@@ -518,12 +521,6 @@
                     <value value="3143079143"/>
                 </identifier>
                 <status value="final"/>
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-                        <code value="procedure"/>
-                    </coding>
-                </category>
                 <category>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
@@ -543,6 +540,3062 @@
                     <reference value="urn:uuid:995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
                 </subject>
                 <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <note>
+                    <text value="Patient was in sinus bradycardia at a rate of 54 bpm."/>
+                </note>
+                <note>
+                    <text
+                        value="Left Ventricle: The left ventricular internal cavity size was normal. LV vol 119 ml. Overall LV systolic function was normal. EF = 61 % . No evidence of left ventricular hypertrophy. There were no resting regional wall motion abnormalities detected. Indeterminant LV filling pressure based E/e' ratio = 8 %. Normal GLS (Global Longitudinal Strain) = —21 % Philips Epiq 5c."
+                    />
+                </note>
+                <note>
+                    <text
+                        value="Right Ventricle: Normal right ventricular size, wall thickness, and systolic function. RV S' 11 cm/s."
+                    />
+                </note>
+                <note>
+                    <text value="Left Atrium: The left atrium was mildly dilated. 21 cm2."/>
+                </note>
+                <note>
+                    <text
+                        value="Right Atrium: The right atrium was at the upper limits of normal dimension. 20 cm2."
+                    />
+                </note>
+                <note>
+                    <text value="Pericardium: The pericardium appears normal."/>
+                </note>
+                <note>
+                    <text
+                        value="Aortic Valve: The aortic valve was tricuspid. There was mild aortic valve sclerosis, with no evidence of aortic valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4.
+                        6 cm2. No evidence of aortic valve regurgitation was seen. Resting LVOFT SV = 115 ml. Indexed = 56 ml/m2."
+                    />
+                </note>
+                <note>
+                    <text
+                        value="Mitral Valve: The mitral valve is sclerotic. Trivial (0—1/4) mitral valve regurgitation was seen."
+                    />
+                </note>
+                <note>
+                    <text
+                        value="Tricuspid Valve: The tricuspid valve was normal in structure. Trivial (O—1/4) tricuspid regurgitation was visualised. The tricuspid regurgitant velocity is 2.2 m/s, and with an assumed right atrial pressure of 3 mmHg, the estimated right ventricular systolic pressure normal at 23 mmHg."
+                    />
+                </note>
+                <note>
+                    <text
+                        value="Pulmonic Valve: Structurally normal pulmonic valve, with normal leaflet excursion."
+                    />
+                </note>
+                <note>
+                    <text
+                        value="Aorta: There is mild dilatation of the aortic root. The trans sinus diameter measures at 4.3 cm. The ascending aorta measures at 3.6 cm."
+                    />
+                </note>
+                <note>
+                    <text value="Shunts: The interatrial septum appears intact."/>
+                </note>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="80891009"/>
+                        <display value="Heart structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/leftventricle-structure"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/atrialarea"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/leftventricle-systolicfunction"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/leftventricle-dystolicfunction"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/mitralvalve"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/aorticvalve"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/tricupsid-parvpressure"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/pulmonaryvalve"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:leftventricle-structure"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="leftventricle-structure"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="364080001"/>
+                        <display value="Feature of left ventricle"/>
+                    </coding>
+                    <text value="Left ventricle 2D"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/ivsd"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvpwd"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvidd"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvids"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvfs"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvef2D"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:atrialarea"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="atrialarea"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <text value="Atrial Areas/Volume"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="82471001"/>
+                        <display value="Atrial structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/la-area"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/ra-area"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:leftventricle-systolicfunction"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="leftventricle-systolicfunction"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="250907009"/>
+                        <display value="Left ventricular function"/>
+                    </coding>
+                    <text value="LV SYSTOLIC FUNCTION"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/lvvol"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvvol-bsasex"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lv-ef"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:leftventricle-dystolicfunction"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="leftventricle-dystolicfunction"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="250907009"/>
+                        <display value="Left ventricular function"/>
+                    </coding>
+                    <text value="LV DIASTOLIC FUNCTION"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/mvpeak"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/mvpeaka"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/deceltime"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/mvadur"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/e-mvann"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/e-e-ratio"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/e-a-ratio"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/rupvavmax"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/rupvsvmax"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/rupvdvmax"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mitralvalve"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="mitralvalve"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="364083004"/>
+                        <display value="Mitral valve feature"/>
+                    </coding>
+                    <text value="Mitral Valve"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/mv-p12-time"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/mvarea-pht"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aorticvalve"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="aorticvalve"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="399359007"/>
+                        <display value="Aortic valve feature"/>
+                    </coding>
+                    <text value="Aortic Valve"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/aov-maxvel"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/aov-peakpg"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/aov-meanpg"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvot-vmax"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvot-vti"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/lvot-diam"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/aov-areavmax"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/aov-areavti"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/dpi"/> 
+                </hasMember>
+            </Observation> 
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:tricupsid-parvpressure"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="tricupsid-parvpressure"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <text value="Tricuspid Valve and PA/RV Systolic Pressure"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="80891009"/>
+                        <display value="Heart structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/trmaxvelocity"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/rapressure"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/rvsp-pasp"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/rv-s"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:pulmonaryvalve"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="pulmonaryvalve"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="399222008"/>
+                        <display value="Pulmonary valve feature"/>
+                    </coding>
+                    <text value="Pulmonary Valve"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="39057004"/>
+                        <display value="Pulmonary valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="LP6617-7"/>
+                        <display value="Doppler"/>
+                    </coding>
+                </method>
+                <hasMember> 
+                    <reference value="Observation/pvmaxvelocity"/> 
+                </hasMember>
+                <hasMember> 
+                    <reference value="Observation/pvmaxpg"/> 
+                </hasMember>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:ivsd"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ivsd"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="29430-6"/>
+                        <display value="Interventricular septum Thickness during diastole by US 2D"/>
+                    </coding>
+                    <text value="IVS d"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.7"/> 
+                    <unit value="cm"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvpwd"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvpwd"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="29442-1"/>
+                        <display value="Left ventricular posterior wall Thickness during diastole by US 2D"/>
+                    </coding>
+                    <text value="LVPW d"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.6"/> 
+                    <unit value="cm"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvidd"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvidd"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="18083-6"/>
+                        <display value="Left ventricular Internal diameter minor axis diastole by US 2D "/>
+                    </coding>
+                    <text value="LVID d"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="6.2"/> 
+                    <unit value="cm"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvids"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvids"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="18085-1"/>
+                        <display value="Left ventricular Internal diameter minor axis systole"/>
+                    </coding>
+                    <text value="LVID s"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="4.0"/> 
+                    <unit value="cm"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvfs"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvfs"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="29434-8"/>
+                        <display value="Left ventricular Fractional shortening minor axis by US 2D"/>
+                    </coding>
+                    <text value="LVFS"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="35"/> 
+                    <unit value="%"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="%"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvef2D"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvef2D"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="8806-2"/>
+                        <display value="Left ventricular Ejection fraction by 2D echo"/>
+                    </coding>
+                    <text value="LVEF 2D"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="64"/> 
+                    <unit value="%"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="%"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:la-area"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="la-area"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="17977-0"/>
+                        <display value="Left atrial Area"/>
+                    </coding>
+                    <text value="LA Area"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="21"/> 
+                    <unit value="cm2"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm2"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="82471001"/>
+                        <display value="Left atrial structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:ra-area"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ra-area"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="17988-7"/>
+                        <display value="Right atrial Area"/>
+                    </coding>
+                    <text value="RA Area"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="20"/> 
+                    <unit value="cm2"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm2"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="73829009"/>
+                        <display value="Right atrial structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="2D mode ultrasound"/>
+                        <display value="399064001"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvvol"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvvol"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="75989-4"/>
+                        <display value="Left ventricular End systolic volume"/>
+                    </coding>
+                    <text value="LV vol"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="119"/> 
+                    <unit value="mL"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mL"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvvol-bsasex"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvvol-bsasex"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="80002-9"/>
+                        <display value="Left ventricular End-systolic volume/Body surface area "/>
+                    </coding>
+                    <text value="LV vol (BSA/SEX) ULN"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="152"/> 
+                    <unit value="mLs"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mL/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lv-ef"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lv-ef"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="10230-1"/>
+                        <display value="Left ventricular ejection fraction"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="250908004"/>
+                        <display value="Left ventricular ejection fraction"/>
+                    </coding>
+                    <text value="LV EF"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="61"/> 
+                    <unit value="%"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="%"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mvpeak"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="mvpeak"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="18037-2"/>
+                        <display value="Mitral valve Peak E wave"/>
+                    </coding>
+                    <text value="MV Peak"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.6"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mvpeaka"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="mvpeaka"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="17978-8"/>
+                        <display value="Mitral valve Peak A wave"/>
+                    </coding>
+                    <text value="MV Peak A"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.5"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:deceltime"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="deceltime"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="20217-6"/>
+                        <display value="Deceleration Time"/>
+                    </coding>
+                    <text value="Decel Time"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="240"/> 
+                    <unit value="msec"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="ms"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mvadur"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="mvadur"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="59105-7"/>
+                        <display value="A wave duration"/>
+                    </coding>
+                    <text value="MV A dur"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="121"/> 
+                    <unit value="msec"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="ms"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:e-mvann"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="e-mvann"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <text value="E' MV Ann"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="7"/> 
+                    <unit value="cm/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:e-e-ratio"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="e-e-ratio"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="399140004"/>
+                        <display value="Ratio of mitral valve peak velocity to left ventricular peak tissue velocity e-wave"/>
+                    </coding>
+                    <text value="E/e' ratio"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="8"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:e-a-ratio"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="e-a-ratio"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="18038-0"/>
+                        <display value="Mitral valve Peak E wave/Peak A wave"/>
+                    </coding>
+                    <text value="E/A Ratio"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="1.2"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+            
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:rupvavmax"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="rupvavmax"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="79915-5"/>
+                        <display value="Pulmonary vein Maximum A-wave velocity"/>
+                    </coding>
+                    <text value="RUPV A Vmax"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.3"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278011000"/>
+                        <display value="Entire superior right pulmonary vein"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:rupvsvmax"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="rupvsvmax"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="79917-1"/>
+                        <display value="Pulmonary vein Maximum S-wave velocity"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="399267001"/>
+                        <display value="Pulmonary vein S-wave velocity time integral"/>
+                    </coding>
+                    <text value="RUPV S Vmax"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.5"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278011000"/>
+                        <display value="Entire superior right pulmonary vein"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:rupvdvmax"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="rupvdvmax"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="79916-3"/>
+                        <display value="Pulmonary vein Maximum D-wave velocity"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="399039004"/>
+                        <display value="Pulmonary vein D-wave velocity time integral"/>
+                    </coding>
+                    <text value="RUPV D Vmax"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.4"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278011000"/>
+                        <display value="Entire superior right pulmonary vein"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mv-p12-time"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="mv-p12-time"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="79912-2"/>
+                        <display value="Mitral valve Pressure half time"/>
+                    </coding>
+                    <text value="MV P1/2 Time"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="61"/> 
+                    <unit value="msec"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="ms"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:mvarea-pht"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="mvarea-pht"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="80069-8"/>
+                        <display value="Mitral valve Effective orifice area during diastole by US.doppler pressure half time"/>
+                    </coding>
+                    <text value="MV area, PHT"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="3.2"/> 
+                    <unit value="cm2"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm2"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91134007"/>
+                        <display value="Mitral valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aov-maxvel"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="aov-maxvel"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11726-7"/>
+                        <display value="Circulatory system Peak systolic flow velocity"/>
+                    </coding>
+                    <text value="AoV Max Vel"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="1.2"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aov-peakpg"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="aov-peakpg"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="20247-3"/>
+                        <display value="Peak pressure gradient"/>
+                    </coding>
+                    <text value="AoV Peak PG"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="6"/> 
+                    <unit value="mmHg"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mm[Hg]"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aov-meanpg"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="aov-meanpg"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="20256-4"/>
+                        <display value="Mean pressure gradient"/>
+                    </coding>
+                    <text value="AoV Mean PG"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="4"/> 
+                    <unit value="mmHg"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mm[Hg]"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvot-vmax"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvot-vmax"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="80029-2"/>
+                        <display value="Left ventricular outflow tract Maximum blood flow velocity"/>
+                    </coding>
+                    <text value="LVOT Vmax"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="1.1"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvot-vti"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvot-vti"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="80030-0"/>
+                        <display value="Left ventricular outflow tract Velocity-time integral"/>
+                    </coding>
+                    <text value="LVOT VTI"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.217"/> 
+                    <unit value="m"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:lvot-diam"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="lvot-diam"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="18018-2"/>
+                        <display value="Left ventricular outflow tract Diameter"/>
+                    </coding>
+                    <text value="LVOT Diam"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="2.6"/> 
+                    <unit value="cm"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="87878005"/>
+                        <display value="Left ventricle structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aov-areavmax"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="aov-areavmax"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="79956-9"/>
+                        <display value="Aortic valve area (Continuity Vmax)"/>
+                    </coding>
+                    <text value="AoV Area Vmax"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="4.8"/> 
+                    <unit value="cm2"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm2"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:aov-areavti"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="aov-areavti"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="79958-5"/>
+                        <display value="Aortic valve area (Continuity VTI)"/>
+                    </coding>
+                    <text value="AoV Area VTI"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="4.6"/> 
+                    <unit value="cm2"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="cm2"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:dpi"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="dpi"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <text value="DPI"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="0.91"/>  
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34202007"/>
+                        <display value="Aortic valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:trmaxvelocity"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="trmaxvelocity"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11712-7"/>
+                        <display value="Tricuspid valve Peak systolic flow velocity"/>
+                    </coding>
+                    <text value="TR Max Velocity"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="2.2"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="46030003"/>
+                        <display value="Tricuspid valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:rapressure"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="rapressure"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="60998-2"/>
+                        <display value="Right atrial pressure Systolic"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="276755008"/>
+                    </coding>
+                    <text value="RA pressure"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="3"/> 
+                    <unit value="mmHg"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mm[Hg]"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="73829009"/>
+                        <display value="Right atrial structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:rvsp-pasp"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="rvsp-pasp"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="276772001"/>
+                        <display value="Right atrial pressure Systolic"/>
+                    </coding>
+                    <text value="RVSP/PASP"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="23"/> 
+                    <unit value="mmHg"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mm[Hg]"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="53085002"/>
+                        <display value="Right ventricular structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:rv-s"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="rv-s"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <text value="RV S'"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="11"/> 
+                    <unit value="cm/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="53085002"/>
+                        <display value="Right ventricular structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:pvmaxvelocity"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="pvmaxvelocity"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11710-1"/>
+                        <display value="Pulmonic valve Peak systolic flow velocity"/>
+                    </coding>
+                    <text value="PV Max velocity"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="1.3"/> 
+                    <unit value="m/s"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="m/s"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="39057004"/>
+                        <display value="Pulmonary valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="LP6617-7"/>
+                        <display value="Doppler"/>
+                    </coding>
+                </method>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:pvmaxpg"/>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="pvmaxpg"/>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+                    />
+                </meta>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="imaging"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="CUS"/>
+                        <display value="Cardiac Ultrasound"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="18058-8"/>
+                        <display value="Pulmonic valve Peak pressure gradient"/>
+                    </coding>
+                    <text value="PV Max velocity"/>
+                </code>
+                <subject>
+                    <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                </subject>
+                <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+                <performer>
+                    <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                </performer>
+                <valueQuantity> 
+                    <value value="1.3"/> 
+                    <unit value="mmHg"/> 
+                    <system value="http://unitsofmeasure.org"/> 
+                    <code value="mm[Hg]"/> 
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="39057004"/>
+                        <display value="Pulmonary valve structure"/>
+                    </coding>
+                </bodySite>
+                <method>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278292003"/>
+                        <display value="Ultrasound imaging"/>
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="LP6617-7"/>
+                        <display value="Doppler"/>
+                    </coding>
+                </method>
             </Observation>
         </resource>
     </entry>
@@ -555,10 +3608,6 @@
                 <status value="completed"/>
                 <intent value="order"/>
                 <category>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="71388002"/>
-                    </coding>
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="276341003"/>
