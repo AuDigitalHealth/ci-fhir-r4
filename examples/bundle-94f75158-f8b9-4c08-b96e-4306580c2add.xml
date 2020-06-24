@@ -717,10 +717,9 @@
                 <presentedForm>
                     <contentType value="application/pdf"/>
                     <!-- Placeholder url value: Absolute URL to GitHub repository for attachment is provided as a workaround for demonstration purposes only  -->
-                    <!-- TBD: Generate PDF and Generate hash  -->
                     <url
                         value="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/Echocardiography-pre-chemo.pdf"/>
-                    <hash value="9F692CB7D03EE6FE8E0500740446262F55FBADBC"/>
+                    <hash value="A0C18CCCD1DA713694A881EC7950F9505E156928"/>
                     <title value="Echocardiography - pre chemo"/>
                 </presentedForm>
             </DiagnosticReport>
@@ -797,10 +796,6 @@
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
                 <id value="44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
-                <meta>
-                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1"
-                    />
-                </meta>
                 <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
                     <valueAddress>
                         <text value="China"/>
@@ -1040,9 +1035,6 @@
         <resource>
             <Organization xmlns="http://hl7.org/fhir">
                 <id value="676a30d5-9c94-4c4d-8b52-e7cce26defed"/>
-                <meta>
-                    <lastUpdated value="2020-05-12T00:00:00.000+10:00"/>
-                </meta>
                 <!--Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations-->
                 <identifier>
                     <type>
