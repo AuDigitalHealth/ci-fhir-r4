@@ -72,8 +72,8 @@
       <constraint>
         <key value="inv-dh-obs-03" />
         <severity value="error" />
-        <human value="The Observation shall at least have one hasMember or an empty reason, but not both" />
-        <expression value="hasMember.exists() xor dataAbsentReason.exists()" />
+        <human value="The observation shall at least have a value, a data absent reason or a member observation" />
+        <expression value="value.exists() or hasMember.exists() or dataAbsentReason.exists()" />
       </constraint>
     </element>
     <element id="Observation.status">

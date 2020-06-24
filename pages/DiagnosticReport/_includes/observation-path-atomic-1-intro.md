@@ -10,4 +10,4 @@
 * effective[x] is the specimen collection date time
 * performer when sent as an Organization is the performing laboratory, and when sent as a PractitionerRole is the performing pathologist including their employing organisation. Either, or both may be provided.
 
-<p>This profile is referenced by [Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html).</p>
+This profile is referenced by [Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html).
