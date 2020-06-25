@@ -8,7 +8,7 @@ For the overarching usage scenarios in this implementation guide it is expected 
     <li>if more than one identifier is sent, only one of each type is sent</li>
 </ul>
 
-When sending as a general practitioner it is expected that pracitioner name and code are sent.
+When sending as a patient's general practitioner it is expected that practitioner name and code are sent
 
 #### Boundaries and relationships
 
