@@ -23,16 +23,6 @@
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
   </tr>
   <tr>
-      <td>subject (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
-  </tr>
-  <tr>
-      <td>collection.collector (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
-  </tr>
-  <tr>
       <td>collection.method (coding terminology enforcement)</td>
       <td>It is intended that the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen</a> coding:snomedSpecimenCollectionProcedure should be enforced if any coding is provided. In other words, either text or a code from this value set is required. This is a work in progress.</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
