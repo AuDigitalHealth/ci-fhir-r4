@@ -7,8 +7,8 @@
   </tr>
   <tr>
         <td>location (cardinality)</td>
-        <td>This profile currently supports multiple locations at which a practitioner provides care. Analysis of a full set of use cases for this profile is required to determine if it should support a single location only.</td>
-        <td>n/a</td>
+        <td>This profile currently supports multiple locations at which a practitioner provides care. Investigation is required to determine if the max. cardinality of location should remain as many or be constrained to 1. Multiple locations may lead to ambiguity on what roles and specialties a practitioner is performing for an organisation at a specific location and what healthcare services are being supported at a specific location.</td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/95">ci-fhir-r4/issues/95</a></td>
   </tr>
   <tr>
         <td>location (Reference)</td>

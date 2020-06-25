@@ -29,7 +29,8 @@
       <constraint>
         <key value="inv-dh-prarol-01" />
         <severity value="error" />
-        <human value="???name or id is required" />
+        <human value="The PractitionerRole shall at least have a code or a practitioner name or an identifier with at least a system and a value" />
+        <expression value="code.exists() or practitioner.resolve().name.exists() or practitioner.display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1" />
       </constraint>
       <constraint>
