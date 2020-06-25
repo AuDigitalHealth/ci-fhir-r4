@@ -6,7 +6,7 @@
     <th>Issue No.</th>
   </tr>
   <tr>
-      <td>self collection (not currently support)</td>
+      <td>self collection (not currently supported)</td>
       <td>It is not understood how self collection can be supported in this profile. There is no element or core extension available for Specimen that identifies a patient or related person as a collector.<br/><br/>
       Self collection of bloods or other material including sent by mail kits cancer screening are to be a supported usage scenario.
       </td>
