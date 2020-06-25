@@ -7,7 +7,7 @@ The context of this profile is the My Health Record Other Diagnostic Report.
 For the overarching usage scenarios in this implementation guide it is expected that:
 <ul>
 <li>status is sent as 'preliminary', 'final', or 'amended'</li>
-<li>category is sent with an additional category indicating the diagnostic service that performed the diagnostic procedure</li>
+<li>category is sent with a code indicating the diagnostic service that performed the diagnostic procedure</li>
 <li>performer is sent as a reference to a PractitionerRole resource with:
     <ul>
         <li>PractitionerRole.identifier as a HPI-I</li>

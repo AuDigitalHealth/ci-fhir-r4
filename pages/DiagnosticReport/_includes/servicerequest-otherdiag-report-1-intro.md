@@ -22,4 +22,4 @@ When sending to the My Health Record system it is expected that:
 #### Boundaries and relationships
 Requesting of diagnostic services is not supported by this implementation guide and may in future be handled in a referral or service requesting implementation guide.
 
-This profile is referenced by [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html), and [Short Form Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html).
+This profile is referenced by [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html), and [My Health Record Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html).
