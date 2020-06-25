@@ -163,12 +163,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Event.status","OBR-25 (not 1:1 mapping)","statusCode  Note: final and amended are distinguished by whether observation is the subject of a ControlAct event of type ""revise""","FiveWs.status"
 "DiagnosticReport.category","","Department
 Sub-departmentServiceDiscipline","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Service category","A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
-    <code value=""procedure""/>
-  </coding>
-</valueCodeableConcept>","","","",,"extensible","","http://hl7.org/fhir/ValueSet/diagnostic-service-sections","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Service category","A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/diagnostic-service-sections","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR-24","inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code","FiveWs.class"
 "DiagnosticReport.code","","Type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
