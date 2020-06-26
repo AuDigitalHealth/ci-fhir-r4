@@ -11,7 +11,7 @@
   "title": "PractitionerRole with Mandatory Identifier",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-23T13:06:50+10:00",
+  "date": "2020-06-26T11:01:02+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -1231,13 +1231,6 @@
             "severity": "error",
             "human": "NPIO length is exactly 33 characters",
             "expression": "value.length() = 33",
-            "source": "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
-          },
-          {
-            "key": "inv-npio-1",
-            "severity": "error",
-            "human": "NPIO value shall start with '800361', then 10 digits, then '@', then '800362' and ends with 10 digits",
-            "expression": "value.matches('^(800361)([0-9]{10})(@)(800362)([0-9]{10})$')",
             "source": "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
           }
         ],
