@@ -28,6 +28,12 @@
       <short value="Pathology Report" />
       <definition value="A pathology report sent from the service provider to the requester, i.e. the results including any interpretation provided, for an individual‘s pathology test." />
       <constraint>
+        <key value="inv-dh-dir-04" />
+        <severity value="error" />
+        <human value="One category shall be 'LAB' 'http://terminology.hl7.org/CodeSystem/v2-0074'" />
+        <expression value="category.coding.where(code='LAB').exists()" />
+      </constraint>
+      <constraint>
         <key value="inv-dh-dir-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
@@ -93,12 +99,6 @@
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
-          <code value="LAB" />
-        </coding>
-      </patternCodeableConcept>
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />

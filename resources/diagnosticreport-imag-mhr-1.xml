@@ -28,6 +28,12 @@
       <short value="Diagnostic Imaging Report" />
       <definition value="A diagnostic imaging report sent from the service provider to the requester, i.e. the results including any images/empirical data plus any interpretation provided, for an individual‘s diagnostic imaging examination." />
       <constraint>
+        <key value="inv-dh-dir-05" />
+        <severity value="error" />
+        <human value="One category shall be 'imaging' 'http://terminology.hl7.org/CodeSystem/observation-category'" />
+        <expression value="category.coding.where(code='imaging').exists()" />
+      </constraint>
+      <constraint>
         <key value="inv-dh-dir-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
@@ -97,12 +103,6 @@
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="imaging" />
-        </coding>
-      </patternCodeableConcept>
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
