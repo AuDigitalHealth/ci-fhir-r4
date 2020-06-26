@@ -13,12 +13,12 @@
   <tr>
         <td>location (Reference)</td>
         <td>Future releases of this implementation guide will include an Agency Location profile.</td>
-        <td>n/a</td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/96">ci-fhir-r4/issues/96</a></td>
   </tr>
     <tr>
         <td>healthcareService (Reference)</td>
         <td>Future releases of this implementation guide will include an Agency HealthcareService profile.</td>
-        <td>n/a</td>
+        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/97">ci-fhir-r4/issues/97</a></td>
   </tr>
  </tbody>
 </table>

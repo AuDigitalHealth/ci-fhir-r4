@@ -6,6 +6,8 @@ For the overarching usage scenarios in this implementation guide it is expected 
 <ul> 
     <li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
     <li>if more than one identifier is sent, only one of each type is sent</li>
+    <li>any included location will include a name, description or address</li>
+    <li>any include healthcare service will include a category, type or name</li>
 </ul>
 
 When sending as a patient's general practitioner it is expected that practitioner name and code are sent
