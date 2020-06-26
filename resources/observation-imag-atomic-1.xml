@@ -57,6 +57,12 @@
       <path value="Observation" />
       <short value="A diagnostic imaging examination observation for a patient" />
       <definition value="An observation of a diagnostic imaging examination for a patient. This observation may represent a single examination, or a group of examinations." />
+      <constraint>
+        <key value="inv-dh-obs-01" />
+        <severity value="error" />
+        <human value="One category shall be 'imaging' 'http://terminology.hl7.org/CodeSystem/observation-category'" />
+        <expression value="category.coding.where(code='imaging').exists()" />
+      </constraint>
     </element>
     <element id="Observation.extension:bodySite">
       <path value="Observation.extension" />

@@ -58,6 +58,12 @@
       <short value="A pathology test observation for a patient" />
       <definition value="An observation of a pathology test for a patient. This observation may be a simple test or a panel/study." />
       <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="One category shall be 'laboratory' 'http://terminology.hl7.org/CodeSystem/observation-category'" />
+        <expression value="category.coding.where(code='laboratory').exists()" />
+      </constraint>
+      <constraint>
         <key value="inv-dh-obs-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
@@ -79,12 +85,6 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="laboratory" />
-        </coding>
-      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">
