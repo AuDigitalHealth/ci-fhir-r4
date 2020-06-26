@@ -81,7 +81,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
 "PractitionerRole.identifier","nationalProviderAtOrganisation","","",0,*,"","","Y","Identifier {[]} {[]}
 ","National Provider at Organisation Identifier","Combined Healthcare Provider Identifier – Individual (HPI-I) and Healthcare Provider Identifier – Organisation (HPI-O) identifier to use as unique organisation based identifier for a practitioner.","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"PractitionerRole.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-inv-npio-0:NPIO length is exactly 33 characters {value.length() = 33}inv-npio-1:NPIO value shall start with '800361', then 10 digits, then '@', then '800362' and ends with 10 digits {value.matches('^(800361)([0-9]{10})(@)(800362)([0-9]{10})$')}","PRD-7 (or XCN.1)",".id","./Identifiers","FiveWs.identifier"
+inv-npio-0:NPIO length is exactly 33 characters {value.length() = 33}","PRD-7 (or XCN.1)",".id","./Identifiers","FiveWs.identifier"
 "PractitionerRole.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "PractitionerRole.identifier.extension","","extensions

@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "PractitionerRole with Mandatory Identifier"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-25T14:52:59+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-26T11:01:02+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1303,16 +1303,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "NPIO length is exactly 33 characters" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "value.length() = 33" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole";
-           fhir:link <http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole>
-         ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.constraint.key [ fhir:value "inv-npio-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "NPIO value shall start with '800361', then 10 digits, then '@', then '800362' and ends with 10 digits" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(800361)([0-9]{10})(@)(800362)([0-9]{10})$')" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole";
            fhir:link <http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole>
