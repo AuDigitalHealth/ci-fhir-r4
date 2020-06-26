@@ -8,10 +8,15 @@
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
   <description value="The purpose of this profile is to represent an atomic representation of other diagnostic (not pathology and not diagnostic imaging) test observation issued by the diagnostic service provider for the electronic exchange of other diagnostic test observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
-  <purpose value="The purpose of this profile is to represent an atomic representation of other diagnostic (not pathology and not diagnostic imaging) test observation issued by the diagnostic service provider for the electronic exchange of other diagnostic test observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -52,21 +57,53 @@
       <path value="Observation" />
       <short value="A specialist or other diagnostic (not pathology or imaging) investigation" />
       <definition value="An observation of a specialist or other diagnostic (not pathology and not diagnostic imaging) investigation for a patient. This observation may be a simple test or a panel/study." />
+      <constraint>
+        <key value="inv-dh-obs-01" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="performer.exists() implies (performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists())" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-obs-03" />
+        <severity value="error" />
+        <human value="The observation shall at least have a value, a data absent reason or a member observation" />
+        <expression value="value.exists() or dataAbsentReason.exists() or hasMember.exists()" />
+      </constraint>
+    </element>
+    <element id="Observation.partOf">
+      <path value="Observation.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.partOf.reference">
+      <path value="Observation.partOf.reference" />
+      <min value="1" />
     </element>
     <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
       <path value="Observation.status" />
+      <short value="preliminary | final | amended +" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1" />
+      </binding>
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
        <mustSupport value="true" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="procedure" />
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
@@ -78,8 +115,8 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -98,8 +135,8 @@
       <path value="Observation.performer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1" />
       </type>
       <mustSupport value="true" />
     </element>
