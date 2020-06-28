@@ -6,7 +6,7 @@
     <th>Issue No.</th>
   </tr>
   <tr>
-      <td>self collection (not currently support)</td>
+      <td>self collection (not currently supported)</td>
       <td>It is not understood how self collection can be supported in this profile. There is no element or core extension available for Specimen that identifies a patient or related person as a collector.<br/><br/>
       Self collection of bloods or other material including sent by mail kits cancer screening are to be a supported usage scenario.
       </td>
@@ -20,16 +20,6 @@
   <tr>
       <td>type (coding terminology enforcement)</td>
       <td>It is intended that the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen</a> coding:snomedSpecimenType should be enforced if any coding is provided. In other words, either text or a code from this value set is required. This is a work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
-  </tr>
-  <tr>
-      <td>subject (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
-  </tr>
-  <tr>
-      <td>collection.collector (Reference type too open)</td>
-      <td>The Reference type is too open, we need to ensure that either a reference conforming to the profiles or a logical reference via identifier is supplied - work in progress.</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
   </tr>
   <tr>
