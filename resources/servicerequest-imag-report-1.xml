@@ -56,7 +56,7 @@
         <key value="inv-dh-prr-03" />
         <severity value="error" />
         <human value="One category shall be '363679005' 'http://snomed.info/sct'" />
-        <expression value="category.coding.where(code='363679005').exists()" />
+        <expression value="category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()" />
       </constraint>
       <constraint>
         <key value="inv-dh-prr-01" />

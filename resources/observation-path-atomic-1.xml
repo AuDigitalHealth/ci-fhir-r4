@@ -61,7 +61,7 @@
         <key value="inv-dh-obs-04" />
         <severity value="error" />
         <human value="One category shall be 'laboratory' 'http://terminology.hl7.org/CodeSystem/observation-category'" />
-        <expression value="category.coding.where(code='laboratory').exists()" />
+        <expression value="category.coding.where(system='http://terminology.hl7.org/CodeSystem/observation-category' and code='laboratory').exists()" />
       </constraint>
       <constraint>
         <key value="inv-dh-obs-01" />
