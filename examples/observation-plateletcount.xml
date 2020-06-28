@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="plateletcount"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+        />
+    </meta>
+    <status value="preliminary"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="HM"/>
+            <display value="Hematology"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="777-3"/>
+            <display value="Platelets [#/volume] in Blood by Automated count"/>
+        </coding>
+        <text value="Platelet Count"/>
+    </code>
+    <subject>
+        <reference value="Patient/p2p-anne-thompson"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2016-07-13T10:30:10+10:00"/>
+        <end value="2016-07-13T10:30:10+10:00"/>
+    </effectivePeriod>
+    <issued value="2016-07-13T11:45:33+10:00"/>
+    <performer>
+        <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+    </performer>
+    <performer>
+        <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+    </performer>
+    <valueQuantity>
+        <value value="190"/>
+        <unit value="10*9/L"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="10*9/L"/>
+    </valueQuantity>
+    
+    <referenceRange>
+        <low>
+            <value value="150"/>
+            <unit value="10*9/L"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="10*9/L"/>
+        </low>
+        <high>
+            <value value="400"/>
+            <unit value="10*9/L"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="10*9/L"/>
+        </high>
+    </referenceRange>
+</Observation>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="fbc"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+        />
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="FILL"/>
+                <display value="Filler Identifier"/>
+            </coding>
+        </type>
+        <system value="http://randwicklabs.example.com/labnum/1.0.2"/>
+        <value value="652973694"/>
+    </identifier>
+    <status value="preliminary"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="HM"/>
+            <display value="Hematology"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="57782-5"/>
+            <display value="CBC with Ordered Manual Differential panel - Blood"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/p2p-anne-thompson"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2016-07-13T10:30:10+10:00"/>
+        <end value="2016-07-13T10:30:10+10:00"/>
+    </effectivePeriod>
+    <issued value="2016-07-13T11:45:33+10:00"/>
+    <performer>
+        <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+    </performer>
+    <performer>
+        <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+    </performer>
+    <hasMember>
+        <reference value="Observation/haemoglobin"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/redcellcount"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/haematocrit"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/meancellvolume"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/meancellhaemoglobin"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/mchc"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/plateletcount"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/whitecellcount"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/neutrophils"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/lymphocytes"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/monocytes"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/eosinophils"/>
+    </hasMember>
+    <hasMember>
+        <reference value="Observation/basophils"/>
+    </hasMember>
+</Observation>
