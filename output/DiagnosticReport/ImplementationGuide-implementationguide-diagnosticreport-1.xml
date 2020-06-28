@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-06-26T11:33:02+10:00"/>
+  <date value="2020-06-28T14:02:12+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -394,8 +394,21 @@
       <reference>
         <reference value="Bundle/559b66ea-abbf-45fb-8627-554817830095"/>
       </reference>
-      <name value="2019 Novel Coronavirus PCR (short form)"/>
-      <exampleBoolean value="true"/>
+      <name value="2019 Novel Coronavirus PCR (MHR)(Bundle)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-b317aa04-131c-49d1-b9bc-48ff94876834.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/b317aa04-131c-49d1-b9bc-48ff94876834"/>
+      </reference>
+      <name value="2019-Novel Coronavirus PCR (P2P)(Bundle)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>
