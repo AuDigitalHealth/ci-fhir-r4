@@ -648,7 +648,7 @@
                 <id value="d13ab38b-7d90-4486-a60f-dfb0f34f888c"/>
                 <meta>
                     <profile
-                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1"
+                        value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"
                     />
                 </meta>
                 <language value="en-AU"/>
@@ -688,7 +688,7 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="urn:uuid:mhr-anne-thompson"/>
+                    <reference value="urn:uuid:9aeff67b-e9df-46dc-a366-2a33ec6dba1a"/>
                 </subject>
                 <effectiveDateTime value="2016-07-13T10:45:33+10:00"/>
                 <issued value="2016-07-13T11:45:33+10:00"/>
@@ -702,12 +702,11 @@
                     <reference value="urn:uuid:764c70f0-a104-4c9a-beb8-ab478064ff9c"/>
                 </result>
                 <result>
-                    <reference value="Observation/esr"/>
+                    <reference value="urn:uuid:593e3cc4-3b23-4fa8-9e1b-8110d4b9df19"/>
                 </result>
                 <presentedForm>
                     <contentType value="application/pdf"/>
                     <!-- Placeholder url value: Absolute URL to GitHub repository for attachment is provided as a workaround for demonstration purposes only  -->
-                    <!-- TBD: Generate PDF and Generate hash  -->
                     <url
                         value="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/Full-Blood-Count-2016-07-13.pdf"/>
                     <hash value="55E5440752B934A7A42B8776208487D7DBBA9DCA"/>
@@ -773,10 +772,10 @@
     </entry>
     <!-- ESR Observation referenced in DiagnosticReport.result-->
     <entry>
-        <fullUrl value="urn:uuid:esr"/>
+        <fullUrl value="urn:uuid:593e3cc4-3b23-4fa8-9e1b-8110d4b9df19"/>
         <resource>
             <Observation>
-                <id value="esr"/>
+                <id value="593e3cc4-3b23-4fa8-9e1b-8110d4b9df19"/>
                 <identifier>
                     <type>
                         <coding>
@@ -981,11 +980,11 @@
                     </assigner>
                 </identifier>
                 <practitioner>
-                    <reference value="Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
+                    <reference value="urn:uuid:d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
                     <display value="Dr. Robert Brown"/>
                 </practitioner> 
                 <organization>
-                    <reference value="Organization/9aac0c75-2467-4245-8ea9-c25d96bbd3eb"/>
+                    <reference value="urn:uuid:9aac0c75-2467-4245-8ea9-c25d96bbd3eb"/>
                     <display value="Randwick Laboratories Sydney"/>
                 </organization>
                 <code>
