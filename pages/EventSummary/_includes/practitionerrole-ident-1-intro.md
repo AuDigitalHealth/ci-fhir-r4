@@ -6,7 +6,7 @@ The context for this profile is largely authoring of diagnostic content includin
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
 <ul>
-<li>identifier - if there isn’t a local identifier namespace available then an identifier can be sent with a HPI-O scoped or ABN-scoped identifier namespace (see the FAQ for more information)</li>
+<li>identifier - if there isn’t a local identifier namespace available then an identifier can be sent with a HPI-O scoped or ABN-scoped identifier namespace (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
 <li>code will be a value equivalent to the author’s professional role, e.g. 309352002 |Neuroendocrinologist|, 40204001 |Haematologist|, or 78729002 |Diagnostic radiologist|</li>
 <li>practitioner will be the performing diagnostic service provider (e.g. specialist, radiologist, pathologist) and will be sent as a reference to a Practitioner resource</li>
 <li>organization will be the employing organisation and will be sent as a reference to an Organization resource</li>
