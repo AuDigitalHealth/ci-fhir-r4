@@ -53,6 +53,12 @@
       <short value="An order for an imaging examination" />
       <definition value="A record of a request for imaging diagnostic investigations to be performed." />
       <constraint>
+        <key value="inv-dh-prr-03" />
+        <severity value="error" />
+        <human value="One category shall be '363679005' 'http://snomed.info/sct'" />
+        <expression value="category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()" />
+      </constraint>
+      <constraint>
         <key value="inv-dh-prr-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
@@ -86,12 +92,6 @@
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="363679005" />
-        </coding>
-      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.code">
