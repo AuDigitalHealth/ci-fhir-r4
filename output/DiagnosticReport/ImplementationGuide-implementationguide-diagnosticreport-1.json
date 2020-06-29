@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-26T11:33:02+10:00",
+  "date": "2020-06-29T09:51:35+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -512,8 +512,25 @@
         "reference": {
           "reference": "Bundle/559b66ea-abbf-45fb-8627-554817830095"
         },
-        "name": "2019 Novel Coronavirus PCR (short form)",
-        "exampleBoolean": true
+        "name": "2019 Novel Coronavirus PCR (MHR)(Bundle)",
+        "exampleCanonical": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-b317aa04-131c-49d1-b9bc-48ff94876834.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/b317aa04-131c-49d1-b9bc-48ff94876834"
+        },
+        "name": "2019-Novel Coronavirus PCR (P2P)(Bundle)",
+        "exampleCanonical": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
       }
     ],
     "page": {
