@@ -5,20 +5,15 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-  <tr>
-        <td>location (cardinality)</td>
-        <td>This profile currently supports multiple locations at which a practitioner provides care. Investigation is required to determine if the max. cardinality of location should remain as many or be constrained to 1. Multiple locations may lead to ambiguity on what roles and specialties a practitioner is performing for an organisation at a specific location and what healthcare services are being supported at a specific location.</td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/95">ci-fhir-r4/issues/95</a></td>
-  </tr>
-  <tr>
-        <td>location (Reference)</td>
-        <td>Future releases of this implementation guide will include an Agency Location profile.</td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/96">ci-fhir-r4/issues/96</a></td>
-  </tr>
-    <tr>
-        <td>healthcareService (Reference)</td>
-        <td>Future releases of this implementation guide will include an Agency HealthcareService profile.</td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/97">ci-fhir-r4/issues/97</a></td>
-  </tr>
+   <tr>
+     <td>code (missing ANZSCO)</td>
+     <td>We are intending to support values from the Australian and New Zealand Standard Classification of Occupations. The value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1">Australian and New Zealand Standard Classification of Occupations</a> is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-practitionerrole.html">AU Base Practitioner Role</a>.</td>
+     <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/353">au-fhir-base/issues/353</a></td>
+  </tr> 
+   <tr>
+     <td>Constraint presentation</td>
+     <td>The full set of constraints (i.e. invariants) defined in this profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.</td>
+     <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Derived.20profile.20snapshot.20missing.20upstream.20invariants">Derived profile snapshot missing upstream invariants</a> stream</td>
+  </tr> 
  </tbody>
 </table>
