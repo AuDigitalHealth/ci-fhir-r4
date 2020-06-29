@@ -20,5 +20,5 @@ When sending to the My Health Record system it is expected that all instances of
 #### Boundaries and relationships
 This profile supports the identification of tests performed for a patient enabling an individual to determine if the Pathology Report is of interest but does not directly support reporting of the actual results of pathology tests (see [Atomic Pathology Observation](StructureDefinition-observation-path-atomic-1.html) for atomic reporting).
 
-This profile is referenced by [My Health Record Pathology Report](StructureDefinition-diagnosticreport-path-mhr-1.html), [Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html),  [Atomic Diagnostic Imaging  Report](StructureDefinition-diagnosticreport-imag-atomic-1.html) and [My Health Record Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html), [Simple Other Diagnostic Observation](StructureDefinition-observation-otherdiag-simple-1.html)
+This profile is referenced by [My Health Record Pathology Report](StructureDefinition-diagnosticreport-path-mhr-1.html), [Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html),  [Atomic Other Diagnostic  Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html) and [My Health Record Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html).
 
