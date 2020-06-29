@@ -57,7 +57,13 @@
       <path value="Observation" />
       <short value="A diagnostic imaging examination observation for a patient" />
       <definition value="An observation of a diagnostic imaging examination for a patient. This observation may represent a single examination, or a group of examinations." />
-    <constraint>
+      <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="One category shall be 'imaging' 'http://terminology.hl7.org/CodeSystem/observation-category'" />
+        <expression value="category.coding.where(system='http://terminology.hl7.org/CodeSystem/observation-category' and code='imaging').exists()" />
+      </constraint>
+      <constraint>
         <key value="inv-dh-obs-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
@@ -111,12 +117,6 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-          <code value="imaging" />
-        </coding>
-        </patternCodeableConcept>
     <mustSupport value="true" />
     </element>
     <element id="Observation.code">
