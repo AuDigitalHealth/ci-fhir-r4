@@ -3,10 +3,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <title>Event Summary</title>
+  <title>Diagnostic Report</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Event Summary Implemenation Guide" />
+  <meta name="description" content="Diagnostic Report Implemenation Guide" />
   <meta name="author" content="http://argonautwiki.hl7.org"/>
 
   <link href="fhir.css" rel="stylesheet"/>
@@ -40,7 +40,7 @@
    <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
 
    <div id="ig-status">
-    <b>Event Summary FHIR Implementation Guide  1.0.0</b>
+    <b>Diagnostic Report FHIR Implementation Guide  1.0.0</b>
 </div>
 
   </div>
@@ -87,86 +87,66 @@
 
 
 
-</div>  <!-- /container -->
-</div>  <!-- /segment-breadcrumb -->
+
+<!-- <div id="segment-breadcrumb" class="segmnt">  <!-\- segment-breadcrumb -\->
+  <div class="container">  <!-\- container -\->
+   <ul class="breadcrumb">
+       <li title="home"><a href="index.html"><b>Home</b></a></li>
+     <li><b>PractitionerRoleBase Details</b></li>
+   </ul>
+  </div>  <!-\- /container -\->
+ </div>  <!-\- /segment-breadcrumb -\->-->
+
 
 <div id="segment-content" class="segment">  <!-- segment-content -->
-<div class="container">  <!-- container -->
-<div class="row">
-<div class="inner-wrapper">
+  <div class="container">  <!-- container -->
 
-
-<div class="col-12">
-
-
-<p id="publish-box">
-    This is release  1.0.0 of Event Summary FHIR Implementation Guide. It is based on  <a href="http://hl7.org/fhir/R4/">FHIR version 4.0.1</a>. 
+    <div class="row">
+      <div class="inner-wrapper">
+        <!-- CONTENT CONTENT -->
+        
+        <div class="col-12">
+          <p id="publish-box">
+    This is release  1.0.0 of Diagnostic Report FHIR Implementation Guide. It is based on  <a href="http://hl7.org/fhir/R4/">FHIR version 4.0.1</a>. 
 </p>
 
-<!-- ============BreadCrumb=============== -->
+          <ul class="nav nav-tabs">
+            <li><a href="StructureDefinition-practitionerrole-dh-base-1.html">Content</a></li>
+            <li class="active"><a href="#">Examples</a></li>
+            <li><a href="StructureDefinition-practitionerrole-dh-base-1-definitions.html">Detailed Descriptions</a></li>
+            <li><a href="StructureDefinition-practitionerrole-dh-base-1-mappings.html">Mappings</a></li>
+            <li><a href="StructureDefinition-practitionerrole-dh-base-1.xml.html">XML</a></li>
+            <li><a href="StructureDefinition-practitionerrole-dh-base-1.json.html">JSON</a></li>
+            <li><a href="StructureDefinition-practitionerrole-dh-base-1.ttl.html">Turtle</a></li>
+          </ul>
+          
+          <h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition-practitionerrole-dh-base-1 - Examples <a title="link to here" class="self-link" href="StructureDefinition-practitionerrole-dh-base-1-definitions.html#D.4.1.4"><img src="target.png"/></a></h4>
+          
+          <p>Examples includes links to example resources that conform to the profile or extension and that support implementation by demonstrating one or more usage scenarios supported by this implementation guide.</p>
+         
+         <table class="list" width="100%">            
+   <tr>
+     <th>Example name</th>
+     <th>id</th>
+     <th colspan="3">Format</th>
+   </tr>
+   <tr>
+      <td><a href="bundle-559b66ea-abbf-45fb-8627-554817830095.html">2019-Novel Coronavirus PCR (MHR)(Bundle)</a></td>
+      <td>559b66ea-abbf-45fb-8627-554817830095</td>
+      <td><a href="bundle-559b66ea-abbf-45fb-8627-554817830095.xml.html">XML</a></td>
+      <td><a href="bundle-559b66ea-abbf-45fb-8627-554817830095.json.html">JSON</a></td>
+      <td><a href="bundle-559b66ea-abbf-45fb-8627-554817830095.ttl.html">Turtle</a></td>
+   </tr>           
+</table>
 
-<nav class="breadcrumb">
-  
-    
-    
-      <a class="breadcrumb-item" href="index.html">Home</a>
-      /
-      <a class="breadcrumb-item" href="profiles.html">Profiles</a>
-      /
-      <span class="breadcrumb-item active">Patient-mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c</span>
-    
-    
-    
-    
-
-</nav>
-
-
-<!-- ============CONTENT CONTENT=============== -->
-
-<h2>Patient/mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c</h2>
-
-<p>
-Formats: <a href="Patient-mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c.xml.html">XML</a>, <a href="Patient-mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c.json.html">JSON</a>, <a href="Patient-mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c.ttl.html">Turtle</a>
-</p>
-
-<div xmlns="http://www.w3.org/1999/xhtml">
-            <table>
-                <tr>
-                    <td>NAME</td>
-                    <td>Ms Sally FIELD</td>
-                </tr>
-                <tr>
-                    <td>IHI NUMBER</td>
-                    <td>8003608000228437</td>
-                </tr>
-                <tr>
-                    <td>DOB</td>
-                    <td>14 February 1984</td>
-                </tr>
-                <tr>
-                    <td>GENDER</td>
-                    <td>Female</td>
-                </tr>
-                <tr>
-                    <td>INDIGENOUS STATUS</td>
-                    <td>Neither Aboriginal nor Torres Strait Islander origin</td>
-                </tr>
-            </table>
+          
         </div>
-
-  <!-- ==============END CONTENT END CONTENT=================== -->
-
-</div>
-
-
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-
+        
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /row -->
+  </div>  <!-- /container -->
+  
 </div>  <!-- /segment-content -->
-
-
 
 </div>
 
@@ -180,11 +160,11 @@ Formats: <a href="Patient-mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c.xml.html">XML
 <div id="segment-footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
         <div class="inner-wrapper">
-            <p>Document ID: DH-xxx:2019</p>
+            <p>Document ID: DH-xxx:2020</p>
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Event Summary FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Sun, Jun 14, 2020 06:36+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Jun 29, 2020 14:44+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>
@@ -218,3 +198,5 @@ Formats: <a href="Patient-mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c.xml.html">XML
 </body>
 </html>
 
+</body>
+</html>
