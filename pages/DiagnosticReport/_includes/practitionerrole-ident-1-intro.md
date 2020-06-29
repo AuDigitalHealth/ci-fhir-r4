@@ -1,5 +1,5 @@
 ### PractitionerRole with Mandatory Identifier
-The purpose of this profile is to define a representation of a practitioner role where unambiguous identification of a practitioner role is mandatory in the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. The concept supported is an identified practitioner, in a role, on behalf of an organisation.
+The purpose of this profile is to define a representation of a practitioner role where unambiguous identification of a practitioner role is mandatory in the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 The context for this profile is largely authoring of diagnostic content including observations, reports, and orders.
 

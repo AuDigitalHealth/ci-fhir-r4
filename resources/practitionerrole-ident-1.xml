@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define a representation of a practitioner role where unambiguous identification of an practitioner role is mandatory in the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.The concept supported is an identified practitioner, in a role, on behalf of an organisation.&#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+    value="The purpose of this profile is to define a representation of a practitioner role where unambiguous identification of an practitioner role is mandatory in the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
   <copyright
     value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -51,22 +51,6 @@
           value="If present, an organization shall at least have a reference, an identifier or a display"/>
         <expression
           value="organization.exists() implies organization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-      </constraint>
-      <constraint>
-        <key value="inv-dh-prarol-04"/>
-        <severity value="error"/>
-        <human
-          value="If present, a location shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-      </constraint>
-      <constraint>
-        <key value="inv-dh-prarol-05"/>
-        <severity value="error"/>
-        <human
-          value="If present, a healthcare service shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="healthcareService.exists() implies healthcareService.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
       </constraint>
     </element>
     <element id="PractitionerRole.identifier">
