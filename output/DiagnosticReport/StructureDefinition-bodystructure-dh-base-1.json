@@ -11,7 +11,7 @@
   "title": "Base BodyStructure",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-29T12:54:59+10:00",
+  "date": "2020-06-29T14:44:25+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -595,7 +595,14 @@
         "isModifier": false,
         "isSummary": true,
         "binding": {
-          "strength": "preferred",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BodyStructureCode"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes describing anatomic morphology.",
           "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-code"
         },
         "mapping": [

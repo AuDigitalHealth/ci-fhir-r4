@@ -23,7 +23,8 @@
     "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1",
     "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1",
 	"http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1",
-	"http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"
+	"http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1",
+	"http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1"
     ],
     "logging": [
         "init",
@@ -160,6 +161,10 @@
             "base": "StructureDefinition-imagingstudy-diag-1.html",
             "defns": "StructureDefinition-imagingstudy-diag-1-definitions.html"
         },
+        "StructureDefinition/practitionerrole-dh-base-1": {
+            "base": "StructureDefinition-practitionerrole-dh-base-1.html",
+            "defns": "StructureDefinition-practitionerrole-dh-base-1-definitions.html"
+		},
         "StructureDefinition/practitioner-dh-base-1": {
             "base": "StructureDefinition-practitioner-dh-base-1.html",
             "defns": "StructureDefinition-practitioner-dh-base-1-definitions.html"
