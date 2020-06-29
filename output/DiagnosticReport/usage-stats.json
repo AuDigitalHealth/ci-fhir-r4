@@ -4,6 +4,12 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "BodyStructure": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1",
+        "title": "Base BodyStructure"
+      }
+    ],
     "Composition": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1",
@@ -48,12 +54,6 @@
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/specimen-collect-1",
         "title": "Collected Specimen"
-      }
-    ],
-    "BodyStructure": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1",
-        "title": "Base BodyStructure"
       }
     ],
     "DiagnosticReport": [
