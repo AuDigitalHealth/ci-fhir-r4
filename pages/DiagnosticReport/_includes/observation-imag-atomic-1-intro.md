@@ -10,6 +10,7 @@ For the overarching usage scenarios in this implementation guide it is expected 
 <ul>
 <li>status is sent as 'preliminary', 'final', or 'amended'</li>
 <li>category is sent with an additional category indicating the diagnostic service that performed the imaging examination</li>
+<li>effective[x] is the date time the imaging study was performed</li>
 <li>performer is sent as a reference to a PractitionerRole resource with:
     <ul>
         <li>PractitionerRole.practitioner as reference to a Practitioner resource with:
