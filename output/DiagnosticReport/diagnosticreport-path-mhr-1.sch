@@ -300,26 +300,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>DiagnosticReport.code.extension</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:code/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.code.coding</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:code/f:coding">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.code.text</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:code/f:text">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>DiagnosticReport.subject</sch:title>
     <sch:rule context="f:DiagnosticReport/f:subject">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -456,26 +436,6 @@
   <sch:pattern>
     <sch:title>DiagnosticReport.conclusionCode</sch:title>
     <sch:rule context="f:DiagnosticReport/f:conclusionCode">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.conclusionCode.extension</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:conclusionCode/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.conclusionCode.coding</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:conclusionCode/f:coding">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.conclusionCode.text</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:conclusionCode/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
