@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="practitionerrole-ident-1"/>
   <url
-    value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"/>
+    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
   <version value="1.0.0"/>
   <name value="PractitionerRoleWithMandatoryIdent"/>
   <title value="PractitionerRole with Mandatory Identifier"/>
@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define a representation of a practitioner role for exchange usage scenarios in an Australian context where an identifier is mandatory. It is expected that this is a partial representation of a practitioner role record  for the exchange scenarios and not intended for facilitating administration of the practitioner role canonical record. &#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element"/>
+    value="The purpose of this profile is to define a representation of a practitioner role where unambiguous identification of an practitioner role is mandatory in the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
   <copyright
     value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -28,15 +28,13 @@
   <differential>
     <element id="PractitionerRole">
       <path value="PractitionerRole"/>
+      <short value="A person with formal responsibility in a role providing one or more services"/>
       <constraint>
         <key value="inv-dh-prarol-01"/>
         <severity value="error"/>
         <human
           value="At least one practitioner role identifier shall at least have a system and a value"/>
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
-        />
       </constraint>
       <constraint>
         <key value="inv-dh-prarol-02"/>
@@ -45,9 +43,6 @@
           value="If present, a practitioner shall at least have a reference, an identifier or a display"/>
         <expression
           value="practitioner.exists() implies practitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
-        />
       </constraint>
       <constraint>
         <key value="inv-dh-prarol-03"/>
@@ -56,31 +51,6 @@
           value="If present, an organization shall at least have a reference, an identifier or a display"/>
         <expression
           value="organization.exists() implies organization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-prarol-04"/>
-        <severity value="error"/>
-        <human
-          value="If present, a location shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-prarol-05"/>
-        <severity value="error"/>
-        <human
-          value="If present, a healthcare service shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="healthcareService.exists() implies healthcareService.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1"
-        />
       </constraint>
     </element>
     <element id="PractitionerRole.identifier">
@@ -97,7 +67,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1"
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
         />
       </type>
       <mustSupport value="true"/>
@@ -107,7 +77,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1"
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1"
         />
       </type>
       <mustSupport value="true"/>
@@ -118,14 +88,6 @@
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="PractitionerRole.location">
-      <path value="PractitionerRole.location"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="PractitionerRole.healthcareService">
-      <path value="PractitionerRole.healthcareService"/>
       <mustSupport value="true"/>
     </element>
     <element id="PractitionerRole.telecom">
