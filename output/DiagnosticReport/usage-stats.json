@@ -30,12 +30,6 @@
         "title": "Diagnostic Imaging Study"
       }
     ],
-    "PractitionerRole": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitionerrole-ident-1",
-        "title": "PractitionerRole with Mandatory Identifier"
-      }
-    ],
     "ServiceRequest": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1",
@@ -132,6 +126,16 @@
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1",
         "title": "Base Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1",
+        "title": "Base PractitionerRole"
+      },
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1",
+        "title": "PractitionerRole with Mandatory Identifier"
       }
     ]
   },

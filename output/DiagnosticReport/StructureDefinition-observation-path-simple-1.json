@@ -11,7 +11,7 @@
   "title": "Simple Pathology Observation",
   "status": "draft",
   "experimental": true,
-  "date": "2020-06-29T12:54:59+10:00",
+  "date": "2020-06-29T14:44:25+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -987,10 +987,65 @@
         ]
       },
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Code defined by a terminology system",
+        "definition": "A reference to a code defined by a terminology system.",
+        "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
+        "requirements": "Allows for alternative encodings within a code system, and translations to other code systems.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "CodeableConcept.coding",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "C*E.1-8, C*E.10-22"
+          },
+          {
+            "identity": "rim",
+            "map": "union(., ./translation)"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+          }
+        ]
+      },
+      {
         "id": "Observation.code.coding:snomedImagingProcedure",
         "path": "Observation.code.coding",
         "sliceName": "snomedImagingProcedure",
-        "short": "Code defined by a terminology system",
+        "short": "Imaging Procedure (SNOMED CT)",
         "definition": "A reference to a code defined by a terminology system.",
         "comment": "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
         "requirements": "Allows for alternative encodings within a code system, and translations to other code systems.",
@@ -1018,6 +1073,10 @@
         ],
         "isModifier": false,
         "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"
+        },
         "mapping": [
           {
             "identity": "v2",
