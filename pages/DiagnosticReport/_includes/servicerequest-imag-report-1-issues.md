@@ -18,6 +18,12 @@
         <p>ServiceRequest.category: "363679005" <a href="http://hl7.org/fhir/R4/snomedct.html">https://snomed.info/sct</a> Imaging (procedure)</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/28">ci-fhir-r4/issues/28</a></td>
    </tr>
+   <tr>
+            <td>code (terminology support)</td>
+            <td><p>It is unclear if the SNOMED CT-AU value set <a href=" https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1">Imaging Procedure</a> is sufficient for supporting electronic exchange of diagnostic imaging observations in Australia.</p>
+<p>Feedback from stakeholders should be sought on the need for additional terminologies in this sector. It is expected that this would be progressed via an HL7 AU Working Group and any additional support be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p></td>
+            <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/406">au-fhir-base/issues/406</a></td>
+       </tr>
   <tr>
     <td>Support for screening programs initiated requests</td>
     <td>Not yet clear how requests that are initiated by a national program, e.g. National Breast Cancer Screening Program, are well supported with this model beyond allowing an organization as a requester.</td>
