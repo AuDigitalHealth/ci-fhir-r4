@@ -49,8 +49,15 @@
       <constraint>
         <key value="inv-dh-bodstr-01" />
         <severity value="error" />
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <human value="The patient shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-bodstr-02" />
+        <severity value="error" />
+        <human value="The body structure shall at least have a location or a description" />
+        <expression value="location.exists() or description.exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1" />
       </constraint>
     </element>

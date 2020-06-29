@@ -8,7 +8,7 @@
   <tr>
       <td>locationQualifier (terminology binding)</td>
       <td>The binding strength of <a href="http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html">Bodystructure Location Qualifier</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example">Example</a>) should be at least extensible in this profile. Consider setting a minimum value set of SNOMED CT to enforce that the code must be SNOMED CT though possibly fixing the system value may be sufficient.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/40">ci-fhir-r4/issues/40</a></td>
+      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/98">ci-fhir-r4/issues/98</a></td>
   </tr>
   <tr>
       <td>Constraint presentation</td>
