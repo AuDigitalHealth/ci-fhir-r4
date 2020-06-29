@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/DiagnosticReport/fbc> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fbc"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-AU"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <table style=\"border-collapse:collapse;width:100%;\">\n        <tbody>\n          <tr style=\"background-color:#DCDCDC\">\n            <td>Patient</td>\n            <td style=\"font-weight: bold;\">THOMPSON Mrs Anne</td>\n            <td>DOB</td>\n            <td style=\"font-weight: bold;\">11/10/1978</td>\n            <td>Sex</td>\n            <td>F</td>\n            <td>Requested</td>\n            <td>10/07/2016 11:15</td>\n          </tr>\n          <tr style=\"background-color:#DCDCDC\">\n            <td>Address</td>\n            <td>7311 Coleman St, Mascot, NSW, 2020</td>\n            <td>Mobile</td>\n            <td>0491 572 665</td>\n            <td>Medicare No.</td>\n            <td>6951449601</td>\n            <td>Collected</td>\n            <td>13/07/2016 10:30</td>\n          </tr>\n          <tr style=\"background-color:#DCDCDC\">\n            <td>Ref by</td>\n            <td>Dr Sarah Bondiali </td>\n            <td>Lab</td>\n            <td>Randwick Laboratories</td>\n            <td/>\n            <td/>\n            <td>Issued</td>\n            <td>13/07/2016 11:45</td>\n          </tr>\n          <tr>\n            <td>Enquiries</td>\n            <td>Dr. Robert Brown (Haematologist) 0491 578 888</td>\n            <td>Lab No</td>\n            <td>652973694</td>\n            <td/>\n            <td/>\n            <td/>\n            <td/>\n          </tr>\n        </tbody>\n      </table>\n      <p/>\n      <p/>\n      <p style=\"text-align:right;\">Randwick Laboratories Sydney</p>\n      <p style=\"text-align:right;\">(02) 5550 8994</p>\n      <p style=\"text-align:right;\">NATA: 100201 ABN: 41824753000</p>\n      <p style=\"text-align:right;\">1342 Sydney St, Randwick, NSW, 2031</p>\n      <pre> \nTest                  Units       Value       Reference Range\nHaemoglobin           g/L         118         115 - 165\nRed Cell Count        x10*12/L    3.9         3.8 - 5.8\nHaematocrit           L/L         0.39        0.37 - 0.47\nMean Cell Volume      fL          88          80 - 100\nMean Cell Haemoglobin pg          28          26.5 - 33.0\nMCHC                  g/L         320         310 - 360\nPlatelet Count        x10*9/L     190         150 - 400\nWhite Cell Count      x10*9/L     7.8         4.0 - 11.0\nNeutrophils           x10*9/L     4.0         2.0 - 7.5\nLymphocytes           x10*9/L     3.2         1.1 - 4.0\nMonocytes             x10*9/L     0.4         0.2 - 1.0\nEosinophils           x10*9/L     0.2         0.0 - 0.4\nBasophils             x10*9/L     0.0         &lt;0.1\n      </pre>\n      <p>*** The above results have not yet been verified ***</p>\n    </div>"
+  ];
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "FILL" ];
+         fhir:Coding.display [ fhir:value "Filler Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://randwicklabs.example.com/labnum/1.0.2" ];
+     fhir:Identifier.value [ fhir:value "652973694" ]
+  ];
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/ServiceRequest/order-fbc>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/order-fbc" ]
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "preliminary"];
+  fhir:DiagnosticReport.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "HM" ];
+       fhir:Coding.display [ fhir:value "Hematology" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "LAB" ]
+     ]
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:57782-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "57782-5" ];
+       fhir:Coding.display [ fhir:value "CBC with Ordered Manual Differential panel - Blood" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/p2p-anne-thompson>;
+     fhir:Reference.reference [ fhir:value "Patient/p2p-anne-thompson" ]
+  ];
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2016-07-13T10:45:33+10:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.issued [ fhir:value "2016-07-13T11:45:33+10:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.performer [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec>;
+     fhir:Reference.reference [ fhir:value "Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec" ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/fbc>;
+     fhir:Reference.reference [ fhir:value "Observation/fbc" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/esr>;
+     fhir:Reference.reference [ fhir:value "Observation/esr" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/DiagnosticReport/fbc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

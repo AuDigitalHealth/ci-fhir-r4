@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="redcellcount"/>
+  <meta>
+    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: redcellcount</p><p><b>meta</b>: </p><p><b>status</b>: preliminary</p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 HM}">Hematology</span>, <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 789-8}">Red Cell Count</span></p><p><b>subject</b>: <a href="Patient-p2p-anne-thompson.html">Generated Summary: id: p2p-anne-thompson; Medicare Number = 6951449601; Mrs. Anne Thompson(OFFICIAL); ph: 0491 572 665(MOBILE); gender: female; birthDate: 1978-10-11</a></p><p><b>effective</b>: 13/07/2016 10:30:10 AM --&gt; 13/07/2016 10:30:10 AM</p><p><b>issued</b>: 13/07/2016 11:45:33 AM</p><p><b>performer</b>: </p><ul><li><a href="PractitionerRole-f3e381b5-673e-4941-900c-03d1043604a6.html">Generated Summary: id: f3e381b5-673e-4941-900c-03d1043604a6; HPI-I = 8003614900041243, Employee Number = RBRLSNSW765301; <span title="Codes: {http://snomed.info/sct 40204001}">Haematologist</span></a></li><li><a href="Organization-d9b1a051-034c-4c11-a504-8d75d72bf4ec.html">Generated Summary: id: d9b1a051-034c-4c11-a504-8d75d72bf4ec; NATA Accreditation Number = 100201, ABN = 41824753000; <span title="Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8520}">Pathology Laboratory</span>; name: Randwick Laboratories Sydney; ph: (02) 5550 8994(WORK)</a></li></ul><p><b>value</b>: 3.9 10*12/L</p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.8 10*12/L</td><td>5.8 10*12/L</td></tr></table></div>
+  </text>
+  <status value="preliminary"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="HM"/>
+      <display value="Hematology"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="789-8"/>
+      <display value="Erythrocytes [#/volume] in Blood by Automated count"/>
+    </coding>
+    <text value="Red Cell Count"/>
+  </code>
+  <subject>
+    <reference value="Patient/p2p-anne-thompson"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2016-07-13T10:30:10+10:00"/>
+    <end value="2016-07-13T10:30:10+10:00"/>
+  </effectivePeriod>
+  <issued value="2016-07-13T11:45:33+10:00"/>
+  <performer>
+    <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+  </performer>
+  <performer>
+    <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+  </performer>
+  <valueQuantity>
+    <value value="3.9"/>
+    <unit value="10*12/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="10*12/L"/>
+  </valueQuantity>
+  <referenceRange>
+    <low>
+      <value value="3.8"/>
+      <unit value="10*12/L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="10*12/L"/>
+    </low>
+    <high>
+      <value value="5.8"/>
+      <unit value="10*12/L"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="10*12/L"/>
+    </high>
+  </referenceRange>
+</Observation>

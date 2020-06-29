@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/esr> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "esr"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: esr</p><p><b>meta</b>: </p><p><b>identifier</b>: Filler Identifier = 652973694</p><p><b>status</b>: preliminary</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 HM}\">Hematology</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 30341-2}\">ESR</span></p><p><b>subject</b>: <a href=\"Patient-p2p-anne-thompson.html\">Generated Summary: id: p2p-anne-thompson; Medicare Number = 6951449601; Mrs. Anne Thompson(OFFICIAL); ph: 0491 572 665(MOBILE); gender: female; birthDate: 1978-10-11</a></p><p><b>effective</b>: 13/07/2016 10:30:10 AM --&gt; 13/07/2016 10:30:10 AM</p><p><b>issued</b>: 13/07/2016 11:45:33 AM</p><p><b>performer</b>: </p><ul><li><a href=\"PractitionerRole-f3e381b5-673e-4941-900c-03d1043604a6.html\">Generated Summary: id: f3e381b5-673e-4941-900c-03d1043604a6; HPI-I = 8003614900041243, Employee Number = RBRLSNSW765301; <span title=\"Codes: {http://snomed.info/sct 40204001}\">Haematologist</span></a></li><li><a href=\"Organization-d9b1a051-034c-4c11-a504-8d75d72bf4ec.html\">Generated Summary: id: d9b1a051-034c-4c11-a504-8d75d72bf4ec; NATA Accreditation Number = 100201, ABN = 41824753000; <span title=\"Codes: {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0 8520}\">Pathology Laboratory</span>; name: Randwick Laboratories Sydney; ph: (02) 5550 8994(WORK)</a></li></ul><p><b>value</b>: 5 mm/Hr</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>0 mm/Hr</td><td>10 mm/Hr</td></tr></table></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "FILL" ];
+         fhir:Coding.display [ fhir:value "Filler Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://randwicklabs.example.com/labnum/1.0.2" ];
+     fhir:Identifier.value [ fhir:value "652973694" ]
+  ];
+  fhir:Observation.status [ fhir:value "preliminary"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "HM" ];
+       fhir:Coding.display [ fhir:value "Hematology" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:30341-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "30341-2" ];
+       fhir:Coding.display [ fhir:value "Erythrocyte sedimentation rate" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "ESR" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/p2p-anne-thompson>;
+     fhir:Reference.reference [ fhir:value "Patient/p2p-anne-thompson" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-07-13T10:30:10+10:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2016-07-13T10:30:10+10:00"^^xsd:dateTime ]
+  ];
+  fhir:Observation.issued [ fhir:value "2016-07-13T11:45:33+10:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec>;
+     fhir:Reference.reference [ fhir:value "Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mm/Hr" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mm/h" ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mm/Hr" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mm/h" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mm/Hr" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mm/h" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/esr.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
