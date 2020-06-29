@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="bodystructure-dh-base-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/4.0/bodystructure-dh-base-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1" />
   <version value="1.0.0" />
   <name value="BodyStructureBase" />
   <title value="Base BodyStructure" />
@@ -46,6 +46,20 @@
     <element id="BodyStructure">
       <path value="BodyStructure" />
       <short value="Anatomical location" />
+      <constraint>
+        <key value="inv-dh-bodstr-01" />
+        <severity value="error" />
+        <human value="The patient shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-bodstr-02" />
+        <severity value="error" />
+        <human value="The body structure shall at least have a location or a description" />
+        <expression value="location.exists() or description.exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/bodystructure-dh-base-1" />
+      </constraint>
     </element>
     <element id="BodyStructure.identifier">
       <path value="BodyStructure.identifier" />
@@ -62,6 +76,10 @@
     <element id="BodyStructure.location">
       <path value="BodyStructure.location" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1" />
+      </binding>
     </element>
     <element id="BodyStructure.locationQualifier">
       <path value="BodyStructure.locationQualifier" />
@@ -79,7 +97,7 @@
       <path value="BodyStructure.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
       </type>
       <mustSupport value="true" />
