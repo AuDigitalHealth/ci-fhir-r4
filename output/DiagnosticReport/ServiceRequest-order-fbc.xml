@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="order-fbc"/>
+  <meta>
+    <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: order-fbc</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 108252007}">Laboratory procedure</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 26604007}">FBC</span></p><p><b>subject</b>: <a href="Patient-p2p-anne-thompson.html">Generated Summary: id: p2p-anne-thompson; Medicare Number = 6951449601; Mrs. Anne Thompson(OFFICIAL); ph: 0491 572 665(MOBILE); gender: female; birthDate: 1978-10-11</a></p><p><b>authoredOn</b>: 10/07/2016 11:15:00 AM</p><p><b>requester</b>: <a href="PractitionerRole-nsw-gp.html">Generated Summary: id: nsw-gp; Employee Number = 8223NSW; <span title="Codes: {http://snomed.info/sct 62247001}">General Practitioner</span></a></p></div>
+  </text>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108252007"/>
+      <display value="Laboratory procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="26604007"/>
+      <display value="Full blood count"/>
+    </coding>
+    <text value="FBC"/>
+  </code>
+  <subject>
+    <reference value="Patient/p2p-anne-thompson"/>
+  </subject>
+  <authoredOn value="2016-07-10T11:15:00+10:00"/>
+  <requester>
+    <reference value="PractitionerRole/nsw-gp"/>
+  </requester>
+</ServiceRequest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="fbc"/>
+  <meta>
+    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"/>
+  </meta>
+  <language value="en-AU"/>
+<!-- WORKAROUND: The contents of DiagnosticReport.text are a workaround to enable the tooling used to generate this implementation guide
+   to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
+    The contents below is not consistent with good or recommended practice.  -->
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <table style="border-collapse:collapse;width:100%;">
+        <tbody>
+          <tr style="background-color:#DCDCDC">
+            <td>Patient</td>
+            <td style="font-weight: bold;">THOMPSON Mrs Anne</td>
+            <td>DOB</td>
+            <td style="font-weight: bold;">11/10/1978</td>
+            <td>Sex</td>
+            <td>F</td>
+            <td>Requested</td>
+            <td>10/07/2016 11:15</td>
+          </tr>
+          <tr style="background-color:#DCDCDC">
+            <td>Address</td>
+            <td>7311 Coleman St, Mascot, NSW, 2020</td>
+            <td>Mobile</td>
+            <td>0491 572 665</td>
+            <td>Medicare No.</td>
+            <td>6951449601</td>
+            <td>Collected</td>
+            <td>13/07/2016 10:30</td>
+          </tr>
+          <tr style="background-color:#DCDCDC">
+            <td>Ref by</td>
+            <td>Dr Sarah Bondiali </td>
+            <td>Lab</td>
+            <td>Randwick Laboratories</td>
+            <td/>
+            <td/>
+            <td>Issued</td>
+            <td>13/07/2016 11:45</td>
+          </tr>
+          <tr>
+            <td>Enquiries</td>
+            <td>Dr. Robert Brown (Haematologist) 0491 578 888</td>
+            <td>Lab No</td>
+            <td>652973694</td>
+            <td/>
+            <td/>
+            <td/>
+            <td/>
+          </tr>
+        </tbody>
+      </table>
+      <p/>
+      <p/>
+      <p style="text-align:right;">Randwick Laboratories Sydney</p>
+      <p style="text-align:right;">(02) 5550 8994</p>
+      <p style="text-align:right;">NATA: 100201 ABN: 41824753000</p>
+      <p style="text-align:right;">1342 Sydney St, Randwick, NSW, 2031</p>
+      <pre> 
+Test                  Units       Value       Reference Range
+Haemoglobin           g/L         118         115 - 165
+Red Cell Count        x10*12/L    3.9         3.8 - 5.8
+Haematocrit           L/L         0.39        0.37 - 0.47
+Mean Cell Volume      fL          88          80 - 100
+Mean Cell Haemoglobin pg          28          26.5 - 33.0
+MCHC                  g/L         320         310 - 360
+Platelet Count        x10*9/L     190         150 - 400
+White Cell Count      x10*9/L     7.8         4.0 - 11.0
+Neutrophils           x10*9/L     4.0         2.0 - 7.5
+Lymphocytes           x10*9/L     3.2         1.1 - 4.0
+Monocytes             x10*9/L     0.4         0.2 - 1.0
+Eosinophils           x10*9/L     0.2         0.0 - 0.4
+Basophils             x10*9/L     0.0         &lt;0.1
+      </pre>
+      <p>*** The above results have not yet been verified ***</p>
+    </div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="FILL"/>
+        <display value="Filler Identifier"/>
+      </coding>
+    </type>
+    <system value="http://randwicklabs.example.com/labnum/1.0.2"/>
+    <value value="652973694"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/order-fbc"/>
+  </basedOn>
+  <status value="preliminary"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="HM"/>
+      <display value="Hematology"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="57782-5"/>
+      <display value="CBC with Ordered Manual Differential panel - Blood"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/p2p-anne-thompson"/>
+  </subject>
+  <effectiveDateTime value="2016-07-13T10:45:33+10:00"/>
+  <issued value="2016-07-13T11:45:33+10:00"/>
+  <performer>
+    <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+  </performer>
+  <performer>
+    <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+  </performer>
+  <result>
+    <reference value="Observation/fbc"/>
+  </result>
+  <result>
+    <reference value="Observation/esr"/>
+  </result>
+</DiagnosticReport>

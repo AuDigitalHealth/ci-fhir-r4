@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/nsw-gp> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nsw-gp"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "203" ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <h3>Dr Sarah Bondiali (8223NSW)</h3>\n            <p>General Practitioner</p>\n            <p>Bondi GP Medical Center NSW</p>\n        </div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "EI" ];
+         fhir:Coding.display [ fhir:value "Employee number" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Employee Number" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://bondigpmedicalcenter.example.com/providers" ];
+     fhir:Identifier.value [ fhir:value "8223NSW" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Bondi GP Medical Center NSW" ]
+     ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.display [ fhir:value "Dr Sarah Bondiali" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:Reference.display [ fhir:value "Bondi GP Medical Center NSW" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:62247001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "62247001" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "General Practitioner" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/nsw-gp.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

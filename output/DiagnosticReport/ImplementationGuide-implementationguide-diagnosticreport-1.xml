@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-06-29T14:44:25+10:00"/>
+  <date value="2020-06-29T15:30:41+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -422,6 +422,305 @@
       </reference>
       <name value="2019-Novel Coronavirus PCR (P2P)(Bundle)"/>
       <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-b49df1b2-b717-4d81-a140-7f16a334999b.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/b49df1b2-b717-4d81-a140-7f16a334999b"/>
+      </reference>
+      <name value="FBC 2016-07-13 (MHR)(Bundle)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DiagnosticReport-fbc.html"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/fbc"/>
+      </reference>
+      <name value="FBC 2016-07-13 (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-esr.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/esr"/>
+      </reference>
+      <name value="ESR 2016-07-13 (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-fbc.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fbc"/>
+      </reference>
+      <name value="FBC 2016-07-13 (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-basophils.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/basophils"/>
+      </reference>
+      <name value="Basophils (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-eosinophils.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/eosinophils"/>
+      </reference>
+      <name value="Eosinophils (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-haematocrit.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/haematocrit"/>
+      </reference>
+      <name value="Haematocrit (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-haemoglobin.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/haemoglobin"/>
+      </reference>
+      <name value="Haemoglobin (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-lymphocytes.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/lymphocytes"/>
+      </reference>
+      <name value="Lymphocytes (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-mchc.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mchc"/>
+      </reference>
+      <name value="MCHC (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-meancellhaemoglobin.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/meancellhaemoglobin"/>
+      </reference>
+      <name value="Mean Cell Haemoglobin (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-meancellvolume.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/meancellvolume"/>
+      </reference>
+      <name value="Mean Cell Volume (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-monocytes.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/monocytes"/>
+      </reference>
+      <name value="Monocytes (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-neutrophils.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/neutrophils"/>
+      </reference>
+      <name value="Neutrophils (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-plateletcount.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/plateletcount"/>
+      </reference>
+      <name value="Platelet Count (referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-redcellcount.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/redcellcount"/>
+      </reference>
+      <name value="Red Cell Count (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-whitecellcount.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/whitecellcount"/>
+      </reference>
+      <name value="White Cell Count (Atomic)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ServiceRequest-order-fbc.html"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/order-fbc"/>
+      </reference>
+      <name value="FBC Order (referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-p2p-anne-thompson.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/p2p-anne-thompson"/>
+      </reference>
+      <name value="Anne Thomposon (P2P)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="PractitionerRole-nsw-gp.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/nsw-gp"/>
+      </reference>
+      <name value="Dr Sarah Bondiali (General Practitioner)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="PractitionerRole-f3e381b5-673e-4941-900c-03d1043604a6.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+      </reference>
+      <name value="Dr. Robert Brown (Haematologist)(referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-f8500c29-796d-480c-b2ac-6ef09d67a669.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"/>
+      </reference>
+      <name value="Dr. Robert Brown (referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Organization-d9b1a051-034c-4c11-a504-8d75d72bf4ec.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+      </reference>
+      <name value="Randwick Laboratories (referenced)"/>
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>
