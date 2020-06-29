@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="leftventricle-systolicfunction"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+        />
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="imaging"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="CUS"/>
+            <display value="Cardiac Ultrasound"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="250907009"/>
+            <display value="Left ventricular function"/>
+        </coding>
+        <text value="LV SYSTOLIC FUNCTION"/>
+    </code>
+    <subject>
+        <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+    </subject>
+    <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+    <performer>
+        <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+    </performer>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="87878005"/>
+            <display value="Left ventricular structure"/>
+        </coding>
+    </bodySite>
+    <method>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="278292003"/>
+            <display value="Ultrasound imaging"/>
+        </coding>
+    </method>
+    <hasMember> 
+        <reference value="Observation/lvvol"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/lvvol-bsasex"/> 
+    </hasMember>
+    <hasMember> 
+        <reference value="Observation/lv-ef"/> 
+    </hasMember>
+</Observation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+    <meta>
+        <versionId value="2020-1.1.2Q3"/>
+    </meta>  
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h3>Ms Linda Howard</h3>
+            <p>Sonographer</p>
+            <p>NSW Hospital - Cardiology</p>
+            <table>
+                <tr>
+                    <td>HPI-I</td>
+                    <td>8003616566708106</td>
+                </tr>
+                <tr>
+                    <td>Employee Id.</td>
+                    <td>NSW31u32-401</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>(02) 5550 4111</td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003616566708106"/>
+    </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="EI"/>
+                <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+        </type>
+        <!--Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations-->
+        <system
+            value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753557"/>
+        <value value="NSW31u32-401"/>
+        <assigner>
+            <display value="NSW Hospital"/>
+        </assigner>
+    </identifier>
+    <practitioner>
+        <reference value="Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30"/>
+        <display value="Ms Linda Howard"/>
+    </practitioner> 
+    <organization>
+        <reference value="Organization/nsw-hospital"/>
+        <display value="NSW Hospital - Cardiology"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1012861000168100"/>
+            <display value="Sonographer"/>
+        </coding>
+        <text value="Sonographer"/>
+    </code>    
+</PractitionerRole>

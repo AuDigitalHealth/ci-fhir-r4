@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="lvot-vti"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"
+        />
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="imaging"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="CUS"/>
+            <display value="Cardiac Ultrasound"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="80030-0"/>
+            <display value="LVOT VTI systole"/>
+        </coding>
+        <text value="LVOT VTI"/>
+    </code>
+    <subject>
+        <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+    </subject>
+    <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+    <performer>
+        <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+    </performer>
+    <valueQuantity> 
+        <value value="0.217"/> 
+        <unit value="m"/> 
+        <system value="http://unitsofmeasure.org"/> 
+        <code value="m"/> 
+    </valueQuantity>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="87878005"/>
+            <display value="Left ventricular structure"/>
+        </coding>
+    </bodySite>
+    <method>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="278292003"/>
+            <display value="Ultrasound imaging"/>
+        </coding>
+    </method>
+</Observation>

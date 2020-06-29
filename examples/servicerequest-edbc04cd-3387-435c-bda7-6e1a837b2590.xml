@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://hl7.org/fhir">
+    <id value="edbc04cd-3387-435c-bda7-6e1a837b2590"/>
+    <status value="completed"/> 
+    <intent value="order"/> 
+    <category> 
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="276341003"/> 
+        </coding> 
+        <text value="Cardiovascular investigation"/> 
+    </category> 
+    <code> 
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="40701008"/>
+            <display value="Echocardiography"/>
+        </coding> 
+        <text value="Echocardiography"/> 
+    </code> 
+    <subject> 
+        <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/> 
+    </subject> 
+    <authoredOn value="2019-01-05T00:00:00+10:00"/> 
+    <requester> 
+        <reference value="PractitionerRole/cb084861-dd87-48ff-b645-5cb620a00e8e"/> 
+        <display value="Dr David George"/> 
+    </requester> 
+    <reasonCode> 
+        <text value="Pre-chemotherapy"/> 
+    </reasonCode> 
+</ServiceRequest> 
