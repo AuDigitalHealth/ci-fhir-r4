@@ -7,4 +7,5 @@ For the overarching usage scenarios in this implementation guide it is expected 
 
 When sending to the My Health Record system it is expected that all instances of patient conform to [My Health Record Patient](StructureDefinition-patient-mhr-1.html).
 
+#### Boundaries and relationships
 This profile is referenced by [Atomic Pathology Observation](StructureDefinition-observation-path-atomic-1.html).
