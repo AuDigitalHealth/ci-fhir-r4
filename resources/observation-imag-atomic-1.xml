@@ -122,6 +122,11 @@
       <path value="Observation.code" />
       <short value="Imaging examination or group" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred"/>
+        <valueSet
+          value="https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"/>
+      </binding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
