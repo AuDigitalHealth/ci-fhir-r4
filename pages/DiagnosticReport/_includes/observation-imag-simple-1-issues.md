@@ -19,11 +19,11 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/28">ci-fhir-r4/issues/28</a></td>
    </tr>
    <tr>
-    <td>code (terminology support)</td>
-    <td><p>It is unclear if the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a> coding:snomedImagingProcedure is sufficient for supporting electronic exchange of diagnostic imaging observations in Australia.</p>
-    <p>Feedback from stakeholders should be sought on the need for additional terminologies in this sector, e.g. <a href="https://build.fhir.org/ig/HL7/fhir-ips/ValueSet-results-radiology-observations-uv-ips.html">Results Radiology Observation - IPS</a>. It is expected that this would be progressed via a HL7 AU Working Group and any additional support be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p></td>
-    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/406">au-fhir-base/issues/406</a></td>
-   </tr> 
+            <td>code (terminology support)</td>
+            <td><p>It is unclear if the SNOMED CT-AU value set <a href=" https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1">Imaging Procedure</a> is sufficient for supporting electronic exchange of diagnostic imaging observations in Australia.</p>
+<p>Feedback from stakeholders should be sought on the need for additional terminologies in this sector. It is expected that this would be progressed via an HL7 AU Working Group and any additional support be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p></td>
+            <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/406">au-fhir-base/issues/406</a></td>
+       </tr>
   <tr>
     <td>Constraint presentation</td>
     <td>The full set of constraints (i.e. invariants) defined in this profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.</td>

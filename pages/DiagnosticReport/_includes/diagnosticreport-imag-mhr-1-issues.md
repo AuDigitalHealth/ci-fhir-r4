@@ -26,11 +26,11 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/55">ci-fhir-r4/issues/55</a>, and <a href="https://jira.aws.tooling/browse/FTR-954">jira.aws.tooling/browse/FTR-954</a></td>
    </tr>
    <tr>
-    <td>code (terminology support)</td>
-    <td><p>It is unclear if the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a> coding:snomedImagingProcedures is sufficient for supporting electronic exchange of diagnostic imaging observations in Australia.</p>
-        <p>Feedback from stakeholders should be sought on the need for additional terminologies in this sector, e.g. <a href="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips">http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips</a>. It is expected that this would be progressed via a HL7 AU Working Group and any additional support be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a>.</p></td>
-    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/407">au-fhir-base/issues/407</a></td>
-   </tr>
+            <td>code (terminology support)</td>
+            <td><p>It is unclear if the SNOMED CT-AU value set <a href=" https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1">Imaging Procedure</a> is sufficient for supporting electronic exchange of diagnostic imaging observations in Australia.</p>
+<p>Feedback from stakeholders should be sought on the need for additional terminologies in this sector. It is expected that this would be progressed via an HL7 AU Working Group and any additional support be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p></td>
+            <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/406">au-fhir-base/issues/406</a></td>
+       </tr>
       <tr>
     <td>effective[x] (period)</td>
     <td>The My Health Record system expects only a dateTime; period is a relevant type for some imaging examinations. The constraining of types should be reconfirmed.</td>

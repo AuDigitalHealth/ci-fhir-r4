@@ -167,7 +167,7 @@ Sub-departmentServiceDiscipline","",1,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","OBR-24","inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code","FiveWs.class"
 "DiagnosticReport.code","","Type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Imaging examination or test group","A code or name that describes this diagnostic report.","","","","","","","","","",,"preferred","Codes that describe Diagnostic Reports.","http://hl7.org/fhir/ValueSet/report-codes","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Imaging examination or test group","A code or name that describes this diagnostic report.","","","","","","","","","",,"preferred","","https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","OBR-4 (HL7 v2 doesn't provide an easy way to indicate both the ordered test and the performed panel)","code","FiveWs.what[x]"
 "DiagnosticReport.subject","","Patient
 ","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1], CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1]]}
