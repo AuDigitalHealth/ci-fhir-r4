@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/la-area> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "la-area"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: la-area</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 17977-0}\">LA Area</span></p><p><b>subject</b>: <a href=\"Patient-995138d0-b8bc-4bd9-b49d-d2d025d39ae7.html\">Generated Summary: id: 995138d0-b8bc-4bd9-b49d-d2d025d39ae7; IHI = 8003608000228437, Medicare Number = 29533070311, Medical Record Number = 2338172; Wei Zhang ; gender: male; birthDate: 1969-05-03</a></p><p><b>effective</b>: 06/01/2019 9:45:00 AM</p><p><b>performer</b>: <a href=\"PractitionerRole-04ac8978-bc60-4492-aa07-f62568ebe5c6.html\">Generated Summary: id: 04ac8978-bc60-4492-aa07-f62568ebe5c6; HPI-I = 8003616566708106, Employee Number = NSW31u32-401; <span title=\"Codes: {http://snomed.info/sct 1012861000168100}\">Sonographer</span></a></p><p><b>value</b>: 21 cm2</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 82471001}\">Left atrial structure</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 278292003}, {http://snomed.info/sct 399064001}\">Ultrasound imaging</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "imaging" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "CUS" ];
+       fhir:Coding.display [ fhir:value "Cardiac Ultrasound" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:17977-0;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "17977-0" ];
+       fhir:Coding.display [ fhir:value "LA Apical 4CH Area 2D US" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "LA Area" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7>;
+     fhir:Reference.reference [ fhir:value "Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-01-06T09:45:00+10:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "21"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "cm2" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "cm2" ]
+  ];
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:82471001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "82471001" ];
+       fhir:Coding.display [ fhir:value "Left atrial structure" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:278292003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "278292003" ];
+       fhir:Coding.display [ fhir:value "Ultrasound imaging" ]
+     ], [
+       fhir:index 1;
+       a sct:399064001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "399064001" ];
+       fhir:Coding.display [ fhir:value "2D mode ultrasound" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/la-area.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

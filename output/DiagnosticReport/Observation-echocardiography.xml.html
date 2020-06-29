@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Diagnostic Report</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Diagnostic Report Implemenation Guide" />
+  <meta name="author" content="http://argonautwiki.hl7.org"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+   <!-- Bootstrap core CSS -->
+
+   <!-- Latest compiled and minified CSS -->
+
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <link href="assets/css/ci-styles-fig.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+</head>
+
+<body markdown="1"/>
+
+</html>
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
+
+   <div id="ig-status">
+    <b>Diagnostic Report FHIR Implementation Guide  1.0.0</b>
+</div>
+
+  </div>
+  <div class="container">  <!-- container -->
+ </div>
+ </div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4//index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guidance.html">Guidance</a></li>
+       <li><a href="conformance.html">Conformance</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <!--<li><a href="structuremaps.html">Mappings</a></li>-->
+        <li><a href="extensions.html">Extensions</a></li>
+       <li><a href="mappings.html">Mapping from requirements</a></li>
+       <!-- <li><a href="terminology.html">Terminology</a></li>-->
+        <!--<li><a href="searchparams.html">Search Parameters</a></li>-->
+        <!--<li><a href="capstatements.html">Capability Statements</a></li>-->
+        <!--<li><a href="security.html">Security</a></li>-->
+        <li><a href="downloads.html">Downloads</a></li>
+       <li><a href="disclaimers.html">Disclaimers</a></li>
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
+
+<div id="segment-content" class="segment">  <!-- segment-content -->
+<div class="container">  <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+<p id="publish-box">
+    This is release  1.0.0 of Diagnostic Report FHIR Implementation Guide. It is based on  <a href="http://hl7.org/fhir/R4/">FHIR version 4.0.1</a>. 
+</p>
+
+<!-- ============Tabs (only on Profile StructureDefinition Pages =============== -->
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<h1>Observation-echocardiography</h1>
+
+<p>
+Formats: <a href="Observation-echocardiography.html">Narrative</a>, <a href="Observation-echocardiography.xml.html">XML</a>, <a href="Observation-echocardiography.json.html">JSON</a>, <a href="Observation-echocardiography.ttl.html">Turtle</a>
+</p>
+<p>
+Raw <a href="Observation-echocardiography.xml" download>xml</a>
+</p>
+
+<pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation">Observation</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;echocardiography&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: echocardiography&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Filler Identifier = 3143079143&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;ImagingStudy-echodicom-for-report.html&quot;&gt;Generated Summary: id: echodicom-for-report; urn:oid:1.2.36.1.2001.1001.105.100007.30246.19789.3503430046; status: available; &lt;span title=&quot;{http://dicom.nema.org/resources/ontology/DCM US}&quot;&gt;Ultrasound&lt;/span&gt;; started: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://loinc.org 42148-7}, {http://www.radlex.org RPID5656}, {http://snomed.info/sct 40701008}&quot;&gt;US Heart&lt;/span&gt;; &lt;span title=&quot;Codes: &quot;&gt;Pre-chemotherapy&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes: {http://snomed.info/sct 40701008}&quot;&gt;Echocardiography&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-995138d0-b8bc-4bd9-b49d-d2d025d39ae7.html&quot;&gt;Generated Summary: id: 995138d0-b8bc-4bd9-b49d-d2d025d39ae7; IHI = 8003608000228437, Medicare Number = 29533070311, Medical Record Number = 2338172; Wei Zhang ; gender: male; birthDate: 1969-05-03&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 06/01/2019 9:45:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9&quot;&gt;urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6&quot;&gt;urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Annotation: Patient was in sinus bradycardia at a rate of 54 bpm., Annotation: Left Ventricle: The left ventricular internal cavity size was normal. LV vol 119 ml. Overall LV systolic function was normal. EF = 61 % . No evidence of left ventricular hypertrophy. There were no resting regional wall motion abnormalities detected. Indeterminant LV filling pressure based E/e' ratio = 8 %. Normal GLS (Global Longitudinal Strain) = —21 % Philips Epiq 5c., Annotation: Right Ventricle: Normal right ventricular size, wall thickness, and systolic function. RV S' 11 cm/s., Annotation: Left Atrium: The left atrium was mildly dilated. 21 cm2., Annotation: Right Atrium: The right atrium was at the upper limits of normal dimension. 20 cm2., Annotation: Pericardium: The pericardium appears normal., Annotation: Aortic Valve: The aortic valve was tricuspid. There was mild aortic valve sclerosis, with no evidence of aortic valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4.             6 cm2. No evidence of aortic valve regurgitation was seen. Resting LVOFT SV = 115 ml. Indexed = 56 ml/m2., Annotation: Mitral Valve: The mitral valve is sclerotic. Trivial (0—1/4) mitral valve regurgitation was seen., Annotation: Tricuspid Valve: The tricuspid valve was normal in structure. Trivial (O—1/4) tricuspid regurgitation was visualised. The tricuspid regurgitant velocity is 2.2 m/s, and with an assumed right atrial pressure of 3 mmHg, the estimated right ventricular systolic pressure normal at 23 mmHg., Annotation: Pulmonic Valve: Structurally normal pulmonic valve, with normal leaflet excursion., Annotation: Aorta: There is mild dilatation of the aortic root. The trans sinus diameter measures at 4.3 cm. The ascending aorta measures at 3.6 cm., Annotation: Shunts: The interatrial septum appears intact.&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: &lt;span title=&quot;Codes: {http://snomed.info/sct 80891009}&quot;&gt;Heart structure&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;Observation-leftventricle-structure.html&quot;&gt;Generated Summary: id: leftventricle-structure; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 364080001}&quot;&gt;Left ventricle 2D&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 87878005}&quot;&gt;Left ventricular structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}, {http://snomed.info/sct 399064001}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-atrialarea.html&quot;&gt;Generated Summary: id: atrialarea; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: &quot;&gt;Atrial Areas/Volume&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 59652004}&quot;&gt;Atrial structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}, {http://snomed.info/sct 399064001}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-leftventricle-systolicfunction.html&quot;&gt;Generated Summary: id: leftventricle-systolicfunction; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 250907009}&quot;&gt;LV SYSTOLIC FUNCTION&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 87878005}&quot;&gt;Left ventricular structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-leftventricle-dystolicfunction.html&quot;&gt;Generated Summary: id: leftventricle-dystolicfunction; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 250907009}&quot;&gt;LV DIASTOLIC FUNCTION&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 87878005}&quot;&gt;Left ventricular structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-mitralvalve.html&quot;&gt;Generated Summary: id: mitralvalve; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 364083004}&quot;&gt;Mitral Valve&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 91134007}&quot;&gt;Mitral valve structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-aorticvalve.html&quot;&gt;Generated Summary: id: aorticvalve; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 399359007}&quot;&gt;Aortic Valve&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 34202007}&quot;&gt;Aortic valve structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-tricupsid-parvpressure.html&quot;&gt;Generated Summary: id: tricupsid-parvpressure; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: &quot;&gt;Tricuspid Valve and PA/RV Systolic Pressure&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 80891009}&quot;&gt;Heart structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;Observation-pulmonaryvalve.html&quot;&gt;Generated Summary: id: pulmonaryvalve; &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}&quot;&gt;Imaging&lt;/span&gt;, &lt;span title=&quot;Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}&quot;&gt;Cardiac Ultrasound&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 399222008}&quot;&gt;Pulmonary Valve&lt;/span&gt;; effective: 06/01/2019 9:45:00 AM; &lt;span title=&quot;Codes: {http://snomed.info/sct 39057004}&quot;&gt;Pulmonary valve structure&lt;/span&gt;; &lt;span title=&quot;Codes: {http://snomed.info/sct 278292003}, {http://loinc.org LP6617-7}&quot;&gt;Ultrasound imaging&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;FILL&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Filler Identifier&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3143079143&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.partOf">partOf</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ImagingStudy/echodicom-for-report&quot;/&gt;
+  &lt;/partOf&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;imaging&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/category&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0074&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CUS&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cardiac Ultrasound&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/category&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;40701008&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Echocardiography&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Echocardiography&quot;/&gt;
+  &lt;/code&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7&quot;/&gt;
+  &lt;/subject&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-01-06T09:45:00+10:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9&quot;/&gt;
+  &lt;/performer&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6&quot;/&gt;
+  &lt;/performer&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Patient was in sinus bradycardia at a rate of 54 bpm.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Left Ventricle: The left ventricular internal cavity size was normal. LV vol 119 ml. Overall LV systolic function was normal. EF = 61 % . No evidence of left ventricular hypertrophy. There were no resting regional wall motion abnormalities detected. Indeterminant LV filling pressure based E/e&amp;#39; ratio = 8 %. Normal GLS (Global Longitudinal Strain) = —21 % Philips Epiq 5c.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Right Ventricle: Normal right ventricular size, wall thickness, and systolic function. RV S&amp;#39; 11 cm/s.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Left Atrium: The left atrium was mildly dilated. 21 cm2.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Right Atrium: The right atrium was at the upper limits of normal dimension. 20 cm2.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Pericardium: The pericardium appears normal.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Aortic Valve: The aortic valve was tricuspid. There was mild aortic valve sclerosis, with no evidence of aortic valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4.             6 cm2. No evidence of aortic valve regurgitation was seen. Resting LVOFT SV = 115 ml. Indexed = 56 ml/m2.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Mitral Valve: The mitral valve is sclerotic. Trivial (0—1/4) mitral valve regurgitation was seen.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Tricuspid Valve: The tricuspid valve was normal in structure. Trivial (O—1/4) tricuspid regurgitation was visualised. The tricuspid regurgitant velocity is 2.2 m/s, and with an assumed right atrial pressure of 3 mmHg, the estimated right ventricular systolic pressure normal at 23 mmHg.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Pulmonic Valve: Structurally normal pulmonic valve, with normal leaflet excursion.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Aorta: There is mild dilatation of the aortic root. The trans sinus diameter measures at 4.3 cm. The ascending aorta measures at 3.6 cm.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Shunts: The interatrial septum appears intact.&quot;/&gt;
+  &lt;/note&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.bodySite">bodySite</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;80891009&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Heart structure&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/bodySite&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">method</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;278292003&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ultrasound imaging&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/method&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/leftventricle-structure&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/atrialarea&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/leftventricle-systolicfunction&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/leftventricle-dystolicfunction&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/mitralvalve&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/aorticvalve&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/tricupsid-parvpressure&quot;/&gt;
+  &lt;/hasMember&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">hasMember</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Observation/pulmonaryvalve&quot;/&gt;
+  &lt;/hasMember&gt;
+&lt;/Observation&gt;</pre>
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+</div>
+
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+
+</div>  <!-- /segment-content -->
+
+
+
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+        <div class="inner-wrapper">
+            <p>Document ID: DH-xxx:2020</p>
+            <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
+            <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
+            <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Jun 29, 2020 16:05+1000. |
+                <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                </span>
+            </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>
+

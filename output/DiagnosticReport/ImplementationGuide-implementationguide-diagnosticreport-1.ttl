@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Diagnostic Report"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-29T15:30:41+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-29T16:05:34+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1022,6 +1022,1220 @@
          fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1";
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1>
        ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-94f75158-f8b9-4c08-b96e-4306580c2add.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/94f75158-f8b9-4c08-b96e-4306580c2add>;
+         fhir:Reference.reference [ fhir:value "Bundle/94f75158-f8b9-4c08-b96e-4306580c2add" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - pre-chemo (MHR)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1>
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8>;
+         fhir:Reference.reference [ fhir:value "Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - pre-chemo (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "DiagnosticReport-echocardio-pre-chemo-atomic.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/DiagnosticReport/echocardio-pre-chemo-atomic>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/echocardio-pre-chemo-atomic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - pre-chemo (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ServiceRequest-edbc04cd-3387-435c-bda7-6e1a837b2590.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography order" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-echocardiography.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/echocardiography>;
+         fhir:Reference.reference [ fhir:value "Observation/echocardiography" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - pre-chemo (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ImagingStudy" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ImagingStudy-echodicom-for-report.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/ImagingStudy/echodicom-for-report>;
+         fhir:Reference.reference [ fhir:value "ImagingStudy/echodicom-for-report" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - pre-chemo (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1>
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-leftventricle-structure.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-structure>;
+         fhir:Reference.reference [ fhir:value "Observation/leftventricle-structure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Left ventricle 2D (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-ivsd.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/ivsd>;
+         fhir:Reference.reference [ fhir:value "Observation/ivsd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - IVS d (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvpwd.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvpwd>;
+         fhir:Reference.reference [ fhir:value "Observation/lvpwd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVPW d (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvidd.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvidd>;
+         fhir:Reference.reference [ fhir:value "Observation/lvidd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVID d (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvids.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvids>;
+         fhir:Reference.reference [ fhir:value "Observation/lvids" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVID s (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvfs.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvfs>;
+         fhir:Reference.reference [ fhir:value "Observation/lvfs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVFS (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvef2D.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvef2D>;
+         fhir:Reference.reference [ fhir:value "Observation/lvef2D" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVEF 2D (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-atrialarea.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/atrialarea>;
+         fhir:Reference.reference [ fhir:value "Observation/atrialarea" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Atrial Areas/Volume (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-la-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/la-area>;
+         fhir:Reference.reference [ fhir:value "Observation/la-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Atrial Areas/Volume (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-ra-area.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/ra-area>;
+         fhir:Reference.reference [ fhir:value "Observation/ra-area" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Atrial Areas/Volume (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-leftventricle-systolicfunction.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-systolicfunction>;
+         fhir:Reference.reference [ fhir:value "Observation/leftventricle-systolicfunction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LV SYSTOLIC FUNCTION (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvvol.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvvol>;
+         fhir:Reference.reference [ fhir:value "Observation/lvvol" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LV vol (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvvol-bsasex.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvvol-bsasex>;
+         fhir:Reference.reference [ fhir:value "Observation/lvvol-bsasex" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LV vol (BSA/SEX) ULN (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lv-ef.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lv-ef>;
+         fhir:Reference.reference [ fhir:value "Observation/lv-ef" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LV EF (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-leftventricle-dystolicfunction.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-dystolicfunction>;
+         fhir:Reference.reference [ fhir:value "Observation/leftventricle-dystolicfunction" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LV DIASTOLIC FUNCTION (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-mvpeak.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mvpeak>;
+         fhir:Reference.reference [ fhir:value "Observation/mvpeak" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - MV Peak (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-mvpeaka.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mvpeaka>;
+         fhir:Reference.reference [ fhir:value "Observation/mvpeaka" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - MV Peak A (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-deceltime.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/deceltime>;
+         fhir:Reference.reference [ fhir:value "Observation/deceltime" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Decel Time(Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-mvadur.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mvadur>;
+         fhir:Reference.reference [ fhir:value "Observation/mvadur" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - MV A dur (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-e-mvann.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/e-mvann>;
+         fhir:Reference.reference [ fhir:value "Observation/e-mvann" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - MV A dur (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-e-e-ratio.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/e-e-ratio>;
+         fhir:Reference.reference [ fhir:value "Observation/e-e-ratio" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - E' MV Ann (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-e-a-ratio.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/e-a-ratio>;
+         fhir:Reference.reference [ fhir:value "Observation/e-a-ratio" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - E/e' ratio (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-rupvavmax.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/rupvavmax>;
+         fhir:Reference.reference [ fhir:value "Observation/rupvavmax" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - RUPV A Vmax (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-rupvsvmax.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/rupvsvmax>;
+         fhir:Reference.reference [ fhir:value "Observation/rupvsvmax" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - RUPV S Vmax (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-rupvdvmax.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/rupvdvmax>;
+         fhir:Reference.reference [ fhir:value "Observation/rupvdvmax" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - RUPV D Vmax (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-mitralvalve.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mitralvalve>;
+         fhir:Reference.reference [ fhir:value "Observation/mitralvalve" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Mitral Valve (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-mv-p12-time.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mv-p12-time>;
+         fhir:Reference.reference [ fhir:value "Observation/mv-p12-time" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - MV P1/2 Time (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-mvarea-pht.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mvarea-pht>;
+         fhir:Reference.reference [ fhir:value "Observation/mvarea-pht" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - MV area (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-aorticvalve.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aorticvalve>;
+         fhir:Reference.reference [ fhir:value "Observation/aorticvalve" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Aortic Valve (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-aov-maxvel.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aov-maxvel>;
+         fhir:Reference.reference [ fhir:value "Observation/aov-maxvel" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - AoV Max Vel(Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-aov-peakpg.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aov-peakpg>;
+         fhir:Reference.reference [ fhir:value "Observation/aov-peakpg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - AoV Peak PG (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-aov-meanpg.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aov-meanpg>;
+         fhir:Reference.reference [ fhir:value "Observation/aov-meanpg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - AoV Mean PG (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvot-vmax.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvot-vmax>;
+         fhir:Reference.reference [ fhir:value "Observation/lvot-vmax" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVOT Vmax (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvot-vti.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvot-vti>;
+         fhir:Reference.reference [ fhir:value "Observation/lvot-vti" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVOT VTI (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-lvot-diam.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvot-diam>;
+         fhir:Reference.reference [ fhir:value "Observation/lvot-diam" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - LVOT Diam (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-aov-areavmax.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aov-areavmax>;
+         fhir:Reference.reference [ fhir:value "Observation/aov-areavmax" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - AoV Area Vmax (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-aov-areavti.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aov-areavti>;
+         fhir:Reference.reference [ fhir:value "Observation/aov-areavti" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - AoV Area VTI (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-dpi.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/dpi>;
+         fhir:Reference.reference [ fhir:value "Observation/dpi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - DPI (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-tricupsid-parvpressure.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/tricupsid-parvpressure>;
+         fhir:Reference.reference [ fhir:value "Observation/tricupsid-parvpressure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Tricuspid Valve and PA/RV Systolic Pressure (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-trmaxvelocity.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/trmaxvelocity>;
+         fhir:Reference.reference [ fhir:value "Observation/trmaxvelocity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - TR Max Velocity (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-rapressure.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/rapressure>;
+         fhir:Reference.reference [ fhir:value "Observation/rapressure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - RA pressure (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-rvsp-pasp.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/rvsp-pasp>;
+         fhir:Reference.reference [ fhir:value "Observation/rvsp-pasp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - RVSP/PASP (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-rv-s.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/rv-s>;
+         fhir:Reference.reference [ fhir:value "Observation/rv-s" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - RV S' (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-pulmonaryvalve.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/pulmonaryvalve>;
+         fhir:Reference.reference [ fhir:value "Observation/pulmonaryvalve" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Pulmonary  Valve (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-pvmaxvelocity.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/pvmaxvelocity>;
+         fhir:Reference.reference [ fhir:value "Observation/pvmaxvelocity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Pulmonary  Valve (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Observation-pvmaxpg.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/pvmaxpg>;
+         fhir:Reference.reference [ fhir:value "Observation/pvmaxpg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography - Pulmonary  Valve (Atomic)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+       ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Patient-995138d0-b8bc-4bd9-b49d-d2d025d39ae7.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7>;
+         fhir:Reference.reference [ fhir:value "Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mr Wei Zhang (P2P)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1>
+       ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-46d552b7-88a9-427b-9d62-8b0727de91f9.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/46d552b7-88a9-427b-9d62-8b0727de91f9>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/46d552b7-88a9-427b-9d62-8b0727de91f9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr Fredrika Bremer (Cardiologist)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
+       ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-d68312c9-b122-4fe5-8e3c-f550bd989f4b.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b>;
+         fhir:Reference.reference [ fhir:value "Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr Fredrika Bremer" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1>
+       ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-04ac8978-bc60-4492-aa07-f62568ebe5c6.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ms Linda Howard (Sonographer)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
+       ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-e6de10ad-8dba-4250-8399-311da99e8c30.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30>;
+         fhir:Reference.reference [ fhir:value "Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ms Linda Howard" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1>
+       ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-cb084861-dd87-48ff-b645-5cb620a00e8e.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/cb084861-dd87-48ff-b645-5cb620a00e8e>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/cb084861-dd87-48ff-b645-5cb620a00e8e" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr David George (Oncologist)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
+       ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Organization-nsw-hospital.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/nsw-hospital>;
+         fhir:Reference.reference [ fhir:value "Organization/nsw-hospital" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NSW Hospital" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1>
+       ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Endpoint" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Endpoint-nsw-hospital-wadors.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Endpoint/nsw-hospital-wadors>;
+         fhir:Reference.reference [ fhir:value "Endpoint/nsw-hospital-wadors" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NSW Hospital WADORS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Binary-echocardio-pre-chemo-report-pdf.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Binary/echocardio-pre-chemo-report-pdf>;
+         fhir:Reference.reference [ fhir:value "Binary/echocardio-pre-chemo-report-pdf" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography pre-chemo report (PDF)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];

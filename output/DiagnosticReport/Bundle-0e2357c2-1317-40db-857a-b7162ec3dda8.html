@@ -1,0 +1,624 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Diagnostic Report</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Diagnostic Report Implemenation Guide" />
+  <meta name="author" content="http://argonautwiki.hl7.org"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+   <!-- Bootstrap core CSS -->
+
+   <!-- Latest compiled and minified CSS -->
+
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <link href="assets/css/ci-styles-fig.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+</head>
+
+<body markdown="1"/>
+
+</html>
+ <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="https://www.digitalhealth.gov.au/"><img alt="Agency logo" src="assets/images/agency-logo-www.png"/> </a>
+
+   <div id="ig-status">
+    <b>Diagnostic Report FHIR Implementation Guide  1.0.0</b>
+</div>
+
+  </div>
+  <div class="container">  <!-- container -->
+ </div>
+ </div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4//index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guidance.html">Guidance</a></li>
+       <li><a href="conformance.html">Conformance</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <!--<li><a href="structuremaps.html">Mappings</a></li>-->
+        <li><a href="extensions.html">Extensions</a></li>
+       <li><a href="mappings.html">Mapping from requirements</a></li>
+       <!-- <li><a href="terminology.html">Terminology</a></li>-->
+        <!--<li><a href="searchparams.html">Search Parameters</a></li>-->
+        <!--<li><a href="capstatements.html">Capability Statements</a></li>-->
+        <!--<li><a href="security.html">Security</a></li>-->
+        <li><a href="downloads.html">Downloads</a></li>
+       <li><a href="disclaimers.html">Disclaimers</a></li>
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+</div>  <!-- /container -->
+</div>  <!-- /segment-breadcrumb -->
+
+<div id="segment-content" class="segment">  <!-- segment-content -->
+<div class="container">  <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+
+
+<div class="col-12">
+
+
+<p id="publish-box">
+    This is release  1.0.0 of Diagnostic Report FHIR Implementation Guide. It is based on  <a href="http://hl7.org/fhir/R4/">FHIR version 4.0.1</a>. 
+</p>
+
+<!-- ============BreadCrumb=============== -->
+
+<nav class="breadcrumb">
+  
+    
+    
+      <a class="breadcrumb-item" href="index.html">Home</a>
+      /
+      <a class="breadcrumb-item" href="profiles.html">Profiles</a>
+      /
+      <span class="breadcrumb-item active">Bundle-0e2357c2-1317-40db-857a-b7162ec3dda8</span>
+    
+    
+    
+    
+
+</nav>
+
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2>Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8</h2>
+
+<p>
+Formats: <a href="Bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.xml.html">XML</a>, <a href="Bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.json.html">JSON</a>, <a href="Bundle-0e2357c2-1317-40db-857a-b7162ec3dda8.ttl.html">Turtle</a>
+</p>
+
+<div><p>Bundle 0e2357c2-1317-40db-857a-b7162ec3dda8 of type collection</p><a name="urn-uuid-b980048e-890c-4a4a-afbb-87742509dfb5"> </a><a name="diagnosticreport_b980048e-890c-4a4a-afbb-87742509dfb5"> </a><hr/><p>Entry 1 - Full URL = urn:uuid:b980048e-890c-4a4a-afbb-87742509dfb5</p><p>Resource DiagnosticReport:</p><blockquote>
+                        <h1>NSW CARDIOVASCULAR GROUP</h1>
+                        <h2>ECHOCARDIOGRAPHY REPORT</h2>
+                        <p>Phone: 1300 975 708</p>
+                        <hr style="background-color:#000000"/>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="width:50%">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                  <td>Name</td>
+                                                  <td>Mr Wei Zhang</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Address</td>
+                                                  <td>6 Macquarie Street, Sydney, NSW, 2000</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>DOB</td>
+                                                  <td>03/05/1969</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Gender</td>
+                                                  <td>Male</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Indigenous Status</td>
+                                                  <td>Neither Aboriginal nor Torres Strait Islander
+                                                  origin</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Test</td>
+                                                  <td>Echocardiography</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Requested</td>
+                                                  <td>05/01/2019 0:00</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Collected</td>
+                                                  <td>06/01/2019 09:45</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Reported</td>
+                                                  <td>06/01/2019 10:12</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Images</td>
+                                                  <td>
+                                                  <a href="https://www.health.nsw.example.org/nsw-hospital/wado-rs/studies/1.2.36.1.2001.1001.105.100007.30246.19789.3503430046">Link to imaging study</a>
+                                                  </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="width:50%">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                  <td>File ID</td>
+                                                  <td>2338172</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Medicare No.</td>
+                                                  <td>29533070311</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>IHI</td>
+                                                  <td>8003608000228437</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Country of birth</td>
+                                                  <td>China</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Year of arrival</td>
+                                                  <td>2017</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Interpreter required?</td>
+                                                  <td>Y (Cantonese)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Laboratory Enquiries #</td>
+                                                  <td>3143079143</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                  <td>
+                                                  <p/>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Requested by</td>
+                                                  <td>Dr David George (Oncologist)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Reports to</td>
+                                                  <td>
+                                                  <p>Dr David George (Oncologist)</p>
+                                                  <p>Dr Sarah Bondiali (General Practitioner)</p>
+                                                  </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr style="background-color:#000000"/>
+                        <hr style="background-color:#000000"/>
+                        <table>
+                            <tr>
+                                <td style="width:10%">
+                                    <h4>ID</h4>
+                                </td>
+                                <td style="width:20%">
+                                    <h4>Observation</h4>
+                                </td>
+                                <td style="width:70%">
+                                    <h4>Value</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3143079143</td>
+                                <td>Echocardiography</td>
+                                <td>
+                                    <p>NSW CARDIOVASCULAR GROUP</p>
+                                    <p>ECHOCARDIOGRAPHY REPORT</p>
+                                    <p>Phone: 1300 975 708</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Patient Name:</b> Mr Zhang Wei</p>
+                                    <p><b>Date of Birth:</b> 03/05/1969</p>
+                                    <p><b>Ht/Wt/BSA:</b> 174 cm, 72 kg, 2.05 m2.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Date of Study:</b> 06/01/2019</p>
+                                    <p><b>Site:</b> NSW Hospital - Cardiology</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Indications:</b> Pre-chemotherapy.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Sonographer:</b> Ms Linda Howard</p>
+                                    <p><b>Referring physician:</b> Dr David George</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p/>
+                                    <p/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p>
+                                        <b>Summary:</b>
+                                    </p>
+                                    <p>1. Normal left ventricular size. LV vol 119 ml.</p>
+                                    <p>2. Normal overall left ventricular systolic function. EF = 61
+                                        %.</p>
+                                    <p>3. There were no resting regional wall motion abnormalities
+                                        detected.</p>
+                                    <p>4. Normal GLS (Global Longitudinal Strain) —21 %.</p>
+                                    <p>5. Normal right ventricular size and systolic function.</p>
+                                    <p>6. Mildly dilated Left atrium. 21 cm2.</p>
+                                    <p>7. Mild dilatation of the aortic root (43mm).</p>
+                                    <p>8. Mild aortic valve sclerosis without stenosis.</p>
+                                    <p>9. Trivial (0—1/4) mitral valve regurgitation.</p>
+                                    <p>10. Trivial (0—1/4) tricuspid regurgitation.</p>
+                                    <p>11.Normal pulmonary artery systolic pressure. RVSP = 23
+                                        mmHg.</p>
+                                    <p>12. The interatrial septum appears intact.</p>
+                                    <p>13. Normal pericardium.</p>
+                                    <p>14. Patient was in sinus bradycardia at a rate of 54 bpm.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p style="font-weight: bold;">CARDIOLOGISTS INTERPRETATION:</p>
+                                    <p>Patient was in sinus bradycardia at a rate of 54 bpm.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Left Ventricle:</b> The left ventricular internal cavity
+                                        size was normal. LV vol 119 ml. Overall LV systolic function
+                                        was normal. EF = 61 % . No evidence of left ventricular
+                                        hypertrophy. There were no resting regional wall motion
+                                        abnormalities detected. Indeterminant LV filling pressure
+                                        based E/e' ratio = 8 %. Normal GLS (Global Longitudinal
+                                        Strain) = —21 % Philips Epiq 5c.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Right Ventricle:</b> Normal right ventricular size, wall
+                                        thickness, and systolic function. RV S' 11 cm/s.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Left Atrium:</b> The left atrium was mildly dilated. 21
+                                        cm2.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Right Atrium:</b> The right atrium was at the upper limits
+                                        of normal dimension. 20 cm2.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Pericardium:</b> The pericardium appears normal.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Aortic Valve:</b> The aortic valve was tricuspid. There
+                                        was mild aortic valve sclerosis, with no evidence of aortic
+                                        valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4. 6 cm2. No
+                                        evidence of aortic valve regurgitation was seen. Resting
+                                        LVOFT SV = 115 ml. Indexed = 56 ml/m2.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Mitral Valve:</b> The mitral valve is sclerotic. Trivial
+                                        (0—1/4) mitral valve regurgitation was seen.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Tricuspid Valve:</b> The tricuspid valve was normal in
+                                        structure. Trivial (O—1/4) tricuspid regurgitation was
+                                        visualised. The tricuspid regurgitant velocity is 2.2 m/s,
+                                        and with an assumed right atrial pressure of 3 mmHg, the
+                                        estimated right ventricular systolic pressure normal at 23
+                                        mmHg.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Pulmonic Valve:</b> Structurally normal pulmonic valve,
+                                        with normal leaflet excursion.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Aorta:</b> There is mild dilatation of the aortic root.
+                                        The trans sinus diameter measures at 4.3 cm. The ascending
+                                        aorta measures at 3.6 cm.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Shunts:</b> The interatrial septum appears intact.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p><b>Reported By:</b> Dr Fredrika Bremer (Cardiologist)</p>
+                                    <p style="font-weight: bold;">This letter has been
+                                        electronically approved.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p/>
+                                    <p/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p style="font-weight: bold;">CALCULATIONS &amp; MEASUREMENTS -
+                                        ECHO</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p style="font-weight: bold;">2D and M—MODE MEASUREMENTS (normal
+                                        ranges within parentheses):</p>
+                                    <p><b>Left ventricle 2D:</b> IVS d 0.7 cm. LVPW d 0.6 cm. LVID d
+                                        6.2 cm. LVID s 4.0 cm. LVFS 35 %. LVEF 2D 64 % .</p>
+                                    <p><b>Atrial Areas/Volume:</b> LA Area = 21 cm2. RA Area 20
+                                        cm2.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p style="font-weight: bold;">LV SYSTOLIC FUNCTION:</p>
+                                    <p>LV vol 119 ml. LV vol (BSA/SEX) ULN 152 mls. LV EF = 61
+                                        %.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p style="font-weight: bold;">LV DIASTOLIC FUNCTION:</p>
+                                    <p>MV Peak = 0.6 m/s, MV Peak A = 0.5 m/ s, Decel Time 240 msec,
+                                        MV A dur = 121 msec.</p>
+                                    <p>E' MV Ann = 7 cm/ s, E/e' ratio = 8, E/A Ratio = 1.2.</p>
+                                    <p>RUPV A Vmax = 0.3 m/s, RUPV S Vmax = 0.5 m/s, RUPV D Vmax =
+                                        0.4 m/s.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p style="font-weight: bold;">SPECTRAL DOPPLER ANALYSIS (where
+                                        applicable):</p>
+                                    <p><b>Mitral Valve:</b> MV P1/2 Time = 69.6 msec. MV area, PHT
+                                        3.2 cm2.</p>
+                                    <p><b>Aortic Valve:</b> AoV Max Vel = 1.2 m/s, AoV Peak PG = 6
+                                        mmHg, AoV Mean PG = 4 mmHg, LVOT Vmax = 1.1 m/s, LVOT VTI =
+                                        0.217 m, LVOT Diam = 2.6 cm. AoV Area Vmax 4.8 cm2. AoV Area
+                                        VTI 4.6 cm2. DPI = 0. 91.</p>
+                                    <p><b>Tricuspid Valve and PA/RV Systolic Pressure:</b> TR Max
+                                        Velocity = 2.2 m/s RA pressure = 3 mmHG RVSP/PASP = 23 mmHg.
+                                        RV S' = 11 cm/s.</p>
+                                    <p><b>Pulmonary Valve:</b> PV Max velocity 1.3 m/s, PV Max PG =
+                                        7 mmHg.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p/>
+                                    <p/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td/>
+                                <td/>
+                                <td>
+                                    <p>Mr Wei Zhang, DOB 03/05/1969, File ID 2338172</p>
+                                    <p style="font-weight: bold;">06/01/2019 Final</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </blockquote><a name="urn-uuid-4be4f59c-5a98-4d13-aff8-360bb6359243"> </a><a name="observation_4be4f59c-5a98-4d13-aff8-360bb6359243"> </a><hr/><p>Entry 2 - Full URL = urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243</p><p>Resource Observation:</p><a name="urn-uuid-9a57fac4-0096-4182-939d-691acddbfa1b"> </a><a name="endpoint_9a57fac4-0096-4182-939d-691acddbfa1b"> </a><hr/><p>Entry 3 - Full URL = urn:uuid:9a57fac4-0096-4182-939d-691acddbfa1b</p><p>Resource Endpoint:</p><a name="urn-uuid-b7dec05f-e62f-47a8-880e-3f0189004444"> </a><a name="imagingstudy_b7dec05f-e62f-47a8-880e-3f0189004444"> </a><hr/><p>Entry 4 - Full URL = urn:uuid:b7dec05f-e62f-47a8-880e-3f0189004444</p><p>Resource ImagingStudy:</p><a name="urn-uuid-0b9176a0-eac3-4f4c-8544-a926584c4ac6"> </a><a name="observation_0b9176a0-eac3-4f4c-8544-a926584c4ac6"> </a><hr/><p>Entry 5 - Full URL = urn:uuid:0b9176a0-eac3-4f4c-8544-a926584c4ac6</p><p>Resource Observation:</p><a name="urn-uuid-b0ceccfa-dd98-4c8d-ab1c-71b79612a3a1"> </a><a name="observation_b0ceccfa-dd98-4c8d-ab1c-71b79612a3a1"> </a><hr/><p>Entry 6 - Full URL = urn:uuid:b0ceccfa-dd98-4c8d-ab1c-71b79612a3a1</p><p>Resource Observation:</p><a name="urn-uuid-3cb22391-6291-4099-ab73-8a60d2260d72"> </a><a name="observation_3cb22391-6291-4099-ab73-8a60d2260d72"> </a><hr/><p>Entry 7 - Full URL = urn:uuid:3cb22391-6291-4099-ab73-8a60d2260d72</p><p>Resource Observation:</p><a name="urn-uuid-4adf972f-e94c-43df-b26e-e6703565c5cf"> </a><a name="observation_4adf972f-e94c-43df-b26e-e6703565c5cf"> </a><hr/><p>Entry 8 - Full URL = urn:uuid:4adf972f-e94c-43df-b26e-e6703565c5cf</p><p>Resource Observation:</p><a name="urn-uuid-8aea2e5e-a5b9-4001-8bcf-85fef9765f44"> </a><a name="observation_8aea2e5e-a5b9-4001-8bcf-85fef9765f44"> </a><hr/><p>Entry 9 - Full URL = urn:uuid:8aea2e5e-a5b9-4001-8bcf-85fef9765f44</p><p>Resource Observation:</p><a name="urn-uuid-208e0294-3cfd-4b89-b219-34667455a125"> </a><a name="observation_208e0294-3cfd-4b89-b219-34667455a125"> </a><hr/><p>Entry 10 - Full URL = urn:uuid:208e0294-3cfd-4b89-b219-34667455a125</p><p>Resource Observation:</p><a name="urn-uuid-ce3a9a35-4467-4e0f-b4fb-9956df21f8c8"> </a><a name="observation_ce3a9a35-4467-4e0f-b4fb-9956df21f8c8"> </a><hr/><p>Entry 11 - Full URL = urn:uuid:ce3a9a35-4467-4e0f-b4fb-9956df21f8c8</p><p>Resource Observation:</p><a name="urn-uuid-870ec900-b154-4bbb-a59c-92a70a075f44"> </a><a name="observation_870ec900-b154-4bbb-a59c-92a70a075f44"> </a><hr/><p>Entry 12 - Full URL = urn:uuid:870ec900-b154-4bbb-a59c-92a70a075f44</p><p>Resource Observation:</p><a name="urn-uuid-bcb8d97a-463c-489f-8874-e88878f09ce2"> </a><a name="observation_bcb8d97a-463c-489f-8874-e88878f09ce2"> </a><hr/><p>Entry 13 - Full URL = urn:uuid:bcb8d97a-463c-489f-8874-e88878f09ce2</p><p>Resource Observation:</p><a name="urn-uuid-03868c1b-b633-48c9-965c-db5b2948e425"> </a><a name="observation_03868c1b-b633-48c9-965c-db5b2948e425"> </a><hr/><p>Entry 14 - Full URL = urn:uuid:03868c1b-b633-48c9-965c-db5b2948e425</p><p>Resource Observation:</p><a name="urn-uuid-4d63b08b-ad30-45aa-8786-1b6f6687867c"> </a><a name="observation_4d63b08b-ad30-45aa-8786-1b6f6687867c"> </a><hr/><p>Entry 15 - Full URL = urn:uuid:4d63b08b-ad30-45aa-8786-1b6f6687867c</p><p>Resource Observation:</p><a name="urn-uuid-1089f285-ccb4-40b6-884e-73b2d690a406"> </a><a name="observation_1089f285-ccb4-40b6-884e-73b2d690a406"> </a><hr/><p>Entry 16 - Full URL = urn:uuid:1089f285-ccb4-40b6-884e-73b2d690a406</p><p>Resource Observation:</p><a name="urn-uuid-9de1ab7d-9ed5-4700-821c-94ad42ed58ea"> </a><a name="observation_9de1ab7d-9ed5-4700-821c-94ad42ed58ea"> </a><hr/><p>Entry 17 - Full URL = urn:uuid:9de1ab7d-9ed5-4700-821c-94ad42ed58ea</p><p>Resource Observation:</p><a name="urn-uuid-49de0f95-cb33-4048-a99e-b5abccb48d73"> </a><a name="observation_49de0f95-cb33-4048-a99e-b5abccb48d73"> </a><hr/><p>Entry 18 - Full URL = urn:uuid:49de0f95-cb33-4048-a99e-b5abccb48d73</p><p>Resource Observation:</p><a name="urn-uuid-36814e69-db51-4030-b979-06df71af1ce5"> </a><a name="observation_36814e69-db51-4030-b979-06df71af1ce5"> </a><hr/><p>Entry 19 - Full URL = urn:uuid:36814e69-db51-4030-b979-06df71af1ce5</p><p>Resource Observation:</p><a name="urn-uuid-013ec8e1-a648-40c7-a8cc-38541d775038"> </a><a name="observation_013ec8e1-a648-40c7-a8cc-38541d775038"> </a><hr/><p>Entry 20 - Full URL = urn:uuid:013ec8e1-a648-40c7-a8cc-38541d775038</p><p>Resource Observation:</p><a name="urn-uuid-fffe8380-10c2-4574-be6c-e87b0161b32a"> </a><a name="observation_fffe8380-10c2-4574-be6c-e87b0161b32a"> </a><hr/><p>Entry 21 - Full URL = urn:uuid:fffe8380-10c2-4574-be6c-e87b0161b32a</p><p>Resource Observation:</p><a name="urn-uuid-1192d7cd-1f00-4192-ad41-6dd4f17a4dba"> </a><a name="observation_1192d7cd-1f00-4192-ad41-6dd4f17a4dba"> </a><hr/><p>Entry 22 - Full URL = urn:uuid:1192d7cd-1f00-4192-ad41-6dd4f17a4dba</p><p>Resource Observation:</p><a name="urn-uuid-849653d0-8ac9-45a4-8eaa-e3c1e2dbad32"> </a><a name="observation_849653d0-8ac9-45a4-8eaa-e3c1e2dbad32"> </a><hr/><p>Entry 23 - Full URL = urn:uuid:849653d0-8ac9-45a4-8eaa-e3c1e2dbad32</p><p>Resource Observation:</p><a name="urn-uuid-a3ac04cd-09ff-4437-b147-c7f26a0ca22f"> </a><a name="observation_a3ac04cd-09ff-4437-b147-c7f26a0ca22f"> </a><hr/><p>Entry 24 - Full URL = urn:uuid:a3ac04cd-09ff-4437-b147-c7f26a0ca22f</p><p>Resource Observation:</p><a name="urn-uuid-fd0589aa-06e4-43b4-b71e-c08078530c07"> </a><a name="observation_fd0589aa-06e4-43b4-b71e-c08078530c07"> </a><hr/><p>Entry 25 - Full URL = urn:uuid:fd0589aa-06e4-43b4-b71e-c08078530c07</p><p>Resource Observation:</p><a name="urn-uuid-eb117b41-0e4a-4c9f-a42b-de26edce5ab8"> </a><a name="observation_eb117b41-0e4a-4c9f-a42b-de26edce5ab8"> </a><hr/><p>Entry 26 - Full URL = urn:uuid:eb117b41-0e4a-4c9f-a42b-de26edce5ab8</p><p>Resource Observation:</p><a name="urn-uuid-99ac7a67-729d-455a-a2f0-3f8bc8d4675e"> </a><a name="observation_99ac7a67-729d-455a-a2f0-3f8bc8d4675e"> </a><hr/><p>Entry 27 - Full URL = urn:uuid:99ac7a67-729d-455a-a2f0-3f8bc8d4675e</p><p>Resource Observation:</p><a name="urn-uuid-d76f5b94-6524-4463-9a02-b110d246dfc6"> </a><a name="observation_d76f5b94-6524-4463-9a02-b110d246dfc6"> </a><hr/><p>Entry 28 - Full URL = urn:uuid:d76f5b94-6524-4463-9a02-b110d246dfc6</p><p>Resource Observation:</p><a name="urn-uuid-ee66f77d-f95b-4f76-b3bb-e95e01325ff2"> </a><a name="observation_ee66f77d-f95b-4f76-b3bb-e95e01325ff2"> </a><hr/><p>Entry 29 - Full URL = urn:uuid:ee66f77d-f95b-4f76-b3bb-e95e01325ff2</p><p>Resource Observation:</p><a name="urn-uuid-64583715-7ca6-48d6-a525-9a87527baa3e"> </a><a name="observation_64583715-7ca6-48d6-a525-9a87527baa3e"> </a><hr/><p>Entry 30 - Full URL = urn:uuid:64583715-7ca6-48d6-a525-9a87527baa3e</p><p>Resource Observation:</p><a name="urn-uuid-7fdb9338-e7fb-4c99-9b9e-a4b50a11a6fb"> </a><a name="observation_7fdb9338-e7fb-4c99-9b9e-a4b50a11a6fb"> </a><hr/><p>Entry 31 - Full URL = urn:uuid:7fdb9338-e7fb-4c99-9b9e-a4b50a11a6fb</p><p>Resource Observation:</p><a name="urn-uuid-1c388b20-852b-493f-ab0c-183b98b4d010"> </a><a name="observation_1c388b20-852b-493f-ab0c-183b98b4d010"> </a><hr/><p>Entry 32 - Full URL = urn:uuid:1c388b20-852b-493f-ab0c-183b98b4d010</p><p>Resource Observation:</p><a name="urn-uuid-77ae332c-d81b-4889-ab45-c5ea2a4ae4fd"> </a><a name="observation_77ae332c-d81b-4889-ab45-c5ea2a4ae4fd"> </a><hr/><p>Entry 33 - Full URL = urn:uuid:77ae332c-d81b-4889-ab45-c5ea2a4ae4fd</p><p>Resource Observation:</p><a name="urn-uuid-e651b98f-e714-4691-9361-5d9e1bf4f917"> </a><a name="observation_e651b98f-e714-4691-9361-5d9e1bf4f917"> </a><hr/><p>Entry 34 - Full URL = urn:uuid:e651b98f-e714-4691-9361-5d9e1bf4f917</p><p>Resource Observation:</p><a name="urn-uuid-abe854a0-814a-40aa-b3d8-870d18e7c7d8"> </a><a name="observation_abe854a0-814a-40aa-b3d8-870d18e7c7d8"> </a><hr/><p>Entry 35 - Full URL = urn:uuid:abe854a0-814a-40aa-b3d8-870d18e7c7d8</p><p>Resource Observation:</p><a name="urn-uuid-aov-maxvel"> </a><a name="observation_aov-maxvel"> </a><hr/><p>Entry 36 - Full URL = urn:uuid:aov-maxvel</p><p>Resource Observation:</p><a name="urn-uuid-710d443a-b9a9-43c5-8c44-c05c0486012d"> </a><a name="observation_710d443a-b9a9-43c5-8c44-c05c0486012d"> </a><hr/><p>Entry 37 - Full URL = urn:uuid:710d443a-b9a9-43c5-8c44-c05c0486012d</p><p>Resource Observation:</p><a name="urn-uuid-65a05be4-90e5-4340-9408-fba49b75cb0b"> </a><a name="observation_65a05be4-90e5-4340-9408-fba49b75cb0b"> </a><hr/><p>Entry 38 - Full URL = urn:uuid:65a05be4-90e5-4340-9408-fba49b75cb0b</p><p>Resource Observation:</p><a name="urn-uuid-d303f914-7f33-4293-b6d4-bb34e6752c0a"> </a><a name="observation_d303f914-7f33-4293-b6d4-bb34e6752c0a"> </a><hr/><p>Entry 39 - Full URL = urn:uuid:d303f914-7f33-4293-b6d4-bb34e6752c0a</p><p>Resource Observation:</p><a name="urn-uuid-3b1a574a-5f1c-42f2-abd2-7581fa11c2fa"> </a><a name="observation_3b1a574a-5f1c-42f2-abd2-7581fa11c2fa"> </a><hr/><p>Entry 40 - Full URL = urn:uuid:3b1a574a-5f1c-42f2-abd2-7581fa11c2fa</p><p>Resource Observation:</p><a name="urn-uuid-26555e55-3a9f-4bdb-b78a-96238ee803fc"> </a><a name="observation_26555e55-3a9f-4bdb-b78a-96238ee803fc"> </a><hr/><p>Entry 41 - Full URL = urn:uuid:26555e55-3a9f-4bdb-b78a-96238ee803fc</p><p>Resource Observation:</p><a name="urn-uuid-e43d37cb-1e12-4c82-a0ff-8d2d2b5de286"> </a><a name="observation_e43d37cb-1e12-4c82-a0ff-8d2d2b5de286"> </a><hr/><p>Entry 42 - Full URL = urn:uuid:e43d37cb-1e12-4c82-a0ff-8d2d2b5de286</p><p>Resource Observation:</p><a name="urn-uuid-c41cc054-6640-405c-bed8-42a6a1b08cf2"> </a><a name="observation_c41cc054-6640-405c-bed8-42a6a1b08cf2"> </a><hr/><p>Entry 43 - Full URL = urn:uuid:c41cc054-6640-405c-bed8-42a6a1b08cf2</p><p>Resource Observation:</p><a name="urn-uuid-54adaffd-2481-4a87-8ffb-cac6b2c62b95"> </a><a name="observation_54adaffd-2481-4a87-8ffb-cac6b2c62b95"> </a><hr/><p>Entry 44 - Full URL = urn:uuid:54adaffd-2481-4a87-8ffb-cac6b2c62b95</p><p>Resource Observation:</p><a name="urn-uuid-e98ecec8-862d-4574-b22a-07827dde6444"> </a><a name="observation_e98ecec8-862d-4574-b22a-07827dde6444"> </a><hr/><p>Entry 45 - Full URL = urn:uuid:e98ecec8-862d-4574-b22a-07827dde6444</p><p>Resource Observation:</p><a name="urn-uuid-3c3bbc55-bcc4-4183-9db5-4be12b83439c"> </a><a name="observation_3c3bbc55-bcc4-4183-9db5-4be12b83439c"> </a><hr/><p>Entry 46 - Full URL = urn:uuid:3c3bbc55-bcc4-4183-9db5-4be12b83439c</p><p>Resource Observation:</p><a name="urn-uuid-8c7993d5-0eae-495c-bf01-320d496cc47a"> </a><a name="observation_8c7993d5-0eae-495c-bf01-320d496cc47a"> </a><hr/><p>Entry 47 - Full URL = urn:uuid:8c7993d5-0eae-495c-bf01-320d496cc47a</p><p>Resource Observation:</p><a name="urn-uuid-479157d9-d792-477d-9866-d37db7e78890"> </a><a name="observation_479157d9-d792-477d-9866-d37db7e78890"> </a><hr/><p>Entry 48 - Full URL = urn:uuid:479157d9-d792-477d-9866-d37db7e78890</p><p>Resource Observation:</p><a name="urn-uuid-5aec02f5-2aa9-4c4d-970d-a56786b6e824"> </a><a name="observation_5aec02f5-2aa9-4c4d-970d-a56786b6e824"> </a><hr/><p>Entry 49 - Full URL = urn:uuid:5aec02f5-2aa9-4c4d-970d-a56786b6e824</p><p>Resource Observation:</p><a name="urn-uuid-a05caa35-3ae4-4779-968c-389538f89c7c"> </a><a name="observation_a05caa35-3ae4-4779-968c-389538f89c7c"> </a><hr/><p>Entry 50 - Full URL = urn:uuid:a05caa35-3ae4-4779-968c-389538f89c7c</p><p>Resource Observation:</p><a name="urn-uuid-edbc04cd-3387-435c-bda7-6e1a837b2590"> </a><a name="servicerequest_edbc04cd-3387-435c-bda7-6e1a837b2590"> </a><hr/><p>Entry 51 - Full URL = urn:uuid:edbc04cd-3387-435c-bda7-6e1a837b2590</p><p>Resource ServiceRequest:</p><a name="urn-uuid-995138d0-b8bc-4bd9-b49d-d2d025d39ae7"> </a><a name="patient_995138d0-b8bc-4bd9-b49d-d2d025d39ae7"> </a><hr/><p>Entry 52 - Full URL = urn:uuid:995138d0-b8bc-4bd9-b49d-d2d025d39ae7</p><p>Resource Patient:</p><a name="urn-uuid-46d552b7-88a9-427b-9d62-8b0727de91f9"> </a><a name="practitionerrole_46d552b7-88a9-427b-9d62-8b0727de91f9"> </a><hr/><p>Entry 53 - Full URL = urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9</p><p>Resource PractitionerRole:</p><a name="urn-uuid-d68312c9-b122-4fe5-8e3c-f550bd989f4b"> </a><a name="practitioner_d68312c9-b122-4fe5-8e3c-f550bd989f4b"> </a><hr/><p>Entry 54 - Full URL = urn:uuid:d68312c9-b122-4fe5-8e3c-f550bd989f4b</p><p>Resource Practitioner:</p><a name="urn-uuid-04ac8978-bc60-4492-aa07-f62568ebe5c6"> </a><a name="practitionerrole_04ac8978-bc60-4492-aa07-f62568ebe5c6"> </a><hr/><p>Entry 55 - Full URL = urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6</p><p>Resource PractitionerRole:</p><a name="urn-uuid-e6de10ad-8dba-4250-8399-311da99e8c30"> </a><a name="practitioner_e6de10ad-8dba-4250-8399-311da99e8c30"> </a><hr/><p>Entry 56 - Full URL = urn:uuid:e6de10ad-8dba-4250-8399-311da99e8c30</p><p>Resource Practitioner:</p><a name="urn-uuid-676a30d5-9c94-4c4d-8b52-e7cce26defed"> </a><a name="organization_676a30d5-9c94-4c4d-8b52-e7cce26defed"> </a><hr/><p>Entry 57 - Full URL = urn:uuid:676a30d5-9c94-4c4d-8b52-e7cce26defed</p><p>Resource Organization:</p><a name="urn-uuid-cb084861-dd87-48ff-b645-5cb620a00e8e"> </a><a name="practitionerrole_cb084861-dd87-48ff-b645-5cb620a00e8e"> </a><hr/><p>Entry 58 - Full URL = urn:uuid:cb084861-dd87-48ff-b645-5cb620a00e8e</p><p>Resource PractitionerRole:</p><a name="urn-uuid-ca48e6b3-ea60-4f06-bf51-c03b3ce8e524"> </a><a name="binary_ca48e6b3-ea60-4f06-bf51-c03b3ce8e524"> </a><hr/><p>Entry 59 - Full URL = urn:uuid:ca48e6b3-ea60-4f06-bf51-c03b3ce8e524</p><p>Resource Binary:</p></div>
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+</div>
+
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+
+</div>  <!-- /segment-content -->
+
+
+
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+        <div class="inner-wrapper">
+            <p>Document ID: DH-xxx:2020</p>
+            <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
+            <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
+            <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Jun 29, 2020 16:05+1000. |
+                <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                </span>
+            </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+ <!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+
+</body>
+</html>
+

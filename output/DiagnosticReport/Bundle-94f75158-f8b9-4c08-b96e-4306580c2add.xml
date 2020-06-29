@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="94f75158-f8b9-4c08-b96e-4306580c2add"/>
+  <meta>
+    <lastUpdated value="2020-03-17T11:46:00+10:00"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:94f75158-f8b9-4c08-b96e-4306580c2add"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2020-03-17T11:46:00+10:00"/>
+<!-- Composition (MHR Echocardiography Report) -->
+  <entry>
+    <fullUrl value="urn:uuid:ca476713-74eb-4700-8ed6-f0087a5b513a"/>
+    <resource>
+      <Composition>
+        <id value="ca476713-74eb-4700-8ed6-f0087a5b513a"/>
+        <meta>
+          <lastUpdated value="2020-03-17T11:46:00+10:00"/>
+          <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1"/>
+        </meta>
+        <language value="en-AU"/>
+      <!-- WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
+                to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
+                The contents below is not consistent with good or recommended practice.  -->
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;background-color:#000000">
+                            <tr>
+                                <th colspan="9" style="padding-top: 40px;                                     vertical-align: top;                                     text-align: center;                                     margin 0px;                                     font-size: 20px;                                     font-family: Helvetica;                                     color: #FFFFFF;                                     font-weight: bold;                                     word-wrap: break-word;">Echocardiography Report</th>
+                            </tr>
+                            <tr>
+                                <td colspan="9" style="vertical-align: top;                                     text-align: center;                                     margin 0px;                                     font-size: 15px;                                     font-family: Helvetica;                                     color: #FFFFFF;                                     font-weight: bold;">06 Jan 2019 10:12</td>
+                            </tr>
+                            <tr>
+                                <td style="display: inline;                                      margin-right: 20px;                                      font-size: 13px;                                     color: #FFFFFF;">Mr Wei <span class="bold">ZHANG</span></td>
+                                <td style="display: inline;                                     font-size: 12px;                                     color: #FFFFFF;">DoB</td>
+                                <td style="margin-left: 0px;                                     display: inline;                                     font-size: 12px;                                     margin-right: 30px;                                     color: #FFFFFF;">03 May 1969</td>
+                                <td style="display: inline;                                     font-size: 12px;                                     color: #FFFFFF;">GENDER</td>
+                                <td style="margin-left: 0px;                                     display: inline;                                     font-size: 12px;                                     margin-right: 30px;                                     color: #FFFFFF;">Male</td>
+                                <td style="display: inline;                                     font-size: 11px;                                     color: #FFFFFF;">IHI</td>
+                                <td style="margin-left: 0px;                                     display: inline;                                     font-size: 12px;                                     margin-right: 30px;                                     color: #FFFFFF;">8003 6080 0022 8437</td>
+                                <td style="display: inline;                                     font-size: 12px;                                     color: #FFFFFF;">INDIGENOUS STATUS</td>
+                                <td style="margin-left: 0px;                                     display: inline;                                     font-size: 12px;                                     margin-right: 30px;                                     color: #FFFFFF;                                     word-wrap: break-word;">Neither Aboriginal nor Torres Strait Islander origin</td>
+                            </tr>
+                        </table>
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;background-color:#696969">
+                            <tbody>
+                                <tr>
+                                    <td colspan="9" style="vertical-align: top;                             text-align: center;                             margin 0px;                             font-size: 15px;                             font-family: Helvetica;                             color: #FFFFFF;                             font-weight: bold;">START OF DOCUMENT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width:100%">
+                            <tbody>
+                                <tr>
+                                    <td style="width:50%">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="1" style="padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;">Requester</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>Dr David George (Oncologist) (HPI-I:
+                                                  8003614900041243)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Fred Hope Cancer Centre</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="2" style="padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;">Request Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Request
+                                                  Date/Time:</td>
+                                                  <td>05 Jan 2019 0:00</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Requested
+                                                  Test:</td>
+                                                  <td>Echocardiography</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="2" style="padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;">Author</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>Dr Fredrika Bremer (Cardiologist)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>(02) 5550 4111</td>
+                                                </tr>
+                                                <tr>
+                                                  <td/>
+                                                </tr>
+                                                <tr>
+                                                  <td>NSW Hospital - Cardiology (HPI-O:
+                                                  8003626566699734) (ABN: 41824753557)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>2325 Rocklands Rd, North Sydney, NSW,
+                                                  2060</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>(02) 5550 4444
+                                                  https://www.health.nsw.example.org/nsw-hospital</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="2" style="padding-top: 15px;                                                         vertical-align: top;                                                         text-align: center;                                                         margin 0px;                                                         font-family: Helvetica;                                                         font-size:14px;                                                         font-weight: bold;                                                         text-decoration: underline;                                                         text-align: left;                                                         word-wrap: break-word;">Report Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Report
+                                                  Date/Time:</td>
+                                                  <td>06 Jan 2019 10:12</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Report Name:</td>
+                                                  <td>Echocardiography - pre chemo</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Report ID:</td>
+                                                  <td>3143079143</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Report Status:</td>
+                                                  <td>Final</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold;">Diagnostice
+                                                  Service(s):</td>
+                                                  <td>Cardiac Ultrasound</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h1 style=" width: 100%;                             font-size: 17px;                             font-weight: bold;                             color: #000000;                             margin-bottom: 5px;                             margin-top: 0px;                             border-bottom: 1px SOLID #000000;;                             padding: 0px;                             word-wrap: break-word;">Diagnostic Test / Investigation Results</h1>
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <tr style="background-color:#DCDCDC">
+                                            <th style="padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-size: 14px;                                             font-weight: bold;                                             text-align: left;                                             word-wrap: break-word;">Test Name</th>
+                                            <th style="padding-top: 15px;                                                 vertical-align: top;                                                 text-align: center;                                                 margin 0px;                                                 font-family: Helvetica;                                                 font-size: 14px;                                                 font-weight: bold;                                                 text-align: left;                                                 word-wrap: break-word;">Diagnostic Service</th>
+                                            <th style="padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-weight: bold;                                             font-size: 14px;                                             text-align: left;                                             word-wrap: break-word;">Test Date/Time</th>
+                                            <th style="padding-top: 15px;                                                 vertical-align: top;                                                 text-align: center;                                                 margin 0px;                                                 font-family: Helvetica;                                                 font-size: 14px;                                                 font-weight: bold;                                                 text-align: left;                                                 word-wrap: break-word;">Status</th>
+                                        </tr>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Echocardiography</td>
+                                        <td>Cardiac Ultrasound</td>
+                                        <td>06 Jan 2019 09:45</td>
+                                        <td>Final</td>
+                                    </tr>
+                                </tbody>
+                            </tbody>
+                        </table>
+                        <p>
+                            <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/Echocardiography-pre-chemo.pdf">Link to PDF document</a>
+                        </p>
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;background-color:#696969">
+                            <tbody>
+                                <tr>
+                                    <td colspan="9" style="vertical-align: top;                             text-align: center;                             margin 0px;                             font-size: 15px;                             font-family: Helvetica;                             color: #FFFFFF;                             font-weight: bold;">ADMINISTRATIVE DETAILS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;background-color:#DCDCDC">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="2" style="padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-size:14px;                                             font-weight: bold;                                             font-style: italic;                                             text-align: left;                                             word-wrap: break-word;">Patient</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Name</td>
+                                                  <td>Mr Wei ZHANG</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Gender</td>
+                                                  <td>Male</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Indigenous Status</td>
+                                                  <td>Neither Aboriginal nor Torres Strait Islander
+                                                  origin</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Date
+                                                  of Birth</td>
+                                                  <td>03 May 1969 (51y)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">IHI</td>
+                                                  <td>8003608000228437</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Medicare Number</td>
+                                                  <td>29533070311</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Country of Birth</td>
+                                                  <td>China</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Year
+                                                  of Arrival</td>
+                                                  <td>2017</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Interpreter Required</td>
+                                                  <td>Y (Cantonese)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="2" style="padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-size:14px;                                             font-style: italic;                                             font-weight: bold;                                             text-align: left;                                             word-wrap: break-word;">Author</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td style="font-weight: bold;color:#808080">Name</td>
+                                                  <td>Dr Fredrika Bremer (Cardiologist) (HPI-I:
+                                                  8003608833357361)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Phone</td>
+                                                  <td>(02) 5550 4111</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Organisation</td>
+                                                  <td>NSW Hospital - Cardiology (HPI-O:
+                                                  8003626566699734) (ABN: 41824753557)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Work
+                                                  Place</td>
+                                                  <td>2325 Rocklands Rd, North Sydney NSW 2060</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                  <th colspan="2" style="padding-top: 15px;                                             vertical-align: top;                                             text-align: center;                                             margin 0px;                                             font-family: Helvetica;                                             font-size:14px;                                             font-weight: bold;                                             font-style: italic;                                             text-align: left;                                             word-wrap: break-word;">Clinical Document Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Document Type</td>
+                                                  <td>42148-7 Echocardiography report</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Document Category</td>
+                                                  <td>26441-6 Cardiology studies</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Document Created Date/Time</td>
+                                                    <td>17 March 2020 11:46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; color:#808080">Date/Time Authored</td>
+                                                    <td>06 Jan 2019 10:12</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Date/Time Attested</td>
+                                                  <td>06 Jan 2019 10:12</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Document ID</td>
+                                                    <td>94f75158-f8b9-4c08-b96e-4306580c2add</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Document Business ID</td>
+                                                    <td>ca476713-74eb-4700-8ed6-f0087a5b513a</td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-weight: bold; color:#808080">Document Status</td>
+                                                  <td>Final</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="border-collapse:collapse;border-spacing:0;width:100%;background-color:#696969">
+                            <tbody>
+                                <tr>
+                                    <td colspan="9" style="vertical-align: top;                             text-align: center;                             margin 0px;                             font-size: 15px;                             font-family: Helvetica;                             color: #FFFFFF;                             font-weight: bold;">END OF DOCUMENT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:ca476713-74eb-4700-8ed6-f0087a5b513a"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="42148-7"/>
+            <display value="US Heart"/>
+          </coding>
+          <text value="Echocardiography report"/>
+        </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="26441-6"/>
+            <display value="Cardiology studies (set)"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
+        </subject>
+        <date value="2019-01-06T10:12:00+10:00"/>
+        <author>
+          <reference value="urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+        </author>
+        <title value="Echocardiography Report"/>
+        <attester>
+          <mode value="legal"/>
+          <time value="2019-01-06T10:12:00+10:00"/>
+          <party>
+            <reference value="urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+          </party>
+        </attester>
+        <custodian>
+          <reference value="urn:uuid:676a30d5-9c94-4c4d-8b52-e7cce26defed"/>
+        </custodian>
+        <section>
+          <title value="Diagnostic Test / Investigation Results"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="30954-2"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <table border="1">
+                                <thead>
+                                    <tr>
+                                        <th>Test Name</th>
+                                        <th>Diagnostic Service</th>
+                                        <th>Test Date/Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Echocardiography</td>
+                                        <td>Cardiac Ultrasound</td>
+                                        <td>06 Jan 2019 09:45</td>
+                                        <td>Final</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/Echocardiography-pre-chemo.pdf">Link to PDF document</a>
+                            </p>
+                        </div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:ffa619c7-7324-4d68-b072-17c0179ac311"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+<!-- DiagnosticReport referenced in Composition.section.entry -->
+  <entry>
+    <fullUrl value="urn:uuid:ffa619c7-7324-4d68-b072-17c0179ac311"/>
+    <resource>
+      <DiagnosticReport>
+        <id value="ffa619c7-7324-4d68-b072-17c0179ac311"/>
+        <meta>
+          <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1"/>
+        </meta>
+        <language value="en-AU"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="FILL"/>
+              <display value="Filler Identifier"/>
+            </coding>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565"/>
+          <value value="3143079143"/>
+        </identifier>
+        <basedOn>
+          <reference value="urn:uuid:edbc04cd-3387-435c-bda7-6e1a837b2590"/>
+        </basedOn>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="CUS"/>
+            <display value="Cardiac Ultrasound"/>
+          </coding>
+          <text value="Cardiac Ultrasound"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="40701008"/>
+            <display value="Echocardiography"/>
+          </coding>
+          <text value="Echocardiography"/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
+        </subject>
+        <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+        <issued value="2019-01-06T10:12:00+10:00"/>
+        <performer>
+          <reference value="urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+        </performer>
+        <performer>
+          <reference value="urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+        </performer>
+        <result>
+          <reference value="urn:uuid:6685a24a-1606-4d1e-a212-fc456a71300f"/>
+        </result>
+        <presentedForm>
+          <contentType value="application/pdf"/>
+        <!--  Placeholder url value: Absolute URL to GitHub repository for attachment is provided as a workaround for demonstration purposes only   -->
+          <url value="https://github.com/AuDigitalHealth/ci-fhir-r4/tree/master/examples/Echocardiography-pre-chemo.pdf"/>
+          <hash value="A0C18CCCD1DA713694A881EC7950F9505E156928"/>
+          <title value="Echocardiography - pre chemo"/>
+        </presentedForm>
+      </DiagnosticReport>
+    </resource>
+  </entry>
+<!-- Observation referenced in DiagnosticReport.result -->
+  <entry>
+    <fullUrl value="urn:uuid:6685a24a-1606-4d1e-a212-fc456a71300f"/>
+    <resource>
+      <Observation>
+        <id value="6685a24a-1606-4d1e-a212-fc456a71300f"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="CUS"/>
+            <display value="Cardiac Ultrasound"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="40701008"/>
+            <display value="Echocardiography"/>
+          </coding>
+          <text value="Echocardiography"/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
+        </subject>
+        <effectiveDateTime value="2019-01-06T09:45:00+10:00"/>
+      </Observation>
+    </resource>
+  </entry>
+<!-- ServiceRequest referenced in DiagnosticReport.basedOn -->
+  <entry>
+    <fullUrl value="urn:uuid:edbc04cd-3387-435c-bda7-6e1a837b2590"/>
+    <resource>
+      <ServiceRequest>
+        <id value="edbc04cd-3387-435c-bda7-6e1a837b2590"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <status value="completed"/>
+        <intent value="order"/>
+        <category>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="276341003"/>
+          </coding>
+          <text value="Cardiovascular investigation"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="40701008"/>
+          </coding>
+          <text value="Echocardiography"/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
+        </subject>
+        <authoredOn value="2019-01-05T00:00:00+10:00"/>
+        <requester>
+          <reference value="urn:uuid:cb084861-dd87-48ff-b645-5cb620a00e8e"/>
+          <display value="Dr David George"/>
+        </requester>
+        <reasonCode>
+          <text value="Pre-chemotherapy"/>
+        </reasonCode>
+      </ServiceRequest>
+    </resource>
+  </entry>
+<!-- Patient referenced in Composition.subject; DiagnosticReport.subject; ServiceRequest.subject; Observation.subject -->
+  <entry>
+    <fullUrl value="urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
+    <resource>
+      <Patient>
+        <id value="44c6f844-4f77-4d4e-8a20-a920d9f1137c"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+          <valueAddress>
+            <text value="China"/>
+            <country value="CHN"/>
+          </valueAddress>
+        </extension>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+          <valueCoding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+            <code value="4"/>
+            <display value="Neither Aboriginal nor Torres Strait Islander origin"/>
+          </valueCoding>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="http://hl7.org.au/fhir/StructureDefinition/date-of-arrival">
+          <valueDate value="2017"/>
+        </extension>
+        <identifier>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-status">
+            <valueCoding>
+              <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+              <code value="active"/>
+            </valueCoding>
+          </extension>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-record-status">
+            <valueCoding>
+              <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+              <code value="verified"/>
+              <display value="verified"/>
+            </valueCoding>
+          </extension>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NI"/>
+            </coding>
+            <text value="IHI"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+          <value value="8003608000228437"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MC"/>
+            </coding>
+            <text value="Medicare Number"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+          <value value="29533070311"/>
+        </identifier>
+        <name>
+          <family value="Zhang"/>
+          <given value="Wei"/>
+          <prefix value="Mr"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1969-05-03">
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator">
+            <valueCoding>
+              <system value="https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1"/>
+              <code value="AAA"/>
+              <display value="Day, month and year are accurate"/>
+            </valueCoding>
+          </extension>
+        </birthDate>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="yue"/>
+            </coding>
+            <text value="Cantonese"/>
+          </language>
+          <preferred value="true"/>
+        </communication>
+      </Patient>
+    </resource>
+  </entry>
+<!-- PractitionerRole (46d552b7-88a9-427b-9d62-8b0727de91f9) referenced in Composition.author; Composition.attester.party; DiagnosticReport.performer; -->
+  <entry>
+    <fullUrl value="urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+    <resource>
+      <PractitionerRole>
+        <id value="46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NPI"/>
+              <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+          <value value="8003608833357361"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="EI"/>
+              <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+          </type>
+        <!-- Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations -->
+          <system value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753557"/>
+          <value value="NSW31u32-441"/>
+          <assigner>
+            <display value="NSW Hospital"/>
+          </assigner>
+        </identifier>
+        <practitioner>
+          <reference value="urn:uuid:d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
+          <display value="Dr Fredrika Bremer"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:676a30d5-9c94-4c4d-8b52-e7cce26defed"/>
+          <display value="NSW Hospital - Cardiology"/>
+        </organization>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="17561000"/>
+            <display value="Cardiologist"/>
+          </coding>
+          <text value="Cardiologist"/>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+<!-- Practitioner referenced in PractitionerRole (46d552b7-88a9-427b-9d62-8b0727de91f9) -->
+  <entry>
+    <fullUrl value="urn:uuid:d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
+    <resource>
+      <Practitioner>
+        <id value="d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <name>
+          <use value="usual"/>
+          <family value="Bremer"/>
+          <given value="Fredrika"/>
+          <prefix value="Dr."/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="(02) 5550 4111"/>
+          <use value="work"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+<!-- PractitionerRole (04ac8978-bc60-4492-aa07-f62568ebe5c6) referenced in DiagnosticReport.performer -->
+  <entry>
+    <fullUrl value="urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+    <resource>
+      <PractitionerRole>
+        <id value="04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NPI"/>
+              <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+          <value value="8003616566708106"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="EI"/>
+              <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+          </type>
+        <!-- Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations -->
+          <system value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753557"/>
+          <value value="NSW31u32-401"/>
+          <assigner>
+            <display value="NSW Hospital"/>
+          </assigner>
+        </identifier>
+        <practitioner>
+          <reference value="urn:uuid:e6de10ad-8dba-4250-8399-311da99e8c30"/>
+          <display value="Ms Linda Howard"/>
+        </practitioner>
+        <organization>
+          <reference value="urn:uuid:676a30d5-9c94-4c4d-8b52-e7cce26defed"/>
+          <display value="NSW Hospital - Cardiology"/>
+        </organization>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1012861000168100"/>
+            <display value="Sonographer"/>
+          </coding>
+          <text value="Sonographer"/>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+<!-- Practitioner referenced in PractitionerRole (04ac8978-bc60-4492-aa07-f62568ebe5c6) -->
+  <entry>
+    <fullUrl value="urn:uuid:e6de10ad-8dba-4250-8399-311da99e8c30"/>
+    <resource>
+      <Practitioner>
+        <id value="e6de10ad-8dba-4250-8399-311da99e8c30"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <name>
+          <use value="usual"/>
+          <family value="Bremer"/>
+          <given value="Fredrika"/>
+          <prefix value="Dr."/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="(02) 5550 4111"/>
+          <use value="work"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+<!-- Organization referenced in Composition.custodian; PractitionerRole (04ac8978-bc60-4492-aa07-f62568ebe5c6); PractitionerRole (46d552b7-88a9-427b-9d62-8b0727de91f9) -->
+  <entry>
+    <fullUrl value="urn:uuid:676a30d5-9c94-4c4d-8b52-e7cce26defed"/>
+    <resource>
+      <Organization>
+        <id value="676a30d5-9c94-4c4d-8b52-e7cce26defed"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+      <!-- Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations -->
+        <identifier>
+          <type>
+            <text value="ABN"/>
+          </type>
+          <system value="http://hl7.org.au/id/abn"/>
+          <value value="41824753557"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+              <code value="NOI"/>
+            </coding>
+            <text value="HPI-O"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+          <value value="8003626566699734"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="22232009"/>
+          </coding>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="HOSP"/>
+          </coding>
+          <text value="Hospital"/>
+        </type>
+        <name value="NSW Hospital"/>
+        <telecom>
+          <system value="url"/>
+          <value value="https://www.health.nsw.example.org/nsw-hospital"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="(02) 5550 4444"/>
+        </telecom>
+        <address>
+          <type value="physical"/>
+          <text value="2325 Rocklands Rd, North Sydney NSW 2060"/>
+          <line value="2325 Rocklands Rd"/>
+          <city value="North Sydney"/>
+          <state value="NSW"/>
+          <postalCode value="2060"/>
+          <country value="AU"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+<!-- PractitionerRole referenced in ServiceRequest.requester -->
+  <entry>
+    <fullUrl value="urn:uuid:cb084861-dd87-48ff-b645-5cb620a00e8e"/>
+    <resource>
+      <PractitionerRole>
+        <id value="cb084861-dd87-48ff-b645-5cb620a00e8e"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="EI"/>
+              <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+          </type>
+          <system value="http://www.health.nsw.example.org/nsw-hospital/fred-hope"/>
+          <value value="123113"/>
+          <assigner>
+            <display value="Fred Hope Cancer Centre"/>
+          </assigner>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NPI"/>
+              <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+          <value value="8003614900041243"/>
+        </identifier>
+        <practitioner>
+          <display value="Dr David George"/>
+        </practitioner>
+        <organization>
+          <display value="Fred Hope Cancer Centre"/>
+        </organization>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="309295000"/>
+          </coding>
+          <text value="Oncologist"/>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+</Bundle>

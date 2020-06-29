@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "995138d0-b8bc-4bd9-b49d-d2d025d39ae7"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: 995138d0-b8bc-4bd9-b49d-d2d025d39ae7</p><p><b>meta</b>: </p><p><b>identifier</b>: IHI = 8003608000228437, Medicare Number = 29533070311, Medical Record Number = 2338172</p><p><b>name</b>: Wei Zhang </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1969-05-03</p><p><b>address</b>: 6 Macquarie Street Sydney NSW 2000 (HOME)</p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td><span title=\"Codes: {urn:ietf:bcp:47 yue}\">Cantonese</span></td><td>true</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ];
+     fhir:Extension.valueAddress [
+       fhir:Address.text [ fhir:value "China" ];
+       fhir:Address.country [ fhir:value "CHN" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/indigenous-status" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1" ];
+       fhir:Coding.code [ fhir:value "4" ];
+       fhir:Coding.display [ fhir:value "Neither Aboriginal nor Torres Strait Islander origin" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/date-of-arrival" ];
+     fhir:Extension.valueDate [ fhir:value "2017"^^xsd:gYear ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/ihi-status" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1" ];
+         fhir:Coding.code [ fhir:value "active" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/ihi-record-status" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1" ];
+         fhir:Coding.code [ fhir:value "verified" ];
+         fhir:Coding.display [ fhir:value "verified" ]
+       ]
+     ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NI" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "IHI" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hi/ihi/1.0" ];
+     fhir:Identifier.value [ fhir:value "8003608000228437" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MC" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Medicare Number" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/medicare-number" ];
+     fhir:Identifier.value [ fhir:value "29533070311" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MR" ];
+         fhir:Coding.display [ fhir:value "Medical record number" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Medical Record Number" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/8003626566699734" ];
+     fhir:Identifier.value [ fhir:value "2338172" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "NSW Hospital" ]
+     ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Zhang" ];
+     fhir:HumanName.given [
+       fhir:value "Wei";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Mr";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [
+     fhir:value "1969-05-03"^^xsd:date;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1" ];
+         fhir:Coding.code [ fhir:value "AAA" ];
+         fhir:Coding.display [ fhir:value "Day, month and year are accurate" ]
+       ]
+     ]
+  ];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.line [
+       fhir:value "6 Macquarie Street";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Sydney" ];
+     fhir:Address.state [ fhir:value "NSW" ];
+     fhir:Address.postalCode [ fhir:value "2000" ]
+  ];
+  fhir:Patient.communication [
+     fhir:index 0;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+         fhir:Coding.code [ fhir:value "yue" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Cantonese" ]
+     ];
+     fhir:Patient.communication.preferred [ fhir:value "true"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

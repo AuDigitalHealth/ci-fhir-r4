@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Endpoint/nsw-hospital-wadors> a fhir:Endpoint;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nsw-hospital-wadors"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: nsw-hospital-wadors</p><p><b>status</b>: active</p><p><b>connectionType</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/endpoint-connection-type dicom-wado-rs}\">DICOM WADO-RS</span></p><p><b>name</b>: NSW Hospital DICOM WADO-RS endpoint</p><p><b>payloadType</b>: <span title=\"Codes: \">DICOM WADO-RS</span></p><p><b>payloadMimeType</b>: application/dicom</p><p><b>address</b>: <a href=\"http://www.health.nsw.example.org/nsw-hospital/wado-rs\">http://www.health.nsw.example.org/nsw-hospital/wado-rs</a></p></div>"
+  ];
+  fhir:Endpoint.status [ fhir:value "active"];
+  fhir:Endpoint.connectionType [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/endpoint-connection-type" ];
+     fhir:Coding.code [ fhir:value "dicom-wado-rs" ]
+  ];
+  fhir:Endpoint.name [ fhir:value "NSW Hospital DICOM WADO-RS endpoint"];
+  fhir:Endpoint.payloadType [
+     fhir:index 0;
+     fhir:CodeableConcept.text [ fhir:value "DICOM WADO-RS" ]
+  ];
+  fhir:Endpoint.payloadMimeType [
+     fhir:value "application/dicom";
+     fhir:index 0
+  ];
+  fhir:Endpoint.address [ fhir:value "http://www.health.nsw.example.org/nsw-hospital/wado-rs"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Endpoint/nsw-hospital-wadors.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

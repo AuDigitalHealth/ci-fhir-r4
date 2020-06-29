@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-systolicfunction> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "leftventricle-systolicfunction"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: leftventricle-systolicfunction</p><p><b>meta</b>: </p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 250907009}\">LV SYSTOLIC FUNCTION</span></p><p><b>subject</b>: <a href=\"Patient-995138d0-b8bc-4bd9-b49d-d2d025d39ae7.html\">Generated Summary: id: 995138d0-b8bc-4bd9-b49d-d2d025d39ae7; IHI = 8003608000228437, Medicare Number = 29533070311, Medical Record Number = 2338172; Wei Zhang ; gender: male; birthDate: 1969-05-03</a></p><p><b>effective</b>: 06/01/2019 9:45:00 AM</p><p><b>performer</b>: <a href=\"PractitionerRole-04ac8978-bc60-4492-aa07-f62568ebe5c6.html\">Generated Summary: id: 04ac8978-bc60-4492-aa07-f62568ebe5c6; HPI-I = 8003616566708106, Employee Number = NSW31u32-401; <span title=\"Codes: {http://snomed.info/sct 1012861000168100}\">Sonographer</span></a></p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-lvvol.html\">Generated Summary: id: lvvol; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://loinc.org 75989-4}\">LV vol</span>; effective: 06/01/2019 9:45:00 AM; 119 mL; <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-lvvol-bsasex.html\">Generated Summary: id: lvvol-bsasex; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://loinc.org 80002-9}\">LV vol (BSA/SEX) ULN</span>; effective: 06/01/2019 9:45:00 AM; 152 mLs; <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-lv-ef.html\">Generated Summary: id: lv-ef; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://loinc.org 10230-1}, {http://snomed.info/sct 250908004}\">LV EF</span>; effective: 06/01/2019 9:45:00 AM; 61 %; <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "imaging" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "CUS" ];
+       fhir:Coding.display [ fhir:value "Cardiac Ultrasound" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:250907009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "250907009" ];
+       fhir:Coding.display [ fhir:value "Left ventricular function" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "LV SYSTOLIC FUNCTION" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7>;
+     fhir:Reference.reference [ fhir:value "Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-01-06T09:45:00+10:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6" ]
+  ];
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:87878005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "87878005" ];
+       fhir:Coding.display [ fhir:value "Left ventricular structure" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:278292003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "278292003" ];
+       fhir:Coding.display [ fhir:value "Ultrasound imaging" ]
+     ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvvol>;
+     fhir:Reference.reference [ fhir:value "Observation/lvvol" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lvvol-bsasex>;
+     fhir:Reference.reference [ fhir:value "Observation/lvvol-bsasex" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lv-ef>;
+     fhir:Reference.reference [ fhir:value "Observation/lv-ef" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-systolicfunction.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

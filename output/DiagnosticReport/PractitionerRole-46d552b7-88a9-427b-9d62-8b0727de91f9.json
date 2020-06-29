@@ -1,0 +1,64 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "46d552b7-88a9-427b-9d62-8b0727de91f9",
+  "meta": {
+    "versionId": "2020-1.1.2Q3"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <h3>Dr Fredrika Bremer</h3>\n            <p>Cardiologist</p>\n            <p>NSW Hospital - Cardiology</p>\n            <table>\n                <tr>\n                    <td>HPI-I</td>\n                    <td>8003608833357361</td>\n                </tr>\n                <tr>\n                    <td>Employee Id.</td>\n                    <td>NSW31u32-441</td>\n                </tr>\n                <tr>\n                    <td>Phone</td>\n                    <td>(02) 5550 4111</td>\n                </tr>\n            </table>\n        </div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NPI",
+            "display": "National provider identifier"
+          }
+        ],
+        "text": "HPI-I"
+      },
+      "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+      "value": "8003608833357361"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "EI",
+            "display": "Employee number"
+          }
+        ],
+        "text": "Employee Number"
+      },
+      "system": "http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753557",
+      "value": "NSW31u32-441",
+      "assigner": {
+        "display": "NSW Hospital"
+      }
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b",
+    "display": "Dr Fredrika Bremer"
+  },
+  "organization": {
+    "reference": "Organization/nsw-hospital",
+    "display": "NSW Hospital - Cardiology"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "17561000",
+          "display": "Cardiologist"
+        }
+      ],
+      "text": "Cardiologist"
+    }
+  ]
+}

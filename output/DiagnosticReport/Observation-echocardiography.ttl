@@ -1,0 +1,175 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/echocardiography> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "echocardiography"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: echocardiography</p><p><b>meta</b>: </p><p><b>identifier</b>: Filler Identifier = 3143079143</p><p><b>partOf</b>: <a href=\"ImagingStudy-echodicom-for-report.html\">Generated Summary: id: echodicom-for-report; urn:oid:1.2.36.1.2001.1001.105.100007.30246.19789.3503430046; status: available; <span title=\"{http://dicom.nema.org/resources/ontology/DCM US}\">Ultrasound</span>; started: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://loinc.org 42148-7}, {http://www.radlex.org RPID5656}, {http://snomed.info/sct 40701008}\">US Heart</span>; <span title=\"Codes: \">Pre-chemotherapy</span></a></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 40701008}\">Echocardiography</span></p><p><b>subject</b>: <a href=\"Patient-995138d0-b8bc-4bd9-b49d-d2d025d39ae7.html\">Generated Summary: id: 995138d0-b8bc-4bd9-b49d-d2d025d39ae7; IHI = 8003608000228437, Medicare Number = 29533070311, Medical Record Number = 2338172; Wei Zhang ; gender: male; birthDate: 1969-05-03</a></p><p><b>effective</b>: 06/01/2019 9:45:00 AM</p><p><b>performer</b>: </p><ul><li><a href=\"urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9\">urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9</a></li><li><a href=\"urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6\">urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6</a></li></ul><p><b>note</b>: Annotation: Patient was in sinus bradycardia at a rate of 54 bpm., Annotation: Left Ventricle: The left ventricular internal cavity size was normal. LV vol 119 ml. Overall LV systolic function was normal. EF = 61 % . No evidence of left ventricular hypertrophy. There were no resting regional wall motion abnormalities detected. Indeterminant LV filling pressure based E/e' ratio = 8 %. Normal GLS (Global Longitudinal Strain) = —21 % Philips Epiq 5c., Annotation: Right Ventricle: Normal right ventricular size, wall thickness, and systolic function. RV S' 11 cm/s., Annotation: Left Atrium: The left atrium was mildly dilated. 21 cm2., Annotation: Right Atrium: The right atrium was at the upper limits of normal dimension. 20 cm2., Annotation: Pericardium: The pericardium appears normal., Annotation: Aortic Valve: The aortic valve was tricuspid. There was mild aortic valve sclerosis, with no evidence of aortic valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4.             6 cm2. No evidence of aortic valve regurgitation was seen. Resting LVOFT SV = 115 ml. Indexed = 56 ml/m2., Annotation: Mitral Valve: The mitral valve is sclerotic. Trivial (0—1/4) mitral valve regurgitation was seen., Annotation: Tricuspid Valve: The tricuspid valve was normal in structure. Trivial (O—1/4) tricuspid regurgitation was visualised. The tricuspid regurgitant velocity is 2.2 m/s, and with an assumed right atrial pressure of 3 mmHg, the estimated right ventricular systolic pressure normal at 23 mmHg., Annotation: Pulmonic Valve: Structurally normal pulmonic valve, with normal leaflet excursion., Annotation: Aorta: There is mild dilatation of the aortic root. The trans sinus diameter measures at 4.3 cm. The ascending aorta measures at 3.6 cm., Annotation: Shunts: The interatrial septum appears intact.</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 80891009}\">Heart structure</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-leftventricle-structure.html\">Generated Summary: id: leftventricle-structure; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://snomed.info/sct 364080001}\">Left ventricle 2D</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}, {http://snomed.info/sct 399064001}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-atrialarea.html\">Generated Summary: id: atrialarea; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: \">Atrial Areas/Volume</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 59652004}\">Atrial structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}, {http://snomed.info/sct 399064001}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-leftventricle-systolicfunction.html\">Generated Summary: id: leftventricle-systolicfunction; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://snomed.info/sct 250907009}\">LV SYSTOLIC FUNCTION</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-leftventricle-dystolicfunction.html\">Generated Summary: id: leftventricle-dystolicfunction; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://snomed.info/sct 250907009}\">LV DIASTOLIC FUNCTION</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 87878005}\">Left ventricular structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-mitralvalve.html\">Generated Summary: id: mitralvalve; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://snomed.info/sct 364083004}\">Mitral Valve</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 91134007}\">Mitral valve structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-aorticvalve.html\">Generated Summary: id: aorticvalve; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://snomed.info/sct 399359007}\">Aortic Valve</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 34202007}\">Aortic valve structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-tricupsid-parvpressure.html\">Generated Summary: id: tricupsid-parvpressure; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: \">Tricuspid Valve and PA/RV Systolic Pressure</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 80891009}\">Heart structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}\">Ultrasound imaging</span></a></li><li><a href=\"Observation-pulmonaryvalve.html\">Generated Summary: id: pulmonaryvalve; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category imaging}\">Imaging</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span>; <span title=\"Codes: {http://snomed.info/sct 399222008}\">Pulmonary Valve</span>; effective: 06/01/2019 9:45:00 AM; <span title=\"Codes: {http://snomed.info/sct 39057004}\">Pulmonary valve structure</span>; <span title=\"Codes: {http://snomed.info/sct 278292003}, {http://loinc.org LP6617-7}\">Ultrasound imaging</span></a></li></ul></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "FILL" ];
+         fhir:Coding.display [ fhir:value "Filler Identifier" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0/8003623233366565" ];
+     fhir:Identifier.value [ fhir:value "3143079143" ]
+  ];
+  fhir:Observation.partOf [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/ImagingStudy/echodicom-for-report>;
+     fhir:Reference.reference [ fhir:value "ImagingStudy/echodicom-for-report" ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "imaging" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "CUS" ];
+       fhir:Coding.display [ fhir:value "Cardiac Ultrasound" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:40701008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "40701008" ];
+       fhir:Coding.display [ fhir:value "Echocardiography" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Echocardiography" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7>;
+     fhir:Reference.reference [ fhir:value "Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-01-06T09:45:00+10:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:46d552b7-88a9-427b-9d62-8b0727de91f9" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "urn:uuid:04ac8978-bc60-4492-aa07-f62568ebe5c6" ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Patient was in sinus bradycardia at a rate of 54 bpm." ]
+  ], [
+     fhir:index 1;
+     fhir:Annotation.text [ fhir:value "Left Ventricle: The left ventricular internal cavity size was normal. LV vol 119 ml. Overall LV systolic function was normal. EF = 61 % . No evidence of left ventricular hypertrophy. There were no resting regional wall motion abnormalities detected. Indeterminant LV filling pressure based E/e' ratio = 8 %. Normal GLS (Global Longitudinal Strain) = —21 % Philips Epiq 5c." ]
+  ], [
+     fhir:index 2;
+     fhir:Annotation.text [ fhir:value "Right Ventricle: Normal right ventricular size, wall thickness, and systolic function. RV S' 11 cm/s." ]
+  ], [
+     fhir:index 3;
+     fhir:Annotation.text [ fhir:value "Left Atrium: The left atrium was mildly dilated. 21 cm2." ]
+  ], [
+     fhir:index 4;
+     fhir:Annotation.text [ fhir:value "Right Atrium: The right atrium was at the upper limits of normal dimension. 20 cm2." ]
+  ], [
+     fhir:index 5;
+     fhir:Annotation.text [ fhir:value "Pericardium: The pericardium appears normal." ]
+  ], [
+     fhir:index 6;
+     fhir:Annotation.text [ fhir:value "Aortic Valve: The aortic valve was tricuspid. There was mild aortic valve sclerosis, with no evidence of aortic valve stenosis. PPG 6 mmHg MPG 4 mmHg, AVA 4.             6 cm2. No evidence of aortic valve regurgitation was seen. Resting LVOFT SV = 115 ml. Indexed = 56 ml/m2." ]
+  ], [
+     fhir:index 7;
+     fhir:Annotation.text [ fhir:value "Mitral Valve: The mitral valve is sclerotic. Trivial (0—1/4) mitral valve regurgitation was seen." ]
+  ], [
+     fhir:index 8;
+     fhir:Annotation.text [ fhir:value "Tricuspid Valve: The tricuspid valve was normal in structure. Trivial (O—1/4) tricuspid regurgitation was visualised. The tricuspid regurgitant velocity is 2.2 m/s, and with an assumed right atrial pressure of 3 mmHg, the estimated right ventricular systolic pressure normal at 23 mmHg." ]
+  ], [
+     fhir:index 9;
+     fhir:Annotation.text [ fhir:value "Pulmonic Valve: Structurally normal pulmonic valve, with normal leaflet excursion." ]
+  ], [
+     fhir:index 10;
+     fhir:Annotation.text [ fhir:value "Aorta: There is mild dilatation of the aortic root. The trans sinus diameter measures at 4.3 cm. The ascending aorta measures at 3.6 cm." ]
+  ], [
+     fhir:index 11;
+     fhir:Annotation.text [ fhir:value "Shunts: The interatrial septum appears intact." ]
+  ];
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:80891009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "80891009" ];
+       fhir:Coding.display [ fhir:value "Heart structure" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:278292003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "278292003" ];
+       fhir:Coding.display [ fhir:value "Ultrasound imaging" ]
+     ]
+  ];
+  fhir:Observation.hasMember [
+     fhir:index 0;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-structure>;
+     fhir:Reference.reference [ fhir:value "Observation/leftventricle-structure" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/atrialarea>;
+     fhir:Reference.reference [ fhir:value "Observation/atrialarea" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-systolicfunction>;
+     fhir:Reference.reference [ fhir:value "Observation/leftventricle-systolicfunction" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/leftventricle-dystolicfunction>;
+     fhir:Reference.reference [ fhir:value "Observation/leftventricle-dystolicfunction" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mitralvalve>;
+     fhir:Reference.reference [ fhir:value "Observation/mitralvalve" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/aorticvalve>;
+     fhir:Reference.reference [ fhir:value "Observation/aorticvalve" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/tricupsid-parvpressure>;
+     fhir:Reference.reference [ fhir:value "Observation/tricupsid-parvpressure" ]
+  ], [
+     fhir:index 7;
+     fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/pulmonaryvalve>;
+     fhir:Reference.reference [ fhir:value "Observation/pulmonaryvalve" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/echocardiography.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
