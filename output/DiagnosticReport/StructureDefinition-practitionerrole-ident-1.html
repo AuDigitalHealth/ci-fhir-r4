@@ -149,27 +149,44 @@
 <h3 id="practitionerrole-with-mandatory-identifier">PractitionerRole with Mandatory Identifier</h3>
 <p>The purpose of this profile is to define a representation of a practitioner role where unambiguous identification of a practitioner role is mandatory in the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.</p>
 
-<p>The context for this profile is largely authoring of diagnostic content including observations, reports, and orders.</p>
-
 <h4 id="implementation-guidance">Implementation guidance</h4>
 <p>For the overarching usage scenarios in this implementation guide it is expected that:</p>
 <ul>
-<li>identifier - if there isn’t a local identifier namespace available then an identifier can be sent with a HPI-O scoped or ABN-scoped identifier namespace (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
-<li>code will be a value equivalent to the author’s professional role, e.g. 309352002 |Neuroendocrinologist|, 40204001 |Haematologist|, or 78729002 |Diagnostic radiologist|</li>
-<li>practitioner will be the performing diagnostic service provider (e.g. specialist, radiologist, pathologist) and will be sent as a reference to a Practitioner resource</li>
-<li>organization will be the employing organisation and will be sent as a reference to an Organization resource</li>
+<li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
+<li>if more than one identifier is sent, only one of each type is sent</li>
 </ul>
+
 <p>When sending to the My Health Record system it is expected that one identifier is an HPI-I.</p>
 
 <h4 id="boundaries-and-relationships">Boundaries and relationships</h4>
 <p>Other related practitioner role attributes, considered to be agnostic to the particular healthcare event the practitioner is participating in (in this practitioner role) are better represented in other resources rather than directly part of the PractitionerRole. These attributes include:</p>
-
 <ul>
   <li>the locations at which this practitioner performs the services – the healthcare event specific location will be represented using a <a href="https://www.hl7.org/fhir/location.html">Location</a> that is referenced from a clinical statement such as a <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a></li>
   <li>the healthcare services this practitioner provides in this role (some or none of which may have been performed in this event) – the healthcare services provided in the event will be represented using a <a href="https://www.hl7.org/fhir/healthcareservice.html">HealthcareService</a> that is referenced from a clinical statement</li>
 </ul>
 
-<p>This profile is referenced by <a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a>, <a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a>, <a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a>, <a href="StructureDefinition-servicerequest-path-report-1.html">Order Details for Pathology Report</a>, <a href="StructureDefinition-observation-path-atomic-1.html">Atomic Pathology Observation</a>, and <a href="StructureDefinition-specimen-collect-1.html">Collected Specimen</a>.</p>
+<p>This profile is referenced by 
+<a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a>,
+<a href="StructureDefinition-observation-imag-atomic-1.html">Atomic Imaging Observation</a>,
+<a href="StructureDefinition-observation-otherdiag-atomic-1.html">Atomic Other Diagnostic Observation</a>,
+<a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a>,
+<a href="StructureDefinition-observation-path-atomic-1.html">Atomic Pathology Observation</a>,
+<a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a>,
+<a href="StructureDefinition-bodystructure-dh-base-1.html">Base BodyStructure</a>,
+<a href="StructureDefinition-specimen-collect-1.html">Collected Specimen</a>,
+<a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a>,
+<a href="StructureDefinition-imagingstudy-diag-1.html">Diagnostic Imaging Study</a>,
+<a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a>, 
+<a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a>, 
+<a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a>, 
+<a href="StructureDefinition-servicerequest-imag-report-1.html">Order Details for Diagnostic Imaging Report</a>,
+<a href="StructureDefinition-servicerequest-otherdiag-report-1.html">Order Details for Other Diagnostic Report</a>,
+<a href="StructureDefinition-servicerequest-path-report-1.html">Order Details for Pathology Report</a>,
+<a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a>,
+<a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a>,
+<a href="StructureDefinition-observation-imag-simple-1.html">Simple Imaging Observation</a>,
+<a href="StructureDefinition-observation-otherdiag-simple-1.html">Simple Other Diagnostic Observation</a> and
+<a href="StructureDefinition-observation-path-simple-1.html">Simple Pathology Observation</a>.</p>
 
 
 <!-- example here -->
@@ -210,7 +227,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-practitionerrole.html">AUBasePractitionerRole</a>.</p>
 <p>
-This profile was published on Mon Jun 29 17:21:36 AEST 2020 as a draft by Australian Digital Health Agency.
+This profile was published on Mon Jun 29 18:33:41 AEST 2020 as a draft by Australian Digital Health Agency.
 </p>
 
 
@@ -995,7 +1012,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Jun 29, 2020 17:21+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Jun 29, 2020 18:33+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>
