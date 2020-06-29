@@ -14,23 +14,8 @@
   </tr>
   <tr>
       <td>Support for screening programs initiated requests</td>
-      <td>Not yet clear how requests that are initiated by a national program, e.g. <a href="http://www.cancerscreening.gov.au/internet/screening/publishing.nsf/Content/bowel-screening-1">National Bowel Cancer Screening Program</a>, are supported with this model - work in progress.</td>
+      <td>Not yet clear how requests that are initiated by a national program, e.g. <a href="http://www.cancerscreening.gov.au/internet/screening/publishing.nsf/Content/bowel-screening-1">National Bowel Cancer Screening Program</a>, are supported with this model.</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/29">ci-fhir-r4/issues/29</a></td>
-  </tr>
-  <tr>
-      <td>type (coding terminology enforcement)</td>
-      <td>It is intended that the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen</a> coding:snomedSpecimenType should be enforced if any coding is provided. In other words, either text or a code from this value set is required. This is a work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
-  </tr>
-  <tr>
-      <td>collection.method (coding terminology enforcement)</td>
-      <td>It is intended that the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen</a> coding:snomedSpecimenCollectionProcedure should be enforced if any coding is provided. In other words, either text or a code from this value set is required. This is a work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
-  </tr>
-  <tr>
-      <td>collection.bodySite (coding terminology enforcement)</td>
-      <td>It is intended that the slice from HL7 <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-specimen.html">AU Base Specimen</a> coding:snomedBodySite should be enforced if any coding is provided. In other words, either text or a code from this value set is required. This is a work in progress.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a></td>
   </tr>
   <tr>
       <td>Constraint presentation</td>
