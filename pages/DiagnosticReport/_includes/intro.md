@@ -183,11 +183,14 @@ This table lists known issues with this specification at the time of publishing.
   </tr>
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
-        <td>This implementation is being developed as part of the Diagnostics in FHIR R4 - June 30 project. This project will establish a suite of profiles to support diagnostics reporting in FHIR R4 including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports.  <br/><br/>
+        <td>This implementation has been developed as part of the Diagnostics in FHIR R4 - June 30 project. This project has established a suite of profiles to support diagnostics reporting in FHIR R4 including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports. <br/><br/>
 
-Intended outcomes include an initial set of working profiles (including terminology) to support engagement with industry and other stakeholders; identification of issues / topics for wider engagement; provide foundation for mapping into CDA; demonstrate a means of meeting requirements of current eHealth diagnostic reporting specifications in R4 FHIR. <br/><br/>
-HL7 AU Base profiles that this implementation guide is based on are undergoing development. Improvements out of that work are expected to be incorporated into this implementation guide.<br/><br/>
-Stakeholder feedback is sought on a number of extant issues described on the pages of each profile. As engagement is progressed the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues.    </td>
+The outcomes include an initial set of working profiles (including terminology) to support engagement with industry and other stakeholders; some examples; identification of issues / topics for wider engagement; provide foundation for mapping into CDA; demonstrate a means of meeting requirements of current eHealth diagnostic reporting specifications in R4 FHIR. <br/><br/>
+
+
+HL7 AU Base profiles that this implementation guide are based on are undergoing development. Improvements have been made to these base profiles which have been incorporated into this implementation guide. Further work is required to add terminology, as it becomes available e.g. RCPA value sets for pathology, to the base profiles.  Further examples are required to stimulate community discussion on important modelling aspects including content for DiagnosticReport.code (<a href ="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/88">GitHub #88</a>). Examples are a useful informative method to demonstrate to the community how the models work and the development of more examples is required.  <br/><br/>
+Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as on <a href ="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">GitHub Issues</a>. As engagement is progressed the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues.    </td>
+
     </tr>
     
     <tr>
