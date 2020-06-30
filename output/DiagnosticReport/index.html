@@ -196,7 +196,7 @@
 <h2 id="how-to-read-this-document">How to read this document</h2>
 <p>This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of diagnostic report. These descriptions are defined as a set of FHIR <a href="http://hl7.org/fhir/r4/profiling.html">profiles</a>.</p>
 
-<p>The table below identifies the profile that is the starting point for an implementer. That starting profile will reference the additional profiles necessary to assert <a href="conformance.html">conformance</a> for this implementation guide.</p>
+<p>The table below identifies the profile that is the starting point for an implementer in a scenario. That starting profile will reference the additional profiles necessary to assert <a href="conformance.html">conformance</a> for this implementation guide.</p>
 
 <table border="1" cellpadding="1" valign="middle">
 <tbody>
@@ -212,51 +212,51 @@
     <tr>
         <td rowspan="3">Pathology  </td>
         <td>Composition</td>
-        <td>For exchanging a pathology report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a> profile is the starring point. </td> 
+        <td>For exchanging a pathology report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a> profile is the starting point. </td> 
     </tr>
 
     <tr>
 
         <td>DiagnosticReport</td>
-        <td>For exchanging a pathology report as a diagnostic report, the <a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a> profile is the starring point.</td> 
+        <td>For exchanging a pathology report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchanging a pathology report as a document (containing a diagnostic report), the <a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a> profile is the starring point. </td> 
+        <td>For exchanging a pathology report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a> profile is the starting point. </td> 
     </tr>
 
     <tr>
         <td rowspan="3">Diagnostic Imaging</td>
         <td>Composition</td>
-        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchanging a diagnostic imaging report as a diagnostic report, <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchanging a diagnostic imaging report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
+        <td>For exchanging a diagnostic imaging report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
     </tr>
 
  
     <tr>
         <td rowspan="3">Specialist and Other Diagnostic</td>
         <td>Composition</td>
-        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
+        <td>For exchanging a specialist and other diagnostic report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a diagnostic report, <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
+        <td>For exchanging a specialist and other diagnostic report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
     </tr>
 
     <tr>
         <td>DiagnosticReport</td>
-        <td>For exchanging a specialist and other diagnostic report (not pathology, not diagnostic imaging) as a document (containing a diagnostic report), <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
+        <td>For exchanging a specialist and other diagnostic report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
     </tr>
     
 
@@ -324,11 +324,16 @@
   </tr>
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
-        <td>This implementation is being developed as part of the Diagnostics in FHIR R4 - June 30 project. This project will establish a suite of profiles to support diagnostics reporting in FHIR R4 including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports.  <br /><br />
+        <td>This draft implementation guide has been developed with a suite of draft profiles and some early examples in order to form a basis for engagement with industry and other stakeholders. The profiles in this implementation guide are derived from <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//index.html">HL7 AU Base</a> material and support diagnostics reporting including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports. <br /><br />
 
-Intended outcomes include an initial set of working profiles (including terminology) to support engagement with industry and other stakeholders; identification of issues / topics for wider engagement; provide foundation for mapping into CDA; demonstrate a means of meeting requirements of current eHealth diagnostic reporting specifications in R4 FHIR. <br /><br />
-HL7 AU Base profiles that this implementation guide is based on are undergoing development. Improvements out of that work are expected to be incorporated into this implementation guide.<br /><br />
-Stakeholder feedback is sought on a number of extant issues described on the pages of each profile. As engagement is progressed the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues.    </td>
+Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as via <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">ci-fhir-r4 GitHub</a> issues. As engagement progresses, the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues. <br /><br />
+
+Additional examples are intended to be included in future releases to stimulate community discussion on important modelling aspects.  <br /><br />
+
+Further development of the HL7 AU profiles is necessary to mature understanding of domain scenarios and resolve a number of extant issues described in <a href="https://github.com/hl7au/au-fhir-base/issues">au-fhir-base GitHub</a> issues. Additional terminology support, e.g. RCPA value sets and support for specialist and other diagnostics, is forthcoming. These improvements will be incorporated into the profiles in this implementation guide. 
+
+     </td>
+
     </tr>
     
     <tr>
@@ -461,7 +466,7 @@ Stakeholder feedback is sought on a number of extant issues described on the pag
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, Jun 30, 2020 14:20+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, Jun 30, 2020 17:06+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>

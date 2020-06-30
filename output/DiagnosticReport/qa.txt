@@ -3,7 +3,7 @@
 
 err = 11, warn = 154, info = 31
 IG Publisher Version: v1.0.100-SNAPSHOT Out of date - current version is v1.0.101-SNAPSHOT
-Generated Tue Jun 30 14:24:37 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+Generated Tue Jun 30 17:11:30 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 2
  C:\work\git\ci-fhir-r4\examples\binary-echocardio-pre-chemo-report-pdf : 0 / 0
@@ -132,9 +132,9 @@ ERROR: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.res
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1
 WARNING: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml ==
 ERROR: Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource.basedOn[0]: Unable to find matching profile for urn:uuid:f606666a-23bf-4947-87ba-688824c12c08 among choices: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1
@@ -149,7 +149,7 @@ INFORMATION: Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resour
 WARNING: Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-94f75158-f8b9-4c08-b96e-4306580c2add.xml ==
 WARNING: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1 not found by validator
-WARNING: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.subject: Found multiple matching profiles for urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1
+WARNING: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.subject: Found multiple matching profiles for urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1
 WARNING: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-b317aa04-131c-49d1-b9bc-48ff94876834.xml ==
 ERROR: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.basedOn[0]: Unable to find matching profile for urn:uuid:b03d838d-f483-4f92-bf6f-37b1b2d5bebc among choices: http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1
@@ -166,10 +166,10 @@ WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource: 
 == C:\work\git\ci-fhir-r4\examples\bundle-b49df1b2-b717-4d81-a140-7f16a334999b.xml ==
 WARNING: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1 not found by validator
 INFORMATION: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.type.coding[0]: Code System URI "https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" is unknown so the code cannot be validated
-WARNING: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.subject: Found multiple matching profiles for urn:uuid:9aeff67b-e9df-46dc-a366-2a33ec6dba1a among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1
+WARNING: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.subject: Found multiple matching profiles for urn:uuid:9aeff67b-e9df-46dc-a366-2a33ec6dba1a among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1
 ERROR: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.section[0].entry[0]: Unable to find matching profile for urn:uuid:d13ab38b-7d90-4486-a60f-dfb0f34f888c among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1
-INFORMATION: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:d13ab38b-7d90-4486-a60f-dfb0f34f888c matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1
 INFORMATION: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:d13ab38b-7d90-4486-a60f-dfb0f34f888c matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1
+INFORMATION: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:d13ab38b-7d90-4486-a60f-dfb0f34f888c matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1
 WARNING: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\diagnosticreport-echocardio-pre-chemo-atomic.xml ==
 WARNING: DiagnosticReport/echocardio-pre-chemo-atomic: DiagnosticReport.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator
