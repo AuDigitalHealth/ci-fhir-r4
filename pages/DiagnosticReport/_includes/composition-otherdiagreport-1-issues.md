@@ -5,11 +5,6 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-     <tr>
-        <td>status (terminology binding)</td>
-        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1">CompositionStatus Document Available</a> value set is pending.</p></td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/57">ci-fhir-r4/issues/57</a></td>
-      </tr>
   <tr>
       <td>type (missing terminology)</td>
       <td>This profile is intended to support all 'other' diagnostic reports which is broad.<br/><br/>

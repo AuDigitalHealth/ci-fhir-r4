@@ -5,11 +5,6 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-  <tr>
-        <td>status (terminology binding)</td>
-        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/requeststatus-reporting-1">RequestStatus Reporting</a> value set is pending.</p></td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/60">ci-fhir-r4/issues/60</a></td>
-   </tr>
    <tr>
        <td>category (appropriateness of code)</td>
        <td><p>This profile is intended to support all 'other' diagnostic reports which is broad.</p>

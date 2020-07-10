@@ -13,16 +13,6 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/32">ci-fhir-r4/issues/32</a></td>
    </tr>
    <tr>
-        <td>status (terminology binding)</td>
-        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1">DiagnosticReportStatus Report Available</a> value set is pending.</p></td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/58">ci-fhir-r4/issues/58</a></td>
-      </tr>
-      <tr>
-        <td>category (terminology binding)</td>
-        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1">Pathology Diagnostic Service Category</a> value set is pending.</p></td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/61">ci-fhir-r4/issues/61</a></td>
-      </tr>
-   <tr>
     <td>category (potential code system redundancy / duplication)</td>
     <td><p>The element category is present in <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, and <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>. A rationalisation of the codes used for categorisation needs to be performed.</p>
         <p>Observation.category: "laboratory" <a href="http://hl7.org/fhir/R4/codesystem-observation-category.html">http://terminology.hl7.org/CodeSystem/observation-category</a></p>
