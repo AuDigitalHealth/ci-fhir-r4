@@ -5,11 +5,6 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-      <tr>
-        <td>status (terminology binding)</td>
-        <td><p>Publication of the <a href="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1">ObservationStatus Result Available</a> value set is pending.</p></td>
-        <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/59">ci-fhir-r4/issues/59</a></td>
-      </tr>
    <tr>
     <td>category (potential code system redundancy / duplication)</td>
     <td><p>The element category is present in <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, and <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>. A rationalisation of the codes used for categorisation needs to be performed - work in progress.</p>
