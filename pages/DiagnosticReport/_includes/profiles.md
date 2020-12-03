@@ -28,9 +28,7 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul>                            
-                                <li><a href="StructureDefinition-composition-imagreport-1.html">Composition (Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-composition-otherdiagreport-1.html">Composition (Other Diagnostic Report)</a></li>
-                                <li><a href="StructureDefinition-composition-pathreport-1.html">Composition (Pathology Report)</a></li>
                             </ul>
                         </td>
                         <td class="frm-null"/>
@@ -51,14 +49,11 @@
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></li>
                                 <li><a href="StructureDefinition-patient-ident-1.html">Patient (Patient with Mandatory Identifier)</a></li>
-                                <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>
-                                <li><a href="StructureDefinition-practitionerrole-dh-base-1.html">PractitionerRole (Base PractitionerRole)</a></li> 
                                 <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>
                             </ul>
                         </td>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>
                                 <li><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></li>
                             </ul>
                         </td>                         
@@ -79,29 +74,16 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-bodystructure-dh-base-1.html">BodyStructure (Base BodyStructure)</a></li>
-                                <li><a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">DiagnosticReport (Atomic Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></li>
-                                <li><a href="StructureDefinition-diagnosticreport-path-atomic-1.html">DiagnosticReport (Atomic Pathology Report)</a></li>                                
-                                <li><a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">DiagnosticReport (My Health Record Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">DiagnosticReport (My Health Record Other Diagnostic Report)</a></li>
-                                <li><a href="StructureDefinition-diagnosticreport-path-mhr-1.html">DiagnosticReport (My Health Record Pathology Report)</a></li>
-								<li><a href="StructureDefinition-imagingstudy-diag-1.html">ImagingStudy (Diagnostic Imaging Study)</a></li>
-								<li><a href="StructureDefinition-observation-imag-atomic-1.html">Observation (Atomic Imaging Observation)</a></li>
 								<li><a href="StructureDefinition-observation-otherdiag-atomic-1.html">Observation (Atomic Other Diagnostic Observation)</a></li>
-                                <li><a href="StructureDefinition-observation-path-atomic-1.html">Observation (Atomic Pathology Observation)</a></li>
-								<li><a href="StructureDefinition-observation-imag-simple-1.html">Observation (Simple Imaging Observation)</a></li>
 								<li><a href="StructureDefinition-observation-otherdiag-simple-1.html">Observation (Simple Other Diagnostic Observation)</a></li>
-                                <li><a href="StructureDefinition-observation-path-simple-1.html">Observation (Simple Pathology Observation)</a></li>
-                                <li><a href="StructureDefinition-specimen-collect-1.html">Specimen (Collected Specimen)</a></li>
                             </ul>
                          </td>
                          <td class="frm-null"/>
                          <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-servicerequest-imag-report-1.html">ServiceRequest (Order Details for Diagnostic Imaging Report)</a></li>
                                 <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.html">ServiceRequest (Order Details for Other Diagnostic Report)</a></li>
-                                <li><a href="StructureDefinition-servicerequest-path-report-1.html">ServiceRequest (Order Details for Pathology Report)</a></li>
                             </ul>
                          </td>
                          <td class="frm-null"/>
