@@ -12,16 +12,8 @@ When sending to the My Health Record system it is expected that:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Atomic Diagnostic Imaging Report](StructureDefinition-diagnosticreport-imag-atomic-1.html),
-[Atomic Imaging Observation](StructureDefinition-observation-imag-atomic-1.html),
 [Atomic Other Diagnostic Observation](StructureDefinition-observation-otherdiag-atomic-1.html),
 [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html),
-[Atomic Pathology Observation](StructureDefinition-observation-path-atomic-1.html),
-[Atomic Pathology Report](StructureDefinition-diagnosticreport-path-atomic-1.html),
-[Diagnostic Imaging Report](StructureDefinition-composition-imagreport-1.html),
-[Order Details for Diagnostic Imaging Report](StructureDefinition-servicerequest-imag-report-1.html),
 [Order Details for Other Diagnostic Report](StructureDefinition-servicerequest-otherdiag-report-1.html),
-[Order Details for Pathology Report](StructureDefinition-servicerequest-path-report-1.html),
-[Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html),
-[Pathology Report](StructureDefinition-composition-pathreport-1.html),
+[Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html) and
 [Simple Other Diagnostic Observation](StructureDefinition-observation-otherdiag-simple-1.html).

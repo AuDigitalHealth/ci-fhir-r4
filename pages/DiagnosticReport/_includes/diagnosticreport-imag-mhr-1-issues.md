@@ -27,11 +27,6 @@
             <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/406">au-fhir-base/issues/406</a></td>
        </tr>
       <tr>
-    <td>effective[x] (period)</td>
-    <td>The My Health Record system expects only a dateTime; period is a relevant type for some imaging examinations. The constraining of types should be reconfirmed.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/47">ci-fhir-r4/issues/47</a></td>
-   </tr>
-      <tr>
     <td>presentedForm (PDF packaging requirements)</td>
     <td>Not yet clear what the packaging requirements are for attachments when sending FHIR to the My Health Record system infrastructure. In lieu of a FHIR equivalent of the <a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1962-2014/nehta-1229-2011">Clinical Documents - CDA Package v1.0</a> specification, examples for this profile will include workarounds (e.g. absolute url to a placeholder repository for attachment) or inclusion as base64 binary in a bundle.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/74">ci-fhir-r4/issues/74</a></td>

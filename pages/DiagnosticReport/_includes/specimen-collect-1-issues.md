@@ -10,7 +10,7 @@
       <td>It is not understood how self collection can be supported in this profile. There is no element or core extension available for Specimen that identifies a patient or related person as a collector.<br/><br/>
       Self collection of bloods or other material including sent by mail kits cancer screening are to be a supported usage scenario.
       </td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/24">ci-fhir-r4/issues/24</a>, and <a href="https://jira.hl7.org/browse/FHIR-26922">jira.hl7.org/browse/FHIR-26922</a></td>
+      <td>See <a href="https://jira.hl7.org/browse/FHIR-26922">jira.hl7.org/browse/FHIR-26922</a></td>
   </tr>
   <tr>
       <td>Support for screening programs initiated requests</td>

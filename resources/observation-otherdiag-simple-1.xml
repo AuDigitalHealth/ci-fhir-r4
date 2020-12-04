@@ -57,7 +57,7 @@
       <path value="Observation" />
       <short value="A specialist or other diagnostic (not pathology or imaging) investigation" />
       <definition value="An observation of a specialist or other diagnostic (not pathology and not diagnostic imaging) investigation for a patient. This observation may be a simple test or a panel/study" />
-    <constraint>
+      <constraint>
         <key value="inv-dh-obs-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
@@ -70,26 +70,11 @@
         <expression value="performer.exists() implies (performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists())" />
       </constraint>
     </element>
-    <element id="Observation.partOf">
-      <path value="Observation.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.partOf.reference">
-      <path value="Observation.partOf.reference" />
-      <min value="1" />
-    </element>
     <element id="Observation.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
-        <valueString value="default: final" />
-      </extension>
       <path value="Observation.status" />
       <short value="preliminary | final | amended +" />
       <mustSupport value="true" />
-    <binding>
+      <binding>
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1" />
       </binding>
@@ -97,12 +82,17 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
-     <element id="Observation.code">
+    <element id="Observation.code">
       <path value="Observation.code" />
       <short value="Diagnostic examination / panel name" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1" />
+      </binding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />

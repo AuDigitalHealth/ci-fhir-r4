@@ -23,7 +23,7 @@
   <tr>
     <td>contact.relationship (missing terminology binding)</td>
     <td>Missing support for <a href="https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-1">Contact Relationship Type</a>. This is expected to be progressed via HL7 AU, resulting in support for this valueset as an extensible binding in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a>.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/16">ci-fhir-r4/issues/16</a> See <a href="https://github.com/hl7au/au-fhir-base/issues/419">au-fhir-base/issues/419</a></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/16">ci-fhir-r4/issues/16</a></td>
   </tr>
 </tbody>
 </table>

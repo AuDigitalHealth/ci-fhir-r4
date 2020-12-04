@@ -83,14 +83,13 @@
       <fixedCode value="order" />
       <mustSupport value="true" />
     </element>
-    <element id="ServiceRequest.category">
-      <path value="ServiceRequest.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1" />
+      </binding>
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />

@@ -11,20 +11,21 @@
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
    </tr> 
     <tr>
-    <td>code (missing terminology)</td>
-    <td><p>We need a value set whose permissible values represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test. Common examples of these tests are:</p>
-        <ul>
-            <li>cardiology field - ECG, echo cardiogram, angiocardiography</li>
-            <li>neurology field - EEG, EMG, evoked potentials, nerve conduction tests</li>
-            <li>gastroenterology field - endoscopy, colonoscopy</li>
-            <li>respiratory field - pulmonary function tests</li>
-            <li>audiology - hearing tests</li>
-            <li>sleep studies</li>
-        </ul>
-        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (i.e. cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
-        <p> This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticreport.html">AU Base Diagnostic Report</a></p></td>
-    <td>See <a href="https://jira.aws.tooling/browse/FTR-898">jira.aws.tooling/browse/FTR-898</a>, and <a href="https://github.com/hl7au/au-fhir-base/issues/402">au-fhir-base/issues/402</a></td>
-   </tr>
+       <td>code</td>
+       <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow 
+ permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test. Common examples of these tests are:
+           <ul>
+               <li>cardiology field - ECG, echo cardiogram, angiocardiography</li>
+               <li>neurology field - EEG, EMG, evoked potentials, nerve conduction tests</li>
+               <li>gastroenterology field - endoscopy, colonoscopy</li>
+               <li>respiratory field - pulmonary function tests</li>
+               <li>audiology - hearing tests</li>
+               <li>sleep studies</li>
+            </ul></p>
+        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (e.g. cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
+        <p>This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a>.</p></td>
+        <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td>
+   </tr>     
       <tr>
     <td>presentedForm (PDF packaging requirements)</td>
     <td>Not yet clear what the packaging requirements are for attachments when sending FHIR to the My Health Record system infrastructure. In lieu of a FHIR equivalent of the <a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1962-2014/nehta-1229-2011">Clinical Documents - CDA Package v1.0</a> specification, examples for this profile will include workarounds (e.g. absolute url to a placeholder repository for attachment) or inclusion as base64 binary in a bundle.</td>

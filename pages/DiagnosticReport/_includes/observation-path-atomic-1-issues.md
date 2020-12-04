@@ -8,7 +8,7 @@
   <tr>
       <td>Usage of "Atomic" in description</td>
       <td>The term "Atomic" is used to describe data at the element level allowing element names and values to be represented in the report. Whether "Atomic" is the appropriate descriptive term to be used needs to be determined by the stakeholders and changes made if necessary.</td>
-      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/30">ci-fhir-r4/issues/30</a> and <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/27">ci-fhir-r4/issues/27</a> </td>
+      <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/27">ci-fhir-r4/issues/27</a> </td>
   </tr>
    <tr>
     <td>category (potential code system redundancy / duplication)</td>

@@ -25,12 +25,7 @@
     <td><p>One or more value sets representing the Standard for Pathology Informatics in Australia - Reporting codes (see <a href="https://www.rcpa.edu.au/Library/Practising-Pathology/PTIS/APUTS-Downloads">DOWNLOADS</a>) are in progress. This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-observation.html">AU Diagnostic Observation</a>.</p>
         <p>When this content is available we are expecting to replace the placeholder SNOMED CT-AU set with this material.</p></td>
     <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/399">au-fhir-base/issues/399</a></td>
-   </tr>
-   <tr>
-    <td>effective[x] (period)</td>
-    <td>The My Health Record system expects only a dateTime; period is a relevant type for some pathology tests. The constraining of types should be reconfirmed.</td>
-    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/47">ci-fhir-r4/issues/47</a></td>
-   </tr>
+   </tr>   
    <tr>
     <td>presentedForm (PDF packaging requirements)</td>
     <td>Not yet clear what the packaging requirements are for attachments when sending FHIR to the My Health Record system infrastructure. In lieu of a FHIR equivalent of the <a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1962-2014/nehta-1229-2011">Clinical Documents - CDA Package v1.0</a> specification, examples for this profile will include workarounds (e.g. absolute url to a placeholder repository for attachment) or inclusion as base64 binary in a bundle.</td>
