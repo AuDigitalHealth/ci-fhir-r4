@@ -30,7 +30,7 @@
    </tr>
    <tr>
        <td>value[x]</td>
-       <td><p>Stakeholder and business agreement is required to determine whether value[x] can be included in this profile as Simple Pathology Observation and Simple Imaging Observation donot support this element</p>
+       <td><p>Stakeholder and business agreement is required to determine whether value[x] can be included in this profile as Simple Pathology Observation and Simple Imaging Observation do not support this element</p>
         </td>
         <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/105">ci-fhir-r4/issues/105</a></td>
    </tr>
