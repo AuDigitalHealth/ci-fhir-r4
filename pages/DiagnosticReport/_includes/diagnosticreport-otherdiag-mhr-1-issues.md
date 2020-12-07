@@ -39,14 +39,12 @@
     <td>We need to create a more constrained value set that at least removes imaging and pathology.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
    </tr> 
-    <tr>
-       <td>code (validate value set)</td>
-    <td><p>The value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1</a> has been bound to code with extensible binding.  This value set needs to be validated for it's usability for the other diagnostic reports. </p>
-	
-	</td>
-    <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">au-fhir-base/issues/402</a></td>
-   </tr>
-      <tr>
+   <tr> 
+    <td>code (validate value set)</td> 
+    <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test.</p> <p>Analysis needs to be performed to determine if the value set is appropriate for the Australian context i.e. adequately covers Australian other diagnostic tests.</p> 
+    </td> <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td> 
+    </tr>
+   <tr>
     <td>presentedForm (PDF packaging requirements)</td>
     <td>Not yet clear what the packaging requirements are for attachments when sending FHIR to the My Health Record system infrastructure. In lieu of a FHIR equivalent of the <a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1962-2014/nehta-1229-2011">Clinical Documents - CDA Package v1.0</a> specification, examples for this profile will include workarounds (e.g. absolute url to a placeholder repository for attachment) or inclusion as base64 binary in a bundle.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/74">ci-fhir-r4/issues/74</a></td>
