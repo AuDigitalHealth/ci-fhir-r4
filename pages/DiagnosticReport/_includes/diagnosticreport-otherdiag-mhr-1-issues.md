@@ -41,7 +41,7 @@
    </tr> 
     <tr>
        <td>code (validate value set)</td>
-    <td><p>The value set https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1 has been bound to code with extensible binding.  This value set needs to be validated for it's usability for the other diagnostic reports. </p>
+    <td><p>The value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1</a> has been bound to code with extensible binding.  This value set needs to be validated for it's usability for the other diagnostic reports. </p>
 	
 	</td>
     <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">au-fhir-base/issues/402</a></td>
