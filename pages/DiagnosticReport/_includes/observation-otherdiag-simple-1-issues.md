@@ -15,28 +15,20 @@
        <tr>
        <td>code</td>
        <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow 
- permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test. Common examples of these tests are:
-           <ul>
-               <li>cardiology field - ECG, echo cardiogram, angiocardiography</li>
-               <li>neurology field - EEG, EMG, evoked potentials, nerve conduction tests</li>
-               <li>gastroenterology field - endoscopy, colonoscopy</li>
-               <li>respiratory field - pulmonary function tests</li>
-               <li>audiology - hearing tests</li>
-               <li>sleep studies</li>
-            </ul></p>
-        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (e.g. cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
-        <p>This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a>.</p></td>
+ permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test.</p>
+        <p>Analysis needs to be performed to determine if the value set is appropriate for the Australian context i.e. adequately covers Australian other diagnostic tests.</p>
+        </td>
         <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td>
    </tr>
    <tr>
        <td>value[x]</td>
-       <td><p>Stakeholder and business agreement is required to determine whether value[x] can be included in this profile as Simple Pathology Observation and Simple Imaging Observation do not support this element</p>
+       <td><p>Stakeholder and business agreement is required to determine whether value[x] can be included in this profile.</p>
         </td>
         <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/105">ci-fhir-r4/issues/105</a></td>
    </tr>
    <tr>
        <td>performer</td>
-       <td><p>Stakeholder feedback is required to determine whether to include lab as an organization to observation.performer</p>
+       <td><p>Stakeholder feedback is required to confirm whether the inclusion of organization (essentially a lab) in observation.performer is apporopriate.</p>
         </td>
         <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/106">ci-fhir-r4/issues/106</a></td>
    </tr>
