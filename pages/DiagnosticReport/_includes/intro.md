@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a diagnostic report, including Pathology Reports (PR), Diagnostic Imaging Reports (DIR), and Specialist and Other Diagnostic Reports (SODR). A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a Specialist and Other Diagnostic Reports (SODR) diagnostic report. A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
@@ -66,39 +66,6 @@ The table below identifies the profile that is the starting point for an impleme
     <th>Profiled resource</th>
     <th>Scenario</th>
   </tr>
-
-    <tr>
-        <td rowspan="3">Pathology  </td>
-        <td>Composition</td>
-        <td>For exchanging a pathology report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-pathreport-1.html">Pathology Report</a> profile is the starting point. </td> 
-    </tr>
-
-    <tr>
-
-        <td>DiagnosticReport</td>
-        <td>For exchanging a pathology report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-path-mhr-1.html">My Health Record Pathology Report</a> profile is the starting point.</td> 
-    </tr>
-
-    <tr>
-        <td>DiagnosticReport</td>
-        <td>For exchanging a pathology report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-path-atomic-1.html">Atomic Pathology Report</a> profile is the starting point. </td> 
-    </tr>
-
-    <tr>
-        <td rowspan="3">Diagnostic Imaging</td>
-        <td>Composition</td>
-        <td>For exchanging a diagnostic imaging report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-imagreport-1.html">Diagnostic Imaging Report</a> profile is the starting point.</td> 
-    </tr>
-
-    <tr>
-        <td>DiagnosticReport</td>
-        <td>For exchanging a diagnostic imaging report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-imag-mhr-1.html">My Health Record Diagnostic Imaging Report</a> profile is the starting point.</td> 
-    </tr>
-
-    <tr>
-        <td>DiagnosticReport</td>
-        <td>For exchanging a diagnostic imaging report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-imag-atomic-1.html">Atomic Diagnostic Imaging Report</a> profile is the starting point.</td> 
-    </tr>
 
  
     <tr>
@@ -163,7 +130,7 @@ This implementation guide and related artefacts are technical in nature and the 
             <th>Release comments</th>
         </tr>
         <tr>
-            <td>1.0.0</td>
+            <td>1.1.0</td>
             <td>TBD</td>
             <td>TBD</td>
         </tr>
@@ -183,13 +150,13 @@ This table lists known issues with this specification at the time of publishing.
   </tr>
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
-        <td>This draft implementation guide has been developed with a suite of draft profiles and some early examples in order to form a basis for engagement with industry and other stakeholders. The profiles in this implementation guide are derived from <a href ="https://build.fhir.org/ig/hl7au/au-fhir-base//index.html">HL7 AU Base</a> material and support diagnostics reporting including pathology reports, diagnostic imaging reports, and specialist and other diagnostics reports. <br/><br/>
+        <td>This draft implementation guide has been developed with a suite of draft profiles and some early examples in order to form a basis for engagement with industry and other stakeholders. The profiles in this implementation guide are derived from <a href ="https://build.fhir.org/ig/hl7au/au-fhir-base//index.html">HL7 AU Base</a> material and support diagnostics reporting including specialist and other diagnostics reports. <br/><br/>
 
 Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as via <a href ="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">ci-fhir-r4 GitHub</a> issues. As engagement progresses, the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues. <br/><br/>
 
 Additional examples are intended to be included in future releases to stimulate community discussion on important modelling aspects.  <br/><br/>
 
-Further development of the HL7 AU profiles is necessary to mature understanding of domain scenarios and resolve a number of extant issues described in <a href ="https://github.com/hl7au/au-fhir-base/issues">au-fhir-base GitHub</a> issues. Additional terminology support, e.g. RCPA value sets and support for specialist and other diagnostics, is forthcoming. These improvements will be incorporated into the profiles in this implementation guide. 
+Further development of the HL7 AU profiles is necessary to mature understanding of domain scenarios and resolve a number of extant issues described in <a href ="https://github.com/hl7au/au-fhir-base/issues">au-fhir-base GitHub</a> issues. Additional terminology support, e.g. support for specialist and other diagnostics, is forthcoming. These improvements will be incorporated into the profiles in this implementation guide. 
 
      </td>
 
@@ -208,11 +175,6 @@ Further development of the HL7 AU profiles is necessary to mature understanding 
 
 ## References
 
-|[<a name="NEHT2013am">NEHT2013am</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Pathology Report - Information Requirements, Version 1.1.|
-||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2558-2017/nehta-1884-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2558-2017/nehta-1884-2014)|
-
-|[<a name="NEHT2013xx">NEHT2013xx</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Diagnostic Imaging Report - Information Requirements, Version 1.1.|
-||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014)|
 
 <!--|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 2.0.|-->
 
