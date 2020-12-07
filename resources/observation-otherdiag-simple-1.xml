@@ -84,6 +84,10 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/diagnostic-service-sections" />
+      </binding>
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
