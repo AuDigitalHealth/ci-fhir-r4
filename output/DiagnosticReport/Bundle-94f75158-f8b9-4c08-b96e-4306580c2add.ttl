@@ -158,7 +158,7 @@
   fhir:Resource.language [ fhir:value "en-AU"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-AU\" lang=\"en-AU\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-AU\" lang=\"en-AU\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Filler Identifier: 3143079143</p><p><b>basedOn</b>: <a href=\"#ServiceRequest_edbc04cd-3387-435c-bda7-6e1a837b2590\">See above (ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590)</a></p><p><b>status</b>: final</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 40701008}\">Echocardiography</span></p><p><b>subject</b>: <a href=\"#Patient_44c6f844-4f77-4d4e-8a20-a920d9f1137c\">See above (Patient/44c6f844-4f77-4d4e-8a20-a920d9f1137c)</a></p><p><b>effective</b>: 06/01/2019 9:45:00 AM</p><p><b>issued</b>: 06/01/2019 10:12:00 AM</p><p><b>performer</b>: </p><ul><li><a href=\"#PractitionerRole_46d552b7-88a9-427b-9d62-8b0727de91f9\">See above (PractitionerRole/46d552b7-88a9-427b-9d62-8b0727de91f9)</a></li><li><a href=\"#PractitionerRole_04ac8978-bc60-4492-aa07-f62568ebe5c6\">See above (PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6)</a></li></ul><p><b>result</b>: <a href=\"#Observation_6685a24a-1606-4d1e-a212-fc456a71300f\">See above (Observation/6685a24a-1606-4d1e-a212-fc456a71300f)</a></p><h3>PresentedForms</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></div>"
   ];
   fhir:DiagnosticReport.identifier [
      fhir:index 0;
@@ -226,7 +226,7 @@
   fhir:Resource.id [ fhir:value "6685a24a-1606-4d1e-a212-fc456a71300f"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 CUS}\">Cardiac Ultrasound</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 40701008}\">Echocardiography</span></p><p><b>subject</b>: <a href=\"#Patient_44c6f844-4f77-4d4e-8a20-a920d9f1137c\">See above (Patient/44c6f844-4f77-4d4e-8a20-a920d9f1137c)</a></p><p><b>effective</b>: 06/01/2019 9:45:00 AM</p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -257,7 +257,7 @@
   fhir:Resource.id [ fhir:value "edbc04cd-3387-435c-bda7-6e1a837b2590"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 276341003}\">Cardiovascular investigation</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 40701008}\">Echocardiography</span></p><p><b>subject</b>: <a href=\"#Patient_44c6f844-4f77-4d4e-8a20-a920d9f1137c\">See above (Patient/44c6f844-4f77-4d4e-8a20-a920d9f1137c)</a></p><p><b>authoredOn</b>: 05/01/2019 12:00:00 AM</p><p><b>requester</b>: <a href=\"#PractitionerRole_cb084861-dd87-48ff-b645-5cb620a00e8e\">Dr David George. Generated Summary: Employee Number: 123113, HPI-I: 8003614900041243; <span title=\"Codes: {http://snomed.info/sct 309295000}\">Oncologist</span></a></p><p><b>reasonCode</b>: <span title=\"Codes: \">Pre-chemotherapy</span></p></div>"
   ];
   fhir:ServiceRequest.status [ fhir:value "completed"];
   fhir:ServiceRequest.intent [ fhir:value "order"];
@@ -296,8 +296,8 @@
 <urn:uuid:44c6f844-4f77-4d4e-8a20-a920d9f1137c> a fhir:Patient;
   fhir:Resource.id [ fhir:value "44c6f844-4f77-4d4e-8a20-a920d9f1137c"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Birth Place</b>: China</p><p><b>Australian Indigeneous Status</b>: <span title=\"{https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1 4}\">Neither Aboriginal nor Torres Strait Islander origin</span></p><p><b>interpreterRequired</b>: true</p><p><b>Date of Arrival in Australia</b>: 2017-01-01</p><p><b>identifier</b>: IHI: 8003608000228437, Medicare Number: 29533070311</p><p><b>name</b>: Wei Zhang </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1969-05-03</p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td><span title=\"Codes: {urn:ietf:bcp:47 yue}\">Cantonese</span></td><td>true</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -406,7 +406,7 @@
   fhir:Resource.id [ fhir:value "46d552b7-88a9-427b-9d62-8b0727de91f9"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: HPI-I: 8003608833357361, Employee Number: NSW31u32-441</p><p><b>practitioner</b>: <a href=\"#Practitioner_d68312c9-b122-4fe5-8e3c-f550bd989f4b\">Dr Fredrika Bremer. Generated Summary: Fredrika Bremer ; Phone: (02) 5550 4111</a></p><p><b>organization</b>: <a href=\"#Organization_676a30d5-9c94-4c4d-8b52-e7cce26defed\">NSW Hospital - Cardiology. Generated Summary: ABN: 41824753557, HPI-O: 8003626566699734; <span title=\"Codes: {http://snomed.info/sct 22232009}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; name: NSW Hospital; https://www.health.nsw.example..., Phone: (02) 5550 4444</a></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 17561000}\">Cardiologist</span></p></div>"
   ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
@@ -462,7 +462,7 @@
   fhir:Resource.id [ fhir:value "d68312c9-b122-4fe5-8e3c-f550bd989f4b"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Fredrika Bremer </p><p><b>telecom</b>: ph: (02) 5550 4111(WORK)</p></div>"
   ];
   fhir:Practitioner.name [
      fhir:index 0;
@@ -488,7 +488,7 @@
   fhir:Resource.id [ fhir:value "04ac8978-bc60-4492-aa07-f62568ebe5c6"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: HPI-I: 8003616566708106, Employee Number: NSW31u32-401</p><p><b>practitioner</b>: <a href=\"#Practitioner_e6de10ad-8dba-4250-8399-311da99e8c30\">Ms Linda Howard. Generated Summary: Fredrika Bremer ; Phone: (02) 5550 4111</a></p><p><b>organization</b>: <a href=\"#Organization_676a30d5-9c94-4c4d-8b52-e7cce26defed\">NSW Hospital - Cardiology. Generated Summary: ABN: 41824753557, HPI-O: 8003626566699734; <span title=\"Codes: {http://snomed.info/sct 22232009}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span>; name: NSW Hospital; https://www.health.nsw.example..., Phone: (02) 5550 4444</a></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 1012861000168100}\">Sonographer</span></p></div>"
   ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
@@ -544,7 +544,7 @@
   fhir:Resource.id [ fhir:value "e6de10ad-8dba-4250-8399-311da99e8c30"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Fredrika Bremer </p><p><b>telecom</b>: ph: (02) 5550 4111(WORK)</p></div>"
   ];
   fhir:Practitioner.name [
      fhir:index 0;
@@ -570,7 +570,7 @@
   fhir:Resource.id [ fhir:value "676a30d5-9c94-4c4d-8b52-e7cce26defed"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: ABN: 41824753557, HPI-O: 8003626566699734</p><p><b>type</b>: <span title=\"Codes: {http://snomed.info/sct 22232009}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}\">Hospital</span></p><p><b>name</b>: NSW Hospital</p><p><b>telecom</b>: <a href=\"https://www.health.nsw.example.org/nsw-hospital\">https://www.health.nsw.example.org/nsw-hospital</a>, ph: (02) 5550 4444</p><p><b>address</b>: 2325 Rocklands Rd, North Sydney NSW 2060</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -634,7 +634,7 @@
   fhir:Resource.id [ fhir:value "cb084861-dd87-48ff-b645-5cb620a00e8e"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Employee Number: 123113, HPI-I: 8003614900041243</p><p><b>practitioner</b>: <span>Dr David George</span></p><p><b>organization</b>: <span>Fred Hope Cancer Centre</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 309295000}\">Oncologist</span></p></div>"
   ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
