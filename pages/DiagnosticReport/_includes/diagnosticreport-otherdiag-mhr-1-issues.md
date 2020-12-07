@@ -5,6 +5,35 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
+      <tr>
+    <td>URI of location of referred to content</td>
+    <td><p>Some consideration required for supporting in this profile how to support the requirement that the diagnostic report should store one URI per report or test referencing the externally images or other useful content. Where a URI is not available, additional narrative might be included stating a phone number or other contact details for further enquiry.</p>
+        <p>This is a requirement in Diagnostic Imaging Report but still under consideration as to whether or not this is to be supported for Other Diagnsotic Reports.</p>
+        <p>Possibly an endPoint extension may be useful, possibly a simple extension for only the use case is appropriate.</p></td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/107">ci-fhir-r4/issues/107</a></td>
+   </tr>
+     <tr>
+       <td>ServiceRequester.requester (Organization)</td>
+    <td><p>The DaignosticReport invariant "inv-dh-dir-03: The requester of the diagnostic investigation order shall be a PractitionerRole" mandates the requester is a PractitionerRole; however ServiceRequest.basedOn allows for PractitionerRole and Organization and in some scenario's it is appropriate for an organization to  be the requester of an investigation.<br/><br/>
+	Further investigation is required to determine if the invariant "inv-dh-dir-03" should be removed. </p>
+	
+	</td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/110">ci-fhir-r4/issues/110</a></td>
+   </tr>
+   <tr>
+    <td>category (cardinality constraint)</td>
+    <td><p>It is likely for other diagnsotic reports that the cardinality of DiagnosticReport.category should be [1.. *], however investigation is required to rule out the need for [2.. *] as in the case of pathology where there is a required category of "LAB".</p>
+        
+     </td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/108">ci-fhir-r4/issues/108</a></td>
+   </tr>
+	      <tr>
+    <td>category (fixed value)</td>
+    <td><p>Both Pathology report and Diagnostic Imaging Report have a fixed value for category, "LAB" and "imaging" respectively, to enable system processing and differentiation between the reports.  Investigation is required into whether a fixed code is required for other diagnostic reports and if so what this code should be.</p>
+        
+     </td>
+    <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/109">ci-fhir-r4/issues/109</a></td>
+   </tr>
    <tr>
     <td>category (terminology binding)</td>
     <td>We need to create a more constrained value set that at least removes imaging and pathology.</td>
@@ -13,20 +42,17 @@
     <tr>
        <td>code</td>
        <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow 
- permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test. Common examples of these tests are:
-           <ul>
-               <li>cardiology field - ECG, echo cardiogram, angiocardiography</li>
-               <li>neurology field - EEG, EMG, evoked potentials, nerve conduction tests</li>
-               <li>gastroenterology field - endoscopy, colonoscopy</li>
-               <li>respiratory field - pulmonary function tests</li>
-               <li>audiology - hearing tests</li>
-               <li>sleep studies</li>
-            </ul></p>
-        <p>These types of tests are those that are not done by either pathology or imaging providers, and are usually done by specialist providers (e.g. cardiologists, neurologists etc). And apart from the common tests above, it is expected that the relevant providers would have many more specialised tests that they would perform.</p>
-        <p>This terminology is expected to be included in the <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/index.html">HL7 AU Base Implementation Guide</a> in <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnostic-servicerequest.html">AU Diagnostic Service Request</a>.</p></td>
+ permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test.</p>
+        <p>Analysis needs to be performed to determine if the value set is appropriate for the Australian context i.e. adequately covers Australian other diagnostic tests.</p>
+        </td>
         <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td>
-   </tr>     
-      <tr>
+   </tr>   
+   <tr> 
+    <td>code (validate value set)</td> 
+    <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test.</p> <p>Analysis needs to be performed to determine if the value set is appropriate for the Australian context i.e. adequately covers Australian other diagnostic tests.</p> 
+    </td> <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td> 
+    </tr>
+   <tr>
     <td>presentedForm (PDF packaging requirements)</td>
     <td>Not yet clear what the packaging requirements are for attachments when sending FHIR to the My Health Record system infrastructure. In lieu of a FHIR equivalent of the <a href="https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-1962-2014/nehta-1229-2011">Clinical Documents - CDA Package v1.0</a> specification, examples for this profile will include workarounds (e.g. absolute url to a placeholder repository for attachment) or inclusion as base64 binary in a bundle.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/74">ci-fhir-r4/issues/74</a></td>

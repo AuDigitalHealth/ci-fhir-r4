@@ -81,10 +81,24 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1" />
       </binding>
     </element>
-    <element id="Composition.type">
+    <element id="Composition.type"> 
       <path value="Composition.type" />
-      <mustSupport value="true" />
-    </element>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="47045-0" />
+        </coding>
+      </patternCodeableConcept>
+      <short value="Document sub-type, also referred to as document category" /> 
+      <mustSupport value="true" /> 
+    </element> 
+    <element id="Composition.category"> 
+      <path value="Composition.category" /> 
+      <min value="1" /> 
+      <max value="1" /> 
+      <short value="Document type" />
+      <mustSupport value="true" /> 
+    </element>   
     <element id="Composition.subject">
       <path value="Composition.subject" />
       <min value="1" />
@@ -101,7 +115,6 @@
     </element>
     <element id="Composition.author">
       <path value="Composition.author" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />

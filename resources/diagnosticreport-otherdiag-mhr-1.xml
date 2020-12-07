@@ -94,19 +94,14 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1" />
       </binding>
     </element>
-    <element id="DiagnosticReport.category">
-      <path value="DiagnosticReport.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/diagnostic-service-sections" />
-      </binding>
-    </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
       <short value="Diagnostic examination name / study name / group name" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1" />
+      </binding>
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
@@ -143,8 +138,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1" />
       </type>
       <mustSupport value="true" />
     </element>
