@@ -5,18 +5,19 @@
     <th>Description</th>
     <th>Issue No.</th>
   </tr>
-  <tr>
+ <tr>
       <td>type (document subtype)</td>
       <td>This profile is intended to support all 'other' diagnostic reports which is broad.<br/><br/>
-      As a discussion point Composition.category has been fixed to the LOINC code 4705-0 "Study Report" which is the highest level possible to catch all report types.<br/><br/> 
+      
+	  It is being considered whether Composition.type is better supported as a value set including a set of diagnostic report types, or whether it has to be fixed to be a catch-all code and with the referenced diagnostic report provides the finer grain.
 
-      There are implementation constraints on the use of document types in the Australian digital health ecosystem that in practice mean that the values in Composition.type are tightly controlled and rarely extended - this is likely to mean that either a fixed value or a value set of only a few gross document types are preferred with the current approach.
       </td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/35">ci-fhir-r4/issues/35</a></td>
   </tr>
   <tr>
 	  <td>category (document type)</td>
 	    <td>It is likely that the category is too generic for the requirements of the Clinincal Document Categorisation (CDC) project and with stakeholder a suitable set of type and sub-type need to be defined and agreed.<br/><br/>
+		As a discussion point Composition.category has been fixed to the LOINC code 4705-0 "Study Report" which is the highest level possible to catch all report types. 
 	</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/104">ci-fhir-r4/issues/104</a></td>
   </tr>
