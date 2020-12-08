@@ -39,18 +39,10 @@
     <td>We need to create a more constrained value set that at least removes imaging and pathology.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
    </tr> 
-    <tr>
-       <td>code</td>
-       <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow 
- permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test.</p>
-        <p>Analysis needs to be performed to determine if the value set is appropriate for the Australian context i.e. adequately covers Australian other diagnostic tests.</p>
-        </td>
-        <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td>
-   </tr>   
    <tr> 
     <td>code (validate value set)</td> 
     <td><p>A value set <a href="https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1">Evaluation Procedure</a> has been created to allow permissible values which represent types of diagnostic tests that are not categorised as either a pathology test nor a diagnostic imaging test.</p> <p>Analysis needs to be performed to determine if the value set is appropriate for the Australian context i.e. adequately covers Australian other diagnostic tests.</p> 
-    </td> <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td> 
+    </td> <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/111">ci-fhir-r4/issues/111</a></td> 
     </tr>
    <tr>
     <td>presentedForm (PDF packaging requirements)</td>
