@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent a Specialist and Other Diagnostic Reports (SODR) diagnostic report. A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent an Other Diagnostic Reports (ODR) diagnostic report. A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
@@ -54,40 +54,11 @@ Specification packages contain only files relevant to the particular clinical do
 ## How to read this document
 This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of diagnostic report. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/r4/profiling.html).  
 
-The table below identifies the profile that is the starting point for an implementer in a scenario. That starting profile will reference the additional profiles necessary to assert [conformance](conformance.html) for this implementation guide.
+For implementers interested in: 
+* exchanging an other diagnostic report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point.
+* exchanging an other diagnostic report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.
+* exchanging an other diagnostic report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point.
 
-<table border="1" cellpadding="1" valign="middle">
-<tbody>
-   <col width="15%" />
-   <col width="15%" />
-  <col width="auto" />
- <tr bgcolor="#DCDCDC">
-    <th>Domain</th>
-    <th>Profiled resource</th>
-    <th>Scenario</th>
-  </tr>
-
- 
-    <tr>
-        <td rowspan="3">Specialist and Other Diagnostic</td>
-        <td>Composition</td>
-        <td>For exchanging a specialist and other diagnostic report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point. </td> 
-    </tr>
-
-    <tr>
-        <td>DiagnosticReport</td>
-        <td>For exchanging a specialist and other diagnostic report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.</td> 
-    </tr>
-
-    <tr>
-        <td>DiagnosticReport</td>
-        <td>For exchanging a specialist and other diagnostic report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point. </td> 
-    </tr>
-    
-
-
- </tbody>
-</table> 
 
 ## Editorial note
 This implementation guide is an early working specification that is available for comment and review. It may be used to solicit feedback and to provide insight as to the expected content in a forthcoming stable and approved version of the specification.
@@ -130,7 +101,7 @@ This implementation guide and related artefacts are technical in nature and the 
             <th>Release comments</th>
         </tr>
         <tr>
-            <td>1.1.0</td>
+            <td>1.0.0</td>
             <td>TBD</td>
             <td>TBD</td>
         </tr>
@@ -147,16 +118,17 @@ This table lists known issues with this specification at the time of publishing.
  <tr bgcolor="#DCDCDC">
     <th>Reference</th>
     <th>Description</th>
-  </tr>
+  
+</tr>
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
-        <td>This draft implementation guide has been developed with a suite of draft profiles and some early examples in order to form a basis for engagement with industry and other stakeholders. The profiles in this implementation guide are derived from <a href ="https://build.fhir.org/ig/hl7au/au-fhir-base//index.html">HL7 AU Base</a> material and support diagnostics reporting including specialist and other diagnostics reports. <br/><br/>
-
-Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as via <a href ="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">ci-fhir-r4 GitHub</a> issues. As engagement progresses, the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues. <br/><br/>
-
-Additional examples are intended to be included in future releases to stimulate community discussion on important modelling aspects.  <br/><br/>
-
-Further development of the HL7 AU profiles is necessary to mature understanding of domain scenarios and resolve a number of extant issues described in <a href ="https://github.com/hl7au/au-fhir-base/issues">au-fhir-base GitHub</a> issues. Additional terminology support, e.g. support for specialist and other diagnostics, is forthcoming. These improvements will be incorporated into the profiles in this implementation guide. 
+        <td>This draft implementation guide has been developed from the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/releases">Diagnostic Report 1.0.0 (R4) June 2020</a> with the other diagnostic content refined for use in the Clinical Document Categorisation (CDC) project.  
+		<br/><br/>
+		The CDC project is to enhance content for the My Health Record and as such a CDA IG will be developed.  
+		<br/><br/>
+		A FHIR IG will be produced for the logical modelling, but is not a required product for the CDC project. 
+        <br/><br/>
+		Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as via <a href ="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">ci-fhir-r4 GitHub</a> issues. As engagement progresses, the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues. <br/><br/>
 
      </td>
 
@@ -175,6 +147,11 @@ Further development of the HL7 AU profiles is necessary to mature understanding 
 
 ## References
 
+|[<a name="NEHT2013am">NEHT2013am</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Pathology Report - Information Requirements, Version 1.1.|
+||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2558-2017/nehta-1884-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2558-2017/nehta-1884-2014)|
+
+|[<a name="NEHT2013xx">NEHT2013xx</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Diagnostic Imaging Report - Information Requirements, Version 1.1.|
+||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014)|
 
 <!--|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 2.0.|-->
 
