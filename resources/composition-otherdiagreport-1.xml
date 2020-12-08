@@ -83,20 +83,20 @@
     </element>
     <element id="Composition.type"> 
       <path value="Composition.type" />
+      <short value="Document sub-type, also referred to as document category" /> 
+      <mustSupport value="true" /> 
+    </element> 
+    <element id="Composition.category"> 
+      <path value="Composition.category" />
+      <short value="Document type" />
+      <min value="1" /> 
+      <max value="1" /> 
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
           <code value="47045-0" />
         </coding>
-      </patternCodeableConcept>
-      <short value="Document sub-type, also referred to as document category" /> 
-      <mustSupport value="true" /> 
-    </element> 
-    <element id="Composition.category"> 
-      <path value="Composition.category" /> 
-      <min value="1" /> 
-      <max value="1" /> 
-      <short value="Document type" />
+      </patternCodeableConcept> 
       <mustSupport value="true" /> 
     </element>   
     <element id="Composition.subject">
