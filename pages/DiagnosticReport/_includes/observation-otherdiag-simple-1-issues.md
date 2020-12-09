@@ -6,11 +6,11 @@
         <th>Issue No.</th>
       </tr>
        <tr>
-       <td>category (appropriateness of code)</td>
-       <td><p>This profile is intended to support all 'other' diagnostic reports which is broad.</p>
-	   <p>We are considering whether category is better supported as a value set including a set of diagnostic report types, or whether it has to be fixed to be a catch-all code and with the referencing diagnostic report provides the finer grain.</p>
-	   <p>This issue applies to DiagnosticReport.category, ServiceRequest.category, and Observation.category.</p></td>
-       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
+       <td>category (appropriateness of value set)</td>
+       <td><p>Observation.category has been bound (preferred) to <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">DiagnosticServiceSectionCodes</a>; however the codes in this value set are not well suited to the other diagnostic (non pathology and non diagnostic imaging) reports. </p>
+		<p>This value set will be evaluated for suitability and if appropriate a new value set will be investigated to accommodate the Australian context of other diagnostic reports.</p>
+	  </td>
+       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/112">ci-fhir-r4/issues/112</a></td>
    </tr>
        <tr>
        <td>code</td>
