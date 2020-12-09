@@ -11,5 +11,5 @@ For the overarching usage scenarios in this implementation guide it is expected 
 #### Boundaries and relationships
 The concept of a practitioner in this implementation guide is always within the context of a practitioner role - as the practitioner that performs the role(s). 
 
-This profile is referenced by [Base PractitionerRole](StructureDefinition-practitionerrole-dh-base-1.html), and [PractitionerRole with Mandatory Identifier](StructureDefinition-practitionerrole-ident-1.html).
+This profile is referenced by [Base PractitionerRole](StructureDefinition-practitionerrole-dh-base-1.html) and [PractitionerRole with Mandatory Identifier](StructureDefinition-practitionerrole-ident-1.html).
 
