@@ -16,7 +16,7 @@
   </tr>
   <tr>
 	  <td>category (document type)</td>
-	    <td>It is likely that the category is too generic for the requirements of the Clinincal Document Categorisation (CDC) project and with stakeholder a suitable set of type and sub-type need to be defined and agreed.<br/><br/>
+	    <td>It is likely that the category is too generic for the requirements of the Clinical Document Categorisation (CDC) project and with stakeholder a suitable set of type and sub-type need to be defined and agreed.<br/><br/>
 		As a discussion point Composition.category has been fixed to the LOINC code 4705-0 "Study Report" which is the highest level possible to catch all report types. 
 	</td>
       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/104">ci-fhir-r4/issues/104</a></td>

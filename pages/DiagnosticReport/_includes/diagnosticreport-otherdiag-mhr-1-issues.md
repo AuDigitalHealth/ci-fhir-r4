@@ -8,13 +8,13 @@
       <tr>
     <td>URI of location of referred to content</td>
     <td><p>Some consideration required for supporting in this profile how to support the requirement that the diagnostic report should store one URI per report or test referencing the externally images or other useful content. Where a URI is not available, additional narrative might be included stating a phone number or other contact details for further enquiry.</p>
-        <p>This is a requirement in Diagnostic Imaging Report but still under consideration as to whether or not this is to be supported for Other Diagnsotic Reports.</p>
+        <p>This is a requirement in Diagnostic Imaging Report but still under consideration as to whether or not this is to be supported for Other Diagnostic Reports.</p>
         <p>Possibly an endPoint extension may be useful, possibly a simple extension for only the use case is appropriate.</p></td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/107">ci-fhir-r4/issues/107</a></td>
    </tr>
      <tr>
        <td>ServiceRequester.requester (Organization)</td>
-    <td><p>The DaignosticReport invariant "inv-dh-dir-03: The requester of the diagnostic investigation order shall be a PractitionerRole" mandates the requester is a PractitionerRole; however ServiceRequest.basedOn allows for PractitionerRole and Organization and in some scenario's it is appropriate for an organization to  be the requester of an investigation.<br/><br/>
+    <td><p>The DiagnosticReport invariant "inv-dh-dir-03: The requester of the diagnostic investigation order shall be a PractitionerRole" mandates the requester is a PractitionerRole; however ServiceRequest.basedOn allows for PractitionerRole and Organization and in some scenario's it is appropriate for an organization to  be the requester of an investigation.<br/><br/>
 	Further investigation is required to determine if the invariant "inv-dh-dir-03" should be removed. </p>
 	
 	</td>
@@ -22,7 +22,7 @@
    </tr>
    <tr>
     <td>category (cardinality constraint)</td>
-    <td><p>It is likely for other diagnsotic reports that the cardinality of DiagnosticReport.category should be [1.. *], however investigation is required to rule out the need for [2.. *] as in the case of pathology where there is a required category of "LAB".</p>
+    <td><p>It is likely for other diagnostic reports that the cardinality of DiagnosticReport.category should be [1.. *], however investigation is required to rule out the need for [2.. *] as in the case of pathology where there is a required category of "LAB".</p>
         
      </td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/108">ci-fhir-r4/issues/108</a></td>
