@@ -186,7 +186,7 @@
 <h4 id="boundaries-and-relationships">Boundaries and relationships</h4>
 <p>This profile supports the identification of diagnostic examinations performed for a patient enabling an individual to determine if the Diagnostic Report is of interest but does not directly support reporting of the actual results of diagnostic examinations (see <a href="StructureDefinition-observation-otherdiag-atomic-1.html">Atomic Other Diagnostic Observation</a> for atomic reporting).</p>
 
-<p>This profile is referenced by <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a>, and <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a>.</p>
+<p>This profile is referenced by <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> and <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a>.</p>
 
 
 <!-- example here -->
@@ -227,7 +227,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4//StructureDefinition-au-diagnostic-observation.html">AUDiagnosticObservation</a>.</p>
 <p>
-This profile was published on Tue Dec 08 10:00:16 AEST 2020 as a draft by Australian Digital Health Agency.
+This profile was published on Wed Dec 09 15:47:46 AEST 2020 as a draft by Australian Digital Health Agency.
 </p>
 
 
@@ -688,11 +688,11 @@ The type is the Canonical URL of Resource Definition that is the type this refer
         <th>Issue No.</th>
       </tr>
        <tr>
-       <td>category (appropriateness of code)</td>
-       <td><p>This profile is intended to support all 'other' diagnostic reports which is broad.</p>
-	   <p>We are considering whether category is better supported as a value set including a set of diagnostic report types, or whether it has to be fixed to be a catch-all code and with the referencing diagnostic report provides the finer grain.</p>
-	   <p>This issue applies to DiagnosticReport.category, ServiceRequest.category, and Observation.category.</p></td>
-       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/42">ci-fhir-r4/issues/42</a></td>
+       <td>category (appropriateness of value set)</td>
+       <td><p>Observation.category has been bound (preferred) to <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">DiagnosticServiceSectionCodes</a>; however the codes in this value set are not well suited to the other diagnostic (non pathology and non diagnostic imaging) reports. </p>
+		<p>This value set will be evaluated for suitability and if appropriate a new value set will be investigated to accommodate the Australian context of other diagnostic reports.</p>
+	  </td>
+       <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/112">ci-fhir-r4/issues/112</a></td>
    </tr>
        <tr>
        <td>code</td>
@@ -882,7 +882,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, Dec 8, 2020 10:00+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Wed, Dec 9, 2020 15:47+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>
