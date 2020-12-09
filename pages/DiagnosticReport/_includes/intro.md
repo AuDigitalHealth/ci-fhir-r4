@@ -54,10 +54,10 @@ Specification packages contain only files relevant to the particular clinical do
 ## How to read this document
 This implementation guide contains descriptions of both constraints on FHIR and, where necessary, custom extensions to FHIR, for the purposes of fulfilling the requirements for Australian implementations of diagnostic report. These descriptions are defined as a set of FHIR [profiles](http://hl7.org/fhir/r4/profiling.html).  
 
-For implementers interested in: 
-* exchanging an other diagnostic report as a document (containing a diagnostic report), the <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point.
-* exchanging an other diagnostic report as a diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.
-* exchanging an other diagnostic report as a diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point.
+For implementers interested in exchanging specialist and other diagnostic report as a: 
+* document (containing a diagnostic report), the <a href="StructureDefinition-composition-otherdiagreport-1.html">Other Diagnostic Report</a> profile is the starting point.
+* diagnostic report, with content suitable for the My Health Record, the <a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">My Health Record Other Diagnostic Report</a> profile is the starting point.
+* diagnostic report, with atomic data, the <a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">Atomic Other Diagnostic Report</a> profile is the starting point.
 
 
 ## Editorial note
@@ -122,7 +122,7 @@ This table lists known issues with this specification at the time of publishing.
 </tr>
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
-        <td>This draft implementation guide has been developed from the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/releases">Diagnostic Report 1.0.0 (R4) June 2020</a> with the other diagnostic content refined for use in the Clinical Document Categorisation (CDC) project.  
+        <td>This draft implementation guide has been developed from the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/releases">Diagnostic Report 1.0.0 (R4) June 2020</a> with the specialist and other diagnostic content refined for use in the Clinical Document Categorisation (CDC) project.  
 		<br/><br/>
 		The CDC project is to enhance content for the My Health Record and as such a CDA IG will be developed.  
 		<br/><br/>
