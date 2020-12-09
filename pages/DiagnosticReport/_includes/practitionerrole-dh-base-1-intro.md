@@ -16,5 +16,5 @@ Other related practitioner role attributes, considered to be agnostic to the par
 * the healthcare services this practitioner provides in this role (some or none of which may have been performed in this event) – the healthcare services provided in the event will be represented using a [HealthcareService](https://www.hl7.org/fhir/healthcareservice.html) that is referenced from a clinical statement
 
 This profile is referenced by 
-[My Health Record Patient](StructureDefinition-patient-mhr-1.html),
+[My Health Record Patient](StructureDefinition-patient-mhr-1.html) and 
 [Patient with Mandatory Identifier](StructureDefinition-patient-ident-1.html).

@@ -36,4 +36,4 @@ When sending to the My Health Record system it is expected that all instances of
 #### Boundaries and relationships
 This profile supports the identification of diagnostic examinations performed for a patient enabling an individual to determine if the Diagnostic Report is of interest but does not directly support reporting of the actual results of diagnostic examinations (see [Atomic Other Diagnostic Observation](StructureDefinition-observation-otherdiag-atomic-1.html) for atomic reporting).
 
-This profile is referenced by [My Health Record Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html), and [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html).
+This profile is referenced by [My Health Record Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html) and [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html).

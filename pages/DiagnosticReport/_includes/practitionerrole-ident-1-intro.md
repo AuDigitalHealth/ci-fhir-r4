@@ -20,5 +20,5 @@ This profile is referenced by
 [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html), 
 [My Health Record Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-mhr-1.html),
 [Order Details for Other Diagnostic Report](StructureDefinition-servicerequest-otherdiag-report-1.html),
-[Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html)and
+[Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html) and
 [Simple Other Diagnostic Observation](StructureDefinition-observation-otherdiag-simple-1.html).
