@@ -3,7 +3,7 @@
 
 err = 9, warn = 208, info = 27
 IG Publisher Version: 1.1.42 Out of date - current version is 1.1.51
-Generated Wed Dec 09 15:49:36 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+Generated Mon Dec 14 11:59:29 AEST 2020. FHIR version 4.0.1 for au.electronichealth.diagnosticreport# (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 1 / 1
  C:\work\git\ci-fhir-r4\examples\binary-echocardio-pre-chemo-report-pdf : 0 / 0 / 1
@@ -131,12 +131,12 @@ INFORMATION: Binary/echocardio-pre-chemo-report-pdf: Binary: Validate resource a
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1
 WARNING: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator
 ERROR: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Unable to find matching profile for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1
 WARNING: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml ==
 INFORMATION: Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1
@@ -161,7 +161,7 @@ WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.s
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.category[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.category[1]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
-WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.result[0]: Found multiple matching profiles for urn:uuid:59e2ba97-44b0-45db-8f61-0a1b0e198580 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1
+WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.result[0]: Found multiple matching profiles for urn:uuid:59e2ba97-44b0-45db-8f61-0a1b0e198580 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-b49df1b2-b717-4d81-a140-7f16a334999b.xml ==
 INFORMATION: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1
@@ -218,7 +218,7 @@ INFORMATION: Observation/atrialarea: Observation: Validate resource against prof
 WARNING: Observation/atrialarea: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-basophils.xml ==
 INFORMATION: Observation/basophils: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/basophils: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/basophils: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/basophils: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-deceltime.xml ==
 INFORMATION: Observation/deceltime: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
@@ -240,24 +240,24 @@ INFORMATION: Observation/echocardiography: Observation: Validate resource agains
 WARNING: Observation/echocardiography: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-eosinophils.xml ==
 INFORMATION: Observation/eosinophils: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/eosinophils: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/eosinophils: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/eosinophils: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-esr.xml ==
 INFORMATION: Observation/esr: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/esr: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/esr: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/esr: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-fbc.xml ==
 INFORMATION: Observation/fbc: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/fbc: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/fbc: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/fbc: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 WARNING: Observation/fbc: Observation.code.coding[0]: Internal error: The display "CBC with Ordered Manual Differential panel - Blood" is not a valid display for the code {http://loinc.org}57782-5 - should be one of ["CBC W Ordered Manual Differential panel - Blood","CBC W ordered manual diff Bld"] (from http://tx.fhir.org/r4)
 == C:\work\git\ci-fhir-r4\examples\observation-haematocrit.xml ==
 INFORMATION: Observation/haematocrit: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/haematocrit: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/haematocrit: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/haematocrit: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-haemoglobin.xml ==
 INFORMATION: Observation/haemoglobin: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/haemoglobin: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/haemoglobin: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/haemoglobin: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-ivsd.xml ==
 INFORMATION: Observation/ivsd: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
@@ -312,26 +312,26 @@ INFORMATION: Observation/lvvol-bsasex: Observation: Validate resource against pr
 WARNING: Observation/lvvol-bsasex: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-lymphocytes.xml ==
 INFORMATION: Observation/lymphocytes: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/lymphocytes: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/lymphocytes: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/lymphocytes: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-mchc.xml ==
 INFORMATION: Observation/mchc: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/mchc: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/mchc: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/mchc: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-meancellhaemoglobin.xml ==
 INFORMATION: Observation/meancellhaemoglobin: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/meancellhaemoglobin: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/meancellhaemoglobin: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/meancellhaemoglobin: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-meancellvolume.xml ==
 INFORMATION: Observation/meancellvolume: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/meancellvolume: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/meancellvolume: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/meancellvolume: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-mitralvalve.xml ==
 INFORMATION: Observation/mitralvalve: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
 WARNING: Observation/mitralvalve: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-monocytes.xml ==
 INFORMATION: Observation/monocytes: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/monocytes: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/monocytes: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/monocytes: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-mv-p12-time.xml ==
 INFORMATION: Observation/mv-p12-time: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
@@ -351,11 +351,11 @@ INFORMATION: Observation/mvpeaka: Observation: Validate resource against profile
 WARNING: Observation/mvpeaka: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-neutrophils.xml ==
 INFORMATION: Observation/neutrophils: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/neutrophils: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/neutrophils: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/neutrophils: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-plateletcount.xml ==
 INFORMATION: Observation/plateletcount: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/plateletcount: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/plateletcount: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/plateletcount: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-pulmonaryvalve.xml ==
 INFORMATION: Observation/pulmonaryvalve: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
@@ -379,7 +379,7 @@ INFORMATION: Observation/rapressure: Observation: Validate resource against prof
 WARNING: Observation/rapressure: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-redcellcount.xml ==
 INFORMATION: Observation/redcellcount: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/redcellcount: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/redcellcount: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/redcellcount: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-rupvavmax.xml ==
 INFORMATION: Observation/rupvavmax: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
@@ -404,7 +404,7 @@ INFORMATION: Observation/trmaxvelocity: Observation: Validate resource against p
 WARNING: Observation/trmaxvelocity: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\observation-whitecellcount.xml ==
 INFORMATION: Observation/whitecellcount: Observation: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-WARNING: Observation/whitecellcount: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 not found by validator
+WARNING: Observation/whitecellcount: Observation.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 WARNING: Observation/whitecellcount: Observation.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
 == C:\work\git\ci-fhir-r4\examples\organization-d9b1a051-034c-4c11-a504-8d75d72bf4ec.xml ==
 INFORMATION: Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec: Organization: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1
@@ -537,9 +537,9 @@ INFORMATION: StructureDefinition/imagingstudy-diag-1: StructureDefinition: Valid
 == C:\work\git\ci-fhir-r4\resources\implementationguide-diagnosticreport-1.xml ==
 INFORMATION: ImplementationGuide/implementationguide-diagnosticreport-1: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == C:\work\git\ci-fhir-r4\resources\observation-imag-atomic-1.xml ==
-WARNING: Atomic Imaging Observation.Observation.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 could not be located
+WARNING: Atomic Imaging Observation.Observation.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 INFORMATION: StructureDefinition/observation-imag-atomic-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/observation-imag-atomic-1: StructureDefinition: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 could not be located
+WARNING: StructureDefinition/observation-imag-atomic-1: StructureDefinition: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\observation-imag-simple-1.xml ==
 WARNING: Simple Imaging Observation.Observation.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
@@ -556,9 +556,9 @@ INFORMATION: StructureDefinition/observation-otherdiag-simple-1: StructureDefini
 WARNING: StructureDefinition/observation-otherdiag-simple-1: StructureDefinition: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\observation-path-atomic-1.xml ==
-WARNING: Atomic Pathology Observation.Observation.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 could not be located
+WARNING: Atomic Pathology Observation.Observation.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 INFORMATION: StructureDefinition/observation-path-atomic-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/observation-path-atomic-1: StructureDefinition: Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnostic-observation-status-1 could not be located
+WARNING: StructureDefinition/observation-path-atomic-1: StructureDefinition: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 == C:\work\git\ci-fhir-r4\resources\observation-path-simple-1.xml ==
 WARNING: Simple Pathology Observation.Observation.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 INFORMATION: StructureDefinition/observation-path-simple-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
