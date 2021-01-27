@@ -897,17 +897,17 @@ See the [legend](mappings.html#legend-for-mapping-from-requirements) for informa
                 <tr>
                     <td>Document type (mandatory)</td>
                     <td>024027</td>
-                    <td>Composition.type</td>
-                    <td>Composition.type</td>
+                    <td>Composition.category</td>
+                    <td>Composition.category</td>
                     <td><p></p></td>
                 </tr>
                 <!-- ======================================================================== -->
                  <tr>
                     <td>Document subtype values (mandatory)</td>
                     <td>050060</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Composition.type</td>
+                    <td>Composition.type</td>
+                    <td><p></p></td>
                 </tr>
               <!-- ======================================================================== -->
              </tbody>
