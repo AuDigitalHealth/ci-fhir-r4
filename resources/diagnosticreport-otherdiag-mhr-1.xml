@@ -39,12 +39,6 @@
         <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
       </constraint>
-      <constraint>
-        <key value="inv-dh-dir-03" />
-        <severity value="error" />
-        <human value="The requester of the diagnostic investigation order shall be a PractitionerRole" />
-        <expression value="basedOn.resolve().requester.resolve().where($this is PractitionerRole).exists()" />
-      </constraint>
     </element>
     <element id="DiagnosticReport.meta">
       <path value="DiagnosticReport.meta" />
