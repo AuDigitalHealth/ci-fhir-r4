@@ -1,5 +1,5 @@
 #### Order Details for Diagnostic Report
-The purpose of this profile is to represent key elements of clinical relevance of a request for a specialist or other diagnostic investigation (such as echo cardiogram or colonoscopy or hearing test) in a diagnostic report context. This profile is intended to support the electronic exchange of other diagnostic reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to represent key elements of clinical relevance of a request for diagnostic investigation (such as echo cardiogram or colonoscopy or hearing test) in a diagnostic report context. This profile is intended to support the electronic exchange of other diagnostic reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 The context of this profile is reporting.
 
@@ -12,11 +12,6 @@ For the overarching usage scenarios in this implementation guide it is expected 
 When sending to the My Health Record system it is expected that: 
 <ul>
   <li>patient conforms to <a href="StructureDefinition-patient-mhr-1.html">My Health Record Patient</a></li>
-  <li>requester is sent as a reference to a PractitionerRole resource with PractitionerRole.practitioner as either:
-     <ul>
-        <li>a reference to a Practitioner resource with Practitioner.name.family, or</li>
-        <li>practitioner.display with the at least the practitioner's family name</li>   
-     </ul></li>
 </ul>
 
 #### Boundaries and relationships
