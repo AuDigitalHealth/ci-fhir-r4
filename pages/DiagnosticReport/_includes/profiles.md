@@ -86,7 +86,7 @@
                          <td class="frm-null"/>
                          <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.html">ServiceRequest (Order Details for Other Diagnostic Report)</a></li>
+                                <li><a href="StructureDefinition-servicerequest-diag-report-1.html">ServiceRequest (Order Details for Diagnostic Report)</a></li>
                             </ul>
                          </td>
                          <td class="frm-null"/>

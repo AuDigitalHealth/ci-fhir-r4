@@ -1,4 +1,4 @@
-#### Order Details for Other Diagnostic Report
+#### Order Details for Diagnostic Report
 The purpose of this profile is to represent key elements of clinical relevance of a request for a specialist or other diagnostic investigation (such as echo cardiogram or colonoscopy or hearing test) in a diagnostic report context. This profile is intended to support the electronic exchange of other diagnostic reports between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 The context of this profile is reporting.
