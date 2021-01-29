@@ -1,5 +1,5 @@
-#### Base Organization
-The purpose of this profile is to provide a base model for the concept of an organisation; defining fundamental concepts that form a conforming representation of an organisation to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+#### Identified Organization
+The purpose of this profile is to define a representation of an organisation where identifying information is known. This profile is intended to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
