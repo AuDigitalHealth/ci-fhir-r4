@@ -14,5 +14,6 @@ When sending to the My Health Record system it is expected that:
 This profile is referenced by [Base Practitioner](StructureDefinition-practitioner-dh-base-1.html),
 [My Health Record Patient](StructureDefinition-patient-mhr-1.html),
 [Organization with Mandatory Identifier](StructureDefinition-organization-ident-1.html),
+[Order Details for Other Diagnostic Report](StructureDefinition-servicerequest-otherdiag-report-1.html), 
 [Patient with Mandatory Identifier](StructureDefinition-patient-ident-1.html) and
 [PractitionerRole with Mandatory Identifier](StructureDefinition-practitionerrole-ident-1.html).

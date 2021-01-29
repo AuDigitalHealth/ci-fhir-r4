@@ -14,6 +14,5 @@ When sending to the My Health Record system it is expected that:
 This profile is referenced by 
 [Atomic Other Diagnostic Observation](StructureDefinition-observation-otherdiag-atomic-1.html),
 [Atomic Other Diagnostic Report](StructureDefinition-diagnosticreport-otherdiag-atomic-1.html),
-[Order Details for Other Diagnostic Report](StructureDefinition-servicerequest-otherdiag-report-1.html),
 [Other Diagnostic Report](StructureDefinition-composition-otherdiagreport-1.html) and
 [Simple Other Diagnostic Observation](StructureDefinition-observation-otherdiag-simple-1.html).
