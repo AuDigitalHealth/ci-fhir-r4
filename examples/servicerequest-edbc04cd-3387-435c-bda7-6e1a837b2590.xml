@@ -24,21 +24,7 @@
         <text value="Echocardiography"/> 
     </code> 
     <subject> 
-        <identifier>
-            <type>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                    <code value="EI"/>
-                    <display value="Employee number"/>
-                </coding>
-                <text value="Employee Number"/>
-            </type>
-            <system value="http://bondigpmedicalcenter.example.com/providers" />
-            <value value="8223NSW" />
-            <assigner>
-                <display value="Bondi GP Medical Center NSW"/>
-            </assigner>
-        </identifier> 
+        <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/> 
     </subject> 
     <authoredOn value="2019-01-05T00:00:00+10:00"/> 
     <requester> 
