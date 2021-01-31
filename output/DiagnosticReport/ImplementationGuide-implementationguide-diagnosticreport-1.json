@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2020-12-14T11:57:03+10:00",
+  "date": "2021-02-01T07:54:55+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -24,7 +24,7 @@
     }
   ],
   "description": "This implementation guide is an HL7™ FHIR® specification to represent a Diagnostic Report (DR).\n \nThe primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.\n \nThis implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.\n \nThis implementation guide does not describe transport or persistence mechanism of the resources described by it.",
-  "copyright": "Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
+  "copyright": "Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.",
   "packageId": "au.electronichealth.diagnosticreport",
   "license": "Apache-2.0",
   "fhirVersion": [
@@ -307,9 +307,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/servicerequest-otherdiag-report-1"
+          "reference": "StructureDefinition/servicerequest-diag-report-1"
         },
-        "name": "Order Details for Other Diagnostic Report",
+        "name": "Order Details for Diagnostic Report",
         "exampleBoolean": false
       },
       {
@@ -778,7 +778,7 @@
           "reference": "ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590"
         },
         "name": "Echocardiography order",
-        "exampleCanonical": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1"
+        "exampleCanonical": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1"
       },
       {
         "extension": [

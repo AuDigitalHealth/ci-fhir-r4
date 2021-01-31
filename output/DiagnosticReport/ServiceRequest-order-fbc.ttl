@@ -11,8 +11,12 @@
   fhir:Resource.id [ fhir:value "order-fbc"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1";
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1";
        fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1>
+     ], [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1";
+       fhir:index 1;
        fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1>
      ]
   ];

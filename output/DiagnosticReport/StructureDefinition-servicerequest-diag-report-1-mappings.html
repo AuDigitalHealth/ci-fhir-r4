@@ -91,7 +91,7 @@
   <div class="container">  <!-\- container -\->
    <ul class="breadcrumb">
         <li title="home"><a href="index.html"><b>Home</b></a></li>
-     <li><b>ServiceRequestOtherDiagReport Mappings</b></li>
+     <li><b>ServiceRequestDiagReport Mappings</b></li>
    </ul>
   </div>  <!-\- /container -\->
  </div>  <!-\- /segment-breadcrumb -\->-->
@@ -110,21 +110,21 @@
 </p>
 
           <ul class="nav nav-tabs">
-            <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.html">Content</a></li>
-             <li><a href="StructureDefinition-servicerequest-otherdiag-report-1-examples.html">Examples</a></li>
-            <li><a href="StructureDefinition-servicerequest-otherdiag-report-1-definitions.html">Detailed Descriptions</a></li>
+            <li><a href="StructureDefinition-servicerequest-diag-report-1.html">Content</a></li>
+             <li><a href="StructureDefinition-servicerequest-diag-report-1-examples.html">Examples</a></li>
+            <li><a href="StructureDefinition-servicerequest-diag-report-1-definitions.html">Detailed Descriptions</a></li>
             <li class="active"><a href="#">Mappings</a></li>
-            <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.xml.html">XML</a></li>
-            <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.json.html">JSON</a></li>
-            <li><a href="StructureDefinition-servicerequest-otherdiag-report-1.ttl.html">Turtle</a></li>
+            <li><a href="StructureDefinition-servicerequest-diag-report-1.xml.html">XML</a></li>
+            <li><a href="StructureDefinition-servicerequest-diag-report-1.json.html">JSON</a></li>
+            <li><a href="StructureDefinition-servicerequest-diag-report-1.ttl.html">Turtle</a></li>
           </ul>
           
-          <h4><span class="sectioncount">D.6.1.4<a name="D.6.1.4"> </a></span> StructureDefinition: ServiceRequestOtherDiagReport - Mappings <a title="link to here" class="self-link" href="StructureDefinition-servicerequest-otherdiag-report-1-definitions.html#D.6.1.4"><img src="target.png"/></a></h4>
+          <h4><span class="sectioncount">D.6.1.4<a name="D.6.1.4"> </a></span> StructureDefinition: ServiceRequestDiagReport - Mappings <a title="link to here" class="self-link" href="StructureDefinition-servicerequest-diag-report-1-definitions.html#D.6.1.4"><img src="target.png"/></a></h4>
           
-          <p>Mappings for the StructureDefinition-servicerequest-otherdiag-report-1 Profile.</p>
+          <p>Mappings for the StructureDefinition-servicerequest-diag-report-1 Profile.</p>
           
           <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>ServiceRequestOtherDiagReport</b></td></tr>
+ <tr><td colspan="3"><b>ServiceRequestDiagReport</b></td></tr>
  <tr><td>ServiceRequest</td><td>Request</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiatesCanonical</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>Request.instantiatesUri</td> </tr>
@@ -151,7 +151,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>ServiceRequestOtherDiagReport</b></td></tr>
+ <tr><td colspan="3"><b>ServiceRequestDiagReport</b></td></tr>
  <tr><td>ServiceRequest</td><td>ORC</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Varies by domain</td> </tr>
@@ -198,7 +198,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>N/A</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>ServiceRequestOtherDiagReport</b></td></tr>
+ <tr><td colspan="3"><b>ServiceRequestDiagReport</b></td></tr>
  <tr><td>ServiceRequest</td><td>Entity. Role, or Act, Act[moodCode&lt;=INT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -258,7 +258,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>ServiceRequestOtherDiagReport</b></td></tr>
+ <tr><td colspan="3"><b>ServiceRequestDiagReport</b></td></tr>
  <tr><td>ServiceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>FiveWs.class</td> </tr>
@@ -278,7 +278,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
 </table>
 <a name="quick"> </a><h3>Mappings for Quality Improvement and Clinical Knowledge (QUICK) (http://siframework.org/cqf)</h3><table class="grid">
- <tr><td colspan="3"><b>ServiceRequestOtherDiagReport</b></td></tr>
+ <tr><td colspan="3"><b>ServiceRequestDiagReport</b></td></tr>
  <tr><td>ServiceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Action.currentStatus</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Procedure.procedureCode</td> </tr>
@@ -318,7 +318,7 @@
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Dec 14, 2020 11:57+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Feb 1, 2021 07:54+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>

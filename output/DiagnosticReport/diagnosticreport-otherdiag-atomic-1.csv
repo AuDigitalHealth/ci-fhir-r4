@@ -62,7 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]"
 "DiagnosticReport.basedOn","","Request
-","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1]]}
+","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1]]}
 ","Diagnostic investigation order","Details concerning a service requested.","Note: Usually there is one test request for each result, however in some circumstances multiple test requests may be represented using a single test result resource. Note that there are also cases where one request leads to multiple reports.","This allows tracing of authorization for the report and tracking whether proposals/recommendations were acted upon.","","","","","","","",,,,,"",,,,"DiagnosticReport.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn","ORC? OBR-2/3?","outboundRelationship[typeCode=FLFS].target"
 "DiagnosticReport.basedOn.id","","","",0,1,"","","","string {[]} {[]}
