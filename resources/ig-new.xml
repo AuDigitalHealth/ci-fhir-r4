@@ -25,7 +25,7 @@
     </telecom>
   </contact>
   <description value="This implementation guide is an HL7&#x2122; FHIR&#xAE; specification to represent a Diagnostic Report (DR).&#xA; &#xA;The primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.&#xA; &#xA;This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.&#xA; &#xA;This implementation guide does not describe transport or persistence mechanism of the resources described by it."/>
-  <copyright value="Copyright &#xA9; 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <copyright value="Copyright &#xA9; 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <packageId value="au.electronichealth.diagnosticreport"/>
   <license value="Apache-2.0"/>
   <fhirVersion value="4.0.1"/>
@@ -177,9 +177,9 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/servicerequest-otherdiag-report-1"/>
+        <reference value="StructureDefinition/servicerequest-diag-report-1"/>
       </reference>
-      <name value="Order Details for Other Diagnostic Report"/>
+      <name value="Order Details for Diagnostic Report"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -432,7 +432,11 @@
         <reference value="ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590"/>
       </reference>
       <name value="Echocardiography order"/>
+<<<<<<< HEAD
       <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1"/>
+=======
+      <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1"/>
+>>>>>>> master
     </resource>
     <resource>
       <reference>

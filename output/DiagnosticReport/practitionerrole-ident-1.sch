@@ -156,15 +156,45 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:PractitionerRole/f:availableTime/f:availableStartTime</sch:title>
+    <sch:rule context="f:PractitionerRole/f:availableTime/f:availableStartTime">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org.au/fhir/StructureDefinition/au-timezone']) &lt;= 1">extension with URL = 'http://hl7.org.au/fhir/StructureDefinition/au-timezone': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>PractitionerRole.availableTime.availableStartTime</sch:title>
     <sch:rule context="f:PractitionerRole/f:availableTime/f:availableStartTime">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>PractitionerRole.availableTime.availableStartTime.extension</sch:title>
+    <sch:rule context="f:PractitionerRole/f:availableTime/f:availableStartTime/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:PractitionerRole/f:availableTime/f:availableEndTime</sch:title>
+    <sch:rule context="f:PractitionerRole/f:availableTime/f:availableEndTime">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org.au/fhir/StructureDefinition/au-timezone']) &lt;= 1">extension with URL = 'http://hl7.org.au/fhir/StructureDefinition/au-timezone': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>PractitionerRole.availableTime.availableEndTime</sch:title>
     <sch:rule context="f:PractitionerRole/f:availableTime/f:availableEndTime">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>PractitionerRole.availableTime.availableEndTime.extension</sch:title>
+    <sch:rule context="f:PractitionerRole/f:availableTime/f:availableEndTime/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

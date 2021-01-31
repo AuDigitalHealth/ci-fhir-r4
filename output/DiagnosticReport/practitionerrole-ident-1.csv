@@ -84,9 +84,33 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PractitionerRole.availableTime.availableStartTime","","","",0,1,"","","","time {[]} {[]}
 ","Opening time of day (ignored if allDay = true)","The opening time of day. Note: If the AllDay flag is set, then this time is ignored.","The timezone is expected to be for where this HealthcareService is provided at.","","","","","","","","",,,,,"",,,,"PractitionerRole.availableTime.availableStartTime",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".effectiveTime"
+"PractitionerRole.availableTime.availableStartTime.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"PractitionerRole.availableTime.availableStartTime.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"PractitionerRole.availableTime.availableStartTime.extension","timeZone","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org.au/fhir/StructureDefinition/au-timezone]]} {[]}
+","AU Time Zone","Australian time zone.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"PractitionerRole.availableTime.availableStartTime.value","","","",0,1,"","","","time {[]} {[]}
+","Primitive value for time","The actual value","","","","","","","","","",,,,,"",,,,"time.value",0,1,"",""
 "PractitionerRole.availableTime.availableEndTime","","","",0,1,"","","","time {[]} {[]}
 ","Closing time of day (ignored if allDay = true)","The closing time of day. Note: If the AllDay flag is set, then this time is ignored.","The timezone is expected to be for where this HealthcareService is provided at.","","","","","","","","",,,,,"",,,,"PractitionerRole.availableTime.availableEndTime",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".effectiveTime"
+"PractitionerRole.availableTime.availableEndTime.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"PractitionerRole.availableTime.availableEndTime.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"PractitionerRole.availableTime.availableEndTime.extension","timeZone","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org.au/fhir/StructureDefinition/au-timezone]]} {[]}
+","AU Time Zone","Australian time zone.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"PractitionerRole.availableTime.availableEndTime.value","","","",0,1,"","","","time {[]} {[]}
+","Primitive value for time","The actual value","","","","","","","","","",,,,,"",,,,"time.value",0,1,"",""
 "PractitionerRole.notAvailable","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Not available during this time due to provided reason","The practitioner is not available or performing this role during this period of time due to the provided reason.","","","","","","","","","",,,,,"",,,,"PractitionerRole.notAvailable",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".effectiveTime"

@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="The purpose of this profile is to define a short form representation providing a rich text representation of the report as issued by the diagnostic service provider with supporting key elements of clinical relevance for the electronic exchange of other diagnostic investigations (such as echo cardiogram or colonoscopy or hearing test) between healthcare providers and the My Health Record system infrastructure in Australia.  &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
-  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -38,12 +38,6 @@
         <severity value="error" />
         <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-dir-03" />
-        <severity value="error" />
-        <human value="The requester of the diagnostic investigation order shall be a PractitionerRole" />
-        <expression value="basedOn.resolve().requester.resolve().where($this is PractitionerRole).exists()" />
       </constraint>
     </element>
     <element id="DiagnosticReport.meta">
@@ -78,7 +72,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1" />
       </type>
       <mustSupport value="true" />
     </element>

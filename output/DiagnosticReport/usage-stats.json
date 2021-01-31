@@ -32,16 +32,8 @@
     ],
     "ServiceRequest": [
       {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1",
-        "title": "Order Details for Diagnostic Imaging Report"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-otherdiag-report-1",
-        "title": "Order Details for Other Diagnostic Report"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1",
-        "title": "Order Details for Pathology Report"
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1",
+        "title": "Order Details for Diagnostic Report"
       }
     ],
     "Specimen": [
@@ -140,6 +132,16 @@
     ]
   },
   "usage": {
+    "http://hl7.org.au/fhir/StructureDefinition/ahpraprofession-details": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/ahpraregistration-details": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.au/fhir/StructureDefinition/au-timezone": [
+      "PractitionerRole.availableTime.availableEndTime",
+      "PractitionerRole.availableTime.availableStartTime"
+    ],
     "http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration": [
       "Patient"
     ],

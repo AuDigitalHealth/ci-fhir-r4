@@ -11,7 +11,7 @@
   "title": "Base PractitionerRole",
   "status": "draft",
   "experimental": true,
-  "date": "2020-12-14T11:57:03+10:00",
+  "date": "2021-02-01T07:54:55+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -1232,6 +1232,160 @@
         ]
       },
       {
+        "id": "PractitionerRole.availableTime.availableStartTime.id",
+        "path": "PractitionerRole.availableTime.availableStartTime.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableStartTime.extension",
+        "path": "PractitionerRole.availableTime.availableStartTime.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableStartTime.extension:timeZone",
+        "path": "PractitionerRole.availableTime.availableStartTime.extension",
+        "sliceName": "timeZone",
+        "short": "AU Time Zone",
+        "definition": "Australian time zone.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-timezone"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableStartTime.value",
+        "path": "PractitionerRole.availableTime.availableStartTime.value",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Primitive value for time",
+        "definition": "The actual value",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "time.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "time"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                "valueString": "([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.Time"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
         "id": "PractitionerRole.availableTime.availableEndTime",
         "path": "PractitionerRole.availableTime.availableEndTime",
         "short": "Closing time of day (ignored if allDay = true)",
@@ -1267,6 +1421,160 @@
             "map": ".effectiveTime"
           }
         ]
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableEndTime.id",
+        "path": "PractitionerRole.availableTime.availableEndTime.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableEndTime.extension",
+        "path": "PractitionerRole.availableTime.availableEndTime.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableEndTime.extension:timeZone",
+        "path": "PractitionerRole.availableTime.availableEndTime.extension",
+        "sliceName": "timeZone",
+        "short": "AU Time Zone",
+        "definition": "Australian time zone.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-timezone"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.availableTime.availableEndTime.value",
+        "path": "PractitionerRole.availableTime.availableEndTime.value",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Primitive value for time",
+        "definition": "The actual value",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "time.value",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "time"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                "valueString": "([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.Time"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "PractitionerRole.notAvailable",
