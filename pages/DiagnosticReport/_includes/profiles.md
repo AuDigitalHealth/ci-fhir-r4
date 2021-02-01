@@ -56,7 +56,7 @@
                         </td>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-organization-dh-base-1.html">Organization (Base Organization)</a></li>
+                                <li><a href="StructureDefinition-organization-identified-1.html">Organization (Identified Organization)</a></li>
                                 <li><a href="StructureDefinition-organization-ident-1.html">Organization (Organization with Mandatory Identifier)</a></li>
                             </ul>
                         </td>                         

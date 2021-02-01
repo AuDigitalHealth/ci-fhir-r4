@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="organization-dh-base-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1" />
+  <id value="organization-identified-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1" />
   <version value="1.0.0" />
-  <name value="OrganizationBase" />
-  <title value="Base Organization" />
+  <name value="OrganizationIdentified" />
+  <title value="Identified Organization" />
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a base model for the concept of an organisation. It defines fundamental concepts that form a conforming representation of an organisation to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to define a representation of an organisation where identifying information is known. This profile is intended to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -31,7 +31,7 @@
         <severity value="error" />
         <human value="If present, the organization of which this organization forms a part shall at least have a reference, an identifier or a display" />
         <expression value="partOf.exists() implies (partOf.reference.exists() or partOf.identifier.exists() or partOf.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1" />
       </constraint>
     </element>
     <element id="Organization.identifier">
@@ -69,7 +69,7 @@
           <valueBoolean value="true" />
         </extension>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1" />
       </type>
       <mustSupport value="true" />
     </element>

@@ -69,7 +69,7 @@
         <key value="inv-dh-prac-02" />
         <severity value="error" />
         <human value="If present, an issuer shall at least have a reference that conforms to Base Organization, an identifier or a display" />
-        <expression value="issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1')) or $this.identifier.exists() or $this.display.exists())" />
+        <expression value="issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1')) or $this.identifier.exists() or $this.display.exists())" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1" />
       </constraint>
       <mustSupport value="true" />
