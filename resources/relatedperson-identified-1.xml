@@ -25,12 +25,11 @@
   <differential>
     <element id="RelatedPerson">
       <path value="RelatedPerson" />
-      <short value="A relatedperson, acting in a role other than the subject of the record, in the context of electronic exchange of health information" /> 
       <constraint>
         <key value="inv-dh-relper-01" />
         <severity value="error" />
-        <human value="The relatedperson shall at least have an identifier or a name" />
-        <expression value="identifier.exists() or name.exists()" />
+        <human value="The relatedperson shall at least have an identifier or a name or a relationship with the patient" />
+        <expression value="identifier.exists() or name.exists() or relationship.exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/relatedperson-identified-1" />
       </constraint>
     </element>
@@ -64,6 +63,10 @@
     </element>
     <element id="RelatedPerson.gender">
       <path value="RelatedPerson.gender" />
+      <mustSupport value="true" />
+    </element>
+    <element id="RelatedPerson.birthDate">
+      <path value="RelatedPerson.birthDate" />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.address">

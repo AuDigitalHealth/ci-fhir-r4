@@ -5,7 +5,7 @@ The purpose of this profile is to define a representation of a patient for excha
 For the overarching usage scenarios in this implementation guide it is expected that:
 <ul>
   <li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
-  <li>an IHI conforms to the <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.identifier:ihiNumber">identifier:ihiNumber</a> slice and a maximum of one is sent</li>
+  <li>an IHI conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a> slice and a maximum of one is sent</li>
   <li>an Australian address conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
 </ul>
 
@@ -23,12 +23,10 @@ When sending communication preferences for a patient acting in a role other than
         <th>Scenario</th>
         <th>communication.language</th>
         <th>communication.preferred</th>
-        <th>extension:interpreterRequired</th>
 		<th>Notes</th>
       </tr>
       <tr>
         <td>Preferred language is English</td>
-        <td></td>
         <td></td>
         <td></td>
         <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/patient-definitions.html#Patient.communication">Comments</a> of Patient.communication</td>
@@ -38,14 +36,12 @@ When sending communication preferences for a patient acting in a role other than
         <td>language.coding</td>
         <td>'true'</td>
         <td></td>
-        <td></td>
       </tr>
       <tr>
         <td>Communicates with multiple languages</td>
         <td>language.coding</td>
         <td></td>
-        <td></td>
-        <td>Each language instantiated in separate communication nodes; communication.preferred and extension:interpreterRequired may be sent as needed.</td>
+        <td>Each language instantiated in separate communication nodes; communication.preferred may be sent as needed.</td>
       </tr>
     </tbody>
 </table>
