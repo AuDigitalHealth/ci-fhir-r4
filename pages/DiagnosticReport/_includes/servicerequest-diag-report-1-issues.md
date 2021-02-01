@@ -14,8 +14,8 @@
         <td>See <a href="https://github.com/hl7au/au-fhir-base/issues/402">hl7au/au-fhir-base/issues/402</a></td>
    </tr>
    <tr>
-    <td>requester (tbd requester profiles)</td>
-    <td>Profiles suitable to represent the requirements on a requester are in progress. This profile will be updated to point to the new profiles when they are available. Profiles will include subject (aka patient), related persons, organisations, healthcare practitioner individuals.</td>
+    <td>requester (PractitionerRole requester profile)</td>
+    <td>requester is intended to be support with the forthcoming Identified PractitionerRole profile - when this profile is available it will replace PractitionerRole with Mandatory Identifier.</td>
     <td>n/a</td>
    </tr>
   <tr>
