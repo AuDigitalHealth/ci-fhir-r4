@@ -53,6 +53,7 @@
                                 <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>
                                 <li><a href="StructureDefinition-practitionerrole-dh-base-1.html">PractitionerRole (Base PractitionerRole)</a></li>
                                 <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>
+                                <li><a href="StructureDefinition-relatedperson-identified-1.html">RelatedPerson (Identified RelatedPerson)</a></li>
                             </ul>
                         </td>
                         <td class="frm-set">

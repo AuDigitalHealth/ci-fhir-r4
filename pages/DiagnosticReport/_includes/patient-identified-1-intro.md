@@ -56,4 +56,5 @@ Blank cells in the above table indicate that the given element is absent from th
 The purpose of this profile is to define a representation of a patient, acting in a role other than the subject of the record, for example when the patient is acting as the author of the document. The concept of a patient as the subject of a record is represented in [My Health Record Patient](StructureDefinition-patient-mhr-1.html) and [Patient with Mandatory Identifier](StructureDefinition-patient-ident-1.html). 
 
 This profile is referenced by 
-[Order Details for Diagnostic Report](StructureDefinition-servicerequest-diag-report-1.html).
+[Order Details for Diagnostic Report](StructureDefinition-servicerequest-diag-report-1.html), and
+[Identified RelatedPerson](StructureDefinition-relatedperson-identified-1.html).
