@@ -203,7 +203,7 @@ The official URL for this profile is:
 <p>
 This profile builds on <a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4//StructureDefinition-au-practitioner.html">AUBasePractitioner</a>.</p>
 <p>
-This profile was published on Mon Feb 01 07:54:55 AEST 2021 as a draft by Australian Digital Health Agency.
+This profile was published on Mon Feb 01 12:29:52 AEST 2021 as a draft by Australian Digital Health Agency.
 </p>
 
 
@@ -561,7 +561,7 @@ Not handled yet: complex extension http://hl7.org.au/fhir/StructureDefinition/ah
 <tr><td>ele-1</td><td>Practitioner.qualification</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>inv-sra-1</td><td>Practitioner.qualification</td><td>The qualification shall only have AHPRA Profession details, if qualification is an AHPRA Profession<br/>: extension('http://hl7.org.au/fhir/StructureDefinition/ahpraprofession-details').exists() implies code.coding.where(system='http://terminology.hl7.org.au/CodeSystem/v2-0360' and code='AUAHPRAProfession').exists()</td><td></td></tr>
 <tr><td>inv-sra-2</td><td>Practitioner.qualification</td><td>The qualification shall only have AHPRA Registration details, if qualification is an AHPRA Registration<br/>: extension('http://hl7.org.au/fhir/StructureDefinition/ahpraregistration-details').exists() implies code.coding.where(system='http://terminology.hl7.org.au/CodeSystem/v2-0360' and code='AUAHPRARegistration').exists()</td><td></td></tr>
-<tr><td>inv-dh-prac-02</td><td>Practitioner.qualification</td><td>If present, an issuer shall at least have a reference that conforms to Base Organization, an identifier or a display<br/>: issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1')) or $this.identifier.exists() or $this.display.exists())</td><td></td></tr>
+<tr><td>inv-dh-prac-02</td><td>Practitioner.qualification</td><td>If present, an issuer shall at least have a reference that conforms to Base Organization, an identifier or a display<br/>: issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1')) or $this.identifier.exists() or $this.display.exists())</td><td></td></tr>
 <tr><td>ele-1</td><td>Practitioner.qualification.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>Practitioner.qualification.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>Practitioner.qualification.extension:ahpraProfession-details</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
@@ -636,7 +636,7 @@ Not handled yet: complex extension http://hl7.org.au/fhir/StructureDefinition/ah
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Feb 1, 2021 07:54+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Feb 1, 2021 12:29+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>

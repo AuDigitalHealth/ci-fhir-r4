@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Diagnostic Report"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-02-01T07:54:55+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-02-01T12:29:52+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -198,10 +198,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-dh-base-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-dh-base-1" ]
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/organization-identified-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-identified-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base Organization" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identified Organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;

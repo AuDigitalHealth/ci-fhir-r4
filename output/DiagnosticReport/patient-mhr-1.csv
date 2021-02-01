@@ -211,7 +211,7 @@ Multiple GPs may be recorded against the patient for various reasons, such as a 
 
 Jurisdictions may decide that they can profile this down to 1 if desired, or 1 per type.","","","","","","","","",,,,,"",,,,"Patient.generalPractitioner",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","subjectOf.CareEvent.performer.AssignedEntity","n/a","PD1-4"
-"Patient.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1]]}
+"Patient.managingOrganization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1]]}
 ","Organization that is the custodian of the patient record","Organization that is the custodian of the patient record.","There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association).","Need to know who recognizes this patient record, manages and updates it.","","","","","","","",,,,,"",,,,"Patient.managingOrganization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","scoper",".providerOrganization"
 "Patient.link","","","",0,*,"","Y","Y","BackboneElement {[]} {[]}

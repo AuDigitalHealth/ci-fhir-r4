@@ -42,7 +42,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PractitionerRole.practitioner","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1]]}
 ","Practitioner that is able to provide the defined services for the organization","Practitioner that is able to provide the defined services for the organization.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player"
-"PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1]]}
+"PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1]]}
 ","Organization where the roles are available","The organization where the Practitioner performs the roles associated.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"
 "PractitionerRole.code","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}

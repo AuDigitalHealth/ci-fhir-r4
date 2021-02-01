@@ -87,11 +87,12 @@
 
 
 
+
 <!-- <div id="segment-breadcrumb" class="segmnt">  <!-\- segment-breadcrumb -\->
   <div class="container">  <!-\- container -\->
    <ul class="breadcrumb">
-        <li title="home"><a href="index.html"><b>Home</b></a></li>
-     <li><b>OrganizationBase Mappings</b></li>
+       <li title="home"><a href="index.html"><b>Home</b></a></li>
+     <li><b>OrganizationIdentified Details</b></li>
    </ul>
   </div>  <!-\- /container -\->
  </div>  <!-\- /segment-breadcrumb -\->-->
@@ -110,76 +111,20 @@
 </p>
 
           <ul class="nav nav-tabs">
-            <li><a href="StructureDefinition-organization-dh-base-1.html">Content</a></li>
-             <li><a href="StructureDefinition-organization-dh-base-1-examples.html">Examples</a></li>
-            <li><a href="StructureDefinition-organization-dh-base-1-definitions.html">Detailed Descriptions</a></li>
-            <li class="active"><a href="#">Mappings</a></li>
-            <li><a href="StructureDefinition-organization-dh-base-1.xml.html">XML</a></li>
-            <li><a href="StructureDefinition-organization-dh-base-1.json.html">JSON</a></li>
-            <li><a href="StructureDefinition-organization-dh-base-1.ttl.html">Turtle</a></li>
+            <li><a href="StructureDefinition-organization-identified-1.html">Content</a></li>
+            <li class="active"><a href="#">Examples</a></li>
+            <li><a href="StructureDefinition-organization-identified-1-definitions.html">Detailed Descriptions</a></li>
+            <li><a href="StructureDefinition-organization-identified-1-mappings.html">Mappings</a></li>
+            <li><a href="StructureDefinition-organization-identified-1.xml.html">XML</a></li>
+            <li><a href="StructureDefinition-organization-identified-1.json.html">JSON</a></li>
+            <li><a href="StructureDefinition-organization-identified-1.ttl.html">Turtle</a></li>
           </ul>
           
-          <h4><span class="sectioncount">D.6.1.4<a name="D.6.1.4"> </a></span> StructureDefinition: OrganizationBase - Mappings <a title="link to here" class="self-link" href="StructureDefinition-organization-dh-base-1-definitions.html#D.6.1.4"><img src="target.png"/></a></h4>
+          <h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition-organization-identified-1 - Examples <a title="link to here" class="self-link" href="StructureDefinition-organization-identified-1-definitions.html#D.4.1.4"><img src="target.png"/></a></h4>
           
-          <p>Mappings for the StructureDefinition-organization-dh-base-1 Profile.</p>
-          
-          <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>OrganizationBase</b></td></tr>
- <tr><td>Organization</td><td>(also see master files messages)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>No equivalent in HL7 v2</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>No equivalent in v2</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>XON.1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>ORC-22?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>XAD</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>No equivalent in HL7 v2</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contact</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>PID-5, PID-9</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;telecom</td><td>PID-13, PID-14</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address</td><td>PID-11</td> </tr>
-</table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>OrganizationBase</b></td></tr>
- <tr><td>Organization</td><td>Entity. Role, or Act, Organization(classCode=ORG, determinerCode=INST)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>.name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;alias</td><td>.name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>.telecom</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>n/a, AD</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.playedBy[classCode=Part].scoper</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contact</td><td>.contactParty</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;purpose</td><td>./type</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name</td><td>./name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;telecom</td><td>./telecom</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address</td><td>./addr</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;endpoint</td><td>n/a</td> </tr>
-</table>
-<a name="servd"> </a><h3>Mappings for ServD (<a href="http://www.omg.org/spec/ServD/1.0/">http://www.omg.org/spec/ServD/1.0/</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>OrganizationBase</b></td></tr>
- <tr><td>Organization</td><td>Organization</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>./Status (however this concept in ServD more covers why the organization is active or not, could be delisted, deregistered, not operational yet) this could alternatively be derived from ./StartDate and ./EndDate and given a context date.</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>.PreferredName/Name</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>./ContactPoints</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>Address</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>n/a</td> </tr>
-</table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>OrganizationBase</b></td></tr>
- <tr><td>Organization</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.class</td> </tr>
-</table>
+          <p>Examples includes links to example resources that conform to the profile or extension and that support implementation by demonstrating one or more usage scenarios supported by this implementation guide.</p>
+         
+         <p>None</p>
 
           
         </div>
@@ -206,7 +151,7 @@
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Feb 1, 2021 07:54+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Mon, Feb 1, 2021 12:29+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>

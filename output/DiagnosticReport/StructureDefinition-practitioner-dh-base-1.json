@@ -11,7 +11,7 @@
   "title": "Base Practitioner",
   "status": "draft",
   "experimental": true,
-  "date": "2021-02-01T07:54:55+10:00",
+  "date": "2021-02-01T12:29:52+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -907,7 +907,7 @@
             "key": "inv-dh-prac-02",
             "severity": "error",
             "human": "If present, an issuer shall at least have a reference that conforms to Base Organization, an identifier or a display",
-            "expression": "issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1')) or $this.identifier.exists() or $this.display.exists())",
+            "expression": "issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1')) or $this.identifier.exists() or $this.display.exists())",
             "source": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
           }
         ],
@@ -1447,7 +1447,7 @@
             "key": "inv-dh-prac-02",
             "severity": "error",
             "human": "If present, an issuer shall at least have a reference that conforms to Base Organization, an identifier or a display",
-            "expression": "issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-dh-base-1')) or $this.identifier.exists() or $this.display.exists())",
+            "expression": "issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1')) or $this.identifier.exists() or $this.display.exists())",
             "source": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
           }
         ],
