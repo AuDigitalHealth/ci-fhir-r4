@@ -1,5 +1,7 @@
 #### Identified Patient
-The purpose of this profile is to define a representation of a patient for exchange usage scenarios in an Australian context where unambiguous identification of a patient is mandatory. This profile is intended to support the electronic exchange of health information between healthcare providers in Australia.
+The purpose of this profile is to define a representation of a patient, acting in a role other than the subject of the record, where identifying information is known. This profile is intended to support the electronic exchange of health information between healthcare providers in Australia.
+
+A patient may act in a role other than the subject of the record when, for example, the patient is acting as the author of a document. 
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
