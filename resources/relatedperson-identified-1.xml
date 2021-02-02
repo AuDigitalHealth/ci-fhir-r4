@@ -35,6 +35,7 @@
     </element>
     <element id="RelatedPerson.identifier">
       <path value="RelatedPerson.identifier" />
+      <definition value="Identifier for a person within a particular scope." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.active">
@@ -71,11 +72,16 @@
     </element>
     <element id="RelatedPerson.address">
       <path value="RelatedPerson.address" />
+      <definition value="Address where the related person can be contacted or visited." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.photo">
       <path value="RelatedPerson.photo" />
       <max value="0" />
+    </element>
+    <element id="RelatedPerson.period">
+      <path value="RelatedPerson.period" />
+      <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.communication">
       <path value="RelatedPerson.communication" />
