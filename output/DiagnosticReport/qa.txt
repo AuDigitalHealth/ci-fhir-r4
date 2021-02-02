@@ -1,9 +1,9 @@
 ﻿DiagnosticReport : Validation Results
 =========================================
 
-err = 9, warn = 308, info = 27
+err = 9, warn = 314, info = 27
 IG Publisher Version: 1.1.56 Out of date - current version is 1.1.59
-Generated Mon Feb 01 12:31:31 AEST 2021. FHIR version 4.0.1 for au.electronichealth.diagnosticreport#1.0.0 (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
+Generated Tue Feb 02 15:17:50 AEST 2021. FHIR version 4.0.1 for au.electronichealth.diagnosticreport#1.0.0 (canonical = http://ns.electronichealth.net.au/ci/fhir/4.0)
 
  Build Errors : 0 / 1 / 1
  C:\work\git\ci-fhir-r4\examples\binary-echocardio-pre-chemo-report-pdf : 0 / 0 / 1
@@ -113,10 +113,12 @@ Generated Mon Feb 01 12:31:31 AEST 2021. FHIR version 4.0.1 for au.electronichea
  C:\work\git\ci-fhir-r4\resources\organization-ident-1 : 0 / 0 / 1
  C:\work\git\ci-fhir-r4\resources\organization-identified-1 : 0 / 1 / 1
  C:\work\git\ci-fhir-r4\resources\patient-ident-1 : 0 / 2 / 1
+ C:\work\git\ci-fhir-r4\resources\patient-identified-1 : 0 / 3 / 1
  C:\work\git\ci-fhir-r4\resources\patient-mhr-1 : 0 / 3 / 1
  C:\work\git\ci-fhir-r4\resources\practitioner-dh-base-1 : 0 / 1 / 1
  C:\work\git\ci-fhir-r4\resources\practitionerrole-dh-base-1 : 0 / 3 / 1
  C:\work\git\ci-fhir-r4\resources\practitionerrole-ident-1 : 0 / 2 / 1
+ C:\work\git\ci-fhir-r4\resources\relatedperson-identified-1 : 0 / 3 / 1
  C:\work\git\ci-fhir-r4\resources\servicerequest-diag-report-1 : 0 / 9 / 1
  C:\work\git\ci-fhir-r4\resources\servicerequest-imag-report-1 : 0 / 10 / 1
  C:\work\git\ci-fhir-r4\resources\servicerequest-path-report-1 : 0 / 9 / 1
@@ -131,12 +133,12 @@ INFORMATION: Binary/echocardio-pre-chemo-report-pdf: Binary: Validate resource a
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1
 WARNING: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator
 ERROR: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Unable to find matching profile for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-atomic-1
-INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
 INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-imag-simple-1
+INFORMATION: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource.result[0]: Details for urn:uuid:4be4f59c-5a98-4d13-aff8-360bb6359243 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-simple-1
 WARNING: Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-559b66ea-abbf-45fb-8627-554817830095.xml ==
 INFORMATION: Bundle/559b66ea-abbf-45fb-8627-554817830095: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1
@@ -152,8 +154,8 @@ INFORMATION: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resour
 WARNING: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.status: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/compositionstatus-document-available-1 not found by validator
 ERROR: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.category[0]: The pattern [system http://loinc.org, code 47045-0, and display 'null'] defined in the profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Bundle.entry[0].resource.category[0].coding.code,message=Value is '26441-6' but must be '47045-0']]
 ERROR: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.section[0].entry[0]: Unable to find matching profile for urn:uuid:ffa619c7-7324-4d68-b072-17c0179ac311 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1
-INFORMATION: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:ffa619c7-7324-4d68-b072-17c0179ac311 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1
 INFORMATION: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:ffa619c7-7324-4d68-b072-17c0179ac311 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1
+INFORMATION: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:ffa619c7-7324-4d68-b072-17c0179ac311 matching against Profilehttp://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1
 WARNING: Bundle/94f75158-f8b9-4c08-b96e-4306580c2add: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-b317aa04-131c-49d1-b9bc-48ff94876834.xml ==
 INFORMATION: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1
@@ -161,7 +163,7 @@ WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.s
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.category[0]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.category[1]: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-diagnostic-service-category-1 not found by validator
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.code: ValueSet https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1 not found by validator
-WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.result[0]: Found multiple matching profiles for urn:uuid:59e2ba97-44b0-45db-8f61-0a1b0e198580 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1
+WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource.result[0]: Found multiple matching profiles for urn:uuid:59e2ba97-44b0-45db-8f61-0a1b0e198580 among choices: http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-simple-1, http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1
 WARNING: Bundle/b317aa04-131c-49d1-b9bc-48ff94876834: Bundle.entry[0].resource: Resource has a language, but the XHTML does not have an xml:lang tag (needs both lang and xml:lang - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
 == C:\work\git\ci-fhir-r4\examples\bundle-b49df1b2-b717-4d81-a140-7f16a334999b.xml ==
 INFORMATION: Bundle/b49df1b2-b717-4d81-a140-7f16a334999b: Bundle.entry[0].resource: Validate resource against profile http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1
@@ -641,6 +643,11 @@ WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/f
 INFORMATION: StructureDefinition/patient-ident-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/patient-ident-1: StructureDefinition.snapshot.element[43].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-3 on element Patient.contact.relationship could not be resolved
 WARNING: StructureDefinition/patient-ident-1: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 on element Patient.communication.language could not be resolved
+== C:\work\git\ci-fhir-r4\resources\patient-identified-1.xml ==
+INFORMATION: StructureDefinition/patient-identified-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/patient-identified-1: StructureDefinition.snapshot.element[43].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-3 on element Patient.contact.relationship could not be resolved
+WARNING: StructureDefinition/patient-identified-1: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 on element Patient.communication.language could not be resolved
+WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-identified-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\patient-mhr-1.xml ==
 INFORMATION: StructureDefinition/patient-mhr-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/patient-mhr-1: StructureDefinition.snapshot.element[44].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-3 on element Patient.contact.relationship could not be resolved
@@ -658,6 +665,11 @@ WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/f
 INFORMATION: StructureDefinition/practitionerrole-ident-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/practitionerrole-ident-1: StructureDefinition.snapshot.element[14].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/practitioner-role-1 on element PractitionerRole.code could not be resolved
 WARNING: StructureDefinition/practitionerrole-ident-1: StructureDefinition.snapshot.element[15].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/clinical-specialty-1 on element PractitionerRole.specialty could not be resolved
+== C:\work\git\ci-fhir-r4\resources\relatedperson-identified-1.xml ==
+INFORMATION: StructureDefinition/relatedperson-identified-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/relatedperson-identified-1: StructureDefinition.snapshot.element[12].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/related-person-relationship-type-1 on element RelatedPerson.relationship could not be resolved
+WARNING: StructureDefinition/relatedperson-identified-1: StructureDefinition.snapshot.element[24].binding: The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2 on element RelatedPerson.communication.language could not be resolved
+WARNING: StructureDefinition.where(url = 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/relatedperson-identified-1'): The Implementation Guide contains no examples for this profile
 == C:\work\git\ci-fhir-r4\resources\servicerequest-diag-report-1.xml ==
 WARNING: Order Details for Diagnostic Report.ServiceRequest.status: Binding https://healthterminologies.gov.au/fhir/ValueSet/requeststatus-reporting-1 could not be located
 INFORMATION: StructureDefinition/servicerequest-diag-report-1: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

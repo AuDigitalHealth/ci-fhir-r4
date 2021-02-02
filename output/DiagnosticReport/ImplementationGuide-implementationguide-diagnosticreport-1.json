@@ -11,7 +11,7 @@
   "title": "Diagnostic Report",
   "status": "draft",
   "experimental": true,
-  "date": "2021-02-01T12:29:52+10:00",
+  "date": "2021-02-02T15:16:08+10:00",
   "publisher": "Australian Digital Health Agency",
   "contact": [
     {
@@ -90,6 +90,19 @@
           "reference": "StructureDefinition/patient-ident-1"
         },
         "name": "Patient with Mandatory Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/patient-identified-1"
+        },
+        "name": "Identified Patient",
         "exampleBoolean": false
       },
       {
@@ -194,6 +207,19 @@
           "reference": "StructureDefinition/organization-identified-1"
         },
         "name": "Identified Organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/relatedperson-identified-1"
+        },
+        "name": "Identified RelatedPerson",
         "exampleBoolean": false
       },
       {

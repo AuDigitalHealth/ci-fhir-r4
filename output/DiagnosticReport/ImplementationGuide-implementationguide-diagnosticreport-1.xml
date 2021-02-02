@@ -15,7 +15,7 @@
   <title value="Diagnostic Report"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-02-01T12:29:52+10:00"/>
+  <date value="2021-02-02T15:16:08+10:00"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -72,6 +72,16 @@
         <reference value="StructureDefinition/patient-ident-1"/>
       </reference>
       <name value="Patient with Mandatory Identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-identified-1"/>
+      </reference>
+      <name value="Identified Patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -152,6 +162,16 @@
         <reference value="StructureDefinition/organization-identified-1"/>
       </reference>
       <name value="Identified Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relatedperson-identified-1"/>
+      </reference>
+      <name value="Identified RelatedPerson"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
