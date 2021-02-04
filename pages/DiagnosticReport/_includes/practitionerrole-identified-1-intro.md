@@ -1,5 +1,5 @@
-### Base PractitionerRole
-The purpose of this profile is to provide a base model for the concept of a practitioner role to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. The base concept supported is a practitioner, in a role, on behalf of an organisation.
+### Identified PractitionerRole
+The purpose of this profile is to define a representation of a practitioner role where identifying information is known. The concept supported is a practitioner, in a role, on behalf of an organisation. This profile is intended to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
@@ -9,6 +9,8 @@ For the overarching usage scenarios in this implementation guide it is expected 
 </ul>
 
 When sending as a patient's general practitioner it is expected that practitioner name and code are sent.
+
+When sending to the My Health Record system it is expected that practitioner name, organisation name, and code are sent.
 
 #### Boundaries and relationships
 Other related practitioner role attributes, considered to be agnostic to the particular healthcare event the practitioner is participating in (in this practitioner role) are better represented in other resources rather than directly part of the PractitionerRole. These attributes include:
