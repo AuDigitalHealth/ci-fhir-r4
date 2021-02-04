@@ -66,7 +66,7 @@
             <name value="Identified Patient"/>
             <exampleBoolean value="false"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="StructureDefinition/servicerequest-path-report-1"/>
             </reference>
@@ -100,7 +100,7 @@
             </reference>
             <name value="diagnosticreport-path-mhr-1"/>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/diagnosticreport-otherdiag-mhr-1"/>
@@ -136,13 +136,13 @@
             <name value="Simple Pathology Observation"/>
             <exampleBoolean value="false"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="StructureDefinition/composition-pathreport-1"/>
             </reference>
             <name value="Pathology Report"/>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/specimen-collect-1"/>
@@ -191,13 +191,13 @@
             <name value="Order Details for Diagnostic Report"/>
             <exampleBoolean value="false"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="StructureDefinition/composition-imagreport-1"/>
             </reference>
             <name value="Diagnostic Imaging Report"/>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/observation-imag-simple-1"/>
@@ -205,13 +205,13 @@
             <name value="Simple Imaging Observation"/>
             <exampleBoolean value="false"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="StructureDefinition/servicerequest-imag-report-1"/>
             </reference>
             <name value="Order Details for Diagnostic Imaging Report"/>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/bodystructure-dh-base-1"/>
@@ -242,229 +242,7 @@
         </resource>
 
         <!-- EXAMPLES -->
-        <resource>
-            <reference>
-                <reference value="Bundle/559b66ea-abbf-45fb-8627-554817830095"/>
-            </reference>
-            <name value="2019 Novel Coronavirus PCR (MHR)(Bundle)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/b317aa04-131c-49d1-b9bc-48ff94876834"/>
-            </reference>
-            <name value="2019-Novel Coronavirus PCR (P2P)(Bundle)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/b49df1b2-b717-4d81-a140-7f16a334999b"/>
-            </reference>
-            <name value="FBC 2016-07-13 (MHR)(Bundle)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DiagnosticReport/fbc"/>
-            </reference>
-            <name value="FBC 2016-07-13 (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/esr"/>
-            </reference>
-            <name value="ESR 2016-07-13 (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/fbc"/>
-            </reference>
-            <name value="FBC 2016-07-13 (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/basophils"/>
-            </reference>
-            <name value="Basophils (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/eosinophils"/>
-            </reference>
-            <name value="Eosinophils (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/haematocrit"/>
-            </reference>
-            <name value="Haematocrit (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/haemoglobin"/>
-            </reference>
-            <name value="Haemoglobin (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/lymphocytes"/>
-            </reference>
-            <name value="Lymphocytes (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/mchc"/>
-            </reference>
-            <name value="MCHC (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/meancellhaemoglobin"/>
-            </reference>
-            <name value="Mean Cell Haemoglobin (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/meancellvolume"/>
-            </reference>
-            <name value="Mean Cell Volume (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/monocytes"/>
-            </reference>
-            <name value="Monocytes (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/neutrophils"/>
-            </reference>
-            <name value="Neutrophils (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/plateletcount"/>
-            </reference>
-            <name value="Platelet Count (referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/redcellcount"/>
-            </reference>
-            <name value="Red Cell Count (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/whitecellcount"/>
-            </reference>
-            <name value="White Cell Count (Atomic)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-fbc"/>
-            </reference>
-            <name value="FBC Order (referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/p2p-anne-thompson"/>
-            </reference>
-            <name value="Anne Thomposon (P2P)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/nsw-gp"/>
-            </reference>
-            <name value="Dr Sarah Bondiali (General Practitioner)(referenced)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
-            </reference>
-            <name value="Dr. Robert Brown (Haematologist)(referenced)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"/>
-            </reference>
-            <name value="Dr. Robert Brown (referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
-            />
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
-            </reference>
-            <name value="Randwick Laboratories (referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"
-            />
-        </resource>
-
-        
+        <!-- CARDIOLOGY EXAMPLE -->
         <resource>
             <reference>
                 <reference value="Bundle/94f75158-f8b9-4c08-b96e-4306580c2add"/>
@@ -892,8 +670,228 @@
             <name value="Echocardiography pre-chemo report (PDF)"/>
             <exampleBoolean value="true"/>
         </resource>
-
-
+        <!-- PATHOLOGY EXAMPLES -->
+        <!--<resource>
+            <reference>
+                <reference value="Bundle/559b66ea-abbf-45fb-8627-554817830095"/>
+            </reference>
+            <name value="2019 Novel Coronavirus PCR (MHR)(Bundle)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/b317aa04-131c-49d1-b9bc-48ff94876834"/>
+            </reference>
+            <name value="2019-Novel Coronavirus PCR (P2P)(Bundle)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
+            />
+        </resource>-->
+        <!--<resource>
+            <reference>
+                <reference value="Bundle/b49df1b2-b717-4d81-a140-7f16a334999b"/>
+            </reference>
+            <name value="FBC 2016-07-13 (MHR)(Bundle)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1"
+            />
+        </resource>-->
+        <!--<resource>
+            <reference>
+                <reference value="DiagnosticReport/fbc"/>
+            </reference>
+            <name value="FBC 2016-07-13 (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
+            />
+        </resource>-->
+        <!--<resource>
+            <reference>
+                <reference value="Observation/esr"/>
+            </reference>
+            <name value="ESR 2016-07-13 (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/fbc"/>
+            </reference>
+            <name value="FBC 2016-07-13 (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/basophils"/>
+            </reference>
+            <name value="Basophils (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/eosinophils"/>
+            </reference>
+            <name value="Eosinophils (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/haematocrit"/>
+            </reference>
+            <name value="Haematocrit (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/haemoglobin"/>
+            </reference>
+            <name value="Haemoglobin (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/lymphocytes"/>
+            </reference>
+            <name value="Lymphocytes (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/mchc"/>
+            </reference>
+            <name value="MCHC (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/meancellhaemoglobin"/>
+            </reference>
+            <name value="Mean Cell Haemoglobin (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/meancellvolume"/>
+            </reference>
+            <name value="Mean Cell Volume (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/monocytes"/>
+            </reference>
+            <name value="Monocytes (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/neutrophils"/>
+            </reference>
+            <name value="Neutrophils (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/plateletcount"/>
+            </reference>
+            <name value="Platelet Count (referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/redcellcount"/>
+            </reference>
+            <name value="Red Cell Count (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/whitecellcount"/>
+            </reference>
+            <name value="White Cell Count (Atomic)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-fbc"/>
+            </reference>
+            <name value="FBC Order (referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1"
+            />
+        </resource>-->
+        <resource>
+            <reference>
+                <reference value="Patient/p2p-anne-thompson"/>
+            </reference>
+            <name value="Anne Thomposon (P2P)(referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/nsw-gp"/>
+            </reference>
+            <name value="Dr Sarah Bondiali (General Practitioner)(referenced)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+            </reference>
+            <name value="Dr. Robert Brown (Haematologist)(referenced)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"/>
+            </reference>
+            <name value="Dr. Robert Brown (referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+            </reference>
+            <name value="Randwick Laboratories (referenced)"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"
+            />
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="TBD"/>
