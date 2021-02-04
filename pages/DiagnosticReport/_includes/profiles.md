@@ -50,7 +50,7 @@
                                 <li><a href="StructureDefinition-patient-identified-1.html">Patient (Identified Patient)</a></li>
                                 <li><a href="StructureDefinition-patient-mhr-1.html">Patient (My Health Record Patient)</a></li>
                                 <li><a href="StructureDefinition-patient-ident-1.html">Patient (Patient with Mandatory Identifier)</a></li>
-                                <li><a href="StructureDefinition-practitioner-dh-base-1.html">Practitioner (Base Practitioner)</a></li>
+                                <li><a href="StructureDefinition-practitioner-identified-1.html">Practitioner (Identified Practitioner)</a></li>
                                 <li><a href="StructureDefinition-practitionerrole-dh-base-1.html">PractitionerRole (Base PractitionerRole)</a></li>
                                 <li><a href="StructureDefinition-practitionerrole-ident-1.html">PractitionerRole (PractitionerRole with Mandatory Identifier)</a></li>
                                 <li><a href="StructureDefinition-relatedperson-identified-1.html">RelatedPerson (Identified RelatedPerson)</a></li>
