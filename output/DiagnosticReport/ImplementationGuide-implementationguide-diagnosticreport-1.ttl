@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Diagnostic Report"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-02-02T15:16:08+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-02-08T14:53:27+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Australian Digital Health Agency"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -120,78 +120,13 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/servicerequest-path-report-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "servicerequest-path-report-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/diagnosticreport-imag-atomic-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-imag-atomic-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-imag-atomic-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/diagnosticreport-imag-mhr-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-imag-mhr-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-imag-mhr-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/diagnosticreport-path-atomic-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-path-atomic-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-path-atomic-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/diagnosticreport-path-mhr-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-path-mhr-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-path-mhr-1" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/diagnosticreport-otherdiag-mhr-1>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-otherdiag-mhr-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-otherdiag-mhr-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -204,7 +139,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnosticreport-otherdiag-atomic-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -217,7 +152,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identified Organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -230,7 +165,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identified RelatedPerson" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -243,20 +178,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simple Pathology Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-pathreport-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pathology Report" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 16;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -269,7 +191,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Collected Specimen" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -282,7 +204,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atomic Pathology Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -295,7 +217,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simple Other Diagnostic Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -308,7 +230,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atomic Other Diagnostic Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -320,7 +242,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atomic Imaging Observation" ]
      ], [
-       fhir:index 21;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -333,7 +255,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Other Diagnostic Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -346,20 +268,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Order Details for Diagnostic Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-imagreport-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Imaging Report" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 24;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -372,20 +281,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Simple Imaging Observation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-imag-report-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/servicerequest-imag-report-1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Order Details for Diagnostic Imaging Report" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 26;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -398,7 +294,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base BodyStructure" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -411,7 +307,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ImagingStudy (Diagnostic Imaging Study)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -424,420 +320,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base PractitionerRole" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-dh-base-1>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/practitioner-dh-base-1" ]
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/practitioner-identified-1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/practitioner-identified-1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner Identified" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/559b66ea-abbf-45fb-8627-554817830095>;
-         fhir:Reference.reference [ fhir:value "Bundle/559b66ea-abbf-45fb-8627-554817830095" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "2019 Novel Coronavirus PCR (MHR)(Bundle)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1>
-       ]
-     ], [
-       fhir:index 31;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/b317aa04-131c-49d1-b9bc-48ff94876834>;
-         fhir:Reference.reference [ fhir:value "Bundle/b317aa04-131c-49d1-b9bc-48ff94876834" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "2019-Novel Coronavirus PCR (P2P)(Bundle)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1>
-       ]
-     ], [
-       fhir:index 32;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Bundle/b49df1b2-b717-4d81-a140-7f16a334999b>;
-         fhir:Reference.reference [ fhir:value "Bundle/b49df1b2-b717-4d81-a140-7f16a334999b" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FBC 2016-07-13 (MHR)(Bundle)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1>
-       ]
-     ], [
-       fhir:index 33;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/DiagnosticReport/fbc>;
-         fhir:Reference.reference [ fhir:value "DiagnosticReport/fbc" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FBC 2016-07-13 (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1>
-       ]
-     ], [
-       fhir:index 34;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/esr>;
-         fhir:Reference.reference [ fhir:value "Observation/esr" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ESR 2016-07-13 (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/fbc>;
-         fhir:Reference.reference [ fhir:value "Observation/fbc" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FBC 2016-07-13 (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 36;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/basophils>;
-         fhir:Reference.reference [ fhir:value "Observation/basophils" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Basophils (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 37;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/eosinophils>;
-         fhir:Reference.reference [ fhir:value "Observation/eosinophils" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Eosinophils (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 38;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/haematocrit>;
-         fhir:Reference.reference [ fhir:value "Observation/haematocrit" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Haematocrit (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 39;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/haemoglobin>;
-         fhir:Reference.reference [ fhir:value "Observation/haemoglobin" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Haemoglobin (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 40;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/lymphocytes>;
-         fhir:Reference.reference [ fhir:value "Observation/lymphocytes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lymphocytes (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/mchc>;
-         fhir:Reference.reference [ fhir:value "Observation/mchc" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MCHC (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 42;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/meancellhaemoglobin>;
-         fhir:Reference.reference [ fhir:value "Observation/meancellhaemoglobin" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mean Cell Haemoglobin (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 43;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/meancellvolume>;
-         fhir:Reference.reference [ fhir:value "Observation/meancellvolume" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mean Cell Volume (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 44;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/monocytes>;
-         fhir:Reference.reference [ fhir:value "Observation/monocytes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Monocytes (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 45;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/neutrophils>;
-         fhir:Reference.reference [ fhir:value "Observation/neutrophils" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Neutrophils (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 46;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/plateletcount>;
-         fhir:Reference.reference [ fhir:value "Observation/plateletcount" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Platelet Count (referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 47;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/redcellcount>;
-         fhir:Reference.reference [ fhir:value "Observation/redcellcount" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Red Cell Count (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 48;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Observation/whitecellcount>;
-         fhir:Reference.reference [ fhir:value "Observation/whitecellcount" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "White Cell Count (Atomic)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1>
-       ]
-     ], [
-       fhir:index 49;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/ServiceRequest/order-fbc>;
-         fhir:Reference.reference [ fhir:value "ServiceRequest/order-fbc" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FBC Order (referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1>
-       ]
-     ], [
-       fhir:index 50;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Patient" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/p2p-anne-thompson>;
-         fhir:Reference.reference [ fhir:value "Patient/p2p-anne-thompson" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anne Thomposon (P2P)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1>
-       ]
-     ], [
-       fhir:index 51;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/nsw-gp>;
-         fhir:Reference.reference [ fhir:value "PractitionerRole/nsw-gp" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr Sarah Bondiali (General Practitioner)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
-       ]
-     ], [
-       fhir:index 52;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6>;
-         fhir:Reference.reference [ fhir:value "PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr. Robert Brown (Haematologist)(referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
-       ]
-     ], [
-       fhir:index 53;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Practitioner" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669>;
-         fhir:Reference.reference [ fhir:value "Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr. Robert Brown (referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1>
-       ]
-     ], [
-       fhir:index 54;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec>;
-         fhir:Reference.reference [ fhir:value "Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Randwick Laboratories (referenced)" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1>
-       ]
-     ], [
-       fhir:index 55;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -853,7 +349,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1>
        ]
      ], [
-       fhir:index 56;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -869,7 +365,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 57;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -885,7 +381,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 58;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -901,7 +397,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -917,7 +413,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -933,7 +429,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1>
        ]
      ], [
-       fhir:index 61;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -949,7 +445,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 62;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -965,7 +461,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -981,7 +477,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -997,7 +493,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1013,7 +509,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 66;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1029,7 +525,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 67;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1045,7 +541,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1061,7 +557,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1077,7 +573,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1093,7 +589,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1109,7 +605,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 72;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1125,7 +621,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 73;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1141,7 +637,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 74;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1157,7 +653,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 75;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1173,7 +669,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 76;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1189,7 +685,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 77;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1205,7 +701,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 78;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1221,7 +717,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 79;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1237,7 +733,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 80;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1253,7 +749,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 81;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1269,7 +765,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 82;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1285,7 +781,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 83;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1301,7 +797,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 84;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1317,7 +813,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 85;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1333,7 +829,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 86;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1349,7 +845,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 87;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1365,7 +861,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 88;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1381,7 +877,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 89;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1397,7 +893,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 90;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1413,7 +909,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 91;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1429,7 +925,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 92;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1445,7 +941,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 93;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1461,7 +957,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 94;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1477,7 +973,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 95;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1493,7 +989,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 96;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1509,7 +1005,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 97;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1525,7 +1021,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 98;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1541,7 +1037,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 99;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1557,7 +1053,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 100;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1573,7 +1069,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 101;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1589,7 +1085,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 102;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1605,7 +1101,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 103;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1621,7 +1117,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 104;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1637,7 +1133,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 105;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1653,7 +1149,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 106;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1669,7 +1165,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1>
        ]
      ], [
-       fhir:index 107;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1685,7 +1181,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1>
        ]
      ], [
-       fhir:index 108;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1701,7 +1197,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
        ]
      ], [
-       fhir:index 109;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1713,11 +1209,11 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr Fredrika Bremer" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1>
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1>
        ]
      ], [
-       fhir:index 110;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1733,7 +1229,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
        ]
      ], [
-       fhir:index 111;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1745,11 +1241,11 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ms Linda Howard" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1";
-         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1>
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1>
        ]
      ], [
-       fhir:index 112;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1765,7 +1261,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
        ]
      ], [
-       fhir:index 113;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1781,7 +1277,7 @@
          fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1>
        ]
      ], [
-       fhir:index 114;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1794,7 +1290,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NSW Hospital WADORS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 115;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1806,6 +1302,86 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Echocardiography pre-chemo report (PDF)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Patient/p2p-anne-thompson>;
+         fhir:Reference.reference [ fhir:value "Patient/p2p-anne-thompson" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anne Thomposon (P2P)(referenced)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1>
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/nsw-gp>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/nsw-gp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr Sarah Bondiali (General Practitioner)(referenced)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
+       ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr. Robert Brown (Haematologist)(referenced)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1>
+       ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669>;
+         fhir:Reference.reference [ fhir:value "Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dr. Robert Brown (referenced)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1>
+       ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/4.0/Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec>;
+         fhir:Reference.reference [ fhir:value "Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Randwick Laboratories (referenced)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1";
+         fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];

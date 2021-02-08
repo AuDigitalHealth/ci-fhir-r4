@@ -76,41 +76,6 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/servicerequest-path-report-1"
-      },
-      "name" : "servicerequest-path-report-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-imag-atomic-1"
-      },
-      "name" : "diagnosticreport-imag-atomic-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-imag-mhr-1"
-      },
-      "name" : "diagnosticreport-imag-mhr-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-path-atomic-1"
-      },
-      "name" : "diagnosticreport-path-atomic-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/diagnosticreport-path-mhr-1"
-      },
-      "name" : "diagnosticreport-path-mhr-1",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/diagnosticreport-otherdiag-mhr-1"
       },
       "name" : "diagnosticreport-otherdiag-mhr-1",
@@ -142,13 +107,6 @@
         "reference" : "StructureDefinition/observation-path-simple-1"
       },
       "name" : "Simple Pathology Observation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/composition-pathreport-1"
-      },
-      "name" : "Pathology Report",
       "exampleBoolean" : false
     },
     {
@@ -201,23 +159,9 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/composition-imagreport-1"
-      },
-      "name" : "Diagnostic Imaging Report",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/observation-imag-simple-1"
       },
       "name" : "Simple Imaging Observation",
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/servicerequest-imag-report-1"
-      },
-      "name" : "Order Details for Diagnostic Imaging Report",
       "exampleBoolean" : false
     },
     {
@@ -243,185 +187,10 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/practitioner-dh-base-1"
+        "reference" : "StructureDefinition/practitioner-identified-1"
       },
-      "name" : "Base Practitioner",
+      "name" : "Practitioner Identified",
       "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/559b66ea-abbf-45fb-8627-554817830095"
-      },
-      "name" : "2019 Novel Coronavirus PCR (MHR)(Bundle)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/b317aa04-131c-49d1-b9bc-48ff94876834"
-      },
-      "name" : "2019-Novel Coronavirus PCR (P2P)(Bundle)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Bundle/b49df1b2-b717-4d81-a140-7f16a334999b"
-      },
-      "name" : "FBC 2016-07-13 (MHR)(Bundle)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1"
-    },
-    {
-      "reference" : {
-        "reference" : "DiagnosticReport/fbc"
-      },
-      "name" : "FBC 2016-07-13 (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/esr"
-      },
-      "name" : "ESR 2016-07-13 (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/fbc"
-      },
-      "name" : "FBC 2016-07-13 (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/basophils"
-      },
-      "name" : "Basophils (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/eosinophils"
-      },
-      "name" : "Eosinophils (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/haematocrit"
-      },
-      "name" : "Haematocrit (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/haemoglobin"
-      },
-      "name" : "Haemoglobin (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/lymphocytes"
-      },
-      "name" : "Lymphocytes (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/mchc"
-      },
-      "name" : "MCHC (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/meancellhaemoglobin"
-      },
-      "name" : "Mean Cell Haemoglobin (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/meancellvolume"
-      },
-      "name" : "Mean Cell Volume (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/monocytes"
-      },
-      "name" : "Monocytes (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/neutrophils"
-      },
-      "name" : "Neutrophils (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/plateletcount"
-      },
-      "name" : "Platelet Count (referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/redcellcount"
-      },
-      "name" : "Red Cell Count (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Observation/whitecellcount"
-      },
-      "name" : "White Cell Count (Atomic)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-path-atomic-1"
-    },
-    {
-      "reference" : {
-        "reference" : "ServiceRequest/order-fbc"
-      },
-      "name" : "FBC Order (referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/servicerequest-path-report-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/p2p-anne-thompson"
-      },
-      "name" : "Anne Thomposon (P2P)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"
-    },
-    {
-      "reference" : {
-        "reference" : "PractitionerRole/nsw-gp"
-      },
-      "name" : "Dr Sarah Bondiali (General Practitioner)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"
-    },
-    {
-      "reference" : {
-        "reference" : "PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"
-      },
-      "name" : "Dr. Robert Brown (Haematologist)(referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"
-      },
-      "name" : "Dr. Robert Brown (referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
-    },
-    {
-      "reference" : {
-        "reference" : "Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"
-      },
-      "name" : "Randwick Laboratories (referenced)",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"
     },
     {
       "reference" : {
@@ -806,7 +575,7 @@
         "reference" : "Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b"
       },
       "name" : "Dr Fredrika Bremer",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1"
     },
     {
       "reference" : {
@@ -820,7 +589,7 @@
         "reference" : "Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30"
       },
       "name" : "Ms Linda Howard",
-      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1"
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1"
     },
     {
       "reference" : {
@@ -849,6 +618,41 @@
       },
       "name" : "Echocardiography pre-chemo report (PDF)",
       "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/p2p-anne-thompson"
+      },
+      "name" : "Anne Thomposon (P2P)(referenced)",
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/nsw-gp"
+      },
+      "name" : "Dr Sarah Bondiali (General Practitioner)(referenced)",
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"
+    },
+    {
+      "reference" : {
+        "reference" : "PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"
+      },
+      "name" : "Dr. Robert Brown (Haematologist)(referenced)",
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"
+      },
+      "name" : "Dr. Robert Brown (referenced)",
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1"
+    },
+    {
+      "reference" : {
+        "reference" : "Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"
+      },
+      "name" : "Randwick Laboratories (referenced)",
+      "exampleCanonical" : "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"
     }],
     "page" : {
       "nameUrl" : "index.html",
