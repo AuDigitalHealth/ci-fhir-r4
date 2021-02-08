@@ -12,28 +12,14 @@
     ],
     "Composition": [
       {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-imagreport-1",
-        "title": "Diagnostic Imaging Report"
-      },
-      {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1",
         "title": "Other Diagnostic Report"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-pathreport-1",
-        "title": "Pathology Report"
       }
     ],
     "ImagingStudy": [
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1",
         "title": "Diagnostic Imaging Study"
-      }
-    ],
-    "ServiceRequest": [
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1",
-        "title": "Order Details for Diagnostic Report"
       }
     ],
     "Specimen": [
@@ -44,28 +30,12 @@
     ],
     "DiagnosticReport": [
       {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-atomic-1",
-        "title": "Atomic Diagnostic Imaging Report"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-imag-mhr-1",
-        "title": "My Health Record Diagnostic Imaging Report"
-      },
-      {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1",
         "title": "Atomic Other Diagnostic Report"
       },
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1",
         "title": "My Health Record Other Diagnostic Report"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-atomic-1",
-        "title": "Atomic Pathology Report"
-      },
-      {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-path-mhr-1",
-        "title": "My Health Record Pathology Report"
       }
     ],
     "Observation": [
@@ -120,8 +90,8 @@
     ],
     "Practitioner": [
       {
-        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1",
-        "title": "Base Practitioner"
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1",
+        "title": "Identified Practitioner"
       }
     ],
     "PractitionerRole": [
@@ -138,6 +108,12 @@
       {
         "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/relatedperson-identified-1",
         "title": "Identified RelatedPerson"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1",
+        "title": "Order Details for Diagnostic Report"
       }
     ]
   },

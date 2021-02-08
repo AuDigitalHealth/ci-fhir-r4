@@ -39,7 +39,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PractitionerRole.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","The period during which the practitioner is authorized to perform in these role(s)","The period during which the person is authorized to act as a practitioner in these role(s) for the organization.","","Even after the agencies is revoked, the fact that it existed must still be recorded.","","","","","","","",,,,,"",,,,"PractitionerRole.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-8/9 / PRA-5.4",".performance[@typeCode <= 'PPRF'].ActDefinitionOrEvent.effectiveTime","(ServD maps Practitioners and Organizations via another entity, so this concept is not available)","FiveWs.done[x]"
-"PractitionerRole.practitioner","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-dh-base-1]]}
+"PractitionerRole.practitioner","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1]]}
 ","Practitioner that is able to provide the defined services for the organization","Practitioner that is able to provide the defined services for the organization.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player"
 "PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1]]}
