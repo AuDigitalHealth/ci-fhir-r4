@@ -11,7 +11,7 @@ When sending to the My Health Record system it is expected that:
 * name is sent
 
 #### Boundaries and relationships
-This profile is referenced by [Base Practitioner](StructureDefinition-practitioner-dh-base-1.html),
+This profile is referenced by [Identified Practitioner](StructureDefinition-practitioner-identified-1.html), 
 [My Health Record Patient](StructureDefinition-patient-mhr-1.html),
 [Organization with Mandatory Identifier](StructureDefinition-organization-ident-1.html),
 [Order Details for Diagnostic Report](StructureDefinition-servicerequest-diag-report-1.html), 
