@@ -2,6 +2,6 @@ package http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implem
 
 import org.hl7.fhir.r5.model.ProfilingWrapper;
 
-public class PractitionerRoleBase {
+public class PractitionerRoleIdentified {
 
 }

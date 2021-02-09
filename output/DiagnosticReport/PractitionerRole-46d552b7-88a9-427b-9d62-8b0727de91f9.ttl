@@ -10,7 +10,12 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "46d552b7-88a9-427b-9d62-8b0727de91f9"];
   fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "2020-1.1.2Q3" ]
+     fhir:Meta.versionId [ fhir:value "2020-1.1.2Q3" ];
+     fhir:Meta.profile [
+       fhir:value "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1";
+       fhir:index 0;
+       fhir:link <http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1>
+     ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
