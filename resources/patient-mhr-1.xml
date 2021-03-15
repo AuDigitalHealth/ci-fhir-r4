@@ -30,7 +30,7 @@
       <constraint>
         <key value="inv-dh-pat-01"/>
         <severity value="error"/>
-        <human value="One patient name shall have at least a family name or text"/>
+        <human value="The name shall at least have one instance of family name present in family or text"/>
         <expression value="name.family.exists() or name.text.exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1"
         />
