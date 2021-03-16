@@ -16,7 +16,7 @@
   <description
     value="The purpose of this profile is to define a representation of a patient for exchange usage scenarios to support the electronic exchange of healthcare information between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element"/>
   <copyright
-    value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -30,8 +30,8 @@
       <constraint>
         <key value="inv-dh-pat-01"/>
         <severity value="error"/>
-        <human value="One patient name shall have at least a family name"/>
-        <expression value="name.family.exists()"/>
+        <human value="The name shall at least have one instance of family name present in family or text"/>
+        <expression value="name.family.exists() or name.text.exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1"
         />
       </constraint>
@@ -47,16 +47,6 @@
       </constraint>
       <constraint>
         <key value="inv-dh-pat-03"/>
-        <severity value="error"/>
-        <human
-          value="If present, a managing organisation shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="managingOrganization.exists() implies (managingOrganization.reference.exists() or managingOrganization.identifier.exists() or managingOrganization.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-mhr-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-pat-04"/>
         <severity value="error"/>
         <human value="If present, date of arrival shall be year of arrival"/>
         <expression
@@ -74,11 +64,6 @@
       <path value="Patient.extension"/>
       <sliceName value="indigenousStatus"/>
       <min value="1"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Patient.extension:closingTheGapRegistration">
-      <path value="Patient.extension"/>
-      <sliceName value="closingTheGapRegistration"/>
       <mustSupport value="true"/>
     </element>
     <element id="Patient.extension:mothersMaidenName">
@@ -202,19 +187,11 @@
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
-      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1"
         />
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Patient.managingOrganization">
-      <path value="Patient.managingOrganization"/>
-      <type>
-        <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1"
         />
