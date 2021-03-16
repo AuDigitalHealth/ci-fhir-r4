@@ -8,7 +8,7 @@ For the overarching usage scenarios in this implementation guide it is expected 
 <ul>
   <li>country of birth is sent in <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace">extension:birthPlace</a></li>
   <li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
-   <li>Where a sending system cannot send a family name (Patient.name.family) it is expected that</li>
+   <li>Where a sending system cannot send a family name (Patient.name.family) it is expected that:</li>
         <ul>
             <li>The family name can be sent in text (Patient.name.text)</li>
         </ul>

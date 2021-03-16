@@ -22,7 +22,7 @@
   </tr> 
   <tr>
     <td>Patient’s biological sex</td>
-    <td>Work is underway to dervie <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html">AU Sex Assigned At Birth</a> profile to be used.</td>
+    <td>Work is underway to derive <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html">AU Sex Assigned At Birth</a> profile to be used.</td>
     <td>See <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/15">ci-fhir-r4/issues/15</a></td>
   </tr>
 </tbody>
