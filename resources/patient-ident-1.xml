@@ -147,7 +147,7 @@
       </extension>
       <path value="Patient.contact" />
       <constraint>
-        <key value="inv-dh-pat-05" />
+        <key value="inv-dh-pat-04" />
         <severity value="error" />
         <human value="If present, a contact's organisation shall at least have a reference, an identifier or a display" />
         <expression value="organization.exists() implies (organization.reference.exists() or organization.identifier.exists() or organization.display.exists())" />
