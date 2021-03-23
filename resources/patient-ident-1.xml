@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="The purpose of this profile is to define a representation of a patient for exchange usage scenarios in an Australian context where unambiguous identification of a patient is mandatory. This profile is intended to support the electronic exchange of health information between healthcare providers in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
-  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -31,21 +31,15 @@
         <severity value="error" />
         <human value="If present, a general practitioner shall at least have a reference, an identifier or a display" />
         <expression value="generalPractitioner.exists() implies generalPractitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-      </constraint>
+      </constraint>      
       <constraint>
         <key value="inv-dh-pat-02" />
-        <severity value="error" />
-        <human value="If present, a managing organisation shall at least have a reference, an identifier or a display" />
-        <expression value="managingOrganization.exists() implies (managingOrganization.reference.exists() or managingOrganization.identifier.exists() or managingOrganization.display.exists())" />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-pat-03" />
         <severity value="error" />
         <human value="At least one patient identifier shall at least have a system and a value" />
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()" />
       </constraint>
       <constraint>
-        <key value="inv-dh-pat-04" />
+        <key value="inv-dh-pat-03" />
         <severity value="error" />
         <human value="If present, date of arrival shall be year of arrival" />
         <expression value="extension('http://hl7.org.au/fhir/StructureDefinition/date-of-arrival').exists() implies extension.valueDate.value.matches('^([0-9]{4})$')" />
@@ -60,12 +54,7 @@
       <path value="Patient.extension" />
       <sliceName value="indigenousStatus" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.extension:closingTheGapRegistration">
-      <path value="Patient.extension" />
-      <sliceName value="closingTheGapRegistration" />
-      <mustSupport value="true" />
-    </element>
+    </element>    
     <element id="Patient.extension:mothersMaidenName">
       <path value="Patient.extension" />
       <sliceName value="mothersMaidenName" />
@@ -158,7 +147,7 @@
       </extension>
       <path value="Patient.contact" />
       <constraint>
-        <key value="inv-dh-pat-05" />
+        <key value="inv-dh-pat-04" />
         <severity value="error" />
         <human value="If present, a contact's organisation shall at least have a reference, an identifier or a display" />
         <expression value="organization.exists() implies (organization.reference.exists() or organization.identifier.exists() or organization.display.exists())" />
@@ -211,14 +200,6 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.managingOrganization">
-      <path value="Patient.managingOrganization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1" />
       </type>
       <mustSupport value="true" />
     </element>

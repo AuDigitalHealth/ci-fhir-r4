@@ -1,16 +1,31 @@
 #### Patient with Mandatory Identifier
 The purpose of this profile is to define a representation of a patient for exchange usage scenarios in an Australian context where unambiguous identification of a patient is mandatory. This profile is intended to support the electronic exchange of health information between healthcare providers in Australia.
 
-This profile supports the exchange of some of the Cultural and Linguistic Diversity (CALD) data set [<sup>[1]</sup>](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1289.0Main%20Features11999) [<sup>[2]</sup>](https://meteor.aihw.gov.au/content/index.phtml/itemId/491352), including a country of birth, year of arrival and preferred language.
+This profile supports exchange of some of the Cultural and Linguistic Diversity (CALD) data set [<sup>[1]</sup>](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1289.0Main%20Features11999) [<sup>[2]</sup>](https://meteor.aihw.gov.au/content/index.phtml/itemId/491352), including country of birth, year of arrival and preferred language.
 
 #### Implementation guidance
 For the overarching usage scenarios in this implementation guide it is expected that:
 <ul>
   <li>country of birth is sent in <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace">extension:birthPlace</a></li>
-  <li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
-  <li>an IHI conforms to the <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.identifier:ihiNumber">identifier:ihiNumber</a> slice and a maximum of one is sent</li>
+  <li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
+  <li>an IHI conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a> slice and a maximum of one is sent</li>
   <li>an Australian address conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
-  <li>generalPractitioner is sent as a PractitionerRole, unless a practitioner is not able to be nominated, in that case an Organization is sent instead</li> 
+   <li>if sent, a generalPractitioner is sent as a reference to a PractitionerRole resource with:
+      <ul>
+         <li>a PractitionerRole.code, e.g. 62247001 |General practitioner|</li> 
+         <li>a PractitionerRole.organization as either:
+             <ul>
+               <li>a reference to an Organization resource with Organization.name, or</li>
+                <li>organization.display with the organisation's name</li>   
+            </ul>
+        </li>
+      </ul>
+</li>
+<li>if sent, a generalPractitioner is sent as a reference to a Organization resource with:
+      <ul>
+         <li>name used for the organization as Organization.name</li>          
+      </ul>
+</li> 
 </ul>
 
 When sending communication preferences for a patient the guidance in the following table applies.
@@ -71,8 +86,8 @@ When sending communication preferences for a patient the guidance in the followi
 Blank cells in the above table indicate that the given element is absent from the resource.
 
 #### Boundaries and relationships
-Other related patient attributes, ostensibly considered to be demographic in nature, are better represented in other resources rather than directly part of the Patient. These attributes may include:
-* a patient's biological sex - this is a testable observation about a biological property of a patient, and as such should be represented using an [Observation](http://hl7.org/fhir/observation.html) resource. See the discussion on this in the [FHIR specification](http://hl7.org/fhir/patient.html#gender). 
+Other attributes, ostensibly considered to be demographic in nature, are better represented in other resources rather than directly part of the Patient. These attributes may include:
+* a patient's biological sex - this is a testable observation about a biological property of a patient, and as such should be represented using an [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html) profile. This is a draft solution and needs to be agreed at national level. See the discussion on this in the [FHIR specification](http://hl7.org/fhir/patient.html#gender).  
 * a patient's pregnancy status - this is a transient clinical statement better represented using the [Condition](http://hl7.org/fhir/condition.html) resource
 * various social determinants of health (such as housing status, employment status or socio-economic background) - these patient attributes are better tracked using a combination of other resources such as [Observation](http://hl7.org/fhir/observation.html), [Condition](http://hl7.org/fhir/condition.html) or [Flag](http://hl7.org/fhir/flag.html)
 
