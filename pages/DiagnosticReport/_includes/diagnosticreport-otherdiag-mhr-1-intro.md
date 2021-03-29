@@ -45,7 +45,19 @@ For the overarching usage scenarios in this implementation guide it is expected 
         <li>PractitionerRole.code describing the professional role, e.g. 17561000 |Cardiologist|</li>
     </ul></li>
 <li>The set of performers is consistent with each Observation.performer referenced in the report</li>
-<li>the attached PDF is viewable by any individual that is a My Health Record participant; it does not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)</li>
+<li>All formats must be a representation of the one diagnostic report</li>
+<li>Only attachments of following MIME types are accepted by My Health Record
+<ul>
+<li>.gif image/gif</li>
+<li>.jpg image/jpeg</li>
+<li>.jpeg image/jpeg</li>
+<li>.pdf application/pdf</li>
+<li>.png image/png</li>
+<li>.tif image/tiff</li>
+<li>.tiff image/tiff</li>
+</ul>
+</li>
+<li>If the attached is a PDF that is viewable by any individual that is a My Health Record participant; it does not have any of these features: encryption, password protection, printing or copying restrictions, embedded fonts (as not all PDF viewers support them)</li>
 </ul>
 
 #### Boundaries and relationships

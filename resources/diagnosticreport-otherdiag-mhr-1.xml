@@ -32,12 +32,14 @@
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-dir-02" />
         <severity value="error" />
         <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1" />
       </constraint>
     </element>
     <element id="DiagnosticReport.meta">
@@ -48,6 +50,7 @@
         <severity value="error" />
         <human value="One profile shall be 'http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1'" />
         <expression value="profile.where($this='http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1').exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-mhr-1" />
       </constraint>
     </element>
     <element id="DiagnosticReport.meta.profile">
@@ -143,14 +146,11 @@
     <element id="DiagnosticReport.presentedForm">
       <path value="DiagnosticReport.presentedForm" />
       <short value="Attached diagnostic report" />
-      <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.presentedForm.contentType">
       <path value="DiagnosticReport.presentedForm.contentType" />
       <min value="1" />
-      <fixedCode value="application/pdf" />
     </element>
     <element id="DiagnosticReport.presentedForm.url">
       <path value="DiagnosticReport.presentedForm.url" />
@@ -161,9 +161,6 @@
       <min value="1" />
     </element>
     <element id="DiagnosticReport.presentedForm.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="DiagnosticReport.presentedForm.title" />
       <min value="1" />
     </element>
