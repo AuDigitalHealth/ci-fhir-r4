@@ -45,6 +45,24 @@
         <human value="The custodian shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="custodian.reference.exists() or custodian.identifier.where(system.count() + value.count() &gt; 1).exists()" />
       </constraint>
+      <constraint>
+        <key value="inv-dh-cmp-06" />
+        <severity value="error" />
+        <human value="The attester name shall exist" />
+        <expression value="attester.exists() implies attester.party.where(reference = PractitionerRole).PractitionerRole.practitioner.where(reference = Practitioner).Practitioner.name.exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-cmp-07" />
+        <severity value="error" />
+        <human value="The attester name shall exist" />
+        <expression value="attester.exists() implies attester.party.where(reference.ofType(PractitionerRole)).PractitionerRole.practitioner.where(reference.ofType(Practitioner)).Practitioner.name.exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-cmp-08" />
+        <severity value="error" />
+        <human value="The attester name shall exist" />
+        <expression value="attester.exists() implies attester.party.where(reference.ofType(PractitionerRole)).practitioner.where(reference.ofType(Practitioner)).name.exists()" />
+      </constraint>
     </element>
     <element id="Composition.meta">
       <path value="Composition.meta" />
@@ -138,6 +156,12 @@
         <severity value="error" />
         <human value="The party shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="party.reference.exists() or party.identifier.where(system.count() + value.count() &gt; 1).exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-cmp-09" />
+        <severity value="error" />
+        <human value="The attester name shall exist" />
+        <expression value="party.reference.practitioner.reference.name.exists()" />
       </constraint>
       <mustSupport value="true" />
     </element>
