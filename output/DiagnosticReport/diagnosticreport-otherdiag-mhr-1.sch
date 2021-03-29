@@ -22,8 +22,6 @@
       <sch:assert test="count(f:issued) &gt;= 1">issued: minimum cardinality of 'issued' is 1</sch:assert>
       <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:result) &gt;= 1">result: minimum cardinality of 'result' is 1</sch:assert>
-      <sch:assert test="count(f:presentedForm) &gt;= 1">presentedForm: minimum cardinality of 'presentedForm' is 1</sch:assert>
-      <sch:assert test="count(f:presentedForm) &lt;= 1">presentedForm: maximum cardinality of 'presentedForm' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
