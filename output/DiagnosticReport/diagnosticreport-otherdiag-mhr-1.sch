@@ -22,8 +22,6 @@
       <sch:assert test="count(f:issued) &gt;= 1">issued: minimum cardinality of 'issued' is 1</sch:assert>
       <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:result) &gt;= 1">result: minimum cardinality of 'result' is 1</sch:assert>
-      <sch:assert test="count(f:presentedForm) &gt;= 1">presentedForm: minimum cardinality of 'presentedForm' is 1</sch:assert>
-      <sch:assert test="count(f:presentedForm) &lt;= 1">presentedForm: maximum cardinality of 'presentedForm' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -340,81 +338,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:DiagnosticReport/f:presentedForm</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:contentType) &gt;= 1">contentType: minimum cardinality of 'contentType' is 1</sch:assert>
-      <sch:assert test="count(f:contentType) &lt;= 1">contentType: maximum cardinality of 'contentType' is 1</sch:assert>
-      <sch:assert test="count(f:language) &lt;= 1">language: maximum cardinality of 'language' is 1</sch:assert>
-      <sch:assert test="count(f:data) &lt;= 1">data: maximum cardinality of 'data' is 1</sch:assert>
-      <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>
-      <sch:assert test="count(f:url) &lt;= 1">url: maximum cardinality of 'url' is 1</sch:assert>
-      <sch:assert test="count(f:size) &lt;= 1">size: maximum cardinality of 'size' is 1</sch:assert>
-      <sch:assert test="count(f:hash) &gt;= 1">hash: minimum cardinality of 'hash' is 1</sch:assert>
-      <sch:assert test="count(f:hash) &lt;= 1">hash: maximum cardinality of 'hash' is 1</sch:assert>
-      <sch:assert test="count(f:title) &gt;= 1">title: minimum cardinality of 'title' is 1</sch:assert>
-      <sch:assert test="count(f:title) &lt;= 1">title: maximum cardinality of 'title' is 1</sch:assert>
-      <sch:assert test="count(f:creation) &lt;= 1">creation: maximum cardinality of 'creation' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>DiagnosticReport.presentedForm</sch:title>
     <sch:rule context="f:DiagnosticReport/f:presentedForm">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.extension</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.contentType</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:contentType">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.language</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:language">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.data</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:data">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.url</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:url">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.size</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:size">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.hash</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:hash">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.title</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:title">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>DiagnosticReport.presentedForm.creation</sch:title>
-    <sch:rule context="f:DiagnosticReport/f:presentedForm/f:creation">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

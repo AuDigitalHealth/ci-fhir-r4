@@ -10,10 +10,18 @@
 
 ## Introduction
 
-This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent an Other Diagnostic Reports (ODR) diagnostic report. A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.
+This implementation guide is an HL7<sup>TM</sup> FHIR<sup>&reg;</sup> specification to represent an Other Diagnostic Reports (ODR) diagnostic report. A diagnostic report is created by an authoring diagnostic service provider in response to a diagnostic procedure order and contains the results of one or more diagnostic investigations and may contain a specialist or other healthcare provider’s analysis of the results of one or more diagnostic investigations.
+
 
 This [implementation guide](http://hl7.org/fhir/R4/implementationguide.html#scope) is based on [FHIR, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4).
 
+A Specialist or Other Diagnostic observation is intended to support a broad set of observations including:
+* cardiology field - ECG, echo cardiogram, angiocardiography
+* neurology field - EEG, EMG, evoked potentials, nerve conduction tests
+* gastroenterology field - endoscopy, colonoscopy
+* respiratory field - pulmonary function tests
+* audiology - hearing tests
+* sleep studies
 
 ## Document purpose and scope
 
@@ -120,14 +128,17 @@ This table lists known issues with this specification at the time of publishing.
     <th>Description</th>
   
 </tr>
+    <tr>
+        <td>Numerous unlogged known issues</td>
+        <td>The early development status of this implementation guide means that there are too many known issues to be documented. </td>
+    </tr>
+
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
         <td>This draft implementation guide has been developed from the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/releases">Diagnostic Report 1.0.0 (R4) June 2020</a> release with the specialist and other diagnostic content refined for use in the Clinical Document Categorisation (CDC) project.  
 		<br/><br/>
 		The CDC project is to enhance content for the My Health Record system and as such a CDA IG will be developed.  
 		<br/><br/>
-		A FHIR IG is not a required product for the CDC project, but it will serve as a basis for the corresponding CDA IG.
-        <br/><br/>
 		Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as via <a href ="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">ci-fhir-r4 GitHub</a> issues. As engagement progresses, the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues. <br/><br/>
 
      </td>
@@ -153,7 +164,9 @@ This table lists known issues with this specification at the time of publishing.
 |[<a name="NEHT2013xx">NEHT2013xx</a>]| National E-Health Transition Authority, 31 December 2014, eHealth Diagnostic Imaging Report - Information Requirements, Version 1.1.|
 ||[https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014](https://developer.digitalhealth.gov.au/specifications/clinical-documents/ep-2051-2015/nehta-1886-2014)|
 
-<!--|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 2.0.|-->
+|[<a name="DH2021db">DH2021b</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report Information Requirements, Version 1.0.|
+
+|[<a name="DH2021d">DH2021d</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 1.0.|
 
 |[<a name="HL7AUBIG">HL7AUBIG</a>]| HL7 Australia, Continuous Integration Build R4, Australian Base Implementation Guide (AU Base 2), v2.1.0 (Standard for Trial Use), accessed 05 February 2020.|
 ||[http://build.fhir.org/ig/hl7au/au-fhir-base/index.html](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html)|    
