@@ -45,6 +45,12 @@
         <human value="The custodian shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="custodian.reference.exists() or custodian.identifier.where(system.count() + value.count() &gt; 1).exists()" />
       </constraint>
+      <constraint>
+        <key value="inv-dh-cmp-06" />
+        <severity value="error" />
+        <human value="The attester name shall exist" />
+        <expression value="attester.exists() implies attester.party.resolve().practitioner.resolve().name.exists()" />
+      </constraint>
     </element>
     <element id="Composition.meta">
       <path value="Composition.meta" />
@@ -132,7 +138,6 @@
     <element id="Composition.attester">
       <path value="Composition.attester" />
       <short value="Legal Attester" />
-      <min value="1" />
       <max value="1" />
       <constraint>
         <key value="inv-dh-cmp-05" />
