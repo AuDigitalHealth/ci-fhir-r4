@@ -150,9 +150,19 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>This implementation guide is an HL7<sup>TM</sup> FHIR<sup>®</sup> specification to represent an Other Diagnostic Reports (ODR) diagnostic report. A diagnostic report is a report issued by a diagnostic service provider to the requester, i.e. the results including any interpretation provided from one or more performed diagnostic investigations.</p>
+<p>This implementation guide is an HL7<sup>TM</sup> FHIR<sup>®</sup> specification to represent an Other Diagnostic Reports (ODR) diagnostic report. A diagnostic report is created by an authoring diagnostic service provider in response to a diagnostic procedure order and contains the results of one or more diagnostic investigations and may contain a specialist or other healthcare provider’s analysis of the results of one or more diagnostic investigations.</p>
 
 <p>This <a href="http://hl7.org/fhir/R4/implementationguide.html#scope">implementation guide</a> is based on <a href="#HL7FHIR4">FHIR, Release 4 (v4.0.1) [HL7FHIR4]</a>.</p>
+
+<p>A Specialist or Other Diagnostic observation is intended to support a broad set of observations including:</p>
+<ul>
+  <li>cardiology field - ECG, echo cardiogram, angiocardiography</li>
+  <li>neurology field - EEG, EMG, evoked potentials, nerve conduction tests</li>
+  <li>gastroenterology field - endoscopy, colonoscopy</li>
+  <li>respiratory field - pulmonary function tests</li>
+  <li>audiology - hearing tests</li>
+  <li>sleep studies</li>
+</ul>
 
 <h2 id="document-purpose-and-scope">Document purpose and scope</h2>
 
@@ -262,14 +272,17 @@
     <th>Description</th>
   
 </tr>
+    <tr>
+        <td>Numerous unlogged known issues</td>
+        <td>The early development status of this implementation guide means that there are too many known issues to be documented. </td>
+    </tr>
+
       <tr>
         <td>Diagnostic Report FHIR implementation guide roadmap</td>
         <td>This draft implementation guide has been developed from the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/releases">Diagnostic Report 1.0.0 (R4) June 2020</a> release with the specialist and other diagnostic content refined for use in the Clinical Document Categorisation (CDC) project.  
 		<br /><br />
 		The CDC project is to enhance content for the My Health Record system and as such a CDA IG will be developed.  
 		<br /><br />
-		A FHIR IG is not a required product for the CDC project, but it will serve as a basis for the corresponding CDA IG.
-        <br /><br />
 		Stakeholder feedback is sought on a number of extant issues described on the pages of each profile as well as via <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues">ci-fhir-r4 GitHub</a> issues. As engagement progresses, the profiles in this implementation guide are expected to be matured to reflect stakeholder agreement on those issues. <br /><br />
 
      </td>
@@ -315,7 +328,23 @@
   </tbody>
 </table>
 
-<!--|[<a name="DH2019i">DH2019i</a>]| Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 2.0.|-->
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="DH2021db">DH2021b</a>]</td>
+      <td>Australian Digital Health Agency, Not yet published, Diagnostic Report Information Requirements, Version 1.0.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[<a name="DH2021d">DH2021d</a>]</td>
+      <td>Australian Digital Health Agency, Not yet published, Diagnostic Report CDA Implementation Guide, Version 1.0.</td>
+    </tr>
+  </tbody>
+</table>
 
 <table>
   <tbody>
@@ -406,7 +435,7 @@
             <p>Publisher: <a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">Australian Digital Health Agency</a> ABN 84 425 496 912, Level 25, 175 Liverpool Street, Sydney, NSW 2000</p>
             <p>Telephone 1300 901 001 or email <a style="color: #81BEF7" href="mailto:help@digitalhealth.gov.au">help@digitalhealth.gov.au</a></p>
             <p><a style="color: #81BEF7" href="https://www.digitalhealth.gov.au">https://www.digitalhealth.gov.au</a></p>
-            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, Mar 30, 2021 09:51+1000. |
+            <p>Diagnostic Report FHIR Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR Version: 4.0.1</a> (IG Publisher v4.0.1-a53ec6ee1b) generated on Tue, Mar 30, 2021 12:08+1000. |
                 <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
                 </span>
