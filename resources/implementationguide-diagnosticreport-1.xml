@@ -1,79 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="implementationguide-diagnosticreport-1"/>
-    <url
-        value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1"/>
-    <version value="1.0.0"/>
-    <name value="DiagnosticReport"/>
-    <title value="Diagnostic Report"/>
-    <status value="draft"/>
-    <experimental value="true"/>
-    <publisher value="Australian Digital Health Agency"/>
+    <id value="implementationguide-diagnosticreport-1" />
+    <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-diagnosticreport-1" />
+    <version value="1.0.0" />
+    <name value="DiagnosticReport" />
+    <title value="Diagnostic Report" />
+    <status value="draft" />
+    <experimental value="true" />
+    <publisher value="Australian Digital Health Agency" />
     <contact>
         <telecom>
-            <system value="email"/>
-            <value value="help@digitalhealth.gov.au"/>
+            <system value="email" />
+            <value value="help@digitalhealth.gov.au" />
         </telecom>
     </contact>
-    <description
-        value="This implementation guide is an HL7&#8482; FHIR&#xae; specification to represent a Diagnostic Report (DR).&#xa; &#xa;The primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.&#xa; &#xa;This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.&#xa; &#xa;This implementation guide does not describe transport or persistence mechanism of the resources described by it."/>
-    <copyright
-        value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
-    <packageId value="au.electronichealth.diagnosticreport"/>
-    <license value="Apache-2.0"/>
-    <fhirVersion value="4.0.1"/>
+    <description value="This implementation guide is an HL7&#8482; FHIR&#xae; specification to represent a Diagnostic Report (DR).&#xa; &#xa;The primary aim of this implementation guide is to support implementing DR in FHIR, Release 4 (v4.0.1). The resulting FHIR can be used for the electronic exchange of DR information between healthcare providers.&#xa; &#xa;This implementation guide is not to be used as a guide to presentation (or rendering) of the data. It contains no information as to how the data described by it should be displayed and no such guidance should be inferred.&#xa; &#xa;This implementation guide does not describe transport or persistence mechanism of the resources described by it." />
+    <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+    <packageId value="au.electronichealth.diagnosticreport" />
+    <license value="Apache-2.0" />
+    <fhirVersion value="4.0.1" />
     <dependsOn id="aubaser4">
-        <uri value="http://hl7.org.au/fhir/base"/>
-        <packageId value="hl7.fhir.au.base"/>
-        <version value="current"/>
+        <uri value="http://hl7.org.au/fhir/base" />
+        <packageId value="hl7.fhir.au.base" />
+        <version value="current" />
     </dependsOn>
     <definition>
-        
-        <!-- PROFILE DEFINITIONS -->
-        
+
+
+        <!-- PROFILE DEFINITIONS Foundation-->
+
         <resource>
             <reference>
-                <reference value="StructureDefinition/organization-ident-1"/>
+                <reference value="StructureDefinition/composition-otherdiagreport-1" />
             </reference>
-            <name value="Organization with Mandatory Identifier"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/practitionerrole-ident-1"/>
-            </reference>
-            <name value="PractitionerRole with Mandatory Identifier"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/patient-mhr-1"/>
-            </reference>
-            <name value="patient-mhr-1"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/patient-ident-1"/>
-            </reference>
-            <name value="Patient with Mandatory Identifier"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/patient-identified-1"/>
-            </reference>
-            <name value="Identified Patient"/>
-            <exampleBoolean value="false"/>
+            <name value="Other Diagnostic Report" />
+            <exampleBoolean value="false" />
         </resource>
         <!--<resource>
             <reference>
-                <reference value="StructureDefinition/servicerequest-path-report-1"/>
+                <reference value="StructureDefinition/composition-pathreport-1"/>
             </reference>
-            <name value="servicerequest-path-report-1"/>
+            <name value="Pathology Report"/>
             <exampleBoolean value="false"/>
+        </resource>-->
+        <!--<resource>
+            <reference>
+                <reference value="StructureDefinition/composition-imagreport-1"/>
+            </reference>
+            <name value="Diagnostic Imaging Report"/>
+            <exampleBoolean value="false"/>
+        </resource>-->
+
+        <!-- PROFILE DEFINITIONS Base-->
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/patient-mhr-1" />
+            </reference>
+            <name value="patient-mhr-1" />
+            <exampleBoolean value="false" />
         </resource>
         <resource>
+            <reference>
+                <reference value="StructureDefinition/patient-ident-1" />
+            </reference>
+            <name value="Patient with Mandatory Identifier" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/patient-identified-1" />
+            </reference>
+            <name value="Identified Patient" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/practitioner-identified-1" />
+            </reference>
+            <name value="Practitioner Identified" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/practitionerrole-ident-1" />
+            </reference>
+            <name value="PractitionerRole with Mandatory Identifier" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/practitionerrole-identified-1" />
+            </reference>
+            <name value="Identified PractitionerRole" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/relatedperson-identified-1" />
+            </reference>
+            <name value="Identified RelatedPerson" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/organization-ident-1" />
+            </reference>
+            <name value="Organization with Mandatory Identifier" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/organization-identified-1" />
+            </reference>
+            <name value="Identified Organization" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <!-- PROFILE DEFINITIONS Clinical-->
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/bodystructure-dh-base-1" />
+            </reference>
+            <name value="Base BodyStructure" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/diagnosticreport-1" />
+            </reference>
+            <name value="diagnosticreport-1" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/diagnosticreport-otherdiag-mhr-1" />
+            </reference>
+            <name value="diagnosticreport-otherdiag-mhr-1" />
+            <exampleBoolean value="false" />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/diagnosticreport-otherdiag-atomic-1" />
+            </reference>
+            <name value="diagnosticreport-otherdiag-atomic-1" />
+            <exampleBoolean value="false" />
+        </resource>
+        <!--<resource>
             <reference>
                 <reference value="StructureDefinition/diagnosticreport-imag-atomic-1"/>
             </reference>
@@ -101,110 +180,79 @@
             <name value="diagnosticreport-path-mhr-1"/>
             <exampleBoolean value="false"/>
         </resource>-->
+
         <resource>
             <reference>
-                <reference value="StructureDefinition/diagnosticreport-otherdiag-mhr-1"/>
+                <reference value="StructureDefinition/imagingstudy-diag-1" />
             </reference>
-            <name value="diagnosticreport-otherdiag-mhr-1"/>
-            <exampleBoolean value="false"/>
+            <name value="ImagingStudy (Diagnostic Imaging Study)" />
+            <exampleBoolean value="false" />
+        </resource>
+
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/observation-path-simple-1" />
+            </reference>
+            <name value="Simple Pathology Observation" />
+            <exampleBoolean value="false" />
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/diagnosticreport-otherdiag-atomic-1"/>
+                <reference value="StructureDefinition/observation-path-atomic-1" />
             </reference>
-            <name value="diagnosticreport-otherdiag-atomic-1"/>
-            <exampleBoolean value="false"/>
+            <name value="Atomic Pathology Observation" />
+            <exampleBoolean value="false" />
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/organization-identified-1"/>
+                <reference value="StructureDefinition/observation-otherdiag-simple-1" />
             </reference>
-            <name value="Identified Organization"/>
-            <exampleBoolean value="false"/>
+            <name value="Simple Other Diagnostic Observation" />
+            <exampleBoolean value="false" />
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/relatedperson-identified-1"/>
+                <reference value="StructureDefinition/observation-otherdiag-atomic-1" />
             </reference>
-            <name value="Identified RelatedPerson"/>
-            <exampleBoolean value="false"/>
+            <name value="Atomic Other Diagnostic Observation" />
+            <exampleBoolean value="false" />
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/observation-path-simple-1"/>
+                <reference value="StructureDefinition/observation-imag-atomic-1" />
             </reference>
-            <name value="Simple Pathology Observation"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <!--<resource>
-            <reference>
-                <reference value="StructureDefinition/composition-pathreport-1"/>
-            </reference>
-            <name value="Pathology Report"/>
-            <exampleBoolean value="false"/>
-        </resource>-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/specimen-collect-1"/>
-            </reference>
-            <name value="Collected Specimen"/>
-            <exampleBoolean value="false"/>
+            <name value="Atomic Imaging Observation" />
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/observation-path-atomic-1"/>
+                <reference value="StructureDefinition/observation-imag-simple-1" />
             </reference>
-            <name value="Atomic Pathology Observation"/>
-            <exampleBoolean value="false"/>
+            <name value="Simple Imaging Observation" />
+            <exampleBoolean value="false" />
         </resource>
+
         <resource>
             <reference>
-                <reference value="StructureDefinition/observation-otherdiag-simple-1"/>
+                <reference value="StructureDefinition/specimen-collect-1" />
             </reference>
-            <name value="Simple Other Diagnostic Observation"/>
-            <exampleBoolean value="false"/>
+            <name value="Collected Specimen" />
+            <exampleBoolean value="false" />
         </resource>
+
         <resource>
             <reference>
-                <reference value="StructureDefinition/observation-otherdiag-atomic-1"/>
+                <reference value="StructureDefinition/servicerequest-diag-report-1" />
             </reference>
-            <name value="Atomic Other Diagnostic Observation"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/observation-imag-atomic-1"/>
-            </reference>
-            <name value="Atomic Imaging Observation"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/composition-otherdiagreport-1"/>
-            </reference>
-            <name value="Other Diagnostic Report"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/servicerequest-diag-report-1"/>
-            </reference>
-            <name value="Order Details for Diagnostic Report"/>
-            <exampleBoolean value="false"/>
+            <name value="Order Details for Diagnostic Report" />
+            <exampleBoolean value="false" />
         </resource>
         <!--<resource>
             <reference>
-                <reference value="StructureDefinition/composition-imagreport-1"/>
+                <reference value="StructureDefinition/servicerequest-path-report-1"/>
             </reference>
-            <name value="Diagnostic Imaging Report"/>
+            <name value="servicerequest-path-report-1"/>
             <exampleBoolean value="false"/>
         </resource>-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/observation-imag-simple-1"/>
-            </reference>
-            <name value="Simple Imaging Observation"/>
-            <exampleBoolean value="false"/>
-        </resource>
         <!--<resource>
             <reference>
                 <reference value="StructureDefinition/servicerequest-imag-report-1"/>
@@ -212,463 +260,436 @@
             <name value="Order Details for Diagnostic Imaging Report"/>
             <exampleBoolean value="false"/>
         </resource>-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/bodystructure-dh-base-1"/>
-            </reference>
-            <name value="Base BodyStructure"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/imagingstudy-diag-1"/>
-            </reference>
-            <name value="ImagingStudy (Diagnostic Imaging Study)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/practitionerrole-identified-1"/>
-            </reference>
-            <name value="Identified PractitionerRole"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/practitioner-identified-1"/>
-            </reference>
-            <name value="Practitioner Identified"/>
-            <exampleBoolean value="false"/>
-        </resource>
+
 
         <!-- EXAMPLES -->
         <!-- CARDIOLOGY EXAMPLE -->
         <resource>
             <reference>
-                <reference value="Bundle/94f75158-f8b9-4c08-b96e-4306580c2add"/>
+                <reference value="Bundle/94f75158-f8b9-4c08-b96e-4306580c2add" />
             </reference>
-            <name value="Echocardiography - pre-chemo (MHR)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1"/>
+            <name value="Echocardiography - pre-chemo (MHR)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/composition-otherdiagreport-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8"/>
+                <reference value="Bundle/0e2357c2-1317-40db-857a-b7162ec3dda8" />
             </reference>
-            <name value="Echocardiography - pre-chemo (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1"/>
+            <name value="Echocardiography - pre-chemo (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="DiagnosticReport/echocardio-pre-chemo-atomic"/>
+                <reference value="DiagnosticReport/echocardio-pre-chemo-atomic" />
             </reference>
-            <name value="Echocardiography - pre-chemo (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1"/>
+            <name value="Echocardiography - pre-chemo (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/diagnosticreport-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590"/>
+                <reference value="ServiceRequest/edbc04cd-3387-435c-bda7-6e1a837b2590" />
             </reference>
-            <name value="Echocardiography order"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1"/>
+            <name value="Echocardiography order" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-diag-report-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/echocardiography"/>
+                <reference value="Observation/echocardiography" />
             </reference>
-            <name value="Echocardiography - pre-chemo (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - pre-chemo (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="ImagingStudy/echodicom-for-report"/>
+                <reference value="ImagingStudy/echodicom-for-report" />
             </reference>
-            <name value="Echocardiography - pre-chemo (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1"/>
+            <name value="Echocardiography - pre-chemo (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/imagingstudy-diag-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/leftventricle-structure"/>
+                <reference value="Observation/leftventricle-structure" />
             </reference>
-            <name value="Echocardiography - Left ventricle 2D (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Left ventricle 2D (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/ivsd"/>
+                <reference value="Observation/ivsd" />
             </reference>
-            <name value="Echocardiography - IVS d (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - IVS d (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvpwd"/>
+                <reference value="Observation/lvpwd" />
             </reference>
-            <name value="Echocardiography - LVPW d (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVPW d (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvidd"/>
+                <reference value="Observation/lvidd" />
             </reference>
-            <name value="Echocardiography - LVID d (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVID d (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvids"/>
+                <reference value="Observation/lvids" />
             </reference>
-            <name value="Echocardiography - LVID s (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVID s (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvfs"/>
+                <reference value="Observation/lvfs" />
             </reference>
-            <name value="Echocardiography - LVFS (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVFS (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvef2D"/>
+                <reference value="Observation/lvef2D" />
             </reference>
-            <name value="Echocardiography - LVEF 2D (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVEF 2D (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/atrialarea"/>
+                <reference value="Observation/atrialarea" />
             </reference>
-            <name value="Echocardiography - Atrial Areas/Volume (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Atrial Areas/Volume (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/la-area"/>
+                <reference value="Observation/la-area" />
             </reference>
-            <name value="Echocardiography - Atrial Areas/Volume (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Atrial Areas/Volume (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/ra-area"/>
+                <reference value="Observation/ra-area" />
             </reference>
-            <name value="Echocardiography - Atrial Areas/Volume (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Atrial Areas/Volume (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/leftventricle-systolicfunction"/>
+                <reference value="Observation/leftventricle-systolicfunction" />
             </reference>
-            <name value="Echocardiography - LV SYSTOLIC FUNCTION (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LV SYSTOLIC FUNCTION (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvvol"/>
+                <reference value="Observation/lvvol" />
             </reference>
-            <name value="Echocardiography - LV vol (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LV vol (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvvol-bsasex"/>
+                <reference value="Observation/lvvol-bsasex" />
             </reference>
-            <name value="Echocardiography - LV vol (BSA/SEX) ULN (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LV vol (BSA/SEX) ULN (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lv-ef"/>
+                <reference value="Observation/lv-ef" />
             </reference>
-            <name value="Echocardiography - LV EF (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LV EF (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/leftventricle-dystolicfunction"/>
+                <reference value="Observation/leftventricle-dystolicfunction" />
             </reference>
-            <name value="Echocardiography - LV DIASTOLIC FUNCTION (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LV DIASTOLIC FUNCTION (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/mvpeak"/>
+                <reference value="Observation/mvpeak" />
             </reference>
-            <name value="Echocardiography - MV Peak (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - MV Peak (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/mvpeaka"/>
+                <reference value="Observation/mvpeaka" />
             </reference>
-            <name value="Echocardiography - MV Peak A (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - MV Peak A (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/deceltime"/>
+                <reference value="Observation/deceltime" />
             </reference>
-            <name value="Echocardiography - Decel Time(Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Decel Time(Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/mvadur"/>
+                <reference value="Observation/mvadur" />
             </reference>
-            <name value="Echocardiography - MV A dur (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - MV A dur (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/e-mvann"/>
+                <reference value="Observation/e-mvann" />
             </reference>
-            <name value="Echocardiography - MV A dur (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - MV A dur (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/e-e-ratio"/>
+                <reference value="Observation/e-e-ratio" />
             </reference>
-            <name value="Echocardiography - E' MV Ann (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - E' MV Ann (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/e-a-ratio"/>
+                <reference value="Observation/e-a-ratio" />
             </reference>
-            <name value="Echocardiography - E/e' ratio (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - E/e' ratio (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/rupvavmax"/>
+                <reference value="Observation/rupvavmax" />
             </reference>
-            <name value="Echocardiography - RUPV A Vmax (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - RUPV A Vmax (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/rupvsvmax"/>
+                <reference value="Observation/rupvsvmax" />
             </reference>
-            <name value="Echocardiography - RUPV S Vmax (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - RUPV S Vmax (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/rupvdvmax"/>
+                <reference value="Observation/rupvdvmax" />
             </reference>
-            <name value="Echocardiography - RUPV D Vmax (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - RUPV D Vmax (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/mitralvalve"/>
+                <reference value="Observation/mitralvalve" />
             </reference>
-            <name value="Echocardiography - Mitral Valve (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Mitral Valve (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/mv-p12-time"/>
+                <reference value="Observation/mv-p12-time" />
             </reference>
-            <name value="Echocardiography - MV P1/2 Time (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - MV P1/2 Time (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/mvarea-pht"/>
+                <reference value="Observation/mvarea-pht" />
             </reference>
-            <name value="Echocardiography - MV area (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - MV area (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/aorticvalve"/>
+                <reference value="Observation/aorticvalve" />
             </reference>
-            <name value="Echocardiography - Aortic Valve (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Aortic Valve (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/aov-maxvel"/>
+                <reference value="Observation/aov-maxvel" />
             </reference>
-            <name value="Echocardiography - AoV Max Vel(Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - AoV Max Vel(Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/aov-peakpg"/>
+                <reference value="Observation/aov-peakpg" />
             </reference>
-            <name value="Echocardiography - AoV Peak PG (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - AoV Peak PG (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/aov-meanpg"/>
+                <reference value="Observation/aov-meanpg" />
             </reference>
-            <name value="Echocardiography - AoV Mean PG (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - AoV Mean PG (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvot-vmax"/>
+                <reference value="Observation/lvot-vmax" />
             </reference>
-            <name value="Echocardiography - LVOT Vmax (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVOT Vmax (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvot-vti"/>
+                <reference value="Observation/lvot-vti" />
             </reference>
-            <name value="Echocardiography - LVOT VTI (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVOT VTI (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/lvot-diam"/>
+                <reference value="Observation/lvot-diam" />
             </reference>
-            <name value="Echocardiography - LVOT Diam (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - LVOT Diam (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/aov-areavmax"/>
+                <reference value="Observation/aov-areavmax" />
             </reference>
-            <name value="Echocardiography - AoV Area Vmax (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - AoV Area Vmax (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/aov-areavti"/>
+                <reference value="Observation/aov-areavti" />
             </reference>
-            <name value="Echocardiography - AoV Area VTI (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - AoV Area VTI (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/dpi"/>
+                <reference value="Observation/dpi" />
             </reference>
-            <name value="Echocardiography - DPI (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - DPI (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/tricupsid-parvpressure"/>
+                <reference value="Observation/tricupsid-parvpressure" />
             </reference>
-            <name value="Echocardiography - Tricuspid Valve and PA/RV Systolic Pressure (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Tricuspid Valve and PA/RV Systolic Pressure (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/trmaxvelocity"/>
+                <reference value="Observation/trmaxvelocity" />
             </reference>
-            <name value="Echocardiography - TR Max Velocity (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - TR Max Velocity (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/rapressure"/>
+                <reference value="Observation/rapressure" />
             </reference>
-            <name value="Echocardiography - RA pressure (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - RA pressure (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/rvsp-pasp"/>
+                <reference value="Observation/rvsp-pasp" />
             </reference>
-            <name value="Echocardiography - RVSP/PASP (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - RVSP/PASP (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/rv-s"/>
+                <reference value="Observation/rv-s" />
             </reference>
-            <name value="Echocardiography - RV S' (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - RV S' (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/pulmonaryvalve"/>
+                <reference value="Observation/pulmonaryvalve" />
             </reference>
-            <name value="Echocardiography - Pulmonary  Valve (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Pulmonary  Valve (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/pvmaxvelocity"/>
+                <reference value="Observation/pvmaxvelocity" />
             </reference>
-            <name value="Echocardiography - Pulmonary  Valve (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Pulmonary  Valve (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/pvmaxpg"/>
+                <reference value="Observation/pvmaxpg" />
             </reference>
-            <name value="Echocardiography - Pulmonary  Valve (Atomic)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1"/>
+            <name value="Echocardiography - Pulmonary  Valve (Atomic)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/observation-otherdiag-atomic-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+                <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7" />
             </reference>
-            <name value="Mr Wei Zhang (P2P)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"/>
+            <name value="Mr Wei Zhang (P2P)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+                <reference value="PractitionerRole/46d552b7-88a9-427b-9d62-8b0727de91f9" />
             </reference>
-            <name value="Dr Fredrika Bremer (Cardiologist)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+            <name value="Dr Fredrika Bremer (Cardiologist)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
+                <reference value="Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b" />
             </reference>
-            <name value="Dr Fredrika Bremer"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1"/>
+            <name value="Dr Fredrika Bremer" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+                <reference value="PractitionerRole/04ac8978-bc60-4492-aa07-f62568ebe5c6" />
             </reference>
-            <name value="Ms Linda Howard (Sonographer)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+            <name value="Ms Linda Howard (Sonographer)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30"/>
+                <reference value="Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30" />
             </reference>
-            <name value="Ms Linda Howard"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1"/>
+            <name value="Ms Linda Howard" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/cb084861-dd87-48ff-b645-5cb620a00e8e"/>
+                <reference value="PractitionerRole/cb084861-dd87-48ff-b645-5cb620a00e8e" />
             </reference>
-            <name value="Dr David George (Oncologist)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+            <name value="Dr David George (Oncologist)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/nsw-hospital"/>
+                <reference value="Organization/nsw-hospital" />
             </reference>
-            <name value="NSW Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"/>
+            <name value="NSW Hospital" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Endpoint/nsw-hospital-wadors"/>
+                <reference value="Endpoint/nsw-hospital-wadors" />
             </reference>
-            <name value="NSW Hospital WADORS"/>
-            <exampleBoolean value="true"/>
+            <name value="NSW Hospital WADORS" />
+            <exampleBoolean value="true" />
         </resource>
         <resource>
             <reference>
-                <reference value="Binary/echocardio-pre-chemo-report-pdf"/>
+                <reference value="Binary/echocardio-pre-chemo-report-pdf" />
             </reference>
-            <name value="Echocardiography pre-chemo report (PDF)"/>
-            <exampleBoolean value="true"/>
+            <name value="Echocardiography pre-chemo report (PDF)" />
+            <exampleBoolean value="true" />
         </resource>
         <!-- PATHOLOGY EXAMPLES -->
         <!--<resource>
@@ -853,49 +874,43 @@
         </resource>-->
         <resource>
             <reference>
-                <reference value="Patient/p2p-anne-thompson"/>
+                <reference value="Patient/p2p-anne-thompson" />
             </reference>
-            <name value="Anne Thomposon (P2P)(referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"
-            />
+            <name value="Anne Thomposon (P2P)(referenced)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/nsw-gp"/>
+                <reference value="PractitionerRole/nsw-gp" />
             </reference>
-            <name value="Dr Sarah Bondiali (General Practitioner)(referenced)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+            <name value="Dr Sarah Bondiali (General Practitioner)(referenced)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6"/>
+                <reference value="PractitionerRole/f3e381b5-673e-4941-900c-03d1043604a6" />
             </reference>
-            <name value="Dr. Robert Brown (Haematologist)(referenced)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1"/>
+            <name value="Dr. Robert Brown (Haematologist)(referenced)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-ident-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669"/>
+                <reference value="Practitioner/f8500c29-796d-480c-b2ac-6ef09d67a669" />
             </reference>
-            <name value="Dr. Robert Brown (referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1"
-            />
+            <name value="Dr. Robert Brown (referenced)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+                <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec" />
             </reference>
-            <name value="Randwick Laboratories (referenced)"/>
-            <exampleCanonical
-                value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1"
-            />
+            <name value="Randwick Laboratories (referenced)" />
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-ident-1" />
         </resource>
         <page>
-            <nameUrl value="index.html"/>
-            <title value="TBD"/>
-            <generation value="html"/>
+            <nameUrl value="index.html" />
+            <title value="TBD" />
+            <generation value="html" />
         </page>
     </definition>
 </ImplementationGuide>

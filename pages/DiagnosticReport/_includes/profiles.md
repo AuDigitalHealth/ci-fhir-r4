@@ -12,7 +12,7 @@
 <div class="col-12">
     <div style="border-right-style: none;" id="tabs">
       <div style="border-right-style: none;" id="tabs">
-          <div>
+            <div>
                 <table width="100%">
                     <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Foundation</div></td>
@@ -35,7 +35,7 @@
                     </tr>
                     <tr class="frm-break">
                         <td colspan="6"/>
-                   </tr>
+                    </tr>
                     <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Base</div></td>
                         <td class="frm-category">Individuals</td>
@@ -79,19 +79,20 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li><a href="StructureDefinition-diagnosticreport-1.html">DiagnosticReport</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-atomic-1.html">DiagnosticReport (Atomic Other Diagnostic Report)</a></li>
                                 <li><a href="StructureDefinition-diagnosticreport-otherdiag-mhr-1.html">DiagnosticReport (My Health Record Other Diagnostic Report)</a></li>
-								<li><a href="StructureDefinition-observation-otherdiag-atomic-1.html">Observation (Atomic Other Diagnostic Observation)</a></li>
-								<li><a href="StructureDefinition-observation-otherdiag-simple-1.html">Observation (Simple Other Diagnostic Observation)</a></li>
+                                <li><a href="StructureDefinition-observation-otherdiag-atomic-1.html">Observation (Atomic Other Diagnostic Observation)</a></li>
+                                <li><a href="StructureDefinition-observation-otherdiag-simple-1.html">Observation (Simple Other Diagnostic Observation)</a></li>
                             </ul>
-                         </td>
-                         <td class="frm-null"/>
-                         <td class="frm-set">
+                        </td>
+                        <td class="frm-null"/>
+                        <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-servicerequest-diag-report-1.html">ServiceRequest (Order Details for Diagnostic Report)</a></li>
                             </ul>
-                         </td>
-                         <td class="frm-null"/>
+                        </td>
+                        <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">
