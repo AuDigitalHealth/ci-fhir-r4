@@ -10,7 +10,6 @@ The contents of this repository include:
 - files necessary to build the FHIR implementation guides e.g. template files
 
 
-## Structure
 This repository has the following structure: 
 - a resources folder that holds all StructureDefinition resources (e.g. profiles, extensions)
 - an examples folder that holds all example resources
