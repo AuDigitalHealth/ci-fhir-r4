@@ -1,6 +1,5 @@
 # CI FHIR R4 
 
-## Overview
 This repository is ‘current state’ of HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Clinical Informatics team at the Australian Digital Health Agency. The contents are early working drafts that may have known issues and still be in development. These drafts are available for comment, review, and collaboration. Approved releases for use in implementation and in production systems are published on the Agency’s [developer centre]( https://developer.digitalhealth.gov.au/).
 
 The contents of this repository include:
