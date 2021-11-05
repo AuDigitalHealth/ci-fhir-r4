@@ -19,9 +19,3 @@ All examples included in this implementation guide are available for download in
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)
 - [TTL](examples.ttl.zip)
-
-**CDA implementation guide**
-
-The corresponding CDA implementation guide that uses the profiles referenced by this FHIR implementation guide as ‘models’ that are mapped into CDA is available for download: _to be completed_
-
-<!-- - [DH_xxxx_EventSummary_CDA_IG_v2.0.pdf](..\..\..\ci-fhir-r4\pages\EventSummary\_includes\DH_xxxx_EventSummary_CDA_IG_v2.0.pdf) -->
