@@ -8,10 +8,10 @@
 Any FHIR resource that claims conformance to a profile in this implementation guide, or any derived profile, SHALL meet these requirements:
 
 * It SHALL be a valid HL7 FHIR instance. In particular:
-    * It SHALL conform to [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
+    * It SHALL conform to [FHIR, Release 4 (v4.0.1) [HL7FHIR4]](index.html#HL7FHIR4)
     * It SHALL conform to the profile it claims conformance to including:
         * conforming to the requirements described on the corresponding profile or extension page of this implementation guide
-        * conforming to the requirements in the base resource as specified in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
+        * conforming to the requirements in the base resource as specified in [FHIR, Release 4 (v4.0.1) [HL7FHIR4]](index.html#HL7FHIR4)
         * conforming to the requirements in the base profile where the profile described in this implementation guide is derived from a base profile
 * Where additional content beyond that flagged with must support is provided it:
     * SHALL NOT qualify or negate content described by this profile as must support
@@ -20,7 +20,7 @@ Any FHIR resource that claims conformance to a profile in this implementation gu
 
 A profile, derived from a profile described in this implementation guide may make additional rules that override this implementation guide:
 
-* A derived profile SHALL be derived in accordance with the rules on profiling in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
+* A derived profile SHALL be derived in accordance with the rules on profiling in [FHIR, Release 4 (v4.0.1) [HL7FHIR4]](index.html#HL7FHIR4)
 * A FHIR resource that is conformant to the derived profile SHALL be conformant to the profile in this implementation guide it is derived from
 
 

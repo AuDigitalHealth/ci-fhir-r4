@@ -12,8 +12,8 @@
 
 ## References
 
-|[<a name="HL7FHIR">HL7FHIR</a>]| Health Level Seven, Inc., FHIR - HL7Wiki, accessed 10 March 2019|
+|[<a name="HL7FHIR">HL7FHIR</a>]| Health Level Seven, Inc., FHIR - HL7Wiki, accessed 8 November 2021|
 ||[http://wiki.hl7.org/index.php?title=FHIR](http://wiki.hl7.org/index.php?title=FHIR)|
 
-|[<a name="HL7FHIR4">HL7FHIR4</a>]|Health Level Seven, Inc., 27 December 2018, FHIR, Release 4 (First Normative content), accessed 8 July 2019|
+|[<a name="HL7FHIR4">HL7FHIR4</a>]|Health Level Seven, Inc., 30 October 2019, FHIR, Release 4 (First Normative content), accessed 8 November 2021|
 ||[http://hl7.org/fhir/R4/](http://hl7.org/fhir/R4/)|

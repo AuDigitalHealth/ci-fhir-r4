@@ -10,12 +10,12 @@ FHIR is a standard developed by HL7. The standard describes data formats and ele
 
 A FHIR resource may be supplied in one of the following formats: [XML](http://hl7.org/fhir/r4/xml.html), [JSON](http://hl7.org/fhir/r4/json.html) and [Turtle](http://hl7.org/fhir/r4/rdf.html). FHIR supports four paradigms for exchange: the RESTful API (Application Programming Interface), messaging, documents, and services.
 
-This implementation guide describes FHIR resources built following the rules described in [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4).
+This implementation guide describes FHIR resources built following the rules described in [FHIR, Release 4 (v4.0.1) [HL7FHIR4]](index.html#HL7FHIR4).
 
 The FHIR specification is evolving; the current FHIR specification is available at [http://hl7.org/fhir](http://hl7.org/fhir). A [Publication (Version) History](http://www.hl7.org/fhir/directory.cfml) of past and current working versions, including [FHIR Release 4 (First Normative content) [HL7FHIR4]](index.html#HL7FHIR4) is available.
 
 The following references are recommended to gain a better understanding of FHIR:
-* [FHIR, Release 4 (v4.0.0) [HL7FHIR4]](index.html#HL7FHIR4)
+* [FHIR, Release 4 (v4.0.1) [HL7FHIR4]](index.html#HL7FHIR4)
 * [FHIR Overview](https://www.hl7.org/fhir/r4/overview.html)
 * [HL7 International FHIR Wiki [HL7FHIR]](index.html#HL7FHIR)
  
