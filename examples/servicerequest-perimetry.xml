@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://hl7.org/fhir">
+    <id value="perimetry"/>
+    <status value="completed"/>
+    <intent value="order"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="268360001"/>
+            <display value="Visual testing"/>
+        </coding>
+        <text value="Visual field test"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="103752008"/>
+            <display value="Perimetry"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/p2p-anne-thompson"/>
+    </subject>
+    <authoredOn value="2016-07-10T11:15:00+10:00"/>
+    <requester>
+        <reference value="PractitionerRole/f1d5844f-dd39-457d-867b-f50a00f91731"/>
+    </requester>
+    <reasonCode>
+        <text value="Suspected glaucoma"/>
+    </reasonCode>
+</ServiceRequest>

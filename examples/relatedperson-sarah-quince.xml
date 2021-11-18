@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelatedPerson xmlns="http://hl7.org/fhir">
+    <id value="sarah-quince"/>
+    <patient>
+        <reference value="Patient/quinn-quince"/>
+    </patient>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="MTH"/>
+            <display value="Mother"/>
+        </coding>
+    </relationship>
+    <name>
+        <family value="Quince"/>
+        <given value="Sarah"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="0491 570 006"/>
+        <use value="mobile"/>
+        <rank value="1"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="(07)55503372"/>
+        <use value="home"/>
+        <rank value="2"/>
+    </telecom>
+    <gender value="female"/>
+    <address>
+        <use value="home"/>
+        <line value="2055 Alpita Road"/>
+        <city value="Brisbane"/>
+        <state value="QLD"/>
+        <postalCode value="4112"/>
+        <country value="AU"/>
+    </address>
+</RelatedPerson>

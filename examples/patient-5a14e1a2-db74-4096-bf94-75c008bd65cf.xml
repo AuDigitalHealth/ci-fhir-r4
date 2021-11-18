@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="5a14e1a2-db74-4096-bf94-75c008bd65cf"/>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical record number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+        </type>
+        <system
+            value="http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/12345600008"/>
+        <value value="635241"/>
+        <assigner>
+            <display value="Orange Tulip Pathology"/>
+        </assigner>
+    </identifier>
+    <name>
+        <text value="Daisy Cassia"/>
+    </name>
+    <gender value="female"/>
+    <birthDate value="1966-07-27"/>
+</Patient>
