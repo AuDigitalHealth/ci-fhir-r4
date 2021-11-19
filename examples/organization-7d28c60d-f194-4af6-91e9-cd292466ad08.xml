@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="7d28c60d-f194-4af6-91e9-cd292466ad08"/>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="XX"/>
+            </coding>
+            <text value="ABN"/>
+        </type>
+        <system value="http://hl7.org.au/id/abn"/>
+        <!--  Note: 51824754455 is an invalid ABN ie does not pass the ABN check digit algotithm  -->
+        <value value="51824754455"/>
+    </identifier>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="288565001"/>
+            <display value="Medical centre"/>
+        </coding>
+    </type>
+    <name value="Rose Geranium Medical Centre"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(03) 5550 5556"/>
+    </telecom>
+    <telecom>
+        <system value="other"/>
+        <value value="http://www.rosegeranium.example.com"/>
+    </telecom>
+    <!--<address>
+        <line value=""/>
+        <city value=""/>
+        <state value=""/>
+        <postalCode value=""/>
+        <country value="AU"/>
+    </address>-->
+</Organization>

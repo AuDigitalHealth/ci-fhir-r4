@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="805e06da-81ea-4a34-bb89-9d72b6b71234"/>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical record number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+        </type>
+        <system
+            value="http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/12345600008"/>
+        <value value="897023"/>
+        <assigner>
+            <display value="Orange Tulip Pathology"/>
+        </assigner>
+    </identifier>
+    <name>
+        <text value="Cedar Sorrel"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1960-05-15"/>
+</Patient>
