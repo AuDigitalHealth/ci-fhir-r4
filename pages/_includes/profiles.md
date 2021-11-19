@@ -26,7 +26,14 @@
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li>ADHA Core Composition</li>
+                                <li>ADHA My Health Record Composition</li>
+                                <li>ADHA Core DocumentReference</li>
+                                <li>ADHA My Health Record DocumentReference</li>                                
+                            </ul>
+                        </td>  
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break">
@@ -43,28 +50,28 @@
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-patient-core-1.html">Australian Digital Health Agency Core Patient</a></li>
-                                <li><a href="StructureDefinition-dh-patient-mhr-1.html">Australian Digital Health Agency My Health Record Patient</a></li>
-                                <li><a href="StructureDefinition-practitioner-identified-1.html">Australian Digital Health Agency Core Practitioner</a></li>
-                                <li><a href="StructureDefinition-dh-practitionerrole-core-1.html">Australian Digital Health Agency Core PractitionerRole</a></li>
-                                <li>Australian Digital Health Agency Authoring PractitionerRole</li>
-                                <li><a href="StructureDefinition-dh-relatedperson-core-1.html">Australian Digital Health Agency Core RelatedPerson</a></li>
-                                <li>Australian Digital Health Agency Authoring RelatedPerson</li>
+                                <li><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></li>
+                                <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA My Health Record Patient</a></li>
+                                <li><a href="StructureDefinition-practitioner-identified-1.html">ADHA Core Practitioner</a></li>
+                                <li><a href="StructureDefinition-dh-practitionerrole-core-1.html">ADHA Core PractitionerRole</a></li>
+                                <li>ADHA Authoring PractitionerRole</li>
+                                <li><a href="StructureDefinition-dh-relatedperson-core-1.html">ADHA Core RelatedPerson</a></li>
+                                <li>ADHA Authoring RelatedPerson</li>
                             </ul>
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-location-core-1.html">Australian Digital Health Agency Core Location</a></li>
-                                <li><a href="StructureDefinition-dh-organization-core-1.html">Australian Digital Health Agency Core Organization</a></li>
-                                <li><a href="StructureDefinition-dh-healthcareservice-core-1.html">Australian Digital Health Agency Core HealthcareService</a></li>
+                                <li><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></li>
+                                <li><a href="StructureDefinition-dh-organization-core-1.html">ADHA Core Organization</a></li>
+                                <li><a href="StructureDefinition-dh-healthcareservice-core-1.html">ADHA Core HealthcareService</a></li>
                             </ul>
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>>Australian Digital Health Agency Core Device</li>
-                                <li>Australian Digital Health Agency Authoring Device</li>
-                                <li>Australian Digital Health Agency Medical Device</li>
-                                <li>Australian Digital Health Agency Core Substance</li>
+                                <li>ADHA Core Device</li>
+                                <li>ADHA Authoring Device</li>
+                                <li>ADHA Medical Device</li>
+                                <li>ADHA Core Substance</li>
 
                             </ul>
                         </td>                          
@@ -84,20 +91,21 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-bodystructure-core-1.html">Australian Digital Health Agency Core BodyStructure</a></li>
-                                <li><a href="StructureDefinition-dh-tbd-core-1.html">Australian Digital Health Agency Core DiagnosticReport</a></li>
-                                <li>Australian Digital Health Agency Pathology DiagnosticReport</li>
-                                <li>Australian Digital Health Agency Diagnostic Imaging DiagnosticReport</li>
-                                <li>Australian Digital Health Agency Core Observation</li>
-                                <li>Australian Digital Health Agency Core Specimen</li>
+                                <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
+                                <li>ADHA Core DiagnosticReport</li>
+                                <li>ADHA Pathology DiagnosticReport</li>
+                                <li>ADHA Diagnostic Imaging DiagnosticReport</li>
+                                <li>ADHA Core Observation</li>
+                                <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-medication-core-1.html">Australian Digital Health Agency Core Medication</a></li>
-                                <li>Australian Digital Health Agency Core MedicationAdministration</li>
-                                <li><a href="StructureDefinition-dh-medicationstatement-core-1.html">Australian Digital Health Agency Core MedicationStatement</a></li>
-                                <li><a href="StructureDefinition-dh-immunization-core-1.html">Australian Digital Health Agency Core Immunization</a></li>
+                                <li><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a></li>
+                                <li>ADHA Core MedicationAdministration</li>
+                                <li>ADHA Core MedicationStatement</li>
+                                <li><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></li>
+                                <li>ADHA Record of Immunization</li>
                             </ul>
                         </td>     
                         <td class="frm-null"/>

@@ -3,7 +3,7 @@
     <id value="implementationguide-core-1"/>
     <url
         value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-core-1"/>
-    <version value="0.0.1"/>
+    <version value="0.0.2"/>
     <name value="Core"/>
     <title value="Core"/>
     <status value="draft"/>
@@ -110,6 +110,13 @@
                 <reference value="StructureDefinition/dh-substance-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core Substance"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-specimen-core-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Core Specimen"/>
             <exampleBoolean value="false"/>
         </resource>
         <!--EXAMPLES-->
