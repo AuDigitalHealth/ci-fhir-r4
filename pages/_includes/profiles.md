@@ -71,12 +71,19 @@
                                 <li>ADHA Core Device</li>
                                 <li>ADHA Authoring Device</li>
                                 <li>ADHA Medical Device</li>
-                                <li>ADHA Core Substance</li>
+                                <li><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></li>
 
                             </ul>
                         </td>                          
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li>ADHA Core Encounter</li>
+                                <li>ADHA Core EpisodeOfCare</li>
+                                <li>ADHA Core Flag</li>
+                                <li>ADHA Core List</li>
+                            </ul>
+                        </td>  
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">
@@ -88,7 +95,14 @@
                         <td class="frm-category">Request &amp; Response</td>
                     </tr>
                     <tr class="frm-contents" height="80">
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></li>
+                                <li>ADHA Core Condition</li>
+                                <li>ADHA Core Procedure</li>
+                                <li>ADHA Core FamilyMemberHistory</li>
+                            </ul>
+                        </td>    
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
@@ -108,7 +122,13 @@
                                 <li>ADHA Record of Immunization</li>
                             </ul>
                         </td>     
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li>ADHA Core CarePlan</li>
+                                <li>ADHA Core ServiceRequest</li>
+                                <li>ADHA Referral</li>
+                            </ul>
+                        </td>    
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
