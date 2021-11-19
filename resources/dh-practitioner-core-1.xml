@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="practitioner-identified-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
-  <version value="1.0.0" />
-  <name value="PractitionerIdentified" />
-  <title value="Identified Practitioner" />
+  <id value="dh-practitioner-core-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
+  <version value="0.0.1" />
+  <name value="DHPractitionerCore" />
+  <title value="Australian Digital Health Agency Core Practitioner" />
   <status value="draft" />
-  <experimental value="true" />
+  <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a practitioner where identifying information is known. This profile is intended to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to define a core representation a practitioner for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &#xD;&#xA;&#xD;&#xA;#### Must Support&#xA;&#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA;&#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA;&#xA;* The system SHALL be able to store and retrieve the element&#xA;&#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -31,7 +31,7 @@
         <severity value="error" />
         <human value="The practitioner shall at least have an identifier or a name" />
         <expression value="identifier.exists() or name.exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
       </constraint>
     </element>
     <element id="Practitioner.identifier">
@@ -71,7 +71,7 @@
         <severity value="error" />
         <human value="If present, an issuer shall at least have a reference that conforms to Identified Organization, an identifier or a display" />
         <expression value="issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1')) or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
       </constraint>
       <mustSupport value="true" />
     </element>

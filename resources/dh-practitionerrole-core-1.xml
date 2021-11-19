@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="practitionerrole-identified-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1" />
+  <id value="dh-practitionerrole-core-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
   <version value="1.0.0" />
-  <name value="PractitionerRoleIdentified" />
-  <title value="Identified PractitionerRole" />
+  <name value="DHPractitionerRoleCore" />
+  <title value="Australian Digital Health Agency Core PractitionerRole" />
   <status value="draft" />
-  <experimental value="true" />
+  <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
   <contact>
     <telecom>
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a practitioner role where identifying information is known. The concept supported is a practitioner, in a role, on behalf of an organisation. This profile is intended to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.&#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+  <description value="The purpose of this profile is to define a core representation of a practitioner in a role, on behalf of an organisation, for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -31,21 +31,35 @@
         <severity value="error" />
         <human value="The practitioner role shall at least have an identifier with at least a system and a value or a practitioner name" />
         <expression value="practitioner.resolve().name.exists() or practitioner.display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-prarol-02" />
         <severity value="error" />
         <human value="If present, a practitioner shall at least have a reference, an identifier or a display" />
         <expression value="practitioner.exists() implies practitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-prarol-03" />
         <severity value="error" />
         <human value="If present, an organization shall at least have a reference, an identifier or a display" />
         <expression value="organization.exists() implies organization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-identified-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-prarol-04" />
+        <severity value="error" />
+        <human value="If present, a location shall at least have a reference, an identifier or a display" />
+        <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-prarol-05" />
+        <severity value="error" />
+        <human value="If present, a healthcare service shall at least have a reference, an identifier or a display" />
+        <expression value="healthcareService.exists() implies healthcareService.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
       </constraint>
     </element>
     <element id="PractitionerRole.identifier">
@@ -61,7 +75,7 @@
       <path value="PractitionerRole.practitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitioner-identified-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -69,7 +83,7 @@
       <path value="PractitionerRole.organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/organization-identified-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -79,6 +93,23 @@
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.location">
+      <path value="PractitionerRole.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.healthcareService">
+      <path value="PractitionerRole.healthcareService" />
+      <max value="1"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.telecom">
