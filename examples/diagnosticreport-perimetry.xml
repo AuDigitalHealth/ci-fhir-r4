@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="perimetry"/>
+  <language value="en-AU"/>
+  <!--<text>
+    <status value="generated"/>
+  </text>-->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="FILL"/>
+        <display value="Filler Identifier"/>
+      </coding>
+    </type>
+    <system value="http://randwicklabs.example.com/labnum/1.0.2"/>
+    <value value="652973694"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+        <display value="Placer Identifier"/>
+      </coding>
+    </type>
+    <system value="http://algregsterqld.example.com/orders"/>
+    <value value="AL114202"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/perimetry"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394594003"/>
+      <display value="Ophthalmology"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="OTH"/>
+    </coding>
+    <text value="Ophthalmology"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103752008"/>
+      <display value="Perimetry"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="28629-4"/>
+      <display value="Perimetry study"/>
+    </coding>
+    <text value="Perimetry"/>
+  </code>
+  <subject>
+    <reference value="Patient/p2p-anne-thompson"/>
+  </subject>
+  <effectiveDateTime value="2021-08-14T11:45:10+10:00"/>
+  <issued value="2021-08-14T12:36:33+10:00"/>
+  <performer>
+    <reference value="PractitionerRole/ophthalmologist"/>
+  </performer>
+  <performer>
+    <reference value="Organization/ophthalmology-clinic"/>
+  </performer>
+  <result>
+    <reference value="Observation/perimetry"/>
+  </result>
+  <media>
+    <link>
+      <reference value="Media/perimetry"/>
+    </link>
+  </media>
+  <conclusion value="Normal VF."/>
+</DiagnosticReport>
