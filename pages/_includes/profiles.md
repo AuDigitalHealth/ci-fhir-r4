@@ -41,9 +41,33 @@
                         <td class="frm-category">Management</td>
                     </tr>
                     <tr class="frm-contents" height="80">
-                        <td class="frm-null"/>  
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>                         
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-patient-core-1.html">Australian Digital Health Agency Core Patient</a></li>
+                                <li><a href="StructureDefinition-dh-patient-mhr-1.html">Australian Digital Health Agency My Health Record Patient</a></li>
+                                <li><a href="StructureDefinition-practitioner-identified-1.html">Australian Digital Health Agency Core Practitioner</a></li>
+                                <li><a href="StructureDefinition-dh-practitionerrole-core-1.html">Australian Digital Health Agency Core PractitionerRole</a></li>
+                                <li>Australian Digital Health Agency Authoring PractitionerRole</li>
+                                <li><a href="StructureDefinition-dh-relatedperson-core-1.html">Australian Digital Health Agency Core RelatedPerson</a></li>
+                                <li>Australian Digital Health Agency Authoring RelatedPerson</li>
+                            </ul>
+                        </td>  
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-location-core-1.html">Australian Digital Health Agency Core Location</a></li>
+                                <li><a href="StructureDefinition-dh-organization-core-1.html">Australian Digital Health Agency Core Organization</a></li>
+                                <li><a href="StructureDefinition-dh-healthcareservice-core-1.html">Australian Digital Health Agency Core HealthcareService</a></li>
+                            </ul>
+                        </td> 
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li>>Australian Digital Health Agency Core Device</li>
+                                <li>Australian Digital Health Agency Authoring Device</li>
+                                <li>Australian Digital Health Agency Medical Device</li>
+                                <li>Australian Digital Health Agency Core Substance</li>
+
+                            </ul>
+                        </td>                          
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                     </tr>
@@ -58,8 +82,24 @@
                     </tr>
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-bodystructure-core-1.html">Australian Digital Health Agency Core BodyStructure</a></li>
+                                <li><a href="StructureDefinition-dh-tbd-core-1.html">Australian Digital Health Agency Core DiagnosticReport</a></li>
+                                <li>Australian Digital Health Agency Pathology DiagnosticReport</li>
+                                <li>Australian Digital Health Agency Diagnostic Imaging DiagnosticReport</li>
+                                <li>Australian Digital Health Agency Core Observation</li>
+                                <li>Australian Digital Health Agency Core Specimen</li>
+                            </ul>
+                        </td>     
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-medication-core-1.html">Australian Digital Health Agency Core Medication</a></li>
+                                <li>Australian Digital Health Agency Core MedicationAdministration</li>
+                                <li><a href="StructureDefinition-dh-medicationstatement-core-1.html">Australian Digital Health Agency Core MedicationStatement</a></li>
+                                <li><a href="StructureDefinition-dh-immunization-core-1.html">Australian Digital Health Agency Core Immunization</a></li>
+                            </ul>
+                        </td>     
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                     </tr>
@@ -80,7 +120,7 @@
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <tr class="frm-group">
+                    <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
                         <td class="frm-category">Public Health &amp; Research</td>
                         <td class="frm-category">Definitional Artifacts</td>
@@ -94,7 +134,7 @@
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr>
+                    </tr> -->
                     <tr class="frm-break"><td colspan="6"/></tr>
                 </table>
             </div>
