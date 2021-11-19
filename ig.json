@@ -22,6 +22,10 @@
     "tool": "jekyll",
     "license": "Apache-2.0",
     "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir/4.0",
+    "special-urls": [
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1",
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"
+    ],
     "logging": [
         "init",
         "progress",
@@ -52,5 +56,14 @@
         "CodeSystem": {"template-base": "codesys.html"},
         "ConceptMap": {"template-base": "cm.html"}
     },
-    "resources": {}
+    "resources": {
+        "StructureDefinition/dh-location-core-1": {
+            "base": "StructureDefinition-dh-location-core-1.html",
+            "defns": "StructureDefinition-dh-location-core-1-definitions.html"
+       },
+        "StructureDefinition/dh-substance-core-1": {
+            "base": "StructureDefinition-dh-substance-core-1.html",
+            "defns": "StructureDefinition-dh-substance-core-1-definitions.html"
+        }
+    }
 }
