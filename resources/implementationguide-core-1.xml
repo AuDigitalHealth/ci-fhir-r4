@@ -99,19 +99,162 @@
             <name value="Australian Digital Health Agency Core RelatedPerson"/>
             <exampleBoolean value="false"/>
         </resource>  
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-substance-core-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Core Substance"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <!--EXAMPLES-->
+       <!-- ORGANIZATION EXAMPLES-->
         <!--<resource>
             <reference>
-                <reference value="StructureDefinition/PLACEHOLDER"/>
+                <reference value="Organization/8507413485471365"/>
             </reference>
-            <name value="PLACEHOLDER"/>
-            <exampleBoolean value="false"/>
+            <name value="Test Org -DigitalHealth 3 (Vendor Environment HI Test Data for Physiotherapy services organisation in VIC)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/09ea9b5e69df9e"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 5 (Vendor Environment HI Test Data for Dental Practice organisation in VIC)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/e27d1ae9-50c1-444c-bd1c-237cb4ffe137"/>
+            </reference>
+            <name value="Flemington Pathology VIC"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/1.2.36.1.2001.1001.105.100001.5437512835128"/>
+            </reference>
+            <name value="Ascot Vale Family Medical Centre in VIC"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/hallam-medical-clinic"/>
+            </reference>
+            <name value="Hallam Medical Clinic in VIC"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/1.2.36.1.2001.1001.105.100004.5869"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 6 (Vendor Environment HI Test Data for Retail Pharmacy in NSW)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
+            </reference>
+            <name value="Randwick Laboratories Sydney"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/nsw-hospital"/>
+            </reference>
+            <name value="NSW Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/e0c5fa86-2184-4a5b-8c47-041422643440"/>
+            </reference>
+            <name value="Doomben Pathology QLD"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/qld-hospital"/>
+            </reference>
+            <name value="QLD Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/0867b29b-f1ed-4a05-96b1-ab87003a0ace"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 1 (Vendor Environment HI Test Data for Aged Care Residential Services organisation in WA)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <!-\-PATIENT EXAMPLES-\->
+        <resource>
+            <reference>
+                <reference value="Patient/1.2.36.1.2001.1001.105.100003"/>
+            </reference>
+            <name value="Cleo Moss Esq. (Vendor Environment HI Test Data plus telecom and living in TAS)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/9562"/>
+            </reference>
+            <name value="Mac Priest (Vendor Environment HI Test)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/matterson-lenny-351"/>
+            </reference>
+            <name value="Mr Lenny Matterson (Vendor Environment HI Test Data plus indigenous status, telecom, language)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/mhr-0240a34d-975d-4809-92a6-4d00a31ac1ac"/>
+            </reference>
+            <name value="Mr Daniel Craig (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
+            </reference>
+            <name value="Ms Sally Field (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/mhr-zhang-wei"/>
+            </reference>
+            <name value=">Mr Zhang Wei (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
+            </reference>
+            <name value=">Mr Zhang Wei (P2P Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/mhr-anne-thompson"/>
+            </reference>
+            <name value="Mrs. Anne Thompson (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/p2p-anne-thompson"/>
+            </reference>
+            <name value="Mrs. Anne Thompson (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>-->
-
+        
         <page>
             <nameUrl value="index.html"/>
             <title value="TBD"/>
             <generation value="html"/>
         </page>
     </definition>
-
+    
 </ImplementationGuide>
