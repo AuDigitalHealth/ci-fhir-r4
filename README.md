@@ -15,16 +15,14 @@ The contents of this repository include:
 This repository has the following structure: 
 - a resources folder that holds all StructureDefinition resources (e.g. profiles, extensions)
 - an examples folder that holds all example resources
-- an output folder that contains subfolders for each FHIR implementation guide containing the actual implementation guide as a downloadable zip and the extracted files
-- a pages folder that contains the subfolders for each FHIR implementation guide containing the implementation guide specific markdown files e.g. header and footer
-- multiple JSON control files in the root level folder (e.g. ig-sharedhealthsummary-1.json)
+- a pages folder that contains the FHIR implementation guide containing the implementation guide specific markdown files e.g. header and footer
+- a JSON control file in the root level folder
 - repository files, e.g. .gitignore, README.md and etc.
 - implementation guide build files, e.g. base.html, format.html and etc.
 
  
 ## How to get started
-There are different ways you could interact with this repository; they include:
+There are different ways you could interact with this repository:
 * [viewing the content](VIEWING.md)
 * [raising an issue or query on the content](ISSUES.md)
 * [contributing changes to this content](CONTRIBUTING.md)
-* [building one of the implementation guides in this repository, using the FHIR IG publisher](BUILDING.md)
