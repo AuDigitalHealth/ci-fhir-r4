@@ -3,8 +3,8 @@
     <id value="implementationguide-core-1"/>
     <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-core-1"/>
     <version value="0.0.2"/>
-    <name value="Core"/>
-    <title value="Core"/>
+    <name value="Core Asset"/>
+    <title value="Core Asset"/>
     <status value="draft"/>
     <experimental value="true"/>
     <publisher value="Australian Digital Health Agency"/>
@@ -107,6 +107,13 @@
                 <reference value="StructureDefinition/dh-practitionerrole-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core PractitionerRole"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-procedure-core-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Core Procedure"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

@@ -98,8 +98,8 @@
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></li>
-                                <li>ADHA Core Condition</li>
-                                <li>ADHA Core Procedure</li>
+                                <li><a href="StructureDefinition-dh-conditin-core-1.html">ADHA Core Condition</a></li>
+                                <li><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></li>
                                 <li>ADHA Core FamilyMemberHistory</li>
                             </ul>
                         </td>    
@@ -132,7 +132,7 @@
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <tr class="frm-group">
+                    <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
                         <td class="frm-category">Support</td>
                         <td class="frm-category">Billing</td>
@@ -146,7 +146,7 @@
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr>
+                    </tr>-->
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
