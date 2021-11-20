@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
   <version value="0.0.1"/>
   <name value="DHSubstanceCore"/>
-  <title value="Australian Digital Health Agency Core Medication"/>
+  <title value="ADHA Core Medication"/>
   <status value="draft" />
   <experimental value="true" />
   <publisher value="Australian Digital Health Agency" />
@@ -75,8 +75,8 @@
       <constraint>
         <key value="inv-dh-med-02" />
         <severity value="error" />
-        <human value="If present, an item reference shall at least have a reference, an identifier or a display" />
-        <expression value="itemReference.exists() implies itemReference.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <human value="If present, an item reference shall at least have a reference or a display" />
+        <expression value="itemReference.exists() implies itemReference.all($this.reference.exists() or $this.display.exists())" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1" />
       </constraint>
       <mustSupport value="true" />
@@ -84,19 +84,15 @@
     <element id="Medication.ingredient.item[x]">
       <path value="Medication.ingredient.item[x]" />
       <mustSupport value="true" />
-    </element>
-    <!--<element id="Medication.ingredient.item[x]:itemReference">
-      <path value="Medication.ingredient.item[x]" />
-      <sliceName value="itemReference" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-substance-core-1" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1" />
       </type>
-    </element>-->
+    </element>
     <element id="Medication.ingredient.isActive">
       <path value="Medication.ingredient.isActive" />
       <mustSupport value="true" />

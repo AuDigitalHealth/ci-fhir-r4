@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-bodystructure-core-1" />
   <version value="0.0.1" />
   <name value="DHBodyStructureCore" />
-  <title value="Australian Digital Health Agency Core BodyStructure" />
+  <title value="ADHA Core BodyStructure" />
   <status value="draft" />
   <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
@@ -57,7 +57,7 @@
       <path value="BodyStructure.location" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1" />
       </binding>
     </element>
