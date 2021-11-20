@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="implementationguide-core-1"/>
-    <url
-        value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-core-1"/>
+    <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-core-1"/>
     <version value="0.0.2"/>
     <name value="Core"/>
     <title value="Core"/>
@@ -15,10 +14,8 @@
             <value value="help@digitalhealth.gov.au"/>
         </telecom>
     </contact>
-    <description
-        value="TBD"/>
-    <copyright
-        value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <description value="TBD"/>
+    <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
     <packageId value="au.electronichealth.core"/>
     <license value="Apache-2.0"/>
     <fhirVersion value="4.0.1"/>
@@ -40,6 +37,13 @@
                 <reference value="StructureDefinition/dh-bodystructure-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core BodyStructure"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-condition-core-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Core Condition"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
