@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-encounter-core-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+  <version value="0.0.1"/>
+  <name value="DHEncounterCore"/>
+  <title value="ADHA Core Encounter"/>
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a core representation of an encounter for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile supports a statement of the administration or non-administration of a vaccine." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Encounter"/>
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-encounter"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Encounter">
+      <path value="Encounter"/>
+      <constraint>
+        <key value="inv-dh-enc-01"/>
+        <severity value="error"/>
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+      </constraint>
+    </element>
+    <element id="Encounter.extension:encounterDescription">
+      <path value="Encounter.extension"/>
+      <sliceName value="encounterDescription"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.type">
+      <path value="Encounter.type"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1" />
+      </binding>
+    </element>
+    <element id="Encounter.serviceType">
+      <path value="Encounter.serviceType"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/service-type-1" />
+      </binding>
+    </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant"/>
+      <min value="1"/>
+      <constraint>
+        <key value="inv-dh-enc-02"/>
+        <severity value="error"/>
+        <human value="The participant shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+      </constraint>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.participant.type">
+      <path value="Encounter.participant.type"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.participant.individual">
+      <path value="Encounter.participant.individual"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Encounter.reasonCode">
+      <path value="Encounter.reasonCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.reasonReference[x]">
+      <path value="Encounter.reasonReference[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-documentreference-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.hospitalization">
+      <path value="Encounter.hospitalization" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.hospitalization.dischargeDisposition">
+      <path value="Encounter.hospitalization.dischargeDisposition" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.location.location">
+      <path value="Encounter.location.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

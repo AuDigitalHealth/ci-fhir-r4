@@ -78,10 +78,15 @@
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core Encounter</li>
+                                <li><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></li>
+                                <li>ADHA Hospitalisation Encounter</li>
                                 <li>ADHA Core EpisodeOfCare</li>
                                 <li>ADHA Core Flag</li>
                                 <li>ADHA Core List</li>
+                                <li>ADHA AllergyIntolerance List</li>
+                                <li>ADHA Immunization List</li>
+                                <li>ADHA Medication List</li>
+                                <li>ADHA Medical History List</li>
                             </ul>
                         </td>  
                     </tr>
