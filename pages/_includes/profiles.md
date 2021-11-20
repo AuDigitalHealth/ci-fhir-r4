@@ -23,18 +23,45 @@
                         <td class="frm-category">Other</td>
                     </tr>
                     <tr class="frm-contents" height="80">
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core Composition</li>
-                                <li>ADHA My Health Record Composition</li>
+                                <li>Capability Statement profiles (TBD Architecture Team)</li>  
+                                <li>SearchParameter profiles (TBD Architecture Team)</li>  
+                                <li>MessageDefinition profiles (TBD Architecture Team)</li> 
+                                <li>OperationDefinition profiles (TBD Architecture Team)</li>                                
+                            </ul>
+                        </td> 
+                        <td class="frm-null"/>
+                        <td class="frm-set">
+                        <ul class="frm-set">
+                                <li>Provenance profiles (TBD Architecture Team)</li>  
+                                <li>AuditEvent profiles (TBD Architecture Team)</li> 
+                            </ul>
+                        </td> 
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li>ADHA Document Composition</li>
                                 <li>ADHA Core DocumentReference</li>
-                                <li>ADHA My Health Record DocumentReference</li>                                
+                                <li>ADHA MHR DocumentReference</li> 
+                                <li>Archicture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
                         </td>  
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li>ADHA PDF Document Binary (TBD Architecture Team)</li>
+                                <li>ADHA MHR CDA Document Package Binary (TBD Architecture Team)</li>
+                                <li>Other Binary profiles (TBD Architecture Team)</li>
+                                <li>ADHA Core Document Bundle (TBD Joint w CI and Architecture Team)</li> 
+                                <li>ADHA MHR Document Bundle (TBD Joint w CI and Architecture Team)</li> 
+                                <li>ADHA Core Message Bundle (TBD Joint w CI and Architecture Team)</li> 
+                                <li>ADHA MHR Message Bundle (TBD Joint w CI and Architecture Team)</li>
+                                <li>ADHA Core Payload Bundle (TBD Joint w CI and Architecture Team)</li> 
+                                <li>ADHA MHR Payload Bundle (TBD Joint w CI and Architecture Team)</li>   
+                                <li>MessageHeader profiles (TBD Architecture Team)</li>  
+                                <li>Operation Outcome profiles (TBD Architecture Team)</li>  
+                                <li>Parameters profiles (TBD Architecture Team)</li>                                
+                            </ul>
+                        </td> 
                     </tr>
                     <tr class="frm-break">
                         <td colspan="6"/>
@@ -51,7 +78,7 @@
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></li>
-                                <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA My Health Record Patient</a></li>
+                                <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA MHR Patient</a></li>
                                 <li><a href="StructureDefinition-practitioner-identified-1.html">ADHA Core Practitioner</a></li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-core-1.html">ADHA Core PractitionerRole</a></li>
                                 <li>ADHA Authoring PractitionerRole</li>
@@ -110,12 +137,11 @@
                         </td>    
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
-                                <li>ADHA Core DiagnosticReport</li>
-                                <li>ADHA Pathology DiagnosticReport</li>
-                                <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li>ADHA Core Observation</li>
+                                <li>ADHA Core DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
+                                <li>ADHA Core ImagingStudy</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
