@@ -1,7 +1,11 @@
 # {{ page.title }}
 {% include publish-box.html %}
 
-<p>The following profiles form part of this implementation guide: </p>
+
+
+### Australian Digital Health Agency Core Asset FHIR Profile Index 
+
+FHIR profiles defined in this implementation guide.
 
 <html>
   <div id="segment-content" class="segment">
@@ -48,18 +52,18 @@
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA PDF Document Binary (TBD Architecture Team)</li>
-                                <li>ADHA MHR CDA Document Package Binary (TBD Architecture Team)</li>
+                                <li>ADHA PDF Document Binary (Architecture Team)</li>
+                                <li>ADHA MHR CDA Document Package Binary (Architecture Team)</li>
                                 <li>Other Binary profiles (TBD Architecture Team)</li>
-                                <li>ADHA Core Document Bundle (TBD Joint w CI and Architecture Team)</li> 
-                                <li>ADHA MHR Document Bundle (TBD Joint w CI and Architecture Team)</li> 
-                                <li>ADHA Core Message Bundle (TBD Joint w CI and Architecture Team)</li> 
-                                <li>ADHA MHR Message Bundle (TBD Joint w CI and Architecture Team)</li>
-                                <li>ADHA Core Payload Bundle (TBD Joint w CI and Architecture Team)</li> 
-                                <li>ADHA MHR Payload Bundle (TBD Joint w CI and Architecture Team)</li>   
-                                <li>MessageHeader profiles (TBD Architecture Team)</li>  
-                                <li>Operation Outcome profiles (TBD Architecture Team)</li>  
-                                <li>Parameters profiles (TBD Architecture Team)</li>                                
+                                <li>ADHA Core Document Bundle (Joint w CI &amp; Architecture Team)</li> 
+                                <li>ADHA MHR Document Bundle (Joint w CI &amp; Architecture Team)</li> 
+                                <li>ADHA Core Message Bundle (Joint w CI &amp; Architecture Team)</li> 
+                                <li>ADHA MHR Message Bundle (Joint w CI &amp; Architecture Team)</li>
+                                <li>ADHA Core Payload Bundle (Joint w CI &amp; Architecture Team)</li> 
+                                <li>ADHA MHR Payload Bundle (Joint w CI &amp; Architecture Team)</li>   
+                                <li>MessageHeader profiles (Architecture Team)</li>  
+                                <li>Operation Outcome profiles (Architecture Team)</li>  
+                                <li>Parameters profiles (Architecture Team)</li>                                
                             </ul>
                         </td> 
                     </tr>
@@ -209,8 +213,107 @@
 		</div>  <!-- /container -->
 	</div>  <!-- /segment-post-footer -->
 
-     
+</div>
+</div>
+</html>
+
+
+### HL7 AU FHIR Profile Index 
+
+FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
+
+<html>
+  <div id="segment-content" class="segment">
+  <div class="container">
+  <div class="row">
+  <div class="inner-wrapper">
+
+<div class="col-12">
+    <div style="border-right-style: none;" id="tabs">
+      <div style="border-right-style: none;" id="tabs">
+          <div>
+                <table width="100%">
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Data Types</div></td>
+                         <td class="frm-category">Primitive</td>
+                       <td class="frm-category">Identifiers</td>
+                        <td class="frm-category">Other General-Purpose</td>
+                        <td class="frm-category">Metadata</td>
+                        <td class="frm-category">Special Purpose</td>
+                    </tr>
+                    <tr class="frm-contents" height="80">
+                         <td class="frm-null"/>
+                       <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></li>
+                                <li><a href ="TBD">AU Australian Passport Number (TBD)</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ahpraregistrationnumber.html">AU AHPRA Registration Number </a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-careagencyemployeeidentifier.html">AU Care Agency Employee Identifier</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-cwlthseniorshealthcardnumber.html">AU Commonwealth Seniors Health Card Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dvanumber.html">AU DVA Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-employeenumber.html">AU Employee Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthcarecardnumber.html">AU Health Care Card Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-hpii.html">AU HPI-I</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-hpio.html">AU HPI-O</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicalrecordnumber.html">AU Medical Record Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicarecardnumber.html">AU Medicare Card Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
+                                <li><a href ="TBD">AU Residential Aged Care Service Identifier (TBD)</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
+                                <li><a href ="TBD">TBD</a></li>
+                                <li><a href ="TBD">TBD</a></li>
+                                <li><a href ="TBD">TBD</a></li>
+                            </ul>
+                        </td>  
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
+                            </ul>
+                        </td>  
+                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dosage.html">AU Base Dosage</a></li>
+                            </ul>
+                        </td> 
+                    </tr>
+                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <!--<tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
+                        <td class="frm-category">Public Health &amp; Research</td>
+                        <td class="frm-category">Definitional Artifacts</td>
+                        <td class="frm-category">Evidence-Based Medicine</td>
+                        <td class="frm-category">Quality Reporting &amp; Testing</td>
+                        <td class="frm-category">Medication Definition</td>
+                    </tr>
+                    <tr class="frm-contents" height="80">
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
+                    </tr> -->
+                    <tr class="frm-break"><td colspan="6"/></tr>
+                </table>
+            </div>
+      </div>
+    
+  </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /row -->
+  </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
 
 </div>
 </div>
 </html>
+
+
