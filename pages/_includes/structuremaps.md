@@ -1,11 +1,12 @@
 # {{ page.title }}
 {% include publish-box.html %}
-source pages/_include/{{page.md_filename}}.md  file
 
-#### Structure Maps
+### Structure Maps
 
-This is the mappings between FHIR resources and Logical Models:
-
+The following structure maps form part of this implementation guide.
 
 
----
+
+### Concept Maps
+
+The following concept maps form part of this implementation guide.

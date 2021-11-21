@@ -8,12 +8,18 @@
 {:toc}
 <!-- end TOC -->
 
-## Introduction
+This Australian Digital Health Agency FHIR Implementation Guide contains:
+* Australian Digital Health Agency FHIR core assets:
+  * profiles: additional rules and constraints that build on and extend the HL7<sup>TM</sup> AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and HL7<sup>TM</sup> [FHIR<sup>&reg;</sup>, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). 
+  * extensions: that form part of an Australian Digital Health Agency FHIR Profiles.
+  * ...
+  * ....
+  * ....
+  * ....
+* Australian Digital Health Agency FHIR policy: the policy for definining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency
+* Exchange standards:
+  * RESTful API A (FHIR) resource exchange framework. A set of core search parameters can be found on the resource profile pages (see Resource Index below)
+  * FHIR Messaging: A messaging exchange framework. The FHIR equivalent of HL7v2 messaging
+  * FHIR Documents: A document based exchange framework. The FHIR equivalent of HL7v3 CDA (clinical document architecture)
 
-## References
-
-|[<a name="HL7FHIR">HL7FHIR</a>]| Health Level Seven, Inc., FHIR - HL7Wiki, accessed 8 November 2021|
-||[http://wiki.hl7.org/index.php?title=FHIR](http://wiki.hl7.org/index.php?title=FHIR)|
-
-|[<a name="HL7FHIR4">HL7FHIR4</a>]|Health Level Seven, Inc., 30 October 2019, FHIR, Release 4 (First Normative content), accessed 8 November 2021|
-||[http://hl7.org/fhir/R4/](http://hl7.org/fhir/R4/)|
+This material forms the base standard for Australian Digital Health Agency FHIR R4 APIs. Each API will have additional conformance requirements, including FHIR profiles, extensions, and resources that are found in the API documentation in Australian Digital Health Agency API Catalogue[TBD](https://developer.digitalhealth.gov.au/taxonomy/term/361/all).
