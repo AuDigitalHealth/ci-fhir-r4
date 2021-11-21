@@ -1,4 +1,4 @@
-# {{ site.data.fhir.ig.title }} FHIR Implementation Guide
+# {{ site.data.fhir.ig.title }} Implementation Guide
 <h3 style="color:#ff0000;">Draft for internal use</h3>
 {:.no_toc}
 
@@ -8,17 +8,18 @@
 {:toc}
 <!-- end TOC -->
 
-> This material is under active development by and content may be added or updated on a regular basis.
+> <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
 
-This Australian Digital Health Agency FHIR Implementation Guide contains:
+This Australian Digital Health Agency Implementation Guide contains:
+* Australian Digital Health Agency FHIR [policy](guidance.html): the policy for definining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency
 * Australian Digital Health Agency FHIR core assets:
-  * profiles: additional rules and constraints that build on and extend the HL7<sup>TM</sup> AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and HL7<sup>TM</sup> [FHIR<sup>&reg;</sup>, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). 
-  * extensions: that form part of an Australian Digital Health Agency FHIR Profiles.
-  * ...
+  * [capability statements](conformance.html):
+  * [profiles](profiles.html): additional rules and constraints that build on and extend the HL7<sup>TM</sup> AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and HL7<sup>TM</sup> [FHIR<sup>&reg;</sup>, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). 
+  * [extensions](extensions.html): that form part of an Australian Digital Health Agency FHIR Profiles.
+  * [terminology](terminology.html): 
+  * [maps](structuremaps.html): 
+  * [search parameters and operations](searchparams.html): 
   * ....
-  * ....
-  * ....
-* Australian Digital Health Agency FHIR policy: the policy for definining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency
 * Exchange standards:
   * RESTful API A (FHIR) resource exchange framework. A set of core search parameters can be found on the resource profile pages (see Resource Index below)
   * FHIR Messaging: A messaging exchange framework. The FHIR equivalent of HL7v2 messaging
