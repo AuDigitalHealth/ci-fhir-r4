@@ -8,6 +8,8 @@
 {:toc}
 <!-- end TOC -->
 
+> This material is under active development by and content may be added or updated on a regular basis.
+
 This Australian Digital Health Agency FHIR Implementation Guide contains:
 * Australian Digital Health Agency FHIR core assets:
   * profiles: additional rules and constraints that build on and extend the HL7<sup>TM</sup> AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and HL7<sup>TM</sup> [FHIR<sup>&reg;</sup>, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). 
