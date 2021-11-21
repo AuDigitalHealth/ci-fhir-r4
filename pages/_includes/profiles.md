@@ -1,5 +1,4 @@
 # {{ page.title }}
-{% include publish-box.html %}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
@@ -140,7 +139,7 @@ FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></li>
-                                <li><a href="StructureDefinition-dh-conditin-core-1.html">ADHA Core Condition</a></li>
+                                <li><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></li>
                                 <li><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></li>
                                 <li>ADHA Core FamilyMemberHistory</li>
                             </ul>
