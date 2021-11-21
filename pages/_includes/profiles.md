@@ -1,5 +1,4 @@
 # {{ page.title }}
-{% include publish-box.html %}
 
 <p>The following profiles form part of this implementation guide: </p>
 
