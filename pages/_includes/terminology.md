@@ -1,5 +1,9 @@
 # {{ page.title }}
 {% include publish-box.html %}
+{:.no_toc}
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ## Value Sets
 
@@ -380,88 +384,10 @@ The following code systems form part of this implementation guide.
         <th>OID</th>
     </tr>
     <tr>
-        <td><a href="http://terminology.hl7.org.au/CodeSystem/contact-purpose">Contact Purpose</a></td>
-        <td>HL7 AU</td>
-        <td>http://terminology.hl7.org.au/CodeSystem/contact-purpose</td>
-        <td>2.16.840.1.113883.2.3.4.1.4.19</td>
-    </tr>
-    <tr>
-        <td><a href="http://terminology.hl7.org/CodeSystem/contactentity-type">Contact entity type</a></td>
-        <td>HL7</td>
-        <td>http://terminology.hl7.org/CodeSystem/contactentity-type</td>
-        <td>2.16.840.1.113883.4.642.1.1129</td>
-    </tr>
-    <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v3-ActCode.html">ActCode AU</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/v3-ActCode</td>
         <td>2.16.840.1.113883.2.3.4.1.4.20</td>
-    </tr>
-    <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v2-0203.html">IdentifierType AU</a></td>
-        <td>HL7 AU</td>
-        <td>http://terminology.hl7.org.au/CodeSystem/v2-0203</td>
-        <td>2.16.840.1.113883.2.3.4.1.3.203</td>
-    </tr>
-    <tr>
-        <td><a href="http://terminology.hl7.org/CodeSystem/v2-0360">degreeLicenseCertificate</a></td>
-        <td>HL7</td>
-        <td>http://terminology.hl7.org/CodeSystem/v2-0360</td>
-        <td>2.16.840.1.113883.18.220</td>
-    </tr>
-    <tr>
-        <td><a href="http://terminology.hl7.org/CodeSystem/v2-0203">IdentifierType</a></td>
-        <td>HL7</td>
-        <td>http://terminology.hl7.org/CodeSystem/v2-0203</td>
-        <td>2.16.840.1.113883.18.108</td>
-    </tr>
-    <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v2-0360.html">DegreeLicenseCertificate AU</a></td>
-        <td>HL7 AU</td>
-        <td>http://terminology.hl7.org.au/CodeSystem/v2-0360</td>
-        <td>2.16.840.1.113883.2.3.4.1.3.360</td>
-    </tr>
-    <tr>
-        <td><a href="https://developer.digitalhealth.gov.au/products/clinical-terminology">SNOMED CT (SNOMED CT AU (Australian Medicines Terminology))</a></td>
-        <td>IHTSDO (ADHA)</td>
-        <td>http://snomed.info/sct</td>
-        <td>2.16.840.1.113883.6.96</td>
-    </tr>
-    <tr>
-        <td><a href="https://tools.ietf.org/search/bcp13">Multipurpose Internet Mail Extensions (MIME)</a></td>
-        <td>IETP</td>
-        <td>urn:ietf:bcp:13</td>
-        <td> </td>
-    </tr>
-    <tr>
-        <td><a href="https://tools.ietf.org/search/bcp47">Tags for Identifying Languages</a></td>
-        <td>IETP</td>
-        <td>urn:ietf:bcp:47</td>
-        <td> </td>
-    </tr>
-    <tr>
-        <td><a href="https://www.gs1.org/">GTIN</a></td>
-        <td>GS1</td>
-        <td>https://www.gs1.org/gtin</td>
-        <td>1.3.160</td>
-    </tr>
-    <tr>
-        <td><a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166</a></td>
-        <td>ISO</td>
-        <td>urn:iso:std:iso:3166</td>
-        <td>1.0.3166.1.2.2</td>
-    </tr>
-    <tr>
-        <td><a href="https://loinc.org/">LOINC</a></td>
-        <td>Regenstrief Institute, Inc.</td>
-        <td>http://loinc.org</td>
-        <td>2.16.840.1.113883.6.1</td>
-    </tr>
-    <tr>
-        <td><a href="http://hl7.org/fhir/reaction-event-severity">AllergyIntoleranceSeverity</a></td>
-        <td>HL7</td>
-        <td>http://hl7.org/fhir/reaction-event-severity</td>
-        <td>2.16.840.1.113883.4.642.4.136</td>
     </tr>
     <tr>
         <td><a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical">AllergyIntolerance Clinical Status Codes</a></td>
@@ -488,52 +414,131 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.134</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="http://hl7.org/fhir/reaction-event-severity">AllergyIntoleranceSeverity</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/reaction-event-severity</td>
+        <td>2.16.840.1.113883.4.642.4.136</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats">Australian Immunisation Register Vaccine</a></td>
+        <td>Services Australia</td>
+        <td>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats</td>
+        <td>1.2.36.1.2001.1005.17</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="TBD">Australian Indigenous Status</a></td>
+        <td>ADHA (METeOR AIHW)</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1</td>
+        <td>1.2.36.1.2001.1004.200.10012</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1">Australian States and Territories</a></td>
+        <td>ADHA (METeOR AIHW)</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1</td>
+        <td>1.2.36.1.2001.1004.200.10013</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="http://terminology.hl7.org.au/CodeSystem/contact-purpose">Contact Purpose</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/CodeSystem/contact-purpose</td>
+        <td>2.16.840.1.113883.2.3.4.1.4.19</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="http://terminology.hl7.org/CodeSystem/contactentity-type">Contact entity type</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/contactentity-type</td>
+        <td>2.16.840.1.113883.4.642.1.1129</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1">Date Accuracy Indicator</a></td>
+        <td>ADHA (METeOR AIHW)</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1</td>
+        <td>1.2.36.1.2001.1004.200.10014</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="http://terminology.hl7.org/CodeSystem/v2-0360">degreeLicenseCertificate</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v2-0360</td>
+        <td>2.16.840.1.113883.18.220</td>
+    </tr>
+   
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v2-0360.html">DegreeLicenseCertificate AU</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/CodeSystem/v2-0360</td>
+        <td>2.16.840.1.113883.2.3.4.1.3.360</td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1">Individual Healthcare Identifier Record Status</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1</td>
+        <td>1.2.36.1.2001.1004.200.10016</td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1">Individual Healthcare Identifier Status</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1</td>
+        <td>1.2.36.1.2001.1004.200.10015</td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1">NCTIS Data Components</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1</td>
+        <td>1.2.36.1.2001.1001.101</td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1">Separation Mode</a></td>
+        <td>ADHA ( METeOR)</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1</td>
+        <td>2.16.840.1.113883.13.65</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.gs1.org/">GTIN</a></td>
+        <td>GS1</td>
+        <td>https://www.gs1.org/gtin</td>
+        <td>1.3.160</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166</a></td>
+        <td>ISO</td>
+        <td>urn:iso:std:iso:3166</td>
+        <td>1.0.3166.1.2.2</td>
+    </tr>
+     <tr>
+        <td><a href="http://terminology.hl7.org/CodeSystem/v2-0203">IdentifierType</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v2-0203</td>
+        <td>2.16.840.1.113883.18.108</td>
+    </tr>
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v2-0203.html">IdentifierType AU</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/CodeSystem/v2-0203</td>
+        <td>2.16.840.1.113883.2.3.4.1.3.203</td>
+    </tr>
+     <tr>
+        <td><a href="https://loinc.org/">LOINC</a></td>
+        <td>Regenstrief Institute, Inc.</td>
+        <td>http://loinc.org</td>
+        <td>2.16.840.1.113883.6.1</td>
+    </tr>
+    <tr>
+        <td><a href="https://tools.ietf.org/search/bcp13">Multipurpose Internet Mail Extensions (MIME)</a></td>
+        <td>IETP</td>
+        <td>urn:ietf:bcp:13</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td><a href="https://developer.digitalhealth.gov.au/products/clinical-terminology">SNOMED CT (SNOMED CT AU (Australian Medicines Terminology))</a></td>
+        <td>IHTSDO (ADHA)</td>
+        <td>http://snomed.info/sct</td>
+        <td>2.16.840.1.113883.6.96</td>
+    </tr>
+    <tr>
+        <td><a href="https://tools.ietf.org/search/bcp47">Tags for Identifying Languages</a></td>
+        <td>IETP</td>
+        <td>urn:ietf:bcp:47</td>
+        <td> </td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
