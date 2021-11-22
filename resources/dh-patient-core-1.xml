@@ -61,11 +61,6 @@
       <sliceName value="indigenousStatus" />
       <mustSupport value="true" />
     </element>    
-    <element id="Patient.extension:mothersMaidenName">
-      <path value="Patient.extension" />
-      <sliceName value="mothersMaidenName" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="interpreterRequired" />
@@ -112,80 +107,8 @@
       <sliceName value="birthTime" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.deceased[x]">
-      <path value="Patient.deceased[x]" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.deceased[x]:deceasedBoolean">
-      <path value="Patient.deceasedBoolean" />
-      <sliceName value="deceasedBoolean" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.deceased[x]:deceasedDateTime">
-      <path value="Patient.deceasedDateTime" />
-      <sliceName value="deceasedDateTime" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.deceased[x]:deceasedDateTime.extension:accuracyIndicator">
-      <path value="Patient.deceasedDateTime.extension" />
-      <sliceName value="accuracyIndicator" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.address">
       <path value="Patient.address" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.maritalStatus">
-      <path value="Patient.maritalStatus" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.multipleBirth[x]">
-      <path value="Patient.multipleBirth[x]" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.photo">
-      <path value="Patient.photo" />
-      <max value="0" />
-    </element>
-    <element id="Patient.contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact" />
-      </extension>
-      <path value="Patient.contact" />
-      <constraint>
-        <key value="inv-dh-pat-04" />
-        <severity value="error" />
-        <human value="If present, a contact's organisation shall at least have a reference, an identifier or a display" />
-        <expression value="organization.exists() implies (organization.reference.exists() or organization.identifier.exists() or organization.display.exists())" />
-      </constraint>
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.contact.relationship">
-      <path value="Patient.contact.relationship" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.contact.name">
-      <path value="Patient.contact.name" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.contact.telecom">
-      <path value="Patient.contact.telecom" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.contact.address">
-      <path value="Patient.contact.address" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.contact.gender">
-      <path value="Patient.contact.gender" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.contact.organization">
-      <path value="Patient.contact.organization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.communication">

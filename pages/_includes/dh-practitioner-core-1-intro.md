@@ -4,7 +4,7 @@ The purpose of this profile is to define a core representation a practitioner fo
 This profile is designed to set a core Practitioner for:
 * Insert ADHA API Endpoint
 * Insert ADHA API Endpoint
-* 
+
 #### Implementation guidance
 The following guidance applies:
 <ul>
