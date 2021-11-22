@@ -88,6 +88,7 @@ FHIR profiles defined in this implementation guide.
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></li>
                                 <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA MHR Patient</a></li>
+                                <li><a href="StructureDefinition-dh-patient-demographics-1.html">ADHA Patient Demographics</a></li>
                                 <li><a href="StructureDefinition-practitioner-identified-1.html">ADHA Core Practitioner</a></li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-core-1.html">ADHA Core PractitionerRole</a></li>
                                 <li>ADHA Authoring PractitionerRole</li>
