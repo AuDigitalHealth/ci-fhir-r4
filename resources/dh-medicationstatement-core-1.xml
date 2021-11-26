@@ -59,6 +59,9 @@
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]"/>
       <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
@@ -77,7 +80,7 @@
       <path value="MedicationStatement.context"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>

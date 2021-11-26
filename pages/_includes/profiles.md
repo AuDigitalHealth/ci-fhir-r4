@@ -156,9 +156,13 @@ FHIR profiles defined in this implementation guide.
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a></li>
-                                <li>ADHA Core MedicationAdministration</li>
+                                <li>ADHA Core MedicationRequest</li>
+                                <li>ADHA Prescription Record</li>
+                                <li><a href="StructureDefinition-dh-medicationadministration-core-1.html">ADHA Core MedicationAdministration</a></li>
+                                <li>ADHA Core MedicationDispense</li>
+                                <li>ADHA Record of Dispense</li>
                                 <li><a href="StructureDefinition-dh-medicationstatement-core-1.html">ADHA Core MedicationStatement</a></li>
+                                <li><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a></li>
                                 <li><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></li>
                                 <li>ADHA Record of Immunization</li>
                             </ul>
