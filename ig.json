@@ -40,7 +40,9 @@
         "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1",
         "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1",
         "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1",
-        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1",
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1",
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-mhr-1"
     ],
     "logging": [
         "init",
@@ -164,9 +166,17 @@
             "base": "StructureDefinition-dh-procedure-core-1.html",
             "defns": "StructureDefinition-dh-procedure-core-1-definitions.html"
         },
+        "StructureDefinition/dh-relatedperson-author-1": {
+            "base": "StructureDefinition-dh-relatedperson-author-1.html",
+            "defns": "StructureDefinition-dh-relatedperson-author-1-definitions.html"
+        },
         "StructureDefinition/dh-relatedperson-core-1": {
             "base": "StructureDefinition-dh-relatedperson-core-1.html",
             "defns": "StructureDefinition-dh-relatedperson-core-1-definitions.html"
+         },
+        "StructureDefinition/dh-relatedperson-mhr-1": {
+            "base": "StructureDefinition-dh-relatedperson-mhr-1.html",
+            "defns": "StructureDefinition-dh-relatedperson-mhr-1-definitions.html"
          },
         "StructureDefinition/dh-substance-core-1": {
             "base": "StructureDefinition-dh-substance-core-1.html",

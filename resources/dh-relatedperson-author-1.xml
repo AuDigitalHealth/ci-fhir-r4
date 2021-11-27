@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-relatedperson-core-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
+  <id value="dh-relatedperson-author-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
   <version value="0.0.1" />
-  <name value="DHRelatedPersonCore" />
-  <title value="ADHA Core RelatedPerson" />
+  <name value="DHRelatedPersonAuthor" />
+  <title value="ADHA Authoring RelatedPerson" />
   <status value="draft" />
   <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a related person for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia." />
+  <description value="The purpose of this profile is to define a representation of a related person in the role of an author or observer for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -25,17 +25,12 @@
   <differential>
     <element id="RelatedPerson">
       <path value="RelatedPerson" />
-      <constraint>
-        <key value="inv-dh-relper-01" />
-        <severity value="error" />
-        <human value="The related person shall at least have an identifier or a name or a relationship with the patient" />
-        <expression value="identifier.exists() or name.exists() or relationship.exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
-      </constraint>
-    </element>
+      
+</element>
     <element id="RelatedPerson.identifier">
       <path value="RelatedPerson.identifier" />
       <definition value="Identifier for a person within a particular scope." />
+      <min value="1"/>
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.active">
@@ -56,15 +51,16 @@
     </element>
     <element id="RelatedPerson.name">
       <path value="RelatedPerson.name" />
+      <min value="1"/>
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.telecom">
       <path value="RelatedPerson.telecom" />
+      <min value="1"/>
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.address">
       <path value="RelatedPerson.address" />
-      <definition value="Address where the related person can be contacted or visited." />
       <mustSupport value="true" />
     </element>
     <element id="RelatedPerson.communication">

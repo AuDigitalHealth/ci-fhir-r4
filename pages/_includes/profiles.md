@@ -90,7 +90,7 @@ Core FHIR profiles defined in this implementation guide.
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core Device</li>
+                                <li>ADHA Core Device Participant</li>
                                 <li><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></li>
 
                             </ul>
@@ -274,7 +274,8 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA MHR Patient</a></li>
                                 <li><a href="StructureDefinition-dh-patient-demographics-1.html">ADHA Patient Demographics</a></li>
                                 <li>ADHA Authoring PractitionerRole</li>
-                                <li>ADHA Authoring RelatedPerson</li>
+                                <li><a href="StructureDefinition-dh-relatedperson-mhr-1.html">ADHA MHR RelatedPerson</a></li>
+                                <li><a href="StructureDefinition-dh-relatedperson-author-1.html">ADHA Authoring RelatedPerson</a></li>
                             </ul>
                         </td>  
                         <td class="frm-null"/>
