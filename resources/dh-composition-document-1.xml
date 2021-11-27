@@ -28,19 +28,25 @@
       <constraint>
         <key value="inv-dh-cmp-01"/>
         <severity value="error"/>
+        <human value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
+        <expression value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+      </constraint>  
+      <constraint>
+        <key value="inv-dh-cmp-02"/>
+        <severity value="error"/>
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-cmp-02"/>
+        <key value="inv-dh-cmp-03"/>
         <severity value="error"/>
         <human value="An author shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-cmp-03"/>
+        <key value="inv-dh-cmp-04"/>
         <severity value="error"/>
         <human value="The custodian shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="custodian.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
@@ -110,10 +116,10 @@
       <path value="Composition.author" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
@@ -213,6 +219,5 @@
       <path value="Composition.section.emptyReason" />
       <mustSupport value="true"/>
     </element>
-    
   </differential>
 </StructureDefinition>
