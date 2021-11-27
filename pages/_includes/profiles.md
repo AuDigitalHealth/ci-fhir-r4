@@ -46,13 +46,14 @@ Core FHIR profiles defined in this implementation guide.
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li>ADHA Core Composition</li>
                                 <li>ADHA Core DocumentReference</li>
                             </ul>
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core Document Bundle (Joint w CI &amp; Architecture Team)</li> 
-                                <li>ADHA Core Message Bundle (Joint w CI &amp; Architecture Team)</li> 
+                                <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
+                                <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
                                 <li>ADHA Core Payload Bundle (Joint w CI &amp; Architecture Team)</li> 
                                 <li>ADHA Core MessageHeader (Architecture Team)</li>  
                             </ul>
@@ -119,6 +120,7 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></li>
                                 <li><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></li>
                                 <li>ADHA Core FamilyMemberHistory</li>
+                                <li>ADHA Core DetectedIssue</li>
                             </ul>
                         </td>    
                         <td class="frm-set">
