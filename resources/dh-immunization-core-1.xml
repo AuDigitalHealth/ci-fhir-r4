@@ -55,6 +55,10 @@
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Immunization.occurrence[x]">

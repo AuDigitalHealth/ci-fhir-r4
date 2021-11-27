@@ -47,6 +47,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Core Composition</li>
+                                <li>ADHA Document Composition</li>
                                 <li>ADHA Core DocumentReference</li>
                             </ul>
                         </td>  
