@@ -282,8 +282,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Authoring Device</li>
-                                <li>ADHA Medical Device</li>
+                                <li><a href="StructureDefinition-dh-device-implantable-1.html">ADHA Implantable Medical Device</a></li>
                             </ul>
                         </td>                          
                         <td class="frm-null"/>

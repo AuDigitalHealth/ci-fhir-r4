@@ -1,6 +1,10 @@
 #### Australian Digital Health Agency Authoring RelatedPerson
 The purpose of this profile is to define a representation of a related person in the role of an author or observer for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
+This profile is designed to set a RelatedPerson standard for:
+* exchanging consumer-authored clinical information
+ 
+
 
 #### Implementation guidance
 The following guidance applies:
