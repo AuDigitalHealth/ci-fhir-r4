@@ -32,13 +32,6 @@
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
       </constraint>
-      <constraint>
-        <key value="inv-dh-mad-02"/>
-        <severity value="error"/>
-        <human value="The requester shall at least have a reference, an identifier or a display"/>
-        <expression value="requester.exists() implies requester.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
-      </constraint>
     </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier"/>
@@ -71,7 +64,6 @@
       <path value="MedicationDispense.subject"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
       <mustSupport value="true"/>
@@ -86,6 +78,13 @@
     </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer"/>
+      <constraint>
+        <key value="inv-dh-mad-02"/>
+        <severity value="error"/>
+        <human value="The actor shall at least have a reference, an identifier or a display"/>
+        <expression value="actor.exists() implies actor.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
+      </constraint>
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
@@ -102,7 +101,6 @@
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"/>
       </type>
       <mustSupport value="true"/>
