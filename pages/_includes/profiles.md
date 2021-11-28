@@ -90,7 +90,7 @@ Core FHIR profiles defined in this implementation guide.
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Device Participant</li>
+                                <li><a href="StructureDefinition-dh-device-participant-1.html">ADHA Device Participant</a></li>
                                 <li><a href="StructureDefinition-dh-device-system-1.html">ADHA System Device</a></li>
                                 <li><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></li>
 
