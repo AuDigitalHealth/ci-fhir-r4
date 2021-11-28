@@ -128,7 +128,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Core Observation</li>
-                                <li>ADHA Core DiagnosticReport</li>
+                                <li><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></li>
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
                                 <li>ADHA Core ImagingStudy</li>

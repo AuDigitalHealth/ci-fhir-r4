@@ -4,6 +4,7 @@ The purpose of this profile is to define a representation of a device acting as 
 This profile is designed to set a Device standard for:
 * TBD
 
+
 #### Implementation guidance
 The following guidance applies:
 * TBD
