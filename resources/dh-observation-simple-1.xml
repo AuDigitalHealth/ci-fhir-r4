@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-observation-simple-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1"/>
+  <version value="0.0.1"/>
+  <name value="DHObservationSimple"/>
+  <title value="ADHA Simple Observation"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a representation of an observation, for simple measurements or assertions, for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia."/>
+  <copyright value="Copyright © 2020 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Observation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Observation">
+      <path value="Observation"/>
+      <constraint>
+        <key value="inv-dh-obs-01"/>
+        <severity value="error"/>
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-diagnosticreport-core-1" />
+      </constraint>
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category"/>
+      <min value="1" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.encounter">
+      <path value="Observation.encounter"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

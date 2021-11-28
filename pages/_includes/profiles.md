@@ -127,7 +127,7 @@ Core FHIR profiles defined in this implementation guide.
                         </td>    
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core Observation</li>
+                                <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
                                 <li><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></li>
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
@@ -148,7 +148,6 @@ Core FHIR profiles defined in this implementation guide.
                             <ul class="frm-set">
                                 <li>ADHA Core CarePlan</li>
                                 <li>ADHA Core ServiceRequest</li>
-                                <li>ADHA Referral</li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>
@@ -307,19 +306,23 @@ Core FHIR profiles defined in this implementation guide.
                     </tr>
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>   
-                        <td class="frm-null"/> 
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-diagnosticresultgroup-1.html">ADHA Diagnostic Result Group</a></li>
+                                <li>ADHA Pathology DiagnosticReport</li>
+                                <li>ADHA Diagnostic Imaging DiagnosticReport</li>
+                            </ul>
+                        </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Prescription Record</li>
-                                <li>ADHA Core MedicationDispense</li>
                                 <li>ADHA Record of Dispense</li>
                                 <li>ADHA Record of Immunization</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core CarePlan</li>
-                                <li>ADHA Core ServiceRequest</li>
                                 <li>ADHA Referral</li>
                             </ul>
                         </td>    
@@ -408,7 +411,7 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></li>
-                                <li><a href ="TBD">AU Australian Passport Number (TBD)</a></li>
+                                <li>AU Australian Passport Number</li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ahpraregistrationnumber.html">AU AHPRA Registration Number </a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-careagencyemployeeidentifier.html">AU Care Agency Employee Identifier</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-cwlthseniorshealthcardnumber.html">AU Commonwealth Seniors Health Card Number</a></li>
@@ -422,11 +425,8 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicarecardnumber.html">AU Medicare Card Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
-                                <li><a href ="TBD">AU Residential Aged Care Service Identifier (TBD)</a></li>
+                                <li>AU Residential Aged Care Service Identifier</li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
-                                <li><a href ="TBD">TBD</a></li>
-                                <li><a href ="TBD">TBD</a></li>
-                                <li><a href ="TBD">TBD</a></li>
                             </ul>
                         </td>  
                         <td class="frm-set">
