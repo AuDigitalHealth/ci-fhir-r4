@@ -42,8 +42,8 @@
       <constraint>
         <key value="inv-dh-dir-03" />
         <severity value="error" />
-        <human value="The performer shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="performer.reference.exists() or performer.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-diagnosticreport-core-1" />
       </constraint>
     </element>
@@ -57,12 +57,9 @@
       <short value="Diagnostic investigation order" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/servicerequest-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-servicerequest-core-1" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.basedOn.reference">
-      <path value="DiagnosticReport.basedOn.reference" />
     </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
@@ -93,7 +90,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -121,7 +117,8 @@
       <path value="DiagnosticReport.result" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresult-1" />
       </type>
       <mustSupport value="true" />
     </element>
