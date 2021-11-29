@@ -30,14 +30,14 @@
         <severity value="error"/>
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-obs-02" />
         <severity value="error" />
         <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-diagnosticreport-core-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1" />
       </constraint>
     </element>
     <element id="Observation.status">
@@ -93,6 +93,10 @@
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.note">
+      <path value="Observation.note"/>
       <mustSupport value="true"/>
     </element>
   </differential>
