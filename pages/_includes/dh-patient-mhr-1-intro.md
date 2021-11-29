@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency My Health Record Patient
-The purpose of this profile is to define a representation of a patient for exchange usage scenarios to support the electronic exchange of health information information between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to define a representation of a patient for exchange usage scenarios with the My Health Record system infrastructure in Australia.
 
 This profile supports exchange of some of the Cultural and Linguistic Diversity (CALD) data set [<sup>[1]</sup>](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1289.0Main%20Features11999) [<sup>[2]</sup>](https://meteor.aihw.gov.au/content/index.phtml/itemId/491352), including country of birth, year of arrival and preferred language.
 

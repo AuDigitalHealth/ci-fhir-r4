@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency Core Immunization
-The purpose of this profile is to provide a core representation of an immunization for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile supports a statement of the administration or non-administration of a vaccine.
+The purpose of this profile is to provide a core representation of an immunization for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of the administration or non-administration of a vaccine.
 
 This profile is designed to set a core Immunization for:
 * Insert ADHA API Endpoint

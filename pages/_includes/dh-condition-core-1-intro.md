@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency Core Condition
-The purpose of this profile is to provide a core representation of a condition for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile supports a statement of a condition, problem, or diagnosis including asserting negation for specific conditions or problems.
+The purpose of this profile is to provide a core representation of a condition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of a condition, problem, or diagnosis including asserting negation for specific conditions or problems.
 
 This profile is designed to set a core Specimen for:
 * Insert ADHA API Endpoint

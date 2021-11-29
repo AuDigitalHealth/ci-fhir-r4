@@ -1,5 +1,5 @@
 ### Australian Digital Health Agency Core PractitionerRole
-The purpose of this profile is to provide a core representation of a practitioner in a role, on behalf of an organisation, for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to provide a core representation of a practitioner in a role, on behalf of an organisation, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 #### Implementation guidance
 The following guidance applies:
 <ul> 

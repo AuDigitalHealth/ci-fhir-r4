@@ -1,5 +1,5 @@
 #### Identified Practitioner
-The purpose of this profile is to define a core representation a practitioner for the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to define a core representation a practitioner for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile is designed to set a core Practitioner for:
 * Insert ADHA API Endpoint

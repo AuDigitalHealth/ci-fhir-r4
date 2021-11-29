@@ -10,7 +10,7 @@
 
 ### Australian Digital Health Agency Core FHIR Profile Index 
 
-Core FHIR profiles defined in this implementation guide.
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU AU [Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">

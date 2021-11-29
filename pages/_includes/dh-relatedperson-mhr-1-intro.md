@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency My Health Record RelatedPerson
-The purpose of this profile is to define a representation of a related person for exchange usage scenarios to support the electronic exchange of health information between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to define a representation of a related person for exchange usage scenarios with the My Health Record system infrastructure in Australia.
 
 
 #### Implementation guidance

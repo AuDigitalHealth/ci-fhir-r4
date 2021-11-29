@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency Core BodyStructure
-The purpose of this profile is to provide a core representation of a body structure for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to provide a core representation of a body structure for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile is designed to set a core BodyStructure for:
 * Insert ADHA API Endpoint

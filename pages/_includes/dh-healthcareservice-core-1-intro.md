@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency Core HealthcareService
-The purpose of this profile is to define a core representation of a healthcare service for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to define a core representation of a healthcare service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile is designed to set a core HealthcareService for:
 * Insert ADHA API Endpoint
