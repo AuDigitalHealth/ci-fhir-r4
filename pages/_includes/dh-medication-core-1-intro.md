@@ -1,11 +1,13 @@
 #### Australian Digital Health Agency Core Substance
 The purpose of this profile is to provide a core representation of a substance for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Medication](http://hl7.org/fhir/R4/medication.html) that are supported. 
+
 This profile is designed to set a core BodyStructure for:
 * Insert ADHA API Endpoint
 * Insert ADHA API Endpoint
 
-#### Implementation guidance
+#### Guidance
 The following guidance applies:
 * status is not sent
 * Medication.code is a member of the [Australian Medication](https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1) value set

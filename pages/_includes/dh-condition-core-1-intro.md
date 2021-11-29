@@ -1,11 +1,17 @@
 #### Australian Digital Health Agency Core Condition
 The purpose of this profile is to provide a core representation of a condition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of a condition, problem, or diagnosis including asserting negation for specific conditions or problems.
 
-This profile is designed to set a core Specimen for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Condition](http://hl7.org/fhir/R4/condition.html) that are supported. 
 
-#### Implementation guidance
+This profile is designed to set a core Condition standard for:
+* Query for a patient's conditions
+* Record or update a condition belonging to a patient
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
+
+#### Guidance
 The following guidance applies:
 * verificationStatus is 'confirmed'
 * an active condition is sent with clinicalStatus 'active'

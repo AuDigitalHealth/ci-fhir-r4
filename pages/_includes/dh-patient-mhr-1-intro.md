@@ -1,35 +1,24 @@
 #### Australian Digital Health Agency My Health Record Patient
-The purpose of this profile is to define a representation of a patient for exchange usage scenarios with the My Health Record system infrastructure in Australia.
+The purpose of this profile is to define a representation of a patient for exchange usage scenarios with the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set [<sup>[1]</sup>](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1289.0Main%20Features11999) [<sup>[2]</sup>](https://meteor.aihw.gov.au/content/index.phtml/itemId/491352), including country of birth, year of arrival and preferred language.
 
-This profile supports exchange of some of the Cultural and Linguistic Diversity (CALD) data set [<sup>[1]</sup>](https://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/1289.0Main%20Features11999) [<sup>[2]</sup>](https://meteor.aihw.gov.au/content/index.phtml/itemId/491352), including country of birth, year of arrival and preferred language.
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Patient](http://hl7.org/fhir/R4/patient.html) that are supported. 
 
-This profile is designed to define a representation of a Patient for:
-* Insert TBD ADHA API Endpoint
-* Insert TBD ADHA API Endpoint
+This profile is designed to set a Patient standard:
+* Querying for records associated with a patient in the My Health Record infrastructure
+* Record or update a record associated with a patient in the My Health Record system infrastructure
 
-#### Implementation guidance
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
+
+#### Guidance
 The following guidance applies:
 <ul>
-  <li>country of birth is sent in <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace">extension:birthPlace</a></li>
-  <li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
-   <li>Where a sending system cannot send a family name (Patient.name.family) it is expected that:</li>
-        <ul>
-            <li>family name is sent in text (Patient.name.text)</li>
-        </ul>
-  <li>if sent, a generalPractitioner is sent as a reference to a PractitionerRole resource with:
-      <ul>
-         <li>a PractitionerRole.code, e.g. 62247001 |General practitioner|</li> 
-         <li>a PractitionerRole.organization as either:
-             <ul>
-               <li>a reference to an Organization resource with Organization.name, or</li>
-                <li>organization.display with the organisation's name</li>   
-            </ul>
-        </li>
-      </ul>
-</li>
+  <li>country of birth is represented with <a href="StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace">extension:birthPlace</a></li>
+  <li>a local identifier may have an <a href="http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
 </ul> 
 
-When sending communication preferences for a patient the guidance in the following table applies.
+The table below provides guidance on the representation of communication preferences for a patient.
 <table class="list" style="width:100%">
     <colgroup>
        <col span="1" style="width: 20%;"/>

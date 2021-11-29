@@ -1,7 +1,9 @@
 #### Australian Digital Health Agency Core RelatedPerson
 The purpose of this profile is to provide a core representation of a related person for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
-#### Implementation guidance
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) that are supported. 
+
+#### Guidance
 The following guidance applies:
 <ul>
   <li>an IHI conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a> slice and a maximum of one is sent</li>

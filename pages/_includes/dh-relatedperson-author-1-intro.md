@@ -1,12 +1,13 @@
 #### Australian Digital Health Agency Authoring RelatedPerson
 The purpose of this profile is to define a representation of a related person in the role of an author or observer for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) that are supported. 
+
 This profile is designed to set a RelatedPerson standard for:
 * exchanging consumer-authored clinical information
  
 
-
-#### Implementation guidance
+#### Guidance
 The following guidance applies:
 <ul>
   <li>an IHI conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a> slice and a maximum of one is sent</li>

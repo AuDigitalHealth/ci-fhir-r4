@@ -1,12 +1,14 @@
 #### Australian Digital Health Agency Core MedicationAdministration
 The purpose of this profile is to provide a core representation of a medication administration for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html) that are supported. 
+
 This profile is designed to set a core MedicationAdministration standard for:
 * Insert ADHA API Endpoint
 * Insert ADHA API Endpoint
 
 
-#### Implementation guidance
+#### Guidance
 The following guidance applies:
 * TBD
 

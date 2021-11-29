@@ -1,12 +1,14 @@
 #### Australian Digital Health Agency Core MedicationStatement
 The purpose of this profile is to provide a core representation of a statement of medication use for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a summary statement relating to an allergy or intolerance including asserting negation for a specific allergy or intolerance, a category, or that a patient has no known allergies or intolerances.
 
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html) that are supported. 
+
 This profile is designed to set a core MedicationStatement standard for:
 * Insert ADHA API Endpoint
 * Insert ADHA API Endpoint
 
 
-#### Implementation guidance
+#### Guidance
 A sending system is to set the value of taken as per the guidance in the Comments field of the [MedicationStatement](StructureDefinition-medicationstatement-detailed-1-definitions.html#MedicationStatement) element.
 
 MedicationStatement.status represents the current state of the medicine item for the patient (active, completed, new), if this resource is referenced by a List, List.entry.flag and MedicationStatement.status should be constructed as per the guidance in the following table.
