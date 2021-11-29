@@ -67,6 +67,13 @@
     </element>
     <element id="Immunization.performer">
       <path value="Immunization.performer" />
+      <constraint>
+        <key value="inv-dh-imm-02"/>
+        <severity value="error"/>
+        <human value="The actor shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="actor.reference.exists() or actor.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-immunization-core-1" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Immunization.performer.function">

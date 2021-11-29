@@ -30,6 +30,7 @@
         <severity value="error"/>
         <human value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
         <expression value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>  
       <constraint>
         <key value="inv-dh-cmp-02"/>
@@ -42,14 +43,14 @@
         <key value="inv-dh-cmp-03"/>
         <severity value="error"/>
         <human value="An author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <expression value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-cmp-04"/>
         <severity value="error"/>
         <human value="The custodian shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="custodian.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <expression value="custodian.reference.exists() or custodian.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>
     </element>

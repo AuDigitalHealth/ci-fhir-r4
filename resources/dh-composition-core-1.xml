@@ -36,7 +36,7 @@
         <key value="inv-dh-cmp-02"/>
         <severity value="error"/>
         <human value="An author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <expression value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1" />
       </constraint>
     </element>
@@ -118,6 +118,10 @@
     </element>
     <element id="Composition.section.entry">
       <path value="Composition.section.entry" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section.emptyReason">
+      <path value="Composition.section.emptyReason" />
       <mustSupport value="true"/>
     </element>
   </differential>
