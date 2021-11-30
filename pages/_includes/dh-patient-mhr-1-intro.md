@@ -84,7 +84,6 @@ Other attributes, ostensibly considered to be demographic in nature, are better 
 Forthcoming work on these related attributes in collaboration with HL7 AU is expected to result in profiles published as part of [HL7 AU Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html).
 
 This profile is referenced by
-[Australian Digital Health Agency Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html),
-[TBD](StructureDefinition-TBD.html),
-[TBD](StructureDefinition-TBD-1.html), and
-[TBD](StructureDefinition-TBD-1.html).
+[TBD](StructureDefinition-dh-TBD-1.html),
+[TBD](StructureDefinition-dh-TBD-1.html), and
+[TBD](StructureDefinition-dh-TBD-1.html).

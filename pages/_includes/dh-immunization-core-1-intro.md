@@ -3,9 +3,12 @@ The purpose of this profile is to provide a core representation of an immunizati
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Immunization](http://hl7.org/fhir/R4/immunization.html) that are supported. 
 
-This profile is designed to set a core Immunization for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+This profile is designed to set a core Immunization standard for:
+* Query for a patient's immunisations
+* Record or update an immunisation record for a patient
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:

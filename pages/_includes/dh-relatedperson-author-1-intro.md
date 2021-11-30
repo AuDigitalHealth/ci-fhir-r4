@@ -5,16 +5,20 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 This profile is designed to set a RelatedPerson standard for:
 * exchanging consumer-authored clinical information
+* querying for records uploaded by a related person
+* record or update a record uploaded by a related person
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
  
 
 #### Guidance
 The following guidance applies:
-<ul>
-  <li>an IHI conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a> slice and a maximum of one is sent</li>
-  <li>an Australian address conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
-</ul>
+* a local identifier may have an [HPI-O scoped](http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/index.html) or [ABN-scoped](http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/index.html) identifier namespace if there isn't a local namespace available (see the [FAQ](https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions) for more information)
+* an IHI conforms to [AU IHI](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html)
+* an Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
 
-When sending communication preferences for a related person the guidance in the following table applies.
+The table below provides guidance on the representation of communication preferences for a related person.
 <table class="list" style="width:100%">
     <colgroup>
        <col span="1" style="width: 20%;"/>

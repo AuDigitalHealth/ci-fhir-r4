@@ -4,8 +4,11 @@ The purpose of this profile is to define a representation of an implantable medi
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Device](http://hl7.org/fhir/R4/device.html) that are supported. 
 
 This profile is designed to set a Device standard for:
-* TBD
+* Query for a patient's implantable medical devices
+* Record or update an implantable medical device record for a patient
 
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:

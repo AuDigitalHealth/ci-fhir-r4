@@ -4,9 +4,11 @@ The purpose of this profile is to provide a core representation of a dispense of
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html) that are supported. 
 
 This profile is designed to set a core MedicationDispense standard for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+* Query medications dispensed for a patient
+* Record or update a record of dispense for a patient
 
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:

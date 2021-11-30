@@ -1,11 +1,22 @@
 #### Australian Digital Health Agency Core Substance
-The purpose of this profile is to provide a core representation of a substance for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to provide a core representation of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Medication](http://hl7.org/fhir/R4/medication.html) that are supported. 
 
-This profile is designed to set a core BodyStructure for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+A [Medication](http://hl7.org/fhir/R4/medication.html) resource is used within the context of a referencing resource: [MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html), [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html), [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html), or [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html) resource. 
+
+This profile is designed to set a core Medication standard in the context of:
+* Querying medications referenced in MedicationAdministration resources
+* Recording or updating a medication referenced by a MedicationAdministration resource
+* Querying medications referenced in MedicationDispense resources
+* Recording or updating a medication referenced by a MedicationDispense resource
+* Querying medications referenced in MedicationRequest resources
+* Recording or updating a medication referenced by a MedicationRequest resource
+* Querying medications referenced in MedicationStatement resources
+* Recording or updating a medication referenced by a MedicationStatement resource
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:

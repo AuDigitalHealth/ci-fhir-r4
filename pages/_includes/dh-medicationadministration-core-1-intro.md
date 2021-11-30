@@ -4,9 +4,11 @@ The purpose of this profile is to provide a core representation of a medication 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html) that are supported. 
 
 This profile is designed to set a core MedicationAdministration standard for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+* Query medications administered for a patient (current and historical)
+* Record or update a medication administration record for a patient
 
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:
