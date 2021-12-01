@@ -66,6 +66,8 @@ This profile is referenced by
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html), 
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
+[ADHA Simple Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 

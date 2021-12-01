@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1"/>
   <version value="0.0.1"/>
   <name value="DHMedicationDispenseCore"/>
-  <title value="Australian Digital Health Agency Core MedicationDispense"/>
+  <title value="ADHA Core MedicationDispense"/>
   <status value="draft" />
   <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
@@ -118,10 +118,10 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1"/>
       </type>
       <mustSupport value="true"/>
     </element>
