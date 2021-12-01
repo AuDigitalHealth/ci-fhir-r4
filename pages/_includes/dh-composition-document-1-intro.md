@@ -10,4 +10,5 @@ This profile is designed to set a Composition standard for:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html).
+[ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), and
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html)..

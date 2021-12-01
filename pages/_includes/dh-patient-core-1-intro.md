@@ -86,12 +86,16 @@ This profile is referenced by
 [ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html),
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
+[ADHA Implantable Medical Device](StructureDefinition-dh-device-implantable-1.html), 
+[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html),
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html),
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html),
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html),
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-1.html), 
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html),
-[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and
-[ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), and
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
+[ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html),
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html),
+[ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html), and
+[ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).

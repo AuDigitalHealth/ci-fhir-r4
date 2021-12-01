@@ -60,4 +60,12 @@ Blank cells in the above table indicate that the given element is absent from th
 
 #### Boundaries and relationships
 This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html), 
+[ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html),
+[ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
+[ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
+[ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html), 
+[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
