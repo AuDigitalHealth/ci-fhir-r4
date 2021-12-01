@@ -89,6 +89,7 @@ This profile is referenced by
 [ADHA Implantable Medical Device](StructureDefinition-dh-device-implantable-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html),
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html),
+[ADHA Core List](StructureDefinition-dh-list-core-1.html),
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html),
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html),
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),

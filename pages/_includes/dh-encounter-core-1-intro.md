@@ -22,6 +22,7 @@ This profile is referenced by
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html),
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html),
+[ADHA Core List](StructureDefinition-dh-list-core-1.html),
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-1.html), 
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html),
