@@ -33,6 +33,13 @@
         <expression value="identifier.exists() or name.exists()" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
       </constraint>
+      <constraint>
+        <key value="inv-dh-prac-03" />
+        <severity value="error" />
+        <human value="One practitioner name shall have at least a family name" />
+        <expression value="name.family.exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
+      </constraint>
     </element>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier" />
@@ -45,6 +52,7 @@
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
+      <min value="1"/>
       <mustSupport value="true" />
     </element>
     <element id="Practitioner.telecom">
