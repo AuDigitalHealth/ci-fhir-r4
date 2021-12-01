@@ -3,9 +3,12 @@ The purpose of this profile is to provide a core representation of a statement o
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html) that are supported. 
 
-This profile is designed to set a core MedicationStatement standard for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+This profile is designed to set a core MedicationStatement standard in the context of:
+* Querying a patient's medications (current and historical)
+* Recording or updating a record of a medication the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
 #### Guidance

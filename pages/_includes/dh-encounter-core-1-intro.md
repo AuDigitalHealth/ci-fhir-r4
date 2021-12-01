@@ -3,9 +3,13 @@ The purpose of this profile is to provide a core representation of an encounter 
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Encounter](http://hl7.org/fhir/R4/encounter.html) that are supported. 
 
-This profile is designed to set a core Encounter for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+This profile is designed to set a PractitionerRole standard for:
+* Query for a specific patient encounter
+* Query for records associated with a specific patient encounter
+* Record or update an encounter and records associated with an encounter
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:
@@ -23,10 +27,20 @@ This profile is referenced by
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html),
 [ADHA Core List](StructureDefinition-dh-list-core-1.html),
+[ADHA Adverse Reactions List](StructureDefinition-dh-list-adv-1.html),
+[ADHA Allergies and Interolances List](StructureDefinition-dh-list-ai-1.html),
+[ADHA Dispense List](StructureDefinition-dh-list-disp-1.html),
+[ADHA Immunization History List](StructureDefinition-dh-list-imm-1.html),
+[ADHA Medical History List](StructureDefinition-dh-list-pdl-1.html),
+[ADHA Problem List](StructureDefinition-dh-list-cond-1.html),
+[ADHA Procedure List](StructureDefinition-dh-list-proc-1.html),
+[ADHA Prescription and Dispense List](StructureDefinition-dh-list-pdl-1.html),
+[ADHA Prescription List](StructureDefinition-dh-list-pres-1.html),
+[ADHA Medication Use List](StructureDefinition-dh-list-meds-1.html),
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-1.html), 
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html),
-[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), and
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html). 
 

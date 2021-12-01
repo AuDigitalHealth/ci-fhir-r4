@@ -102,7 +102,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></li>
                                 <li>ADHA Core EpisodeOfCare</li>
                                 <li>ADHA Core Flag</li>
-                                <li>ADHA Core List</li>
+                                <li><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></li>
                             </ul>
                         </td>  
                     </tr>
@@ -288,10 +288,16 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Hospitalisation Encounter</li>
-                                <li>ADHA AllergyIntolerance List</li>
-                                <li>ADHA Immunization List</li>
-                                <li>ADHA Medication List</li>
+                                <li>ADHA Adverse Reactions List</li>
+                                <li>ADHA Allergies and Interolances List</li>
+                                <li>ADHA Dispense List</li>
+                                <li>ADHA Immunization History List</li>
                                 <li>ADHA Medical History List</li>
+                                <li>ADHA Problem List</li>
+                                <li>ADHA Procedure List</li>
+                                <li>ADHA Prescription and Dispense List</li>
+                                <li>ADHA Prescription List</li>
+                                <li>ADHA Medication Use List</li>
                             </ul>
                         </td>  
                     </tr>

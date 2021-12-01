@@ -3,18 +3,16 @@ The purpose of this profile is to define a core representation of an organisatio
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Organization](http://hl7.org/fhir/R4/organization.html) that are supported. 
 
-This profile is designed to set a core Organization for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+This profile is designed to set a core PractitionerRole standard for:
+* TBD
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 * 
 #### Guidance
 The following guidance applies:
-* an Australian address conforms to the [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html) profile
-* if more than one identifier is sent, only one of each type is sent
+* an Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
 
-When sending to the My Health Record system: 
-* an HPI-O is sent
-* name is sent
 
 #### Boundaries and relationships
 This profile is referenced by 

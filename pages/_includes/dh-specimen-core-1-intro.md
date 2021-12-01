@@ -7,7 +7,7 @@ This profile is designed to set a core Specimen for:
 * Insert ADHA API Endpoint
 * Insert ADHA API Endpoint
 
-#### Implementation guidance
+#### Guidance
 The following guidance applies:
 * TBD
 

@@ -5,7 +5,11 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 This profile is designed to set a PractitionerRole standard for:
 * exchanging practitioner-authored clinical information
+* querying for records authored or uploaded by a practitioner
+* record or update a record authored by a practitioner
 
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Guidance
 The following guidance applies:
@@ -25,5 +29,5 @@ This profile is referenced by
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Simple Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
+[ADHA Simple Observation](StructureDefinition-dh-observation-core-1.html), and
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html). 

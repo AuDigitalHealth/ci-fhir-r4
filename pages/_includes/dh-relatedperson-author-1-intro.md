@@ -5,7 +5,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 This profile is designed to set a RelatedPerson standard for:
 * exchanging consumer-authored clinical information
-* querying for records uploaded by a related person
+* querying for records authored or uploaded by a related person
 * record or update a record uploaded by a related person
 
 This profile is used by the following APIs:
@@ -65,9 +65,10 @@ This profile is referenced by
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html),
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
+[ADHA Core List](StructureDefinition-dh-list-core-1.html),
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html), 
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Simple Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
+[ADHA Simple Observation](StructureDefinition-dh-observation-core-1.html), and
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).

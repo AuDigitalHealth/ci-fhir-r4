@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-list-core-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1"/>
+  <id value="dh-list-pdl-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-pdl-1"/>
   <version value="0.0.1"/>
   <name value="DHListCore"/>
   <title value="ADHA Core List"/>
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a list for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <description value="The purpose of this profile is to provide a repesentation of a prescription and dispense list for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient." />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -24,49 +24,23 @@
   <derivation value="constraint" />
   <differential>
     <element id="List">
-      <path value="List" />
+      <path value="List"/>
+      <short value="A precription and dispense history, or a prescription history, or a dispense history" />
+      <definition value="A list " />
       <constraint>
         <key value="inv-dh-lst-01" />
         <severity value="error" />
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-pdl-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-lst-02" />
         <severity value="error" />
         <human value="If present, a source shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="source.exists() implies source.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-pdl-1" />
       </constraint>
-      <constraint>
-        <key value="inv-dh-lst-03" />
-        <severity value="error" />
-        <human value="The author role shall at least have a reference that conforms to ADHA Authoring RelatedPerson or an identifier with at least a system and a value" />
-        <expression value="extension('http://hl7.org.au/fhir/StructureDefinition/author-related-person').valueReference.reference.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1') or extension('http://hl7.org.au/fhir/StructureDefinition/author-related-person').valueReference.identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
-      </constraint>
-    </element>
-    <element id="List.extension">
-      <path value="List.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-    </element>
-    <element id="List.extension:sourceRelatedPerson">
-      <path value="List.extension"/>
-      <sliceName value="sourceRelatedPerson"/>
-      <short value="Related person that defined the list contents (aka Author)"/>
-      <definition value="The related person responsible for deciding what the contents of the list were. This is the same as the author of the list."/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/author-related-person"/>
-      </type>
-      <mustSupport value="true" />
     </element>
     <element id="List.identifier">
       <path value="List.identifier" />
@@ -133,14 +107,6 @@
     <element id="List.entry.item.reference">
       <path value="List.entry.item.reference" />
       <min value="1" />
-    </element>
-    <element id="List.emptyReason">
-      <path value="List.emptyReason" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-1" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
