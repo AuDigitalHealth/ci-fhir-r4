@@ -14,4 +14,5 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), and
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html).

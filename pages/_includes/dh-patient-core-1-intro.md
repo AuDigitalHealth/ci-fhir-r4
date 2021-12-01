@@ -77,8 +77,21 @@ The table below provides guidance on the representation of communication prefere
 
 Blank cells in the above table indicate that the given element is absent from the resource.
 
-This profile is referenced by
-[Australian Digital Health Agency Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html),
-[TBD](StructureDefinition-TBD.html),
-[TBD](StructureDefinition-TBD-1.html), and
-[TBD](StructureDefinition-TBD-1.html).
+#### Boundaries and relationships
+This profile is referenced by 
+[ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html), 
+[ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html),
+[ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), 
+[ADHA Message Bundle](StructureDefinition-dh-bundle-message-1.html),
+[ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html),
+[ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
+[ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html),
+[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html),
+[ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html),
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
+[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-1.html), 
+[ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html),
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and
+[ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), and
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).
