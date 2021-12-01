@@ -18,11 +18,18 @@ When sending to the My Health Record system:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core Location](StructureDefinition-dh-location-core-1.html), 
-[Australian Digital Health Agency Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
-[Australian Digital Health Agency Core Patient](StructureDefinition-dh-patient-core-1.html), 
-[Australian Digital Health Agency My Health Record Patient](StructureDefinition-dh-patient-mhr-1.html),
-[Australian Digital Health Agency Core Organization](StructureDefinition-dh-organization-core-1.html),
-[Australian Digital Health Agency Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), 
-[TBD](StructureDefinition-TBD-1.html) and
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
+[ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
+[ADHA System Device](StructureDefinition-dh-device-system-1.html), 
+[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
+[ADHA Core Location](StructureDefinition-dh-location-core-1.html), 
+[ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
+[ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
+[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-1.html),
+[ADHA Core Patient](StructureDefinition-dh-patient-core-1.html), 
+[ADHA My Health Record Patient](StructureDefinition-dh-patient-mhr-1.html),
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html),
+[ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), and
+[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html). 

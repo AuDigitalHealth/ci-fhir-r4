@@ -75,7 +75,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></li>
-                                <li><a href="StructureDefinition-practitioner-identified-1.html">ADHA Core Practitioner</a></li>
+                                <li><a href="StructureDefinition-practitioner-core-1.html">ADHA Core Practitioner</a></li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-core-1.html">ADHA Core PractitionerRole</a></li>
                                 <li><a href="StructureDefinition-dh-relatedperson-core-1.html">ADHA Core RelatedPerson</a></li>
                             </ul>

@@ -13,8 +13,9 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
-[Australian Digital Health Agency Core Organization](StructureDefinition-dh-organization-core-1.html),
-[Australian Digital Health Agency Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), 
-[TBD](StructureDefinition-TBD-1.html) and
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
+[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
+[ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
+[ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), and
+[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html).

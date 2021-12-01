@@ -13,5 +13,4 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html), and 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html).
+[Australian Digital Health Agency Core Observation](StructureDefinition-dh-observation-core-1.html).

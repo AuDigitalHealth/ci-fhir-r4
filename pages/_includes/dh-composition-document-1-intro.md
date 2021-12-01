@@ -5,3 +5,9 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 This profile is designed to set a Composition standard for:
 * exchanging a FHIR Document
+* Query for a document for a patient
+* Record or update a document record for a patient
+
+#### Boundaries and relationships
+This profile is referenced by 
+[ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html).
