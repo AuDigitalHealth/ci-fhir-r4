@@ -139,6 +139,24 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/event-status</td>
+        <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/location-status</td>
+        <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/location-mode</td>
+        <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
@@ -154,19 +172,19 @@ The following value sets form part of this implementation guide.
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1">Procedure</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/procedure-1</td>
-        <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
+        <td><a href="StructureDefinition-dh-healthcareservice-core-1.html">ADHA Core Procedure</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
+        <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//ValueSet-au-v3-ServiceDeliveryLocationRoleType-extended.html">ServiceDeliveryLocationRoleType - AU Extended</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/ValueSet/v3-ServiceDeliveryLocationRoleType-extended</td>
+        <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
@@ -590,6 +608,24 @@ The following code systems form part of this implementation guide.
         <td>http://terminology.hl7.org.au/CodeSystem/v2-0203</td>
         <td>2.16.840.1.113883.2.3.4.1.3.203</td>
     </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-location-status.html/">LocationStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/location-status</td>
+        <td>2.16.840.1.113883.4.642.4.333</td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//CodeSystem-au-location-type.html">Location Type AU</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/CodeSystem/location-type</td>
+        <td>2.16.840.1.113883.2.3.4.1.4.26</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-location-mode.html/">LocationMode</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/location-mode</td>
+        <td>2.16.840.1.113883.4.642.4.331</td>
+    </tr>
      <tr>
         <td><a href="https://loinc.org/">LOINC</a></td>
         <td>Regenstrief Institute, Inc.</td>
@@ -613,6 +649,12 @@ The following code systems form part of this implementation guide.
         <td>IHTSDO (ADHA)</td>
         <td>http://snomed.info/sct</td>
         <td>2.16.840.1.113883.6.96</td>
+    </tr>
+    <tr>
+        <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v3-RoleCode.html">RoleCode</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td>
+        <td>2.16.840.1.113883.5.111</td>
     </tr>
     <tr>
         <td><a href="https://tools.ietf.org/search/bcp47">Tags for Identifying Languages</a></td>
