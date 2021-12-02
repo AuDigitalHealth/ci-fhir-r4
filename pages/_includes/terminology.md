@@ -133,11 +133,17 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-observation-core-1.html">ADHA Core Observation</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
-        <td>HL7</td>
-        <td>http://hl7.org/fhir/ValueSet/event-status</td>
-        <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1">DiagnosticReportStatus Report Available</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1</td>
+        <td><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></td>
     </tr>
+     <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
+        <td><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></td>
+    </tr>   
     <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
         <td>HL7</td>
@@ -555,6 +561,12 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.2.3.4.1.3.360</td>
     </tr>
         <tr>
+        <td><a href="https://www.healthterminologies.gov.au/integration/R4/fhir/CodeSystem/diagnostic-report-status?ui:source=search">DiagnosticReportStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/diagnostic-report-status</td>
+        <td>2.16.840.1.113883.4.642.4.236</td>
+    </tr>
+       <tr>
         <td><a href="http://hl7.org/fhir/event-status">EventStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/event-status</td>
@@ -589,6 +601,12 @@ The following code systems form part of this implementation guide.
         <td>GS1</td>
         <td>https://www.gs1.org/gtin</td>
         <td>1.3.160</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/v2/0074/index.html">HL7 Version 2 Table 0074</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v2-0074</td>
+        <td></td>
     </tr>
     <tr>
         <td><a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166</a></td>
