@@ -127,16 +127,16 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/event-status</td>
+        <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1">Procedure</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/procedure-1</td>
+        <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
@@ -511,6 +511,12 @@ The following code systems form part of this implementation guide.
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/v2-0360</td>
         <td>2.16.840.1.113883.2.3.4.1.3.360</td>
+    </tr>
+        <tr>
+        <td><a href="http://hl7.org/fhir/event-status">EventStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/event-status</td>
+        <td>2.16.840.1.113883.4.642.4.110</td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1">Individual Healthcare Identifier Record Status</a></td>
