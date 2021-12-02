@@ -85,28 +85,46 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality">AllergyIntoleranceCriticality</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality</td>
+        <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1">Body Site</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/body-site-1</td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-category">Condition Category Codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/condition-category</td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
+    </tr>    
+    <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-severity">Condition/Diagnosis Severity</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/condition-severity</td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-clinical">Condition Clinical Status Codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/condition-clinical</td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1">Clinical Condition</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1</td>
+         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/condition-ver-status">ConditionVerificationStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
@@ -416,6 +434,12 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.134</td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/allergy-intolerance-criticality">AllergyIntoleranceCriticality</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/allergy-intolerance-criticality</td>
+        <td>2.16.840.1.113883.4.642.4.130</td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/reaction-event-severity">AllergyIntoleranceSeverity</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/reaction-event-severity</td>
@@ -450,6 +474,24 @@ The following code systems form part of this implementation guide.
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/contactentity-type</td>
         <td>2.16.840.1.113883.4.642.1.1129</td>
+    </tr>
+   <tr>
+        <td><a href="http://terminology.hl7.org/CodeSystem/condition-category">Condition Category Codes</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/condition-category</td>
+        <td>2.16.840.1.113883.4.642.4.1073</td>
+    </tr>
+    <tr>
+        <td><a href="http://terminology.hl7.org/CodeSystem/condition-clinical">Condition Clinical Status Codes</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/condition-clinical</td>
+        <td>2.16.840.1.113883.4.642.4.1074</td>
+    </tr>
+        <tr>
+        <td><a href="http://terminology.hl7.org/CodeSystem/condition-ver-status">ConditionVerificationStatus</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/condition-ver-status</td>
+        <td>2.16.840.1.113883.4.642.4.1075</td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1">Date Accuracy Indicator</a></td>
