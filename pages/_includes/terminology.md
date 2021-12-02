@@ -127,10 +127,28 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/data-absent-reason">DataAbsentReason</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/data-absent-reason</td>
+        <td><a href="StructureDefinition-dh-observation-core-1.html">ADHA Core Observation</a></td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/event-status</td>
         <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/observation-interpretation</td>
+        <td><a href="StructureDefinition-dh-observation-core-1.html">ADHA Core Observation</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/ValueSet/observation-status">ObservationStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/observation-status</td>
+        <td><a href="StructureDefinition-dh-observation-core-1.html">ADHA Core Observation</a></td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1">Procedure</a></td>
@@ -494,6 +512,12 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.1075</td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-data-absent-reason.html">DataAbsentReason</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td>
+        <td>2.16.840.1.113883.4.642.4.1048</td>
+    </tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1">Date Accuracy Indicator</a></td>
         <td>ADHA (METeOR AIHW)</td>
         <td>https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1</td>
@@ -579,6 +603,12 @@ The following code systems form part of this implementation guide.
         <td> </td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/observation-status">ObservationStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/observation-status</td>
+        <td>2.16.840.1.113883.4.642.4.401</td>
+    </tr>
+    <tr>
         <td><a href="https://developer.digitalhealth.gov.au/products/clinical-terminology">SNOMED CT (SNOMED CT AU (Australian Medicines Terminology))</a></td>
         <td>IHTSDO (ADHA)</td>
         <td>http://snomed.info/sct</td>
@@ -591,10 +621,10 @@ The following code systems form part of this implementation guide.
         <td> </td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="http://hl7.org/fhir/R4/v3/ObservationInterpretation/cs.html">v3 Code System ObservationInterpretation</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</td>
+        <td>2.16.840.1.113883.5.83</td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
