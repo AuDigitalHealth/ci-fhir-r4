@@ -91,10 +91,22 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></td>
     </tr>
     <tr>
+        <td><a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/australian-medication-1">Australian Medication</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1</td>
+        <td><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a>, <a href="StructureDefinition-dh-medicationdispense-core-1.html">ADHA Core MedicationDispense</a>, <a href="StructureDefinition-dh-medicationstatement-core-1.html">ADHA Core MedicationStatement</a>, <a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1">Australian Medicines Terminology Vaccine</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1</td>
+        <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
+    </tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1">Body Site</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/body-site-1</td>
-        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a>, <a href="StructureDefinition-dh-medicationadministration-core-1.html">ADHA Core MedicationAdministration</a></td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/body-site-relative-site-qualifier-1">Body Site Relative Site Qualifier</a></td>
@@ -163,6 +175,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">Immunization Status Codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/immunization-status</td>
+        <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/location-status</td>
@@ -173,6 +191,42 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/location-mode</td>
         <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-medication-admin-status.html">Medication administration status codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
+        <td><a href="StructureDefinition-dh-medicationadministration-core-1.html">ADHA Core MedicationAdministration</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-medicationdispense-status.html">Medication dispense status codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/medicationdispense-status</td>
+        <td><a href="StructureDefinition-dh-medicationdispense-core-1.html">ADHA Core MedicationDispense</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1">Medication Reason Taken</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1</td>
+        <td><a href="StructureDefinition-dh-medicationstatement-core-1.html">ADHA Core MedicationStatement</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">Medication request intent</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/medicationrequest-intent</td>
+        <td><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-medication-statement-status.html">Medication status codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/medication-statement-status</td>
+        <td><a href="StructureDefinition-dh-medicationstatement-core-1.html">ADHA Core MedicationStatement</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">Medicationrequest status</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/medicationrequest-status</td>
+        <td><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
@@ -191,6 +245,12 @@ The following value sets form part of this implementation guide.
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/procedure-1</td>
         <td><a href="StructureDefinition-dh-healthcareservice-core-1.html">ADHA Core Procedure</a></td>
+    </tr>
+        <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/reason-vaccine-administered-1">Reason Vaccine Administered</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/reason-vaccine-administered-1</td>
+        <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
     </tr>
     <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a></td>
@@ -656,11 +716,41 @@ The following code systems form part of this implementation guide.
         <td>http://hl7.org/fhir/location-mode</td>
         <td>2.16.840.1.113883.4.642.4.331</td>
     </tr>
-     <tr>
+    <tr>
         <td><a href="https://loinc.org/">LOINC</a></td>
         <td>Regenstrief Institute, Inc.</td>
         <td>http://loinc.org</td>
         <td>2.16.840.1.113883.6.1</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-medication-admin-status.html">Medication administration status codes</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/medication-admin-status</td>
+        <td>2.16.840.1.113883.4.642.4.1311</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-medicationdispense-status.html">Medication dispense status codes</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/medicationdispense-status</td>
+        <td>2.16.840.1.113883.4.642.4.1313</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-medicationrequest-intent.html">Medication request intent</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/CodeSystem/medicationrequest-intent</td>
+        <td>2.16.840.1.113883.4.642.4.1378</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html">Medication status codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/CodeSystem/medication-statement-status</td>
+        <td>2.16.840.1.113883.4.642.4.1379</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html">Medicationrequest status</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td>
+        <td>2.16.840.1.113883.4.642.4.1377</td>
     </tr>
     <tr>
         <td><a href="https://tools.ietf.org/search/bcp13">Multipurpose Internet Mail Extensions (MIME)</a></td>
