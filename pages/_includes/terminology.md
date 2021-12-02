@@ -151,6 +151,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
     </tr>
     <tr>
+        <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/ValueSet/v2-0916</td>
+        <td><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/location-status</td>
@@ -669,6 +675,12 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.6.96</td>
     </tr>
     <tr>
+        <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v2-0916.html">RelevantClincialInformation</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v2-0916</td>
+        <td>2.16.840.1.113883.18.422</td>
+    </tr>
+    <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v3-RoleCode.html">RoleCode</a></td>
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td>
@@ -685,12 +697,6 @@ The following code systems form part of this implementation guide.
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</td>
         <td>2.16.840.1.113883.5.83</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
