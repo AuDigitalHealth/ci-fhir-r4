@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-documentreference-core-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1"/>
+  <version value="0.0.1"/>
+  <name value="DHDocumentReferenceCore"/>
+  <title value="ADHA Core DocumentReference"/>
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a core representation of a document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports describing a document that is made available to a system and is used for documents that are not authored and assembeld in FHIR e.g. documents whose form is an attachment." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DocumentReference" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DocumentReference">
+      <path value="DocumentReference" />
+      <constraint>
+        <key value="inv-dh-docref-01" />
+        <severity value="error" />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-docref-02" />
+        <severity value="error" />
+        <human value="The author shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-docref-03" />
+        <severity value="error" />
+        <human value="If present, a custodian shall at least have a reference or an identifier with at least a system and a value" />
+        <expression value="custodian.exists() implies custodian.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1" />
+      </constraint>
+    </element>
+    <element id="DocumentReference.masterIdentifier">
+      <path value="DocumentReference.masterIdentifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.identifier">
+      <path value="DocumentReference.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.status">
+      <path value="DocumentReference.status"/>
+      <fixedCode value="current"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.docStatus">
+      <path value="DocumentReference.docStatus"/>
+      <fixedCode value="final"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.category">
+      <path value="DocumentReference.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.subject">
+      <path value="DocumentReference.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+      </type>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DocumentReference.date">
+      <path value="DocumentReference.date"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.author">
+      <path value="DocumentReference.author"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+      </type>
+      <min value="1" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.authenticator">
+      <path value="DocumentReference.authenticator"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+      </type>
+      <min value="1" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.custodian">
+      <path value="DocumentReference.custodian"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+      </type>
+      <min value="1" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.description">
+      <path value="DocumentReference.description"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.content">
+      <path value="DocumentReference.content"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.content.attachment">
+      <path value="DocumentReference.content.attachment"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.context">
+      <path value="DocumentReference.context"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="DocumentReference.context.encounter">
+      <path value="DocumentReference.context.encounter"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>
