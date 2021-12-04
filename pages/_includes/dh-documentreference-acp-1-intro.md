@@ -13,5 +13,4 @@ This profile is used by the following APIs:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core TBD](StructureDefinition-dh-TBD-core-1.html), and 
-[ADHA Core TBD](StructureDefinition-dh-TBD-core-1.html).
+[ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-acp-1.html).

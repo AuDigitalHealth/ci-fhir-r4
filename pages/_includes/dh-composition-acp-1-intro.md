@@ -5,7 +5,9 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 This profile is designed to set a Composition standard for:
 * Query for an advance care planning document composition for a patient
+* Query for a Goals of Care document for a patient
 * Record or update a advance care planning document composition belonging to a patient
+* Record of update a Goals of Care document for a patient
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
