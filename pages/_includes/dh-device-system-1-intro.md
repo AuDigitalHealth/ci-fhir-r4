@@ -15,5 +15,8 @@ The following guidance applies:
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
-[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), and
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
+[ADHA Advance Care Custodian Record Composition](StructureDefinition-dh-composition-document-1.html),
+[ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-document-1.html),
+[ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-core-1.html), and 
 [ADHA Core List](StructureDefinition-dh-list-core-1.html).

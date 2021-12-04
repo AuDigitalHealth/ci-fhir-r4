@@ -57,12 +57,10 @@
     </element>
     <element id="DocumentReference.status">
       <path value="DocumentReference.status"/>
-      <fixedCode value="current"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.docStatus">
       <path value="DocumentReference.docStatus"/>
-      <fixedCode value="final"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.type">
@@ -92,7 +90,7 @@
       <path value="DocumentReference.author"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
@@ -108,7 +106,6 @@
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
-      <min value="1" />
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.custodian">
@@ -117,7 +114,6 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
-      <min value="1" />
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.description">

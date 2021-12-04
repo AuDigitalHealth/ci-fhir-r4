@@ -18,9 +18,11 @@ The following guidance applies:
 This profile is referenced by 
 [ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
-[ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
+[ADHA Advance Care Custodian Record Composition](StructureDefinition-dh-composition-document-1.html),
+[ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-document-1.html),[ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
 [ADHA System Device](StructureDefinition-dh-device-system-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
+[ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core Location](StructureDefinition-dh-location-core-1.html), 
 [ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
