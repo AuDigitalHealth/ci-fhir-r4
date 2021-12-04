@@ -89,6 +89,7 @@ This profile is referenced by
 [ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-document-1.html),[ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Personal Health Notes Document Composition](StructureDefinition-dh-composition-phn-1.html),
 [ADHA Personal Health Summary Document Composition](StructureDefinition-dh-composition-phs-1.html),[ADHA Implantable Medical Device](StructureDefinition-dh-device-implantable-1.html), 
+[ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-shs-1.html),
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html),
 [ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html),

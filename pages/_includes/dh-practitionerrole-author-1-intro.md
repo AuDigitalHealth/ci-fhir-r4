@@ -25,6 +25,7 @@ This profile is referenced by
 [ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-document-1.html),[ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
 [ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
+[ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-shs-1.html),
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core List](StructureDefinition-dh-list-core-1.html),
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html), 
