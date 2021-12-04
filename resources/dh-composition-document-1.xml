@@ -90,11 +90,12 @@
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>
-      <mustSupport value="true"/>
       <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject" />
+      <min value="1"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
@@ -207,9 +208,9 @@
       <path value="Composition.section.code" />
       <mustSupport value="true"/>
     </element>
-    <element id="Composition.section.text">
-      <path value="Composition.section.text" />
-      <mustSupport value="true"/>
+    <element id="Composition.section.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapShot"/>
     </element>
     <element id="Composition.section.entry">
       <path value="Composition.section.entry" />

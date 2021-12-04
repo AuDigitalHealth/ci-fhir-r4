@@ -1,0 +1,17 @@
+#### Australian Digital Health Agency Advance Care Planning Document Composition
+The purpose of this profile is to define a representation of an Advance Care Planning document that includes an attached Advance Care Plan for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation.
+
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
+
+This profile is designed to set a Composition standard for:
+* Query for an advance care planning document composition for a patient
+* Record or update a advance care planning document composition belonging to a patient
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
+
+#### Boundaries and relationships
+This profile is referenced by 
+[ADHA TBD](StructureDefinition-dh-TBD-core-1.html), and 
+[ADHA TBD](StructureDefinition-dh-TBD-core-1.html).

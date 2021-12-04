@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-composition-acp-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-acp-1"/>
+  <version value="0.0.1"/>
+  <name value="DHCompositionACP"/>
+  <title value="Australian Digital Health Agency Advance Care Planning Composition"/>
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of an Advance Care Planning document that includes an attached Advance Care Plan for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Composition"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Composition">
+      <path value="Composition"/>
+      <short value="Advance Care Planning Document"/>
+    </element>
+    <element id="Composition.meta">
+      <path value="Composition.meta"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile" />
+      <min value="1"/>
+      <patternCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-acp-1" />
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status"/>
+      <patternCode value="final"/>
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type"/>
+      <short value="Sub type of advance care planning document"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1"/>
+      </binding>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+          <code value="100.16975" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <short value="Author of the composition, may not be the author of the attached advance care planning document" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+      </type>
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section"/>
+      <short value="Advance Care Information" />
+      <max value="1"/>
+    </element>
+    <element id="Composition.section.title">
+      <path value="Composition.section.title" />
+      <min value="1"/>
+    </element>
+    <element id="Composition.section.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+          <code value="100.16975" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section.text">
+      <path value="Composition.section.text" />
+    </element>
+    <element id="Composition.section.entry">
+      <path value="Composition.section.entry" />
+      <short value="Advance care planning document reference" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-acp-1" />
+      </type>
+    </element>
+    <element id="Composition.section.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>
