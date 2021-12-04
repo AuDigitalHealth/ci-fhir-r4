@@ -453,21 +453,25 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                         </td> 
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
-                        <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
-                        <td class="frm-category">Public Health &amp; Research</td>
-                        <td class="frm-category">Definitional Artifacts</td>
-                        <td class="frm-category">Evidence-Based Medicine</td>
-                        <td class="frm-category">Quality Reporting &amp; Testing</td>
-                        <td class="frm-category">Medication Definition</td>
+                    <tr class="frm-group">
+                        <td rowspan="2" class="frm-group rotate"><div>Clinical</div></td>
+                        <td class="frm-category">Summary</td>
+                        <td class="frm-category">Diagnostics</td>
+                        <td class="frm-category">Medications</td>
+                        <td class="frm-category">Care Provision</td>
+                        <td class="frm-category">Request &amp; Response</td>
                     </tr>
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-norelevantfinding.html">AU Assertion of No Relevant Finding</a></li>
+                            </ul>
+                        </td>   
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
-                    </tr> -->
+                    </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                 </table>
             </div>

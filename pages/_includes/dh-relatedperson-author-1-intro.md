@@ -63,6 +63,8 @@ This profile is referenced by
 [ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html), 
 [ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html),
+[ADHA Personal Health Notes Document Composition](StructureDefinition-dh-composition-phn-1.html),
+[ADHA Personal Health Summary Document Composition](StructureDefinition-dh-composition-phs-1.html),
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core List](StructureDefinition-dh-list-core-1.html),

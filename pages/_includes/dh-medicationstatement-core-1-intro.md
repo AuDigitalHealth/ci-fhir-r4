@@ -99,5 +99,4 @@ The datetime in effective[x] is to be interpreted in regards to the combination 
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html), and 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html).
+[ADHA Personal Health Summary Document Composition](StructureDefinition-dh-composition-phs-1.html).

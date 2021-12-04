@@ -26,28 +26,28 @@
     <element id="Composition">
       <path value="Composition"/>
       <constraint>
-        <key value="inv-dh-cmp-01"/>
+        <key value="inv-dh-doc-01"/>
         <severity value="error"/>
         <human value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
         <expression value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>  
       <constraint>
-        <key value="inv-dh-cmp-02"/>
+        <key value="inv-dh-doc-02"/>
         <severity value="error"/>
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-cmp-03"/>
+        <key value="inv-dh-doc-03"/>
         <severity value="error"/>
         <human value="An author shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-cmp-04"/>
+        <key value="inv-dh-doc-04"/>
         <severity value="error"/>
         <human value="The custodian shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="custodian.reference.exists() or custodian.identifier.where(system.count() + value.count() &gt;1).exists()"/>
@@ -86,6 +86,7 @@
     </element>
     <element id="Composition.type">
       <path value="Composition.type"/>
+      <short value="Document sub type"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.category">
@@ -138,7 +139,7 @@
     <element id="Composition.attester">
       <path value="Composition.attester"/>
       <constraint>
-        <key value="inv-dh-cmp-04"/>
+        <key value="inv-dh-doc-04"/>
         <severity value="error"/>
         <human value="The party shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="party.reference.exists() or party.identifier.where(system.count() + value.count() &gt;1).exists()"/>
