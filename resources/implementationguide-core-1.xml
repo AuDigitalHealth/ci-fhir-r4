@@ -427,6 +427,13 @@
             <name value="Shared Health Summary Document Bundle for Mr Zhang Wei"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-shs-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/phn-01"/>
+            </reference>
+            <name value="Personal Health Notes Document Composition with contained resources"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phn-1"/>
+        </resource>
         <!--PATIENT EXAMPLES-->
         <resource>
             <reference>
@@ -470,6 +477,7 @@
             <name value="Australian Digital Health Agency Advance Care Planning Document DocumentReference"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1"/>
         </resource>-->
+        <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
         <resource>
             <reference>
                 <reference value="CodeSystem/nctis-data-components-1"/>
