@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Compliant with HI Test Data in Vendor Environment-->  
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="dolphinway65"/>
+    <id value="hi-testdata-mothercraft-nurse"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/practitionerrole-dh-base-1" />        
-    </meta>    
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+    </meta>
     <identifier>
         <type>
             <coding>
@@ -15,19 +15,16 @@
             <text value="HPI-I"/>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-        <value value="8003618233375111"/>
+        <value value="8003614900041243"/>
     </identifier>
     <practitioner>
-        <identifier>
-            <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-            <value value="8003618233375111"/>
-        </identifier>
+        <reference value="Practitioner/hi-testdata-guthridge-theodore"/>
     </practitioner> 
     <specialty>
         <coding>
             <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
-            <code value="411311"/>
+            <code value="411412"/>
         </coding>
-        <text value="Diversional Therapist"/>
+        <text value="Mothercraft Nurse"/>
     </specialty>
 </PractitionerRole>
