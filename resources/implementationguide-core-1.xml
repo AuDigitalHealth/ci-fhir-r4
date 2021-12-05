@@ -419,41 +419,35 @@
             <name value="Test Org -DigitalHealth 1 (Vendor Environment HI Test Data for Aged Care Residential Services organisation in WA)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>-->
-        <!--PATIENT EXAMPLES-->
-        <!--<resource>
+        <!--DOCUMENT EXAMPLES-->
+        <resource>
             <reference>
-                <reference value="Patient/1.2.36.1.2001.1001.105.100003"/>
+                <reference value="Bundle/shs-01"/>
+            </reference>
+            <name value="Shared Health Summary Document Bundle for Mr Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-shs-1"/>
+        </resource>
+        <!--PATIENT EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Patient/hi-testdata-moss-cleo"/>
             </reference>
             <name value="Cleo Moss Esq. (Vendor Environment HI Test Data plus telecom and living in TAS)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
-                <reference value="Patient/9562"/>
+                <reference value="Patient/hi-testdata-priest-mac"/>
             </reference>
             <name value="Mac Priest (Vendor Environment HI Test)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
-                <reference value="Patient/matterson-lenny-351"/>
+                <reference value="Patient/hi-testdata-matterson-lenny"/>
             </reference>
             <name value="Mr Lenny Matterson (Vendor Environment HI Test Data plus indigenous status, telecom, language)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/mhr-0240a34d-975d-4809-92a6-4d00a31ac1ac"/>
-            </reference>
-            <name value="Mr Daniel Craig (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/mhr-7e5a8c0a-4e93-4bbb-a369-22572c8a0c3c"/>
-            </reference>
-            <name value="Ms Sally Field (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
         </resource>
         <resource>
             <reference>
@@ -464,25 +458,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/995138d0-b8bc-4bd9-b49d-d2d025d39ae7"/>
-            </reference>
-            <name value=">Mr Zhang Wei (P2P Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Patient/mhr-anne-thompson"/>
             </reference>
             <name value="Mrs. Anne Thompson (My Health Record Patient)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/p2p-anne-thompson"/>
-            </reference>
-            <name value="Mrs. Anne Thompson (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
-        </resource>-->
         <!--<resource>
             <reference>
                 <reference value="DocumentReference/8676968"/>

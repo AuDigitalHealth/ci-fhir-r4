@@ -36,8 +36,8 @@
       <path value="Composition.type"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
-          <code value="100.16685" />
+          <system value="http://loinc.org"/>
+          <code value="60591-5" />
         </coding>
       </patternCodeableConcept>
     </element>
@@ -45,8 +45,8 @@
       <path value="Composition.category"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
-          <code value="100.16685" />
+          <system value="http://loinc.org"/>
+          <code value="60591-5" />
         </coding>
       </patternCodeableConcept>
     </element>
@@ -143,7 +143,7 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
     <element id="Composition.section:currentmedicicines">
@@ -164,7 +164,7 @@
         <key value="inv-dh-shs-04"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no known current medications"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is value and value.coding.code = '1200661000168107').exists())"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-shs-1" />
       </constraint>
     </element>
@@ -195,7 +195,7 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
     <element id="Composition.section:medicalHistory">
@@ -216,7 +216,7 @@
         <key value="inv-dh-shs-06"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no relevant medical history"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is value and value.coding.code = '1224831000168103').exists())"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code = '1224831000168103').exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-shs-1" />
       </constraint>
     </element>
@@ -248,7 +248,7 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
     <element id="Composition.section:immunisations">
@@ -269,7 +269,7 @@
         <key value="inv-dh-shs-08"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no history of vaccination"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is value and value.coding.code = '1234401000168109').exists())"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code='1234401000168109').exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-shs-1" />
       </constraint>
     </element>
@@ -300,7 +300,7 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
   </differential>
