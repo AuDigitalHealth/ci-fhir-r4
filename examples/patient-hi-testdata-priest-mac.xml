@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Compliant with HI Test Data in Vendor Environment-->
 <Patient xmlns="http://hl7.org/fhir">
-    <id value="pat.751983"/>
+    <id value="hi-testdata-priest-mac"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/patient-ident-1"/>  
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
     </meta>
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
             <table>
                 <tr>
-                    <td>Last Name</td>
-                    <td>Goodwin</td>
+                    <td>LASTNAME</td>
+                    <td>PRIEST</td>
                 </tr>
                 <tr>
-                    <td>First Name</td>
-                    <td>Bonny</td>
+                    <td>FIRSTNAME</td>
+                    <td>Mac</td>
                 </tr>
                 <tr>
-                    <td>IHI</td>
-                    <td>8003608000228445</td>
+                    <td>IHI NUMBER</td>
+                    <td>8003608333563104</td>
                 </tr>
                 <tr>
-                    <td>Medicare Number</td>
-                    <td>3951032981</td>
+                    <td>MEDICARE CARD</td>
+                    <td>2953307121</td>
                 </tr>
-              <tr>
+                <tr>
                     <td>DOB</td>
-                    <td>13 November 1986</td>
+                    <td>9 March 1989</td>
                 </tr>
                 <tr>
-                    <td>Gender</td>
-                    <td>F</td>
+                    <td>GENDER</td>
+                    <td>M</td>
                 </tr>
             </table>
         </div>
@@ -44,40 +44,28 @@
                 <code value="NI"/>
                 <display value="National unique individual identifier"/>
             </coding>
-            <text value="IHI"/>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-        <value value="8003608000228445"/>
+        <value value="8003608333563104"/>
     </identifier>
     <identifier>
         <type>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="MC"/>
-                <display value="Patient's Medicare number"/>
+                <display value="Patient&apos;s Medicare number"/>
             </coding>
-            <text value="Medicare Number"/>
         </type>
         <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
-        <value value="3951032981"/>
+        <value value="2953307121"/>
         <period>
-            <end value="2024-08"/>
+            <end value="2024-03-31"/>
         </period>
     </identifier>
     <name>
-        <use value="official"/>
-        <family value="Goodwin"/>
-        <given value="Bonny"/>
-        <prefix value="Mrs."/>
+        <family value="PRIEST"/>
+        <given value="Mac"/>
     </name>
-    <gender value="female"/>    
-    <birthDate value="1986-11-13"/>
-    <maritalStatus>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="M"/>
-            <display value="Married"/>
-        </coding>
-        <text value="Married"/>
-    </maritalStatus>
+    <gender value="male"/>    
+    <birthDate value="1989-03-09"/>
 </Patient>
