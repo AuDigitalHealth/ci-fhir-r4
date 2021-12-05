@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Compliant with HI Test Data in Vendor Environment-->
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="8507413485471365"/>
+    <id value="hi-testdata-racs"/>
     <meta>
-        <versionId value="1.0"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
     </meta>
     <identifier>
         <type>
@@ -14,32 +14,34 @@
             <text value="HPI-O"/>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
-        <value value="8003623233366573"/>
+        <value value="8003623233366565"/>
     </identifier>
     <type>
         <coding>
             <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
-            <code value="8533"/>
-            <display value="Physiotherapy Services"/>
+            <code value="8601"/>
+            <display value="Aged Care Residential Services"/>
         </coding>
+        <text value="Aged Care Residential Services"/>
     </type>
-    <name value="Test Org -DigitalHealth 3"/>
+    <name value="Test Org -DigitalHealth 1"/>
     <telecom>
         <system value="email"/>
-        <value value="info@testorg3.example.com"/>
+        <value value="info@testorg1.example.com"/>
         <use value="work"/>
     </telecom>
     <telecom>
         <system value="phone"/>
-        <value value="(03) 7010 3248"/>
-        <use value="work"/>
+        <value value="(08) 5550 2427"/>
+        <use value="temp"/>
     </telecom>
     <address>
-        <type value="both"/>
-       <line value="34 Queen St"/>
-        <city value="Coburg"/>
-        <state value="VIC"/>
-        <postalCode value="3058"/>
+        <use value="work"/>
+        <type value="physical"/>
+        <line value="12 Hoseason St"/>
+        <city value="FREMANTLE"/>
+        <state value="WA"/>
+        <postalCode value="6160"/>
         <country value="AU"/>
     </address>
 </Organization>

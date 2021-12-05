@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Compliant with HI Test Data in Vendor Environment-->
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="1.2.36.1.2001.1001.105.100004.5869"/>
+    <id value="hi-testdata-optical"/>
     <meta>
-        <versionId value="3.0"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
     </meta>
     <identifier>
         <type>
@@ -14,21 +14,24 @@
             <text value="HPI-O"/>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
-        <value value="8003629900033370"/>
+        <value value="8003626566699742"/>
     </identifier>
     <type>
         <coding>
             <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
-            <code value="4271"/>
-            <display value="Retail Pharmacy"/>
+            <code value="8532"/>
+            <display value="Optometry and Optical Dispensing"/>
         </coding>
     </type>
-    <name value="Test Org -DigitalHealth 6"/>
+    <name value="Test Org -DigitalHealth 4"/>
+    <alias value="Digital Health 4"/>
+    <alias value="Digital Health Four"/>
     <address>
-        <line value="570 Whatcha St"/>
-        <city value="GLEBE"/>
+        <type value="physical"/>
+        <line value="23 Marcus Cres"/>
+        <city value="KEMPSEY"/>
         <state value="NSW"/>
-        <postalCode value="2037"/>
+        <postalCode value="2440"/>
         <country value="AU"/>
     </address>
 </Organization>
