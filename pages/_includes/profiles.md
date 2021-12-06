@@ -259,7 +259,6 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA MHR Payload Bundle (Joint w CI &amp; Architecture Team)</li>   
                                 <li>MessageHeader profiles (Architecture Team)</li>  
                                 <li>Operation Outcome profiles (Architecture Team)</li>  
-                                <li>Parameters profiles (Architecture Team)</li>                                
                             </ul>
                         </td> 
                     </tr>
