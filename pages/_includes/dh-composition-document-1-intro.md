@@ -3,6 +3,8 @@ The purpose of this profile is to provide a document composition for the electro
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
 
+This profile supports the equivalent of all HL7 CDA conformance levels for a clinical document as defined in the Agency's Common Conformance Profile for Clinical Documents.
+
 This profile is designed to set a Composition standard for:
 * exchanging a FHIR Document
 * Query for a document for a patient

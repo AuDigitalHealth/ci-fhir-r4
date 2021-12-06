@@ -3,6 +3,8 @@ The purpose of this profile is to define a representation of a mixed narrative a
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
 
+This profile supports the equivalent of a HL7 CDA instance with a mixed conformance Level 2, Level 3A or 3B clinical document as defined in the Agency's Common Conformance Profile for Clinical Documents.
+
 This profile is designed to set a Composition standard for:
 * Query for a mixed narrative and structured data Summary document for a patient
 * Record or update a mixed narrative and structured data Event Summary document for a patient
