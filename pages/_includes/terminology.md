@@ -18,22 +18,10 @@ The following value sets form part of this implementation guide.
         <th>Usage</th>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-contact-purpose.html">Contact Purpose</a></td>
-        <td>HL7 AU</td>
-        <td>http://terminology.hl7.org.au/ValueSet/contact-purpose</td>
-        <td><a href="StructureDefinition-dh-organization-core-1.html">ADHA Core Organization</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-contact-purpose.html">Contact Purpose</a></td>
-    </tr>
-    <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-v3-ActEncounterCode-extended.html">ActEncounterCode - AU Extended</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/ValueSet/v3-ActEncounterCode-extended</td>
         <td><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></td>
-    </tr>
-    <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-v2-0203-extended.html">hl7VS-identifierType - AU Extended</a></td>
-        <td>HL7 AU</td>
-        <td>http://terminology.hl7.org.au/ValueSet/v2-0203-extended</td>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-2">Indicator of Hypersensitivity or Intolerance to Substance</a></td>
@@ -161,6 +149,12 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/composition-status</td>
         <td><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></td>
+    </tr>
+   <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1">Clinical Condition</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1</td>
+         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr> 
     <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/condition-category">Condition Category Codes</a></td>
@@ -181,16 +175,16 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
     </tr>
     <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1">Clinical Condition</a></td>
-        <td>ADHA</td>
-        <td>https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1</td>
-         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
-    </tr>
-    <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/condition-ver-status">ConditionVerificationStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-contact-purpose.html">Contact Purpose</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/ValueSet/contact-purpose</td>
+        <td><a href="StructureDefinition-dh-organization-core-1.html">ADHA Core Organization</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-contact-purpose.html">Contact Purpose</a></td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/contact-relationship-type-3">Contact Relationship Type</a></td>
@@ -253,6 +247,12 @@ The following value sets form part of this implementation guide.
         <td>http://terminology.hl7.org/ValueSet/v2-0131</td>
         <td><a href="StructureDefinition-dh-patient-demographics-1.html">ADHA Patient Demographics</a></td>
     </tr> 
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-v2-0203-extended.html">hl7VS-identifierType - AU Extended</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/ValueSet/v2-0203-extended</td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></td>
+    </tr>
     <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a></td>
         <td>HL7</td>
