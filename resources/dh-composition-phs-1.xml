@@ -130,7 +130,7 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
     <element id="Composition.section:currentmedicicines">
@@ -151,7 +151,7 @@
         <key value="inv-dh-phs-04"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no known current medications"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is value and value.coding.code = '1200661000168107').exists())"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phs-1" />
       </constraint>
     </element>
@@ -182,40 +182,8 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
-    </element>
-    <element id="Composition.section:medicalHistory">
-      <path value="Composition.section"/>
-      <sliceName value="medicalHistory"/>
-      <short value="Medical History"/>
-      <definition value="Information about the problems, diagnoses and medical or surgical procedures of a patient. This can include statements that a patient does not have a particular condition."/>
-      <min value="1"/>
-      <max value="1"/>
-      <constraint>
-        <key value="inv-dh-phs-05"/>
-        <severity value="error"/>
-        <human value="This section shall not contain a condition or procedure, and an assertion of no relevant finding"/>
-        <expression value="(entry.resolve().where($this is Condition).exists() or entry.resolve().where($this is Procedure).exists()) xor entry.resolve().where($this is Observation).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phs-1" />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-phs-06"/>
-        <severity value="error"/>
-        <human value="At most one assertion of no relevant finding shall be present and it shall assert no relevant medical history"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is value and value.coding.code = '1224831000168103').exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phs-1" />
-      </constraint>
-    </element>
-    <element id="Composition.section:medicalHistory.code">
-      <path value="Composition.section.code"/>
-      <min value="1"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="101.16117"/>
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Composition.section:immunisations">
       <path value="Composition.section"/>
@@ -235,7 +203,7 @@
         <key value="inv-dh-phs-08"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no history of vaccination"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is value and value.coding.code = '1234401000168109').exists())"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1234401000168109').exists())"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phs-1" />
       </constraint>
     </element>
@@ -266,7 +234,7 @@
       <path value="Composition.section.emptyReason"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
   </differential>
