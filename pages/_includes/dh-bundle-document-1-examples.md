@@ -5,6 +5,13 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
+      <td><a href="bundle-goc-doc-01.html">Goals of Care Document Bundle for Mr Zhang Wei</a></td>
+      <td>goc-doc-01</td>
+      <td><a href="bundle-goc-doc-01.xml.html">XML</a></td>
+      <td><a href="bundle-goc-doc-01.json.html">JSON</a></td>
+      <td><a href="bundle-goc-doc-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="bundle-shs-01.html">Shared Health Summary Document Bundle for Mr Zhang Wei</a></td>
       <td>shs-01</td>
       <td><a href="bundle-shs-01.xml.html">XML</a></td>

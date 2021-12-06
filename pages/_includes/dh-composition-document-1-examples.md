@@ -10,5 +10,12 @@
       <td><a href="bundle-shs-01.xml.html">XML</a></td>
       <td><a href="bundle-shs-01.json.html">JSON</a></td>
       <td><a href="bundle-shs-01.ttl.html">Turtle</a></td>
-   </tr>                  
+   </tr> 
+   <tr>
+      <td><a href="composition-phn-01.html">Personal Health Notes Document Composition with contained resources</a></td>
+      <td>phn-01</td>
+      <td><a href="composition-phn-01.xml.html">XML</a></td>
+      <td><a href="composition-phn-01.json.html">JSON</a></td>
+      <td><a href="composition-phn-01.ttl.html">Turtle</a></td>
+   </tr>                 
 </table>
