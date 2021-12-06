@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-bundle-document-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+  <id value="dh-bundle-payload-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-payload-1"/>
   <version value="0.0.1"/>
   <name value="DHBundleDocument"/>
   <title value="Australian Digital Health Agency Document Bundle"/>
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a collection of resources handled as a document for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <description value="The purpose of this profile is to provide a collection of resources handled as a single collection for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource"/>
@@ -33,7 +33,6 @@
     </element>
     <element id="Bundle.type">
       <path value="Bundle.type"/>
-      <fixedCode value="document"/>
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.timestamp">
@@ -46,44 +45,12 @@
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="resource.resourceType" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.entry.fullUrl">
       <path value="Bundle.entry.fullUrl" />
       <min value="1" />
       <mustSupport value="true"/>
-    </element>
-    <element id="Bundle.entry:composition">
-      <path value="Bundle.entry" />
-      <sliceName value="composition" />
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry.resource:composition">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
-      </type>
-    </element>
-    <element id="Bundle.entry:patient">
-      <path value="Bundle.entry" />
-      <sliceName value="patient" />
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry.resource:patient">
-      <path value="Bundle.entry.resource" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
