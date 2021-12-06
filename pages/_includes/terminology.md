@@ -54,6 +54,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></td>
     </tr>
     <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1">Advance Care Planning Document Type</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1</td>
+        <td><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></td>
+    </tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1">Adverse Reaction Agent</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1</td>
@@ -135,13 +141,13 @@ The following value sets form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html">CompositionAttestationMode</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/composition-attestation-mode</td>
-        <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a></td>
+        <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/composition-status</td>
-        <td><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a></td>
+        <td><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></td>
     </tr> 
     <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/condition-category">Condition Category Codes</a></td>
@@ -196,19 +202,25 @@ The following value sets form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a></td>
         <td>HL7</td>
         <td>	http://hl7.org/fhir/ValueSet/document-reference-status</td>
-        <td><a href="StructureDefinition-dh-documentreference-1.html">ADHA Core DocumentReference</a></td>
+        <td><a href="StructureDefinition-dh-documentreference-1.html">ADHA Core DocumentReference</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">Advance Care Planning Document DocumentReference</a></td>
     </tr>  
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/document-relationship-type</td>
-        <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a></td>
+        <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
     </tr>   
     <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/event-status</td>
         <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1">Health Summary Non-Clinical Empty Reason</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1</td>
+        <td><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
     </tr>
     <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a></td>
