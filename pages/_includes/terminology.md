@@ -48,6 +48,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a>, <a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/administrative-gender</td>
+        <td><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></td>
+    </tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1">Adverse Reaction Agent</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1</td>
@@ -118,6 +124,12 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/bundle-type</td>
         <td><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a>, <a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2">Common Languages in Australia</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2</td>
+        <td><a href="StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a>, <a href="StructureDefinition-dh-practitioner-core-1.html">ADHA Core Practitioner</a>, <a href="StructureDefinition-dh-relatedperson-core-1.html">ADHA Core RelatedPerson</a> </td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html">CompositionAttestationMode</a></td>
@@ -211,6 +223,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-list-status.html">ListStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/list-status</td>
+        <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/location-status</td>
@@ -258,6 +276,12 @@ The following value sets form part of this implementation guide.
         <td>http://hl7.org/fhir/ValueSet/medicationrequest-status</td>
         <td><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></td>
     </tr>
+     <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-1">Non-Clinical Empty Reason</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-1</td>
+        <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></td>
+    </tr>   
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
         <td>HL7</td>
@@ -283,6 +307,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
     </tr>
     <tr>
+        <td><a href="">https://healthterminologies.gov.au/fhir/ValueSet/separation-mode-1</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/separation-mode-1</td>
+        <td><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></td>
+    </tr>
+    <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a></td>
         <td>HL7</td>
         <td>http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType</td>
@@ -295,136 +325,10 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td><a href="http://hl7.org/fhir/R4/valueset-substance-category.html">Substance Category Codes</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/substance-category</td>
+        <td><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
@@ -548,10 +452,22 @@ The following code systems form part of this implementation guide.
         <th>OID</th>
     </tr>
     <tr>
+        <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html">ActCode</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td>
+        <td>2.16.840.1.113883.5.4</td>
+    </tr>
+    <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v3-ActCode.html">ActCode AU</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/v3-ActCode</td>
         <td>2.16.840.1.113883.2.3.4.1.4.20</td>
+    </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">	AdministrativeGender</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/administrative-gender</td>
+        <td>2.16.840.1.113883.4.642.4.2</td>
     </tr>
     <tr>
         <td><a href="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical">AllergyIntolerance Clinical Status Codes</a></td>
@@ -613,6 +529,7 @@ The following code systems form part of this implementation guide.
         <td>http://hl7.org/fhir/bundle-type</td>
         <td>2.16.840.1.113883.4.642.4.621</td>
     </tr>
+  
     <tr>
         <td><a href="http://hl7.org/fhir/R4/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a></td>
         <td>HL7</td>
@@ -699,6 +616,12 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.8</td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html">EncounterStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/encounter-status</td>
+        <td>2.16.840.1.113883.4.642.4.247</td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/event-status">EventStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/event-status</td>
@@ -764,6 +687,12 @@ The following code systems form part of this implementation guide.
         <td>http://terminology.hl7.org/CodeSystem/list-empty-reason</td>
         <td>2.16.840.1.113883.4.642.4.1106</td>
     </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-list-status.html">ListStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/list-status</td>
+        <td>2.16.840.1.113883.4.642.4.327</td>
+    </tr>   
     <tr>
         <td><a href="http://hl7.org/fhir/R4/codesystem-location-status.html">LocationStatus</a></td>
         <td>HL7</td>
@@ -836,6 +765,12 @@ The following code systems form part of this implementation guide.
         <td>http://snomed.info/sct</td>
         <td>2.16.840.1.113883.6.96</td>
     </tr>
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-substance-category.html">Substance Category Codes</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/substance-category</td>
+        <td>2.16.840.1.113883.4.642.4.1138 </td>
+    </tr>  
     <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v2-0916.html">RelevantClincialInformation</a></td>
         <td>HL7</td>
@@ -1040,160 +975,4 @@ The following code systems form part of this implementation guide.
         <td>TBD</td>
         <td>TBD</td>
     </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-</table>
+  </table>
