@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="f1d5844f-dd39-457d-867b-f50a00f91731"/>
+    <id value="algrester-greg-gp"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
     </meta>    
     <identifier>
         <type>
@@ -19,11 +20,23 @@
             <display value="Algregster Medical Center QLD"/>
         </assigner>
     </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003614900041243"/>
+    </identifier>
     <practitioner>
-        <display value="Dr Greg Algregster"/>
+        <reference value="Practitioner/algrester-greg"/>
     </practitioner> 
     <organization>
-        <display value="Algregster Medical Center QLD"/>
+        <reference value="Organization/algrester-medical-centre"/>
     </organization>
     <code>
         <coding>
@@ -31,5 +44,13 @@
             <code value="62247001"/>
         </coding>
         <text value="General Practitioner"/>
-    </code>    
+    </code>
+    <telecom>
+        <system value="phone"/>
+        <value value="0491579760"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="drgreg@algregstermedical.example.com"/>        
+    </telecom>    
 </PractitionerRole>

@@ -341,84 +341,7 @@
             <exampleBoolean value="false"/>
         </resource>
         <!--EXAMPLES-->
-       <!-- ORGANIZATION EXAMPLES-->
-        <!--<resource>
-            <reference>
-                <reference value="Organization/8507413485471365"/>
-            </reference>
-            <name value="Test Org -DigitalHealth 3 (Vendor Environment HI Test Data for Physiotherapy services organisation in VIC)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/09ea9b5e69df9e"/>
-            </reference>
-            <name value="Test Org -DigitalHealth 5 (Vendor Environment HI Test Data for Dental Practice organisation in VIC)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/e27d1ae9-50c1-444c-bd1c-237cb4ffe137"/>
-            </reference>
-            <name value="Flemington Pathology VIC"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/1.2.36.1.2001.1001.105.100001.5437512835128"/>
-            </reference>
-            <name value="Ascot Vale Family Medical Centre in VIC"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/hallam-medical-clinic"/>
-            </reference>
-            <name value="Hallam Medical Clinic in VIC"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/1.2.36.1.2001.1001.105.100004.5869"/>
-            </reference>
-            <name value="Test Org -DigitalHealth 6 (Vendor Environment HI Test Data for Retail Pharmacy in NSW)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/d9b1a051-034c-4c11-a504-8d75d72bf4ec"/>
-            </reference>
-            <name value="Randwick Laboratories Sydney"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/nsw-hospital"/>
-            </reference>
-            <name value="NSW Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/e0c5fa86-2184-4a5b-8c47-041422643440"/>
-            </reference>
-            <name value="Doomben Pathology QLD"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/qld-hospital"/>
-            </reference>
-            <name value="QLD Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/0867b29b-f1ed-4a05-96b1-ab87003a0ace"/>
-            </reference>
-            <name value="Test Org -DigitalHealth 1 (Vendor Environment HI Test Data for Aged Care Residential Services organisation in WA)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>-->
+
         <!--DOCUMENT EXAMPLES-->
         <resource>
             <reference>
@@ -433,6 +356,36 @@
             </reference>
             <name value="Personal Health Notes Document Composition with contained resources"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phn-1"/>
+        </resource>
+        <!--DOCUMENT REFERENCES-->
+        <resource>
+            <reference>
+                <reference value="DocumentReference/acp-01"/>
+            </reference>
+            <name value="Advance Care Planning Document Reference for Mr Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-acp-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DocumentReference/acp-02"/>
+            </reference>
+            <name value="Goals of Care Document Reference for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-acp-1"/>
+        </resource>
+        <!--<resource>
+            <reference>
+                <reference value="DocumentReference/8676968"/>
+            </reference>
+            <name value="Australian Digital Health Agency Advance Care Planning Document DocumentReference"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1"/>
+        </resource>-->
+        <!-- ORGANIZATION EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Organization/algrester-medical-centre"/>
+            </reference>
+            <name value="Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <!--PATIENT EXAMPLES-->
         <resource>
@@ -470,13 +423,23 @@
             <name value="Mrs. Anne Thompson (My Health Record Patient)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
         </resource>
-        <!--<resource>
+        <!-- PRACTITIONER EXAMPLES-->
+        <resource>
             <reference>
-                <reference value="DocumentReference/8676968"/>
+                <reference value="Practitioner/algrester-greg"/>
             </reference>
-            <name value="Australian Digital Health Agency Advance Care Planning Document DocumentReference"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1"/>
-        </resource>-->
+            <name value="Dr. Greg Algrester"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1"/>
+        </resource>
+        <!-- PRACTITIONERROLE EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/algrester-greg-gp"/>
+            </reference>
+            <name value="Dr. Greg Algrester, GP, at Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        
         <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
         <resource>
             <reference>
