@@ -97,6 +97,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-composition-es-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Event Summary Document Composition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-composition-es-narrative-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Event Summary Narrative"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-composition-phn-1"/>
             </reference>
             <name value="Australian Digital Health Agency Personal Health Notes Document Composition"/>
@@ -469,6 +483,30 @@
         </resource>
         
         <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
+        <resource>
+            <reference>
+                <reference value="CodeSystem/australian-indigenous-status-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/date-accuracy-indicator-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/ihi-record-status-1.0.2"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/ihi-status-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="CodeSystem/nctis-data-components-1"/>
