@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-composition-es-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"/>
+  <id value="dh-composition-es-mix-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1"/>
   <version value="0.0.1"/>
   <name value="DHCompositionES"/>
-  <title value="Australian Digital Health Agency Event Summary Document Composition"/>
+  <title value="Australian Digital Health Agency Event Summary Mixed Narrative and Structure"/>
   <status value="draft" />
   <experimental value="false" />
   <publisher value="Australian Digital Health Agency" />
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation." />
+  <description value="The purpose of this profile is to define a representation of a mixed narrative and structured data Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation." />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource"/>
@@ -85,16 +85,9 @@
       <constraint>
         <key value="inv-dh-es-01"/>
         <severity value="error"/>
-        <human value="A section shall at least have an entry or an empty reason, but not both"/>
-        <expression value="entry.exists() xor emptyReason.exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-es-02"/>
-        <severity value="error"/>
         <human value="All observations shall conform one of: ADHA Simple Observation, ADHA Diagnostic Result Group Observation, ADHA Diagnostic Result Observation"/>
         <expression value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1') or entry.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresult-1')"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
     </element>
     <element id="Composition.section.title">
@@ -119,6 +112,7 @@
     </element>
     <element id="Composition.section:eventOverview.code">
       <path value="Composition.section.code"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
@@ -129,7 +123,6 @@
     <element id="Composition.section:eventOverview.entry">
       <path value="Composition.section.entry"/>
       <short value="Encounter summary"/>
-      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Reference"/>
@@ -183,18 +176,18 @@
       <definition value="Information about medicines that are relevant to the encounter. The medicines included do not constitute a full medications list, but are those medicines that have specifically changed as a result of the encounter, or those medicines directly relevant to the encounter."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-es-03"/>
+        <key value="inv-dh-es-02"/>
         <severity value="error"/>
         <human value="This section shall not contain a statement of medication use and an assertion of no relevant finding"/>
         <expression value="entry.resolve().where($this is MedicationStatement).exists() xor entry.resolve().where($this is Observation ).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-es-04"/>
+        <key value="inv-dh-es-03"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no known current medications"/>
         <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
     </element>
     <element id="Composition.section:medicines.code">
@@ -234,18 +227,18 @@
       <definition value="Information about the problems, diagnoses and medical or surgical procedures of a patient. This can include statements that a patient does not have a particular condition."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-es-05"/>
+        <key value="inv-dh-es-04"/>
         <severity value="error"/>
         <human value="This section shall not contain a condition or procedure, and an assertion of no relevant finding"/>
         <expression value="(entry.resolve().where($this is Condition).exists() or entry.resolve().where($this is Procedure).exists()) xor entry.resolve().where($this is Observation).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-es-06"/>
+        <key value="inv-dh-es-05"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no relevant medical history"/>
         <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code = '1224831000168103').exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
     </element>
     <element id="Composition.section:medicalHistory.code">
@@ -286,18 +279,18 @@
       <definition value="Information about vaccinations administered or reported to be administered during this encounter. This may include statements that a patient has not had a particular vaccine administered."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-es-07"/>
+        <key value="inv-dh-es-06"/>
         <severity value="error"/>
         <human value="This section shall not contain both an immunisation and an assertion of no relevant finding"/>
         <expression value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation ).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
       <constraint>
-        <key value="inv-dh-es-08"/>
+        <key value="inv-dh-es-07"/>
         <severity value="error"/>
         <human value="At most one assertion of no relevant finding shall be present and it shall assert no vaccine administered during encounter"/>
         <expression value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code='1226591000168105').exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-mix-1" />
       </constraint>
     </element>
     <element id="Composition.section:immunisations.code">

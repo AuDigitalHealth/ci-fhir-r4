@@ -79,23 +79,9 @@
           <type value="pattern"/>
           <path value="code"/>
         </discriminator>
-        <rules value="closed"/>
+        <rules value="open"/>
       </slicing>
       <min value="1"/>
-      <constraint>
-        <key value="inv-dh-es-01"/>
-        <severity value="error"/>
-        <human value="A section shall at least have an entry or an empty reason, but not both"/>
-        <expression value="entry.exists() xor emptyReason.exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-narrative-1" />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-es-02"/>
-        <severity value="error"/>
-        <human value="All observations shall conform to ADHA Simple Observation"/>
-        <expression value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1')"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-narrative-1" />
-      </constraint>
     </element>
     <element id="Composition.section.title">
       <path value="Composition.section.title" />
