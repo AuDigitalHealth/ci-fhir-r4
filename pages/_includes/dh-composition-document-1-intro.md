@@ -3,6 +3,8 @@ The purpose of this profile is to provide a document composition for the electro
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
 
+Where a more specific document composition profile is applicable, e.g. shared health summary or personal health notes, an implementation **SHALL** ensure the Resource conforms to that specific profile.
+
 This profile supports the equivalent of all HL7 CDA conformance levels for a clinical document as defined in the Agency's Common Conformance Profile for Clinical Documents.
 
 This profile is designed to set a Composition standard for:
@@ -13,4 +15,15 @@ This profile is designed to set a Composition standard for:
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), and
-[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html)..
+[ADHA Document Composition](StructureDefinition-dh-composition-document-1.html).
+
+These profiles build on this profile ([ADHA Document Composition](StructureDefinition-dh-composition-document-1.html)) to define specific document compositions:
+* [ADHA Advance Care Directive Custodian Record Document Composition](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Advance Care Planning Document Composition](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Event Summary Document Composition](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Event Summary Narrative](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Person Health Notes Document Composition](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Person Health Summary Document Composition](StructureDefinition-dh-bundle-document-1.html) 
+* [ADHA Person Health Notes Document Composition](StructureDefinition-dh-bundle-document-1.html)
+* [ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-document-1.html)

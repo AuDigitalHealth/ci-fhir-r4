@@ -17,5 +17,6 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
+[ADHA Event Summary Document Composition](StructureDefinition-dh-composition-phs-1.html),
 [ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-shs-1.html), and
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html). 
