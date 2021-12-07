@@ -4,9 +4,8 @@
      <th>id</th>
      <th colspan="3">Format</th>
    </tr>
-   <tr>>
    <tr>
-      <td><a href="Bundle-shs-01.html">Assertion of No Relevant Finding Observation entry included in Shared Health Summary Document Bundle for Mr Zhang Wei</a></td>
+      <td><a href="Bundle-shs-01.html">Assertion of No Relevant Finding Observation entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
       <td>shs-01</td>
       <td><a href="Bundle-shs-01.xml.html">XML</a></td>
       <td><a href="Bundle-shs-01.json.html">JSON</a></td>
