@@ -17,6 +17,12 @@ The following value sets form part of this implementation guide.
         <th>URI</th>
         <th>Usage</th>
     </tr>
+        <tr>
+        <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v3-ActEncounterCode.html">ActEncounterCode</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</td>
+        <td><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></td>
+    </tr>
     <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-v3-ActEncounterCode-extended.html">ActEncounterCode - AU Extended</a></td>
         <td>HL7 AU</td>
@@ -33,7 +39,7 @@ The following value sets form part of this implementation guide.
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1">Clinical Finding</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1</td>
-        <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a>, <a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></td>
+        <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a>, <a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dosage.html">AU Base Dosage</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a></td>
@@ -89,19 +95,24 @@ The following value sets form part of this implementation guide.
         <td>http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality</td>
         <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></td>
     </tr>
-    <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1">Australian Indigenous Status</a></td>
-        <td>ADHA</td>
-        <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1</td>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-indigenous-status.html">Australian Indigenous Status </a></td>
-    </tr>
-    <tr>
+        <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-timezone.html">AU Time Zone</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/ValueSet/au-timezone</td>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-timezone.html">Australian Time Zone</a></td>
     </tr>
-    
+    <tr>
+        <td><a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/australian-immunisation-register-vaccine-1">Australian Immunisation Register Vaccine</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-immunisation-register-vaccine-1</td>
+        <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1">Australian Indigenous Status</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1</td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-indigenous-status.html">Australian Indigenous Status</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-dh-patient-core-1.html">ADHA Core Patient</a></td>
+    </tr>
     <tr>
         <td><a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/australian-medication-1">Australian Medication</a></td>
         <td>ADHA</td>
@@ -112,15 +123,21 @@ The following value sets form part of this implementation guide.
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1">Australian Medicines Terminology Vaccine</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/amt-vaccine-1</td>
-        <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">ADHA Core Immunization</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2">Australian States and Territories</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2</td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">Australian Address</a></td>
     </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1">Body Site</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/body-site-1</td>
-        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a>, <a href="StructureDefinition-dh-medicationadministration-core-1.html">ADHA Core MedicationAdministration</a></td>
+        <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a>, <a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a>, <a href="StructureDefinition-dh-medicationadministration-core-1.html">ADHA Core MedicationAdministration</a>, <a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dosage.html">AU Base Dosage</a></td>
     </tr>
-        <tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/body-site-relative-site-qualifier-1">Body Site Relative Site Qualifier</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/body-site-relative-site-qualifier-1</td>
@@ -228,7 +245,19 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/document-relationship-type</td>
         <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
-    </tr>   
+    </tr> 
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-dva-entitlement.html">DVA Entitlement</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org.au/ValueSet/dva-entitlement</td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dvanumber.html">AU DVA Number</a></td>
+    </tr> 
+    <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/encounter-status</td>
+        <td><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></td>
+    </tr>  
     <tr>
         <td><a href="http://hl7.org/fhir/ValueSet/event-status">EventStatus</a></td>
         <td>HL7</td>
@@ -236,9 +265,9 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></td>
     </tr>
     <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1">Health Summary Non-Clinical Empty Reason</a></td>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2">Health Summary Non-Clinical Empty Reason</a></td>
         <td>ADHA</td>
-        <td>https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-1</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2</td>
         <td><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
     </tr>
        <tr>
@@ -252,6 +281,12 @@ The following value sets form part of this implementation guide.
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/ValueSet/v2-0203-extended</td>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a>, <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4//ValueSet-au-v2-0443-extended.html">hl7VS-providerRole - AU Extended</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/ValueSet/v2-0443-extended</td>
+        <td><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></td>
     </tr>
     <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a></td>
@@ -344,9 +379,9 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></td>
     </tr>
      <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-1">Non-Clinical Empty Reason</a></td>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2">Non-Clinical Empty Reason</a></td>
         <td>ADHA</td>
-        <td>https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-1</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2</td>
         <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></td>
     </tr>   
     <tr>
@@ -366,6 +401,12 @@ The following value sets form part of this implementation guide.
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1</td>
         <td><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a>, <a href="StructureDefinition-dh-observation-diagnosticresultgroup-1.html">ADHA  Diagnostic Result Group</a> </td>
+    </tr>
+        <tr>
+        <td><a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">Participant type</a></td>
+        <td>HL7</td>
+        <td>http://hl7.org/fhir/ValueSet/encounter-participant-type</td>
+        <td><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html">Patient relationship type</a></td>
@@ -410,6 +451,12 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></td>
     </tr>
     <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/specimen-collection-procedure-1">Specimen Collection Procedure</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/specimen-collection-procedure-1</td>
+        <td><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-substance-category.html">Substance Category Codes</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/substance-category</td>
@@ -421,73 +468,7 @@ The following value sets form part of this implementation guide.
         <td>TBD</td>
         <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
     </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
-    </tr>
-</table>
+ </table>
 
 
 ## Code Systems
@@ -689,18 +670,6 @@ The following code systems form part of this implementation guide.
         <td>1.2.36.1.2001.1004.200.10015</td>
     </tr>
     <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1">NCTIS Data Components</a></td>
-        <td>ADHA</td>
-        <td>https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1</td>
-        <td>1.2.36.1.2001.1001.101</td>
-    </tr>
-    <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1">Separation Mode</a></td>
-        <td>ADHA ( METeOR)</td>
-        <td>https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1</td>
-        <td>2.16.840.1.113883.13.65</td>
-    </tr>
-    <tr>
         <td><a href="https://www.gs1.org/">GTIN</a></td>
         <td>GS1</td>
         <td>https://www.gs1.org/gtin</td>
@@ -808,25 +777,37 @@ The following code systems form part of this implementation guide.
         <td>urn:ietf:bcp:13</td>
         <td> </td>
     </tr>
+   <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1">NCTIS Data Components</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1</td>
+        <td>1.2.36.1.2001.1001.101</td>
+    </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/observation-status">ObservationStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/observation-status</td>
         <td>2.16.840.1.113883.4.642.4.401</td>
     </tr>
-    <tr>
-        <td><a href="https://developer.digitalhealth.gov.au/products/clinical-terminology">SNOMED CT (SNOMED CT AU (Australian Medicines Terminology))</a></td>
-        <td>IHTSDO (ADHA)</td>
-        <td>http://snomed.info/sct</td>
-        <td>2.16.840.1.113883.6.96</td>
+     <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-encounter-participant-type.html">Participant type</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/participant-type</td>
+        <td>2.16.840.1.113883.4.642.4.1089</td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/codesystem-substance-category.html">Substance Category Codes</a></td>
+        <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v2-0443.html">ProviderRole</a></td>
         <td>HL7</td>
-        <td>http://terminology.hl7.org/CodeSystem/substance-category</td>
-        <td>2.16.840.1.113883.4.642.4.1138 </td>
-    </tr>  
-    <tr>
+        <td>http://terminology.hl7.org/CodeSystem/v2-0443</td>
+        <td>2.16.840.1.113883.18.283</td>
+    </tr>
+        <tr>
+        <td><a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4//CodeSystem-au-v2-0443.html">providerRole AU</a></td>
+        <td>HL7 AU</td>
+        <td>http://terminology.hl7.org.au/CodeSystem/v2-0443</td>
+        <td>2.16.840.1.113883.2.3.4.1.3.443</td>
+    </tr>
+        <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v2-0916.html">RelevantClincialInformation</a></td>
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/v2-0916</td>
@@ -838,6 +819,24 @@ The following code systems form part of this implementation guide.
         <td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td>
         <td>2.16.840.1.113883.5.111</td>
     </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1">Separation Mode</a></td>
+        <td>ADHA ( METeOR)</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1</td>
+        <td>2.16.840.1.113883.13.65</td>
+    </tr>
+    <tr>
+        <td><a href="https://developer.digitalhealth.gov.au/products/clinical-terminology">SNOMED CT (SNOMED CT AU (Australian Medicines Terminology))</a></td>
+        <td>IHTSDO (ADHA)</td>
+        <td>http://snomed.info/sct</td>
+        <td>2.16.840.1.113883.6.96</td>
+    </tr>
+       <tr>
+        <td><a href="http://hl7.org/fhir/R4/codesystem-substance-category.html">Substance Category Codes</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/substance-category</td>
+        <td>2.16.840.1.113883.4.642.4.1138 </td>
+    </tr>  
     <tr>
         <td><a href="https://tools.ietf.org/search/bcp47">Tags for Identifying Languages</a></td>
         <td>IETP</td>
@@ -851,6 +850,12 @@ The following code systems form part of this implementation guide.
         <td></td>
     </tr>
     <tr>
+        <td><a href="http://hl7.org/fhir/R4/v3/ParticipationType/cs.html">v3 Code System ParticipationType</a></td>
+        <td>HL7</td>
+        <td>http://terminology.hl7.org/CodeSystem/v3-ParticipationType</td>
+        <td>2.16.840.1.113883.5.90</td>
+    </tr>
+    <tr>
         <td><a href="http://hl7.org/fhir/R4/v3/ObservationInterpretation/cs.html">v3 Code System ObservationInterpretation</a></td>
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</td>
@@ -861,54 +866,6 @@ The following code systems form part of this implementation guide.
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td>
         <td>2.16.840.1.113883.5.111</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-        <td>TBD</td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
