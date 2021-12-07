@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
+  <!--Early draft testing out technical validity - not yet for inclusion as a valid instance-->
   <id value="es-01"/>
   <meta>
     <lastUpdated value="2018-09-21T09:01:00+10:00"/>
+    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
   </meta>
   <identifier>
     <system value="urn:ietf:rfc:4122"/>
@@ -17,9 +19,7 @@
         <id value="565b1e7e-01c1-4379-a3d6-6e21cdea43e9"/>
         <meta>
           <lastUpdated value="2018-09-21T09:00:15+10:00"/>
-          <profile
-            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/composition-es-1"
-          />          
+          <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"/>
         </meta>
         <language value="en-AU"/>
         <text>
@@ -68,6 +68,13 @@
             <display value="Summary of episode note"/>
           </coding>
         </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="34133-9"/>
+            <display value="Summary of episode note"/>
+          </coding>
+        </category>
         <subject>
           <reference value="urn:uuid:792b4811-2ce7-4531-8893-af827175bcfe"/>
         </subject>
