@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="es-02"/>
+    <meta>
+        <lastUpdated value="2019-06-03T11:00:00+10:00"/>        
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"/>
+    </identifier>
+    <type value="document"/>
+
+    <entry>
+        <fullUrl value="urn:uuid:2384da13-ff91-4e05-930f-2d7a034ea713"/>
+        <resource>
+        <Composition xmlns="http://hl7.org/fhir">
+            <id value="2384da13-ff91-4e05-930f-2d7a034ea713"/>
+            <meta>
+                <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                <profile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/composition-es-1"/>
+            </meta>
+            <language value="en-AU"/>
+            <text>
+                <status value="additional"/>
+                <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                    <h1>Event Summary</h1>
+                    <p><b>subject</b>: Gough Goodpatient; HC = 307111942H; gender = male</p>
+                    <p><b>status</b>: final</p>
+                    <p><b>type</b>: Summary of episode note</p>
+                    <p><b>date</b>: 30/05/2019 10:00:00 AM</p>
+                    <p><b>author</b>: Barry Helpman (OFFICIAL); HPI-I = 8003619900015717;
+                        bhelpman@example.devonportgp.com.au (WORK)</p>
+                    <p><b>author role</b>: General Practitioner; Medicare Provider Number: 5544887B,
+                        HPI-I = 8003619900015717; Barry Helpman; Devonport Family Medicine
+                        Clinic</p>
+                    <p><b>attester</b>: Barry Helpman; Mode: legal; Time: 30/03/2019 10:00 AM;
+                        Party: HPI-I = 8003619900015717</p>
+                    <p><b>custodian</b>: Devonport Family Medicine Clinic; ABN = 51824754455;
+                        reception@example.dfmc.com.au (WORK); fax: (03) 8543 5557 (WORK); ph: (03)
+                        8543 5556 (WORK)</p>
+                </div>
+            </text>
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/composition-author-role">
+                <valueReference>
+                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                </valueReference>
+            </extension>
+            <status value="final"/>
+            <type>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="34133-9"/>
+                    <display value="Summary of episode note"/>
+                </coding>
+            </type>
+            <subject>
+                <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+            </subject>
+            <encounter>
+                <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+            </encounter>
+            <date value="2019-05-30T10:00:00+10:00"/>
+            <author>
+                <reference value="urn:uuid:40a94071-8373-4d53-a788-63b79c75a3c1"/>
+            </author>
+            <title value="Event Summary"/>
+            <attester>
+                <mode value="legal"/>
+                <time value="2019-05-30T10:00:00+10:00"/>
+                <party>
+                    <reference value="urn:uuid:40a94071-8373-4d53-a788-63b79c75a3c1"/>
+                </party>
+            </attester>
+            <custodian>
+                <reference value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
+            </custodian>
+
+            <section>
+                <title value="Event Details"/>
+                <code>
+                    <coding>
+                        <system
+                            value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                        <code value="101.16672"/>
+                    </coding>
+                </code>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p>Patient presented for follow-up with urinary tract infection on 30
+                            May.</p>
+                        <p>Complaining of frequent and painful urinating. Midstream urine test was
+                            done and revealed urinary infection.</p>
+                        <p>Culture and sensitivity test discovered escherichia coli sensitive to
+                            Bactrim.</p>
+                        <p>Patient was prescribed Bactrim 2 tablets twice a day, and Panadol one
+                            tablet 4 times a day.</p>
+                        <p>Patient has no allergies.</p>
+                    </div>
+                </text>
+                <entry>
+                    <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                </entry>
+            </section>
+
+            <section>
+                <title value="Allergies and Adverse Reactions"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="48765-2"/>
+                    </coding>
+                </code>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p>No known allergies</p>
+                    </div>
+                </text>
+                <entry>
+                    <reference value="urn:uuid:b21f4cad-024a-4101-a6dd-80d50e29e295"/>
+                </entry>
+            </section>
+
+            <section>
+                <title value="Medications"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="10160-0"/>
+                    </coding>
+                </code>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <table border="1">
+                            <caption>Medicines List</caption>
+                            <thead>
+                                <tr>
+                                    <th>Medicine</th>
+                                    <th>Directions</th>
+                                    <th>Clinical Indication/Change description</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Bactrim</b> DS - tablet</td>
+                                    <td>Take 2 tablets twice a day</td>
+                                    <td>To treat bacterial infections</td>
+                                    <td>New prescription</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Panadol</b> 500mg - tablet</td>
+                                    <td>Take 1 tablet four times a day</td>
+                                    <td>For pain</td>
+                                    <td>New</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+                <entry>
+                    <reference value="urn:uuid:6eeee721-3485-4e1f-81b8-450a2143f441"/>
+                </entry>
+            </section>
+
+            <section>
+                <title value="Medical History"/>
+                <code>
+                    <coding>
+                        <system
+                            value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                        <code value="101.16117"/>
+                    </coding>
+                </code>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <table border="1">
+                            <caption>Condition Details</caption>
+                            <thead>
+                                <tr>
+                                    <th>Condition</th>
+                                    <th>Onset Date Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urinary tract infection</td>
+                                    <td>2019-05-10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+
+                <entry>
+                    <reference value="urn:uuid:ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+                </entry>
+            </section>
+
+            <section>
+                <title value="Diagnostic Investigations"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="30954-2"/>
+                    </coding>
+                </code>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <table border="1">
+                            <caption>Diagnostic results</caption>
+                            <thead>
+                                <tr>
+                                    <th>Test</th>
+                                    <th>Result</th>
+									<th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Culture and sensitivity</td>
+                                    <td>Escherichia coli grown</td>
+									<td>2019-05-10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </text>
+            </section>
+        </Composition>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="HC"/>
+                            <display value="Health Card Number"/>
+                        </coding>
+                    </type>
+                    <system
+                        value="http://ns.electronichealth.net.au/id/centrelink-customer-reference-number"/>
+                    <value value="307111942H"/>
+                </identifier>
+                <name>
+                    <family value="Goodpatient"/>
+                    <given value="Gough"/>
+                </name>
+                <gender value="male"/>
+                <generalPractitioner>
+                    <reference value="urn:uuid:20f15728-f3ac-4877-b55a-107f94dbd00c"/>
+                </generalPractitioner>
+                <managingOrganization>
+                    <reference value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
+                </managingOrganization>
+            </Patient>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:40a94071-8373-4d53-a788-63b79c75a3c1"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <id value="40a94071-8373-4d53-a788-63b79c75a3c1"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="NPI"/>
+                            <display value="National provider identifier"/>
+                        </coding>
+                        <text value="HPI-I"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                    <value value="8003619900015717"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Helpman"/>
+                    <given value="Barry"/>
+                    <suffix value="M.D."/>
+                </name>
+                <telecom>
+                    <system value="email"/>
+                    <value value="bhelpman@example.devonportgp.com.au"/>
+                    <use value="work"/>
+                </telecom>
+                <qualification>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://hl7.org.au/fhir/v2/0203"/>
+                                <code value="AHPRA"/>
+                                <display
+                                    value="Australian Health Practitioner Regulation Agency Registration Number"
+                                />
+                            </coding>
+                            <text value="AHPRA Registration Number"/>
+                        </type>
+                        <system value="http://hl7.org.au/id/ahpra-registration-number"/>
+                        <value value="MED0000932850"/>
+                    </identifier>
+                    <code>
+                        <coding>
+                            <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+                            <code value="253111"/>
+                            <display value="General Medical Practitioner"/>
+                        </coding>
+                        <text value="AHPRA qualification for General Practitioner"/>
+                    </code>
+                    <issuer>
+                        <display value="AHPRA"/>
+                    </issuer>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:20f15728-f3ac-4877-b55a-107f94dbd00c"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <id value="20f15728-f3ac-4877-b55a-107f94dbd00c"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <name>
+                    <use value="official"/>
+                    <family value="Doctor"/>
+                    <given value="Good"/>
+                    <prefix value="Dr."/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+        <resource>
+            <PractitionerRole xmlns="http://hl7.org/fhir">
+                <id value="45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <code value="UPIN"/>
+                        </coding>
+                        <text value="Medicare Provider Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-provider-number"/>
+                    <value value="5544887B"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="NPI"/>
+                            <display value="National provider identifier"/>
+                        </coding>
+                        <text value="HPI-I"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                    <value value="8003619900015717"/>
+                </identifier>
+                <practitioner>
+                    <reference value="urn:uuid:40a94071-8373-4d53-a788-63b79c75a3c1"/>
+                </practitioner>
+                <organization>
+                    <reference value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
+                </organization>
+                <code>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+                        <code value="253111"/>
+                        <display value="General Practitioner"/>
+                    </coding>
+                    <text value="GP"/>
+                </code>
+            </PractitionerRole>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="021fff67-c5ec-438f-9520-ce9bafee1306"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <text value="ABN"/>
+                    </type>
+                    <system value="http://hl7.org.au/id/abn"/>
+                    <value value="51824754455"/>
+                </identifier>
+                <name value="Devonport Family Medicine Clinic"/>
+                <telecom>
+                    <system value="email"/>
+                    <value value="reception@example.dfmc.com.au"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <value value="(03) 8543 5557"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(03) 8543 5556"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <type value="postal"/>
+                    <line value="LPO Box 235"/>
+                    <city value="Strahan"/>
+                    <state value="TAS"/>
+                    <postalCode value="7468"/>
+                    <country value="AU"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6eeee721-3485-4e1f-81b8-450a2143f441"/>
+        <resource>
+            <List xmlns="http://hl7.org/fhir">
+                <id value="6eeee721-3485-4e1f-81b8-450a2143f441"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <status value="current"/>
+                <mode value="snapshot"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="10160-0"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <date value="2019-05-30T10:00:00+10:00"/>
+                <source>
+                    <reference value="urn:uuid:40a94071-8373-4d53-a788-63b79c75a3c1"/>
+                </source>
+                <entry>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/change-description">
+                        <valueString value="To treat bacterial infections"/>
+                    </extension>
+                    <flag>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <code value="prescribed"/>
+                            <display value="New prescription"/>
+                        </coding>
+                    </flag>
+                    <item>
+                        <reference value="urn:uuid:c20c510b-fd91-45eb-bacc-171a9a0261e5"
+                        />
+                    </item>
+                </entry>
+                <entry>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/change-description">
+                        <valueString value="For pain"/>
+                    </extension>
+                    <flag>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <code value="new"/>
+                            <display value="New"/>
+                        </coding>
+                    </flag>
+                    <item>
+                        <reference value="urn:uuid:df0af202-6da0-4e67-9c22-ebc21ee34309"
+                        />
+                    </item>
+                </entry>
+            </List>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+        <resource>
+            <Encounter xmlns="http://hl7.org/fhir">
+                <id value="6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/encounter-description">
+                    <valueString
+                        value="Patient presented for follow-up with urinary tract infection on 30 May. Complaining of frequent and painful urinating. 
+                        Midstream urine test was done and revealed urinary infection. Culture and sensitivity test discovered escherichia coli sensitive to Bactrim.
+                        Patient was prescribed Bactrim 2 tablets twice a day, and Panadol one tablet 4 times a day. Patient has no allergies."
+                    />
+                </extension>
+                <status value="finished"/>
+                <class>
+                        <system value="http://hl7.org/fhir/v3/ActCode"/>
+                        <code value="AMB"/>
+                        <display value="ambulatory"/>                    
+                </class> 
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <period>
+                    <start value="2019-05-30T09:00:00+10:00"/>
+                    <end value="2019-05-30T09:30:00+10:00"/>
+                </period>
+            </Encounter>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:c20c510b-fd91-45eb-bacc-171a9a0261e5"/>
+        <resource>
+            <MedicationStatement xmlns="http://hl7.org/fhir">
+                <id value="c20c510b-fd91-45eb-bacc-171a9a0261e5"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <status value="intended"/>
+                <medicationCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="6632011000036102"/>
+                        <display value="Bactrim DS film-coated tablet"/>						
+                    </coding>
+					<text value="Bactrim DS - tablet"/>
+                </medicationCodeableConcept>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <taken value="n"/>
+                <reasonCode>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="68566005"/>
+							<display value="Urinary tract infection"/>
+						</coding>					
+                </reasonCode>
+                <dosage>
+                    <text value="Take 2 tablets twice a day"/>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:df0af202-6da0-4e67-9c22-ebc21ee34309"/>
+        <resource>
+            <MedicationStatement xmlns="http://hl7.org/fhir">
+                <id value="df0af202-6da0-4e67-9c22-ebc21ee34309"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <status value="intended"/>
+                <medicationCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="54012011000036102"/>
+                        <display value="Panadol 500 mg film-coated tablet"/>						
+                    </coding>
+					<text value="Panadol 500mg - tablet"/>
+                </medicationCodeableConcept>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <taken value="n"/>
+                <reasonCode>
+                    <text value="For pain"/>
+                </reasonCode>
+                <dosage>
+                    <text value="Take 1 tablet four times a day"/>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:b21f4cad-024a-4101-a6dd-80d50e29e295"/>
+        <resource>
+            <AllergyIntolerance xmlns="http://hl7.org/fhir">
+                <id value="b21f4cad-024a-4101-a6dd-80d50e29e295"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <clinicalStatus value="active"/>
+                <verificationStatus value="unconfirmed"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="716186003"/>
+                        <display value="No known allergy"/>
+                    </coding>
+                </code>
+                <patient>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </patient>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+                <meta>
+                    <lastUpdated value="2019-06-03T11:00:00+10:00"/>
+                </meta>
+                <clinicalStatus value="active"/>
+                <verificationStatus value="confirmed"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="68566005"/>
+                        <display value="Urinary tract infection"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <onsetDateTime value="2019-05-10"/>
+            </Condition>
+        </resource>
+    </entry>
+</Bundle>

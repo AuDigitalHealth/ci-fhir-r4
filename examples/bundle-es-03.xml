@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="es-03"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-03-31T15:50:00+10:00"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:8478a550-e159-4398-8f42-085e36783b93"/>
+    </identifier>
+    <type value="document"/>
+
+    <!-- COMPOSITION -->
+    <entry>
+        <fullUrl value="urn:uuid:672a9ba7-0773-4a7f-ad80-e6ef50950a8d"/>
+        <resource>
+            <Composition xmlns="http://hl7.org/fhir">
+                <id value="672a9ba7-0773-4a7f-ad80-e6ef50950a8d"/>
+                <meta>
+                    <lastUpdated value="2019-03-31T15:40:00+10:00"/>
+                    <profile
+                        value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/composition-es-1"
+                    />
+                </meta>
+                <language value="en-AU"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <h2>Event Summary for Billy Tjakamarra on 31 Mar 2019</h2>
+                        <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                            307111942H; gender = male; birth date = 23/04/1954; address = 78 Bamboo
+                            Street, Nightcliff NT, 0810; indigenous status = Aboriginal but not
+                            Torres Strait Islander origin</p>
+                        <p><b>Document status</b>: final</p>
+                        <p><b>Document date</b>: 31/03/2019 15:38</p>
+                        <p><b>Document author</b>: Dr Sonia Strempel (OFFICIAL); HPI-I =
+                            8003619900015717; Prescriber Number = 459999
+                            sonia.strempel@mail.topendmedicalclinic.com.au (WORK)</p>
+                        <p><b>Document author role</b>: General Practitioner Registrar; Medicare
+                            Provider Number = 5544887B, HPI-I = 8003619900015717; Top End Medical
+                            Clinic</p>
+                        <p><b>Document attester (legal)</b>: Dr Sonia Strempel (HPI-I =
+                            8003619900015717); time: 31/03/2019 15:39</p>
+                        <p><b>Document custodian</b>: Top End Medical Clinic; HPI-O =
+                            8003621566684455; ACN = 123456789; email:
+                            admin@mail.topendmedicalclinic.com.au (WORK); phone: (08) 8423 9999
+                            (WORK); address: 102 Rowling Street, Casuarina NT 0810 (physical)</p>
+                    </div>
+                </text>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/composition-author-role">
+                    <valueReference>
+                        <reference value="urn:uuid:e99357bd-b6ad-4ae7-9d99-27cb929e48af"/>
+                    </valueReference>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="bfb3dd71-e5ee-4df6-a315-9f1cbd509cd7"/>
+                </identifier>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="34133-9"/>
+                    </coding>
+                </type>
+                <subject>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://hl7.org/fhir/v2/0203"/>
+                                <code value="PEN"/>
+                                <display value="Pension Number"/>
+                            </coding>
+                            <text value="Pensioner Concession Card Number"/>
+                        </type>
+                        <system
+                            value="http://ns.electronichealth.net.au/id/centrelink-customer-reference-number"/>
+                        <value value="307111942H"/>
+                    </identifier>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:cead9124-f6d8-47ac-b785-8e0fcab3dc13"/>
+                </encounter>
+                <date value="2019-03-31T15:38:00+10:00"/>
+                <author>
+                    <reference value="urn:uuid:7bfbb28b-e57b-4961-b5f9-4bfc5391b44a"/>
+                </author>
+                <title value="Event Summary for Billy Tjakamarra on 31 Mar 2019"/>
+                <attester>
+                    <mode value="legal"/>
+                    <time value="2019-03-31T15:39:00+10:00"/>
+                    <party>
+                        <reference value="urn:uuid:7bfbb28b-e57b-4961-b5f9-4bfc5391b44a"/>
+                    </party>
+                </attester>
+                <custodian>
+                    <reference value="urn:uuid:0903c2ea-252f-4b03-85f4-2ddcf046fbc3"/>
+                </custodian>
+
+                <!-- Section: Event Overview -->
+                <section>
+                    <title value="Event Details"/>
+                    <code>
+                        <coding>
+                            <system
+                                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                            <code value="101.16672"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p><b>Event description</b>: Patient presented with open injury to sole
+                                of left foot caused by stepping on rusty nail yesterday. Wound red
+                                and swollen, no calf muscle tenderness, no coughing nor chest pain
+                                which excludes pulmonary embolism. Patient has an existing allergy
+                                to adhesive tape, which manifests as urticaria. Patient was given
+                                booster dose of anti tetanus and prescribed amoxicillin 500mg 3
+                                times a day. Wound was attended. Advised to present in 2 days to the
+                                usual GPs clinic for a change of dressings.</p>
+                            <p><b>Event status</b>: finished</p>
+                            <p><b>Event subject</b>: Billy Tjakamarra; Pensioner Concession Card
+                                Number: 307111942H; gender = male; birth date = 23/04/1954; address
+                                = 78 Bamboo Street, Nightcliff NT, 0810; indigenous status =
+                                Aboriginal but not Torres Strait Islander origin</p>
+                            <p><b>Event start</b>: 31/03/2019 15:20</p>
+                            <p><b>Event end</b>: 31/03/2019 15:40</p>
+                        </div>
+                    </text>
+                    <entry>
+                        <reference value="urn:uuid:cead9124-f6d8-47ac-b785-8e0fcab3dc13"/>
+                    </entry>
+                </section>
+
+                <!-- Section: Allergies -->
+                <section>
+                    <title value="Allergies and Adverse Reactions"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="48765-2"/>
+                            <display value="Allergies and adverse reactions Document"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p>Patient has an existing allergy to adhesive tape, which manifests as
+                                urticaria</p>
+                        </div>
+                    </text>
+                    <entry>
+                        <reference value="urn:uuid:c7dfc1e4-e2e0-4542-b93a-be297efb0f95"/>
+                    </entry>
+                </section>
+
+                <!-- Section: Medications -->
+                <section>
+                    <title value="Medications"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="10160-0"/>
+                            <display value="History of Medication use Narrative"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <table class="grid">
+                                <tr>
+                                    <th>change type</th>
+                                    <th>item</th>
+                                    <th>dosage</th>
+                                    <th>change description</th>
+                                </tr>
+                                <tr>
+                                    <td>New prescription</td>
+                                    <td>amoxicillin 500 mg capsule</td>
+                                    <td>1 capsule three times a day</td>
+                                    <td>prevention of wound infection</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </text>
+                    <entry>
+                        <reference value="urn:uuid:e6e32a80-a307-4833-b997-1e6e7b3abbb3"/>
+                    </entry>
+                </section>
+
+                <!-- Section: Medical History -->
+                <section>
+                    <title value="Medical History"/>
+                    <code>
+                        <coding>
+                            <system
+                                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                            <code value="101.16117"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p><b>Condition</b>: Puncture wound from stepping on a rusty nail, sole
+                                of left foot; onset = 30/03/2019</p>
+                            <p><b>Procedure</b>: dressing of wound; performed = 31/03/2019</p>
+                        </div>
+                    </text>
+                    <!-- Condition: foot wound due to stepping on a rusty nail -->
+                    <entry>
+                        <reference value="urn:uuid:e11fd841-5200-4657-9260-3a041a98ae31"/>
+                    </entry>
+                    <!-- Procedure: wound dressing -->
+                    <entry>
+                        <reference value="urn:uuid:fed6e796-ac88-459c-af61-de718a48423d"/>
+                    </entry>
+                </section>
+
+                <!-- Section: Immunisations -->
+                <section>
+                    <title value="Immunisations"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="11369-6"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p><b>Vaccine</b>: Boostrix injection, 0.5 mL syringe</p>
+                            <p><b>Date given</b>: 31/03/2019 15:35</p>
+                        </div>
+                    </text>
+                    <entry>
+                        <reference value="urn:uuid:d2b71673-d1a5-4e1d-9b25-bba47aa26036"/>
+                    </entry>
+                </section>
+
+            </Composition>
+        </resource>
+    </entry>
+
+    <!-- PATIENT -->
+    <entry>
+        <fullUrl value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="d422d1da-6280-4335-8795-b101a61134e4"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Name</b>: Billy Tjakamarra</p>
+                        <p><b>Identifier</b>: Medical Record Number = 999111999
+                            (http://territorymedicalcentre.com.au/identifiers/patient)</p>
+                        <p><b>Identifier</b>: Pensioner Concession Card Number = 307111942H</p>
+                        <p><b>Telecom</b>: phone = 0958 233 666</p>
+                        <p><b>Gender</b>: male</p>
+                        <p><b>Birth date</b>: 23/04/1954</p>
+                        <p><b>Address</b>: 78 Bamboo Street, Nightcliff NT, 0810</p>
+                        <p><b>Marital status</b>: Never Married</p>
+                        <p><b>Communication</b>: language = Burarra; preferred = false</p>
+                        <p><b>General Practitioner</b>: Territory Medical Centre; telecom = phone
+                            (08) 8948 9999 (work); telecom = url
+                            https://territorymedicalcentre.com.au (work); address = 159 Clematis
+                            Street, Nightcliff NT 0810</p>
+                        <p><b>Indigenous status</b>: Aboriginal but not Torres Strait Islander
+                            origin</p>
+                        <p><b>Closing the gap registration</b>: true</p>
+                    </div>
+                </text>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+                    <valueCoding>
+                        <system
+                            value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="1"/>
+                        <display value="Aboriginal but not Torres Strait Islander origin"/>
+                    </valueCoding>
+                </extension>
+                <extension
+                    url="http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration">
+                    <valueBoolean value="true"/>
+                </extension>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                        </coding>
+                        <text value="Medical Record Number"/>
+                    </type>
+                    <system value="http://territorymedicalcentre.com.au/identifiers/patient"/>
+                    <value value="999111999"/>
+                    <assigner>
+                        <reference value="urn:uuid:d93e5527-afd9-4c54-ab09-ada4fdd8ff13"/>
+                    </assigner>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="PEN"/>
+                            <display value="Pension Number"/>
+                        </coding>
+                        <text value="Pensioner Concession Card Number"/>
+                    </type>
+                    <system
+                        value="http://ns.electronichealth.net.au/id/centrelink-customer-reference-number"/>
+                    <value value="307111942H"/>
+                </identifier>
+                <name>
+                    <family value="Tjakamarra"/>
+                    <given value="Billy"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="0958 233 666"/>
+                </telecom>
+                <gender value="male"/>
+                <birthDate value="1954-04-23"/>
+                <address>
+                    <line value="78 Bamboo Street"/>
+                    <city value="Nightcliff"/>
+                    <state value="NT"/>
+                    <postalCode value="0810"/>
+                    <country value="AU"/>
+                </address>
+                <maritalStatus>
+                    <coding>
+                        <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+                        <code value="S"/>
+                        <display value="Never Married"/>
+                    </coding>
+                </maritalStatus>
+                <communication>
+                    <language>
+                        <coding>
+                            <!-- Refer https://nt.gov.au/community/interpreting-and-translating-services/aboriginal-interpreter-service/aboriginal-languages-in-nt -->
+                            <system value="urn:ietf:bcp:47"/>
+                            <code value="bvr"/>
+                            <display value="Burarra"/>
+                        </coding>
+                    </language>
+                    <preferred value="false"/>
+                </communication>
+                <!-- GP is an Organization, not an individual -->
+                <generalPractitioner>
+                    <reference value="urn:uuid:d93e5527-afd9-4c54-ab09-ada4fdd8ff13"/>
+                </generalPractitioner>
+            </Patient>
+        </resource>
+    </entry>
+
+    <!-- PRACTITIONER -->
+    <!-- the author of the ES -->
+    <entry>
+        <fullUrl value="urn:uuid:7bfbb28b-e57b-4961-b5f9-4bfc5391b44a"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <id value="7bfbb28b-e57b-4961-b5f9-4bfc5391b44a"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Name</b>: Dr Sonia Strempel (official)</p>
+                        <p><b>Identifier</b>: HPI-I = 8003619900015717</p>
+                        <p><b>Identifier</b>: Prescriber Number = 459999</p>
+                        <p><b>Telecom</b>: email = sonia.strempel@mail.topendmedicalclinic.com.au
+                            (work)</p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="NPI"/>
+                        </coding>
+                        <text value="HPI-I"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                    <value value="8003619900015717"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <code value="PRES"/>
+                            <display value="Prescriber Number"/>
+                        </coding>
+                        <text value="Prescriber Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-prescriber-number"/>
+                    <value value="459999"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Strempel"/>
+                    <given value="Sonia"/>
+                    <prefix value="Dr"/>
+                </name>
+                <telecom>
+                    <system value="email"/>
+                    <value value="sonia.strempel@mail.topendmedicalclinic.com.au"/>
+                    <use value="work"/>
+                </telecom>
+            </Practitioner>
+        </resource>
+    </entry>
+
+    <!-- PRACTITIONERROLE -->
+    <!-- the author of the ES -->
+    <entry>
+        <fullUrl value="urn:uuid:e99357bd-b6ad-4ae7-9d99-27cb929e48af"/>
+        <resource>
+            <PractitionerRole xmlns="http://hl7.org/fhir">
+                <id value="e99357bd-b6ad-4ae7-9d99-27cb929e48af"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Practitioner Role</b>: General Practitioner Registrar</p>
+                        <p><b>Identifier</b>: Medicare Provider Number = 5544887B</p>
+                        <p><b>Practitioner</b>: Dr Sonia Strempel; telecom = email
+                            sonia.strempel@mail.topendmedicalclinic.com.au (work)</p>
+                        <p><b>Organization</b>: Top End Medical Clinic; HPI-O = 8003621566684455;
+                            ABN = 51824754455; telecom = phone (08) 8948 9999 (work); telecom = url
+                            = https://territorymedicalcentre.com.au (work); address = 159 Clematis
+                            Street, Nightcliff NT 0810</p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <code value="UPIN"/>
+                        </coding>
+                        <text value="Medicare Provider Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-provider-number"/>
+                    <value value="5544887B"/>
+                </identifier>
+                <practitioner>
+                    <reference value="urn:uuid:7bfbb28b-e57b-4961-b5f9-4bfc5391b44a"/>
+                </practitioner>
+                <organization>
+                    <reference value="urn:uuid:0903c2ea-252f-4b03-85f4-2ddcf046fbc3"/>
+                </organization>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="309327004"/>
+                        <display value="General practitioner registrar"/>
+                    </coding>
+                </code>
+            </PractitionerRole>
+        </resource>
+    </entry>
+
+    <!-- ORGANIZATION 1 -->
+    <!-- the GP practice which is the patient's 'usual GP' -->
+    <entry>
+        <fullUrl value="urn:uuid:d93e5527-afd9-4c54-ab09-ada4fdd8ff13"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="d93e5527-afd9-4c54-ab09-ada4fdd8ff13"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Name</b>: Territory Medical Centre</p>
+                        <p><b>Identifier</b>: HPI-O = 8003621566684455</p>
+                        <p><b>Identifier</b>: ABN = 51824994455</p>
+                        <p><b>Telecom</b>: phone = (08) 8948 9999 (work)</p>
+                        <p><b>Telecom</b>: url = https://territorymedicalcentre.com.au (work)</p>
+                        <p><b>Address</b>: 159 Clematis Street, Nightcliff NT 0810 (both)</p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <text value="ABN"/>
+                    </type>
+                    <system value="http://hl7.org.au/id/abn"/>
+                    <value value="51824994455"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <code value="NOI"/>
+                        </coding>
+                        <text value="HPI-O"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+                    <value value="8003621566684455"/>
+                </identifier>
+                <name value="Territory Medical Centre"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(08) 8948 9999"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="url"/>
+                    <value value="https://territorymedicalcentre.com.au"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <type value="both"/>
+                    <line value="159 Clematis Street"/>
+                    <city value="Nightcliff"/>
+                    <state value="NT"/>
+                    <postalCode value="0810"/>
+                    <country value="AU"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+
+    <!-- ORGANIZATION 2 -->
+    <!-- the GP practice of the ES author -->
+    <entry>
+        <fullUrl value="urn:uuid:0903c2ea-252f-4b03-85f4-2ddcf046fbc3"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="0903c2ea-252f-4b03-85f4-2ddcf046fbc3"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Name</b>: Top End Medical Clinic</p>
+                        <p><b>Identifier</b>: HPI-O = 8003621566684455</p>
+                        <p><b>Identifier</b>: ACN = 123456789</p>
+                        <p><b>Telecom</b>: phone (08) 8423 9999 (work)</p>
+                        <p><b>Telecom</b>: email admin@topendmedicalclinic.com.au (work)</p>
+                        <p><b>Address</b>: 102 Rowling Street, Casuarina NT 0810 (physical)</p>
+                    </div>
+                </text>
+                <identifier>
+                    <type>
+                        <text value="ACN"/>
+                    </type>
+                    <system value="http://hl7.org.au/id/acn"/>
+                    <value value="123456789"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <code value="NOI"/>
+                        </coding>
+                        <text value="HPI-O"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+                    <value value="8003621566684455"/>
+                </identifier>
+                <name value="Top End Medical Clinic"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(08) 8423 9999"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="admin@topendmedicalclinic.com.au"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <type value="physical"/>
+                    <line value="102 Rowling Street"/>
+                    <city value="Casuarina"/>
+                    <state value="NT"/>
+                    <postalCode value="0810"/>
+                    <country value="AU"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+
+    <!-- ENCOUNTER -->
+    <entry>
+        <fullUrl value="urn:uuid:cead9124-f6d8-47ac-b785-8e0fcab3dc13"/>
+        <resource>
+            <Encounter xmlns="http://hl7.org/fhir">
+                <id value="cead9124-f6d8-47ac-b785-8e0fcab3dc13"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Encounter description</b>: Patient presented with open injury to sole
+                            of left foot caused by stepping on rusty nail yesterday. Wound red and
+                            swollen, no calf muscle tenderness, no coughing nor chest pain which
+                            excludes pulmonary embolism. Patient has an existing allergy to adhesive
+                            tape, which manifests as urticaria. Patient was given booster dose of
+                            anti tetanus and prescribed amoxicillin 500mg 3 times a day. Wound was
+                            attended. Advised to present in 2 days to the usual GPs clinic for a
+                            change of dressings.</p>
+                        <p><b>Encounter status</b>: finished</p>
+                        <p><b>Encounter subject</b>: Billy Tjakamarra; Pensioner Concession Card
+                            Number: 307111942H; gender = male; birth date = 23/04/1954; address = 78
+                            Bamboo Street, Nightcliff NT, 0810; indigenous status = Aboriginal but
+                            not Torres Strait Islander origin</p>
+                        <p><b>Encounter start</b>: 31/03/2019 15:20</p>
+                        <p><b>Encounter end</b>: 31/03/2019 15:40</p>
+                    </div>
+                </text>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/encounter-description">
+                    <valueString
+                        value="Patient presented with open injury to sole of left foot caused by stepping on rusty nail yesterday. 
+                        Wound red and swollen, no calf muscle tenderness, no coughing nor chest pain which excludes pulmonary embolism. 
+                        Patient has an existing allergy to adhesive tape, which manifests as urticaria. 
+                        Patient was given booster dose of anti tetanus and prescribed amoxicillin 500mg 3 times a day. 
+                        Wound was attended. Advised to present in 2 days to the usual GPs clinic for a change of dressings."
+                    />
+                </extension>
+                <status value="finished"/>
+                <subject>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </subject>
+                <period>
+                    <start value="2019-03-31T15:20:00+10:00"/>
+                    <end value="2019-03-31T15:40:00+10:00"/>
+                </period>
+                <reason>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="283680004"/>
+                        <display value="Nail wound of sole of foot"/>
+                    </coding>
+                </reason>
+            </Encounter>
+        </resource>
+    </entry>
+
+    <!-- MEDICATION LIST -->
+    <!-- referencing the medication statement -->
+    <entry>
+        <fullUrl value="urn:uuid:e6e32a80-a307-4833-b997-1e6e7b3abbb3"/>
+        <resource>
+            <List xmlns="http://hl7.org/fhir">
+                <id value="e6e32a80-a307-4833-b997-1e6e7b3abbb3"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Medicines list status</b>: current</p>
+                        <p><b>Medicines list subject</b>: Billy Tjakamarra; Pensioner Concession
+                            Card Number: 307111942H; gender = male; birth date = 23/04/1954; address
+                            = 78 Bamboo Street, Nightcliff NT, 0810; indigenous status = Aboriginal
+                            but not Torres Strait Islander origin</p>
+                        <p><b>Medicines list date</b>: 31/03/2019 15:36</p>
+                        <p><b>Medicines list source</b>: Dr Sonia Strempel (OFFICIAL); HPI-I =
+                            8003619900015717; prescriber number = 459999; email =
+                            sonia.strempel@mail.topendmedicalclinic.com.au (WORK)</p>
+                        <p><b>Medicines list</b>:</p>
+                        <table class="grid">
+                            <tr>
+                                <th>change type</th>
+                                <th>item</th>
+                                <th>dosage</th>
+                                <th>change description</th>
+                            </tr>
+                            <tr>
+                                <td>New prescription</td>
+                                <td>amoxicillin 500 mg capsule</td>
+                                <td>1 capsule three times a day</td>
+                                <td>prevention of wound infection</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <status value="current"/>
+                <mode value="snapshot"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="10160-0"/>
+                        <display value="History of Medication use Narrative"/>
+                    </coding>
+                    <text value="Medicines"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </subject>
+                <date value="2019-03-31T15:36:00+10:00"/>
+                <source>
+                    <reference value="urn:uuid:7bfbb28b-e57b-4961-b5f9-4bfc5391b44a"/>
+                </source>
+                <entry>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/change-description">
+                        <valueString value="New prescription to prevent wound infection"/>
+                    </extension>
+                    <flag>
+                        <coding>
+                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <code value="prescribed"/>
+                        </coding>
+                    </flag>
+                    <item>
+                        <reference value="urn:uuid:bed6ee24-3789-4cdd-83f0-a3a3a8ccba7a"/>
+                    </item>
+                </entry>
+            </List>
+        </resource>
+    </entry>
+
+    <!-- MEDICATION STATEMENT -->
+    <!-- Scenario: "prescribed amoxicillin 500mg 3 times a day" -->
+    <entry>
+        <fullUrl value="urn:uuid:bed6ee24-3789-4cdd-83f0-a3a3a8ccba7a"/>
+        <resource>
+            <MedicationStatement xmlns="http://hl7.org/fhir">
+                <id value="bed6ee24-3789-4cdd-83f0-a3a3a8ccba7a"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Medication</b>: amoxicillin 500 mg capsule</p>
+                        <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                            307111942H; gender = male; birthDate = 23/04/1954; address = 78 Bamboo
+                            Street, Nightcliff NT, 0810; indigenous status = Aboriginal but not
+                            Torres Strait Islander origin</p>
+                        <p><b>Medication status</b>: intended</p>
+                        <p><b>Taken</b>: no</p>
+                        <p><b>Dosage</b>: 1 capsule three times a day</p>
+                    </div>
+                </text>
+                <status value="intended"/>
+                <medicationCodeableConcept>
+                    <text value="amoxicillin 500 mg capsule"/>
+                </medicationCodeableConcept>
+                <subject>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </subject>
+                <taken value="n"/>
+                <dosage>
+                    <text value="1 capsule three times a day"/>
+                    <timing>
+                        <repeat>
+                            <frequency value="3"/>
+                            <period value="1"/>
+                            <periodUnit value="d"/>
+                        </repeat>
+                    </timing>
+                    <doseQuantity>
+                        <value value="1"/>
+                        <unit value="capsule"/>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="107011000036108"/>
+                    </doseQuantity>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+    <!-- ALLERGY INTOLERANCE -->
+    <!-- Scenario: "allergy to adhesive tape, which manifests as urticaria." -->
+    <entry>
+        <fullUrl value="urn:uuid:c7dfc1e4-e2e0-4542-b93a-be297efb0f95"/>
+        <resource>
+            <AllergyIntolerance xmlns="http://hl7.org/fhir">
+                <id value="c7dfc1e4-e2e0-4542-b93a-be297efb0f95"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Allergy Intolerance</b>: Allergic reaction to adhesive tape</p>
+                        <p><b>Substance</b>: Adhesive tape</p>
+                        <p><b>Reaction</b>: Urticaria</p>
+                        <p><b>Clinical status</b>: active</p>
+                        <p><b>Verification status</b>: confirmed</p>
+                        <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                            307111942H; gender = male; birth date = 23/04/1954; address = 78 Bamboo
+                            Street, Nightcliff NT, 0810; indigenous status = Aboriginal but not
+                            Torres Strait Islander origin</p>
+                    </div>
+                </text>
+                <clinicalStatus value="active"/>
+                <verificationStatus value="confirmed"/>
+                <type value="allergy"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="418325008"/>
+                        <display value="Allergic reaction to adhesive"/>
+                    </coding>
+                    <text value="Allergic reaction to adhesive tape"/>
+                </code>
+                <patient>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </patient>
+                <reaction>
+                    <substance>
+                        <text value="Adhesive tape"/>
+                    </substance>
+                    <manifestation>
+                        <text value="Urticaria"/>
+                    </manifestation>
+                </reaction>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
+
+    <!-- IMMUNIZATION -->
+    <!-- Scenario: "booster dose of anti tetanus" -->
+    <entry>
+        <fullUrl value="urn:uuid:d2b71673-d1a5-4e1d-9b25-bba47aa26036"/>
+        <resource>
+            <Immunization xmlns="http://hl7.org/fhir">
+                <id value="d2b71673-d1a5-4e1d-9b25-bba47aa26036"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Vaccine</b>: Boostrix injection, 0.5 mL syringe</p>
+                        <p><b>Vaccine status</b>: completed</p>
+                        <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                            307111942H; gender = male; birth date = 23/04/1954; address = 78 Bamboo
+                            Street, Nightcliff NT, 0810; indigenous status = Aboriginal but not
+                            Torres Strait Islander origin</p>
+                        <p><b>Vaccine date</b>: 31/03/2019 15:35</p>
+                    </div>
+                </text>
+                <status value="completed"/>
+                <notGiven value="false"/>
+                <vaccineCode>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="837641000168108"/>
+                        <display value="Boostrix injection, 0.5 mL syringe"/>
+                    </coding>
+                    <coding>
+                        <system
+                            value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
+                        <code value="BOOST"/>
+                        <display value="Boostrix"/>
+                    </coding>
+                </vaccineCode>
+                <patient>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </patient>
+                <date value="2019-03-31T15:35:00+10:00"/>
+                <primarySource value="true"/>
+            </Immunization>
+        </resource>
+    </entry>
+
+    <!-- CONDITION -->
+    <!-- Scenario: "foot wound due to rusty nail ..." -->
+    <entry>
+        <fullUrl value="urn:uuid:e11fd841-5200-4657-9260-3a041a98ae31"/>
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="e11fd841-5200-4657-9260-3a041a98ae31"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Condition</b>: Nail wound of sole of foot</p>
+                        <p><b>Condition clinical status</b>: active</p>
+                        <p><b>Condition verification status</b>: confirmed</p>
+                        <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                            307111942H; gender = male; birthDate = 23/04/1954; address = 78 Bamboo
+                            Street, Nightcliff NT, 0810; indigenous status = Aboriginal but not
+                            Torres Strait Islander origin</p>
+                        <p><b>Condition onset date</b>: 30/03/2019</p>
+                        <p><b>Condition note</b>: Puncture wound to sole of left foot from stepping
+                            on a rusty nail. Wound red and swollen, no calf muscle tenderness, no
+                            coughing nor chest pain which excludes pulmonary embolism.</p>
+                    </div>
+                </text>
+                <clinicalStatus value="active"/>
+                <verificationStatus value="confirmed"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="283680004"/>
+                        <display value="Nail wound of sole of foot"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </subject>
+                <onsetDateTime value="2019-03-30"/>
+                <note>
+                    <text
+                        value="Puncture wound to sole of left foot from stepping on a rusty nail. 
+                        Wound red and swollen, no calf muscle tenderness, no coughing nor chest pain 
+                        which excludes pulmonary embolism."
+                    />
+                </note>
+            </Condition>
+        </resource>
+    </entry>
+
+    <!-- PROCEDURE -->
+    <!-- Scenario: "dressing of wound" -->
+    <entry>
+        <fullUrl value="urn:uuid:fed6e796-ac88-459c-af61-de718a48423d"/>
+        <resource>
+            <Procedure xmlns="http://hl7.org/fhir">
+                <id value="fed6e796-ac88-459c-af61-de718a48423d"/>
+                <text>
+                    <status value="additional"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                        <p><b>Procedure</b>: Dressing of wound</p>
+                        <p><b>Procedure status</b>: completed</p>
+                        <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                            307111942H; gender = male; birthDate = 23/04/1954; address = 78 Bamboo
+                            Street, Nightcliff NT, 0810; indigenous status = Aboriginal but not
+                            Torres Strait Islander origin</p>
+                        <p><b>Procedure performed date</b>: 31/3/2019 15:30</p>
+                        <p><b>Procedure reason</b>: condition - Puncture wound from stepping on a
+                            rusty nail, sole of left foot</p>
+                        <p><b>Procedure note</b>: Dressing of puncture wound sole of left foot,
+                            caused by stepping on a rusty nail</p>
+                        <p><b>Procedure note</b>: Advised to present in 2 days to the usual GPs
+                            clinic for a change of dressings.</p>
+                    </div>
+                </text>
+                <status value="completed"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="182531007"/>
+                        <display value="Dressing of wound"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:d422d1da-6280-4335-8795-b101a61134e4"/>
+                </subject>
+                <performedDateTime value="2019-03-31T15:30:00+10:00"/>
+                <!-- reference to the condition above re 'foot wound due to rusty nail' -->
+                <reasonReference>
+                    <reference value="urn:uuid:e11fd841-5200-4657-9260-3a041a98ae31"/>
+                </reasonReference>
+                <note>
+                    <text
+                        value="Dressing of puncture wound sole of left foot, caused by stepping on a
+                        rusty nail."
+                    />
+                </note>
+                <note>
+                    <text
+                        value="Advised to present in 2 days to the usual GPs clinic 
+                        for a change of dressings."
+                    />
+                </note>
+            </Procedure>
+        </resource>
+    </entry>
+
+</Bundle>
