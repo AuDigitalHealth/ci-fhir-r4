@@ -21,8 +21,44 @@ This repository has the following structure:
 - implementation guide build files, e.g. base.html, format.html and etc.
 
  
-## How to get started
-There are different ways you could interact with this repository:
-* [viewing the content](VIEWING.md)
-* [raising an issue or query on the content](ISSUES.md)
-* [contributing changes to this content](CONTRIBUTING.md)
+## How to view the content
+To view the latest continuous build version of the implementation guide.
+1. Open the following link in a browser: https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/
+
+To view the input files in this repository can be viewed within the GitHub `code` viewing pane.
+1. Click on the folder `examples` to see a list of example xml files, or the `resources` folder to see the list of profiles
+2. Click on the hyperlink of the file that interests you
+3. The xml file will then open within the GitHub code viewing pane
+
+## How to raise an issue, request an enhancement or ask a question
+As a first step you should search the [open issues](https://github.com/AuDigitalHealth/ci-fhir-r4/issues?q=is%3Aopen) and [closed issues](https://github.com/AuDigitalHealth/ci-fhir-r4/issues?q=is%3Aclosed) to see if the issue has already been reported (it may also be fixed).
+
+If you can't find an issue that matches what you're seeing, open a new issue and select from the following two options:
+
+1. Bug report - automatically populated with a [template](.github/ISSUE_TEMPLATE/bug_report.md) for the information to be submitted with a bug report.
+2. Issue or new feature - automatically populated with a [template](.github/ISSUE_TEMPLATE/issue_or_new_feature.md) for the information to be submitted with an issue / new feature.
+
+If the issue is not related to either of the above, please just delete the template and replace it with a detailed description of the problem you are trying to solve, or the question being asked.
+
+Please provide us with enough information to investigate further.
+
+## How to contribute a change to this content
+Thanks for your interest in contributing to this project.
+
+### Workflow
+* [Fork this project](https://help.github.com/articles/fork-a-repo/) to your
+ GitHub account
+* [Create a branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository) 
+for the change you intend to make
+* Make your changes to your fork
+* [Send a pull request](https://help.github.com/articles/using-pull-requests/) from your fork’s 
+branch to our `master` branch. 
+
+New pull requests within this project's repository are pre-populated with a [checklist](PULL_REQUEST_TEMPLATE.md) that describes the Definition of Done that we assess all new changes against. It is ok to submit a pull request that has not yet addressed all of these items, but be aware that the change will not be merged until it meets the Definition of Done.
+
+Please communicate with us (preferably through creation of an issue) before embarking on any significant work within a pull request. This will prevent situations where people are working at cross-purposes.
+
+### Code of conduct
+
+Before making a contribution, please read the
+[code of conduct](CODE_OF_CONDUCT.md).
