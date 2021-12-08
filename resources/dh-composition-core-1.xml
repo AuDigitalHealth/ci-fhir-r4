@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-composition-core-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1"/>
+  <version value="0.0.1"/>
+  <name value="DHCompositionCore"/>
+  <title value="Australian Digital Health Agency Core Composition"/>
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a core representation of a composition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Composition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Composition">
+      <path value="Composition"/>
+      <constraint>
+        <key value="inv-dh-cmp-01"/>
+        <severity value="error"/>
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-cmp-02"/>
+        <severity value="error"/>
+        <human value="An author shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1" />
+      </constraint>
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category"/>
+      <mustSupport value="true"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section.title">
+      <path value="Composition.section.title" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section.code">
+      <path value="Composition.section.code" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section.text">
+      <path value="Composition.section.text" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section.entry">
+      <path value="Composition.section.entry" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Composition.section.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

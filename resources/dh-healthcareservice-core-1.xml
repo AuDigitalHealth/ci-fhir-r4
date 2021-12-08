@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-healthcareservice-core-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+  <version value="0.0.1" />
+  <name value="DHHealthcareServiceCore" />
+  <title value="ADHA Core HealthcareService" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a core representation of a healthcare service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="HealthcareService" />
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-healthcareservice" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="HealthcareService">
+      <path value="HealthcareService" />
+      <short value="A healthcare service in an Australian healthcare context" />
+      <constraint>
+        <key value="inv-dh-heaser-01" />
+        <severity value="error" />
+        <human value="The healthcare service shall at least have an identifier with at least a system and a value or a type or a name" />
+        <expression value="name.exists() or type.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-heaser-02" />
+        <severity value="error" />
+        <human value="If present, the organization providing the service shall at least have a reference, an identifier or a display" />
+        <expression value="providedBy.exists() implies providedBy.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-heaser-03" />
+        <severity value="error" />
+        <human value="If present, a location shall at least have a reference, an identifier or a display" />
+        <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+      </constraint>
+    </element>
+    <element id="HealthcareService.identifier">
+      <path value="HealthcareService.identifier" />
+      <short value="External identifiers for this item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.active">
+      <path value="HealthcareService.active" />
+      <fixedBoolean value="true" />
+    </element>
+    <element id="HealthcareService.providedBy">
+      <path value="HealthcareService.providedBy" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.category">
+      <path value="HealthcareService.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.type">
+      <path value="HealthcareService.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.specialty">
+      <path value="HealthcareService.specialty" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.location">
+      <path value="HealthcareService.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.name">
+      <path value="HealthcareService.name" />
+      <mustSupport value="true" />
+    </element>
+    <element id="HealthcareService.serviceProvisionCode">
+      <path value="HealthcareService.serviceProvisionCode" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

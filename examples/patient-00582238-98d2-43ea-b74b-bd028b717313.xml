@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient xmlns="http://hl7.org/fhir">
     <id value="00582238-98d2-43ea-b74b-bd028b717313"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+    </meta>
     <identifier>
         <type>
             <coding>
@@ -14,7 +17,6 @@
             <display value="Rose Hospital"/>
         </assigner>
     </identifier>
-
     <name>
         <family value="Basil"/>
         <given value="Clover"/>

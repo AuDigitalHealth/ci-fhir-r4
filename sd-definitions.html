@@ -5,6 +5,7 @@
 
 {% include header.html %}
 
+{% include container-start.html %}
 
 <!-- <div id="segment-breadcrumb" class="segmnt">  <!-\- segment-breadcrumb -\->
   <div class="container">  <!-\- container -\->
@@ -23,16 +24,13 @@
       <div class="inner-wrapper">
         <!-- CONTENT CONTENT -->
         
-        <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-        
         <div class="col-12">
-          {% include publish-box.html %}
         <ul class="nav nav-tabs">
             <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
             <li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
            <li class="active"><a href="#">Detailed Descriptions</a></li>
-            <li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
-            <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+<!--            <li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
+-->            <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
             <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
             <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
           </ul>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-composition-es-narrative-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-narrative-1"/>
+  <version value="0.0.1"/>
+  <name value="DHCompositionES"/>
+  <title value="Australian Digital Health Agency Event Summary Narrative"/>
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of a narrative only Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Composition"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Composition">
+      <path value="Composition"/>
+      <short value="Event Summary"/>
+      <definition value="A record, reported by a healthcare provider, of a significant healthcare event involving the individual and that is useful to a wide range of providers in assessing individuals and delivering care."/>
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status"/>
+      <patternCode value="final"/>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="34133-9" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Composition.encounter.reference">
+      <path value="Composition.encounter.reference"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+      </type>
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester"/>
+    </element>
+    <element id="Composition.attester.mode">
+      <path value="Composition.attester.mode"/>
+      <fixedCode value="legal"/>
+    </element>
+    <element id="Composition.attester.party">
+      <path value="Composition.attester.party" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+      </type>
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="Composition.section.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section.text">
+      <path value="Composition.section.text" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:eventOverview">
+      <path value="Composition.section"/>
+      <sliceName value="eventOverview"/>
+      <short value="Event Overview"/>
+      <definition value="Summary information concerning the event."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Composition.section:eventOverview.code">
+      <path value="Composition.section.code"/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="101.16672"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:allergies">
+      <path value="Composition.section"/>
+      <sliceName value="allergies"/>
+      <short value="Allergies"/>
+      <definition value="Information about allergies or intolerances identified or reported during this encounter. This may include statements that a patient does not have an allergy or category of allergies."/>
+      <max value="1"/>
+    </element>
+    <element id="Composition.section:allergies.code">
+      <path value="Composition.section.code"/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="48765-2"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:medicines">
+      <path value="Composition.section"/>
+      <sliceName value="medicines"/>
+      <short value="Medicines"/>
+      <definition value="Information about medicines that are relevant to the encounter. The medicines included do not constitute a full medications list, but are those medicines that have specifically changed as a result of the encounter, or those medicines directly relevant to the encounter."/>
+      <max value="1"/>
+    </element>
+    <element id="Composition.section:medicines.code">
+      <path value="Composition.section.code"/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="10160-0"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:medicalHistory">
+      <path value="Composition.section"/>
+      <sliceName value="medicalHistory"/>
+      <short value="Medical History"/>
+      <definition value="Information about the problems, diagnoses and medical or surgical procedures of a patient. This can include statements that a patient does not have a particular condition."/>
+      <max value="1"/>
+    </element>
+    <element id="Composition.section:medicalHistory.code">
+      <path value="Composition.section.code"/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="101.16117"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:immunisations">
+      <path value="Composition.section"/>
+      <sliceName value="immunisations"/>
+      <short value="Immunisations"/>
+      <definition value="Information about vaccinations administered or reported to be administered during this encounter. This may include statements that a patient has not had a particular vaccine administered."/>
+      <max value="1"/>
+    </element>
+    <element id="Composition.section:immunisations.code">
+      <path value="Composition.section.code"/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11369-6"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:diagnosticInvestigations">
+      <path value="Composition.section" />
+      <sliceName value="diagnosticInvestigations" />
+      <short value="Diagnostic Investigations"/>
+      <definition value="Information about diagnostic tests or procedures performed on or requested for an individual during this encounter, that are considered relevant to the individual's ongoing care. This does not include a full list of diagnostic tests and procedures performed on or request for the individual but only those that are relevant to the encounter."/>
+      <min value="0"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.section:diagnosticInvestigations.code">
+      <path value="Composition.section.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="30954-2" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+  </differential>
+</StructureDefinition>

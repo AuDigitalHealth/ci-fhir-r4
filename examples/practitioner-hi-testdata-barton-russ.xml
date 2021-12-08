@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Compliant with HI Test Data in Vendor Environment-->  
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="hi-testdata-barton-russ"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1"/>        
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003618233375111"/>
+    </identifier>    
+    <name>
+        <family value="BARTON" />
+        <given value="Russ" />
+    </name>     
+    <address>        
+        <line value="47 Zorro Pl"/>
+        <city value="MAIN BEACH"/>
+        <state value="QLD"/>
+        <postalCode value="4217"/>
+        <country value="AU"/>
+    </address>
+    <gender value="male"/>
+    <birthDate value="1961-12-15"/>
+</Practitioner>

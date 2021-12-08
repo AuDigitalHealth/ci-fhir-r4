@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-substance-core-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-substance-core-1"/>
+  <version value="0.0.1"/>
+  <name value="DHSubstanceCore"/>
+  <title value="ADHA Core Substance"/>
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a core representation of a substance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Substance"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Substance" />
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Substance">
+      <path value="Substance"/>
+      <constraint>
+        <key value="inv-dh-sub-01" />
+        <severity value="error" />
+        <human value="The location shall at least have an identifier with at least a system and a value or code or description" />
+        <expression value="code.exists() or description.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+      </constraint>
+    </element>
+    <element id="Substance.identifier">
+      <path value="Substance.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.category">
+      <path value="Substance.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.code">
+      <path value="Substance.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.description">
+      <path value="Substance.description" />
+      <mustSupport value="true" />
+    </element>
+<element id="Substance.instance">
+      <path value="Substance.instance" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.instance.identifier">
+      <path value="Substance.instance.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.instance.expiry">
+      <path value="Substance.instance.expiry" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.instance.quantity">
+      <path value="Substance.instance.quantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.ingredient">
+      <path value="Substance.ingredient" />
+      <constraint>
+        <key value="inv-dh-sub-02" />
+        <severity value="error" />
+        <human value="If present, a substance reference shall at least have a reference, an identifier or a display" />
+        <expression value="substanceReference.exists() implies substanceReference.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.ingredient.quantity">
+      <path value="Substance.ingredient.quantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Substance.ingredient.substance[x]">
+      <path value="Substance.ingredient.substance[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

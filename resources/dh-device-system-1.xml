@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-device-system-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
+  <version value="0.0.1" />
+  <name value="DHDeviceSystem" />
+  <title value="ADHA System Device" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of a device as a system in the role of an author or exchange target or source for exchange usage scenarios to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Device" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Device">
+      <path value="Device" />
+      <constraint>
+        <key value="inv-dh-dev-01"/>
+        <severity value="error"/>
+        <human value="The owner shall at least have a reference or display or an identifier with at least a system and a value"/>
+        <expression value="owner.reference.exists() or owner.display.exists() or owner.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
+      </constraint>
+    </element>
+    <element id="Device.identifier">
+      <path value="Device.identifier" />
+      <min value="1"/>
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type">
+      <path value="Device.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.owner">
+      <path value="Device.owner" />
+      <min value="1"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="algrester-greg"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1"/>        
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003614900041243"/>
+    </identifier>  
+    <name>        
+        <family value="Algrester" />
+        <given value="Greg" />
+        <prefix value="Dr."/>
+    </name>
+    <telecom>
+        <system value="email"/>
+        <value value="drgreg@algregstermedical.example.com"/>
+    </telecom> 
+</Practitioner>

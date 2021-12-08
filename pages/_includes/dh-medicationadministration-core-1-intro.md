@@ -1,0 +1,21 @@
+#### Australian Digital Health Agency Core MedicationAdministration
+The purpose of this profile is to provide a core representation of a medication administration for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
+
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html) that are supported. 
+
+This profile is designed to set a core MedicationAdministration standard for:
+* Query medications administered for a patient (current and historical)
+* Record or update a medication administration record for a patient
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
+#### Guidance
+The following guidance applies:
+* TBD
+
+
+#### Boundaries and relationships
+This profile is referenced by 
+[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html), and 
+[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html).

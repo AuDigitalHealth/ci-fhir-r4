@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-medicationrequest-core-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+  <version value="0.0.1"/>
+  <name value="DHMedicationRequestCore"/>
+  <title value="ADHA Core MedicationRequest"/>
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a core representation of a request for the supply of a medication and the instructions for administration of that medication to a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="MedicationRequest"/>
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-medicationrequest"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="MedicationRequest">
+      <path value="MedicationRequest"/>
+      <constraint>
+        <key value="inv-dh-medreq-01"/>
+        <severity value="error"/>
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationrequest-core-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-medreq-02"/>
+        <severity value="error"/>
+        <human value="The requester shall at least have a reference, an identifier or a display"/>
+        <expression value="requester.exists() implies requester.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationrequest-core-1" />
+      </constraint>
+    </element>
+    <element id="MedicationRequest.identifier">
+      <path value="MedicationRequest.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.statusReason">
+      <path value="MedicationRequest.statusReason"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.intent">
+      <path value="MedicationRequest.intent"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.medication[x]">
+      <path value="MedicationRequest.medication[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.subject">
+      <path value="MedicationRequest.subject"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.encounter">
+      <path value="MedicationRequest.encounter"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.authoredOn">
+      <path value="MedicationRequest.authoredOn"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.reasonCode">
+      <path value="MedicationRequest.reasonCode"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.reasonReference">
+      <path value="MedicationRequest.reasonReference"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.note">
+      <path value="MedicationRequest.note"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.dosageInstruction">
+      <path value="MedicationRequest.dosageInstruction"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
+      <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.substitution">
+      <path value="MedicationRequest.substitution"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.substitution.allowed[x]">
+      <path value="MedicationRequest.substitution.allowed[x]"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

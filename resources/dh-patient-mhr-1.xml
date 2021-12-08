@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-patient-mhr-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+  <version value="0.0.1"/>
+  <name value="DHPatientMHR"/>
+  <title value="ADHA My Health Record Patient"/>
+  <status value="draft"/>
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of a patient for exchange usage scenarios with the My Health Record system infrastructure in Australia."/>
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Patient"/>
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Patient">
+      <path value="Patient"/>
+      <short value="A patient in the context of electronic exchange of health information"/>
+      <constraint>
+        <key value="inv-dh-pat-01"/>
+        <severity value="error"/>
+        <human value="If present, a general practitioner shall at least have a reference, an identifier or a display"/>
+        <expression value="generalPractitioner.exists() implies generalPractitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-pat-02"/>
+        <severity value="error"/>
+        <human value="If present, date of arrival shall be year of arrival"/>
+        <expression value="extension('http://hl7.org.au/fhir/StructureDefinition/date-of-arrival').exists() implies extension.valueDate.value.matches('^([0-9]{4})$')"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-pat-03" />
+        <severity value="error" />
+        <human value="One patient name shall have at least a family name" />
+        <expression value="name.family.exists()" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1" />
+      </constraint>
+    </element>
+    <element id="Patient.extension:birthPlace">
+      <path value="Patient.extension"/>
+      <sliceName value="birthPlace"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.extension:indigenousStatus">
+      <path value="Patient.extension"/>
+      <sliceName value="indigenousStatus"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.extension:mothersMaidenName">
+      <path value="Patient.extension"/>
+      <sliceName value="mothersMaidenName"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.extension:interpreterRequired">
+      <path value="Patient.extension"/>
+      <sliceName value="interpreterRequired"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.extension:dateOfArrival">
+      <path value="Patient.extension"/>
+      <sliceName value="dateOfArrival"/>
+      <short value="Year of Arrival"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="type"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.identifier:ihi">
+      <path value="Patient.identifier"/>
+      <sliceName value="ihi"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-ihi"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.identifier:medicare">
+      <path value="Patient.identifier"/>
+      <sliceName value="medicare"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.identifier:dva">
+      <path value="Patient.identifier"/>
+      <sliceName value="dva"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-dvanumber"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.identifier:dva">
+      <path value="Patient.identifier"/>
+      <sliceName value="medicalrecordnumber"/>
+      <type>
+        <code value="Identifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medicalrecordnumber"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.active">
+      <path value="Patient.active"/>
+      <fixedBoolean value="true"/>
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom"/>
+      <max value="0"/>
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.birthDate.extension:accuracyIndicator">
+      <path value="Patient.birthDate.extension"/>
+      <sliceName value="accuracyIndicator"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.birthDate.extension:birthTime">
+      <path value="Patient.birthDate.extension"/>
+      <sliceName value="birthTime"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.deceased[x]:deceasedBoolean">
+      <path value="Patient.deceased[x]"/>
+      <sliceName value="deceasedBoolean"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.deceased[x]:deceasedDateTime">
+      <path value="Patient.deceased[x]"/>
+      <sliceName value="deceasedDateTime"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.deceased[x]:deceasedDateTime.extension:accuracyIndicator">
+      <path value="Patient.deceased[x].extension"/>
+      <sliceName value="accuracyIndicator"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address"/>
+      <max value="0"/>
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.photo">
+      <path value="Patient.photo"/>
+      <max value="0"/>
+    </element>
+    <element id="Patient.communication">
+      <path value="Patient.communication"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.communication.language">
+      <path value="Patient.communication.language"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.communication.preferred">
+      <path value="Patient.communication.preferred"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Patient.generalPractitioner">
+      <path value="Patient.generalPractitioner"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>
