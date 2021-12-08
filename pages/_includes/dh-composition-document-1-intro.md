@@ -18,12 +18,11 @@ This profile is referenced by
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html).
 
 These profiles build on this profile ([ADHA Document Composition](StructureDefinition-dh-composition-document-1.html)) to define specific document compositions:
-* [ADHA Advance Care Directive Custodian Record Document Composition](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Advance Care Planning Document Composition](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Event Summary Document Composition](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Event Summary Narrative](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Person Health Notes Document Composition](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Person Health Summary Document Composition](StructureDefinition-dh-bundle-document-1.html) 
-* [ADHA Person Health Notes Document Composition](StructureDefinition-dh-bundle-document-1.html)
-* [ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-document-1.html)
+* [ADHA Advance Care Directive Custodian Record Document Composition](StructureDefinition-dh-composition-acdcr-1.html) 
+* [ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-acp-1.html) 
+* [ADHA Event Summary Document Composition](StructureDefinition-dh-composition-es-1.html) 
+* [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html) 
+* [ADHA Event Summary Narrative](StructureDefinition-dh-composition-es-narrative-1.html) 
+* [ADHA Person Health Notes Document Composition](StructureDefinition-dh-composition-phn-1.html) 
+* [ADHA Person Health Summary Document Composition](StructureDefinition-dh-composition-phs-1.html) 
+* [ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-shs-1.html)
