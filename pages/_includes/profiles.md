@@ -470,6 +470,23 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-norelevantfinding.html">AU Assertion of No Relevant Finding</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-sexassignedatbirth.html">AU Biological Sex Assigned at Birth</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bloodpressure.html">AU Blood Pressure</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyweight.html">AU Body Weight</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyheight.html">AU Body Height</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bmi.html">AU Body Mass Index</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-oxygensat.html">AU Oxygen Saturation</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-headcircum.html">AU Head Circumference</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-heartrate.html">AU Heart Rate</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodytemp.html">AU Body Temperature</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a></li>
+                                <li>AU Level of Consciousness</li>
+                                <li>AU Vital Signs Panel</li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-parity.html">AU Parity</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
                             </ul>
                         </td>   
                         <td class="frm-null"/>
