@@ -48,8 +48,8 @@
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="resource.resourceType" />
+          <type value="type" />
+          <path value="resource" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -69,7 +69,7 @@
     <element id="Bundle.entry.resource:composition">
       <path value="Bundle.entry.resource" />
       <type>
-        <code value="Resource" />
+        <code value="Composition" />
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
       </type>
     </element>
@@ -81,7 +81,7 @@
     <element id="Bundle.entry.resource:patient">
       <path value="Bundle.entry.resource" />
       <type>
-        <code value="Resource" />
+        <code value="Patient" />
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
     </element>
