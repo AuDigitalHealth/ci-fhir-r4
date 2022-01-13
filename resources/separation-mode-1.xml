@@ -1,0 +1,100 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="separation-mode-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-15T21:53:23.384+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Separation Mode</h2>
+            <tt>https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1</tt>
+            <p>The Separation Mode code system defines concepts that describe the category of
+                discharge of a patient. Separation refers to the process by which an episode of care
+                for an admitted patient ceases. The concepts defined in this code system are based
+                on those defined in the METeOR value domain for Episode of admitted patient care -
+                separation mode, code N
+                https://meteor.aihw.gov.au/content/index.phtml/itemId/270094.</p>
+        </div>
+    </text>
+    <url value="https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.13.65"/>
+    </identifier>
+    <version value="1.0.2"/>
+    <name value="SeparationMode"/>
+    <title value="Separation Mode"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-05-31"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Separation Mode code system defines concepts that describe the category of discharge of a patient. Separation refers to the process by which an episode of care for an admitted patient ceases. The concepts defined in this code system are based on those defined in the METeOR value domain for Episode of admitted patient care - separation mode, code N https://meteor.aihw.gov.au/content/index.phtml/itemId/270094."/>
+    <copyright
+        value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes material that is based on Australian Institute of Health and Welfare material. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+    <caseSensitive value="false"/>
+    <valueSet value="https://healthterminologies.gov.au/fhir/CodeSystem/separation-mode-1/vs"/>
+    <compositional value="false"/>
+    <versionNeeded value="false"/>
+    <content value="complete"/>
+    <count value="9"/>
+    <concept>
+        <code value="1"/>
+        <display value="Other Hospital"/>
+        <definition value="Discharge/transfer to (an)other acute hospital"/>
+    </concept>
+    <concept>
+        <code value="2"/>
+        <display value="Aged Care Service"/>
+        <definition
+            value="Discharge/transfer to a residential aged care service, unless this is the usual place of residence"
+        />
+    </concept>
+    <concept>
+        <code value="3"/>
+        <display value="Psychiatric Care"/>
+        <definition value="Discharge/transfer to (an)other psychiatric hospital"/>
+    </concept>
+    <concept>
+        <code value="4"/>
+        <display value="Health Service"/>
+        <definition
+            value="Discharge/transfer to other health care accommodation (includes mothercraft hospitals)"
+        />
+    </concept>
+    <concept>
+        <code value="5"/>
+        <display value="Administrative Discharge"/>
+        <definition value="Statistical discharge - type change"/>
+    </concept>
+    <concept>
+        <code value="6"/>
+        <display value="Self-Discharge"/>
+        <definition value="Left against medical advice/discharge at own risk"/>
+    </concept>
+    <concept>
+        <code value="7"/>
+        <display value="Administrative from Leave"/>
+        <definition value="Statistical discharge from leave"/>
+    </concept>
+    <concept>
+        <code value="8"/>
+        <display value="Deceased"/>
+        <definition value="Died"/>
+    </concept>
+    <concept>
+        <code value="9"/>
+        <display value="Other/Home"/>
+        <definition
+            value="Other (includes discharge to usual residence, own accommodation/welfare institution (includes prisons, hostels and group homes providing primarily welfare services))"
+        />
+    </concept>
+</CodeSystem>

@@ -1,0 +1,58 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-hypersensitivity-or-intolerance-to-substance-2"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-15T21:54:07.115+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Indicator of Hypersensitivity or Intolerance to Substance</h2>
+            <tt>https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-2</tt>
+            <p>The Indicator of Hypersensitivity or Intolerance to Substance value set includes
+                values that may be used to indicate or state a propensity to adverse reaction to a
+                substance. The values represent a range of concept types such as substances,
+                medicines, clinical findings and negated allergy findings.</p>
+        </div>
+    </text>
+    <url
+        value="https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-2"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.201.10087"/>
+    </identifier>
+    <version value="2.0.1"/>
+    <name value="IndicatorOfHypersensitivityOrIntoleranceToSubstance"/>
+    <title value="Indicator of Hypersensitivity or Intolerance to Substance"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-05-31"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Indicator of Hypersensitivity or Intolerance to Substance value set includes values that may be used to indicate or state a propensity to adverse reaction to a substance. The values represent a range of concept types such as substances, medicines, clinical findings and negated allergy findings."/>
+    <copyright
+        value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="constraint"/>
+                <op value="="/>
+                <value
+                    value="&lt; 418038007|Propensity to adverse reactions to substance| OR &lt;&lt; 716186003|No known allergy|"
+                />
+            </filter>
+        </include>
+        <include>
+            <valueSet
+                value="https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1"/>
+        </include>
+    </compose>
+</ValueSet>

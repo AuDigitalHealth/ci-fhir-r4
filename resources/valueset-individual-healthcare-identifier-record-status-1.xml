@@ -1,0 +1,45 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-individual-healthcare-identifier-record-status-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-12-15T21:54:04.324+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Individual Healthcare Identifier Record Status</h2>
+            <tt>https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1</tt>
+            <p>The Individual Healthcare Identifier Record Status value set includes values that may
+                be used to describe the classification status of a record of an Individual
+                Healthcare Identifier.</p>
+        </div>
+    </text>
+    <url value="https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.201.10022"/>
+    </identifier>
+    <version value="1.0.2"/>
+    <name value="IndividualHealthcareIdentifierRecordStatus"/>
+    <title value="Individual Healthcare Identifier Record Status"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-05-31"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Individual Healthcare Identifier Record Status value set includes values that may be used to describe the classification status of a record of an Individual Healthcare Identifier."/>
+    <copyright
+        value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <compose>
+        <include>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+        </include>
+    </compose>
+</ValueSet>

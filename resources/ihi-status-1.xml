@@ -1,1 +1,81 @@
-<CodeSystem xmlns="http://hl7.org/fhir"><id value="ihi-status-1"/><meta><versionId value="1"/><lastUpdated value="2021-11-21T21:40:07.868+00:00"/><profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/><profile value="https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-2"/></meta><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Individual Healthcare Identifier Status</h2><tt>https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1</tt><p>The Individual Healthcare Identifier Status code system defines concepts that may be used to describe the classification status of an Individual Healthcare Identifier.</p></div></text><url value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/><identifier><system value="urn:ietf:rfc:3986"/><value value="urn:oid:1.2.36.1.2001.1004.200.10015"/></identifier><version value="1.0.3"/><name value="IndividualHealthcareIdentifierStatus"/><title value="Individual Healthcare Identifier Status"/><status value="active"/><experimental value="false"/><date value="2020-05-31"/><publisher value="Australian Digital Health Agency"/><contact><telecom><system value="email"/><value value="help@digitalhealth.gov.au"/></telecom></contact><description value="The Individual Healthcare Identifier Status code system defines concepts that may be used to describe the classification status of an Individual Healthcare Identifier."/><copyright value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/><caseSensitive value="false"/><valueSet value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1/vs"/><compositional value="false"/><versionNeeded value="false"/><content value="complete"/><count value="5"/><concept><code value="active"/><display value="active"/><definition value="Active Individual Healthcare Identifier status recorded when the Individual Healthcare Identifier does not have a date of death on the record and the number status is not expired, retired, resolved or deceased."/></concept><concept><code value="deceased"/><display value="deceased"/><definition value="Deceased Individual Healthcare Identifier status where a date of death is present on the record, but it has not yet been matched with Fact of Death Data from Births, Deaths and Marriages Registries and age is not greater than 130 years."/></concept><concept><code value="retired"/><display value="retired"/><definition value="Retired Individual Healthcare Identifier status where a date of death is present on the record which has been matched with Fact of Death Data from Births, Deaths and Marriages Registries, or has reached an age of 130 years (verified Individual Healthcare Identifier records only)."/></concept><concept><code value="expired"/><display value="expired"/><definition value="Expired Individual Healthcare Identifier status where the record status is provisional and there has been no activity on the record for 90 days, or where it is unverified and has reached an age of 130 years."/></concept><concept><code value="resolved"/><display value="resolved"/><definition value="Resolved Individual Healthcare Identifier status where it has been linked with another record as part of resolving a provisional or duplicate record, or end dated as part of the replica resolution process."/></concept></CodeSystem>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ihi-status-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-11-21T21:40:07.868+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Individual Healthcare Identifier Status</h2>
+            <tt>https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1</tt>
+            <p>The Individual Healthcare Identifier Status code system defines concepts that may be
+                used to describe the classification status of an Individual Healthcare
+                Identifier.</p>
+        </div>
+    </text>
+    <url value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.200.10015"/>
+    </identifier>
+    <version value="1.0.3"/>
+    <name value="IndividualHealthcareIdentifierStatus"/>
+    <title value="Individual Healthcare Identifier Status"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-05-31"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Individual Healthcare Identifier Status code system defines concepts that may be used to describe the classification status of an Individual Healthcare Identifier."/>
+    <copyright
+        value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <caseSensitive value="false"/>
+    <valueSet value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1/vs"/>
+    <compositional value="false"/>
+    <versionNeeded value="false"/>
+    <content value="complete"/>
+    <count value="5"/>
+    <concept>
+        <code value="active"/>
+        <display value="active"/>
+        <definition
+            value="Active Individual Healthcare Identifier status recorded when the Individual Healthcare Identifier does not have a date of death on the record and the number status is not expired, retired, resolved or deceased."
+        />
+    </concept>
+    <concept>
+        <code value="deceased"/>
+        <display value="deceased"/>
+        <definition
+            value="Deceased Individual Healthcare Identifier status where a date of death is present on the record, but it has not yet been matched with Fact of Death Data from Births, Deaths and Marriages Registries and age is not greater than 130 years."
+        />
+    </concept>
+    <concept>
+        <code value="retired"/>
+        <display value="retired"/>
+        <definition
+            value="Retired Individual Healthcare Identifier status where a date of death is present on the record which has been matched with Fact of Death Data from Births, Deaths and Marriages Registries, or has reached an age of 130 years (verified Individual Healthcare Identifier records only)."
+        />
+    </concept>
+    <concept>
+        <code value="expired"/>
+        <display value="expired"/>
+        <definition
+            value="Expired Individual Healthcare Identifier status where the record status is provisional and there has been no activity on the record for 90 days, or where it is unverified and has reached an age of 130 years."
+        />
+    </concept>
+    <concept>
+        <code value="resolved"/>
+        <display value="resolved"/>
+        <definition
+            value="Resolved Individual Healthcare Identifier status where it has been linked with another record as part of resolving a provisional or duplicate record, or end dated as part of the replica resolution process."
+        />
+    </concept>
+</CodeSystem>
