@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="shs-02"/>
+    <id value="shs-01-doc"/>
     <meta>
-        <lastUpdated value="2019-09-17T09:01:00+10:00"/>
+        <lastUpdated value="2018-09-21T09:01:00+10:00"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:67a76ecc-7420-412b-81b8-cde0ed6d9aa2"/>
+        <value value="urn:uuid:e63acc0c-262b-4a51-bbec-477adf351f83"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2019-09-17T09:01:00+10:00"/>
+    <timestamp value="2018-09-21T09:01:00+10:00"/>
     <!--    Composition    -->
     <entry>
-        <fullUrl value="urn:uuid:bb7e04a9-47e7-4347-bcb6-28b65f70736c"/>
+        <fullUrl value="urn:uuid:1bf8dc5a-f11c-4417-a19d-39826e487cf4"/>
         <resource>
             <Composition xmlns="http://hl7.org/fhir">
-                <id value="bb7e04a9-47e7-4347-bcb6-28b65f70736c"/>
+                <id value="1bf8dc5a-f11c-4417-a19d-39826e487cf4"/>
                 <meta>
                     <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-shs-1"/>
                 </meta>
@@ -42,14 +42,14 @@
                 <subject>
                     <reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
                 </subject>
-                <date value="2019-09-17T09:00:00+10:00"/>
+                <date value="2018-09-21T09:00:00+10:00"/>
                 <author>
                     <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
                 </author>
                 <title value="Shared Health Summary"/>
                 <attester>
                     <mode value="legal"/>
-                    <time value="2019-09-17T09:00:00+10:00"/>
+                    <time value="2018-09-21T09:00:00+10:00"/>
                     <party>
                         <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
                     </party>
@@ -82,19 +82,12 @@
                                         <td>Candesartan 32mg</td>
                                         <td>1 tablet daily</td>
                                     </tr>
-                                    <tr>
-                                        <td>Metformin 500mg</td>
-                                        <td>1 tablet twice daily</td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </text>
                     <entry>
                         <reference value="urn:uuid:2fe9873a-0eea-415a-89ae-0b82ff2b3d0b"/>
-                    </entry>
-                    <entry>
-                        <reference value="urn:uuid:314619c2-2d97-4fb9-9c25-b0b9da92f804"/>
                     </entry>
                 </section>
                 <section>
@@ -131,54 +124,12 @@
                     </code>
                     <text>
                         <status value="additional"/>
-                        <div xmlns="http://www.w3.org/1999/xhtml">
-                            <table border="5">
-                                <caption>Problems and Diagnoses</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Condition</th>
-                                        <th>Onset</th>
-                                        <th>Abatement / Resolution</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Atrial fibrillation</td>
-                                        <td>2019</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Right lower zone pneumonia</td>
-                                        <td>March 2019</td>
-                                        <td>April 2019</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table border="5">
-                                <caption>Procedures</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Procedure</th>
-                                        <th>Date</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Total replacement of left knee joint</td>
-                                        <td>27 February 2019</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p>No relevant medical history.</p>
                         </div>
                     </text>
                     <entry>
-                        <reference value="Condition/b021320c-bc5e-4ae8-b9fc-1ed2d876e889"/>
-                    </entry>
-                    <entry>
-                        <reference value="Condition/cfa41daf-b5a6-4a05-9166-a4b7c23f08a1"/>
-                    </entry>
-                    <entry>
-                        <reference value="Procedure/3bc4a0f3-1d3e-4bde-83a9-7a04dd5f4a77"/>
+                        <reference value="urn:uuid:552bcf1e-5e3e-45b7-9539-0a99ba860146"/>
                     </entry>
                 </section>
                 <section>
@@ -218,7 +169,7 @@
             </Composition>
         </resource>
     </entry>
-    <!--    Patient cc246543-a0da-4ead-9ed6-5e064fea9ff7   -->
+    <!--    Patient    -->
     <entry>
         <fullUrl value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
         <resource>
@@ -523,147 +474,36 @@
             </MedicationStatement>
         </resource>
     </entry>
+    <!--    Observation    -->
     <entry>
-        <fullUrl value="urn:uuid:314619c2-2d97-4fb9-9c25-b0b9da92f804"/>
+        <fullUrl value="urn:uuid:552bcf1e-5e3e-45b7-9539-0a99ba860146"/>
         <resource>
-            <MedicationStatement xmlns="http://hl7.org/fhir">
-                <id value="314619c2-2d97-4fb9-9c25-b0b9da92f804"/>
-                <status value="active"/>
-                <medicationCodeableConcept>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="23358011000036102"/>
-                        <display value="metformin hydrochloride 500 mg tablet"/>
-                    </coding>
-                    <text value="Metformin 500mg"/>
-                </medicationCodeableConcept>
-                <subject>
-                    <reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
-                </subject>
-                <dosage>
-                    <text value="1 bd"/>
-                    <timing>
-                        <repeat>
-                            <frequency value="2"/>
-                            <period value="1"/>
-                            <periodUnit value="d"/>
-                        </repeat>
-                    </timing>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1"/>
-                            <unit value="tablet"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="63011000036109"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-    <!--    Condition    -->
-    <entry>
-        <fullUrl value="urn:uuid:b021320c-bc5e-4ae8-b9fc-1ed2d876e889"/>
-        <resource>
-            <Condition xmlns="http://hl7.org/fhir">
-                <id value="b021320c-bc5e-4ae8-b9fc-1ed2d876e889"/>
-                <clinicalStatus>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-                        <code value="resolved"/>
-                        <display value="Resolved"/>
-                    </coding>
-                </clinicalStatus>
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                        <code value="problem-list-item"/>
-                        <display value="Problem List Item"/>
-                    </coding>
-                </category>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="552bcf1e-5e3e-45b7-9539-0a99ba860146"/>
+                <status value="final"/>
+                <!--    TBD - Determine appropriate category for observations of this nature    -->
                 <code>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="301001009"/>
-                        <display value="Right lower zone pneumonia"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                        <code value="ASSERTION"/>
+                        <display value="Assertion"/>
                     </coding>
                 </code>
                 <subject>
                     <reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
                 </subject>
-                <onsetDateTime value="2019-03"/>
-                <abatementDateTime value="2019-04-03"/>
-                <recorder>
+                <effectiveDateTime value="2018-09-21"/>
+                <performer>
                     <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
-                </recorder>
-            </Condition>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="urn:uuid:cfa41daf-b5a6-4a05-9166-a4b7c23f08a1"/>
-        <resource>
-            <Condition xmlns="http://hl7.org/fhir">
-                <id value="cfa41daf-b5a6-4a05-9166-a4b7c23f08a1"/>
-                <clinicalStatus>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-                            <code value="active"/>
-                            <display value="Active"/>
-                        </coding>
-                </clinicalStatus>
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-                        <code value="problem-list-item"/>
-                        <display value="Problem List Item"/>
-                    </coding>
-                </category>
-                <code>
+                </performer>
+                <valueCodeableConcept>
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="49436004"/>
-                        <display value="Atrial fibrillation"/>
+                        <code value="1224831000168103"/>
+                        <display value="No relevant medical history"/>
                     </coding>
-                </code>
-                <subject>
-                    <reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
-                </subject>
-                <onsetDateTime value="2017"/>
-                <recorder>
-                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
-                </recorder>
-            </Condition>
-        </resource>
-    </entry>
-    <!--    Procedure    -->
-    <entry>
-        <fullUrl value="urn:uuid:3bc4a0f3-1d3e-4bde-83a9-7a04dd5f4a77"/>
-        <resource>
-            <Procedure xmlns="http://hl7.org/fhir">
-                <id value="3bc4a0f3-1d3e-4bde-83a9-7a04dd5f4a77"/>
-                <status value="completed"/>
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="443681002"/>
-                        <display value="Total replacement of left knee joint"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
-                </subject>
-                <performedDateTime value="2019-02-27"/>
-                <recorder>
-                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
-                </recorder>
-                <bodySite>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="735263003"/>
-                        <display value="Entire left knee joint"/>
-                    </coding>
-                </bodySite>
-            </Procedure>
+                </valueCodeableConcept>
+            </Observation>
         </resource>
     </entry>
     <!--    Immunization    -->

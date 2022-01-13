@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <!--WORK IN PROGRESS-->
-    <id value="es-narrative-02"/>
+    <id value="es-02-doc"/>
     <meta>
         <lastUpdated value="2020-06-03T11:00:00+10:00"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>        
@@ -19,7 +19,7 @@
             <id value="2384da13-ff91-4e05-930f-2d7a034ea713"/>
             <meta>
                 <lastUpdated value="2020-06-03T11:00:00+10:00"/>
-                <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-narrative-1"/>
+                <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"/>
             </meta>
             <language value="en-AU"/>
             <text>
@@ -77,6 +77,7 @@
             <custodian>
                 <reference value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
             </custodian>
+
             <section>
                 <title value="Event Details"/>
                 <code>
@@ -100,6 +101,9 @@
                         <p>Patient has no allergies.</p>
                     </div>
                 </text>
+                <entry>
+                    <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                </entry>
             </section>
 
             <section>
@@ -116,6 +120,9 @@
                         <p>No known allergies</p>
                     </div>
                 </text>
+                <entry>
+                    <reference value="urn:uuid:b21f4cad-024a-4101-a6dd-80d50e29e295"/>
+                </entry>
             </section>
 
             <section>
@@ -156,6 +163,12 @@
                         </table>
                     </div>
                 </text>
+                <entry>
+                    <reference value="urn:uuid:c20c510b-fd91-45eb-bacc-171a9a0261e5"/>
+                </entry>
+                <entry>
+                    <reference value="urn:uuid:df0af202-6da0-4e67-9c22-ebc21ee34309"/>
+                </entry>
             </section>
 
             <section>
@@ -187,6 +200,10 @@
                         </table>
                     </div>
                 </text>
+
+                <entry>
+                    <reference value="urn:uuid:ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+                </entry>
             </section>
             <section>
                 <title value="Diagnostic Investigations"/>
@@ -210,14 +227,17 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Culture and sensitivity</td>
+                                    <td>Culture and sensitivity - midstream urine</td>
                                     <td>Escherichia coli grown</td>
-									<td>2020-05-10</td>
+									<td>2020-05-23</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </text>
+                <entry>
+                    <reference value="urn:uuid:59e2ba97-44b0-45db-8f61-0a1b0e198580"/>
+                </entry>
             </section>
         </Composition>
         </resource>
@@ -471,5 +491,257 @@
             </Encounter>
         </resource>
     </entry>
-    
+
+    <entry>
+        <fullUrl value="urn:uuid:c20c510b-fd91-45eb-bacc-171a9a0261e5"/>
+        <resource>
+            <MedicationStatement xmlns="http://hl7.org/fhir">
+                <id value="c20c510b-fd91-45eb-bacc-171a9a0261e5"/>
+                <status value="intended"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+                        <code value="community"/>
+                        <display value="Community"/>						
+                    </coding>
+                </category>
+                <medicationCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="6632011000036102"/>
+                        <display value="Bactrim DS film-coated tablet"/>						
+                    </coding>
+					<text value="Bactrim DS - tablet"/>
+                </medicationCodeableConcept>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <context>
+                    <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                </context>
+                <dateAsserted value="2020-05-30T10:00:00+10:00"/>
+                <informationSource>
+                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                </informationSource>
+                <reasonCode>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="68566005"/>
+							<display value="Urinary tract infection"/>
+						</coding>					
+                </reasonCode>
+                <reasonReference>
+                    <reference value="urn:uuid:ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+                </reasonReference>
+                <note>
+                    <text value="Prescription issued."/>
+                </note>
+                <dosage>
+                    <text value="Take 2 tablets twice a day"/>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:df0af202-6da0-4e67-9c22-ebc21ee34309"/>
+        <resource>
+            <MedicationStatement xmlns="http://hl7.org/fhir">
+                <id value="df0af202-6da0-4e67-9c22-ebc21ee34309"/>
+                <status value="intended"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+                        <code value="community"/>
+                        <display value="Community"/>						
+                    </coding>
+                </category>
+                <medicationCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="54012011000036102"/>
+                        <display value="Panadol 500 mg film-coated tablet"/>						
+                    </coding>
+					<text value="Panadol 500mg - tablet"/>
+                </medicationCodeableConcept>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <context>
+                    <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                </context>
+                <dateAsserted value="2020-05-30T10:00:00+10:00"/>
+                <informationSource>
+                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                </informationSource>
+                <reasonCode>
+                    <text value="For pain"/>
+                </reasonCode>
+                <dosage>
+                    <text value="Take 1 tablet four times a day"/>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:b21f4cad-024a-4101-a6dd-80d50e29e295"/>
+        <resource>
+            <AllergyIntolerance xmlns="http://hl7.org/fhir">
+                <id value="b21f4cad-024a-4101-a6dd-80d50e29e295"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+                        <code value="active"/>
+                        <display value="Active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+                        <code value="unconfirmed"/>
+                        <display value="Unconfirmed"/>
+                    </coding>
+                </verificationStatus>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="716186003"/>
+                        <display value="No known allergy"/>
+                    </coding>
+                </code>
+                <patient>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </patient>
+                <encounter>
+                    <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                </encounter>
+                <recorder>
+                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                </recorder>
+                <asserter>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </asserter>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="ed5e2c34-2d28-4d21-a6aa-be7baad865b8"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                        <code value="active"/>
+                        <display value="Active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                        <code value="confirmed"/>
+                        <display value="Confirmed"/>
+                    </coding>
+                </verificationStatus>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                        <code value="problem-list-item"/>
+                        <display value="Problem List Item"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="68566005"/>
+                        <display value="Urinary tract infection"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:6c39fd65-2a5f-42d0-b3db-20b6416e2b9a"/>
+                </encounter>
+                <onsetDateTime value="2020-05-10"/>
+                <recorder>
+                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                </recorder>
+                <asserter>
+                    <reference value="urn:uuid:45cad6ac-e9a3-418a-8480-4e64132849f2"/>
+                </asserter>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:59e2ba97-44b0-45db-8f61-0a1b0e198580"/>
+        <resource>
+            <Observation>
+                <id value="59e2ba97-44b0-45db-8f61-0a1b0e198580"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+                        <code value="MB"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="413625003"/>
+                        <display value="Bacterial culture and sensitivity"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <effectiveDateTime value="2020-05-23T12:20:00+10:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="167570003"/>
+                        <display value="Urine culture - E. coli"/>
+                    </coding>
+                </valueCodeableConcept>
+                <specimen>
+                    <reference value="urn:uuid:81a46e66-3d35-45d4-8f6c-8041d902160d"/>
+                </specimen>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:81a46e66-3d35-45d4-8f6c-8041d902160d"/>
+        <resource>
+            <Specimen>
+                <id value="81a46e66-3d35-45d4-8f6c-8041d902160d"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="122575003"/>
+                        <display value="Urine specimen"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="urn:uuid:3a72f2d2-c9ed-40a4-beac-01c14dcf244a"/>
+                </subject>
+                <collection>
+                    <collectedDateTime value="2020-05-23T12:20:00+10:00"/>
+                    <bodySite>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="225271002"/>
+                            <display value="Collection of mid-stream specimen of urine"/>
+                        </coding>
+                        <text value="Collection of midstream specimen of urine"/>
+                    </bodySite>
+                </collection>
+            </Specimen>
+        </resource>
+    </entry>
 </Bundle>
