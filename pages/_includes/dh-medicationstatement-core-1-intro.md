@@ -99,6 +99,6 @@ The datetime in effective[x] is to be interpreted in regards to the combination 
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Event Summary Document Composition](StructureDefinition-dh-composition-phs-1.html),
-[ADHA Personal Health Summary Document Composition](StructureDefinition-dh-composition-phs-1.html), and
-[ADHA Shared Health Summary Document Composition](StructureDefinition-dh-composition-shs-1.html).
+[ADHA Event Summary Composition](StructureDefinition-dh-composition-phs-1.html),
+[ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html), and
+[ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html).

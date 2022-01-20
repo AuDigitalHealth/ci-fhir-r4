@@ -56,8 +56,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
                                 <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
                                 <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
-                                <li>ADHA Core Bundle (CI & Architecture Team)</li>
-                                <li>ADHA MHR Bundle (CI & Architecture Team)</li>
+                                <li>ADHA Core Bundle (CI &amp; Architecture Team)</li>
+                                <li>ADHA MHR Bundle (CI &amp; Architecture Team)</li>
                                 <li>ADHA Core MessageHeader (Architecture Team)</li>  
                             </ul>
                         </td> 
@@ -134,6 +134,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
                                 <li>ADHA Core ImagingStudy</li>
+                                <li>ADHA Core QuestionnaireResponse</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
@@ -240,15 +241,16 @@ Core FHIR profiles defined in this implementation guide.
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Document Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-acts-1.html">ADHA Aged Care Transfer Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
                                  <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
-                                <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Document Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Person Health Summary Document Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></li>
-                                <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></li>
+                                <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Person Health Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
                                 <li>Archicture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
                         </td>  
@@ -440,7 +442,7 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicarecardnumber.html">AU Medicare Card Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
-                                <li>AU Residential Aged Care Service Identifier</li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
                             </ul>
                         </td>  
@@ -481,7 +483,7 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodytemp.html">AU Body Temperature</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a></li>
                                 <li>AU Level of Consciousness</li>
-                                <li>AU Vital Signs Panel</li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-vitalspanel.html">AU Vital Signs Panel</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
