@@ -56,7 +56,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
                                 <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
                                 <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
-                                <li>ADHA Core Bundle (CI &amp; Architecture Team)</li>
+                                <li><a href="StructureDefinition-dh-bundle-core-1.html">ADHA Core Bundle</a> (CI &amp; Architecture Team)</li>
                                 <li>ADHA MHR Bundle (CI &amp; Architecture Team)</li>
                                 <li>ADHA Core MessageHeader (Architecture Team)</li>  
                             </ul>
@@ -245,11 +245,13 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-acts-1.html">ADHA Aged Care Transfer Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
+                                <li><a href="StructureDefinition-dh-composition-es-mix-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
                                  <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
                                 <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Person Health Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
+                                <li>ADHA Shared Medicines List Composition</li>
+                                <li>ADHA Pharmacist Shared Medicines List Composition</li>
                                 <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
                                 <li>Archicture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
@@ -303,11 +305,12 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Dispense List</li>
                                 <li>ADHA Immunization History List</li>
                                 <li>ADHA Medical History List</li>
+                                <li>ADHA Medication Use List</li>
+                                <li>ADHA Pharmacist Shared Medicines List</li>
                                 <li>ADHA Problem List</li>
                                 <li>ADHA Procedure List</li>
                                 <li>ADHA Prescription and Dispense List</li>
                                 <li>ADHA Prescription List</li>
-                                <li>ADHA Medication Use List</li>
                             </ul>
                         </td>  
                     </tr>
