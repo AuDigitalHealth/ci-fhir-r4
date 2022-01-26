@@ -303,13 +303,13 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Adverse Reactions List</li>
                                 <li>ADHA Allergies and Interolances List</li>
                                 <li>ADHA Dispense List</li>
-                                <li>ADHA Immunization History List</li>
+                                <li><a href="StructureDefinition-dh-list-immunization-1.html">ADHA Immunisation History List</a></li>
                                 <li>ADHA Medical History List</li>
                                 <li><a href="StructureDefinition-dh-list-medication-use-1.html">ADHA Medication Use List</a></li>
                                 <li><a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a></li>
                                 <li>ADHA Problem List</li>
                                 <li>ADHA Procedure List</li>
-                                <li>ADHA Prescription and Dispense List</li>
+                                <li><a href="StructureDefinition-dh-list-medication-pdl-1.html">ADHA Prescription and or Dispense History List</a></li>
                                 <li>ADHA Prescription List</li>
                             </ul>
                         </td>  

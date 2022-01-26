@@ -17,5 +17,5 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html), and 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html).
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), and 
+[ADHA Prescription and or Dispense History List](StructureDefinition-dh-list-medication-pdl-1.html).
