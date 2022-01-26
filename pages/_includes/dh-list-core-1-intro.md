@@ -4,8 +4,8 @@ The purpose of this profile is to provide a core representation of a list for th
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [List](http://hl7.org/fhir/R4/list.html) that are supported. 
 
 This profile is designed to set a core List standard for:
-* Query for a TBD
-* Record or update TBD
+* Query for a list associated with a patient
+* Record or update a list associated with a patient
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
@@ -19,3 +19,6 @@ The following guidance applies:
 #### Boundaries and relationships
 This profile is referenced by 
 [TBD](StructureDefinition-TBD-1.html).
+
+These profiles build on this profile ([ADHA Core List](StructureDefinition-dh-list-core-1.html)) to define specific document compositions:
+* [ADHA Medication Use List](StructureDefinition-dh-list-medication-use-1.html) 

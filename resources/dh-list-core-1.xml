@@ -127,6 +127,13 @@
     </element>
     <element id="List.entry">
       <path value="List.entry" />
+      <constraint>
+        <key value="inv-dh-lst-05"/>
+        <severity value="error"/>
+        <human value="All observations shall conform to ADHA Simple Observation"/>
+        <expression value="item.resolve().where($this is Observation).exists() implies item.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1')"/>
+        <source value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="List.entry.flag">

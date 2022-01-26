@@ -1,0 +1,59 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-medicines-review-type-2"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-24T23:53:14.300+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <language value="en"/>
+    <url value="https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.201.10114"/>
+    </identifier>
+    <version value="2.0.1"/>
+    <name value="MedicinesReviewType"/>
+    <title value="Medicines Review Type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Medicines Review Type value set includes values that can be used to categorise a medicines review by healthcare setting."/>
+    <copyright
+        value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="1348931000168107"/>
+            </concept>
+            <concept>
+                <code value="1348961000168104"/>
+            </concept>
+            <concept>
+                <code value="1348951000168101"/>
+            </concept>
+            <concept>
+                <code value="1348921000168109"/>
+            </concept>
+            <concept>
+                <code value="1348941000168103"/>
+            </concept>
+            <concept>
+                <code value="1348851000168109"/>
+            </concept>
+            <concept>
+                <code value="1378411000168109"/>
+            </concept>
+            <concept>
+                <code value="1407621000168104"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

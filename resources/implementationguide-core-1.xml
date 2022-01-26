@@ -223,6 +223,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-list-medication-use-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Medication Use List"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-list-medication-use-pmr-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Practitioner Medicine Review List"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-location-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core Location"/>
@@ -296,6 +310,13 @@
                 <reference value="StructureDefinition/dh-observation-simple-1"/>
             </reference>
             <name value="Australian Digital Health Agency Simple Observation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-packed-in-daa-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Medicines Packed in Dose Administration Aid Indicator"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -671,6 +692,12 @@
         <resource>
             <reference>
                 <reference value="ValueSet/valueset-medication-form-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-medicines-review-type-2"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>

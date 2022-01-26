@@ -13,5 +13,8 @@ The following guidance applies:
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Event Summary Composition](StructureDefinition-dh-composition-phs-1.html),
-[ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html), and
-[ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html).
+[ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html),
+[ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html),
+[ADHA Core List](StructureDefinition-dh-list-core-1.html),
+[ADHA Medication Use List](StructureDefinition-dh-list-medication-use-1.html), and
+[ADHA Practitioner Medicine Review List](StructureDefinition-dh-list-medication-use-pmr-1.html).
