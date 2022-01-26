@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-list-medication-pdl-1"/>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-pdl-1"/>
+  <version value="0.0.1"/>
+  <name value="DHListPrescriptionDispense"/>
+  <title value="ADHA Prescription and or Dispense History List"/>
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of list that describes a patient's prescription and or dispense history for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List">
+      <path value="List"/>
+      <short value="A precription and dispense history, or a prescription history, or a dispense history" />
+      <definition value="A prescription and/or dispense history for a patient at a point in time." />
+      <constraint>
+        <key value="inv-dh-pdl-01" />
+        <severity value="error" />
+        <human value="A dispense list shall not contain a prescription" />
+        <!--If this list is NOT Dispense List the item CAN be a prescription-->
+        <expression value="entry.item.reference.resolve() is MedicationRequest implies code.coding.code!='100.32014'" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-pdl-1" />
+      </constraint>
+      <constraint>
+        <key value="inv-dh-pdl-02" />
+        <severity value="error" />
+        <human value="A prescription list shall not contain a dispense record" />
+        <!--If this list is NOT Prescription List the item CAN be a dispense record-->
+        <expression value="entry.item.reference.resolve() is MedicationDispense implies code.coding.code!='57828-6'" />
+        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-pdl-1" />
+      </constraint>
+    </element>
+    <element id="List.code">
+      <path value="List.code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1" />
+      </binding>
+    </element>
+    <element id="List.entry">
+      <path value="List.entry" />
+    </element>
+    <element id="List.entry.extension:changeDescription">
+      <path value="List.entry.extension" />
+      <sliceName value="changeDescription" />
+      <short value="Description of the change to medicine item use" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.entry.flag">
+      <path value="List.entry.flag" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-event-2" />
+      </binding>
+    </element>
+    <element id="List.entry.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationrequest-core-1" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
