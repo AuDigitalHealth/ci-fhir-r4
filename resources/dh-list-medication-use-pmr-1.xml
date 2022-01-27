@@ -20,7 +20,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="List" />
-  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-1" />
   <derivation value="constraint" />
   <differential>
     <element id="List">
@@ -30,7 +30,7 @@
       <constraint>
         <key value="inv-dh-pmr-04"/>
         <severity value="error"/>
-        <human value="Encounter type shall be a member of [Medicines Review Type](https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2)"/>
+        <human value="Encounter type shall be a member of Medicines Review Type value set https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2"/>
         <expression value="encounter.resolve().where($this is Encounter).exists() implies encounter.resolve().where($this is Encounter.type and Encounter.type.memberOf('https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2'))"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1" />
       </constraint>
