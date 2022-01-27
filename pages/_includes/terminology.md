@@ -301,6 +301,12 @@ The following value sets form part of this implementation guide.
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-status.html">IHI Status</a></td>
     </tr>
     <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/indicator-of-medicines-packed-in-daa-1">Indicator Of Medicines Packed In A Dose Administration Aid</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/indicator-of-medicines-packed-in-daa-1</td>
+        <td><a href="StructureDefinition-dh-packed-in-daa-1.html">ADHA Packed in Dose Administration Aid Indicator</a></td>
+    </tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1">Individual Healthcare Identifier Status</a></td>
         <td>HL7 AU</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/ihi-record-status-1</td>
@@ -316,7 +322,7 @@ The following value sets form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/R4/valueset-list-status.html">ListStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/list-status</td>
-        <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></td>
+        <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a>, <a href="StructureDefinition-dh-list-immunization-1.html">ADHA Immunisation History List</a>, <a href="StructureDefinition-dh-list-medication-use-1.html">ADHA Medication Use List</a>, <a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a>, <a href="StructureDefinition-dh-list-medication-pdl-1.html">ADHA Prescription and or Dispense History List</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a></td>
@@ -378,11 +384,29 @@ The following value sets form part of this implementation guide.
         <td>http://hl7.org/fhir/ValueSet/medicationrequest-status</td>
         <td><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></td>
     </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-event-1">Medicine Item Change from Event</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-event-1</td>
+        <td><a href="StructureDefinition-dh-list-medication-use-1.html">ADHA Medication Use List</a>, <a href="StructureDefinition-dh-list-medication-pdl-1.html">ADHA Prescription and or Dispense History List</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-from-practitioner-medicines-review-2">Medicine Item Change from Practitioner Medicines Review</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-from-practitioner-medicines-review-2</td>
+        <td><a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2">Medicines Review Type</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2</td>
+        <td><a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a></td>
+    </tr>
      <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2">Non-Clinical Empty Reason</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2</td>
-        <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></td>
+        <td><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a>, <a href="StructureDefinition-dh-list-immunization-1.html">ADHA Immunisation History List</a>, <a href="StructureDefinition-dh-list-medication-use-1.html">ADHA Medication Use List</a>, <a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a>, <a href="StructureDefinition-dh-list-medication-pdl-1.html">ADHA Prescription and or Dispense History List</a></td>
     </tr>   
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">Observation Interpretation Codes</a></td>
@@ -414,6 +438,12 @@ The following value sets form part of this implementation guide.
         <td>	http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype</td>
         <td><a href="StructureDefinition-dh-relatedperson-core-1.html">ADHA Core RelatedPerson</a>, <a href="StructureDefinition-dh-relatedperson-mhr-1.html">ADHA My Health Record RelatedPerson</a></td>
     </tr> 
+    <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1">Prescription and Dispense List Type</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1</td>
+        <td><a href="StructureDefinition-dh-list-medication-pdl-1.html">ADHA Prescription and or Dispense History List</a></td>
+    </tr>
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1">Procedure</a></td>
         <td>ADHA</td>
