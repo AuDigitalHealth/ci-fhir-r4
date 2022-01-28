@@ -20,7 +20,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="List" />
-  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-1" />
   <derivation value="constraint" />
   <differential>
     <element id="List">
@@ -28,10 +28,10 @@
       <short value="A list of medicine items for a patient at a point in time from a medicines review" />
       <definition value="A list of medicines at a point in time that describes medicine item use for an individual from a practiionter medicines review e.g. Pharmacist Shared Medicines List. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future." />
       <constraint>
-        <key value="inv-dh-pmr-04"/>
+        <key value="inv-dh-pmr-01"/>
         <severity value="error"/>
-        <human value="Encounter type shall be a member of [Medicines Review Type](https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2)"/>
-        <expression value="encounter.resolve().where($this is Encounter).exists() implies encounter.resolve().where($this is Encounter.type and Encounter.type.memberOf('https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2'))"/>
+        <human value="Encounter type shall be a member of Medicines Review Type value set https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2"/>
+        <expression value="encounter.resolve().type.memberOf('https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2')"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1" />
       </constraint>
     </element>

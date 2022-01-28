@@ -3,8 +3,8 @@
     <id value="implementationguide-core-1"/>
     <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/ImplementationGuide/implementationguide-core-1"/>
     <version value="0.0.2"/>
-    <name value="Core Asset"/>
-    <title value="Core Asset"/>
+    <name value="DHCoreAsset"/>
+    <title value="ADHA Core Asset"/>
     <status value="draft"/>
     <experimental value="true"/>
     <publisher value="Australian Digital Health Agency"/>
@@ -476,6 +476,20 @@
             <name value="Personal Health Notes Document Composition with contained resources"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-phn-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/psml-01-doc"/>
+            </reference>
+            <name value="Pharmacist Shared Medicines List Document Bundle for Mrs Bonny Goodwin"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/psml-03-doc"/>
+            </reference>
+            <name value="Pharmacist Shared Medicines List Document Bundle for Mac PRIEST"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+        </resource>
         <!--DOCUMENT REFERENCES-->
         <resource>
             <reference>
@@ -561,6 +575,12 @@
         </resource>
         <resource>
             <reference>
+                <reference value="CodeSystem/australian-states-territories-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/date-accuracy-indicator-1"/>
             </reference>
             <exampleBoolean value="false"/>
@@ -589,7 +609,7 @@
             </reference>
             <exampleBoolean value="false"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="ValueSet/valueset-advance-care-planning-document-type-1"/>
             </reference>
@@ -603,6 +623,12 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/valueset-amt-vaccine-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/valueset-australian-indigenous-status-1"/>
             </reference>
             <exampleBoolean value="false"/>
@@ -610,6 +636,12 @@
         <resource>
             <reference>
                 <reference value="ValueSet/valueset-australian-medication-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-australian-states-territories-2"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>
@@ -687,6 +719,12 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/valueset-history-of-medication-use-list-type-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/valueset-hypersensitivity-or-intolerance-to-substance-2"/>
             </reference>
             <exampleBoolean value="false"/>
@@ -706,6 +744,12 @@
         <resource>
             <reference>
                 <reference value="ValueSet/valueset-medication-form-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-medication-reason-taken-1"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>
@@ -768,7 +812,7 @@
                 <reference value="ValueSet/valueset-service-type-1"/>
             </reference>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         
         <page>
             <nameUrl value="index.html"/>

@@ -58,7 +58,11 @@
       <path value="List.entry.extension" />
       <sliceName value="changeDescription" />
       <short value="Description of the change to medicine item use" />
-      <mustSupport value="true" />
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/change-description"/>
+      </type>
+      <max value="1" />
     </element>
     <element id="List.entry.flag">
       <path value="List.entry.flag" />

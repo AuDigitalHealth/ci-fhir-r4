@@ -1,28 +1,29 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="valueset-prescription-dispense-list-type-1"/>
+    <id value="valueset-history-of-medication-use-list-type-1"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2022-01-23T22:15:13.065+00:00"/>
+        <lastUpdated value="2022-01-23T22:15:06.563+00:00"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>Prescription and Dispense List Type</h2>
-            <tt>https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1</tt>
-            <p>The Prescription and Dispense List Type value set includes values that may be used to
-                categorise a type of medicines list that contains prescription or dispense
-                records.</p>
+            <h2>History Of Medication Use List Type</h2>
+            <tt>https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1</tt>
+            <p>The History Of Medication Use List Type value set includes values that may be used to
+                categorise a type of medicines list that contains a history of pertinent
+                medications.</p>
         </div>
     </text>
-    <url value="https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1"/>
+    <url
+        value="https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:oid:1.2.36.1.2001.1004.201.10088"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.201.10089"/>
     </identifier>
     <version value="1.0.2"/>
-    <name value="PrescriptionAndDispenseListType"/>
-    <title value="Prescription and Dispense List Type"/>
+    <name value="HistoryOfMedicationUseListType"/>
+    <title value="History Of Medication Use List Type"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2021-04-30"/>
@@ -34,7 +35,7 @@
         </telecom>
     </contact>
     <description
-        value="The Prescription and Dispense List Type value set includes values that may be used to categorise a type of medicines list that contains prescription or dispense records."/>
+        value="The History Of Medication Use List Type value set includes values that may be used to categorise a type of medicines list that contains a history of pertinent medications."/>
     <copyright
         value="Copyright © 2019 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
     <compose>
@@ -42,16 +43,16 @@
             <system
                 value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
             <concept>
-                <code value="100.32014"/>
+                <code value="101.32009"/>
             </concept>
             <concept>
-                <code value="100.32015"/>
+                <code value="101.32027"/>
             </concept>
         </include>
         <include>
             <system value="http://loinc.org"/>
             <concept>
-                <code value="57828-6"/>
+                <code value="10160-0"/>
             </concept>
         </include>
     </compose>

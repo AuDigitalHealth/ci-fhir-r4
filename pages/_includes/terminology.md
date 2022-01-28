@@ -159,13 +159,13 @@ The following value sets form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html">CompositionAttestationMode</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/composition-attestation-mode</td>
-        <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
+        <td><a href="StructureDefinition-dh-composition-document-1.html">ADHA Core Document Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a></td>
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/composition-status</td>
-        <td><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></td>
+        <td><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></td>
     </tr>
    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1">Clinical Condition</a></td>
@@ -268,7 +268,7 @@ The following value sets form part of this implementation guide.
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2">Health Summary Non-Clinical Empty Reason</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2</td>
-        <td><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
+        <td><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a></td>
     </tr>
        <tr>
         <td><a href="https://terminology.hl7.org/3.0.0/ValueSet-v2-0131.html">hl7VS-contactRole2</a></td>

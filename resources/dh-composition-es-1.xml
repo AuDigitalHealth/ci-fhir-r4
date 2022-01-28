@@ -186,7 +186,7 @@
         <key value="inv-dh-es-03"/>
         <severity value="error"/>
         <human value="This section shall not contain a statement of medication use and an assertion of no relevant finding"/>
-        <expression value="entry.resolve().where($this is MedicationStatement).exists() xor entry.resolve().where($this is Observation ).exists()"/>
+        <expression value="entry.resolve().where($this is MedicationStatement).exists() xor entry.resolve().where($this is Observation).exists()"/>
         <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1" />
       </constraint>
       <constraint>
