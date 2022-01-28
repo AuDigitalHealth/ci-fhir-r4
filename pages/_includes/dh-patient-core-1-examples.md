@@ -17,5 +17,12 @@
       <td><a href="Patient-hi-testdata-matterson-lenny.xml.html">XML</a></td>
       <td><a href="Patient-hi-testdata-matterson-lenny.json.html">JSON</a></td>
       <td><a href="Patient-hi-testdata-matterson-lenny.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Patient-hi-testdata-priest-mac.html">Mac PRIEST (Vendor Environment HI Test Data)</a></td>
+      <td>hi-testdata-priest-mac</td>
+      <td><a href="Patient-hi-testdata-priest-mac.xml.html">XML</a></td>
+      <td><a href="Patient-hi-testdata-priest-mac.json.html">JSON</a></td>
+      <td><a href="Patient-hi-testdata-priest-mac.ttl.html">Turtle</a></td>
    </tr>         
 </table>

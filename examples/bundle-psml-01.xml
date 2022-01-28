@@ -1,310 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="psml-01-doc"/>
+    <id value="psml-01"/>
     <meta>
         <lastUpdated value="2019-08-12T10:30:00+10:00"/>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-payload-1"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-core-1"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:a1446554-f351-47b0-86f0-10baedadac60"/>
+        <value value="urn:uuid:c509a28d-521f-476d-b5d6-254896d6ab8b"/>
     </identifier>
-    <type value="document"/>
-    <timestamp value="2019-08-12T10:30:00+10:00"/>
+    <type value="collection"/>
+    <!--<timestamp value="2019-08-12T10:30:00+10:00"/>-->
     <entry>
-        <fullUrl value="urn:uuid:fbb76e2c-62d9-40d9-bab3-00bd389b1913"/>
-        <resource>
-            <Composition xmlns="http://hl7.org/fhir">
-                <id value="fbb76e2c-62d9-40d9-bab3-00bd389b1913"/>
-                <meta>
-                    <versionId value="20190812v01"/>
-                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
-                </meta>
-                <language value="en-AU"/>
-                <!--WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
-                to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
-                The contents below is not consistent with good or recommended practice. -->
-                <text>
-                    <status value="additional"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <h2>Pharmacist Shared Medicines List</h2>
-                        <ul>
-                            <li>Date: 12/08/2019</li>
-                            <li>Status: final</li>
-                        </ul>
-                        <h3>Patient details</h3>
-                        <ul>
-                            <li>Mrs Bonny Goodwin</li>
-                            <li>Contact: (08) 5550 1234 (home phone); 0491 570 006 (mobile)</li>
-                            <li>Female</li>
-                            <li>Married</li>
-                            <li>IHI: 8003608000228445</li>
-                            <li>Medicare number: 3951032981</li>
-                        </ul>
-                        <h3>Author details</h3>
-                        <ul>
-                            <li>Pharmacist</li>
-                            <li>HPI-I: 8003619900041630</li>
-                        </ul>
-                        <h3>Attester details</h3>
-                        <ul>
-                            <li>Pharmacist</li>
-                            <li>HPI-I: 8003619900041630</li>
-                            <li>Time: 02 Dec 2019 10:00 AM</li>
-                        </ul>
-                        <h3>General Practitioner</h3>
-                        <ul>
-                            <li>Dr. A. G. Practitioner</li>
-                        </ul>
-                        <h3>Allergies and Intolerances</h3>
-                        <p>No known allergies</p>
-
-                        <h3>Encounter Details</h3>
-                        <p>Medicines review: 12 Aug 2019 09:00 AM to 12 Aug 2019 10:30 AM</p>
-
-                        <h3>Current Medicines</h3>
-                        <table border="1">
-                            <caption>Current medicines</caption>
-                            <thead>
-                                <tr>
-                                    <th>Medicine</th>
-                                    <th>Medicine brand name</th>
-                                    <th>Directions</th>
-                                    <th>Purpose</th>
-                                    <th>Status</th>
-                                    <th>Status reason</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td/>
-                                    <td>Tritace</td>
-                                    <td>Take one tablet in the morning daily.</td>
-                                    <td>To reduce high blood pressure; treat heart failure after a
-                                        heart attack; prevent progresion of kidney failure; reduce
-                                        the risk of heart attack, stroke and stenting</td>
-                                    <td>Unchanged</td>
-                                    <td/>
-                                </tr>
-                                <tr>
-                                    <td>docusate sodium 50 mg + sennoside B 8 mg tablet</td>
-                                    <td>Co-Senna</td>
-                                    <td>Take two tablets twice a day.</td>
-                                    <td>Laxative for constipation, works by softening the stools and
-                                        also assists by stimulating the gut to achieve bowel
-                                        movements.</td>
-                                    <td>New</td>
-                                    <td>Laxative for constipation.</td>
-                                </tr>
-                                <tr>
-                                    <td>Oxycodone</td>
-                                    <td>Endone</td>
-                                    <td>Take one to two tablets every four hours when required.</td>
-                                    <td>For relief of moderate to severe pain.</td>
-                                    <td>Amended</td>
-                                    <td>Dose increased</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </text>
-                <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:c17ed9f8-228e-424b-9235-a98ac80d2756"/>
-                </identifier>
-                <status value="final"/>
-                <type>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="56445-0"/>
-                    </coding>
-                    <text value="Pharmacist Shared Medicines List"/>
-                </type>
-                <category>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="56445-0"/>
-                    </coding>
-                </category>
-                <subject>
-                    <reference value="urn:uuid:d4b652b9-ac4b-41f0-93f3-7f40b24b16d3"/>
-                    <!-- logical reference to Patient -->
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NI"/>
-                            </coding>
-                            <text value="IHI"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                        <value value="8003608000228445"/>
-                    </identifier>
-                </subject>
-                <encounter>
-                    <reference value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
-                </encounter>
-                <date value="2019-08-12"/>
-                <author>
-                    <!-- logical reference to PractitionerRole -->
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                <code value="NPI"/>
-                                <display value="National provider identifier"/>
-                            </coding>
-                            <text value="HPI-I"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-                        <value value="8003619900041630"/>
-                    </identifier>
-                </author>
-                <title value="Shared Medicines List"/>
-                <attester>
-                    <mode value="legal"/>
-                    <time value="2019-09-02T10:00:15+10:00"/>
-                    <party>
-                        <!-- logical reference to PractitionerRole -->
-                        <identifier>
-                            <type>
-                                <coding>
-                                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                                    <code value="NPI"/>
-                                    <display value="National provider identifier"/>
-                                </coding>
-                                <text value="HPI-I"/>
-                            </type>
-                            <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-                            <value value="8003619900041630"/>
-                        </identifier>
-                    </party>
-                </attester>
-                <custodian>
-                    <!-- logical reference to Organization -->
-                    <identifier>
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
-                                <code value="NOI"/>
-                            </coding>
-                            <text value="HPI-O"/>
-                        </type>
-                        <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
-                        <value value="8003623233366573"/>
-                    </identifier>
-                </custodian>
-                <section>
-                    <title value="Allergies and Intolerances"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="48765-2"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
-                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
-                            <p>No known allergies</p>
-                        </div>
-                    </text>
-                    <entry>
-                        <reference value="urn:uuid:9e146d18-06c8-4906-a8dd-09aa11941a72"/>
-                    </entry>
-                </section>
-                <section>
-                    <title value="Current Medicines"/>
-                    <code>
-                        <coding>
-                            <system
-                                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-                            <code value="101.32009"/>
-                            <display value="Current Medicines"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="extensions"/>
-                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
-                            <table border="1">
-                                <caption>Current Medicines</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Medicine</th>
-                                        <th>Medicine brand name</th>
-                                        <th>Directions</th>
-                                        <th>Purpose</th>
-                                        <th>Status</th>
-                                        <th>Status reason</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td/>
-                                        <td>Tritace</td>
-                                        <td>Take one tablet in the morning daily.</td>
-                                        <td>To reduce high blood pressure; treat heart failure after
-                                            a heart attack; prevent progresion of kidney failure;
-                                            reduce the risk of heart attack, stroke and
-                                            stenting</td>
-                                        <td>Unchanged</td>
-                                        <td/>
-                                    </tr>
-                                    <tr>
-                                        <td>docusate sodium 50 mg + sennoside B 8 mg tablet</td>
-                                        <td>Co-Senna</td>
-                                        <td>Take two tablets twice a day.</td>
-                                        <td>Laxative for constipation, works by softening the stools
-                                            and also assists by stimulating the gut to achieve bowel
-                                            movements.</td>
-                                        <td>New</td>
-                                        <td>Laxative for constipation.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Oxycodone</td>
-                                        <td>Endone</td>
-                                        <td>Take one to two tablets every four hours when
-                                            required.</td>
-                                        <td>For relief of moderate to severe pain.</td>
-                                        <td>Amended</td>
-                                        <td>Dose increased</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </text>
-                    <entry>
-                        <reference value="urn:uuid:bea8b6f7-5de8-4247-ac07-b319ec6d0c24"/>
-                    </entry>
-                </section>
-            </Composition>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="urn:uuid:d4b652b9-ac4b-41f0-93f3-7f40b24b16d3"/>
-        <resource>
-            <Patient xmlns="http://hl7.org/fhir">
-                <id value="d4b652b9-ac4b-41f0-93f3-7f40b24b16d3"/>
-                <!-- logical reference to Patient for matching purposes only-->
-                <identifier>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="NI"/>
-                        </coding>
-                        <text value="IHI"/>
-                    </type>
-                    <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-                    <value value="8003608000228445"/>
-                </identifier>
-            </Patient>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+        <fullUrl value="urn:uuid:d3d6cdc2-8e76-45a7-a825-169d68938724"/>
         <resource>
             <Encounter>
-                <id value="f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+                <id value="d3d6cdc2-8e76-45a7-a825-169d68938724"/>
                 <status value="finished"/>
                 <class>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
@@ -373,10 +85,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:9e146d18-06c8-4906-a8dd-09aa11941a72"/>
+        <fullUrl value="urn:uuid:bda4e2f7-1304-448f-b281-b5041f2a87ce"/>
         <resource>
             <AllergyIntolerance>
-                <id value="9e146d18-06c8-4906-a8dd-09aa11941a72"/>
+                <id value="bda4e2f7-1304-448f-b281-b5041f2a87ce"/>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
@@ -414,7 +126,7 @@
                     </identifier>
                 </patient>
                 <encounter>
-                    <reference value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+                    <reference value="urn:uuid:d3d6cdc2-8e76-45a7-a825-169d68938724"/>
                 </encounter>
                 <recorder>
                     <!-- logical reference to PractitionerRole -->
@@ -449,10 +161,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:bea8b6f7-5de8-4247-ac07-b319ec6d0c24"/>
+        <fullUrl value="urn:uuid:25193325-9340-4707-858f-d248c8a2a446"/>
         <resource>
             <List>
-                <id value="bea8b6f7-5de8-4247-ac07-b319ec6d0c24"/>
+                <id value="25193325-9340-4707-858f-d248c8a2a446"/>
                 <meta>
                     <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
                 </meta>
@@ -482,7 +194,7 @@
                     </identifier>
                 </subject>
                 <encounter>
-                    <reference value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+                    <reference value="urn:uuid:d3d6cdc2-8e76-45a7-a825-169d68938724"/>
                 </encounter>
                 <date value="2019-08-12"/>
                 <source>
@@ -509,7 +221,7 @@
                         </coding>
                     </flag>
                     <item>
-                        <reference value="urn:uuid:69ae207f-b088-4585-a041-7196479c3fbe"/>
+                        <reference value="urn:uuid:72013c32-9d20-473b-97ea-f1b0481b2452"/>
                     </item>
                 </entry>
                 <entry>
@@ -524,7 +236,7 @@
                         </coding>
                     </flag>
                     <item>
-                        <reference value="urn:uuid:c32b7d74-33ef-4ccc-85e2-442148071b01"/>
+                        <reference value="urn:uuid:bf8ce573-f675-4ce2-8c32-e58b595534f8"/>
                     </item>
                 </entry>
                 <entry>
@@ -539,20 +251,20 @@
                         </coding>
                     </flag>
                     <item>
-                        <reference value="urn:uuid:28c74aa8-b481-4ab2-80a2-bec1354b95a0"/>
+                        <reference value="urn:uuid:7f235139-5e54-4e8a-9fb4-4c5521c6c0b6"/>
                     </item>
                 </entry>
             </List>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:69ae207f-b088-4585-a041-7196479c3fbe"/>
+        <fullUrl value="urn:uuid:72013c32-9d20-473b-97ea-f1b0481b2452"/>
         <resource>
             <MedicationStatement>
-                <id value="69ae207f-b088-4585-a041-7196479c3fbe"/>
+                <id value="72013c32-9d20-473b-97ea-f1b0481b2452"/>
                 <status value="active"/>
                 <medicationReference>
-                    <reference value="urn:uuid:01015470-52ce-4323-996b-f03f5f546f8f"/>
+                    <reference value="urn:uuid:94297b10-a865-4f14-89af-d5e6155732d9"/>
                 </medicationReference>
                 <subject>
                     <!-- logical reference to Patient -->
@@ -569,7 +281,7 @@
                     </identifier>
                 </subject>
                 <context>
-                    <reference value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+                    <reference value="urn:uuid:d3d6cdc2-8e76-45a7-a825-169d68938724"/>
                 </context>
                 <reasonCode>
                     <text value="To reduce high blood pressure; treat heart failure after a heart attack; prevent
@@ -583,13 +295,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:c32b7d74-33ef-4ccc-85e2-442148071b01"/>
+        <fullUrl value="urn:uuid:bf8ce573-f675-4ce2-8c32-e58b595534f8"/>
         <resource>
             <MedicationStatement>
-                <id value="c32b7d74-33ef-4ccc-85e2-442148071b01"/>
+                <id value="bf8ce573-f675-4ce2-8c32-e58b595534f8"/>
                 <status value="active"/>
                 <medicationReference>
-                    <reference value="urn:uuid:7cb67069-6a34-46c2-9ff5-76277fafc38e"/>
+                    <reference value="urn:uuid:288fc669-726f-4df1-a4fd-da095ae9a716"/>
                 </medicationReference>
                 <subject>
                     <!-- logical reference to Patient -->
@@ -606,7 +318,7 @@
                     </identifier>
                 </subject>
                 <context>
-                    <reference value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+                    <reference value="urn:uuid:d3d6cdc2-8e76-45a7-a825-169d68938724"/>
                 </context>
                 <reasonCode>
                     <coding>
@@ -624,13 +336,13 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:28c74aa8-b481-4ab2-80a2-bec1354b95a0"/>
+        <fullUrl value="urn:uuid:7f235139-5e54-4e8a-9fb4-4c5521c6c0b6"/>
         <resource>
             <MedicationStatement>
-                <id value="28c74aa8-b481-4ab2-80a2-bec1354b95a0"/>
+                <id value="7f235139-5e54-4e8a-9fb4-4c5521c6c0b6"/>
                 <status value="active"/>
                 <medicationReference>
-                    <reference value="urn:uuid:9b79ca2a-023a-4076-b18d-0b2b5d99800d"/>
+                    <reference value="urn:uuid:8252d431-5db1-43f4-8e94-e22de10663fa"/>
                 </medicationReference>
                 <subject>
                     <!-- logical reference to Patient -->
@@ -647,7 +359,7 @@
                     </identifier>
                 </subject>
                 <context>
-                    <reference value="urn:uuid:f168de08-0068-4e8b-917d-c7b84dcafbf6"/>
+                    <reference value="urn:uuid:d3d6cdc2-8e76-45a7-a825-169d68938724"/>
                 </context>
                 <reasonCode>
                     <coding>
@@ -664,7 +376,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:01015470-52ce-4323-996b-f03f5f546f8f"/>
+        <fullUrl value="urn:uuid:94297b10-a865-4f14-89af-d5e6155732d9"/>
         <resource>
             <Medication>
                 <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
@@ -677,7 +389,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:7cb67069-6a34-46c2-9ff5-76277fafc38e"/>
+        <fullUrl value="urn:uuid:288fc669-726f-4df1-a4fd-da095ae9a716"/>
         <resource>
             <Medication>
                 <code>
@@ -692,7 +404,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:9b79ca2a-023a-4076-b18d-0b2b5d99800d"/>
+        <fullUrl value="urn:uuid:8252d431-5db1-43f4-8e94-e22de10663fa"/>
         <resource>
             <Medication>
                 <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">

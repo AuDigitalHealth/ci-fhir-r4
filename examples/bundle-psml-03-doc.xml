@@ -4,7 +4,7 @@
     <meta>
         <lastUpdated value="2018-12-11T13:30:00+10:00"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
-        <!--<profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-core-1"/>-->
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-core-1"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -21,6 +21,9 @@
                     <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
                 </meta>
                 <language value="en-AU"/>
+                <!--WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
+                to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
+                The contents below is not consistent with good or recommended practice. -->
                 <text>
                     <status value="additional"/>
                     <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
