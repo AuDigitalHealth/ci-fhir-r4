@@ -12,6 +12,13 @@
       <td><a href="Encounter-psml-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Encounter-es-02.html">Follow-Up Encounter for Mr Zhang Wei (2020)</a></td>
+      <td>es-02</td>
+      <td><a href="Encounter-es-02.xml.html">XML</a></td>
+      <td><a href="Encounter-es-02.json.html">JSON</a></td>
+      <td><a href="Encounter-es-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Bundle-es-02-doc.html">Follow-Up Encounter included in Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
       <td>es-02-doc</td>
       <td><a href="Bundle-es-02-doc.xml.html">XML</a></td>

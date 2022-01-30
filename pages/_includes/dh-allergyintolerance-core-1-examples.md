@@ -31,5 +31,12 @@
       <td><a href="AllergyIntolerance-ibuprofen-psml-03.xml.html">XML</a></td>
       <td><a href="AllergyIntolerance-ibuprofen-psml-03.json.html">JSON</a></td>
       <td><a href="AllergyIntolerance-ibuprofen-psml-03.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="AllergyIntolerance-noneknown-es-02.html">No known allergy for Mr Zhang Wei - follow up encounter (2020)</a></td>
+      <td>noneknown-es-02</td>
+      <td><a href="AllergyIntolerance-noneknown-es-02.xml.html">XML</a></td>
+      <td><a href="AllergyIntolerance-noneknown-es-02.json.html">JSON</a></td>
+      <td><a href="AllergyIntolerance-noneknown-es-02.ttl.html">Turtle</a></td>
    </tr>           
 </table>

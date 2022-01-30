@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="intended-panadol-es-02"/>
+    <status value="intended"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="community"/>
+            <display value="Community"/>						
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="54012011000036102"/>
+            <display value="Panadol 500 mg tablet"/>						
+        </coding>
+        <text value="Panadol 500mg - tablet"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </subject>
+    <context>
+        <reference value="Encounter/es-02"/>
+    </context>
+    <dateAsserted value="2020-05-30T10:00:00+10:00"/>
+    <informationSource>
+        <reference value="PractitionerRole/algrester-greg-gp"/>
+    </informationSource>
+    <reasonCode>
+        <text value="For pain"/>
+    </reasonCode>
+    <dosage>
+        <text value="Take 1 tablet four times a day"/>
+    </dosage>
+</MedicationStatement>

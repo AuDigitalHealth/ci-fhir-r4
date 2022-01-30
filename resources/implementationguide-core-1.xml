@@ -426,6 +426,21 @@
             <name value="Ibuprofen allergy entry for Mac PRIEST - Community pharmacy medicine review (2018)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="AllergyIntolerance/noneknown-es-02"/>
+            </reference>
+            <name value="No known allergy for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+        </resource>
+        <!--CONDITION EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Condition/uti-es-02"/>
+            </reference>
+            <name value="Urinary tract infection for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1"/>
+        </resource>
         <!--DOCUMENT EXAMPLES-->
         <resource>
             <reference>
@@ -534,6 +549,13 @@
             <name value="Community pharmacy medicine review for Mac PRIEST (2018)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Encounter/es-02"/>
+            </reference>
+            <name value="Follow-Up Encounter for Mr Zhang Wei (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+        </resource>
         <!--LIST EXAMPLES-->
         <resource>
             <reference>
@@ -630,6 +652,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="MedicationStatement/intended-bactrim-es-02"/>
+            </reference>
+            <name value="Intended Bactrim DS tablet use for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/intended-panadol-es-02"/>
+            </reference>
+            <name value="Intended Panadol 500 mg tablet use for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="MedicationStatement/stopped-ibuprofen-psml-03"/>
             </reference>
             <name value="Stopped Ibuprofen use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
@@ -641,6 +677,14 @@
             </reference>
             <name value="Stopped Paracetamol 500 mg tablet use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <!--OBSERVATION EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Observation/urineculture-es-02"/>
+            </reference>
+            <name value="Urine culture - E. coli for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
         </resource>
         <!-- ORGANIZATION EXAMPLES-->
         <resource>
@@ -722,6 +766,14 @@
             </reference>
             <name value="Mr. Representative Pharmacist, Pharmacist, at Test Org -DigitalHealth 6"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        <!--SPECIMEN EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Specimen/urine-01"/>
+            </reference>
+            <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-specimen-core-1"/>
         </resource>
         <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
         <resource>

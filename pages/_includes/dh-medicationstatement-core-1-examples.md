@@ -40,6 +40,20 @@
       <td><a href="Medication-active-paracetamol-psml-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="MedicationStatement-intended-bactrim-es-02.html">Intended Bactrim DS tablet use for Mr Zhang Wei - follow up encounter (2020)</a></td>
+      <td>intended-bactrim-es-02</td>
+      <td><a href="Medication-intended-bactrim-es-02.xml.html">XML</a></td>
+      <td><a href="Medication-intended-bactrim-es-02.json.html">JSON</a></td>
+      <td><a href="Medication-intended-bactrim-es-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="MedicationStatement-intended-panadol-es-02.html">Intended Panadol 500 mg tablet use for Mr Zhang Wei - follow up encounter (2020)</a></td>
+      <td>intended-panadol-es-02</td>
+      <td><a href="Medication-intended-panadol-es-02.xml.html">XML</a></td>
+      <td><a href="Medication-intended-panadol-es-02.json.html">JSON</a></td>
+      <td><a href="Medication-intended-panadol-es-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="MedicationStatement-stopped-ibuprofen-psml-03.html">Stopped Ibuprofen use recorded in community pharmacy medicine review for Mac PRIEST (2018)</a></td>
       <td>stopped-ibuprofen-psml-03</td>
       <td><a href="Medication-stopped-ibuprofen-psml-03.xml.html">XML</a></td>
