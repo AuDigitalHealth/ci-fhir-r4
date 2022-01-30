@@ -418,7 +418,14 @@
             <exampleBoolean value="false"/>
         </resource>
         <!--EXAMPLES-->
-
+        <!--ALLERGYINTEROLANCE EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="AllergyIntolerance/ibuprofen-psml-03"/>
+            </reference>
+            <name value="Ibuprofen allergy entry for Mac PRIEST - Community pharmacy medicine review (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+        </resource>
         <!--DOCUMENT EXAMPLES-->
         <resource>
             <reference>
@@ -495,9 +502,16 @@
                 <reference value="Bundle/psml-03-doc"/>
             </reference>
             <name value="Pharmacist Shared Medicines List Document Bundle for Mac PRIEST"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
         </resource>
-        <!--DOCUMENT REFERENCES-->
+        <resource>
+            <reference>
+                <reference value="Composition/psml-03"/>
+            </reference>
+            <name value="Pharmacist Shared Medicines List Document Composition for Mac PRIEST"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
+        </resource>
+        <!--DOCUMENTREFERENCE EXAMPLES-->
         <resource>
             <reference>
                 <reference value="DocumentReference/acp-01"/>
@@ -512,12 +526,135 @@
             <name value="Goals of Care Document Reference for Mr Zhang Wei"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-acp-1"/>
         </resource>
+        <!--ENCOUNTER EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Encounter/psml-03"/>
+            </reference>
+            <name value="Community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+        </resource>
+        <!--LIST EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="List/psml-03"/>
+            </reference>
+            <name value="Medicines List from Community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+        </resource>
+        <!--MEDICATION EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Medication/ironsup-01"/>
+            </reference>
+            <name value="Ferro-Grad C"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/ibuprofen-01"/>
+            </reference>
+            <name value="Ibuprofen"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/metformin-01"/>
+            </reference>
+            <name value="Metformin 500mg tablet, Sandoz"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/multivitamins-01"/>
+            </reference>
+            <name value="Multi-vitamins"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/paracetamol-01"/>
+            </reference>
+            <name value="Paracetamol 500 mg tablet"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/paracetamol-02"/>
+            </reference>
+            <name value="Panadol Osteo Paracetamol 665 mg modified release tablet"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/amoxicillin-01"/>
+            </reference>
+            <name value="Amoxicillin 875 mg + clavulanic acid 125 mg tablet, Augmentin Duo Forte"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <!--MEDICATIONSTATEMENT EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/active-amoxicillin-psml-03"/>
+            </reference>
+            <name value="Active Amoxicillin 875 mg use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/active-ironsup-psml-03"/>
+            </reference>
+            <name value="Active Ferro-Grad C use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/active-metformin-psml-03"/>
+            </reference>
+            <name value="Active Metformin 500mg tablet use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/active-multivitamins-psml-03"/>
+            </reference>
+            <name value="Active Multi-vitamins use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/active-paracetamol-psml-03"/>
+            </reference>
+            <name value="Active Panadol Osteo use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/stopped-ibuprofen-psml-03"/>
+            </reference>
+            <name value="Stopped Ibuprofen use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/stopped-paracetamol-psml-03"/>
+            </reference>
+            <name value="Stopped Paracetamol 500 mg tablet use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
         <!-- ORGANIZATION EXAMPLES-->
         <resource>
             <reference>
                 <reference value="Organization/algrester-medical-centre"/>
             </reference>
             <name value="Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/hi-testdata-pharmacy"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 6 (Vendor Environment HI Test Data)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <!--PATIENT EXAMPLES-->
@@ -564,6 +701,13 @@
             <name value="Dr. Greg Algrester"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/pharmacist-representative"/>
+            </reference>
+            <name value="Mr. Representative Pharmacist"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1"/>
+        </resource>
         <!-- PRACTITIONERROLE EXAMPLES-->
         <resource>
             <reference>
@@ -572,7 +716,13 @@
             <name value="Dr. Greg Algrester, GP, at Algregster Medical Centre"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         </resource>
-        
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/pharmacist-retail"/>
+            </reference>
+            <name value="Mr. Representative Pharmacist, Pharmacist, at Test Org -DigitalHealth 6"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
         <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
         <resource>
             <reference>

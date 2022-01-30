@@ -24,5 +24,12 @@
       <td><a href="Bundle-psml-03-doc.xml.html">XML</a></td>
       <td><a href="Bundle-psml-03-doc.json.html">JSON</a></td>
       <td><a href="Bundle-psml-03-doc.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="AllergyIntolerance-ibuprofen-psml-03.html">Ibuprofen allergy entry for Mac PRIEST - Community pharmacy medicine review (2018)</a></td>
+      <td>ibuprofen-psml-03</td>
+      <td><a href="AllergyIntolerance-ibuprofen-psml-03.xml.html">XML</a></td>
+      <td><a href="AllergyIntolerance-ibuprofen-psml-03.json.html">JSON</a></td>
+      <td><a href="AllergyIntolerance-ibuprofen-psml-03.ttl.html">Turtle</a></td>
    </tr>           
 </table>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="stopped-ibuprofen-psml-03"/>
+    <status value="stopped"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="community"/>
+            <display value="Community"/>
+        </coding>
+    </category>
+    <medicationReference>
+        <!-- relative reference to entry of Medication resource -->
+        <reference value="Medication/ibuprofen-01"/>
+    </medicationReference>
+    <subject>
+        <!-- relative reference to entry of Patient resource -->
+        <reference value="Patient/hi-testdata-priest-mac"/>
+    </subject>
+    <context>
+        <!-- relative reference to entry of Encounter resource -->
+        <reference value="Encounter/psml-03"/>
+    </context>
+    <dateAsserted value="2018-12-11T13:30:00+10:00"/>
+</MedicationStatement>

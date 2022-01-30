@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="active-metformin-psml-03"/>
+    <status value="active"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="community"/>
+            <display value="Community"/>
+        </coding>
+    </category>
+    <medicationReference>
+        <!-- relative reference to entry of Medication resource -->
+        <reference value="Medication/metformin-01"/>
+    </medicationReference>
+    <subject>
+        <!-- relative reference to entry of Patient resource -->
+        <reference value="Patient/hi-testdata-priest-mac"/>
+    </subject>
+    <context>
+        <!-- relative reference to entry of Encounter resource -->
+        <reference value="Encounter/psml-03"/>
+    </context>
+    <dateAsserted value="2018-12-11T13:30:00+10:00"/>
+    <reasonCode>
+        <text value="Reduce blood sugar"/>
+    </reasonCode>
+    <dosage>
+        <text value="Take one tablet twice a day"/>
+        <timing>
+            <repeat>
+                <frequency value="2"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1"/>
+                <unit value="tablet"/>
+                <system value="http://snomed.info/sct"/>
+                <code value="154011000036109"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

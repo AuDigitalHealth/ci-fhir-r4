@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+    <id value="ibuprofen-psml-03"/>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="unconfirmed"/>
+            <display value="Unconfirmed"/>
+        </coding>
+    </verificationStatus>
+    <type value="allergy"/>
+    <category value="medication"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="293619005"/>
+            <display value="Ibuprofen allergy"/>
+        </coding>
+        <text value="Ibuprofen allergy"/>
+    </code>
+    <patient>
+        <!-- relative reference to entry of Patient resource -->
+        <reference value="Patient/hi-testdata-priest-mac"/>
+    </patient>
+    <encounter>
+        <!-- relative reference to entry of Encounter resource -->
+        <reference value="Encounter/psml-03"/>
+    </encounter>
+    <onsetDateTime value="2016-10"/>
+    <recorder>
+        <!-- relative reference to entry of PractitionerRole resource -->
+        <reference value="PractitionerRole/pharmacist-retail"/>
+    </recorder>
+    <asserter>
+        <!-- relative reference to entry of Patient resource -->
+        <reference value="Patient/hi-testdata-priest-mac"/>
+    </asserter>
+    <reaction>
+        <substance>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="21885011000036105"/>
+                <display value="Ibuprofen"/>
+            </coding>
+            <text value="ibuprofen"/>
+        </substance>
+        <manifestation>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="39579001"/>
+                <display value="Anaphylaxis"/>
+            </coding>
+            <text value="Anaphylaxis"/>
+        </manifestation>
+    </reaction>
+</AllergyIntolerance>
