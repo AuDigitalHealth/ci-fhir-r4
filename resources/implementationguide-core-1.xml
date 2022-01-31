@@ -514,6 +514,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Bundle/psml-02"/>
+            </reference>
+            <name value="Home Medicines Review Payload Bundle for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-payload-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/psml-02"/>
+            </reference>
+            <name value="Home Medicines Review Document Composition for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Bundle/psml-03-doc"/>
             </reference>
             <name value="Pharmacist Shared Medicines List Document Bundle for Mac PRIEST"/>
@@ -544,6 +558,13 @@
         <!--ENCOUNTER EXAMPLES-->
         <resource>
             <reference>
+                <reference value="Encounter/psml-02"/>
+            </reference>
+            <name value="Community pharmacy medicine review for Mac PRIEST (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Encounter/psml-03"/>
             </reference>
             <name value="Community pharmacy medicine review for Mac PRIEST (2018)"/>
@@ -557,6 +578,20 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
         </resource>
         <!--LIST EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="List/current-psml-02"/>
+            </reference>
+            <name value="Current medicines list from Home medicines review for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="List/ceased-psml-02"/>
+            </reference>
+            <name value="Ceased medicines list from Home medicines review for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="List/psml-03"/>
@@ -614,6 +649,41 @@
             <name value="Amoxicillin 875 mg + clavulanic acid 125 mg tablet, Augmentin Duo Forte"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/chloramphenicol-01"/>
+            </reference>
+            <name value="Chloramphenicol 1% eye ointment"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/coq10-01"/>
+            </reference>
+            <name value="CoQ10 150mg tab"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/bisoprolol-01"/>
+            </reference>
+            <name value="Bisoprolol 2.5mg tab"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/aldara-01"/>
+            </reference>
+            <name value="Aldara 5% cream"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/amiodarone-01"/>
+            </reference>
+            <name value="Amiodarone 200mg tab"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
         <!--MEDICATIONSTATEMENT EXAMPLES-->
         <resource>
             <reference>
@@ -652,6 +722,34 @@
         </resource>
         <resource>
             <reference>
+                <reference value="MedicationStatement/active-bisoprolol-psml-02"/>
+            </reference>
+            <name value="Active Bisoprolol 2.5mg tab use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/active-amiodarone-psml-02"/>
+            </reference>
+            <name value="Active Amiodarone 200mg tab use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/completed-aldara-psml-02"/>
+            </reference>
+            <name value="Completed Aldara 5% cream use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/completed-chloramphenicol-psml-02"/>
+            </reference>
+            <name value="Completed Chloramphenicol 1% eye ointment use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="MedicationStatement/intended-bactrim-es-02"/>
             </reference>
             <name value="Intended Bactrim DS tablet use for Mr Zhang Wei - follow up encounter (2020)"/>
@@ -662,6 +760,13 @@
                 <reference value="MedicationStatement/intended-panadol-es-02"/>
             </reference>
             <name value="Intended Panadol 500 mg tablet use for Mr Zhang Wei - follow up encounter (2020)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationStatement/intended-coq10-psml-02"/>
+            </reference>
+            <name value="Intended CoQ10 150mg tab recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
         </resource>
         <resource>

@@ -12,13 +12,6 @@
       <td><a href="Composition-phn-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Composition-psml-01.html">Pharmacist Shared Medicines List Document Composition for Mrs Bonny Goodwin (2019)</a></td>
-      <td>psml-01</td>
-      <td><a href="Composition-psml-01.xml.html">XML</a></td>
-      <td><a href="Composition-psml-01.json.html">JSON</a></td>
-      <td><a href="Composition-psml-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Composition-psml-03.html">Pharmacist Shared Medicines List Document Composition for Mac PRIEST (2018)</a></td>
       <td>psml-03-doc</td>
       <td><a href="Composition-psml-03.xml.html">XML</a></td>

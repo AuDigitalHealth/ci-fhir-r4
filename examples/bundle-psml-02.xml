@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="psml-02-doc"/>
+    <id value="psml-02"/>
     <meta>
         <lastUpdated value="2019-02-09T10:49:22+10:00"/>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-payload-1"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-core-1"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:b4039bff-90be-4fc4-850b-cc0190e94e3d"/>
     </identifier>
-    <type value="document"/>
+    <type value="collection"/>
+    <timestamp value="2019-02-09T10:49:22+10:00"/>
     <entry>
         <fullUrl value="urn:uuid:98e4b64a-d493-45c1-8102-b3b689da1c15"/>
         <resource>
@@ -18,153 +19,13 @@
                 <id value="98e4b64a-d493-45c1-8102-b3b689da1c15"/>
                 <meta>
                     <versionId value="20190205"/>
-                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
+                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1"/>
                 </meta>
                 <language value="en-AU"/>
-                <text>
-                    <status value="additional"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
-                        <h2>Home Medicines Review Report for Mr. Lenny Matterson</h2>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th colspan="1">Patient</th>
-                                    <th colspan="1">Author</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p><b>Name:</b> Mr. Lenny MATTERSON</p>
-                                        <p><b>Identifiers:</b> IHI: 8003608166895854 and Medicare
-                                            Number: 5950890021 (expiry May 2019)</p>
-                                        <p><b>Gender:</b> male</p>
-                                        <p><b>Birthdate:</b> 6 Feb 1955 6:17AM</p>
-                                        <p><b>Indigenous status:</b> Aboriginal but not Torres
-                                            Strait Islander origin</p>
-                                        <p><b>Languages spoken:</b> Pitjantjatjara</p>
-                                    </td>
-                                    <td>
-                                        <p><b>Name:</b> Mr. Ned DEACON (Retail Pharmacist)</p>
-                                        <p><b>Identifiers:</b> HPI-I: 8003616566708106 and Medicare
-                                            Provider Number: 5544887B</p>
-                                        <p><b>Contact:</b> 0370102020 (work fax)</p>
-                                        <p><b>Address:</b> 50034 Queen St, Coburg, VIC 3058
-                                            (work)</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <h3>Medicine summary</h3>
-                        <p><b>Date:</b> 5 Feb 2019 10:00AM - 5 Feb 2019 11:15AM</p>
-                        <p><b>Attested by:</b> Mr. Ned DEACON (on 5 Feb 2019)</p>
-                        <p><b>Document custodian:</b> Big Pharmacy (HPI-O: 8003626566699734)</p>
-
-                        <h3>Current Medicines</h3>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th style="text-align:center;" colspan="3">Home Medicines
-                                        Review</th>
-                                </tr>
-                                <tr>
-                                    <th>Date of Interview</th>
-                                    <th/>
-                                    <th>General Assessment</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>5 Feb 2019 10:00AM to 11:15AM</td>
-                                    <td>Home medicines review</td>
-                                    <td>Patient has his medications packed into blister packs via
-                                        ABC pharmacy. He finds them easy to use and they promote
-                                        good adherence to his regime. His Bluecare nurse, Nurse B,
-                                        was present for the interview. Of the medication listed on
-                                        the referral, he is not currently taking Aldara 5% cream and
-                                        Chloramphenicol ointment. In addition to the medication
-                                        listed on the referral, he is also taking coQ10 150mg tab -
-                                        1 nocte.He reports occasional dizziness if he changes
-                                        position quickly, and does report falling outside in the
-                                        garden; he wears a falls alarm buzzer. He reports that he
-                                        generally only experiences chest pain when he becomes
-                                        stressed (doesn’t like paperwork). His blood pressure at the
-                                        time of the interview was 158 /76.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th style="text-align:center;" colspan="5">Current
-                                        medicines</th>
-                                </tr>
-                                <tr>
-                                    <th>Medicine</th>
-                                    <th>Directions</th>
-                                    <th>Medicine purpose</th>
-                                    <th>Medicine status</th>
-                                    <th>Status Reason/Comment</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Amiodarone 200mg tab</td>
-                                    <td>1 in the morning</td>
-                                    <td/>
-                                    <td>Unchanged</td>
-                                    <td/>
-                                </tr>
-                                <tr>
-                                    <td>Bisoprolol 2.5mg tab</td>
-                                    <td>1/2 tablet in the morning</td>
-                                    <td/>
-                                    <td>Unchanged</td>
-                                    <td/>
-                                </tr>
-                                <tr>
-                                    <td>CoQ10 150mg tab</td>
-                                    <td>1 at night</td>
-                                    <td/>
-                                    <td>New</td>
-                                    <td>In pack – history of Atrial fibrillation</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>Packed medicines: Some medicines packed in dose administration aid</p>
-
-                        <h3>Ceased Medicines</h3>
-                        <table border="1">
-                            <thead>
-                                <tr>
-                                    <th style="text-align:center;" colspan="2">Ceased medicines</th>
-                                </tr>
-                                <tr>
-                                    <th>Ceased medicine</th>
-                                    <th>Reason for ceasing</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Aldara 5% cream</td>
-                                    <td>Completed 8-week course</td>
-                                </tr>
-                                <tr>
-                                    <td>Chloramphenicol 1% eye ointment</td>
-                                    <td>Stopped due to burning sensation in the eye.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>Packed medicines: No medicines packed in dose administration aid</p>
-                    </div>
-                </text>
-                <extension url="http://hl7.org.au/fhir/StructureDefinition/composition-author-role">
-                    <valueReference>
-                        <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
-                    </valueReference>
-                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:0d6aef03-f95e-4748-9d18-162dad3accd5"/>
+                </identifier>
                 <status value="final"/>
                 <type>
                     <coding>
@@ -172,6 +33,12 @@
                         <code value="56445-0"/>
                     </coding>
                 </type>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="56445-0"/>
+                    </coding>
+                </category>
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
@@ -180,16 +47,9 @@
                 </encounter>
                 <date value="2019-02-05"/>
                 <author>
-                    <reference value="urn:uuid:f9695b57-7502-4f50-bf36-b68a755e9956"/>
+                    <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
                 </author>
                 <title value="Home Medicines Review Report for Mr. Lenny Matterson"/>
-                <attester>
-                    <mode value="legal"/>
-                    <time value="2019-02-05"/>
-                    <party>
-                        <reference value="urn:uuid:f9695b57-7502-4f50-bf36-b68a755e9956"/>
-                    </party>
-                </attester>
                 <custodian>
                     <reference value="urn:uuid:1a8a2450-f190-4511-a24c-a2825a5ae1ee"/>
                 </custodian>
@@ -326,7 +186,6 @@
             </Composition>
         </resource>
     </entry>
-
     <entry>
         <fullUrl value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
         <resource>
@@ -343,7 +202,7 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                             <code value="NI"/>
                             <display value="National unique individual identifier"/>
                         </coding>
@@ -355,7 +214,7 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                             <code value="MC"/>
                             <display value="Patient's Medicare Number"/>
                         </coding>
@@ -398,19 +257,19 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                             <code value="NPI"/>
                             <display value="National provider identifier"/>
                         </coding>
                         <text value="HPI-I"/>
                     </type>
                     <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-                    <value value="8003616566708106"/>
+                    <value value="8003611566708354"/>
                 </identifier>
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
                             <code value="UPIN"/>
                         </coding>
                         <text value="Medicare Provider Number"/>
@@ -421,13 +280,22 @@
                 <practitioner>
                     <reference value="urn:uuid:f9695b57-7502-4f50-bf36-b68a755e9956"/>
                 </practitioner>
+                <organization>
+                    <reference value="urn:uuid:1a8a2450-f190-4511-a24c-a2825a5ae1ee"/>
+                </organization>
                 <code>
                     <coding>
                         <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
                         <code value="251513"/>
                         <display value="Retail Pharmacist"/>
                     </coding>
+                    <text value="Pharmacist"/>
                 </code>
+                <telecom>
+                    <system value="email"/>
+                    <value value="pha@gmail.com"/>
+                    <use value="work"/>
+                </telecom>
             </PractitionerRole>
         </resource>
     </entry>
@@ -439,34 +307,28 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                             <code value="NPI"/>
                             <display value="National provider identifier"/>
                         </coding>
                         <text value="HPI-I"/>
                     </type>
                     <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-                    <value value="8003616566708106"/>
+                    <value value="8003611566708354"/>
                 </identifier>
                 <name>
-                    <use value="usual"/>
-                    <family value="DEACON"/>
-                    <given value="Ned"/>
+                    <family value="Pharmacist"/>
+                    <given value="Representative"/>
                     <prefix value="Mr."/>
                 </name>
-                <telecom>
-                    <system value="fax"/>
-                    <value value="0370102020"/>
-                    <use value="work"/>
-                </telecom>
-                <address>
-                    <use value="work"/>
-                    <text value="50034 Queen St, Coburg, VIC 3058"/>
-                </address>
+                <qualification>
+                    <code>
+                        <text value="Bachelor of Pharmacy"/>
+                    </code>
+                </qualification>
             </Practitioner>
         </resource>
     </entry>
-
     <entry>
         <fullUrl value="urn:uuid:1a8a2450-f190-4511-a24c-a2825a5ae1ee"/>
         <resource>
@@ -475,15 +337,29 @@
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/v2/0203"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
                             <code value="NOI"/>
                         </coding>
                         <text value="HPI-O"/>
                     </type>
                     <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
-                    <value value="8003626566699734"/>
+                    <value value="8003629900033370"/>
                 </identifier>
-                <name value="Big Pharmacy"/>
+                <type>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
+                        <code value="4271"/>
+                        <display value="Retail Pharmacy"/>
+                    </coding>
+                </type>
+                <name value="Test Org -DigitalHealth 6"/>
+                <address>
+                    <line value="570 Whatcha St"/>
+                    <city value="GLEBE"/>
+                    <state value="NSW"/>
+                    <postalCode value="2037"/>
+                    <country value="AU"/>
+                </address>
             </Organization>
         </resource>
     </entry>
@@ -500,7 +376,7 @@
                 </extension>
                 <status value="finished"/>
                 <class>
-                    <system value="http://hl7.org/fhir/v3/ActCode"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
                     <code value="HH"/>
                     <display value="home health"/>
                 </class>
@@ -512,9 +388,29 @@
                     </coding>
                     <text value="Home medicines review"/>
                 </type>
+                <serviceType>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="182836005"/>
+                        <display value="Review of medication"/>
+                    </coding>
+                    <text value="Medicines review"/>
+                </serviceType>
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
+                <participant>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                            <code value="PPRF"/>
+                            <display value="primary performer"/>   
+                        </coding>
+                    </type>
+                    <individual>
+                        <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
+                    </individual>
+                </participant>
                 <period>
                     <start value="2019-02-05T10:00:00+10:00"/>
                     <end value="2019-02-05T11:15:00+10:00"/>
@@ -528,25 +424,23 @@
         <resource>
             <List>
                 <id value="05ed5a63-70ab-4dfb-820c-4be0d79bb0d3"/>
+                <meta>
+                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+                </meta>
                 <language value="en-AU"/>
-                <extension url="http://hl7.org.au/fhir/StructureDefinition/author-role">
-                    <valueReference>
-                        <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
-                    </valueReference>
-                </extension>
-                <extension
-                    url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/packed-in-daa-1">
+                <extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-packed-in-daa-1">
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://snomed.info/sct"/>
                             <code value="1469411000168101"/>
-                            <display value="Some medicines packed in dose administration aid"/>
+                            <display value="Some medicines packed in medicines dispenser"/>
                         </coding>
                         <text value="Some medicines packed in dose administration aid"/>
                     </valueCodeableConcept>
                 </extension>
                 <status value="current"/>
                 <mode value="snapshot"/>
+                <title value="Current Medicines List"/>
                 <code>
                     <coding>
                         <system
@@ -563,12 +457,12 @@
                 </encounter>
                 <date value="2019-02-05"/>
                 <source>
-                    <reference value="urn:uuid:f9695b57-7502-4f50-bf36-b68a755e9956"/>
+                    <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
                 </source>
                 <entry>
                     <flag>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/medicine-item-change"/>
                             <code value="nochange"/>
                             <display value="Unchanged"/>
                         </coding>
@@ -580,7 +474,7 @@
                 <entry>
                     <flag>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/medicine-item-change"/>
                             <code value="nochange"/>
                             <display value="Unchanged"/>
                         </coding>
@@ -595,7 +489,7 @@
                     </extension>
                     <flag>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/medicine-item-change"/>
                             <code value="new"/>
                             <display value="New"/>
                         </coding>
@@ -619,7 +513,10 @@
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
-                <taken value="y"/>
+                <context>
+                    <reference value="urn:uuid:c97d9869-3d3b-4612-958d-7af2c1ffd1da"/>
+                </context>
+                <dateAsserted value="2019-02-05"/>
                 <dosage>
                     <text value="1 in the morning"/>
                 </dosage>
@@ -649,7 +546,10 @@
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
-                <taken value="y"/>
+                <context>
+                    <reference value="urn:uuid:c97d9869-3d3b-4612-958d-7af2c1ffd1da"/>
+                </context>
+                <dateAsserted value="2019-02-05"/>
                 <dosage>
                     <text value="1/2 tablet in the morning"/>
                 </dosage>
@@ -684,7 +584,10 @@
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
-                <taken value="y"/>
+                <context>
+                    <reference value="urn:uuid:c97d9869-3d3b-4612-958d-7af2c1ffd1da"/>
+                </context>
+                <dateAsserted value="2019-02-05"/>
                 <dosage>
                     <text value="1 at night"/>
                 </dosage>
@@ -713,29 +616,22 @@
             <List>
                 <id value="c0c68add-8f8f-472e-98f3-ffcb0b6e016b"/>
                 <meta>
-                    <profile
-                        value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/list-sml-pracchanges-1"
-                    />
+                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
                 </meta>
                 <language value="en-AU"/>
-                <extension url="http://hl7.org.au/fhir/StructureDefinition/author-role">
-                    <valueReference>
-                        <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
-                    </valueReference>
-                </extension>
-                <extension
-                    url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/packed-in-daa-1">
+                <extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-packed-in-daa-1">
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://snomed.info/sct"/>
                             <code value="1469421000168108"/>
-                            <display value="No medicines packed in dose administration aid"/>
+                            <display value="No medicines packed in medicines dispenser"/>
                         </coding>
                         <text value="No medicines packed in dose administration aid"/>
                     </valueCodeableConcept>
                 </extension>
                 <status value="current"/>
                 <mode value="snapshot"/>
+                <title value="Ceased Medicines List"/>
                 <code>
                     <coding>
                         <system
@@ -747,9 +643,12 @@
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
+                <encounter>
+                    <reference value="urn:uuid:c97d9869-3d3b-4612-958d-7af2c1ffd1da"/>
+                </encounter>
                 <date value="2019-02-05"/>
                 <source>
-                    <reference value="urn:uuid:f9695b57-7502-4f50-bf36-b68a755e9956"/>
+                    <reference value="urn:uuid:91555386-d478-4e3d-bd3d-ac642ff603c4"/>
                 </source>
                 <entry>
                     <extension url="http://hl7.org.au/fhir/StructureDefinition/change-description">
@@ -757,7 +656,7 @@
                     </extension>
                     <flag>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/medicine-item-change"/>
                             <code value="ceased"/>
                             <display value="Ceased"/>
                         </coding>
@@ -772,7 +671,7 @@
                     </extension>
                     <flag>
                         <coding>
-                            <system value="http://hl7.org.au/fhir/CodeSystem/medicine-item-change"/>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/medicine-item-change"/>
                             <code value="ceased"/>
                             <display value="Ceased"/>
                         </coding>
@@ -796,7 +695,10 @@
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
-                <taken value="y"/>
+                <context>
+                    <reference value="urn:uuid:c97d9869-3d3b-4612-958d-7af2c1ffd1da"/>
+                </context>
+                <dateAsserted value="2019-02-05"/>
             </MedicationStatement>
         </resource>
     </entry>
@@ -828,7 +730,10 @@
                 <subject>
                     <reference value="urn:uuid:1fbd9663-b4cd-4a33-9657-650eca3a6b3f"/>
                 </subject>
-                <taken value="y"/>
+                <context>
+                    <reference value="urn:uuid:c97d9869-3d3b-4612-958d-7af2c1ffd1da"/>
+                </context>
+                <dateAsserted value="2019-02-05"/>
             </MedicationStatement>
         </resource>
     </entry>

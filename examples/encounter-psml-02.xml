@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="psml-02"/>
+    <extension url="http://hl7.org.au/fhir/StructureDefinition/encounter-description">
+        <valueString
+            value="Patient has his medications packed into blister packs via ABC pharmacy. He finds them easy to use and they promote good adherence to his regime. His Bluecare nurse, Nurse B, was present for the interview. Of the medication listed on the referral, he is not currently taking Aldara 5% cream and Chloramphenicol ointment. In addition to the medication listed on the referral, he is also taking coQ10 150mg tab - 1 nocte.He reports occasional dizziness if he changes position quickly, and does report falling outside in the garden; he wears a falls alarm buzzer. He reports that he generally only experiences chest pain when he becomes stressed (doesn’t like paperwork). His blood pressure at the time of the interview was 158 /76."
+        />
+    </extension>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="HH"/>
+        <display value="home health"/>
+    </class>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1348931000168107"/>
+            <display value="Home medicines review"/>
+        </coding>
+        <text value="Home medicines review"/>
+    </type>
+    <serviceType>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="182836005"/>
+            <display value="Review of medication"/>
+        </coding>
+        <text value="Medicines review"/>
+    </serviceType>
+    <subject>
+        <reference value="Patient/hi-testdata-matterson-lenny"/>
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="PPRF"/>
+                <display value="primary performer"/>
+            </coding>
+        </type>
+        <individual>
+            <reference value="PractitionerRole/pharmacist-retail"/>
+        </individual>
+    </participant>
+    <period>
+        <start value="2019-02-05T10:00:00+10:00"/>
+        <end value="2019-02-05T11:15:00+10:00"/>
+    </period>
+</Encounter>

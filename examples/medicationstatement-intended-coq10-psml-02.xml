@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="intended-coq10-psml-02"/>
+    <status value="intended"/>
+    <medicationReference>
+        <reference value="Medication/coq10-01"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/hi-testdata-matterson-lenny"/>
+    </subject>
+    <context>
+        <reference value="Encounter/psml-02"/>
+    </context>
+    <dateAsserted value="2019-02-05"/>
+    <dosage>
+        <text value="1 at night"/>
+    </dosage>
+</MedicationStatement>
