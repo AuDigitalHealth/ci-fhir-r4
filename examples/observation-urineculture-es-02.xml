@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="urineculture-es-02"/>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="MB"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="413625003"/>
+            <display value="Bacterial culture and sensitivity"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </subject>
+    <effectiveDateTime value="2020-05-23T12:20:00+10:00"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="167570003"/>
+            <display value="Urine culture - E. coli"/>
+        </coding>
+    </valueCodeableConcept>
+    <specimen>
+        <reference value="Specimen/urine-01"/>
+    </specimen>
+</Observation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+    <id value="noneknown-es-02"/>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="unconfirmed"/>
+            <display value="Unconfirmed"/>
+        </coding>
+    </verificationStatus>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="716186003"/>
+            <display value="No known allergy"/>
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </patient>
+    <encounter>
+        <reference value="Encounter/es-02"/>
+    </encounter>
+    <recorder>
+        <reference value="PractitionerRole/algrester-greg-gp"/>
+    </recorder>
+    <asserter>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </asserter>
+</AllergyIntolerance>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="es-02"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+            <p>ZHANG Wei; MC = 29533070311; IHI = 8003608000228437; gender = male</p>
+            <p>Patient presented for follow-up with urinary tract infection on 30
+                May.</p>
+            <p>Complaining of frequent and painful urinating. Midstream urine test was
+                done and revealed urinary infection.</p>
+            <p>Culture and sensitivity test discovered escherichia coli sensitive to
+                Bactrim.</p>
+            <p>Patient was prescribed Bactrim 2 tablets twice a day, and Panadol one
+                tablet 4 times a day.</p>
+            <p>Patient has no allergies.</p>
+        </div>
+    </text>
+    <extension url="http://hl7.org.au/fhir/StructureDefinition/encounter-description">
+        <valueString value="Patient presented for follow-up with urinary tract infection on 30 May. Complaining of frequent and painful urinating. 
+            Midstream urine test was done and revealed urinary infection. Culture and sensitivity test discovered escherichia coli sensitive to Bactrim.
+            Patient was prescribed Bactrim 2 tablets twice a day, and Panadol one tablet 4 times a day. Patient has no allergies."/>
+    </extension>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>                    
+    </class>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="390906007"/>
+            <display value="Follow-up encounter"/>  
+        </coding>
+    </type>
+    <serviceType>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="700232004"/>
+            <display value="General medical service"/>      
+        </coding>
+    </serviceType>
+    <subject>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="PPRF"/>
+                <display value="primary performer"/>   
+            </coding>
+        </type>
+        <individual>
+            <reference value="PractitionerRole/algrester-greg-gp"/>
+        </individual>
+    </participant>
+    <period>
+        <start value="2020-05-30T09:00:00+10:00"/>
+        <end value="2020-05-30T09:30:00+10:00"/>
+    </period>
+</Encounter>

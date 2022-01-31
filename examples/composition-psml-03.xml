@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+    <id value="psml-03"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"
+        />
+    </meta>
+    <language value="en-AU"/>
+    <!--WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
+                to generate a human friendly rendering instead of forcing the reader to refer to XML or JSON format to view the full example narrative.
+                The contents below is not consistent with good or recommended practice. -->
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+            <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                <tr>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;font-size:20px;background-color:#333333;color:#ffffff;border:none;text-align:center;vertical-align:top"
+                        colspan="4">Pharmacist Shared Medicines List</th>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                        colspan="4">11 Dec 2018 01:30 PM </td>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                        >Mac PRIEST</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                        >DoB 9 Mar 1989 (30 yrs) </td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                        >Gender MALE</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;background-color:#333333;color:#ffffff;border-color:#000000;text-align:center;vertical-align:top"
+                        >IHI 8003608333563104 </td>
+                </tr>
+            </table>
+
+            <h3>Test Org -DigitalHealth 6</h3>
+            <p><b>Address: </b>570 Watcha St, GLEBE, NSW 2037 AU</p>
+            <p><b>HPI-O: </b>8003629900033370</p>
+            <p><b>Pharmacist:</b> Mr. Representative Pharmacist (HPI-I: 8003611566708354)</p>
+            <p><b>Email:</b> pha@gmail.com (work)</p>
+            <p><b>General Practitioner: </b>A Small Main Street Medical Centre</p>
+
+            <h3>Encounter Details</h3>
+            <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                <tr>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Description</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Start</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >End</th>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Community pharmacy medicine review</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >11/12/2018 10:00 AM</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >11/12/2018 12:30 PM</td>
+                </tr>
+            </table>
+
+            <h3 style="color:red">Allergies</h3>
+            <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                <caption>Allergies</caption>
+                <tr>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Substance/Agent</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Reaction Type</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Reaction</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Reaction Onset Date</th>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >ibuprofen</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Allergic reaction</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Anaphylaxis</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >October 2016</td>
+                </tr>
+            </table>
+
+            <h3>Medicines List</h3>
+            <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                <caption>Current medicines</caption>
+                <tr>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Medicine</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Brand Name</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Direction</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Medicine Purpose</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Medicine Status</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Expected End Date</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Special Instructions</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Medicine Image</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Physical Description</th>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Ferro-Grad C</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Take one tablet daily</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Iron supplement</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Unchanged</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                    />
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Amoxicillin 875 mg + clavulanic acid 125 mg tablet</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Augmentin Duo Forte</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Take one tablet twice a day</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Chest infection</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >New</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >20/01/2019</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                    />
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Metformin 500mg tablet</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Sandoz</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Take one tablet twice a day</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Reduce blood sugar</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Amended</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >White and round with 227 imprinted</td>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Multi-vitamins</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Take one tablet daily</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Unchanged</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                    />
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Paracetamol 665mg tablet</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Panadol Osteo</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Take two tablets every 6 to 8 hours when required</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Osteoarthritis, pain relief</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Unchanged</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >No more than 6 tablets in 24 hours</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"/>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                    />
+                </tr>
+            </table>
+
+            <table style="border-collapse:collapse;border-spacing:0;width:100%;">
+                <caption>Ceased medicines</caption>
+                <tr>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Medicine</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Reason for ceasing medicine</th>
+                    <th
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:left;vertical-align:top"
+                        >Ceased date</th>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Paracetamol 500 mg tablet</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Stopped; duplicated medicine</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Dec 2018</td>
+                </tr>
+                <tr>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >ibuprofen</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                        >Allergic Reaction</td>
+                    <td
+                        style="border-collapse:collapse;border-spacing:0;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-color:#000000;text-align:left;vertical-align:top"
+                    />
+                </tr>
+            </table>
+            <p>Packed medicines: No medicines packed in dose administration aid</p>
+            <p>Please review this list with your pharmacist on or soon after 02/Apr/2019. Community
+                pharmacy medicine review</p>
+        </div>
+    </text>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:b43fdab3-9c03-4bd1-96bf-cd95fa1f58de"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="56445-0"/>
+        </coding>
+        <text value="Pharmacist Shared Medicines List"/>
+    </type>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="56445-0"/>
+        </coding>
+    </category>
+    <subject>
+        <!-- relative reference to entry of Patient resource -->
+        <reference value="Patient/hi-testdata-priest-mac"/>
+    </subject>
+    <encounter>
+        <!-- relative reference to entry of Encounter resource -->
+        <reference value="Encounter/psml-03"/>
+    </encounter>
+    <date value="2018-12-11T13:30:00+10:00"/>
+    <author>
+        <!-- relative reference to entry of Practitioner resource -->
+        <reference value="PractitionerRole/pharmacist-retail"/>
+    </author>
+    <title value="Pharmacist Shared Medicines List"/>
+    <attester>
+        <mode value="legal"/>
+        <time value="2018-12-11T13:30:00+10:00"/>
+        <party>
+            <!-- relative reference to entry of Practitioner resource -->
+            <reference value="PractitionerRole/pharmacist-retail"/>
+        </party>
+    </attester>
+    <custodian>
+        <!-- relative reference to entry of Organization resource -->
+        <reference value="Organization/hi-testdata-pharmacy"/>
+    </custodian>
+    <section>
+        <title value="Medicines List"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10160-0"/>
+                <display value="History of Medication use Narrative"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <caption>Current medicines</caption>
+                    <thead>
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Brand name</th>
+                            <th>Direction</th>
+                            <th>Medicine purpose</th>
+                            <th>Medicine status</th>
+                            <th>Expected end date</th>
+                            <th>Special instructions</th>
+                            <th>Medicine Image</th>
+                            <th>Physical Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td/>
+                            <td>Ferro-Grad C</td>
+                            <td>Take one tablet daily</td>
+                            <td>Iron supplement</td>
+                            <td>Unchanged</td>
+                            <td/>
+                            <td/>
+                            <td/>
+                            <td/>
+                        </tr>
+                        <tr>
+                            <td>Amoxicillin 875 mg + clavulanic acid 125 mg tablet</td>
+                            <td>Augmentin Duo Forte</td>
+                            <td>Take one tablet twice a day</td>
+                            <td>Chest infection</td>
+                            <td>New</td>
+                            <td>20/01/2019</td>
+                            <td/>
+                            <td/>
+                            <td/>
+                        </tr>
+                        <tr>
+                            <td>Metformin 500mg tablet</td>
+                            <td>Sandoz</td>
+                            <td>Take one tablet twice a day</td>
+                            <td>Reduce blood sugar</td>
+                            <td>Amended</td>
+                            <td/>
+                            <td/>
+                            <td/>
+                            <td>White and round with 227 imprinted</td>
+                        </tr>
+                        <tr>
+                            <td>Multi-vitamins</td>
+                            <td/>
+                            <td>Take one tablet daily</td>
+                            <td/>
+                            <td>Unchanged</td>
+                            <td/>
+                            <td/>
+                            <td/>
+                            <td/>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol 665 mg tablet</td>
+                            <td>Panadol Osteo</td>
+                            <td>Take two tablets every 6 to 8 hours when required</td>
+                            <td>Osteoarthritis, pain relief</td>
+                            <td>Unchanged</td>
+                            <td/>
+                            <td>No more than 6 tablets in 24 hours</td>
+                            <td/>
+                            <td/>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>Ceased medicines</caption>
+                    <thead>
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Reason for ceasing medicine</th>
+                            <th>Ceased date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td/>
+                            <td>Paracetamol 500mg tablet</td>
+                            <td>Stopped; duplicated medicine</td>
+                            <td>Dec 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Ibuprofen</td>
+                            <td>Allergic Reaction</td>
+                            <td/>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Packed medicines: No medicines packed in dose administration aid</p>
+                <p>Please review this list with your pharmacist on or soon after 02/Apr/2019.
+                    Community pharmacy medicine review</p>
+            </div>
+        </text>
+        <entry>
+            <!-- relative reference to entry of List resource -->
+            <reference value="List/psml-03"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Allergies"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <caption>Allergies</caption>
+                    <thead>
+                        <tr>
+                            <th>Substance/Agent</th>
+                            <th>Reaction Type</th>
+                            <th>Reaction</th>
+                            <th>Reaction Onset Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ibuprofen</td>
+                            <td>Allergic reaction</td>
+                            <td>Anaphylaxis</td>
+                            <td>October 2016</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </text>
+        <entry>
+            <!-- relative reference to entry of AllergyIntolerance resource -->
+            <reference value="AllergyIntolerance/ibuprofen-psml-03"/>
+        </entry>
+    </section>
+</Composition>

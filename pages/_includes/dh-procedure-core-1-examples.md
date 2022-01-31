@@ -3,7 +3,10 @@
      <th>Example name</th>
      <th>id</th>
      <th colspan="3">Format</th>
-   </tr>    
+   </tr>   
+   <tr>
+      <td colspan="5">Bundle examples:</td>
+   </tr>  
    <tr>
       <td><a href="Bundle-shs-02-doc.html">Procedure entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2019)</a></td>
       <td>shs-02-doc</td>

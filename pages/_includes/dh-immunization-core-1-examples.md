@@ -5,6 +5,9 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
+      <td colspan="5">Bundle examples:</td>
+   </tr>
+   <tr>
       <td><a href="Bundle-shs-01-doc.html">Immunization entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
       <td>shs-01-doc</td>
       <td><a href="Bundle-shs-01-doc.xml.html">XML</a></td>

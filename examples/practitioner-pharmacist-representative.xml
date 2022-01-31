@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="pharmacist-representative"/>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003611566708354"/>
+    </identifier>
+    <name>
+        <family value="Pharmacist"/>
+        <given value="Representative"/>
+        <prefix value="Mr."/>
+    </name>
+    <qualification>
+        <code>
+            <text value="Bachelor of Pharmacy"/>
+        </code>
+    </qualification>
+</Practitioner>

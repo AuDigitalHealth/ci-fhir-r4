@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="pharmacist-retail"/>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003611566708354"/>
+    </identifier>
+    <practitioner>
+        <!-- relative reference to entry of Practitioner resource -->
+        <reference value="Practitioner/pharmacist-representative"/>
+    </practitioner>
+    <organization>
+        <!-- relative reference to entry of Organization resource -->
+        <reference value="Organization/hi-testdata-pharmacy"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+            <code value="251513"/>
+            <display value="Retail Pharmacist"/>
+        </coding>
+        <text value="Pharmacist"/>
+    </code>
+    <telecom>
+        <system value="email"/>
+        <value value="pha@gmail.com"/>
+        <use value="work"/>
+    </telecom>
+</PractitionerRole>
