@@ -17,5 +17,22 @@
       <td><a href="DocumentReference-acp-02.xml.html">XML</a></td>
       <td><a href="DocumentReference-acp-02.json.html">JSON</a></td>
       <td><a href="DocumentReference-acp-02.ttl.html">Turtle</a></td>
-   </tr>                  
+   </tr>  
+   <tr>
+      <td colspan="5">Bundle examples:</td>
+   </tr>
+   <tr>
+      <td><a href="Bundle-goc-01.html">Goals of Care Payload Bundle for Mr Zhang Wei</a></td>
+      <td>goc-01</td>
+      <td><a href="Bundle-goc-01.xml.html">XML</a></td>
+      <td><a href="Bundle-goc-01.json.html">JSON</a></td>
+      <td><a href="Bundle-goc-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Bundle-goc-doc-01.html">Goals of Care Document Bundle for Mr Zhang Wei</a></td>
+      <td>goc-doc-01</td>
+      <td><a href="Bundle-goc-doc-01.xml.html">XML</a></td>
+      <td><a href="Bundle-goc-doc-01.json.html">JSON</a></td>
+      <td><a href="Bundle-goc-doc-01.ttl.html">Turtle</a></td>
+   </tr>                
 </table>
