@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="46d552b7-88a9-427b-9d62-8b0727de91f9"/>
+    <id value="bremer-frederika-cardiologist"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
@@ -8,7 +8,7 @@
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
-            <h3>Dr Fredrika Bremer</h3>
+            <h3>Dr. Fredrika Bremer</h3>
             <p>Cardiologist</p>
             <p>NSW Hospital - Cardiology</p>
             <table>
@@ -57,12 +57,10 @@
         </assigner>
     </identifier>
     <practitioner>
-        <reference value="Practitioner/d68312c9-b122-4fe5-8e3c-f550bd989f4b"/>
-        <display value="Dr Fredrika Bremer"/>
+        <reference value="Practitioner/bremer-frederika"/>
     </practitioner> 
     <organization>
         <reference value="Organization/nsw-hospital"/>
-        <display value="NSW Hospital - Cardiology"/>
     </organization>
     <code>
         <coding>

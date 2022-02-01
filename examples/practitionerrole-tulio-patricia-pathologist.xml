@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="04ac8978-bc60-4492-aa07-f62568ebe5c6"/>
+    <id value="tulio-patricia-pathologist"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-    </meta>   
+    </meta>
     <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
-            <h3>Ms Linda Howard</h3>
-            <p>Sonographer</p>
-            <p>NSW Hospital - Cardiology</p>
+            <h3>Dr. Patricia Tulio</h3>
+            <p>Pathologist</p>
+            <p>Metropolitan Laboratories Sydney</p>
             <table>
                 <tr>
                     <td>HPI-I</td>
-                    <td>8003616566708106</td>
+                    <td>8003619900015717</td>
                 </tr>
                 <tr>
                     <td>Employee Id.</td>
-                    <td>NSW31u32-401</td>
+                    <td>PTRLSNSW765301</td>
                 </tr>
                 <tr>
                     <td>Phone</td>
-                    <td>(02) 5550 4111</td>
+                    <td>(02) 5550 8994</td>
+                </tr>
+                <tr>
+                    <td>Fax</td>
+                    <td>(02) 5550 9994</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>1342 Sydney St, Randwick, NSW, 2031</td>
                 </tr>
             </table>
         </div>
@@ -37,7 +44,7 @@
             <text value="HPI-I"/>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-        <value value="8003616566708106"/>
+        <value value="8003619900015717"/>
     </identifier>
     <identifier>
         <type>
@@ -50,26 +57,25 @@
         </type>
         <!--Invalid ABN format that passes profile validation used as the fictitious ABN to avoid introducing ambiguity with real world organisations-->
         <system
-            value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753557"/>
-        <value value="NSW31u32-401"/>
+            value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/41824753000"/>
+        <value value="PTRLSNSW765301"/>
         <assigner>
-            <display value="NSW Hospital"/>
+            <display value="Metropolitan Laboratories Sydney"/>
         </assigner>
     </identifier>
     <practitioner>
-        <reference value="Practitioner/e6de10ad-8dba-4250-8399-311da99e8c30"/>
-        <display value="Ms Linda Howard"/>
+        <reference value="Practitioner/tulio-patricia"/>
+        <display value="Dr. Patricia Tulio"/>
     </practitioner> 
     <organization>
-        <reference value="Organization/nsw-hospital"/>
-        <display value="NSW Hospital - Cardiology"/>
+        <reference value="Organization/metro-nsw-path-lab"/>
     </organization>
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="1012861000168100"/>
-            <display value="Sonographer"/>
+            <code value="61207006"/>
+            <display value="Medical pathologist"/>
         </coding>
-        <text value="Sonographer"/>
+        <text value="Pathologist"/>
     </code>    
 </PractitionerRole>
