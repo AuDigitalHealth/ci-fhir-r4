@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="completed-docusate-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+    </meta>
+    <contained>
+        <Medication>
+            <id value="docusate"/>
+            <code>
+                <text value="DOCUSATE SENNA(TAB) 50 mg"/>
+            </code>
+        </Medication>
+    </contained>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="community"/>
+            <display value="Community"/>						
+        </coding>
+    </category>
+    <medicationReference>
+        <reference value="#docusate"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/mhr-anne-thompson"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608000228445"/>
+        </identifier>
+    </subject>
+    <dateAsserted value="2019-09-02T10:00:15+10:00"/>
+    <reasonCode>
+        <text value="Laxative for constipation, works by softening the stools and also assists by stimulating the gut to achieve bowel movements."/>
+    </reasonCode>
+    <note>
+        <text value="Take with a glass of fluid. May take 2-3 days for maximum effect. Do not take with laxatives containing liquid paraffin. Abdominal discomfort, nausea and rash may."/>
+    </note>
+    <dosage>
+        <text value="Take two tablets in the morning and in the evening"/>
+    </dosage>
+</MedicationStatement>

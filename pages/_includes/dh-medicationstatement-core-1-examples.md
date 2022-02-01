@@ -62,7 +62,28 @@
    </tr>
    <tr>
       <td><a href="MedicationStatement-completed-chloramphenicol-psml-02.html">Completed Chloramphenicol 1% eye ointment use recorded in home medicines review for Mr. Lenny Matterson (2019)</a></td>
-      <td>intended-chloramphenicol-psml-02</td>
+      <td>completed-chloramphenicol-psml-02</td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.xml.html">XML</a></td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.json.html">JSON</a></td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="MedicationStatement-completed-atorvastatin-01.html">Completed ATORVASTATIN(TAB) 80 mg use for Mrs. Anne Thompson (2019)</a></td>
+      <td>completed-atorvastatin-01</td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.xml.html">XML</a></td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.json.html">JSON</a></td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="MedicationStatement-completed-docusate-01.html">Completed DOCUSATE SENNA(TAB) 50 mg use for Mrs. Anne Thompson (2019)</a></td>
+      <td>completed-docusate-01</td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.xml.html">XML</a></td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.json.html">JSON</a></td>
+      <td><a href="Medication-intended-chloramphenicol-psml-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="MedicationStatement-completed-rampiril-01.html">Completed RAMIPRIL(TAB) 2.5 mg use for Mrs. Anne Thompson (2019)</a></td>
+      <td>completed-rampiril-01</td>
       <td><a href="Medication-intended-chloramphenicol-psml-02.xml.html">XML</a></td>
       <td><a href="Medication-intended-chloramphenicol-psml-02.json.html">JSON</a></td>
       <td><a href="Medication-intended-chloramphenicol-psml-02.ttl.html">Turtle</a></td>

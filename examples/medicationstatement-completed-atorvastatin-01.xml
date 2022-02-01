@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="completed-atorvastatin-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+    </meta>
+    <contained>
+        <Medication>
+            <id value="atorvastatin"/>
+            <code>
+                <text value="ATORVASTATIN(TAB) 80 mg, Lipitor"/>
+            </code>
+        </Medication>
+    </contained>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="community"/>
+            <display value="Community"/>						
+        </coding>
+    </category>
+    <medicationReference>
+        <reference value="#atorvastatin"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/mhr-anne-thompson"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608000228445"/>
+        </identifier>
+    </subject>
+    <dateAsserted value="2019-09-02T10:00:15+10:00"/>
+    <reasonCode>
+        <text value="To lower cholestrol levels in the blood"/>
+    </reasonCode>
+    <note>
+        <text value="Seek medical advice promptly if your urine is dark (brown) or if you have any unexplained muscle pain, tenderness or weakness. Grapefruit juice should be
+            avoided as it may increase the amount of this medicine in your bloodstream and could increase the chances of side effects occuring."/>
+    </note>
+    <dosage>
+        <text value="Take 1 in the evening"/>
+    </dosage>
+</MedicationStatement>
