@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-allergyintolerance-core-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+  <url
+    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
   <version value="0.0.1"/>
   <name value="DHAllergyIntoleranceCore"/>
   <title value="ADHA Core AllergyIntolerance"/>
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of an allergy or intolerance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a summary statement relating to an allergy or intolerance including asserting negation for a specific allergy or intolerance, a category, or that a patient has no known allergies or intolerances." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
+  <description
+    value="The purpose of this profile is to provide a core representation of an allergy or intolerance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a summary statement relating to an allergy or intolerance including asserting negation for a specific allergy or intolerance, a category, or that a patient has no known allergies or intolerances."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="CDA"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="CDA (R2)"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="AllergyIntolerance"/>
@@ -28,65 +36,272 @@
       <constraint>
         <key value="inv-dh-ait-01"/>
         <severity value="error"/>
-        <human value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1" />
+        <human
+          value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"
+        />
       </constraint>
       <constraint>
         <key value="inv-dh-ait-02"/>
         <severity value="error"/>
-        <human value="If present, a recorder shall at least have a reference, an identifier or a display"/>
-        <expression value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1" />
+        <human
+          value="If present, a recorder shall at least have a reference, an identifier or a display"/>
+        <expression
+          value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"
+        />
       </constraint>
       <constraint>
         <key value="inv-dh-ait-03"/>
         <severity value="error"/>
-        <human value="If present, an asserter shall at least have a reference, an identifier or a display"/>
-        <expression value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1" />
+        <human
+          value="If present, an asserter shall at least have a reference, an identifier or a display"/>
+        <expression
+          value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"
+        />
       </constraint>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/@classCode='OBS'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/templateId"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/templateId/@root='TBD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="code is expected to be populated with AllergyIntolerance type. Where type is unavailable, a default code is provided and SHALL be instantiated as code@code='102.15517', code@displayName='Adverse Reaction', code@codeSystem='1.2.36.1.2001.1001.101'."
+        />
+      </mapping>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
       <path value="AllergyIntolerance.clinicalStatus"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]/@typeCode='COMP'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]/observation/@classCode='OBS'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]/observation/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]/observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[clin_status]/observation/code/@code='103.32013'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[clin_status]/observation/code/@codeSystem='1.2.36.1.2001.1001.101'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[clin_status]/observation/code/@displayName; displayName SHOULD be 'Clinical Status'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[clin_status]/observation/value' value/@xsi:type SHALL be 'CD'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: http://hl7.org/fhir/ValueSet/allergyintolerance-clinical (required)"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.verificationStatus">
       <path value="AllergyIntolerance.verificationStatus"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]/@typeCode='COMP'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]/observation/@classCode='OBS'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]/observation/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]/observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[ver_status]/observation/code/@code='103.32012'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[ver_status]/observation/code/@codeSystem='1.2.36.1.2001.1001.101'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[ver_status]/observation/code/@displayName; displayName SHOULD be 'Verification Status'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[ver_status]/observation/value' value/@xsi:type SHALL be 'CD'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="value/@xsi:type SHALL be 'CD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: http://hl7.org/fhir/ValueSet/allergyintolerance-clinical (required)"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.type">
       <path value="AllergyIntolerance.type"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: http://hl7.org/fhir/ValueSet/allergy-intolerance-type (required)"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.category">
       <path value="AllergyIntolerance.category"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: observation/entryRelationship[category]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: observation/entryRelationship[category]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.criticality">
       <path value="AllergyIntolerance.criticality"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: observation/entryRelationship[crit]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: observation/entryRelationship[crit]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/value"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="value/@xsi:type SHALL be 'CD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-2 (required)"
+        />
+      </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
       <path value="AllergyIntolerance.patient"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="ClinicalDocument/patientRole"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.encounter">
       <path value="AllergyIntolerance.encounter"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"
+        />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[encounter]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: observation/entryRelationship[encounter]/encounter"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.onset[x]">
       <path value="AllergyIntolerance.onset[x]"/>
@@ -103,46 +318,304 @@
         <code value="Range"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.recorder">
       <path value="AllergyIntolerance.recorder"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"
+        />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/author"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.asserter">
       <path value="AllergyIntolerance.asserter"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1"
+        />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/informant"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.note">
       <path value="AllergyIntolerance.note"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/@typeCode='COMP'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/@classCode='ACT'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/code/@code='103.16044'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[note]/act/code/@codeSystem='1.2.36.1.2001.1001.101'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/code/@displayName"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="displayName SHOULD be 'Additional Comments'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/author"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="If this author is not instantiated, the data is considered to be included via induction in ClinicalDocument/author."
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="In CDA the cardinality of entryRelationship[note]/act/author is 0..*. In this template the cardinality of author SHALL be limited to 0..1."
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/effectiveTime"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="If this effectiveTime is not instantiated, the data is con-sidered to be included via induction in ClinicalDocument/au-thor."
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="In CDA the cardinality of entryRelationship[note]/act/effect-iveTime is 0..*. In this template the cardinality of effective-Time SHALL be limited to 0..1."
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[note]/act/text"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="text/@xsi:type SHALL be 'ST'."/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.reaction">
       <path value="AllergyIntolerance.reaction"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/@typeCode='COMP'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/@classCode='OBS'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/code/@code='102.16474'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/code/@codeSystem='1.2.36.1.2001.1001.101'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/code/displayName"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="displayName SHOULD be Reaction Event"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.substance">
       <path value="AllergyIntolerance.reaction.substance"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/participant[agent]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/participant[agent]/@typeCode='CAGNT'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/participant[agent]/participantRole"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/participant[agent]/participantRole/playingEntity"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/participant[agent]/participantRole/playingEntity/code"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="code/originalText or code/@displayName SHALL be included"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1 (preferred)"
+        />
+      </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation">
       <path value="AllergyIntolerance.reaction.manifestation"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/entryRelationship[mfst]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/@typeCode='MFST'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/@inversionInd='true'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/@classCode='OBS'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/@moodCode='EVN'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/code"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="code/originalText or code/@displayName SHALL be included."/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1 (preferred)"
+        />
+      </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
       <path value="AllergyIntolerance.reaction.severity"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation/entryRelationship[react]/observation/entryRelationship[sever]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="observation/entryRelationship[react]/observation/entryRelationship[sever]/@typeCode='TBD'"
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: AllergyIntoleranceSeverity (required)"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
