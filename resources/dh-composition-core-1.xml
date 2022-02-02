@@ -192,7 +192,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/entry"/>
+        <map value="ClinicalDocument/component/structuredBody/component/section/entry[entry]"/>
       </mapping>
     </element>
     <element id="Composition.section.emptyReason">
@@ -200,7 +200,47 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/entry"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/@classCode='OBS'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/@code='ASSERTION'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/@displayName"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/value"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="/ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/value/@xsi:type='CD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: http://hl7.org/fhir/R4/valueset-list-empty-reason.html (preferred)"/>
       </mapping>
     </element>
   </differential>
