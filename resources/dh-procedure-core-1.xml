@@ -4,18 +4,25 @@
   <version value="0.0.1"/>
   <name value="DHProcedureCore"/>
   <title value="ADHA Core Procedure"/>
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a procedure for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
+  <description
+    value="The purpose of this profile is to provide a core representation of a procedure for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="CDA"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="CDA (R2)"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Procedure"/>
@@ -25,34 +32,122 @@
     <element id="Procedure">
       <path value="Procedure"/>
       <constraint>
-        <key value="inv-dh-pro-01" />
-        <severity value="error" />
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1" />
+        <key value="inv-dh-pro-01"/>
+        <severity value="error"/>
+        <human
+          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"
+        />
       </constraint>
       <constraint>
         <key value="inv-dh-pro-02"/>
         <severity value="error"/>
-        <human value="If present, a recorder shall at least have a reference, an identifier or a display"/>
-        <expression value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1" />
+        <human
+          value="If present, a recorder shall at least have a reference, an identifier or a display"/>
+        <expression
+          value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"
+        />
       </constraint>
       <constraint>
         <key value="inv-dh-pro-03"/>
         <severity value="error"/>
-        <human value="If present, an asserter shall at least have a reference, an identifier or a display"/>
-        <expression value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1" />
+        <human
+          value="If present, an asserter shall at least have a reference, an identifier or a display"/>
+        <expression
+          value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"
+        />
       </constraint>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/@classCode='PROC'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/@moodCode='EVN'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/templateId"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/templateId/@root='TBD'"/>
+      </mapping>
     </element>
     <element id="Procedure.status">
       <path value="Procedure.status"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/statusCode"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="This CDA schema element is of type CodedSimpleValue (CS)."/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: Binding: - raise FTRs for R4 compliant value set, and concept maps"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: Binding: - raise FTRs for R4 compliant value set, and concept maps"/>
+      </mapping>
     </element>
     <element id="Procedure.statusReason">
       <path value="Procedure.statusReason"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]/@typeCode='COMP'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]/observation"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]/observation/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]/observation/code/@code='TBD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]/observation/code/@codeSystem='TBD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/entryRelationship[status_rsn]/observation/code/value"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="value/@xsi:type SHALL be 'CD'"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="value/originalText or value/@displayName SHALL be included"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: http://hl7.org/fhir/ValueSet/procedure-not-performed-reason (example)"/>
+      </mapping>
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code"/>
@@ -62,22 +157,41 @@
         <strength value="extensible"/>
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1"/>
       </binding>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="procedure/code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/procedure-1 (extensible)"/>
+      </mapping>
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="ClinicalDocument/recordTarget"/>
+      </mapping>
     </element>
     <element id="Procedure.encounter">
-      <path value="Procedure.encounter" />
+      <path value="Procedure.encounter"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"
+        />
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="TBD: map as an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter), and as an episode of care encounter (procedure/entryRelationship/encounter)"/>
+      </mapping>
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]"/>
@@ -87,44 +201,57 @@
     <element id="Procedure.recorder">
       <path value="Procedure.recorder"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1"
+        />
       </type>
       <mustSupport value="true"/>
     </element>
     <element id="Procedure.asserter">
       <path value="Procedure.asserter"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"
+        />
       </type>
       <mustSupport value="true"/>
     </element>
     <element id="Procedure.reasonCode">
-      <path value="Procedure.reasonCode" />
-      <mustSupport value="true" />
+      <path value="Procedure.reasonCode"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Procedure.reasonReference[x]">
-      <path value="Procedure.reasonReference[x]" />
+      <path value="Procedure.reasonReference[x]"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1"
+        />
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Procedure.bodySite">
-      <path value="Procedure.bodySite" />
-      <mustSupport value="true" />
+      <path value="Procedure.bodySite"/>
+      <mustSupport value="true"/>
       <binding>
-        <strength value="extensible" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1" />
+        <strength value="extensible"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
       </binding>
     </element>
     <element id="Procedure.note">
