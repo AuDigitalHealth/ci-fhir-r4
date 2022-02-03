@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir">
+    <id value="wound-es-01"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+            <p><b>Condition</b>: Nail wound of sole of foot</p>
+            <p><b>Condition clinical status</b>: active</p>
+            <p><b>Condition verification status</b>: confirmed</p>
+            <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                307111942H; gender = male; birthDate = 23/04/1954; indigenous status = Aboriginal but not
+                Torres Strait Islander origin</p>
+            <p><b>Condition onset date</b>: 30/03/2017</p>
+            <p><b>Condition note</b>: Puncture wound to sole of left foot from stepping
+                on a rusty nail. Wound red and swollen, no calf muscle tenderness, no
+                coughing nor chest pain which excludes pulmonary embolism.</p>
+        </div>
+    </text>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="283680004"/>
+            <display value="Nail wound of sole of foot"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/d422d1da-6280-4335-8795-b101a61134e4"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/es-01"/>
+    </encounter>
+    <onsetDateTime value="2017-03-30"/>
+    <note>
+        <text
+            value="Puncture wound to sole of left foot from stepping on a rusty nail. 
+            Wound red and swollen, no calf muscle tenderness, no coughing nor chest pain 
+            which excludes pulmonary embolism."
+        />
+    </note>
+</Condition>

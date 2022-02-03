@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure xmlns="http://hl7.org/fhir">
+    <id value="wound-dressing-es-01"/>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+            <p><b>Procedure</b>: Dressing of wound</p>
+            <p><b>Procedure status</b>: completed</p>
+            <p><b>Subject</b>: Billy Tjakamarra; Pensioner Concession Card Number:
+                307111942H; gender = male; birthDate = 23/04/1954; indigenous status = Aboriginal but not
+                Torres Strait Islander origin</p>
+            <p><b>Procedure performed date</b>: 31/3/2017 15:30</p>
+            <p><b>Procedure reason</b>: condition - Puncture wound from stepping on a
+                rusty nail, sole of left foot</p>
+            <p><b>Procedure note</b>: Dressing of puncture wound sole of left foot,
+                caused by stepping on a rusty nail</p>
+            <p><b>Procedure note</b>: Advised to present in 2 days to the usual GPs
+                clinic for a change of dressings.</p>
+        </div>
+    </text>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="182531007"/>
+            <display value="Dressing of wound"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/mhr-tjakamarra-billy"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/es-01"/>
+    </encounter>
+    <performedDateTime value="2017-03-31T15:30:00+10:00"/>
+    <reasonReference>
+        <reference value="Condition/wound-es-01"/>
+    </reasonReference>
+    <note>
+        <text
+            value="Dressing of puncture wound sole of left foot, caused by stepping on a
+            rusty nail."
+        />
+    </note>
+    <note>
+        <text
+            value="Advised to present in 2 days to the usual GPs clinic 
+            for a change of dressings."
+        />
+    </note>
+</Procedure>
