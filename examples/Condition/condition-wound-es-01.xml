@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition xmlns="http://hl7.org/fhir">
     <id value="wound-es-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1"/>
+    </meta>
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
@@ -16,8 +19,20 @@
                 coughing nor chest pain which excludes pulmonary embolism.</p>
         </div>
     </text>
-    <clinicalStatus value="active"/>
-    <verificationStatus value="confirmed"/>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+        </coding>
+    </verificationStatus>
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
@@ -25,13 +40,23 @@
             <display value="Nail wound of sole of foot"/>
         </coding>
     </code>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="57999000"/>
+            <display value="Structure of sole of foot"/>
+        </coding>
+    </bodySite>
     <subject>
-        <reference value="Patient/d422d1da-6280-4335-8795-b101a61134e4"/>
+        <reference value="Patient/mhr-tjakamarra-billy"/>
     </subject>
     <encounter>
         <reference value="Encounter/es-01"/>
     </encounter>
     <onsetDateTime value="2017-03-30"/>
+    <recorder>
+        <reference value="PractitionerRole/strempel-sonia-gp"/>
+    </recorder>
     <note>
         <text
             value="Puncture wound to sole of left foot from stepping on a rusty nail. 

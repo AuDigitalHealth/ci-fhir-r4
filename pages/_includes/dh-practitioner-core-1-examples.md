@@ -33,6 +33,13 @@
       <td><a href="Practitioner-sallow-elenore.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Practitioner-howard-linda.html">Ms. Linda Howard</a></td>
+      <td>howard-linda</td>
+      <td><a href="Practitioner-howard-linda.xml.html">XML</a></td>
+      <td><a href="Practitioner-howard-linda.json.html">JSON</a></td>
+      <td><a href="Practitioner-howard-linda.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Practitioner-sallow-elenore.html">Dr. Fredrika Bremer</a></td>
       <td>bremer-frederika</td>
       <td><a href="Practitioner-sallow-elenore.xml.html">XML</a></td>
@@ -47,11 +54,11 @@
       <td><a href="Practitioner-tulio-patricia.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Practitioner-tulio-patricia.html">Ms. Linda Howard</a></td>
-      <td>howard-linda</td>
-      <td><a href="Practitioner-tulio-patricia.xml.html">XML</a></td>
-      <td><a href="Practitioner-tulio-patricia.json.html">JSON</a></td>
-      <td><a href="Practitioner-tulio-patricia.ttl.html">Turtle</a></td>
+      <td><a href="Practitioner-strempel-sonia.html">Dr Sonia Strempel</a></td>
+      <td>strempel-sonia</td>
+      <td><a href="Practitioner-strempel-sonia.xml.html">XML</a></td>
+      <td><a href="Practitioner-strempel-sonia.json.html">JSON</a></td>
+      <td><a href="Practitioner-strempel-sonia.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Practitioner-hi-testdata-barton-russ.html">Russ BARTON (Vendor Environment HI Test Data)</a></td>

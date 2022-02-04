@@ -38,6 +38,13 @@
       <td><a href="PractitionerRole-nsw-gp.xml.html">XML</a></td>
       <td><a href="PractitionerRole-nsw-gp.json.html">JSON</a></td>
       <td><a href="PractitionerRole-nsw-gp.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="PractitionerRole-strempel-sonia-gp.html">Dr Sonia Strempel, General practitioner registrar, at Top End Medical Clinic</a></td>
+      <td>strempel-sonia-gp</td>
+      <td><a href="PractitionerRole-strempel-sonia-gp.xml.html">XML</a></td>
+      <td><a href="PractitionerRole-strempel-sonia-gp.json.html">JSON</a></td>
+      <td><a href="PractitionerRole-strempel-sonia-gp.ttl.html">Turtle</a></td>
    </tr> 
    <tr>
       <td><a href="PractitionerRole-tulio-patricia-pathologist.html">Dr. Patricia Tulio, Pathologist, at Metropolitan Laboratories Sydney</a></td>

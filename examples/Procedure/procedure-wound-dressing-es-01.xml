@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Procedure xmlns="http://hl7.org/fhir">
     <id value="wound-dressing-es-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"/>
+    </meta>
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
@@ -33,6 +36,9 @@
         <reference value="Encounter/es-01"/>
     </encounter>
     <performedDateTime value="2017-03-31T15:30:00+10:00"/>
+    <recorder>
+        <reference value="PractitionerRole/strempel-sonia-gp"/>
+    </recorder>
     <reasonReference>
         <reference value="Condition/wound-es-01"/>
     </reasonReference>

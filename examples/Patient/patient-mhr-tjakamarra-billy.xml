@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient xmlns="http://hl7.org/fhir">
     <id value="mhr-tjakamarra-billy"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1"/>
+    </meta>
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
@@ -8,6 +11,7 @@
             <p><b>Identifier</b>: Medical Record Number = 999111999
                 (http://territorymedicalcentre.com.au/identifiers/patient)</p>
             <p><b>Identifier</b>: Pensioner Concession Card Number = 307111942H</p>
+            <p><b>Identifier</b>: IHI = 8003608833564735</p>
             <p><b>Gender</b>: male</p>
             <p><b>Birth date</b>: 23/04/1954</p>
             <p><b>Marital status</b>: Never Married</p>
@@ -38,10 +42,10 @@
             </coding>
             <text value="Medical Record Number"/>
         </type>
-        <system value="http://territorymedicalcentre.com.au/identifiers/patient"/>
+        <system value="http://territorymedicalcentre.example.com.au/identifiers/patient"/>
         <value value="999111999"/>
         <assigner>
-            <reference value="Organization/d93e5527-afd9-4c54-ab09-ada4fdd8ff13"/>
+            <reference value="Organization/territory-medical-centre"/>
         </assigner>
     </identifier>
     <identifier>
@@ -57,6 +61,18 @@
             value="http://ns.electronichealth.net.au/id/centrelink-customer-reference-number"/>
         <value value="307111942H"/>
     </identifier>
+    <identifier>
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+            </coding>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+        <value value="8003608833564735"/>
+    </identifier>
     <name>
         <family value="Tjakamarra"/>
         <given value="Billy"/>
@@ -65,7 +81,7 @@
     <birthDate value="1954-04-23"/>
     <maritalStatus>
         <coding>
-            <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+            <system value="http://terminology.hl7.org/fhir/v3/MaritalStatus"/>
             <code value="S"/>
             <display value="Never Married"/>
         </coding>
@@ -80,7 +96,7 @@
         </language>
         <preferred value="false"/>
     </communication>
-    <!--<generalPractitioner>
-        <reference value="PractitionerRole/d93e5527-afd9-4c54-ab09-ada4fdd8ff13"/>
-    </generalPractitioner>-->
+    <generalPractitioner>
+        <reference value="Organization/territory-medical-centre"/>
+    </generalPractitioner>
 </Patient>
