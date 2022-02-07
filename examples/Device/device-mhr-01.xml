@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Device xmlns="http://hl7.org/fhir">
     <id value="mhr-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1"/>
+    </meta>
     <identifier>
         <type>
             <coding>
@@ -25,4 +28,7 @@
         </coding>
         <text value="My Health Record system"/>
     </type>
+    <owner>
+        <reference value="Organization/mhr-operator"/>
+    </owner>
 </Device>

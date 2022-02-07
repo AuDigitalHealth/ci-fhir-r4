@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="adha"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1"
+        />
+    </meta>
+    <identifier>
+        <type>
+            <text value="ABN"/>
+        </type>
+        <system value="http://hl7.org.au/id/abn"/>
+        <value value="84425496912"/>
+    </identifier>
+    <type>
+        <text value="Commonwealth Government Entity"/>
+    </type>
+    <name value="Australian Digital Health Agency"/>
+    <telecom>
+        <system value="url"/>
+        <value value="https://www.digitalhealth.gov.au/"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="help@digitalhealth.gov.au"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="1300901001"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <use value="work"/>
+        <type value="postal"/>
+        <line value="GPO Box 9942"/>
+        <city value="Sydney"/>
+        <state value="NSW"/>
+        <postalCode value="2000"/>
+        <country value="AU"/>
+    </address>
+    <address>
+        <use value="work"/>
+        <line value="Level 25, 175 Liverpool Street"/>
+        <city value="Sydney"/>
+        <state value="NSW"/>
+        <postalCode value="2000"/>
+        <country value="AU"/>
+    </address>
+</Organization>
