@@ -20,7 +20,7 @@
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
-     <identity value="CDA"/>
+    <identity value="CDA"/>
     <uri value="http://hl7.org/v3/cda"/>
     <name value="CDA (R2)"/>
   </mapping>
@@ -61,10 +61,6 @@
           value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
       </constraint>
       <mapping>
-         <identity value="CDA"/>
-        <map value="/ClinicalDocument/recordTarget/templateId/@root='TBD'"/>
-      </mapping>
-      <mapping>
         <identity value="CDA"/>
         <map value="/ClinicalDocument/recordTarget/patientRole/"/>
       </mapping>
@@ -74,15 +70,15 @@
       <sliceName value="birthPlace"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/birthplace"/>
       </mapping>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/birthplace/name"/>
       </mapping>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/birthplace/addr"/>
       </mapping>
     </element>
@@ -91,11 +87,8 @@
       <sliceName value="indigenousStatus"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/ethnicGroupCode"/>
-        <comment
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 (required)"
-        />
       </mapping>
     </element>
     <element id="Patient.extension:interpreterRequired">
@@ -103,7 +96,7 @@
       <sliceName value="interpreterRequired"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/languageCommunication/ext:interpreterRequiredInd"/>
       </mapping>
     </element>
@@ -113,7 +106,7 @@
       <short value="Year of Arrival"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="TBD"/>
       </mapping>
     </element>
@@ -122,7 +115,7 @@
       <min value="1"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/ext:asEntityIdentifier"/>
       </mapping>
     </element>
@@ -130,7 +123,7 @@
       <path value="Patient.active"/>
       <fixedBoolean value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -138,7 +131,7 @@
       <path value="Patient.name"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/name"/>
       </mapping>
     </element>
@@ -146,7 +139,7 @@
       <path value="Patient.telecom"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="telecom"/>
       </mapping>
     </element>
@@ -154,7 +147,7 @@
       <path value="Patient.gender"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/administrativeGenderCode"/>
       </mapping>
     </element>
@@ -162,7 +155,7 @@
       <path value="Patient.birthDate"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/birthTime"/>
       </mapping>
     </element>
@@ -171,7 +164,7 @@
       <sliceName value="accuracyIndicator"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="TBD"/>
       </mapping>
     </element>
@@ -180,7 +173,7 @@
       <sliceName value="birthTime"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/birthTime"/>
       </mapping>
     </element>
@@ -188,7 +181,7 @@
       <path value="Patient.address"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="addr"/>
       </mapping>
     </element>
@@ -196,7 +189,7 @@
       <path value="Patient.communication"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/languageCommunication"/>
       </mapping>
     </element>
@@ -204,7 +197,7 @@
       <path value="Patient.communication.language"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/languageCommunication/languageCode"/>
       </mapping>
     </element>
@@ -212,7 +205,7 @@
       <path value="Patient.communication.preferred"/>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="patient/languageCommunication/preferenceInd"/>
       </mapping>
     </element>
@@ -228,7 +221,7 @@
       </type>
       <mustSupport value="true"/>
       <mapping>
-         <identity value="CDA"/>
+        <identity value="CDA"/>
         <map value="/ClinicalDocument/participant"/>
       </mapping>
     </element>

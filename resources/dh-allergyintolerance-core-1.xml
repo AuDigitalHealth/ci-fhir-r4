@@ -90,12 +90,6 @@
         <identity value="CDA"/>
         <map value="observation/code"/>
       </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="code is expected to be populated with AllergyIntolerance type. Where type is unavailable, a default code is provided and SHALL be instantiated as code@code='102.15517', code@displayName='Adverse Reaction', code@codeSystem='1.2.36.1.2001.1001.101'."
-        />
-      </mapping>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
       <path value="AllergyIntolerance.clinicalStatus"/>
@@ -142,13 +136,7 @@
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[clin_status]/observation/value' value/@xsi:type SHALL be 'CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="Binding: http://hl7.org/fhir/ValueSet/allergyintolerance-clinical (required)"/>
+        <map value="observation/entryRelationship[clin_status]/observation/value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.verificationStatus">
@@ -196,17 +184,7 @@
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[ver_status]/observation/value' value/@xsi:type SHALL be 'CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="value/@xsi:type SHALL be 'CD'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="Binding: http://hl7.org/fhir/ValueSet/allergyintolerance-clinical (required)"/>
+        <map value="observation/entryRelationship[ver_status]/observation/value'"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.type">
@@ -215,10 +193,6 @@
       <mapping>
         <identity value="CDA"/>
         <map value="observation/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="Binding: http://hl7.org/fhir/ValueSet/allergy-intolerance-type (required)"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.category">
@@ -261,16 +235,6 @@
         <identity value="CDA"/>
         <map value="observation/value"/>
       </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="value/@xsi:type SHALL be 'CD'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/indicator-hypersensitivity-intolerance-to-substance-2 (required)"
-        />
-      </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
       <path value="AllergyIntolerance.patient"/>
@@ -296,7 +260,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="TBD: mappings below describe an episode of care encounter; also need to show mappings to an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter)"/>
+        <map
+          value="TBD: mappings below describe an episode of care encounter; also need to show mappings to an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter)"
+        />
       </mapping>
       <mapping>
         <identity value="CDA"/>
@@ -414,23 +380,7 @@
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map value="displayName SHOULD be 'Additional Comments'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
         <map value="observation/entryRelationship[note]/act/author"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="If this author is not instantiated, the data is considered to be included via induction in ClinicalDocument/author."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="In CDA the cardinality of entryRelationship[note]/act/author is 0..*. In this template the cardinality of author SHALL be limited to 0..1."
-        />
       </mapping>
       <mapping>
         <identity value="CDA"/>
@@ -438,23 +388,7 @@
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map
-          value="If this effectiveTime is not instantiated, the data is con-sidered to be included via induction in ClinicalDocument/au-thor."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="In CDA the cardinality of entryRelationship[note]/act/effect-iveTime is 0..*. In this template the cardinality of effectiveTime SHALL be limited to 0..1."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
         <map value="observation/entryRelationship[note]/act/text"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="text/@xsi:type SHALL be 'ST'."/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction">
@@ -534,16 +468,6 @@
           value="observation/entryRelationship[react]/observation/participant[agent]/participantRole/playingEntity/code"
         />
       </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="code/originalText or code/@displayName SHALL be included"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1 (preferred)"
-        />
-      </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation">
       <path value="AllergyIntolerance.reaction.manifestation"/>
@@ -588,16 +512,6 @@
           value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/code"
         />
       </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="code/originalText or code/@displayName SHALL be included."/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1 (preferred)"
-        />
-      </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
       <path value="AllergyIntolerance.reaction.severity"/>
@@ -615,10 +529,6 @@
       <mapping>
         <identity value="CDA"/>
         <map value="TBD"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="Binding: AllergyIntoleranceSeverity (required)"/>
       </mapping>
     </element>
   </differential>

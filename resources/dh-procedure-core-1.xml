@@ -76,14 +76,6 @@
         <identity value="CDA"/>
         <map value="procedure/@moodCode='EVN'"/>
       </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/templateId"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/templateId/@root='TBD'"/>
-      </mapping>
     </element>
     <element id="Procedure.status">
       <path value="Procedure.status"/>
@@ -138,15 +130,8 @@
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map value="value/@xsi:type SHALL be 'CD'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="value/originalText or value/@displayName SHALL be included"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="Binding: http://hl7.org/fhir/ValueSet/procedure-not-performed-reason (example)"/>
+        <map value="Binding: http://hl7.org/fhir/ValueSet/procedure-not-performed-reason (example)"
+        />
       </mapping>
     </element>
     <element id="Procedure.code">
@@ -163,7 +148,9 @@
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/procedure-1 (extensible)"/>
+        <map
+          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/procedure-1 (extensible)"
+        />
       </mapping>
     </element>
     <element id="Procedure.subject">
@@ -190,7 +177,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="TBD: map as an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter), and as an episode of care encounter (procedure/entryRelationship/encounter)"/>
+        <map
+          value="TBD: map as an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter), and as an episode of care encounter (procedure/entryRelationship/encounter)"
+        />
       </mapping>
     </element>
     <element id="Procedure.performed[x]">
