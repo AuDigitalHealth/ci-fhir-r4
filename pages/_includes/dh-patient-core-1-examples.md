@@ -26,6 +26,13 @@
       <td><a href="Patient-hi-testdata-gainey-bert.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Patient-mhr-tjakamarra-billy.html">Billy Tjakamarra (My Health Record Patient)</a></td>
+      <td>mhr-tjakamarra-billy</td>
+      <td><a href="Patient-mhr-tjakamarra-billy.xml.html">XML</a></td>
+      <td><a href="Patient-mhr-tjakamarra-billy.json.html">JSON</a></td>
+      <td><a href="Patient-mhr-tjakamarra-billy.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Patient-hi-testdata-goodwin-bonny.html">Mrs. Bonny Goodwin (Vendor Environment HI Test Data plus marital status)</a></td>
       <td>hi-testdata-goodwin-bonny</td>
       <td><a href="Patient-hi-testdata-goodwin-bonny.xml.html">XML</a></td>
@@ -38,7 +45,14 @@
       <td><a href="Patient-hi-testdata-moss-cleo.xml.html">XML</a></td>
       <td><a href="Patient-hi-testdata-moss-cleo.json.html">JSON</a></td>
       <td><a href="Patient-hi-testdata-moss-cleo.ttl.html">Turtle</a></td>
-   </tr>          
+   </tr>        
+   <tr>
+      <td><a href="Patient-mhr-craig-daniel.html">Mr. Daniel CRAIG (My Health Record Patient)</a></td>
+      <td>mhr-craig-daniel</td>
+      <td><a href="Patient-mhr-craig-daniel.xml.html">XML</a></td>
+      <td><a href="Patient-mhr-craig-daniel.json.html">JSON</a></td>
+      <td><a href="Patient-mhr-craig-daniel.ttl.html">Turtle</a></td>
+   </tr>  
    <tr>
       <td><a href="Patient-hi-testdata-matterson-lenny.html">Mr Lenny Matterson (Vendor Environment HI Test Data plus indigenous status, telecom, language)</a></td>
       <td>hi-testdata-matterson-lenny</td>
@@ -52,6 +66,13 @@
       <td><a href="Patient-hi-testdata-priest-mac.xml.html">XML</a></td>
       <td><a href="Patient-hi-testdata-priest-mac.json.html">JSON</a></td>
       <td><a href="Patient-hi-testdata-priest-mac.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Patient-mhr-field-sally.html">Ms. Sally FIELD (My Health Record Patient)</a></td>
+      <td>mhr-field-sally</td>
+      <td><a href="Patient-mhr-field-sally.xml.html">XML</a></td>
+      <td><a href="Patient-mhr-field-sally.json.html">JSON</a></td>
+      <td><a href="Patient-mhr-field-sally.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Patient-p2p-zhang-wei.html">Mr Zhang Wei (P2P)</a></td>

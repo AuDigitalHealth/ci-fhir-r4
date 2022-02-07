@@ -54,6 +54,13 @@
       <td><a href="PractitionerRole-pharmacist-retail.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="PractitionerRole-strempel-sonia-gp.html">Dr Sonia Strempel, General practitioner registrar, at Top End Medical Clinic</a></td>
+      <td>strempel-sonia-gp</td>
+      <td><a href="PractitionerRole-strempel-sonia-gp.xml.html">XML</a></td>
+      <td><a href="PractitionerRole-strempel-sonia-gp.json.html">JSON</a></td>
+      <td><a href="PractitionerRole-strempel-sonia-gp.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="PractitionerRole-hi-testdata-dental-therapist.html">Dental Therapist (Vendor Environment HI Test Data)</a></td>
       <td>hi-testdata-dental-therapist</td>
       <td><a href="PractitionerRole-hi-testdata-dental-therapist.xml.html">XML</a></td>

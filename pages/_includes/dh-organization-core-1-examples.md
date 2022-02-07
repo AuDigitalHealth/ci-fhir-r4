@@ -82,6 +82,20 @@
       <td><a href="Organization-tas-family-clinic.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Organization-territory-medical-centre.html">Territory Medical Centre</a></td>
+      <td>territory-medical-centre</td>
+      <td><a href="Organization-territory-medical-centre.xml.html">XML</a></td>
+      <td><a href="Organization-territory-medical-centre.json.html">JSON</a></td>
+      <td><a href="Organization-territory-medical-centre.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Organization-topend-medical-clinic.html">Top End Medical Clinic</a></td>
+      <td>topend-medical-clinic</td>
+      <td><a href="Organization-topend-medical-clinic.xml.html">XML</a></td>
+      <td><a href="Organization-topend-medical-clinic.json.html">JSON</a></td>
+      <td><a href="Organization-topend-medical-clinic.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Organization-hi-testdata-racs.html">Test Org -DigitalHealth 1 (Vendor Environment HI Test Data plus email)</a></td>
       <td>hi-testdata-racs</td>
       <td><a href="Organization-hi-testdata-racs.xml.html">XML</a></td>
