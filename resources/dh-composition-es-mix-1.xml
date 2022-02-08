@@ -19,11 +19,6 @@
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="CDA"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Composition"/>
@@ -35,26 +30,12 @@
       <path value="Composition"/>
       <short value="Event Summary"/>
       <definition
-        value="A record, reported by a healthcare provider, of a significant healthcare event involving the individual and that is useful to a wide range of providers in assessing individuals and delivering care."/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/templateId/@root='TBD'"/>
-      </mapping>
+        value="A record, reported by a healthcare provider, of a significant healthcare event involving the individual and that is useful to a wide range of providers in assessing individuals and delivering care."
+      />
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/ext:completionCode"/>
-        <comment
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/australian-healthcare-cda-document-lifecycle-status-1 (required)"
-        />
-      </mapping>
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>
@@ -64,27 +45,15 @@
           <code value="34133-9"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
     <element id="Composition.encounter">
       <path value="Composition.encounter"/>
       <min value="1"/>
       <max value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/componentOf/encompassingEncounter"/>
-      </mapping>
     </element>
     <element id="Composition.encounter.reference">
       <path value="Composition.encounter.reference"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
@@ -95,25 +64,13 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/author"/>
-      </mapping>
     </element>
     <element id="Composition.attester">
       <path value="Composition.attester"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/legalAuthenticator"/>
-      </mapping>
     </element>
     <element id="Composition.attester.mode">
       <path value="Composition.attester.mode"/>
       <fixedCode value="legal"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.attester.party">
       <path value="Composition.attester.party"/>
@@ -123,10 +80,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/legalAuthenticator/assignedEntity"/>
-      </mapping>
     </element>
     <element id="Composition.section">
       <path value="Composition.section"/>
@@ -149,35 +102,18 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component/section"/>
-      </mapping>
     </element>
     <element id="Composition.section.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component/section/title"/>
-      </mapping>
     </element>
     <element id="Composition.section.code">
       <path value="Composition.section.code"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component/section/code"/>
-      </mapping>
     </element>
     <element id="Composition.section.section">
       <path value="Composition.section.section"/>
       <max value="0"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component/section/component/section"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:eventOverview">
       <path value="Composition.section"/>
@@ -186,25 +122,6 @@
       <definition value="Summary information concerning the event."/>
       <min value="1"/>
       <max value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[event]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[event]/section"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[event]/section/templateId"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[event]/section/templateId/@root='TBD'"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:eventOverview.code">
       <path value="Composition.section.code"/>
@@ -215,28 +132,6 @@
           <code value="101.16672"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[event]/section/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[event]/section/code/@code='101.16672'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[event]/section/code/@codeSystem='1.2.36.1.2001.1001.101'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[event]/section/code/@displayName"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:eventOverview.entry">
       <path value="Composition.section.entry"/>
@@ -248,19 +143,10 @@
           value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1"
         />
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[event]/section/entry[enc]"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:eventOverview.entry.reference">
       <path value="Composition.section.entry.reference"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.section:allergies">
       <path value="Composition.section"/>
@@ -269,21 +155,6 @@
       <definition
         value="Information about allergies or intolerances identified or reported during this encounter. This may include statements that a patient does not have an allergy or category of allergies."/>
       <max value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[allergy]/section"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/templateId"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/templateId/@root='TBD'"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
@@ -294,28 +165,6 @@
           <code value="48765-2"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[allergy]/section/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/code/@code='48765-2'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/code/@codeSystem='2.16.840.1.113883.6.1'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/code/@displayName"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:allergies.entry">
       <path value="Composition.section.entry"/>
@@ -326,25 +175,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv]/observation"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:allergies.entry.reference">
       <path value="Composition.section.entry.reference"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
     <element id="Composition.section:allergies.emptyReason">
       <path value="Composition.section.emptyReason"/>
@@ -354,72 +188,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/code/@code='ASSERTION'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/code/@displayName"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/code/value"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[allergy]/section/entry[adv_empty_rsn]/observation/code/value/@xsi:type='CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 (required)"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicines">
       <path value="Composition.section"/>
@@ -450,20 +218,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[meds]/section"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[meds]/section/templateId"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/templateId/@root='TBD'"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicines.code">
       <path value="Composition.section.code"/>
@@ -474,28 +228,6 @@
           <code value="10160-0"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[meds]/section/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/code/@code='10160-0'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/code/@codeSystem='2.16.840.1.113883.6.1'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/code/@displayName"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicines.entry">
       <path value="Composition.section.entry"/>
@@ -506,25 +238,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Instantiated as /ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds]/substanceAdministration, or /ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds]/observation"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicines.entry.reference">
       <path value="Composition.section.entry.reference"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.section:medicines.emptyReason">
       <path value="Composition.section.emptyReason"/>
@@ -534,72 +251,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/code/@code='ASSERTION'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/code/@displayName"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/code/value"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[meds]/section/entry[meds_empty_rsn]/observation/code/value/@xsi:type='CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 (required)"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicalHistory">
       <path value="Composition.section"/>
@@ -630,22 +281,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[med_history]/section"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_history]/section/templateId"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_history]/section/templateId/@root='TBD'"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicalHistory.code">
       <path value="Composition.section.code"/>
@@ -656,29 +291,6 @@
           <code value="101.16117"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[med_history]/section/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_history]/section/code/@code='101.16117'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_history]/section/code/@codeSystem='1.2.36.1.2001.1001.101'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_history]/section/code/@displayName"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicalHistory.entry">
       <path value="Composition.section.entry"/>
@@ -691,26 +303,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_history]/section/entry[med_history]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="TBD: Instantiated as /ClinicalDocument/component/structuredBody/component[med_history]/section/entry[med_history]/observation conforming to dh-condition-core-1, /ClinicalDocument/component/structuredBody/component[med_history]/section/entry[med_history]/procedure conforming to dh-procedure-core-1, or /ClinicalDocument/component/structuredBody/component[med_history]/section/entry[med_history]/observation conforming to au-norelevantfinding"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:medicalHistory.entry.reference">
       <path value="Composition.section.entry.reference"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.section:medicalHistory.emptyReason">
       <path value="Composition.section.emptyReason"/>
@@ -720,72 +316,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/code/@code='ASSERTION'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/code/@displayName"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/code/value"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[med_hist]/section/entry[med_hist_empty_rsn]/observation/code/value/@xsi:type='CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 (required)"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:immunisations">
       <path value="Composition.section"/>
@@ -816,20 +346,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[imms]/section"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[imms]/section/templateId"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/templateId/@root='TBD'"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:immunisations.code">
       <path value="Composition.section.code"/>
@@ -840,28 +356,6 @@
           <code value="11369-6"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[imms]/section/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/code/@code='11369-6'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/code/@codeSystem='2.16.840.1.113883.6.1'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/code/@displayName"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:immunisations.entry">
       <path value="Composition.section.entry"/>
@@ -872,25 +366,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="TBD: Instantiated as /ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms]/substanceAdministration conforming to dh-immunization-core-1, or /ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms]/observation conforming to au-norelevantfinding"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:immunisations.entry.reference">
       <path value="Composition.section.entry.reference"/>
       <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.section:immunisations.emptyReason">
       <path value="Composition.section.emptyReason"/>
@@ -900,66 +379,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/code/@code='ASSERTION'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/code/@displayName"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/code/value"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[imms]/section/entry[imms_empty_rsn]/observation/code/value/@xsi:type='CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 (required)"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:diagnosticInvestigations">
       <path value="Composition.section"/>
@@ -970,22 +389,6 @@
         value="Information about diagnostic tests or procedures performed on or requested for an individual during this encounter, that are considered relevant to the individual's ongoing care. This does not include a full list of diagnostic tests and procedures performed on or request for the individual but only those that are relevant to the encounter."/>
       <min value="0"/>
       <max value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/templateId"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/templateId/@root='TBD'"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:diagnosticInvestigations.code">
       <path value="Composition.section.code"/>
@@ -995,28 +398,6 @@
           <code value="30954-2"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/code/@code='30954-2'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/code/@codeSystem='2.16.840.1.113883.6.1'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/code/@displayName"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:diagnosticInvestigations.entry">
       <path value="Composition.section.entry"/>
@@ -1031,18 +412,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"
         />
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="TBD: Instantiated as /ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv]/observation conforming to dh-diagnosticreport-core-1, or /ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv]/observation conforming to dh-diagnosticresultgroup-1, or /ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv]/observation conforming to au-norelevantfinding"
-        />
-      </mapping>
     </element>
     <element id="Composition.section:diagnosticInvestigations.entry.reference">
       <path value="Composition.section.entry.reference"/>
@@ -1056,72 +425,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/code/@code='ASSERTION'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/code/@displayName"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/code/value"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[diag_inv]/section/entry[diag_inv_empty_rsn]/observation/code/value/@xsi:type='CD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 (required)"
-        />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

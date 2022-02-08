@@ -5,189 +5,91 @@
   <version value="0.0.1"/>
   <name value="DHCompositionPHS"/>
   <title value="Australian Digital Health Agency Personal Health Summary Composition"/>
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a Personal Health Notes document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="CDA"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
-  </mapping>
+  <description
+    value="The purpose of this profile is to define a representation of a Personal Health Notes document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Composition"/>
-  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+  <baseDefinition
+    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Composition">
       <path value="Composition"/>
       <short value="Personal Health Notes"/>
-      <definition value="Narratives about the patient's healthcare information recorded by the patient or their authorised representative within the system. This helps the patient or their authorised representative to keep track of patient health information within the system."/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/templateId"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/templateId/@root='TBD'"/>
-      </mapping>
+      <definition
+        value="Narratives about the patient's healthcare information recorded by the patient or their authorised representative within the system. This helps the patient or their authorised representative to keep track of patient health information within the system."
+      />
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/ext:completionCode"/>
-        <comment
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/australian-healthcare-cda-document-lifecycle-status-1 (required)"
-        />
-      </mapping>
     </element>
     <element id="Composition.type">
       <path value="Composition.type"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
-          <code value="100.16681" />
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="100.16681"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code/@code='100.16681'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code/@codeSystem='1.2.36.1.2001.1001.101'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code/@displayName"/>
-      </mapping>
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
-          <code value="100.16681" />
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="100.16681"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code/@code='100.16681'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code/@codeSystem='1.2.36.1.2001.1001.101'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/code/@displayName"/>
-      </mapping>
     </element>
     <element id="Composition.author">
-      <path value="Composition.author" />
-      <max value="1" />
+      <path value="Composition.author"/>
+      <max value="1"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
+        />
       </type>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/author"/>
-      </mapping>
     </element>
     <element id="Composition.section">
       <path value="Composition.section"/>
       <short value="Notes"/>
       <definition value="Healthcare narratives about an individual's health and related matters."/>
       <max value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section"/>
-      </mapping>
     </element>
     <element id="Composition.section.code">
-      <path value="Composition.section.code" />
-      <min value="1" />
+      <path value="Composition.section.code"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
-          <code value="102.15513" />
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="102.15513"/>
         </coding>
       </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section/code/@code='102.15513"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section/code/@codeSystem='1.2.36.1.2001.1001.101'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section/code/@displayName"/>
-      </mapping>
-    </element>
-    <element id="Composition.section.text">
-      <path value="Composition.section.text"/>
-      <min value="1"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section/text"/>
-      </mapping>
     </element>
     <element id="Composition.section.entry">
-      <path value="Composition.section.entry" />
-      <max value="0" />
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
-          </element>
+      <path value="Composition.section.entry"/>
+      <max value="0"/>
+    </element>
     <element id="Composition.section.emptyReason">
-      <path value="Composition.section.emptyReason" />
-      <max value="0" />
-      <mapping>
-        <identity value="CDA"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[notes]/section/entry[notes_empty_rsn]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="/ClinicalDocument/component/structuredBody/component[notes]/section/entry[notes_empty_rsn]/observation"
-        />
-      </mapping>
+      <path value="Composition.section.emptyReason"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>
