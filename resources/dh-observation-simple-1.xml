@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-simple-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
   <version value="0.0.1"/>
   <name value="DHObservationSimple"/>
   <title value="ADHA Simple Observation"/>
@@ -30,14 +30,14 @@
         <severity value="error"/>
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-obs-02" />
         <severity value="error" />
         <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
         <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-simple-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1" />
       </constraint>
     </element>
     <element id="Observation.status">
@@ -58,7 +58,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -66,7 +66,7 @@
       <path value="Observation.encounter"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -79,10 +79,10 @@
       <path value="Observation.performer"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
       </type>
       <mustSupport value="true"/>
     </element>

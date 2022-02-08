@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-location-core-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
   <version value="0.0.1"/>
   <name value="DHLocationCore"/>
   <title value="ADHA Core Location"/>
@@ -31,21 +31,21 @@
         <severity value="error" />
         <human value="The location shall at least have an identifier with at least a system and a value or address or type" />
         <expression value="address.exists() or type.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-loc-02" />
         <severity value="error" />
         <human value="If present, the managing organization shall at least have a reference, an identifier or a display" />
         <expression value="managingOrganization.exists() implies managingOrganization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-loc-03" />
         <severity value="error" />
         <human value="If present, a location this location is a part of shall at least have a reference, an identifier or a display" />
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
     </element>
     <element id="Location.identifier">
@@ -86,7 +86,7 @@
       <path value="Location.managingOrganization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -94,7 +94,7 @@
       <path value="Location.partOf" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

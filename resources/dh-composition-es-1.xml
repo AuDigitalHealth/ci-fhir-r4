@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-es-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"/>
   <version value="0.0.1"/>
   <name value="DHCompositionES"/>
   <title value="Australian Digital Health Agency Event Summary Composition"/>
@@ -28,7 +28,7 @@
   <abstract value="false"/>
   <type value="Composition"/>
   <baseDefinition
-    value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
+    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Composition">
@@ -96,7 +96,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
       <mapping>
@@ -124,7 +124,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
       <mapping>
@@ -148,7 +148,7 @@
         <human value="A section shall at least have an entry or an empty reason, but not both"/>
         <expression value="entry.exists() xor emptyReason.exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <constraint>
@@ -157,9 +157,9 @@
         <human
           value="All observations shall conform one of: ADHA Simple Observation, ADHA Diagnostic Result Group Observation, ADHA Diagnostic Result Observation"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1') or entry.resolve().conformsTo('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresult-1')"/>
+          value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1') or entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1')"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <mapping>
@@ -257,7 +257,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"
+          value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1"
         />
       </type>
       <mapping>
@@ -341,7 +341,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />
       </type>
       <mapping>
@@ -454,7 +454,7 @@
         <expression
           value="entry.resolve().where($this is MedicationStatement).exists() xor entry.resolve().where($this is Observation).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <constraint>
@@ -465,7 +465,7 @@
         <expression
           value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <mapping>
@@ -521,7 +521,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
       <mapping>
@@ -634,7 +634,7 @@
         <expression
           value="(entry.resolve().where($this is Condition).exists() or entry.resolve().where($this is Procedure).exists()) xor entry.resolve().where($this is Observation).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <constraint>
@@ -645,7 +645,7 @@
         <expression
           value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code = '1224831000168103').exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <mapping>
@@ -704,9 +704,9 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
       <mapping>
@@ -820,7 +820,7 @@
         <expression
           value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation ).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <constraint>
@@ -831,7 +831,7 @@
         <expression
           value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code='1226591000168105').exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-es-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"
         />
       </constraint>
       <mapping>
@@ -887,7 +887,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-immunization-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
       <mapping>
@@ -1042,11 +1042,11 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-diagnosticresult-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"
         />
       </type>
       <mapping>

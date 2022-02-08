@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-bundle-core-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-core-1"/>
   <version value="0.0.1"/>
   <name value="DHBundleCore"/>
   <title value="Australian Digital Health Agency Document Bundle"/>
@@ -20,7 +20,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Bundle"/>
-  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-payload-1"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Bundle">
@@ -45,7 +45,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="AllergyIntolerance" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-allergyintolerance-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:bodystructure">
@@ -56,7 +56,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="BodyStructure" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-bodystructure-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-bodystructure-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:composition">
@@ -67,7 +67,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Composition" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:condition">
@@ -78,7 +78,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Condition" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:diagnosticreport">
@@ -89,7 +89,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="DiagnosticReport" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-diagnosticreport-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:encounter">
@@ -100,7 +100,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Encounter" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:healthcareservice">
@@ -111,7 +111,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="HealthcareService" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:immunization">
@@ -122,7 +122,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Immunization" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-immunization-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:list">
@@ -133,7 +133,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="List" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-list-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-list-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:location">
@@ -144,7 +144,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Location" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:medication">
@@ -155,7 +155,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Medication" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:medicationadministration">
@@ -166,7 +166,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="MedicationAdministration" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationadministration-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-medicationadministration-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:medicationdispense">
@@ -177,7 +177,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="MedicationDispense" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:medicationrequest">
@@ -188,7 +188,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="MedicationRequest" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationrequest-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:medicationstatement">
@@ -199,7 +199,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="MedicationStatement" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medicationstatement-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:organization">
@@ -210,7 +210,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Organization" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:observation">
@@ -221,7 +221,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Observation" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:patient">
@@ -232,7 +232,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Patient" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:practitioner">
@@ -243,7 +243,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Practitioner" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:practitionerrole">
@@ -254,7 +254,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="PractitionerRole" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:procedure">
@@ -265,7 +265,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Procedure" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1" />
       </type>
     </element>
     <element id="Bundle.entry:relatedperson">
@@ -276,7 +276,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="RelatedPerson" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1" />
       </type>
     </element>
   </differential>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-participant-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-participant-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
   <version value="0.0.1" />
   <name value="DHDeviceParticipant" />
   <title value="ADHA Participant Device" />
@@ -30,14 +30,14 @@
         <severity value="error"/>
         <human value="If present, an owner shall at least have a reference or display or an identifier with at least a system and a value"/>
         <expression value="owner.exists() implies owner.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-participant-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-dev-02"/>
         <severity value="error"/>
         <human value="If present, a location shall at least have a reference or display or an identifier with at least a system and a value"/>
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-participant-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
       </constraint>
     </element>
     <element id="Device.identifier">
@@ -63,7 +63,7 @@
       <path value="Device.owner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -71,7 +71,7 @@
       <path value="Device.location" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

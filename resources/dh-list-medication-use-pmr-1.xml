@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-medication-use-pmr-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
   <version value="0.0.1"/>
   <name value="DHListPractitionerMedicineReview"/>
   <title value="ADHA Practitioner Medicine Review List"/>
@@ -20,7 +20,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="List" />
-  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-1" />
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1" />
   <derivation value="constraint" />
   <differential>
     <element id="List">
@@ -32,7 +32,7 @@
         <severity value="error"/>
         <human value="Encounter type shall be a member of Medicines Review Type value set https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2"/>
         <expression value="encounter.resolve().type.memberOf('https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2')"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1" />
       </constraint>
     </element>
     <element id="List.extension">
@@ -59,7 +59,7 @@
       <sliceName value="packed-in-daa"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-packed-in-daa-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-packed-in-daa-1"/>
       </type>
       <max value="1" />
       <mustSupport value="true" />
@@ -76,7 +76,7 @@
       <path value="List.source"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
       </type>
       <min value="1" />
     </element>

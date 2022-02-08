@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medication-core-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
   <version value="0.0.1"/>
   <name value="DHMedicationCore"/>
   <title value="ADHA Core Medication"/>
@@ -30,7 +30,7 @@
         <severity value="error" />
         <human value="If present, a manufacturer shall at least have a reference, an identifier or a display" />
         <expression value="manufacturer.exists() implies manufacturer.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1" />
       </constraint>
     </element>
     <element id="Medication.extension:brandName">
@@ -54,7 +54,7 @@
       <path value="Medication.manufacturer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -73,7 +73,7 @@
         <severity value="error" />
         <human value="If present, an item reference shall at least have a reference or a display" />
         <expression value="itemReference.exists() implies itemReference.all($this.reference.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -85,8 +85,8 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-substance-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-medication-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1" />
       </type>
     </element>
     <element id="Medication.ingredient.isActive">

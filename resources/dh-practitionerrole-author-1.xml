@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-practitionerrole-author-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
   <version value="0.0.1" />
   <name value="DHPractitionerRoleAuthoring" />
   <title value="ADHA Authoring PractitionerRole" />
@@ -31,14 +31,14 @@
         <severity value="error" />
         <human value="If present, a location shall at least have a reference, an identifier or a display" />
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-prarol-02" />
         <severity value="error" />
         <human value="If present, a healthcare service shall at least have a reference, an identifier or a display" />
         <expression value="healthcareService.exists() implies healthcareService.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
       </constraint>
     </element>
     <element id="PractitionerRole.identifier">
@@ -56,7 +56,7 @@
       <min value="1"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitioner-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -69,7 +69,7 @@
       <min value="1"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -90,7 +90,7 @@
       <path value="PractitionerRole.location" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -99,7 +99,7 @@
       <max value="1"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

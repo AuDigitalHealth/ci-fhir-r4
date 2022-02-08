@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-patient-demographics-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-demographics-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1" />
   <version value="0.0.1" />
   <name value="DHPatientDemographics" />
   <title value="ADHA Patient Demographics" />
@@ -31,21 +31,21 @@
         <severity value="error" />
         <human value="If present, a general practitioner shall at least have a reference, an identifier or a display" />
         <expression value="generalPractitioner.exists() implies generalPractitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-demographics-1"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
       </constraint>      
       <constraint>
         <key value="inv-dh-pat-02" />
         <severity value="error" />
         <human value="At least one patient identifier shall at least have a system and a value" />
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-demographics-1"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-pat-03" />
         <severity value="error" />
         <human value="If present, date of arrival shall be year of arrival" />
         <expression value="extension('http://hl7.org.au/fhir/StructureDefinition/date-of-arrival').exists() implies extension.valueDate.value.matches('^([0-9]{4})$')" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-demographics-1"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
       </constraint>
     </element>
     <element id="Patient.extension:birthPlace">
@@ -150,7 +150,7 @@
         <severity value="error" />
         <human value="If present, a contact's organisation shall at least have a reference, an identifier or a display" />
         <expression value="organization.exists() implies (organization.reference.exists() or organization.identifier.exists() or organization.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-demographics-1"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -178,7 +178,7 @@
       <path value="Patient.contact.organization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -198,8 +198,8 @@
       <path value="Patient.generalPractitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

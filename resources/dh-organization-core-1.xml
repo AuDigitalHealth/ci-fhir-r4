@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-organization-core-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
   <version value="0.0.1" />
   <name value="DHOrganizationCore" />
   <title value="ADHA Core Organization" />
@@ -30,7 +30,7 @@
         <severity value="error" />
         <human value="If present, the organization of which this organization forms a part shall at least have a reference, an identifier or a display" />
         <expression value="partOf.exists() implies (partOf.reference.exists() or partOf.identifier.exists() or partOf.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </constraint>
     </element>
     <element id="Organization.identifier">
@@ -67,7 +67,7 @@
       <path value="Organization.partOf" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

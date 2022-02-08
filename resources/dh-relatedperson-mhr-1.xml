@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-relatedperson-mhr-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-mhr-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1" />
   <version value="0.0.1" />
   <name value="DHRelatedPersonMHR" />
   <title value="ADHA My Health Record RelatedPerson" />
@@ -30,7 +30,7 @@
         <severity value="error" />
         <human value="The related person shall at least have an identifier or a name or a relationship with the patient" />
         <expression value="identifier.exists() or name.exists() or relationship.exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-mhr-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1" />
       </constraint>
     </element>
     <element id="RelatedPerson.identifier">
@@ -46,7 +46,7 @@
       <path value="RelatedPerson.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-mhr-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1" />
       </type>
       <mustSupport value="true" />
     </element>

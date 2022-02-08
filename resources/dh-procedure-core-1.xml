@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-procedure-core-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
   <version value="0.0.1"/>
   <name value="DHProcedureCore"/>
   <title value="ADHA Core Procedure"/>
@@ -39,7 +39,7 @@
         <expression
           value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"
         />
       </constraint>
       <constraint>
@@ -50,7 +50,7 @@
         <expression
           value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"
         />
       </constraint>
       <constraint>
@@ -61,7 +61,7 @@
         <expression
           value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"
         />
       </constraint>
       <mapping>
@@ -158,7 +158,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
@@ -171,7 +171,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1"
+          value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1"
         />
       </type>
       <mustSupport value="true"/>
@@ -192,11 +192,11 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
       <mustSupport value="true"/>
@@ -206,11 +206,11 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
       <mustSupport value="true"/>
@@ -224,13 +224,13 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-procedure-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1"
+          value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-documentreference-core-1"
         />
       </type>
       <mustSupport value="true"/>

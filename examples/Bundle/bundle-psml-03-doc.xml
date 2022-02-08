@@ -3,8 +3,8 @@
     <id value="psml-03-doc"/>
     <meta>
         <lastUpdated value="2018-12-11T13:30:00+10:00"/>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-core-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-core-1"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -18,7 +18,7 @@
             <Composition xmlns="http://hl7.org/fhir">
                 <id value="c6f90150-465c-4c16-8e99-c4efbda29036"/>
                 <meta>
-                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1"/>
+                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
                 </meta>
                 <language value="en-AU"/>
                 <!--WORKAROUND: The contents of Composition.text are a workaround to enable the tooling used to generate this implementation guide
@@ -677,7 +677,7 @@
             <List xmlns="http://hl7.org/fhir">
                 <id value="e3677c50-8940-4793-bc43-72a33e5b6460"/>
                 <meta>
-                    <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
                 </meta>
                 <language value="en-AU"/>
                 <text>
@@ -784,7 +784,7 @@
                             02/Apr/2019. Community pharmacy medicine review</p>
                     </div>
                 </text>
-                <extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-packed-in-daa-1">
+                <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-packed-in-daa-1">
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://snomed.info/sct"/>

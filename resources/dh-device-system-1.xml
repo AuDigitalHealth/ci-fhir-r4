@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-system-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1" />
   <version value="0.0.1" />
   <name value="DHDeviceSystem" />
   <title value="ADHA System Device" />
@@ -30,7 +30,7 @@
         <severity value="error"/>
         <human value="The owner shall at least have a reference or display or an identifier with at least a system and a value"/>
         <expression value="owner.reference.exists() or owner.display.exists() or owner.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-device-system-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1" />
       </constraint>
     </element>
     <element id="Device.identifier">
@@ -47,7 +47,7 @@
       <min value="1"/>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

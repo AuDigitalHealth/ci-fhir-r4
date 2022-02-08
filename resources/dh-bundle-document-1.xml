@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-bundle-document-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-bundle-document-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
   <version value="0.0.1"/>
   <name value="DHBundleDocument"/>
   <title value="Australian Digital Health Agency Document Bundle"/>
@@ -70,7 +70,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Composition" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-composition-document-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1" />
       </type>
     </element>
     <element id="Bundle.entry:patient">
@@ -82,7 +82,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Patient" />
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
     </element>
   </differential>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-immunization-core-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-immunization-core-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
   <version value="0.0.1"/>
   <name value="DHImmunizationCore" />
   <title value="ADHA Core Immunization" />
@@ -30,7 +30,7 @@
         <severity value="error"/>
         <human value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-immunization-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
       </constraint>
     </element>
     <element id="Immunization.status">
@@ -49,7 +49,7 @@
       <path value="Immunization.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -57,7 +57,7 @@
       <path value="Immunization.encounter" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -72,7 +72,7 @@
         <severity value="error"/>
         <human value="The actor shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="actor.reference.exists() or actor.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-immunization-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -84,8 +84,8 @@
       <path value="Immunization.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -101,8 +101,8 @@
       <path value="Immunization.reasonReference[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-condition-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-observation-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

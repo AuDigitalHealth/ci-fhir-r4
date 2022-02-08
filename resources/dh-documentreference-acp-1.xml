@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-documentreference-acp-1"/>
-  <url value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-acp-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-documentreference-acp-1"/>
   <version value="0.0.1"/>
   <name value="DHDocumentReferenceACP"/>
   <title value="ADHA Advance Care Planning Document DocumentReference"/>
@@ -20,7 +20,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="DocumentReference" />
-  <baseDefinition value="http://ns.electronichealth.net.au/ci/fhir/4.0/StructureDefinition/dh-documentreference-core-1" />
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-documentreference-core-1" />
   <derivation value="constraint" />
   <differential>
     <element id="DocumentReference">
@@ -59,9 +59,9 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-relatedperson-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
       </type>
     </element>
     <element id="DocumentReference.content">

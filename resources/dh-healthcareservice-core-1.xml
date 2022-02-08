@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-healthcareservice-core-1" />
-  <url value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
   <version value="0.0.1" />
   <name value="DHHealthcareServiceCore" />
   <title value="ADHA Core HealthcareService" />
@@ -31,21 +31,21 @@
         <severity value="error" />
         <human value="The healthcare service shall at least have an identifier with at least a system and a value or a type or a name" />
         <expression value="name.exists() or type.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-heaser-02" />
         <severity value="error" />
         <human value="If present, the organization providing the service shall at least have a reference, an identifier or a display" />
         <expression value="providedBy.exists() implies providedBy.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-heaser-03" />
         <severity value="error" />
         <human value="If present, a location shall at least have a reference, an identifier or a display" />
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
       </constraint>
     </element>
     <element id="HealthcareService.identifier">
@@ -61,7 +61,7 @@
       <path value="HealthcareService.providedBy" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-organization-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -81,7 +81,7 @@
       <path value="HealthcareService.location" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/dh-location-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
       <mustSupport value="true" />
     </element>
