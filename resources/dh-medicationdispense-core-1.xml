@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medicationdispense-core-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"/>
   <version value="0.0.1"/>
   <name value="DHMedicationDispenseCore"/>
   <title value="ADHA Core MedicationDispense"/>
@@ -30,7 +30,7 @@
         <severity value="error"/>
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1" />
       </constraint>
     </element>
     <element id="MedicationDispense.extension">
@@ -92,7 +92,7 @@
       <path value="MedicationDispense.context"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -103,7 +103,7 @@
         <severity value="error"/>
         <human value="The actor shall at least have a reference, an identifier or a display"/>
         <expression value="actor.exists() implies actor.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-medicationdispense-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1" />
       </constraint>
       <min value="1"/>
       <mustSupport value="true"/>

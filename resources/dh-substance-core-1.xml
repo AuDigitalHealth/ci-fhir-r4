@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-substance-core-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-substance-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1"/>
   <version value="0.0.1"/>
   <name value="DHSubstanceCore"/>
   <title value="ADHA Core Substance"/>
@@ -30,7 +30,7 @@
         <severity value="error" />
         <human value="The location shall at least have an identifier with at least a system and a value or code or description" />
         <expression value="code.exists() or description.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1" />
       </constraint>
     </element>
     <element id="Substance.identifier">
@@ -72,7 +72,7 @@
         <severity value="error" />
         <human value="If present, a substance reference shall at least have a reference, an identifier or a display" />
         <expression value="substanceReference.exists() implies substanceReference.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -87,7 +87,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-substance-core-1" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1" />
       </type>
       <mustSupport value="true" />
     </element>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-encounter-core-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
   <version value="0.0.1"/>
   <name value="DHEncounterCore"/>
   <title value="ADHA Core Encounter"/>
@@ -30,7 +30,7 @@
         <severity value="error"/>
         <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
       </constraint>
     </element>
     <element id="Encounter.extension:encounterDescription">
@@ -79,7 +79,7 @@
         <severity value="error"/>
         <human value="The participant shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="individual.reference.exists() or individual.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
       </constraint>
       <mustSupport value="true"/>
     </element>
@@ -130,7 +130,7 @@
         <severity value="error"/>
         <human value="The location shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="location.reference.exists() or location.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/4.0/StructureDefinition/dh-encounter-core-1" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
       </constraint>
       <mustSupport value="true" />
     </element>
