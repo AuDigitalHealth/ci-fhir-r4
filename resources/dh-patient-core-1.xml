@@ -71,15 +71,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/birthplace"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthplace"/>
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/birthplace/name"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthplace/name"/>
       </mapping>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/birthplace/addr"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthplace/addr"/>
       </mapping>
     </element>
     <element id="Patient.extension:indigenousStatus">
@@ -88,7 +88,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/ethnicGroupCode"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode"/>
       </mapping>
     </element>
     <element id="Patient.extension:interpreterRequired">
@@ -97,7 +97,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/languageCommunication/ext:interpreterRequiredInd"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd"/>
       </mapping>
     </element>
     <element id="Patient.extension:dateOfArrival">
@@ -116,7 +116,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/ext:asEntityIdentifier"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/ext:asEntityIdentifier"/>
       </mapping>
     </element>
     <element id="Patient.active">
@@ -132,7 +132,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/name"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/name"/>
       </mapping>
     </element>
     <element id="Patient.telecom">
@@ -140,7 +140,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="telecom"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/telecom"/>
       </mapping>
     </element>
     <element id="Patient.gender">
@@ -148,7 +148,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/administrativeGenderCode"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode"/>
       </mapping>
     </element>
     <element id="Patient.birthDate">
@@ -156,7 +156,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/birthTime"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
       </mapping>
     </element>
     <element id="Patient.birthDate.extension:accuracyIndicator">
@@ -174,7 +174,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/birthTime"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
       </mapping>
     </element>
     <element id="Patient.address">
@@ -182,7 +182,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="addr"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/addr"/>
       </mapping>
     </element>
     <element id="Patient.communication">
@@ -190,7 +190,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/languageCommunication"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication"/>
       </mapping>
     </element>
     <element id="Patient.communication.language">
@@ -198,7 +198,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/languageCommunication/languageCode"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/languageCode"/>
       </mapping>
     </element>
     <element id="Patient.communication.preferred">
@@ -206,7 +206,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="patient/languageCommunication/preferenceInd"/>
+        <map value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferenceInd"/>
       </mapping>
     </element>
     <element id="Patient.generalPractitioner">
