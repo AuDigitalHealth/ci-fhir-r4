@@ -5,6 +5,13 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
+      <td><a href="Encounter-annual-01.html">Annual check up for Ms. Sally FIELD (2022)</a></td>
+      <td>annual-01</td>
+      <td><a href="Encounter-annual-01.xml.html">XML</a></td>
+      <td><a href="Encounter-annual-01.json.html">JSON</a></td>
+      <td><a href="Encounter-annual-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Encounter-psml-03.html">Community pharmacy medicine review for Mac PRIEST (2018)</a></td>
       <td>psml-03</td>
       <td><a href="Encounter-psml-03.xml.html">XML</a></td>

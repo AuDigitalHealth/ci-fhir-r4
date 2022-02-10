@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="annual-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+    </meta>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>                    
+    </class>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="866149003"/>
+            <display value="Annual visit"/>  
+        </coding>
+    </type>
+    <serviceType>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="788007007"/>
+            <display value="General practice service"/>      
+        </coding>
+    </serviceType>
+    <subject>
+        <reference value="Patient/mhr-field-sally"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833357361"/>
+        </identifier>
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="PPRF"/>
+                <display value="primary performer"/>   
+            </coding>
+        </type>
+        <individual>
+            <reference value="PractitionerRole/nsw-gp"/>
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="EI"/>
+                        <display value="Employee number"/>
+                    </coding>
+                    <text value="Employee Number"/>
+                </type>
+                <system value="http://bondigpmedicalcenter.example.com/providers" />
+                <value value="8223NSW" />
+                <assigner>
+                    <display value="Bondi GP Medical Center NSW"/>
+                </assigner>
+            </identifier>
+        </individual>
+    </participant>
+    <period>
+        <start value="2022-02-10T09:20:00+10:00"/>
+        <end value="2022-02-10T09:35:00+10:00"/>
+    </period>
+</Encounter>
