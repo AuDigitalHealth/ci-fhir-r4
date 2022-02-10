@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="program-participation-nbcsp-03"/>
+    <id value="program-participation-ncsp-03"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
     </meta>
-    <!--Scenario: Active screening, next due in 2 years (2021)
-    Scenario Description: NCSR receives a negative FOBT result for participant. Status updates to Actively Screening, and their next due date is in 2 years  -->
+    <!--Scenario: Overdue for Screening (2020)
+    Scenario Description: Participant has been invited to screen in prior round, but did not screen. New round has opened. -->
     <!--update to id from pcehr doc registration?-->
     <identifier>
         <system value="urn:ietf:rfc:4122"/>
-        <value value="4732293f-40e4-45a3-81b5-9cc2ae8b2f38"/>
+        <value value="28c02479-27ed-4d95-957b-d6703c2bcc97"/>
     </identifier>
     <status value="final"/>
    <!-- therapy or ?-->
@@ -25,12 +25,12 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="TBD"/>
-            <display value="National bowel cancer screening program participation"/>
+            <display value="National cervical cancer screening program participation"/>
         </coding>
-        <text value="National Bowel Cancer Screening Program Participation"/>
+        <text value="National Cervical Cancer Screening Program Participation"/>
     </code>
     <subject>
-        <reference value="Patient/hi-testdata-moss-cleo"/>
+        <reference value="Patient/hi-testdata-goodwin-bonny"/>
         <identifier>
             <type>
                 <coding>
@@ -41,11 +41,11 @@
                 <text value="IHI"/>
             </type>
             <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-            <value value="8003608833564735"/>
+            <value value="8003608000228445"/>
         </identifier>
     </subject>
     <!--Records date this program participation information is asserted as 'true' -->
-    <effectiveDateTime value="2021-05-22T07:01:00+10:00"/>
+    <effectiveDateTime value="2020-06-12T06:54:00+10:00"/>
     <performer>
         <reference value="Organization/ncsr-operator"/>
         <identifier>
@@ -75,9 +75,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Active"/>
+                <display value="Overdue"/>
             </coding>
-            <text value="Actively screening"/>
+            <text value="Overdue for Screening"/>
         </valueCodeableConcept>
     </component>
     <!--2.	Program participation status validity period -->
@@ -91,7 +91,7 @@
             <text value="Participation status period"/>
         </code>
         <valuePeriod>
-            <start value="2021-05-22"/>
+            <start value="2020-06-12"/>
         </valuePeriod>
     </component>
     <!--3.	Suspension of program participation -->
@@ -123,22 +123,8 @@
                 <code value="TBD"/>
                 <display value="TBD"/>
             </coding>
-            <text value="Eligible On:"/>
+            <text value="Overdue"/>
         </valueCodeableConcept>
     </component>
-    <!--12.	Next program participation action date -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Next program participation action date"/>
-            </coding>
-            <text value="Next screening action date"/>
-        </code>
-        <!--Next screening date patient is eligible for is in 2 years -->
-        <valuePeriod>
-            <start value="2023-05-22"/>
-        </valuePeriod>
-    </component>
+    <!--12.	Next program participation action date is not provided in this scenario-->
 </Observation>
