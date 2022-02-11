@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="program-participation-ncsp-02"/>
+    <id value="program-participation-12alcohol-01"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
     </meta>
-    <!--Scenario: Not eligible, Commence at 25 (2020)
-    Scenario Description: NCSR receives a Cervical result for participant on 22 May 2021. 
-    Status updates to Actively Screening, and their next due date is in 1 year due to the risk category of that participant. -->
-    <!--update to id from pcehr doc registration?-->
-    <identifier>
-        <system value="urn:ietf:rfc:4122"/>
-        <value value="20439b90-f1be-46a5-b848-4aa4938d19fc"/>
-    </identifier>
+    <!--Scenario: Active participation (2022)
+    Scenario Description: Patient continues to actively participate in ongoing program since first enrolled 19 AUG 2021 
+    Discussed during annual GP checkup -->
     <status value="final"/>
    <!-- therapy or ?-->
     <category>
@@ -20,15 +15,15 @@
             <code value="therapy"/>
             <display value="Therapy"/>
         </coding>
-        <text value="Cancer screening program"/>
+        <text value="Substance use therapy program"/>
     </category>
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="TBD"/>
-            <display value="National cervical cancer screening program participation"/>
+            <display value="Alcohol twelve step program participation"/>
         </coding>
-        <text value="National Cervical Cancer Screening Program Participation"/>
+        <text value="12 step Alcohol program participation"/>
     </code>
     <subject>
         <reference value="Patient/mhr-field-sally"/>
@@ -45,21 +40,27 @@
             <value value="8003608833357361"/>
         </identifier>
     </subject>
+    <encounter>
+        <reference value="Encounter/annual-01"/>
+    </encounter>
     <!--Records date this program participation information is asserted as 'true' -->
-    <effectiveDateTime value="2020-06-12T10:01:00+10:00"/>
+    <effectiveDateTime value="2022-02-10"/>
     <performer>
-        <reference value="Organization/ncsr-operator"/>
+        <reference value="PractitionerRole/nsw-gp"/>
         <identifier>
             <type>
                 <coding>
-                    <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
-                    <code value="NOI"/>
-                    <display value="National Organisation Identifier"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="EI"/>
+                    <display value="Employee number"/>
                 </coding>
-                <text value="PAI-O"/>
+                <text value="Employee Number"/>
             </type>
-            <system value="http://ns.electronichealth.net.au/id/pcehr/paio/1.0"/>
-            <value value="TBD"/>
+            <system value="http://bondigpmedicalcenter.example.com/providers" />
+            <value value="8223NSW" />
+            <assigner>
+                <display value="Bondi GP Medical Center NSW"/>
+            </assigner>
         </identifier>
     </performer>
     <!--1.	Program participation status -->
@@ -78,7 +79,7 @@
                 <code value="TBD"/>
                 <display value="Active"/>
             </coding>
-            <text value="Actively screening"/>
+            <text value="Active"/>
         </valueCodeableConcept>
     </component>
     <!--2.	Program participation status validity period -->
@@ -91,41 +92,9 @@
             </coding>
             <text value="Participation status period"/>
         </code>
+        <!--Patient continues to actively participate in ongoing program since first enrolled 19 AUG 2021-->
         <valuePeriod>
-            <start value="2020-06-12"/>
+            <start value="2021-08-19"/>
         </valuePeriod>
     </component>
-    <!--3.	Suspension of program participation -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Program participation suspension"/>
-            </coding>
-            <text value="Defer Flag"/>
-        </code>
-        <!--Patient has not deferred-->
-        <valueBoolean value="false"/>
-    </component>
-    <!--11.	Next program participation action -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="TBD"/>
-            </coding>
-            <text value="Next screening action"/>
-        </code>
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Eligible at age"/>
-            </coding>
-            <text value="Commence at 25"/>
-        </valueCodeableConcept>
-    </component>
-    <!--12.	Next program participation action date is not provided in this scenario-->
 </Observation>
