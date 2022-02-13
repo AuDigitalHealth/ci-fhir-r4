@@ -332,6 +332,7 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
                                 <li>ADHA Pathology DiagnosticReport</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
+                                <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Program Participation Observation</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
