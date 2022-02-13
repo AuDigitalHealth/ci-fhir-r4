@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-observation-programparticipation-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
+  <version value="0.0.1"/>
+  <name value="DHprogramparticipation"/>
+  <title value="ADHA Program Participation Observation"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a representation of an individual's participation in a program, e.g. disease screening or substance use therapy. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Observation"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Observation">
+      <path value="Observation"/>
+      <short value="Program participation record" />
+      <definition value="A record of an individual's participation in a program, e.g. disease screening or substance use therapy. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program." />
+      <constraint>
+        <key value="inv-dh-obs-01" />
+        <severity value="error" />
+        <human value="If there is no component element then either a value[x] or a data absent reason shall be present" />
+        <expression value="component.empty() implies (dataAbsentReason.exists() or value.exists())" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1" />
+      </constraint>
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <fixedCode value="final" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="therapy"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <definition value="Describes the nature of the observation including specifying the type of program for which participation information for an invididual is observed, e.g. national breast cancer screening, or a substance use therapy program such as a twelve step alcohol program." />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-programs-1" />
+      </binding>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <short value="Date, and optionally time, this program participation information is asserted as 'true'" />
+      <definition value="Date, and optionally time, this program participation information is asserted as 'true'." />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="code"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <constraint>
+        <key value="inv-dh-obs-02" />
+        <severity value="error" />
+        <human value="The component shall at least have a value or a data absent reason" />
+        <expression value="value.exists() or dataAbsentReason.exists()" />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1" />
+      </constraint>
+    </element>
+    <element id="Observation.component:participationStatus">
+      <path value="Observation.component" />
+      <sliceName value="participationStatus"/>
+      <short value="Program participation status"/>
+      <definition value="Represents the current state of an individual's participation in a program. This status is only representative at the time this observation is asserted and may also represent participation exception states including exclusion or ineligibility." />
+    </element>
+    <element id="Observation.component:participationStatus.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:participationStatus.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:participationStatusPeriod">
+      <path value="Observation.component" />
+      <sliceName value="participationStatusPeriod"/>
+      <short value="Program participation status validity period" />
+      <definition value="The validity period for the program participation status. This may be a date where the status is meaningful when described by a point in time, e.g. date of death." />
+    </element>
+    <element id="Observation.component:participationStatusPeriod.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:participationStatusPeriod.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="DateTime" />
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Observation.component:suspensionFlag">
+      <path value="Observation.component" />
+      <sliceName value="suspensionFlag"/>
+      <short value="Suspension of program participation" />
+      <definition value="An indicator of whether a individual has suspended participation from a program. The value is 'true' when the individual has suspended participation." />
+    </element>
+    <element id="Observation.component:suspensionFlag.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:suspensionFlag.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Observation.component:suspensionReason">
+      <path value="Observation.component" />
+      <sliceName value="suspensionReason"/>
+      <short value="Reason for suspension of program participation" />
+      <definition value="The reason why an individual has suspended participation in a program." />
+    </element>
+    <element id="Observation.component:suspensionReason.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:suspensionReason.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-reason-for-suspension-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:suspensionPeriod">
+      <path value="Observation.component" />
+      <sliceName value="suspensionPeriod"/>
+      <short value="Suspension of program participation period" />
+      <definition value="The period an participation in a program will be suspended. The end date of the period may not be known or suspension may be ongoing until further notice." />
+    </element>
+    <element id="Observation.component:suspensionPeriod.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:suspensionPeriod[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Observation.component:optedOffFlag">
+      <path value="Observation.component" />
+      <sliceName value="optedOffFlag"/>
+      <short value="Opted off of program participation" />
+      <definition value="An indicator of whether an individual opted off from a program. The value is 'true' when the individual has opted off the program and will not participate further." />
+    </element>
+    <element id="Observation.component:optedOffFlag.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:optedOffFlag.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Observation.component:optedOffReason">
+      <path value="Observation.component" />
+      <sliceName value="optedOffReason"/>
+      <short value="Reason for opting off of program participation" />
+      <definition value="The reason why an individual has opted off participating in a program." />
+    </element>
+    <element id="Observation.component:optedOffReason.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:optedOffReason.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-reason-for-suspension-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:optedOffDate">
+      <path value="Observation.component" />
+      <sliceName value="optedOffDate"/>
+      <short value="Opting off of program participation date" />
+      <definition value="The date an individual opted off participating in a program." />
+    </element>
+    <element id="Observation.component:optedOffDate.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:optedOffDate.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Observation.component:lastAction">
+      <path value="Observation.component" />
+      <sliceName value="lastAction"/>
+      <short value="Last program participation action" />
+      <definition value="The last program participation action." />
+    </element>
+    <element id="Observation.component:lastAction.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:lastAction[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.component:lastActionDate">
+      <path value="Observation.component" />
+      <sliceName value="lastActionDate"/>
+      <short value="Last program participation action date" />
+      <definition value="The time or time period of the last program participation action." />
+    </element>
+    <element id="Observation.component:lastActionDate.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:lastActionDate.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="DateTime" />
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Observation.component:nextAction">
+      <path value="Observation.component" />
+      <sliceName value="nextAction"/>
+      <short value="Next program participation action" />
+      <definition value="The next action expected or scheduled as part of the program." />
+    </element>
+    <element id="Observation.component:nextAction.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:nextAction.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.component:nextActionDate">
+      <path value="Observation.component" />
+      <sliceName value="nextActionDate"/>
+      <short value="Next program participation action date" />
+      <definition value="The time or time period of the next program participation action." />
+    </element>
+    <element id="Observation.component:nextActionDate.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:nextActionDate.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="DateTime" />
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Observation.component:forecastStatus">
+      <path value="Observation.component" />
+      <sliceName value="forecastStatus"/>
+      <short value="Forecast status with reference to program pathway, e.g. overdue" />
+      <definition value="The value recorded as 'next screening action' for a national cancer screening program. This value represents the most clinically relevant state at the time of assertion of this observation for future program participation, e.g. overdue or eligible at 25, and may repeat exception states relevant to forecasting program participation." />
+    </element>
+    <element id="Observation.component:forecastStatus.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:forecastStatus.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.component:forecastStatusPeriod">
+      <path value="Observation.component" />
+      <sliceName value="forecastStatusPeriod"/>
+      <short value="Period associated with forecast status" />
+      <definition value="The time or time period associated with 'next status'." />
+    </element>
+    <element id="Observation.component:forecastStatusPeriod.code">
+      <path value="Observation.component.code"/>
+    </element>
+    <element id="Observation.component:forecastStatusPeriod.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="DateTime" />
+        <code value="Period" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
