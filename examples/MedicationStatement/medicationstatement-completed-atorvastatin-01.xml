@@ -4,14 +4,15 @@
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
     </meta>
-    <contained>
+    <!--Commented out due to IG Publisher build fails with liquid exception looking for separate .html files for contained resource-->
+    <!--<contained>
         <Medication>
             <id value="atorvastatin"/>
             <code>
                 <text value="ATORVASTATIN(TAB) 80 mg, Lipitor"/>
             </code>
         </Medication>
-    </contained>
+    </contained>-->
     <status value="completed"/>
     <category>
         <coding>
@@ -20,9 +21,12 @@
             <display value="Community"/>						
         </coding>
     </category>
-    <medicationReference>
+    <!--<medicationReference>
         <reference value="#atorvastatin"/>
-    </medicationReference>
+    </medicationReference>-->
+    <medicationCodeableConcept>
+        <text value="ATORVASTATIN(TAB) 80 mg, Lipitor"/>
+    </medicationCodeableConcept>
     <subject>
         <reference value="Patient/mhr-anne-thompson"/>
         <identifier>
