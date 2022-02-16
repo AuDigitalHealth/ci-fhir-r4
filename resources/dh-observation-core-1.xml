@@ -14,9 +14,16 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a generic observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description
+    value="The purpose of this profile is to provide a core representation of a generic observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="CDA.observation"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema observation"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
@@ -28,123 +35,222 @@
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1" />
+        <human
+          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </constraint>
       <constraint>
-        <key value="inv-dh-obs-02" />
-        <severity value="error" />
-        <human value="If present, a performer shall at least have a reference or an identifier with at least a system and a value" />
-        <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1" />
+        <key value="inv-dh-obs-02"/>
+        <severity value="error"/>
+        <human
+          value="If present, a performer shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </constraint>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation"/>
+      </mapping>
     </element>
     <element id="Observation.status">
       <path value="Observation.status"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.TBD"/>
+      </mapping>
     </element>
     <element id="Observation.category">
       <path value="Observation.category"/>
-      <min value="1" />
+      <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="Not mapped directly, implicit in ClinicalDocument.recordTarget.patientRole"/>
+      </mapping>
     </element>
     <element id="Observation.encounter">
       <path value="Observation.encounter"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="Implicit in ClinicalDocument.componentOf.encompassingEncounter, or instantiated as observation.entryRelationship.encounter"/>
+      </mapping>
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.effectiveTime"/>
+      </mapping>
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
+        />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.performer"/>
+      </mapping>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.TBD"/>
+      </mapping>
     </element>
     <element id="Observation.interpretation">
-      <path value="Observation.interpretation" />
-      <mustSupport value="true" />
+      <path value="Observation.interpretation"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.interpretationCode"/>
+      </mapping>
     </element>
     <element id="Observation.note">
-      <path value="Observation.note" />
-      <mustSupport value="true" />
+      <path value="Observation.note"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.act.text"/>
+      </mapping>
     </element>
     <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <mustSupport value="true" />
+      <path value="Observation.bodySite"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.targetSiteCode"/>
+      </mapping>
     </element>
     <element id="Observation.method">
-      <path value="Observation.method" />
-      <mustSupport value="true" />
+      <path value="Observation.method"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.methodCode"/>
+      </mapping>
     </element>
     <element id="Observation.specimen">
-      <path value="Observation.specimen" />
+      <path value="Observation.specimen"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.TBD"/>
+      </mapping>
     </element>
     <element id="Observation.hasMember">
-      <path value="Observation.hasMember" />
+      <path value="Observation.hasMember"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.TBD"/>
+      </mapping>
     </element>
     <element id="Observation.component">
-      <path value="Observation.component" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="Observation.component.code">
       <path value="Observation.component.code"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="Observation.component.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="Observation.component.dataAbsentReason">
       <path value="Observation.component.dataAbsentReason"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="Observation.component.interpretation">
-      <path value="Observation.component.interpretation" />
-      <mustSupport value="true" />
+      <path value="Observation.component.interpretation"/>
+      <mustSupport value="true"/>
     </element>
+    <mapping>
+      <identity value="CDA.observation"/>
+      <map value="TBD"/>
+    </mapping>
   </differential>
 </StructureDefinition>
