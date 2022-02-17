@@ -1,0 +1,86 @@
+<DocumentReference xmlns="http://hl7.org/fhir">
+    <id value="ncsp-01"/>
+    <!--Created DocumentReference from 'data in' Bundle/ncsr-01 from NCSR to MHR-->
+    <!--DocumentReference for Observation/program-participation-ncsp-01 -->
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
+    </meta>
+    <masterIdentifier>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:28c02479-27ed-4d95-957b-d6703c2bcc97" />
+    </masterIdentifier>
+    <identifier>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:28c02479-27ed-4d95-957b-d6703c2bcc97" />
+    </identifier>
+    <status value="current"/>
+    <docStatus value="final"/>
+    <type>
+        <coding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="100.32042"/>
+            <display value="National Cervical Cancer Screening Program Participation Record"/>
+        </coding>
+        <text value="National Cervical Cancer Screening Program Participation"/>
+    </type>
+    <category>
+        <coding>
+            <system
+                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="100.32039"/>
+            <display value="Disease Screening Program Participation Record"/>
+        </coding>
+    </category>
+    <subject>
+       <!-- Asssume local record number will be used here instead of IHI-->
+        <reference value="Patient/hi-testdata-moss-cleo"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833564735"/>
+        </identifier>
+    </subject>
+    <date value="2021-05-22T10:02:00+10:00"/>
+    <author>
+        <reference value="Device/ncsr-01"/>
+    </author>
+    <custodian>
+        <reference value="Organization/ncsr-operator"/>
+    </custodian>
+    <content>
+        <attachment> 
+            <language value="en-AU"/> 
+            <url value="http://example.org/mhr/xds/mhd/Binary/05c7f8b6-37e9-4bcb-9030-5ced2daaeb74"/>
+        </attachment> 
+    </content>
+    <context>
+        <sourcePatientInfo> 
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="NI"/>
+                        <display value="National unique individual identifier"/>
+                    </coding>
+                    <text value="IHI"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                <value value="8003608833564735"/>
+            </identifier>
+        </sourcePatientInfo> 
+        <related> 
+            <reference value="http://example.org/mhr/xds/mhd/Bundle/5a655945-c2b3-4d01-9e88-224873e32d8d"/>
+            <identifier>
+                <system value="urn:ietf:rfc:3986"/>
+                <value value="urn:uuid:5a655945-c2b3-4d01-9e88-224873e32d8d"/>
+            </identifier>
+        </related>
+    </context>
+</DocumentReference>
