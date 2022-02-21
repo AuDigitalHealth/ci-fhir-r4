@@ -252,6 +252,8 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-sml-1.html">ADHA Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-psml-1.html">ADHA Pharmacist Shared Medicines List Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-pdl-1.html">ADHA Prescription and or Dispense History Composition</a></li>
+                                <li>ADHA National Cancer Screening Program Participation Composition</a></li>
                                 <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
                                 <li>Archicture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
