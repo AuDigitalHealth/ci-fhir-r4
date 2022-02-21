@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of an organisation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.custodian"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema custodian"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
@@ -32,36 +37,68 @@
         <expression value="partOf.exists() implies (partOf.reference.exists() or partOf.identifier.exists() or partOf.display.exists())" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization"/>
+      </mapping>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <definition value="Identifier for the organization that is used to identify the organization across multiple disparate systems." />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.ext:asEntityIdentifier"/>
+      </mapping>
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
       <fixedBoolean value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Organization.type">
       <path value="Organization.type" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.name"/>
+      </mapping>
     </element>
     <element id="Organization.alias">
       <path value="Organization.alias" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.telecom"/>
+      </mapping>
     </element>
     <element id="Organization.address">
       <path value="Organization.address" />
       <definition value="An address for the organization." />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr"/>
+      </mapping>
     </element>
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
@@ -70,26 +107,50 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Organization.contact">
       <path value="Organization.contact" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.participant[org_contact]"/>
+      </mapping>
     </element>
     <element id="Organization.contact.purpose">
       <path value="Organization.contact.purpose" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.participant[org_contact].associatedEntity.scopingOrganization"/>
+      </mapping>
     </element>
     <element id="Organization.contact.name">
       <path value="Organization.contact.name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.participant[org_contact].associatedEntity.associatedPerson/name"/>
+      </mapping>
     </element>
     <element id="Organization.contact.telecom">
       <path value="Organization.contact.telecom" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.participant[org_contact].associatedEntity.telecom"/>
+      </mapping>
     </element>
     <element id="Organization.contact.address">
       <path value="Organization.contact.address" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.custodian"/>
+        <map value="ClinicalDocument.participant[org_contact].associatedEntity.addr"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
