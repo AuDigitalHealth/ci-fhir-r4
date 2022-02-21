@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a representation of an individual's participation in a program, e.g. disease screening or substance use therapy. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="CDA.observation"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema observation"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
@@ -34,10 +39,18 @@
         <expression value="component.empty() implies (dataAbsentReason.exists() or value.exists())" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation"/>
+      </mapping>
     </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <fixedCode value="final" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[status].observation"/>
+      </mapping>
     </element>
     <element id="Observation.category">
       <path value="Observation.category"/>
@@ -47,6 +60,10 @@
           <code value="therapy"/>
         </coding>
       </patternCodeableConcept>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[category].observation"/>
+      </mapping>
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
@@ -55,11 +72,19 @@
         <strength value="preferred" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-programs-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
       <short value="Date, and optionally time, this program participation information is asserted as 'true'" />
       <definition value="Date, and optionally time, this program participation information is asserted as 'true'." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.effectiveTime"/>
+      </mapping>
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
@@ -77,15 +102,27 @@
         <expression value="value.exists() or dataAbsentReason.exists()" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatus">
       <path value="Observation.component" />
       <sliceName value="participationStatus"/>
       <short value="Program participation status"/>
       <definition value="Represents the current state of an individual's participation in a program. This status is only representative at the time this observation is asserted and may also represent participation exception states including exclusion or ineligibility." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[part_status].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatus.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[part_status].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatus.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -96,15 +133,27 @@
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[part_status].value"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod">
       <path value="Observation.component" />
       <sliceName value="participationStatusPeriod"/>
       <short value="Program participation status validity period" />
       <definition value="The validity period for the program participation status. This may be a date where the status is meaningful when described by a point in time, e.g. date of death." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[part_status_period].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[part_status_period].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -112,30 +161,54 @@
         <code value="DateTime" />
         <code value="Period" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[part_status_period].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionFlag">
       <path value="Observation.component" />
       <sliceName value="suspensionFlag"/>
       <short value="Suspension of program participation" />
       <definition value="An indicator of whether a individual has suspended participation from a program. The value is 'true' when the individual has suspended participation." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_flag].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionFlag.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_flag].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionFlag.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="boolean" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_flag].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionReason">
       <path value="Observation.component" />
       <sliceName value="suspensionReason"/>
       <short value="Reason for suspension of program participation" />
       <definition value="The reason why an individual has suspended participation in a program." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_rsn].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionReason.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_rsn].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionReason.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -146,45 +219,81 @@
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-reason-for-suspension-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_rsn].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionPeriod">
       <path value="Observation.component" />
       <sliceName value="suspensionPeriod"/>
       <short value="Suspension of program participation period" />
       <definition value="The period an participation in a program will be suspended. The end date of the period may not be known or suspension may be ongoing until further notice." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_period].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionPeriod.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_period].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionPeriod[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="Period" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[suspension_period].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffFlag">
       <path value="Observation.component" />
       <sliceName value="optedOffFlag"/>
       <short value="Opted off of program participation" />
       <definition value="An indicator of whether an individual opted off from a program. The value is 'true' when the individual has opted off the program and will not participate further." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_flag].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffFlag.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_flag].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffFlag.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="boolean" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_flag].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffReason">
       <path value="Observation.component" />
       <sliceName value="optedOffReason"/>
       <short value="Reason for opting off of program participation" />
       <definition value="The reason why an individual has opted off participating in a program." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_rsn].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffReason.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_rsn].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffReason.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -195,45 +304,81 @@
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-reason-for-suspension-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_rsn].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffDate">
       <path value="Observation.component" />
       <sliceName value="optedOffDate"/>
       <short value="Opting off of program participation date" />
       <definition value="The date an individual opted off participating in a program." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_date].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffDate.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_date].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:optedOffDate.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="dateTime" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[opted_off_date].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:lastAction">
       <path value="Observation.component" />
       <sliceName value="lastAction"/>
       <short value="Last program participation action" />
       <definition value="The last program participation action." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[last_action].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:lastAction.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[last_action].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:lastAction[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[last_action].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:lastActionDate">
       <path value="Observation.component" />
       <sliceName value="lastActionDate"/>
       <short value="Last program participation action date" />
       <definition value="The time or time period of the last program participation action." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[last_action_date].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:lastActionDate.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[last_action_date].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:lastActionDate.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -241,30 +386,54 @@
         <code value="DateTime" />
         <code value="Period" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[last_action_date].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:nextAction">
       <path value="Observation.component" />
       <sliceName value="nextAction"/>
       <short value="Next program participation action" />
       <definition value="The next action expected or scheduled as part of the program." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[next_action].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:nextAction.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[next_action].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:nextAction.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[next_action].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:nextActionDate">
       <path value="Observation.component" />
       <sliceName value="nextActionDate"/>
       <short value="Next program participation action date" />
       <definition value="The time or time period of the next program participation action." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[next_action_date].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:nextActionDate.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[next_action_date].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:nextActionDate.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -272,30 +441,54 @@
         <code value="DateTime" />
         <code value="Period" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[next_action_date].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus">
       <path value="Observation.component" />
       <sliceName value="forecastStatus"/>
       <short value="Forecast status with reference to program pathway, e.g. overdue" />
       <definition value="The value recorded as 'next screening action' for a national cancer screening program. This value represents the most clinically relevant state at the time of assertion of this observation for future program participation, e.g. overdue or eligible at 25, and may repeat exception states relevant to forecasting program participation." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[forecast_status].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[forecast_status].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[forecast_status].observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod">
       <path value="Observation.component" />
       <sliceName value="forecastStatusPeriod"/>
       <short value="Period associated with forecast status" />
       <definition value="The time or time period associated with 'next status'." />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[forecast_status_period].observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship[forecast_status_period].observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
@@ -304,5 +497,9 @@
         <code value="Period" />
       </type>
     </element>
+    <mapping>
+      <identity value="CDA.observation"/>
+      <map value="observation.entryRelationship[forecast_status_period].observation.value"/>
+    </mapping>
   </differential>
 </StructureDefinition>

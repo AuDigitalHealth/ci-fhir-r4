@@ -72,15 +72,15 @@
       </constraint>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/ClinicalDocument/author/assignedAuthor/person"/>
+        <map value="ClinicalDocument/author/assignedAuthor/person"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="//informant"/>
+        <map value="informant"/>
       </mapping>
     </element>
     <element id="Patient.extension:birthPlace">
@@ -89,15 +89,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthplace"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthplace"/>
       </mapping>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthplace/name"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthplace/name"/>
       </mapping>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthplace/addr"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthplace/addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
@@ -118,7 +118,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
@@ -140,7 +140,7 @@
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd"
+          value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd"
         />
       </mapping>
       <mapping>
@@ -163,30 +163,30 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry"/>
+        <map value="ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry"/>
       </mapping>
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="/ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation"
+          value="ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation"
         />
       </mapping>
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="/ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value"
+          value="ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value"
         />
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in /ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
+          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
         />
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in /ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
+          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
         />
       </mapping>
     </element>
@@ -196,15 +196,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/ext:asEntityIdentifier"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/ClinicalDocument/author/assignedAuthor/assignedPerson/ext:asEntityIdentifier"/>
+        <map value="ClinicalDocument/author/assignedAuthor/assignedPerson/ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="//informant/assignedEntity/assignedPerson/ext:asEntityIdentifier"/>
+        <map value="informant/assignedEntity/assignedPerson/ext:asEntityIdentifier"/>
       </mapping>
     </element>
     <element id="Patient.active">
@@ -228,15 +228,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/name"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/name"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/ClinicalDocument/author/assignedAuthor/assignedPerson/name"/>
+        <map value="ClinicalDocument/author/assignedAuthor/assignedPerson/name"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="//informant/assignedEntity/assignedPerson/name"/>
+        <map value="informant/assignedEntity/assignedPerson/name"/>
       </mapping>
     </element>
     <element id="Patient.telecom">
@@ -244,15 +244,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/telecom"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/ClinicalDocument/author/assignedAuthor/telecom"/>
+        <map value="ClinicalDocument/author/assignedAuthor/telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="//informant/assignedEntity/telecom"/>
+        <map value="informant/assignedEntity/telecom"/>
       </mapping>
     </element>
     <element id="Patient.gender">
@@ -260,17 +260,17 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="/ClinicalDocument/author/assignedAuthor/assignedPerson/ext:administrativeGenderCode"
+          value="ClinicalDocument/author/assignedAuthor/assignedPerson/ext:administrativeGenderCode"
         />
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="//informant/assignedEntity/assignedPerson/ext:administrativeGenderCode"/>
+        <map value="informant/assignedEntity/assignedPerson/ext:administrativeGenderCode"/>
       </mapping>
     </element>
     <element id="Patient.birthDate">
@@ -278,7 +278,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
@@ -300,19 +300,19 @@
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="/ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value"
+          value="ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value"
         />
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in /ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
+          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
         />
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in /ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
+          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component[admin_obs]/section/entry/observation/value."
         />
       </mapping>
     </element>
@@ -322,7 +322,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
@@ -342,15 +342,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/addr"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/ClinicalDocument/author/assignedAuthor/addr"/>
+        <map value="ClinicalDocument/author/assignedAuthor/addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="//informant/assignedEntity/addr"/>
+        <map value="informant/assignedEntity/addr"/>
       </mapping>
     </element>
     <element id="Patient.communication">
@@ -358,7 +358,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
@@ -379,7 +379,7 @@
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/languageCode"
+          value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/languageCode"
         />
       </mapping>
       <mapping>
@@ -401,7 +401,7 @@
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="/ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferenceInd"
+          value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferenceInd"
         />
       </mapping>
       <mapping>
@@ -430,7 +430,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="/ClinicalDocument/participant"/>
+        <map value="ClinicalDocument/participant"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
