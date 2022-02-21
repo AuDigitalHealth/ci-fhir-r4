@@ -27,13 +27,6 @@
     <definition>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-composition-acts-1"/>
-            </reference>
-            <name value="Australian Digital Health Agency Aged Care Transfer Summary Composition"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-allergyintolerance-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core AllergyIntolerance"/>
@@ -111,6 +104,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-composition-acts-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Aged Care Transfer Summary Composition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-composition-es-1"/>
             </reference>
             <name value="Australian Digital Health Agency Event Summary Document Composition"/>
@@ -149,6 +149,20 @@
                 <reference value="StructureDefinition/dh-composition-shs-1"/>
             </reference>
             <name value="Australian Digital Health Agency Shared Health Summary Document Composition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-composition-sml-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Shared Medicines List Composition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-composition-psml-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Pharmacist Shared Medicines List Composition"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -608,14 +622,14 @@
                 <reference value="Bundle/psml-03-doc"/>
             </reference>
             <name value="Pharmacist Shared Medicines List Document Bundle for Mac PRIEST"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Composition/psml-03"/>
             </reference>
             <name value="Pharmacist Shared Medicines List Document Composition for Mac PRIEST"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
         </resource>
         <!--DEVICE EXAMPLES-->
         <resource>
