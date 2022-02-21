@@ -18,4 +18,5 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html).
+

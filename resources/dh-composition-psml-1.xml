@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-composition-psml-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
+  <version value="0.0.1"/>
+  <name value="DHCompositionPSML"/>
+  <title value="Australian Digital Health Agency Pharmacist Shared Medicines List Composition"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="The purpose of this profile is to define a representation of a Pharmacist Shared Medicines List document that describes a patient's medicine item use at a point in time from a practitioner medicines review for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Composition"/>
+  <baseDefinition
+    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Composition">
+      <path value="Composition"/>
+      <short value="Pharmacist Shared Medicines List"/>
+      <definition
+        value="A document that describes a patient's medicine item use at a point in time as an outcome from a practitioner medicines review. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The document may contain information about an individual's allergies."
+      />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="56445-0"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+      </type>
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.section:medicinesList">
+      <path value="Composition.section"/>
+      <sliceName value="medicinesList"/>
+      <short value="Medicines list from practitioner medicines review"/>
+      <definition
+        value="A list of medicines for an individual at a point in time from a practitioner medicines review. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
+    </element>
+    <element id="Composition.section:medicinesList.entry">
+      <path value="Composition.section.entry"/>
+      <short value="Medicines list"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

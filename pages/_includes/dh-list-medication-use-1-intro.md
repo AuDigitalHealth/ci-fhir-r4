@@ -18,7 +18,7 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html).
 
 These profiles build on this profile ([ADHA Core List](StructureDefinition-dh-list-core-1.html)) to define specific document compositions:
 * [ADHA Practitioner Medicine Review List](StructureDefinition-dh-list-medication-use-pmr-1.html) 
