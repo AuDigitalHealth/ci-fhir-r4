@@ -51,9 +51,6 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1" />
       </binding>
     </element>
-    <element id="Composition.author">
-      <path value="Composition.author"/>
-    </element>
     <element id="Composition.section">
       <path value="Composition.section"/>
       <short value="List of prescriptions or dispense"/>
@@ -96,10 +93,6 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-pdl-1"/>
       </type>
-    </element>
-    <element id="Composition.section.entry.reference">
-      <path value="Composition.section.entry.reference"/>
-      <min value="1"/>
     </element>
     <element id="Composition.section.emptyReason">
       <path value="Composition.section.emptyReason"/>
