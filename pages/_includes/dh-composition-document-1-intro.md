@@ -25,4 +25,6 @@ These profiles build on this profile ([ADHA Document Composition](StructureDefin
 * [ADHA Event Summary Narrative](StructureDefinition-dh-composition-es-narrative-1.html) 
 * [ADHA Person Health Notes Composition](StructureDefinition-dh-composition-phn-1.html) 
 * [ADHA Person Health Summary Composition](StructureDefinition-dh-composition-phs-1.html) 
+* [ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html)
 * [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html)
+* [ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html)

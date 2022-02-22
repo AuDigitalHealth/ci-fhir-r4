@@ -15,5 +15,5 @@ This profile is used by the following APIs:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA TBD](StructureDefinition-dh-TBD-core-1.html), and 
-[ADHA TBD](StructureDefinition-dh-TBD-core-1.html).
+[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html), and 
+[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html).
