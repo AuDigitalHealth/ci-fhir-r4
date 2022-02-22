@@ -98,7 +98,6 @@
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
-      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -165,7 +164,6 @@
     </element>
     <element id="Composition.section:medicinesList.code">
       <path value="Composition.section.code"/>
-      <min value="1"/>
       <binding>
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1" />

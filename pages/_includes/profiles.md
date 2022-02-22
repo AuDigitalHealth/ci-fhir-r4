@@ -48,6 +48,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-document-1.html">ADHA Document Composition</a></li>
+                                <li>ADHA Continuity of Care Summary Document Composition</li>
                                 <li><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a></li>
                             </ul>
                         </td>  
@@ -244,16 +245,17 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-acts-1.html">ADHA Aged Care Transfer Summary Composition</a></li>
+                                <li>ADHA Discharge Summary Composition</li>
                                 <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-mix-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
                                  <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
+                                <li>ADHA National Cancer Screening Program Participation Composition</li>
                                 <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Person Health Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-sml-1.html">ADHA Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-psml-1.html">ADHA Pharmacist Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-pdl-1.html">ADHA Prescription and or Dispense History Composition</a></li>
-                                <li>ADHA National Cancer Screening Program Participation Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-sml-1.html">ADHA Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
                                 <li>Archicture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
