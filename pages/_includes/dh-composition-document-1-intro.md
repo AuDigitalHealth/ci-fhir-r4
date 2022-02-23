@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Composition
+#### Australian Digital Health Agency Document Composition
 The purpose of this profile is to provide a document composition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
@@ -20,6 +20,7 @@ This profile is referenced by
 These profiles build on this profile ([ADHA Document Composition](StructureDefinition-dh-composition-document-1.html)) to define specific document compositions:
 * [ADHA Advance Care Directive Custodian Record Composition](StructureDefinition-dh-composition-acdcr-1.html) 
 * [ADHA Advance Care Planning Composition](StructureDefinition-dh-composition-acp-1.html) 
+* [ADHA AContinuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html)
 * [ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html) 
 * [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html) 
 * [ADHA Event Summary Narrative](StructureDefinition-dh-composition-es-narrative-1.html) 

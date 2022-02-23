@@ -48,7 +48,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-document-1.html">ADHA Document Composition</a></li>
-                                <li>ADHA Continuity of Care Summary Document Composition</li>
+                                <li><a href="StructureDefinition-dh-composition-cocs-1.html">ADHA Continuity of Care Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a></li>
                             </ul>
                         </td>  
