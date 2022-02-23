@@ -70,6 +70,7 @@
         </discriminator>
         <rules value="closed"/>
       </slicing>
+      <min value="1"/>
       <constraint>
         <key value="inv-dh-obs-02" />
         <severity value="error" />
@@ -83,6 +84,7 @@
       <sliceName value="participationStatus"/>
       <short value="Program participation status"/>
       <definition value="Represents the current state of an individual's participation in a program. This status is only representative at the time this observation is asserted and may also represent participation exception states including exclusion or ineligibility." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:participationStatus.code">
       <path value="Observation.component.code"/>
@@ -102,6 +104,7 @@
       <sliceName value="participationStatusPeriod"/>
       <short value="Program participation status validity period" />
       <definition value="The validity period for the program participation status. This may be a date where the status is meaningful when described by a point in time, e.g. date of death." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:participationStatusPeriod.code">
       <path value="Observation.component.code"/>
@@ -118,6 +121,8 @@
       <sliceName value="suspensionFlag"/>
       <short value="Suspension of program participation" />
       <definition value="An indicator of whether a individual has suspended participation from a program. The value is 'true' when the individual has suspended participation." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568068 [Person—suspended participation from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568068) and data element 568073 [Person—suspended participation from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568073.)"/>
+      <max value="1"/>
     </element>
     <element id="Observation.component:suspensionFlag.code">
       <path value="Observation.component.code"/>
@@ -133,6 +138,8 @@
       <sliceName value="suspensionReason"/>
       <short value="Reason for suspension of program participation" />
       <definition value="The reason why an individual has suspended participation in a program." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568096 [Person—reason for suspending disease screening participation](https://meteor.aihw.gov.au/content/index.phtml/itemId/568096) and data element 568098 [Person—reason for suspending disease screening participation, code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568098.)"/>
+      <max value="1"/>
     </element>
     <element id="Observation.component:suspensionReason.code">
       <path value="Observation.component.code"/>
@@ -152,6 +159,8 @@
       <sliceName value="suspensionPeriod"/>
       <short value="Suspension of program participation period" />
       <definition value="The period an participation in a program will be suspended. The end date of the period may not be known or suspension may be ongoing until further notice." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 576726 [Person—suspended participation from a disease screening program date](https://meteor.aihw.gov.au/content/index.phtml/itemId/576726) and data element 576728 [Person—suspended participation from a disease screening program date, DDMMYYYY](https://meteor.aihw.gov.au/content/index.phtml/itemId/576728.)"/>
+      <max value="1"/>
     </element>
     <element id="Observation.component:suspensionPeriod.code">
       <path value="Observation.component.code"/>
@@ -167,6 +176,8 @@
       <sliceName value="optedOffFlag"/>
       <short value="Opted off of program participation" />
       <definition value="An indicator of whether an individual opted off from a program. The value is 'true' when the individual has opted off the program and will not participate further." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568066 [Person—opted off from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568066) and data element 568070 [Person—opted off from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568070.)"/>
+      <max value="1"/>
     </element>
     <element id="Observation.component:optedOffFlag.code">
       <path value="Observation.component.code"/>
@@ -182,6 +193,8 @@
       <sliceName value="optedOffReason"/>
       <short value="Reason for opting off of program participation" />
       <definition value="The reason why an individual has opted off participating in a program." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568084 [Person—reason for opting off a disease screening program](https://meteor.aihw.gov.au/content/index.phtml/itemId/568066) and data element 732523 [Person—reason for opting off a disease screening program, code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/732523.)"/>
+      <max value="1"/>
     </element>
     <element id="Observation.component:optedOffReason.code">
       <path value="Observation.component.code"/>
@@ -201,6 +214,8 @@
       <sliceName value="optedOffDate"/>
       <short value="Opting off of program participation date" />
       <definition value="The date an individual opted off participating in a program." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 576717 [Person—opted off from a disease screening program date](https://meteor.aihw.gov.au/content/index.phtml/itemId/576717) and data element 576720 [Person—opted off from a disease screening program date, DDMMYYYY](https://meteor.aihw.gov.au/content/index.phtml/itemId/576720.)"/>
+      <max value="1"/>
     </element>
     <element id="Observation.component:optedOffDate.code">
       <path value="Observation.component.code"/>
@@ -216,6 +231,7 @@
       <sliceName value="lastAction"/>
       <short value="Last program participation action" />
       <definition value="The last program participation action." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:lastAction.code">
       <path value="Observation.component.code"/>
@@ -231,6 +247,7 @@
       <sliceName value="lastActionDate"/>
       <short value="Last program participation action date" />
       <definition value="The time or time period of the last program participation action." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:lastActionDate.code">
       <path value="Observation.component.code"/>
@@ -247,6 +264,7 @@
       <sliceName value="nextAction"/>
       <short value="Next program participation action" />
       <definition value="The next action expected or scheduled as part of the program." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:nextAction.code">
       <path value="Observation.component.code"/>
@@ -262,6 +280,7 @@
       <sliceName value="nextActionDate"/>
       <short value="Next program participation action date" />
       <definition value="The time or time period of the next program participation action." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:nextActionDate.code">
       <path value="Observation.component.code"/>
@@ -278,6 +297,7 @@
       <sliceName value="forecastStatus"/>
       <short value="Forecast status with reference to program pathway, e.g. overdue" />
       <definition value="The value recorded as 'next screening action' for a national cancer screening program. This value represents the most clinically relevant state at the time of assertion of this observation for future program participation, e.g. overdue or eligible at 25, and may repeat exception states relevant to forecasting program participation." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:forecastStatus.code">
       <path value="Observation.component.code"/>
@@ -293,6 +313,7 @@
       <sliceName value="forecastStatusPeriod"/>
       <short value="Period associated with forecast status" />
       <definition value="The time or time period associated with 'next status'." />
+      <max value="1"/>
     </element>
     <element id="Observation.component:forecastStatusPeriod.code">
       <path value="Observation.component.code"/>
