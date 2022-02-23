@@ -14,8 +14,9 @@ This profile is designed to set a Composition standard for:
 
 #### Boundaries and relationships
 The following profiles are specialised use case profiles of a continuity of care summary document:
+* [ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html)
+* [ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html)
 * [ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html) 
 * [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html) 
 * [ADHA Event Summary Narrative](StructureDefinition-dh-composition-es-narrative-1.html) 
 * [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html)
-* [ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html)

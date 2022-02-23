@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-composition-cocs-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
+  <id value="dh-composition-ds-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
   <version value="0.0.1"/>
-  <name value="DHCompositionCOCS"/>
-  <title value="Australian Digital Health Agency Continuity of Care Summary Composition"/>
+  <name value="DHCompositionDS"/>
+  <title value="Australian Digital Health Agency Discharge Summary Composition"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define a representation of an Continuity of Care Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care across encounters and healthcare settings. Specific use cases are supported by defined profiles for those use cases such as Shared Health Summary, Event Summary, Discharge Summary, Transfer Summary, Referral; where available the most specific applicable profile should be used. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
+    value="The purpose of this profile is to define a representation of an Discharge Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care following discharge. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -28,8 +28,8 @@
   <differential>
     <element id="Composition">
       <path value="Composition"/>
-      <short value="Continuity of Care Summary"/>
-      <definition value="A continuity of care summary document support the exchange of core, common, or critical information for exchange between healthcare providers, and individual, to support continuity of care across encounters and healthcare settings. Specific use cases are supported by defined profiles for those use cases such as Shared Health Summary, Event Summary, Discharge Summary, Transfer Summary, Referral; where available the most specific applicable profile should be used."/>
+      <short value="Discharge Summary"/>
+      <definition value="A discharge summary document supports the exchange of core, common, or critical information for exchange between healthcare providers, and individual, to support continuity of care to support continuity of care following discharge."/>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -54,22 +54,22 @@
         <rules value="open"/>
       </slicing>
       <constraint>
-        <key value="inv-dh-cocs-01"/>
+        <key value="inv-dh-ds-01"/>
         <severity value="error"/>
         <human value="A section shall at least have an entry or an empty reason, but not both"/>
         <expression value="entry.exists() xor emptyReason.exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
       <constraint>
-        <key value="inv-dh-cocs-02"/>
+        <key value="inv-dh-ds-02"/>
         <severity value="error"/>
         <human
           value="All observations shall conform one of: ADHA Simple Observation, ADHA Diagnostic Result Group Observation, ADHA Diagnostic Result Observation"/>
         <expression
           value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1') or entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1')"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
     <element id="Composition.section.title">
@@ -88,31 +88,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-    </element>
-    <element id="Composition.section:reasonForReferral">
-      <path value="Composition.section"/>
-      <sliceName value="reasonForReferral"/>
-      <short value="Reason for referral"/>
-      <definition value="TBD"/>
-      <max value="1"/>
-    </element>
-    <element id="Composition.section:reasonForReferral.code">
-      <path value="Composition.section.code"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org"/>
-          <code value="42349-1"/>
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Composition.section:reasonForReferral.entry">
-      <path value="Composition.section.entry"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"
-        />
-      </type>
     </element>
     <element id="Composition.section:advanceCareDirectives">
       <path value="Composition.section"/>
@@ -232,34 +207,34 @@
         value="Information about the immunisation history, i.e. administered vaccines, of a patient."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-cocs-07"/>
+        <key value="inv-dh-ds-07"/>
         <severity value="error"/>
         <human
           value="This section shall not contain a mix of resource types"/>
         <expression
           value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
       <constraint>
-        <key value="inv-dh-cocs-08"/>
+        <key value="inv-dh-ds-08"/>
         <severity value="error"/>
         <human
           value="At most one assertion of no relevant finding shall be present and it shall assert no history of vaccination"/>
         <expression
           value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code='1234401000168109').exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
       <constraint>
-        <key value="inv-dh-cocs-09"/>
+        <key value="inv-dh-ds-09"/>
         <severity value="error"/>
         <human
           value="At most one list shall be present"/>
         <expression
           value="entry.resolve().where($this is List).exists() implies (entry.resolve().where($this is List).count() &lt; 2"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
     <element id="Composition.section:immunisations.code">
