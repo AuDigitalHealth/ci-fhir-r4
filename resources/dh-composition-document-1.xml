@@ -77,6 +77,17 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
         />
       </constraint>
+      <constraint>
+        <key value="inv-dh-doc-05"/>
+        <severity value="error"/>
+        <human
+          value="Sections shall be unique by code"/>
+        <expression
+          value="section.select(code.coding.code).isDistinct()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
+        />
+      </constraint>
       <mapping>
         <identity value="CDA"/>
         <map value="ClinicalDocument"/>

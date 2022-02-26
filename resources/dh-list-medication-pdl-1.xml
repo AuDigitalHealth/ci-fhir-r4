@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au" />
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of list that describes a patient's prescription and or dispense history for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient." />
+  <description value="The purpose of this profile is to define a representation of list that describes a patient's prescription and or dispense history for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient. The list may be partial, or complete, and may be a full history or scoped to an active script list." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -26,7 +26,7 @@
     <element id="List">
       <path value="List"/>
       <short value="A precription and dispense history, or a prescription history, or a dispense history" />
-      <definition value="A prescription and/or dispense history for a patient at a point in time." />
+      <definition value="A prescription and/or dispense history for a patient at a point in time. The list may be partial, or complete, and may be a full history or scoped to an active script list." />
       <constraint>
         <key value="inv-dh-pdl-01" />
         <severity value="error" />

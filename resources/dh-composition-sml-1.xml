@@ -98,7 +98,6 @@
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
-      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -115,10 +114,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />
       </type>
-    </element>
-    <element id="Composition.section:allergies.entry.reference">
-      <path value="Composition.section.entry.reference"/>
-      <min value="1"/>
     </element>
     <element id="Composition.section:allergies.emptyReason">
       <path value="Composition.section.emptyReason"/>
@@ -169,7 +164,6 @@
     </element>
     <element id="Composition.section:medicinesList.code">
       <path value="Composition.section.code"/>
-      <min value="1"/>
       <binding>
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1" />
@@ -184,10 +178,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
-    </element>
-    <element id="Composition.section:medicinesList.entry.reference">
-      <path value="Composition.section.entry.reference"/>
-      <min value="1"/>
     </element>
     <element id="Composition.section:medicinesList.emptyReason">
       <path value="Composition.section.emptyReason"/>

@@ -18,7 +18,10 @@ This profile is referenced by
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
 [ADHA Advance Care Custodian Record Composition](StructureDefinition-dh-composition-document-1.html),
 [ADHA Advance Care Planning Document Composition](StructureDefinition-dh-composition-document-1.html),
-[ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
+[ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html),
+[ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html),
+[ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html),
+[ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-acp-1.html), 
 [ADHA Core List](StructureDefinition-dh-list-core-1.html),
 [ADHA Immunisation History List](StructureDefinition-dh-list-immunization-1.html),
 [ADHA Medication Use List](StructureDefinition-dh-list-medication-use-1.html), and

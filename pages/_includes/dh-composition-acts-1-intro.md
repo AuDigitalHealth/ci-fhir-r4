@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency Aged Care Transfer Summary Composition
-The purpose of this profile is to define a representation of an Aged Care Transfer Summary for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation.
+The purpose of this profile is to define a representation of an Aged Care Transfer Summary for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A transfer summary includes critical information for exchange of information between providers of care when a patient moves between health care settings. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
 
@@ -15,5 +15,7 @@ This profile is used by the following APIs:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA TBD](StructureDefinition-dh-TBD-core-1.html), and 
-[ADHA TBD](StructureDefinition-dh-TBD-core-1.html).
+[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html), and 
+[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html).
+
+This profile ([ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html)) is a specialised use case profile of an [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html).
