@@ -21,7 +21,7 @@
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="CDA.observation"/>
+    <identity value="CDA.observation-program_part"/>
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema observation"/>
   </mapping>
@@ -48,7 +48,7 @@
         />
       </constraint>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation"/>
       </mapping>
     </element>
@@ -56,7 +56,7 @@
       <path value="Observation.status"/>
       <fixedCode value="final"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[status].observation"/>
       </mapping>
     </element>
@@ -69,7 +69,7 @@
         </coding>
       </patternCodeableConcept>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[category].observation"/>
       </mapping>
     </element>
@@ -82,7 +82,7 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-programs-1"/>
       </binding>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.code"/>
       </mapping>
     </element>
@@ -93,7 +93,7 @@
       <definition
         value="Date, and optionally time, this program participation information is asserted as 'true'."/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.effectiveTime"/>
       </mapping>
     </element>
@@ -117,7 +117,7 @@
         />
       </constraint>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship"/>
       </mapping>
     </element>
@@ -129,14 +129,14 @@
         value="Represents the current state of an individual's participation in a program. This status is only representative at the time this observation is asserted and may also represent participation exception states including exclusion or ineligibility."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[part_status].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:participationStatus.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[part_status].observation.code"/>
       </mapping>
     </element>
@@ -152,7 +152,7 @@
         />
       </binding>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[part_status].value"/>
       </mapping>
     </element>
@@ -164,14 +164,14 @@
         value="The validity period for the program participation status. This may be a date where the status is meaningful when described by a point in time, e.g. date of death."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[part_status_period].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[part_status_period].observation.code"/>
       </mapping>
     </element>
@@ -182,7 +182,7 @@
         <code value="Period"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[part_status_period].observation.value"/>
       </mapping>
     </element>
@@ -196,14 +196,14 @@
         value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568068 [Person—suspended participation from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568068) and data element 568073 [Person—suspended participation from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568073)."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_flag].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:suspensionFlag.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_flag].observation.code"/>
       </mapping>
     </element>
@@ -213,7 +213,7 @@
         <code value="boolean"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_flag].observation.value"/>
       </mapping>
     </element>
@@ -226,14 +226,14 @@
         value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568096 [Person—reason for suspending disease screening participation](https://meteor.aihw.gov.au/content/index.phtml/itemId/568096) and data element 568098 [Person—reason for suspending disease screening participation, code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568098)."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_rsn].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:suspensionReason.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_rsn].observation.code"/>
       </mapping>
     </element>
@@ -245,11 +245,11 @@
       <binding>
         <strength value="extensible"/>
         <valueSet
-          value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-reason-for-suspension-1"
+          value="https://healthterminologies.gov.au/fhir/ValueSet/reason-for-suspension-health-program-1"
         />
       </binding>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_rsn].observation.value"/>
       </mapping>
     </element>
@@ -263,14 +263,14 @@
         value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 576726 [Person—suspended participation from a disease screening program date](https://meteor.aihw.gov.au/content/index.phtml/itemId/576726) and data element 576728 [Person—suspended participation from a disease screening program date, DDMMYYYY](https://meteor.aihw.gov.au/content/index.phtml/itemId/576728)."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_period].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:suspensionPeriod.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_period].observation.code"/>
       </mapping>
     </element>
@@ -280,7 +280,7 @@
         <code value="Period"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[suspension_period].observation.value"/>
       </mapping>
     </element>
@@ -294,14 +294,14 @@
         value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568066 [Person—opted off from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568066) and data element 568070 [Person—opted off from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568070)."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_flag].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:optedOffFlag.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_flag].observation.code"/>
       </mapping>
     </element>
@@ -311,7 +311,7 @@
         <code value="boolean"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_flag].observation.value"/>
       </mapping>
     </element>
@@ -324,14 +324,14 @@
         value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568084 [Person—reason for opting off a disease screening program](https://meteor.aihw.gov.au/content/index.phtml/itemId/568066) and data element 732523 [Person—reason for opting off a disease screening program, code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/732523)."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_rsn].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:optedOffReason.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_rsn].observation.code"/>
       </mapping>
     </element>
@@ -343,11 +343,11 @@
       <binding>
         <strength value="extensible"/>
         <valueSet
-          value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-reason-for-suspension-1"
+          value="https://healthterminologies.gov.au/fhir/ValueSet/reason-for-opting-off-health-program-1"
         />
       </binding>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_rsn].observation.value"/>
       </mapping>
     </element>
@@ -360,14 +360,14 @@
         value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 576717 [Person—opted off from a disease screening program date](https://meteor.aihw.gov.au/content/index.phtml/itemId/576717) and data element 576720 [Person—opted off from a disease screening program date, DDMMYYYY](https://meteor.aihw.gov.au/content/index.phtml/itemId/576720)."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_date].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:optedOffDate.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_date].observation.code"/>
       </mapping>
     </element>
@@ -377,7 +377,7 @@
         <code value="dateTime"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[opted_off_date].observation.value"/>
       </mapping>
     </element>
@@ -388,14 +388,14 @@
       <definition value="The last program participation action."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[last_action].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:lastAction.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[last_action].observation.code"/>
       </mapping>
     </element>
@@ -405,7 +405,7 @@
         <code value="CodeableConcept"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[last_action].observation.value"/>
       </mapping>
     </element>
@@ -416,14 +416,14 @@
       <definition value="The time or time period of the last program participation action."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[last_action_date].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:lastActionDate.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[last_action_date].observation.code"/>
       </mapping>
     </element>
@@ -434,7 +434,7 @@
         <code value="Period"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[last_action_date].observation.value"/>
       </mapping>
     </element>
@@ -445,14 +445,14 @@
       <definition value="The next action expected or scheduled as part of the program."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[next_action].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:nextAction.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[next_action].observation.code"/>
       </mapping>
     </element>
@@ -462,7 +462,7 @@
         <code value="CodeableConcept"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[next_action].observation.value"/>
       </mapping>
     </element>
@@ -473,14 +473,14 @@
       <definition value="The time or time period of the next program participation action."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[next_action_date].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:nextActionDate.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[next_action_date].observation.code"/>
       </mapping>
     </element>
@@ -491,7 +491,7 @@
         <code value="Period"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[next_action_date].observation.value"/>
       </mapping>
     </element>
@@ -503,14 +503,14 @@
         value="The value recorded as 'next screening action' for a national cancer screening program. This value represents the most clinically relevant state at the time of assertion of this observation for future program participation, e.g. overdue or eligible at 25, and may repeat exception states relevant to forecasting program participation."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[forecast_status].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:forecastStatus.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[forecast_status].observation.code"/>
       </mapping>
     </element>
@@ -520,7 +520,7 @@
         <code value="CodeableConcept"/>
       </type>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[forecast_status].observation.value"/>
       </mapping>
     </element>
@@ -531,14 +531,14 @@
       <definition value="The time or time period associated with 'next status'."/>
       <max value="1"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[forecast_status_period].observation"/>
       </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod.code">
       <path value="Observation.component.code"/>
       <mapping>
-        <identity value="CDA.observation"/>
+      <identity value="CDA.observation-program_part"/>
         <map value="observation.entryRelationship[forecast_status_period].observation.code"/>
       </mapping>
     </element>
@@ -550,7 +550,7 @@
       </type>
     </element>
     <mapping>
-      <identity value="CDA.observation"/>
+    <identity value="CDA.observation-program_part"/>
       <map value="observation.entryRelationship[forecast_status_period].observation.value"/>
     </mapping>
   </differential>
