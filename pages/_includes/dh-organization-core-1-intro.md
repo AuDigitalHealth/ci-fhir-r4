@@ -3,7 +3,7 @@ The purpose of this profile is to define a core representation of an organisatio
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Organization](http://hl7.org/fhir/R4/organization.html) that are supported. 
 
-This profile is designed to set a core PractitionerRole standard for:
+This profile is designed to set a core Organization standard for:
 * TBD
 
 This profile is used by the following APIs:

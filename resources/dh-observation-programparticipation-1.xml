@@ -80,7 +80,7 @@
           <type value="pattern"/>
           <path value="code"/>
         </discriminator>
-        <rules value="closed"/>
+        <rules value="open"/>
       </slicing>
       <min value="1"/>
       <constraint>
@@ -132,7 +132,7 @@
       <path value="Observation.component" />
       <sliceName value="suspensionFlag"/>
       <short value="Suspension of program participation" />
-      <definition value="An indicator of whether a individual has suspended participation from a program. The value is 'true' when the individual has suspended participation." />
+      <definition value="An indicator of whether an individual has suspended participation from a program. The value is 'true' when the individual has suspended participation." />
       <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568068 [Person—suspended participation from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568068) and data element 568073 [Person—suspended participation from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568073)."/>
       <max value="1"/>
     </element>
@@ -187,7 +187,7 @@
       <path value="Observation.component" />
       <sliceName value="optedOffFlag"/>
       <short value="Opted off of program participation" />
-      <definition value="An indicator of whether an individual opted off from a program. The value is 'true' when the individual has opted off the program and will not participate further." />
+      <definition value="An indicator of whether an individual opted off participating in a program. The value is 'true' when the individual has opted off the program and will not participate further." />
       <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568066 [Person—opted off from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568066) and data element 568070 [Person—opted off from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568070)."/>
       <max value="1"/>
     </element>
