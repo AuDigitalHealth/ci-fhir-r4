@@ -99,7 +99,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author/assignedAuthor/assignedPerson/ext:asEntityIdentifier"/>
+        <map value="author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
     </element>
     <element id="PractitionerRole.active">
@@ -121,7 +121,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author/assignedAuthor/assignedPerson"/>
+        <map value="author.assignedAuthor.assignedPerson"/>
       </mapping>
     </element>
     <element id="PractitionerRole.organization">
@@ -135,7 +135,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author/assignedAuthor/representedOrganization"/>
+        <map value="author.assignedAuthor.representedOrganization"/>
       </mapping>
     </element>
     <element id="PractitionerRole.code">
@@ -143,7 +143,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author/assignedAuthor/code"/>
+        <map value="author.assignedAuthor.code"/>
       </mapping>
     </element>
     <element id="PractitionerRole.specialty">
@@ -187,7 +187,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author/assignedAuthor/telecom"/>
+        <map value="author.assignedAuthor.telecom"/>
       </mapping>
     </element>
   </differential>
