@@ -106,7 +106,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Implicit in ClinicalDocument.componentOf.encompassingEncounter, or instantiated as observation.entryRelationship.encounter"/>
+        <map
+          value="Implicit in ClinicalDocument.componentOf.encompassingEncounter, or instantiated as observation.entryRelationship.encounter"
+        />
       </mapping>
     </element>
     <element id="Observation.effective[x]">
@@ -247,10 +249,10 @@
     <element id="Observation.component.interpretation">
       <path value="Observation.component.interpretation"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
-    <mapping>
-      <identity value="CDA.observation"/>
-      <map value="TBD"/>
-    </mapping>
   </differential>
 </StructureDefinition>
