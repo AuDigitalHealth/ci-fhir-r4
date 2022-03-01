@@ -22,7 +22,7 @@
   <mapping>
     <identity value="CDA"/>
     <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
+    <name value="Agency CDA Schema ClinicalDocument"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -40,8 +40,7 @@
         <expression
           value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-cmp-02"/>
@@ -51,8 +50,7 @@
         <expression
           value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
       </constraint>
       <mapping>
         <identity value="CDA"/>
@@ -112,8 +110,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
@@ -206,7 +203,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/entry[entry]"/>
+        <map value="ClinicalDocument/component/structuredBody/component/section/entry"/>
       </mapping>
     </element>
     <element id="Composition.section.emptyReason">
@@ -214,60 +211,8 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
         <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/@code='ASSERTION'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/@codeSystem='2.16.840.1.113883.5.4'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/@displayName"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/value"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry[empty_rsn]/observation/code/value/@xsi:type='CD'"
+          value="ClinicalDocument/component/structuredBody/component/section/entry/observation/code/value"
         />
       </mapping>
     </element>
