@@ -249,7 +249,8 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-mix-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
                                  <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
-                                <li>ADHA National Cancer Screening Program Participation Composition</li>
+                                <li><a href="StructureDefinition-dh-composition-ncspp-1.html">ADHA National Cancer Screening Program Participation Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html">Section type design elaboration version of ADHA National Cancer Screening Program Participation Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Person Health Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-psml-1.html">ADHA Pharmacist Shared Medicines List Composition</a></li>
@@ -336,7 +337,8 @@ Core FHIR profiles defined in this implementation guide.
                                 <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
                                 <li>ADHA Pathology DiagnosticReport</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
-                                <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Program Participation Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Health Program Participation Observation (for transition to HL7 AU)</a></li>
+                                <li><a href="StructureDefinition-dh-observation-ncspp-1.html">National Cancer Screening Program Participation Observation</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
