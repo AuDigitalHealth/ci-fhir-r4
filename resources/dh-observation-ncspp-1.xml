@@ -14,35 +14,59 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a representation of an individual's participation in a national cancer screening program, e.g. national bowel cancer screening program for the electronic exchange of health information between individuals, healthcare providers, the National Cancer Screening Register, and the My Health Record system infrastructure in Australia. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description
+    value="The purpose of this profile is to provide a representation of an individual's participation in a national cancer screening program, e.g. national bowel cancer screening program for the electronic exchange of health information between individuals, healthcare providers, the National Cancer Screening Register, and the My Health Record system infrastructure in Australia. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="CDA"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema observation"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
-  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
+  <baseDefinition
+    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Observation">
       <path value="Observation"/>
-      <short value="National cancer screening program participation record" />
+      <short value="National cancer screening program participation record"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation"/>
+      </mapping>
     </element>
     <element id="Observation.status">
-      <path value="Observation.status" />
-      <fixedCode value="final" />
+      <path value="Observation.status"/>
+      <fixedCode value="final"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.category">
       <path value="Observation.category"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
       <mustSupport value="true"/>
       <binding>
-        <strength value="required" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-programs-1" />
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-programs-1"/>
       </binding>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
@@ -53,18 +77,29 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map
+          value="Not mapped directly for this model; this is implicit in ClinicalDocument.recordTarget.patientRole."
+        />
+      </mapping>
     </element>
     <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
+      <path value="Observation.effective[x]"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA"/>
+        <map value="observation.effectiveTime"/>
+      </mapping>
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer"/>
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
+        />
       </type>
       <mustSupport value="true"/>
       <mapping>
@@ -73,7 +108,7 @@
       </mapping>
     </element>
     <element id="Observation.component">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
@@ -82,86 +117,154 @@
         <rules value="closed"/>
       </slicing>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatus">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <sliceName value="participationStatus"/>
       <short value="Participant status"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatus.code">
       <path value="Observation.component.code"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatus.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <sliceName value="participationStatusPeriod"/>
-      <short value="Participant status period" />
+      <short value="Participant status period"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod.code">
       <path value="Observation.component.code"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:participationStatusPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionFlag">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <sliceName value="suspensionFlag"/>
-      <short value="Defer flag" />
+      <short value="Defer flag"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionFlag.code">
       <path value="Observation.component.code"/>
       <min value="1"/>
       <fixedString value="Defer flag"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:suspensionFlag.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <sliceName value="forecastStatus"/>
-      <short value="Next screening action" />
+      <short value="Next screening action"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus.code">
       <path value="Observation.component.code"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus.code.text">
       <path value="Observation.component.code.text"/>
       <min value="1"/>
       <fixedString value="Next screening action"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code.originalText"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatus.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <sliceName value="forecastStatusPeriod"/>
-      <short value="Next screening action period" />
+      <short value="Next screening action period"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod.code">
       <path value="Observation.component.code"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code"/>
+      </mapping>
     </element>
     <element id="Observation.component:forecastStatusPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

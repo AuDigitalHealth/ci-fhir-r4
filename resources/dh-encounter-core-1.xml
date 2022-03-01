@@ -101,7 +101,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship[type].observation.value"/>
+        <map value="encounter.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Encounter.serviceType">
@@ -117,7 +117,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship[service_type].observation.value"/>
+        <map value="encounter.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Encounter.subject">
@@ -204,11 +204,11 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model; implicit in encounter.entryRelationship[reason].observation.value."/>
+        <map value="Not mapped directly for this model; implicit in encounter.entryRelationship.observation.value."/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship[reason].observation.value"/>
+        <map value="encounter.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Encounter.reasonReference[x]">
@@ -222,11 +222,11 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model; implicit in encounter.entryRelationship[reason_ref].observation, and/or encounter.entryRelationship[reason_ref].procedure."/>
+        <map value="Not mapped directly for this model; implicit in encounter.entryRelationship.observation, and/or encounter.entryRelationship.procedure."/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship[reason_ref].observation, and/or encounter.entryRelationship[reason_ref].procedure"/>
+        <map value="encounter.entryRelationship.observation, and/or encounter.entryRelationship.procedure"/>
       </mapping>
     </element>
     <element id="Encounter.hospitalization">
