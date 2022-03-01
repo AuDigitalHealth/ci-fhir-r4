@@ -27,13 +27,6 @@
       <path value="Observation"/>
       <short value="Health program participation observation" />
       <definition value="A record of an individual's participation in a program, e.g. disease screening or substance use therapy. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program." />
-      <constraint>
-        <key value="inv-dh-obs-01" />
-        <severity value="error" />
-        <human value="If there is no component element then either a value[x] or a data absent reason shall be present" />
-        <expression value="component.empty() implies (dataAbsentReason.exists() or value.exists())" />
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1" />
-      </constraint>
     </element>
     <element id="Observation.status">
       <path value="Observation.status" />
@@ -96,6 +89,7 @@
       <sliceName value="participationStatus"/>
       <short value="Program participation status"/>
       <definition value="Represents the current state of an individual's participation in a program. This status is only representative at the time this observation is asserted and may also represent participation exception states including exclusion or ineligibility." />
+      <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Observation.component:participationStatus.code">
