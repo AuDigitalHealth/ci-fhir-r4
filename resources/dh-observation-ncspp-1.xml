@@ -70,7 +70,6 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
-      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
@@ -86,7 +85,6 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
-      <min value="1"/>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
@@ -208,6 +206,8 @@
       <path value="Observation.component"/>
       <sliceName value="forecastStatus"/>
       <short value="Next screening action"/>
+      <definition
+        value="The value recorded as 'next screening action' for a national cancer screening program. This value represents the most clinically relevant state at the time of assertion of this observation for future program participation, e.g. overdue or eligible at 25, and may repeat exception states relevant to forecasting program participation."/>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
