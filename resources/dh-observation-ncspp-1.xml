@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to provide a representation of an individual's participation in a national cancer screening program, e.g. national bowel cancer screening program for the electronic exchange of health information between individuals, healthcare providers, the National Cancer Screening Register, and the My Health Record system infrastructure in Australia. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
+    value="The purpose of this profile is to provide a summary of an individual's participation in a national cancer screening program, e.g. national bowel cancer screening program for the electronic exchange of health information between individuals, healthcare providers, the National Cancer Screening Register, and the My Health Record system infrastructure in Australia. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -173,35 +173,6 @@
         <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
-    <element id="Observation.component:suspensionFlag">
-      <path value="Observation.component"/>
-      <sliceName value="suspensionFlag"/>
-      <short value="Defer flag"/>
-      <min value="1"/>
-      <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation"/>
-      </mapping>
-    </element>
-    <element id="Observation.component:suspensionFlag.code">
-      <path value="Observation.component.code"/>
-      <min value="1"/>
-      <fixedString value="Defer flag"/>
-      <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.code"/>
-      </mapping>
-    </element>
-    <element id="Observation.component:suspensionFlag.value[x]">
-      <path value="Observation.component.value[x]"/>
-      <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
-      </mapping>
-    </element>
     <element id="Observation.component:forecastStatus">
       <path value="Observation.component"/>
       <sliceName value="forecastStatus"/>
@@ -260,6 +231,44 @@
     </element>
     <element id="Observation.component:forecastStatusPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
+      </mapping>
+    </element>
+    <element id="Observation.component:suspensionFlag">
+      <path value="Observation.component" />
+      <sliceName value="suspensionFlag"/>
+      <short value="Defer flag"/>
+      <definition value="An indicator of whether an individual has suspended participation from a program. The value is 'true' when the individual has suspended participation, and is asserted as current at the time this observation is asserted." />
+      <comment value="When valued for a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568068 [Person—suspended participation from a disease screening program indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/568068) and data element 568073 [Person—suspended participation from a disease screening program indicator, yes/no code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568073)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
+      </mapping>
+    </element>
+    <element id="Observation.component:suspensionFlag.code">
+      <path value="Observation.component.code"/>
+      <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.code"/>
+      </mapping>
+    </element>
+    <element id="Observation.component:suspensionFlag.code.text">
+      <path value="Observation.component.code.text"/>
+      <min value="1"/>
+      <fixedString value="Defer flag"/>
+    </element>
+    <element id="Observation.component:suspensionFlag.value[x]">
+      <path value="Observation.component.value[x]"/>
+      <type>
+        <code value="boolean" />
+      </type>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
