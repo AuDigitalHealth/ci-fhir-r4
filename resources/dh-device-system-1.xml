@@ -38,7 +38,7 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1" />
       </constraint>
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.author"/>
         <map value="ClinicalDocument.author.assignedAuthor.assignedAuthoringDevice"/>
       </mapping>
     </element>
@@ -47,7 +47,7 @@
       <min value="1"/>
       <mustSupport value="true" />
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.author"/>
         <map value="ClinicalDocument.author.assignedAuthor.assignedAuthoringDevice.ext:asEntityIdentifier"/>
       </mapping>
     </element>
@@ -55,7 +55,7 @@
       <path value="Device.type" />
       <mustSupport value="true" />
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.author"/>
         <map value="ClinicalDocument.author.assignedAuthor.code"/>
       </mapping>
     </element>
@@ -68,7 +68,7 @@
       </type>
       <mustSupport value="true" />
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.author"/>
         <map value="ClinicalDocument.author.assignedAuthor.assignedAuthoringDevice.asMaintainedEntity.maintainingPerson.ext:asEmployment.ext:employerOrganization"/>
       </mapping>
     </element>

@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a related person for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.author"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema recordTarget"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="RelatedPerson" />
@@ -32,15 +37,27 @@
         <expression value="identifier.exists() or name.exists() or relationship.exists()" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.identifier">
       <path value="RelatedPerson.identifier" />
       <definition value="Identifier for a person within a particular scope." />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.active">
       <path value="RelatedPerson.active" />
       <fixedBoolean value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
@@ -49,35 +66,67 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."/>
+      </mapping>
     </element>
     <element id="RelatedPerson.relationship">
       <path value="RelatedPerson.relationship" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.assignedPerson.ext:personalRelationship.ext:code"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.name">
       <path value="RelatedPerson.name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.assignedPerson.name"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.telecom">
       <path value="RelatedPerson.telecom" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.telecom"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.address">
       <path value="RelatedPerson.address" />
       <definition value="Address where the related person can be contacted or visited." />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.addr"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.communication">
       <path value="RelatedPerson.communication" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.communication.language">
       <path value="RelatedPerson.communication.language" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication.languageCode"/>
+      </mapping>
     </element>
     <element id="RelatedPerson.communication.preferred">
       <path value="RelatedPerson.communication.preferred" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication.preferenceInd"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
