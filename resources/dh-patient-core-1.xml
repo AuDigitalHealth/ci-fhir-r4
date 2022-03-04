@@ -34,6 +34,11 @@
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema informant"/>
   </mapping>
+  <mapping>
+    <identity value="CDA.informationRecipient"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema informationRecipient"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Patient"/>
@@ -82,6 +87,10 @@
         <identity value="CDA.informant"/>
         <map value="informant"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient/intendedRecipient/informationRecipient"/>
+      </mapping>
     </element>
     <element id="Patient.extension:birthPlace">
       <path value="Patient.extension"/>
@@ -111,6 +120,10 @@
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/birthPlace/place/addr."
         />
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/birthPlace/place/addr."/>
+      </mapping>
     </element>
     <element id="Patient.extension:indigenousStatus">
       <path value="Patient.extension"/>
@@ -128,6 +141,12 @@
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
+        <map
+          value="Not mapped directly for this participant; this is implicit in patientRole/patient/ethnicGroupCode."
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map
           value="Not mapped directly for this participant; this is implicit in patientRole/patient/ethnicGroupCode."
         />
@@ -151,6 +170,12 @@
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
+        <map
+          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd."
+        />
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd."
         />
@@ -189,6 +214,12 @@
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component/section/entry/observation/value."
         />
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map
+          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component/section/entry/observation/value."
+        />
+      </mapping>
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier"/>
@@ -206,6 +237,10 @@
         <identity value="CDA.informant"/>
         <map value="informant/assignedEntity/assignedPerson/ext:asEntityIdentifier"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informationRecipient/intendedRecipient/informationRecipient/ext:asEntityIdentifier"/>
+      </mapping>
     </element>
     <element id="Patient.active">
       <path value="Patient.active"/>
@@ -220,6 +255,10 @@
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -238,6 +277,10 @@
         <identity value="CDA.informant"/>
         <map value="informant/assignedEntity/assignedPerson/name"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient/intendedRecipient/informationRecipient/name"/>
+      </mapping>
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom"/>
@@ -253,6 +296,10 @@
       <mapping>
         <identity value="CDA.informant"/>
         <map value="informant/assignedEntity/telecom"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient/intendedRecipient/telecom"/>
       </mapping>
     </element>
     <element id="Patient.gender">
@@ -271,6 +318,10 @@
       <mapping>
         <identity value="CDA.informant"/>
         <map value="informant/assignedEntity/assignedPerson/ext:administrativeGenderCode"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient/intendedRecipient/informationRecipient/ext:administrativeGenderCode	"/>
       </mapping>
     </element>
     <element id="Patient.birthDate">
@@ -291,6 +342,10 @@
         <map
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/patientRole/patient/birthTime."
         />
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/patientRole/patient/birthTime."/>
       </mapping>
     </element>
     <element id="Patient.birthDate.extension:accuracyIndicator">
@@ -315,6 +370,10 @@
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component/section/entry/observation/value."
         />
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/patientRole/patient/birthTime."/>
+      </mapping>
     </element>
     <element id="Patient.birthDate.extension:birthTime">
       <path value="Patient.birthDate.extension"/>
@@ -336,6 +395,10 @@
           value="Not mapped separately, encompassed in ClinidalDocument/recordTarget/patientRole/patient/birthTime."
         />
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/patientRole/patient/birthTime."/>
+      </mapping>
     </element>
     <element id="Patient.address">
       <path value="Patient.address"/>
@@ -351,6 +414,10 @@
       <mapping>
         <identity value="CDA.informant"/>
         <map value="informant/assignedEntity/addr"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient/intendedRecipient/addr"/>
       </mapping>
     </element>
     <element id="Patient.communication">
@@ -371,6 +438,10 @@
         <map
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication."
         />
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication."/>
       </mapping>
     </element>
     <element id="Patient.communication.language">
@@ -394,6 +465,10 @@
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/languageCode."
         />
       </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication."/>
+      </mapping>
     </element>
     <element id="Patient.communication.preferred">
       <path value="Patient.communication.preferred"/>
@@ -415,6 +490,10 @@
         <map
           value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferenceInd."
         />
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication."/>
       </mapping>
     </element>
     <element id="Patient.generalPractitioner">
@@ -438,6 +517,10 @@
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map value="n/a"/>
       </mapping>
     </element>
