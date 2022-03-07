@@ -13,12 +13,12 @@
         <value value="20439b90-f1be-46a5-b848-4aa4938d19fc"/>
     </identifier>
     <status value="final"/>
-   <!-- therapy or ?-->
+    <!-- new code system & code proposed for this work -->
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="therapy"/>
-            <display value="Therapy"/>
+            <system value="http://terminology.hl7.au.org/CodeSystem/observation-category"/>
+            <code value="program"/>
+            <display value="Program"/>
         </coding>
         <text value="Cancer screening program"/>
     </category>
@@ -70,7 +70,7 @@
                 <code value="TBD"/>
                 <display value="Program participation status"/>
             </coding>
-            <text value="Participation status"/>
+            <text value="Participant status"/>
         </code>
         <valueCodeableConcept>
             <coding>
@@ -87,15 +87,15 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Program participation status period"/>
+                <display value="Program participation status validity period"/>
             </coding>
-            <text value="Participation status period"/>
+            <text value="Participant status period"/>
         </code>
         <valuePeriod>
             <start value="2020-06-12"/>
         </valuePeriod>
     </component>
-    <!--3.	Suspension of program participation -->
+    <!--10.	Suspension of program participation -->
     <component>
         <code>
             <coding>
@@ -108,24 +108,19 @@
         <!--Patient has not deferred-->
         <valueBoolean value="false"/>
     </component>
-    <!--13. Forecast status -->
+    <!--8. Forecast status -->
     <component>
         <code>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="TBD"/>
+                <display value="Forecast status"/>
             </coding>
             <text value="Next screening action"/>
         </code>
         <valueCodeableConcept>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Eligible at age"/>
-            </coding>
             <text value="Commence at 25"/>
         </valueCodeableConcept>
     </component>
-    <!--14.	Forecast status period is not provided in this scenario-->
+    <!--9.	Forecast status validity period is not provided in this scenario-->
 </Observation>

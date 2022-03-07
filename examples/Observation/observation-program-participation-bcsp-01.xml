@@ -9,12 +9,12 @@
     Patient reported reason as not comfortable with the process. 
     This information was recorded during a GP visit in 2019. -->
     <status value="final"/>
-   <!-- therapy or ?-->
+    <!-- new code system & code proposed for this work -->
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="therapy"/>
-            <display value="Therapy"/>
+            <system value="http://terminology.hl7.au.org/CodeSystem/observation-category"/>
+            <code value="program"/>
+            <display value="Program"/>
         </coding>
         <text value="Cancer screening program"/>
     </category>
@@ -60,45 +60,32 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Never participated"/>
+                <display value="Opted out"/>
             </coding>
             <text value="Never participated"/>
         </valueCodeableConcept>
     </component>
-    <!--2.	Program participation status validity period -->
+    <!--2.	Program participation status validity period : date opted out -->
     <component>
         <code>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Program participation status period"/>
+                <display value="Program participation status validity period"/>
             </coding>
             <text value="Participation status period"/>
         </code>
         <valuePeriod>
-            <start value="2017-08-23"/>
+            <start value="2017-09-22"/>
         </valuePeriod>
     </component>
-    <!--6.	Opted off of program participation  -->
+    <!--3.	Reason for not participating -->
     <component>
         <code>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Program participation opted off"/>
-            </coding>
-            <text value="Opted Off Flag"/>
-        </code>
-        <!--Patient has opted out-->
-        <valueBoolean value="true"/>
-    </component>
-    <!--7.	Reason for opting off of program participation -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Reason for opting off a program"/>
+                <display value="Reason for not participating"/>
             </coding>
             <text value="Reason for opting off"/>
         </code>
@@ -110,19 +97,5 @@
             </coding>
             <text value="Uncomfortable with process"/>
         </valueCodeableConcept>
-    </component>
-    <!--8.	Opting off of program participation date -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Date program participation opted off"/>
-            </coding>
-            <text value="Opted off date"/>
-        </code>
-        <valuePeriod>
-            <start value="2017-09-22"/>
-        </valuePeriod>
     </component>
 </Observation>

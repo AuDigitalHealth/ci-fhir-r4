@@ -8,12 +8,12 @@
     Scenario Description: Participant was invited to screen, deffered screening for 10 months due to travel.  
     Information recorded by BreastScreen QLD -->
     <status value="final"/>
-   <!-- therapy or ?-->
+    <!-- new code system & code proposed for this work -->
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="therapy"/>
-            <display value="Therapy"/>
+            <system value="http://terminology.hl7.au.org/CodeSystem/observation-category"/>
+            <code value="program"/>
+            <display value="Program"/>
         </coding>
         <text value="Cancer screening program"/>
     </category>
@@ -70,9 +70,9 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Active"/>
+                <display value="Suspended"/>
             </coding>
-            <text value="Actively Screening"/>
+            <text value="Deferred next screening"/>
         </valueCodeableConcept>
     </component>
     <!--2.	Program participation status validity period -->
@@ -81,7 +81,7 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Program participation status period"/>
+                <display value="Program participation status validity period"/>
             </coding>
             <text value="Participation status period"/>
         </code>
@@ -91,26 +91,13 @@
             <end value="2023-03-14"/>
         </valuePeriod>
     </component>
-    <!--3.	Suspension of program participation   -->
+    <!--3.	Reason for not participating -->
     <component>
         <code>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Program participation suspension"/>
-            </coding>
-            <text value="Defer Flag"/>
-        </code>
-        <!--Patient deferred-->
-        <valueBoolean value="true"/>
-    </component>
-    <!--4.	Reason for suspension of program participation -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Reason for suspension of program participation"/>
+                <display value="Reason for not participating"/>
             </coding>
             <text value="Reason for deferral"/>
         </code>
@@ -122,20 +109,5 @@
             </coding>
             <text value="Travelling"/>
         </valueCodeableConcept>
-    </component>
-    <!--5.	Suspension of program participation period -->
-    <component>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="TBD"/>
-                <display value="Perio of suspension of program participation"/>
-            </coding>
-            <text value="Defferal period"/>
-        </code>
-        <valuePeriod>
-            <start value="2022-05-14"/>
-            <end value="2023-03-14"/>
-        </valuePeriod>
     </component>
 </Observation>

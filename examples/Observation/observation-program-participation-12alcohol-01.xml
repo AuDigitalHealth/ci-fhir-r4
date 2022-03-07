@@ -8,12 +8,12 @@
     Scenario Description: Patient continues to actively participate in ongoing program since first enrolled 19 AUG 2021 
     Discussed during annual GP checkup -->
     <status value="final"/>
-   <!-- therapy or ?-->
+   <!-- new code system & code proposed for this work -->
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="therapy"/>
-            <display value="Therapy"/>
+            <system value="http://terminology.hl7.au.org/CodeSystem/observation-category"/>
+            <code value="program"/>
+            <display value="Program"/>
         </coding>
         <text value="Substance use therapy program"/>
     </category>
@@ -71,7 +71,6 @@
                 <code value="TBD"/>
                 <display value="Program participation status"/>
             </coding>
-            <text value="Participation status"/>
         </code>
         <valueCodeableConcept>
             <coding>
@@ -88,9 +87,8 @@
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="TBD"/>
-                <display value="Program participation status period"/>
+                <display value="Program participation status validity period"/>
             </coding>
-            <text value="Participation status period"/>
         </code>
         <!--Patient continues to actively participate in ongoing program since first enrolled 19 AUG 2021-->
         <valuePeriod>

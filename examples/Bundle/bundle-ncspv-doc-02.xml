@@ -444,7 +444,7 @@
                             <code value="TBD"/>
                             <display value="Program participation status"/>
                         </coding>
-                        <text value="Participation status"/>
+                        <text value="Participant status"/>
                     </code>
                     <valueCodeableConcept>
                         <coding>
@@ -461,9 +461,9 @@
                         <coding>
                             <system value="http://snomed.info/sct"/>
                             <code value="TBD"/>
-                            <display value="Program participation status period"/>
+                            <display value="Program participation status validity period"/>
                         </coding>
-                        <text value="Participation status period"/>
+                        <text value="Participant status period"/>
                     </code>
                     <!--Patient has not deferred so no end period is provided-->
                     <valuePeriod>
@@ -489,20 +489,15 @@
                         <coding>
                             <system value="http://snomed.info/sct"/>
                             <code value="TBD"/>
-                            <display value="TBD"/>
+                            <display value="Forecast status"/>
                         </coding>
                         <text value="Next screening action"/>
                     </code>
                     <valueCodeableConcept>
-                        <coding>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="TBD"/>
-                            <display value="New to program"/>
-                        </coding>
                         <text value="Due Now (eligible since 50th birthday)"/>
                     </valueCodeableConcept>
                 </component>
-                <!--14.	Forecast status period is not provided in this scenario-->
+                <!--14.	Forecast status validity period is not provided in this scenario-->
             </Observation>
         </resource>
     </entry>
