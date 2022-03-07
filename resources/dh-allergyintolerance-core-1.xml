@@ -21,9 +21,9 @@
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="CDA"/>
+    <identity value="CDA.observation"/>
     <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
+    <name value="Agency CDA Schema observation"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -67,164 +67,48 @@
         />
       </constraint>
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.observation"/>
         <map value="observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/@classCode='OBS'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/@moodCode='EVN'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/templateId"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/templateId/@root='TBD'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/code"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
       <path value="AllergyIntolerance.clinicalStatus"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/@typeCode='COMP'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/observation/@classCode='OBS'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/observation/@moodCode='EVN'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/observation/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/observation/code/@code='103.32013'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[clin_status]/observation/code/@codeSystem='1.2.36.1.2001.1001.101'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[clin_status]/observation/code/@displayName; displayName SHOULD be 'Clinical Status'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[clin_status]/observation/value"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.verificationStatus">
       <path value="AllergyIntolerance.verificationStatus"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/@typeCode='COMP'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/observation/@classCode='OBS'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/observation/@moodCode='EVN'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/observation/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/observation/code/@code='103.32012'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[ver_status]/observation/code/@codeSystem='1.2.36.1.2001.1001.101'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[ver_status]/observation/code/@displayName; displayName SHOULD be 'Verification Status'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[ver_status]/observation/value'"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.type">
       <path value="AllergyIntolerance.type"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/code"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.code"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.category">
       <path value="AllergyIntolerance.category"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: observation/entryRelationship[category]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: observation/entryRelationship[category]/observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.criticality">
       <path value="AllergyIntolerance.criticality"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: observation/entryRelationship[crit]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: observation/entryRelationship[crit]/observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.code">
@@ -232,8 +116,8 @@
       <min value="1"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/value"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
@@ -246,7 +130,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/patientRole"/>
+        <map
+          value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."
+        />
       </mapping>
     </element>
     <element id="AllergyIntolerance.encounter">
@@ -254,23 +140,14 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.observation"/>
         <map
-          value="TBD: mappings below describe an episode of care encounter; also need to show mappings to an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter)"
+          value="Instaniated as observation.entryRelationship.encounter or ClinicalDocument.componentOf.encompassingEncounter."
         />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[encounter]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: observation/entryRelationship[encounter]/encounter"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.onset[x]">
@@ -289,8 +166,10 @@
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
+        <identity value="CDA.observation"/>
+        <map
+          value="If onset[x] is a dateTime then it is instantiated as observation.effectiveTime.low.@value. If onset[x] is an Age then it is instantiated as observation.entryRelationship.observation.value. If onset[x] is a Range then it is instantiated as TBD."
+        />
       </mapping>
     </element>
     <element id="AllergyIntolerance.recorder">
@@ -307,12 +186,8 @@
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/author"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.author"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.asserter">
@@ -330,142 +205,32 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="observation/informant"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
+        <map value="observation.informant"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.note">
       <path value="AllergyIntolerance.note"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/@typeCode='COMP'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/@classCode='ACT'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/@moodCode='EVN'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/code/@code='103.16044'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[note]/act/code/@codeSystem='1.2.36.1.2001.1001.101'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/code/@displayName"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/author"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/effectiveTime"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[note]/act/text"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.act"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction">
       <path value="AllergyIntolerance.reaction"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/@typeCode='COMP'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/@classCode='OBS'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/@moodCode='EVN'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/code/@code='102.16474'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/code/@codeSystem='1.2.36.1.2001.1001.101'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/code/displayName"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="displayName SHOULD be Reaction Event"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.substance">
       <path value="AllergyIntolerance.reaction.substance"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/participant[agent]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.observation"/>
         <map
-          value="observation/entryRelationship[react]/observation/participant[agent]/@typeCode='CAGNT'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/participant[agent]/participantRole"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/participant[agent]/participantRole/playingEntity"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/participant[agent]/participantRole/playingEntity/code"
+          value="observation.entryRelationship.observation.participant.participantRole.playingEntity.code"
         />
       </mapping>
     </element>
@@ -473,62 +238,16 @@
       <path value="AllergyIntolerance.reaction.manifestation"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/entryRelationship[mfst]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/@typeCode='MFST'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/@inversionInd='true'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/@classCode='OBS'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/@moodCode='EVN'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[mfst]/observation/code"
-        />
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.entryRelationship.observation.code"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
       <path value="AllergyIntolerance.reaction.severity"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="observation/entryRelationship[react]/observation/entryRelationship[sever]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="observation/entryRelationship[react]/observation/entryRelationship[sever]/@typeCode='TBD'"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
+        <identity value="CDA.observation"/>
+        <map value="observation.entryRelationship.observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
   </differential>
