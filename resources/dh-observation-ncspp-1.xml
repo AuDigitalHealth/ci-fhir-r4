@@ -146,9 +146,9 @@
         <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
-    <element id="Observation.component:participationStatusPeriod">
+    <element id="Observation.component:participationStatusValidityPeriod">
       <path value="Observation.component"/>
-      <sliceName value="participationStatusPeriod"/>
+      <sliceName value="participationStatusValidityPeriod"/>
       <short value="Participant status period"/>
       <min value="1"/>
       <mustSupport value="true"/>
@@ -157,7 +157,7 @@
         <map value="observation.entryRelationship.observation"/>
       </mapping>
     </element>
-    <element id="Observation.component:participationStatusPeriod.code">
+    <element id="Observation.component:participationStatusValidityPeriod.code">
       <path value="Observation.component.code"/>
       <mustSupport value="true"/>
       <mapping>
@@ -165,7 +165,7 @@
         <map value="observation.entryRelationship.observation.code"/>
       </mapping>
     </element>
-    <element id="Observation.component:participationStatusPeriod.value[x]">
+    <element id="Observation.component:participationStatusValidityPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
       <mapping>
@@ -211,9 +211,9 @@
         <map value="observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
-    <element id="Observation.component:forecastStatusPeriod">
+    <element id="Observation.component:forecastparticipationStatusValidityPeriod">
       <path value="Observation.component"/>
-      <sliceName value="forecastStatusPeriod"/>
+      <sliceName value="forecastparticipationStatusValidityPeriod"/>
       <short value="Next screening action period"/>
       <mustSupport value="true"/>
       <mapping>
@@ -221,7 +221,7 @@
         <map value="observation.entryRelationship.observation"/>
       </mapping>
     </element>
-    <element id="Observation.component:forecastStatusPeriod.code">
+    <element id="Observation.component:forecastparticipationStatusValidityPeriod.code">
       <path value="Observation.component.code"/>
       <mustSupport value="true"/>
       <mapping>
@@ -229,7 +229,7 @@
         <map value="observation.entryRelationship.observation.code"/>
       </mapping>
     </element>
-    <element id="Observation.component:forecastStatusPeriod.value[x]">
+    <element id="Observation.component:forecastparticipationStatusValidityPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
       <mustSupport value="true"/>
       <mapping>

@@ -106,41 +106,41 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1" />
       </binding>
     </element>
-    <element id="Observation.component:participationStatusPeriod">
+    <element id="Observation.component:participationparticipationStatusValidityPeriod">
       <path value="Observation.component" />
-      <sliceName value="participationStatusPeriod"/>
+      <sliceName value="participationparticipationStatusValidityPeriod"/>
       <short value="Program participation status validity period" />
       <definition value="The validity period for the current program participation status. This may be a date where the status is meaningful when described by a point in time, e.g. date of death. When a period, the end date of the period may not be known in circumstances where the status may be ongoing until further notice." />
       <comment value="When participation status is suspended and the health program is a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 576726 [Person—suspended participation from a disease screening program date](https://meteor.aihw.gov.au/content/index.phtml/itemId/576726) and data element 576728 [Person—suspended participation from a disease screening program date, DDMMYYYY](https://meteor.aihw.gov.au/content/index.phtml/itemId/576728). When participation status is opted off and the health program is a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 576717 [Person—opted off from a disease screening program date](https://meteor.aihw.gov.au/content/index.phtml/itemId/576717) and data element 576720 [Person—opted off from a disease screening program date, DDMMYYYY](https://meteor.aihw.gov.au/content/index.phtml/itemId/576720)."/>
       <max value="1"/>
     </element>
-    <element id="Observation.component:participationStatusPeriod.code">
+    <element id="Observation.component:participationStatusValidityPeriod.code">
       <path value="Observation.component.code"/>
     </element>
-    <element id="Observation.component:participationStatusPeriod.value[x]">
+    <element id="Observation.component:participationStatusValidityPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="DateTime" />
         <code value="Period" />
       </type>
     </element>
-    <element id="Observation.component:participationStatusReason">
+    <element id="Observation.component:notParticipatingStatusReason">
       <path value="Observation.component" />
-      <sliceName value="participationStatusReason"/>
+      <sliceName value="notParticipatingStatusReason"/>
       <short value="Reason for not participating" />
       <definition value="The reason why an individual is not actively participating in a program. This may be the reason why an individual's participation is suspended or stopped participating prior to completion. This value is asserted as current at the time this observation is asserted." />
       <comment value="When participation status is suspended and the health program is a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568096 [Person—reason for suspending disease screening participation](https://meteor.aihw.gov.au/content/index.phtml/itemId/568096) and data element 568098 [Person—reason for suspending disease screening participation, code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/568098). When participation status is opted off and the health program is a disease screening program this concept is equivalent to Australian Institute of Health and Welfare data element 568084 [Person—reason for opting off a disease screening program](https://meteor.aihw.gov.au/content/index.phtml/itemId/568066) and data element 732523 [Person—reason for opting off a disease screening program, code N](https://meteor.aihw.gov.au/content/index.phtml/itemId/732523)."/>
     </element>
-    <element id="Observation.component:participationStatusReason.code">
+    <element id="Observation.component:notParticipatingStatusReason.code">
       <path value="Observation.component.code"/>
     </element>
-    <element id="Observation.component:participationStatusReason.value[x]">
+    <element id="Observation.component:notParticipatingStatusReason.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/reason-for-not-participating-in-health-program-1" />
       </binding>
     </element>
@@ -227,17 +227,17 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Observation.component:forecastStatusPeriod">
+    <element id="Observation.component:forecastparticipationStatusValidityPeriod">
       <path value="Observation.component" />
-      <sliceName value="forecastStatusPeriod"/>
-      <short value="Period associated with forecast status" />
+      <sliceName value="forecastparticipationStatusValidityPeriod"/>
+      <short value="Validity period associated with forecast status" />
       <definition value="The time or time period associated with 'next status', as at the time this observation is asserted." />
       <max value="1"/>
     </element>
-    <element id="Observation.component:forecastStatusPeriod.code">
+    <element id="Observation.component:forecastparticipationStatusValidityPeriod.code">
       <path value="Observation.component.code"/>
     </element>
-    <element id="Observation.component:forecastStatusPeriod.value[x]">
+    <element id="Observation.component:forecastparticipationStatusValidityPeriod.value[x]">
       <path value="Observation.component.value[x]"/>
       <type>
         <code value="DateTime" />
