@@ -24,6 +24,16 @@
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema author"/>
   </mapping>
+  <mapping>
+    <identity value="CDA.informant"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema informant"/>
+  </mapping>
+  <mapping>
+    <identity value="CDA.informationRecipient"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema informationRecipient"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="PractitionerRole"/>
@@ -92,6 +102,14 @@
         <identity value="CDA.author"/>
         <map value="author"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informant"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier"/>
@@ -101,12 +119,28 @@
         <identity value="CDA.author"/>
         <map value="author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active"/>
       <fixedBoolean value="true"/>
       <mapping>
         <identity value="CDA.author"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -123,6 +157,14 @@
         <identity value="CDA.author"/>
         <map value="author.assignedAuthor.assignedPerson"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informant.assignedEntity.assignedPerson"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient.intendedRecipient.informationRecipient"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
@@ -137,6 +179,14 @@
         <identity value="CDA.author"/>
         <map value="author.assignedAuthor.representedOrganization"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informant.assignedEntity.representedOrganization"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient.intendedRecipient.receivedOrganization"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code"/>
@@ -145,12 +195,28 @@
         <identity value="CDA.author"/>
         <map value="author.assignedAuthor.code"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informant.assignedEntity.code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient.intendedRecipient.ext:code"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty"/>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -164,6 +230,14 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -181,6 +255,14 @@
         <identity value="CDA.author"/>
         <map value="TBD"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom"/>
@@ -188,6 +270,14 @@
       <mapping>
         <identity value="CDA.author"/>
         <map value="author.assignedAuthor.telecom"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informant"/>
+        <map value="informant.assignedEntity.telecom"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.informationRecipient"/>
+        <map value="informationRecipient.intendedRecipient.telecom"/>
       </mapping>
     </element>
   </differential>
