@@ -95,6 +95,21 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
     </tr>
     <tr>
+        <td><a href="StructureDefinition-dh-attachment-hl7-base64-1.html">ADHA Alternate HL7 Format as Attachment Base64 Encoded</a></td>
+        <td>dh-attachment-hl7-base64-1</td>
+        <td><a href="https://www.hl7.org/fhir/datatypes.html#Attachment">Attachment</a></td>
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-dh-hl7-v2-base64-1.html">ADHA HL7 V2 as Base64</a></td>
+        <td>dh-hl7-v2-base64-1</td>
+        <td><a href="https://www.hl7.org/fhir/datatypes.html#base64Binary">base64Binary</a></td>
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-dh-attachment-hl7-v2-base64-1.html">ADHA HL7 V2 as Attachment Base64 Encoded</a></td>
+        <td>dh-attachment-hl7-v2-base64-1</td>
+        <td><a href="https://www.hl7.org/fhir/datatypes.html#Attachment">Attachment</a></td>
+    </tr>
+    <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-record-status.html">IHI Record Status</a></td>
         <td>ihi-record-status</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>

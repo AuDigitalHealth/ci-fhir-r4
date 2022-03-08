@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-attachment-hl7-v2-base64-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-attachment-hl7-v2-base64-1"/>
+  <version value="0.0.1"/>
+  <name value="DHHL7V2AttachmentBase64"/>
+  <title value="ADHA HL7 V2 as Attachment Base64 Encoded"/>
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="This extension applies to the ServiceRequest resource and is provided for use in the MODI proof of concept. It is used to provide an alternate HL7 V2 format of the Order represented by the associated ServiceRequest as an attachment with data directly inline, base64 encoded." />
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element"/>
+    <expression value="ServiceRequest"/>
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="HL7 V2 message as an attachment, data inline, base64 encoded" />
+      <definition value="HL7 V2 message as an attachment with the actual content conveyed directly as data inline, base64 encoded." />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-attachment-hl7-v2-base64-1" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="Data inline, base64ed"/>
+      <definition value="The actual data of the HL7 V2 message - a sequence of bytes, base64 encoded."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Attachment"/>
+      </type>
+    </element>
+    <element id="Extension.value[x].contentType">
+      <path value="Extension.value[x].contentType"/>
+      <short value="message is a 'vertical bar' encoded HL7 v2.x message"/>
+      <min value="1"/>
+      <fixedCode value="x-application/hl7-v2+er7"/>
+    </element>
+    <element id="Extension.value[x].data">
+      <path value="Extension.value[x].data"/>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>
