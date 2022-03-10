@@ -1,4 +1,4 @@
-#### ADHA Consent Donation Decision
+#### ADHA Donation Decision
 This extension applies to any resource and represents an individual's decision about donation.
 
 This profile is used by the following APIs:
