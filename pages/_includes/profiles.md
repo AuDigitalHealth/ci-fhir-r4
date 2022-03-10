@@ -350,6 +350,7 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Prescription Record</li>
                                 <li>ADHA Record of Dispense</li>
                                 <li>ADHA Record of Immunization</li>
+                                <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Australian Immunisation Register Record of Immunisation</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
