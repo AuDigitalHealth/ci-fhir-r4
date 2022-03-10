@@ -83,10 +83,16 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>, and <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-initial-registration.html">Date of Initial Registration</a></td>
-        <td>date-initial-registration</td>
+        <td><a href="StructureDefinition-dh-date-initial-registration-1.html">Date of Initial Registration</a></td>
+        <td>dh-date-initial-registration-1</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-initial-registration.html">Organ or Tissue Donation Consent on AODR</a></td>
+        <td>Any</td>
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-dh-donation-decision-1.html">Donation Decision</a></td>
+        <td>date-initial-registration</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+        <td>Any</td>
     </tr>
       <tr>
         <td><a href="StructureDefinition-packed-in-daa-1.html">Dose Administration Aid Medicines Indicator</a></td>
@@ -174,5 +180,11 @@ The following extensions form part of this implementation guide:
         <td>no-fixed-address</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-dh-vaccine-serial-number-1.html">Vaccine Vial Serial Number</a></td>
+        <td>dh-vaccine-serial-number-1</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#strig">string</a></td>
+        <td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td>
     </tr>
 </table>
