@@ -37,6 +37,9 @@
         "txCache": "txCache"
     },
     "sct-edition": "http://snomed.info/sct/32506021000036107",
+    "special-urls": [
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"
+    ],
     "extraTemplates": [
         "mappings",
         "examples"
@@ -188,6 +191,10 @@
         "StructureDefinition/dh-device-system-1": {
             "base": "StructureDefinition-dh-device-system-1.html",
             "defns": "StructureDefinition-dh-device-system-1-definitions.html"
+        },
+        "StructureDefinition/dh-donation-decision-1": {
+            "base": "StructureDefinition-dh-donation-decision-1.html",
+            "defns": "StructureDefinition-dh-donation-decision-1-definitions.html"
         },
         "StructureDefinition/dh-diagnosticreport-core-1": {
             "base": "StructureDefinition-dh-diagnosticreport-core-1.html",
