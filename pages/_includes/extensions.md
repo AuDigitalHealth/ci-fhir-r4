@@ -76,11 +76,17 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a> </td>
     </tr>
-        <tr>
+     <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-of-arrival.html">Date of Arrival in Australia</a></td>
         <td>date-of-arrival</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>, and <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-initial-registration.html">Date of Initial Registration</a></td>
+        <td>date-initial-registration</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-initial-registration.html">Organ or Tissue Donation Consent on AODR</a></td>
     </tr>
       <tr>
         <td><a href="StructureDefinition-packed-in-daa-1.html">Dose Administration Aid Medicines Indicator</a></td>

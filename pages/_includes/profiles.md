@@ -42,6 +42,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                         <ul class="frm-set">
                                 <li>ADHA Core Provenance (TBD Architecture Team)</li>  
+                                <li>ADHA Core Consent</li>  
                             </ul>
                         </td> 
                         <td class="frm-set">
@@ -237,6 +238,8 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                         <ul class="frm-set">
                                 <li>Provenance profiles (TBD Architecture Team)</li>  
+                                <li>Provenance for Generation of a List</li>  
+                                <li>Organ or Tissue Donation Consent on AODR</li>
                                 <li>AuditEvent profiles (TBD Architecture Team)</li> 
                             </ul>
                         </td> 
@@ -339,6 +342,7 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Health Program Participation Observation (for transition to HL7 AU)</a></li>
                                 <li><a href="StructureDefinition-dh-observation-ncspp-1.html">National Cancer Screening Program Participation Observation</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Donatable Organ or Tissue BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
