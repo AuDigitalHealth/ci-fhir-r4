@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-explanationofbenefit-medicare-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+  <version value="0.0.1"/>
+  <name value="DHExplanationofBenefitMedicare"/>
+  <title value="ADHA Record of Claim against PBS, RPBS, or MBS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="This profile defines a record of the claim of an item claimed against the Pharmaceutical Benefits Schedule (PBS), Repatriation Pharmaceutical Benefits Scheme (RPBS), or Medicare Benefits Schedule (MBS) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ExplanationOfBenefit"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="ExplanationOfBenefit">
+      <path value="ExplanationOfBenefit"/>
+      <short value="Record of Claim against PBS, RPBS, or MBS"/>
+      <definition value="A record of the claim of an item claimed against the Pharmaceutical Benefits Schedule (PBS), Repatriation Pharmaceutical Benefits Scheme (RPBS), or Medicare Benefits Schedule (MBS). PBS claim items include information about pharmaceutical items prescribed and dispensed to an individual that were partially or fully funded under the PBS or Repatriation Pharmaceutical Benefits Scheme (RPBS). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by the Australian Government run benefits scheme."/>
+      <constraint>
+        <key value="inv-dh-eob-medicare-01"/>
+        <severity value="error"/>
+        <human value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-eob-medicare-02"/>
+        <severity value="error"/>
+        <human value="A PBS or RPBS claim SHALL include a prescription"/>
+        <expression value="(item.category.coding.code='pbs' or item.category.coding.code='rpbs') implies prescription.exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-eob-medicare-03"/>
+        <severity value="error"/>
+        <human value="A MBS or DVABS claim SHALL NOT include a prescription"/>
+        <expression value="(item.category.coding.code='mbs' or item.category.coding.code='dva') implies prescription.exists().not()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-eob-medicare-04"/>
+        <severity value="error"/>
+        <human value="One of subType or item.category SHALL be present"/>
+        <expression value="subType.exists() or item.category.exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-eob-medicare-05"/>
+        <severity value="error"/>
+        <human value="A PBS claim (subType='pbs') SHALL be of type 'pharmacy'"/>
+        <expression value="subType.coding.code='pbs' implies type.coding.code='pharmacy'"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+      </constraint>
+    </element>
+    <element id="ExplanationOfBenefit.identifier">
+      <path value="ExplanationOfBenefit.identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.status">
+      <path value="ExplanationOfBenefit.status"/>
+      <fixedCode value="active"/>
+    </element>
+    <element id="ExplanationOfBenefit.type">
+      <path value="ExplanationOfBenefit.type"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.subType">
+      <path value="ExplanationOfBenefit.subType"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1"/>
+      </binding>
+    </element>
+    <element id="ExplanationOfBenefit.use">
+      <path value="ExplanationOfBenefit.use"/>
+      <fixedCode value="claim"/>
+    </element>
+    <element id="ExplanationOfBenefit.patient">
+      <path value="ExplanationOfBenefit.patient"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.created">
+      <path value="ExplanationOfBenefit.created"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.insurer">
+      <path value="ExplanationOfBenefit.insurer"/>
+      <short value="Australian Government department that subsidises the benefits scheme"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+      </type>
+    </element>
+    <element id="ExplanationOfBenefit.provider">
+      <path value="ExplanationOfBenefit.provider"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.priority">
+      <path value="ExplanationOfBenefit.priority"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/process-priority"/>
+      </binding>
+    </element>
+    <element id="ExplanationOfBenefit.prescription">
+      <path value="ExplanationOfBenefit.prescription"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        <aggregation value="contained"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.referral">
+      <path value="ExplanationOfBenefit.referral"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <aggregation value="contained"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.item">
+      <path value="ExplanationOfBenefit.item"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.item.sequence">
+      <path value="ExplanationOfBenefit.item.sequence"/>
+      <fixedPositiveInt value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.item.category">
+      <path value="ExplanationOfBenefit.item.category"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1"/>
+      </binding>
+    </element>
+    <element id="ExplanationOfBenefit.item.productOrService">
+      <path value="ExplanationOfBenefit.item.productOrService"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/australian-dhs-modifications-pbs-mbs-dva-item-1"/>
+      </binding>
+    </element>
+    <element id="ExplanationOfBenefit.item.serviced[x]">
+      <path value="ExplanationOfBenefit.item.serviced[x]"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.item.quantity">
+      <path value="ExplanationOfBenefit.item.quantity"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

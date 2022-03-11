@@ -1,0 +1,26 @@
+#### Australian Digital Health Agency Record of Claim against PBS, RPBS, or MBS
+This profile defines a record of the claim of an item claimed against the Pharmaceutical Benefits Schedule (PBS), Repatriation Pharmaceutical Benefits Scheme (RPBS), or Medicare Benefits Schedule (MBS) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
+
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [ExplanationOfBenefit](http://hl7.org/fhir/R4/explanationofbenefit.html) that are supported. 
+
+This profile is designed to set a core ExplanationOfBenefit standard for:
+* Query for a record of a PBS item claim associated with a patient
+* Query for a record of an RPBS item claim associated with a patient
+* Query for a record of an MBS item claim associated with a patient
+* Record or update a PBS item claim associated with a patient
+* Record or update an RPBS item claim associated with a patient
+* Record or update an MBS item claim associated with a patient
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
+
+#### Guidance
+The following guidance applies:
+* TBD
+
+
+#### Boundaries and relationships
+This profile is referenced by 
+[TBD](StructureDefinition-TBD-1.html).
+
