@@ -158,7 +158,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <tr class="frm-group">
+                    <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
                         <td class="frm-category">Support</td>
                         <td class="frm-category">Billing</td>
@@ -170,13 +170,9 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-1.html">ADHA Record of Claim against PBS, RPBS, or MBS</a></li>
-                            </ul>
-                        </td>     
                         <td class="frm-null"/>
-                    </tr>
+                        <td class="frm-null"/>
+                    </tr>-->
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
@@ -352,6 +348,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Prescription Record</li>
+                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
                                 <li>ADHA Record of Dispense</li>
                                 <li>ADHA Record of Immunization</li>
                                 <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
@@ -365,7 +362,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
                         <td class="frm-category">Support</td>
                         <td class="frm-category">Billing</td>
@@ -377,9 +374,13 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-1.html">ADHA Record of Claim against PBS, RPBS, or MBS</a></li>
+                            </ul>
+                        </td>     
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
-                    </tr>-->
+                    </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
