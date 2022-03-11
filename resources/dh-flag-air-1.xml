@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-flag-air-1" />
+  <url value="http://ns.electronichealth.net.au/StructureDefinition/dh-flag-air-1" />
+  <version value="0.0.1" />
+  <name value="FlagAIRNotice" />
+  <title value="Australian Immunisation Register Notice" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a notice, such as an exemption record or notification of completion of an immunisation schedule, from the Australian Immunisation Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Flag" />
+  <baseDefinition value="http://ns.electronichealth.net.au/StructureDefinition/dh-flag-core-1" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Flag">
+      <path value="Flag" />
+      <short value="AIR notice" />
+      <definition value="Australian Immunisation Register notice such as an individual has an exemption record or has finished a National Immunisation Program schedule."/>
+    </element>
+    <element id="Flag.identifier">
+      <path value="Flag.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Flag.status">
+      <path value="Flag.status" />
+      <fixedCode value="active" />
+    </element>
+    <element id="Flag.category">
+      <path value="Flag.category" />
+      <short value="Australian Immunisation Register notice" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="1500551000168103" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Flag.subject">
+      <path value="Flag.subject"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+      </type>
+    </element>
+    <element id="Flag.author">
+      <path value="Flag.author" />
+      <short value="Australian Immunisation Register"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
