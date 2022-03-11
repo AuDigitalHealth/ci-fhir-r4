@@ -105,7 +105,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></li>
                                 <li>ADHA Core EpisodeOfCare</li>
-                                <li>ADHA Core Flag</li>
+                                <li><a href="StructureDefinition-dh-flag-core-1.html">ADHA Core Flag</a></li>
                                 <li><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></li>
                             </ul>
                         </td>  
@@ -350,7 +350,7 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Prescription Record</li>
                                 <li>ADHA Record of Dispense</li>
                                 <li>ADHA Record of Immunization</li>
-                                <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Australian Immunisation Register Record of Immunisation</a></li>
+                                <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
