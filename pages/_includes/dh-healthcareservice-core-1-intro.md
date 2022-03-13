@@ -14,4 +14,4 @@ The following guidance applies:
 #### Boundaries and relationships
 This profile is referenced by 
 [Australian Digital Health Agency Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), and 
-[TBD](StructureDefinition-TBD-1.html).
+[[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).

@@ -16,7 +16,5 @@ The following guidance applies:
 
 This profile is referenced by 
 [Australian Digital Health Agency Core Patient](StructureDefinition-dh-patient-core-1.html), 
-[Australian Digital Health Agency My Health Record Patient](StructureDefinition-dh-patient-mhr-1.html),
-[TBD](StructureDefinition-TBD-1.html), 
-[TBD](StructureDefinition-TBD-1.html) and
-[TBD](StructureDefinition-TBD-1.html).
+[Australian Digital Health Agency My Health Record Patient](StructureDefinition-dh-patient-mhr-1.html), and 
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
