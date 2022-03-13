@@ -152,7 +152,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Core CarePlan</li>
-                                <li>ADHA Core ServiceRequest</li>
+                                <li><a href="StructureDefinition-dh-servicerequest-core-1.html">ADHA Core ServiceRequest</a></li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>
