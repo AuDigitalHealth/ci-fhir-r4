@@ -19,9 +19,9 @@
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="CDA"/>
+    <identity value="CDA.procedure"/>
     <uri value="http://hl7.org/v3/cda"/>
-    <name value="CDA (R2)"/>
+    <name value="CDA (R2) procedure"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -39,8 +39,7 @@
         <expression
           value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-pro-02"/>
@@ -50,8 +49,7 @@
         <expression
           value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-pro-03"/>
@@ -61,77 +59,27 @@
         <expression
           value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </constraint>
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.procedure"/>
         <map value="procedure"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/@classCode='PROC'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/@moodCode='EVN'"/>
       </mapping>
     </element>
     <element id="Procedure.status">
       <path value="Procedure.status"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/statusCode"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="This CDA schema element is of type CodedSimpleValue (CS)."/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: Binding: - raise FTRs for R4 compliant value set, and concept maps"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD: Binding: - raise FTRs for R4 compliant value set, and concept maps"/>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Procedure.statusReason">
       <path value="Procedure.statusReason"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]/@typeCode='COMP'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]/observation"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]/observation/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]/observation/code/@code='TBD'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]/observation/code/@codeSystem='TBD'"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/entryRelationship[status_rsn]/observation/code/value"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="Binding: http://hl7.org/fhir/ValueSet/procedure-not-performed-reason (example)"
-        />
+        <identity value="CDA.procedure"/>
+        <map value="procedure.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Procedure.code">
@@ -143,14 +91,8 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1"/>
       </binding>
       <mapping>
-        <identity value="CDA"/>
-        <map value="procedure/code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Binding: https://healthterminologies.gov.au/fhir/ValueSet/procedure-1 (extensible)"
-        />
+        <identity value="CDA.procedure"/>
+        <map value="procedure.code"/>
       </mapping>
     </element>
     <element id="Procedure.subject">
@@ -162,8 +104,8 @@
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/recordTarget"/>
+        <identity value="CDA.procedure"/>
+        <map value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."/>
       </mapping>
     </element>
     <element id="Procedure.encounter">
@@ -171,21 +113,23 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"
-        />
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA"/>
+        <identity value="CDA.procedure"/>
         <map
-          value="TBD: map as an overall encounter (ClinicalDocument/inFulfillmentOf/encompassingEncounter), and as an episode of care encounter (procedure/entryRelationship/encounter)"
-        />
+          value="procedure.entryRelationship.encounter, or instantiated as an overall encounter ClinicalDocument.inFulfillmentOf.encompassingEncounter"/>
       </mapping>
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.effectiveTime"/>
+      </mapping>
     </element>
     <element id="Procedure.recorder">
       <path value="Procedure.recorder"/>
@@ -200,6 +144,10 @@
         />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.author"/>
+      </mapping>
     </element>
     <element id="Procedure.asserter">
       <path value="Procedure.asserter"/>
@@ -214,10 +162,18 @@
         />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.informant"/>
+      </mapping>
     </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="Procedure.reasonReference[x]">
       <path value="Procedure.reasonReference[x]"/>
@@ -234,6 +190,10 @@
         />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.reference"/>
+      </mapping>
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite"/>
@@ -242,10 +202,18 @@
         <strength value="extensible"/>
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
       </binding>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.targetSiteCode"/>
+      </mapping>
     </element>
     <element id="Procedure.note">
       <path value="Procedure.note"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.procedure"/>
+        <map value="procedure.entryRelationship.act"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
