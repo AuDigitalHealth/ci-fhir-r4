@@ -341,7 +341,7 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Pathology DiagnosticReport</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Health Program Participation Observation (for transition to HL7 AU)</a></li>
-                                <li><a href="StructureDefinition-dh-observation-ncspp-1.html">National Cancer Screening Program Participation Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Donatable Organ or Tissue BodyStructure</a></li>
                             </ul>
                         </td>     
