@@ -357,6 +357,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Referral</li>
+                                <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>

@@ -25,5 +25,5 @@ This profile is referenced by
 [ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).
 
 These profiles build on this profile ([ADHA Core ServiceRequest](StructureDefinition-dh-list-core-1.html)) to define specific service requests:
-* [ADHA TBD](StructureDefinition-dh-servicerequest-TBD-1.html)
+* [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html)
 
