@@ -6,6 +6,166 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-diagnostic-servicerequest"/>
     </meta>
     <contained>
+        <Patient>
+            <id value="hi-testdata-moss-cleo"/>
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+                <valueCoding>
+                    <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                    <code value="4"/>
+                    <display value="Neither Aboriginal nor Torres Strait Islander origin"/>
+                </valueCoding>
+            </extension>
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="NI"/>
+                        <display value="National unique individual identifier"/>
+                    </coding>
+                    <text value="IHI"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                <value value="8003608833564735"/>
+            </identifier>
+            <name>
+                <family value="Moss"/>
+                <given value="Cleo"/>
+                <suffix value="Esq."/>        
+            </name>
+            <telecom>
+                <system value="email"/>
+                <value value="moss@gmail.com"/>
+            </telecom>
+            <gender value="female"/>
+            <birthDate value="1965-08-23"/>
+            <address>
+                <use value="home"/>
+                <text value="138 Gateway Ct, CALDER, TAS, 7325"/>
+            </address>
+        </Patient>
+    </contained>
+    <contained>
+        <PractitionerRole>
+            <id value="algrester-greg-gp"/>  
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="EI"/>
+                        <display value="Employee number"/>
+                    </coding>
+                    <text value="Employee Number"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003621566699776" />
+                <value value="AMC-GA-001" />
+                <assigner>
+                    <display value="Algregster Medical Center QLD"/>
+                </assigner>
+            </identifier>
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="NPI"/>
+                        <display value="National provider identifier"/>
+                    </coding>
+                    <text value="HPI-I"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                <value value="8003614900041243"/>
+            </identifier>
+            <practitioner>
+                <reference value="#algrester-greg"/>
+            </practitioner> 
+            <organization>
+                <reference value="#algrester-medical-centre"/>
+            </organization>
+            <code>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="62247001"/>
+                </coding>
+                <text value="General Practitioner"/>
+            </code>
+            <telecom>
+                <system value="phone"/>
+                <value value="0491579760"/>
+            </telecom>
+            <telecom>
+                <system value="email"/>
+                <value value="drgreg@algregstermedical.example.com"/>        
+            </telecom>    
+        </PractitionerRole>
+    </contained>
+    <contained>
+        <Practitioner>
+            <id value="algrester-greg"/>
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="NPI"/>
+                        <display value="National provider identifier"/>
+                    </coding>
+                    <text value="HPI-I"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                <value value="8003614900041243"/>
+            </identifier>  
+            <name>        
+                <family value="Algrester" />
+                <given value="Greg" />
+                <prefix value="Dr."/>
+            </name>
+            <telecom>
+                <system value="email"/>
+                <value value="drgreg@algregstermedical.example.com"/>
+            </telecom> 
+        </Practitioner>
+    </contained>
+    <contained>
+        <Organization xmlns="http://hl7.org/fhir">
+            <id value="algrester-medical-centre"/>
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                        <code value="NOI"/>
+                    </coding>
+                    <text value="HPI-O"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+                <value value="8003614900041243"/>
+            </identifier>
+            <type>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="288565001"/>
+                    <display value="Medical centre"/>
+                </coding>
+                <text value="Medical Centre"/>
+            </type>
+            <name value="Algregster Medical Centre"/>
+            <telecom>
+                <system value="email"/>
+                <value value="info@algregstermedical.example.com"/>
+                <use value="work"/>
+            </telecom>
+            <telecom>
+                <system value="phone"/>
+                <value value="(07) 5550 2427"/>
+                <use value="work"/>
+            </telecom>
+            <address>        
+                <line value="87 Western Esp"/>
+                <city value="Tindal RAAF"/>
+                <state value="QLD"/>
+                <postalCode value="4655"/>
+                <country value="AU"/>
+            </address>
+        </Organization>
+    </contained>
+    <contained>
         <BodyStructure>
             <id value="right-knee"/>
             <location>
@@ -23,7 +183,7 @@
                 </coding>
             </locationQualifier>
             <patient>
-                <reference value="Patient/hi-testdata-moss-cleo"/>
+                <reference value="#hi-testdata-moss-cleo"/>
             </patient>
         </BodyStructure>
     </contained>
@@ -32,6 +192,21 @@
             <reference value="#right-knee"/>
         </valueReference>
     </extension>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="PLAC"/>
+                <display value="Placer Identifier"/>
+            </coding>
+            <text value="Placer Order Identifier"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003614900041243"/>
+        <value value="L7J555N"/>
+        <assigner>
+            <display value ="Algregster Medical Centre"/>
+        </assigner>
+    </identifier>
     <status value="revoked"/>
     <intent value="order"/>
     <category>
@@ -57,10 +232,10 @@
         <text value="CT of Right Knee with Contrast"/>
     </code>
     <subject>
-        <reference value="Patient/hi-testdata-moss-cleo"/>
+        <reference value="#hi-testdata-moss-cleo"/>
     </subject>
     <authoredOn value="2021-10-10T06:25:00+10:00"/>
     <requester>
-        <reference value="PractitionerRole/algrester-greg-gp"/>
+        <reference value="#algrester-greg-gp"/>
     </requester>
 </ServiceRequest>
