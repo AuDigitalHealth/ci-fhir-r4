@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://hl7.org/fhir">
+    <id value="order-lk-xray-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-diagnostic-servicerequest"/>
+    </meta>
+    <contained>
+        <BodyStructure>
+            <id value="left-knee"/>
+            <location>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="72696002"/>
+                    <display value="Knee region structure"/>
+                </coding>
+            </location>
+            <locationQualifier>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="7771000"/>
+                    <display value="Left"/>
+                </coding>
+            </locationQualifier>
+            <patient>
+                <reference value="Patient/hi-testdata-moss-cleo"/>
+            </patient>
+        </BodyStructure>
+    </contained>
+    <extension url="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure">
+        <valueReference>
+            <reference value="#left-knee"/>
+        </valueReference>
+    </extension>
+    <status value="completed"/>
+    <intent value="order"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="363679005"/>
+            <display value="Imaging"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="312254007"/>
+            <display value="Plain X-ray imaging - action"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="427019001"/>
+            <display value="X-ray of left knee"/>
+        </coding>
+        <text value="Left Knee X-Ray"/>
+    </code>
+    <subject>
+        <reference value="Patient/hi-testdata-moss-cleo"/>
+    </subject>
+    <authoredOn value="2022-03-10T11:15:00+10:00"/>
+    <requester>
+        <reference value="PractitionerRole/algrester-greg-gp"/>
+    </requester>
+</ServiceRequest>

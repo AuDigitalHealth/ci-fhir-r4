@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://hl7.org/fhir">
+    <id value="order-chest-ct-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-diagnostic-servicerequest"/>
+    </meta>
+    <status value="revoked"/>
+    <intent value="order"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="363679005"/>
+            <display value="Imaging"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="312251004"/>
+            <display value="Computed tomography imaging - action"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="169069000"/>
+            <display value="CT of chest"/>
+        </coding>
+        <text value="Chest CT"/>
+    </code>
+    <subject>
+        <reference value="Patient/mhr-tjakamarra-billy"/>
+    </subject>
+    <authoredOn value="2022-01-10T08:15:00+10:00"/>
+    <requester>
+        <reference value="PractitionerRole/strempel-sonia-gp"/>
+    </requester>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="816094009"/>
+            <display value="Structure of thoracic cross-sectional segment of trunk"/>
+        </coding>
+    </bodySite>
+</ServiceRequest>

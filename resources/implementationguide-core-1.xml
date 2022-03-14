@@ -594,6 +594,21 @@
             <name value="No known allergy for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
         </resource>
+        <!--BODYSTRUCTURE EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="BodyStructure/left-knee"/>
+            </reference>
+            <name value="Left Knee of Cleo Moss Esq."/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/right-knee"/>
+            </reference>
+            <name value="Right Knee of Cleo Moss Esq."/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
+        </resource>
         <!--CONDITION EXAMPLES-->
         <resource>
             <reference>
@@ -1649,6 +1664,28 @@
             </reference>
             <name value="Dr. Patricia Tulio, Pathologist, at Metropolitan Laboratories Sydney"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        <!--SERVICEREQUEST EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-lk-xray-01"/>
+            </reference>
+            <name value="Left Knee X-Ray for Cleo Moss Esq. (2022)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-rk-ct-contrast-01"/>
+            </reference>
+            <name value="CT of Right Knee with Contrast for Cleo Moss Esq. (2022)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-chest-ct-01"/>
+            </reference>
+            <name value="Chest CT for Billy Tjakamarra (2022)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
         </resource>
         <!--SPECIMEN EXAMPLES-->
         <resource>
