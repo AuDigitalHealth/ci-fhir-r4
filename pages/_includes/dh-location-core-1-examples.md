@@ -12,6 +12,13 @@
       <td><a href="Location-patient-home-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Location-algrester-medical-centre.html">Gregory Tindal Building of Algregster Medical Centre</a></td>
+      <td>algrester-medical-centre</td>
+      <td><a href="Location-algrester-medical-centre.xml.html">XML</a></td>
+      <td><a href="Location-algrester-medical-centre.json.html">JSON</a></td>
+      <td><a href="Location-algrester-medical-centre.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Location-hi-testdata-dental.html">Provider's Office of Test Org -DigitalHealth 5</a></td>
       <td>hi-testdata-dental</td>
       <td><a href="Location-hi-testdata-dental.xml.html">XML</a></td>
@@ -33,6 +40,27 @@
       <td><a href="Location-hi-testdata-racs.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Location-metro-qld-path-lab.html">Building of Metropolitan Pathology QLD DOOMBEN</a></td>
+      <td>metro-qld-path-lab</td>
+      <td><a href="Location-metro-qld-path-lab.xml.html">XML</a></td>
+      <td><a href="Location-metro-qld-path-lab.json.html">JSON</a></td>
+      <td><a href="Location-metro-qld-path-lab.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-metro-nsw-path-lab.html">Building of Metropolitan Laboratories Sydney Randwick</a></td>
+      <td>metro-nsw-path-lab</td>
+      <td><a href="Location-metro-nsw-path-lab.xml.html">XML</a></td>
+      <td><a href="Location-metro-nsw-path-lab.json.html">JSON</a></td>
+      <td><a href="Location-metro-nsw-path-lab.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-private-vic-path-lab.html">Building of Flemington Private VIC Pathology</a></td>
+      <td>private-vic-path-lab</td>
+      <td><a href="Location-private-vic-path-lab.xml.html">XML</a></td>
+      <td><a href="Location-private-vic-path-lab.json.html">JSON</a></td>
+      <td><a href="Location-private-vic-path-lab.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Location-nsw-hospital.html">Site of NSW Hospital</a></td>
       <td>nsw-hospital</td>
       <td><a href="Location-nsw-hospital.xml.html">XML</a></td>
@@ -47,6 +75,13 @@
       <td><a href="Location-nsw-hospital-er.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Location-nsw-hospital-pharmacy-in.html">Pharmacy NSW Hospital - North Building A of NSW Hospital</a></td>
+      <td>nsw-hospital-pharmacy-in</td>
+      <td><a href="Location-nsw-hospital-pharmacy-in.xml.html">XML</a></td>
+      <td><a href="Location-nsw-hospital-pharmacy-in.json.html">JSON</a></td>
+      <td><a href="Location-nsw-hospital-pharmacy-in.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Location-qld-hospital.html">Site of QLD Hospital</a></td>
       <td>qld-hospital</td>
       <td><a href="Location-qld-hospital.xml.html">XML</a></td>
@@ -59,6 +94,20 @@
       <td><a href="Location-qld-hospital-er.xml.html">XML</a></td>
       <td><a href="Location-qld-hospital-er.json.html">JSON</a></td>
       <td><a href="Location-qld-hospital-er.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-qld-hospital-pharmacy-in.html">Pharmacy - QLD Hospital - Building 31 of QLD Hospital</a></td>
+      <td>qld-hospital-pharmacy-in</td>
+      <td><a href="Location-qld-hospital-pharmacy-in.xml.html">XML</a></td>
+      <td><a href="Location-qld-hospital-pharmacy-in.json.html">JSON</a></td>
+      <td><a href="Location-qld-hospital-pharmacy-in.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-qld-hospital-pharmacy-out.html">Friends Pharmacy - QLD Hospital - Suite 14, Building 31 of QLD Hospital</a></td>
+      <td>qld-hospital-pharmacy-out</td>
+      <td><a href="Location-qld-hospital-pharmacy-out.xml.html">XML</a></td>
+      <td><a href="Location-qld-hospital-pharmacy-out.json.html">JSON</a></td>
+      <td><a href="Location-qld-hospital-pharmacy-out.ttl.html">Turtle</a></td>
    </tr>
    <!--<tr>
       <td colspan="5">Bundle examples:</td>
