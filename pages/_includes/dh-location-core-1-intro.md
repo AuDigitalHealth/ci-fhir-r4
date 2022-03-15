@@ -15,6 +15,7 @@ The following guidance applies:
 This profile is referenced by 
 [ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
+[ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
 [ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), and

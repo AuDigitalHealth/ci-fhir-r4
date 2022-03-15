@@ -31,6 +31,7 @@ The guidance below clarifies the representation of medicine information where Me
 
 #### Boundaries and relationships
 This profile is referenced by 
+[ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html),
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html),
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),

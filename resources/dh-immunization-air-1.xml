@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-immunization-air-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1" />
+  <version value="o.0.1"/>
+  <name value="DHImmunizationAIR" />
+  <title value="ADHA Record of Immunisation from Australian Immunisation Register" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to represent a record of immunisation held by the Australian Immunisation Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Immunization" />
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Immunization">   
+      <path value="Immunization"/>
+      <short value="Record of immunisation event held on the Australian Immunisation Register"/>
+      <definition value="Describes the event of a patient being administered a vaccine or a record of an immunization as held on the Australian Immunisation Register"/>
+    </element>
+    <element id="Immunization.identifier">
+      <path value="Immunization.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <fixedCode value="completed" />
+    </element>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode" />
+    </element>
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.occurrence[x]">
+      <path value="Immunization.occurrence[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Immunization.primarySource">
+      <path value="Immunization.primarySource" />
+      <min value="1" />
+      <fixedBoolean value="true" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.lotNumber">
+      <path value="Immunization.lotNumber" />
+      <short value="Batch number" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied">
+      <path value="Immunization.protocolApplied" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease">
+      <path value="Immunization.protocolApplied.targetDisease" />
+      <short value="Antigen" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -8,6 +8,7 @@
             "examples",
             "examples/AllergyIntolerance",
             "examples/Binary",
+            "examples/BodyStructure",
             "examples/Bundle",
             "examples/Composition",
             "examples/Condition",
@@ -38,7 +39,9 @@
     },
     "sct-edition": "http://snomed.info/sct/32506021000036107",
     "special-urls": [
-        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration",
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision",
+        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1"
     ],
     "extraTemplates": [
         "mappings",
@@ -87,6 +90,10 @@
         "StructureDefinition/dh-bodystructure-core-1": {
             "base": "StructureDefinition-dh-bodystructure-core-1.html",
             "defns": "StructureDefinition-dh-bodystructure-core-1-definitions.html"
+        },
+        "StructureDefinition/dh-bodystructure-odr-1": {
+            "base": "StructureDefinition-dh-bodystructure-odr-1.html",
+            "defns": "StructureDefinition-dh-bodystructure-odr-1-definitions.html"
         },
         "StructureDefinition/dh-composition-acts-1": {
             "base": "StructureDefinition-dh-composition-acts-1.html",
@@ -163,7 +170,7 @@
         "StructureDefinition/dh-composition-phs-1": {
             "base": "StructureDefinition-dh-composition-phs-1.html",
             "defns": "StructureDefinition-dh-composition-phs-1-definitions.html"
-       },
+        },
         "StructureDefinition/dh-composition-pdl-1": {
             "base": "StructureDefinition-dh-composition-pdl-1.html",
             "defns": "StructureDefinition-dh-composition-pdl-1-definitions.html"
@@ -208,10 +215,22 @@
             "base": "StructureDefinition-dh-encounter-core-1.html",
             "defns": "StructureDefinition-dh-encounter-core-1-definitions.html"
         },
+        "StructureDefinition/dh-explanationofbenefit-medicare-1": {
+            "base": "StructureDefinition-dh-explanationofbenefit-medicare-1.html",
+            "defns": "StructureDefinition-dh-explanationofbenefit-medicare-1-definitions.html"
+        },
+        "StructureDefinition/dh-flag-air-1": {
+            "base": "StructureDefinition-dh-flag-air-1.html",
+            "defns": "StructureDefinition-dh-flag-air-1-definitions.html"
+        },
+        "StructureDefinition/dh-flag-core-1": {
+            "base": "StructureDefinition-dh-flag-core-1.html",
+            "defns": "StructureDefinition-dh-flag-core-1-definitions.html"
+        },
         "StructureDefinition/dh-healthcareservice-core-1": {
             "base": "StructureDefinition-dh-healthcareservice-core-1.html",
             "defns": "StructureDefinition-dh-healthcareservice-core-1-definitions.html"
-       },
+        },
         "StructureDefinition/dh-attachment-hl7-base64-1": {
             "base": "StructureDefinition-dh-attachment-hl7-base64-1.html",
             "defns": "StructureDefinition-dh-attachment-hl7-base64-1-definitions.html"
@@ -223,6 +242,10 @@
         "StructureDefinition/dh-attachment-hl7-v2-base64-1": {
             "base": "StructureDefinition-dh-attachment-hl7-v2-base64-1.html",
             "defns": "StructureDefinition-dh-attachment-hl7-v2-base64-1-definitions.html"
+        },
+        "StructureDefinition/dh-immunization-air-1": {
+            "base": "StructureDefinition-dh-immunization-air-1.html",
+            "defns": "StructureDefinition-dh-immunization-air-1-definitions.html"
         },
         "StructureDefinition/dh-immunization-core-1": {
             "base": "StructureDefinition-dh-immunization-core-1.html",
@@ -239,7 +262,7 @@
         "StructureDefinition/dh-list-immunization-1": {
             "base": "StructureDefinition-dh-list-immunization-1.html",
             "defns": "StructureDefinition-dh-list-immunization-1-definitions.html"
-         },
+        },
         "StructureDefinition/dh-list-medication-pdl-1": {
             "base": "StructureDefinition-dh-list-medication-pdl-1.html",
             "defns": "StructureDefinition-dh-list-medication-pdl-1-definitions.html"
@@ -264,13 +287,17 @@
             "base": "StructureDefinition-dh-medicationdispense-core-1.html",
             "defns": "StructureDefinition-dh-medicationdispense-core-1-definitions.html"
         },
-        "StructureDefinition/dh-medicationstatement-core-1": {
-            "base": "StructureDefinition-dh-medicationstatement-core-1.html",
-            "defns": "StructureDefinition-dh-medicationstatement-core-1-definitions.html"
+        "StructureDefinition/dh-medicationrequest-pbs-claim-1": {
+            "base": "StructureDefinition-dh-medicationrequest-pbs-claim-1.html",
+            "defns": "StructureDefinition-dh-medicationrequest-pbs-claim-1-definitions.html"
         },
         "StructureDefinition/dh-medicationrequest-core-1": {
             "base": "StructureDefinition-dh-medicationrequest-core-1.html",
             "defns": "StructureDefinition-dh-medicationrequest-core-1-definitions.html"
+        },
+        "StructureDefinition/dh-medicationstatement-core-1": {
+            "base": "StructureDefinition-dh-medicationstatement-core-1.html",
+            "defns": "StructureDefinition-dh-medicationstatement-core-1-definitions.html"
         },
         "StructureDefinition/dh-organization-core-1": {
             "base": "StructureDefinition-dh-organization-core-1.html",
@@ -352,13 +379,25 @@
             "base": "StructureDefinition-dh-relatedperson-mhr-1.html",
             "defns": "StructureDefinition-dh-relatedperson-mhr-1-definitions.html"
         },
-        "StructureDefinition/dh-substance-core-1": {
-            "base": "StructureDefinition-dh-substance-core-1.html",
-            "defns": "StructureDefinition-dh-substance-core-1-definitions.html"
+        "StructureDefinition/dh-servicerequest-core-1": {
+            "base": "StructureDefinition-dh-servicerequest-core-1.html",
+            "defns": "StructureDefinition-dh-servicerequest-core-1-definitions.html"
+        },
+        "StructureDefinition/dh-servicerequest-mbs-claim-1": {
+            "base": "StructureDefinition-dh-servicerequest-mbs-claim-1.html",
+            "defns": "StructureDefinition-dh-servicerequest-mbs-claim-1-definitions.html"
         },
         "StructureDefinition/dh-specimen-core-1": {
             "base": "StructureDefinition-dh-specimen-core-1.html",
             "defns": "StructureDefinition-dh-specimen-core-1-definitions.html"
+        },
+        "StructureDefinition/dh-substance-core-1": {
+            "base": "StructureDefinition-dh-substance-core-1.html",
+            "defns": "StructureDefinition-dh-substance-core-1-definitions.html"
+        },
+        "StructureDefinition/dh-vaccine-serial-number-1": {
+            "base": "StructureDefinition-dh-vaccine-serial-number-1.html",
+            "defns": "StructureDefinition-dh-vaccine-serial-number-1-definitions.html"
         }
     }
 }

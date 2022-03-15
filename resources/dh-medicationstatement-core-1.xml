@@ -51,6 +51,12 @@
     </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+      </type>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>

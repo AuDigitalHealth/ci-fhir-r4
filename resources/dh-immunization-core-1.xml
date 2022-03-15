@@ -33,6 +33,30 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
       </constraint>
     </element>
+    <element id="Immunization.extension">
+      <path value="Immunization.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Immunization.extension:vaccine-serial-number">
+      <path value="Immunization.extension"/>
+      <sliceName value="vaccine-serial-number"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/vaccine-serial-number-1"/>
+      </type>
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.identifier">
+      <path value="Immunization.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="Immunization.status">
       <path value="Immunization.status" />
       <mustSupport value="true" />

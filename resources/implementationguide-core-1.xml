@@ -41,6 +41,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-bodystructure-odr-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Donatable Organ or Tissue BodyStructure"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-bundle-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core Bundle"/>
@@ -265,6 +272,27 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Record of Claim against PBS, RPBS, or MBS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-flag-air-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Australian Immunisation Register Notice"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-flag-core-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Core Flag"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-healthcareservice-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core HealthcareService"/>
@@ -289,6 +317,13 @@
                 <reference value="StructureDefinition/dh-attachment-hl7-v2-base64-1"/>
             </reference>
             <name value="ADHA HL7 V2 as Attachment Base64 Encoded"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-immunization-air-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Record of Immunisation from Australian Immunisation Register"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -373,6 +408,13 @@
                 <reference value="StructureDefinition/dh-medicationrequest-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core MedicationRequest"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency PBS Prescription Claim Item"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -503,9 +545,16 @@
         </resource> 
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-substance-core-1"/>
+                <reference value="StructureDefinition/dh-servicerequest-core-1"/>
             </reference>
-            <name value="Australian Digital Health Agency Core Substance"/>
+            <name value="Australian Digital Health Agency Core ServiceRequest"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-servicerequest-mbs-claim-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency MBS Service Claim Item"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -513,6 +562,20 @@
                 <reference value="StructureDefinition/dh-specimen-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core Specimen"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-substance-core-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Core Substance"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-vaccine-serial-number-1"/>
+            </reference>
+            <name value="Vaccine Vial Serial Number"/>
             <exampleBoolean value="false"/>
         </resource>
         <!--EXAMPLES-->
@@ -530,6 +593,21 @@
             </reference>
             <name value="No known allergy for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+        </resource>
+        <!--BODYSTRUCTURE EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="BodyStructure/left-knee"/>
+            </reference>
+            <name value="Left Knee of Cleo Moss Esq."/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/right-knee"/>
+            </reference>
+            <name value="Right Knee of Cleo Moss Esq."/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
         </resource>
         <!--CONDITION EXAMPLES-->
         <resource>
@@ -1586,6 +1664,28 @@
             </reference>
             <name value="Dr. Patricia Tulio, Pathologist, at Metropolitan Laboratories Sydney"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        <!--SERVICEREQUEST EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-lk-xray-01"/>
+            </reference>
+            <name value="Completed order for Left Knee X-Ray for Cleo Moss Esq. (2022)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-rk-ct-contrast-01"/>
+            </reference>
+            <name value="Revoked order for CT of Right Knee with Contrast for Cleo Moss Esq. (2021)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/order-chest-ct-01"/>
+            </reference>
+            <name value="Active order for Chest CT for Billy Tjakamarra (2022)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
         </resource>
         <!--SPECIMEN EXAMPLES-->
         <resource>

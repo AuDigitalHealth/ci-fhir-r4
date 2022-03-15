@@ -118,5 +118,6 @@ This profile is referenced by
 [ADHA National Cancer Screening Program Participation Observation](StructureDefinition-dh-observation-ncspp-1.html), 
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
-[ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html), and 
+[ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html),  
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and 
 [ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-bodystructure-odr-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1" />
+  <version value="0.0.1" />
+  <name value="DHBodyStructureODR" />
+  <title value="ADHA Donatable Organ or Tissue BodyStructure" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual's death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="BodyStructure" />
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="BodyStructure">
+      <path value="BodyStructure" />
+    </element>
+    <element id="BodyStructure.location">
+      <path value="BodyStructure.location" />
+      <short value="Donateable organ or tissue"/>
+      <min value="1"/>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

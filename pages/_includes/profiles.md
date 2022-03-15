@@ -42,6 +42,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                         <ul class="frm-set">
                                 <li>ADHA Core Provenance (TBD Architecture Team)</li>  
+                                <li>ADHA Core Consent</li>  
                             </ul>
                         </td> 
                         <td class="frm-set">
@@ -104,7 +105,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></li>
                                 <li>ADHA Core EpisodeOfCare</li>
-                                <li>ADHA Core Flag</li>
+                                <li><a href="StructureDefinition-dh-flag-core-1.html">ADHA Core Flag</a></li>
                                 <li><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></li>
                             </ul>
                         </td>  
@@ -151,7 +152,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Core CarePlan</li>
-                                <li>ADHA Core ServiceRequest</li>
+                                <li><a href="StructureDefinition-dh-servicerequest-core-1.html">ADHA Core ServiceRequest</a></li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>
@@ -237,6 +238,8 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                         <ul class="frm-set">
                                 <li>Provenance profiles (TBD Architecture Team)</li>  
+                                <li>Provenance for Generation of a List</li>  
+                                <li>Organ or Tissue Donation Consent on AODR</li>
                                 <li>AuditEvent profiles (TBD Architecture Team)</li> 
                             </ul>
                         </td> 
@@ -338,25 +341,29 @@ Core FHIR profiles defined in this implementation guide.
                                 <li>ADHA Pathology DiagnosticReport</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Health Program Participation Observation (for transition to HL7 AU)</a></li>
-                                <li><a href="StructureDefinition-dh-observation-ncspp-1.html">National Cancer Screening Program Participation Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Donatable Organ or Tissue BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Prescription Record</li>
+                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
                                 <li>ADHA Record of Dispense</li>
                                 <li>ADHA Record of Immunization</li>
+                                <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Referral</li>
+                                <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
                         <td class="frm-category">Support</td>
                         <td class="frm-category">Billing</td>
@@ -368,9 +375,13 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-1.html">ADHA Record of Claim against PBS, RPBS, or MBS</a></li>
+                            </ul>
+                        </td>     
                         <td class="frm-null"/>
-                        <td class="frm-null"/>
-                    </tr>-->
+                    </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <!--<tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
