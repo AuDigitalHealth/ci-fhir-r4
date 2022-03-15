@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+    <id value="patient-home-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+    </meta>
+    <status value="active"/>
+    <name value="Patient's home"/> 
+    <mode value="kind"/>
+    <type> 
+        <coding> 
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/> 
+            <code value="PTRES"/> 
+            <display value="Patient's Residence"/> 
+        </coding> 
+    </type> 
+    <physicalType> 
+        <coding> 
+            <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/> 
+            <code value="ho"/> 
+            <display value="House"/> 
+        </coding> 
+    </physicalType>
+</Location>
