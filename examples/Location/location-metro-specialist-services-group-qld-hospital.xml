@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+    <id value="metro-specialist-services-group-qld-hospital"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+    </meta>
+    <status value="active"/>
+    <name value="Metropolitan Specialist Services Group QLD Hospital"/>
+    <mode value="instance"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="GIDX"/>
+            <display value="Gastroenterology diagnostics or therapeutics lab"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="702859005"/>
+            <display value="Gastroenterology clinic"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="CVDX"/>
+            <display value="Cardiovascular diagnostics or therapeutics unit"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="185920002"/>
+            <display value="Cardiovascular clinic"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="RADDX"/>
+            <display value="Radiology diagnostics or therapeutics unit"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="185920002"/>
+            <display value="Cardiovascular clinic"/>
+        </coding>
+    </type>
+    <telecom>
+        <system value="email"/>
+        <value value="info@metrospeicalistservicesgroup.example.com"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="(07) 5550 2637"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="fax"/>
+        <value value="(07) 5550 2638"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <line value="Suite 52, Ground Level, Building 33"/>
+        <line value="54301 Stanley St"/>
+        <city value="South Brisbane"/>
+        <state value="QLD"/>
+        <postalCode value="4101"/>
+        <country value="AU"/>
+    </address>
+    <managingOrganization>
+        <reference value="Organization/metro-specialist-services-group"/>
+    </managingOrganization>
+    <partOf>
+        <reference value="Location/qld-hospital"/>
+    </partOf>
+</Location>
