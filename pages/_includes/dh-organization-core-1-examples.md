@@ -19,6 +19,13 @@
       <td><a href="Organization-adha.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Organization-large-allied-chemists.html">Large Allied Chemists Limited</a></td>
+      <td>large-allied-chemists</td>
+      <td><a href="Organization-large-allied-chemists.xml.html">XML</a></td>
+      <td><a href="Organization-large-allied-chemists.json.html">JSON</a></td>
+      <td><a href="Organization-large-allied-chemists.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Organization-medicare-rs.html">Medicare Australia repository services operator</a></td>
       <td>medicare-rs</td>
       <td><a href="Organization-medicare-rs.xml.html">XML</a></td>

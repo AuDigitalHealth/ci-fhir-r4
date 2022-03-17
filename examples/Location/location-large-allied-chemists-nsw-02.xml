@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+    <id value="large-allied-chemists-nsw-02"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+    </meta>
+    <status value="active"/>
+    <name value="Large Allied Chemists Limited Bondi Junction NSW"/>
+    <mode value="instance"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="PHARM"/>
+            <display value="Pharmacy"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="846609000"/>
+            <display value="Community pharmacy"/>
+        </coding>
+    </type>
+    <telecom>
+        <system value="email"/>
+        <value value="info@largealliedchemists.example.com"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <line value="3004 Bronte Road"/>
+        <city value="Bondi Junction"/>
+        <state value="NSW"/>
+        <postalCode value="2022"/>
+        <country value="AU"/>
+    </address>
+    <managingOrganization>
+        <reference value="Organization/large-allied-chemists"/>
+    </managingOrganization>
+</Location>
