@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+    <id value="metro-specialist-services-group"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+    </meta>
+    <status value="active"/>
+    <name value="Metropolitan Specialist Services Group Head Office"/>
+    <mode value="instance"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="257649000"/>
+            <display value="Office"/>
+        </coding>
+    </type>
+    <telecom>
+        <system value="email"/>
+        <value value="info@metrospeicalistservicesgroup.example.com"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="(07) 5550 2537"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="fax"/>
+        <value value="(07) 5550 2538"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <line value="Suite 13, Ashley Centre"/>
+        <line value="1A Ashley Lane"/>
+        <city value="ORBIT"/>
+        <state value="NSW"/>
+        <postalCode value="2060"/>
+        <country value="AU"/>
+    </address>
+    <managingOrganization>
+        <reference value="Organization/metro-specialist-services-group"/>
+    </managingOrganization>
+</Location>

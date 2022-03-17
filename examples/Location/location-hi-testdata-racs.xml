@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Associated with Organization that is compliant with HI Test Data in Vendor Environment-->
+<Location xmlns="http://hl7.org/fhir">
+    <id value="hi-testdata-racs"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+    </meta>
+    <mode value="instance"/>
+    <type>
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="257652008"/> 
+            <display value="Aged care facility"/> 
+        </coding>
+    </type>
+    <address>
+        <use value="work"/>
+        <type value="physical"/>
+        <line value="12 Hoseason St"/>
+        <city value="FREMANTLE"/>
+        <state value="WA"/>
+        <postalCode value="6160"/>
+        <country value="AU"/>
+    </address>
+    <physicalType>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+            <code value="si"/>
+            <display value="Site"/>
+        </coding>
+    </physicalType>
+</Location>

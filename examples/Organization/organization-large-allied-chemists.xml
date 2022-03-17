@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="large-allied-chemists"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="XX"/>
+            </coding>
+            <text value="ABN"/>
+        </type>
+        <system value="http://hl7.org.au/id/abn"/>
+        <!-- Not a valid ABN. This example uses a fictional
+        ABN that does not conform to ABN format to ensure no conflict with real world values -->
+        <value value="17000773547"/>
+    </identifier>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="264372000"/>
+            <display value="Pharmacy"/>
+        </coding>
+    </type>
+    <name value="Large Allied Chemists Limited"/>
+    <alias value="LACL Pharmacies"/>
+    <telecom>
+        <system value="email"/>
+        <value value="info@largealliedchemists.example.com"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <type value="postal"/>
+        <line value="GPO BOX 177897Q"/>
+        <city value="MACKAY"/>
+        <state value="VIC"/>
+        <postalCode value="3168"/>
+        <country value="AU"/>
+    </address>
+    <contact>
+        <purpose>
+            <coding>
+                <system value="http://terminology.hl7.org.au/CodeSystem/contact-purpose"/>
+                <code value="privacy"/>
+                <display value="Privacy"/>
+            </coding>
+            <text value="privacy enquiries"/>
+        </purpose>
+        <telecom>
+            <system value="email"/>
+            <value value="privacy@largealliedchemists.example.com"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+    <contact>
+        <purpose>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/contactentity-type"/>
+                <code value="PATINF"/>
+                <display value="Patient"/>
+            </coding>
+            <text value="general customer enquiries"/>
+        </purpose>
+        <telecom>
+            <system value="email"/>
+            <value value="service@largealliedchemists.example.com"/>
+            <use value="work"/>
+        </telecom>
+        <telecom>
+            <system value="phone"/>
+            <value value="1300 975 710"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+</Organization>
