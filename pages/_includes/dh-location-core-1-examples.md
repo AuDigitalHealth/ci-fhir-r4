@@ -68,6 +68,48 @@
       <td><a href="Location-large-allied-chemists-qld-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Location-large-racs-nsw-01.html">LARCSG Care Randwick NSW</a></td>
+      <td>large-racs-nsw-01</td>
+      <td><a href="Location-large-racs-nsw-01.xml.html">XML</a></td>
+      <td><a href="Location-large-racs-nsw-01.json.html">JSON</a></td>
+      <td><a href="Location-large-racs-nsw-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-large-racs-nsw-02.html">LARCSG Care Bondi Junction NSW</a></td>
+      <td>large-racs-nsw-02</td>
+      <td><a href="Location-large-racs-nsw-02.xml.html">XML</a></td>
+      <td><a href="Location-large-racs-nsw-02.json.html">JSON</a></td>
+      <td><a href="Location-large-racs-nsw-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-large-racs-nsw-03.html">LARCSG Care Tamworth NSW</a></td>
+      <td>large-racs-nsw-03</td>
+      <td><a href="Location-large-racs-nsw-03.xml.html">XML</a></td>
+      <td><a href="Location-large-racs-nsw-03.json.html">JSON</a></td>
+      <td><a href="Location-large-racs-nsw-03.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-large-racs-qld-01.html">LARCSG Care Sunnybank QLD</a></td>
+      <td>large-racs-qld-01</td>
+      <td><a href="Location-large-racs-qld-01.xml.html">XML</a></td>
+      <td><a href="Location-large-racs-qld-01.json.html">JSON</a></td>
+      <td><a href="Location-large-racs-qld-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-large-racs-qld-02.html">LARCSG Care Toowong QLD</a></td>
+      <td>large-racs-qld-02</td>
+      <td><a href="Location-large-racs-qld-02.xml.html">XML</a></td>
+      <td><a href="Location-large-racs-qld-02.json.html">JSON</a></td>
+      <td><a href="Location-large-racs-qld-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Location-large-racs-qld-03.html">LARCSG Care Toowoomba QLD</a></td>
+      <td>large-racs-qld-03</td>
+      <td><a href="Location-large-racs-qld-03.xml.html">XML</a></td>
+      <td><a href="Location-large-racs-qld-03.json.html">JSON</a></td>
+      <td><a href="Location-large-racs-qld-03.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Location-hi-testdata-dental.html">Provider's Office of Test Org -DigitalHealth 5</a></td>
       <td>hi-testdata-dental</td>
       <td><a href="Location-hi-testdata-dental.xml.html">XML</a></td>

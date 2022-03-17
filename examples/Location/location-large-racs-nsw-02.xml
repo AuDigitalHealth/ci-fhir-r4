@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Location xmlns="http://hl7.org/fhir">
+    <id value="large-racs-nsw-02"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+    </meta>
+    <status value="active"/>
+    <name value="LARCSG Care Bondi Junction NSW"/>
+    <mode value="instance"/>
+    <type>
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="257652008"/> 
+            <display value="Aged care facility"/> 
+        </coding>
+    </type>
+    <telecom>
+        <system value="email"/>
+        <value value="info@largealliedchemists.example.com"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <line value="45-57 Bronte Road"/>
+        <city value="Bondi Junction"/>
+        <state value="NSW"/>
+        <postalCode value="2022"/>
+        <country value="AU"/>
+    </address>
+    <physicalType>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+            <code value="si"/>
+            <display value="Site"/>
+        </coding>
+    </physicalType>
+    <managingOrganization>
+        <reference value="Organization/large-racs"/>
+    </managingOrganization>
+</Location>
