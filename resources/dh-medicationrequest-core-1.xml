@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a request for the supply of a medication and the instructions for administration of that medication to a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.substanceAdministration"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema substanceAdministration"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MedicationRequest"/>
@@ -39,26 +44,50 @@
         <expression value="requester.exists() implies requester.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.id"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.statusCode"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship/observation.value"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship/observation.value"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]"/>
@@ -70,6 +99,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject"/>
@@ -78,6 +111,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="ClinicalDocument/recordTarget"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.encounter">
       <path value="MedicationRequest.encounter"/>
@@ -86,11 +123,19 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration/entryRelationship/encounter, or ClinicalDocument/componentOf/encompassingEncounter"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.author.time, or implicit in ClinicalDocument/author."/>
+      </mapping>
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester"/>
@@ -103,46 +148,90 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.author, or implicit in ClinicalDocument/author."/>
+      </mapping>
     </element>
     <element id="MedicationRequest.reasonCode">
       <path value="MedicationRequest.reasonCode"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.reasonReference">
       <path value="MedicationRequest.reasonReference"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.observation"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.note">
       <path value="MedicationRequest.note"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.act.value"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.text"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.supply"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod">
       <path value="MedicationRequest.dispenseRequest.validityPeriod"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.supply.effectiveTime"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
       <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.supply.repeatNumber.@value"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
       <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.supply.expectedUseTime"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.act"/>
+      </mapping>
     </element>
     <element id="MedicationRequest.substitution.allowed[x]">
       <path value="MedicationRequest.substitution.allowed[x]"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.substanceAdministration"/>
+        <map value="substanceAdministration.entryRelationship.act.code"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
