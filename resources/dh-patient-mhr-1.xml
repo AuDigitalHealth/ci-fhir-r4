@@ -62,7 +62,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument/recordTarget/patientRole/"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient"/>
       </mapping>
     </element>
     <element id="Patient.extension:birthPlace">
@@ -220,7 +220,7 @@
       <max value="0"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="telecom"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/telecom"/>
       </mapping>
     </element>
     <element id="Patient.gender">
