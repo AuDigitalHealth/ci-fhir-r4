@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a flag (e.g. warning or notification) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.observation"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema observation"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Flag" />
@@ -39,19 +44,35 @@
         <expression value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
       </constraint>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation"/>
+      </mapping>
     </element>
     <element id="Flag.identifier">
       <path value="Flag.identifier" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.id"/>
+      </mapping>
     </element>
     <element id="Flag.category">
       <path value="Flag.category" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.code"/>
+      </mapping>
     </element>
     <element id="Flag.code">
       <path value="Flag.code" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.value"/>
+      </mapping>
     </element>
     <element id="Flag.subject">
       <path value="Flag.subject"/>
@@ -65,14 +86,26 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="Implicit in ClinicalDocument.recordTarget, or instantiated as observation.participant"/>
+      </mapping>
     </element>
     <element id="Flag.period">
       <path value="Flag.period" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="observation.effectiveTime"/>
+      </mapping>
     </element>
     <element id="Flag.encounter">
       <path value="Flag.encounter" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="Implicit in ClinicalDocument.componentOf.encompassingEncounter, or instantiated as observation.entryRelationship.encounter"/>
+      </mapping>
     </element>
     <element id="Flag.author">
       <path value="Flag.author" />
@@ -84,6 +117,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="Implicit in ClinicalDocument.author, or instantiated as observation.author or as observation.participant"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

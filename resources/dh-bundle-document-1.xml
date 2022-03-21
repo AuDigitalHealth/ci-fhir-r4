@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a collection of resources handled as a document for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.ClinicalDocument"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema ClinicalDocument"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Bundle"/>
@@ -25,24 +30,44 @@
   <differential>
     <element id="Bundle">
       <path value="Bundle"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument"/>
+      </mapping>
     </element>
     <element id="Bundle.identifier">
       <path value="Bundle.identifier"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument.id"/>
+      </mapping>
     </element>
     <element id="Bundle.type">
       <path value="Bundle.type"/>
       <fixedCode value="document"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Bundle.timestamp">
       <path value="Bundle.timestamp"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument.effectiveTime"/>
+      </mapping>
     </element>
     <element id="Bundle.link">
       <path value="Bundle.link"/>
       <max value="0"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
@@ -55,16 +80,28 @@
       </slicing>
       <min value="2" />
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument."/>
+      </mapping>
     </element>
     <element id="Bundle.entry.fullUrl">
       <path value="Bundle.entry.fullUrl" />
       <min value="1" />
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Bundle.entry:composition">
       <path value="Bundle.entry" />
       <sliceName value="composition" />
       <min value="1" />
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="Implicit in ClinicalDocument for Bundle type of 'document'"/>
+      </mapping>
     </element>
     <element id="Bundle.entry.resource:composition">
       <path value="Bundle.entry.resource" />
@@ -72,11 +109,19 @@
         <code value="Composition" />
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1" />
       </type>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Bundle.entry:patient">
       <path value="Bundle.entry" />
       <sliceName value="patient" />
       <min value="1" />
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument.recordTarget"/>
+      </mapping>
     </element>
     <element id="Bundle.entry.resource:patient">
       <path value="Bundle.entry.resource" />
@@ -84,6 +129,10 @@
         <code value="Patient" />
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

@@ -34,6 +34,11 @@
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema wholeOrganization"/>
   </mapping>
+  <mapping>
+    <identity value="CDA.author"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema participant"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Organization"/>
@@ -65,6 +70,10 @@
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.scopingEntity"/>
+      </mapping>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
@@ -85,6 +94,10 @@
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization.ext:asEntityIdentifier"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.scopingEntity.ext:asEntityIdentifier"/>
+      </mapping>
     </element>
     <element id="Organization.active">
       <path value="Organization.active"/>
@@ -99,6 +112,10 @@
       </mapping>
       <mapping>
         <identity value="CDA.wholeOrganization"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -116,6 +133,10 @@
       <mapping>
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization/standardIndustryClassCode"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.code"/>
       </mapping>
     </element>
     <element id="Organization.name">
@@ -135,6 +156,10 @@
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization/name"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.scopingEntity.ext:name"/>
+      </mapping>
     </element>
     <element id="Organization.alias">
       <path value="Organization.alias"/>
@@ -150,6 +175,10 @@
       <mapping>
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization/name"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.scopingEntity.ext:name"/>
       </mapping>
     </element>
     <element id="Organization.telecom">
@@ -169,6 +198,10 @@
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization/telecom"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.telecom"/>
+      </mapping>
     </element>
     <element id="Organization.address">
       <path value="Organization.address"/>
@@ -187,6 +220,10 @@
       <mapping>
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization/addr"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.addr"/>
       </mapping>
     </element>
     <element id="Organization.partOf">
@@ -210,6 +247,10 @@
         <identity value="CDA.wholeOrganization"/>
         <map value="wholeOrganization/asOrganizationPartOf/wholeOrganization"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.participantRole.scopingEntity.ext:asOrganizationPartOf"/>
+      </mapping>
     </element>
     <element id="Organization.contact">
       <path value="Organization.contact"/>
@@ -226,6 +267,10 @@
         <identity value="CDA.wholeOrganization"/>
         <map value="ClinicalDocument.participant"/>
       </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant"/>
+      </mapping>
     </element>
     <element id="Organization.contact.purpose">
       <path value="Organization.contact.purpose"/>
@@ -236,11 +281,15 @@
       </mapping>
       <mapping>
         <identity value="CDA.representedOrganization"/>
-        <map value="ClinicalDocument.participant/associatedEntity.code"/>
+        <map value="ClinicalDocument.participant.associatedEntity.code"/>
       </mapping>
       <mapping>
         <identity value="CDA.wholeOrganization"/>
-        <map value="ClinicalDocument.participant/associatedEntity.code"/>
+        <map value="ClinicalDocument.participant.associatedEntity.code"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.associatedEntity.code"/>
       </mapping>
     </element>
     <element id="Organization.contact.name">
@@ -252,11 +301,15 @@
       </mapping>
       <mapping>
         <identity value="CDA.representedOrganization"/>
-        <map value="ClinicalDocument.participant/associatedEntity.associatedPerson.name"/>
+        <map value="ClinicalDocument.participant.associatedEntity.associatedPerson.name"/>
       </mapping>
       <mapping>
         <identity value="CDA.wholeOrganization"/>
-        <map value="ClinicalDocument.participant.associatedEntity.addr"/>
+        <map value="ClinicalDocument.participant.associatedEntity.name"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.associatedEntity.name"/>
       </mapping>
     </element>
     <element id="Organization.contact.telecom">
@@ -268,7 +321,11 @@
       </mapping>
       <mapping>
         <identity value="CDA.representedOrganization"/>
-        <map value="ClinicalDocument.participant.associatedEntity.addr"/>
+        <map value="ClinicalDocument.participant.associatedEntity.telecom"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.associatedEntity.telecom"/>
       </mapping>
     </element>
     <element id="Organization.contact.address">
@@ -285,6 +342,10 @@
       <mapping>
         <identity value="CDA.wholeOrganization"/>
         <map value="ClinicalDocument.participant.associatedEntity.addr"/>
+      </mapping>
+      <mapping>
+        <identity value="CDA.author"/>
+        <map value="participant.associatedEntity.addr"/>
       </mapping>
     </element>
   </differential>
