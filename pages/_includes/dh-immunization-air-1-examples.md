@@ -5,6 +5,27 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
+      <td><a href="Immunization-air-covid-01.html">Record of Pfizer Comirnaty dose 1 for Sally Field from AIR</a></td>
+      <td>air-covid-01</td>
+      <td><a href="Immunization-air-covid-01.xml.html">XML</a></td>
+      <td><a href="Immunization-air-covid-01.json.html">JSON</a></td>
+      <td><a href="Immunization-air-covid-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Immunization-air-covid-02.html">Record of Pfizer Comirnaty dose 2 for Sally Field from AIR</a></td>
+      <td>air-covid-02</td>
+      <td><a href="Immunization-air-covid-02.xml.html">XML</a></td>
+      <td><a href="Immunization-air-covid-02.json.html">JSON</a></td>
+      <td><a href="Immunization-air-covid-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Immunization-air-covid-03.html">Record of Moderna Spikevax dose 3 for Sally Field from AIR</a></td>
+      <td>air-covid-03</td>
+      <td><a href="Immunization-air-covid-03.xml.html">XML</a></td>
+      <td><a href="Immunization-air-covid-03.json.html">JSON</a></td>
+      <td><a href="Immunization-air-covid-03.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Immunization-air-dip-01.html">Record of Infanrix Hexa at 2 months for Sally Field from AIR</a></td>
       <td>air-dip-01</td>
       <td><a href="Immunization-air-dip-01.xml.html">XML</a></td>
