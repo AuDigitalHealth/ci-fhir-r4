@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HealthcareService xmlns="http://hl7.org/fhir">
+    <id value="qld-hospital-pharmacy-in"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+    </meta>
+    <providedBy>
+        <reference value="Organization/qld-hospital"/>
+    </providedBy>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1244921000168107"/>
+            <display value="Hospital pharmacy service"/>
+        </coding>
+    </type>
+    <location>
+        <reference value="Location/qld-hospital-pharmacy-in"/>
+    </location>
+    <name value="QLD Hospital Pharmacy"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(07) 5550 3334"/>
+        <use value="work"/>
+    </telecom>
+</HealthcareService>

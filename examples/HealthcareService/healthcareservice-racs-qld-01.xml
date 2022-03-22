@@ -1,0 +1,60 @@
+<HealthcareService xmlns="http://hl7.org/fhir">
+	<id value="racs-qld-01"/>
+	<meta>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+	</meta>
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+				<code value="RACSI"/>
+			</coding>
+			<text value="RACS ID"/>
+		</type>
+		<system value="http://ns.electronichealth.net.au/id/residential-aged-care-service-id"/>
+		<!--In Australia RACS identifier number are an
+        incremental number that have been incremented to 4 digits, this example uses a fictional
+        number from 100,000 + to ensure no conflict with real world values--> 
+		<value value="130011"/>
+	</identifier>
+	<providedBy> 
+		<reference value="Organization/large-racs"/> 
+	</providedBy> 	
+	<type> 
+		<coding> 
+			<system value="http://snomed.info/sct"/> 
+			<code value="1120991000168102"/> 
+		</coding>
+		<text value="Aged care residential service"/> 
+	</type>
+	<location>
+		<reference value="Location/large-racs-qld-01"/>
+	</location>
+	<name value="LARCSG Care Sunnybank Home for the Aged 130011"/> 
+	<telecom>
+		<system value="phone"/>
+		<value value="(07) 8543 5957"/>
+		<use value="work"/>
+	</telecom>
+	<serviceProvisionCode>
+		<coding>
+			<system value="http://terminology.hl7.org.au/CodeSystem/service-provision-conditions"/>
+			<code value="FAP"/>
+		</coding>
+		<text value="Fees Apply"/>
+	</serviceProvisionCode>
+	<serviceProvisionCode>
+		<coding>
+			<system value="http://terminology.hl7.org.au/CodeSystem/service-provision-conditions"/>
+			<code value="COP"/>
+		</coding>
+		<text value="Co-payment"/>
+	</serviceProvisionCode>
+	<serviceProvisionCode>
+		<coding>
+			<system value="http://terminology.hl7.org.au/CodeSystem/service-provision-conditions"/>
+			<code value="FBB"/>
+		</coding>
+		<text value="Fees and Bulk Billing"/>
+	</serviceProvisionCode>
+	</HealthcareService>

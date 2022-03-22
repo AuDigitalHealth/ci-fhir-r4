@@ -1100,6 +1100,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="HealthcareService/nbcsp"/>
+            </reference>
+            <name value="National Bowel Cancer Screening Program"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/ncsp"/>
+            </reference>
+            <name value="National Cervical Screening Program"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="HealthcareService/racs-nsw-01"/>
             </reference>
             <name value="LARCSG Care Randwick Home for the Aged 120011"/>
@@ -1147,6 +1161,13 @@
                 <reference value="Location/algrester-medical-centre"/>
             </reference>
             <name value="Gregory Tindal Building of Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/au-jurisdiction"/>
+            </reference>
+            <name value="Jurisdiction of Australia"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
         <resource>
@@ -1673,6 +1694,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Organization/healthau"/>
+            </reference>
+            <name value="Australian Government Department of Health"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Organization/hi-testdata-dental"/>
             </reference>
             <name value="Test Org -DigitalHealth 5 (Vendor Environment HI Test Data plus email)"/>
@@ -1847,7 +1875,7 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <!--PATIENT EXAMPLES-->
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="Patient/hi-testdata-frazier-brady"/>
             </reference>
@@ -1945,7 +1973,7 @@
             <name value="Mrs. Anne Thompson (P2P)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
-        <!-- PRACTITIONER EXAMPLES-->
+        <!-\- PRACTITIONER EXAMPLES-\->
         <resource>
             <reference>
                 <reference value="Practitioner/algrester-greg"/>
@@ -2037,7 +2065,7 @@
             <name value="Dr Sonia Strempel"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
         </resource>
-        <!-- PRACTITIONERROLE EXAMPLES-->
+        <!-\- PRACTITIONERROLE EXAMPLES-\->
         <resource>
             <reference>
                 <reference value="PractitionerRole/algrester-greg-gp"/>
@@ -2143,7 +2171,7 @@
             <name value="Dr. Patricia Tulio, Pathologist, at Metropolitan Laboratories Sydney"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         </resource>
-        <!--SERVICEREQUEST EXAMPLES-->
+        <!-\-SERVICEREQUEST EXAMPLES-\->
         <resource>
             <reference>
                 <reference value="ServiceRequest/order-lk-xray-01"/>
@@ -2165,14 +2193,14 @@
             <name value="Active order for Chest CT for Billy Tjakamarra (2022)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
         </resource>
-        <!--SPECIMEN EXAMPLES-->
+        <!-\-SPECIMEN EXAMPLES-\->
         <resource>
             <reference>
                 <reference value="Specimen/urine-01"/>
             </reference>
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-        </resource>
+        </resource>-->
         <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
         <!--<resource>
             <reference>

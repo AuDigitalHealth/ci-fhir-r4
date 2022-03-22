@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Associated with Organization that is compliant with HI Test Data in Vendor Environment-->
+<HealthcareService xmlns="http://hl7.org/fhir">
+    <id value="metro-nsw-path-lab"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                <code value="NATAA"/>
+                <display value="NATA Accreditation Number"/>
+            </coding>
+            <text value="NATA Accreditation Number"/>
+        </type>
+        <system value="http://hl7.org.au/id/nata-accreditation"/> 
+        <!--In Australia NATA numbers are an
+        incremental number that have been incremented to 5 digits, this example uses a fictional
+        NATA number from 100,000 + to ensure no conflict with real world values--> 
+        <value value="100201"/>
+    </identifier>
+    <providedBy>
+        <reference value="Organization/metro-nsw-path-lab"/>
+    </providedBy>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="310076001"/>
+            <display value="Chemical pathology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="788124003"/>
+            <display value="Histopathology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="708191000"/>
+            <display value="Toxicology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="708178001"/>
+            <display value="Cytogenetics service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1579101000168107"/>
+            <display value="Virology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="708188000"/>
+            <display value="Serology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="708196005"/>
+            <display value="Haematology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="708190004"/>
+            <display value="Immunology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="706903003"/>
+            <display value="Mycobacteriology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="310078000"/>
+            <display value="Medical microbiology service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="706902008"/>
+            <display value="Mycology service"/>
+        </coding>
+    </type>
+    <!--<location>
+        <reference value="Location/metro-nsw-path-lab"/>
+    </location>-->
+    <name value="Metropolitan Laboratories Sydney"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(02) 5550 8994"/>
+        <use value="work"/>
+    </telecom>
+</HealthcareService>

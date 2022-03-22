@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HealthcareService xmlns="http://hl7.org/fhir">
+    <id value="mssg-nsw-yerong-paedendo"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+    </meta>
+    <providedBy>
+        <reference value="Organization/metro-specialist-services-group"/>
+    </providedBy>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="3761000175103"/>
+            <display value="Paediatric endocrinology service"/>
+        </coding>
+    </type>
+    <location>
+        <reference value="Location/metro-specialist-services-group-nsw-yerong"/>
+    </location>
+    <name value="Metropolitan Specialist Services Group Castle NSW - Paediatric endocrinology services"/>
+    <telecom>
+        <system value="email"/>
+        <value value="info@metrospeicalistservicesgroup.example.com"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="(02) 5550 6537"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="fax"/>
+        <value value="(02) 5550 6538"/>
+        <use value="work"/>
+    </telecom>
+</HealthcareService>

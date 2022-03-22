@@ -1,0 +1,31 @@
+<HealthcareService xmlns="http://hl7.org/fhir">
+	<id value="mssg-nsw-hospital-cardio"/>
+	<meta>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+	</meta>
+	<providedBy>
+		<reference value="Organization/metro-specialist-services-group"/>
+	</providedBy>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="1579131000168100"/>
+			<display value="Cardiology diagnostic service"/>
+		</coding>
+	</type>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="708172000"/>
+			<display value="Cardiac ultrasound service"/>
+		</coding>
+	</type>
+	<location>
+		<reference value="Location/metro-specialist-services-group-nsw-hospital"/>
+	</location>
+	<name value="Metropolitan Specialist Services Group NSW Hospital - Cardiology services"/>
+	<telecom>
+		<system value="phone"/>
+		<value value="(02) 5550 2537"/>
+	</telecom>
+</HealthcareService>
