@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a healthcare service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. &#xA; &#xA;#### Must Support&#xA; &#xA;In the context of this profile [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) SHALL be interpreted as follows:&#xA; &#xA;* The system SHALL be able to include the element when authoring a resource where data is available&#xA; &#xA;* The system SHALL be able to store and retrieve the element&#xA; &#xA;* The system SHALL be able to process resources containing the element" />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.act"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema act"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="HealthcareService" />
@@ -47,15 +52,27 @@
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act"/>
+      </mapping>
     </element>
     <element id="HealthcareService.identifier">
       <path value="HealthcareService.identifier" />
       <short value="External identifiers for this item" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="HealthcareService.active">
       <path value="HealthcareService.active" />
       <fixedBoolean value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="HealthcareService.providedBy">
       <path value="HealthcareService.providedBy" />
@@ -64,18 +81,34 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.participant"/>
+      </mapping>
     </element>
     <element id="HealthcareService.category">
       <path value="HealthcareService.category" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="HealthcareService.type">
       <path value="HealthcareService.type" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="HealthcareService.specialty">
       <path value="HealthcareService.specialty" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="HealthcareService.location">
       <path value="HealthcareService.location" />
@@ -84,14 +117,26 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.participant"/>
+      </mapping>
     </element>
     <element id="HealthcareService.name">
       <path value="HealthcareService.name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="HealthcareService.serviceProvisionCode">
       <path value="HealthcareService.serviceProvisionCode" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.observation.value"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
