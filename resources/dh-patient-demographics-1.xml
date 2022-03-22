@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a representation of a patient's demographics to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.recordTarget"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema recordTarget"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
@@ -47,81 +52,149 @@
         <expression value="extension('http://hl7.org.au/fhir/StructureDefinition/date-of-arrival').exists() implies extension.valueDate.value.matches('^([0-9]{4})$')" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
       </constraint>
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient"/>
+      </mapping>
     </element>
     <element id="Patient.extension:birthPlace">
       <path value="Patient.extension" />
       <sliceName value="birthPlace" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthplace"/>
+      </mapping>
     </element>
     <element id="Patient.extension:indigenousStatus">
       <path value="Patient.extension" />
       <sliceName value="indigenousStatus" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode"/>
+      </mapping>
     </element>    
     <element id="Patient.extension:mothersMaidenName">
       <path value="Patient.extension" />
       <sliceName value="mothersMaidenName" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/component/structuredBody/component/section/entry/observation/value"/>
+      </mapping>
     </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="interpreterRequired" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd"/>
+      </mapping>
     </element>
     <element id="Patient.extension:dateOfArrival">
       <path value="Patient.extension" />
       <sliceName value="dateOfArrival" />
       <short value="Year of Arrival"/>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/component/structuredBody/component/section/entry/observation/value"/>
+      </mapping>
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ext:asEntityIdentifier"/>
+      </mapping>
     </element>
     <element id="Patient.active">
       <path value="Patient.active" />
       <fixedBoolean value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/name"/>
+      </mapping>
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/telecom"/>
+      </mapping>
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode"/>
+      </mapping>
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
+      </mapping>
     </element>
     <element id="Patient.birthDate.extension:accuracyIndicator">
       <path value="Patient.birthDate.extension" />
       <sliceName value="accuracyIndicator" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/component/structuredBody/component/section/entry/observation/value"/>
+      </mapping>
     </element>
     <element id="Patient.birthDate.extension:birthTime">
       <path value="Patient.birthDate.extension" />
       <sliceName value="birthTime" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="Not mapped separately, encompassed in ClinicalDocument/patientRole/patient/birthTime"/>
+      </mapping>
     </element>
     <element id="Patient.deceased[x]">
       <path value="Patient.deceased[x]" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="Patient.deceased[x]:deceasedBoolean">
       <path value="Patient.deceasedBoolean" />
       <sliceName value="deceasedBoolean" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ext:deceasedInd"/>
+      </mapping>
     </element>
     <element id="Patient.deceased[x]:deceasedDateTime">
       <path value="Patient.deceasedDateTime" />
       <sliceName value="deceasedDateTime" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ext:deceasedTime"/>
+      </mapping>
     </element>
     <element id="Patient.deceased[x]:deceasedDateTime.extension:accuracyIndicator">
       <path value="Patient.deceasedDateTime.extension" />
@@ -131,14 +204,26 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/addr"/>
+      </mapping>
     </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/maritalStatusCode"/>
+      </mapping>
     </element>
     <element id="Patient.multipleBirth[x]">
       <path value="Patient.multipleBirth[x]" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/ext:multipleBirthInd"/>
+      </mapping>
     </element>
     <element id="Patient.contact">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -153,26 +238,50 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
       </constraint>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant"/>
+      </mapping>
     </element>
     <element id="Patient.contact.relationship">
       <path value="Patient.contact.relationship" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant/associatedEntity/associatedPerson/ext:personalRelationship"/>
+      </mapping>
     </element>
     <element id="Patient.contact.name">
       <path value="Patient.contact.name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant/associatedEntity/associatedPerson/name"/>
+      </mapping>
     </element>
     <element id="Patient.contact.telecom">
       <path value="Patient.contact.telecom" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant/associatedEntity/telecom"/>
+      </mapping>
     </element>
     <element id="Patient.contact.address">
       <path value="Patient.contact.address" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant/associatedEntity/addr"/>
+      </mapping>
     </element>
     <element id="Patient.contact.gender">
       <path value="Patient.contact.gender" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant/associatedEntity/associatedPerson/ext:administrativeGenderCode"/>
+      </mapping>
     </element>
     <element id="Patient.contact.organization">
       <path value="Patient.contact.organization" />
@@ -181,18 +290,34 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant/associatedEntity/scopingOrganization"/>
+      </mapping>
     </element>
     <element id="Patient.communication">
       <path value="Patient.communication" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication"/>
+      </mapping>
     </element>
     <element id="Patient.communication.language">
       <path value="Patient.communication.language" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/languageCode"/>
+      </mapping>
     </element>
     <element id="Patient.communication.preferred">
       <path value="Patient.communication.preferred" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferenceInd"/>
+      </mapping>
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />
@@ -202,6 +327,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.recordTarget"/>
+        <map value="ClinicalDocument/participant"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
