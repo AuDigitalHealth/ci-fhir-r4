@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HealthcareService xmlns="http://hl7.org/fhir">
+    <id value="med-regional-med-centre"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+    </meta>
+    <providedBy>
+        <reference value="Organization/med-regional-med-centre"/>
+    </providedBy>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="788007007"/>
+            <display value="General practice service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1575161000168105"/>
+            <display value="COVID-19 vaccination service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1238911000168108"/>
+            <display value="Immunisation service"/>
+        </coding>
+    </type>
+    <!--<location>
+        <reference value="Location/med-regional-med-centre"/>
+    </location>-->
+    <name value="Medium Sized Regional Medical Centre"/>
+</HealthcareService>

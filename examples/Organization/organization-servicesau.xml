@@ -13,8 +13,6 @@
             <text value="ABN"/>
         </type>
         <system value="http://hl7.org.au/id/abn"/>
-        <!-- Not a valid ABN. This example uses a fictional
-        ABN that does not conform to ABN format to ensure no conflict with real world values -->
         <value value="90794605008"/>
     </identifier>
     <type>
@@ -23,7 +21,10 @@
     <name value="Services Australia"/>
     <telecom>
         <system value="url"/>
-        <value value="https://www.servicesaustralia.gov.au/"/>
+        <value value="https://www.servicesaustralia.gov.au"/>
         <use value="work"/> 
     </telecom>
+    <partOf>
+        <reference value="Organization/healthau"/>
+    </partOf>
 </Organization>

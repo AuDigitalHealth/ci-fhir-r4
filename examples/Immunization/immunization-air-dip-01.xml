@@ -1,0 +1,58 @@
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="air-dip-01"/>
+	<meta>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+	</meta>
+	<!--identifier from Bundle uploaded from AIR Medicare repository-->
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d"/>
+	</identifier>
+	<status value="completed"/>
+	
+	<vaccineCode>
+		<coding>
+			<system value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
+			<code value="IFHX"/>
+		</coding>
+		<text value="Infanrix Hexa"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/mhr-field-sally"/>
+		<identifier>
+			<type>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+					<code value="NI"/>
+					<display value="National unique individual identifier"/>
+				</coding>
+				<text value="IHI"/>
+			</type>
+			<system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+			<value value="8003608833357361"/>
+		</identifier>
+	</patient>
+	<occurrenceDateTime value="1999-04-14"/>
+	<primarySource value="true"/>
+	<protocolApplied>
+		<targetDisease>
+			<text value="Diphtheria"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Tetanus"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Pertussis"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Hepatitis B"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Polio"/>
+		</targetDisease>
+		<targetDisease>
+			<text value="Hib"/>
+		</targetDisease>
+		<doseNumberPositiveInt value="1"/>
+	</protocolApplied>
+</Immunization>

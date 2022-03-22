@@ -12,6 +12,13 @@
       <td><a href="Location-patient-home-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Location-au-jurisdiction.html">Jurisdiction of Australia</a></td>
+      <td>au-jurisdiction</td>
+      <td><a href="Location-au-jurisdiction.xml.html">XML</a></td>
+      <td><a href="Location-au-jurisdiction.json.html">JSON</a></td>
+      <td><a href="Location-au-jurisdiction.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Location-algrester-medical-centre.html">Gregory Tindal Building of Algregster Medical Centre</a></td>
       <td>algrester-medical-centre</td>
       <td><a href="Location-algrester-medical-centre.xml.html">XML</a></td>

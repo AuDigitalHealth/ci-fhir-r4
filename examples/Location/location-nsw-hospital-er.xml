@@ -14,22 +14,11 @@
             <display value="Emergency room"/>
         </coding>
     </type>
-    <address>
-        <type value="physical"/>
-        <text value="2325 Rocklands Rd, North Sydney NSW 2060" />
-        <line value="2325 Rocklands Rd"/>
-        <city value="North Sydney"/>
-        <state value="NSW"/>
-        <postalCode value="2060"/>
-        <country value="AU"/>
-    </address>
-    <physicalType>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
-            <code value="bu"/>
-            <display value="Building"/>
-        </coding>
-    </physicalType>
+    <telecom>
+        <system value="phone"/>
+        <value value="(07) 5550 3333"/>
+        <use value="work"/>
+    </telecom>
     <managingOrganization>
         <reference value="Organization/nsw-hospital"/>
     </managingOrganization>

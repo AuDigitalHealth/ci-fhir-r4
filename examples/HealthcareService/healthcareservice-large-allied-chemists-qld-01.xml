@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HealthcareService xmlns="http://hl7.org/fhir">
+    <id value="large-allied-chemists-qld-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+    </meta>
+    <providedBy>
+        <reference value="Organization/large-allied-chemists"/>
+    </providedBy>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="310080006"/>
+            <display value="Pharmacy service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1575161000168105"/>
+            <display value="COVID-19 vaccination service"/>
+        </coding>
+    </type>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1238911000168108"/>
+            <display value="Immunisation service"/>
+        </coding>
+    </type>
+    <location>
+        <reference value="Location/large-allied-chemists-qld-01"/>
+    </location>
+    <name value="Large Allied Chemists Limited Sunnybank QLD"/>
+    <telecom>
+        <system value="email"/>
+        <value value="info@largealliedchemists.example.com"/>
+        <use value="work"/>
+    </telecom>
+</HealthcareService>

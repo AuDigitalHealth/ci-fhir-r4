@@ -887,12 +887,188 @@
             <name value="Follow-Up Encounter for Mr Zhang Wei (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
         </resource>
+        <!--FLAG EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Flag/air-01"/>
+            </reference>
+            <name value="Australian Immunisation Register notice: Medical contraindication"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Flag/air-02"/>
+            </reference>
+            <name value="Australian Immunisation Register notice: Natural immunity"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1"/>
+        </resource>
         <!--HEALTHCARESERVICE EXAMPLES-->
         <resource>
             <reference>
                 <reference value="HealthcareService/hi-testdata-racs"/>
             </reference>
             <name value="Test Org -DigitalHealth 1 Residential Aged Care Service FREMANTLE"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/hi-testdata-physiotherapy"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 3 Physiotherapy"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/hi-testdata-optical"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 4 Optical"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/hi-testdata-dental"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 5 Dental"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/hi-testdata-pharmacy"/>
+            </reference>
+            <name value="Test Org -DigitalHealth 6 Pharmacy"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/algrester-medical-centre"/>
+            </reference>
+            <name value="Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/large-allied-chemists-nsw-01"/>
+            </reference>
+            <name value="Large Allied Chemists Limited Randwick NSW"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/large-allied-chemists-qld-01"/>
+            </reference>
+            <name value="Large Allied Chemists Limited Sunnybank QLD"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/medium-vic-medical-clinic"/>
+            </reference>
+            <name value="Medium Sized Medical Clinic"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/med-regional-med-centre"/>
+            </reference>
+            <name value="Medium Sized Regional Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/metro-nsw-path-lab"/>
+            </reference>
+            <name value="Metropolitan Laboratories Sydney"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/metro-qld-path-lab"/>
+            </reference>
+            <name value="Metropolitan Pathology QLD"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/private-vic-path-lab"/>
+            </reference>
+            <name value="Private VIC Pathology"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/nsw-hospital-er"/>
+            </reference>
+            <name value="Emergency Department NSW Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/nsw-hospital-pharmacy-in"/>
+            </reference>
+            <name value="Inpatient Pharmacy NSW Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/qld-hospital-er"/>
+            </reference>
+            <name value="Emergency Department QLD Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/qld-hospital-pharmacy-in"/>
+            </reference>
+            <name value="Inpatient Pharmacy QLD Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/qld-hospital-pharmacy-out"/>
+            </reference>
+            <name value="Friends Pharmacy QLD Hospital"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/territory-medical-centre"/>
+            </reference>
+            <name value="Territory Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/topend-medical-clinic"/>
+            </reference>
+            <name value="Top End Medical Clinic"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/mssg-nsw-yerong-endo"/>
+            </reference>
+            <name value="Metropolitan Specialist Services Group Yerong NSW - Endocrinology services"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/mssg-nsw-yerong-paedendo"/>
+            </reference>
+            <name value="Metropolitan Specialist Services Group Yerong NSW - Paediatric endocrinology services"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/mssg-qld-castle-endo"/>
+            </reference>
+            <name value="Metropolitan Specialist Services Group Castle QLD - Endocrinology services"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/mssg-qld-castle-paedendo"/>
+            </reference>
+            <name value="Metropolitan Specialist Services Group Castle QLD - Paediatric endocrinology services"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
         </resource>
         <resource>
@@ -939,6 +1115,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="HealthcareService/nbcsp"/>
+            </reference>
+            <name value="National Bowel Cancer Screening Program"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="HealthcareService/ncsp"/>
+            </reference>
+            <name value="National Cervical Screening Program"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="HealthcareService/racs-nsw-01"/>
             </reference>
             <name value="LARCSG Care Randwick Home for the Aged 120011"/>
@@ -950,6 +1140,112 @@
             </reference>
             <name value="LARCSG Care Sunnybank Home for the Aged 130011"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+        </resource>
+        <!--IMMUNIZATION EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Immunization/air-covid-01"/>
+            </reference>
+            <name value="Record of Pfizer Comirnaty dose 1 for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-covid-02"/>
+            </reference>
+            <name value="Record of Pfizer Comirnaty dose 2 for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-covid-03"/>
+            </reference>
+            <name value="Record of Moderna Spikevax dose 3 for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-dip-01"/>
+            </reference>
+            <name value="Record of Infanrix Hexa at 2 months for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-dip-02"/>
+            </reference>
+            <name value="Record of Infanrix Hexa at 4 months for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-dip-03"/>
+            </reference>
+            <name value="Record of Infanrix Hexa at 6 months for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-dip-04"/>
+            </reference>
+            <name value="Record of Infanrix Hexa at 18 months for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-dip-05"/>
+            </reference>
+            <name value="Record of Infanrix Hexa at 4 years for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-hepb-01"/>
+            </reference>
+            <name value="Record of Engerix-B (paediatric) at birth for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-infl-01"/>
+            </reference>
+            <name value="Record of Panvax in 2020 for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-infl-02"/>
+            </reference>
+            <name value="Record of Panvax in 2021 for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/air-infl-03"/>
+            </reference>
+            <name value="Record of Panvax in 2022 for Sally Field from AIR"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/covid-01"/>
+            </reference>
+            <name value="Administration of Pfizer Comirnaty dose 1 for Sally Field 17 June 2021"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/covid-02"/>
+            </reference>
+            <name value="Administration of Pfizer Comirnaty dose 2 for Sally Field 01 August 2021"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Immunization/covid-03"/>
+            </reference>
+            <name value="Administration of Moderna Spikevax dose 3 for Sally Field 14 February 2022"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
         </resource>
         <!--LIST EXAMPLES-->
         <resource>
@@ -986,6 +1282,13 @@
                 <reference value="Location/algrester-medical-centre"/>
             </reference>
             <name value="Gregory Tindal Building of Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Location/au-jurisdiction"/>
+            </reference>
+            <name value="Jurisdiction of Australia"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
         <resource>
@@ -1508,6 +1811,13 @@
                 <reference value="Organization/algrester-medical-centre"/>
             </reference>
             <name value="Algregster Medical Centre"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/healthau"/>
+            </reference>
+            <name value="Australian Government Department of Health"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <resource>
