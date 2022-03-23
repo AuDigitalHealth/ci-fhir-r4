@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ServiceRequest xmlns="http://hl7.org/fhir">
-    <id value="perimetry"/>
+    <id value="order-perimetry-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-diagnostic-servicerequest"/>
+    </meta>
     <status value="completed"/>
     <intent value="order"/>
     <category>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="268360001"/>
-            <display value="Visual testing"/>
+            <code value="310106004"/>
+            <display value="Orthoptics service"/>
         </coding>
-        <text value="Visual field test"/>
     </category>
     <code>
         <coding>
@@ -21,10 +24,13 @@
     <subject>
         <reference value="Patient/p2p-anne-thompson"/>
     </subject>
-    <authoredOn value="2016-07-10T11:15:00+10:00"/>
+    <authoredOn value="2019-09-10T11:15:00+10:00"/>
     <requester>
-        <reference value="PractitionerRole/f1d5844f-dd39-457d-867b-f50a00f91731"/>
+        <reference value="PractitionerRole/nsw-gp"/>
     </requester>
+    <performer>
+        <reference value="HealthcareService/hi-testdata-optical"/>
+    </performer>
     <reasonCode>
         <text value="Suspected glaucoma"/>
     </reasonCode>

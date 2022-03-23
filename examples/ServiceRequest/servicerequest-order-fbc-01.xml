@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ServiceRequest xmlns="http://hl7.org/fhir">
-    <id value="order-fbc"/>
+    <id value="order-fbc-01"/>
     <meta>
-        <profile
-            value="http://ns.electronichealth.net.au/fhir/StructureDefinition/servicerequest-diag-report-1"
-        />
-        <profile
-            value="http://ns.electronichealth.net.au/fhir/StructureDefinition/servicerequest-path-report-1"
-        />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-diagnostic-servicerequest"/>
     </meta>
     <status value="completed"/>
     <intent value="order"/>
     <category>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="108252007"/>
-            <display value="Laboratory procedure"/>
+            <code value="310074003"/>
+            <display value="Pathology service"/>
+        </coding>
+    </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="HM"/>
+            <display value="Hematology"/>
         </coding>
     </category>
     <code>
@@ -33,4 +36,7 @@
     <requester>
         <reference value="PractitionerRole/nsw-gp"/>
     </requester>
+    <performer>
+        <reference value="HealthcareService/metro-nsw-path-lab"/>
+    </performer>
 </ServiceRequest>
