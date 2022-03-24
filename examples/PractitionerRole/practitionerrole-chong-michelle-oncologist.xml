@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="chong-michelle-oncologist"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
+    </meta> 
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003619900041630"/>
+    </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="EI"/>
+                <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/17000773547" />
+        <value value="2456889" />
+        <assigner>
+            <display value="Metropolitan Cancer Centre Group"/>
+        </assigner>
+    </identifier>
+    <practitioner>
+        <reference value="Practitioner/chong-michelle"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/metro-cancer-centre-group"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="310512001"/>
+            <display value="Medical Oncologist"/>
+        </coding>
+        <text value="Medical Oncologist"/>
+    </code>
+</PractitionerRole>

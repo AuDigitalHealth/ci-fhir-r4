@@ -33,6 +33,13 @@
       <td><a href="PractitionerRole-howard-linda-sonographer.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="PractitionerRole-chong-michelle-oncologist.html">Dr. Michelle Chong, Oncologist, at Metropolitan Cancer Centre Group</a></td>
+      <td>chong-michelle-oncologist</td>
+      <td><a href="PractitionerRole-chong-michelle-oncologist.xml.html">XML</a></td>
+      <td><a href="PractitionerRole-chong-michelle-oncologist.json.html">JSON</a></td>
+      <td><a href="PractitionerRole-chong-michelle-oncologist.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="PractitionerRole-nsw-gp.html">Dr Sarah Bondiali, GP, at Bondi GP Medical Center</a></td>
       <td>nsw-gp</td>
       <td><a href="PractitionerRole-nsw-gp.xml.html">XML</a></td>

@@ -141,6 +141,14 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <element id="ExplanationOfBenefit.outcome">
+      <path value="ExplanationOfBenefit.outcome"/>
+      <fixedCode value="complete"/>
+    </element>
+    <element id="ExplanationOfBenefit.insurance.focal">
+      <path value="ExplanationOfBenefit.insurance.focal"/>
+      <fixedCode value="true"/>
+    </element>
     <element id="ExplanationOfBenefit.item">
       <path value="ExplanationOfBenefit.item"/>
       <min value="1"/>
@@ -172,6 +180,22 @@
     <element id="ExplanationOfBenefit.item.serviced[x]">
       <path value="ExplanationOfBenefit.item.serviced[x]"/>
       <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ExplanationOfBenefit.item.location[x]">
+      <path value="ExplanationOfBenefit.item.location[x]"/>
+      <short value="Service in-hospital indicator"/>
+      <definition value="When instantiated this element indicates the service was provided in a hospital"/>
+      <comment value="When instantiated as a service in-hospital indicator this concept is equivalent to Australian Institute of Health and Welfare data element 604401 [Service event—Medicare in-hospital treatment indicator, yes/no code A](https://meteor.aihw.gov.au/content/index.phtml/itemId/604401)."/>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+          <code value="HOSP"/>
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.item.quantity">

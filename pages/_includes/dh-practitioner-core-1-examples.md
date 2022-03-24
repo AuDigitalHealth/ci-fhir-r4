@@ -25,6 +25,13 @@
       <td><a href="Practitioner-algrester-greg.json.html">JSON</a></td>
       <td><a href="Practitioner-algrester-greg.ttl.html">Turtle</a></td>
    </tr>
+    <tr>
+      <td><a href="Practitioner-chong-michelle.html">Dr. Michelle Chong</a></td>
+      <td>chong-michelle</td>
+      <td><a href="Practitioner-chong-michelle.xml.html">XML</a></td>
+      <td><a href="Practitioner-chong-michelle.json.html">JSON</a></td>
+      <td><a href="Practitioner-chong-michelle.ttl.html">Turtle</a></td>
+   </tr>
    <tr>
       <td><a href="Practitioner-sallow-elenore.html">Dr. Elenore Sallow</a></td>
       <td>sallow-elenore</td>
@@ -80,6 +87,13 @@
       <td><a href="Practitioner-hi-testdata-keaton-gertie.xml.html">XML</a></td>
       <td><a href="Practitioner-hi-testdata-keaton-gertie.json.html">JSON</a></td>
       <td><a href="Practitioner-hi-testdata-keaton-gertie.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Practitioner-hi-testdata-kirkland-phoebe.html">Phoebe KIRKLAND(Vendor Environment HI Test Data plus qualification)</a></td>
+      <td>hi-testdata-kirkland-phoebe</td>
+      <td><a href="Practitioner-hi-testdata-kirkland-phoebe.xml.html">XML</a></td>
+      <td><a href="Practitioner-hi-testdata-kirkland-phoebe.json.html">JSON</a></td>
+      <td><a href="Practitioner-hi-testdata-kirkland-phoebe.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Practitioner-hi-testdata-sinclair-zane.html">Mr. Zane Sinclair (Vendor Environment HI Test Data plus email)</a></td>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://hl7.org/fhir">
+    <id value="claim-mbs-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
+    </meta>
+    <!--identifier from Bundle uploaded from MBS Medicare repository-->
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:a7b64195-3553-4708-957e-04d571c7db92" />
+    </identifier>
+    <status value="completed"/> 
+    <intent value="order"/> 
+    <category> 
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="788123009"/> 
+        </coding> 
+        <text value="Radiation oncology service"/> 
+    </category> 
+    <code>  
+        <coding>
+            <system value="urn:oid:1.2.36.1.2001.1005.21"/>
+            <code value="15275"/>
+            <display value="Radiation oncology treatment"/>
+        </coding>
+    </code>
+    <subject> 
+        <reference value="Patient/mhr-zhang-wei"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608000228437"/>
+        </identifier>
+    </subject> 
+    <authoredOn value="2019-02-07"/> 
+    <requester> 
+        <reference value="PractitionerRole/chong-michelle-oncologist"/> 
+    </requester> 
+</ServiceRequest> 

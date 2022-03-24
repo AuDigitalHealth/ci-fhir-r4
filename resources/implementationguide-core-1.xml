@@ -887,6 +887,14 @@
             <name value="Follow-Up Encounter for Mr Zhang Wei (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
         </resource>
+        <!--EXPLANATIONOFBENEFIT EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="ExplanationOfBenefit/mbs-01"/>
+            </reference>
+            <name value="Record of Claim against MBS for radiation oncology treatment for Mr. Zhange Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+        </resource>
         <!--FLAG EXAMPLES-->
         <resource>
             <reference>
@@ -1896,7 +1904,14 @@
             </reference>
             <name value="Medicare Australia repository services operator"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>        
+        </resource>  
+        <resource>
+            <reference>
+                <reference value="Organization/metro-cancer-centre-group"/>
+            </reference>
+            <name value="Metropolitan Cancer Centre Group"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="Organization/metro-qld-path-lab"/>
@@ -2118,6 +2133,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Practitioner/chong-michelle"/>
+            </reference>
+            <name value="Dr. Michelle Chong"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Practitioner/meyer-adam"/>
             </reference>
             <name value="Dr. Adam Meyer"/>
@@ -2163,6 +2185,13 @@
                 <reference value="Practitioner/hi-testdata-keaton-gertie"/>
             </reference>
             <name value="Gertie KEATON (Vendor Environment HI Test Data plus language spoken)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/hi-testdata-kirkland-phoebe"/>
+            </reference>
+            <name value="Phoebe KIRKLAND (Vendor Environment HI Test Data plus language spoken)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
         </resource>
         <resource>
@@ -2266,6 +2295,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="PractitionerRole/chong-michelle-oncologist"/>
+            </reference>
+            <name value="Dr. Michelle Chong, Oncologist, at Metropolitan Cancer Centre Group"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="PractitionerRole/nsw-gp"/>
             </reference>
             <name value="Dr Sarah Bondiali, GP, at Bondi GP Medical Center"/>
@@ -2293,6 +2329,13 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         </resource>
         <!--SERVICEREQUEST EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/claim-mbs-01"/>
+            </reference>
+            <name value="MBS claim item for radiation oncology service for Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="ServiceRequest/order-fbc-01"/>
