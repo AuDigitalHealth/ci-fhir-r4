@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://hl7.org/fhir">
+    <id value="order-echo-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-diagnostic-servicerequest"/>
+    </meta>
+    <status value="completed"/> 
+    <intent value="order"/> 
+    <category> 
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="1579131000168100"/> 
+        </coding> 
+        <text value="Cardiovascular investigation"/> 
+    </category> 
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+            <code value="CUS"/>
+            <display value="Cardiac Ultrasound"/>
+        </coding>
+    </category>
+    <code> 
+        <coding> 
+            <system value="http://snomed.info/sct"/> 
+            <code value="40701008"/>
+            <display value="Echocardiography"/>
+        </coding> 
+    </code>
+    <subject> 
+        <reference value="Patient/p2p-zhang-wei"/> 
+    </subject> 
+    <authoredOn value="2019-01-05T00:00:00+10:00"/> 
+    <requester> 
+        <reference value="PractitionerRole/chong-michelle-oncologist"/> 
+    </requester> 
+    <performer>
+        <reference value="HealthcareService/mssg-nsw-hospital-cardio"/>
+    </performer>
+    <reasonCode> 
+        <text value="Pre-chemotherapy"/> 
+    </reasonCode> 
+</ServiceRequest> 
