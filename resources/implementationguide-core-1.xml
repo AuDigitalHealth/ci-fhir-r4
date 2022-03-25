@@ -895,6 +895,20 @@
             <name value="Record of Claim against MBS for removal of palmar or plantar warts for for Ms. Sally Field"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="ExplanationOfBenefit/pbs-01"/>
+            </reference>
+            <name value="Record of Claim against PBS for cephalexin 500 mg capsule, 20 for for Ms. Sally Field 16 JAN 2020"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ExplanationOfBenefit/pbs-02"/>
+            </reference>
+            <name value="Record of Claim against PBS for cephalexin 500 mg capsule, 20 for for Ms. Sally Field 16 FEB 2020"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+        </resource>
         <!--FLAG EXAMPLES-->
         <resource>
             <reference>
@@ -1526,6 +1540,13 @@
         <!--MEDICATION EXAMPLES-->
         <resource>
             <reference>
+                <reference value="Medication/cephalexin-01"/>
+            </reference>
+            <name value="cephalexin 500 mg capsule, 20"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Medication/ironsup-01"/>
             </reference>
             <name value="Ferro-Grad C"/>
@@ -1607,6 +1628,14 @@
             </reference>
             <name value="Amiodarone 200mg tab"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <!--MEDICATIONREQUEST EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/claim-pbs-01"/>
+            </reference>
+            <name value="PBS claim item for for cephalexin 500 mg capsule, 20 for for Ms. Sally Field"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
         </resource>
         <!--MEDICATIONSTATEMENT EXAMPLES-->
         <resource>

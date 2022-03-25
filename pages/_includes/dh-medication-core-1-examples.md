@@ -12,6 +12,13 @@
       <td><a href="Medication-ironsup-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Medication-cephalexin-01.html">cephalexin 500 mg capsule, 20</a></td>
+      <td>cephalexin-01</td>
+      <td><a href="Medication-cephalexin-01.xml.html">XML</a></td>
+      <td><a href="Medication-cephalexin-01.json.html">JSON</a></td>
+      <td><a href="Medication-cephalexin-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Medication-ibuprofen-01.html">Ibuprofen</a></td>
       <td>ibuprofen-01</td>
       <td><a href="Medication-ibuprofen-01.xml.html">XML</a></td>
