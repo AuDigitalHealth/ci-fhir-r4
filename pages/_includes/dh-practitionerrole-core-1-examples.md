@@ -26,6 +26,13 @@
       <td><a href="PractitionerRole-algrester-greg-gp.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="PractitionerRole-george-david-oncologist.html">Dr. George David, Oncologist, at Fred Hope Cencer Centre NSW</a></td>
+      <td>george-david-oncologist</td>
+      <td><a href="PractitionerRole-george-david-oncologist.xml.html">XML</a></td>
+      <td><a href="PractitionerRole-george-david-oncologist.json.html">JSON</a></td>
+      <td><a href="PractitionerRole-george-david-oncologist.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="PractitionerRole-howard-linda-sonographer.html">Ms. Linda Howard, Sonographer, NSW Hospital - Cardiology</a></td>
       <td>howard-linda-sonographer</td>
       <td><a href="PractitionerRole-howard-linda-sonographer.xml.html">XML</a></td>

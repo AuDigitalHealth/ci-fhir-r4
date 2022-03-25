@@ -1,18 +1,18 @@
 <ExplanationOfBenefit xmlns="http://hl7.org/fhir">
-	<id value="mbs-01"/>
+	<id value="mbs-02"/>
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
 	</meta>
 	<!--identifier from Bundle uploaded from MBS Medicare repository-->
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:uuid:a7b64195-3553-4708-957e-04d571c7db92" />
+		<value value="urn:uuid:79a8b5a5-1631-4eec-b031-815156c9a47b" />
 	</identifier>
 	<status value="active"/>
 	<type>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
-			<code value="institutional"/>
+			<code value="professional"/>
 		</coding>
 	</type>
 	<subType>
@@ -23,20 +23,21 @@
 	</subType>
 	<use value="claim"/>
 	<patient>
-		<reference value="Patient/mhr-zhang-wei"/>
+		<reference value="Patient/mhr-field-sally"/>
 		<identifier>
 			<type>
 				<coding>
 					<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
 					<code value="NI"/>
+					<display value="National unique individual identifier"/>
 				</coding>
 				<text value="IHI"/>
 			</type>
 			<system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-			<value value="8003608000228437"/>
+			<value value="8003608833357361"/>
 		</identifier>
 	</patient>
-	<created value="2019-02-07"/>
+	<created value="2017-12-04"/>
 	<insurer>
 		<reference value="Organization/healthau"/>
 		<display value="Australian Government Department of Health"/>
@@ -54,10 +55,8 @@
 			<system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
 			<value value="8003614900041243"/>
 		</identifier>
+		<display value="Dr. Jeong-Hoon Kim"/>
 	</provider>
-	<referral>
-		<reference value="ServiceRequest/claim-mbs-01"/>
-	</referral>
 	<outcome value="complete"/>
 	<insurance>
 		<focal value="true"/>
@@ -71,7 +70,7 @@
 					<text value="Medicare Number"/>
 				</type>
 				<system value="http://ns.electronichealth.net.au/id/medicare-number"/>
-				<value value="29533070311"/>
+				<value value="3951032981"/>
 			</identifier>
 		</coverage>
 	</insurance>
@@ -88,22 +87,10 @@
 		<productOrService>
 			<coding>
 				<system value="urn:oid:1.2.36.1.2001.1005.21"/>
-				<code value="15275"/>
-				<display value="Radiation oncology treatment"/>
+				<code value="30185"/>
+				<display value="Palmar or plantar warts (10 or more), definitive removal of, excluding ablative methods alone, not being a service to which item 30186 or 30187 applies (Anaes.)"/>
 			</coding>
 		</productOrService>
-		<servicedDate value="2019-02-07"/>
-		<locationCodeableConcept>
-			<coding>
-				<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-				<code value="HOSP"/>
-				<display value="Hospital"/>
-			</coding>
-			<coding> 
-				<system value="http://snomed.info/sct"/> 
-				<code value="22232009"/> 
-				<display value="Hospital"/> 
-			</coding>
-		</locationCodeableConcept>
+		<servicedDate value="2016-06-16"/>
 	</item>
 </ExplanationOfBenefit>

@@ -5,10 +5,17 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-mbs-01.html">Record of Claim against MBS for radiation oncology treatment for Mr. Zhange Wei</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-01.html">Record of Claim against MBS for radiation oncology treatment for Mr. Zhang Wei</a></td>
       <td>mbs-01</td>
       <td><a href="ExplanationOfBenefit-mbs-01.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-mbs-01.json.html">JSON</a></td>
       <td><a href="ExplanationOfBenefit-mbs-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="ExplanationOfBenefit-mbs-02.html">Record of Claim against MBS for removal of palmar or plantar warts for for Ms. Sally Field</a></td>
+      <td>mbs-02</td>
+      <td><a href="ExplanationOfBenefit-mbs-02.xml.html">XML</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-02.json.html">JSON</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-02.ttl.html">Turtle</a></td>
    </tr>
 </table>
