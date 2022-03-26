@@ -308,6 +308,7 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Hospitalisation Encounter</li>
+                                <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>
                                 <li>ADHA Adverse Reactions List</li>
                                 <li>ADHA Allergies and Interolances List</li>
                                 <li>ADHA Dispense List</li>

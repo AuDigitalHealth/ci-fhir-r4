@@ -185,8 +185,8 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-dh-vaccine-serial-number-1.html">Vaccine Vial Serial Number</a></td>
-        <td>dh-vaccine-serial-number-1</td>
+        <td><a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
+        <td>vaccine-serial-number</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#strig">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td>
     </tr>
