@@ -20,5 +20,7 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Advance Care Directive Custodian Record Document Composition](StructureDefinition-dh-composition-acdcr-1.html).
+[ADHA Advance Care Directive Custodian Record Document Composition](StructureDefinition-dh-composition-acdcr-1.html), 
+[ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html), 
+[ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), and 
 [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html).

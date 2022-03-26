@@ -19,4 +19,4 @@ The following guidance applies:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Record of Claim against PBS, RPBS, or MBS](StructureDefinition-dh-explanationofbenefit-medicare-1.html).
+[ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html).

@@ -1,4 +1,4 @@
-# {{ page.title }}
+# c{{ page.title }}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
@@ -377,7 +377,10 @@ Core FHIR profiles defined in this implementation guide.
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-1.html">ADHA Record of Claim against PBS, RPBS, or MBS</a></li>
+                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html">ADHA Record of Claim against MBS</a></li>
+                            </ul>
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html">ADHA Record of Claim against PBS or RPBS</a></li>
                             </ul>
                         </td>     
                         <td class="frm-null"/>

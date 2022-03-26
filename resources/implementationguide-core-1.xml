@@ -272,9 +272,16 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+                <reference value="StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
             </reference>
-            <name value="Australian Digital Health Agency Record of Claim against PBS, RPBS, or MBS"/>
+            <name value="Australian Digital Health Agency Record of Claim against MBS"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Record of Claim against PBS or RPBS"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -885,29 +892,36 @@
             <reference>
                 <reference value="ExplanationOfBenefit/mbs-01"/>
             </reference>
-            <name value="Record of Claim against MBS for radiation oncology treatment for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+            <name value="Record of Claim against MBS for 15275 radiation oncology treatment for Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ExplanationOfBenefit/mbs-02"/>
             </reference>
-            <name value="Record of Claim against MBS for removal of palmar or plantar warts for for Ms. Sally Field"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+            <name value="Record of Claim against MBS for 30185 removal of palmar or plantar warts for Ms. Sally Field"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ExplanationOfBenefit/mbs-03"/>
+            </reference>
+            <name value="Record of Claim against MBS for 30191 removal of palmar or plantar warts for Ms. Sally Field"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ExplanationOfBenefit/pbs-01"/>
             </reference>
-            <name value="Record of Claim against PBS for cephalexin 500 mg capsule, 20 for for Ms. Sally Field 16 JAN 2020"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+            <name value="Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for for Ms. Sally Field 16 JAN 2020"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ExplanationOfBenefit/pbs-02"/>
             </reference>
-            <name value="Record of Claim against PBS for cephalexin 500 mg capsule, 20 for for Ms. Sally Field 16 FEB 2020"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-1"/>
+            <name value="Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for for Ms. Sally Field 16 FEB 2020"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
         </resource>
         <!--FLAG EXAMPLES-->
         <resource>

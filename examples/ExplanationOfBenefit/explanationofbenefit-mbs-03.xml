@@ -1,25 +1,24 @@
 <ExplanationOfBenefit xmlns="http://hl7.org/fhir">
-	<id value="pbs-01"/>
+	<id value="mbs-03"/>
 	<meta>
-		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
 	</meta>
 	<!--identifier from Bundle uploaded from MBS Medicare repository-->
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:uuid:296dcbd7-d763-4ecf-aa78-523bcc11ecda" />
+		<value value="urn:uuid:fbaf3ef9-6e74-44d2-8057-3ceabb1f2bde" />
 	</identifier>
 	<status value="active"/>
 	<type>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
-			<code value="pharmacy"/>
+			<code value="professional"/>
 		</coding>
 	</type>
 	<subType>
 		<coding>
-			<system
-				value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
-			<code value="pbs"/>
+			<system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
+			<code value="mbs"/>
 		</coding>
 	</subType>
 	<use value="claim"/>
@@ -38,13 +37,12 @@
 			<value value="8003608833357361"/>
 		</identifier>
 	</patient>
-	<created value="2020-01-16"/>
+	<created value="2018-12-16"/>
 	<insurer>
 		<reference value="Organization/healthau"/>
 		<display value="Australian Government Department of Health"/>
 	</insurer>
 	<provider>
-		<reference value="PractitionerRole/pharmacist-retail"/>
 		<identifier>
 			<type>
 				<coding>
@@ -55,12 +53,10 @@
 				<text value="HPI-I"/>
 			</type>
 			<system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-			<value value="8003611566708354"/>
+			<value value="8003614900041243"/>
 		</identifier>
+		<display value="Dr. Jeong-Hoon Kim"/>
 	</provider>
-	<prescription>
-		<reference value="MedicationRequest/claim-pbs-01"/>
-	</prescription>
 	<outcome value="complete"/>
 	<insurance>
 		<focal value="true"/>
@@ -82,19 +78,16 @@
 		<sequence value="1"/>
 		<category>
 			<coding>
-				<system
-					value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
-				<code value="pbs"/>
-				<display value="PBS"/>
+				<system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
+				<code value="mbs"/>
 			</coding>
 		</category>
 		<productOrService>
 			<coding>
-				<system value="urn:oid:1.2.36.1.2001.1005.22"/>
-				<code value="03119E"/>
-				<display value="cephalexin 500 mg capsule, 20"/>
+				<system value="urn:oid:1.2.36.1.2001.1005.21"/>
+				<code value="30191"/>
 			</coding>
 		</productOrService>
-		<servicedDate value="2020-01-16"/>
+		<servicedDate value="2018-12-16"/>
 	</item>
 </ExplanationOfBenefit>
