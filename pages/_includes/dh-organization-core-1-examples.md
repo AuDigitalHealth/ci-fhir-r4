@@ -40,11 +40,11 @@
       <td><a href="Organization-large-racs.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Organization-medicare-rs.html">Medicare Australia repository services operator</a></td>
-      <td>medicare-rs</td>
-      <td><a href="Organization-medicare-rs.xml.html">XML</a></td>
-      <td><a href="Organization-medicare-rs.json.html">JSON</a></td>
-      <td><a href="Organization-medicare-rs.ttl.html">Turtle</a></td>
+      <td><a href="Organization-medicare-rs-operator.html">Medicare Australia repository services operator</a></td>
+      <td>medicare-rs-operator</td>
+      <td><a href="Organization-medicare-rs-operator.xml.html">XML</a></td>
+      <td><a href="Organization-medicare-rs-operator.json.html">JSON</a></td>
+      <td><a href="Organization-medicare-rs-operator.ttl.html">Turtle</a></td>
    </tr> 
    <tr>
       <td><a href="Organization-metro-specialist-services-group.html">Metropolitan Specialist Services Group</a></td>

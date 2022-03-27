@@ -75,6 +75,10 @@
                 <value value="8003608833564735"/>
             </identifier>
         </sourcePatientInfo> 
+        <!--RELATED RESOURCES - REFERENCING INDIVIDUAL RESOURCES ACROSS THE DB THAT MAKE UP THIS 'DOCUMENT'-->
+        <!--The url identifier scheme used below is nonsense should be replaced with the real scheme. The nonsense convention is document identifier (i.e. Bundle.identifier or Resource.identifier)-->
+        <!--There is no related reference for a Patient record as this is not persisted - MHR Master Patient record is maintained and when a view or other output is
+             generated that generation process is to generate a fresh Patient resource according to current data and business rules-->
         <related> 
             <reference value="http://example.org/mhr/xds/mhd/Bundle/5a655945-c2b3-4d01-9e88-224873e32d8d"/>
             <identifier>

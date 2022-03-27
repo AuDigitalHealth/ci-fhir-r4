@@ -1,0 +1,135 @@
+<DocumentReference xmlns="http://hl7.org/fhir">
+    <id value="air-01"/>
+    <!--Created DocumentReference from 'data in' Bundle | Post from Medicare repository to MHR-->
+    <!--DocumentReference for the set of resources that make up the AIR for Patient Sally FIELD IHI 8003608833357361 -->
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
+    </meta>
+    <masterIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d" />
+    </masterIdentifier>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d" />
+    </identifier>
+    <status value="current"/>
+    <docStatus value="final"/>
+    <type>
+        <coding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="100.17042"/>
+            <display value="Australian Immunisation Register"/>
+        </coding>
+    </type>
+    <category>
+        <coding>
+            <system
+                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="100.17042"/>
+            <display value="Australian Immunisation Register"/>
+        </coding>
+    </category>
+    <subject>
+       <!-- Asssume local record number will be used here instead of IHI-->
+        <reference value="Patient/mhr-field-sally"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833357361"/>
+        </identifier>
+    </subject>
+    <!--Instant this DocumentReference was created from the uploaded the Bundle | resource-->
+    <date value="2022-02-15T01:02:00+10:00"/>
+    <author>
+        <reference value="Device/medicare-rs-01"/>
+    </author>
+    <custodian>
+        <reference value="Organization/medicare-rs-operator"/>
+    </custodian>
+    <content>
+        <!--Assumption that a Binary of the original upload is persisted-->
+        <attachment> 
+            <language value="en-AU"/> 
+            <url value="http://example.org/mhr/xds/mhd/Binary/b4f868e7-adc8-47b6-9f4e-002315b8e587"/>
+        </attachment> 
+    </content>
+    <context>
+        <sourcePatientInfo> 
+            <identifier>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                        <code value="NI"/>
+                    </coding>
+                    <text value="IHI"/>
+                </type>
+                <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                <value value="8003608000228437"/>
+            </identifier>
+        </sourcePatientInfo> 
+        <!--RELATED RESOURCES - REFERENCING INDIVIDUAL RESOURCES ACROSS THE DB THAT MAKE UP THIS 'DOCUMENT'-->
+        <!--The url identifier scheme used below is nonsense should be replaced with the real scheme. The nonsense convention is document identifier (i.e. Bundle.identifier) + integer-->
+        <!--There is no related reference for a Patient record as this is not persisted - MHR Master Patient record is maintained and when a view or other output is
+             generated that generation process is to generate a fresh Patient resource according to current data and business rules-->
+        <related> 
+            <!--reference for Flag/air-02-->
+            <reference value="http://example.org/mhr/xds/mhd/Flag/475db616-dfd5-43f3-b935-9f582233a38d.1"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-covid-01-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.1"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-covid-02-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.3"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-covid-03-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.4"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-hepb-01-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.5"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-dip-01-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.6"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-dip-02-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.7"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-dip-03-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.8"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-dip-04-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.9"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-dip-05-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.10"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-infl-01-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.11"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-infl-02-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.12"/>
+        </related>
+        <related> 
+            <!--reference for Immunization/air-infl-03-->
+            <reference value="http://example.org/mhr/xds/mhd/Immunization/475db616-dfd5-43f3-b935-9f582233a38d.13"/>
+        </related>
+    </context>
+</DocumentReference>
