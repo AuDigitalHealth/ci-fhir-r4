@@ -1,23 +1,25 @@
-<Flag xmlns="http://hl7.org/fhir">
-    <id value="air-02" />
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="air-covid-imm-status-01" />
     <meta>
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1" />
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
     </meta>
-    <!--identifier from Bundle uploaded from AIR Medicare repository-->
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d" />
+        <value value="urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d"/>
     </identifier>
-    <status value="active" />
-    <category>
-        <coding>
-            <system value="http://snomed.info/sct" />
-            <code value="1500551000168103" />
-        </coding>
-        <text value="Australian Immunisation Register notice" />
-    </category>
+    <status value="final" />
     <code>
-        <text value="Natural immunity to Measles recorded on 28 Oct 2020."/>
+        <coding>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1" />
+            <code value="103.32029" />
+            <display value="Australian Immunisation Register COVID-19 Immunisation Status" />
+        </coding>
+        <coding>
+            <system value="http://loinc.org" />
+            <code value="97155-6" />
+            <display value="SARS coronavirus 2 (COVID-19) immunization status" />
+        </coding>
     </code>
     <subject>
         <reference value="Patient/mhr-field-sally"/>
@@ -34,7 +36,8 @@
             <value value="8003608833357361"/>
         </identifier>
     </subject>
-    <author>
+    <effectiveDateTime value="2022-02-15T01:02:00+10:00"/>
+    <performer>
         <reference value="Organization/medicare-rs-operator"/>
         <identifier>
             <type>
@@ -48,5 +51,8 @@
             <system value="http://ns.electronichealth.net.au/id/pcehr/paio/1.0"/>
             <value value="8003640001000036"/>
         </identifier>
-    </author>
-</Flag>
+    </performer>
+    <valueCodeableConcept>
+        <text value="This individual has received all required COVID-19 vaccines." />
+    </valueCodeableConcept>
+</Observation>

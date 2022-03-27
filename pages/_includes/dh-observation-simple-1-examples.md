@@ -5,6 +5,13 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
+      <td><a href="Observation-air-covid-imm-status-01.html">Australian Immunisation Register COVID-19 Immunisation Status</a></td>
+      <td>air-covid-imm-status-01</td>
+      <td><a href="Observation-air-covid-imm-status-01.xml.html">XML</a></td>
+      <td><a href="Observation-air-covid-imm-status-01.json.html">JSON</a></td>
+      <td><a href="Observation-air-covid-imm-status-01.ttl.html">Turtle</a></td>
+   </tr> 
+   <tr>
       <td colspan="5">Bundle examples:</td>
    </tr> 
    <tr>

@@ -1,8 +1,58 @@
 <ExplanationOfBenefit xmlns="http://hl7.org/fhir">
-	<id value="pbs-02"/>
+	<id value="pbs-cont-02"/>
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
 	</meta>
+	<contained>
+		<MedicationRequest>
+			<id value="claim-pbs-02"/>
+			<status value="unknown"/>
+			<intent value="order"/>
+			<medicationReference>
+				<reference value="#cephalexin-01"/>
+			</medicationReference>
+			<subject>
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="NI"/>
+							<display value="National unique individual identifier"/>
+						</coding>
+						<text value="IHI"/>
+					</type>
+					<system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+					<value value="8003608833357361"/>
+				</identifier>
+			</subject>
+			<authoredOn value="2020-01-15"/>
+			<dispenseRequest>
+				<numberOfRepeatsAllowed value="1"/>
+				<quantity>
+					<value value="500"/>
+					<unit value="tablet"/>
+				</quantity>
+			</dispenseRequest>
+		</MedicationRequest>
+	</contained>
+	<contained>
+		<Medication>
+			<id value="cephalexin-01"/>
+			<code>
+				<coding>
+					<system value="urn:oid:1.2.36.1.2001.1005.22"/>
+					<code value="03119E"/>
+					<display value="cephalexin 500 mg capsule, 20"/>
+				</coding>
+			</code>
+			<manufacturer>
+				<identifier>
+					<system value="http://pbs.gov.au/code/manufacturer"/>
+					<value value="MM"/>
+				</identifier>
+			</manufacturer>
+		</Medication>
+	</contained>
 	<!--identifier for the PBR record from Medicare repository-->
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
@@ -24,7 +74,6 @@
 	</subType>
 	<use value="claim"/>
 	<patient>
-		<reference value="Patient/mhr-field-sally"/>
 		<identifier>
 			<type>
 				<coding>
@@ -40,11 +89,9 @@
 	</patient>
 	<created value="2020-02-16"/>
 	<insurer>
-		<reference value="Organization/healthau"/>
 		<display value="Australian Government Department of Health"/>
 	</insurer>
 	<provider>
-		<reference value="PractitionerRole/pharmacist-retail"/>
 		<identifier>
 			<type>
 				<coding>
@@ -60,7 +107,7 @@
 		<display value="Mr. Representative Pharmacist at Test Org -DigitalHealth 6 Pharmacy"/>
 	</provider>
 	<prescription>
-		<reference value="MedicationRequest/claim-pbs-02"/>
+		<reference value="#claim-pbs-02"/>
 	</prescription>
 	<outcome value="complete"/>
 	<insurance>
