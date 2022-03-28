@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+    <id value="medicare-view-doc-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+    </meta>
+    <language value="en-AU"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:6c609115-94ec-40bc-b72e-3ce9e98cf2e8"/>
+    </identifier>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system
+                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="100.16767"/>
+            <display value="Medicare Overview"/>
+        </coding>
+    </type>
+    <category>
+        <coding>
+            <system
+                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+            <code value="100.16767"/>
+            <display value="Medicare Overview"/>
+        </coding>
+    </category>
+    <subject>
+        <reference value="Patient/mhr-field-sally"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833357361"/>
+        </identifier>
+    </subject>
+    <date value="2017-06-21T09:00:15+10:00"/>
+    <author>
+        <reference value="Device/mhr-01"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                    <code value="NDI"/>
+                    <display value="National Device Identifier"/>
+                </coding>
+                <text value="PAI-D"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/pcehr/paid/1.0"/>
+            <value value="8003640003000026"/>
+        </identifier>
+    </author>
+    <title value="Medicare Overview"/>
+    <custodian>
+        <reference value="Organization/mhr-operator"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                    <code value="NOI"/>
+                    <display value="National Organisation Identifier"/>
+                </coding>
+                <text value="PAI-O"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/pcehr/paio/1.0"/>
+            <value value="8003640001000036"/>
+        </identifier>
+    </custodian>
+    <section>
+        <title value="Prescription Information - PBS and RPBS"/>
+        <code>
+            <coding>
+                <system
+                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <code value="101.16778"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <caption>Prescription Information - PBS and RPBS</caption>
+                    <thead>
+                        <tr>
+                            <th>Prescribed</th>
+                            <th>Supplied</th>
+                            <th>PBS Item Number</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Service Provider</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/01/2020</td>
+                            <td>16/01/2020</td>
+                            <td>03119E</td>
+                            <td>cephalexin 500 mg capsule, 20</td>
+                            <td>500 tablets</td>
+                            <td>Mr. Representative Pharmacist</td>
+                        </tr>
+                        <tr>
+                            <td>15/01/2020</td>
+                            <td>16/02/2020</td>
+                            <td>03119E</td>
+                            <td>cephalexin 500 mg capsule, 20</td>
+                            <td>500 tablets</td>
+                            <td>Mr. Representative Pharmacist</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </text>
+        <entry>
+            <reference value="ExplanationOfBenefit/pbs-01"/>
+        </entry>
+        <entry>
+            <reference value="ExplanationOfBenefit/pbs-02"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Australian Immunisation Register - AIR"/>
+        <code>
+            <coding>
+                <system
+                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <code value="101.16776"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p><b>OVID 19 Immunisation Status:  </b>This individual has received all required COVID-19 vaccines.</p>
+                <table>
+                    <caption>Immunisation History</caption>
+                    <thead>
+                        <tr>
+                            <th>Date Given</th>
+                            <th>Immunisation</th>
+                            <th>Brand Name Given</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14/02/1999</td>
+                            <td>Hepatitis B</td>
+                            <td>Engerix-B (paediatric)</td>
+                        </tr>
+                        <tr>
+                            <td>14/04/1999</td>
+                            <td>Diphtheria, Tetanus, Pertussis, Hepatitis B, Polio, Hib</td>
+                            <td>Infanrix Hexa</td>
+                        </tr>
+                        <tr>
+                            <td>15/06/1999</td>
+                            <td>Diphtheria, Tetanus, Pertussis, Hepatitis B, Polio, Hib</td>
+                            <td>Infanrix Hexa</td>
+                        </tr>
+                        <tr>
+                            <td>14/08/1999</td>
+                            <td>Diphtheria, Tetanus, Pertussis, Hepatitis B, Polio, Hib</td>
+                            <td>Infanrix Hexa</td>
+                        </tr>
+                        <tr>
+                            <td>14/08/2000</td>
+                            <td>Diphtheria, Tetanus, Pertussis, Hepatitis B, Polio, Hib</td>
+                            <td>Infanrix Hexa</td>
+                        </tr>
+                        <tr>
+                            <td>14/02/2003</td>
+                            <td>Diphtheria, Tetanus, Pertussis, Hepatitis B, Polio, Hib</td>
+                            <td>Infanrix Hexa</td>
+                        </tr>
+                        <tr>
+                            <td>01/03/2020</td>
+                            <td>Influenza</td>
+                            <td>Panvax</td>
+                        </tr>
+                        <tr>
+                            <td>01/03/2021</td>
+                            <td>Influenza</td>
+                            <td>Panvax</td>
+                        </tr>
+                        <tr>
+                            <td>17/06/2021</td>
+                            <td>COVID-19</td>
+                            <td>Pfizer Comirnaty</td>
+                        </tr>
+                        <tr>
+                            <td>01/08/2021</td>
+                            <td>COVID-19</td>
+                            <td>Brand Name Given</td>
+                        </tr>
+                        <tr>
+                            <td>01/03/2022</td>
+                            <td>Influenza</td>
+                            <td>Panvax</td>
+                        </tr>
+                        <tr>
+                            <td>14/02/2022</td>
+                            <td>COVID-19</td>
+                            <td>Moderna Spikevax</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Next NIP Immunisation/s due</h3>
+                <p>No vacines due.</p>
+                <h3>Notice/s</h3>
+                <p>Natural immunity to Measles recorded on 28 Oct 2020.</p>
+            </div>
+        </text>
+        <entry>
+            <reference value="Flag/air-02"/>
+        </entry>
+        <entry>
+            <reference value="Observation/air-covid-imm-status-01"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-covid-01"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-covid-02"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-covid-03"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-dip-01"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-dip-02"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-dip-03"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-dip-04"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-dip-05"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-hepb-01"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-infl-01"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-infl-01"/>
+        </entry>
+        <entry>
+            <reference value="Immunization/air-infl-01"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Australian Organ Donor Register - AODR"/>
+        <code>
+            <coding>
+                <system
+                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <code value="101.16774"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>No Information Available</p>
+            </div>
+        </text>
+        <emptyReason>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/list-empty-reason"/>
+                <code value="unavailable"/>
+            </coding>
+            <text value="No Information Available"/>
+        </emptyReason>
+    </section>
+    <section>
+        <title value="Medicare Services - MBS and DVA Items"/>
+        <code>
+            <coding>
+                <system
+                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <code value="101.16780"/>
+            </coding>
+        </code>
+        <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <caption>Medicare Services - MBS and DVA Items</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>MBS Item Number</th>
+                            <th>Description</th>
+                            <th>Service Provider</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16 December 2017</td>
+                            <td>30185</td>
+                            <td>Palmar or plantar warts (10 or more), definitive removal of, excluding ablative methods alone, not being a service to which item 30186 or 30187 applies (Anaes.)</td>
+                            <td>Dr. Jeong-Hoon Kim</td>
+                        </tr>
+                        <tr>
+                            <td>16 December 2018</td>
+                            <td>30191</td>
+                            <td>Treatment of tumours with laser</td>
+                            <td>Dr. Jeong-Hoon Kim</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </text>
+        <entry>
+            <reference value="ExplanationOfBenefit/mbs-02"/>
+        </entry>
+        <entry>
+            <reference value="ExplanationOfBenefit/mbs-03"/>
+        </entry>
+    </section>
+</Composition>

@@ -20,7 +20,7 @@
    </tr>
    <tr>
       <td><a href="Composition-psml-03.html">Pharmacist Shared Medicines List Document Composition for Mac PRIEST (2018)</a></td>
-      <td>psml-03-doc</td>
+      <td>psml-03</td>
       <td><a href="Composition-psml-03.xml.html">XML</a></td>
       <td><a href="Composition-psml-03.json.html">JSON</a></td>
       <td><a href="Composition-psml-03.ttl.html">Turtle</a></td>
