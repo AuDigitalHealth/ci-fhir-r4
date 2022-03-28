@@ -239,7 +239,7 @@ Core FHIR profiles defined in this implementation guide.
                         <ul class="frm-set">
                                 <li>Provenance profiles (TBD Architecture Team)</li>  
                                 <li>Provenance for Generation of a List</li>  
-                                <li>Organ or Tissue Donation Consent on AODR</li>
+                                <li><a href="StructureDefinition-dh-consent-aodr-1.html">ADHA Record of Consent from Australian Organ Donor Register</a></li>
                                 <li>AuditEvent profiles (TBD Architecture Team)</li> 
                             </ul>
                         </td> 

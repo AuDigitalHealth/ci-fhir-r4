@@ -209,6 +209,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-consent-aodr-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Record of Australian Organ Donor Register Consent"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-date-initial-registration-1"/>
             </reference>
             <name value="ADHA Donation Decision"/>
@@ -821,6 +828,28 @@
             <name value="Pharmacist Shared Medicines List Document Composition for Mac PRIEST"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
         </resource>
+        <!--CONSENT EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Consent/aodr-01"/>
+            </reference>
+            <name value="AODR - Not willing to be a donor"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+        </resource>
+        <!--<resource>
+            <reference>
+                <reference value="Consent/aodr-02"/>
+            </reference>
+            <name value="AODR - Willing to be donor (all)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Consent/aodr-03"/>
+            </reference>
+            <name value="AODR - Willing to be donor (some)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+        </resource>-->
         <!--DEVICE EXAMPLES-->
         <resource>
             <reference>
