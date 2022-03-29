@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-servicerequest-modi-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
+  <version value="0.0.1"/>
+  <name value="MODIServiceRequest"/>
+  <title value="MODI Request for Diagnostic Imaging Service"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to provide a representation of a request for a diagnostic imaging service for use in the Modernisation of Diagnostic Imaging (MODI) Proof of Concept."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ServiceRequest"/>
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="ServiceRequest">
+      <path value="ServiceRequest"/>
+      <short value="Request for diagnostic imaging service"/>
+      <definition value="A record of a request for a diagnostic imaging service to be performed."/>
+      <constraint>
+        <key value="inv-dh-modi-01"/>
+        <severity value="error"/>
+        <human value="One category shall be Diganostic imaging service '708175003' 'http://snomed.info/sct'"/>
+        <expression value="category.coding.where(system='http://snomed.info/sct' and code='708175003').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
+      </constraint>
+    </element>
+    <element id="ServiceRequest.extension:targetBodyStructure">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="targetBodyStructure" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.identifier">
+      <path value="ServiceRequest.identifier"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.status">
+      <path value="ServiceRequest.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.category">
+      <path value="ServiceRequest.category"/>
+      <short value="Classification of the service requested as diagnostic imaging + modality where available"/>
+      <comment value="A fixed cateogry denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.priority">
+      <path value="ServiceRequest.priority"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.subject">
+      <path value="ServiceRequest.subject"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.subject.reference">
+      <path value="ServiceRequest.subject.reference"/>
+      <min value="1"/>
+    </element>
+    <element id="ServiceRequest.authoredOn">
+      <path value="ServiceRequest.authoredOn"/>
+      <min value="1" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.requester">
+      <path value="ServiceRequest.requester" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.requester.reference">
+      <path value="ServiceRequest.requester.reference"/>
+      <min value="1"/>
+    </element>
+    <element id="ServiceRequest.performer">
+      <path value="ServiceRequest.performer"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <!--<element id="ServiceRequest.performer.reference">
+      <path value="ServiceRequest.performer.reference"/>
+      <min value="1"/>
+    </element>-->
+    <element id="ServiceRequest.reasonCode">
+      <path value="ServiceRequest.reasonCode" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1" />
+      </binding>
+    </element>
+    <element id="ServiceRequest.supportingInfo">
+      <path value="ServiceRequest.supportingInfo" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.note">
+      <path value="ServiceRequest.note" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
