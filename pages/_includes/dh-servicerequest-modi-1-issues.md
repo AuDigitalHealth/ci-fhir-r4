@@ -16,8 +16,23 @@
         <td>N/A</td>
   </tr>
   <tr>
-        <td>Contained rules?</td>
+        <td>Contained rules and referencing</td>
         <td>To what extent do we want to rules on containing the references resources in this profile?</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
+        <td>MODI Identifier</td>
+        <td>Is there a specific electronic order identifier to be supported? Does the profile need to define that?</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
+        <td>Entity profiles (Patient etc.)</td>
+        <td>What is desired here? Need direction from MODI project on typing of references for entities.</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
+        <td>Examples</td>
+        <td>The linked examples are for design workshops only - significant variance in referencing and entity complexity is provided to enable choices of what to support - these are not yet a recommended set. Once the design is settled the examples will morph to be exemplars.</td>
         <td>N/A</td>
   </tr>
  </tbody>

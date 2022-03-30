@@ -10,8 +10,5 @@ This profile is designed to:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-
-#### Guidance
-The following guidance applies:
-* TBD
+NOTE: Must support to be defined handled by MODI documentation.
 
