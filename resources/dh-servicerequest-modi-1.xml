@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-modi-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="MODIServiceRequest"/>
   <title value="MODI Request for Diagnostic Imaging Service"/>
   <status value="draft"/>
@@ -52,6 +52,10 @@
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status"/>
       <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent"/>
+      <fixedCode value="order"/>
     </element>
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category"/>
