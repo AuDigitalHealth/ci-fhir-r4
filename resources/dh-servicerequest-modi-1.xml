@@ -30,7 +30,7 @@
       <constraint>
         <key value="inv-dh-modi-01"/>
         <severity value="error"/>
-        <human value="One category shall be Diganostic imaging service '708175003' 'http://snomed.info/sct'"/>
+        <human value="One category shall be Diagnostic imaging service '708175003' 'http://snomed.info/sct'"/>
         <expression value="category.coding.where(system='http://snomed.info/sct' and code='708175003').exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
       </constraint>
@@ -70,7 +70,7 @@
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category"/>
       <short value="Classification of the service requested as diagnostic imaging + modality where available"/>
-      <comment value="A fixed cateogry denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
+      <comment value="A fixed category denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.priority">
