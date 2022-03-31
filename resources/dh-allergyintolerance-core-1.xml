@@ -68,7 +68,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
@@ -76,7 +76,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.verificationStatus">
@@ -84,7 +84,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.type">
@@ -92,7 +92,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.code"/>
+        <map value=".observation.code"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.category">
@@ -100,7 +100,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.criticality">
@@ -108,7 +108,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.code">
@@ -117,7 +117,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.value"/>
+        <map value=".observation.value"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
@@ -187,7 +187,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.author"/>
+        <map value=".observation.author"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.asserter">
@@ -205,7 +205,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="observation.informant"/>
+        <map value=".observation.informant"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.note">
@@ -213,7 +213,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.act"/>
+        <map value=".observation.entryRelationship.act"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction">
@@ -221,7 +221,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation"/>
+        <map value=".observation.entryRelationship.observation"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.substance">
@@ -230,7 +230,7 @@
       <mapping>
         <identity value="CDA.observation"/>
         <map
-          value="observation.entryRelationship.observation.participant.participantRole.playingEntity.code"
+          value=".observation.entryRelationship.observation.participant.participantRole.playingEntity.code"
         />
       </mapping>
     </element>
@@ -239,7 +239,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.entryRelationship.observation.code"/>
+        <map value=".observation.entryRelationship.observation.entryRelationship.observation.code"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
@@ -247,7 +247,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
   </differential>

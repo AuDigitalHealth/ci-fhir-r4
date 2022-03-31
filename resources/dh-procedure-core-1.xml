@@ -63,7 +63,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure"/>
+        <map value=".procedure"/>
       </mapping>
     </element>
     <element id="Procedure.status">
@@ -71,7 +71,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.entryRelationship.observation.value"/>
+        <map value=".procedure.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Procedure.statusReason">
@@ -79,7 +79,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.entryRelationship.observation.value"/>
+        <map value=".procedure.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Procedure.code">
@@ -92,7 +92,7 @@
       </binding>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.code"/>
+        <map value=".procedure.code"/>
       </mapping>
     </element>
     <element id="Procedure.subject">
@@ -119,7 +119,7 @@
       <mapping>
         <identity value="CDA.procedure"/>
         <map
-          value="procedure.entryRelationship.encounter, or instantiated as an overall encounter ClinicalDocument.inFulfillmentOf.encompassingEncounter"/>
+          value=".procedure.entryRelationship.encounter / ClinicalDocument.inFulfillmentOf.encompassingEncounter"/>
       </mapping>
     </element>
     <element id="Procedure.performed[x]">
@@ -128,7 +128,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.effectiveTime"/>
+        <map value=".procedure.effectiveTime"/>
       </mapping>
     </element>
     <element id="Procedure.recorder">
@@ -146,7 +146,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.author"/>
+        <map value=".procedure.author"/>
       </mapping>
     </element>
     <element id="Procedure.asserter">
@@ -164,7 +164,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.informant"/>
+        <map value=".procedure.informant"/>
       </mapping>
     </element>
     <element id="Procedure.reasonCode">
@@ -172,7 +172,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.entryRelationship.observation.value"/>
+        <map value=".procedure.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Procedure.reasonReference[x]">
@@ -192,7 +192,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.procedure"/>
-        <map value="procedure.reference"/>
+        <map value=".procedure.reference"/>
       </mapping>
     </element>
     <element id="Procedure.bodySite">

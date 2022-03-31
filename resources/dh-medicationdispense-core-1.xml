@@ -39,7 +39,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply"/>
+        <map value=".supply"/>
       </mapping>
     </element>
     <element id="MedicationDispense.extension">
@@ -67,7 +67,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="entryRelationship.sequenceNumber"/>
+        <map value=".entryRelationship.sequenceNumber"/>
       </mapping>
     </element>
     <element id="MedicationDispense.identifier">
@@ -75,7 +75,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.id"/>
+        <map value=".supply.id"/>
       </mapping>
     </element>
     <element id="MedicationDispense.status">
@@ -83,7 +83,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.statusCode"/>
+        <map value=".supply.statusCode"/>
       </mapping>
     </element>
     <element id="MedicationDispense.statusReason">
@@ -91,7 +91,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.entryRelationship.observation.value"/>
+        <map value=".supply.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="MedicationDispense.category">
@@ -99,7 +99,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.entryRelationship.observation.value"/>
+        <map value=".supply.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="MedicationDispense.medication[x]">
@@ -114,7 +114,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.product.manufacturedProduct.manufacturedMaterial.code"/>
+        <map value=".supply.product.manufacturedProduct.manufacturedMaterial.code"/>
       </mapping>
     </element>
     <element id="MedicationDispense.subject">
@@ -138,7 +138,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.entryRelationship.encounter, or ClinicalDocument.componentOf.encompassingEncounter"/>
+        <map value=".supply.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
       </mapping>
     </element>
     <element id="MedicationDispense.performer">
@@ -154,7 +154,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.performer, or implicit in ClinicalDocument.author."/>
+        <map value=".supply.performer / implicit in ClinicalDocument.author"/>
       </mapping>
     </element>
     <element id="MedicationDispense.performer.function">
@@ -163,7 +163,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="perfomer.assignedEntity.code."/>
+        <map value=".perfomer.assignedEntity.code."/>
       </mapping>
     </element>
     <element id="MedicationDispense.performer.actor">
@@ -179,7 +179,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="perfomer.assignedEntity.assignedPerson"/>
+        <map value=".perfomer.assignedEntity.assignedPerson"/>
       </mapping>
     </element>
     <element id="MedicationDispense.location">
@@ -191,7 +191,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="perfomer.assignedEntity.assignedPerson"/>
+        <map value=".perfomer.assignedEntity.assignedPerson"/>
       </mapping>
     </element>
     <element id="MedicationDispense.authorizingPrescription">
@@ -203,7 +203,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.ext:inFulfillmentOf.ext:actReference.ext:id"/>
+        <map value=".supply.ext:inFulfillmentOf.ext:actReference.ext:id"/>
       </mapping>
     </element>
     <element id="MedicationDispense.quantity">
@@ -211,7 +211,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.quantity"/>
+        <map value=".supply.quantity"/>
       </mapping>
     </element>
     <element id="MedicationDispense.daysSupply">
@@ -219,7 +219,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.effectiveUseTime"/>
+        <map value=".supply.effectiveUseTime"/>
       </mapping>
     </element>
     <element id="MedicationDispense.whenPrepared">
@@ -227,7 +227,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.effectiveTime.low"/>
+        <map value=".supply.effectiveTime.low"/>
       </mapping>
     </element>
     <element id="MedicationDispense.note">
@@ -235,7 +235,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.entryRelationship.act"/>
+        <map value=".supply.entryRelationship.act"/>
       </mapping>
     </element>
     <element id="MedicationDispense.dosageInstruction">
@@ -243,7 +243,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.text"/>
+        <map value=".supply.text"/>
       </mapping>
     </element>
     <element id="MedicationDispense.substitution">
@@ -251,7 +251,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.entryRelationship"/>
+        <map value=".supply.entryRelationship"/>
       </mapping>
     </element>
     <element id="MedicationDispense.substitution.wasSubstituted">
@@ -259,7 +259,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.supply"/>
-        <map value="supply.entryRelationship.act.value"/>
+        <map value=".supply.entryRelationship.act.value"/>
       </mapping>
     </element>
   </differential>

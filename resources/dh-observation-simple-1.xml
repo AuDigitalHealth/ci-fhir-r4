@@ -46,7 +46,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation"/>
       </mapping>
     </element>
     <element id="Observation.status">
@@ -54,7 +54,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Observation.category">
@@ -63,7 +63,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation"/>
+        <map value=".observation.entryRelationship.observation"/>
       </mapping>
     </element>
     <element id="Observation.code">
@@ -71,7 +71,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.code"/>
+        <map value=".observation.code"/>
       </mapping>
     </element>
     <element id="Observation.subject">
@@ -96,7 +96,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Implicit in ClinicalDocument.componentOf.encompassingEncounter, or instantiated as observation.entryRelationship.encounter"/>
+        <map value=".observation.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
       </mapping>
     </element>
     <element id="Observation.effective[x]">
@@ -105,7 +105,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.effectiveTime"/>
+        <map value=".observation.effectiveTime"/>
       </mapping>
     </element>
     <element id="Observation.performer">
@@ -120,7 +120,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.performer"/>
+        <map value=".observation.performer"/>
       </mapping>
     </element>
     <element id="Observation.value[x]">
@@ -128,7 +128,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.value"/>
+        <map value=".observation.value"/>
       </mapping>
     </element>
     <element id="Observation.dataAbsentReason">
@@ -136,7 +136,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.TBD"/>
+        <map value=".observation.TBD"/>
       </mapping>
     </element>
     <element id="Observation.note">
@@ -144,7 +144,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.act.text"/>
+        <map value=".observation.entryRelationship.act.text"/>
       </mapping>
     </element>
   </differential>

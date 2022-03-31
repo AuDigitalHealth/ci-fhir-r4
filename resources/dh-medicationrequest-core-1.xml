@@ -46,7 +46,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration"/>
+        <map value=".substanceAdministration"/>
       </mapping>
     </element>
     <element id="MedicationRequest.identifier">
@@ -54,7 +54,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.id"/>
+        <map value=".substanceAdministration.id"/>
       </mapping>
     </element>
     <element id="MedicationRequest.status">
@@ -62,7 +62,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.statusCode"/>
+        <map value=".substanceAdministration.statusCode"/>
       </mapping>
     </element>
     <element id="MedicationRequest.statusReason">
@@ -70,7 +70,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship/observation.value"/>
+        <map value=".substanceAdministration.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="MedicationRequest.intent">
@@ -86,7 +86,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship/observation.value"/>
+        <map value=".substanceAdministration.entryRelationship/observation.value"/>
       </mapping>
     </element>
     <element id="MedicationRequest.medication[x]">
@@ -101,7 +101,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code"/>
+        <map value=".substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code"/>
       </mapping>
     </element>
     <element id="MedicationRequest.subject">
@@ -113,7 +113,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="ClinicalDocument/recordTarget"/>
+        <map value="ClinicalDocument.recordTarget"/>
       </mapping>
     </element>
     <element id="MedicationRequest.encounter">
@@ -125,7 +125,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration/entryRelationship/encounter, or ClinicalDocument/componentOf/encompassingEncounter"/>
+        <map value=".substanceAdministration/entryRelationship/encounter / ClinicalDocument/componentOf/encompassingEncounter"/>
       </mapping>
     </element>
     <element id="MedicationRequest.authoredOn">
@@ -134,7 +134,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.author.time, or implicit in ClinicalDocument/author."/>
+        <map value=".substanceAdministration.author.time, or implicit in ClinicalDocument/author."/>
       </mapping>
     </element>
     <element id="MedicationRequest.requester">
@@ -150,7 +150,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.author, or implicit in ClinicalDocument/author."/>
+        <map value=".substanceAdministration.author / ClinicalDocument/author"/>
       </mapping>
     </element>
     <element id="MedicationRequest.reasonCode">
@@ -158,7 +158,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.observation.value"/>
+        <map value=".substanceAdministration.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="MedicationRequest.reasonReference">
@@ -166,7 +166,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.observation"/>
+        <map value=".substanceAdministration.entryRelationship.observation"/>
       </mapping>
     </element>
     <element id="MedicationRequest.note">
@@ -174,7 +174,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.act.value"/>
+        <map value=".substanceAdministration.entryRelationship.act.value"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dosageInstruction">
@@ -182,7 +182,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.text"/>
+        <map value=".substanceAdministration.text"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest">
@@ -190,7 +190,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.supply"/>
+        <map value=".substanceAdministration.entryRelationship.supply"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod">
@@ -198,7 +198,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.supply.effectiveTime"/>
+        <map value=".substanceAdministration.entryRelationship.supply.effectiveTime"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
@@ -214,7 +214,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.supply.expectedUseTime"/>
+        <map value=".substanceAdministration.entryRelationship.supply.expectedUseTime"/>
       </mapping>
     </element>
     <element id="MedicationRequest.substitution">
@@ -222,7 +222,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.act"/>
+        <map value=".substanceAdministration.entryRelationship.act"/>
       </mapping>
     </element>
     <element id="MedicationRequest.substitution.allowed[x]">
@@ -230,7 +230,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.substanceAdministration"/>
-        <map value="substanceAdministration.entryRelationship.act.code"/>
+        <map value=".substanceAdministration.entryRelationship.act.code"/>
       </mapping>
     </element>
   </differential>

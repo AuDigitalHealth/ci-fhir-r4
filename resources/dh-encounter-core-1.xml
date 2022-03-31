@@ -44,11 +44,11 @@
       </constraint>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter"/>
+        <map value=".encounter"/>
       </mapping>
     </element>
     <element id="Encounter.extension:encounterDescription">
@@ -61,7 +61,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.text"/>
+        <map value=".encounter.text"/>
       </mapping>
     </element>
     <element id="Encounter.status">
@@ -73,7 +73,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.statusCode"/>
+        <map value=".encounter.statusCode"/>
       </mapping>
     </element>
     <element id="Encounter.class">
@@ -81,11 +81,11 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.code"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.code"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.code"/>
+        <map value=".encounter.code"/>
       </mapping>
     </element>
     <element id="Encounter.type">
@@ -101,7 +101,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship.observation.value"/>
+        <map value=".encounter.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Encounter.serviceType">
@@ -117,7 +117,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship.observation.value"/>
+        <map value=".encounter.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Encounter.subject">
@@ -150,11 +150,11 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.encounterParticipant"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.participant"/>
+        <map value=".encounter.participant"/>
       </mapping>
     </element>
     <element id="Encounter.participant.type">
@@ -162,11 +162,11 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.encounterParticipant.assignedEntity.code"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity.code"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.participant.participantRole.code"/>
+        <map value=".encounter.participant.participantRole.code"/>
       </mapping>
     </element>
     <element id="Encounter.participant.individual">
@@ -179,11 +179,11 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.encounterParticipant.assignedEntity.assignedPerson"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity.assignedPerson"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.participant.participantRole.playingEntity"/>
+        <map value=".encounter.participant.participantRole.playingEntity"/>
       </mapping>
     </element>
     <element id="Encounter.period">
@@ -192,11 +192,11 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.effectiveTime"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.effectiveTime"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.effectiveTime"/>
+        <map value=".encounter.effectiveTime"/>
       </mapping>
     </element>
     <element id="Encounter.reasonCode">
@@ -208,7 +208,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship.observation.value"/>
+        <map value=".encounter.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Encounter.reasonReference[x]">
@@ -226,7 +226,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.entryRelationship.observation, and/or encounter.entryRelationship.procedure"/>
+        <map value=".encounter.entryRelationship.observation, and/or encounter.entryRelationship.procedure"/>
       </mapping>
     </element>
     <element id="Encounter.hospitalization">
@@ -246,7 +246,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.dischargeDispositionCode"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.dischargeDispositionCode"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
@@ -281,11 +281,11 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="encompassingEncounter.encounterParticipant"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="encounter.participant"/>
+        <map value=".encounter.participant"/>
       </mapping>
     </element>
   </differential>

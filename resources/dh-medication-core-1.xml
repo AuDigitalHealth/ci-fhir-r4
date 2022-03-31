@@ -39,7 +39,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct"/>
+        <map value=".manufacturedProduct"/>
       </mapping>
     </element>
     <element id="Medication.extension:brandName">
@@ -49,7 +49,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="entryRelationship.brand.act.text"/>
+        <map value=".entryRelationship.brand.act.text"/>
       </mapping>
     </element>
     <element id="Medication.extension:genericName">
@@ -59,7 +59,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="entryRelationship.brand.act.text"/>
+        <map value=".entryRelationship.brand.act.text"/>
       </mapping>
     </element>
     <element id="Medication.code">
@@ -68,7 +68,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.code"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.code"/>
       </mapping>
     </element>
     <element id="Medication.manufacturer">
@@ -80,7 +80,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturerOrganization"/>
+        <map value=".manufacturedProduct.manufacturerOrganization"/>
       </mapping>
     </element>
     <element id="Medication.form">
@@ -88,7 +88,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:formCode"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:formCode"/>
       </mapping>
     </element>
     <element id="Medication.amount">
@@ -96,7 +96,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:asIngredient.ext:quantity"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:asIngredient.ext:quantity"/>
       </mapping>
     </element>
     <element id="Medication.ingredient">
@@ -111,7 +111,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:asIngredient.ext:ingredientManufacturedMaterial"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:asIngredient.ext:ingredientManufacturedMaterial"/>
       </mapping>
     </element>
     <element id="Medication.ingredient.item[x]">
@@ -127,7 +127,7 @@
       </type>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:asIngredient.ext:ingredientManufacturedMaterial.ext:quantity"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:asIngredient.ext:ingredientManufacturedMaterial.ext:quantity"/>
       </mapping>
     </element>
     <element id="Medication.ingredient.isActive">
@@ -159,7 +159,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.lotNumberText"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.lotNumberText"/>
       </mapping>
     </element>
     <element id="Medication.batch.expirationDate">
@@ -167,7 +167,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:expirationTime"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:expirationTime"/>
       </mapping>
     </element>
   </differential>

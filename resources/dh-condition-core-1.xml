@@ -64,7 +64,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation"/>
       </mapping>
     </element>
     <element id="Condition.clinicalStatus">
@@ -72,7 +72,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Condition.verificationStatus">
@@ -80,7 +80,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Condition.category">
@@ -88,7 +88,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Condition.severity">
@@ -100,7 +100,7 @@
       </binding>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation.entryRelationship.observation.value"/>
       </mapping>
     </element>
     <element id="Condition.code">
@@ -113,7 +113,7 @@
       </binding>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.value"/>
+        <map value=".observation.value"/>
       </mapping>
     </element>
     <element id="Condition.bodySite">
@@ -125,7 +125,7 @@
       </binding>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.targetSiteCode"/>
+        <map value=".observation.targetSiteCode"/>
       </mapping>
     </element>
     <element id="Condition.subject">
@@ -217,7 +217,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.author"/>
+        <map value=".observation.author"/>
       </mapping>
     </element>
     <element id="Condition.asserter">
@@ -235,7 +235,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.informant"/>
+        <map value=".observation.informant"/>
       </mapping>
     </element>
     <element id="Condition.note">
@@ -243,7 +243,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.act"/>
+        <map value=".observation.entryRelationship.act"/>
       </mapping>
     </element>
   </differential>

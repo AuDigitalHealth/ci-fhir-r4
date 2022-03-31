@@ -32,7 +32,7 @@
       <path value="RelatedPerson" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author"/>
+        <map value=".author.assignedAuthor.assignedPerson"/>
       </mapping>
     </element>
     <element id="RelatedPerson.identifier">
@@ -42,7 +42,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
     </element>
     <element id="RelatedPerson.active">
@@ -70,7 +70,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:personalRelationship.ext:code"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:personalRelationship.ext:code"/>
       </mapping>
     </element>
     <element id="RelatedPerson.name">
@@ -79,7 +79,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.name"/>
+        <map value=".author.assignedAuthor.assignedPerson.name"/>
       </mapping>
     </element>
     <element id="RelatedPerson.telecom">
@@ -88,7 +88,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.telecom"/>
+        <map value=".author.assignedAuthor.telecom"/>
       </mapping>
     </element>
     <element id="RelatedPerson.address">
@@ -96,7 +96,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.addr"/>
+        <map value=".author.assignedAuthor.addr"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication">
@@ -104,7 +104,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication.language">
@@ -112,7 +112,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication.languageCode"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication.languageCode"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication.preferred">
@@ -120,7 +120,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication.preferenceInd"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication.preferenceInd"/>
       </mapping>
     </element>
   </differential>

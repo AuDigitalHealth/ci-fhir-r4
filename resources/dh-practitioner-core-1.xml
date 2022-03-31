@@ -20,11 +20,11 @@
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="CDA.author"/>
+    <identity value="CDA.assignedPerson"/>
     <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema author"/>
+    <name value="Agency CDA Schema assignedPerson"/>
   </mapping>
-  <mapping>
+   <mapping>
     <identity value="CDA.informant"/>
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema informant"/>
@@ -35,9 +35,9 @@
     <name value="Agency CDA Schema informationRecipient"/>
   </mapping>
   <mapping>
-    <identity value="CDA.assignedPerson"/>
+    <identity value="CDA.author"/>
     <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema assignedPerson"/>
+    <name value="Agency CDA Schema author"/>
   </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -68,19 +68,19 @@
       </constraint>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="assignedPerson"/>
+        <map value=".author"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant"/>
+        <map value=".informant"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="assignedPerson"/>
+        <map value=".assignedPerson"/>
       </mapping>
     </element>
     <element id="Practitioner.identifier">
@@ -89,19 +89,19 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="assignedPerson.ext:asEntityIdentifier"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
+        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.ext:asEntityIdentifier"/>
+        <map value="ClinicalDocument.informationRecipient.ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="assignedPerson.ext:asEntityIdentifier"/>
+        <map value=".assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
     </element>
     <element id="Practitioner.active">
@@ -130,19 +130,19 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="assignedPerson.name"/>
+        <map value=".author.assignedAuthor.assignedPerson.name"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.assignedPerson.name"/>
+        <map value=".informant.assignedEntity.assignedPerson.name"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.name"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.name"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="assignedPerson.name"/>
+        <map value=".assignedPerson.name"/>
       </mapping>
     </element>
     <element id="Practitioner.telecom">
@@ -150,19 +150,19 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="telecom"/>
+        <map value=".author.assignedAuthor.telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.telecom"/>
+        <map value=".informant.assignedEntity.telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="telecom"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="telecom"/>
+        <map value=".telecom"/>
       </mapping>
     </element>
     <element id="Practitioner.address">
@@ -172,19 +172,19 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="addr"/>
+        <map value=".addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.addr"/>
+        <map value=".informant.assignedEntity.addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="addr"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="addr"/>
+        <map value=".addr"/>
       </mapping>
     </element>
     <element id="Practitioner.qualification">
@@ -213,7 +213,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"/>
+        <map value="Instantiated as ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
@@ -337,19 +337,19 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="assignedPerson.ext:languageCommunication"/>
+        <map value=".assignedPerson.ext:languageCommunication"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.assignedPerson.ext:languageCommunication"/>
+        <map value=".informant.assignedEntity.assignedPerson.ext:languageCommunication"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.ext:languageCommunication"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:languageCommunication"/>
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="assignedPerson.ext:languageCommunication"/>
+        <map value=".assignedPerson.ext:languageCommunication"/>
       </mapping>
     </element>
   </differential>

@@ -100,15 +100,15 @@
       </constraint>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author"/>
+        <map value=".author"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant"/>
+        <map value=".informant"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient"/>
+        <map value="ClinicalDocument.informationRecipient"/>
       </mapping>
     </element>
     <element id="PractitionerRole.identifier">
@@ -117,15 +117,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
+        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
       </mapping>
     </element>
     <element id="PractitionerRole.active">
@@ -155,15 +155,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson"/>
+        <map value=".author.assignedAuthor.assignedPerson"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.assignedPerson"/>
+        <map value=".informant.assignedEntity.assignedPerson"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.intendedRecipient.informationRecipient"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient"/>
       </mapping>
     </element>
     <element id="PractitionerRole.organization">
@@ -177,15 +177,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.representedOrganization"/>
+        <map value=".author.assignedAuthor.representedOrganization"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.representedOrganization"/>
+        <map value=".informant.assignedEntity.representedOrganization"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.intendedRecipient.receivedOrganization"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization"/>
       </mapping>
     </element>
     <element id="PractitionerRole.code">
@@ -193,15 +193,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.code"/>
+        <map value=".author.assignedAuthor.code"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.code"/>
+        <map value=".informant.assignedEntity.code"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.intendedRecipient.ext:code"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.ext:code"/>
       </mapping>
     </element>
     <element id="PractitionerRole.specialty">
@@ -253,15 +253,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="TBD"/>
+        <map value=".act"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="n/a"/>
+        <map value=".act"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="n/a"/>
+        <map value=".act"/>
       </mapping>
     </element>
     <element id="PractitionerRole.telecom">
@@ -269,15 +269,15 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.telecom"/>
+        <map value=".author.assignedAuthor.telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="informant.assignedEntity.telecom"/>
+        <map value=".informant.assignedEntity.telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="informationRecipient.intendedRecipient.telecom"/>
+        <map value="ClinicalDocument.informationRecipient.intendedRecipient.telecom"/>
       </mapping>
     </element>
   </differential>

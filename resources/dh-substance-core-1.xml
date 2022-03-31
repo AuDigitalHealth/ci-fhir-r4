@@ -44,7 +44,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct"/>
+        <map value=".manufacturedProduct"/>
       </mapping>
     </element>
     <element id="Substance.identifier">
@@ -52,7 +52,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.id"/>
+        <map value=".manufacturedProduct.id"/>
       </mapping>
     </element>
     <element id="Substance.category">
@@ -68,7 +68,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.code"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.code"/>
       </mapping>
     </element>
     <element id="Substance.description">
@@ -76,7 +76,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:desc"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:desc"/>
       </mapping>
     </element>
     <element id="Substance.instance">
@@ -100,7 +100,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:expirationTime"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:expirationTime"/>
       </mapping>
     </element>
     <element id="Substance.instance.quantity">
@@ -126,7 +126,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
-        <map value="manufacturedProduct.manufacturedMaterial.ext:asIngredient"/>
+        <map value=".manufacturedProduct.manufacturedMaterial.ext:asIngredient"/>
       </mapping>
     </element>
     <element id="Substance.ingredient.quantity">
