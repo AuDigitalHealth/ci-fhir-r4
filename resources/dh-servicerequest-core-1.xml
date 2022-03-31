@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a record of request for a service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="CDA.act"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema act"/>
+  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="ServiceRequest"/>
@@ -46,10 +51,18 @@
         <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
       </constraint>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.identifier">
       <path value="ServiceRequest.identifier"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.id"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.basedOn">
       <path value="ServiceRequest.basedOn" />
@@ -60,10 +73,18 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value="ClinicalDocument.inFulfillmentOf.order"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.statusCode"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category"/>
@@ -72,6 +93,10 @@
         <strength value="example" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/service-type-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code"/>
@@ -81,6 +106,10 @@
         <strength value="preferred" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/procedure-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.code"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject"/>
@@ -90,6 +119,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."/>
+      </mapping>
     </element>
     <element id="ServiceRequest.encounter">
       <path value="ServiceRequest.encounter"/>
@@ -98,10 +131,18 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
+      </mapping>  
     </element>
     <element id="ServiceRequest.authoredOn">
       <path value="ServiceRequest.authoredOn"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.participant.time"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
@@ -115,6 +156,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.participant"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.performerType">
       <path value="ServiceRequest.performerType"/>
@@ -123,6 +168,10 @@
         <strength value="preferred" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/practitioner-role-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.participant.time"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.performer">
       <path value="ServiceRequest.performer"/>
@@ -136,6 +185,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.performer"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.reasonCode">
       <path value="ServiceRequest.reasonCode" />
@@ -144,6 +197,10 @@
         <strength value="preferred" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship.observation.value"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.reasonReference">
       <path value="ServiceRequest.reasonReference" />
@@ -155,10 +212,18 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value=".act.entryRelationship"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.supportingInfo">
       <path value="ServiceRequest.supportingInfo" />
       <mustSupport value="true" />
     </element>
+    <mapping>
+      <identity value="CDA.act"/>
+      <map value=".act.TBD"/>
+    </mapping>
   </differential>
 </StructureDefinition>
