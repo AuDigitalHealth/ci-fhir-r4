@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ncspp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspp-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionNCSPParticipation"/>
   <title value="Australian Digital Health Agency National Cancer Screening Program Participation Composition"/>
   <status value="draft"/>
@@ -41,7 +41,7 @@
       <path value="Composition.type"/>
       <binding>
         <strength value="required" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/ncsp-participation-document-type-1" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/national-cancer-screening-program-participation-document-type-1" />
       </binding>
     </element>
     <element id="Composition.category">

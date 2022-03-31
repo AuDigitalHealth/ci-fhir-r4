@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ncspp-valuesetoptions-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspp-valuesetoptions-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionNCSPParticipationValueSet"/>
   <title value="Australian Digital Health Agency National Cancer Screening Program Participation CompositionValueSet"/>
   <status value="draft"/>
@@ -14,10 +14,8 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description
-    value="The purpose of this profile is to define a representation of a National Cancer Screening Program Participation document that describes a patient's participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation. This profile elaborates the section type value set member options to support design activities."/>
-  <copyright
-    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description value="The purpose of this profile is to define a representation of a National Cancer Screening Program Participation document that describes a patient's participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation. This profile elaborates the section type value set member options to support design activities."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -29,8 +27,7 @@
     <element id="Composition">
       <path value="Composition"/>
       <short value="National Cancer Screening Program Participation"/>
-      <definition
-        value="A document that describes a patient's participation in one or more national cancer screening programs, e.g. bowel or cervical. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."
+      <definition value="A document that describes a patient's participation in one or more national cancer screening programs, e.g. bowel or cervical. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."
       />
     </element>
     <element id="Composition.status">
@@ -41,7 +38,7 @@
       <path value="Composition.type"/>
       <binding>
         <strength value="required" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/ncsp-participation-document-type-1" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/national-cancer-screening-program-participation-document-type-1" />
       </binding>
     </element>
     <element id="Composition.category">
