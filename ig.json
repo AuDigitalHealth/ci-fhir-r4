@@ -12,6 +12,7 @@
             "examples/Bundle",
             "examples/Composition",
             "examples/Condition",
+            "examples/Consent",
             "examples/Device",
             "examples/DiagnosticReport",
             "examples/DocumentReference",
@@ -47,7 +48,7 @@
     "special-urls": [
         "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration",
         "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"
-        ],
+    ],
     "extraTemplates": [
         "mappings",
         "examples"
@@ -104,10 +105,6 @@
             "base": "StructureDefinition-dh-composition-acts-1.html",
             "defns": "StructureDefinition-dh-composition-acts-1-definitions.html"
         },
-        "StructureDefinition/dh-bundle-core-1": {
-            "base": "StructureDefinition-dh-bundle-core-1.html",
-            "defns": "StructureDefinition-dh-bundle-core-1-definitions.html"
-        },
         "StructureDefinition/dh-bundle-document-1": {
             "base": "StructureDefinition-dh-bundle-document-1.html",
             "defns": "StructureDefinition-dh-bundle-document-1-definitions.html"
@@ -119,6 +116,10 @@
         "StructureDefinition/dh-bundle-payload-1": {
             "base": "StructureDefinition-dh-bundle-payload-1.html",
             "defns": "StructureDefinition-dh-bundle-payload-1-definitions.html"
+        },
+        "StructureDefinition/dh-bundle-core-1": {
+            "base": "StructureDefinition-dh-bundle-core-1.html",
+            "defns": "StructureDefinition-dh-bundle-core-1-definitions.html"
         },
         "StructureDefinition/dh-condition-core-1": {
             "base": "StructureDefinition-dh-condition-core-1.html",
@@ -192,6 +193,10 @@
             "base": "StructureDefinition-dh-composition-sml-1.html",
             "defns": "StructureDefinition-dh-composition-sml-1-definitions.html"
         },
+        "StructureDefinition/dh-consent-aodr-1": {
+            "base": "StructureDefinition-dh-consent-aodr-1.html",
+            "defns": "StructureDefinition-dh-consent-aodr-1-definitions.html"
+        },
         "StructureDefinition/dh-date-initial-registration-1": {
             "base": "StructureDefinition-dh-date-initial-registration-1.html",
             "defns": "StructureDefinition-dh-date-initial-registration-1-definitions.html"
@@ -240,17 +245,9 @@
             "base": "StructureDefinition-dh-healthcareservice-core-1.html",
             "defns": "StructureDefinition-dh-healthcareservice-core-1-definitions.html"
         },
-        "StructureDefinition/dh-attachment-hl7-base64-1": {
-            "base": "StructureDefinition-dh-attachment-hl7-base64-1.html",
-            "defns": "StructureDefinition-dh-attachment-hl7-base64-1-definitions.html"
-        },
         "StructureDefinition/dh-hl7-v2-base64-1": {
             "base": "StructureDefinition-dh-hl7-v2-base64-1.html",
             "defns": "StructureDefinition-dh-hl7-v2-base64-1-definitions.html"
-        },
-        "StructureDefinition/dh-attachment-hl7-v2-base64-1": {
-            "base": "StructureDefinition-dh-attachment-hl7-v2-base64-1.html",
-            "defns": "StructureDefinition-dh-attachment-hl7-v2-base64-1-definitions.html"
         },
         "StructureDefinition/dh-immunization-air-1": {
             "base": "StructureDefinition-dh-immunization-air-1.html",
@@ -395,6 +392,10 @@
         "StructureDefinition/dh-servicerequest-mbs-claim-1": {
             "base": "StructureDefinition-dh-servicerequest-mbs-claim-1.html",
             "defns": "StructureDefinition-dh-servicerequest-mbs-claim-1-definitions.html"
+        },
+        "StructureDefinition/dh-servicerequest-modi-1": {
+            "base": "StructureDefinition-dh-servicerequest-modi-1.html",
+            "defns": "StructureDefinition-dh-servicerequest-modi-1-definitions.html"
         },
         "StructureDefinition/dh-specimen-core-1": {
             "base": "StructureDefinition-dh-specimen-core-1.html",

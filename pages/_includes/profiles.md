@@ -211,7 +211,7 @@ The following core FHIR profiles are defined in this implementation guide. These
 
 ### Australian Digital Health Agency Use Case FHIR Profile Index 
 
-Core FHIR profiles defined in this implementation guide.
+FHIR profiles defined in this implementation guide for defined use cases.
 
 <html>
   <div id="segment-content" class="segment">
@@ -239,7 +239,7 @@ Core FHIR profiles defined in this implementation guide.
                         <ul class="frm-set">
                                 <li>Provenance profiles (TBD Architecture Team)</li>  
                                 <li>Provenance for Generation of a List</li>  
-                                <li>Organ or Tissue Donation Consent on AODR</li>
+                                <li><a href="StructureDefinition-dh-consent-aodr-1.html">ADHA Record of Consent from Australian Organ Donor Register</a></li>
                                 <li>AuditEvent profiles (TBD Architecture Team)</li> 
                             </ul>
                         </td> 
@@ -359,6 +359,7 @@ Core FHIR profiles defined in this implementation guide.
                             <ul class="frm-set">
                                 <li>ADHA Referral</li>
                                 <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
+                                <li><a href="StructureDefinition-dh-servicerequest-modi-1.html">MODI Request for Diagnostic Imaging Service</a></li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>

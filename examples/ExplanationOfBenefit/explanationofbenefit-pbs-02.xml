@@ -3,7 +3,7 @@
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
 	</meta>
-	<!--identifier from Bundle uploaded from MBS Medicare repository-->
+	<!--identifier for the PBR record from Medicare repository-->
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:uuid:73f7a30b-add3-4673-a4e9-65b0d8670a36" />
@@ -57,9 +57,10 @@
 			<system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
 			<value value="8003611566708354"/>
 		</identifier>
+		<display value="Mr. Representative Pharmacist at Test Org -DigitalHealth 6 Pharmacy"/>
 	</provider>
 	<prescription>
-		<reference value="MedicationRequest/claim-pbs-01"/>
+		<reference value="MedicationRequest/claim-pbs-02"/>
 	</prescription>
 	<outcome value="complete"/>
 	<insurance>
