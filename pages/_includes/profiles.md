@@ -341,7 +341,6 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
                                 <li>ADHA Pathology DiagnosticReport</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
-                                <li><a href="StructureDefinition-dh-observation-programparticipation-1.html">Health Program Participation Observation (for transition to HL7 AU)</a></li>
                                 <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Donatable Organ or Tissue BodyStructure</a></li>
                             </ul>
@@ -510,11 +509,12 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a></li>
                                 <li>AU Level of Consciousness</li>
                                 <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-vitalspanel.html">AU Vital Signs Panel</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-parity.html">AU Parity</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-parity.html">AU Parity</a></li>
+                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
+                                <li>AU Health Program Participation Summary</li>
                             </ul>
                         </td>   
                         <td class="frm-null"/>

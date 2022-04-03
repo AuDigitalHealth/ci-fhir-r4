@@ -27,6 +27,13 @@
     <definition>
         <resource>
             <reference>
+                <reference value="StructureDefinition/au-healthprogramparticipation"/>
+            </reference>
+            <name value="AU Health Program Participation Summary"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-allergyintolerance-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core AllergyIntolerance"/>
@@ -464,13 +471,6 @@
                 <reference value="StructureDefinition/dh-observation-ncspp-1"/>
             </reference>
             <name value="ADHA National Cancer Screening Program Participation Observation"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-programparticipation-1"/>
-            </reference>
-            <name value="Program Participation Observation"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -1915,24 +1915,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-12alcohol-01"/>
-            </reference>
-            <name value="Alcohol twelve step program participation information for Ms. Sally FIELD - Active participation (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/program-participation-bcsp-01"/>
             </reference>
             <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Opted Out (2017)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/program-participation-bcsp-02"/>
-            </reference>
-            <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Deferred (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
