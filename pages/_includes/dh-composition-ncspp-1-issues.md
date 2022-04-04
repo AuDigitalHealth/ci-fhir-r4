@@ -11,6 +11,16 @@
         <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Derived.20profile.20snapshot.20missing.20upstream.20invariants">Derived profile snapshot missing upstream invariants</a> stream</td>
   </tr>
   <tr>
+        <td>Current design supports a structure of subtyping - flex for doc + view</td>
+        <td>Decision on whether to proceed with flexible profile or fixed profile for view only.</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
+        <td>Record titles?</td>
+        <td>What are the record titles for each national cancer screening program participation record + the view.</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
         <td>Dependency on HL7 AU Profile: in development</td>
         <td>The section entry profile is in development but is dependent on the HL7 AU Profile Health Program Participation that is currently in development.</td>
         <td>N/A</td>
@@ -21,8 +31,13 @@
         <td>N/A</td>
   </tr>
   <tr>
-        <td>Terminology for document types</td>
-        <td>Terminology is in publication process. Concepts and the value set to be available at end of March.</td>
+        <td>Section constraints - specificty vs flexibility</td>
+        <td>Choice to be made between repeatable section supported by a value set or a defined set of section slices as shown in <a href="StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html">Section type design elaboration version of ADHA National Cancer Screening Program Participation Composition</a>.</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
+        <td>Section title constraints</td>
+        <td>Choice to be made on where in the solution to fix the section title constraints - if set in the profile these need to be updated and maintained to change the section title. Would be breaking change in profile.</td>
         <td>N/A</td>
   </tr>
   <tr>

@@ -252,6 +252,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-mix-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
                                  <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
+                                 <li><a href="StructureDefinition-dh-composition-mov-1.html">ADHA Medicare Overview Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-ncspp-1.html">ADHA National Cancer Screening Program Participation Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html">Section type design elaboration version of ADHA National Cancer Screening Program Participation Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Composition</a></li>
@@ -378,7 +379,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html">ADHA Record of Claim against MBS</a></li>
+                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html">ADHA Record of Claim against MBS or DVA</a></li>
                             </ul>
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html">ADHA Record of Claim against PBS or RPBS</a></li>
