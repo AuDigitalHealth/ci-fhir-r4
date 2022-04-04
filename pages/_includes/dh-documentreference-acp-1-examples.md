@@ -5,18 +5,18 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="DocumentReference-acp-01.html">Advance Care Planning Document Reference for Mrs. Anne Thompson</a></td>
+      <td><a href="DocumentReference-acp-payload-01.html">Advance Care Planning document as attachment for Mrs. Anne Thompson</a></td>
       <td>acp-01</td>
-      <td><a href="DocumentReference-acp-01.xml.html">XML</a></td>
-      <td><a href="DocumentReference-acp-01.json.html">JSON</a></td>
-      <td><a href="DocumentReference-acp-01.ttl.html">Turtle</a></td>
+      <td><a href="DocumentReference-acp-payload-01.xml.html">XML</a></td>
+      <td><a href="DocumentReference-acp-payload-01.json.html">JSON</a></td>
+      <td><a href="DocumentReference-acp-payload-01.ttl.html">Turtle</a></td>
    </tr>  
    <tr>
-      <td><a href="DocumentReference-acp-02.html">Goals of Care Document Reference for Mr Zhang Wei</a></td>
-      <td>acp-02</td>
-      <td><a href="DocumentReference-acp-02.xml.html">XML</a></td>
-      <td><a href="DocumentReference-acp-02.json.html">JSON</a></td>
-      <td><a href="DocumentReference-acp-02.ttl.html">Turtle</a></td>
+      <td><a href="DocumentReference-acp-payload-02.html">Goals of Care document as attachment for Mr Zhang Wei</a></td>
+      <td>acp-payload-02</td>
+      <td><a href="DocumentReference-acp-payload-02.xml.html">XML</a></td>
+      <td><a href="DocumentReference-acp-payload-02.json.html">JSON</a></td>
+      <td><a href="DocumentReference-acp-payload-02.ttl.html">Turtle</a></td>
    </tr>  
    <tr>
       <td colspan="5">Bundle examples:</td>
