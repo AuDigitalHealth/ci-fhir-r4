@@ -52,7 +52,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN']"/>
       </mapping>
     </element>
     <element id="Observation.partOf">
@@ -73,7 +73,7 @@
       </binding>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='103.32010', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Observation.category">
@@ -82,7 +82,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='103.17018', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Observation.code">
@@ -90,7 +90,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.code"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].code"/>
       </mapping>
     </element>
     <element id="Observation.subject">
@@ -103,7 +103,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Not mapped directly, implicit in ClinicalDocument.recordTarget.patientRole"/>
+        <map value="ClinicalDocument.recordTarget.patientRole / .participant[typeCode=SBJ].participantRole[classCode=PAT]"/>
       </mapping>
     </element>
     <element id="Observation.effective[x]">
@@ -112,7 +112,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.effectiveTime"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].effectiveTime"/>
       </mapping>
     </element>
     <element id="Observation.performer">
@@ -127,7 +127,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.performer"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].author / .observation.participant[typeCode='AUT']"/>
       </mapping>
     </element>
     <element id="Observation.value[x]">
@@ -135,7 +135,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.value"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].value"/>
       </mapping>
     </element>
     <element id="Observation.dataAbsentReason">
@@ -143,7 +143,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.TBD"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].value.nullFlavor"/>
       </mapping>
     </element>
     <element id="Observation.interpretation">
@@ -151,7 +151,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.interpretationCode"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].interpretationCode"/>
       </mapping>
     </element>
     <element id="Observation.note">
@@ -159,7 +159,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.act.text"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].act[code='103.16044',codeSystem='1.2.36.1.2001.1001.101'].text[xsi:type='ST']"/>
       </mapping>
     </element>
     <element id="Observation.bodySite">
@@ -167,7 +167,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.targetSiteCode"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].targetSiteCode"/>
       </mapping>
     </element>
     <element id="Observation.method">
@@ -175,7 +175,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.methodCode"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].methodCode"/>
       </mapping>
     </element>
     <element id="Observation.specimen">
@@ -187,7 +187,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.TBD"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='SUBJ'].observation"/>
       </mapping>
     </element>
     <element id="Observation.specimen.reference">
@@ -203,7 +203,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.referenceRange.observationRange"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].referenceRange.observationRange[classCode='OBS', moodCode='EVN']"/>
       </mapping>
     </element>
     <element id="Observation.referenceRange.low">
@@ -211,7 +211,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.referenceRange.observationRange.value.low.value"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].referenceRange.observationRange[classCode='OBS', moodCode='EVN'].value.low[value]"/>
       </mapping>
     </element>
     <element id="Observation.referenceRange.high">
@@ -219,7 +219,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.referenceRange.observationRange.value.high.value"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].referenceRange.observationRange[classCode='OBS', moodCode='EVN'].value.high[value]"/>
       </mapping>
     </element>
     <element id="Observation.referenceRange.type">
@@ -227,7 +227,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.referenceRange.observationRange.interpretationCode"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].referenceRange.observationRange[classCode='OBS', moodCode='EVN'].interpretationCode"/>
       </mapping>
     </element>
     <element id="Observation.referenceRange.text">
@@ -235,7 +235,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Instantiated as either a string (observation.referenceRange.observationRange.value[xsi:type='ST'] or as reference to narrative text (observation.referenceRange.observationRange.value.text.reference.value"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].referenceRange.observationRange.value / observation.referenceRange.observationRange.value.text.reference.value"/>
       </mapping>
     </element>
     <element id="Observation.component">

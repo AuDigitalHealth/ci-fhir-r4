@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a body structure for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.observation"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema observation"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="BodyStructure" />
@@ -40,18 +45,34 @@
         <expression value="location.exists() or description.exists()" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN']"/>
+      </mapping>
     </element>
     <element id="BodyStructure.identifier">
       <path value="BodyStructure.identifier" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].id"/>
+      </mapping>
     </element>
     <element id="BodyStructure.active">
       <path value="BodyStructure.active" />
       <fixedBoolean value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="BodyStructure.morphology">
       <path value="BodyStructure.morphology" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='TBD', codeSystem='TBD'].value[xsi:type='CD']"/>
+      </mapping>
     </element>
     <element id="BodyStructure.location">
       <path value="BodyStructure.location" />
@@ -60,6 +81,10 @@
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].targetSiteCode"/>
+      </mapping>
     </element>
     <element id="BodyStructure.locationQualifier">
       <path value="BodyStructure.locationQualifier" />
@@ -68,14 +93,26 @@
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-relative-site-qualifier-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].targetSiteCode.qualifier.value[xsi:type='CD']"/>
+      </mapping>
     </element>
     <element id="BodyStructure.description">
       <path value="BodyStructure.description" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS',moodCode='EVN'].entryRelationship[typeCode='COMP'].act[classCode='ACT',moodCode='EVN'].code[code='TBD',codeSystem='TBD'].text[xsi:type='ST']"/>
+      </mapping>
     </element>
     <element id="BodyStructure.image">
       <path value="BodyStructure.image" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS',moodCode='EVN'].entryRelationship[typeCode='COMP'].observationMedia[classCode='OBS',moodCode='EVN'].value"/>
+      </mapping>
     </element>
     <element id="BodyStructure.patient">
       <path value="BodyStructure.patient" />
@@ -84,6 +121,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="ClinicalDocument.recordTarget.patientRole / .participant[typeCode=SBJ].participantRole[classCode=PAT]"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

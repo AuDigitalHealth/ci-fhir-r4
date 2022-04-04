@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to define  a core representation of a diagnostic report issued by the diagnostic service provider to support the electronic exchange of the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.observation"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema observation"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="DiagnosticReport" />
@@ -46,11 +51,19 @@
         <expression value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN']"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.identifier">
       <path value="DiagnosticReport.identifier" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].id"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
@@ -60,6 +73,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='FLFS'].act"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
@@ -69,6 +86,10 @@
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='103.20104', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
@@ -78,11 +99,19 @@
         <strength value="extensible" />
         <valueSet value="http://hl7.org/fhir/ValueSet/diagnostic-service-sections" />
       </binding>
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='310074003', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
       <short value="Diagnostic examination name / study name / group name" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].code"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
@@ -92,17 +121,29 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="ClinicalDocument.recordTarget.patientRole / .participant[typeCode=SBJ].participantRole[classCode=PAT]"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].effectiveTime"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
       <short value="Diagnostic report date time" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="TBD"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer" />
@@ -112,6 +153,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].author / .observation[classCode='OBS', moodCode='EVN'].participant[@typeCode='AUT']"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
@@ -121,22 +166,42 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.result.reference">
       <path value="DiagnosticReport.result.reference" />
       <min value="1" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.conclusion">
       <path value="DiagnosticReport.conclusion" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='48767-8', codeSystem='2.16.840.1.113883.6.1'].value[xsi:type='ST']"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='54531-9', codeSystem='2.16.840.1.113883.6.1'].value[xsi:type='CD'"/>
+      </mapping>
     </element>
     <element id="DiagnosticReport.presentedForm">
       <path value="DiagnosticReport.presentedForm" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].value"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

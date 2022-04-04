@@ -46,7 +46,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation"/>
       </mapping>
     </element>
     <element id="Flag.identifier">
@@ -54,7 +54,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.id"/>
+        <map value=".observation.id"/>
       </mapping>
     </element>
     <element id="Flag.category">
@@ -63,7 +63,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.code"/>
+        <map value=".observation.code"/>
       </mapping>
     </element>
     <element id="Flag.code">
@@ -71,7 +71,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.value"/>
+        <map value=".observation.value"/>
       </mapping>
     </element>
     <element id="Flag.subject">
@@ -88,7 +88,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Implicit in ClinicalDocument.recordTarget, or instantiated as observation.participant"/>
+        <map value=".observation.participant / implicit in ClinicalDocument.recordTarget"/>
       </mapping>
     </element>
     <element id="Flag.period">
@@ -96,7 +96,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.effectiveTime"/>
+        <map value=".observation.effectiveTime"/>
       </mapping>
     </element>
     <element id="Flag.encounter">
@@ -104,7 +104,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Implicit in ClinicalDocument.componentOf.encompassingEncounter, or instantiated as observation.entryRelationship.encounter"/>
+        <map value="observation.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
       </mapping>
     </element>
     <element id="Flag.author">
@@ -120,7 +120,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Implicit in ClinicalDocument.author, or instantiated as observation.author or as observation.participant"/>
+        <map value=".observation.author or as observation.participant / implicit in ClinicalDocument.author"/>
       </mapping>
     </element>
   </differential>

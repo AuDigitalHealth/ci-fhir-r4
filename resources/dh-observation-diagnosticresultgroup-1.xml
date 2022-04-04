@@ -46,7 +46,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN']"/>
       </mapping>
     </element>
     <element id="Observation.status">
@@ -59,7 +59,7 @@
       </binding>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.observation.value"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='103.32010', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Observation.category">
@@ -67,7 +67,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="TBD"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation[code='103.17018', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Observation.code">
@@ -75,7 +75,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.code"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].code"/>
       </mapping>
     </element>
     <element id="Observation.subject">
@@ -88,7 +88,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="Not mapped directly, implicit in ClinicalDocument.recordTarget.patientRole"/>
+        <map value="ClinicalDocument.recordTarget.patientRole / .participant[typeCode=SBJ].participantRole[classCode=PAT]"/>
       </mapping>
     </element>
     <element id="Observation.effective[x]">
@@ -97,7 +97,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.effectiveTime"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].effectiveTime"/>
       </mapping>
     </element>
     <element id="Observation.performer">
@@ -112,7 +112,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="observation.performer"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].author / .observation.participant[typeCode='AUT']"/>
       </mapping>
     </element>
     <element id="Observation.hasMember">
@@ -125,7 +125,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="TBD"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'].observation"/>
       </mapping>
     </element>
     <element id="Observation.hasMember.reference">
@@ -141,7 +141,7 @@
       <max value="0" />
       <mapping>
         <identity value="CDA.observation"/>
-        <map value="TBD"/>
+        <map value=".observation[classCode='OBS', moodCode='EVN'].entryRelationship[typeCode='COMP'.observation"/>
       </mapping>
     </element>
   </differential>
