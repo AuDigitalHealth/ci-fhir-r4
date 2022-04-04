@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="3e2a29a1-3a3c-4a53-bb1b-66588e9bd147"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="837281000168100"/>
+			<display value="diphtheria 2 units + tetanus 20 units vaccine injection, 0.5 mL syringe"/>
+		</coding>
+	</vaccineCode>
+	<patient>
+		<reference value="urn:uuid:cc246543-a0da-4ead-9ed6-5e064fea9ff7"/>
+	</patient>
+	<date value="2017-04-15"/>
+	<primarySource value="true"/>
+</Immunization>

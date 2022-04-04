@@ -2,7 +2,7 @@
 <Composition xmlns="http://hl7.org/fhir">
     <id value="medicare-view-doc-01"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
     </meta>
     <language value="en-AU"/>
     <identifier>
@@ -129,15 +129,14 @@
         <title value="Australian Immunisation Register - AIR"/>
         <code>
             <coding>
-                <system
-                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
                 <code value="101.16776"/>
             </coding>
         </code>
         <text>
             <status value="additional"/>
             <div xmlns="http://www.w3.org/1999/xhtml">
-                <p><b>OVID 19 Immunisation Status:  </b>This individual has received all required COVID-19 vaccines.</p>
+                <p><b>COVID 19 Immunisation Status:  </b>This individual has received all required COVID-19 vaccines.</p>
                 <table>
                     <caption>Immunisation History</caption>
                     <thead>
@@ -263,8 +262,7 @@
         <title value="Australian Organ Donor Register - AODR"/>
         <code>
             <coding>
-                <system
-                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
                 <code value="101.16774"/>
             </coding>
         </code>
@@ -286,8 +284,7 @@
         <title value="Medicare Services - MBS and DVA Items"/>
         <code>
             <coding>
-                <system
-                    value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+                <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
                 <code value="101.16780"/>
             </coding>
         </code>

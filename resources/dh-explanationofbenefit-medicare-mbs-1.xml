@@ -4,7 +4,7 @@
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
   <version value="0.0.1"/>
   <name value="DHExplanationofBenefitMBS"/>
-  <title value="ADHA Record of Claim against MBS"/>
+  <title value="ADHA Record of Claim against MBS or DVA"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -25,8 +25,8 @@
   <differential>
     <element id="ExplanationOfBenefit">
       <path value="ExplanationOfBenefit"/>
-      <short value="Record of Claim against MBS"/>
-      <definition value="A record of the claim of an item claimed against the Medicare Benefits Schedule (MBS). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by the Australian Government run benefits scheme."/>
+      <short value="Record of Claim against MBS or DVA"/>
+      <definition value="A record of the claim of an item claimed against the Medicare Benefits Schedule (MBS) or Department of Veterans' Affairs (DVA). MBS claim items include information about healthcare services provided to an individual that were partially or fully funded by the Australian Government run benefits scheme."/>
       <constraint>
         <key value="inv-dh-eob-mbs-01"/>
         <severity value="error"/>

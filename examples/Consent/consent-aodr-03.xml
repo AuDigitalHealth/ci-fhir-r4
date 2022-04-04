@@ -1,17 +1,18 @@
 <Consent xmlns="http://hl7.org/fhir">
 	<id value="aodr-03"/>
 	<meta>
-		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
 	</meta>
 	<contained>
 		<BodyStructure>
-			<code>
+			<id value="bone-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="272673000"/>
 					<display value="Bone structure"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -29,14 +30,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-eye-02"/>
-			<code>
+			<id value="eye-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="81745001"/>
 					<display value="Eye"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -54,14 +55,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-heart-02"/>
-			<code>
+			<id value="heart-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="80891009"/>
 					<display value="Heart"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -79,14 +80,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-heart-valve-02"/>
-			<code>
+			<id value="heart-valve-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="17401000"/>
 					<display value="Heart valve structure"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -104,14 +105,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-kidney-02"/>
-			<code>
+			<id value="kidney-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="64033007"/>
 					<display value="Kidney"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -129,14 +130,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-liver-02"/>
-			<code>
+			<id value="liver-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="10200004"/>
 					<display value="Liver"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -154,14 +155,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-lungs-02"/>
-			<code>
+			<id value="lungs-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="39607008"/>
 					<display value="Lung structure"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -179,14 +180,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-pancreas-02"/>
-			<code>
+			<id value="pancreas-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="15776009"/>
 					<display value="Pancreas"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -204,14 +205,14 @@
 	</contained>
 	<contained>
 		<BodyStructure>
-			<id value="BodyStructure-skin-02"/>
-			<code>
+			<id value="skin-03"/>
+			<location>
 				<coding>
 					<system value="http://snomed.info/sct"/>
 					<code value="39937001"/>
 					<display value="Skin structure"/>
 				</coding>
-			</code>
+			</location>
 			<patient>
 				<identifier>
 					<type>
@@ -229,15 +230,6 @@
 	</contained>
 	<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration">
 		<valueDateTime value="2015-11-18"/>
-	</extension>
-	<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="160654005"/>
-				<display value="Willing to be donor"/>
-			</coding>
-		</valueCodeableConcept>
 	</extension>
 	<!--identifier for the AODR record from Medicare repository-->
 	<identifier>
@@ -283,7 +275,7 @@
 				</coding>
 			</type>
 			<system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-			<value value="8003608000228437"/>
+			<value value="8003608833564735"/>
 		</identifier>
 	</performer>
 	<organization>
@@ -305,37 +297,8 @@
 		<authority value="http://australianorgandonorregister.gov.au"/>
 		<uri value="http://www.australianorgandonorregister.gov.au/aodr"/>
 	</policy>
-	<except>
-		<type value="deny"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-bone-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="deny"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-eye-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
+	<!--Individual consents to donate -->
+	<provision>
 		<type value="permit"/>
 		<action>
 			<coding>
@@ -343,101 +306,141 @@
 				<code value="53958007"/>
 			</coding>
 		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-heart-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="permit"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-heart-valve-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="permit"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-kidney-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="permit"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-liver-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="permit"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-lungs-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="permit"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-pancreas-02"/>
-			</reference>
-		</data>
-	</except>
-	<except>
-		<type value="permit"/>
-		<action>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="53958007"/>
-			</coding>
-		</action>
-		<data>
-			<meaning value="instance"/>
-			<reference>
-				<reference value="#BodyStructure-skin-02"/>
-			</reference>
-		</data>
-	</except>
+		<!-- Specific provisions capture decision on a donatable tissue or organ -->
+		<provision>
+			<type value="deny"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#bone-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#eye-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#heart-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#heart-valve-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#kidney-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#liver-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#lungs-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#pancreas-03"/>
+				</reference>
+			</data>
+		</provision>
+		<provision>
+			<type value="permit"/>
+			<action>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="53958007"/>
+				</coding>
+			</action>
+			<data>
+				<meaning value="instance"/>
+				<reference>
+					<reference value="#skin-03"/>
+				</reference>
+			</data>
+		</provision>
+	</provision>
 </Consent>

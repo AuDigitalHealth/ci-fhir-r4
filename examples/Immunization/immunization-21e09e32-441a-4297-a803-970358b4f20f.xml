@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="21e09e32-441a-4297-a803-970358b4f20f"/>
+    <meta>
+        <profile
+            value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/immunization-summary-administration-1"
+        />
+    </meta>
+    <status value="completed"/>
+    <notGiven value="false"/>
+    <vaccineCode>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="709541000168107"/>
+            <display value="Fluvax 2015"/>
+        </coding>
+    </vaccineCode>
+    <patient>
+        <reference value="Patient/d9698a55-723a-49de-931b-4e61d732b016"/>
+    </patient>
+    <date value="2015-10-03"/>
+    <primarySource value="true"/>
+</Immunization>

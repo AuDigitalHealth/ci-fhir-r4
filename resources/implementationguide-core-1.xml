@@ -27,6 +27,13 @@
     <definition>
         <resource>
             <reference>
+                <reference value="StructureDefinition/au-healthprogramparticipation"/>
+            </reference>
+            <name value="AU Health Program Participation Summary"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-allergyintolerance-core-1"/>
             </reference>
             <name value="Australian Digital Health Agency Core AllergyIntolerance"/>
@@ -153,6 +160,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-composition-mov-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Medicare Overview Composition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-composition-ncspp-1"/>
             </reference>
             <name value="Australian Digital Health Agency National Cancer Screening Program Participation Composition"/>
@@ -263,13 +277,13 @@
             <name value="Australian Digital Health Agency Advance Care Planning Document DocumentReference"/>
             <exampleBoolean value="false"/>
         </resource>
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="StructureDefinition/dh-donation-decision-1"/>
             </reference>
             <name value="ADHA Donation Decision"/>
             <exampleBoolean value="false"/>
-        </resource>
+        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-encounter-core-1"/>
@@ -468,13 +482,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-observation-programparticipation-1"/>
-            </reference>
-            <name value="Program Participation Observation"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-observation-simple-1"/>
             </reference>
             <name value="Australian Digital Health Agency Simple Observation"/>
@@ -623,6 +630,132 @@
             <name value="Right Knee of Cleo Moss Esq."/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/bone-02"/>
+            </reference>
+            <name value="Bone structure as part of aodr-02"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/bone-03"/>
+            </reference>
+            <name value="Bone structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/eye-02"/>
+            </reference>
+            <name value="Eye structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/eye-03"/>
+            </reference>
+            <name value="Eye structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/skin-02"/>
+            </reference>
+            <name value="Skin structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/skin-03"/>
+            </reference>
+            <name value="Skin structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/heart-02"/>
+            </reference>
+            <name value="	Structure of heart"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/heart-03"/>
+            </reference>
+            <name value="	Structure of heart"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/heart-valve-02"/>
+            </reference>
+            <name value="Heart valve structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/heart-valve-03"/>
+            </reference>
+            <name value="Heart valve structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/pancreas-02"/>
+            </reference>
+            <name value="Pancreatic structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/pancreas-03"/>
+            </reference>
+            <name value="Pancreatic structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/kidney-02"/>
+            </reference>
+            <name value="Kidney structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/kidney-03"/>
+            </reference>
+            <name value="Kidney structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/liver-02"/>
+            </reference>
+            <name value="Liver structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/liver-03"/>
+            </reference>
+            <name value="Liver structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/lungs-02"/>
+            </reference>
+            <name value="Lung structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="BodyStructure/lungs-03"/>
+            </reference>
+            <name value="Lung structure"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+        </resource>
         <!--CONDITION EXAMPLES-->
         <resource>
             <reference>
@@ -714,14 +847,14 @@
                 <reference value="Bundle/medicare-view-doc-01"/>
             </reference>
             <name value="Document Bundle of Medicare Overview for Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Composition/medicare-view-doc-01"/>
             </reference>
             <name value="Medicare Overview (Composition) for Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-doc-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
         </resource>
         <resource>
             <reference>
@@ -843,20 +976,20 @@
             <name value="Australian Organ Donor Register Consent - Not willing to be a donor"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
         </resource>
-        <!--<resource>
+        <resource>
             <reference>
                 <reference value="Consent/aodr-02"/>
             </reference>
-            <name value="Australian Organ Donor Register Consent - Willing to be donor (all)"/>
+            <name value="Australian Organ Donor Register Consent - Willing to be a donor, donate all"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Consent/aodr-03"/>
             </reference>
-            <name value="Australian Organ Donor Register Consent - Willing to be donor (some)"/>
+            <name value="Australian Organ Donor Register Consent - Willing to be a donor, donate specific tissue / organ"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
-        </resource>-->
+        </resource>
         <!--DEVICE EXAMPLES-->
         <resource>
             <reference>
@@ -1915,24 +2048,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-12alcohol-01"/>
-            </reference>
-            <name value="Alcohol twelve step program participation information for Ms. Sally FIELD - Active participation (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/program-participation-bcsp-01"/>
             </reference>
             <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Opted Out (2017)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/program-participation-bcsp-02"/>
-            </reference>
-            <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Deferred (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-programparticipation-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>

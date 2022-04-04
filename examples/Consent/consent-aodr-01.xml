@@ -1,19 +1,12 @@
 <Consent xmlns="http://hl7.org/fhir">
 	<id value="aodr-01"/>
 	<meta>
-		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
+		<profile
+			value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
 	</meta>
-	<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration">
+	<extension
+		url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration">
 		<valueDateTime value="2015-11-18"/>
-	</extension>
-	<extension url="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision">
-		<valueCodeableConcept>
-			<coding>
-				<system value="http://snomed.info/sct"/>
-				<code value="161034004"/>
-				<display value="Not willing to be a donor"/>
-			</coding>
-		</valueCodeableConcept>
 	</extension>
 	<!--identifier for the AODR record from Medicare repository-->
 	<identifier>
@@ -45,7 +38,7 @@
 				</coding>
 			</type>
 			<system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-			<value value="8003608166690503"/>
+			<value value="8003608833357361"/>
 		</identifier>
 	</patient>
 	<dateTime value="2017-09-21"/>
@@ -59,7 +52,7 @@
 				</coding>
 			</type>
 			<system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-			<value value="8003608166690503"/>
+			<value value="8003608833357361"/>
 		</identifier>
 	</performer>
 	<organization>
@@ -81,4 +74,14 @@
 		<authority value="http://australianorgandonorregister.gov.au"/>
 		<uri value="http://www.australianorgandonorregister.gov.au/aodr"/>
 	</policy>
+	<!--Individual does not consent to donate - applies to all organ and tissue-->
+	<provision>
+		<type value="deny"/>
+		<action>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="53958007"/>
+			</coding>
+		</action>
+	</provision>
 </Consent>
