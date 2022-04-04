@@ -88,12 +88,6 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
         <td>Resource</td>
     </tr>
-    <tr>
-        <td><a href="StructureDefinition-dh-donation-decision-1.html">Donation Decision</a></td>
-        <td>date-initial-registration</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-        <td>Resource</td>
-    </tr>
       <tr>
         <td><a href="StructureDefinition-packed-in-daa-1.html">Dose Administration Aid Medicines Indicator</a></td>
         <td>packed-in-daa-1</td>

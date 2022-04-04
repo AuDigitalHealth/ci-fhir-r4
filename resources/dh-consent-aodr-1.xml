@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-consent-aodr-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
   <version value="0.0.1"/>
   <name value="DHConsentAODR"/>
   <title value="ADHA Record of Consent from Australian Organ Donor Register"/>
@@ -34,20 +34,13 @@
         <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
       </constraint>
-<!--      <constraint>
+      <constraint>
         <key value="inv-dh-cons-aodr-02"/>
         <severity value="error"/>
-        <human value="If donation decision is 'permit', the individual organ or tissue donation decisions shall be specified"/>
-        <expression value="extension('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision).valueCodeableConcept.coding.code='160654005' implies provision.exists()"/>
+        <human value="Specific provisions shall be specified if the individual is willing to donate, otherwise prohibited"/>
+        <expression value="provision.provision.exists() xor (provision.type='deny')"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
       </constraint>
-      <constraint>
-        <key value="inv-dh-cons-aodr-03"/>
-        <severity value="error"/>
-        <human value="If donation decision is 'deny', individual organ or tissue donation decisions shall not be specified"/>
-        <expression value="extension('http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision).valueCodeableConcept.coding.code='161034004' implies provision.empty()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
-      </constraint>-->
     </element>
     <element id="Consent.extension">
       <path value="Consent.extension"/>
@@ -66,17 +59,6 @@
       <type>
         <code value="Extension"/>
         <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Consent.extension:donationDecision">
-      <path value="Consent.extension"/>
-      <sliceName value="donationDecision"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-donationdecision"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -126,20 +108,27 @@
     </element>
     <element id="Consent.performer">
       <path value="Consent.performer"/>
+      <short value="Grantor of consent"/>
+      <definition value="The entity responsible for granting the rights listed in a consent record."/>
+      <comment value="In the context of the Australian Organ Donor Register, the patient is the grantor of consent."/>
       <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <mustSupport value="true"/>
     </element>
     <element id="Consent.organization">
       <path value="Consent.organization"/>
+      <comment value="This consent record is managed by Services Australia via the Medicare Australia repository services operator."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
       </type>
+      <mustSupport value="true"/>
     </element>
     <element id="Consent.policy">
       <path value="Consent.policy"/>
@@ -160,8 +149,9 @@
     </element>
     <element id="Consent.provision">
       <path value="Consent.provision"/>
-      <short value="Individual's decision about donation of a specific organ or tissue"/>
-      <definition value="Individual's decision about donation of a specific organ or tissue."/>
+      <short value="Individual's decision about donation"/>
+      <definition value="Individual's decision about donation."/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Consent.provision.type">
@@ -171,6 +161,7 @@
     </element>
     <element id="Consent.provision.action">
       <path value="Consent.provision.action"/>
+      <short value="Removal of organ or tissue for donation"/>
       <min value="1"/>
       <max value="1"/>
       <patternCodeableConcept>
@@ -181,24 +172,53 @@
       </patternCodeableConcept>
       <mustSupport value="true"/>
     </element>
-    <element id="Consent.provision.data">
-      <path value="Consent.provision.data"/>
+    <element id="Consent.provision.provision">
+      <path value="Consent.provision.provision"/>
+      <short value="Individual's decision about donation of specific organ or tissue"/>
+      <definition value="Individual's decision about donation of specific organ or tissue."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Consent.provision.provision.type">
+      <path value="Consent.provision.provision.type"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Consent.provision.provision.action">
+      <path value="Consent.provision.provision.action"/>
+      <short value="Removal of organ or tissue for donation"/>
+      <min value="1"/>
+      <max value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="53958007"/>
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Consent.provision.provision.data">
+      <path value="Consent.provision.provision.data"/>
       <short value="The organ or tissue that is the target of the donation decision"/>
       <definition value="The organ or tissue that is the target of the donation decision."/>
       <min value="1"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Consent.provision.data.meaning">
-      <path value="Consent.provision.data.meaning"/>
+    <element id="Consent.provision.provision.data.meaning">
+      <path value="Consent.provision.provision.data.meaning"/>
       <fixedCode value="instance"/>
     </element>
-    <element id="Consent.provision.data.reference">
-      <path value="Consent.provision.data.reference"/>
+    <element id="Consent.provision.provision.data.reference">
+      <path value="Consent.provision.provision.data.reference"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
       </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Consent.provision.provision.data.reference.reference">
+      <path value="Consent.provision.provision.data.reference.reference"/>
+      <min value="1"/>
     </element>
   </differential>
 </StructureDefinition>

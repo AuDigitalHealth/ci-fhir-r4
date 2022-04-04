@@ -79,11 +79,12 @@ Blank cells in the above table indicate that the given element is absent from th
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html),  
+[ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html), 
 [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html), 
+[ADHA Donatable Organ or Tissue BodyStructure](StructureDefinition-dh-bodystructure-odr-1.html), 
 [ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), 
 [ADHA Message Bundle](StructureDefinition-dh-bundle-message-1.html), 
-[ADHA Core Composition](StructureDefinition-dh-composition-core-1.html),  
+[ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
 [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), 
 [ADHA Advance Care Custodian Record Composition](StructureDefinition-dh-composition-document-1.html), 
@@ -99,6 +100,7 @@ This profile is referenced by
 [ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html), 
 [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html), 
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
+[ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
 [ADHA Implantable Medical Device](StructureDefinition-dh-device-implantable-1.html), 
 [ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
