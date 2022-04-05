@@ -45,8 +45,8 @@
           </p>
           <p></p>
           
-          {%include {{[type]}}-{{[id]}}-maps.xhtml%}
-          
+          <!--{%include {{[type]}}-{{[id]}}-maps.xhtml%}-->
+          {% capture my-include %}{% include {{[id]}}-mappings.md %}{% endcapture %}{{ my-include | markdownify }}
         </div>
         
       </div>  <!-- /inner-wrapper -->
