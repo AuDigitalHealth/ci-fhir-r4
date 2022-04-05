@@ -83,6 +83,13 @@
       <td><a href="HealthcareService-large-allied-chemists-qld-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="HealthcareService-lge-priv-nt-xray.html">Large Private Territory X-RAY</a></td>
+      <td>lge-priv-nt-xray</td>
+      <td><a href="HealthcareService-lge-priv-nt-xray.xml.html">XML</a></td>
+      <td><a href="HealthcareService-lge-priv-nt-xray.json.html">JSON</a></td>
+      <td><a href="HealthcareService-lge-priv-nt-xray.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="HealthcareService-medium-vic-medical-clinic.html">Medium Sized Medical Clinic</a></td>
       <td>medium-vic-medical-clinic</td>
       <td><a href="HealthcareService-medium-vic-medical-clinic.xml.html">XML</a></td>
