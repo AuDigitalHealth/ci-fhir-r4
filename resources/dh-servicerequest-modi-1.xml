@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-modi-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="MODIServiceRequest"/>
   <title value="MODI Request for Diagnostic Imaging Service"/>
   <status value="draft"/>
@@ -35,15 +35,6 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
       </constraint>
     </element>
-    <element id="ServiceRequest.extension:targetBodyStructure">
-      <path value="ServiceRequest.extension" />
-      <sliceName value="targetBodyStructure" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure" />
-      </type>
-      <mustSupport value="true"/>
-    </element>
     <element id="ServiceRequest.extension:hl7V2MessageBase64">
       <path value="ServiceRequest.extension" />
       <sliceName value="hl7V2MessageBase64" />
@@ -61,6 +52,7 @@
     </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status"/>
+      <short value="draft | active | revoked | completed"/>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.intent">
@@ -71,15 +63,17 @@
       <path value="ServiceRequest.category"/>
       <short value="Classification of the service requested as diagnostic imaging + modality where available"/>
       <comment value="A fixed category denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="ServiceRequest.priority">
-      <path value="ServiceRequest.priority"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code"/>
       <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.subject">
@@ -122,10 +116,10 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <!--<element id="ServiceRequest.performer.reference">
+    <element id="ServiceRequest.performer.reference">
       <path value="ServiceRequest.performer.reference"/>
       <min value="1"/>
-    </element>-->
+    </element>
     <element id="ServiceRequest.reasonCode">
       <path value="ServiceRequest.reasonCode" />
       <mustSupport value="true" />
