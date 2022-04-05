@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-modi-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="MODIServiceRequest"/>
   <title value="MODI Request for Diagnostic Imaging Service"/>
   <status value="draft"/>
@@ -34,6 +34,15 @@
         <expression value="category.coding.where(system='http://snomed.info/sct' and code='708175003').exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
       </constraint>
+    </element>
+    <element id="ServiceRequest.extension:targetBodyStructure">
+      <path value="ServiceRequest.extension" />
+      <sliceName value="targetBodyStructure" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure" />
+      </type>
+      <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.extension:hl7V2MessageBase64">
       <path value="ServiceRequest.extension" />
@@ -131,6 +140,14 @@
     <element id="ServiceRequest.supportingInfo">
       <path value="ServiceRequest.supportingInfo" />
       <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.bodySite">
+      <path value="ServiceRequest.bodySite" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1" />
+      </binding>
     </element>
     <element id="ServiceRequest.note">
       <path value="ServiceRequest.note" />

@@ -218,6 +218,34 @@
             </partOf>
         </Location>
     </contained>
+    <contained>
+        <BodyStructure>
+            <id value="right-knee"/>
+            <location>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="72696002"/>
+                    <display value="Knee region structure"/>
+                </coding>
+            </location>
+            <locationQualifier>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="24028007"/>
+                    <display value="Right"/>
+                </coding>
+            </locationQualifier>
+            <patient>
+                <reference value="#hi-testdata-priest-mac"/>
+            </patient>
+        </BodyStructure>
+    </contained>
+    <extension url="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure">
+        <valueReference>
+            <reference value="#right-knee"/>
+        </valueReference>
+    </extension>
+    
     <identifier>
         <type>
             <coding>

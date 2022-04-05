@@ -139,7 +139,7 @@
                     <text value="HPI-O"/>
                 </type>
                 <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
-                <value value="8003614900041243"/>
+                <value value="8003621566699776"/>
             </identifier>
             <type>
                 <coding>
@@ -201,6 +201,34 @@
             </telecom>
         </HealthcareService>
     </contained>
+    <contained>
+        <BodyStructure>
+            <id value="right-knee"/>
+            <location>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="72696002"/>
+                    <display value="Knee region structure"/>
+                </coding>
+            </location>
+            <locationQualifier>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="24028007"/>
+                    <display value="Right"/>
+                </coding>
+            </locationQualifier>
+            <patient>
+                <reference value="#hi-testdata-moss-cleo"/>
+            </patient>
+        </BodyStructure>
+    </contained>
+    <extension url="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure">
+        <valueReference>
+            <reference value="#right-knee"/>
+        </valueReference>
+    </extension>
+    
     <identifier>
         <type>
             <coding>

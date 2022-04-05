@@ -76,7 +76,7 @@
                     <text value="HPI-I"/>
                 </type>
                 <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
-                <value value="8003614900041243"/>
+                <value value="8003621566699776"/>
             </identifier>
             <practitioner>
                 <reference value="#algrester-greg"/>
@@ -186,6 +186,33 @@
             <name value="Metropolitan Specialist Services Group QLD Hospital - Radiololgy services"/>
         </HealthcareService>
     </contained>
+    <contained>
+        <BodyStructure>
+            <id value="left-knee"/>
+            <location>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="72696002"/>
+                    <display value="Knee region structure"/>
+                </coding>
+            </location>
+            <locationQualifier>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="7771000"/>
+                    <display value="Left"/>
+                </coding>
+            </locationQualifier>
+            <patient>
+                <reference value="#hi-testdata-moss-cleo"/>
+            </patient>
+        </BodyStructure>
+    </contained>
+    <extension url="http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure">
+        <valueReference>
+            <reference value="#left-knee"/>
+        </valueReference>
+    </extension>
     <identifier>
         <type>
             <coding>
