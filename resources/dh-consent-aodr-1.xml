@@ -32,14 +32,14 @@
         <severity value="error"/>
         <human value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-cons-aodr-02"/>
         <severity value="error"/>
         <human value="Specific provisions shall be specified if the individual is willing to donate, otherwise prohibited"/>
         <expression value="provision.provision.exists() xor (provision.type='deny')"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-01"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
       </constraint>
     </element>
     <element id="Consent.extension">
