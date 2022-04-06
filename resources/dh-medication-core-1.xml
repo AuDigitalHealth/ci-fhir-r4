@@ -42,6 +42,20 @@
         <map value=".manufacturedProduct"/>
       </mapping>
     </element>
+    <element id="List.extension">
+      <path value="List.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <mapping>
+        <identity value="CDA.act"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
     <element id="Medication.extension:brandName">
       <path value="Medication.extension" />
       <sliceName value="brandName" />
