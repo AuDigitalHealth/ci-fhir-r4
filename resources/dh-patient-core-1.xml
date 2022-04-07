@@ -71,7 +71,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/author/assignedAuthor/person"/>
+        <map value=".author.assignedAuthor.assignedPerson"/>
       </mapping>
     </element>
     <element id="Patient.extension:birthPlace">
@@ -80,18 +80,12 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.birthplace.addr"/>
+        <map value="ClinicalDocument.recordTarget.patientRole.patient.birthplace.place.addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/birthPlace/place/addr."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA.perfomer"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/birthPlace/place/addr."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.birthPlace.place.addr."
         />
       </mapping>
     </element>
@@ -106,16 +100,10 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.ethnicGroupCode."
         />
       </mapping>
-      <mapping>
-        <identity value="CDA.perfomer"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/ethnicGroupCode."
-        />
-      </mapping>
-    </element>
+          </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension"/>
       <sliceName value="interpreterRequired"/>
@@ -129,16 +117,10 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.languageCommunication.ext:interpreterRequiredInd."
         />
       </mapping>
-      <mapping>
-        <identity value="CDA.perfomer"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/ext:interpreterRequiredInd."
-        />
-      </mapping>
-    </element>
+          </element>
     <element id="Patient.extension:dateOfArrival">
       <path value="Patient.extension"/>
       <sliceName value="dateOfArrival"/>
@@ -153,16 +135,10 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component/section/entry/observation/value."
+          value="This data is considered to be included via induction in ClinicalDocument.component.structuredBody.component.section[code=102.16080', codeSystem='1.2.36.1.2001.1001.101',title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code='1460861000168108', codeSystem='2.16.840.1.113883.6.96'].value[xsi:type='TS']."
         />
       </mapping>
-      <mapping>
-        <identity value="CDA.perfomer"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component/section/entry/observation/value."
-        />
-      </mapping>
-    </element>
+          </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier"/>
       <slicing>
@@ -180,13 +156,9 @@
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/author/assignedAuthor/assignedPerson/ext:asEntityIdentifier"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
-      <mapping>
-        <identity value="CDA.perfomer"/>
-        <map value="/perfomer/assignedEntity/assignedPerson/ext:asEntityIdentifier"/>
-      </mapping>
-    </element>
+          </element>
     <element id="Patient.identifier:ihi">
       <path value="Patient.identifier"/>
       <sliceName value="ihi"/>
@@ -220,10 +192,10 @@
     <element id="Patient.active">
       <path value="Patient.active"/>
       <fixedBoolean value="true"/>
-      <mapping>
+      <!--<mapping>
         <identity value="CDA.author"/>
         <map value="n/a"/>
-      </mapping>
+      </mapping>-->
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
@@ -235,7 +207,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/author/assignedAuthor/assignedPerson/name"/>
+        <map value=".author.assignedAuthor.assignedPerson.name"/>
       </mapping>
     </element>
     <element id="Patient.telecom">
@@ -247,7 +219,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/author/assignedAuthor/telecom"/>
+        <map value=".author.assignedAuthor.telecom"/>
       </mapping>
     </element>
     <element id="Patient.gender">
@@ -259,7 +231,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/author/assignedAuthor/assignedPerson/ext:administrativeGenderCode"/>
+        <map value=".author.assignedAuthor.assignedPerson.ext:administrativeGenderCode"/>
       </mapping>
     </element>
     <element id="Patient.birthDate">
@@ -272,7 +244,7 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/patientRole/patient/birthTime."
+          value="This data is considered to be included via induction in ClinicalDocument.patientRole.patient.birthTime."
         />
       </mapping>
     </element>
@@ -289,7 +261,7 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/component/structuredBody/component/section/entry/observation/value."
+          value="This data is considered to be included via induction in CClinicalDocument/component/structuredBody/component/section[code='102.16080', codeSystem='1.2.36.1.2001.1001.101', title='Administrative Observation']/entry/observation[classCode='OBS', moodCode='EVN', code='102.16234', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']."
         />
       </mapping>
     </element>
@@ -304,7 +276,7 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped separately, encompassed in ClinidalDocument/recordTarget/patientRole/patient/birthTime."
+          value="This data is considered to be included via induction in ClinidalDocument.recordTarget.patientRole.patient.birthTime."
         />
       </mapping>
     </element>
@@ -317,7 +289,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="/author/assignedAuthor/addr"/>
+        <map value=".author.assignedAuthor.addr"/>
       </mapping>
     </element>
     <element id="Patient.communication">
@@ -330,7 +302,7 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.languageCommunication."
         />
       </mapping>
     </element>
@@ -346,13 +318,13 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/languageCode."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.languageCommunication.languageCode."
         />
       </mapping>
       <mapping>
         <identity value="CDA.perfomer"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.languageCommunication."
         />
       </mapping>
     </element>
@@ -368,7 +340,7 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument/recordTarget/patientRole/patient/languageCommunication/preferenceInd."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole.patient.languageCommunication.preferenceInd."
         />
       </mapping>
     </element>

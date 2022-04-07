@@ -99,10 +99,6 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Composition.extension:informationRecipient">
       <path value="Composition.extension"/>
@@ -116,11 +112,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/informationRecipient"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="ClinicalDocument/informationRecipient"/>
+        <map value="ClinicalDocument.informationRecipient"/>
       </mapping>
     </element>
     <element id="Composition.identifier">
@@ -129,7 +121,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/setId"/>
+        <map value="ClinicalDocument.setId"/>
       </mapping>
     </element>
     <element id="Composition.status">
@@ -137,7 +129,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/ext:completionCode"/>
+        <map value="ClinicalDocument.ext:completionCode"/>
       </mapping>
     </element>
     <element id="Composition.type">
@@ -146,7 +138,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/code"/>
+        <map value="ClinicalDocument.code"/>
       </mapping>
     </element>
     <element id="Composition.category">
@@ -169,7 +161,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/recordTarget"/>
+        <map value="ClinicalDocument.recordTarget"/>
       </mapping>
     </element>
     <element id="Composition.encounter">
@@ -182,7 +174,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/componentOf/encompassingEncounter"/>
+        <map value="ClinicalDocument.componentOf.encompassingEncounter"/>
       </mapping>
     </element>
     <element id="Composition.date">
@@ -190,7 +182,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/author/time"/>
+        <map value="ClinicalDocument.author.time"/>
       </mapping>
     </element>
     <element id="Composition.author">
@@ -210,7 +202,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/author"/>
+        <map value="ClinicalDocument.author"/>
       </mapping>
     </element>
     <element id="Composition.title">
@@ -218,7 +210,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/title"/>
+        <map value="ClinicalDocument.title"/>
       </mapping>
     </element>
     <element id="Composition.confidentiality">
@@ -227,7 +219,7 @@
       <max value="0"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/confidentialityCode/@nullFlavor='NA'"/>
+        <map value="ClinicalDocument.confidentialityCode[@nullFlavor='NA']"/>
       </mapping>
     </element>
     <element id="Composition.attester">
@@ -246,7 +238,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/legalAuthenticator"/>
+        <map value="ClinicalDocument.legalAuthenticator"/>
       </mapping>
     </element>
     <element id="Composition.attester.mode">
@@ -254,7 +246,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/n/a"/>
+        <map value="/n/a"/>
       </mapping>
     </element>
     <element id="Composition.attester.time">
@@ -263,7 +255,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/legalAuthenticator/time"/>
+        <map value="ClinicalDocument.legalAuthenticator.time"/>
       </mapping>
     </element>
     <element id="Composition.attester.party">
@@ -284,7 +276,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/legalAuthenticator/assignedEntity"/>
+        <map value="ClinicalDocument.legalAuthenticator.assignedEntity"/>
       </mapping>
     </element>
     <element id="Composition.custodian">
@@ -299,7 +291,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/custodian"/>
+        <map value="ClinicalDocument.custodian"/>
       </mapping>
     </element>
     <element id="Composition.relatesTo">
@@ -307,7 +299,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/relatedDocument"/>
+        <map value="ClinicalDocument.relatedDocument"/>
       </mapping>
     </element>
     <element id="Composition.relatesTo.code">
@@ -315,9 +307,8 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/relatedDocument/typeCode"/>
-        <comment value="Schema bound values: 'APND', 'RPLC', 'XFRM' - TBD: ValueSet, ConceptMaps"/>
-      </mapping>
+        <map value="ClinicalDocument.relatedDocument.typeCode"/>
+              </mapping>
     </element>
     <element id="Composition.relatesTo.target[x]">
       <path value="Composition.relatesTo.target[x]"/>
@@ -332,7 +323,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/relatedDocument/parentDocument/id"/>
+        <map value="ClinicalDocument.relatedDocument.parentDocument.id"/>
       </mapping>
     </element>
     <element id="Composition.section">
@@ -341,7 +332,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section"/>
+        <map value="ClinicalDocument.component.structuredBody.component.section"/>
       </mapping>
     </element>
     <element id="Composition.section.title">
@@ -349,7 +340,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/title"/>
+        <map value="ClinicalDocument.component.structuredBody.component.section.title"/>
       </mapping>
     </element>
     <element id="Composition.section.code">
@@ -357,7 +348,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/code"/>
+        <map value="ClinicalDocument.component.structuredBody.component.section.code"/>
       </mapping>
     </element>
     <element id="Composition.section.text">
@@ -365,7 +356,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/text"/>
+        <map value="ClinicalDocument.component.structuredBody.component.section.text"/>
       </mapping>
     </element>
     <element id="Composition.section.mode">
@@ -377,7 +368,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA"/>
-        <map value="ClinicalDocument/component/structuredBody/component/section/entry"/>
+        <map value="ClinicalDocument.component.structuredBody.component.section.entry"/>
       </mapping>
     </element>
     <element id="Composition.section.entry.reference">
@@ -395,7 +386,7 @@
       <mapping>
         <identity value="CDA"/>
         <map
-          value="ClinicalDocument/component/structuredBody/component/section/entry/observation/code/value"
+          value="ClinicalDocument.component.structuredBody.component.section.entry.observation[classCode='OBS', moodCode='EVN', [code[code='ASSERTION, codeSystem='@code='ASSERTION']].value:CD"
         />
       </mapping>
     </element>
