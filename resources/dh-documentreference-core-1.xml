@@ -17,6 +17,11 @@
   <description value="The purpose of this profile is to provide a core representation of a document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports describing a document that is made available to a system and is used for documents that are not authored and assembeld in FHIR e.g. documents whose form is an attachment." />
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="CDA.ClinicalDocument"/>
+    <uri value="http://hl7.org/v3/cda"/>
+    <name value="Agency CDA Schema ClinicalDocument"/>
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="DocumentReference" />
@@ -46,31 +51,59 @@
         <expression value="custodian.exists() implies custodian.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1" />
       </constraint>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument"/>
+      </mapping>
     </element>
     <element id="DocumentReference.masterIdentifier">
       <path value="DocumentReference.masterIdentifier"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument.id"/>
+      </mapping>
     </element>
     <element id="DocumentReference.identifier">
       <path value="DocumentReference.identifier"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument.id"/>
+      </mapping>
     </element>
     <element id="DocumentReference.status">
       <path value="DocumentReference.status"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="DocumentReference.docStatus">
       <path value="DocumentReference.docStatus"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/ext:completionCode"/>
+      </mapping>
     </element>
     <element id="DocumentReference.type">
       <path value="DocumentReference.type" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/code"/>
+      </mapping>
     </element>
     <element id="DocumentReference.category">
       <path value="DocumentReference.category" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject" />
@@ -80,11 +113,19 @@
       </type>
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/recordTarget"/>
+      </mapping>
     </element>
     <element id="DocumentReference.date">
       <path value="DocumentReference.date"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/effectiveTime"/>
+      </mapping>
     </element>
     <element id="DocumentReference.author">
       <path value="DocumentReference.author"/>
@@ -98,6 +139,10 @@
       </type>
       <min value="1" />
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/author"/>
+      </mapping>
     </element>
     <element id="DocumentReference.authenticator">
       <path value="DocumentReference.authenticator"/>
@@ -107,6 +152,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/legalAuthenticator"/>
+      </mapping>
     </element>
     <element id="DocumentReference.custodian">
       <path value="DocumentReference.custodian"/>
@@ -115,10 +164,18 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/custodian"/>
+      </mapping>
     </element>
     <element id="DocumentReference.description">
       <path value="DocumentReference.description"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="DocumentReference.content">
       <path value="DocumentReference.content"/>
@@ -131,6 +188,10 @@
     <element id="DocumentReference.context">
       <path value="DocumentReference.context"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="n/a"/>
+      </mapping>
     </element>
     <element id="DocumentReference.context.encounter">
       <path value="DocumentReference.context.encounter"/>
@@ -139,6 +200,10 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
       </type>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="CDA.ClinicalDocument"/>
+        <map value="ClinicalDocument/componentOf/encompassingEncounter"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
