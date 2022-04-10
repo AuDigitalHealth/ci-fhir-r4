@@ -24,7 +24,7 @@
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema assignedPerson"/>
   </mapping>
-   <mapping>
+  <mapping>
     <identity value="CDA.informant"/>
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema informant"/>
@@ -111,15 +111,15 @@
         <map value=".assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
     </element>
-    <element id="PractitionerRole.identifier:hpii">
-      <path value="PractitionerRole.identifier"/>
+    <element id="Practitioner.identifier:hpii">
+      <path value="Practitioner.identifier"/>
       <sliceName value="hpii"/>
       <max value="1"/>
       <type>
         <code value="Identifier"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-hpii"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
         <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
@@ -130,7 +130,9 @@
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
+        <map
+          value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"
+        />
       </mapping>
     </element>
     <element id="Practitioner.active">
@@ -167,7 +169,9 @@
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.name"/>
+        <map
+          value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.name"
+        />
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
@@ -238,15 +242,21 @@
       </mapping>
       <mapping>
         <identity value="CDA.informant"/>
-        <map value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"/>
+        <map
+          value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"
+        />
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="Instantiated as ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"/>
+        <map
+          value="Instantiated as ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"
+        />
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
-        <map value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"/>
+        <map
+          value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"
+        />
       </mapping>
     </element>
     <element id="Practitioner.qualification.identifier">
@@ -374,7 +384,9 @@
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:languageCommunication"/>
+        <map
+          value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:languageCommunication"
+        />
       </mapping>
       <mapping>
         <identity value="CDA.assignedPerson"/>
