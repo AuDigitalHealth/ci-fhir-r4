@@ -1,5 +1,5 @@
-# {{ site.data.fhir.ig.title }} Implementation Guide
-<h3 style="color:#ff0000;">Draft for internal use</h3>
+# {{ site.data.fhir.ig.title }}
+<!-- <h3 style="color:#ff0000;">Draft for internal use</h3> -->
 {:.no_toc}
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->

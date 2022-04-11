@@ -12,28 +12,31 @@ The policy for definining, using, maintaining, and implementing using FHIR versi
 ### Conformance
 
 
-> **ADHA-FHIR-CONF-0X** 
+> **ADHA-FHIR-CONF-01** All FHIR implementations **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
 
-> **ADHA-FHIR-CONF-0X** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 FHR standard
+> **ADHA-FHIR-CONF-02** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base FHIR Asset
+ 
+> **ADHA-FHIR-CONF-04** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a resrouce that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
-> **ADHA-FHIR-CONF-0X** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base material
+> **ADHA-FHIR-CONF-05** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
-> **ADHA-FHIR-CONF-0X** SHALL reject any request to create or update a resource that contains a modifier extension that is not supported in by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-PROFILE-06** Use of extensions **SHALL** follow order of precedence:
+> 1. HL7 extension
+> 2. HL7 AU extensikon
+> 3. ADHA extension
+> 4. Other
 
 ### Serialisation TBD Architecture Team
 
-> **ADHA-FHIR-SERIAL-0X** A FHIR API **SHALL** support JSON serialisation
+> **ADHA-FHIR-SERIAL-01** A FHIR API **SHALL** support JSON serialisation
 
-> **ADHA-FHIR-SERIAL-0X** A FHIR API endpoint **SHALL** support JSON formatted requests/responses
+> **ADHA-FHIR-SERIAL-02** A FHIR API endpoint **SHALL** support JSON formatted requests/responses
 
-> **ADHA-FHIR-SERIAL-0X** A FHIR API endpoint **SHOULD** support XML serialisation
+> **ADHA-FHIR-SERIAL-03** A FHIR API endpoint **SHOULD** support XML serialisation
 
-> **ADHA-FHIR-SERIAL-0X** A FHIR API that supports an XML serialisation **SHALL** use the FHIR standard namespace for FHIR XML and FHIR XHTML 
+> **ADHA-FHIR-SERIAL-04** A FHIR API that supports an XML serialisation **SHALL** use the FHIR standard namespace for FHIR XML and FHIR XHTML 
 
-> **ADHA-FHIR-SERIAL-0X** A FHIR API endpoint **SHALL** declare the serialisation mime-types supported in the Conformance/CapabilityStatement resource for that endpoint
-
-> **ADHA-FHIR-SERIAL-0X**
-
+> **ADHA-FHIR-SERIAL-05** A FHIR API endpoint **SHALL** declare the serialisation mime-types supported in the Conformance/CapabilityStatement resource for that endpoint
 
 
 ### National Services TBD Architecture Team
@@ -92,9 +95,11 @@ The following basePaths are to be used for national services:
 
 #### Patient Identification
 
-> **ADHA-FHIR-IDENT-0X** At least one well formed patient identifier **SHALL** be provided. 
+> **ADHA-FHIR-IDENT-0X** At least one well formed patient identifier **SHALL** be provided
 
-> **ADHA-FHIR-IDENT-0X** Where a verified IHI is available for a patient that IHI **SHALL** be provided.
+> **ADHA-FHIR-IDENT-0X** Where a verified IHI is available for a patient that IHI **SHALL** be provided
+
+> **ADHA-FHIR-IDENT-0X** 
 
 
 
@@ -145,9 +150,9 @@ tbd
 
 > **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL NOT** define alternate elements for use in place of elements defined in a HL7 FHIR base resource
 
-> **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL** derive from HL7 AU Base material in the first instance if available, otherwise derive 
+> **ADHA-FHIR-PROFILE-0X** An ADHA FHIR Asset **SHALL** derive from an ADHA FHIR Core Asset in the first instance, if available, otherwise it **SHALL** derive from an applicable HL7 AU Base Asset  
 
-
+> **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL** derive from HL7 AU Base material in the first instance if available, otherwise derive
 
 ### Publication 
 
