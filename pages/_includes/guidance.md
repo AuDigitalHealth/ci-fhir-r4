@@ -83,35 +83,29 @@ The following basePaths are to be used for national services:
 ### Identifiers TBD Architecture Team to provide
 
 
-> **ADHA-FHIR-IDENT-0X** References in a FHIR message **SHOULD** be logical reference
+> **ADHA-FHIR-IDENT-0X** References in a FHIR message **SHOULD** be logical reference to a resource in the Bundle
 
-> **ADHA-FHIR-IDENT-0X** FHIR documents **SHOULD** contain referenced resources 
+> **ADHA-FHIR-IDENT-0X** References in a FHIR document **should** be a logical reference to a resource in the Bundle
 
-> **ADHA-FHIR-IDENT-0X** References between RESTful resources **SHOULD** be literal references but **SHOULD** be logical references
+> **ADHA-FHIR-IDENT-0X** References between RESTful resources **SHOULD** be literal references but **MAY** be logical references
 
 > **ADHA-FHIR-IDENT-0X** Business identifiers **SHALL** only be used as the resource id in RESTful APIs when the system is the authoritative source of that entity with the exceptions called out before for nationally supported identifiers.
 
 
 
-#### Patient Identification
+#### Identification
 
-> **ADHA-FHIR-IDENT-0X** At least one well formed patient identifier **SHALL** be provided
+> **ADHA-FHIR-IDENT-01** At least one well formed patient identifier **SHALL** be provided
 
-> **ADHA-FHIR-IDENT-0X** Where a verified IHI is available for a patient that IHI **SHALL** be provided
+> **ADHA-FHIR-IDENT-02** Where a verified IHI is available for a patient that IHI **SHALL** be provided
 
-> **ADHA-FHIR-IDENT-0X** 
+> **ADHA-FHIR-IDENT-03** All systems **SHALL** support the following patient identifiers: IHI, DVA, and Medicare Card.
 
+> **ADHA-FHIR-IDENT-04** All systems **SHALL** support the following healthcare provider individual identifiers: HPI-I, CAE, and Medicare Provider.
 
+> **ADHA-FHIR-IDENT-05** All systems **SHALL** support the following organisation identifiers: HPI-O, PAI-O, and ABN.
 
-#### Provider Identification
-
-*TBD Architecture Team to provide*
-
-
-
-#### Organisation Identification
-
-*TBD Architecture Team to provide*
+> **ADHA-FHIR-IDENT-06** All systems **SHOULD** support the following organisation identifiers: PAI-D, PAI-R, UID.
 
 
 
