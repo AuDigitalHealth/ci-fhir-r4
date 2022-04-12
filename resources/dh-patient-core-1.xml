@@ -129,13 +129,13 @@
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="ClinicalDocument.component.structuredBody.component.section[code=102.16080', codeSystem='1.2.36.1.2001.1001.101',title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code='1460861000168108', codeSystem='2.16.840.1.113883.6.96'].value[xsi:type='TS']"
+          value="ClinicalDocument.component.structuredBody.component.section[code[code=102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='1460861000168108', codeSystem='2.16.840.1.113883.6.96']].value[xsi:type='TS']"
         />
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="This data is considered to be included via induction in ClinicalDocument.component.structuredBody.component.section[code=102.16080', codeSystem='1.2.36.1.2001.1001.101',title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code='1460861000168108', codeSystem='2.16.840.1.113883.6.96'].value[xsi:type='TS']."
+          value="This data is considered to be included via induction in ClinicalDocument.component.structuredBody.component.section[code[code=102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='1460861000168108', codeSystem='2.16.840.1.113883.6.96']].value[xsi:type='TS']."
         />
       </mapping>
           </element>
@@ -192,10 +192,10 @@
     <element id="Patient.active">
       <path value="Patient.active"/>
       <fixedBoolean value="true"/>
-      <!--<mapping>
+      <mapping>
         <identity value="CDA.author"/>
         <map value="n/a"/>
-      </mapping>-->
+      </mapping>
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
@@ -255,13 +255,13 @@
       <mapping>
         <identity value="CDA.recordTarget"/>
         <map
-          value="ClinicalDocument/component/structuredBody/component/section[code='102.16080', codeSystem='1.2.36.1.2001.1001.101', title='Administrative Observation']/entry/observation[classCode='OBS', moodCode='EVN', code='102.16234', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']"
+          value="ClinicalDocument.component.structuredBody.component.section[code[code='102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='102.16234', codeSystem='1.2.36.1.2001.1001.101']].value[xsi:type='CD']"
         />
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="This data is considered to be included via induction in CClinicalDocument/component/structuredBody/component/section[code='102.16080', codeSystem='1.2.36.1.2001.1001.101', title='Administrative Observation']/entry/observation[classCode='OBS', moodCode='EVN', code='102.16234', codeSystem='1.2.36.1.2001.1001.101'].value[xsi:type='CD']."
+          value="This data is considered to be included via induction in ClinicalDocument.component.structuredBody.component.section[code[code='102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='102.16234', codeSystem='1.2.36.1.2001.1001.101']].value[xsi:type='CD']."
         />
       </mapping>
     </element>
@@ -271,7 +271,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument/recordTarget/patientRole/patient/birthTime"/>
+        <map value="ClinicalDocument.recordTarget.patientRole.patient.birthTime"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
@@ -285,7 +285,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument/recordTarget/patientRole/addr"/>
+        <map value="ClinicalDocument.recordTarget.patientRole.addr"/>
       </mapping>
       <mapping>
         <identity value="CDA.author"/>
