@@ -39,7 +39,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson"/>
       </mapping>
     </element>
     <element id="RelatedPerson.identifier">
@@ -55,7 +55,9 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:asEntityIdentifier"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.identifier:ihi">
@@ -67,11 +69,7 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-ihi"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-    </element>
+          </element>
     <element id="RelatedPerson.identifier:medicare">
       <path value="RelatedPerson.identifier"/>
       <sliceName value="medicare"/>
@@ -81,11 +79,7 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-    </element>
+          </element>
     <element id="RelatedPerson.identifier:dva">
       <path value="RelatedPerson.identifier"/>
       <sliceName value="dva"/>
@@ -95,11 +89,7 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-dvanumber"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-    </element>
+          </element>
     <element id="RelatedPerson.active">
       <path value="RelatedPerson.active" />
       <fixedBoolean value="true" />
@@ -117,7 +107,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."/>
+        <map value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole."/>
       </mapping>
     </element>
     <element id="RelatedPerson.relationship">
@@ -125,7 +115,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:personalRelationship.ext:code"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:personalRelationship.ext:code"/>
       </mapping>
     </element>
     <element id="RelatedPerson.name">
@@ -133,14 +123,14 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.name"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.name"/>
       </mapping>
     </element>
     <element id="RelatedPerson.telecom">
       <path value="RelatedPerson.telecom" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.telecom"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].telecom"/>
       </mapping>
     </element>
     <element id="RelatedPerson.address">
@@ -148,7 +138,7 @@
       <max value="0"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.addr"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].addr"/>
       </mapping>
     </element>
     <element id="RelatedPerson.photo">
@@ -164,7 +154,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication.language">
@@ -172,7 +162,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication.languageCode"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication.languageCode"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication.preferred">
@@ -180,7 +170,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.author"/>
-        <map value="author.assignedAuthor.assignedPerson.ext:languageCommunication.preferenceInd"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication.preferenceInd"/>
       </mapping>
     </element>
   </differential>

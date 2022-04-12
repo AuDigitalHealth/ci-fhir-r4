@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-relatedperson-author-1" />
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
-  <version value="0.0.1" />
-  <name value="DHRelatedPersonAuthor" />
-  <title value="ADHA Authoring RelatedPerson" />
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <id value="dh-relatedperson-author-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+  <version value="0.0.1"/>
+  <name value="DHRelatedPersonAuthor"/>
+  <title value="ADHA Authoring RelatedPerson"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of a related person in the role of an author or observer for exchange usage scenarios to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
+  <description
+    value="The purpose of this profile is to define a representation of a related person in the role of an author or observer for exchange usage scenarios to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="CDA.author"/>
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema author"/>
   </mapping>
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="RelatedPerson" />
-  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson" />
-  <derivation value="constraint" />
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="RelatedPerson"/>
+  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="RelatedPerson">
-      <path value="RelatedPerson" />
+      <path value="RelatedPerson"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.identifier">
-      <path value="RelatedPerson.identifier" />
-      <definition value="Identifier for a person within a particular scope." />
+      <path value="RelatedPerson.identifier"/>
+      <definition value="Identifier for a person within a particular scope."/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
@@ -46,10 +50,12 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:asEntityIdentifier"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.identifier:ihi">
@@ -61,10 +67,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-ihi"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="RelatedPerson.identifier:medicare">
       <path value="RelatedPerson.identifier"/>
@@ -75,10 +77,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="RelatedPerson.identifier:dva">
       <path value="RelatedPerson.identifier"/>
@@ -89,87 +87,86 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-dvanumber"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="RelatedPerson.active">
-      <path value="RelatedPerson.active" />
-      <fixedBoolean value="true" />
+      <path value="RelatedPerson.active"/>
+      <fixedBoolean value="true"/>
       <mapping>
         <identity value="CDA.author"/>
         <map value="n/a"/>
       </mapping>
     </element>
     <element id="RelatedPerson.patient">
-      <path value="RelatedPerson.patient" />
+      <path value="RelatedPerson.patient"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."/>
+        <map
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole."
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.relationship">
-      <path value="RelatedPerson.relationship" />
-      <mustSupport value="true" />
+      <path value="RelatedPerson.relationship"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:personalRelationship.ext:code"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:personalRelationship.ext:code"/>
       </mapping>
     </element>
     <element id="RelatedPerson.name">
-      <path value="RelatedPerson.name" />
+      <path value="RelatedPerson.name"/>
       <min value="1"/>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.name"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.name"/>
       </mapping>
     </element>
     <element id="RelatedPerson.telecom">
-      <path value="RelatedPerson.telecom" />
+      <path value="RelatedPerson.telecom"/>
       <min value="1"/>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.telecom"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].telecom"/>
       </mapping>
     </element>
     <element id="RelatedPerson.address">
-      <path value="RelatedPerson.address" />
-      <mustSupport value="true" />
+      <path value="RelatedPerson.address"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.addr"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].addr"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication">
-      <path value="RelatedPerson.communication" />
-      <mustSupport value="true" />
+      <path value="RelatedPerson.communication"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication.language">
-      <path value="RelatedPerson.communication.language" />
-      <mustSupport value="true" />
+      <path value="RelatedPerson.communication.language"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication.languageCode"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication.languageCode"/>
       </mapping>
     </element>
     <element id="RelatedPerson.communication.preferred">
-      <path value="RelatedPerson.communication.preferred" />
-      <mustSupport value="true" />
+      <path value="RelatedPerson.communication.preferred"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication.preferenceInd"/>
+        <map value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication.preferenceInd"/>
       </mapping>
     </element>
   </differential>

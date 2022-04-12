@@ -24,21 +24,6 @@
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema author"/>
   </mapping>
-  <mapping>
-    <identity value="CDA.informant"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema informant"/>
-  </mapping>
-  <mapping>
-    <identity value="CDA.informationRecipient"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema informationRecipient"/>
-  </mapping>
-  <mapping>
-    <identity value="CDA.performer"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema performer"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="RelatedPerson"/>
@@ -59,19 +44,9 @@
       </constraint>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.identifier">
@@ -87,19 +62,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:asEntityIdentifier"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.identifier:ihi">
@@ -111,22 +76,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-ihi"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="RelatedPerson.identifier:medicare">
       <path value="RelatedPerson.identifier"/>
@@ -137,22 +86,6 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="RelatedPerson.identifier:dva">
       <path value="RelatedPerson.identifier"/>
@@ -163,40 +96,12 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-dvanumber"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="RelatedPerson.active">
       <path value="RelatedPerson.active"/>
       <fixedBoolean value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
         <map value="n/a"/>
       </mapping>
     </element>
@@ -211,25 +116,7 @@
       <mapping>
         <identity value="CDA.author"/>
         <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map
-          value="Not mapped directly for this participant; this is implicit in ClinicalDocument.patientRole."
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole."
         />
       </mapping>
     </element>
@@ -238,21 +125,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:personalRelationship.ext:code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:personalRelationship.ext:code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
         <map
-          value=".informationRecipient.intendedRecipient.informationRecipient.ext:personalRelationship"
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:personalRelationship.ext:code"
         />
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:personalRelationship.ext:code"/>
       </mapping>
     </element>
     <element id="RelatedPerson.name">
@@ -260,19 +135,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.name"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.name"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.name"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.name"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.name"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.telecom">
@@ -280,19 +145,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.telecom"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.telecom"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.telecom"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.telecom"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].telecom"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.address">
@@ -301,19 +156,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.addr"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.addr"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.addr"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.addr"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].addr"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.communication">
@@ -321,19 +166,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:languageCommunication"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:languageCommunication"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:languageCommunication"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.communication.language">
@@ -341,19 +176,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication.languageCode"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:languageCommunication.languageCode"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:languageCommunication.languageCode"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
-        <map value=".performer.assignedEntity.assignedPerson.ext:languageCommunication"/>
+        <map
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication.languageCode"
+        />
       </mapping>
     </element>
     <element id="RelatedPerson.communication.preferred">
@@ -361,21 +186,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:languageCommunication.preferenceInd"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.relatedEntity.relatedPerson.ext:languageCommunication.preferenceInd"
-        />
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".informationRecipient.intendedRecipient.informationRecipient.ext:languageCommunication.preferenceInd"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.performer"/>
         <map
-          value=".performer.assignedEntity.assignedPerson.ext:languageCommunication.preferenceInd"/>
+          value=".author.assignedAuthor[code[code='AGNT, codeSystem='2.16.840.1.113883.5.110']].assignedPerson.ext:languageCommunication.preferenceInd"
+        />
       </mapping>
     </element>
   </differential>
