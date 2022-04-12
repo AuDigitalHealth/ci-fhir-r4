@@ -25,11 +25,6 @@
     <name value="Agency CDA Schema author"/>
   </mapping>
   <mapping>
-    <identity value="CDA.informant"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema informant"/>
-  </mapping>
-  <mapping>
     <identity value="CDA.informationRecipient"/>
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema informationRecipient"/>
@@ -100,11 +95,7 @@
       </constraint>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".author"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant"/>
+        <map value=".author.assignedAuthor"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
@@ -127,12 +118,10 @@
         <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
       <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
+        <map
+          value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"
+        />
       </mapping>
     </element>
     <element id="PractitionerRole.identifier:hpii">
@@ -143,19 +132,7 @@
         <code value="Identifier"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-hpii"/>
       </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
+      <mustSupport value="true"/>
     </element>
     <element id="PractitionerRole.identifier:caei">
       <path value="PractitionerRole.identifier"/>
@@ -163,21 +140,10 @@
       <max value="1"/>
       <type>
         <code value="Identifier"/>
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-careagencyemployeeidentifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-careagencyemployeeidentifier"
+        />
       </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
+      <mustSupport value="true"/>
     </element>
     <element id="PractitionerRole.identifier:medicareProvider">
       <path value="PractitionerRole.identifier"/>
@@ -187,29 +153,13 @@
         <code value="Identifier"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medicareprovidernumber"/>
       </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"/>
-      </mapping>
+      <mustSupport value="true"/>
     </element>
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active"/>
       <fixedBoolean value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
         <map value="n/a"/>
       </mapping>
       <mapping>
@@ -231,10 +181,6 @@
         <map value=".author.assignedAuthor.assignedPerson"/>
       </mapping>
       <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.assignedPerson"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informationRecipient"/>
         <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient"/>
       </mapping>
@@ -253,10 +199,6 @@
         <map value=".author.assignedAuthor.representedOrganization"/>
       </mapping>
       <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.representedOrganization"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informationRecipient"/>
         <map value="ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization"/>
       </mapping>
@@ -269,10 +211,6 @@
         <map value=".author.assignedAuthor.code"/>
       </mapping>
       <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.code"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informationRecipient"/>
         <map value="ClinicalDocument.informationRecipient.intendedRecipient.ext:code"/>
       </mapping>
@@ -282,10 +220,6 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
         <map value="n/a"/>
       </mapping>
       <mapping>
@@ -306,10 +240,6 @@
         <map value="n/a"/>
       </mapping>
       <mapping>
-        <identity value="CDA.informant"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informationRecipient"/>
         <map value="n/a"/>
       </mapping>
@@ -326,15 +256,11 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.author"/>
-        <map value=".act"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".act"/>
+        <map value=".act[classCode='ACT', moodCode='EVN']"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>
-        <map value=".act"/>
+        <map value=".act[classCode='ACT', moodCode='EVN']"/>
       </mapping>
     </element>
     <element id="PractitionerRole.telecom">
@@ -343,10 +269,6 @@
       <mapping>
         <identity value="CDA.author"/>
         <map value=".author.assignedAuthor.telecom"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.telecom"/>
       </mapping>
       <mapping>
         <identity value="CDA.informationRecipient"/>

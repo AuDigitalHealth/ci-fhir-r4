@@ -34,11 +34,6 @@
     <uri value="http://hl7.org/v3/cda"/>
     <name value="Agency CDA Schema informationRecipient"/>
   </mapping>
-  <mapping>
-    <identity value="CDA.author"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema author"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Practitioner"/>
@@ -67,10 +62,6 @@
         />
       </constraint>
       <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map value=".informant"/>
       </mapping>
@@ -95,10 +86,6 @@
       </slicing>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
       </mapping>
@@ -120,28 +107,10 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-hpii"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informant"/>
-        <map value=".informant.assignedEntity.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map
-          value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"
-        />
-      </mapping>
     </element>
     <element id="Practitioner.active">
       <path value="Practitioner.active"/>
       <fixedBoolean value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
       <mapping>
         <identity value="CDA.informant"/>
         <map value="n/a"/>
@@ -159,10 +128,6 @@
       <path value="Practitioner.name"/>
       <min value="1"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.name"/>
-      </mapping>
       <mapping>
         <identity value="CDA.informant"/>
         <map value=".informant.assignedEntity.assignedPerson.name"/>
@@ -182,10 +147,6 @@
       <path value="Practitioner.telecom"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.telecom"/>
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map value=".informant.assignedEntity.telecom"/>
       </mapping>
@@ -203,10 +164,6 @@
       <definition
         value="Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent."/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".addr"/>
-      </mapping>
       <mapping>
         <identity value="CDA.informant"/>
         <map value=".informant.assignedEntity.addr"/>
@@ -235,12 +192,6 @@
       </constraint>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map
-          value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"
-        />
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map
           value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"
@@ -255,7 +206,7 @@
       <mapping>
         <identity value="CDA.assignedPerson"/>
         <map
-          value="Instantiated as assignedPerson.ext:asQualifications, or ClinicalDocument.component.structuredBody.component.section.ext:coverage2"
+          value=".assignedPerson.ext:asQualifications[classCode='QUAL'] / ClinicalDocument.component.structuredBody.component.section.ext:coverage2[typeCode='COVBY']"
         />
       </mapping>
     </element>
@@ -263,12 +214,6 @@
       <path value="Practitioner.qualification.identifier"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:id"
-        />
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map
           value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:id"
@@ -283,7 +228,7 @@
       <mapping>
         <identity value="CDA.assignedPerson"/>
         <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:id"
+          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2[typeCode='COVBY'].ext:entitlement[classCode='COV', moodCode='EVN'].ext:id"
         />
       </mapping>
     </element>
@@ -291,12 +236,6 @@
       <path value="Practitioner.qualification.code"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:code"
-        />
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map
           value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:code"
@@ -311,7 +250,7 @@
       <mapping>
         <identity value="CDA.assignedPerson"/>
         <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:code"
+          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2[typeCode='COVBY'].ext:entitlement[classCode='COV', moodCode='EVN'].ext:code"
         />
       </mapping>
     </element>
@@ -319,12 +258,6 @@
       <path value="Practitioner.qualification.period"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:effectiveTime"
-        />
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map
           value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:effectiveTime"
@@ -339,7 +272,7 @@
       <mapping>
         <identity value="CDA.assignedPerson"/>
         <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:effectiveTime"
+          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2[typeCode='COVBY'].ext:entitlement[classCode='COV', moodCode='EVN'].ext:effectiveTime"
         />
       </mapping>
     </element>
@@ -347,12 +280,6 @@
       <path value="Practitioner.qualification.issuer"/>
       <mustSupport value="true"/>
       <mapping>
-        <identity value="CDA.author"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:participant"
-        />
-      </mapping>
-      <mapping>
         <identity value="CDA.informant"/>
         <map
           value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:participant"
@@ -367,17 +294,13 @@
       <mapping>
         <identity value="CDA.assignedPerson"/>
         <map
-          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2.ext:entitlement.ext:participant"
+          value="ClinicalDocument.component.structuredBody.component.section.ext:coverage2[typeCode='COVBY'].ext:entitlement[classCode='COV', moodCode='EVN'].ext:participant[typeCode='AUT'].ext:participantRole[classCode='COMPAR']"
         />
       </mapping>
     </element>
     <element id="Practitioner.communication">
       <path value="Practitioner.communication"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".assignedPerson.ext:languageCommunication"/>
-      </mapping>
       <mapping>
         <identity value="CDA.informant"/>
         <map value=".informant.assignedEntity.assignedPerson.ext:languageCommunication"/>
