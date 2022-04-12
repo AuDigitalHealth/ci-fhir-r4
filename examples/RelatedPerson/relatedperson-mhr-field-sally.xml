@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelatedPerson xmlns="http://hl7.org/fhir">
+    <id value="mhr-field-sally"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+                <tr>
+                    <td>NAME</td>
+                    <td>Ms. Sally FIELD</td>
+                </tr>
+                <tr>
+                    <td>IHI NUMBER</td>
+                    <td>8003608833357361</td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td>14 February 1999</td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>Female</td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+            </coding>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+        <value value="8003608333563104"/>
+    </identifier>
+    <patient>
+        <reference value="Patient/mhr-smith-oliver"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833357361"/>
+        </identifier>
+    </patient>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="MTH"/>
+            <display value="mother"/>
+        </coding>
+    </relationship>
+    <name>
+        <use value="usual"/>
+        <family value="FIELD"/>
+        <given value="Sally"/>
+        <prefix value="Ms."/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="0491 578 957"/>
+        <use value="mobile"/>
+    </telecom>
+    <gender value="female"/>    
+</RelatedPerson>

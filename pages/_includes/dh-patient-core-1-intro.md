@@ -95,6 +95,7 @@ This profile is referenced by
 [ADHA National Cancer Screening Program Participation Composition](StructureDefinition-dh-composition-ncspp-1.html), 
 [ADHA Personal Health Notes Composition](StructureDefinition-dh-composition-phn-1.html), 
 [ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html), 
+[ADHA Personal Observations Composition](StructureDefinition-dh-composition-po-1.html), 
 [ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html), 
 [ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html), 
 [ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html), 

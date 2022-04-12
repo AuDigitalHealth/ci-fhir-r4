@@ -5,9 +5,9 @@
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phn-1"/>
     </meta>
     <language value="en-AU"/>
-    <!--<contained>
+    <contained>
         <Patient>
-            <id value="123"/>
+            <id value="hi-testdata-priest-mac"/>
             <identifier>
                 <use value="official"/>
                 <type>
@@ -41,11 +41,19 @@
             </name>
             <gender value="male"/>    
             <birthDate value="1989-03-09"/>
+            <address>
+                <use value="home"/>
+                <type value="physical"/>
+                <line value="55 Council Pnt"/>
+                <city value="ASHTONFIELD"/>
+                <state value="NSW"/>
+                <postalCode value="2323"/>
+            </address>
         </Patient>
-    </contained>-->
-    <!--<contained>
+    </contained>
+    <contained>
         <Organization>
-            <id value="321"/>
+            <id value="mhr-operator"/>
             <identifier>
                 <type>
                     <coding>
@@ -59,7 +67,7 @@
                 <value value="8003640001000036"/>
             </identifier>
         </Organization>
-    </contained>-->
+    </contained>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:0b4e2b56-70c9-4c79-ba4f-a7596a9feefa"/>
@@ -82,6 +90,7 @@
         </coding>
     </category>
     <subject>
+        <reference value="#hi-testdata-priest-mac"/>
         <identifier>
             <type>
                 <coding>
@@ -100,6 +109,7 @@
     </subject>
     <date value="2017-06-21T09:00:15+10:00"/>
     <author>
+        <reference value="#hi-testdata-priest-mac"/>
         <identifier>
             <type>
                 <coding>
@@ -118,6 +128,7 @@
     </author>
     <title value="Personal Health Notes"/>
     <custodian>
+        <reference value="#mhr-operator"/>
         <identifier>
             <type>
                 <coding>

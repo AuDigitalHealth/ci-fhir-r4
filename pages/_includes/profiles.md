@@ -255,8 +255,9 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                  <li><a href="StructureDefinition-dh-composition-mov-1.html">ADHA Medicare Overview Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-ncspp-1.html">ADHA National Cancer Screening Program Participation Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html">Section type design elaboration version of ADHA National Cancer Screening Program Participation Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Person Health Notes Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Person Health Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-po-1.html">ADHA Personal Observations Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-psml-1.html">ADHA Pharmacist Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-pdl-1.html">ADHA Prescription and or Dispense History Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>

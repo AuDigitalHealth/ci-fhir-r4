@@ -215,6 +215,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-composition-po-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Personal Observations Document Composition"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-composition-shs-1"/>
             </reference>
             <name value="Australian Digital Health Agency Shared Health Summary Document Composition"/>
@@ -931,6 +938,27 @@
             </reference>
             <name value="Personal Health Notes Document Composition with contained resources"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phn-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Composition/po-01"/>
+            </reference>
+            <name value="Personal Observaions Document Composition for Mr. Oliver Smith recorded by Mother at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/po-01"/>
+            </reference>
+            <name value="Personal Observaions Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/po-doc-01"/>
+            </reference>
+            <name value="Personal Observaions Document Bundle for Mr. Oliver Smith recorded by Mother at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
         </resource>
         <resource>
             <reference>
@@ -2061,6 +2089,76 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/bodyheight-01"/>
+            </reference>
+            <name value="Length of Mr. Oliver Smith recorded by Mother at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyheight-02"/>
+            </reference>
+            <name value="Length of Mr. Oliver Smith recorded by Mother at 10 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyheight-03"/>
+            </reference>
+            <name value="Length of Mr. Oliver Smith recorded by GP at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyheight-04"/>
+            </reference>
+            <name value="Length of Mr. Oliver Smith recorded by GP at 10 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyweight-01"/>
+            </reference>
+            <name value="Weight of Mr. Oliver Smith recorded by Mother at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyweight-02"/>
+            </reference>
+            <name value="Weight of Mr. Oliver Smith recorded by Mother at 10 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyweight-03"/>
+            </reference>
+                <name value="Weight of Mr. Oliver Smith recorded by GP at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bodyweight-04"/>
+            </reference>
+            <name value="Weight of Mr. Oliver Smith recorded by GP at 10 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/headcircum-01"/>
+            </reference>
+            <name value="Head Circumference of Mr. Oliver Smith recorded by Mother at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/headcircum-02"/>
+            </reference>
+            <name value="Head Circumference of Mr. Oliver Smith recorded by GP at 6 months"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/program-participation-bcsp-01"/>
             </reference>
             <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Opted Out (2017)"/>
@@ -2413,6 +2511,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Patient/mhr-smith-oliver"/>
+            </reference>
+            <name value="Mr. Oliver SMITH (My Health Record Patient) (Child)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Patient/mhr-tjakamarra-billy"/>
             </reference>
             <name value="Billy Tjakamarra (My Health Record Patient)"/>
@@ -2650,6 +2755,14 @@
             </reference>
             <name value="Dr. Patricia Tulio, Pathologist, at Metropolitan Laboratories Sydney"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        <!--RELATEDPERSON EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-field-sally"/>
+            </reference>
+            <name value="Ms. Sally FIELD (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
         </resource>
         <!--SERVICEREQUEST EXAMPLES-->
         <resource>

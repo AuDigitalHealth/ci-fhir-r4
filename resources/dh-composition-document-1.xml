@@ -35,55 +35,37 @@
       <constraint>
         <key value="inv-dh-doc-01"/>
         <severity value="error"/>
-        <human
-          value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
-        />
+        <human value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
+        <expression value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-doc-02"/>
         <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
-        />
+        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-doc-03"/>
         <severity value="error"/>
-        <human
-          value="An author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
-        />
+        <human value="An author shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-doc-04"/>
         <severity value="error"/>
-        <human
-          value="The custodian shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="custodian.reference.exists() or custodian.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
-        />
+        <human value ="The custodian shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="custodian.reference.exists() or custodian.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-doc-05"/>
         <severity value="error"/>
         <human value="Sections shall be unique by code"/>
         <expression value="section.select(code.coding.code).isDistinct()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
-        />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <mapping>
         <identity value="CDA"/>
@@ -227,13 +209,9 @@
       <constraint>
         <key value="inv-dh-doc-04"/>
         <severity value="error"/>
-        <human
-          value="The party shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="party.reference.exists() or party.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
-        />
+        <human value="The party shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="party.reference.exists() or party.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -263,15 +241,10 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
-        />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
@@ -284,9 +257,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
-        />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
@@ -308,7 +279,7 @@
       <mapping>
         <identity value="CDA"/>
         <map value="ClinicalDocument.relatedDocument.typeCode"/>
-              </mapping>
+       </mapping>
     </element>
     <element id="Composition.relatesTo.target[x]">
       <path value="Composition.relatesTo.target[x]"/>
@@ -317,8 +288,7 @@
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
