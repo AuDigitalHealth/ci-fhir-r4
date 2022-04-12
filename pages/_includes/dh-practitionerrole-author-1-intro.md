@@ -11,6 +11,7 @@ This profile is designed to set a PractitionerRole standard for:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
+
 #### Guidance
 The following guidance applies:
 * TBD
@@ -21,16 +22,16 @@ This profile is referenced by
 [ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html), 
 [ADHA Core Composition](StructureDefinition-dh-composition-core-1.html), 
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
-[ADHA Advance Care Custodian Record Composition](StructureDefinition-dh-composition-document-1.html), 
-[ADHA Advance Care Planning Composition](StructureDefinition-dh-composition-document-1.html), 
-[ADHA Event Summary Composition](StructureDefinition-dh-composition-phs-1.html), 
-[ADHA Advance Care Planning DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
+[ADHA Advance Care Custodian Record Composition](StructureDefinition-dh-composition-acdc-1.html), 
+[ADHA Advance Care Planning Composition](StructureDefinition-dh-composition-acp-1.html), 
+[ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html), 
 [ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html), 
 [ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html), 
 [ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html),
 [ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html), 
 [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html), 
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
+[ADHA Advance Care Planning DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 

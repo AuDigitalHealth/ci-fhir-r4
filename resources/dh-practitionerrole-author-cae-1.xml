@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-practitionerrole-author-cae-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-cae-1"/>
+  <version value="0.0.1"/>
+  <name value="DHPractitionerRoleAuthoringCAE"/>
+  <title value="ADHA Authoring Care Agency Employee"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of a care agency employee (practitioner) acting as an author or observer, on behalf of an organisation, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="PractitionerRole"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole"/>
+      <short value="A care agency employee acting as an author or observer, on behalf of an organisation"/>
+      <definition value="A care agency employee acting as an author or observer, on behalf of an organisation. A care agency employee is a person appointed by a Care Agency to manage the care of one or more Individuals. The person may work under::&#xa;&#xa;* an employment contract with a federal, state or territory government Care Agency:&#xa;&#xa;* an employment contract with a subcontracted Care Agency or:&#xa;&#xa;* a volunteer arrangement where the person acts as if they are an employee of a Care Agency, but not including relatives or adoptive parents."/>
+      <comment value="A care agency is a government agency, or an organisation approved by the appropriate government agency, responsible for managing the care of individuals. In the context of the My Health Record, a care agency employee may manage a child's My Health Record as an Authorised Representative. "/>
+    </element>
+    <element id="PractitionerRole.identifier:caei">
+      <path value="PractitionerRole.identifier"/>
+      <sliceName value="caei"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-careagencyemployeeidentifier"/>
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
