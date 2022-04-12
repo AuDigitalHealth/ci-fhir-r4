@@ -14,24 +14,19 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description
-    value="The purpose of this profile is to define a representation of a Personal Health Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-  <copyright
-    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <description value="The purpose of this profile is to define a representation of a Personal Health Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
+  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Composition"/>
-  <baseDefinition
-    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Composition">
       <path value="Composition"/>
       <short value="Personal Health Summary"/>
-      <definition
-        value="A document that is a healthcare summary about the individual's allergies and medications which is recorded by the patient or their authorised representative within the system."
-      />
+      <definition value="A document that is a healthcare summary about the individual's allergies and medications which is recorded by the patient or their authorised representative within the system."/>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -60,11 +55,9 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
-        />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-cae-1"/>
       </type>
     </element>
     <element id="Composition.section">
