@@ -9,9 +9,10 @@ This profile is designed to set a core PractitionerRole standard for:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
+
 #### Guidance
 The following guidance applies:
-* an Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
+* TBD
 
 
 This profile is referenced by 
@@ -19,3 +20,6 @@ This profile is referenced by
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), [Australian Digital Health Agency Core Patient](StructureDefinition-dh-patient-core-1.html), 
 [Australian Digital Health Agency My Health Record Patient](StructureDefinition-dh-patient-mhr-1.html), and  
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+
+These profiles build on this profile ([ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html)) to define specific roles:
+* [ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html)
