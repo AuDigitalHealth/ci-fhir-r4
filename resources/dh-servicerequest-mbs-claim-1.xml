@@ -44,5 +44,13 @@
       <path value="ServiceRequest.code"/>
       <short value="What service was claimed"/>
     </element>
+    <element id="ServiceRequest.requester">
+      <path value="ServiceRequest.requester" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
