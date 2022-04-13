@@ -5,18 +5,20 @@
   <version value="0.0.1"/>
   <name value="DHEncounterCore"/>
   <title value="ADHA Core Encounter"/>
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of an encounter for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
+  <description
+    value="The purpose of this profile is to provide a core representation of an encounter for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="CDA.encompassingEncounter"/>
     <uri value="http://hl7.org/v3/cda"/>
@@ -38,9 +40,12 @@
       <constraint>
         <key value="inv-dh-enc-01"/>
         <severity value="error"/>
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
+        <human
+          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
@@ -57,7 +62,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model, this is implicit in encounter.text."/>
+        <map value="n/a"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
@@ -69,7 +74,7 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model; this is implicit in encounter.statusCode."/>
+        <map value="n/a"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
@@ -93,7 +98,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="preferred"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1"/>
       </binding>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
@@ -101,7 +106,7 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value=".encounter.entryRelationship.observation.value"/>
+        <map value=".encounter.entryRelationship[typeCode='COMP'].observation[classCode='OBS', moodCode='EVN', code[code='103.17018', codeSystem='1.2.36.1.2001.1001.101', displayName='Category']].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Encounter.serviceType">
@@ -109,7 +114,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="preferred"/>
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/service-type-1" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/service-type-1"/>
       </binding>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
@@ -117,24 +122,29 @@
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value=".encounter.entryRelationship.observation.value"/>
+        <map value=".encounter.entryRelationship[typeCode='COMP'].observation[classCode='OBS', moodCode='EVN', code[code='103.17021', codeSystem='1.2.36.1.2001.1001.101', displayName='Service category']].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject"/>
       <min value="1"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."/>
+        <map
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole."
+        />
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."/>
+        <map
+          value="This data is considered to be included via induction in ClinicalDocument.recordTarget.patientRole."
+        />
       </mapping>
     </element>
     <element id="Encounter.participant">
@@ -143,9 +153,12 @@
       <constraint>
         <key value="inv-dh-enc-02"/>
         <severity value="error"/>
-        <human value="The participant shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="individual.reference.exists() or individual.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
+        <human
+          value="The participant shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="individual.reference.exists() or individual.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mustSupport value="true"/>
       <mapping>
@@ -162,7 +175,9 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity.code"/>
+        <map
+          value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity.code"
+        />
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
@@ -172,14 +187,19 @@
     <element id="Encounter.participant.individual">
       <path value="Encounter.participant.individual"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
+        />
       </type>
       <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity.assignedPerson"/>
+        <map
+          value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant.assignedEntity.assignedPerson[classCode='PSN']"
+        />
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
@@ -200,38 +220,43 @@
       </mapping>
     </element>
     <element id="Encounter.reasonCode">
-      <path value="Encounter.reasonCode" />
-      <mustSupport value="true" />
+      <path value="Encounter.reasonCode"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model; implicit in encounter.entryRelationship.observation.value."/>
+        <map value="n/a"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value=".encounter.entryRelationship.observation.value"/>
+        <map value=".encounter.entryRelationship[typeCode='RSON'].observation[classCode='OBS', moodCode='EVN', code[code='103.10141', codeSystem='1.2.36.1.2001.1001.101', displayName='Clinical Indication']].value[xsi:type='CD']"/>
       </mapping>
     </element>
     <element id="Encounter.reasonReference[x]">
-      <path value="Encounter.reasonReference[x]" />
+      <path value="Encounter.reasonReference[x]"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
-        <map value="Not mapped directly for this model; implicit in encounter.entryRelationship.observation, and/or encounter.entryRelationship.procedure."/>
+        <map value="n/a"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value=".encounter.entryRelationship.observation, and/or encounter.entryRelationship.procedure"/>
+        <map
+          value=".encounter.entryRelationship[typeCode='RSON'].observation[classCode='OBS', moodCode='EVN', code[code='282291009', codeSystem='2.16.840.1.113883.6.96', displayName='Diagnosis interpretation']] / .encounter.entryRelationship[typeCode='RSON'].observation[classCode='OBS', moodCode='EVN'] / encounter.entryRelationship[typeCode='RSON'].procedure"
+        />
       </mapping>
     </element>
     <element id="Encounter.hospitalization">
-      <path value="Encounter.hospitalization" />
-      <mustSupport value="true" />
+      <path value="Encounter.hospitalization"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
         <map value="n/a"/>
@@ -242,51 +267,47 @@
       </mapping>
     </element>
     <element id="Encounter.hospitalization.dischargeDisposition">
-      <path value="Encounter.hospitalization.dischargeDisposition" />
-      <mustSupport value="true" />
+      <path value="Encounter.hospitalization.dischargeDisposition"/>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
         <map value="ClinicalDocument.componentOf.encompassingEncounter.dischargeDispositionCode"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value="Not mapped directly for this model; this is implicit in  this is implicit in ClinicalDocument.componentOf.encompassingEncounter.dischargeDispositionCode."/>
+        <map value="n/a"/>
       </mapping>
     </element>
     <element id="Encounter.location">
-      <path value="Encounter.location" />
+      <path value="Encounter.location"/>
       <constraint>
         <key value="inv-dh-enc-02"/>
         <severity value="error"/>
-        <human value="The location shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="location.reference.exists() or location.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
+        <human
+          value="The location shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="location.reference.exists() or location.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.encompassingEncounter"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.encounter"/>
-        <map value="n/a"/>
-      </mapping>
-    </element>
-    <element id="Encounter.location.location">
-      <path value="Encounter.location.location" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
-      </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <mapping>
         <identity value="CDA.encompassingEncounter"/>
         <map value="ClinicalDocument.componentOf.encompassingEncounter.encounterParticipant"/>
       </mapping>
       <mapping>
         <identity value="CDA.encounter"/>
-        <map value=".encounter.participant"/>
+        <map value=".encounter.participant[typeCode='LOC']"/>
       </mapping>
+    </element>
+    <element id="Encounter.location.location">
+      <path value="Encounter.location.location"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+      </type>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>
