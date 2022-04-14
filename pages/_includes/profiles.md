@@ -296,6 +296,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA MHR Patient</a></li>
                                 <li><a href="StructureDefinition-dh-patient-demographics-1.html">ADHA Patient Demographics</a></li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</a></li>
+                                <li><a href="StructureDefinition-dh-practitionerrole-author-cae-1.html">ADHA Authoring Care Agency Employee</a></li>
                                 <li><a href="StructureDefinition-dh-relatedperson-mhr-1.html">ADHA MHR RelatedPerson</a></li>
                                 <li><a href="StructureDefinition-dh-relatedperson-author-1.html">ADHA Authoring RelatedPerson</a></li>
                             </ul>
