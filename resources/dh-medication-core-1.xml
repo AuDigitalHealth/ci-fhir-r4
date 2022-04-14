@@ -61,6 +61,10 @@
       <sliceName value="brandName" />
       <short value="Medication brand name" />
       <mustSupport value="true" />
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name"/>
+      </type>
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
         <map value=".entryRelationship.brand.act.text"/>
@@ -70,6 +74,10 @@
       <path value="Medication.extension" />
       <sliceName value="genericName" />
       <short value="Medication generic drug name" />
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name"/>
+      </type>
       <mustSupport value="true" />
       <mapping>
         <identity value="CDA.manufacturedProduct"/>
