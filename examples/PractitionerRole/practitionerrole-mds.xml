@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="d46a4134-ba17-11ec-833a-b1763b0a7715"/>
+    <!--R4 conversion of MDS test data ExplanationOfBenefit.id d46a4133-ba17-11ec-833a-b1763b0a7715-->
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/01"/>
+    </practitioner> 
+    <code>
+        <coding>
+            <system value="urn:oid:2.16.840.1.113883.13.62"/>
+            <code value="250000"/>
+        </coding>
+        <text value="Health Professional"/>
+    </code>    
+</PractitionerRole>

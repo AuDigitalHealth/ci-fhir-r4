@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="9b28d0a2-ba17-11ec-833a-b1763b0a7715"/>
+    <!--R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715-->
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
+    </meta>
+    <!--identifier for the PBR record from Medicare repository-->
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:296dcbd7-d763-4ecf-aa78-523bcc11ecda" />
+    </identifier>
+    <status value="unknown"/>
+    <intent value="order"/>
+    <medicationReference>
+        <reference value="Medication/cephalexin-01"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/mhr-field-sally"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833357361"/>
+        </identifier>
+    </subject>
+    <authoredOn value="2020-01-15"/>
+    <dispenseRequest>
+        <numberOfRepeatsAllowed value="1"/>
+        <quantity>
+            <value value="500"/>
+            <unit value="tablet"/>
+        </quantity>
+    </dispenseRequest>
+</MedicationRequest>

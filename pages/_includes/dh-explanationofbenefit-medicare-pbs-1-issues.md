@@ -11,6 +11,11 @@
         <td>See Zulip <a href="https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Derived.20profile.20snapshot.20missing.20upstream.20invariants">Derived profile snapshot missing upstream invariants</a> stream</td>
   </tr>
   <tr>
+        <td>ExplanationOfBenefit.insurer</td>
+        <td>The standard reprsentation is to be defined; preference is for display (Dept Name) and identifier (ABN). To be agreed.</td>
+        <td>N/A</td>
+  </tr>
+  <tr>
         <td>ExplanationOfBenefit.priority</td>
         <td>This element is not of use in this profile, however the canonical FHIR resource definition binds to an exmple CodeSystem not ValueSet - this is throwing errors. Current workaround is to profile that element to point to the ValueSet instead.</td>
         <td>N/A</td>

@@ -1,0 +1,73 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="australian-benefit-payment-category-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-23T21:40:28.863+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Australian Benefit and Payment Category</h2>
+            <tt>https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1</tt>
+            <p>The Australian Benefit and Payment Category code system defines concepts for
+                categories with which subsidised items and services may be associated.</p>
+        </div>
+    </text>
+    <url
+        value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.200.10007"/>
+    </identifier>
+    <version value="1.1.3"/>
+    <name value="AustralianBenefitAndPaymentCategory"/>
+    <title value="Australian Benefit and Payment Category"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-05-31"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Australian Benefit and Payment Category code system defines concepts for categories with which subsidised items and services may be associated."/>
+    <copyright
+        value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <caseSensitive value="false"/>
+    <valueSet
+        value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1/vs"/>
+    <compositional value="false"/>
+    <versionNeeded value="false"/>
+    <content value="complete"/>
+    <count value="5"/>
+    <concept>
+        <code value="mbs"/>
+        <display value="MBS"/>
+        <definition value="Medicare Benefits Schedule benefit and payment category"/>
+    </concept>
+    <concept>
+        <code value="dva"/>
+        <display value="DVA"/>
+        <definition value="Department of Veterans' Affairs benefit and payment category"/>
+    </concept>
+    <concept>
+        <code value="pbs"/>
+        <display value="PBS"/>
+        <definition value="Pharmaceutical Benefits Scheme benefit and payment category"/>
+    </concept>
+    <concept>
+        <code value="rpbs"/>
+        <display value="RPBS"/>
+        <definition value="Repatriation Pharmaceutical Benefits Scheme benefit and payment category"
+        />
+    </concept>
+    <concept>
+        <code value="no-benefit"/>
+        <display value="No Benefit"/>
+        <definition value="No Benefit"/>
+    </concept>
+</CodeSystem>

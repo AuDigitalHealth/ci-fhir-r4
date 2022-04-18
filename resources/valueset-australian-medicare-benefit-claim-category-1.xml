@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="valueset-australian-medicare-benefit-claim-category-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-23T21:41:20.223+00:00"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Australian Medicare Benefit and Claim Category</h2>
+            <tt>https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1</tt>
+            <p>The Australian Medicare Benefit and Claim Category value set includes category values
+                that can be used to classify a benefit in line with Medicare claim processing.</p>
+        </div>
+    </text>
+    <url
+        value="https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1004.201.10010"/>
+    </identifier>
+    <version value="1.0.2"/>
+    <name value="AustralianMedicareBenefitAndClaimCategory"/>
+    <title value="Australian Medicare Benefit and Claim Category"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-05-31"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>
+    <description
+        value="The Australian Medicare Benefit and Claim Category value set includes category values that can be used to classify a benefit in line with Medicare claim processing."/>
+    <copyright
+        value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <compose>
+        <include>
+            <system
+                value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1"/>
+            <concept>
+                <code value="mbs"/>
+            </concept>
+            <concept>
+                <code value="dva"/>
+            </concept>
+            <concept>
+                <code value="pbs"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
