@@ -82,11 +82,13 @@
     </component>
     <!--2.	Program participation status validity period -->
     <component>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="1603791000168104"/>
-            <display value="Program participation status period"/>
-        </coding>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="1603791000168104"/>
+                <display value="Program participation status period"/>
+            </coding>
+        </code>
         <valuePeriod>
             <start value="2021-07-21"/>
         </valuePeriod>
@@ -99,7 +101,7 @@
                 <code value="1603871000168108"/>
                 <display value="Program participation suspension indicator"/>
             </coding>
-            <text value="Defer Flag"/>
+            <text value="Defer flag"/>
         </code>
         <!--Patient has not deferred-->
         <valueBoolean value="false"/>
