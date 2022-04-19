@@ -10,7 +10,7 @@
 	<!--identifier from Bundle uploaded from AIR Medicare repository-->
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="1.2.36.1.2001.1007.11.8003640002000035.1000000000118810" />
+		<value value="urn:oid:1.2.36.1.2001.1007.11.8003640002000035.1000000000118810" />
 	</identifier>
 	<status value="completed"/>
 	<vaccineCode>
@@ -41,6 +41,10 @@
 		<targetDisease>
 			<text value="Measles Mumps Rubella Varicella"/>
 		</targetDisease>
-		<doseNumberPositiveInt value="1"/>
+		<doseNumberPositiveInt>
+			<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+				<valueCode value="unknown"/>
+			</extension>
+		</doseNumberPositiveInt>
 	</protocolApplied>
 </Immunization>
