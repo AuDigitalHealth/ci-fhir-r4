@@ -75,10 +75,10 @@
       <td><a href="Bundle-psml-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-mds.html">R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715: AIR</a></td>
-      <td>mds</td>
-      <td><a href="Bundle-mds.xml.html">XML</a></td>
-      <td><a href="Bundle-mds.json.html">JSON</a></td>
-      <td><a href="Bundle-mds.ttl.html">Turtle</a></td>
+      <td><a href="Bundle-cb7921cb-ba17-11ec-833a-b1763b0a7715.html">R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715: AIR</a></td>
+      <td>cb7921cb-ba17-11ec-833a-b1763b0a7715</td>
+      <td><a href="Bundle-cb7921cb-ba17-11ec-833a-b1763b0a7715.xml.html">XML</a></td>
+      <td><a href="Bundle-cb7921cb-ba17-11ec-833a-b1763b0a7715.json.html">JSON</a></td>
+      <td><a href="Bundle-cb7921cb-ba17-11ec-833a-b1763b0a7715.ttl.html">Turtle</a></td>
    </tr>
 </table>
