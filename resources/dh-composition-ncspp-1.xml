@@ -30,6 +30,13 @@
       <path value="Composition"/>
       <short value="National Cancer Screening Program Participation"/>
       <definition value="A document that describes an individual's participation in one or more national cancer screening programs, e.g. bowel or cervical. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
+      <constraint>
+        <key value="inv-dh-ncspp-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Disease Screening Program Participation Record '100.32039' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
+        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.32039').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspp-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -41,15 +48,6 @@
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/national-cancer-screening-program-participation-document-type-1" />
       </binding>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.32039"/>
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
