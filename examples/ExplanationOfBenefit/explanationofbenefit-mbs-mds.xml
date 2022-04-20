@@ -1,18 +1,18 @@
 <ExplanationOfBenefit xmlns="http://hl7.org/fhir">
-	<id value="d46a4133-ba17-11ec-833a-b1763b0a7715"/>
+	<id value="mbs-mds"/>
 	<!--R4 conversion of MDS test data ExplanationOfBenefit.id d46a4133-ba17-11ec-833a-b1763b0a7715-->
 	<meta>
 		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
 	</meta>
 	<contained>
 		<PractitionerRole>
-			<id value="d46a4134-ba17-11ec-833a-b1763b0a7715"/>
+			<id value="01"/>
 			<practitioner>
-				<reference value="#01"/>
+				<reference value="#02"/>
 			</practitioner>
 			<code>
 				<coding>
-					<system value="urn:oid:2.16.840.1.113883.13.62"/>
+					<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
 					<code value="250000"/>
 				</coding>
 				<text value="Health Professional"/>
@@ -21,7 +21,7 @@
 	</contained>
 	<contained>
 		<Practitioner>
-			<id value="01"/>
+			<id value="02"/>
 			<name>
 				<use value="usual"/>
 				<family value="KILLER"/>
@@ -64,21 +64,10 @@
 	</patient>
 	<created value="2022-04-07"/>
 	<insurer>
-		<identifier>
-			<type>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-					<code value="XX"/>
-				</coding>
-				<text value="ABN"/>
-			</type>
-			<system value="http://hl7.org.au/id/abn"/>
-			<value value="83605426759"/>
-		</identifier>
-		<display value="Australian Government Department of Health"/>
+		<reference value="Organization/healthau"/>
 	</insurer>
 	<provider>
-		<reference value="#d46a4134-ba17-11ec-833a-b1763b0a7715"/>
+		<reference value="#01"/>
 	</provider>
 	<outcome value="complete"/>
 	<insurance>

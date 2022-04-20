@@ -34,6 +34,13 @@
         <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
       </constraint>
+      <constraint>
+        <key value="inv-dh-eob-pbs-02"/>
+        <severity value="error"/>
+        <human value="The insurer shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression value="insurer.reference.exists() or insurer.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
+      </constraint>
     </element>
     <element id="ExplanationOfBenefit.identifier">
       <path value="ExplanationOfBenefit.identifier"/>
