@@ -30,19 +30,17 @@
       <path value="Composition"/>
       <short value="Aged Care Transfer Summary"/>
       <definition value="A transfer summary includes critical information for exchange of information between providers of care when a patient moves between health care settings."/>
+      <constraint>
+        <key value="inv-dh-acts-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Transfer summary note '18761-7' 'http://loinc.org'"/>
+        <expression value="category.coding.where(system='http://loinc.org' and code='18761-7').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acts-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org"/>
-          <code value="60591-5"/>
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
