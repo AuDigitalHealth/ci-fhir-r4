@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="cb7921cb-ba17-11ec-833a-b1763b0a7715"/>
+    <id value="mds"/>
     <!--R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715-->
     <!--Bundle of the set of that make up AIR post for IHI 8003608833630130 from Medicare repository to MHR system -->
     <meta>
@@ -16,8 +16,7 @@
     <entry>
         <fullUrl value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7715"/>
         <resource>
-            <Immunization xmlns="http://hl7.org/fhir">
-                <id value="cb7921cd-ba17-11ec-833a-b1763b0a7715"/>
+            <Immunization>
                 <meta>
                     <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
                 </meta>
@@ -31,7 +30,7 @@
                 <status value="completed"/>
                 <vaccineCode>
                     <coding>
-                        <system value="urn:oid:1.2.36.1.2001.1005.17"/>
+                        <system value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
                         <code value="PROQAD"/>
                         <display value="ProQuad"/>
                     </coding>
