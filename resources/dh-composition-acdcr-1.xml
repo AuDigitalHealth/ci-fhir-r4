@@ -30,6 +30,13 @@
     <element id="Composition">
       <path value="Composition"/>
       <short value="Advance Care Directive Custodian Record"/>
+      <constraint>
+        <key value="inv-dh-acdcr-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Advance Care Information '100.16975' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
+        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.16975').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acdcr-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -42,15 +49,6 @@
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
           <code value="100.16696"/>
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.16975"/>
         </coding>
       </patternCodeableConcept>
     </element>
