@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-consent-aodr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHConsentAODR"/>
   <title value="ADHA Record of Consent from Australian Organ Donor Register"/>
   <status value="draft"/>
@@ -30,12 +30,19 @@
       <constraint>
         <key value="inv-dh-cons-aodr-01"/>
         <severity value="error"/>
+        <human value="One category shall be Organ donation consent '64300-7' 'http://loinc.org'"/>
+        <expression value="category.coding.where(system='http://loinc.org' and code='64300-7').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-cons-aodr-02"/>
+        <severity value="error"/>
         <human value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
         <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
       </constraint>
       <constraint>
-        <key value="inv-dh-cons-aodr-02"/>
+        <key value="inv-dh-cons-aodr-03"/>
         <severity value="error"/>
         <human value="Specific provisions shall be specified if the individual is willing to donate, otherwise prohibited"/>
         <expression value="provision.provision.exists() xor (provision.type='deny')"/>
@@ -79,17 +86,6 @@
           <code value="adr"/>
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Consent.category">
-      <path value="Consent.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org"/>
-          <code value="64300-7"/>
-        </coding>
-      </patternCodeableConcept>
-      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Consent.patient">
