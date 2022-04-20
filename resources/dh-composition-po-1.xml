@@ -27,6 +27,13 @@
       <path value="Composition"/>
       <short value="Personal Observations"/>
       <definition value="Observations that allow for the recording and viewing of childhood measurement information such as a child’s height, weight and head circumference."/>
+      <constraint>
+        <key value="inv-dh-po-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Consumer Entered Measurements '100.16870' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
+        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.16870').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -34,15 +41,6 @@
     </element>
     <element id="Composition.type">
       <path value="Composition.type"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.16870"/>
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
