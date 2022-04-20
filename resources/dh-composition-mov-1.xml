@@ -27,6 +27,13 @@
       <path value="Composition"/>
       <short value="Medicare Overview"/>
       <definition value="An overview of Medicare-sourced information held in an individual’s My Health Record."/>
+      <constraint>
+        <key value="inv-dh-mov-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Medicare Overview '100.16767' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
+        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.16767').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -40,19 +47,6 @@
           <code value="100.16767"/>
         </coding>
       </patternCodeableConcept>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.16767"/>
-        </coding>
-      </patternCodeableConcept>
-      <mapping>
-        <identity value="CDA"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>

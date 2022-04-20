@@ -29,9 +29,14 @@
     <element id="Composition">
       <path value="Composition"/>
       <short value="Shared Medicines List"/>
-      <definition
-        value="A document that describes a patient's medicine item use at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The document may contain information about an individual's allergies."
-      />
+      <definition value="A document that describes a patient's medicine item use at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The document may contain information about an individual's allergies."/>
+      <constraint>
+        <key value="inv-dh-sml-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Medication summary '56445-0' 'http://loinc.org'"/>
+        <expression value="category.coding.where(system='http://loinc.org' and code='56445-0').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
