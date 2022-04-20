@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ds-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionDS"/>
   <title value="Australian Digital Health Agency Discharge Summary Composition"/>
   <status value="draft"/>
@@ -30,6 +30,13 @@
       <path value="Composition"/>
       <short value="Discharge Summary"/>
       <definition value="A discharge summary document supports the exchange of core, common, or critical information for exchange between healthcare providers, and individual, to support continuity of care to support continuity of care following discharge."/>
+      <constraint>
+        <key value="inv-dh-ds-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Discharge Summary '18842-5' 'http://loinc.org'"/>
+        <expression value="category.coding.where(system='http://loinc.org' and code='18842-5').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
