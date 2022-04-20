@@ -33,19 +33,17 @@
       <path value="Observation"/>
       <short value="Health program participation summary observation" />
       <definition value="A summary of an individual's participation in a health program, e.g. weight management, disease screening, or substance use therapy. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program." />
+      <constraint>
+        <key value="inv-hpps-0" />
+        <severity value="error" />
+        <human value="One category shall be Program 'program' 'http://terminology.hl7.au.org/CodeSystem/observation-category'" />
+        <expression value="category.coding.where(system='http://terminology.hl7.au.org/CodeSystem/observation-category' and code='program').exists()" />
+        <source value="http://hl7.org.au/fhir/StructureDefinition/au-healthprogramparticipation" />
+      </constraint>
     </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <fixedCode value="final" />
-    </element>
-    <element id="Observation.category">
-      <path value="Observation.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.au.org/CodeSystem/observation-category"/>
-          <code value="program"/>
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
@@ -83,7 +81,7 @@
       </slicing>
       <min value="1"/>
       <constraint>
-        <key value="inv-hpps-0" />
+        <key value="inv-hpps-1" />
         <severity value="error" />
         <human value="The component shall at least have a value or a data absent reason" />
         <expression value="value.exists() or dataAbsentReason.exists()" />
