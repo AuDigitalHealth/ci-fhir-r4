@@ -27,6 +27,13 @@
       <path value="Composition"/>
       <short value="Personal Health Summary"/>
       <definition value="A document that is a healthcare summary about the individual's allergies and medications which is recorded by the patient or their authorised representative within the system."/>
+      <constraint>
+        <key value="inv-dh-phs-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Personal Health Summary '100.16685' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
+        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.16685').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -34,15 +41,6 @@
     </element>
     <element id="Composition.type">
       <path value="Composition.type"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.16685"/>
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
