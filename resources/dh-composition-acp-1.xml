@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-acp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acp-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionACP"/>
   <title value="Australian Digital Health Agency Advance Care Planning Composition"/>
   <status value="draft"/>
@@ -29,6 +29,13 @@
     <element id="Composition">
       <path value="Composition"/>
       <short value="Advance Care Planning Document"/>
+      <constraint>
+        <key value="inv-dh-acp-01"/>
+        <severity value="error"/>
+        <human value="One record type (category) shall be Advance Care Information '100.16975' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
+        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.16975').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acp-1"/>
+      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -43,15 +50,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1"
         />
       </binding>
-    </element>
-    <element id="Composition.category">
-      <path value="Composition.category"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.16975"/>
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
