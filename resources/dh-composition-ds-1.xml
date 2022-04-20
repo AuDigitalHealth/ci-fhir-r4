@@ -156,8 +156,7 @@
       <constraint>
         <key value="inv-dh-ds-03"/>
         <severity value="error"/>
-        <human
-          value="This section shall not contain a mix of resource types"/>
+        <human value="This section shall not contain a mix of resource types"/>
         <expression
           value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
         <source
@@ -213,8 +212,7 @@
       <constraint>
         <key value="inv-dh-ds-07"/>
         <severity value="error"/>
-        <human
-          value="This section shall not contain a mix of resource types "/>
+        <human value="This section shall not contain a mix of resource types"/>
         <expression
           value="entry.resolve().where($this is MedicationStatement).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
         <source
@@ -323,8 +321,7 @@
       <constraint>
         <key value="inv-dh-ds-10"/>
         <severity value="error"/>
-        <human
-          value="This section shall not contain a mix of resource types"/>
+        <human value="This section shall not contain a mix of resource types"/>
         <expression
           value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
         <source
