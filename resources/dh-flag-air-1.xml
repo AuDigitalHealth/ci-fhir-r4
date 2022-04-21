@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-flag-air-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="FlagAIRNotice" />
   <title value="Australian Immunisation Register Notice" />
   <status value="draft" />
@@ -27,6 +27,13 @@
       <path value="Flag" />
       <short value="AIR notice" />
       <definition value="Australian Immunisation Register notice such as an individual has an exemption record or has finished a National Immunisation Program schedule."/>
+      <constraint>
+        <key value="inv-dh-air-01"/>
+        <severity value="error"/>
+        <human value="One category shall be Australian Immunisation Register notice '1500551000168103' 'http://snomed.info/sct'"/>
+        <expression value="category.coding.where(system='http://snomed.info/sct' and code='1500551000168103').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
+      </constraint>
     </element>
     <element id="Flag.identifier">
       <path value="Flag.identifier" />
@@ -36,16 +43,6 @@
     <element id="Flag.status">
       <path value="Flag.status" />
       <fixedCode value="active" />
-    </element>
-    <element id="Flag.category">
-      <path value="Flag.category" />
-      <short value="Australian Immunisation Register notice" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="1500551000168103" />
-        </coding>
-      </patternCodeableConcept>
     </element>
     <element id="Flag.subject">
       <path value="Flag.subject"/>
