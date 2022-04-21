@@ -153,11 +153,11 @@
     <element id="ExplanationOfBenefit.item.productOrService">
       <path value="ExplanationOfBenefit.item.productOrService"/>
       <short value="PBS Billing code"/>
-      <definition value="The billing code the service was claimed with against the Australian Department of Health Modified PBS Schedule Item (urn:oid:1.2.36.1.2001.1005.22)."/>
+      <definition value="The billing code the service was claimed with against the Australian Department of Health Modified PBS Schedule Item."/>
       <comment value="The code as instantiated may be padded with leading zeros when compared with the original (as published by the Department of Health)."/>
       <patternCodeableConcept>
         <coding>
-          <system value="urn:oid:1.2.36.1.2001.1005.22"/>
+          <system value="http://pbs.gov.au/code/item"/>
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true"/>
