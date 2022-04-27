@@ -19,11 +19,6 @@
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="CDA.manufacturedProduct"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema manufacturedProduct"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Substance"/>
@@ -42,74 +37,38 @@
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1"/>
       </constraint>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value=".manufacturedProduct"/>
-      </mapping>
     </element>
     <element id="Substance.identifier">
       <path value="Substance.identifier"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value=".manufacturedProduct.id"/>
-      </mapping>
     </element>
     <element id="Substance.category">
       <path value="Substance.category"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Substance.code">
       <path value="Substance.code"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value=".manufacturedProduct.manufacturedMaterial.code"/>
-      </mapping>
     </element>
     <element id="Substance.description">
       <path value="Substance.description"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value=".manufacturedProduct.manufacturedMaterial.ext:desc"/>
-      </mapping>
     </element>
     <element id="Substance.instance">
       <path value="Substance.instance"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Substance.instance.identifier">
       <path value="Substance.instance.identifier"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Substance.instance.expiry">
       <path value="Substance.instance.expiry"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value=".manufacturedProduct.manufacturedMaterial.ext:expirationTime"/>
-      </mapping>
     </element>
     <element id="Substance.instance.quantity">
       <path value="Substance.instance.quantity"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Substance.ingredient">
       <path value="Substance.ingredient"/>
@@ -124,18 +83,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1"/>
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value=".manufacturedProduct.manufacturedMaterial.ext:asIngredient"/>
-      </mapping>
     </element>
     <element id="Substance.ingredient.quantity">
       <path value="Substance.ingredient.quantity"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Substance.ingredient.substance[x]">
       <path value="Substance.ingredient.substance[x]"/>
@@ -148,10 +99,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.manufacturedProduct"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

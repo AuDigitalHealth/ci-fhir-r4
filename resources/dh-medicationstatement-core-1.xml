@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medicationstatement-core-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
+  <url
+    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
   <version value="0.0.1"/>
   <name value="DHMedicationStatementCore"/>
   <title value="ADHA Core MedicationStatement"/>
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a medication statement for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of medication usage for a known medicine including asserting negation for a specific medicine." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="CDA.substanceAdministration"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema substanceAdministration"/>
-  </mapping>
+  <description
+    value="The purpose of this profile is to provide a core representation of a medication statement for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of medication usage for a known medicine including asserting negation for a specific medicine."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MedicationStatement"/>
@@ -33,59 +31,50 @@
       <constraint>
         <key value="inv-dh-mst-02"/>
         <severity value="error"/>
-        <human value="If present, an information source shall at least have a reference, an identifier or a display"/>
-        <expression value="informationSource.exists() implies informationSource.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1" />
+        <human
+          value="If present, an information source shall at least have a reference, an identifier or a display"/>
+        <expression
+          value="informationSource.exists() implies informationSource.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"
+        />
       </constraint>
       <constraint>
         <key value="inv-dh-mst-03"/>
         <severity value="error"/>
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1" />
+        <human
+          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"
+        />
       </constraint>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"
+        />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="ClinicalDocument.inFulfillmentOf.order"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.status">
       <path value="MedicationStatement.status"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.statusCode"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.statusReason">
       <path value="MedicationStatement.statusReason"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]"/>
@@ -94,91 +83,62 @@
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."/>
-      </mapping>
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.encounter / ClinicalDocument/componentOf/encompassingEncounter"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.effective[x]">
       <path value="MedicationStatement.effective[x]"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.effectiveTime"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.dateAsserted">
       <path value="MedicationStatement.dateAsserted"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="Not mapped separately; this is implicit in substanceAdministration.informant."/>
-      </mapping>
     </element>
     <element id="MedicationStatement.informationSource">
       <path value="MedicationStatement.informationSource"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
+        />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.informant"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.reasonCode">
       <path value="MedicationStatement.reasonCode"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.reasonReference">
       <path value="MedicationStatement.reasonReference"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.reference"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.note">
       <path value="MedicationStatement.note"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage"/>
@@ -187,13 +147,11 @@
         <severity value="error"/>
         <human value="If present, the dosage shall at least have text or patient instructions"/>
         <expression value="text.exists() or patientInstruction.exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1" />
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"
+        />
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.text"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

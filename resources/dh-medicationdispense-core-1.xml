@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medicationdispense-core-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"/>
+  <url
+    value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"/>
   <version value="0.0.1"/>
   <name value="DHMedicationDispenseCore"/>
   <title value="ADHA Core MedicationDispense"/>
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a dispense of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
-  <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="CDA.supply"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema supply"/>
-  </mapping>
+  <description
+    value="The purpose of this profile is to provide a core representation of a dispense of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MedicationDispense"/>
@@ -33,14 +31,14 @@
       <constraint>
         <key value="inv-dh-mad-01"/>
         <severity value="error"/>
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1" />
+        <human
+          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"
+        />
       </constraint>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.extension">
       <path value="MedicationDispense.extension"/>
@@ -51,10 +49,6 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.extension:dispenseNumber">
       <path value="MedicationDispense.extension"/>
@@ -65,42 +59,22 @@
         <profile value="http://hl7.org.au/fhir/StructureDefinition/dispense-number"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".entryRelationship.sequenceNumber"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.id"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.status">
       <path value="MedicationDispense.status"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.statusCode"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.statusReason">
       <path value="MedicationDispense.statusReason"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.category">
       <path value="MedicationDispense.category"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]"/>
@@ -109,37 +83,28 @@
       </type>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.product.manufacturedProduct.manufacturedMaterial.code"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
+        <code value="Reference"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."/>
-      </mapping>
     </element>
     <element id="MedicationDispense.context">
       <path value="MedicationDispense.context"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer"/>
@@ -147,120 +112,83 @@
         <key value="inv-dh-mad-02"/>
         <severity value="error"/>
         <human value="The actor shall at least have a reference, an identifier or a display"/>
-        <expression value="actor.exists() implies actor.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1" />
+        <expression
+          value="actor.exists() implies actor.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"
+        />
       </constraint>
       <min value="1"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.performer / implicit in ClinicalDocument.author"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.performer.function">
       <path value="MedicationDispense.performer.function"/>
       <min value="1"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".perfomer.assignedEntity.code."/>
-      </mapping>
     </element>
     <element id="MedicationDispense.performer.actor">
       <path value="MedicationDispense.performer.actor"/>
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
+        />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".perfomer.assignedEntity.assignedPerson"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.location">
       <path value="MedicationDispense.location"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".perfomer.assignedEntity.assignedPerson"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"
+        />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.ext:inFulfillmentOf.ext:actReference.ext:id"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.quantity">
       <path value="MedicationDispense.quantity"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.quantity"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.daysSupply">
       <path value="MedicationDispense.daysSupply"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.effectiveUseTime"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.whenPrepared">
       <path value="MedicationDispense.whenPrepared"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.effectiveTime.low"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.note">
       <path value="MedicationDispense.note"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.entryRelationship.act"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.text"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.substitution">
       <path value="MedicationDispense.substitution"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.entryRelationship"/>
-      </mapping>
     </element>
     <element id="MedicationDispense.substitution.wasSubstituted">
       <path value="MedicationDispense.substitution.wasSubstituted"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.supply"/>
-        <map value=".supply.entryRelationship.act.value"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

@@ -19,11 +19,6 @@
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="CDA.observation"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema observation"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Condition"/>
@@ -62,34 +57,18 @@
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
       </constraint>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation"/>
-      </mapping>
     </element>
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="Condition.verificationStatus">
       <path value="Condition.verificationStatus"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="Condition.category">
       <path value="Condition.category"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="Condition.severity">
       <path value="Condition.severity"/>
@@ -98,10 +77,6 @@
         <strength value="extensible"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/condition-severity"/>
       </binding>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="Condition.code">
       <path value="Condition.code"/>
@@ -111,10 +86,6 @@
         <strength value="extensible"/>
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1"/>
       </binding>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.value"/>
-      </mapping>
     </element>
     <element id="Condition.bodySite">
       <path value="Condition.bodySite"/>
@@ -123,10 +94,6 @@
         <strength value="extensible"/>
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
       </binding>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.targetSiteCode"/>
-      </mapping>
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject"/>
@@ -136,12 +103,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA"/>
-        <map
-          value="Not mapped directly for this model; this is implicit in ClinicalDocument.patientRole."
-        />
-      </mapping>
     </element>
     <element id="Condition.encounter">
       <path value="Condition.encounter"/>
@@ -151,12 +112,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map
-          value="Instaniated as observation.entryRelationship.encounter or ClinicalDocument.componentOf.encompassingEncounter"
-        />
-      </mapping>
     </element>
     <element id="Condition.onset[x]">
       <path value="Condition.onset[x]"/>
@@ -173,12 +128,6 @@
         <code value="Range"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map
-          value="If onset[x] is a dateTime then it is instantiated as observation.effectiveTime.low.@value. If onset[x] is an Age then it is instantiated as observation.entryRelationship.observation.value. If onset[x] is a Range then it is instantiated as TBD."
-        />
-      </mapping>
     </element>
     <element id="Condition.abatement[x]">
       <path value="Condition.abatement[x]"/>
@@ -195,12 +144,6 @@
         <code value="Range"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map
-          value="If onset[x] is a dateTime then it is instantiated as observation.effectiveTime.low.@value. If onset[x] is an Age then it is instantiated as observation.entryRelationship.observation.value. If onset[x] is a Range then it is instantiated as TBD."
-        />
-      </mapping>
     </element>
     <element id="Condition.recorder">
       <path value="Condition.recorder"/>
@@ -215,10 +158,6 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.author"/>
-      </mapping>
     </element>
     <element id="Condition.asserter">
       <path value="Condition.asserter"/>
@@ -233,18 +172,10 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.informant"/>
-      </mapping>
     </element>
     <element id="Condition.note">
       <path value="Condition.note"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.entryRelationship.act"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

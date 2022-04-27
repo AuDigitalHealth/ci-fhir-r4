@@ -19,11 +19,6 @@
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="CDA.recordTarget"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema recordTarget"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Patient"/>
@@ -63,139 +58,72 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient"/>
-      </mapping>
     </element>
     <element id="Patient.extension:birthPlace">
       <path value="Patient.extension"/>
       <sliceName value="birthPlace"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.birthplace.place.addr"/>
-      </mapping>
     </element>
     <element id="Patient.extension:indigenousStatus">
       <path value="Patient.extension"/>
       <sliceName value="indigenousStatus"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.ethnicGroupCode"/>
-      </mapping>
     </element>
     <element id="Patient.extension:mothersMaidenName">
       <path value="Patient.extension"/>
       <sliceName value="mothersMaidenName"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section[code[code='102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observations'].entry.observation[classCode='OBS', moodCode='EVN', code[code='103.32011', codeSystem='1.2.36.1.2001.1001.101']].value[xsi:type='ST']"
-        />
-      </mapping>
     </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension"/>
       <sliceName value="interpreterRequired"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.recordTarget.patientRole.patient.languageCommunication.ext:interpreterRequiredInd"
-        />
-      </mapping>
     </element>
     <element id="Patient.extension:dateOfArrival">
       <path value="Patient.extension"/>
       <sliceName value="dateOfArrival"/>
       <short value="Year of Arrival"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section[code[code=102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='1460861000168108', codeSystem='2.16.840.1.113883.6.96']].value[xsi:type='TS']"
-        />
-      </mapping>
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier"/>
       <min value="1"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.ext:asEntityIdentifier"/>
-      </mapping>
     </element>
     <element id="Patient.active">
       <path value="Patient.active"/>
       <fixedBoolean value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
       <min value="1"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.name"/>
-      </mapping>
     </element>
     <element id="Patient.telecom">
       <path value="Patient.telecom"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.telecom"/>
-      </mapping>
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode"/>
-      </mapping>
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.birthTime"/>
-      </mapping>
     </element>
     <element id="Patient.birthDate.extension:accuracyIndicator">
       <path value="Patient.birthDate.extension"/>
       <sliceName value="accuracyIndicator"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section[code[code='102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='102.16234', codeSystem='1.2.36.1.2001.1001.101']].value[xsi:type='CD']"
-        />
-      </mapping>
     </element>
     <element id="Patient.birthDate.extension:birthTime">
       <path value="Patient.birthDate.extension"/>
       <sliceName value="birthTime"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.birthTime"/>
-      </mapping>
     </element>
     <element id="Patient.deceased[x]">
       <path value="Patient.deceased[x]"/>
       <mustSupport value="true"/>
-      <map
-        value="ClinicalDocument.recordTarget.patientRole.patient.ext:deceasedInd / ClinicalDocument.recordTarget.patientRole.patient.ext:deceasedTime"
-      />
     </element>
     <element id="Patient.deceased[x]:deceasedBoolean">
       <path value="Patient.deceasedBoolean"/>
@@ -211,38 +139,18 @@
       <path value="Patient.deceasedDateTime.extension"/>
       <sliceName value="accuracyIndicator"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.component.structuredBody.component.section[code[code='102.16080', codeSystem='1.2.36.1.2001.1001.101'], title='Administrative Observation'].entry.observation[classCode='OBS', moodCode='EVN', code[code='102.16234', codeSystem='1.2.36.1.2001.1001.101']].value[xsi:type='CD']"
-        />
-      </mapping>
     </element>
     <element id="Patient.address">
       <path value="Patient.address"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.addr"/>
-      </mapping>
     </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.maritalStatusCode"/>
-      </mapping>
     </element>
     <element id="Patient.multipleBirth[x]">
       <path value="Patient.multipleBirth[x]"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.recordTarget.patientRole.patient.ext:multipleBirthInd / ClinicalDocument.recordTarget.patientRole.patient.ext:multipleBirthOrderNumber"
-        />
-      </mapping>
     </element>
     <element id="Patient.contact">
       <extension
@@ -262,54 +170,26 @@
         />
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON']"/>
-      </mapping>
     </element>
     <element id="Patient.contact.relationship">
       <path value="Patient.contact.relationship"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON'].associatedPerson.ext:personalRelationship"
-        />
-      </mapping>
     </element>
     <element id="Patient.contact.name">
       <path value="Patient.contact.name"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON'].associatedPerson.name"/>
-      </mapping>
     </element>
     <element id="Patient.contact.telecom">
       <path value="Patient.contact.telecom"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON'].telecom"/>
-      </mapping>
     </element>
     <element id="Patient.contact.address">
       <path value="Patient.contact.address"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON'].addr"/>
-      </mapping>
     </element>
     <element id="Patient.contact.gender">
       <path value="Patient.contact.gender"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON'].associatedPerson.ext:administrativeGenderCode"
-        />
-      </mapping>
     </element>
     <element id="Patient.contact.organization">
       <path value="Patient.contact.organization"/>
@@ -320,38 +200,18 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.participant[typeCode='IND'].associatedEntity[classCode='CON'].scopingOrganization"/>
-      </mapping>
     </element>
     <element id="Patient.communication">
       <path value="Patient.communication"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.recordTarget.patientRole.patient.languageCommunication"/>
-      </mapping>
     </element>
     <element id="Patient.communication.language">
       <path value="Patient.communication.language"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.recordTarget.patientRole.patient.languageCommunication.languageCode"
-        />
-      </mapping>
     </element>
     <element id="Patient.communication.preferred">
       <path value="Patient.communication.preferred"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map
-          value="ClinicalDocument.recordTarget.patientRole.patient.languageCommunication.preferenceInd"
-        />
-      </mapping>
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
@@ -364,10 +224,6 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.recordTarget"/>
-        <map value="ClinicalDocument.participant[typeCode='PART']"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

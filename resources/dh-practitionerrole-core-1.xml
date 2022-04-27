@@ -19,16 +19,6 @@
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="CDA.author"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema author"/>
-  </mapping>
-  <mapping>
-    <identity value="CDA.informationRecipient"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema informationRecipient"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="PractitionerRole"/>
@@ -93,14 +83,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.identifier">
       <path value="PractitionerRole.identifier"/>
@@ -113,16 +95,6 @@
         <rules value="open"/>
       </slicing>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson.ext:asEntityIdentifier"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map
-          value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient.ext:asEntityIdentifier"
-        />
-      </mapping>
     </element>
     <element id="PractitionerRole.identifier:hpii">
       <path value="PractitionerRole.identifier"/>
@@ -158,14 +130,6 @@
     <element id="PractitionerRole.active">
       <path value="PractitionerRole.active"/>
       <fixedBoolean value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner"/>
@@ -176,14 +140,6 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.assignedPerson"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.informationRecipient"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
@@ -194,38 +150,14 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.representedOrganization"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.code"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.ext:code"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.location">
       <path value="PractitionerRole.location"/>
@@ -235,14 +167,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.healthcareService">
       <path value="PractitionerRole.healthcareService"/>
@@ -254,26 +178,10 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".act[classCode='ACT', moodCode='EVN']"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value=".act[classCode='ACT', moodCode='EVN']"/>
-      </mapping>
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.author"/>
-        <map value=".author.assignedAuthor.telecom"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.informationRecipient"/>
-        <map value="ClinicalDocument.informationRecipient.intendedRecipient.telecom"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

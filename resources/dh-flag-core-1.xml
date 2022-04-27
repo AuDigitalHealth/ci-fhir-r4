@@ -1,131 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-flag-core-1" />
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1" />
-  <version value="0.0.1" />
-  <name value="DHFlagCore" />
-  <title value="ADHA Core Flag" />
-  <status value="draft" />
-  <experimental value="false" />
-  <publisher value="Australian Digital Health Agency" />
+  <id value="dh-flag-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
+  <version value="0.0.1"/>
+  <name value="DHFlagCore"/>
+  <title value="ADHA Core Flag"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
   <contact>
     <telecom>
-      <system value="email" />
-      <value value="help@digitalhealth.gov.au" />
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to provide a core representation of a flag (e.g. warning or notification) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia." />
-  <copyright value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement." />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="CDA.observation"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema observation"/>
-  </mapping>
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Flag" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Flag" />
-  <derivation value="constraint" />
+  <description
+    value="The purpose of this profile is to provide a core representation of a flag (e.g. warning or notification) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2021 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. All copies of this resource must include this copyright statement and all information contained in this statement."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Flag"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Flag"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Flag">
-      <path value="Flag" />
+      <path value="Flag"/>
       <constraint>
         <key value="inv-dh-flg-01"/>
         <severity value="error"/>
-        <human value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <human
+          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-flg-02"/>
         <severity value="error"/>
-        <human value="The author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <human
+          value="The author shall at least have a reference or an identifier with at least a system and a value"/>
+        <expression
+          value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
       </constraint>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation"/>
-      </mapping>
     </element>
     <element id="Flag.identifier">
-      <path value="Flag.identifier" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.id"/>
-      </mapping>
+      <path value="Flag.identifier"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Flag.category">
-      <path value="Flag.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.code"/>
-      </mapping>
+      <path value="Flag.category"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Flag.code">
-      <path value="Flag.code" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.value"/>
-      </mapping>
+      <path value="Flag.code"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Flag.subject">
       <path value="Flag.subject"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.participant / implicit in ClinicalDocument.recordTarget"/>
-      </mapping>
     </element>
     <element id="Flag.period">
-      <path value="Flag.period" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.effectiveTime"/>
-      </mapping>
+      <path value="Flag.period"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Flag.encounter">
-      <path value="Flag.encounter" />
+      <path value="Flag.encounter"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value="observation.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
-      </mapping>
+      <mustSupport value="true"/>
     </element>
     <element id="Flag.author">
-      <path value="Flag.author" />
-      <min value="1" />
+      <path value="Flag.author"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
+        />
       </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="CDA.observation"/>
-        <map value=".observation.author or as observation.participant / implicit in ClinicalDocument.author"/>
-      </mapping>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

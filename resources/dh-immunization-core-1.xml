@@ -19,11 +19,6 @@
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
-  <mapping>
-    <identity value="CDA.substanceAdministration"/>
-    <uri value="http://hl7.org/v3/cda"/>
-    <name value="Agency CDA Schema substanceAdministration"/>
-  </mapping>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Immunization"/>
@@ -43,10 +38,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"
         />
       </constraint>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration"/>
-      </mapping>
     </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension"/>
@@ -57,59 +48,32 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Immunization.extension:vaccine-serial-number">
       <path value="Immunization.extension"/>
       <sliceName value="vaccine-serial-number"/>
       <type>
         <code value="Extension"/>
-        <profile
-          value="http://hl7.org.au/fhir/StructureDefinition/vaccine-serial-number"
-        />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/vaccine-serial-number"/>
       </type>
       <max value="1"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.consumable.manufacturedProduct.id"/>
-      </mapping>
     </element>
     <element id="Immunization.identifier">
       <path value="Immunization.identifier"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.id"/>
-      </mapping>
     </element>
     <element id="Immunization.status">
       <path value="Immunization.status"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.statusCode"/>
-      </mapping>
     </element>
     <element id="Immunization.statusReason">
       <path value="Immunization.statusReason"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map
-          value=".substanceAdministration.consumable.manufacturedProduct.manufacturedMaterial.code"/>
-      </mapping>
     </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient"/>
@@ -119,10 +83,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="Not mapped directly for this model; implicit in ClinicalDocument.recordTarget"/>
-      </mapping>
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter"/>
@@ -132,18 +92,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.encounter / ClinicalDocument.componentOf.encompassingEncounter"/>
-      </mapping>
     </element>
     <element id="Immunization.occurrence[x]">
       <path value="Immunization.occurrence[x]"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.effectiveTime"/>
-      </mapping>
     </element>
     <element id="Immunization.performer">
       <path value="Immunization.performer"/>
@@ -159,18 +111,10 @@
         />
       </constraint>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="n/a"/>
-      </mapping>
     </element>
     <element id="Immunization.performer.function">
       <path value="Immunization.performer.function"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="Implicit in the role code of the instantiated performer actor."/>
-      </mapping>
     </element>
     <element id="Immunization.performer.actor">
       <path value="Immunization.performer.actor"/>
@@ -183,30 +127,14 @@
         />
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="If recording the administering performer instantiated as substanceAdministration.performer"/>
-      </mapping>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="If recording the approving/ ordering performer instantiated substanceAdministration.participant"/>
-      </mapping>
     </element>
     <element id="Immunization.note">
       <path value="Immunization.note"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.act"/>
-      </mapping>
     </element>
     <element id="Immunization.reasonCode">
       <path value="Immunization.reasonCode"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.entryRelationship.observation.value"/>
-      </mapping>
     </element>
     <element id="Immunization.reasonReference[x]">
       <path value="Immunization.reasonReference[x]"/>
@@ -218,42 +146,22 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </type>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value=".substanceAdministration.reference"/>
-      </mapping>
     </element>
     <element id="Immunization.protocolApplied">
       <path value="Immunization.protocolApplied"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
     <element id="Immunization.protocolApplied.series">
       <path value="Immunization.protocolApplied.series"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
     <element id="Immunization.protocolApplied.targetDisease">
       <path value="Immunization.protocolApplied.targetDisease"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
     <element id="Immunization.protocolApplied.doseNumber[x]">
       <path value="Immunization.protocolApplied.doseNumber[x]"/>
       <mustSupport value="true"/>
-      <mapping>
-        <identity value="CDA.substanceAdministration"/>
-        <map value="TBD"/>
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>
