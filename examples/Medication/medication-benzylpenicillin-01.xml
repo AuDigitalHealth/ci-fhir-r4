@@ -1,0 +1,75 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="benzylpenicillin-01"/>
+    <!-- Able to support fully coded medication information: genberic name, item form and strength  -->
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+    </meta>
+    <code>
+        <coding>
+            <!--Medication generic name (PBS Item Code Display)-->
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+                <valueCoding>
+                    <system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
+                    <code value="UPD"/>
+                    <display value="Unbranded product with strengths and form"/>
+                </valueCoding>
+            </extension>
+            <system value="http://pbs.gov.au/code/item"/>
+            <code value="02647H"/>
+            <display value="BENZYLPENICILLIN"/>
+        </coding>
+        <coding>
+            <!--Medication generic name (MP Preferred Term)-->
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+                <valueCoding>
+                    <system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
+                    <code value="UPD"/>
+                    <display value="Unbranded product with strengths and form"/>
+                </valueCoding>
+            </extension>
+            <system value="http://snomed.info/sct"/>
+            <code value="21332011000036106"/>
+            <display value="benzylpenicillin"/>
+        </coding>
+        <coding>
+            <!--Medication form and strength (MPP Preferred Term)-->
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+                <valueCoding>
+                    <system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
+                    <code value="UPDSF"/>
+                    <display value="Unbranded product with strengths and form"/>
+                </valueCoding>
+            </extension>
+            <system value="http://snomed.info/sct"/>
+            <code value="32753011000036104"/>
+            <display value="benzylpenicillin 3 g injection, 1 vial"/>
+        </coding>
+    </code>
+    <form>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="129011000036109"/>
+            <display value="injection"/>
+        </coding>
+        <text value="Injection"/>
+    </form>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="1849011000036104"/>
+                <display value="benzylpenicillin"/>
+            </coding>
+        </itemCodeableConcept>
+        <strength>
+            <numerator>
+                <value value="3"/>
+                <unit value="g"/>
+            </numerator>
+            <denominator>
+                <value value="1"/>
+                <unit value="unit"/>
+            </denominator>
+        </strength>
+    </ingredient>
+</Medication>

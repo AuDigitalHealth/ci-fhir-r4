@@ -523,6 +523,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-patient-match-1"/>
+            </reference>
+            <name value="Australian Digital Health Agency Patient Match"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-patient-mhr-1"/>
             </reference>
             <name value="Australian Digital Health Agency My Health Record Patient"/>
@@ -2984,12 +2991,24 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
         </resource>
         <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
-        <!--<resource>
+        <!--<!-\-<resource>
+            <reference>
+                <reference value="CodeSystem/snomed-32506021000036107-20220331"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>-\->
+        <resource>
             <reference>
                 <reference value="CodeSystem/anzsco-1"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>
+        <!-\-<resource>
+            <reference>
+                <reference value="CodeSystem/anzsco-designation-type-1"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>-\->
         <resource>
             <reference>
                 <reference value="CodeSystem/anzsic-2006-20130626"/>
@@ -3383,7 +3402,7 @@
         
         <page>
             <nameUrl value="index.html"/>
-            <title value="Australian Digital Health Agency Core Asset Implementation Guide"/>
+            <title value="Australian Digital Health Agency Core Asset"/>
             <generation value="html"/>
         </page>
     </definition>

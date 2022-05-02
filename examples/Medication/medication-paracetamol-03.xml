@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="paracetamol-03"/>
+	<meta>
+		<profile value="http://hl7.org.au/fhir/StructureDefinition/au-medication"/>
+	</meta>
+	<code>
+		<coding>
+			<extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+				<valueCoding>
+					<system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
+					<code value="UPG"/>
+					<display value="Unbranded package with no container"/>
+				</valueCoding>
+			</extension>
+			<system value="http://example.acme.com.au/generic-packages"/>
+			<code value="5636-24556"/>
+			<display value="Paracetamol 500mg (100)"/>
+		</coding>
+		<coding>
+			<extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
+				<valueCoding>
+					<system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
+					<code value="UPG"/>
+					<display value="Unbranded package with no container"/>
+				</valueCoding>
+			</extension>
+			<system value="http://snomed.info/sct"/>
+			<code value="28314011000036104"/>
+			<display value="paracetamol 500 mg tablet, 100"/>
+		</coding>
+		<text value="Paracetamol 500mg (100)"/>
+	</code>
+	<form>
+		<text value="Tablet"/>
+	</form>
+</Medication>

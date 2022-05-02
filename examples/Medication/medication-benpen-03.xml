@@ -1,24 +1,17 @@
 <Medication xmlns="http://hl7.org/fhir">
-    <id value="02"/>
-    <!--R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715-->
+    <id value="benpen-03"/>
+   <!-- Able to support only text medication information -->
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
     </meta>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
-        <valueString value="BENZYLPENICILLIN"/>
+        <valueString value="Benzylpenicillin"/>
     </extension>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
-        <valueString value="BENPEN"/>
+        <valueString value="Benpen"/>
     </extension>
     <code>
-        <coding>
-            <system value="http://pbs.gov.au/code/item"/>
-            <version value="v1.0"/>
-            <code value="02647H"/>
-            <display value="BENZYLPENICILLIN"/>
-        </coding>
-        <!--Medication form and strength (MPP Preferred Term)-->
-        <text value="BENZYLPENICILLIN 3G INJECTION, 1 VIAL"/>
+        <text value="Benpen 3 g powder for injection, 1 vial"/>
     </code>
     <manufacturer>
         <identifier>

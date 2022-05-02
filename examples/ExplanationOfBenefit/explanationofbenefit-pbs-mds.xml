@@ -2,7 +2,9 @@
 	<id value="pbs-mds"/>
 	<!--R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715-->
 	<meta>
-		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
+		<profile
+			value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"
+		/>
 	</meta>
 	<contained>
 		<MedicationRequest>
@@ -50,6 +52,8 @@
 					<code value="02647H"/>
 					<display value="BENZYLPENICILLIN"/>
 				</coding>
+				<!--Medication form and strength (MPP Preferred Term)-->
+				<text value="BENZYLPENICILLIN 3G INJECTION, 1 VIAL"/>
 			</code>
 			<manufacturer>
 				<identifier>
@@ -62,7 +66,7 @@
 	<!--identifier for the PBR record from Medicare repository-->
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:oid:1.2.36.1.2001.1007.11.8003608833630130.1000000000017396" />
+		<value value="urn:oid:1.2.36.1.2001.1007.11.8003608833630130.1000000000017396"/>
 	</identifier>
 	<status value="active"/>
 	<type>
@@ -110,9 +114,9 @@
 	<insurance>
 		<focal value="true"/>
 		<coverage>
-				<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-					<valueCode value="unknown"/>
-				</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+				<valueCode value="unknown"/>
+			</extension>
 		</coverage>
 	</insurance>
 	<item>
