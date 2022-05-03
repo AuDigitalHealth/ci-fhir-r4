@@ -615,6 +615,12 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.242</td>
     </tr>
     <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/CodeSystem/concurrent-supply-grounds-1">Concurrent Supply Grounds</a></td>
+        <td>ADHA</td>
+        <td>https://healthterminologies.gov.au/fhir/CodeSystem/concurrent-supply-grounds-1</td>
+        <td>1.2.36.1.2001.1001.101.104.16085</td>
+    </tr>    
+    <tr>
         <td><a href="http://terminology.hl7.org.au/CodeSystem/contact-purpose">Contact Purpose</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/contact-purpose</td>
