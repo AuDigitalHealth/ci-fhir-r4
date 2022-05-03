@@ -566,6 +566,18 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.136</td>
     </tr>
     <tr>
+        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1">Australian and New Zealand Standard Classification of Occupations</a></td>
+        <td>ADHA (ABS)</td>
+        <td>https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0">Australian and New Zealand Standard Industrial Classification (ANZSIC), 2006 (Revision 2.0)</a></td>
+        <td>ADHA (ABS)</td>
+        <td>http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0</td>
+        <td></td>
+    </tr>    
+    <tr>
         <td><a href="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats">Australian Immunisation Register Vaccine</a></td>
         <td>Services Australia</td>
         <td>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats</td>
@@ -801,6 +813,12 @@ The following code systems form part of this implementation guide.
         <td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td>
         <td>2.16.840.1.113883.4.642.4.1377</td>
     </tr>
+        <tr>
+        <td><a href="http://www.mims.com.au/codes">Monthly Index of Medical Specialties (MIMS)</a></td>
+        <td>MIMS Australia</td>
+        <td>http://www.mims.com.au/codes</td>
+        <td>1.2.36.1.2001.1005.11.1</td>
+    </tr>
     <tr>
         <td><a href="https://tools.ietf.org/search/bcp13">Multipurpose Internet Mail Extensions (MIME)</a></td>
         <td>IETP</td>
@@ -824,6 +842,12 @@ The following code systems form part of this implementation guide.
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/participant-type</td>
         <td>2.16.840.1.113883.4.642.4.1089</td>
+    </tr>
+         <tr>
+        <td><a href=" http://pbs.gov.au/code/item">PBS Item Codes</a></td>
+        <td>DoH</td>
+        <td>http://pbs.gov.au/code/item</td>
+        <td>1.2.36.1.2001.1005.22</td>
     </tr>
     <tr>
         <td><a href="https://terminology.hl7.org/2.1.0/CodeSystem-v2-0443.html">ProviderRole</a></td>
