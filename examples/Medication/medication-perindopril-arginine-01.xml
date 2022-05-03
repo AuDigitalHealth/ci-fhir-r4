@@ -2,7 +2,7 @@
 <Medication xmlns="http://hl7.org/fhir">
     <id value="perindopril-arginine-01"/>
     <meta>
-        <profile value="http://hl7.org.au/fhir/StructureDefinition/au-medication"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
     </meta>
     <text>
         <status value="extensions"/>
@@ -10,6 +10,9 @@
             <p><b>perindopril arginine</b> 10 mg + <b>amLODIPIne</b> 10 mg – tablet </p>
         </div>
     </text>
+    <coding>
+        <text value="perindopril arginine 10 mg + amLODIPIne 10 mg – tablet"/>
+    </coding>
     <form>
         <coding>
             <system value="http://snomed.info/sct"/>
