@@ -566,14 +566,14 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.136</td>
     </tr>
     <tr>
-        <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1">Australian and New Zealand Standard Classification of Occupations</a></td>
-        <td>ADHA (ABS)</td>
-        <td>https://healthterminologies.gov.au/fhir/ValueSet/anzsco-1</td>
+        <td><a href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0">Australian and New Zealand Standard Classification of Occupations</a></td>
+        <td>ABS</td>
+        <td>https://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0</td>
         <td></td>
     </tr>
     <tr>
         <td><a href="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0">Australian and New Zealand Standard Industrial Classification (ANZSIC), 2006 (Revision 2.0)</a></td>
-        <td>ADHA (ABS)</td>
+        <td>ABS</td>
         <td>http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0</td>
         <td></td>
     </tr>    
