@@ -31,7 +31,7 @@
         <td>N/A</td>
   </tr>
   <tr>
-        <td>Section constraints - specificty vs flexibility</td>
+        <td>Section constraints - specificity vs flexibility</td>
         <td>Choice to be made between repeatable section supported by a value set or a defined set of section slices as shown in <a href="StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html">Section type design elaboration version of ADHA National Cancer Screening Program Participation Composition</a>.</td>
         <td>N/A</td>
   </tr>

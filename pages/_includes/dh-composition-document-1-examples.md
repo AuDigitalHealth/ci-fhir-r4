@@ -40,7 +40,7 @@
       <td><a href="Composition-phn-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Composition-po-01.html">Personal Observaions Document Composition for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
+      <td><a href="Composition-po-01.html">Personal Observations Document Composition for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
       <td>po-01</td>
       <td><a href="Composition-po-01.xml.html">XML</a></td>
       <td><a href="Composition-po-01.json.html">JSON</a></td>

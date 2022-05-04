@@ -12,12 +12,12 @@
   </tr>
   <tr>
         <td>ExplanationOfBenefit.insurer</td>
-        <td>The standard reprsentation is to be defined; preference is for display (Dept Name) and identifier (ABN). To be agreed.</td>
+        <td>The standard representation is to be defined; preference is for display (Dept Name) and identifier (ABN). To be agreed.</td>
         <td>N/A</td>
   </tr>
   <tr>
         <td>ExplanationOfBenefit.priority</td>
-        <td>This element is not of use in this profile, however the canonical FHIR resource definition binds to an exmple CodeSystem not ValueSet - this is throwing errors. Current workaround is to profile that element to point to the ValueSet instead.</td>
+        <td>This element is not of use in this profile, however the canonical FHIR resource definition binds to an example CodeSystem not ValueSet - this is throwing errors. Current workaround is to profile that element to point to the ValueSet instead.</td>
         <td>N/A</td>
   </tr>
  </tbody>

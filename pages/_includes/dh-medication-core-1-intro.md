@@ -20,14 +20,7 @@ This profile is used by the following APIs:
 
 #### Guidance
 The following guidance applies:
-* where Medication.code is a branded medicine item, Medication.code.text is the branded name
-* ingredient.item[x] is sent as itemCodeableConcept
-
-The guidance below clarifies the representation of medicine information where Medication.code is not supplied:
-* if both brand name and generic name can be sent, brand name will be sent in Medication.code.text and optionally in brand name extension, and generic name will be sent in the generic name extension
-* if only brand name can be sent, brand name will be sent in Medication.code.text and optionally in the brand name extension
-* if only generic name can be sent, generic name will be sent in Medication.code.text and optionally in the generic name extension
-* if a name can be sent, but it cannot be determined if it is a brand or generic name, the name will be sent only in Medication.code.text
+TBD
 
 #### Boundaries and relationships
 This profile is referenced by 

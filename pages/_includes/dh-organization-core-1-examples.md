@@ -68,7 +68,7 @@
       <td><a href="Organization-med-regional-med-centre.ttl.html">Turtle</a></td>
    </tr>  
    <tr>
-      <td><a href="Organization-ophthalmology-clinic.html">Metropolital Eye Test Clinic</a></td>
+      <td><a href="Organization-ophthalmology-clinic.html">Metropolitan Eye Test Clinic</a></td>
       <td>ophthalmology-clinic</td>
       <td><a href="Organization-ophthalmology-clinic.xml.html">XML</a></td>
       <td><a href="Organization-ophthalmology-clinic.json.html">JSON</a></td>

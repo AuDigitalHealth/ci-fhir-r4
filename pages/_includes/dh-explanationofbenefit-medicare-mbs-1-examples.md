@@ -19,14 +19,14 @@
       <td><a href="ExplanationOfBenefit-mbs-cont-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-mbs-02.html">Record of Claim against MBS for 30185 removal of palmar or plantar warts for for Ms. Sally Field</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-02.html">Record of Claim against MBS for 30185 removal of palmar or plantar warts for Ms. Sally Field</a></td>
       <td>mbs-02</td>
       <td><a href="ExplanationOfBenefit-mbs-02.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-mbs-02.json.html">JSON</a></td>
       <td><a href="ExplanationOfBenefit-mbs-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-mbs-03.html">Record of Claim against MBS for 30191 removal of palmar or plantar warts for for Ms. Sally Field</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-03.html">Record of Claim against MBS for 30191 removal of palmar or plantar warts for Ms. Sally Field</a></td>
       <td>mbs-03</td>
       <td><a href="ExplanationOfBenefit-mbs-03.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-mbs-03.json.html">JSON</a></td>

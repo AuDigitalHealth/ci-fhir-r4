@@ -1,5 +1,5 @@
 #### Australian Digital Health Agency Core DocumentReference
-The purpose of this profile is to provide a core representation of a document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports describing a generic document that is made available to a system and is used for documents that are not authored and assembeld in FHIR e.g. documents whose form is an attachment.
+The purpose of this profile is to provide a core representation of a document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports describing a generic document that is made available to a system and is used for documents that are not authored and assembled in FHIR e.g. documents whose form is an attachment.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [DocumentReference](http://hl7.org/fhir/R4/documentreference.html) that are supported. 
 

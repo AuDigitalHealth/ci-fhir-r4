@@ -54,7 +54,7 @@
       <td><a href="Bundle-ncsr-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-po-01-doc.html">Personal Observaions Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
+      <td><a href="Bundle-po-01-doc.html">Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
       <td>po-01-doc</td>
       <td><a href="Bundle-po-01-doc.xml.html">XML</a></td>
       <td><a href="Bundle-po-01-doc.json.html">JSON</a></td>

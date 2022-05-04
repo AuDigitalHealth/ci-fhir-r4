@@ -6,7 +6,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 This profile supports the equivalent of a HL7 CDA instance with a Level 2, Level 3A or 3B clinical document as defined in the Agency's Common Conformance Profile for Clinical Documents.
 
 This profile is designed to set a Composition standard for:
-* Query for a Medicare Overviewdocument for a patient
+* Query for a Medicare Overview document for a patient
 * Record or update a Medicare Overview document for a patient
 
 This profile is used by the following APIs:
@@ -17,7 +17,7 @@ A narrative only Medicare Overview (Level 2) is supplied by:
 * populating section.text for each section
 * not populating section.entry or section.emptyReason for each section
 
-A structured Medicare Overivew (Level 3A or 3B) is supplied by:
+A structured Medicare Overview (Level 3A or 3B) is supplied by:
 * populating section.entry or section.emptyReason for each section
 
 #### Boundaries and relationships
