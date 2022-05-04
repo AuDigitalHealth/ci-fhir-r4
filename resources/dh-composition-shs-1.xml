@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-shs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionSHS"/>
   <title value="Australian Digital Health Agency Shared Health Summary Composition"/>
   <status value="draft"/>
@@ -30,13 +30,6 @@
       <path value="Composition"/>
       <short value="Shared Health Summary"/>
       <definition value="A health summary authored by a nominated provider, that contains key pieces of information about an individual’s health status and is useful to a wide range of providers in assessing individuals and delivering care."/>
-      <constraint>
-        <key value="inv-dh-shs-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Patient Summary '60591-5' 'http://loinc.org'"/>
-        <expression value="category.coding.where(system='http://loinc.org' and code='60591-5').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -67,8 +60,8 @@
     </element>
     <element id="Composition.category:ps">
       <path value="Composition.category"/>
-      <short value="Patient summary"/>
       <sliceName value="ps"/>
+      <short value="Patient summary"/>
       <min value="1"/>
       <max value="1" />
     </element>

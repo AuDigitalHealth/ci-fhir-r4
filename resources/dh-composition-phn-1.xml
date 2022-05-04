@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-phn-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phn-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionPHS"/>
   <title value="Australian Digital Health Agency Personal Health Summary Composition"/>
   <status value="draft"/>
@@ -30,13 +30,6 @@
       <path value="Composition"/>
       <short value="Personal Health Notes"/>
       <definition value="Narratives about the patient's healthcare information recorded by the patient or their authorised representative within the system. This helps the patient or their authorised representative to keep track of patient health information within the system."/>
-      <constraint>
-        <key value="inv-dh-phn-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Personal Health Notes '100.16681' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
-        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.16681').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phn-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -50,6 +43,41 @@
           <code value="100.16681"/>
         </coding>
       </patternCodeableConcept>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:phn">
+      <path value="Composition.category"/>
+      <sliceName value="phn"/>	  
+      <short value="Personal Health Notes"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:phn.coding">
+      <path value="Composition.category.coding"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:phn.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+    </element>
+    <element id="Composition.category:phn.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="100.16681" />
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>

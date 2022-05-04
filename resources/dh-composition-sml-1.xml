@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-sml-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionSML"/>
   <title value="Australian Digital Health Agency Shared Medicines List Composition"/>
   <status value="draft"/>
@@ -30,13 +30,6 @@
       <path value="Composition"/>
       <short value="Shared Medicines List"/>
       <definition value="A document that describes a patient's medicine item use at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. The document may contain information about an individual's allergies."/>
-      <constraint>
-        <key value="inv-dh-sml-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Medication summary '56445-0' 'http://loinc.org'"/>
-        <expression value="category.coding.where(system='http://loinc.org' and code='56445-0').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -48,6 +41,41 @@
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1" />
       </binding>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:ms">
+      <path value="Composition.category"/>
+      <sliceName value="ms"/>	  
+      <short value="Medication summary"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:ms.coding">
+      <path value="Composition.category.coding"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:ms.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://loinc.org"/>
+    </element>
+    <element id="Composition.category:ms.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="56445-0" />
     </element>
     <element id="Composition.section">
       <path value="Composition.section"/>

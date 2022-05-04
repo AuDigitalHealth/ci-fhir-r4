@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-acts-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acts-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionACTS"/>
   <title value="Australian Digital Health Agency Aged Care Transfer Summary Composition"/>
   <status value="draft"/>
@@ -30,17 +30,45 @@
       <path value="Composition"/>
       <short value="Aged Care Transfer Summary"/>
       <definition value="A transfer summary includes critical information for exchange of information between providers of care when a patient moves between health care settings."/>
-      <constraint>
-        <key value="inv-dh-acts-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Transfer summary note '18761-7' 'http://loinc.org'"/>
-        <expression value="category.coding.where(system='http://loinc.org' and code='18761-7').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acts-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:tss">
+      <path value="Composition.category"/>
+      <sliceName value="tss"/>      
+      <short value="Transfer summary note"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:tss.coding">
+      <path value="Composition.category.coding"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:tss.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://loinc.org"/>
+    </element>
+    <element id="Composition.category:tss.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="18761-7" />
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>

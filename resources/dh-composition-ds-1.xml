@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ds-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionDS"/>
   <title value="Australian Digital Health Agency Discharge Summary Composition"/>
   <status value="draft"/>
@@ -30,17 +30,45 @@
       <path value="Composition"/>
       <short value="Discharge Summary"/>
       <definition value="A discharge summary document supports the exchange of core, common, or critical information for exchange between healthcare providers, and individual, to support continuity of care to support continuity of care following discharge."/>
-      <constraint>
-        <key value="inv-dh-ds-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Discharge Summary '18842-5' 'http://loinc.org'"/>
-        <expression value="category.coding.where(system='http://loinc.org' and code='18842-5').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:ds">
+      <path value="Composition.category"/>
+      <sliceName value="ds"/>      
+      <short value="Discharge Summary"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:ds.coding">
+      <path value="Composition.category.coding"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:ds.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://loinc.org"/>
+    </element>
+    <element id="Composition.category:ds.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="18842-5" />
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>

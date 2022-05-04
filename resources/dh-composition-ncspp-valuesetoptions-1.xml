@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ncspp-valuesetoptions-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspp-valuesetoptions-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionNCSPParticipationValueSet"/>
   <title value="Australian Digital Health Agency National Cancer Screening Program Participation CompositionValueSet"/>
   <status value="draft"/>
@@ -28,13 +28,6 @@
       <path value="Composition"/>
       <short value="National Cancer Screening Program Participation"/>
       <definition value="A document that describes a individual's participation in one or more national cancer screening programs, e.g. bowel or cervical. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
-      <constraint>
-        <key value="inv-dh-ncspp-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Disease Screening Program Participation Record '100.32039' 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1'"/>
-        <expression value="category.coding.where(system='https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' and code='100.32039').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspp-valuesetoptions-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
@@ -46,6 +39,41 @@
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/national-cancer-screening-program-participation-document-type-1" />
       </binding>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:dsppr">
+      <path value="Composition.category"/>
+      <sliceName value="dsppr"/>	  
+      <short value="Disease Screening Program Participation Record"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:dsppr.coding">
+      <path value="Composition.category.coding"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:dsppr.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+    </element>
+    <element id="Composition.category:dsppr.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="100.32039" />
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
