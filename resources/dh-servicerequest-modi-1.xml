@@ -27,13 +27,6 @@
       <path value="ServiceRequest"/>
       <short value="Request for diagnostic imaging service"/>
       <definition value="A record of a request for a diagnostic imaging service to be performed."/>
-      <constraint>
-        <key value="inv-dh-modi-01"/>
-        <severity value="error"/>
-        <human value="One category shall be Diagnostic imaging service '708175003' 'http://snomed.info/sct'"/>
-        <expression value="category.coding.where(system='http://snomed.info/sct' and code='708175003').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-      </constraint>
     </element>
     <element id="ServiceRequest.extension:targetBodyStructure">
       <path value="ServiceRequest.extension" />
@@ -72,8 +65,40 @@
       <path value="ServiceRequest.category"/>
       <short value="Classification of the service requested as diagnostic imaging + modality where available"/>
       <comment value="A fixed category denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
       <min value="1"/>
       <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.category:diagImg">
+      <path value="ServiceRequest.category"/>
+      <short value="Diagnostic imaging service"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="ServiceRequest.category:diagImg.coding">
+      <path value="ServiceRequest.category.coding"/>
+      <sliceName value="diagImg"/>
+      <min value="1"/>
+    </element>
+    <element id="ServiceRequest.category:diagImg.coding.system">
+      <path value="ServiceRequest.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://snomed.info/sct"/>
+    </element>
+    <element id="ServiceRequest.category:diagImg.coding.code">
+      <path value="ServiceRequest.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="708175003" />
     </element>
     <element id="ServiceRequest.code">
       <path value="ServiceRequest.code"/>
