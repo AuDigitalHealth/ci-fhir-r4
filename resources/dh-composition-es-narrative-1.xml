@@ -31,13 +31,6 @@
       <path value="Composition"/>
       <short value="Event Summary"/>
       <definition value="A record, reported by a healthcare provider, of a significant healthcare event involving the individual and that is useful to a wide range of providers in assessing individuals and delivering care."/>
-      <constraint>
-        <key value="inv-dh-es-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Summary of episode note '34133-9' 'http://loinc.org'"/>
-        <expression value="category.coding.where(system='http://loinc.org' and code='34133-9').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
