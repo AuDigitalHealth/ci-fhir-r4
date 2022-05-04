@@ -20,15 +20,5 @@
         <td>To do: design discussion with architect on supporting generated narrative via structure to meet the requirement to not exchange narrative when uploading from NCSR to MHR system. Is there a business case and the pre-requisite stability to fix the desired element labels in the profile?</td>
         <td>N/A</td>
   </tr>
-  <tr>
-        <td>Terminology for typing of health program participation</td>
-        <td>To develop, if possible, a set of concepts to identify the type of observation of program participation status including: Cancer screening program participation (national bowel cancer screening program participation, national cervical cancer screening program participation, national breast cancer screening program participation), Other expected needs include concepts like weight management program participation, alcohol twelve step program participation.</td>
-        <td>N/A</td>
-  </tr>
-  <tr>
-        <td>Terminology for program participation status</td>
-        <td>To investigate and develop if possible an appropriate set of concepts to indicate program participation status. The requirements from Dept of Health are expected to be only a subset of these concepts – and are scoped towards their reporting requirements. The semantic meaning of the program participation values will be achieved by understanding what the participation status value means in the context of a particular program e.g. may understand that an individual is ‘actively screening’ if the program is a screening program and the status is a value of active involvement. Dept of Health preliminary requirements for participation status that are of interest to the cervical and bowel national cancer screening programs: Never Responder | Overdue for Screening | New to Screening | Actively Screening | Not Eligible | Excluded | Age Exited.</td>
-        <td>N/A</td>
-  </tr>
  </tbody>
 </table>

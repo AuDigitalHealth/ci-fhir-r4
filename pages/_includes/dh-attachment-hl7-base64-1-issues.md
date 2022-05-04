@@ -12,7 +12,7 @@
   </tr>
   <tr>
         <td>Extension is experimental design option</td>
-        <td>This extension is experiemental and provided to demonstrate a possible design option. It is not for use in systems.</td>
+        <td>This extension is experimental and provided to demonstrate a possible design option. It is not for use in systems.</td>
         <td>N/A</td>
   </tr>
  </tbody>
