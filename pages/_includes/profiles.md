@@ -346,7 +346,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li>ADHA Pathology DiagnosticReport</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
-                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Donatable Organ or Tissue BodyStructure</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
