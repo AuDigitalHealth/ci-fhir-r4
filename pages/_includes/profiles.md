@@ -10,7 +10,7 @@
 
 ### Australian Digital Health Agency Core FHIR Profile Index 
 
-The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU AU [Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">
@@ -263,7 +263,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-sml-1.html">ADHA Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
-                                <li>Archicture related DocumentReference profiles (TBD Architecture Team)</li>                               
+                                <li>Architecture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
                         </td>  
                         <td class="frm-set">
@@ -314,7 +314,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li>ADHA Hospitalisation Encounter</li>
                                 <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>
                                 <li>ADHA Adverse Reactions List</li>
-                                <li>ADHA Allergies and Interolances List</li>
+                                <li>ADHA Allergies and Intolerances List</li>
                                 <li>ADHA Dispense List</li>
                                 <li><a href="StructureDefinition-dh-list-immunization-1.html">ADHA Immunisation History List</a></li>
                                 <li>ADHA Medical History List</li>
