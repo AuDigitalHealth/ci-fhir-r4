@@ -51,6 +51,41 @@
         </coding>
       </patternCodeableConcept>
     </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:ps">
+      <path value="Composition.category"/>
+      <short value="Patient summary"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:ps.coding">
+      <path value="Composition.category.coding"/>
+      <sliceName value="shs"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:ps.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://loinc.org"/>
+    </element>
+    <element id="Composition.category:ps.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="60591-5" />
+    </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
       <max value="1"/>
