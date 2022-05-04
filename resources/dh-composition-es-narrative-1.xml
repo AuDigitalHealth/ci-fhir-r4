@@ -50,24 +50,24 @@
         <rules value="open"/>
       </slicing>
     </element>
-    <element id="Composition.category:soen">
+    <element id="Composition.category:es">
       <path value="Composition.category"/>
-      <sliceName value="soen"/>	  
+      <sliceName value="es"/>	  
       <short value="Summary of episode note"/>
       <min value="1"/>
       <max value="1" />
+      <mustSupport value="true"/>
     </element>
-    <element id="Composition.category:soen.coding">
+    <element id="Composition.category:es.coding">
       <path value="Composition.category.coding"/>
-      
       <min value="1"/>
     </element>
-    <element id="Composition.category:soen.coding.system">
+    <element id="Composition.category:es.coding.system">
       <path value="Composition.category.coding.system"/>
       <min value="1"/>
       <fixedUri value="http://loinc.org"/>
     </element>
-    <element id="Composition.category:soen.coding.code">
+    <element id="Composition.category:es.coding.code">
       <path value="Composition.category.coding.code" />
       <min value="1" />
       <fixedCode value="34133-9" />
