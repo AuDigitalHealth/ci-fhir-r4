@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-es-mix-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionES"/>
   <title value="Australian Digital Health Agency Event Summary Mixed Narrative and Structure"/>
   <status value="draft"/>
@@ -30,17 +30,46 @@
       <path value="Composition"/>
       <short value="Event Summary"/>
       <definition value="A record, reported by a healthcare provider, of a significant healthcare event involving the individual and that is useful to a wide range of providers in assessing individuals and delivering care."/>
-      <constraint>
-        <key value="inv-dh-es-01"/>
-        <severity value="error"/>
-        <human value="One record type (category) shall be Summary of episode note '34133-9' 'http://loinc.org'"/>
-        <expression value="category.coding.where(system='http://loinc.org' and code='34133-9').exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"/>
-      </constraint>
     </element>
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:soen">
+      <path value="Composition.category"/>
+      <sliceName value="soen"/>	  
+      <short value="Summary of episode note"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:soen.coding">
+      <path value="Composition.category.coding"/>
+      
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:soen.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://loinc.org"/>
+    </element>
+    <element id="Composition.category:soen.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="34133-9" />
     </element>
     <element id="Composition.encounter">
       <path value="Composition.encounter"/>

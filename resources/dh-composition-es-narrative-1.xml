@@ -3,7 +3,7 @@
   <id value="dh-composition-es-narrative-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-narrative-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionES"/>
   <title value="Australian Digital Health Agency Event Summary Narrative"/>
   <status value="draft"/>
@@ -42,6 +42,42 @@
     <element id="Composition.status">
       <path value="Composition.status"/>
       <patternCode value="final"/>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.system"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="coding.code"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Composition.category:soen">
+      <path value="Composition.category"/>
+      <sliceName value="soen"/>	  
+      <short value="Summary of episode note"/>
+      <min value="1"/>
+      <max value="1" />
+    </element>
+    <element id="Composition.category:soen.coding">
+      <path value="Composition.category.coding"/>
+      
+      <min value="1"/>
+    </element>
+    <element id="Composition.category:soen.coding.system">
+      <path value="Composition.category.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://loinc.org"/>
+    </element>
+    <element id="Composition.category:soen.coding.code">
+      <path value="Composition.category.coding.code" />
+      <min value="1" />
+      <fixedCode value="34133-9" />
     </element>
     <element id="Composition.encounter">
       <path value="Composition.encounter"/>
