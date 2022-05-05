@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency My Health Record RelatedPerson
+#### ADHA My Health Record RelatedPerson
 The purpose of this profile is to define a representation of a related person for exchange usage scenarios with the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) that are supported. 

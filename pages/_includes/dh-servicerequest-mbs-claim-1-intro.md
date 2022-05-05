@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency MBS Service Claim Item
+#### ADHA MBS Service Claim Item
 The purpose of this profile is to define a record of the MBS service claimed in a record of the claim of an item claimed against the Medicare Benefits Schedule (MBS) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [ServiceRequest](http://hl7.org/fhir/R4/list.html) that are supported. 

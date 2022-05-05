@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency National Cancer Screening Program Participation Composition
+#### ADHA National Cancer Screening Program Participation Composition
 The purpose of this profile is to define a representation of a National Cancer Screening Program Participation document that describes a patient's participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation.
 
 DESIGN NOTE: Section type value set and value set membership needs to be taken to stakeholders via [Section type design elaboration version of ADHA National Cancer Screening Program Participation Composition](StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html).

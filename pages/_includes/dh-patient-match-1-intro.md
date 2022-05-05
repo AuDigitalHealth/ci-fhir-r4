@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Patient Match
+#### ADHA Patient Match
 The purpose of this profile is to provide a representation of a patient to check and match patient identity the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Patient](http://hl7.org/fhir/R4/patient.html) that are supported. 

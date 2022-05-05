@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Payload Bundle
+#### ADHA Core Bundle
 The purpose of this profile is to validate that a collection of resources conforms to the set of core standard for resources of interest and is suitable for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Bundle](http://hl7.org/fhir/R4/bundle.html) that are supported. 

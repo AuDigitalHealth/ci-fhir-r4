@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Core Location
+#### ADHA Core Location
 The purpose of this profile is to define a core representation of a location for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Location](http://hl7.org/fhir/R4/location.html) that are supported. 
