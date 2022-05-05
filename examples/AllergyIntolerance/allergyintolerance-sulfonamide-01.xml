@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="sulfonamide-01"/>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance"/>
+    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+    <!--<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>-->
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category value="medication"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="763875007"/>
+      <display value="Sulfonamide-containing product"/>
+    </coding>
+    <text value="sulfonamide antibacterial"/>
+  </code>
+  <patient>
+    <reference value="Patient/hi-testdata-goodwin-bonny"/>
+  </patient>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271807003"/>
+        <display value="skin rash"/>
+      </coding>
+      <text value="skin rash"/>
+    </manifestation>
+    <severity value="mild"/>
+  </reaction>
+</AllergyIntolerance>

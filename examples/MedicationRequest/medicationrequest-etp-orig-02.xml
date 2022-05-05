@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="etp-orig-02"/>
+  <meta>
+    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+        <code value="ETP"/>
+      </coding>
+      <text value="ETP Identifier"/>
+    </type>
+    <system value="http://fhir.erx.com.au/NamingSystem/identifiers#scid"/>
+    <value value="41KR35435WJ4P3G73X7"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <text value="Atorvastatin"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/mhr-zhang-wei"/>
+  </subject>
+  <authoredOn value="2019-11-20"/>
+  <dispenseRequest>
+    <numberOfRepeatsAllowed value="5"/>
+  </dispenseRequest>
+</MedicationRequest>

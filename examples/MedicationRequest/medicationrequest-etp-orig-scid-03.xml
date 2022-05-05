@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="etp-orig-scid-03"/>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
+        <valueString value="120.0"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/supplynumber">
+        <valueString value="1"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/is-extemp">
+        <valueBoolean value="false"/>
+    </extension>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                <code value="ETP"/>
+            </coding>
+            <text value="ETP Identifier"/>
+        </type>
+        <system value="http://fhir.erx.com.au/NamingSystem/identifiers#org-scid"/>
+        <value value="1XPR352VP3QCX7BJD6"/>
+    </identifier>
+    <status value="completed"/>
+    <intent value="order"/>
+    <medicationReference>
+        <reference value="Medication/etp-orig-med-03"/>
+        <display value="PROXYMETACAINE"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/mhr-anne-thompson"/>
+        <display value="Abbott, Alan"/>
+    </subject>
+    <authoredOn value="2019-10-02T00:00:00+00:00"/>
+    <dispenseRequest>
+        <numberOfRepeatsAllowed value="5"/>
+    </dispenseRequest>
+</MedicationRequest>
