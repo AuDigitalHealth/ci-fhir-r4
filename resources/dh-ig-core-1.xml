@@ -642,6 +642,13 @@
             <name value="No known allergy for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="AllergyIntolerance/sulfonamide-01"/>
+            </reference>
+            <name value="Sulfonamide antibacterial allergy for Mrs. Bonny Goodwin"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+        </resource>
         <!--BODYSTRUCTURE EXAMPLES-->
         <resource>
             <reference>
@@ -2072,6 +2079,34 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Medication/etp-med-01"/>
+            </reference>
+            <name value="ATORVASTATIN LIPITOR for ePrescriging MedicationRequest etp-cont-01"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/etp-med-03"/>
+            </reference>
+            <name value="ATORVASTATIN LIPITOR for ePrescriging MedicationRequest etp-cont-03"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/etp-orig-med-01"/>
+            </reference>
+            <name value="PROXYMETACAINE ALCAINE for ePrescriging MedicationRequest etp-orig-med-01"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/etp-orig-med-03"/>
+            </reference>
+            <name value="PROXYMETACAINE ALCAINE for ePrescriging MedicationRequest etp-orig-med-03"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Medication/fluconazole-01"/>
             </reference>
             <name value="Fluconazole (text + form + ingredient)"/>
@@ -2182,6 +2217,62 @@
             </reference>
             <name value="PBS claim item for cephalexin 500 mg capsule, 20 for Ms. Sally Field (pbs-02)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-01"/>
+            </reference>
+            <name value="ePrescribing prescription with reference to prior prescription Bert Gainey"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-02"/>
+            </reference>
+            <name value="ePrescribing prescription with reference to prior prescription Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-orig-scid-01"/>
+            </reference>
+            <name value="ePrescribing prior Prescription for MedicationRequest etp-01 Bert Gainey"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-orig-scid-03"/>
+            </reference>
+            <name value="ePrescribing prior Prescription for MedicationRequest etp-cont-03 Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-orig-02"/>
+            </reference>
+            <name value="ePrescribing prior Prescription for MedicationRequest etp-02 for Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-cont-01"/>
+            </reference>
+            <name value="Contained form of ePrescribing MedicationRequest etp-01 Bert Gainey"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-cont-02"/>
+            </reference>
+            <name value="Contained form of ePrescribing MedicationRequest etp-02 Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-cont-03"/>
+            </reference>
+            <name value="Contained ePrescribing MedicationRequest etp-03 for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
             <reference>
@@ -2390,56 +2481,56 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-bcsp-01"/>
+                <reference value="Observation/bcsp-01"/>
             </reference>
             <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Opted Out (2017)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-nbcsp-01"/>
+                <reference value="Observation/nbcsp-01"/>
             </reference>
             <name value="NBCSP participation information for Mr Zhang Wei - New to NBCSP (2022)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-nbcsp-02"/>
+                <reference value="Observation/nbcsp-02"/>
             </reference>
             <name value="NBCSP participation information for Mr Zhang Wei - New to NBCSP, deferred participation (2022)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-nbcsp-03"/>
+                <reference value="Observation/nbcsp-03"/>
             </reference>
             <name value="NBCSP participation information for Cleo Moss Esq. - Active screening, next due in 2 years (2021)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-nbcsp-04"/>
+                <reference value="Observation/nbcsp-04"/>
             </reference>
             <name value="NBCSP participation information for Mr Daniel CRAIG - Excluded, inactive (2021)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-ncsp-01"/>
+                <reference value="Observation/ncsp-01"/>
             </reference>
             <name value="NCSP participation information for Cleo Moss Esq. - Active screening, next action in 1 year (2021)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-ncsp-02"/>
+                <reference value="Observation/ncsp-02"/>
             </reference>
             <name value="NCSP participation information for Ms. Sally FIELD - Not eligible, Commence at 25 (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/program-participation-ncsp-03"/>
+                <reference value="Observation/ncsp-03"/>
             </reference>
                 <name value="NCSP participation information for Mrs. Bonny Goodwin - Overdue for Screening (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>

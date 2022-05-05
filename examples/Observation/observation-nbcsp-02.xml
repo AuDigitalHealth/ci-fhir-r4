@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="program-participation-ncsp-01"/>
+    <id value="nbcsp-02"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
     </meta>
-    <!--Scenario: Active screening, next action in 1 year (2021)
-    Scenario Description: NCSR receives a Cervical result for participant on 22 May 2021. 
-    Status updates to Actively Screening, and their next due date is in 1 year due to the risk category of that participant. -->
+    <!--Scenario: New to NBCSP, deferred participation (2022)
+    Scenario Description: Patient is aged 50 and first Bowel Program round has opened. 
+    Person has been sent invitation, but defers for 6 months as they are travelling overseas. Date deferral was recorded is 10 Feb 2022.  -->
     <!--update to id from pcehr doc registration?-->
     <identifier>
         <system value="urn:ietf:rfc:4122"/>
-        <value value="28c02479-27ed-4d95-957b-d6703c2bcc97"/>
+        <value value="24fd20c0-5a07-4e5e-98da-d7d3d498613a"/>
     </identifier>
     <status value="final"/>
     <!-- new code system & code proposed for this work -->
@@ -25,13 +25,13 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="1602101000168102"/>
-            <display value="National cervical cancer screening program participation"/>
+            <code value="1602081000168109"/>
+            <display value="National bowel cancer screening program participation"/>
         </coding>
-        <text value="National Cervical Cancer Screening Program Participation"/>
+        <text value="National Bowel Cancer Screening Program Participation"/>
     </code>
     <subject>
-        <reference value="Patient/hi-testdata-moss-cleo"/>
+        <reference value="Patient/mhr-zhang-wei"/>
         <identifier>
             <type>
                 <coding>
@@ -42,11 +42,11 @@
                 <text value="IHI"/>
             </type>
             <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-            <value value="8003608833564735"/>
+            <value value="8003608000228437"/>
         </identifier>
     </subject>
     <!--Records date this program participation information is asserted as 'true' -->
-    <effectiveDateTime value="2021-05-22T10:01:00+10:00"/>
+    <effectiveDateTime value="2022-05-14"/>
     <performer>
         <reference value="Organization/ncsr-operator"/>
         <identifier>
@@ -78,7 +78,7 @@
                 <code value="1602001000168101"/>
                 <display value="Active participation"/>
             </coding>
-            <text value="Actively screening"/>
+            <text value="Actively Screening"/>
         </valueCodeableConcept>
     </component>
     <!--2.	Program participation status validity period -->
@@ -91,8 +91,10 @@
             </coding>
             <text value="Participant status period"/>
         </code>
+        <!--Patient deferred for 6 months so keeps status of New to screening for a 6 month period-->
         <valuePeriod>
-            <start value="2021-05-22"/>
+            <start value="2022-02-05"/>
+            <end value="2022-08-05"/>
         </valuePeriod>
     </component>
     <!--10.	Suspension of program participation -->
@@ -105,23 +107,22 @@
             </coding>
             <text value="Defer flag"/>
         </code>
-        <!--Patient has not deferred-->
-        <valueBoolean value="false"/>
+        <!--Patient deferred-->
+        <valueBoolean value="true"/>
     </component>
-    <!--8. Forecast status is not provided in this scenario-->
-    <!--9. Forecast status validity period -->
+    <!--8. Forecast status -->
     <component>
         <code>
             <coding>
                 <system value="http://snomed.info/sct"/>
-                <code value="1604051000168109"/>
-                <display value="Forecast status period"/>
+                <code value="1604041000168107"/>
+                <display value="Program forecast status"/>
             </coding>
-            <text value="Next screening action date"/>
+            <text value="Next screening action"/>
         </code>
-        <!--Next screening date for patient is in 1 year -->
-        <valuePeriod>
-            <start value="2022-05-22"/>
-        </valuePeriod>
+        <valueCodeableConcept>
+            <text value="Due Now (eligible since 50th birthday)"/>
+        </valueCodeableConcept>
     </component>
+    <!--9.	Forecast status validity period is not provided in this scenario-->
 </Observation>

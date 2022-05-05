@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation xmlns="http://hl7.org/fhir">
-    <id value="program-participation-ncsp-03"/>
+    <id value="nbcsp-01"/>
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
     </meta>
-    <!--Scenario: Overdue for Screening (2020)
-    Scenario Description: Participant has been invited to screen in prior round, but did not screen. New round has opened. -->
+    <!--Scenario: New to NBCSP (2022)
+    Scenario Description: Patient is aged 50 and first Bowel Program round has opened. 
+    Person will be sent invitation and Bowel Kit. They are now eligible and due.   -->
     <!--update to id from pcehr doc registration?-->
     <identifier>
         <system value="urn:ietf:rfc:4122"/>
-        <value value="28c02479-27ed-4d95-957b-d6703c2bcc97"/>
+        <value value="d36d2cf5-6dfb-4d10-811f-1e2229489423"/>
     </identifier>
     <status value="final"/>
     <!-- new code system & code proposed for this work -->
@@ -24,13 +25,13 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="1602101000168102"/>
-            <display value="National cervical cancer screening program participation"/>
+            <code value="1602081000168109"/>
+            <display value="National bowel cancer screening program participation"/>
         </coding>
-        <text value="National Cervical Cancer Screening Program Participation"/>
+        <text value="National Bowel Cancer Screening Program Participation"/>
     </code>
     <subject>
-        <reference value="Patient/hi-testdata-goodwin-bonny"/>
+        <reference value="Patient/mhr-zhang-wei"/>
         <identifier>
             <type>
                 <coding>
@@ -41,11 +42,11 @@
                 <text value="IHI"/>
             </type>
             <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-            <value value="8003608000228445"/>
+            <value value="8003608000228437"/>
         </identifier>
     </subject>
     <!--Records date this program participation information is asserted as 'true' -->
-    <effectiveDateTime value="2020-06-12T06:54:00+10:00"/>
+    <effectiveDateTime value="2022-02-05T09:01:00+10:00"/>
     <performer>
         <reference value="Organization/ncsr-operator"/>
         <identifier>
@@ -74,10 +75,10 @@
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
-                <code value="1602011000168103"/>
-                <display value="Participation overdue"/>
+                <code value="1601971000168104"/>
+                <display value="New participation"/>
             </coding>
-            <text value="Overdue for Screening"/>
+            <text value="New to screening"/>
         </valueCodeableConcept>
     </component>
     <!--2.	Program participation status validity period -->
@@ -90,11 +91,12 @@
             </coding>
             <text value="Participant status period"/>
         </code>
+        <!--Patient has not deferred so no end period is provided-->
         <valuePeriod>
-            <start value="2020-06-12"/>
+            <start value="2022-02-05"/>
         </valuePeriod>
     </component>
-    <!--8.	Suspension of program participation -->
+    <!--10.	Suspension of program participation -->
     <component>
         <code>
             <coding>
@@ -107,7 +109,7 @@
         <!--Patient has not deferred-->
         <valueBoolean value="false"/>
     </component>
-    <!--6. Forecast status -->
+    <!--8. Forecast status -->
     <component>
         <code>
             <coding>
@@ -118,8 +120,8 @@
             <text value="Next screening action"/>
         </code>
         <valueCodeableConcept>
-            <text value="Overdue"/>
+            <text value="Due Now (eligible since 50th birthday)"/>
         </valueCodeableConcept>
     </component>
-    <!--7.	Forecast status validity period is not provided in this scenario-->
+    <!--9.	Forecast status validity period is not provided in this scenario-->
 </Observation>
