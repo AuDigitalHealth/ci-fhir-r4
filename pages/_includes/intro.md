@@ -10,7 +10,7 @@
 > <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
 
 This Australian Digital Health Agency Implementation Guide contains:
-* Australian Digital Health Agency FHIR [policy](guidance.html): the policy for definining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency
+* Australian Digital Health Agency FHIR [policy](guidance.html): the policy for defining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency
 * Australian Digital Health Agency FHIR core assets:
   * [capability statements](conformance.html):
   * [profiles](profiles.html): additional rules and constraints that build on and extend the HL7<sup>TM</sup> AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and HL7<sup>TM</sup> [FHIR<sup>&reg;</sup>, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). 

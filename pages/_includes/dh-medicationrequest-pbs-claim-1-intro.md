@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency PBS Prescription Claim Item
+#### ADHA PBS Prescription Claim Item
 The purpose of this profile is to provide a core representation of a request for the supply of a medication and the instructions for administration of that medication to a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 The purpose of this profile is to define a record of the PBS prescription claimed in a record of the claim of an item claimed against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.

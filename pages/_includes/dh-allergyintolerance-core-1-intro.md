@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Core AllergyIntolerance
+#### ADHA Core AllergyIntolerance
 The purpose of this profile is to provide a core representation of an allergy or intolerance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a summary statement relating to an allergy or intolerance including asserting negation for a specific allergy or intolerance, a category, or that a patient has no known allergies or intolerances.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html) that are supported. 

@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Core Organization
+#### ADHA Core Organization
 The purpose of this profile is to define a core representation of an organisation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Organization](http://hl7.org/fhir/R4/organization.html) that are supported. 

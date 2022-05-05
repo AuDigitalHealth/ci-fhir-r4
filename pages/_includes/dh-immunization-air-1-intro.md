@@ -1,4 +1,4 @@
-#### Australian Digital Health Agency Record of Immunisation from Australian Immunisation Register
+#### ADHA Record of Immunisation from Australian Immunisation Register
 The purpose of this profile is to represent a record of immunisation held by the Australian Immunisation Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Immunization](http://hl7.org/fhir/R4/immunization.html) that are supported. 
