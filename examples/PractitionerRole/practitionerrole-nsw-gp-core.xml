@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="nsw-gp"/>
+    <id value="nsw-gp-core"/>
     <meta>
         <versionId value="203"/>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
     </meta>
     <text>
         <status value="generated"/>
@@ -26,11 +25,10 @@
         <system value="http://bondigpmedicalcenter.example.com/providers" />
         <value value="8223NSW" />
         <assigner>
-            <display value="Bondi GP Medical Center NSW"/>
+            <display value="Bondi GP Medical Centre NSW"/>
         </assigner>
     </identifier>
     <practitioner>
-        <reference value="Practitioner/sarah-bondiali"/>
         <identifier>
             <type>
                 <coding>
@@ -46,8 +44,7 @@
         <display value="Dr Sarah Bondiali"/>
     </practitioner> 
     <organization>
-        <reference value="Organization/bondi-gp-medical-centre"/>
-        <display value="Bondi GP Medical Centre NSW"/>
+        <display value="Bondi GP Medical Center NSW"/>
     </organization>
     <code>
         <coding>

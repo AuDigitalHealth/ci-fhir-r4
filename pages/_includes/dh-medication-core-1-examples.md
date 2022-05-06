@@ -201,7 +201,7 @@
       <td><a href="Medication-stribild-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td colspan="5">Contained examples:</td>
+      <td colspan="5">Examples with a contained Medication conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="MedicationStatement-completed-atorvastatin-01.html">ATORVASTATIN(TAB) 80 mg contained in completed MedicationStatement for Mrs. Anne Thompson (2019)</a></td>
@@ -225,7 +225,7 @@
       <td><a href="Medication-completed-rampiril-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a MedicationRequest entry conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="Bundle-psml-01-doc.html">Medication entries included in Pharmacist Shared Medicines List Document Bundle for Mrs Bonny Goodwin (2019)</a></td>
