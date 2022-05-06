@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="medReqDispensed-etp-04"/>
+    <meta>
+        <!--<profile value="http://fhir.medicationknowledge.com.au/StructureDefinition/mk-medicationrequest"/>-->
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+    </meta>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/supplynumber">
+        <valueString value="1"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/original-pharmacy-approval-number">
+        <valueString value="80452H"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/dispensed-item-description">
+        <valueString value="SEVREDOL 20MG TAB"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
+        <valueString value="20"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/item-status">
+        <valueString value="A"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/script-type">
+        <valueString value="N"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/script-class">
+        <valueString value="N"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/is-extemp">
+        <valueBoolean value="false"/>
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/private-non-switchable">
+        <valueBoolean value="false"/>
+    </extension>
+    <identifier>
+        <system value="http://fhir.medicationknowledge.com.au/StructureDefinition/original-script-number"/>
+        <value value="13716"/>
+    </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                <code value="LPN"/>
+            </coding>
+            <text value="Local Prescription Number"/>
+        </type>
+        <system value="http://fhir.erx.com.au/NamingSystem/identifiers#local-script-number"/>
+        <value value="13716"/>
+    </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                <code value="ETP"/>
+            </coding>
+            <text value="ETP Identifier"/>
+        </type>
+        <system value="http://fhir.erx.com.au/NamingSystem/identifiers#scid"/>
+        <value value="10Q73KMN65R5WKYQTA"/>
+        <assigner>
+            <display value="eRx Test Prescibing"/>
+        </assigner>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <medicationReference>
+        <reference value="Medication/medDispensed-etp-04"/>
+        <display value="morphine"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/mhr-zhang-wei"/>
+    </subject>
+    <authoredOn value="2020-07-16T00:00:00.000+10:00"/>
+    <requester>
+        <reference value="PractitionerRole/nsw-gp"/>
+    </requester>
+    <dosageInstruction>
+        <text value="Take ONE tablet twice a day"/>
+    </dosageInstruction>
+    <priorPrescription>
+        <display value="21KR32VB29QRGW7815"/>
+    </priorPrescription>
+</MedicationRequest>

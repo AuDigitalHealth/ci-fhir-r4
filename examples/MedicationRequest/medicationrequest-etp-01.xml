@@ -21,6 +21,9 @@
     </type>
     <system value="http://fhir.erx.com.au/NamingSystem/identifiers#scid"/>
     <value value="1XPR352VP3QCX7BJD6"/>
+    <assigner>
+      <display value="eRx Test Prescibing"/>
+    </assigner>
   </identifier>
   <status value="active"/>
   <intent value="instance-order"/>
@@ -36,6 +39,9 @@
     <reference value="PractitionerRole/canberra-gp"/>
   </requester>
   <dispenseRequest>
+    <validityPeriod>
+      <end value="2021-01-03T11:13:12.9110285+00:00" />
+    </validityPeriod>
     <numberOfRepeatsAllowed value="5"/>
   </dispenseRequest>
   <priorPrescription>

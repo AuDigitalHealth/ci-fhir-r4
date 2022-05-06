@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="etp-05" />
+    <meta>
+        <!--<profile value="http://fhir.medicationknowledge.com.au/StructureDefinition/mk-medicationrequest"/>-->
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+    </meta>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
+        <valueString value="100.0" />
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/sequence">
+        <valueString value="1" />
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/is-extemp">
+        <valueBoolean value="false" />
+    </extension>
+    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/is-medchart">
+        <valueBoolean value="false" />
+    </extension>
+    <identifier>
+        <system value="http://fhir.erx.com.au/NamingSystem/identifiers#scid" />
+        <value value="21KR32Q6Q8RJF9TGM3" />
+    </identifier>
+    <status value="active" />
+    <intent value="order" />
+    <medicationReference>
+        <reference value="Medication/etp-05" />
+        <display value="OXYBUTYNIN" />
+    </medicationReference>
+    <subject>
+        <reference value="Patient/mhr-tjakamarra-billy" />
+    </subject>
+    <authoredOn value="2020-12-07" />
+    <requester>
+        <reference value="PractitionerRole/strempel-sonia-gp" />
+    </requester>
+    <dispenseRequest>
+        <validityPeriod> 
+            <end value="2020-05-20"/> 
+        </validityPeriod>
+        <numberOfRepeatsAllowed value="3" />
+    </dispenseRequest>
+</MedicationRequest>

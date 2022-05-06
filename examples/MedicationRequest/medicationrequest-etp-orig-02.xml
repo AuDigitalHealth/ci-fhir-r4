@@ -14,6 +14,9 @@
     </type>
     <system value="http://fhir.erx.com.au/NamingSystem/identifiers#scid"/>
     <value value="41KR35435WJ4P3G73X7"/>
+    <assigner>
+      <display value="eRx Test Prescibing"/>
+    </assigner>
   </identifier>
   <status value="active"/>
   <intent value="order"/>
@@ -24,6 +27,9 @@
     <reference value="Patient/mhr-zhang-wei"/>
   </subject>
   <authoredOn value="2019-11-20"/>
+  <requester>
+    <reference value="PractitionerRole/nsw-gp"/>
+  </requester>
   <dispenseRequest>
     <numberOfRepeatsAllowed value="5"/>
   </dispenseRequest>

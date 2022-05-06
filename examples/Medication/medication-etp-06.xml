@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Medication xmlns="http://hl7.org/fhir">
-    <!--Alcaine 0.5% eye drops, 15 mL-->
-    <id value="etp-orig-med-01"/>
-    <meta>
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-    </meta>
+    <id value="etp-06" />
     <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
-        <valueString value="ALCAINE"/>
+        <valueString value="Amoxil" />
     </extension>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
-        <valueString value="PROXYMETACAINE"/>
+        <valueString value="Amoxicillin" />
     </extension>
     <code>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="36900011000036109"/>
+            <system value="http://pbs.gov.au/code/item" />
+            <code value="1889K" />
         </coding>
+        <text value="amoxicillin 500 mg capsule, 20"/>
     </code>
     <manufacturer>
-        <display value="AQ"/>
+        <identifier>
+            <system value="http://pbs.gov.au/code/manufacturer"/>
+            <value value="AS"/>
+        </identifier>
+        <display value="Aspen Pharmacare Australia Pty Limited"/>
     </manufacturer>
     <form>
-        <text value="EYE-DRP"/>
+        <text value="Capsule" />
     </form>
     <ingredient>
         <itemCodeableConcept>
-            <text value="proxymetacaine hydrochloride"/>
+            <text value="oxybutynin hydrochloride"/>
         </itemCodeableConcept>
         <strength>
             <numerator>
-                <value value="0.5"/>
-                <unit value="%"/>
+                <value value="500"/>
+                <unit value="mg"/>
             </numerator>
             <denominator>
                 <value value="1"/>

@@ -2217,6 +2217,34 @@
             <name value="Stribild - tablet"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/medDispensed-etp-04"/>
+            </reference>
+            <name value="Morphine sulfate pentahydrate for prescription etp-cont-04"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/etp-med-04"/>
+            </reference>
+            <name value="Morphine sulfate pentahydrate for prescription etp-cont-04"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/etp-05"/>
+            </reference>
+            <name value="DITROPAN OXYBUTYNIN for prescription etp-05"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Medication/etp-06"/>
+            </reference>
+            <name value="Amoxil Amoxicillin for prescription etp-06"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+        </resource>
         <!--MEDICATIONREQUEST EXAMPLES-->
         <resource>
             <reference>
@@ -2236,28 +2264,28 @@
             <reference>
                 <reference value="MedicationRequest/etp-01"/>
             </reference>
-            <name value="ePrescribing prescription with reference to prior prescription Bert Gainey"/>
+            <name value="ePrescribing prescription with reference to prior prescription for Bert Gainey"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-02"/>
             </reference>
-            <name value="ePrescribing prescription with reference to prior prescription Mr. Zhang Wei"/>
+            <name value="ePrescribing prescription with reference to prior prescription for Mr. Zhang Wei"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-orig-scid-01"/>
             </reference>
-            <name value="ePrescribing prior Prescription for MedicationRequest etp-01 Bert Gainey"/>
+            <name value="ePrescribing prior Prescription for MedicationRequest etp-01 for Bert Gainey"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-orig-scid-03"/>
             </reference>
-            <name value="ePrescribing prior Prescription for MedicationRequest etp-cont-03 Mrs. Anne Thompson"/>
+            <name value="ePrescribing prior prescription for MedicationRequest etp-cont-03 for Mrs. Anne Thompson"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
@@ -2271,21 +2299,49 @@
             <reference>
                 <reference value="MedicationRequest/etp-cont-01"/>
             </reference>
-            <name value="Contained form of ePrescribing MedicationRequest etp-01 Bert Gainey"/>
+            <name value="CONTAINED: ePrescribing MedicationRequest etp-01 for Bert Gainey"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-cont-02"/>
             </reference>
-            <name value="Contained form of ePrescribing MedicationRequest etp-02 Mr. Zhang Wei"/>
+            <name value="CONTAINED: ePrescribing MedicationRequest etp-02 for Mr. Zhang Wei"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-cont-03"/>
             </reference>
-            <name value="Contained ePrescribing MedicationRequest etp-03 for Mrs. Anne Thompson"/>
+            <name value="CONTAINED: ePrescribing MedicationRequest etp-03 for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-cont-04"/>
+            </reference>
+            <name value="CONTAINED: ePrescribing MedicationRequest etp-04 for Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/medReqDispensed-etp-04"/>
+            </reference>
+            <name value="ePrescribing basedOn prescription for etp-cont-04 for Mr. Zhang Wei"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-05"/>
+            </reference>
+            <name value="ePrescribing MedicationRequest etp-05 for Billy Tjakamarra"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/etp-06"/>
+            </reference>
+            <name value="ePrescribing MedicationRequest etp-06 for Billy Tjakamarra"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
         </resource>
         <resource>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="medDispensed-etp-04"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+    </meta>
+    <identifier>
+        <system value="http://fhir.erx.com.au/NamingSystem/identifiers#drugId"/>
+        <value value="PHN7QF8T0N12117"/>
+    </identifier>
+    <code>
+        <coding>
+            <system value="http://pbs.gov.au/code/item"/>
+            <code value="8670H"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="27186011000036107"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="12540011000036106"/>
+        </coding>
+        <text value="morphine"/>
+    </code>
+    <manufacturer>
+        <identifier>
+            <system value="http://pbs.gov.au/code/manufacturer"/>
+            <value value="MF"/>
+        </identifier>
+    </manufacturer>
+    <form>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="385057009"/>
+            <display value="Film-coated tablet"/>
+        </coding>
+        <text value="Tablet.FilmCoated"/>
+    </form>
+    <ingredient>
+        <itemCodeableConcept>
+            <text value="morphine"/>
+        </itemCodeableConcept>
+        <strength>
+            <numerator>
+                <value value="20"/>
+                <unit value="mg"/>
+            </numerator>
+            <denominator>
+                <value value="1"/>
+                <unit value="unit"/>
+            </denominator>
+        </strength>
+    </ingredient>
+</Medication>
