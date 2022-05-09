@@ -5,9 +5,6 @@
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
     </meta>
-    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="120.0"/>
-    </extension>
     <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/supplynumber">
         <valueString value="1"/>
     </extension>
@@ -43,5 +40,9 @@
     </requester>
     <dispenseRequest>
         <numberOfRepeatsAllowed value="5"/>
+        <quantity>
+            <value value="15"/>
+            <unit value="mL"/>
+        </quantity>
     </dispenseRequest>
 </MedicationRequest>

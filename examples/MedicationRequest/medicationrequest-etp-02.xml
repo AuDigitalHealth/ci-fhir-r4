@@ -34,6 +34,12 @@
   </requester>
   <dispenseRequest>
     <numberOfRepeatsAllowed value="2"/>
+    <quantity>
+      <value value="30"/>
+      <unit value="Tab"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+      <code value="TAB"/>
+    </quantity>
   </dispenseRequest>
   <priorPrescription>
     <reference value="MedicationRequest/etp-orig-02"/>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="etp-orig-scid-03"/>
-    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="120.0"/>
-    </extension>
     <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/supplynumber">
         <valueString value="1"/>
     </extension>
@@ -29,6 +26,12 @@
     <medicationReference>
         <reference value="Medication/proxymetacaine-02"/>
         <display value="PROXYMETACAINE"/>
+        <quantity>
+            <value value="15"/>
+            <unit value="mL"/>
+            <system value="http://unitsofmeasure.org"/> 
+            <code value="mL"/>
+        </quantity>
     </medicationReference>
     <subject>
         <reference value="Patient/mhr-anne-thompson"/>

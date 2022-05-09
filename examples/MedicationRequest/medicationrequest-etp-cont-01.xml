@@ -238,7 +238,7 @@
       </form>
       <ingredient>
         <itemCodeableConcept>
-          <text value="ss"/>
+          <text value="atorvastatin"/>
         </itemCodeableConcept>
         <strength>
           <numerator>
@@ -260,9 +260,6 @@
   <contained>
     <MedicationRequest>
       <id value="etp-orig-scid-01"/>
-      <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="120.0"/>
-      </extension>
       <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/supplynumber">
         <valueString value="1"/>
       </extension>
@@ -298,6 +295,10 @@
       </requester>
       <dispenseRequest>
         <numberOfRepeatsAllowed value="5"/>
+        <quantity>
+          <value value="15"/>
+          <unit value="mL"/>
+        </quantity>
       </dispenseRequest>
     </MedicationRequest>
   </contained>
@@ -339,9 +340,6 @@
       </ingredient>
     </Medication>
   </contained>
-  <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-    <valueString value="1.0"/>
-  </extension>
   <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/is-extemp">
     <valueBoolean value="false"/>
   </extension>
@@ -377,6 +375,10 @@
       <end value="2021-01-03T11:13:12.9110285+00:00" />
     </validityPeriod>
     <numberOfRepeatsAllowed value="5"/>
+    <quantity>
+      <value value="20"/>
+      <unit value="Tab"/>
+    </quantity>
   </dispenseRequest>
   <priorPrescription>
     <reference value="#etp-orig-scid-01"/>

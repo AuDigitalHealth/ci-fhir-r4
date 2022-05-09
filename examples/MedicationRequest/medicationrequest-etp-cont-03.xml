@@ -287,9 +287,6 @@
   <contained>
     <MedicationRequest>
       <id value="etp-orig-scid-03"/>
-      <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="120.0"/>
-      </extension>
       <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/supplynumber">
         <valueString value="1"/>
       </extension>
@@ -326,6 +323,12 @@
       </requester>
       <dispenseRequest>
         <numberOfRepeatsAllowed value="5"/>
+        <quantity>
+          <value value="15"/>
+          <unit value="mL"/>
+          <system value="http://unitsofmeasure.org"/> 
+          <code value="mL"/>
+        </quantity>
       </dispenseRequest>
     </MedicationRequest>
   </contained>
@@ -465,6 +468,12 @@
   </requester>
   <dispenseRequest>
     <numberOfRepeatsAllowed value="5"/>
+    <quantity>
+      <value value="60"/>
+      <unit value="Tab"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+      <code value="TAB"/>
+    </quantity>
   </dispenseRequest>
   <priorPrescription>
     <reference value="#etp-orig-scid-03"/>
