@@ -4,15 +4,14 @@
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
     </meta>
-    <!--Commented out due to IG Publisher build fails with liquid exception looking for separate .html files for contained resource-->
-    <!--<contained>
+    <contained>
         <Medication>
-            <id value="rampiril"/>
+            <id value="rampiril-01"/>
             <code>
                 <text value="RAMIPRIL(TAB) 2.5 mg, Tritace"/>
             </code>
         </Medication>
-    </contained>-->
+    </contained>
     <status value="completed"/>
     <category>
         <coding>
@@ -21,12 +20,9 @@
             <display value="Community"/>						
         </coding>
     </category>
-    <!--<medicationReference>
-        <reference value="#rampiril"/>
-    </medicationReference>-->
-    <medicationCodeableConcept>
-        <text value="RAMIPRIL(TAB) 2.5 mg, Tritace"/>
-    </medicationCodeableConcept>
+    <medicationReference>
+        <reference value="#rampiril-01"/>
+    </medicationReference>
     <subject>
         <reference value="Patient/mhr-anne-thompson"/>
         <identifier>

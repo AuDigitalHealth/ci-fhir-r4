@@ -1,44 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Medication xmlns="http://hl7.org/fhir">
-    <id value="etp-05" />
+    <id value="atorvastatin-01"/>
+    <!--Used by ePrescribing MedicationRequest etp-cont-01 & etp-01-->
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
     </meta>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
-        <valueString value="DITROPAN" />
+        <valueString value="LIPITOR"/>
     </extension>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
-        <valueString value="OXYBUTYNIN" />
+        <valueString value="ATORVASTATIN"/>
     </extension>
     <code>
         <coding>
-            <system value="http://pbs.gov.au/code/item" />
-            <code value="8039D" />
+            <system value="http://snomed.info/sct"/>
+            <code value="35681000036100"/>
         </coding>
-        <text value="oxybutynin hydrochloride 5 mg tablet, 100"/>
     </code>
-    <manufacturer>
-        <identifier>
-            <system value="http://pbs.gov.au/code/manufacturer"/>
-            <value value="SW"/>
-        </identifier>
-        <display value="sanofi-aventis Australia Pty Ltd" />
-    </manufacturer>
     <form>
-        <text value="TAB" />
+        <text value="TAB"/>
     </form>
     <ingredient>
         <itemCodeableConcept>
-            <text value="oxybutynin hydrochloride"/>
+            <text value="ss"/>
         </itemCodeableConcept>
         <strength>
             <numerator>
-                <value value="5"/>
+                <value value="10"/>
                 <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
             </numerator>
             <denominator>
                 <value value="1"/>
-                <unit value="unit"/>
+                <unit value="mg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg"/>
             </denominator>
         </strength>
     </ingredient>

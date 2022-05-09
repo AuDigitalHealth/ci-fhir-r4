@@ -5,9 +5,6 @@
         <versionId value="1" />
         <lastUpdated value="2022-01-11T23:03:37.5074889+00:00" />
     </meta>
-    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="20.0" />
-    </extension>
     <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/sequence">
         <valueString value="1" />
     </extension>
@@ -45,7 +42,7 @@
     <status value="active" />
     <intent value="order" />
     <medicationReference>
-        <reference value="Medication/etp-06" />
+        <reference value="Medication/amoxicillin-03" />
         <display value="Amoxicillin" />
     </medicationReference>
     <subject>
@@ -61,5 +58,11 @@
             <end value="2022-04-12T00:00:00+00:00" />
         </validityPeriod>
         <numberOfRepeatsAllowed value="1" />
+        <quantity>
+            <value value="20"/>
+            <unit value="Tab"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+            <code value="TAB"/>
+        </quantity>
     </dispenseRequest>
 </MedicationRequest>

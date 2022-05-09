@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="medReqDispensed-etp-04"/>
+    <!--Used by ePrescribing MedicationRequest etp-04-->
     <meta>
         <!--<profile value="http://fhir.medicationknowledge.com.au/StructureDefinition/mk-medicationrequest"/>-->
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
@@ -13,9 +14,6 @@
     </extension>
     <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/dispensed-item-description">
         <valueString value="SEVREDOL 20MG TAB"/>
-    </extension>
-    <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="20"/>
     </extension>
     <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/item-status">
         <valueString value="A"/>
@@ -64,7 +62,7 @@
     <status value="active"/>
     <intent value="order"/>
     <medicationReference>
-        <reference value="Medication/medDispensed-etp-04"/>
+        <reference value="Medication/morphine-02"/>
         <display value="morphine"/>
     </medicationReference>
     <subject>
@@ -77,6 +75,14 @@
     <dosageInstruction>
         <text value="Take ONE tablet twice a day"/>
     </dosageInstruction>
+    <dispenseRequest>
+        <quantity>
+            <value value="20"/>
+            <unit value="Tab"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+            <code value="TAB"/>
+        </quantity>
+    </dispenseRequest>
     <priorPrescription>
         <display value="21KR32VB29QRGW7815"/>
     </priorPrescription>

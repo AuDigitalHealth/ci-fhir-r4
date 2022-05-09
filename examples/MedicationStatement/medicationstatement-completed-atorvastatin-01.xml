@@ -4,15 +4,45 @@
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
     </meta>
-    <!--Commented out due to IG Publisher build fails with liquid exception looking for separate .html files for contained resource-->
-    <!--<contained>
+    <contained>
         <Medication>
-            <id value="atorvastatin"/>
+            <id value="atorvastatin-01"/>
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
+                <valueString value="LIPITOR"/>
+            </extension>
+            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-generic-name">
+                <valueString value="ATORVASTATIN"/>
+            </extension>
             <code>
-                <text value="ATORVASTATIN(TAB) 80 mg, Lipitor"/>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="35681000036100"/>
+                </coding>
             </code>
+            <form>
+                <text value="TAB"/>
+            </form>
+            <ingredient>
+                <itemCodeableConcept>
+                    <text value="ss"/>
+                </itemCodeableConcept>
+                <strength>
+                    <numerator>
+                        <value value="10"/>
+                        <unit value="mg"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mg"/>
+                    </numerator>
+                    <denominator>
+                        <value value="1"/>
+                        <unit value="mg"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="mg"/>
+                    </denominator>
+                </strength>
+            </ingredient>
         </Medication>
-    </contained>-->
+    </contained>
     <status value="completed"/>
     <category>
         <coding>
@@ -21,12 +51,9 @@
             <display value="Community"/>						
         </coding>
     </category>
-    <!--<medicationReference>
-        <reference value="#atorvastatin"/>
-    </medicationReference>-->
-    <medicationCodeableConcept>
-        <text value="ATORVASTATIN(TAB) 80 mg, Lipitor"/>
-    </medicationCodeableConcept>
+    <medicationReference>
+        <reference value="#atorvastatin-01"/>
+    </medicationReference>
     <subject>
         <reference value="Patient/mhr-anne-thompson"/>
         <identifier>

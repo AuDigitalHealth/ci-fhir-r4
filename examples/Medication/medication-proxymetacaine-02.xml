@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Medication xmlns="http://hl7.org/fhir">
-    <id value="etp-med-03"/>
+    <id value="proxymetacaine-02"/>
     <!-- Able to support fully coded medication information: brand name, generic name, item form and strength  -->
+    <!--Used by ePrescribing MedicationRequest etp-cont-03 & etp-orig-scid-03-->
     <code>
         <coding>
             <!--  MP (generic name) -->
@@ -13,7 +14,7 @@
             </extension>
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/32506021000036107/version/20200601"/>
-            <code value="21343011000036103"/>
+            <code value="37786011000036102"/>
         </coding>
         <coding>
             <!--  MPP (form and strength) -->
@@ -25,22 +26,10 @@
             </extension>
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/32506021000036107/version/20200601"/>
-            <code value="35691000036103"/>
+            <code value="38785011000036103"/>
         </coding>
         <coding>
-            <!--  MPUU  -->
-            <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
-                <valueCoding>
-                    <system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
-                    <code value="UPDSF"/>
-                </valueCoding>
-            </extension>
-            <system value="http://snomed.info/sct"/>
-            <version value="http://snomed.info/sct/32506021000036107/version/20200601"/>
-            <code value="22783011000036107"/>
-        </coding>
-        <coding>
-            <!--  TP (Brand name)  -->
+            <!--  TP (brand name) -->
             <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-type">
                 <valueCoding>
                     <system value="http://terminology.hl7.org.au/CodeSystem/medication-type"/>
@@ -49,7 +38,12 @@
             </extension>
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/32506021000036107/version/20200601"/>
-            <code value="3877011000036101"/>
+            <code value="35920011000036102"/>
+        </coding>
+        <coding>
+            <!--  TPP  -->
+            <system value="http://snomed.info/sct"/>
+            <code value="36900011000036109"/>
         </coding>
         <coding>
             <!--  TPUU  -->
@@ -61,7 +55,7 @@
             </extension>
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/32506021000036107/version/20200601"/>
-            <code value="6204011000036101"/>
+            <code value="36233011000036109"/>
         </coding>
         <coding>
             <!--  CTPP  -->
@@ -73,32 +67,35 @@
             </extension>
             <system value="http://snomed.info/sct"/>
             <version value="http://snomed.info/sct/32506021000036107/version/20200601"/>
-            <code value="39241000036105"/>
+            <code value="37634011000036109"/>
         </coding>
     </code>
+    <manufacturer>
+        <display value="AQ"/>
+    </manufacturer>
     <form>
-        <text value="TAB"/>
+        <text value="EYE-DRP"/>
     </form>
     <ingredient>
         <itemCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
-                <code value="373444002"/>
+                <code value="30424002"/>
             </coding>
             <coding>
                 <system value="http://snomed.info/sct"/>
-                <code value="1821011000036101"/>
+                <code value="31837011000036109"/>
             </coding>
-            <text value="Atorvastatin"/>
+            <text value="Proxymetacaine hydrochloride"/>
         </itemCodeableConcept>
         <strength>
             <numerator>
-                <value value="10"/>
-                <unit value="mg"/>
+                <value value="0.5"/>
+                <unit value="%"/>
             </numerator>
             <denominator>
                 <value value="1"/>
-                <unit value="mg"/>
+                <unit value="unit"/>
             </denominator>
         </strength>
     </ingredient>

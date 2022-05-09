@@ -140,7 +140,7 @@
   </contained>
   <contained>
     <Medication>
-      <id value="etp-med-04"/>
+      <id value="morphine-01"/>
       <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
         <valueString value="Sevredol"/>
       </extension>
@@ -204,9 +204,6 @@
       <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/dispensed-item-description">
         <valueString value="SEVREDOL 20MG TAB"/>
       </extension>
-      <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-        <valueString value="20"/>
-      </extension>
       <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/item-status">
         <valueString value="A"/>
       </extension>
@@ -254,7 +251,7 @@
       <status value="active"/>
       <intent value="order"/>
       <medicationReference>
-        <reference value="#medDispensed-etp-04"/>
+        <reference value="#morphine-02"/>
         <display value="morphine"/>
       </medicationReference>
       <subject>
@@ -267,6 +264,14 @@
       <dosageInstruction>
         <text value="Take ONE tablet twice a day"/>
       </dosageInstruction>
+      <dispenseRequest>
+        <quantity>
+          <value value="20"/>
+          <unit value="Tab"/>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+          <code value="TAB"/>
+        </quantity>
+      </dispenseRequest>
       <priorPrescription>
         <display value="21KR32VB29QRGW7815"/>
       </priorPrescription>
@@ -274,7 +279,7 @@
   </contained>
   <contained>
     <Medication>
-      <id value="medDispensed-etp-04"/>
+      <id value="morphine-02"/>
       <identifier>
         <system value="http://fhir.erx.com.au/NamingSystem/identifiers#drugId"/>
         <value value="PHN7QF8T0N12117"/>
@@ -346,9 +351,6 @@
   <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/is-extemp">
     <valueBoolean value="false"/>
   </extension>
-  <extension url="http://fhir.medicationknowledge.com.au/StructureDefinition/quantity">
-    <valueString value="20"/>
-  </extension>
   <identifier>
     <type>
       <coding>
@@ -381,7 +383,7 @@
   <status value="active"/>
   <intent value="order"/>
   <medicationReference>
-    <reference value="#etp-med-04"/>
+    <reference value="#morphine-01"/>
     <display value="morphine sulfate pentahydrate"/>
   </medicationReference>
   <subject>
@@ -413,6 +415,12 @@
       <end value="2020-11-16T15:10:24.118+10:00" />
     </validityPeriod>
     <numberOfRepeatsAllowed value="2"/>
+    <quantity>
+      <value value="20"/>
+      <unit value="Tab"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+      <code value="TAB"/>
+    </quantity>
     <expectedSupplyDuration>
       <value value="20"/>
       <unit value="days"/>

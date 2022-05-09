@@ -4,15 +4,14 @@
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
     </meta>
-    <!--Commented out due to IG Publisher build fails with liquid exception looking for separate .html files for contained resource-->
-    <!--<contained>
+    <contained>
         <Medication>
-            <id value="docusate"/>
+            <id value="docusate-01"/>
             <code>
-                <text value="DOCUSATE SENNA(TAB) 50 mg"/>
+                <text value="DOCUSATE SENNA (TAB) 50 mg"/>
             </code>
         </Medication>
-    </contained>-->
+    </contained>
     <status value="completed"/>
     <category>
         <coding>
@@ -21,12 +20,10 @@
             <display value="Community"/>						
         </coding>
     </category>
-    <!--<medicationReference>
-        <reference value="#docusate"/>
-    </medicationReference>-->
-    <medicationCodeableConcept>
-        <text value="DOCUSATE SENNA(TAB) 50 mg"/>
-    </medicationCodeableConcept>
+    <medicationReference>
+        <reference value="#docusate-01"/>
+        <display value ="DOCUSATE SENNA (TAB) 50 mg"/>
+    </medicationReference>
     <subject>
         <reference value="Patient/mhr-anne-thompson"/>
         <identifier>

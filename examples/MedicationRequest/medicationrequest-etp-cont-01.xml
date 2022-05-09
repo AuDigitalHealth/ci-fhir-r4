@@ -220,7 +220,7 @@
   </contained>
   <contained>
     <Medication>
-      <id value="etp-med-01"/>
+      <id value="atorvastatin-01"/>
       <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
         <valueString value="LIPITOR"/>
       </extension>
@@ -286,7 +286,7 @@
       <status value="completed"/>
       <intent value="order"/>
       <medicationReference>
-        <reference value="#etp-orig-med-01"/>
+        <reference value="#proxymetacaine-01"/>
         <display value="PROXYMETACAINE"/>
       </medicationReference>
       <subject>
@@ -303,7 +303,7 @@
   </contained>
   <contained>
     <Medication>
-      <id value="etp-orig-med-01"/>
+      <id value="proxymetacaine-01"/>
       <extension url="http://hl7.org.au/fhir/StructureDefinition/medication-brand-name">
         <valueString value="ALCAINE"/>
       </extension>
@@ -362,7 +362,7 @@
   <status value="active"/>
   <intent value="instance-order"/>
   <medicationReference>
-    <reference value="#etp-med-01"/>
+    <reference value="#atorvastatin-01"/>
     <display value="ATORVASTATIN"/>
   </medicationReference>
   <subject>
