@@ -31,20 +31,9 @@
       <constraint>
         <key value="inv-dh-prac-01"/>
         <severity value="error"/>
-        <human value="The practitioner shall at least have an identifier or a name"/>
-        <expression value="identifier.exists() or name.exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-prac-03"/>
-        <severity value="error"/>
         <human value="One practitioner name shall have at least a family name"/>
         <expression value="name.family.exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"
-        />
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
       </constraint>
     </element>
     <element id="Practitioner.identifier">
@@ -94,9 +83,9 @@
         <key value="inv-dh-prac-02"/>
         <severity value="error"/>
         <human
-          value="If present, an issuer shall at least have a reference that conforms to Identified Organization, an identifier or a display"/>
+          value="If present, an issuer shall at least have a reference that conforms to ADHA Core Organization, an identifier or a display"/>
         <expression
-          value="issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/organization-identified-1')) or $this.identifier.exists() or $this.display.exists())"/>
+          value="issuer.exists() implies issuer.all(($this.reference.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/organization-core-1')) or $this.identifier.exists() or $this.display.exists())"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"
         />
