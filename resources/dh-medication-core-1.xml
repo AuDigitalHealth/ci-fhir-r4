@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medication-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHMedicationCore"/>
   <title value="ADHA Core Medication"/>
   <status value="draft"/>
@@ -124,18 +124,6 @@
     </element>
     <element id="Medication.ingredient.strength">
       <path value="Medication.ingredient.strength"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.batch">
-      <path value="Medication.batch"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.batch.lotNumber">
-      <path value="Medication.batch.lotNumber"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.batch.expirationDate">
-      <path value="Medication.batch.expirationDate"/>
       <mustSupport value="true"/>
     </element>
   </differential>
