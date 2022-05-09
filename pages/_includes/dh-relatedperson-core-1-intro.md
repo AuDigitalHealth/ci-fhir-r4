@@ -59,3 +59,7 @@ Blank cells in the above table indicate that the given element is absent from th
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+
+These profiles build on this profile ([ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html)) to define specific roles:
+* [ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html)
+* [ADHA MHR RelatedPerson](StructureDefinition-dh-relatedperson-mhr-1.html)

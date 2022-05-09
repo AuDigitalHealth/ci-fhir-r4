@@ -130,3 +130,6 @@ This profile is referenced by
 [ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html),  
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and 
 [ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).
+
+These profiles build on this profile ([ADHA Core Patient](StructureDefinition-dh-patient-core-1.html)) to define specific roles:
+* [ADHA MHR Patient](StructureDefinition-dh-patient-mhr-1.html)
