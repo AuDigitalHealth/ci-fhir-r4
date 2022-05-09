@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-practitionerrole-author-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="DHPractitionerRoleAuthoring"/>
   <title value="ADHA Authoring PractitionerRole"/>
   <status value="draft"/>
@@ -29,13 +29,8 @@
       <path value="PractitionerRole"/>
       <short value="A practitioner acting as an author or observer in a healthcare role, on behalf of an organisation"/>
     </element>
-    <element id="PractitionerRole.identifier">
-      <path value="PractitionerRole.identifier"/>
-      <min value="1"/>
-    </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner"/>
-      <min value="1"/>
     </element>
     <element id="PractitionerRole.practitioner.reference">
       <path value="PractitionerRole.practitioner.reference"/>
@@ -48,10 +43,6 @@
     <element id="PractitionerRole.organization.reference">
       <path value="PractitionerRole.organization.reference"/>
       <min value="1"/>
-    </element>
-    <element id="PractitionerRole.healthcareService">
-      <path value="PractitionerRole.healthcareService"/>
-      <max value="1"/>
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom"/>
