@@ -12,9 +12,8 @@ This profile is designed to set a core Substance standard in the context of:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-#### Implementation guidance
-The following guidance applies:
-* TBD
+#### Profile specific guidance
+None.
 
 #### Boundaries and relationships
 This profile is referenced by 
