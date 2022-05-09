@@ -8,10 +8,9 @@ This profile is designed to set a core Organization standard for:
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
-* 
-#### Guidance
-The following guidance applies:
-* an Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
+
+#### Profile specific guidance
+None.
 
 
 #### Boundaries and relationships
