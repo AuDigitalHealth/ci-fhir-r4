@@ -33,17 +33,6 @@
         <key value="inv-dh-heser-01"/>
         <severity value="error"/>
         <human
-          value="The healthcare service shall at least have an identifier with at least a system and a value or a name"/>
-        <expression
-          value="name.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-heser-02"/>
-        <severity value="error"/>
-        <human
           value="If present, the organization providing the service shall at least have a reference, an identifier or a display"/>
         <expression
           value="providedBy.exists() implies providedBy.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
@@ -52,7 +41,7 @@
         />
       </constraint>
       <constraint>
-        <key value="inv-dh-heser-03"/>
+        <key value="inv-dh-heser-02"/>
         <severity value="error"/>
         <human
           value="If present, a location shall at least have a reference, an identifier or a display"/>
@@ -122,6 +111,7 @@
     </element>
     <element id="HealthcareService.name">
       <path value="HealthcareService.name"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="HealthcareService.serviceProvisionCode">
