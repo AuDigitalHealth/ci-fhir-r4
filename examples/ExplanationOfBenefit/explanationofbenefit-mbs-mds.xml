@@ -7,6 +7,11 @@
 	<contained>
 		<PractitionerRole>
 			<id value="01"/>
+			<identifier>
+				<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+					<valueCode value="unknown"/>
+				</extension>
+			</identifier>
 			<practitioner>
 				<reference value="#02"/>
 			</practitioner>
