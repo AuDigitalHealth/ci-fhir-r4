@@ -9,14 +9,8 @@ This profile is designed to set a core Practitioner for:
 * Querying practitioners referenced in PractitionerRole resources
 * Recording or updating a practitioner referenced by a PractitionerRole resource
 
-#### Guidance
-The following guidance applies:
-<ul>
-<li>a local identifier is sent with a <a href="http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/index.html">HPI-O scoped</a> or <a href="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/index.html">ABN-scoped</a> identifier namespace if there isn't a local namespace available (see the <a href="https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions">FAQ</a> for more information)</li>
-<li>if more than one identifier is sent, only one of each type is sent</li>
-<li>if sent, name is sent with at least family name</li>
-<li>an Australian address conforms to <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
-</ul>
+#### Profile specific guidance
+None.
 
 #### Boundaries and relationships
 This profile is referenced by 

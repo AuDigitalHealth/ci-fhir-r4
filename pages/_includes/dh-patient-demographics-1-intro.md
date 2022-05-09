@@ -10,16 +10,12 @@ This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
-#### Guidance
-The following guidance applies:
+#### Profile specific guidance
 * country of birth is represented with [extension:birthPlace](StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace)
-* a local identifier may have an [HPI-O scoped](http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0/index.html) or [ABN-scoped](http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/index.html) identifier namespace if there isn't a local namespace available (see the [FAQ](https://github.com/AuDigitalHealth/ci-fhir-r4/wiki/Frequently-Asked-Questions) for more information)
-* an IHI conforms to [AU IHI](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html)
-* an Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
-* family name may be present in Patient.name.family or Patient.name.text
 * a patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html)
 
-The table below provides guidance on the representation of communication preferences for a patient.
+The table below provides guidance on representing communication preferences for a patient.
+
 <table class="list" style="width:100%">
     <colgroup>
        <col span="1" style="width: 20%;"/>
