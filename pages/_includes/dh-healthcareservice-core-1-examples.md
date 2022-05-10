@@ -115,6 +115,13 @@
       <td colspan="5">Specialty examples:</td>
    </tr>
    <tr>
+      <td><a href="HealthcareService-hi-testdata-optical.html">Test Org -DigitalHealth 4 Optical</a></td>
+      <td>hi-testdata-optical</td>
+      <td><a href="HealthcareService-hi-testdata-optical.xml.html">XML</a></td>
+      <td><a href="HealthcareService-hi-testdata-optical.json.html">JSON</a></td>
+      <td><a href="HealthcareService-hi-testdata-optical.ttl.html">Turtle</a></td>
+   </tr> 
+   <tr>
       <td><a href="HealthcareService-metro-qld-path-lab.html">Metropolitan Pathology QLD</a></td>
       <td>metro-qld-path-lab</td>
       <td><a href="HealthcareService-metro-qld-path-lab.xml.html">XML</a></td>
@@ -231,13 +238,6 @@
       <td><a href="HealthcareService-hi-testdata-physiotherapy.xml.html">XML</a></td>
       <td><a href="HealthcareService-hi-testdata-physiotherapy.json.html">JSON</a></td>
       <td><a href="HealthcareService-hi-testdata-physiotherapy.ttl.html">Turtle</a></td>
-   </tr> 
-   <tr>
-      <td><a href="HealthcareService-hi-testdata-optical.html">Test Org -DigitalHealth 4 Optical</a></td>
-      <td>hi-testdata-optical</td>
-      <td><a href="HealthcareService-hi-testdata-optical.xml.html">XML</a></td>
-      <td><a href="HealthcareService-hi-testdata-optical.json.html">JSON</a></td>
-      <td><a href="HealthcareService-hi-testdata-optical.ttl.html">Turtle</a></td>
    </tr> 
     <tr>
       <td><a href="HealthcareService-nsw-hospital-er.html">Emergency Department NSW Hospital</a></td>
