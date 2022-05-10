@@ -1093,6 +1093,20 @@
             <name value="Pharmacist Shared Medicines List Document Composition for Mac PRIEST"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/report-covid-01"/>
+            </reference>
+            <name value="Pathology Report Payload Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/report-covid-doc-01"/>
+            </reference>
+            <name value="Pathology Report Document Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
+        </resource>
         <!--CONSENT EXAMPLES-->
         <resource>
             <reference>
@@ -1143,6 +1157,14 @@
             </reference>
             <name value="National Cancer Screening Register repository service"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
+        </resource>
+        <!--DIAGNOSTICREPORT EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/covid-01"/>
+            </reference>
+            <name value="Pathology Report DOO3Q978 2019-Novel Coronavirus PCR for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
         </resource>
         <!--DOCUMENTREFERENCE EXAMPLES-->
         <resource>
@@ -2551,6 +2573,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/covid-01"/>
+            </reference>
+            <name value="Observation of SARS-CoV-2 RNA - Not Detected recorded for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/headcircum-01"/>
             </reference>
             <name value="Head Circumference of Mr. Oliver Smith recorded by Mother at 6 months"/>
@@ -3257,6 +3286,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ServiceRequest/order-covid-01"/>
+            </reference>
+            <name value="Completed order for COVID-19 for Mrs. Anne Thompson for use in DiagnosticReport covid-01"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ServiceRequest/order-lk-xray-01"/>
             </reference>
             <name value="Completed order for Left Knee X-Ray for Cleo Moss Esq. (2022)"/>
@@ -3305,6 +3341,13 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
         </resource>
         <!--SPECIMEN EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Specimen/naso-swab-01"/>
+            </reference>
+            <name value="Nasopharyngeal Swab for Mrs. Anne Thompson"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+        </resource>
         <resource>
             <reference>
                 <reference value="Specimen/urine-01"/>

@@ -75,6 +75,13 @@
       <td><a href="Bundle-psml-03-doc.ttl.html">Turtle</a></td>
    </tr>
    <tr>
+      <td><a href="Bundle-report-covid-doc-01.html">Pathology Report Document Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson</a></td>
+      <td>report-covid-doc-01</td>
+      <td><a href="Bundle-report-covid-doc-01.xml.html">XML</a></td>
+      <td><a href="Bundle-report-covid-doc-01.json.html">JSON</a></td>
+      <td><a href="Bundle-report-covid-doc-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
       <td><a href="Bundle-shs-01-doc.html">Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
       <td>shs-01-doc</td>
       <td><a href="Bundle-shs-01-doc.xml.html">XML</a></td>

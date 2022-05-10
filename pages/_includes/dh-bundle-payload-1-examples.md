@@ -81,4 +81,11 @@
       <td><a href="Bundle-mds.json.html">JSON</a></td>
       <td><a href="Bundle-mds.ttl.html">Turtle</a></td>
    </tr>
+   <tr>
+      <td><a href="Bundle-report-covid-01.html">Pathology Report Payload Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson</a></td>
+      <td>report-covid-01</td>
+      <td><a href="Bundle-report-covid-01.xml.html">XML</a></td>
+      <td><a href="Bundle-report-covid-01.json.html">JSON</a></td>
+      <td><a href="Bundle-report-covid-01.ttl.html">Turtle</a></td>
+   </tr>
 </table>
