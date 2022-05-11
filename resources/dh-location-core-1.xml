@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-location-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHLocationCore"/>
   <title value="ADHA Core Location"/>
   <status value="draft" />
@@ -52,10 +52,6 @@
       <path value="Location.identifier"/>
       <short value="Unique code or number identifying the location to its users" />
       <definition value="Unique code or number identifying the location to its users." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Location.status">
-      <path value="Location.status"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.name">
