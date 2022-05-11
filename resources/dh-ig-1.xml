@@ -2876,6 +2876,13 @@
         <!--PATIENT EXAMPLES-->
         <resource>
             <reference>
+                <reference value="Patient/baby-smith-trevor"/>
+            </reference>
+            <name value="Baby of Rosalia SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Patient/hi-testdata-frazier-brady"/>
             </reference>
             <name value="Brady FRAZIER (Vendor Environment HI Test Data plus date accuracy indicator)"/>
@@ -2970,6 +2977,20 @@
                 <reference value="Patient/mhr-tjakamarra-billy"/>
             </reference>
             <name value="Billy Tjakamarra (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/mhr-smith-rosalia"/>
+            </reference>
+            <name value="Rosalia SMITH (My Health Record Patient)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/mhr-smith-trevor"/>
+            </reference>
+            <name value="Trevor SMITH (My Health Record Patient)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
         </resource>
         <resource>
@@ -3250,6 +3271,13 @@
         <!--RELATEDPERSON EXAMPLES-->
         <resource>
             <reference>
+                <reference value="RelatedPerson/baby-smith-trevor"/>
+            </reference>
+            <name value="Baby of Rosalia SMITH - child of Mrs. Rosalia SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="RelatedPerson/mhr-field-sally"/>
             </reference>
             <name value="Ms. Sally FIELD - mother of Mr. Oliver SMITH"/>
@@ -3261,6 +3289,41 @@
             </reference>
             <name value="Mr. Oliver SMITH - child of Ms. Sally FIELD"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-smith-bob-oliver"/>
+            </reference>
+            <name value="Mr. Bob SMITH - father of Mr. Oliver SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-smith-bob-trevor"/>
+            </reference>
+            <name value="Mr. Bob SMITH - father of Trevor SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-smith-rosalia-baby"/>
+            </reference>
+            <name value="Mrs. Rosalia SMITH - mother of Baby of Rosalia SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-smith-rosalia-oliver"/>
+            </reference>
+            <name value="Mrs. Rosalia SMITH - stepmother of Mr. Oliver SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-smith-rosalia-trevor"/>
+            </reference>
+            <name value="Mrs. Rosalia SMITH - mother of Trevor SMITH"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
         </resource>
         <!--SERVICEREQUEST EXAMPLES-->
         <resource>

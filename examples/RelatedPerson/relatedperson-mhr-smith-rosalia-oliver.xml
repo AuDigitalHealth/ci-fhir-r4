@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelatedPerson xmlns="http://hl7.org/fhir">
+    <id value="mhr-smith-rosalia-oliver"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
+    </meta>
+    <identifier>
+        <use value="official"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NI"/>
+                <display value="National unique individual identifier"/>
+            </coding>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+        <value value="8003608166895854"/>
+    </identifier>
+    <patient>
+        <reference value="Patient/mhr-smith-oliver"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608833357361"/>
+        </identifier>
+    </patient>
+    <relationship>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1072531000168103"/>
+            <display value="Nominated representative"/>
+        </coding>
+    </relationship>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="STPMTH"/>
+            <display value="stepmother"/>
+        </coding>
+    </relationship>
+    <name>
+        <family value="SMITH"/>
+        <given value="Rosalia"/>
+        <prefix value="Mrs."/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="0491 579 212"/>
+        <use value="mobile"/>
+    </telecom>
+</RelatedPerson>
