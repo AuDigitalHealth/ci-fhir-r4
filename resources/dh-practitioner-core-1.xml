@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-practitioner-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.1.0"/>
   <name value="DHPractitionerCore"/>
   <title value="ADHA Core Practitioner"/>
   <status value="draft"/>
@@ -28,13 +28,6 @@
     <element id="Practitioner">
       <path value="Practitioner"/>
       <short value="A person with a formal responsibility in the provisioning of services"/>
-      <constraint>
-        <key value="inv-dh-prac-01"/>
-        <severity value="error"/>
-        <human value="One practitioner name shall have at least a family name"/>
-        <expression value="name.family.exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
-      </constraint>
     </element>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier"/>
@@ -65,6 +58,17 @@
     <element id="Practitioner.name">
       <path value="Practitioner.name"/>
       <min value="1"/>
+      <constraint>
+        <key value="inv-dh-prac-01"/>
+        <severity value="error"/>
+        <human
+          value="At least text or family name shall be present"/>
+        <expression
+          value="text.exists() or family.exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"
+        />
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Practitioner.telecom">
