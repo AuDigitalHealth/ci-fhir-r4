@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-organization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="DHOrganizationCore"/>
   <title value="ADHA Core Organization"/>
   <status value="draft"/>
@@ -111,6 +111,7 @@
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Organization.address">
       <path value="Organization.address"/>
@@ -125,26 +126,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.contact.purpose">
-      <path value="Organization.contact.purpose"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.contact.name">
-      <path value="Organization.contact.name"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.contact.telecom">
-      <path value="Organization.contact.telecom"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.contact.address">
-      <path value="Organization.contact.address"/>
       <mustSupport value="true"/>
     </element>
   </differential>
