@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-relatedperson-author-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1" />
-  <version value="0.2.0" />
+  <version value="0.2.1" />
   <name value="DHRelatedPersonAuthor" />
   <title value="ADHA Authoring RelatedPerson" />
   <status value="draft" />
@@ -26,12 +26,12 @@
     <element id="RelatedPerson">
       <path value="RelatedPerson" />
       <constraint>
-        <key value="inv-dh-relper-01"/>
+        <key value="inv-dh-relper-02"/>
         <severity value="error"/>
         <human value="At least one related person name shall have a family name"/>
         <expression value="name.family.exists()"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </constraint>
     </element>
