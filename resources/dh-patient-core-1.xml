@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-patient-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="DHPatientCore"/>
   <title value="ADHA Core Patient"/>
   <status value="draft"/>
@@ -31,7 +31,7 @@
       <constraint>
         <key value="inv-dh-pat-01"/>
         <severity value="error"/>
-        <human value="At least one patient identifier shall at least have a system and a value"/>
+        <human value="At least one patient identifier shall be valid"/>
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"
         />
@@ -127,6 +127,17 @@
       <path value="Patient.name"/>
       <min value="1"/>
       <comment value="A patient may have multiple names with different uses or applicable periods. At least one name SHOULD be the name the patient is considered to have for administrative and record keeping purposes - family name is used to enable matching against patient records."/>
+      <constraint>
+        <key value="inv-dh-pat-04"/>
+        <severity value="error"/>
+        <human
+          value="At least text, family name, or given name shall be present"/>
+        <expression
+          value="text.exists() or family.exists() or given.exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"
+        />
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Patient.telecom">

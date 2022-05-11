@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-patient-demographics-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHPatientDemographics"/>
   <title value="ADHA Patient Demographics"/>
   <status value="draft"/>
@@ -42,7 +42,7 @@
       <constraint>
         <key value="inv-dh-pat-02"/>
         <severity value="error"/>
-        <human value="At least one patient identifier shall at least have a system and a value"/>
+        <human value="At least one patient identifier shall be valid"/>
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"

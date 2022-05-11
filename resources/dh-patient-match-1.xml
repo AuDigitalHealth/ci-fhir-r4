@@ -31,7 +31,7 @@
       <constraint>
         <key value="inv-dh-pat-01"/>
         <severity value="error"/>
-        <human value="At least one patient identifier shall at least have a system and a value"/>
+        <human value="At least one patient identifier shall be valid"/>
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-match-1"/>
       </constraint>
