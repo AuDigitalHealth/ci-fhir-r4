@@ -37,7 +37,7 @@
         <human
           value="If present, name shall at least have text, family name, or given name"/>
         <expression
-          value="name.exists() implies name.all(name.text.exists() or name.family.exists() or name.given.exists())"/>
+          value="name.exists() implies name.all(text.exists() or family.exists() or given.exists())"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />

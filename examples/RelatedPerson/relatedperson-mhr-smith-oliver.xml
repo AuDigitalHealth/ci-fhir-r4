@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelatedPerson xmlns="http://hl7.org/fhir">
-    <id value="mhr-field-sally"/>
+    <id value="mhr-smith-oliver"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
     </meta>
@@ -12,7 +11,7 @@
             <table>
                 <tr>
                     <td>NAME</td>
-                    <td>Ms. Sally FIELD</td>
+                    <td>Mr. Oliver SMITH</td>
                 </tr>
                 <tr>
                     <td>IHI NUMBER</td>
@@ -20,15 +19,11 @@
                 </tr>
                 <tr>
                     <td>RELATED TO</td>
-                    <td>Mother of Oliver SMITH</td>
+                    <td>Child of Sally FIELD</td>
                 </tr>
                 <tr>
                     <td>GENDER</td>
-                    <td>Female</td>
-                </tr>
-                <tr>
-                    <td>MOBILE</td>
-                    <td>0491 578 957</td>
+                    <td>Male</td>
                 </tr>
             </table>
         </div>
@@ -43,10 +38,10 @@
             </coding>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-        <value value="8003608333563104"/>
+        <value value="8003608833357361"/>
     </identifier>
     <patient>
-        <reference value="Patient/mhr-smith-oliver"/>
+        <reference value="Patient/mhr-field-sally"/>
         <identifier>
             <type>
                 <coding>
@@ -56,26 +51,21 @@
                 </coding>
             </type>
             <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
-            <value value="8003608833357361"/>
+            <value value="8003608333563104"/>
         </identifier>
     </patient>
     <relationship>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
-            <code value="MTH"/>
-            <display value="mother"/>
+            <code value="CHILD"/>
+            <display value="child"/>
         </coding>
     </relationship>
     <name>
         <use value="usual"/>
-        <family value="FIELD"/>
-        <given value="Sally"/>
-        <prefix value="Ms."/>
+        <family value="SMITH"/>
+        <given value="Oliver"/>
+        <prefix value="Mr."/>
     </name>
-    <telecom>
-        <system value="phone"/>
-        <value value="0491 578 957"/>
-        <use value="mobile"/>
-    </telecom>
-    <gender value="female"/>    
+    <gender value="male"/>    
 </RelatedPerson>

@@ -3252,8 +3252,15 @@
             <reference>
                 <reference value="RelatedPerson/mhr-field-sally"/>
             </reference>
-            <name value="Ms. Sally FIELD (My Health Record Patient)"/>
+            <name value="Ms. Sally FIELD - mother of Mr. Oliver SMITH"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/mhr-smith-oliver"/>
+            </reference>
+            <name value="Mr. Oliver SMITH - child of Ms. Sally FIELD"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
         </resource>
         <!--SERVICEREQUEST EXAMPLES-->
         <resource>
