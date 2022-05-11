@@ -305,6 +305,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
+                            <li><a href="StructureDefinition-dh-organization-contact-1.html">ADHA Organization Contact</a></li>
                                 <li><a href="StructureDefinition-dh-device-implantable-1.html">ADHA Implantable Medical Device</a></li>
                             </ul>
                         </td>                          

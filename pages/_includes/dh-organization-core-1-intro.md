@@ -51,3 +51,6 @@ This profile is referenced by
 [ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), 
 [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), and 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html). 
+
+These profiles build on this profile ([ADHA Core Organization](StructureDefinition-dh-organization-core-1.html)) to define specific roles:
+* [ADHA Organization Contact](StructureDefinition-dh-organization-contact-1.html)
