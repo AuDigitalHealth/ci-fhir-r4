@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-flag-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHFlagCore"/>
   <title value="ADHA Core Flag"/>
   <status value="draft"/>
@@ -27,24 +27,6 @@
   <differential>
     <element id="Flag">
       <path value="Flag"/>
-      <constraint>
-        <key value="inv-dh-flg-01"/>
-        <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
-      </constraint>
-      <constraint>
-        <key value="inv-dh-flg-02"/>
-        <severity value="error"/>
-        <human
-          value="The author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
-      </constraint>
     </element>
     <element id="Flag.identifier">
       <path value="Flag.identifier"/>
@@ -75,6 +57,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-flg-01"/>
+        <severity value="error"/>
+        <human value="At least reference or display or a valid identifier shall be present"/>
+        <expression value="reference.exists() or display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Flag.period">
@@ -105,6 +94,13 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
+      <constraint>
+        <key value="inv-dh-flg-02"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
   </differential>

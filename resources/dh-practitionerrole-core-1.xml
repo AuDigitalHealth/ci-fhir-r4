@@ -119,7 +119,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"
         />
       </type>
-      <mustSupport value="true"/>
       <constraint>
         <key value="inv-dh-prarol-04"/>
         <severity value="error"/>
@@ -131,6 +130,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"
         />
       </constraint>
+      <mustSupport value="true"/>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
