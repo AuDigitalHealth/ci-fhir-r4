@@ -12,6 +12,11 @@ This profile is designed to set a Composition standard for:
 * Query for a document for a patient
 * Record or update a document record for a patient
 
+
+#### Profile specific guidance
+None.
+
+
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), and

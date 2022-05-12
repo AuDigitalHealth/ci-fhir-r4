@@ -11,9 +11,9 @@ This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
-#### Guidance
-The following guidance applies:
+#### Profile specific guidance
 * status is 'completed'
+
 
 #### Boundaries and relationships
 This profile is referenced by 

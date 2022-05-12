@@ -6,9 +6,8 @@ This profile is designed to set an Observation standard for:
 * TBD
 
 
-#### Implementation guidance
-The following guidance applies:
-* TBD
+#### Profile specific guidance
+TBD.
 
 
 #### Boundaries and relationships

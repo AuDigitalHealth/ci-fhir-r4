@@ -11,8 +11,7 @@ This profile is designed to set a PractitionerRole standard for:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-#### Guidance
-The following guidance applies:
+#### Profile specific guidance
 * status will be 'finished' 
 * type will support categorisation of the event from which the medicines list was generated, for example a code indicating a home medicines review
 * period is equal to, or prior to, any referencing Composition or List date

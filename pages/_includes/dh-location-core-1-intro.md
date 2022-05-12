@@ -7,9 +7,10 @@ This profile is designed to set a core Location for:
 * Insert ADHA API Endpoint
 * Insert ADHA API Endpoint
 
-#### Guidance
-The following guidance applies:
-* TBD
+
+#### Profile specific guidance
+None.
+
 
 #### Boundaries and relationships
 This profile is referenced by 

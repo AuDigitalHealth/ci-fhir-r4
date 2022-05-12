@@ -7,9 +7,8 @@ This profile is designed to set a Device standard for:
 * TBD
 
 
-#### Guidance
-The following guidance applies:
-* TBD
+#### Profile specific guidance
+None.
 
 
 #### Boundaries and relationships

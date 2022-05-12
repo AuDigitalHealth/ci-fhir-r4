@@ -12,13 +12,11 @@ This profile is designed to set a Composition standard for:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-#### Guidance
-A narrative only Medicare Overview (Level 2) is supplied by:
-* populating section.text for each section
-* not populating section.entry or section.emptyReason for each section
 
-A structured Medicare Overview (Level 3A or 3B) is supplied by:
-* populating section.entry or section.emptyReason for each section
+#### Profile specific guidance
+* A narrative only Medicare Overview (Level 2) is supplied by populating section.text for each section but not populating any section.entry or section.emptyReason
+* A structured Medicare Overview (Level 3A or 3B) is supplied by populating section.entry or section.emptyReason for each section
+
 
 #### Boundaries and relationships
 This profile is referenced by 

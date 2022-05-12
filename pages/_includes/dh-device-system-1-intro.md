@@ -7,9 +7,9 @@ This profile is designed to set a system Device standard for:
 * exchanging a FHIR Document
 * exchanging a FHIR Message
 
-#### Guidance
-The following guidance applies:
-* TBD
+
+#### Profile specific guidance
+None.
 
 
 #### Boundaries and relationships

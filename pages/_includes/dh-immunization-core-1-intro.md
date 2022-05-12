@@ -10,8 +10,10 @@ This profile is designed to set a core Immunization standard for:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
+
 #### Profile specific guidance
 None.
+
 
 #### Boundaries and relationships
 This profile is referenced by 

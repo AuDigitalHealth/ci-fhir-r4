@@ -13,6 +13,10 @@ This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
+#### Profile specific guidance
+TBD.
+
+
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA National Cancer Screening Program Participation Composition](StructureDefinition-dh-composition-ncspp-1.html), and 

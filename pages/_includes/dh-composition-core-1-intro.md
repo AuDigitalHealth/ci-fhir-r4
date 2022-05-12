@@ -6,6 +6,11 @@ This profile identifies the additional constraints, extensions, and value sets t
 This profile is designed to set a core Composition standard for:
 * TBD
 
+
+#### Profile specific guidance
+None.
+
+
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Core TBD](StructureDefinition-dh-tbd-core-1.html), 

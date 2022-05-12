@@ -3,13 +3,12 @@ The purpose of this profile is to define  a core representation of a diagnostic 
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [DiagnosticReport](http://hl7.org/fhir/R4/diagnosticreport.html) that are supported. 
 
-This profile is designed to set a Device standard for:
+This profile is designed to set a DiagnosticReport standard for:
 * TBD
 
 
-#### Guidance
-The following guidance applies:
-* TBD
+#### Profile specific guidance
+None.
 
 
 #### Boundaries and relationships

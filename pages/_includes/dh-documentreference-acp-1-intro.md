@@ -11,6 +11,10 @@ This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
+#### Profile specific guidance
+None.
+
+
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Advance Care Planning Composition](StructureDefinition-dh-composition-acp-1.html).

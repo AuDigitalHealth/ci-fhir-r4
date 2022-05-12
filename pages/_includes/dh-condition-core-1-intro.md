@@ -11,11 +11,11 @@ This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
-#### Guidance
-The following guidance applies:
+#### Profile specific guidance
 * verificationStatus is 'confirmed'
 * an active condition is sent with clinicalStatus 'active'
 * a refuted condition is sent with a negation code and verificationStatus of ‘unconfirmed’ or ‘confirmed’ depending on the level of certainty
+
 
 #### Boundaries and relationships
 This profile is referenced by 

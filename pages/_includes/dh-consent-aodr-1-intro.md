@@ -12,7 +12,7 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-None.
+TBD.
 
 
 #### Boundaries and relationships
