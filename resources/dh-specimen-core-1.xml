@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-specimen-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.1.0"/>
   <name value="DHSpecimenCore"/>
   <title value="ADHA Core Specimen"/>
   <status value="draft"/>
@@ -31,16 +31,6 @@
         value="A specimen collected from a patient for the purposes of a diagnostic investigation"/>
       <definition
         value="A sample collected from a patient for the purposes of a diagnostic investigation."/>
-      <constraint>
-        <key value="inv-dh-spc-01"/>
-        <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-      </constraint>
     </element>
     <element id="Specimen.identifier">
       <path value="Specimen.identifier"/>
@@ -62,6 +52,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-spc-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.request">
@@ -81,7 +78,7 @@
         <key value="inv-dh-spc-02"/>
         <severity value="error"/>
         <human
-          value="If present, the collector shall at least have a reference or an identifier with at least a system and a value"/>
+          value="If present, the collector shall at least have a reference or a valid identifier"/>
         <expression
           value="collector.exists() implies collector.reference.exists() or collector.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
@@ -120,6 +117,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
       </constraint>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
+      </binding>
     </element>
     <element id="Specimen.collection.fastingStatus[x]">
       <path value="Specimen.collection.fastingStatus[x]"/>
