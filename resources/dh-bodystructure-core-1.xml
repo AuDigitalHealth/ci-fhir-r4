@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-bodystructure-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.1.1"/>
   <name value="DHBodyStructureCore"/>
   <title value="ADHA Core BodyStructure"/>
   <status value="draft"/>
@@ -31,27 +31,12 @@
       <constraint>
         <key value="inv-dh-bodstr-01"/>
         <severity value="error"/>
-        <human
-          value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-bodstr-02"/>
-        <severity value="error"/>
         <human value="The body structure shall at least have a location or a description"/>
         <expression value="location.exists() or description.exists()"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"
         />
       </constraint>
-    </element>
-    <element id="BodyStructure.identifier">
-      <path value="BodyStructure.identifier"/>
-      <mustSupport value="true"/>
     </element>
     <element id="BodyStructure.active">
       <path value="BodyStructure.active"/>
@@ -63,6 +48,15 @@
     </element>
     <element id="BodyStructure.location">
       <path value="BodyStructure.location"/>
+      <constraint>
+        <key value="inv-dh-bodstr-02"/>
+        <severity value="error"/>
+        <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
+        <expression
+          value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
@@ -83,10 +77,6 @@
       <path value="BodyStructure.description"/>
       <mustSupport value="true"/>
     </element>
-    <element id="BodyStructure.image">
-      <path value="BodyStructure.image"/>
-      <mustSupport value="true"/>
-    </element>
     <element id="BodyStructure.patient">
       <path value="BodyStructure.patient"/>
       <type>
@@ -94,6 +84,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-bodstr-03"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
   </differential>
