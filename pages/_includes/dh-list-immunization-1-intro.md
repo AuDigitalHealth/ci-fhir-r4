@@ -17,6 +17,7 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).
-
+[ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html), 
+[ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), and
+[ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html).
  

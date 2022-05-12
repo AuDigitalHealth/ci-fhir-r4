@@ -19,5 +19,5 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core Medication](StructureDefinition-dh-medication-core-1.html), and 
-[Australian Digital Health Agency Core Substance](StructureDefinition-dh-substance-core-1.html).
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), and 
+[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html). 

@@ -10,7 +10,3 @@ This profile is designed to set a Patient standard:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-
-#### Boundaries and relationships
-This profile is referenced by 
-TBD.

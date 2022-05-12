@@ -17,9 +17,10 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html),  
-[ADHA Prescription and or Dispense History List](StructureDefinition-dh-list-medication-pdl-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+[ADHA Prescription and or Dispense History List](StructureDefinition-dh-list-medication-pdl-1.html), 
+[ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html), 
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and 
+[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html).
 
-These profiles build on this profile ([ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html)) to define specific immunisation record types:
-* [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html)

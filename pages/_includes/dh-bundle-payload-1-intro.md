@@ -6,5 +6,10 @@ This profile identifies the additional constraints, extensions, and value sets t
 This profile is designed to set a core Bundle standard for:
 * exchanging a FHIR Payload
 
+
 #### Profile specific guidance
 None.
+
+#### Boundaries and relationships
+This profile ([ADHA Payload Bundle](StructureDefinition-dh-bundle-payload-1.html)) is a specialised use case profile of an [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html).
+

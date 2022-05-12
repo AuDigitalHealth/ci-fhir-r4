@@ -19,8 +19,8 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA TBD](StructureDefinition-dh-TBD-core-1.html), and 
-[ADHA TBD](StructureDefinition-dh-TBD-core-1.html).
+[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html), and 
+[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html).
 
-These profiles build on this profile ([ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-prac-1.html)) to define specific document compositions:
-* [ADHA Practitioner Shared Medicines List Composition](StructureDefinition-dh-composition-sml-prac-1.html)
+These profiles build on this profile ([ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html)) to define specific document compositions:
+* [ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html)

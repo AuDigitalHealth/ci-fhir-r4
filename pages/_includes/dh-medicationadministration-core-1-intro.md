@@ -17,5 +17,4 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html), and 
-[Australian Digital Health Agency Core TBD](StructureDefinition-dh-tbd-core-1.html).
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 

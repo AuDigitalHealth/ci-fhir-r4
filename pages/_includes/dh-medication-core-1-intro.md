@@ -25,9 +25,10 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
-[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html),
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html),
-[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
-[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-1.html), and 
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html),
+[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
+[ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), and 
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html).
