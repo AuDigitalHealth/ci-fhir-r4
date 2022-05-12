@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-immunization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.3"/>
   <name value="DHImmunizationCore"/>
   <title value="ADHA Core Immunization"/>
   <status value="draft"/>
@@ -27,17 +27,6 @@
   <differential>
     <element id="Immunization">
       <path value="Immunization"/>
-      <constraint>
-        <key value="inv-dh-imm-01"/>
-        <severity value="error"/>
-        <human
-          value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"
-        />
-      </constraint>
     </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension"/>
@@ -82,6 +71,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-imm-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.encounter">
@@ -103,7 +99,7 @@
         <key value="inv-dh-imm-02"/>
         <severity value="error"/>
         <human
-          value="The actor shall at least have a reference or an identifier with at least a system and a value"/>
+          value="The actor shall at least have a reference or a valid identifier"/>
         <expression
           value="actor.reference.exists() or actor.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
@@ -134,17 +130,6 @@
     </element>
     <element id="Immunization.reasonCode">
       <path value="Immunization.reasonCode"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Immunization.reasonReference[x]">
-      <path value="Immunization.reasonReference[x]"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-      </type>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.protocolApplied">
