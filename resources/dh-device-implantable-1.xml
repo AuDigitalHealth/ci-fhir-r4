@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-implantable-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-implantable-1" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="DHImplantableMedicalDevice" />
   <title value="ADHA Implantable Medical Device" />
   <status value="draft" />
@@ -25,13 +25,6 @@
   <differential>
     <element id="Device">
       <path value="Device" />
-      <constraint>
-        <key value="inv-dh-dev-01"/>
-        <severity value="error"/>
-        <human value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-implantable-1" />
-      </constraint>
     </element>
     <element id="Device.udiCarrier">
       <path value="Device.udiCarrier" />
@@ -82,6 +75,13 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
+      <constraint>
+        <key value="inv-dh-dev-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-implantable-1"/>
+      </constraint>
       <mustSupport value="true" />
     </element>
   </differential>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-participant-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
-  <version value="0.0.1" />
+  <version value="0.0.2" />
   <name value="DHDeviceParticipant" />
   <title value="ADHA Participant Device" />
   <status value="draft" />
@@ -28,14 +28,14 @@
       <constraint>
         <key value="inv-dh-dev-01"/>
         <severity value="error"/>
-        <human value="If present, an owner shall at least have a reference or display or an identifier with at least a system and a value"/>
+        <human value="If present, an owner shall at least have a reference or display or a valid identifier"/>
         <expression value="owner.exists() implies owner.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-dev-02"/>
         <severity value="error"/>
-        <human value="If present, a location shall at least have a reference or display or an identifier with at least a system and a value"/>
+        <human value="If present, a location shall at least have a reference or display or a valid identifier"/>
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
       </constraint>

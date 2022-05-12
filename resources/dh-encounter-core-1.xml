@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-encounter-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHEncounterCore"/>
   <title value="ADHA Core Encounter"/>
   <status value="draft"/>
@@ -27,16 +27,6 @@
   <differential>
     <element id="Encounter">
       <path value="Encounter"/>
-      <constraint>
-        <key value="inv-dh-enc-01"/>
-        <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
-      </constraint>
     </element>
     <element id="Encounter.extension:encounterDescription">
       <path value="Encounter.extension"/>
@@ -75,6 +65,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-enc-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Encounter.participant">
@@ -83,12 +80,9 @@
       <constraint>
         <key value="inv-dh-enc-02"/>
         <severity value="error"/>
-        <human
-          value="The participant shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="individual.reference.exists() or individual.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mustSupport value="true"/>
     </element>
@@ -141,10 +135,10 @@
     <element id="Encounter.location">
       <path value="Encounter.location"/>
       <constraint>
-        <key value="inv-dh-enc-02"/>
+        <key value="inv-dh-enc-03"/>
         <severity value="error"/>
         <human
-          value="The location shall at least have a reference or an identifier with at least a system and a value"/>
+          value="The location shall at least have a reference or a valid identifier"/>
         <expression
           value="location.reference.exists() or location.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
@@ -157,7 +151,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>

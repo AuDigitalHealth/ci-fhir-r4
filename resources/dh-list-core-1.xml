@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHListCore"/>
   <title value="ADHA Core List"/>
   <status value="draft"/>
@@ -31,7 +31,7 @@
         <key value="inv-dh-lst-01"/>
         <severity value="error"/>
         <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
+          value="The subject shall at least have a reference or a valid identifier"/>
         <expression
           value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
@@ -40,7 +40,7 @@
         <key value="inv-dh-lst-02"/>
         <severity value="error"/>
         <human
-          value="If present, a source shall at least have a reference or an identifier with at least a system and a value"/>
+          value="If present, a source shall at least have a reference or a valid identifier"/>
         <expression
           value="source.exists() implies source.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
@@ -49,7 +49,7 @@
         <key value="inv-dh-lst-03"/>
         <severity value="error"/>
         <human
-          value="The author role shall at least have a reference that conforms to ADHA Authoring RelatedPerson or an identifier with at least a system and a value"/>
+          value="The author role shall at least have a reference that conforms to ADHA Authoring RelatedPerson or a valid identifier"/>
         <expression
           value="extension('http://hl7.org.au/fhir/StructureDefinition/author-related-person').valueReference.reference.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1').exists() or extension('http://hl7.org.au/fhir/StructureDefinition/author-related-person').valueReference.identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>

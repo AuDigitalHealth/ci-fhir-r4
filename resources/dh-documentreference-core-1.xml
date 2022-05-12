@@ -3,7 +3,7 @@
   <id value="dh-documentreference-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHDocumentReferenceCore"/>
   <title value="ADHA Core DocumentReference"/>
   <status value="draft"/>
@@ -29,32 +29,10 @@
     <element id="DocumentReference">
       <path value="DocumentReference"/>
       <constraint>
-        <key value="inv-dh-docref-01"/>
-        <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-docref-02"/>
-        <severity value="error"/>
-        <human
-          value="The author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="author.reference.exists() or author.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"
-        />
-      </constraint>
-      <constraint>
         <key value="inv-dh-docref-03"/>
         <severity value="error"/>
         <human
-          value="If present, a custodian shall at least have a reference or an identifier with at least a system and a value"/>
+          value="If present, a custodian shall at least have a reference or a valid identifier"/>
         <expression
           value="custodian.exists() implies custodian.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source
@@ -89,12 +67,19 @@
     </element>
     <element id="DocumentReference.subject">
       <path value="DocumentReference.subject"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
-      <min value="1"/>
+      <constraint>
+        <key value="inv-dh-docref-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.date">
@@ -104,6 +89,7 @@
     </element>
     <element id="DocumentReference.author">
       <path value="DocumentReference.author"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
@@ -118,7 +104,13 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
-      <min value="1"/>
+      <constraint>
+        <key value="inv-dh-docref-02"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.authenticator">
