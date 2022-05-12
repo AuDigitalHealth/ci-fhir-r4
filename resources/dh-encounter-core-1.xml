@@ -137,12 +137,9 @@
       <constraint>
         <key value="inv-dh-enc-03"/>
         <severity value="error"/>
-        <human
-          value="If present, location shall at least have a reference or display or a valid identifier"/>
-        <expression
-          value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+        <human value="If present, location shall at least have a reference or display or a valid identifier"/>
+        <expression value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mustSupport value="true"/>
     </element>
@@ -151,7 +148,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>
