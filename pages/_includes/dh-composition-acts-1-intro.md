@@ -18,7 +18,7 @@ None.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
+This profile is not referenced by another profile in this implementation guide.  
 
-[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html), and 
-[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html).
+This profile ([ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html)) is a specialised use case profile of an [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html).
+

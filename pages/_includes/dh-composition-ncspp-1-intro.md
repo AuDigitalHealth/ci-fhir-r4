@@ -24,7 +24,5 @@ None.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html), and 
-[ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html).
+This profile is not referenced by another profile in this implementation guide.  
 

@@ -19,4 +19,6 @@ This profile is used by the following APIs:
 None.
 
 
+#### Boundaries and relationships
+This profile is not referenced by another profile in this implementation guide.  
 

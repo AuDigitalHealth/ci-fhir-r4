@@ -14,6 +14,7 @@ None.
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html),
+[ADHA Advance Care Directive Custodian Record Composition](StructureDefinition-dh-composition-acdcr-1.html), 
 [ADHA Advance Care Planning Composition](StructureDefinition-dh-composition-acp-1.html),
 [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html),
 [ADHA Core Composition](StructureDefinition-dh-composition-core-1.html.html), 

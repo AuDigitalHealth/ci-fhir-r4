@@ -11,5 +11,4 @@ This profile is designed to set a core Bundle standard for:
 None.
 
 #### Boundaries and relationships
-This profile ([ADHA Payload Bundle](StructureDefinition-dh-bundle-payload-1.html)) is a specialised use case profile of an [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html).
-
+This profile is not referenced by another profile in this implementation guide.  
