@@ -10,7 +10,3 @@ This profile is designed to set a Device standard for:
 #### Profile specific guidance
 None.
 
-
-#### Boundaries and relationships
-This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).

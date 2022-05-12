@@ -13,8 +13,7 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html), and 
-[TBD](StructureDefinition-TBD-1.html).
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 
 
 These profiles build on this profile ([ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html)) to define specific roles:
 * [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-odr-1.html)

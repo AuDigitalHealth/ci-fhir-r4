@@ -20,6 +20,6 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html).
+[ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html). 
 
  

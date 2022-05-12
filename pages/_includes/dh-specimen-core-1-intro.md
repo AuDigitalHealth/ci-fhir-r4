@@ -14,4 +14,6 @@ This profile is designed to set a core Specimen for:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[Australian Digital Health Agency Core Observation](StructureDefinition-dh-observation-core-1.html).
+[ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), 
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and 
+[ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html). 

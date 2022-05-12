@@ -16,5 +16,6 @@ None.
 
 
 #### Boundaries and relationships
-This profile is referenced by [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html),
+This profile is referenced by 
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), and 
 [ADHA Prescription and or Dispense History List](StructureDefinition-dh-list-medication-pdl-1.html).

@@ -17,6 +17,8 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
+[ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), 
+[ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), and 
 [ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html).
 
 These profiles build on this profile ([ADHA Core List](StructureDefinition-dh-list-core-1.html)) to define specific document compositions:

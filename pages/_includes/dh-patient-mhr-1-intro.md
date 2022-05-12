@@ -75,6 +75,4 @@ Blank cells in the above table indicate that the given element is absent from th
 
 #### Boundaries and relationships
 This profile is referenced by
-[TBD](StructureDefinition-dh-TBD-1.html),
-[TBD](StructureDefinition-dh-TBD-1.html), and
-[TBD](StructureDefinition-dh-TBD-1.html).
+[ADHA My Health Record RelatedPerson](StructureDefinition-dh-relatedperson-mhr-1.html).

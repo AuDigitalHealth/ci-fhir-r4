@@ -19,9 +19,10 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
+[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
+[ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
-[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
+[ADHA Core List](StructureDefinition-dh-list-core-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).

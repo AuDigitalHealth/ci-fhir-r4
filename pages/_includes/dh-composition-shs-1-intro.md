@@ -19,8 +19,6 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-This profile is referenced by 
 [ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html), and 
 [ADHA CapabilityStatement TBD](StructureDefinition-dh-TBD-core-1.html).
 
-This profile ([ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html)) is a specialised use case profile of an [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html).

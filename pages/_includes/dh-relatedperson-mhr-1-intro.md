@@ -50,7 +50,3 @@ The table below provides guidance on representing communication preferences for 
 
 Blank cells in the above table indicate that the given element is absent from the resource.
 
-
-#### Boundaries and relationships
-This profile is referenced by 
-[TBD](StructureDefinition-TBD-1.html).
