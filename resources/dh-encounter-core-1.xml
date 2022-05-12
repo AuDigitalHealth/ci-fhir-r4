@@ -80,8 +80,8 @@
       <constraint>
         <key value="inv-dh-enc-02"/>
         <severity value="error"/>
-        <human value="At least reference or a valid identifier shall be present"/>
-        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <human value="If present, an individual shall at least have a reference or a valid identifier shall be present"/>
+        <expression value="individual.exists() implies individual.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -138,7 +138,7 @@
         <key value="inv-dh-enc-03"/>
         <severity value="error"/>
         <human
-          value="The location shall at least have a reference or display or a valid identifier"/>
+          value="If present, location shall at least have a reference or display or a valid identifier"/>
         <expression
           value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source
