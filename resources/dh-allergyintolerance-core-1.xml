@@ -3,7 +3,7 @@
   <id value="dh-allergyintolerance-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHAllergyIntoleranceCore"/>
   <title value="ADHA Core AllergyIntolerance"/>
   <status value="draft"/>
@@ -28,17 +28,6 @@
   <differential>
     <element id="AllergyIntolerance">
       <path value="AllergyIntolerance"/>
-      <constraint>
-        <key value="inv-dh-ait-01"/>
-        <severity value="error"/>
-        <human
-          value="The patient shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="patient.reference.exists() or patient.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
-        />
-      </constraint>
       <constraint>
         <key value="inv-dh-ait-02"/>
         <severity value="error"/>
@@ -94,6 +83,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-ait-03"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="AllergyIntolerance.encounter">

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHCompositionCore"/>
   <title value="ADHA Core Composition"/>
   <status value="draft"/>
@@ -27,26 +27,6 @@
   <differential>
     <element id="Composition">
       <path value="Composition"/>
-      <constraint>
-        <key value="inv-dh-cmp-01"/>
-        <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt;1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
-      </constraint>
-      <constraint>
-        <key value="inv-dh-cmp-02"/>
-        <severity value="error"/>
-        <human
-          value="An author shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="author.exists() implies author.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
-      </constraint>
     </element>
     <element id="Composition.identifier">
       <path value="Composition.identifier"/>
@@ -73,6 +53,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-cmp-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.encounter">
@@ -104,6 +91,13 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <constraint>
+        <key value="inv-dh-cmp-02"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.title">
