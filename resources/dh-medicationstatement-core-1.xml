@@ -3,7 +3,7 @@
   <id value="dh-medicationstatement-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHMedicationStatementCore"/>
   <title value="ADHA Core MedicationStatement"/>
   <status value="draft"/>
@@ -126,10 +126,6 @@
     </element>
     <element id="MedicationStatement.reasonCode">
       <path value="MedicationStatement.reasonCode"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="MedicationStatement.reasonReference">
-      <path value="MedicationStatement.reasonReference"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationStatement.note">

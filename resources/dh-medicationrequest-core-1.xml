@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHMedicationRequestCore"/>
   <title value="ADHA Core MedicationRequest"/>
   <status value="draft"/>
@@ -119,10 +119,6 @@
       <path value="MedicationRequest.reasonCode"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MedicationRequest.reasonReference">
-      <path value="MedicationRequest.reasonReference"/>
-      <mustSupport value="true"/>
-    </element>
     <element id="MedicationRequest.note">
       <path value="MedicationRequest.note"/>
       <mustSupport value="true"/>
@@ -141,6 +137,10 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
       <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity">
+      <path value="MedicationRequest.dispenseRequest.quantity"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
