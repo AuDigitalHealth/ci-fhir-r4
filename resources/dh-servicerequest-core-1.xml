@@ -126,8 +126,8 @@
       <constraint>
         <key value="inv-dh-srr-03"/>
         <severity value="error"/>
-        <human value="At least reference or a valid identifier shall be present"/>
-        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <human value="At least reference or display or a valid identifier shall be present"/>
+        <expression value="reference.exists() or display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
       </constraint>
       <mustSupport value="true"/>
