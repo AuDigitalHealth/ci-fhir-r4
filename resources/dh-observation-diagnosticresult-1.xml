@@ -29,7 +29,7 @@
     <element id="Observation">
       <path value="Observation"/>
       <constraint>
-        <key value="inv-dh-obs-01"/>
+        <key value="inv-dh-obs-05"/>
         <severity value="error"/>
         <human value="The observation shall at least have a value or a data absent reason or a component"/>
         <expression value="value.exists() or dataAbsentReason.exists() or component.exists()"/>
@@ -69,7 +69,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <constraint>
-        <key value="inv-dh-obs-02"/>
+        <key value="inv-dh-obs-03"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
@@ -97,7 +97,7 @@
         />
       </type>
       <constraint>
-        <key value="inv-dh-obs-03"/>
+        <key value="inv-dh-obs-01"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
@@ -176,7 +176,7 @@
     <element id="Observation.component">
       <path value="Observation.component"/>
       <constraint>
-        <key value="inv-dh-obs-04"/>
+        <key value="inv-dh-obs-06"/>
         <severity value="error"/>
         <human value="The component shall at least have a value or a data absent reason"/>
         <expression value="value.exists() or dataAbsentReason.exists()"/>
