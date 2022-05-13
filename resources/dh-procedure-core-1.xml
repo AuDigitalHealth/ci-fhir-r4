@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-procedure-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.1.0"/>
   <name value="DHProcedureCore"/>
   <title value="ADHA Core Procedure"/>
   <status value="draft"/>
@@ -28,16 +28,6 @@
       <path value="Procedure"/>
       <constraint>
         <key value="inv-dh-pro-01"/>
-        <severity value="error"/>
-        <human
-          value="If present, a recorder shall at least have a reference, an identifier or a display"/>
-        <expression
-          value="recorder.exists() implies recorder.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
-      </constraint>
-      <constraint>
-        <key value="inv-dh-pro-02"/>
         <severity value="error"/>
         <human
           value="If present, an asserter shall at least have a reference, an identifier or a display"/>
@@ -72,7 +62,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <constraint>
-        <key value="inv-dh-pro-03"/>
+        <key value="inv-dh-pro-02"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
@@ -106,6 +96,16 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <constraint>
+        <key value="inv-dh-pro-03"/>
+        <severity value="error"/>
+        <human
+          value="At least reference or display or a valid identifier shall be present"/>
+        <expression
+          value="reference.exists() or display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Procedure.asserter">
@@ -144,6 +144,13 @@
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite"/>
+      <constraint>
+        <key value="inv-dh-pro-04"/>
+        <severity value="error"/>
+        <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
+        <expression value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
