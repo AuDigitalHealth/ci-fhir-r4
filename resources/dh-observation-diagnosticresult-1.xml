@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
-  <version value="0.0.1"/>
+  <version value="0.1.0"/>
   <name value="DHObservationDiagnosticResult"/>
   <title value="ADHA Diagnostic Result Observation"/>
   <status value="draft"/>
@@ -31,31 +31,9 @@
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
-        <human
-          value="The subject shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="subject.reference.exists() or subject.identifier.where(system.count() + value.count() &gt; 1).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-obs-02"/>
-        <severity value="error"/>
-        <human
-          value="If present, a performer shall at least have a reference or an identifier with at least a system and a value"/>
-        <expression
-          value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"
-        />
-      </constraint>
-      <constraint>
-        <key value="inv-dh-obs-03"/>
-        <severity value="error"/>
-        <human
-          value="The observation shall at least have a value or a data absent reason or a component"/>
+        <human value="The observation shall at least have a value or a data absent reason or a component"/>
         <expression value="value.exists() or dataAbsentReason.exists() or component.exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
     </element>
     <element id="Observation.partOf">
@@ -90,6 +68,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <constraint>
+        <key value="inv-dh-obs-02"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.effective[x]">
@@ -111,6 +96,13 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
+      <constraint>
+        <key value="inv-dh-obs-03"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.value[x]">
@@ -131,7 +123,18 @@
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite"/>
+      <constraint>
+        <key value="inv-dh-obs-04"/>
+        <severity value="error"/>
+        <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
+        <expression value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+      </constraint>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
+      </binding>
     </element>
     <element id="Observation.method">
       <path value="Observation.method"/>
