@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-procedure-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="DHProcedureCore"/>
   <title value="ADHA Core Procedure"/>
   <status value="draft"/>
@@ -90,6 +90,7 @@
     </element>
     <element id="Procedure.recorder">
       <path value="Procedure.recorder"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
