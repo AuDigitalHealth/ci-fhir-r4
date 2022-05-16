@@ -79,6 +79,7 @@
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
@@ -166,8 +167,8 @@
       <path value="MedicationDispense.daysSupply"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MedicationDispense.whenPrepared">
-      <path value="MedicationDispense.whenPrepared"/>
+    <element id="MedicationDispense.whenHandedOver">
+      <path value="MedicationDispense.whenHandedOver"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationDispense.note">

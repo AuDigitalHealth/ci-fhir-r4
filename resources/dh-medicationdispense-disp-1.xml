@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-medicationdispense-disp-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
+  <version value="0.0.1"/>
+  <name value="DHMedicationDispenseCore"/>
+  <title value="ADHA Dispense Record"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="The purpose of this profile is to provide a core representation of a dispense record for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="MedicationDispense"/>
+  <baseDefinition value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="MedicationDispense">
+      <path value="MedicationDispense"/>
+      <short value="Dispense Record"/>
+      <definition value="Record of a dispense in an Australian healthcare context."/>
+      <constraint>
+        <key value="inv-dh-disp-01"/>
+        <severity value="error"/>
+        <human value="If present, the authorising prescription shall at least have a reference or a valid identifier"/>
+        <expression value="authorizingPrescription.exists() implies authorizingPrescription.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
+      </constraint>
+    </element>
+    <element id="MedicationDispense.extension">
+      <path value="MedicationDispense.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="MedicationDispense.extension:dispenseNumber">
+      <path value="MedicationDispense.extension"/>
+      <sliceName value="dispenseNumber"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/dispense-number"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.identifier">
+      <path value="MedicationDispense.identifier"/>
+      <min value="1"/>
+    </element>
+    <element id="MedicationDispense.status">
+      <path value="MedicationDispense.status"/>
+      <patternCode value="completed"/>
+    </element>
+    <element id="MedicationDispense.medication[x]:medicationReference">
+      <path value="MedicationDispense.medication[x]"/>
+      <sliceName value="medicationReference"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
+      </type>
+      <constraint>
+        <key value="inv-dh-disp-02"/>
+        <severity value="error"/>
+        <human value="At least reference shall be present"/>
+        <expression value="reference.exists()"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
+      </constraint>
+    </element>
+    <element id="MedicationDispense.performer">
+      <path value="MedicationDispense.performer"/>
+      <min value="1"/>
+    </element>
+    <element id="MedicationDispense.performer.actor">
+      <path value="MedicationDispense.performer.actor"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+      </type>
+    </element>
+    <element id="MedicationDispense.location">
+      <path value="MedicationDispense.location"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.authorizingPrescription">
+      <path value="MedicationDispense.authorizingPrescription"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"
+        />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.daysSupply">
+      <path value="MedicationDispense.daysSupply"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.whenHandedOver">
+      <path value="MedicationDispense.whenHandedOver"/>
+      <min value="1"/>
+    </element>
+    <element id="MedicationDispense.note">
+      <path value="MedicationDispense.note"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.dosageInstruction">
+      <path value="MedicationDispense.dosageInstruction"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.substitution">
+      <path value="MedicationDispense.substitution"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="MedicationDispense.substitution.wasSubstituted">
+      <path value="MedicationDispense.substitution.wasSubstituted"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

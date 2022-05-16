@@ -427,7 +427,14 @@
             <reference>
                 <reference value="StructureDefinition/dh-medicationdispense-core-1"/>
             </reference>
-            <name value="ADHA Core MedicationAdministration"/>
+            <name value="ADHA Core MedicationDispense"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-medicationdispense-disp-1"/>
+            </reference>
+            <name value="ADHA Dispense Record"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -448,7 +455,14 @@
             <reference>
                 <reference value="StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
             </reference>
-            <name value="ADHA PBS Prescription Claim Item"/>
+            <name value="ADHA PBS Claim Item"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-medicationrequest-pres-1"/>
+            </reference>
+            <name value="ADHA Prescription"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -2301,14 +2315,14 @@
                 <reference value="MedicationRequest/etp-01"/>
             </reference>
             <name value="ePrescribing prescription with reference to prior prescription for Bert Gainey"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-02"/>
             </reference>
             <name value="ePrescribing prescription with reference to prior prescription for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
@@ -2336,28 +2350,28 @@
                 <reference value="MedicationRequest/etp-cont-01"/>
             </reference>
             <name value="CONTAINED: ePrescribing MedicationRequest etp-01 for Bert Gainey"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-cont-02"/>
             </reference>
             <name value="CONTAINED: ePrescribing MedicationRequest etp-02 for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-cont-03"/>
             </reference>
             <name value="CONTAINED: ePrescribing MedicationRequest etp-03 for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-cont-04"/>
             </reference>
             <name value="CONTAINED: ePrescribing MedicationRequest etp-04 for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
@@ -2371,14 +2385,14 @@
                 <reference value="MedicationRequest/etp-05"/>
             </reference>
             <name value="ePrescribing MedicationRequest etp-05 for Billy Tjakamarra"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/etp-06"/>
             </reference>
             <name value="ePrescribing MedicationRequest etp-06 for Billy Tjakamarra"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
         </resource>
         <resource>
             <reference>
@@ -3267,6 +3281,14 @@
             </reference>
             <name value="Dr. Patricia Tulio, Pathologist, at Metropolitan Laboratories Sydney"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
+        </resource>
+        <!--PROCEDURE EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="Procedure/wound-dressing-es-01"/>
+            </reference>
+            <name value="Dressing of wound for Billy Tjakamarra - Nail wound of sole of foot encounter (2017)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
         </resource>
         <!--RELATEDPERSON EXAMPLES-->
         <resource>

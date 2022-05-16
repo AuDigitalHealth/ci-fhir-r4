@@ -26,12 +26,6 @@
     <medicationReference>
         <reference value="Medication/proxymetacaine-02"/>
         <display value="PROXYMETACAINE"/>
-        <quantity>
-            <value value="15"/>
-            <unit value="mL"/>
-            <system value="http://unitsofmeasure.org"/> 
-            <code value="mL"/>
-        </quantity>
     </medicationReference>
     <subject>
         <reference value="Patient/mhr-anne-thompson"/>
@@ -43,5 +37,11 @@
     </requester>
     <dispenseRequest>
         <numberOfRepeatsAllowed value="5"/>
+        <quantity>
+            <value value="15"/>
+            <unit value="mL"/>
+            <system value="http://unitsofmeasure.org"/> 
+            <code value="mL"/>
+        </quantity>
     </dispenseRequest>
 </MedicationRequest>

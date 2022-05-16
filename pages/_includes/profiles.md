@@ -1,4 +1,4 @@
-# {{ page.title }}
+# Pre{{ page.title }}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
@@ -352,9 +352,9 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Prescription Record</li>
+                                <li><a href="StructureDefinition-dh-medicationrequest-pres-1.html">ADHA Prescription</a></li>
                                 <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
-                                <li>ADHA Record of Dispense</li>
+                                <li><a href="StructureDefinition-dh-medicationdispense-disp-1.html">ADHA Dispense Record</a></li>
                                 <li>ADHA Record of Immunization</li>
                                 <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
                             </ul>
