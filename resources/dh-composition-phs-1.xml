@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-phs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionPHS"/>
   <title value="ADHA Personal Health Summary Composition"/>
   <status value="draft"/>
@@ -221,7 +221,7 @@
         />
       </binding>
     </element>
-    <element id="Composition.section:immunisations">
+    <!--<element id="Composition.section:immunisations">
       <path value="Composition.section"/>
       <sliceName value="immunisations"/>
       <short value="Immunisations"/>
@@ -277,6 +277,6 @@
           value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
         />
       </binding>
-    </element>
+    </element>-->
   </differential>
 </StructureDefinition>
