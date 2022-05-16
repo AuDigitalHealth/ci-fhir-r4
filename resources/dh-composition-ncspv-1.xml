@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-composition-ncspp-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspp-1"/>
-  <version value="0.0.3"/>
-  <name value="DHCompositionNCSPParticipation"/>
-  <title value="ADHA National Cancer Screening Program Participation Composition"/>
+  <id value="dh-composition-ncspv-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
+  <version value="0.0.1"/>
+  <name value="DHCompositionNCSPV"/>
+  <title value="ADHA National Cancer Screening Program Participation View"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define a representation of a National Cancer Screening Program Participation document that describes an individual's participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
+    value="The purpose of this profile is to define a representation of a National Cancer Screening Program Participation View that describes an individual's participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -28,7 +28,7 @@
   <differential>
     <element id="Composition">
       <path value="Composition"/>
-      <short value="National Cancer Screening Program Participation"/>
+      <short value="National Cancer Screening Program Participation View"/>
       <definition value="A document that describes an individual's participation in one or more national cancer screening programs, e.g. bowel or cervical. Participation information may include information on an individual's eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
     </element>
     <element id="Composition.status">
@@ -37,10 +37,12 @@
     </element>
     <element id="Composition.type">
       <path value="Composition.type"/>
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/national-cancer-screening-program-participation-document-type-1" />
-      </binding>
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="100.32040"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.category">
       <path value="Composition.category" />
@@ -80,17 +82,17 @@
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
+      <comment value="In the context of National Cancer Screening Program Participation View, the author is the My Health Record system."/>
+      <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
       </type>
-      <max value="1"/>
     </element>
     <element id="Composition.section">
       <path value="Composition.section"/>
-      <short value="National cancer screening program participation information"/>
-      <definition value="Information of an individual's participation in national cancer screening program."/>
+      <short value="Health Program Information"/>
+      <definition value="Information related to an individual's participation in one or more health programs such as a weight management program or a national cancer screening program. "/>
     </element>
     <element id="Composition.section.title">
       <path value="Composition.section.title"/>
@@ -99,10 +101,12 @@
     <element id="Composition.section.code">
       <path value="Composition.section.code"/>
       <min value="1"/>
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/ncsp-participation-section-type-1" />
-      </binding>
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="101.32046"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.section.entry">
       <path value="Composition.section.entry"/>
@@ -113,7 +117,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
       </type>
       <min value="1"/>
-      <max value="1"/>
     </element>
     <element id="Composition.section.emptyReason">
       <path value="Composition.section.emptyReason"/>

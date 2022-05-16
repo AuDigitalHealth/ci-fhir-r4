@@ -3,7 +3,7 @@ The purpose of this profile is to provide a representation of an individual's pa
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-This profile is designed to set a core Observation standard for:
+This profile is designed to set an Observation standard for:
 * Query for a national bowel cancer screening program participation observation for a patient
 * Query for a national cervical cancer screening program participation observation for a patient
 * Record or update a national bowel cancer screening program participation observation for a patient
@@ -19,5 +19,5 @@ TBD.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA National Cancer Screening Program Participation Composition](StructureDefinition-dh-composition-ncspp-1.html), and 
+[ADHA National Cancer Screening Program Participation View](StructureDefinition-dh-composition-ncspv-1.html), and 
 [ADHA National Cancer Screening Program Participation Composition ValueSet](StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html). 

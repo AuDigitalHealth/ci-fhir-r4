@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-mov-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionMOV"/>
   <title value="ADHA Medicare Overview Composition"/>
   <status value="draft"/>
@@ -79,11 +79,12 @@
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
+      <comment value="In the context of Medicare Overview, the author is the My Health Record system."/>
+      <max value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
       </type>
-      <max value="1"/>
     </element>
     <element id="Composition.section">
       <path value="Composition.section"/>
