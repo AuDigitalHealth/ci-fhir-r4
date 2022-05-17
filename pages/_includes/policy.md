@@ -7,7 +7,7 @@
 > <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
 
 
-The policy for definining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency.
+The policy for defining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency.
 
 ## Conformance
 
@@ -18,7 +18,7 @@ The policy for definining, using, maintaining, and implementing using FHIR versi
 > **ADHA-FHIR-CONF-02** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base FHIR Asset
  
  
-> **ADHA-FHIR-CONF-04** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a resrouce that is not supported by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-04** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
 > **ADHA-FHIR-CONF-05** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
@@ -26,7 +26,7 @@ The policy for definining, using, maintaining, and implementing using FHIR versi
 
 > **ADHA-FHIR-PROFILE-06** Use of extensions **SHALL** follow order of precedence:
 > 1. HL7 extension
-> 2. HL7 AU extensikon
+> 2. HL7 AU extension
 > 3. ADHA extension
 > 4. Other
 
@@ -130,6 +130,8 @@ The following basePaths are to be used for national services:
 > **ADHA-FHIR-IDENT-06** All systems **SHOULD** support the following device identifiers: PAI-D, PAI-R, UID.
 
 
+> **ADHA-FHIR-IDENT-07** An identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
+
 
 ### Prescription Identification
 
@@ -151,7 +153,7 @@ The following basePaths are to be used for national services:
 insert format rules here for assets - profiles, extensions, value sets, code systems, concept maps, structure definitions, operation definitions, search parameters, naming systems, capability statements
 
 
-> **ADHA-FHIR-ASSET-NAME-0X** A FHIR Asset dervied from an ADHA Core FHIR Asset **SHALL** conform to an agreed, documented format
+> **ADHA-FHIR-ASSET-NAME-0X** A FHIR Asset derived from an ADHA Core FHIR Asset **SHALL** conform to an agreed, documented format
 
 insert format rules here for assets - profiles, extensions, value sets, code systems, concept maps, structure definitions, operation definitions, search parameters, naming systems, capability statements
 
@@ -183,9 +185,9 @@ tbd
 > **ADHA-FHIR-PUB-0X** ADHA FHIR materials published for public implementation **SHALL** be released as an [FHIR Package](https://registry.fhir.org/learn)
 
 
-> **ADHA-FHIR-PUB-0X** ADHA FHIR resources and supporting assets **SHALL** be published in a publicaly available Australian Digital Health Agency
+> **ADHA-FHIR-PUB-0X** ADHA FHIR resources and supporting assets **SHALL** be published in a publicly available Australian Digital Health Agency
 
-The Github reposotiry for the Australian Digital Health Agency is https://github.com/AuDigitalHealth
+The GitHub repository for the Australian Digital Health Agency is https://github.com/AuDigitalHealth
 All FHIR materials relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) **SHALL** be held on a publicly available GitHub repository.
 Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site
 
