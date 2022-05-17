@@ -34,14 +34,14 @@
         <expression value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
       </constraint>
+      <constraint> 
+        <key value="inv-dh-cond-05"/> 
+        <severity value="error"/> 
+        <human value="Clinical status shall be present if verification status is not entered-in-error"/> 
+        <expression value="clinicalStatus.exists() or verificationStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-ver-status' and code = 'entered-in-error').exists()"/> 
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/> 
+      </constraint>
     </element>
-    <constraint> 
-      <key value="inv-dh-cond-05"/> 
-      <severity value="error"/> 
-      <human value="Clinical status shall be present if verification status is not entered-in-error"/> 
-      <expression value="clinicalStatus.exists() or verificationStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-ver-status' and code = 'entered-in-error').exists()"/> 
-      <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/> 
-    </constraint>
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus"/>
       <mustSupport value="true"/>
