@@ -3,7 +3,7 @@ The purpose of this profile is to provide a core representation of a request for
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) that are supported. 
 
-Where a more specific profile is applicable, e.g. prescription, an implementation **SHALL** ensure the Resource conforms to that specific profile.
+Where a more specific profile is applicable, e.g. prescription, an implementation **SHALL** ensure the Resource conforms to that specific profile as per **ADHA-FHIR-CONF-08**.
 
 This profile is designed to set a core MedicationRequest standard for:
 * Query medication orders or prescriptions for a patient (current and historical)

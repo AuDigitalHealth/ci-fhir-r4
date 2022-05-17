@@ -3,6 +3,8 @@ The purpose of this profile is to provide a core representation of an immunizati
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Immunization](http://hl7.org/fhir/R4/immunization.html) that are supported. 
 
+Where a more specific profile is applicable, e.g. record of immunisation from AIR, an implementation **SHALL** ensure the Resource conforms to that specific profile as per **ADHA-FHIR-CONF-08**.
+
 This profile is designed to set a core Immunization standard for:
 * Query for a patient's immunisations
 * Record or update an immunisation record for a patient
