@@ -24,10 +24,9 @@ For ADHA profiles, the following identifier elements are to be populated with bu
    - `PractitionerRole.identifier`
    - `ServiceRequest.identifier`
           
-Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier). An identifier **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-07**. 
+Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier). An identifier **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**. 
 
-### Local identifiers 
-When It is preferable that an organisation uses their own local system identifier namespace but if that is not available then an organisation can use their HPI-O or ABN to construct a legal, globally unique identifier system for their local identifiers.
+When constructing a local identifier it is preferable that an organisation uses their own local system identifier namespace but if that is not available then an organisation can use their HPI-O or ABN to construct a legal, globally unique identifier system for their local identifiers.
 
 **HPI-O scoped identifiers**
 
@@ -191,7 +190,7 @@ There are situations when information for a particular data element is missing a
           - for Coding datatypes, the text only data is represented as a `display` element.
       - if there is neither text or coded data:
         - the appropriate "unknown" concept code **SHALL** be present if the binding strength is *extensible*
-        - if the value set does not have an appropriate "unknown" concept code, use `unknown` from the [DataAbsentReason Code System](	http://terminology.hl7.org/CodeSystem/data-absent-reason).
+        - if the value set does not have an appropriate "unknown" concept code, use `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason).
 
         Example: AllergyIntolerance resource where the manifestation is unknown.
         ~~~
@@ -232,8 +231,177 @@ There are situations when information for a particular data element is missing a
 
         <!-- If one of these status code is missing, a `404` http error code and an OperationOutcome **SHALL** be returned in response to a read transaction on the resource. If returning a response to a search, the problematic resource **SHALL** be excluded from the search set and a *warning* OperationOutcome **SHOULD** be included indicating that additional search results were found but could not be compliantly expressed and have been suppressed.-->
 
-## Medications
+## Medicine information
 
+The FHIR standard defines the following resources for exchanging medicine information:
+- [Medication](http://hl7.org/fhir/R4/medication.html)
+- [MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html)
+- [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html)
+- [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html)
+- [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html)
+
+Profiles of MedicationStatement (and Medication) are used to support summary statements of medicine use. 
+Profiles of MedicationAdministration (and Medication) are used to support medication chart and other administration use cases.
+Profiles of MedicationDipsense (and Medication) are used to support to support dispense records and ePrescribing use cases.
+Profiles of MedicationRequest (and Medication) are used to support prescription, ordering, and ePrescribing use cases.
+
+For non-extemporaneous medications, the medication code (or set of codes) that identify the medicine item is the mandatory primary mechansim to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
+
+TBD: Nationally supported medicines terminology   
+
+In addition to the medication code, the majority of use cases require support for the exchange of structured medicine information as separate data elements covering brand name, generic name, item form and strength, and manufacturer.
+
+These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource.
+
+1. For *coded* support for brand name, generic name, manufacturer, item form and strength:
+   - Fully coded support is provided using code.coding with Medication Type extension in a medication resource (i.e. MedicationAdministration | MedicationStatement | MedicationDispense | MedicationRequest | Medication):
+      - brand name = code.coding with extension.code BPD
+      - generic name = code.coding with Medication Type extension.code UPD
+      - generic item form and strength = code.coding with Medication Type extension.code UPDSF
+      - branded item form and strength = code.coding with Medication Type extension.code BPDSF
+   - If the resource is a Medication resource:
+      - form and strength are also provided in Medication.form, Medication.ingredient.itemCodeableConcept and Medication.ingredient.strength.
+      - manufacturer = Medication.manufacturer.identifer
+    Example: Medication with coded brand name, generic name, manufacturer, item form and strength.
+    ~~~
+    {
+      "resourceType": "Medication",
+      ...
+      "code": {
+        "coding": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                  "code": "UPD",
+                  "display": "Unbranded product with no strengths or form"
+                }
+              }
+            ],
+            "system": "http://pbs.gov.au/code/item",
+            "code": "02647H",
+            "display": "BENZYLPENICILLIN"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                  "code": "BPD",
+                  "display": "Branded product with no strengths or form"
+                }
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "3539011000036105",
+            "display": "Benpen"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                  "code": "UPDSF",
+                  "display": "Unbranded product with strengths and form"
+                }
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "32753011000036104",
+            "display": "benzylpenicillin 3 g injection, 1 vial"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                  "code": "BPDSF",
+                  "display": "Branded product with strengths and form"
+                }
+              }
+            ],
+            "system": "http://snomed.info/sct",
+            "code": "32328011000036106",
+            "display": "Benpen 3 g powder for injection, 1 vial"
+          }
+        ]
+      },
+      "manufacturer": {
+        "identifier": {
+          "system": "http://pbs.gov.au/code/manufacturer",
+          "value": "CS"
+        }
+      },
+      "form": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "129011000036109",
+            "display": "injection"
+          }
+        ],
+        "text": "Injection"
+      },
+      "ingredient": [
+        {
+          "itemCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1849011000036104",
+                "display": "benzylpenicillin"
+              }
+            ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 3,
+              "unit": "g"
+            },
+            "denominator": {
+              "value": 1,
+              "unit": "unit"
+            }
+          }
+        }
+      ]
+    }
+    ~~~
+
+1.  For *non-coded* support for brand name, generic name, manufacturer, item form and strength:
+  - brand name = brand name extension
+  - generic name = generic name extension
+  - item form and strength = code.text
+  - manufacturer = manufacturer.display
+  
+    Example: Medication with text only brand name, generic name, item form and strength.
+    ~~~
+    {
+      "resourceType": "Medication",
+      ...
+      "extension": [
+        {
+          "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+          "valueString": "Benzylpenicillin"
+        },
+        {
+          "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+          "valueString": "Benpen"
+        }
+      ],
+      "code": {
+        "text": "Benpen 3 g powder for injection, 1 vial"
+      },
+      "manufacturer": {
+        "display": "Seqirus"
+      }
+    }
+    ~~~
 
 ## Lists
 
@@ -244,13 +412,12 @@ In some uses cases the source of the information to be provided in a FHIR R4 res
 
 TBD - conformance rules 
 
-1. canonical url 
-a.	Convert system OID for ANZSCO urn:oid:2.16.840.1.113883.13 to url http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0
-b.	Convert system OID for PBS Manufacturer urn:oid:1.2.36.1.2001.1005.23 to url http://pbs.gov.au/code/manufacturer
-c.	Convert system OID for Australian Immunisation Register Vaccine urn:oid:1.2.36.1.2001.1005.17 to url https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats
+1. terminology canonical url - transforming data from OID based 
+   a.	Convert system OID for ANZSCO urn:oid:2.16.840.1.113883.13 to url http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0
+   b.	Convert system OID for PBS Manufacturer urn:oid:1.2.36.1.2001.1005.23 to url http://pbs.gov.au/code/manufacturer
+   c.	Convert system OID for Australian Immunisation Register Vaccine urn:oid:1.2.36.1.2001.1005.17 to url https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats
 
 1. Handling introduction of new mandatory elements in a FHIR R4 resource in order of precedent:
-a.	Direct population with data from the STU3 payload if possible
-b.	Population with an appropriate fixed value as demonstrated in Coverage.insurer and Coverage.scope
-c.	Only where neither of the above options is possible is the data to be handled as ‘missing data’
-
+   a.	Direct population with data from the STU3 payload if possible
+   b.	Population with an appropriate fixed value as demonstrated in Coverage.insurer and Coverage.scope
+   c.	Only where neither of the above options is possible is the data to be handled as ‘missing data’

@@ -12,26 +12,29 @@ The policy for defining, using, maintaining, and implementing using FHIR version
 ## Conformance
 
 
-> **ADHA-FHIR-CONF-01** All FHIR implementations **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
+> **ADHA-FHIR-CONF-01** A system **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
 
 
 > **ADHA-FHIR-CONF-02** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base FHIR Asset
  
  
-> **ADHA-FHIR-CONF-04** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-04** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-CONF-05** All FHIR implementations **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-05** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-PROFILE-06** Use of extensions **SHALL** follow order of precedence:
+> **ADHA-FHIR-CONF-06** A system **SHALL** reject any request to create or update a resource that contains a resource that does not conform to the Conformance/CapabilityStatement resource for that endpoint
+
+
+> **ADHA-FHIR-PROFILE-07** Use of extensions **SHALL** follow order of precedence:
 > 1. HL7 extension
 > 2. HL7 AU extension
 > 3. ADHA extension
 > 4. Other
 
 
-> **ADHA-FHIR-CONF-07** A Core profile SHALL NOT be used where a more specific profile is applicable. An implementation SHALL ensure the Resource conforms to that specific profile.
+> **ADHA-FHIR-CONF-08** A Core profile SHALL NOT be used where a more specific profile is applicable. An implementation SHALL ensure the Resource conforms to that specific profile.
 
 For example, a Shared Health Summary is to conform to the specific profile governing conformance of Shared Health Summary rather than only conform to ADHA Document Composition. 
 
@@ -118,16 +121,16 @@ The following basePaths are to be used for national services:
 > **ADHA-FHIR-IDENT-02** Where a verified IHI is available for a patient that IHI **SHALL** be provided
 
 
-> **ADHA-FHIR-IDENT-03** All systems **SHALL** support the following patient identifiers: IHI, DVA, and Medicare Card.
+> **ADHA-FHIR-IDENT-03** A system **SHALL** support the following patient identifiers: IHI, DVA, and Medicare Card.
 
 
-> **ADHA-FHIR-IDENT-04** All systems **SHALL** support the following healthcare provider individual identifiers: HPI-I, CAE, and Medicare Provider.
+> **ADHA-FHIR-IDENT-04** A system **SHALL** support the following healthcare provider individual identifiers: HPI-I, CAE, and Medicare Provider.
 
 
-> **ADHA-FHIR-IDENT-05** All systems **SHALL** support the following organisation identifiers: HPI-O, PAI-O, and ABN.
+> **ADHA-FHIR-IDENT-05** A system **SHALL** support the following organisation identifiers: HPI-O, PAI-O, and ABN.
 
 
-> **ADHA-FHIR-IDENT-06** All systems **SHOULD** support the following device identifiers: PAI-D, PAI-R, UID.
+> **ADHA-FHIR-IDENT-06** A system **SHOULD** support the following device identifiers: PAI-D, PAI-R, UID.
 
 
 > **ADHA-FHIR-IDENT-07** An identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
