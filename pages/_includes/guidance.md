@@ -24,7 +24,11 @@ For ADHA profiles, the following identifier elements are populated with business
    - `PractitionerRole.identifier`
    - `ServiceRequest.identifier`
           
-Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier). An identifier **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**. 
+Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier).  
+
+[HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**.
+
+While national and registry / exchange service identifiers will define the namespace to use when sending an identifier, a local identifier requires the organisation to define their own namespace when exchanging identifiers they manage.  
 
 When constructing a local identifier it is preferable that an organisation uses their own local system identifier namespace but if that is not available then an organisation can use their HPI-O or ABN to construct a legal, globally unique identifier system for their local identifiers.
 
@@ -32,7 +36,7 @@ When constructing a local identifier it is preferable that an organisation uses 
 
 HPI-O scoped identifiers enable exchange of an organisation's local identifiers for items like a patient medical record or a pathology report by combining a dedicated Agency published namespace and their HPI-O to construct a legal, globally unique identifier system for their local identifiers.
 
-The full list of available identifier namespaces can be found by browsing the ns.electronichealth.net.au [identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are several HPI-O scoped identifier namespaces available:
+The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are several HPI-O scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/hpio-scoped/accessionnumber/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/dispense/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0
@@ -54,7 +58,7 @@ The value contains the local identifier, e.g.:
 "value" : "AMC-GA-001"
 ~~~
 
-The assigner contains the name of the organisation that issues or manages
+The assigner contains the name of the organisation that issues or manages the identifier.
 
 ~~~
 assigner" : {
@@ -92,7 +96,7 @@ Example: PractitionerRole resource with an employee number (local identifier)
 
 ABN scoped identifiers enable exchange of an organisation's local identifiers for items like a patient medical record by combining a dedicated Agency published namespace and their ABN to construct a legal, globally unique identifier system for their local identifiers.
 
-The full list of available identifier namespaces can be found by browsing the ns.electronichealth.net.au [identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are two ABN-scoped identifier namespaces available:
+The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are two ABN-scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0
    - http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0
 
@@ -109,7 +113,7 @@ The value contains the local identifier, e.g.:
 "value" : "123456"
 ~~~
 
-The assigner contains the name of the organisation that issues or manages
+The assigner contains the name of the organisation that issues or manages the identifier.
 
 ~~~
 assigner" : {
@@ -156,9 +160,9 @@ References between resources are supported as reference (literal reference), ide
 
 ## Missing Data
 
-There are situations when information for a particular data element is missing and the source system does not know reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labeled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present for *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarized below:
+There are situations when information for a particular data element is missing and the source system does not know reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labeled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present for *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
 
-1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), use the [DataAbsentReason Extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type
+1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type
   - Use the code `unknown` - The value is expected to exist but is not known.
   
     Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available.
@@ -240,20 +244,25 @@ The FHIR standard defines the following resources for exchanging medicine inform
 - [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html)
 - [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html)
 
-Profiles of MedicationStatement (and Medication) are used to support summary statements of medicine use. 
-Profiles of MedicationAdministration (and Medication) are used to support medication chart and other administration use cases.
-Profiles of MedicationDipsense (and Medication) are used to support to support dispense records and ePrescribing use cases.
-Profiles of MedicationRequest (and Medication) are used to support prescription, ordering, and ePrescribing use cases.
+[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is profiled to support medicinal product identification in an Australian healthcare context.
+ADHA profiles of MedicationStatement (with ADHA Core Medication) are used to support summary statements of medicine use. 
+ADHA profiles of MedicationAdministration (with ADHA Core Medication) are used to support medication chart and other administration use cases.
+ADHA profiles of MedicationDipsense (with ADHA Core Medication) are used to support to support dispense records and ePrescribing use cases.
+ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to support prescription, ordering, and ePrescribing use cases.
 
-### Medicinal Product Identification
-For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechansim to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
+**Medicinal Product Identification**
 
-Australian Medicines Terminology (AMT) is the national terminology for idenhtification and naming of medicines in clinical systems for Australia. The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT). The AMT (and SNOMED CT-AU) can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](www.healthterminologies.gov.au).
-TBD: Insert PBS.
+For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechanism to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
+
+Australian Medicines Terminology (AMT) is the national terminology for identification and naming of medicines in clinical systems for Australia. 
+The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. 
+The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](www.healthterminologies.gov.au).
+
+*TBD: Insert PBS.*
 
 In addition to the medication code, the majority of use cases support exchange of structured medicine information as separate data elements covering brand name, generic name, item form and strength, and manufacturer.
 
-These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource.
+These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource. The guidance for how to support coded or text is summarised below: 
 
 1. For *coded* support for brand name, generic name, manufacturer, item form and strength:
    - Fully coded support is provided using code.coding with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
