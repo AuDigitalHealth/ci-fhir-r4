@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="DHMedicationRequestCore"/>
   <title value="ADHA Core MedicationRequest"/>
   <status value="draft"/>
@@ -37,10 +37,6 @@
       <path value="MedicationRequest.status"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MedicationRequest.statusReason">
-      <path value="MedicationRequest.statusReason"/>
-      <mustSupport value="true"/>
-    </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent"/>
       <mustSupport value="true"/>
@@ -48,6 +44,10 @@
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-category"/>
+      </binding>
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]"/>
@@ -143,10 +143,7 @@
       <path value="MedicationRequest.dispenseRequest.quantity"/>
       <mustSupport value="true"/>
     </element>
-    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
-      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration"/>
-      <mustSupport value="true"/>
-    </element>
+    
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution"/>
       <mustSupport value="true"/>

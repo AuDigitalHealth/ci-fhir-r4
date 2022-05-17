@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-pres-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHMedicationRequestPrescription"/>
   <title value="ADHA Prescription"/>
   <status value="draft"/>
@@ -50,6 +50,10 @@
     </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier"/>
+      <min value="1"/>
+    </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category"/>
       <min value="1"/>
     </element>
     <element id="MedicationRequest.medication[x]:medicationReference">
@@ -111,6 +115,10 @@
     <element id="MedicationRequest.dispenseRequest.validityPeriod">
       <path value="MedicationRequest.dispenseRequest.validityPeriod"/>
       <min value="1"/>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration"/>
+      <mustSupport value="true"/>
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription"/>
