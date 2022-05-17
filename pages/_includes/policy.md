@@ -133,20 +133,7 @@ The following basePaths are to be used for national services:
 > **ADHA-FHIR-IDENT-07** An identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
 
 
-### Prescription Identification
-
-*TBD Architecture Team to provide*
-
-
-
-### Referral Identification 
-
-*TBD Architecture Team to provide*
-
-
-
-
-### Asset Naming TBD CI w Architecture Team
+## Asset Naming TBD CI w Architecture Team
 
 > **ADHA-FHIR-ASSET-NAME-0X** An ADHA Core FHIR Asset name **SHALL** conform to an agreed, documented format
 
@@ -159,7 +146,7 @@ insert format rules here for assets - profiles, extensions, value sets, code sys
 
 
 
-### Asset URIs TBD CI w Architecture Team
+## Asset URIs TBD CI w Architecture Team
 
 tbd
 
@@ -167,7 +154,7 @@ tbd
 
 
 
-### Profiling
+## Profiling
 
 > **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL NOT** define alternate elements for use in place of elements defined in a HL7 FHIR base resource
 
@@ -177,7 +164,7 @@ tbd
 
 > **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL** derive from HL7 AU Base material in the first instance if available, otherwise derive
 
-### Publication 
+## Publication 
 
 > **ADHA-FHIR-PUB-0X** ADHA Core FHIR resource URIs **SHALL** be resolve - there are publication implications here
 
@@ -196,7 +183,7 @@ Comments, feedback and suggestions from developers on FHIR resources (and associ
 
 
 
-### Versioning TBD Architecture Team w CI
+## Versioning TBD Architecture Team w CI
 
 > **ADHA-FHIR-VER-0X** A FHIR endpoint URL **SHALL** include the HL7 FHIR version
 
@@ -218,12 +205,12 @@ Comments, feedback and suggestions from developers on FHIR resources (and associ
 **SHALL** follow the format: [baseurl]-[MAJOR] 
 
 
-### Must Support
+## Must Support
 
 > **ADHA-FHIR-0X**
 
 
-### Packaging
+## Packaging
 
 > **ADHA-FHIR-PACK-0X**
 
