@@ -11,7 +11,7 @@
 
 ["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA Profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
 
-For ADHA profiles, the following identifier elements are to be populated with business identifiers:
+For ADHA profiles, the following identifier elements are populated with business identifiers:
    - `Device.identifier`
    - `DiagnosticReport.identifier`
    - `HealthcareService.identifier`
@@ -245,11 +245,13 @@ Profiles of MedicationAdministration (and Medication) are used to support medica
 Profiles of MedicationDipsense (and Medication) are used to support to support dispense records and ePrescribing use cases.
 Profiles of MedicationRequest (and Medication) are used to support prescription, ordering, and ePrescribing use cases.
 
-For non-extemporaneous medications, the medication code (or set of codes) that identify the medicine item is the mandatory primary mechansim to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
+### Medicinal Product Identification
+For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechansim to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
 
-TBD: Nationally supported medicines terminology   
+Australian Medicines Terminology (AMT) is the national terminology for idenhtification and naming of medicines in clinical systems for Australia. The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT). The AMT (and SNOMED CT-AU) can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](www.healthterminologies.gov.au).
+TBD: Insert PBS.
 
-In addition to the medication code, the majority of use cases require support for the exchange of structured medicine information as separate data elements covering brand name, generic name, item form and strength, and manufacturer.
+In addition to the medication code, the majority of use cases support exchange of structured medicine information as separate data elements covering brand name, generic name, item form and strength, and manufacturer.
 
 These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource.
 
@@ -266,110 +268,110 @@ These data elements may be supported as coded, or text, and systems are likely t
     ~~~
     {
       "resourceType": "Medication",
-      ...
-      "code": {
-        "coding": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
-                "valueCoding": {
-                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
-                  "code": "UPD",
-                  "display": "Unbranded product with no strengths or form"
+        ...
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                    "code": "UPD",
+                    "display": "Unbranded product with no strengths or form"
+                  }
                 }
-              }
-            ],
-            "system": "http://pbs.gov.au/code/item",
-            "code": "02647H",
-            "display": "BENZYLPENICILLIN"
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
-                "valueCoding": {
-                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
-                  "code": "BPD",
-                  "display": "Branded product with no strengths or form"
-                }
-              }
-            ],
-            "system": "http://snomed.info/sct",
-            "code": "3539011000036105",
-            "display": "Benpen"
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
-                "valueCoding": {
-                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
-                  "code": "UPDSF",
-                  "display": "Unbranded product with strengths and form"
-                }
-              }
-            ],
-            "system": "http://snomed.info/sct",
-            "code": "32753011000036104",
-            "display": "benzylpenicillin 3 g injection, 1 vial"
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
-                "valueCoding": {
-                  "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
-                  "code": "BPDSF",
-                  "display": "Branded product with strengths and form"
-                }
-              }
-            ],
-            "system": "http://snomed.info/sct",
-            "code": "32328011000036106",
-            "display": "Benpen 3 g powder for injection, 1 vial"
-          }
-        ]
-      },
-      "manufacturer": {
-        "identifier": {
-          "system": "http://pbs.gov.au/code/manufacturer",
-          "value": "CS"
-        }
-      },
-      "form": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "129011000036109",
-            "display": "injection"
-          }
-        ],
-        "text": "Injection"
-      },
-      "ingredient": [
-        {
-          "itemCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "1849011000036104",
-                "display": "benzylpenicillin"
-              }
-            ]
-          },
-          "strength": {
-            "numerator": {
-              "value": 3,
-              "unit": "g"
+              ],
+              "system": "http://pbs.gov.au/code/item",
+              "code": "02647H",
+              "display": "BENZYLPENICILLIN"
             },
-            "denominator": {
-              "value": 1,
-              "unit": "unit"
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                    "code": "BPD",
+                    "display": "Branded product with no strengths or form"
+                  }
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "3539011000036105",
+              "display": "Benpen"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                    "code": "UPDSF",
+                    "display": "Unbranded product with strengths and form"
+                  }
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "32753011000036104",
+              "display": "benzylpenicillin 3 g injection, 1 vial"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org.au/fhir/StructureDefinition/medication-type",
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org.au/CodeSystem/medication-type",
+                    "code": "BPDSF",
+                    "display": "Branded product with strengths and form"
+                  }
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "32328011000036106",
+              "display": "Benpen 3 g powder for injection, 1 vial"
+            }
+          ]
+        },
+        "manufacturer": {
+          "identifier": {
+            "system": "http://pbs.gov.au/code/manufacturer",
+            "value": "CS"
+          }
+        },
+        "form": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "129011000036109",
+              "display": "injection"
+            }
+          ],
+          "text": "Injection"
+        },
+        "ingredient": [
+          {
+            "itemCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1849011000036104",
+                  "display": "benzylpenicillin"
+                }
+              ]
+            },
+            "strength": {
+              "numerator": {
+                "value": 3,
+                "unit": "g"
+              },
+              "denominator": {
+                "value": 1,
+                "unit": "unit"
+              }
             }
           }
-        }
-      ]
+        ]
     }
     ~~~
 
@@ -384,23 +386,23 @@ These data elements may be supported as coded, or text, and systems are likely t
     ~~~
     {
       "resourceType": "Medication",
-      ...
-      "extension": [
-        {
-          "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
-          "valueString": "Benzylpenicillin"
-        },
-        {
-          "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
-          "valueString": "Benpen"
-        }
-      ],
-      "code": {
-        "text": "Benpen 3 g powder for injection, 1 vial"
-      },
-      "manufacturer": {
-        "display": "Seqirus"
-      }
+       ...
+       "extension": [
+         {
+           "url": "http://hl7.org.au/fhir/StructureDefinition/medication-generic-name",
+           "valueString": "Benzylpenicillin"
+         },
+         {
+           "url": "http://hl7.org.au/fhir/StructureDefinition/medication-brand-name",
+           "valueString": "Benpen"
+         }
+       ],
+       "code": {
+         "text": "Benpen 3 g powder for injection, 1 vial"
+       },
+       "manufacturer": {
+         "display": "Seqirus"
+       }
     }
     ~~~
 
