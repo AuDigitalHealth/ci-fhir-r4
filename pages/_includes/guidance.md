@@ -9,12 +9,13 @@
 
 ## "Business" identifiers
 
-("Business" identifiers)[http://hl7.org/fhir/R4/resource.html#identifiers] are used extensively in ADHA Profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
+["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA Profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
 
 For ADHA profiles, the following identifier elements are to be populated with business identifiers:
    - `Device.identifier`
    - `DiagnosticReport.identifier`
    - `HealthcareService.identifier`
+   - `MedicationDispense.identifier`
    - `MedicationRequest.identifier`
    - `Organization.identifier`
    - `Patient.identifier`
@@ -28,7 +29,8 @@ Business identifiers will typically be a national identifier (ABN, Medicare Prov
 ### Local identifiers 
 When It is preferable that an organisation uses their own local system identifier namespace but if that is not available then an organisation can use their HPI-O or ABN to construct a legal, globally unique identifier system for their local identifiers.
 
-1. HPI-O scoped identifier
+**HPI-O scoped identifiers**
+
 HPI-O scoped identifiers enable exchange of an organisation's local identifiers for items like a patient medical record or a pathology report by combining a dedicated Agency published namespace and their HPI-O to construct a legal, globally unique identifier system for their local identifiers.
 
 The full list of available identifier namespaces can be found by browsing the ns.electronichealth.net.au [identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are several HPI-O scoped identifier namespaces available:
@@ -40,7 +42,7 @@ The full list of available identifier namespaces can be found by browsing the ns
    - http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0
 
-There are four parts to the using an HPI-O-scoped identifier in FHIR: system, value, assigner, and depending on the identifier profile requirements a coded type. 
+There are four parts to the using an HPI-O scoped identifier in FHIR: system, value, assigner, and depending on the identifier profile requirements a coded type. 
 
 The system value is constructed in the format of [baseURL]/HPI-O, e.g.:
 
@@ -87,14 +89,15 @@ Example: PractitionerRole resource with an employee number (local identifier)
 ~~~
 
 
-1. ABN scoped identifier
+**ABN scoped identifier**
+
 ABN scoped identifiers enable exchange of an organisation's local identifiers for items like a patient medical record by combining a dedicated Agency published namespace and their ABN to construct a legal, globally unique identifier system for their local identifiers.
 
 The full list of available identifier namespaces can be found by browsing the ns.electronichealth.net.au [identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are two ABN-scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0
    - http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0
 
-There are four parts to the using an ABN-scoped identifier in FHIR: system, value, assigner, and depending on the identifier profile requirements a coded type. 
+There are four parts to the using an ABN scoped identifier in FHIR: system, value, assigner, and depending on the identifier profile requirements a coded type. 
 
 The system value is constructed in the format of [baseURL]/ABN, e.g.:
 
