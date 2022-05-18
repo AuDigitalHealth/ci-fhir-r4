@@ -227,6 +227,7 @@ There are situations when information for a particular data element is missing a
           - `Composition.status`
           - `DiagnosticReport.status`
           - `DocumentReference.status`
+          - `ExplanationOfBenefit.status`
           - `Immunization.status`
           - `List.status`
 
@@ -239,22 +240,26 @@ If one of these status code is missing, in response to a read transaction on the
 -->
 
 ## Extensibility – “additional” elements
-There may be circumstances where there is a need to extend the health information in exchanges and a sending system chooses to send additional data elements beyond those flagged with Must Support in an ADHA profile. 
+A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. 
+
+Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges.
+
+Extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
 An additional element **SHALL** conform to requirements of to ADHA conformance requirements, these are summarised below:
 - an additional element **SHALL** be part of a supported resource, it may be a canonical element or an extension
 - an additional element **SHALL** conform to the HL7 FHIR standard 
 - a resource referenced by an additional element **SHALL** conform to an ADHA profile and the HL7 FHIR standard
 - where the additional element is an extension 
-   - a system system **SHALL** process a known extension according to it's definition
+   - a system **SHALL** process a known extension according to it's definition
    - a system **SHALL** process unknown extensions as per the [standard advice on exchanging extensions](https://www.hl7.org/fhir/extensibility.html#exchange)
 
 Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed. An orphaned resource is not considered to be an “additional” element.
 
 The obligations on systems in handling additional elements are summarised as:
-- Systems that construct or send information **SHALL** ensure that resources meet all applicable ADHA conformance requirements
+- Systems that construct or send information **SHALL** ensure that resource meet all applicable ADHA conformance requirements
 - System that receive or persist information, when sent a resource with an "additional" set of elements:
-  - **SHALL** be capable of meanginfully processing (may mean display, persist, index, or other) all supported elements where the resource has been constructed in accordance with ADHA conformance requirements. 
+  - **SHALL** be capable of meaningfully processing (may mean display, persist, index, or other) all supported elements where the resource has been constructed in accordance with ADHA conformance requirements. 
   - **SHOULD** retain additional elements that are core elements, known extensions, and unknown non-modifier extensions where they are capable of doing so  
   - **SHALL** receive or persist information that has been constructed in accordance with ADHA conformance requirements and MAY choose to ignore the additional elements
   - **MAY** choose to reject non-conformant resources but is not required to
@@ -441,6 +446,7 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 ## Lists
 
+*TBD*
 
 ## Migration of data to a FHIR R4 resource
 

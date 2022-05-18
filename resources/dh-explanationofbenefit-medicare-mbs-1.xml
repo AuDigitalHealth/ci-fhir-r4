@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-explanationofbenefit-medicare-mbs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHExplanationofBenefitMBS"/>
   <title value="ADHA Record of Claim against MBS or DVA"/>
   <status value="draft"/>
@@ -36,6 +36,7 @@
     <element id="ExplanationOfBenefit.status">
       <path value="ExplanationOfBenefit.status"/>
       <fixedCode value="active"/>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.type">
       <path value="ExplanationOfBenefit.type"/>
@@ -57,6 +58,7 @@
     <element id="ExplanationOfBenefit.use">
       <path value="ExplanationOfBenefit.use"/>
       <fixedCode value="claim"/>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.patient">
       <path value="ExplanationOfBenefit.patient"/>
@@ -92,6 +94,7 @@
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
       </constraint>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.provider">
       <path value="ExplanationOfBenefit.provider"/>
@@ -123,19 +126,23 @@
     <element id="ExplanationOfBenefit.outcome">
       <path value="ExplanationOfBenefit.outcome"/>
       <fixedCode value="complete"/>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.insurance">
       <path value="ExplanationOfBenefit.insurance"/>
       <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.insurance.focal">
       <path value="ExplanationOfBenefit.insurance.focal"/>
       <fixedBoolean value="true"/>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.insurance.coverage">
       <path value="ExplanationOfBenefit.insurance.coverage"/>
       <short value="Medicare or Veteran card information"/>
       <comment value="Medicare or veteran card information may not be available in some records, for example if this resource describes claim information that was originally in another format."/>
+      <mustSupport value="true"/>
     </element>
     <element id="ExplanationOfBenefit.item">
       <path value="ExplanationOfBenefit.item"/>
