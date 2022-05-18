@@ -242,11 +242,7 @@ If one of these status code is missing, in response to a read transaction on the
 ## Extensibility – “additional” elements
 A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. 
 
-Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges.
-
-Extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
-
-An additional element **SHALL** conform to requirements of to ADHA conformance requirements, these are summarised below:
+Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling additional elements are summarised below: 
 - an additional element **SHALL** be part of a supported resource, it may be a canonical element or an extension
 - an additional element **SHALL** conform to the HL7 FHIR standard 
 - a resource referenced by an additional element **SHALL** conform to an ADHA profile and the HL7 FHIR standard
@@ -256,13 +252,13 @@ An additional element **SHALL** conform to requirements of to ADHA conformance r
 
 Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed. An orphaned resource is not considered to be an “additional” element.
 
-The obligations on systems in handling additional elements are summarised as:
+System obligations on handling additional elements are:
 - Systems that construct or send information **SHALL** ensure that resource meet all applicable ADHA conformance requirements
-- System that receive or persist information, when sent a resource with an "additional" set of elements:
-  - **SHALL** be capable of meaningfully processing (may mean display, persist, index, or other) all supported elements where the resource has been constructed in accordance with ADHA conformance requirements. 
-  - **SHOULD** retain additional elements that are core elements, known extensions, and unknown non-modifier extensions where they are capable of doing so  
+- Systems that receive or persist information, when sent a resource with an "additional" set of elements:
+  - **SHALL** be capable of meaningfully processing (depending on local requirements this may mean display, persist, index, or various) all supported elements where the resource has been constructed in accordance with ADHA conformance requirements. 
+  - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension   
   - **SHALL** receive or persist information that has been constructed in accordance with ADHA conformance requirements and MAY choose to ignore the additional elements
-  - **MAY** choose to reject non-conformant resources but is not required to
+  - **MAY** choose to reject non-conformant resources but are not required to
 
 ## Medicine information
 
