@@ -233,7 +233,31 @@ There are situations when information for a particular data element is missing a
 
         *The clinicalStatus element is conditionally mandatory based on resource specific constraints. 
 
-        <!-- If one of these status code is missing, a `404` http error code and an OperationOutcome **SHALL** be returned in response to a read transaction on the resource. If returning a response to a search, the problematic resource **SHALL** be excluded from the search set and a *warning* OperationOutcome **SHOULD** be included indicating that additional search results were found but could not be compliantly expressed and have been suppressed.-->
+        <!-- If one of these status code is missing, in response to a create or update transaction on the resource a `422` http error code and an OperationOutcome **SHALL** be returned. 
+
+If one of these status code is missing, in response to a read transaction on the resource a `404` http error code and an OperationOutcome **SHALL** be returned. If returning a response to a search, the problematic resource **SHALL** be excluded from the search set and a *warning* OperationOutcome **SHOULD** be included indicating that additional search results were found but could not be compliantly expressed and have been suppressed.
+-->
+
+## Extensibility – “additional” elements
+There may be circumstances where there is a need to extend the health information in exchanges and a sending system chooses to send additional data elements beyond those flagged with Must Support in an ADHA profile. 
+
+An additional element **SHALL** conform to requirements of to ADHA conformance requirements, these are summarised below:
+- an additional element **SHALL** be part of a supported resource, it may be a canonical element or an extension
+- an additional element **SHALL** conform to the HL7 FHIR standard 
+- a resource referenced by an additional element **SHALL** conform to an ADHA profile and the HL7 FHIR standard
+- where the additional element is an extension 
+   - a system system **SHALL** process a known extension according to it's definition
+   - a system **SHALL** process unknown extensions as per the [standard advice on exchanging extensions](https://www.hl7.org/fhir/extensibility.html#exchange)
+
+Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed. An orphaned resource is not considered to be an “additional” element.
+
+The obligations on systems in handling additional elements are summarised as:
+- Systems that construct or send information **SHALL** ensure that resources meet all applicable ADHA conformance requirements
+- System that receive or persist information, when sent a resource with an "additional" set of elements:
+  - **SHALL** be capable of meanginfully processing (may mean display, persist, index, or other) all supported elements where the resource has been constructed in accordance with ADHA conformance requirements. 
+  - **SHOULD** retain additional elements that are core elements, known extensions, and unknown non-modifier extensions where they are capable of doing so  
+  - **SHALL** receive or persist information that has been constructed in accordance with ADHA conformance requirements and MAY choose to ignore the additional elements
+  - **MAY** choose to reject non-conformant resources but is not required to
 
 ## Medicine information
 

@@ -56,10 +56,10 @@ The following core FHIR profiles are defined in this implementation guide. These
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
-                                <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
-                                <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a> (Joint w CI &amp; Architecture Team)</li> 
-                                <li><a href="StructureDefinition-dh-bundle-core-1.html">ADHA Core Bundle</a> (CI &amp; Architecture Team)</li>
+                                <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a></li> 
+                                <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a></li> 
+                                <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a></li> 
+                                <li><a href="StructureDefinition-dh-bundle-core-1.html">ADHA Core Bundle</a></li>
                                 <li>ADHA MHR Bundle (CI &amp; Architecture Team)</li>
                                 <li>ADHA Core MessageHeader (Architecture Team)</li>  
                             </ul>
