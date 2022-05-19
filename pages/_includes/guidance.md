@@ -252,7 +252,7 @@ Additional elements allow local requirements to be reflected including technical
 Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed. An orphaned resource is not considered to be an “additional” element.
 
 System obligations on handling additional elements are:
-- Systems that construct or send information **SHALL** ensure that resource meet all applicable ADHA conformance requirements
+- Systems that construct or send information **SHALL** ensure that a resource meet all applicable ADHA conformance requirements
 - Systems that receive or persist information, when sent a resource with an "additional" set of elements:
   - **SHALL** meaningfully process the Must Support elements where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow 
   - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension   

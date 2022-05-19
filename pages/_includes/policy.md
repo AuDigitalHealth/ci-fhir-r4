@@ -16,25 +16,25 @@ The policy for defining, using, maintaining, and implementing using FHIR version
 
 
 > **ADHA-FHIR-CONF-02** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base FHIR Asset
- 
- 
-> **ADHA-FHIR-CONF-04** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-CONF-05** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-03** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-CONF-06** A system **SHALL** reject any request to create or update a resource that contains a resource that does not conform to the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-04** A system **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-PROFILE-07** Use of extensions **SHALL** follow order of precedence:
+> **ADHA-FHIR-CONF-05** A system **SHALL** reject any request to create or update a resource that contains a resource that does not conform to the Conformance/CapabilityStatement resource for that endpoint
+
+
+> **ADHA-FHIR-PROFILE-06** Use of extensions **SHALL** follow order of precedence:
 > 1. HL7 extension
 > 2. HL7 AU extension
 > 3. ADHA extension
 > 4. Other
 
 
-> **ADHA-FHIR-CONF-08** A Core profile SHALL NOT be used where a more specific profile is applicable. An implementation SHALL ensure the Resource conforms to that specific profile.
+> **ADHA-FHIR-CONF-07** An ADHA Core profile **SHALL NOT** be used where a more specific profile is applicable. An implementation SHALL ensure the resource conforms to that specific profile.
 
 For example, a Shared Health Summary is to conform to the specific profile governing conformance of Shared Health Summary rather than only conform to ADHA Document Composition. 
 
@@ -209,6 +209,27 @@ Comments, feedback and suggestions from developers on FHIR resources (and associ
 
 
 ## Must Support
+
+Labelling an element [Must Support]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide "support" for the element in some meaningful way. ADHA profiles impose a core set of Must Support obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The specifications and/or profiles that define a particular implementation context **SHALL** make clear the required "support" for that context. 
+
+A sending system:
+- when making a request to an endpoint **SHALL** conform to the Conformance/Capability statement for that endpoint and conform to all applicable ADHA conformance requirements 
+- when constructing a resource:
+   - **SHALL** ensure the resource conforms to the applicable ADHA profile
+   - **SHALL** implement the guidance on extensibility if including “additional” elements
+   - **SHALL** implement the guidance on missing data if populating a mandatory element by asserting missing within the applicable ADHA profile constraints
+
+A receiving system:
+- **SHALL** be capable of meaningfully processing the Must Support elements where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow
+- **MAY** choose to reject non-conformant resources 
+- **SHALL** interpret missing data elements within resource instances as data not present in the source system
+- **SHALL** be able to process resources containing additional elements according to extensiblity
+
+A persisting system:
+- **SHALL** reject any request to create or update a resource that is not supported by the Conformance/CapabilityStatement, contains a modifier extension that is not supported by the Conformance/CapabilityStatement, or is a supported type but does not conform to the Conformance/Capability statement resource for that endpoint.  
+in circumstances other than those called out above (request to create or update a resource), a persisting system **MAY** choose to reject non-conformant resources but is not required to do so
+- **SHALL** be able to persist resources containing data elements asserting missing information according tothe section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
+- **SHALL** be able to persist resources containing additional elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
 > **ADHA-FHIR-0X**
 
