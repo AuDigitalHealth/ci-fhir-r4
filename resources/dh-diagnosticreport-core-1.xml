@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-diagnosticreport-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.1.0"/>
   <name value="DHDiagnosticReportCore"/>
   <title value="ADHA Core DiagnosticReport"/>
   <status value="draft"/>
@@ -108,6 +108,7 @@
     </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
