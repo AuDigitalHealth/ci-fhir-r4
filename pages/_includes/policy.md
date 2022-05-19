@@ -234,6 +234,37 @@ A persisting system:
 - **SHALL** be able to persist resources containing data elements asserting missing information according to the section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
 - **SHALL** be able to persist resources containing additional elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
+**Presentation of Must Support elements in profile views**
+When viewing the raw JSON of a profile, elements labeled *Must Support* are flagged with a boolean element `mustSupport` set to "true". 
+
+Example: ADHA Core AllergyIntolerance profile showing clinicalStatus and verificationStatus flagged with Must Support
+~~~
+{
+    "resourceType" : "StructureDefinition",
+    ...
+    "url" : "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1",
+    ...
+    "type" : "AllergyIntolerance",
+    "baseDefinition" : "http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance",     
+    ...
+           {
+              "id" : "AllergyIntolerance.clinicalStatus",
+              "path" : "AllergyIntolerance.clinicalStatus",
+              "mustSupport" : true
+           },
+           {
+              "id" : "AllergyIntolerance.verificationStatus",
+              "path" : "AllergyIntolerance.verificationStatus",
+              "mustSupport" : true
+           },
+    ...
+}
+~~~
+
+When rendered in an implementation specification each profile is presented different formal views of all the must support elements in a tree format under tabs labeled "Differential Table" and "Snapshot Table".
+
+The elements labeled *Must Support* in the "Differential Table" and "Snapshot Table" view are flagged with an <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>. To see the full set of Must Support elements a reader must use the "Snapshot Table". The "Snapshot Table" present the must support elements defined in this profile (shown in the "Differential Table) and the must support elements inherited from a base profile (e.g. [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html) based on [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) 
+
 
 ## Packaging
 
