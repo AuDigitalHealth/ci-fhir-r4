@@ -39,7 +39,6 @@ This profile is referenced by
 [ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
 [ADHA System Device](StructureDefinition-dh-device-system-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
-[ADHA Diagnostic Result Group](StructureDefinition-dh-observation-diagnosticresultgroup-1.html), 
 [ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-acp-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html), 
@@ -57,11 +56,12 @@ This profile is referenced by
 [ADHA My Health Record Patient](StructureDefinition-dh-patient-mhr-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html), 
+[ADHA Diagnostic Result Group](StructureDefinition-dh-observation-diagnosticresultgroup-1.html), 
 [ADHA National Cancer Screening Program Participation Observation](StructureDefinition-dh-observation-ncspp-1.html), 
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), 
 [ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), 
 [ADHA Authoring Care Agency Employee](StructureDefinition-dh-practitionerrole-author-cae-1.html), 
-[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html),  
+[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
 [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html). 
 

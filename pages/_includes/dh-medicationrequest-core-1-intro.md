@@ -20,7 +20,7 @@ None.
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html),  
+[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Dispense Record](StructureDefinition-dh-medicationdispense-disp-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html), 
