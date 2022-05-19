@@ -219,8 +219,8 @@ A sending system:
    - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
    - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
    - **SHALL** populate all Must Support elements where the sending system has that information unless:
-      - there is a clinical reason why supplying the information would be unsafe, mislaeding, or otherwise clinically inappropriate
-      - the data is surpressed due to a security or privacy reason 
+      - there is a clinical reason why supplying the information would be unsafe, misleading, or otherwise clinically inappropriate
+      - the data is suppressed due to a security or privacy reason 
 
 A receiving system:
 - **SHALL** be capable of meaningfully processing the Must Support elements where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow
@@ -235,6 +235,7 @@ A persisting system:
 - **SHALL** be able to persist resources containing additional elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
 **Presentation of Must Support elements in profile views**
+
 When viewing the raw JSON of a profile, elements labeled *Must Support* are flagged with a boolean element `mustSupport` set to "true". 
 
 Example: ADHA Core AllergyIntolerance profile showing clinicalStatus and verificationStatus flagged with Must Support

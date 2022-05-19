@@ -241,9 +241,9 @@ There are situations when information for a particular data element is missing a
 
 
 ## Extensibility – “additional” elements
-A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. 
+A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
-Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling additional elements are summarised below: 
+Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling additional elements are summarised below: 
 - an additional element **SHALL** be part of a supported resource, it may be a canonical element or an extension
 - an additional element **SHALL** conform to the HL7 FHIR standard 
 - a resource referenced by an additional element **SHALL** conform to an ADHA profile and the HL7 FHIR standard
@@ -251,14 +251,14 @@ Additional elements allow local requirements to be reflected including technical
    - a system **SHALL** process a known extension according to it's definition
    - a system **SHALL** process unknown extensions as per the [core specification guidance on exchanging extensions](https://www.hl7.org/fhir/extensibility.html#exchange)
 
-Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed. An orphaned resource is not considered to be an “additional” element.
+Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed.
 
 System obligations on handling additional elements are:
 - Systems that construct or send information **SHALL** ensure that a resource meet all applicable ADHA conformance requirements
 - Systems that receive or persist information, when sent a resource with an "additional" set of elements:
-  - **SHALL** meaningfully process the Must Support elements where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow 
+  - **SHALL** meaningfully process the Must Support elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow 
   - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension   
-  - **SHALL** receive or persist information that has been constructed in accordance with ADHA conformance requirements and **MAY** choose to ignore the additional elements
+  - **MAY** choose to ignore the additional elements
   - **MAY** choose to reject non-conformant resources but are not required to
 
 ## Medicine information
@@ -299,6 +299,7 @@ These data elements may be supported as coded, or text, and systems are likely t
    - If the resource is a Medication resource:
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
       - manufacturer = `manufacturer.identifer`
+
     Example: Medication with coded brand name, generic name, manufacturer, item form and strength.
     ~~~
     {
