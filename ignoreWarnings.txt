@@ -37,7 +37,23 @@ Found multiple matching profiles among choices: ; [http://hl7.org/fhir/Structure
 Found multiple matching profiles among choices: ; [http://hl7.org/fhir/StructureDefinition/Identifier, http://hl7.org.au/fhir/StructureDefinition/au-residentialagedcareserviceidentifier]
 Found multiple matching profiles among choices: ; [http://hl7.org/fhir/StructureDefinition/Identifier, http://hl7.org.au/fhir/StructureDefinition/au-etpprescriptionidentifier]
 
-# Terminology not available at HL7 tx server
+
+# Terminology not available at HL7 tx server or in package dependency: fictious local coding systems
+Code System URI 'http://example.localcodingsystem.com.au/generic-packages' is unknown so the code cannot be validated
+
+# Terminology not available at HL7 tx server or in package dependency: CodeSystem
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/date-accuracy-indicator-1' is unknown so the code cannot be validated
+Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1' is unknown so the code cannot be validated
+Code System URI 'urn:oid:1.2.36.1.2001.1005.21' is unknown so the code cannot be validated
+Code System URI 'http://pbs.gov.au/code/item' is unknown so the code cannot be validated
+Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0' is unknown so the code cannot be validated
+Code System URI 'http://www.mims.com.au/codes' is unknown so the code cannot be validated
+
+# Terminology not available at HL7 tx server or in package dependency: ValueSet
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator
@@ -79,3 +95,12 @@ ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-resu
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-event-2 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-from-practitioner-medicines-review-2 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/service-type-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator
