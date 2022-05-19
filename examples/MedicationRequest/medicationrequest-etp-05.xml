@@ -21,6 +21,12 @@
     </identifier>
     <status value="active" />
     <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+            <code value="community" />
+        </coding>
+    </category>
     <medicationReference>
         <reference value="Medication/oxybutynin-01" />
         <display value="OXYBUTYNIN" />
