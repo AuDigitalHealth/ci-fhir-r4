@@ -162,8 +162,10 @@ References between resources are supported as reference (literal reference), ide
 
 There are situations when information for a particular data element is missing and the source system does not know reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labeled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present for *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
 
-1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type
-  - Use the code `unknown` - The value is expected to exist but is not known.
+1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), 
+  - use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type if the ADHA profile for that resource does not require a child element
+  - if the ADHA profile mandates a child element such as a valid identifier or reference then the resource must that element otherwise the instance will not be conformant
+  - use the code `unknown` - The value is expected to exist but is not known.
   
     Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available.
     ~~~
@@ -218,7 +220,7 @@ There are situations when information for a particular data element is missing a
         ~~~
 
    - *required* binding strength (CodeableConcept or code datatypes):
-      - the appropriate "unknown" concept code **SHALL** be present if the binding strength
+      - the appropriate "unknown" concept code **SHALL** be present if available
       - if the value set does not have the appropriate “unknown” concept code you must use a concept from the value set otherwise the instance will not be conformant
 
         - For ADHA Core profiles, the following mandatory or conditionally mandatory* status elements with required binding have no appropriate "unknown" concept code:

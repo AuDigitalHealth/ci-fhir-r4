@@ -216,22 +216,20 @@ A sending system:
 - when making a request to an endpoint **SHALL** conform to the Conformance/Capability statement for that endpoint and conform to all applicable ADHA conformance requirements 
 - when constructing a resource:
    - **SHALL** ensure the resource conforms to the applicable ADHA profile
-   - **SHALL** implement the guidance on extensibility if including “additional” elements
-   - **SHALL** implement the guidance on missing data if populating a mandatory element by asserting missing within the applicable ADHA profile constraints
+   - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
+   - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
 
 A receiving system:
 - **SHALL** be capable of meaningfully processing the Must Support elements where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow
 - **MAY** choose to reject non-conformant resources 
 - **SHALL** interpret missing data elements within resource instances as data not present in the source system
-- **SHALL** be able to process resources containing additional elements according to extensiblity
+- **SHALL** be able to process resources containing “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
 A persisting system:
 - **SHALL** reject any request to create or update a resource that is not supported by the Conformance/CapabilityStatement, contains a modifier extension that is not supported by the Conformance/CapabilityStatement, or is a supported type but does not conform to the Conformance/Capability statement resource for that endpoint.  
 in circumstances other than those called out above (request to create or update a resource), a persisting system **MAY** choose to reject non-conformant resources but is not required to do so
-- **SHALL** be able to persist resources containing data elements asserting missing information according tothe section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
+- **SHALL** be able to persist resources containing data elements asserting missing information according to the section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
 - **SHALL** be able to persist resources containing additional elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
-
-> **ADHA-FHIR-0X**
 
 
 ## Packaging
