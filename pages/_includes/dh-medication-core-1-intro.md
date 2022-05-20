@@ -20,7 +20,8 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-None.
+- See the [Medicine information](guidance.html#medicine-information) section for guidance on constructing a resource and the use of medicines terminology
+- Manufacturer information will commonly be exchanged as a PBS code, this information can be represented as an external resource of by using `Medication.manufacturer.identifier` to carry the PBS code and `Medication.manufacturer.display` to carry the name of the manufacturer  
 
 
 #### Boundaries and relationships

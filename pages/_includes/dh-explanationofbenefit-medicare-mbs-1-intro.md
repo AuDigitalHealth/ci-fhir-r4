@@ -14,7 +14,7 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-TBD.
+None.
 
 
 #### Boundaries and relationships
