@@ -49,7 +49,7 @@ A sending system:
 - when constructing a resource:
    - **SHALL** ensure the resource conforms to the applicable ADHA profile
    - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
-   - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
+   - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing Data](guidance.html#missing-data)
    - **SHALL** populate all Must Support elements where the sending system has that information unless:
       - there is a clinical reason why supplying the information would be unsafe, misleading, or otherwise clinically inappropriate
       - the data is suppressed due to a security or privacy reason 
@@ -63,7 +63,7 @@ A receiving system:
 A persisting system:
 - **SHALL** reject any request to create or update a resource that is not supported by the Conformance/CapabilityStatement, contains a modifier extension that is not supported by the Conformance/CapabilityStatement, or is a supported type but does not conform to the Conformance/Capability statement resource for that endpoint.  
 - in circumstances other than those called out above (request to create or update a resource), a persisting system **MAY** choose to reject non-conformant resources but is not required to do so
-- **SHALL** be able to persist resources containing data elements asserting missing information according to the section on [Missing Data](https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/guidance.html#missing-data)
+- **SHALL** be able to persist resources containing data elements asserting missing information according to the section on [Missing Data](guidance.html#missing-data)
 - **SHALL** be able to persist resources containing additional elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
 
@@ -101,13 +101,13 @@ The elements labeled *Must Support* in the "Differential Table" and "Snapshot Ta
 The "Snapshot Table" present the must support elements defined in this profile (shown in the "Differential Table) and the must support elements inherited from a base profile (e.g. [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html) based on [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) 
 
 
-**Interpreting profile elements and subelements labeled Must Support**
+**Interpreting profile elements labeled Must Support**
 
-Profiles defined in this specification flag Must Support only on elements and not to subelements of a data type. 
+Profiles defined in this specification flag Must Support only on elements and not on subelements of a data type. 
 The explanation on how to interpret Must Support for an element does not address rules defined in each profile - in implementation the rules defined in the profile must be applied and may limit or extend what is allowed for each element.
 
-The allowed subelements for each supported element in a profile is defined by a combination of the data type from the core specification and any additional rules included in the profile. 
-A profile may include constraints that do one or both of:
+The allowed subelements for each supported element in a profile are defined by a combination of the data type from the core specification and any additional rules included in the profile. 
+A profile may include rules that:
 - limit what is considered 'valid'
 - extend the potential subelements by including an extension
 
