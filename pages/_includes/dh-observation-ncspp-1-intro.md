@@ -19,5 +19,4 @@ TBD.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA National Cancer Screening Program Participation View](StructureDefinition-dh-composition-ncspv-1.html), and 
-[ADHA National Cancer Screening Program Participation Composition ValueSet](StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html). 
+[ADHA National Cancer Screening Program Participation View](StructureDefinition-dh-composition-ncspv-1.html). 

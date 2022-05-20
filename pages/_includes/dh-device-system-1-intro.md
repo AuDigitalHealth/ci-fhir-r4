@@ -18,7 +18,6 @@ This profile is referenced by
 [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html), 
 [ADHA Medicare Overview Composition](StructureDefinition-dh-composition-mov-1.html), 
 [ADHA National Cancer Screening Program Participation View](StructureDefinition-dh-composition-ncspv-1.html), 
-[ADHA National Cancer Screening Program Participation Composition ValueSet](StructureDefinition-dh-composition-ncspp-valuesetoptions-1.html), 
 [ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html), 
 [ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
