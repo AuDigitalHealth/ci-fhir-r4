@@ -68,27 +68,28 @@ assigner" : {
 
 Example: PractitionerRole resource with an employee number (local identifier)
 ~~~
-    {
-      "resourceType" : "PractitionerRole",
-           ...
-           "identifier" : [
-             {
-               "type" : {
-                 "coding" : [
-                   {
-                     "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-                     "code" : "EI",
-                     "display" : "Employee number"
-                   }
-                 ],
-                 "text" : "Employee Number"
-               },
-               "system" : "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003621566699776",
-               "value" : "AMC-GA-001",
-               "assigner" : {
-                 "display" : "Algregster Medical Center QLD"
-             }
-           }  
+{
+  "resourceType" : "PractitionerRole",
+    ...
+    "identifier" : [
+      {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code" : "EI",
+              "display" : "Employee number"
+              }
+            ],
+          "text" : "Employee Number"
+      },
+      "system" : "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003621566699776",
+      "value" : "AMC-GA-001",
+      "assigner" : {
+        "display" : "Algregster Medical Center QLD"
+    },
+  ...
+}  
 ~~~
 
 
@@ -123,27 +124,28 @@ assigner" : {
 
 Example: Patient resource with a  medical record number (local identifier)
 ~~~
-    {
-      "resourceType" : "Patient",
-           ...
-           "identifier" : [
-             {
-               "type" : {
-                 "coding" : [
-                   {
-                     "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+{
+  "resourceType" : "Patient",
+    ...
+      "identifier" : [
+        {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
                      "code" : "MR",
                      "display" : "Medical record number"
                    }
                  ],
-                 "text" : "Medical Record Number"
-               },
-               "system" : "http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/004085616",
-               "value" : "123456",
-               "assigner" : {
-                 "display" : "Test Hospital Org 1"
-             }
-           }  
+          "text" : "Medical Record Number"
+        },
+        "system" : "http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0/004085616",
+        "value" : "123456",
+        "assigner" : {
+          "display" : "Test Hospital Org 1"
+    },
+  ...
+}
 ~~~
 
 ## Addresses
@@ -157,6 +159,33 @@ Example: Patient resource with a  medical record number (local identifier)
 ## References between resources
 
 References between resources are supported as reference (literal reference), identifier (logical reference), and display (text description of target). Profiles define if one . provide examples TBD.
+
+References to a patient **SHOULD** be exchanged with a verified IHI in `identifier` and when applicable a `reference` to a Patient resource
+
+Example: Observation resource with a Reference to a Patient resource as identifier and reference 
+~~~
+{
+  "resourceType" : "Observation",
+  ...
+  "subject" : {
+    "reference" : "Patient/88923001",
+    "identifier" : {
+      "type" : {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "NI",
+            "display" : "National unique individual identifier"
+          }
+        ],
+        "text" : "IHI"
+      },
+      "system" : "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+      "value" : "8003608000228445"
+    },
+  ...
+}
+~~~
 
 ## Missing Data
 
