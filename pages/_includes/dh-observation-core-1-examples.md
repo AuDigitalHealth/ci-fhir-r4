@@ -237,11 +237,11 @@
       <td><a href="Bundle-ncspv-doc-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-po-01-doc.html">Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
+      <td><a href="Bundle-po-01.html">Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
       <td>po-01-doc</td>
-      <td><a href="Bundle-po-01-doc.xml.html">XML</a></td>
-      <td><a href="Bundle-po-01-doc.json.html">JSON</a></td>
-      <td><a href="Bundle-po-01-doc.ttl.html">Turtle</a></td>
+      <td><a href="Bundle-po-01.xml.html">XML</a></td>
+      <td><a href="Bundle-po-01.json.html">JSON</a></td>
+      <td><a href="Bundle-po-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Bundle-po-doc-01.html">Personal Observations Document Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
