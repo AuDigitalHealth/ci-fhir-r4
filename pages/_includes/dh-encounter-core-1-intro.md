@@ -12,11 +12,10 @@ This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
 #### Profile specific guidance TBD
-- In an exchange with the My Health Record system `Encounter.status` is "finished"
-- `Encounter.type` supports categorisation of the event from which the records are generated, for example a medicines list can indicate a home medicines review
+- `Encounter.type` supports categorisation and provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. - In an exchange with the My Health Record system `Encounter.status` is "finished"
 - The Encounter resource can represent a reason using either a code with `Encounter.reasonCode`, or a reference with `Encounter.reasonReference` to a Condition or other resource.
-   - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
-   - A receiving or persisting system **SHALL** support both elements
+  - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
+  - A receiving or persisting system **SHALL** support both elements
 
 
 #### Boundaries and relationships

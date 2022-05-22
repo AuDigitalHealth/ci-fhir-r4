@@ -7,7 +7,7 @@ This profile is designed to set an Observation standard for:
 
 
 #### Profile specific guidance
-TBD.
+- `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. - An active condition is represented using "active" in `Condition.clinicalStatus`
 
 
 #### Boundaries and relationships
