@@ -12,9 +12,9 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-* verificationStatus is 'confirmed'
-* an active condition is sent with clinicalStatus 'active'
-* a refuted condition is sent with a negation code and verificationStatus of ‘unconfirmed’ or ‘confirmed’ depending on the level of certainty
+- An active condition is represented using "active" in `Condition.clinicalStatus`
+- To represent that a patient does not have a condition or history of condition, an appropriate negation code is used in `Condition.code`
+- Refutation is not expected to be handled except as above - an appropriate negation code in `Condition.code` and `Condition.clinicalStatus` of "confirmed" or "unconfirmed"
 
 
 #### Boundaries and relationships

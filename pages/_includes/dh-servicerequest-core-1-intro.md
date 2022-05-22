@@ -12,7 +12,9 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-None.
+- The ServiceRequest resource can represent a reason using either a code with `ServiceRequest.reasonCode`, or a reference with `ServiceRequest.reasonReference` to a Condition or other resource.
+   - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
+   - A receiving or persisting system **SHALL** support both elements
 
 
 #### Boundaries and relationships

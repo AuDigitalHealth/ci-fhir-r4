@@ -143,10 +143,13 @@ For some complex types a meaningful, valid, value can be populated with only one
 *Must support elements with a choice of data types or profiles*
  
 - A sending system **SHALL** be capable of populating the element with a value that conforms to at least one choice, and **SHOULD** be capable of populating every choice for which the sending system might possess data
-- A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which subelements might be populated) 
-- A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which subelements might be populated)
+- A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which data type or profile might be populated) 
+- A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which data type or profile might be populated)
 
-
+A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference`. Where both elements are optional and flagged with Must Support in a profile they **SHALL** be treated as a choice of data types:
+- A sending system **SHALL** be capable of populating at least one choice, and **SHOULD** be capable of populating every choice for which the sending system might possess data
+- A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which element might be populated) 
+- A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which element might be populated)
 
 ## Serialisation TBD Architecture Team
 

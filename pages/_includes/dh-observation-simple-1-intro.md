@@ -8,7 +8,7 @@ This profile is designed to set an Observation standard for:
 
 
 #### Profile specific guidance
-None.
+- Antenatal observations will represent the pregnant individual as `Observation.subject` and the fetus as `Observation.focus`
 
 
 #### Boundaries and relationships

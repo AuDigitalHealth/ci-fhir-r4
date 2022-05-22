@@ -3,18 +3,21 @@ The purpose of this profile is to provide a core representation of an encounter 
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Encounter](http://hl7.org/fhir/R4/encounter.html) that are supported. 
 
-This profile is designed to set a PractitionerRole standard for:
-* Query for a specific patient encounter
+This profile is designed to set a core Encounter standard for:
+* Query for a patient's encounters
 * Query for records associated with a specific patient encounter
 * Record or update an encounter and records associated with an encounter
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-#### Profile specific guidance
-* status will be 'finished' 
-* type will support categorisation of the event from which the medicines list was generated, for example a code indicating a home medicines review
-* period is equal to, or prior to, any referencing Composition or List date
+#### Profile specific guidance TBD
+- In an exchange with the My Health Record system `Encounter.status` is "finished"
+- `Encounter.type` supports categorisation of the event from which the records are generated, for example a medicines list can indicate a home medicines review
+- The Encounter resource can represent a reason using either a code with `Encounter.reasonCode`, or a reference with `Encounter.reasonReference` to a Condition or other resource.
+   - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
+   - A receiving or persisting system **SHALL** support both elements
+
 
 #### Boundaries and relationships
 This profile is referenced by 

@@ -14,7 +14,7 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-None.
+- Antenatal observations will represent the pregnant individual as `Observation.subject` and the fetus as `Observation.focus`
 
 
 #### Boundaries and relationships
