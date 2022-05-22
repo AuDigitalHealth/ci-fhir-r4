@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-bodystructure-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="DHBodyStructureCore"/>
   <title value="ADHA Core BodyStructure"/>
   <status value="draft"/>
@@ -65,6 +65,15 @@
     </element>
     <element id="BodyStructure.locationQualifier">
       <path value="BodyStructure.locationQualifier"/>
+      <constraint>
+        <key value="inv-dh-bodstr-03"/>
+        <severity value="error"/>
+        <human value="If a coded location qualifier is provided, at least one code shall be from SNOMED CT"/>
+        <expression
+          value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
@@ -85,7 +94,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <constraint>
-        <key value="inv-dh-bodstr-03"/>
+        <key value="inv-dh-bodstr-04"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
