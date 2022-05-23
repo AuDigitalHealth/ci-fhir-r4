@@ -3,6 +3,8 @@ The purpose of this profile is to provide a core representation of a record of r
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [ServiceRequest](http://hl7.org/fhir/R4/list.html) that are supported. 
 
+Where a more specific service request profile is applicable an implementation **SHALL** ensure the resource conforms to that specific profile.
+
 This profile is designed to set a core ServiceRequest standard for:
 * Query for a request for a service associated with a patient
 * Record or update a request for a service associated with a patient

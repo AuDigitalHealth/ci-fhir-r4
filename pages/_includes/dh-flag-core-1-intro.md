@@ -3,7 +3,7 @@ The purpose of this profile is to provide a core representation of a flag (e.g. 
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Flag](http://hl7.org/fhir/R4/flag.html) that are supported. 
 
-Where a more specific profile is applicable, e.g. AIR notice, an implementation **SHALL** ensure the Resource conforms to that specific profile as per **ADHA-FHIR-CONF-08**.
+Where a more specific profile is applicable, e.g. AIR notice, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core Flag standard for:
 * Query for a flag (alert or notice) associated with a patient

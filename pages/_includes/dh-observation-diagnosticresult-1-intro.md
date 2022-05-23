@@ -3,9 +3,11 @@ The purpose of this profile is to provide a representation of a diagnostic resul
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
+Where a more specific profile is applicable, e.g. pathology result observation or imaging result observation, an implementation **SHALL** ensure the Resource conforms to that specific profile.
+
 This profile is designed to set an Observation standard for:
-* exchanging diagnostic results
-* TBD
+* Query for diagnostic examination results for a patient
+* Record or update diagnostic examination results belonging to a patient
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
@@ -13,6 +15,9 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
+- The Observation resource can represent a result using one or both of a single value with `Observation.value`, or set of component results using `Observation.component.value`.
+  - Although both are marked as must support, sending systems are not required to support both a single value and a set of components, but they **SHALL** support *at least one* of these elements
+  - A receiving or persisting system **SHALL** support both elements
 
 
 #### Boundaries and relationships

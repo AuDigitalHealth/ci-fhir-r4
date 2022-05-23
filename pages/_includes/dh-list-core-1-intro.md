@@ -3,6 +3,8 @@ The purpose of this profile is to provide a core representation of a list for th
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [List](http://hl7.org/fhir/R4/list.html) that are supported. 
 
+Where a more specific list profile is applicable, e.g. prescription or dispense history list, an implementation **SHALL** ensure the resource conforms to that specific profile.
+
 This profile is designed to set a core List standard for:
 * Query for a list associated with a patient
 * Record or update a list associated with a patient

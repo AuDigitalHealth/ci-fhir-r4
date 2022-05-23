@@ -13,6 +13,9 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches to “imaging” observations. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
+- The Observation resource can represent a result using one or both of a single value with `Observation.value`, or set of component results using `Observation.component.value`.
+  - Although both are marked as must support, sending systems are not required to support both a single value and a set of components, but they **SHALL** support *at least one* of these elements
+  - A receiving or persisting system **SHALL** support both elements
 
 
 #### Boundaries and relationships
