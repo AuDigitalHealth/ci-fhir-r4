@@ -483,7 +483,7 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 **Patient**
 
-The table below provides guidance on representing communication preferences for a patient.
+The table below provides guidance on representing communication preferences for a patient. Blank cells in the table indicate that the given element is absent from the resource.
 
 <table class="list" style="width:100%">
     <colgroup>
@@ -546,8 +546,6 @@ The table below provides guidance on representing communication preferences for 
     </tbody>
 </table>
 
-Blank cells in the above table indicate that the given element is absent from the resource.
-
 Example: Patient resource with intepreter required and language is known
 ~~~
 {
@@ -581,7 +579,8 @@ Example: Patient resource with intepreter required and language is known
 
 **RelatedPerson**
 
-The table below provides guidance on representing communication preferences for a related person.
+The table below provides guidance on representing communication preferences for a related person. Blank cells in the indicate that the given element is absent from the resource.
+
 <table class="list" style="width:100%">
     <colgroup>
        <col span="1" style="width: 20%;"/>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-diagnosticreport-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="DHDiagnosticReportCore"/>
   <title value="ADHA Core DiagnosticReport"/>
   <status value="draft"/>
@@ -137,11 +137,10 @@
       <path value="DiagnosticReport.result"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"
-        />
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
       </type>
       <mustSupport value="true"/>
     </element>

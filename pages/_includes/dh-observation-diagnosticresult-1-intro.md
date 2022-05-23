@@ -12,7 +12,7 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. - An active condition is represented using "active" in `Condition.clinicalStatus`
+- `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
 
 
 #### Boundaries and relationships
@@ -24,3 +24,7 @@ This profile is referenced by
 [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), and
 [ADHA Diagnostic Result Group](StructureDefinition-dh-observation-diagnosticresultgroup-1.html). 
+
+These profiles build on this profile ([ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html)) to define specific diagnostic results:
+* [ADHA Imaging Result Observation](StructureDefinition-dh-observation-diagnosticresult-imag-1.html)
+* [ADHA Pathology Result Observation](StructureDefinition-dh-observation-diagnosticresult-path-1.html)

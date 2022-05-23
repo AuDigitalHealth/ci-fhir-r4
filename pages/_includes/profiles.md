@@ -136,7 +136,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></li>
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
-                                <li>ADHA Core ImagingStudy</li>
+                                <li>ADHA Core Media</li>
                                 <li>ADHA Core QuestionnaireResponse</li>
                             </ul>
                         </td>     
@@ -342,6 +342,8 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresultgroup-1.html">ADHA Diagnostic Result Group</a></li>
                                 <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
                                 <li>ADHA Pathology DiagnosticReport</li>

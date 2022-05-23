@@ -11,7 +11,7 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- `DiagnosticReport.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. - An active condition is represented using "active" in `Condition.clinicalStatus`
+- `DiagnosticReport.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
 
 
 #### Boundaries and relationships
