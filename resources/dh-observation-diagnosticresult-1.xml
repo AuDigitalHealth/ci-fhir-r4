@@ -36,10 +36,6 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
     </element>
-    <element id="Observation.partOf">
-      <path value="Observation.partOf"/>
-      <mustSupport value="true"/>
-    </element>
     <element id="Observation.status">
       <path value="Observation.status"/>
       <short value="preliminary | final | amended +"/>
@@ -147,19 +143,6 @@
       <path value="Observation.method"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Observation.specimen">
-      <path value="Observation.specimen"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.specimen.reference">
-      <path value="Observation.specimen.reference"/>
-      <min value="1"/>
-    </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange"/>
       <mustSupport value="true"/>
@@ -203,30 +186,6 @@
     </element>
     <element id="Observation.component.dataAbsentReason">
       <path value="Observation.component.dataAbsentReason"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.component.interpretation">
-      <path value="Observation.component.interpretation"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.component.referenceRange">
-      <path value="Observation.component.referenceRange"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.component.referenceRange.low">
-      <path value="Observation.component.referenceRange.low"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.component.referenceRange.high">
-      <path value="Observation.component.referenceRange.high"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.component.referenceRange.type">
-      <path value="Observation.component.referenceRange.type"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.component.referenceRange.text">
-      <path value="Observation.component.referenceRange.text"/>
       <mustSupport value="true"/>
     </element>
   </differential>
