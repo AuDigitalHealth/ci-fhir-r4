@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-document-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionDocument"/>
   <title value="ADHA Document Composition"/>
   <status value="draft"/>
@@ -116,6 +116,13 @@
     </element>
     <element id="Composition.date">
       <path value="Composition.date"/>
+      <constraint>
+        <key value="inv-dh-doc-07"/>
+        <severity value="error"/>
+        <human value="Date shall be at least to day"/>
+        <expression value="toString().length() &gt;= 10"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.author">

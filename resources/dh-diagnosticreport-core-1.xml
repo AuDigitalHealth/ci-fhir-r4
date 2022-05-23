@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-diagnosticreport-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="DHDiagnosticReportCore"/>
   <title value="ADHA Core DiagnosticReport"/>
   <status value="draft"/>
@@ -98,6 +98,13 @@
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]"/>
       <min value="1"/>
+      <constraint>
+        <key value="inv-dh-dir-04"/>
+        <severity value="error"/>
+        <human value="Date shall be at least to day"/>
+        <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="DiagnosticReport.issued">

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHObservationCore"/>
   <title value="ADHA Core Observation"/>
   <status value="draft"/>
@@ -80,6 +80,13 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <min value="1"/>
+      <constraint>
+        <key value="inv-dh-obs-07"/>
+        <severity value="error"/>
+        <human value="Date shall be at least to day"/>
+        <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.performer">

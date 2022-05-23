@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="DHMedicationRequestCore"/>
   <title value="ADHA Core MedicationRequest"/>
   <status value="draft"/>
@@ -89,6 +89,13 @@
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn"/>
       <min value="1"/>
+      <constraint>
+        <key value="inv-dh-medreq-03"/>
+        <severity value="error"/>
+        <human value="Date shall be at least to day"/>
+        <expression value="toString().length() &gt;= 10"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationRequest.requester">
