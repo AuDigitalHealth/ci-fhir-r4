@@ -23,6 +23,12 @@
   </identifier>
   <status value="active"/>
   <intent value="instance-order"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+      <code value="outpatient" />
+    </coding>
+  </category>
   <medicationCodeableConcept>
     <text value="Atorvastatin"/>
   </medicationCodeableConcept>
@@ -46,6 +52,9 @@
     <reference value="PractitionerRole/nsw-gp"/>
   </requester>
   <dispenseRequest>
+    <validityPeriod> 
+      <end value="2021-02-20"/> 
+    </validityPeriod>
     <numberOfRepeatsAllowed value="2"/>
     <quantity>
       <value value="30"/>
