@@ -122,7 +122,7 @@ assigner" : {
 }
 ~~~
 
-Example: Patient resource with a  medical record number (local identifier)
+Example: Patient resource with a medical record number (local identifier)
 ~~~
 {
   "resourceType" : "Patient",
@@ -481,6 +481,8 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 ## Representing communication preferences
 
+**Patient**
+
 The table below provides guidance on representing communication preferences for a patient.
 
 <table class="list" style="width:100%">
@@ -528,6 +530,13 @@ The table below provides guidance on representing communication preferences for 
         <td></td>
       </tr>
       <tr>
+        <td>Interpreter is not required</td>
+        <td></td>
+        <td></td>
+        <td>'false'</td>
+        <td></td>
+      </tr>
+      <tr>
         <td>Communicates with multiple languages</td>
         <td>language.coding</td>
         <td></td>
@@ -539,6 +548,38 @@ The table below provides guidance on representing communication preferences for 
 
 Blank cells in the above table indicate that the given element is absent from the resource.
 
+Example: Patient resource with intepreter required and language is known
+~~~
+{
+  "resourceType" : "Patient",
+    ...
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+          "valueBoolean" : true
+        }          
+       ]
+    },
+    ...
+    "communication" : [
+    {
+      "language" : {
+        "coding" : [
+          {
+            "system" : "urn:ietf:bcp:47",
+            "code" : "yue"
+          }
+        ],
+        "text" : "Cantonese"
+      },
+      "preferred" : true
+    }
+  ]
+}
+~~~
+
+
+**RelatedPerson**
 
 The table below provides guidance on representing communication preferences for a related person.
 <table class="list" style="width:100%">
