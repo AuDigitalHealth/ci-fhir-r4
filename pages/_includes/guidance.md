@@ -148,6 +148,7 @@ Example: Patient resource with a  medical record number (local identifier)
 }
 ~~~
 
+
 ## Addresses
 
 * All Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
@@ -289,6 +290,7 @@ System obligations on handling additional elements are:
   - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension   
   - **MAY** choose to ignore the additional elements
   - **MAY** choose to reject non-conformant resources but are not required to
+
 
 ## Medicine information
 
@@ -471,9 +473,111 @@ These data elements may be supported as coded, or text, and systems are likely t
     }
     ~~~
 
+
 ## Lists
 
 *TBD*
+
+
+## Representing communication preferences
+
+The table below provides guidance on representing communication preferences for a patient.
+
+<table class="list" style="width:100%">
+    <colgroup>
+       <col span="1" style="width: 20%;"/>
+       <col span="1" style="width: 18%;"/>
+       <col span="1" style="width: 18%;"/>
+       <col span="1" style="width: 20%;"/>
+       <col span="1" style="width: 24%;"/>
+    </colgroup>
+	<tbody>
+      <tr>
+        <th>Scenario</th>
+        <th>communication.language</th>
+        <th>communication.preferred</th>
+        <th>extension:interpreterRequired</th>
+		<th>Notes</th>
+      </tr>
+      <tr>
+        <td>Preferred language is English</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/patient-definitions.html#Patient.communication">Comments</a> of Patient.communication</td>
+      </tr>
+      <tr>
+        <td>Preferred language is other than English</td>
+        <td>language.coding</td>
+        <td>'true'</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Interpreter required, language is known</td>
+        <td>language.coding</td>
+        <td>'true'</td>
+        <td>'true'</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Interpreter required, language is not known</td>
+        <td></td>
+        <td></td>
+        <td>'true'</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Communicates with multiple languages</td>
+        <td>language.coding</td>
+        <td></td>
+        <td></td>
+        <td>Each language instantiated in separate communication nodes; communication.preferred and extension:interpreterRequired may be sent as needed.</td>
+      </tr>
+    </tbody>
+</table>
+
+Blank cells in the above table indicate that the given element is absent from the resource.
+
+
+The table below provides guidance on representing communication preferences for a related person.
+<table class="list" style="width:100%">
+    <colgroup>
+       <col span="1" style="width: 20%;"/>
+       <col span="1" style="width: 18%;"/>
+       <col span="1" style="width: 18%;"/>
+       <col span="1" style="width: 20%;"/>
+       <col span="1" style="width: 24%;"/>
+    </colgroup>
+	<tbody>
+      <tr>
+        <th>Scenario</th>
+        <th>communication.language</th>
+        <th>communication.preferred</th>
+		<th>Notes</th>
+      </tr>
+      <tr>
+        <td>Preferred language is English</td>
+        <td></td>
+        <td></td>
+        <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/relatedperson-definitions.html#RelatedPerson.communication">Comments</a> of RelatedPerson.communication</td>
+      </tr>
+      <tr>
+        <td>Preferred language is other than English</td>
+        <td>language.coding</td>
+        <td>'true'</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Communicates with multiple languages</td>
+        <td>language.coding</td>
+        <td></td>
+        <td>Each language instantiated in separate communication nodes; communication.preferred may be sent as needed.</td>
+      </tr>
+    </tbody>
+</table>
+
+Blank cells in the above table indicate that the given element is absent from the resource.
 
 ## Migration of data to a FHIR R4 resource
 

@@ -6,6 +6,9 @@ This profile identifies the additional constraints, extensions, and value sets t
 This profile is designed to set a DiagnosticReport standard for:
 * TBD
 
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
 
 #### Profile specific guidance
 - `DiagnosticReport.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. - An active condition is represented using "active" in `Condition.clinicalStatus`

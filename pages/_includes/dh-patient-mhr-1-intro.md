@@ -12,66 +12,11 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-* country of birth is represented with [extension:birthPlace](StructureDefinition-patient-ident-1-definitions.html#Patient.extension:birthPlace)
-* a patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html)
+- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace)
+  - A sytem may use `address.text` if they birth place address is not stored in discrete elements
+- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance
+- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html)
 
-The table below provides guidance on representing communication preferences for a patient.
-
-<table class="list" style="width:100%">
-    <colgroup>
-       <col span="1" style="width: 20%;"/>
-       <col span="1" style="width: 18%;"/>
-       <col span="1" style="width: 18%;"/>
-       <col span="1" style="width: 20%;"/>
-       <col span="1" style="width: 24%;"/>
-    </colgroup>
-	<tbody>
-      <tr>
-        <th>Scenario</th>
-        <th>communication.language</th>
-        <th>communication.preferred</th>
-        <th>extension:interpreterRequired</th>
-		<th>Notes</th>
-      </tr>
-      <tr>
-        <td>Preferred language is English</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/patient-definitions.html#Patient.communication">Comments</a> of Patient.communication</td>
-      </tr>
-      <tr>
-        <td>Preferred language is other than English</td>
-        <td>language.coding</td>
-        <td>'true'</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Interpreter required, language is known</td>
-        <td>language.coding</td>
-        <td>'true'</td>
-        <td>'true'</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Interpreter required, language is not known</td>
-        <td></td>
-        <td></td>
-        <td>'true'</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Communicates with multiple languages</td>
-        <td>language.coding</td>
-        <td></td>
-        <td></td>
-        <td>Each language instantiated in separate communication nodes; communication.preferred and extension:interpreterRequired may be sent as needed.</td>
-      </tr>
-    </tbody>
-</table>
-
-Blank cells in the above table indicate that the given element is absent from the resource.
 
 #### Boundaries and relationships
 This profile is referenced by

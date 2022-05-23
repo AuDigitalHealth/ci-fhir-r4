@@ -9,8 +9,10 @@ This profile is designed to set a core Practitioner for:
 * Querying practitioners referenced in PractitionerRole resources
 * Recording or updating a practitioner referenced by a PractitionerRole resource
 
+
 #### Profile specific guidance
 None.
+
 
 #### Boundaries and relationships
 This profile is referenced by

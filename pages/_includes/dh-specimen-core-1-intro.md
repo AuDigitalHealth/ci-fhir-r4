@@ -4,8 +4,11 @@ The purpose of this profile is to provide a core representation of a specimen fo
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Specimen](http://hl7.org/fhir/R4/specimen.html) that are supported. 
 
 This profile is designed to set a core Specimen for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+* Querying specimens referenced in Observation resources
+* Recording or updating a specimen referenced by an Observation resource
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
 
 
 #### Profile specific guidance
