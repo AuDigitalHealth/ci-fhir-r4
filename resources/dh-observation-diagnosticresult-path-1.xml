@@ -92,6 +92,10 @@
     <element id="Observation.code">
       <path value="Observation.code"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/spia-pathology-reporting-1" />
+      </binding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
@@ -214,6 +218,10 @@
     </element>
     <element id="Observation.component.code">
       <path value="Observation.component.code"/>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/spia-pathology-reporting-1" />
+      </binding>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.component.value[x]">
