@@ -100,6 +100,7 @@ When rendered in an implementation specification each profile is presented diffe
 The elements labeled *Must Support* in the "Differential Table" and "Snapshot Table" view are flagged with an <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>. To see the full set of Must Support elements a reader must use the "Snapshot Table". 
 The "Snapshot Table" present the must support elements defined in this profile (shown in the "Differential Table) and the must support elements inherited from a base profile (e.g. [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html) based on [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) 
 
+Implementers should take note that the full set of constraints (i.e. invariants) defined in a profile are only presented in the Detailed Descriptions tab or the raw representation (e.g. XML or JSON) of the profile. The Differential Table only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The Snapshot Table only presents the constraints visible in the Differential Table and additionally presents those constraints set in slices in the base profile.
 
 **Interpreting profile elements labeled Must Support**
 

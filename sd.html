@@ -5,12 +5,7 @@ active: profiles
 ---
 
 {% include header.html %}
-
 {% include container-start.html %}
-
-<!-- ============BreadCrumb=============== -->
-<!--
-{% include breadcrumbs.html %}-->
 
 <!-- ============CONTENT CONTENT=============== -->
 <blockquote><p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p></blockquote>
@@ -164,10 +159,10 @@ active: profiles
 <p>&nbsp;</p>
 
 
-<!--Known issues-->
-<a name="issues"> </a>
-<h4><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.2 - </span> Known Issues <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#issues"><img src="target.png"/></a></h4>
-{% capture my-include %}{% include {{[id]}}-issues.md %}{% endcapture %}{{ my-include | markdownify }}
+<!-- search text here-->
+<a name="search"> </a>
+<h4><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.2 - </span> Quick Start <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#search"><img src="target.png"/></a></h4>
+{% capture my-include %}{% include {{[id]}}-search.md %}{% endcapture %}{{ my-include | markdownify }}
 
 <!-- remove term and invarients sections
 
