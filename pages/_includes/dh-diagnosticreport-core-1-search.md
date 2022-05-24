@@ -5,13 +5,14 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   <tr>
     <th>Name</th>
     <th>Type</th>
-    <th>Description</th>
     <th>Conformance</th>
+    <th>Description</th>
     <th>Path</th>
   </tr>
   <tr>
         <td>identifier</td>
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
+        <td><b>SHALL</b></td>
         <td>An identifier for the report</td>
         <td><b>SHALL</b></td>
         <td>DiagnosticReport.identifier</td>
@@ -19,36 +20,36 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   <tr>
         <td>category</td>
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
-        <td>Which diagnostic discipline/department created the report</td>
         <td><b>SHALL</b></td>
+        <td>Which diagnostic discipline/department created the report</td>
         <td>DiagnosticReport.category</td>
   </tr>
   <tr>
         <td>patient:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
-        <td>The subject of the report if a patient</td>
         <td><b>SHALL</b></td>
+        <td>The subject of the report if a patient</td>
         <td>DiagnosticReport.subject.identifier</td>
   </tr>
   <tr>
         <td>code</td>
         <td><a href="http://hl7.org/fhir/search.html#token">Type</a></td>
-        <td>The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result</td>
         <td><b>SHALL</b></td>
+        <td>The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result</td>
         <td>DiagnosticReport.code</td>
   </tr>
   <tr>
         <td>date</td>
         <td><a href="http://hl7.org/fhir/search.html#date">date</a></td>
-        <td>The clinically relevant time of the report</td>
         <td><b>SHALL</b></td>
+        <td>The clinically relevant time of the report</td>
         <td>DiagnosticReport.effective</td>
   </tr>
   <tr>
         <td>status</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>        
-        <td>The status of the report</td>
         <td><b>SHOULD</b></td>
+        <td>The status of the report</td>
         <td>DiagnosticReport.status</td>
   </tr>
  </tbody>

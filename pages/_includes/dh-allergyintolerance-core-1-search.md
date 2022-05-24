@@ -5,29 +5,29 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   <tr>
     <th>Name</th>
     <th>Type</th>
-    <th>Description</th>
     <th>Conformance</th>
+    <th>Description</th>
     <th>Path</th>
   </tr>
   <tr>
         <td>category</td>
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
-        <td>food | medication | environment | biologic</td>
         <td><b>SHALL</b></td>
+        <td>food | medication | environment | biologic</td>
         <td>AllergyIntolerance.category</td>
   </tr>
   <tr>
         <td>patient:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
-        <td>Who the sensitivity is for by patient identifier</td>
         <td><b>SHALL</b></td>
+        <td>Who the sensitivity is for by patient identifier</td>
         <td>AllergyIntolerance.patient.identifier</td>
   </tr>
   <tr>
         <td>code</td>
         <td><a href="http://hl7.org/fhir/search.html#token">Type</a></td>
-        <td>Code that identifies the allergy or intolerance</td>
         <td><b>SHALL</b></td>
+        <td>Code that identifies the allergy or intolerance</td>
         <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
   </tr>
  </tbody>

@@ -5,43 +5,44 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   <tr>
     <th>Name</th>
     <th>Type</th>
-    <th>Description</th>
     <th>Conformance</th>
+    <th>Description</th>
     <th>Path</th>
   </tr>
   <tr>
         <td>category</td>
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
-        <td>The classification of the type of observation</td>
         <td><b>SHALL</b></td>
+        <td><b>SHALL</b></td>
+        <td>The classification of the type of observation</td>
         <td>Observation.category</td>
   </tr>
   <tr>
         <td>patient:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
-        <td>Who the sensitivity is for by patient identifier</td>
         <td><b>SHALL</b></td>
+        <td>Who the sensitivity is for by patient identifier</td>
         <td>Observation.subject.identifier</td>
   </tr>
   <tr>
         <td>code</td>
         <td><a href="http://hl7.org/fhir/search.html#token">Type</a></td>
-        <td>The code of the observation type</td>
         <td><b>SHALL</b></td>
+        <td>The code of the observation type</td>
         <td>Observation.code</td>
   </tr>
   <tr>
         <td>date</td>
         <td><a href="http://hl7.org/fhir/search.html#date">date</a></td>
-        <td>Obtained date/time. If the obtained element is a period, a date that falls in the period</td>
         <td><b>SHALL</b></td>
+        <td>Obtained date/time. If the obtained element is a period, a date that falls in the period</td>
         <td>Observation.effective</td>
   </tr>
   <tr>
         <td>status</td>
         <td><a href="http://hl7.org/fhir/search.html#date">date</a></td>
-        <td>The status of the observation</td>
         <td><b>SHOULD</b></td>
+        <td>The status of the observation</td>
         <td>Observation.status</td>
   </tr>
  </tbody>
