@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-specimen-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="DHSpecimenCore"/>
   <title value="ADHA Core Specimen"/>
   <status value="draft"/>
@@ -31,6 +31,16 @@
         value="A specimen collected from a patient for the purposes of a diagnostic investigation"/>
       <definition
         value="A sample collected from a patient for the purposes of a diagnostic investigation."/>
+      <constraint>
+        <key value="inv-dh-spc-04"/>
+        <severity value="error"/>
+        <human
+          value="The specimen shall at least have a valid identifier or method or type"/>
+        <expression
+          value="type.exists() or collection.method.exists() or identifier.where(system.count() + value.count() &gt;1).exists() accessionIdentifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+      </constraint>
     </element>
     <element id="Specimen.identifier">
       <path value="Specimen.identifier"/>

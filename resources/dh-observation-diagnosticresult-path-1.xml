@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-path-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="DHObservationPathologyResult"/>
   <title value="ADHA Pathology Result Observation"/>
   <status value="draft"/>
@@ -170,7 +170,6 @@
     </element>
     <element id="Observation.specimen">
       <path value="Observation.specimen"/>
-      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
