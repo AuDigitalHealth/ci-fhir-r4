@@ -37,7 +37,7 @@
         <human
           value="The specimen shall at least have a valid identifier or method or type"/>
         <expression
-          value="type.exists() or collection.method.exists() or identifier.where(system.count() + value.count() &gt;1).exists() accessionIdentifier.where(system.count() + value.count() &gt;1).exists()"/>
+          value="type.exists() or collection.method.exists() or identifier.where(system.count() + value.count() &gt;1).exists() or accessionIdentifier.where(system.count() + value.count() &gt;1).exists()"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
       </constraint>
