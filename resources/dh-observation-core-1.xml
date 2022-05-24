@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="DHObservationCore"/>
   <title value="ADHA Core Observation"/>
   <status value="draft"/>
@@ -36,6 +36,13 @@
           value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
+      </constraint>
+      <constraint>
+        <key value="inv-dh-obs-05"/>
+        <severity value="error"/>
+        <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+        <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </constraint>
     </element>
     <element id="Observation.status">
@@ -138,15 +145,6 @@
     </element>
     <element id="Observation.method">
       <path value="Observation.method"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.specimen">
-      <path value="Observation.specimen"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-      </type>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.hasMember">
