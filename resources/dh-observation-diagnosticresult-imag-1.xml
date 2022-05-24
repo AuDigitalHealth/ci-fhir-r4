@@ -31,8 +31,8 @@
       <constraint>
         <key value="inv-dh-obs-05"/>
         <severity value="error"/>
-        <human value="The observation shall at least have a value or a data absent reason or a component"/>
-        <expression value="value.exists() or dataAbsentReason.exists() or component.exists()"/>
+        <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+        <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>
     </element>
@@ -109,7 +109,7 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
-      <!--<min value="1"/>-->
+      <short value="Date, and optionally time, the imaging study was performed"/>
       <constraint>
         <key value="inv-dh-obs-07"/>
         <severity value="error"/>
@@ -196,6 +196,19 @@
     <element id="Observation.referenceRange.text">
       <path value="Observation.referenceRange.text"/>
       <mustSupport value="true"/>
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember"/>
+      <short value="Individual observations in a group, study, or panel"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.hasMember.reference">
+      <path value="Observation.hasMember.reference"/>
+      <min value="1"/>
     </element>
     <element id="Observation.component">
       <path value="Observation.component"/>

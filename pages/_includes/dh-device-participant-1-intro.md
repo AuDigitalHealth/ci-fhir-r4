@@ -10,3 +10,6 @@ This profile is designed to set a Device standard for:
 #### Profile specific guidance
 None.
 
+
+#### Boundaries and relationships
+This profile is not referenced by another profile in this implementation guide.  

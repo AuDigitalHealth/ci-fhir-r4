@@ -344,9 +344,8 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresultgroup-1.html">ADHA Diagnostic Result Group</a></li>
                                 <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
-                                <li>ADHA Pathology DiagnosticReport</li>
+                                <li><a href="StructureDefinition-dh-diagnosticreport-path-1.html">ADHA Pathology Report</a></li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>

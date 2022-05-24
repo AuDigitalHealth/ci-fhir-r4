@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHServiceRequestCore"/>
   <title value="ADHA Core ServiceRequest"/>
   <status value="draft"/>
@@ -58,6 +58,10 @@
     </element>
     <element id="ServiceRequest.status">
       <path value="ServiceRequest.status"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent"/>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.category">

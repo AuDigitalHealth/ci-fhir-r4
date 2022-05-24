@@ -13,8 +13,8 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches to “imaging” observations. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
-- The Observation resource can represent a result using one or both of a single value with `Observation.value`, or set of component results using `Observation.component.value`.
-  - Although both are marked as must support, sending systems are not required to support both a single value and a set of components, but they **SHALL** support *at least one* of these elements
+- The Observation resource can represent a result using one or both of a single value with `Observation.value`, or set of results using either `Observation.component.value` or `Observation.hasMember`.
+  - Although all are marked as must support, sending systems are not required to support all choices, but they **SHALL** support *at least one* of these elements
   - A receiving or persisting system **SHALL** support both elements
 
 
@@ -24,6 +24,5 @@ This profile is referenced by
 [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), 
 [ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
 [ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html), 
-[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
-[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), and
-[ADHA Diagnostic Result Group](StructureDefinition-dh-observation-diagnosticresultgroup-1.html). 
+[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), and
+[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html).

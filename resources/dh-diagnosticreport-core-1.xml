@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define  a core representation of a diagnostic report issued by the diagnostic service provider to support the electronic exchange of the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+    value="The purpose of this profile is to define a core representation of a diagnostic report issued by the diagnostic service provider to support the electronic exchange of the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines that are not pathology or imaging."/>
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -137,7 +137,6 @@
       <path value="DiagnosticReport.result"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>

@@ -101,9 +101,9 @@
         <key value="inv-dh-ds-02"/>
         <severity value="error"/>
         <human
-          value="All observations shall conform one of: ADHA Simple Observation, ADHA Diagnostic Result Group Observation, ADHA Diagnostic Result Observation"/>
+          value="All observations shall conform one of: ADHA Simple Observation, ADHA Diagnostic Result Observation"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresultgroup-1') or entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1')"/>
+          value="entry.resolve().where($this is Observation).exists() implies entry.resolve().conformsTo('http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1')"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>

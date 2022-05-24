@@ -21,7 +21,8 @@ This profile is referenced by
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
 [ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),
 [ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html),
-[ADHA Diagnostic Result Group](StructureDefinition-dh-observation-diagnosticresultgroup-1.html),
+[ADHA Imaging Result Observation](StructureDefinition-dh-observation-diagnosticresult-imag-1.html),
+[ADHA Pathology Result Observation](StructureDefinition-dh-observation-diagnosticresult-path-1.html),
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), and
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
 

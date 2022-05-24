@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="DHObservationDiagnosticResult"/>
   <title value="ADHA Diagnostic Result Observation"/>
   <status value="draft"/>
@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to provide a representation of a diagnostic result observation made during a diagnostic investigation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+    value="The purpose of this profile is to represent a diagnostic result observation made during a diagnostic investigation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
@@ -31,8 +31,8 @@
       <constraint>
         <key value="inv-dh-obs-05"/>
         <severity value="error"/>
-        <human value="The observation shall at least have a value or a data absent reason or a component"/>
-        <expression value="value.exists() or dataAbsentReason.exists() or component.exists()"/>
+        <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+        <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
     </element>
@@ -162,6 +162,21 @@
     <element id="Observation.referenceRange.text">
       <path value="Observation.referenceRange.text"/>
       <mustSupport value="true"/>
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember"/>
+      <short value="Individual observations in a group, study, or panel"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Observation.hasMember.reference">
+      <path value="Observation.hasMember.reference"/>
+      <min value="1"/>
     </element>
     <element id="Observation.component">
       <path value="Observation.component"/>

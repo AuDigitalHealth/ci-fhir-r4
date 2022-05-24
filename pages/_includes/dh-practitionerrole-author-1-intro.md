@@ -42,6 +42,7 @@ This profile is referenced by
 [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html), 
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
+[ADHA Pathology Report](StructureDefinition-dh-diagnosticreport-path-1.html), 
 [ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-acp-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
