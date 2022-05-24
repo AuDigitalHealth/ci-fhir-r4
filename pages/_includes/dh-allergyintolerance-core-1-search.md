@@ -43,9 +43,9 @@ The following search parameters and search parameter combinations **SHALL** be s
     `GET [base]/AllergyIntolerance?patient:identifier={system|}[code]`
 
     Example:
-    
-      1. GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
-
+    ~~~
+    GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    ~~~
     *Implementation Notes:* Fetches a bundle of all AllergyIntolerance resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
 
@@ -54,9 +54,9 @@ The following search parameters and search parameter combinations **SHALL** be s
     `GET [base]/AllergyIntolerance?patient:identifier={system|}[code]&category[code]`
 
     Example:
-    
-      1. GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=medication
-
+    ~~~
+    GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=medication
+    ~~~
     *Implementation Notes:* Fetches a bundle of all AllergyIntolerance resources with the category of "medication" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
 
@@ -65,8 +65,8 @@ The following search parameters and search parameter combinations **SHALL** be s
     `GET [base]/AllergyIntolerance?patient:identifier={system|}[code]&code={system|}[code]`
 
     Example:
-    
-      1. GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|293619005
-
+    ~~~
+    GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|293619005
+    ~~~
     *Implementation Notes:* Fetches a bundle of all AllergyIntolerance resources with the code of an 293619005 (Ibuprofen allergy) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
