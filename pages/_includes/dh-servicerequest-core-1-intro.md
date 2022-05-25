@@ -15,10 +15,10 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - `ServiceRequest.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
-- The ServiceRequest resource can represent a reason using either a code with `ServiceRequest.reasonCode`, or a reference with `ServiceRequest.reasonReference` to a Condition or other resource.
+- The ServiceRequest resource can represent a reason as a code with `ServiceRequest.reasonCode`, or a reference with `ServiceRequest.reasonReference` to a Condition or other resource.
   - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
   - A receiving or persisting system **SHALL** support both elements
-- The ServiceRequest resource can represent the desired performer either a code with `ServiceRequest.performerType`, or a reference with `ServiceRequest.performer` to a HealthcareService or other resource.
+- The ServiceRequest resource can represent the desired performer as a code with `ServiceRequest.performerType`, or a reference with `ServiceRequest.performer` to a HealthcareService or other resource.
   - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
   - A receiving or persisting system **SHALL** support both elements
 - 'ServiceRequest.supportingInfo` is broad to accommodate a wide variety of use cases by allowing a reference to any resource. 
@@ -32,6 +32,7 @@ This profile is referenced by
 [ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
 [ADHA Pathology Report](StructureDefinition-dh-diagnosticreport-path-1.html), 
+[ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html), 
 [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html),  and 
 [ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).

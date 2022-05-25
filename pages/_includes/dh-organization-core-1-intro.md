@@ -50,6 +50,7 @@ This profile is referenced by
 [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core Location](StructureDefinition-dh-location-core-1.html), 
+[ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html), 
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
