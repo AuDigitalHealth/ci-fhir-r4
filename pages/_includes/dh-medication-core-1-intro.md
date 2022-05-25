@@ -6,14 +6,11 @@ This profile identifies the additional constraints, extensions, and value sets t
 A [Medication](http://hl7.org/fhir/R4/medication.html) resource is used within the context of a referencing resource: [MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html), [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html), [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html), or [MedicationStatement](http://hl7.org/fhir/R4/medicationstatement.html) resource. 
 
 This profile is designed to set a core Medication standard in the context of:
-* Querying medications referenced in MedicationAdministration resources
-* Recording or updating a medication referenced by a MedicationAdministration resource
-* Querying medications referenced in MedicationDispense resources
-* Recording or updating a medication referenced by a MedicationDispense resource
-* Querying medications referenced in MedicationRequest resources
-* Recording or updating a medication referenced by a MedicationRequest resource
-* Querying medications referenced in MedicationStatement resources
-* Recording or updating a medication referenced by a MedicationStatement resource
+* Querying medications referenced by another resource
+* Recording or updating a medication referenced by another resource
+* Reading medications referenced by another resource
+
+Operations on Medication resources are expected to be within the context of an ExplanationofBenefit, Flag, MedicationAdministration, MedicationDipsense, MedicationRequest or MedicationStatement resource query.
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)

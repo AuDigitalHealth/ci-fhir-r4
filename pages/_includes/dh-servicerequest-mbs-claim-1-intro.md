@@ -3,11 +3,11 @@ The purpose of this profile is to define a representation of the service item cl
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [ServiceRequest](http://hl7.org/fhir/R4/list.html) that are supported. 
 
-This profile is designed to set a core ServiceRequest standard for:
-* Querying service items in an MBS claim (ExplanationOfBenefit) resource
-* Querying service items in a DVA claim (ExplanationOfBenefit) resource
-* Recording or updating a service item in an MBS claim (ExplanationOfBenefit) resource
-* Recording or updating a service item in a DVA claim (ExplanationOfBenefit) resource
+This profile is designed to set a ServiceRequest standard for:
+* Recording or updating a service item in an MBS or DVA claim (ExplanationOfBenefit) resource
+* Reading a service item in an MBS or DVA claim (ExplanationOfBenefit) resource
+
+Operations, including querying, on service items in MBS or DVA claims (ServiceRequest resource) are expected to be within the context of an ExplanationofBenefit resource query.
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)

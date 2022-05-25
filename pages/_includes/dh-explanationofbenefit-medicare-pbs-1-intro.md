@@ -4,10 +4,8 @@ The purpose of this profile is to define a representation of a record of a claim
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [ExplanationOfBenefit](http://hl7.org/fhir/R4/explanationofbenefit.html) that are supported. 
 
 This profile is designed to set an ExplanationOfBenefit standard for:
-* Query for a record of a PBS item claim associated with a patient
-* Query for a record of an RPBS item claim associated with a patient
-* Record or update a PBS item claim associated with a patient
-* Record or update an RPBS item claim associated with a patient
+* Query for a record of a PBS or RPBS item claim associated with a patient
+* Record or update a PBS or RPBS item claim associated with a patient
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)

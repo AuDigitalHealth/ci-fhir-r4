@@ -35,9 +35,15 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-timezone.html">Australian Time Zone </a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-timezone.html">Australian Time Zone</a></td>
         <td>au-timezone</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+        <td>Resource</td>
+    </tr>
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-author-related-person.html">Author as a RelatedPerson</a></td>
+        <td>author-related-person</td>
+        <td><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/relatedperson.html">ReltedPerson</a>)</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></td>
     </tr>
     <tr>
@@ -88,6 +94,12 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
         <td>Resource</td>
     </tr>
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-dispense-number.html">Dispense Number</a></td>
+        <td>dispense-number</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td>
+        <td><a href="https://hl7.org/fhir/medicationdispense.html">MedicationDispense</a></td>
+    </tr>
       <tr>
         <td><a href="StructureDefinition-packed-in-daa-1.html">Dose Administration Aid Medicines Indicator</a></td>
         <td>packed-in-daa-1</td>
@@ -119,8 +131,8 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified.html">IHI Verified</a></td>
-        <td>ihi-verified</td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified-date.html">IHI Verified Date</a></td>
+        <td>ihi-verified-date</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
@@ -163,6 +175,12 @@ The following extensions form part of this implementation guide:
     <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-no-fixed-address.html">No Fixed Address</a></td>
         <td>no-fixed-address</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+        <td><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a></td>
+    </tr>
+    <tr>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-no-fixed-address.html">Subsidised Concurrent Supply</a></td>
+        <td>subsidised-concurrent-supply</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
     </tr>
