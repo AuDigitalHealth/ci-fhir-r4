@@ -20,6 +20,7 @@ This profile is referenced by
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
 [ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),  
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), 
+[ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
 [ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html), 
 [ADHA Imaging Result Observation](StructureDefinition-dh-observation-diagnosticresult-imag-1.html),
 [ADHA Pathology Result Observation](StructureDefinition-dh-observation-diagnosticresult-path-1.html),
