@@ -7,7 +7,7 @@ This profile is designed to set a MedicationRequest standard for:
 * Recording or updating a prescription item in an PBS claim (ExplanationOfBenefit) resource
 * Reading a prescription items in an RPBS claim (ExplanationOfBenefit) resource
 
-Operations, including querying, on prescription items in PBS claims (MedicationRequest resource) are expected to be within the context of an ExplanationofBenefit resource query.
+Operations, including querying, on prescription items in PBS claims (MedicationRequest resource) are expected to be within the context of an ExplanationOfBenefit resource query.
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
