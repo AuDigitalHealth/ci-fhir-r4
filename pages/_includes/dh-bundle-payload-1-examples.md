@@ -61,11 +61,11 @@
       <td><a href="Bundle-ncsr-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-po-01-doc.html">Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
-      <td>po-01-doc</td>
-      <td><a href="Bundle-po-01-doc.xml.html">XML</a></td>
-      <td><a href="Bundle-po-01-doc.json.html">JSON</a></td>
-      <td><a href="Bundle-po-01-doc.ttl.html">Turtle</a></td>
+      <td><a href="Bundle-po-doc-01.html">Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>
+      <td>po-doc-01</td>
+      <td><a href="Bundle-po-doc-01.xml.html">XML</a></td>
+      <td><a href="Bundle-po-doc-01.json.html">JSON</a></td>
+      <td><a href="Bundle-po-doc-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Bundle-psml-01.html">Pharmacist Shared Medicines List Payload Bundle (logical references only) for Mrs Bonny Goodwin</a></td>

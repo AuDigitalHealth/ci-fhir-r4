@@ -33,7 +33,7 @@
       <td><a href="ServiceRequest-order-lk-xray-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="ServiceRequest-order-rk-xray-01.html">Completed order for Left Knee X-Ray for Mac PRIEST (2022)</a></td>
+      <td><a href="ServiceRequest-order-rk-xray-01.html">Completed order for Right Knee X-Ray for Mac PRIEST (2022)</a></td>
       <td>order-rk-xray-01</td>
       <td><a href="ServiceRequest-order-rk-xray-01.xml.html">XML</a></td>
       <td><a href="ServiceRequest-order-rk-xray-01.json.html">JSON</a></td>

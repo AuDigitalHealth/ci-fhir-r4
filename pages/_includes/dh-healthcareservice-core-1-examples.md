@@ -99,7 +99,7 @@
    </tr>
    <tr>
       <td><a href="HealthcareService-racs-qld-01.html">LARCSG Care Sunnybank Home for the Aged 130011</a></td>
-      <td>racs-qld-03</td>
+      <td>racs-qld-01</td>
       <td><a href="HealthcareService-racs-qld-01.xml.html">XML</a></td>
       <td><a href="HealthcareService-racs-qld-01.json.html">JSON</a></td>
       <td><a href="HealthcareService-racs-qld-01.ttl.html">Turtle</a></td>

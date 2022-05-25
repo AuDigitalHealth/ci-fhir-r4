@@ -159,21 +159,21 @@
       <td><a href="Medication-ibuprofen-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-metformin-01.html">Sevredol morphine 20 mg tablet (manufacturer + form + ingredient)</a></td>
+      <td><a href="Medication-metformin-01.html">Metformin 500mg tablet, Sandoz</a></td>
       <td>metformin-01</td>
       <td><a href="Medication-metformin-01.xml.html">XML</a></td>
       <td><a href="Medication-metformin-01.json.html">JSON</a></td>
       <td><a href="Medication-metformin-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-morphine-01.html">morphine (manufacturer + form + ingredient)</a></td>
+      <td><a href="Medication-morphine-01.html">Sevredol morphine 20 mg tablet (manufacturer + form + ingredient)</a></td>
       <td>morphine-01</td>
       <td><a href="Medication-morphine-01.xml.html">XML</a></td>
       <td><a href="Medication-morphine-01.json.html">JSON</a></td>
       <td><a href="Medication-morphine-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-morphine-02.html">Metformin 500mg tablet, Sandoz</a></td>
+      <td><a href="Medication-morphine-02.html">morphine (manufacturer + form + ingredient)</a></td>
       <td>morphine-02</td>
       <td><a href="Medication-morphine-02.xml.html">XML</a></td>
       <td><a href="Medication-morphine-02.json.html">JSON</a></td>
