@@ -89,7 +89,7 @@
       <td><a href="Patient-mhr-field-sally.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Patient-mhr-smith-oliver.html">Mr. Oliver SMITH (My Health Record Patient) (Child)</a></td>
+      <td><a href="Patient-mhr-smith-oliver.html">Mr. Oliver SMITH (My Health Record Patient)</a></td>
       <td>mhr-smith-oliver</td>
       <td><a href="Patient-mhr-smith-oliver.xml.html">XML</a></td>
       <td><a href="Patient-mhr-smith-oliver.json.html">JSON</a></td>
