@@ -46,8 +46,8 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   </tr>
   <tr>
         <td>status</td>
-        <td><a href="https://build.fhir.org/search.html#token">token</a></td>    
-        <td><b>SHOULD</b></td>    
+        <td><a href="https://build.fhir.org/search.html#token">token</a></td>
+        <td><b>SHOULD</b></td>
         <td>preliminary | final | amended | entered-in-error</td>
         <td>Composition.status</td>
   </tr>
