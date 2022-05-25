@@ -20,7 +20,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>patient:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
-        <td>The subject of the report if a patient</td>
+        <td>The patient for the vaccination record</td>
         <td>Immunization.subject.identifier</td>
   </tr>
   <tr>

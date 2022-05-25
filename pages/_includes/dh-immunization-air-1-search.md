@@ -20,7 +20,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>patient:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
-        <td>The subject of the report if a patient</td>
+        <td>The patient for the vaccination record</td>
         <td>Immunization.subject.identifier</td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
+    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=completed
     ~~~
     *Implementation Notes:* Fetches a bundle of all Immunization resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))
     
@@ -112,6 +112,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&target-disease=http://snomed.info/sct|840539006
+    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&target-disease=http://snomed.info/sct|840539006&status=completed
     ~~~
     *Implementation Notes:* Fetches a bundle of all Immunization resources with the target disease of an 840539006 (COVID-19) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
