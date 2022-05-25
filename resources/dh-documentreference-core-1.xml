@@ -3,7 +3,7 @@
   <id value="dh-documentreference-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="DHDocumentReferenceCore"/>
   <title value="ADHA Core DocumentReference"/>
   <status value="draft"/>
@@ -46,6 +46,7 @@
     </element>
     <element id="DocumentReference.identifier">
       <path value="DocumentReference.identifier"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.status">
@@ -63,6 +64,7 @@
     </element>
     <element id="DocumentReference.category">
       <path value="DocumentReference.category"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.subject">
@@ -85,13 +87,6 @@
     <element id="DocumentReference.date">
       <path value="DocumentReference.date"/>
       <min value="1"/>
-      <constraint>
-        <key value="inv-dh-docref-04"/>
-        <severity value="error"/>
-        <human value="Date shall be at least to day"/>
-        <expression value="toString().length() &gt;= 10"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.author">

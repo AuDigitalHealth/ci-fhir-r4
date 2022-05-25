@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-documentreference-acp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-acp-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="DHDocumentReferenceACP"/>
   <title value="ADHA Advance Care Planning Document DocumentReference"/>
   <status value="draft" />
@@ -56,7 +56,6 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <min value="1" />
     </element>
     <element id="DocumentReference.category:aci">
       <path value="DocumentReference.category"/>
