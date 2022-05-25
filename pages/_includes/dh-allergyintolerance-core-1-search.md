@@ -38,7 +38,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all allergies for a patient using the **`patient:identifier`** search parameter:
+1. **SHALL** support searching for all observations for a patient using the **`patient:identifier`** search parameter:
 
     `GET [base]/AllergyIntolerance?patient:identifier={system|}[code]`
 

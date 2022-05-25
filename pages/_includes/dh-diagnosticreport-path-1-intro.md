@@ -13,6 +13,7 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - `DiagnosticReport.category` provides an efficient way of supporting system interactions, e.g. restricting searches to pathology reports. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
+- Results that are free text or report form are represented using ‘DiagnosticReport.presentedForm`.
 
 
 #### Boundaries and relationships
