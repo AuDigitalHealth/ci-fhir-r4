@@ -19,7 +19,7 @@
       <td><a href="BodyStructure-right-knee.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td colspan="5">Contained examples:</td>
+      <td colspan="5">Examples with a contained BodyStructure conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="ServiceRequest-order-lk-xray-01.html">Completed order for Left Knee X-Ray for Cleo Moss Esq. (2022)</a></td>

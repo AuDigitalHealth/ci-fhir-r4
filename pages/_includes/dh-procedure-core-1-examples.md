@@ -12,10 +12,10 @@
       <td><a href="Procedure-wound-dressing-es-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a Procedure entry conforming to this profile:</td>
    </tr>  
    <tr>
-      <td><a href="Bundle-shs-02-doc.html">Procedure entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2019)</a></td>
+      <td><a href="Bundle-shs-02-doc.html">Shared Health Summary Document Bundle for Mr Zhang Wei (2019)</a></td>
       <td>shs-02-doc</td>
       <td><a href="Bundle-shs-02-doc.xml.html">XML</a></td>
       <td><a href="Bundle-shs-02-doc.json.html">JSON</a></td>

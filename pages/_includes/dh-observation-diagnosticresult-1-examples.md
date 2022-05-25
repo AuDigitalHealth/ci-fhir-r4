@@ -22,7 +22,7 @@
       <td colspan="5">Bundle examples that include an Observation entry conforming to this profile:</td>
    </tr>
    <tr>
-      <td><a href="Bundle-es-02-doc.html">Urine culture w E. coli detected Observation entry included in Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
+      <td><a href="Bundle-es-02-doc.html">Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
       <td>es-02-doc</td>
       <td><a href="Bundle-es-02-doc.xml.html">XML</a></td>
       <td><a href="Bundle-es-02-doc.json.html">JSON</a></td>

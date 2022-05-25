@@ -167,14 +167,14 @@
       <td colspan="5">Bundle examples that include an Observation entry conforming to this profile:</td>
    </tr>
    <tr>
-      <td><a href="Bundle-shs-01-doc.html">Assertion of No Relevant Finding Observation entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
+      <td><a href="Bundle-shs-01-doc.html">Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
       <td>shs-01-doc</td>
       <td><a href="Bundle-shs-01-doc.xml.html">XML</a></td>
       <td><a href="Bundle-shs-01-doc.json.html">JSON</a></td>
       <td><a href="Bundle-shs-01-doc.ttl.html">Turtle</a></td>
    </tr> 
    <tr>
-      <td><a href="Bundle-es-02-doc.html">Urine culture w E. coli detected Observation entry included in Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
+      <td><a href="Bundle-es-02-doc.html">Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
       <td>es-02-doc</td>
       <td><a href="Bundle-es-02-doc.xml.html">XML</a></td>
       <td><a href="Bundle-es-02-doc.json.html">JSON</a></td>
@@ -195,42 +195,42 @@
       <td><a href="Bundle-medicare-view-cont-01.ttl.html">Turtle</a></td>
    </tr>  
    <tr>
-      <td><a href="Bundle-ncsr-01.html">NBCSP and NCSP participation information from the NCSR (Payload Bundle) for Cleo Moss Esq. (22 MAY 2021)</a></td>
+      <td><a href="Bundle-ncsr-01.html">National Cancer Screening Register (NCSR) Program Participation Information (Payload Bundle) for Cleo Moss Esq. (22 MAY 2021)</a></td>
       <td>ncsr-01</td>
       <td><a href="Bundle-ncsr-01.xml.html">XML</a></td>
       <td><a href="Bundle-ncsr-01.json.html">JSON</a></td>
       <td><a href="Bundle-ncsr-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-ncspv-doc-01.html">NBCSP and NCSP participation information in National Cancer Screening Program Participation View (Document Bundle) for Cleo Moss Esq. (15 FEB 2022)</a></td>
+      <td><a href="Bundle-ncspv-doc-01.html">National Cancer Screening Program Participation View (Document Bundle) for Cleo Moss Esq. (15 FEB 2022)</a></td>
       <td>ncspv-doc-01</td>
       <td><a href="Bundle-ncspv-doc-01.xml.html">XML</a></td>
       <td><a href="Bundle-ncspv-doc-01.json.html">JSON</a></td>
       <td><a href="Bundle-ncspv-doc-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-ncsr-02.html">NBCSP participation information from the NCSR (Payload Bundle) for Mr Zhang Wei (15 FEB 2022)</a></td>
+      <td><a href="Bundle-ncsr-02.html">National Cancer Screening Register (NCSR) Program Participation Information (Payload Bundle) for Mr Zhang Wei (05 FEB 2022)</a></td>
       <td>ncsr-02</td>
       <td><a href="Bundle-ncsr-02.xml.html">XML</a></td>
       <td><a href="Bundle-ncsr-02.json.html">JSON</a></td>
       <td><a href="Bundle-ncsr-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-ncspv-doc-02.html">NBCSP participation information in National Cancer Screening Program Participation View (Document Bundle) for Mr Zhang Wei (15 MAY 2022)</a></td>
+      <td><a href="Bundle-ncspv-doc-02.html">National Cancer Screening Program Participation View (Document Bundle) for Mr Zhang Wei (06 FEB 2022)</a></td>
       <td>ncspv-doc-02</td>
       <td><a href="Bundle-ncspv-doc-02.xml.html">XML</a></td>
       <td><a href="Bundle-ncspv-doc-02.json.html">JSON</a></td>
       <td><a href="Bundle-ncspv-doc-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-ncsr-03.html">NBCSP participation information from the NCSR (Payload Bundle) for Mr Zhang Wei (15 MAY 2022)</a></td>
+      <td><a href="Bundle-ncsr-03.html">National Cancer Screening Register (NCSR) Program Participation Information (Payload Bundle) for Mr Zhang Wei (15 MAY 2022)</a></td>
       <td>ncsr-03</td>
       <td><a href="Bundle-ncsr-03.xml.html">XML</a></td>
       <td><a href="Bundle-ncsr-03.json.html">JSON</a></td>
       <td><a href="Bundle-ncsr-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-ncspv-doc-03.html">NBCSP participation information in National Cancer Screening Program Participation View (Document Bundle) for Mr Zhang Wei. (16 MAY 2022)</a></td>
+      <td><a href="Bundle-ncspv-doc-03.html">National Cancer Screening Program Participation View (Document Bundle) for Mr Zhang Wei (16 MAY 2022)</a></td>
       <td>ncspv-doc-03</td>
       <td><a href="Bundle-ncspv-doc-03.xml.html">XML</a></td>
       <td><a href="Bundle-ncspv-doc-03.json.html">JSON</a></td>

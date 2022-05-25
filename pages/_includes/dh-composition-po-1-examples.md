@@ -12,7 +12,7 @@
       <td><a href="Composition-po-01.ttl.html">Turtle</a></td>
    </tr>    
    <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a Composition entry conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="Bundle-po-doc-01.html">Personal Observations Document Bundle for Mr. Oliver Smith recorded by Mother at 6 months</a></td>

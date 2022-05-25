@@ -6,7 +6,7 @@
    </tr>
    <tr>
       <td colspan="5">General Practice examples:</td>
-   </tr
+   </tr>
    <tr>
       <td><a href="PractitionerRole-algrester-greg-gp.html">Dr. Greg Algrester, GP, at Algregster Medical Centre</a></td>
       <td>algrester-greg-gp</td>

@@ -117,10 +117,10 @@
       <td><a href="Immunization-mds.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include an Immunization entry conforming to this profile:</td>
    </tr>
    <tr>
-      <td><a href="Bundle-shs-01-doc.html">Immunization entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
+      <td><a href="Bundle-shs-01-doc.html">Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
       <td>shs-01-doc</td>
       <td><a href="Bundle-shs-01-doc.xml.html">XML</a></td>
       <td><a href="Bundle-shs-01-doc.json.html">JSON</a></td>

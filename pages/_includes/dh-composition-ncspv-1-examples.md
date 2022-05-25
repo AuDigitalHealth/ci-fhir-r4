@@ -26,7 +26,7 @@
       <td><a href="Composition-ncspv-03.ttl.html">Turtle</a></td>
    </tr>
     <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a Composition entry conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="Bundle-ncspv-doc-01.html">National Cancer Screening Program Participation View (Document Bundle) for Cleo Moss Esq. (15 FEB 2022)</a></td>
