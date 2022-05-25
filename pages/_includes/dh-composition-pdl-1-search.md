@@ -44,8 +44,16 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>Composition editing time</td>
         <td>Composition.effective</td>
   </tr>
+  <tr>
+        <td>status</td>
+        <td><a href="https://build.fhir.org/search.html#token">token</a></td>    
+        <td><b>SHOULD</b></td>    
+        <td>preliminary | final | amended | entered-in-error</td>
+        <td>Composition.status</td>
+  </tr>
  </tbody>
 </table>
+
 
 #### Mandatory Search Parameters
 
