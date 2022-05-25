@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-consent-aodr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="DHConsentAODR"/>
   <title value="ADHA Record of Consent from Australian Organ Donor Register"/>
   <status value="draft"/>
@@ -121,6 +121,13 @@
     <element id="Consent.dateTime">
       <path value="Consent.dateTime"/>
       <min value="1"/>
+      <constraint>
+        <key value="inv-dh-cons-aodr-03"/>
+        <severity value="error"/>
+        <human value="Date shall be at least to day"/>
+        <expression value="toString().length() &gt;= 10"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Consent.performer">
