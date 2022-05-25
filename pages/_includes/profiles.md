@@ -136,7 +136,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></li>
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
-                                <li>ADHA Core Media</li>
+                                <li><a href="StructureDefinition-dh-media-core-1.html">ADHA Core Media</a></li>
                                 <li>ADHA Core QuestionnaireResponse</li>
                             </ul>
                         </td>     

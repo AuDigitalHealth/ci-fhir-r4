@@ -15,7 +15,6 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
         <td>An identifier for the report</td>
-        <td><b>SHALL</b></td>
         <td>DiagnosticReport.identifier</td>
   </tr>
   <tr>
