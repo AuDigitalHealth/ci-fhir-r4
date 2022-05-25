@@ -25,7 +25,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   </tr>
   <tr>
         <td>code</td>
-        <td><a href="http://hl7.org/fhir/search.html#token">Type</a></td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
         <td>The code of the observation type</td>
         <td><b>SHALL</b></td>
         <td>Observation.code</td>

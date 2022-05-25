@@ -13,14 +13,14 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>identifier</td>
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
-        <td>Version-independent identifier for the Composition</td>
+        <td>An identifier for the report</td>
         <td>Composition.identifier</td>
   </tr>
   <tr>
         <td>category</td>
         <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
-        <td>Categorization of Composition/td>
+        <td>Categorization of Composition</td>
         <td>Composition.category</td>
   </tr>
   <tr>
@@ -32,10 +32,10 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   </tr>
   <tr>
         <td>type</td>
-        <td><a href="http://hl7.org/fhir/search.html#token">Type</a></td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
         <td>Kind of composition (LOINC if possible)</td>
-        <td>Composition.type</td>
+        <td>Composition.code</td>
   </tr>
   <tr>
         <td>date</td>
@@ -46,8 +46,8 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   </tr>
   <tr>
         <td>status</td>
-        <td><a href="https://build.fhir.org/search.html#token">token</a></td>    
-        <td><b>SHOULD</b></td>    
+        <td><a href="https://build.fhir.org/search.html#token">token</a></td>        
+        <td><b>SHOULD</b></td>
         <td>preliminary | final | amended | entered-in-error</td>
         <td>Composition.status</td>
   </tr>

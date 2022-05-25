@@ -32,7 +32,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
   </tr>
   <tr>
         <td>code</td>
-        <td><a href="http://hl7.org/fhir/search.html#token">Type</a></td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
         <td>The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result</td>
         <td>DiagnosticReport.code</td>
