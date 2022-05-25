@@ -14,7 +14,7 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-None.
+- In an exchange with the My Health Record system references to a MedicationRequest resource will be [contained](http://hl7.org/fhir/R4/references.html#contained).
 
 
 #### Boundaries and relationships

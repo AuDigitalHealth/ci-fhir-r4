@@ -3,7 +3,7 @@ The purpose of this profile is to provide a core representation of a document re
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [DocumentReference](http://hl7.org/fhir/R4/documentreference.html) that are supported. 
 
-Where a more specific DocumentReference profile is applicable, e.g. advance care plan , an implementation **SHALL** ensure the Resource conforms to that specific profile as per **ADHA-FHIR-CONF-08**.
+Where a more specific DocumentReference profile is applicable, e.g. advance care plan , an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core DocumentReference standard for:
 * Query for a generic document reference for a patient

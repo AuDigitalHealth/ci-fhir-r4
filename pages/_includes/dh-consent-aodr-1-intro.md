@@ -20,6 +20,8 @@ This profile is used by the following APIs:
      - a recorded consent to donate a specific organ and/or tissue is represented as `Consent.provision.provision` with `Consent.provision.provision.type` = "permit"
      - no evidence of consent to donate a specific organ and/or tissue (or evidence an individual does not consent) is represented as `Consent.provision.provision` with `Consent.provision.provision.type` = "deny"
      - see example [Australian Organ Donor Register Consent - Willing to be a donor, donate specific tissue / organ](Consent-aodr-03.html)
+- In an exchange with the My Health Record system references to a BodyStructure resource will be [contained](http://hl7.org/fhir/R4/references.html#contained).
+
 
 #### Boundaries and relationships
 This profile is referenced by 

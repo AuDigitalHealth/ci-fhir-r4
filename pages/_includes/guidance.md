@@ -309,6 +309,8 @@ ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to suppo
 
 **Medicinal Product Identification**
 
+For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain only a text list of ingredients or it may be a code from a medicines terminology.
+
 For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechanism to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
 
 Australian Medicines Terminology (AMT) is the national terminology for identification and naming of medicines in clinical systems for Australia. 
