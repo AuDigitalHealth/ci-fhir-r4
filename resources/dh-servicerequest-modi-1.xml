@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-modi-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="MODIServiceRequest"/>
   <title value="MODI Request for Diagnostic Imaging Service"/>
   <status value="draft"/>
@@ -27,6 +27,17 @@
       <path value="ServiceRequest"/>
       <short value="Request for diagnostic imaging service"/>
       <definition value="A record of a request for a diagnostic imaging service to be performed."/>
+      <constraint>
+        <key value="inv-dh-srr-01"/>
+        <severity value="error"/>
+        <human
+          value="If present, a performer shall at least have a reference or display or a valid identifier"/>
+        <expression
+          value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"
+        />
+      </constraint>
     </element>
     <element id="ServiceRequest.extension:targetBodyStructure">
       <path value="ServiceRequest.extension" />
@@ -150,10 +161,6 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
       </type>
       <mustSupport value="true"/>
-    </element>
-    <element id="ServiceRequest.performer.reference">
-      <path value="ServiceRequest.performer.reference"/>
-      <min value="1"/>
     </element>
     <element id="ServiceRequest.reasonCode">
       <path value="ServiceRequest.reasonCode" />

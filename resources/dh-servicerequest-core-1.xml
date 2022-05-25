@@ -31,7 +31,7 @@
         <key value="inv-dh-srr-01"/>
         <severity value="error"/>
         <human
-          value="If present, a performer shall at least have a reference or a valid identifier"/>
+          value="If present, a performer shall at least have a reference or display or a valid identifier"/>
         <expression
           value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
         <source
