@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-diagnosticreport-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="DHDiagnosticReportCore"/>
   <title value="ADHA Core DiagnosticReport"/>
   <status value="draft"/>
@@ -30,8 +30,8 @@
       <constraint>
         <key value="inv-dh-dir-01"/>
         <severity value="error"/>
-        <human value="The report shall at least have a result or conclusionCode or a presentedForm"/>
-        <expression value="result.exists() or conclusionCode.exists() or presentedForm.exists()"/>
+        <human value="The report shall at least have a result or a presentedForm"/>
+        <expression value="result.exists() or presentedForm.exists()"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"
         />
