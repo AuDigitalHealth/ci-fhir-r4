@@ -36,6 +36,10 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>
     </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier"/>
+      <mustSupport value="true"/>
+    </element>
     <element id="Observation.status">
       <path value="Observation.status"/>
       <short value="preliminary | final | amended +"/>
@@ -160,6 +164,7 @@
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite"/>
+      <min value="1"/>
       <constraint>
         <key value="inv-dh-obs-04"/>
         <severity value="error"/>
