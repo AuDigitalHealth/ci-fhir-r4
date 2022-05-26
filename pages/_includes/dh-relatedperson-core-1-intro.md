@@ -3,9 +3,11 @@ The purpose of this profile is to provide a core representation of a related per
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) that are supported.
 
+A [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) resource is used within the context of a referencing resource. In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information.
+
 This profile is designed to set a core RelatedPerson standard:
-* Querying for records associated with a related person
-* Record or update a record associated with a related person
+* Recording or updating a related person referenced by another resource
+* Reading related persons referenced by another resource
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)

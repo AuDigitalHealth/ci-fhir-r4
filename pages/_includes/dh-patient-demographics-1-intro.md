@@ -17,5 +17,6 @@ This profile is used by the following APIs:
 - A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html)
 
 
-
+#### Boundaries and relationships
+This profile is not referenced by another profile in this implementation guide.  
 
