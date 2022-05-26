@@ -16,6 +16,7 @@ This profile is used by the following APIs:
 - The Observation resource can represent a result using one or both of a single value with `Observation.value`, or set of results using either `Observation.component.value` or `Observation.hasMember`.
   - Although all are marked as must support, sending systems are not required to support all choices, but they **SHALL** support *at least one* of these elements
   - A receiving or persisting system **SHALL** support both elements
+- `Observation.identifier` may contain the same identifier as in the order or report connecting the resources that are related to a single request fulfilment workflow
 
 
 #### Boundaries and relationships

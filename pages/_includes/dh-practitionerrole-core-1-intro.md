@@ -3,8 +3,11 @@ The purpose of this profile is to provide a core representation of a practitione
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) that are supported. 
 
+A [PractitionerRole](http://hl7.org/fhir/R4/organization.html) resource is used within the context of a referencing resource. In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information.
+
 This profile is designed to set a core PractitionerRole standard for:
-* TBD
+* Recording or updating a practitioner role referenced by another resource
+* Reading practitioner roles referenced by another resource
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)

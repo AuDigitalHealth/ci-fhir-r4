@@ -21,7 +21,7 @@ This profile is used by the following APIs:
 - The ServiceRequest resource can represent the desired performer as a code with `ServiceRequest.performerType`, or a reference with `ServiceRequest.performer` to a HealthcareService or other resource.
   - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
   - A receiving or persisting system **SHALL** support both elements
-- 'ServiceRequest.supportingInfo` is broad to accommodate a wide variety of use cases by allowing a reference to any resource. 
+- `ServiceRequest.supportingInfo` is broad to accommodate a wide variety of use cases by allowing a reference to any resource. 
    - Sending systems **SHALL** ensure references to external resources are only to resources that conform to at least an ADHA Core profile and the resource type is supported by the Conformance/Capability statement for that endpoint and conform
 
 #### Boundaries and relationships
