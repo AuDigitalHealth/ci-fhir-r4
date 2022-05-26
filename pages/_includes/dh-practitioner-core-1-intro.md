@@ -3,11 +3,11 @@ The purpose of this profile is to define a core representation a practitioner fo
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Practitioner](http://hl7.org/fhir/R4/practitioner.html) that are supported. 
 
-A [Practitioner](http://hl7.org/fhir/R4/practitioner.html) resource is used within the context of a referencing [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) resource. 
+A [Organization](http://hl7.org/fhir/R4/organization.html) resource is used within the context of a referencing resource (most commonly a PractitionerRole resource). In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information.
 
 This profile is designed to set a core Practitioner for:
-* Querying practitioners referenced in PractitionerRole resources
-* Recording or updating a practitioner referenced by a PractitionerRole resource
+* Querying practitioners referenced in PractitionerRole or other resources
+* Recording or updating a practitioner referenced by a PractitionerRole or other resource
 
 
 #### Profile specific guidance
