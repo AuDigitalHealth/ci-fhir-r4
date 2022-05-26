@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="dh-ig-1"/>
-    <url value="http://ns.electronichealth.net.au/fhir/ImplementationGuide/dh-ig-1"/>
+    <id value="au.digitalhealth.r4"/>
+    <url value="http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4"/>
     <version value="0.1.0"/>
     <name value="DHAsset"/>
     <title value="Australian Digital Health Agency FHIR"/>
@@ -43,6 +43,7 @@
                 <reference value="StructureDefinition/dh-allergyintolerance-core-1"/>
             </reference>
             <name value="ADHA Core AllergyIntolerance"/>
+            <description value="The purpose of this profile is to provide a core representation of an allergy or intolerance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a summary statement relating to an allergy or intolerance including asserting negation for a specific allergy or intolerance, a category, or that a patient has no known allergies or intolerances."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -50,6 +51,7 @@
                 <reference value="StructureDefinition/dh-bodystructure-core-1"/>
             </reference>
             <name value="ADHA Core BodyStructure"/>
+            <description value="The purpose of this profile is to provide a core representation of a body structure for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -57,6 +59,7 @@
                 <reference value="StructureDefinition/dh-bodystructure-odr-1"/>
             </reference>
             <name value="ADHA Donatable Organ or Tissue BodyStructure"/>
+            <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual’s death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -64,6 +67,7 @@
                 <reference value="StructureDefinition/dh-bundle-core-1"/>
             </reference>
             <name value="ADHA Core Bundle"/>
+            <description value="The purpose of this profile is to validate that a collection of resources conforms to the set of core standard for resources of interest and is suitable for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -71,6 +75,7 @@
                 <reference value="StructureDefinition/dh-bundle-document-1"/>
             </reference>
             <name value="ADHA Document Bundle"/>
+            <description value="The purpose of this profile is to provide a collection of resources handled as a document for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -78,6 +83,7 @@
                 <reference value="StructureDefinition/dh-bundle-message-1"/>
             </reference>
             <name value="ADHA Message Bundle"/>
+            <description value="The purpose of this profile is to provide a collection of resources handled as a message for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -85,6 +91,7 @@
                 <reference value="StructureDefinition/dh-bundle-payload-1"/>
             </reference>
             <name value="ADHA Payload Bundle"/>
+            <description value="The purpose of this profile is to provide a collection of resources handled as a single collection for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -92,6 +99,7 @@
                 <reference value="StructureDefinition/dh-condition-core-1"/>
             </reference>
             <name value="ADHA Core Condition"/>
+            <description value="The purpose of this profile is to provide a core representation of a condition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of a condition, problem, or diagnosis including asserting negation for specific conditions or problems."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -99,6 +107,7 @@
                 <reference value="StructureDefinition/dh-composition-core-1"/>
             </reference>
             <name value="ADHA Core Composition"/>
+            <description value="The purpose of this profile is to provide a core representation of a composition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -106,6 +115,7 @@
                 <reference value="StructureDefinition/dh-composition-document-1"/>
             </reference>
             <name value="ADHA Document Composition"/>
+            <description value="The purpose of this profile is to provide a document composition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -113,6 +123,7 @@
                 <reference value="StructureDefinition/dh-composition-acdcr-1"/>
             </reference>
             <name value="ADHA Advance Care Directive Custodian Record Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of an Advance Care Directive Custodian Record document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -120,6 +131,7 @@
                 <reference value="StructureDefinition/dh-composition-acp-1"/>
             </reference>
             <name value="ADHA Advance Care Planning Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of an Advance Care Planning document that includes an attached Advance Care Plan for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -127,6 +139,7 @@
                 <reference value="StructureDefinition/dh-composition-acts-1"/>
             </reference>
             <name value="ADHA Aged Care Transfer Summary Composition"/>
+            <description value="The purpose of this profile is to define a representation of an Aged Care Transfer Summary for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A transfer summary includes critical information for exchange of information between providers of care when a patient moves between health care settings. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -134,6 +147,7 @@
                 <reference value="StructureDefinition/dh-composition-cocs-1"/>
             </reference>
             <name value="ADHA Continuity of Care Summary Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Continuity of Care Summary Document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care across encounters and healthcare settings. Specific use cases are supported by defined profiles for those use cases such as Shared Health Summary, Event Summary, Discharge Summary, Transfer Summary, Referral; where available the most specific applicable profile should be used. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -141,6 +155,7 @@
                 <reference value="StructureDefinition/dh-composition-ds-1"/>
             </reference>
             <name value="ADHA Discharge Summary Composition"/>
+            <description value="The purpose of this profile is to define a representation of an Discharge Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care following discharge. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -148,6 +163,7 @@
                 <reference value="StructureDefinition/dh-composition-es-1"/>
             </reference>
             <name value="ADHA Event Summary Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -155,6 +171,7 @@
                 <reference value="StructureDefinition/dh-composition-es-mix-1"/>
             </reference>
             <name value="ADHA Event Summary Mixed Narrative and Structure"/>
+            <description value="The purpose of this profile is to define a representation of a mixed narrative and structured data Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -162,6 +179,7 @@
                 <reference value="StructureDefinition/dh-composition-es-narrative-1"/>
             </reference>
             <name value="ADHA Event Summary Narrative"/>
+            <description value="The purpose of this profile is to define a representation of a narrative only Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -169,6 +187,7 @@
                 <reference value="StructureDefinition/dh-composition-mov-1"/>
             </reference>
             <name value="ADHA Medicare Overview Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Medicare Overview document for an individual for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -176,6 +195,7 @@
                 <reference value="StructureDefinition/dh-composition-ncspv-1"/>
             </reference>
             <name value="ADHA National Cancer Screening Program Participation View"/>
+            <description value="The purpose of this profile is to define a representation of a National Cancer Screening Program Participation View that describes an individual’s participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -183,6 +203,7 @@
                 <reference value="StructureDefinition/dh-composition-phn-1"/>
             </reference>
             <name value="ADHA Personal Health Notes Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Personal Health Notes document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -190,6 +211,7 @@
                 <reference value="StructureDefinition/dh-composition-phs-1"/>
             </reference>
             <name value="ADHA Personal Health Summary Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Personal Health Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -197,6 +219,7 @@
                 <reference value="StructureDefinition/dh-composition-pdl-1"/>
             </reference>
             <name value="ADHA Prescription and or Dispense History Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Prescription and or Dispense History document that describes a patient’s prescription history, or dispense history, or both, at a point in time the for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. The list may be partial, or complete, and may be a full history or scoped to an active script list. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -204,6 +227,7 @@
                 <reference value="StructureDefinition/dh-composition-psml-1"/>
             </reference>
             <name value="ADHA Pharmacist Shared Medicines List Composition"/>
+            <description value="The purpose of this profile is to define a document representation of a Shared Medicines List document that describes a patient’s medicine item use at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -211,6 +235,7 @@
                 <reference value="StructureDefinition/dh-composition-po-1"/>
             </reference>
             <name value="ADHA Personal Observations Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Personal Observations document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A Personal Observations document allows for a nominated or authorised representative to record and viewing of childhood measurement information such as a child’s height, weight and head circumference. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -218,6 +243,7 @@
                 <reference value="StructureDefinition/dh-composition-shs-1"/>
             </reference>
             <name value="ADHA Shared Health Summary Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Shared Health Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -225,6 +251,7 @@
                 <reference value="StructureDefinition/dh-composition-sml-1"/>
             </reference>
             <name value="ADHA Shared Medicines List Composition"/>
+            <description value="TBD"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -232,11 +259,13 @@
                 <reference value="StructureDefinition/dh-consent-aodr-1"/>
             </reference>
             <name value="ADHA Record of Australian Organ Donor Register Consent"/>
+            <description value="The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-date-initial-registration-1"/>
+                <description value="This extension applies to any resource and represents the date an individual first registered, for example in the context of an organ donor register this date is not updated if a consent decision or provision is changed."/>
             </reference>
             <name value="ADHA Date of Initial Registration"/>
             <exampleBoolean value="false"/>
@@ -244,6 +273,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-device-implantable-1"/>
+                <description value="The purpose of this profile is to define a representation of an implantable medical device for a patient for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia."/>
             </reference>
             <name value="ADHA Implantable Medical Device"/>
             <exampleBoolean value="false"/>
@@ -253,6 +283,7 @@
                 <reference value="StructureDefinition/dh-device-participant-1"/>
             </reference>
             <name value="ADHA Participant Device"/>
+            <description value="The purpose of this profile is to define a representation of a device acting as an observer or performer for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a participant device is part of the context established for a set of healthcare-related information or it forms part of a target or source for the exchange."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -260,6 +291,7 @@
                 <reference value="StructureDefinition/dh-device-system-1"/>
             </reference>
             <name value="ADHA System Device"/>
+            <description value="The purpose of this profile is to define a representation of a device as a system in the role of an author or exchange target or source for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a system device is part of the context established for a set of healthcare-related information or it forms part of a target or source for the exchange."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -267,6 +299,7 @@
                 <reference value="StructureDefinition/dh-diagnosticreport-core-1"/>
             </reference>
             <name value="ADHA Core DiagnosticReport"/>
+            <description value="The purpose of this profile is to define a core representation of a diagnostic report issued by the diagnostic service provider to support the electronic exchange of the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines that are not pathology or imaging."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -274,6 +307,7 @@
                 <reference value="StructureDefinition/dh-diagnosticreport-path-1"/>
             </reference>
             <name value="ADHA Pathology Report"/>
+            <description value="The purpose of this profile is to represent a pathology report issued by a diagnostic service provider to support the electronic exchange of the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for all pathology disciplines (e.g. including microbiology, histopathology, cytology, blood transfusion) with the exception of genomics."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -281,6 +315,7 @@
                 <reference value="StructureDefinition/dh-documentreference-core-1"/>
             </reference>
             <name value="ADHA Core DocumentReference"/>
+            <description value="The purpose of this profile is to provide a core representation of a document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports describing a generic document that is made available to a system and is used for documents that are not authored and assembled in FHIR e.g. documents whose form is an attachment."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -288,6 +323,7 @@
                 <reference value="StructureDefinition/dh-documentreference-acp-1"/>
             </reference>
             <name value="ADHA Advance Care Planning Document DocumentReference"/>
+            <description value="The purpose of this profile is to provide a representation of an Advance Care Planning Document document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -295,6 +331,7 @@
                 <reference value="StructureDefinition/dh-encounter-core-1"/>
             </reference>
             <name value="ADHA Core Encounter"/>
+            <description value="The purpose of this profile is to provide a core representation of an encounter for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -302,6 +339,7 @@
                 <reference value="StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
             </reference>
             <name value="ADHA Record of Claim against MBS"/>
+            <description value="The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans’ Affairs (DVA) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -309,6 +347,7 @@
                 <reference value="StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
             </reference>
             <name value="ADHA Record of Claim against PBS or RPBS"/>
+            <description value="The purpose of this profile is to define a representation of a record of a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -316,6 +355,7 @@
                 <reference value="StructureDefinition/dh-flag-air-1"/>
             </reference>
             <name value="ADHA Australian Immunisation Register Notice"/>
+            <description value="The purpose of this profile is to define a notice, such as an exemption record or notification of completion of an immunisation schedule, from the Australian Immunisation Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -323,6 +363,7 @@
                 <reference value="StructureDefinition/dh-flag-core-1"/>
             </reference>
             <name value="ADHA Core Flag"/>
+            <description value="The purpose of this profile is to provide a core representation of a flag (e.g. warning or notification) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -330,6 +371,7 @@
                 <reference value="StructureDefinition/dh-healthcareservice-core-1"/>
             </reference>
             <name value="ADHA Core HealthcareService"/>
+            <description value="The purpose of this profile is to define a core representation of a healthcare service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an healthcare service is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <!--<resource>
@@ -344,6 +386,7 @@
                 <reference value="StructureDefinition/dh-hl7-v2-base64-1"/>
             </reference>
             <name value="ADHA HL7 V2 as Base64"/>
+            <description value="This extension applies to the ServiceRequest resource and is provided for use in the MODI proof of concept. It is used to provide an alternate HL7 V2 format of the Order represented by the associated ServiceRequest as a data directly inline, base64 encoded."/>
             <exampleBoolean value="false"/>
         </resource>
         <!--<resource>
@@ -351,6 +394,7 @@
                 <reference value="StructureDefinition/dh-attachment-hl7-v2-base64-1"/>
             </reference>
             <name value="ADHA HL7 V2 as Attachment Base64 Encoded - Declined for use by MODI; if to be re-instated will need addition to ig.json"/>
+            <description value="TBD"/>
             <exampleBoolean value="false"/>
         </resource>-->
         <resource>
@@ -358,6 +402,7 @@
                 <reference value="StructureDefinition/dh-immunization-air-1"/>
             </reference>
             <name value="ADHA Record of Immunisation from Australian Immunisation Register"/>
+            <description value="The purpose of this profile is to represent a record of immunisation held by the Australian Immunisation Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -365,6 +410,7 @@
                 <reference value="StructureDefinition/dh-immunization-core-1"/>
             </reference>
             <name value="ADHA Core Immunization"/>
+            <description value="The purpose of this profile is to provide a core representation of an immunization for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of the administration or non-administration of a vaccine."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -372,6 +418,7 @@
                 <reference value="StructureDefinition/dh-list-core-1"/>
             </reference>
             <name value="ADHA Core List"/>
+            <description value="The purpose of this profile is to provide a core representation of a list for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -379,6 +426,7 @@
                 <reference value="StructureDefinition/dh-list-immunization-1"/>
             </reference>
             <name value="ADHA Immunisation History List"/>
+            <description value="The purpose of this profile is to define a representation of list that describes a patient’s immunisation history at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. The list may be partial, or complete, and may be scoped to a single source of vaccination information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -386,6 +434,7 @@
                 <reference value="StructureDefinition/dh-list-medication-pdl-1"/>
             </reference>
             <name value="ADHA Prescription and or Dispense History List"/>
+            <description value="The purpose of this profile is to define a representation of list that describes a patient’s prescription and/or dispense history for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient. The list may be partial, or complete, and may be a full history or scoped to an active script list."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -393,6 +442,7 @@
                 <reference value="StructureDefinition/dh-list-medication-use-1"/>
             </reference>
             <name value="ADHA Medication Use List"/>
+            <description value="The purpose of this profile is to define a representation of list that describes a patient’s medicine item use at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. This profile is used to group individual statements of medicine item use in the List resource to construct various types of medication usage lists for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -400,6 +450,7 @@
                 <reference value="StructureDefinition/dh-list-medication-use-pmr-1"/>
             </reference>
             <name value="ADHA Practitioner Medicine Review List"/>
+            <description value="The purpose of this profile is to define a representation of list from a review of a patient’s medicines by a practitioner at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. This profile is used to group individual statements of medicine item use in the List resource to construct various types of medication usage lists for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -407,6 +458,7 @@
                 <reference value="StructureDefinition/dh-location-core-1"/>
             </reference>
             <name value="ADHA Core Location"/>
+            <description value="The purpose of this profile is to define a core representation of a location for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a location is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -414,6 +466,7 @@
                 <reference value="StructureDefinition/dh-media-core-1"/>
             </reference>
             <name value="ADHA Core Media"/>
+            <description value="The purpose of this profile is to provide a core representation of a media observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -421,6 +474,7 @@
                 <reference value="StructureDefinition/dh-medication-core-1"/>
             </reference>
             <name value="ADHA Core Medication"/>
+            <description value="The purpose of this profile is to provide a core representation of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -428,6 +482,7 @@
                 <reference value="StructureDefinition/dh-medicationadministration-core-1"/>
             </reference>
             <name value="ADHA Core MedicationAdministration"/>
+            <description value="The purpose of this profile is to provide a core representation of a medication administration for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -435,6 +490,7 @@
                 <reference value="StructureDefinition/dh-medicationdispense-core-1"/>
             </reference>
             <name value="ADHA Core MedicationDispense"/>
+            <description value="The purpose of this profile is to provide a core representation of a dispense of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -442,6 +498,7 @@
                 <reference value="StructureDefinition/dh-medicationdispense-disp-1"/>
             </reference>
             <name value="ADHA Dispense Record"/>
+            <description value="The purpose of this profile is to provide a representation of a dispense record for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -449,6 +506,7 @@
                 <reference value="StructureDefinition/dh-medicationstatement-core-1"/>
             </reference>
             <name value="ADHA Core MedicationStatement"/>
+            <description value="The purpose of this profile is to provide a core representation of a medication statement for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of medication usage for a known medicine including asserting negation for a specific medicine."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -456,6 +514,7 @@
                 <reference value="StructureDefinition/dh-medicationrequest-core-1"/>
             </reference>
             <name value="ADHA Core MedicationRequest"/>
+            <description value="The purpose of this profile is to provide a core representation of a request for the supply of a medication and the instructions for administration of that medication to a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -463,6 +522,7 @@
                 <reference value="StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
             </reference>
             <name value="ADHA PBS Claim Item"/>
+            <description value="The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -470,6 +530,7 @@
                 <reference value="StructureDefinition/dh-medicationrequest-pres-1"/>
             </reference>
             <name value="ADHA Prescription"/>
+            <description value="The purpose of this profile is to provide a representation of a prescription for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -477,6 +538,7 @@
                 <reference value="StructureDefinition/dh-organization-contact-1"/>
             </reference>
             <name value="ADHA Organization Contact"/>
+            <description value="The purpose of this profile is to provide an organisation with contact information for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -484,6 +546,7 @@
                 <reference value="StructureDefinition/dh-organization-core-1"/>
             </reference>
             <name value="ADHA Core Organization"/>
+            <description value="The purpose of this profile is to define a core representation of an organisation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -491,6 +554,7 @@
                 <reference value="StructureDefinition/dh-observation-core-1"/>
             </reference>
             <name value="ADHA Core Observation"/>
+            <description value="The purpose of this profile is to provide a core representation of a generic observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -498,6 +562,7 @@
                 <reference value="StructureDefinition/dh-observation-diagnosticresult-1"/>
             </reference>
             <name value="ADHA Diagnostic Result Observation"/>
+            <description value="The purpose of this profile is to provide a representation of a diagnostic result observation made during a diagnostic investigation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -505,6 +570,7 @@
                 <reference value="StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
             </reference>
             <name value="ADHA Imaging Result Observation"/>
+            <description value="The purpose of this profile is to represent a diagnostic imaging observation issued by the diagnostic service provider for the electronic exchange of imaging examination observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. The observation may represent the result of a simple examination or study series."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -512,6 +578,7 @@
                 <reference value="StructureDefinition/dh-observation-diagnosticresult-path-1"/>
             </reference>
             <name value="ADHA Pathology Result Observation"/>
+            <description value="The purpose of this profile is to represent a pathology test observation issued by the diagnostic service provider for the electronic exchange of pathology test observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for all pathology disciplines (e.g. including microbiology, histopathology, cytology, blood transfusion) with the exception of genomics."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -519,6 +586,7 @@
                 <reference value="StructureDefinition/dh-observation-ncspp-1"/>
             </reference>
             <name value="ADHA National Cancer Screening Program Participation Observation"/>
+            <description value="The purpose of this profile is to provide a representation of an individual’s participation in a national cancer screening program, e.g. national bowel cancer screening program for the electronic exchange of health information between individuals, healthcare providers, the National Cancer Screening Register, and the My Health Record system infrastructure in Australia. Participation information may include information on an individual’s eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -526,6 +594,7 @@
                 <reference value="StructureDefinition/dh-observation-simple-1"/>
             </reference>
             <name value="ADHA Simple Observation"/>
+            <description value="The purpose of this profile is to provide a representation of an observation, for simple measurements or assertions, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -533,6 +602,7 @@
                 <reference value="StructureDefinition/dh-packed-in-daa-1"/>
             </reference>
             <name value="ADHA Medicines Packed in Dose Administration Aid Indicator"/>
+            <description value="TBD"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -540,6 +610,7 @@
                 <reference value="StructureDefinition/dh-patient-core-1"/>
             </reference>
             <name value="ADHA Core Patient"/>
+            <description value="The purpose of this profile is to provide a core representation of a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set, including country of birth, year of arrival and preferred language."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -547,6 +618,7 @@
                 <reference value="StructureDefinition/dh-patient-demographics-1"/>
             </reference>
             <name value="ADHA Core Patient"/>
+            <description value="The purpose of this profile is to provide a representation of a patient’s demographics to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set, including country of birth, year of arrival and preferred language."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -554,6 +626,7 @@
                 <reference value="StructureDefinition/dh-patient-match-1"/>
             </reference>
             <name value="ADHA Patient Match"/>
+            <description value="The purpose of this profile is to provide a representation of a patient to check and match patient identity the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -561,6 +634,7 @@
                 <reference value="StructureDefinition/dh-patient-mhr-1"/>
             </reference>
             <name value="ADHA My Health Record Patient"/>
+            <description value="The purpose of this profile is to define a representation of a patient for exchange usage scenarios with the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set, including country of birth, year of arrival and preferred language."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -568,6 +642,7 @@
                 <reference value="StructureDefinition/dh-practitioner-core-1"/>
             </reference>
             <name value="ADHA Core Practitioner"/>
+            <description value="The purpose of this profile is to define a core representation a practitioner for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. The concept of a practitioner in this implementation guide is always within the context of a practitioner role - as the practitioner that performs the role(s). In the context of an exchange of health information a practitioner is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -575,6 +650,7 @@
                 <reference value="StructureDefinition/dh-practitionerrole-author-1"/>
             </reference>
             <name value="ADHA Authoring PractitionerRole"/>
+            <description value="The purpose of this profile is to define a core representation of a practitioner acting as an author or observer in a healthcare role, on behalf of an organisation, that is for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -582,6 +658,7 @@
                 <reference value="StructureDefinition/dh-practitionerrole-author-cae-1"/>
             </reference>
             <name value="ADHA Authoring Care Agency Employee"/>
+            <description value="The purpose of this profile is to define a representation of a care agency employee (practitioner) acting as an author or observer, on behalf of an organisation, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -589,6 +666,7 @@
                 <reference value="StructureDefinition/dh-practitionerrole-core-1"/>
             </reference>
             <name value="ADHA Core PractitionerRole"/>
+            <description value="The purpose of this profile is to provide a core representation of a practitioner in a role, on behalf of an organisation, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -596,6 +674,7 @@
                 <reference value="StructureDefinition/dh-procedure-core-1"/>
             </reference>
             <name value="ADHA Core Procedure"/>
+            <description value="The purpose of this profile is to provide a core representation of a procedure for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -603,6 +682,7 @@
                 <reference value="StructureDefinition/dh-relatedperson-author-1"/>
             </reference>
             <name value="ADHA Authoring RelatedPerson"/>
+            <description value="The purpose of this profile is to define a representation of a related person in the role of an author or observer for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource> 
         <resource>
@@ -610,13 +690,15 @@
                 <reference value="StructureDefinition/dh-relatedperson-core-1"/>
             </reference>
             <name value="ADHA Core RelatedPerson"/>
+            <description value="The purpose of this profile is to provide a core representation of a related person for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource> 
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-relatedperson-mhr-1"/>
             </reference>
-            <name value="ADHA Core RelatedPerson"/>
+            <name value="ADHA MHR RelatedPerson"/>
+            <description value="The purpose of this profile is to define a representation of a related person for exchange usage scenarios with the My Health Record system infrastructure in Australia. In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource> 
         <resource>
@@ -624,6 +706,7 @@
                 <reference value="StructureDefinition/dh-servicerequest-core-1"/>
             </reference>
             <name value="ADHA Core ServiceRequest"/>
+            <description value="The purpose of this profile is to provide a core representation of a record of request for a service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -631,6 +714,7 @@
                 <reference value="StructureDefinition/dh-servicerequest-mbs-claim-1"/>
             </reference>
             <name value="ADHA MBS Service Claim Item"/>
+            <description value="The purpose of this profile is to define a representation of the service item claimed in a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans’ Affairs (DVA) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -638,6 +722,7 @@
                 <reference value="StructureDefinition/dh-servicerequest-modi-1"/>
             </reference>
             <name value="MODI Request for Diagnostic Imaging Service"/>
+            <description value="The purpose of this profile is to provide a representation of a request for a diagnostic imaging service for use in the Modernisation of Diagnostic Imaging (MODI) Proof of Concept."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -645,6 +730,7 @@
                 <reference value="StructureDefinition/dh-specimen-core-1"/>
             </reference>
             <name value="ADHA Core Specimen"/>
+            <description value="The purpose of this profile is to provide a core representation of a specimen for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports information about a collected specimen taken from a patient for diagnostic investigation."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -652,6 +738,7 @@
                 <reference value="StructureDefinition/dh-substance-core-1"/>
             </reference>
             <name value="ADHA Core Substance"/>
+            <description value="The purpose of this profile is to provide a core representation of a substance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <!--EXAMPLES-->
@@ -3468,428 +3555,7 @@
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
         </resource>
-        <!--TERMINOLOGY INCLUSIONS TO CHECK AGAINST WARNINGS-->
-        <!--<!-\-<resource>
-            <reference>
-                <reference value="CodeSystem/snomed-32506021000036107-20220331"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>-\->
-        <resource>
-            <reference>
-                <reference value="CodeSystem/anzsco-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <!-\-<resource>
-            <reference>
-                <reference value="CodeSystem/anzsco-designation-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>-\->
-        <resource>
-            <reference>
-                <reference value="CodeSystem/anzsic-2006-20130626"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/au-observation-category"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/australian-indigenous-status-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/australian-benefit-payment-category-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/australian-states-territories-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/date-accuracy-indicator-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/ihi-record-status-1.0.2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/ihi-status-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/nctis-data-components-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/separation-mode-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-advance-care-planning-document-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-adverse-reaction-agent-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-amt-vaccine-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/au-observation-category-extended"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-australian-immunisation-register-vaccine-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-australian-indigenous-status-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-         <resource>
-            <reference>
-                <reference value="ValueSet/valueset-australian-medicare-benefit-claim-category-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-australian-medication-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-australian-states-territories-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-body-site-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-body-site-relative-site-qualifier-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-clinical-condition-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-clinical-finding-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-clinical-specialty-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-common-languages-in-australia-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-contact-relationship-type-3"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-date-accuracy-indicator-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-diagnosticreportstatus-report-available-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-encounter-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-evaluation-procedure-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-health-program-participation-status-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-health-summary-non-clinical-empty-reason-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-healthcare-organisation-role-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-healthcare-service-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-history-of-medication-use-list-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-hypersensitivity-or-intolerance-to-substance-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-immunisation-anatomical-site-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-immunisation-route-of-administration-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-indicator-packed-in-daa-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-individual-healthcare-identifier-record-status-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-individual-healthcare-identifier-status-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-medication-form-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-medication-reason-taken-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-medicine-item-change-event-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-medicine-item-change-from-pmr-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-medicine-substitution-reason-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-medicines-review-type-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-metric-body-length-units-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-metric-body-weight-units-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-ncspp-document-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-non-clinical-empty-reason-2"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-observationstatus-result-available-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-         <resource>
-            <reference>
-                <reference value="ValueSet/valueset-organ-donation-body-site-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-participation-in-health-program-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-practitioner-role-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-prescription-dispense-list-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-procedure-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-reason-for-request-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-reason-vaccine-administered-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-reason-vaccine-not-administered-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-related-person-relationship-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-route-of-administration-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-separation-mode-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-service-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-specimen-type-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-substance-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/valueset-vaccination-target-disease-1"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>-->
-        
+                
         <page>
             <nameUrl value="index.html"/>
             <title value="Australian Digital Health Agency Core Asset"/>
