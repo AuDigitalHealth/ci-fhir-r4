@@ -19,7 +19,7 @@
       <td><a href="DocumentReference-acp-payload-02.ttl.html">Turtle</a></td>
    </tr>  
    <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a DocumentReference entry conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="Bundle-goc-01.html">Goals of Care Payload Bundle for Mr Zhang Wei</a></td>

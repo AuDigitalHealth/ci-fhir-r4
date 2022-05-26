@@ -12,7 +12,7 @@
       <td><a href="Composition-psml-03.ttl.html">Turtle</a></td>
    </tr>
     <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a Composition entry conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="Bundle-psml-01-doc.html">Pharmacist Shared Medicines List Document Bundle for Mrs Bonny Goodwin (2019)</a></td>

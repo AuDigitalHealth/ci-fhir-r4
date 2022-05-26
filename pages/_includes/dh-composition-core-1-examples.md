@@ -26,7 +26,7 @@
       <td><a href="Composition-psml-03.ttl.html">Turtle</a></td>
    </tr>
     <tr>
-      <td colspan="5">Bundle examples:</td>
+      <td colspan="5">Bundle examples that include a Composition entry conforming to this profile:</td>
    </tr>
    <tr>
       <td><a href="Bundle-es-02-doc.html">Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>

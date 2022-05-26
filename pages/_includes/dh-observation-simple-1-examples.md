@@ -123,7 +123,7 @@
       <td><a href="Bundle-po-doc-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Bundle-shs-01-doc.html">Assertion of No Relevant Finding Observation entry included in Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
+      <td><a href="Bundle-shs-01-doc.html">Shared Health Summary Document Bundle for Mr Zhang Wei (2018)</a></td>
       <td>shs-01-doc</td>
       <td><a href="Bundle-shs-01-doc.xml.html">XML</a></td>
       <td><a href="Bundle-shs-01-doc.json.html">JSON</a></td>
