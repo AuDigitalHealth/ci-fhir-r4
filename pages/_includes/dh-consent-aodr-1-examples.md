@@ -6,21 +6,21 @@
    </tr>
    <tr>
       <td><a href="Consent-aodr-01.html">Australian Organ Donor Register Consent - Not willing to be a donor</a></td>
-      <td>air-01</td>
+      <td>aodr-01</td>
       <td><a href="Consent-aodr-01.xml.html">XML</a></td>
       <td><a href="Consent-aodr-01.json.html">JSON</a></td>
       <td><a href="Consent-aodr-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Consent-aodr-02.html">Australian Organ Donor Register Consent - Willing to be a donor, donate all</a></td>
-      <td>air-02</td>
+      <td>aodr-02</td>
       <td><a href="Consent-aodr-02.xml.html">XML</a></td>
       <td><a href="Consent-aodr-02.json.html">JSON</a></td>
       <td><a href="Consent-aodr-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Consent-aodr-03.html">Australian Organ Donor Register Consent - Willing to be a donor, donate specific tissue / organ</a></td>
-      <td>air-03</td>
+      <td>aodr-03</td>
       <td><a href="Consent-aodr-03.xml.html">XML</a></td>
       <td><a href="Consent-aodr-03.json.html">JSON</a></td>
       <td><a href="Consent-aodr-03.ttl.html">Turtle</a></td>

@@ -6,7 +6,7 @@
    </tr>
    <tr>
       <td><a href="DocumentReference-acp-payload-01.html">Advance Care Planning document as attachment for Mrs. Anne Thompson</a></td>
-      <td>acp-01</td>
+      <td>acp-payload-01</td>
       <td><a href="DocumentReference-acp-payload-01.xml.html">XML</a></td>
       <td><a href="DocumentReference-acp-payload-01.json.html">JSON</a></td>
       <td><a href="DocumentReference-acp-payload-01.ttl.html">Turtle</a></td>
