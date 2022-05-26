@@ -30,6 +30,13 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>Code that identifies the allergy or intolerance</td>
         <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
   </tr>
+  <tr>
+        <td>clinical-status</td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
+        <td><b>SHALL</b></td>
+        <td>active | inactive | resolved</td>
+        <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
+  </tr>
  </tbody>
 </table>
 
@@ -38,7 +45,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all observations for a patient using the **`patient:identifier`** search parameter:
+1. **SHALL** support searching for all allergies for a patient using the **`patient:identifier`** search parameter:
 
     `GET [base]/AllergyIntolerance?patient:identifier={system|}[code]`
 
@@ -70,3 +77,12 @@ The following search parameters and search parameter combinations **SHALL** be s
     ~~~
     *Implementation Notes:* Fetches a bundle of all AllergyIntolerance resources with the code of an 293619005 (Ibuprofen allergy) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
+1. **SHALL** support searching using the combination **`patient:identifier`** and **`clinical-status`** search parameter:
+
+    `GET [base]/AllergyIntolerance?patient:identifier={system|}[code]&clinical-status={system|}[code]`
+
+    Example:
+    ~~~
+    GET [base]/AllergyIntolerance?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&clinical-status=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|active
+    ~~~
+    *Implementation Notes:* Fetches a bundle of all AllergyIntolerance resources for the specified patient and status code.  This will not return any &#34;entered in error&#34; resources because of the conditional presence of the clinicalStatus element. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
