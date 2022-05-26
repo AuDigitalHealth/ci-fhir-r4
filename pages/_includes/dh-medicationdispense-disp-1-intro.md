@@ -1,5 +1,5 @@
 #### ADHA Dispense Record
-The purpose of this profile is to provide a core representation of a dispense record for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to provide a representation of a dispense record for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html) that are supported. 
 

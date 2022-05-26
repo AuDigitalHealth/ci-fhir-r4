@@ -1,9 +1,10 @@
 #### ADHA Core Practitioner
 The purpose of this profile is to define a core representation a practitioner for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. The concept of a practitioner in this implementation guide is always within the context of a practitioner role - as the practitioner that performs the role(s). 
+In the context of an exchange of health information a practitioner is part of the context established for a set of healthcare-related information.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Practitioner](http://hl7.org/fhir/R4/practitioner.html) that are supported. 
 
-A [Organization](http://hl7.org/fhir/R4/organization.html) resource is used within the context of a referencing resource (most commonly a PractitionerRole resource). In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information.
+A [Practitioner](http://hl7.org/fhir/R4/practitioner.html) resource is used within the context of a referencing resource (most commonly a PractitionerRole resource). 
 
 This profile is designed to set a core Practitioner for:
 * Querying practitioners referenced in PractitionerRole or other resources
