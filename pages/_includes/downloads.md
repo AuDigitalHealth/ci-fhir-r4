@@ -1,5 +1,8 @@
 # {{ page.title }}
 
+> <p style="color:#DAA520;">This material is part of the May 2022 QA Preview snapshot and is not approved for external use.</p>
+
+
 #### Downloadable Copy of Entire Specification
 
 A downloadable version of this IG is available so it can be hosted locally:

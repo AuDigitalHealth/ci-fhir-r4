@@ -33,25 +33,11 @@
       <td><a href="Medication-amoxicillin-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-amoxicillin-03.html">Amoxil amoxicillin 500 mg capsule, 20 (manufacturer + form + ingredient)</a></td>
-      <td>amoxicillin-03</td>
-      <td><a href="Medication-amoxicillin-03.xml.html">XML</a></td>
-      <td><a href="Medication-amoxicillin-03.json.html">JSON</a></td>
-      <td><a href="Medication-amoxicillin-03.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Medication-atorvastatin-01.html">LIPITOR ATORVASTATIN 10mg table (manufacturer + form + ingredient)</a></td>
       <td>atorvastatin-01</td>
       <td><a href="Medication-atorvastatin-01.xml.html">XML</a></td>
       <td><a href="Medication-atorvastatin-01.json.html">JSON</a></td>
       <td><a href="Medication-atorvastatin-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Medication-atorvastatin-02.html">LIPITOR ATORVASTATIN 10mg table (manufacturer + form + ingredient)</a></td>
-      <td>atorvastatin-02</td>
-      <td><a href="Medication-atorvastatin-02.xml.html">XML</a></td>
-      <td><a href="Medication-atorvastatin-02.json.html">JSON</a></td>
-      <td><a href="Medication-atorvastatin-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Medication-benpen-01.html">Benpen 3 g powder for injection, 1 vial (fully coded medication information: brand name, generic name, item form and strength)</a></td>
@@ -173,13 +159,6 @@
       <td><a href="Medication-morphine-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-morphine-02.html">morphine (manufacturer + form + ingredient)</a></td>
-      <td>morphine-02</td>
-      <td><a href="Medication-morphine-02.xml.html">XML</a></td>
-      <td><a href="Medication-morphine-02.json.html">JSON</a></td>
-      <td><a href="Medication-morphine-02.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Medication-multivitamins-01.html">Multi-vitamins</a></td>
       <td>multivitamins-01</td>
       <td><a href="Medication-multivitamins-01.xml.html">XML</a></td>
@@ -243,20 +222,6 @@
       <td><a href="Medication-perindopril-arginine-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-proxymetacaine-01.html">ALCAINE PROXYMETACAINE eye drop (manufacturer + form + ingredient)</a></td>
-      <td>proxymetacaine-01</td>
-      <td><a href="Medication-proxymetacaine-01.xml.html">XML</a></td>
-      <td><a href="Medication-proxymetacaine-01.json.html">JSON</a></td>
-      <td><a href="Medication-proxymetacaine-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Medication-proxymetacaine-02.html">ALCAINE PROXYMETACAINE eye drop (manufacturer + form + ingredient)</a></td>
-      <td>proxymetacaine-02</td>
-      <td><a href="Medication-proxymetacaine-02.xml.html">XML</a></td>
-      <td><a href="Medication-proxymetacaine-02.json.html">JSON</a></td>
-      <td><a href="Medication-proxymetacaine-02.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Medication-rampiril-01.html">RAMIPRIL(TAB) 2.5 mg, Tritace (text only)</a></td>
       <td>rampiril-01</td>
       <td><a href="Medication-rampiril-01.xml.html">XML</a></td>
@@ -274,14 +239,14 @@
       <td colspan="5">Examples with a contained Medication conforming to this profile:</td>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-pbs-cont-01.html">CONTAINED: Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 JAN 2020</a></td>
+      <td><a href="ExplanationOfBenefit-pbs-cont-01.html">Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 JAN 2020</a></td>
       <td>pbs-cont-01</td>
       <td><a href="ExplanationOfBenefit-pbs-cont-01.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-pbs-cont-01.json.html">JSON</a></td>
       <td><a href="ExplanationOfBenefit-pbs-cont-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-pbs-cont-02.html">CONTAINED: Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 FEB 2020</a></td>
+      <td><a href="ExplanationOfBenefit-pbs-cont-02.html">Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 FEB 2020</a></td>
       <td>pbs-cont-02</td>
       <td><a href="ExplanationOfBenefit-pbs-cont-02.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-pbs-cont-02.json.html">JSON</a></td>
@@ -293,92 +258,5 @@
       <td><a href="ExplanationOfBenefit-pbs-mds.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-pbs-mds.json.html">JSON</a></td>
       <td><a href="ExplanationOfBenefit-pbs-mds.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationRequest-etp-cont-01.html">CONTAINED: ePrescribing MedicationRequest etp-01 for Bert Gainey</a></td>
-      <td>etp-cont-01</td>
-      <td><a href="MedicationRequest-etp-cont-01.xml.html">XML</a></td>
-      <td><a href="MedicationRequest-etp-cont-01.json.html">JSON</a></td>
-      <td><a href="MedicationRequest-etp-cont-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationRequest-etp-cont-02.html">CONTAINED: ePrescribing MedicationRequest etp-02 for Mr. Zhang Wei</a></td>
-      <td>etp-cont-02</td>
-      <td><a href="MedicationRequest-etp-cont-02.xml.html">XML</a></td>
-      <td><a href="MedicationRequest-etp-cont-02.json.html">JSON</a></td>
-      <td><a href="MedicationRequest-etp-cont-02.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationRequest-etp-cont-03.html">CONTAINED: ePrescribing MedicationRequest etp-03 for Mrs. Anne Thompson</a></td>
-      <td>etp-cont-03</td>
-      <td><a href="MedicationRequest-etp-cont-03.xml.html">XML</a></td>
-      <td><a href="MedicationRequest-etp-cont-03.json.html">JSON</a></td>
-      <td><a href="MedicationRequest-etp-cont-03.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationRequest-etp-cont-04.html">CONTAINED: ePrescribing MedicationRequest etp-04 for Mr. Zhang Wei</a></td>
-      <td>etp-cont-04</td>
-      <td><a href="MedicationRequest-etp-cont-04.xml.html">XML</a></td>
-      <td><a href="MedicationRequest-etp-cont-04.json.html">JSON</a></td>
-      <td><a href="MedicationRequest-etp-cont-04.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationStatement-completed-atorvastatin-01.html">Completed ATORVASTATIN(TAB) 80 mg use for Mrs. Anne Thompson (2019)</a></td>
-      <td>completed-atorvastatin-01</td>
-      <td><a href="Medication-completed-atorvastatin-01.xml.html">XML</a></td>
-      <td><a href="Medication-completed-atorvastatin-01.json.html">JSON</a></td>
-      <td><a href="Medication-completed-atorvastatin-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationStatement-completed-docusate-01.html">Completed DOCUSATE SENNA(TAB) 50 mg use for Mrs. Anne Thompson (2019)</a></td>
-      <td>completed-docusate-01</td>
-      <td><a href="Medication-completed-docusate-01.xml.html">XML</a></td>
-      <td><a href="Medication-completed-docusate-01.json.html">JSON</a></td>
-      <td><a href="Medication-completed-docusate-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="MedicationStatement-completed-rampiril-01.html">Completed RAMIPRIL(TAB) 2.5 mg use for Mrs. Anne Thompson (2019)</a></td>
-      <td>completed-rampiril-01</td>
-      <td><a href="Medication-completed-rampiril-01.xml.html">XML</a></td>
-      <td><a href="Medication-completed-rampiril-01.json.html">JSON</a></td>
-      <td><a href="Medication-completed-rampiril-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td colspan="5">Bundle examples that include a Medication entry conforming to this profile:</td>
-   </tr>
-   <tr>
-      <td><a href="Bundle-psml-01-doc.html">Pharmacist Shared Medicines List Document Bundle for Mrs Bonny Goodwin (2019)</a></td>
-      <td>psml-01-doc</td>
-      <td><a href="Bundle-psml-01-doc.xml.html">XML</a></td>
-      <td><a href="Bundle-psml-01-doc.json.html">JSON</a></td>
-      <td><a href="Bundle-psml-01-doc.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Bundle-psml-02.html">Home Medicines Review Payload Bundle Payload Bundle for Mr. Lenny Matterson (2019)</a></td>
-      <td>psml-02</td>
-      <td><a href="Bundle-psml-02.xml.html">XML</a></td>
-      <td><a href="Bundle-psml-02.json.html">JSON</a></td>
-      <td><a href="Bundle-psml-02.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Bundle-psml-03-doc.html">Pharmacist Shared Medicines List Document Bundle for Mac PRIEST (2018)</a></td>
-      <td>psml-03-doc</td>
-      <td><a href="Bundle-psml-03-doc.xml.html">XML</a></td>
-      <td><a href="Bundle-psml-03-doc.json.html">JSON</a></td>
-      <td><a href="Bundle-psml-03-doc.ttl.html">Turtle</a></td>
-   </tr> 
-   <tr>
-      <td><a href="Bundle-medicare-view-doc-01.html">Document Bundle of Medicare Overview for Sally FIELD generated by MHR system (28 MARCH 2022)</a></td>
-      <td>medicare-view-doc-01</td>
-      <td><a href="Bundle-medicare-view-doc-01.xml.html">XML</a></td>
-      <td><a href="Bundle-medicare-view-doc-01.json.html">JSON</a></td>
-      <td><a href="Bundle-medicare-view-doc-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Bundle-medicare-view-cont-01.html">CONTAINED: Payload Bundle of Medicare Overview for Sally FIELD generated by MHR system (28 MARCH 2022)</a></td>
-      <td>medicare-view-cont-01</td>
-      <td><a href="Bundle-medicare-view-cont-01.xml.html">XML</a></td>
-      <td><a href="Bundle-medicare-view-cont-01.json.html">JSON</a></td>
-      <td><a href="Bundle-medicare-view-cont-01.ttl.html">Turtle</a></td>
    </tr>
 </table>

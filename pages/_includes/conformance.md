@@ -1,6 +1,6 @@
 # {{ page.title }}
 
-> <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
+> <p style="color:#DAA520;">This material is part of the May 2022 QA Preview snapshot and is not approved for external use.</p>
 
 
 **This content is to be provided by the Architecture Team.**
