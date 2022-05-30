@@ -11,7 +11,7 @@
 
 ### ADHA Core FHIR Profiles 
 
-The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">
@@ -415,7 +415,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
 
 ### HL7 AU FHIR Profiles 
 
-FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
+FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://hl7.org.au/fhir/4.0.0/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
 
 <html>
   <div id="segment-content" class="segment">
@@ -440,36 +440,36 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                          <td class="frm-null"/>
                        <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></li>
                                 <li>AU Australian Passport Number</li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ahpraregistrationnumber.html">AU AHPRA Registration Number </a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-careagencyemployeeidentifier.html">AU Care Agency Employee Identifier</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-cwlthseniorshealthcardnumber.html">AU Commonwealth Seniors Health Card Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dvanumber.html">AU DVA Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-employeenumber.html">AU Employee Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthcarecardnumber.html">AU Health Care Card Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-hpii.html">AU HPI-I</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-hpio.html">AU HPI-O</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html">AU IHI</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicalrecordnumber.html">AU Medical Record Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicarecardnumber.html">AU Medicare Card Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-ahpraregistrationnumber.html">AU AHPRA Registration Number </a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-careagencyemployeeidentifier.html">AU Care Agency Employee Identifier</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-cwlthseniorshealthcardnumber.html">AU Commonwealth Seniors Health Card Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-dvanumber.html">AU DVA Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-employeenumber.html">AU Employee Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-healthcarecardnumber.html">AU Health Care Card Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-hpii.html">AU HPI-I</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-hpio.html">AU HPI-O</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-ihi.html">AU IHI</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medicalrecordnumber.html">AU Medical Record Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medicarecardnumber.html">AU Medicare Card Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
                             </ul>
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-address.html">AU Base Address</a></li>
                             </ul>
                         </td>  
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dosage.html">AU Base Dosage</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-dosage.html">AU Base Dosage</a></li>
                             </ul>
                         </td> 
                     </tr>
@@ -520,31 +520,31 @@ The following extensions form part of this implementation guide:
         <th>Context</th>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-address-identifier.html">Address Identifier</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-address-identifier.html">Address Identifier</a></td>
         <td>address-identifier</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ahpraprofession-details.html">AHPRA Profession Details</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ahpraprofession-details.html">AHPRA Profession Details</a></td>
         <td>ahpraprofession-details</td>
         <td>(complex)</td>
         <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ahpraregistration-details.html">AHPRA Registration Details</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ahpraregistration-details.html">AHPRA Registration Details</a></td>
         <td>ahpraregistration-details</td>
         <td>(complex)</td>
         <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-indigenous-status.html">Australian Indigenous Status</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-indigenous-status.html">Australian Indigenous Status</a></td>
         <td>indigenous-status</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-timezone.html">Australian Time Zone </a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-timezone.html">Australian Time Zone </a></td>
         <td>au-timezone</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></td>
@@ -562,19 +562,19 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient.birthDate</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-change-description.html">Change Description</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-change-description.html">Change Description</a></td>
         <td>change-description</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/list.html">List.entry</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-closing-the-gap-registration.html">Closing the Gap Registration</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-closing-the-gap-registration.html">Closing the Gap Registration</a></td>
         <td>closing-the-gap-registration</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-contact-purpose.html">Contact Purpose</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-contact-purpose.html">Contact Purpose</a></td>
         <td>contact-purpose</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
         <td><a href="http://hl7.org/fhir/datatypes.html#ContactPoint">ContactPoint</a></td>
@@ -586,13 +586,13 @@ The following extensions form part of this implementation guide:
         <td>Element</td>
     </tr>    
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-accuracy-indicator.html">Date Accuracy Indicator</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-date-accuracy-indicator.html">Date Accuracy Indicator</a></td>
         <td>date-accuracy-indicator</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a> </td>
     </tr>
      <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-date-of-arrival.html">Date of Arrival in Australia</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-date-of-arrival.html">Date of Arrival in Australia</a></td>
         <td>date-of-arrival</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>, and <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
@@ -604,25 +604,25 @@ The following extensions form part of this implementation guide:
         <td>Resource</td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-encounter-description.html">Encounter Description</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-encounter-description.html">Encounter Description</a></td>
         <td>encounter-description</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-record-status.html">IHI Record Status</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ihi-record-status.html">IHI Record Status</a></td>
         <td>ihi-record-status</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-status.html">IHI Status</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ihi-status.html">IHI Status</a></td>
         <td>ihi-status</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified.html">IHI Verified</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ihi-verified.html">IHI Verified</a></td>
         <td>ihi-verified</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
@@ -634,19 +634,19 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-brand-name.html">Medication Brand Name</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-brand-name.html">Medication Brand Name</a></td>
         <td>medication-brand-name</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/Medication">Medication</a>, <a href="http://hl7.org/fhir/R4/MedicationRequest">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/MedicationDispense">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/MedicationStatement">MedicationStatement</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-generic-name.html">Medication Generic Name</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-generic-name.html">Medication Generic Name</a></td>
         <td>medication-generic-name</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/Medication">Medication</a>, <a href="http://hl7.org/fhir/R4/MedicationRequest">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/MedicationDispense">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/MedicationStatement">MedicationStatement</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html">Medication Type</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html">Medication Type</a></td>
         <td>medication-type</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
@@ -658,7 +658,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-no-fixed-address.html">No Fixed Address</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-no-fixed-address.html">No Fixed Address</a></td>
         <td>no-fixed-address</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>

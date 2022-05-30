@@ -120,7 +120,7 @@ A profile may include rules that:
 
 For example, the profile [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html) limits what is considered valid for the element `Immunization.patient` with the invariant "**inv-dh-imm-01:** At least reference or a valid identifier shall be present".
 
-Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html). 
+Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html). 
 The full set of subelements is visible in the "Snapshot Table" which shows the subelements defined in this profile (shown in the "Differential Table) and the subelements inherited from a base profile.
 
 *Must support elements of primitive type*

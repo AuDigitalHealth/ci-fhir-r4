@@ -26,7 +26,7 @@ For ADHA profiles, the following identifier elements are populated with business
           
 Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier).  
 
-[HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**.
+[HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**.
 
 While national and registry / exchange service identifiers will define the namespace to use when sending an identifier, a local identifier requires the organisation to define their own namespace when exchanging identifiers they manage.  
 
@@ -151,7 +151,7 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-* All Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
+* All Australian address conforms to [AU Base Address](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-ihi.html)
 
 
 ## Person Names
@@ -324,11 +324,11 @@ In addition to the medication code, the majority of use cases support exchange o
 These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource. The guidance for how to support coded or text is summarised below: 
 
 1. For *coded* support for brand name, generic name, manufacturer, item form and strength:
-   - Fully coded support is provided using code.coding with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
-      - brand name = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `BPD` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
-      - generic name = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `UPD` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
-      - generic item form and strength = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `UPDSF` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
-      - branded item form and strength = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `BPDSF` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
+   - Fully coded support is provided using code.coding with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
+      - brand name = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `BPD` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
+      - generic name = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `UPD` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
+      - generic item form and strength = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `UPDSF` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
+      - branded item form and strength = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `BPDSF` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
    - If the resource is a Medication resource:
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
       - manufacturer = `manufacturer.identifer`
@@ -446,8 +446,8 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 1.  For *non-coded* support for brand name, generic name, manufacturer, item form and strength:
     - Fully non-coded support is provided using the Medication resource
-        - brand name = [Medication Brand Name extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-brand-name.html)
-        - generic name = [Medication Generic Name extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-generic-name.html)
+        - brand name = [Medication Brand Name extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-brand-name.html)
+        - generic name = [Medication Generic Name extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-generic-name.html)
         - item form and strength = `code.text`
         - manufacturer = `manufacturer.display`
   
