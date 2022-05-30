@@ -22,13 +22,6 @@
       <td><a href="Organization-medium-vic-medical-clinic.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Organization-med-regional-med-centre.html">Medium Sized Regional Medical Centre</a></td>
-      <td>med-regional-med-centre</td>
-      <td><a href="Organization-med-regional-med-centre.xml.html">XML</a></td>
-      <td><a href="Organization-med-regional-med-centre.json.html">JSON</a></td>
-      <td><a href="Organization-med-regional-med-centre.ttl.html">Turtle</a></td>
-   </tr> 
-   <tr>
       <td><a href="Organization-tas-family-clinic.html">Tasmanian Family Medicine Clinic</a></td>
       <td>tas-family-clinic</td>
       <td><a href="Organization-tas-family-clinic.xml.html">XML</a></td>
@@ -177,21 +170,7 @@
       <td><a href="Organization-metro-qld-path-lab.ttl.html">Turtle</a></td>
    </tr> 
    <tr>
-      <td><a href="Organization-private-vic-path-lab.html">Private VIC Pathology</a></td>
-      <td>private-vic-path-lab</td>
-      <td><a href="Organization-private-vic-path-lab.xml.html">XML</a></td>
-      <td><a href="Organization-private-vic-path-lab.json.html">JSON</a></td>
-      <td><a href="Organization-private-vic-path-lab.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Organization-regional-qld-path-lab.html">Regional QLD Pathology Lab</a></td>
-      <td>regional-qld-path-lab</td>
-      <td><a href="Organization-regional-qld-path-lab.xml.html">XML</a></td>
-      <td><a href="Organization-regional-qld-path-lab.json.html">JSON</a></td>
-      <td><a href="Organization-regional-qld-path-lab.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td colspan="5">Hosptial examples:</td>
+      <td colspan="5">Hospital examples:</td>
    </tr>
    <tr>
       <td><a href="Organization-nsw-hospital.html">NSW Hospital (ABN, HPI-O, SNOMED CT + V3 type, Phone, Website, Address)</a></td>

@@ -140,7 +140,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></li>
                                 <li>ADHA Core MedicationAdministration</li>
                                 <li>ADHA Core MedicationDispense</li>
-                                <li>>ADHA Core MedicationStatement</li>
+                                <li>ADHA Core MedicationStatement</li>
                                 <li><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a></li>
                                 <li><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></li>
                             </ul>
@@ -280,7 +280,10 @@ FHIR profiles defined in this implementation guide for defined use cases.
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
+                                <li>ADHA MHR Patient</li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</a></li>
+                                <li>ADHA Authoring Care Agency Employee</li>
+                                <li>ADHA MHR RelatedPerson</li>
                                 <li><a href="StructureDefinition-dh-relatedperson-author-1.html">ADHA Authoring RelatedPerson</a></li>
                             </ul>
                         </td>  
@@ -288,7 +291,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-set">
                             <ul class="frm-set">
                             <li>ADHA Organization Contact</li>
-                                <li>ADHA Implantable Medical Device</li>
+                            <li>ADHA Implantable Medical Device</li>
                             </ul>
                         </td>                          
                         <td class="frm-null"/>

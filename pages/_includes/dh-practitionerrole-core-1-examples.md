@@ -56,20 +56,6 @@
       <td><a href="PractitionerRole-george-david-oncologist.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="PractitionerRole-bremer-frederika-cardiologist.html">Dr. Fredrika Bremer, Cardiologist, NSW Hospital - Cardiology</a></td>
-      <td>bremer-frederika-cardiologist</td>
-      <td><a href="PractitionerRole-bremer-frederika-cardiologist.xml.html">XML</a></td>
-      <td><a href="PractitionerRole-bremer-frederika-cardiologist.json.html">JSON</a></td>
-      <td><a href="PractitionerRole-bremer-frederika-cardiologist.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="PractitionerRole-howard-linda-sonographer.html">Ms. Linda Howard, Sonographer, NSW Hospital - Cardiology</a></td>
-      <td>howard-linda-sonographer</td>
-      <td><a href="PractitionerRole-howard-linda-sonographer.xml.html">XML</a></td>
-      <td><a href="PractitionerRole-howard-linda-sonographer.json.html">JSON</a></td>
-      <td><a href="PractitionerRole-howard-linda-sonographer.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="PractitionerRole-chong-michelle-oncologist.html">Dr. Michelle Chong, Oncologist, at Metropolitan Cancer Centre Group</a></td>
       <td>chong-michelle-oncologist</td>
       <td><a href="PractitionerRole-chong-michelle-oncologist.xml.html">XML</a></td>

@@ -52,13 +52,6 @@
       <td><a href="Location-large-racs-nsw-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-large-racs-nsw-03.html">LARCSG Care Tamworth NSW</a></td>
-      <td>large-racs-nsw-03</td>
-      <td><a href="Location-large-racs-nsw-03.xml.html">XML</a></td>
-      <td><a href="Location-large-racs-nsw-03.json.html">JSON</a></td>
-      <td><a href="Location-large-racs-nsw-03.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Location-large-racs-qld-01.html">LARCSG Care Sunnybank QLD</a></td>
       <td>large-racs-qld-01</td>
       <td><a href="Location-large-racs-qld-01.xml.html">XML</a></td>
@@ -71,13 +64,6 @@
       <td><a href="Location-large-racs-qld-02.xml.html">XML</a></td>
       <td><a href="Location-large-racs-qld-02.json.html">JSON</a></td>
       <td><a href="Location-large-racs-qld-02.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Location-large-racs-qld-03.html">LARCSG Care Toowoomba QLD</a></td>
-      <td>large-racs-qld-03</td>
-      <td><a href="Location-large-racs-qld-03.xml.html">XML</a></td>
-      <td><a href="Location-large-racs-qld-03.json.html">JSON</a></td>
-      <td><a href="Location-large-racs-qld-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Location-hi-testdata-racs.html">Site of Test Org -DigitalHealth 1</a></td>
@@ -132,13 +118,6 @@
       <td><a href="Location-metro-specialist-services-group-nsw-yerong.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-private-vic-path-lab.html">Building of Flemington Private VIC Pathology</a></td>
-      <td>private-vic-path-lab</td>
-      <td><a href="Location-private-vic-path-lab.xml.html">XML</a></td>
-      <td><a href="Location-private-vic-path-lab.json.html">JSON</a></td>
-      <td><a href="Location-private-vic-path-lab.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td colspan="5">Hospital examples:</td>
    </tr>
    <tr>
@@ -149,26 +128,11 @@
       <td><a href="Location-nsw-hospital.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-nsw-hospital-er.html">Emergency Room Building of NSW Hospital</a></td>
-      <td>nsw-hospital-er</td>
-      <td><a href="Location-nsw-hospital-er.xml.html">XML</a></td>
-      <td><a href="Location-nsw-hospital-er.json.html">JSON</a></td>
-      <td><a href="Location-nsw-hospital-er.ttl.html">Turtle</a></td>
-   </tr>
-   
-   <tr>
       <td><a href="Location-qld-hospital.html">Site of QLD Hospital</a></td>
       <td>qld-hospital</td>
       <td><a href="Location-qld-hospital.xml.html">XML</a></td>
       <td><a href="Location-qld-hospital.json.html">JSON</a></td>
       <td><a href="Location-qld-hospital.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Location-qld-hospital-er.html">Emergency Room Building of QLD Hospital</a></td>
-      <td>qld-hospital-er</td>
-      <td><a href="Location-qld-hospital-er.xml.html">XML</a></td>
-      <td><a href="Location-qld-hospital-er.json.html">JSON</a></td>
-      <td><a href="Location-qld-hospital-er.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td colspan="5">Pharmacy examples:</td>
@@ -221,13 +185,6 @@
       <td><a href="Location-large-allied-chemists-qld-03.xml.html">XML</a></td>
       <td><a href="Location-large-allied-chemists-qld-03.json.html">JSON</a></td>
       <td><a href="Location-large-allied-chemists-qld-03.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Location-nsw-hospital-pharmacy-in.html">Pharmacy NSW Hospital - North Building A of NSW Hospital</a></td>
-      <td>nsw-hospital-pharmacy-in</td>
-      <td><a href="Location-nsw-hospital-pharmacy-in.xml.html">XML</a></td>
-      <td><a href="Location-nsw-hospital-pharmacy-in.json.html">JSON</a></td>
-      <td><a href="Location-nsw-hospital-pharmacy-in.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Location-qld-hospital-pharmacy-in.html">Pharmacy - QLD Hospital - Building 31 of QLD Hospital</a></td>
