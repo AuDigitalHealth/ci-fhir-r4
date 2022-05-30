@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-immunization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-  <version value="0.0.3"/>
-  <name value="DHImmunizationCore"/>
+  <version value="0.0.4"/>
+  <name value="ADHAImmunizationCore"/>
   <title value="ADHA Core Immunization"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -62,6 +62,16 @@
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Immunization.vaccineCode.coding:amtVaccineCode">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="amtVaccineCode" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Immunization.vaccineCode.coding:airVaccineCode">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="airVaccineCode" />
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.patient">

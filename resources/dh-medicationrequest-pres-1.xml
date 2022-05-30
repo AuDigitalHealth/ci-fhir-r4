@@ -4,7 +4,7 @@
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
   <version value="0.0.2"/>
-  <name value="DHMedicationRequestPrescription"/>
+  <name value="ADHAMedicationRequestPrescription"/>
   <title value="ADHA Prescription"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -56,14 +56,21 @@
       <path value="MedicationRequest.category"/>
       <min value="1"/>
     </element>
+    <element id="MedicationRequest.medication[x]">
+      <path value="MedicationRequest.medication[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <mustSupport value="true"/>
+    </element>
     <element id="MedicationRequest.medication[x]:medicationReference">
       <path value="MedicationRequest.medication[x]"/>
       <sliceName value="medicationReference"/>
       <min value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-      </type>
       <constraint>
         <key value="inv-dh-pres-02"/>
         <severity value="error"/>

@@ -11,27 +11,33 @@ The policy for defining, using, maintaining, and implementing using FHIR version
 
 ## Conformance
 
+Systems may deploy, and support, one or more ADHA Profiles to represent clinical information. Each profile defines the FHIR structures required, the data element definitions, their associated rules of usage including the use of extensions and terminology, references the additional profiles necessary to assert conformance.
 
-> **ADHA-FHIR-CONF-01** A system **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
+To support an ADHA profile:
+- systems **SHALL** be able to populate all profile data elements that are mandatory and/or flagged as Must Support as defined by that profile’s StructureDefinition according to the section on [Must Support](policy.html#must-support)
+  - systems **SHALL** support all referenced profiles necessary to implement this profile
+- systems **SHOUD** declare conformance with the profile(s) by specifying the full capability details for that profile it claims to implement by
+  - including its official URL in the server’s `CapabilityStatement.rest.resource.supportedProfile` element 
+  - listing the supported FHIR RESTful transactions
+
+To support an ADHA CapabiityStatement:
+- systems **SHALL** declare conformance with the **TBD CapabilityStatement**  by including its official URL in the server’s `CapabilityStatement.instantiates` element: `http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-tbd-1`
+- systems **SHALL** specify the full capability details for that CapabilityStatement it claims to implement by
+  - TBC
 
 
-> **ADHA-FHIR-CONF-02** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base FHIR Asset
+**General requirements**
+
+> **ADHA-FHIR-CONF-0X** A system **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
 
 
-> **ADHA-FHIR-CONF-03** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-0X** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-CONF-04** A system **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
+> **ADHA-FHIR-CONF-0X** A system **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
 
 
-> **ADHA-FHIR-CONF-05** A system **SHALL** reject any request to create or update a resource that contains a resource that does not conform to the Conformance/CapabilityStatement resource for that endpoint
-
-
-> **ADHA-FHIR-PROFILE-06** Use of extensions **SHALL** follow order of precedence:
-> 1. HL7 extension
-> 2. HL7 AU extension
-> 3. ADHA extension
-> 4. Other
+> **ADHA-FHIR-CONF-0X** A system **SHALL** reject any request to create or update a resource that contains a resource that does not conform to the Conformance/CapabilityStatement resource for that endpoint
 
 
 > **ADHA-FHIR-CONF-07** An ADHA Core profile **SHALL NOT** be used where a more specific profile is applicable. An implementation SHALL ensure the resource conforms to that specific profile.
@@ -147,10 +153,23 @@ For some complex types a meaningful, valid, value can be populated with only one
 - A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which data type or profile might be populated)
 
-A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference`. Where both elements are optional and flagged with Must Support in a profile they **SHALL** be treated as a choice of data types:
+A profile may slice an element that has a choice of data types or profiles to constrain the set of choices to be supported. For example, the profile [ADHA Core Patient](StructureDefinition-dh-patient-core-1.html) constrains the choices for `Patient.identifier` defined in [AU Base Patient](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-patient.html) to support Individual Healthcare Identifier (IHI), Medicare Card Number, Department of Veterans' Affairs (DVA) Number:
+- A sending system **SHALL** be capable of populating the element with a value that conforms to at least one of those three identifier choices, and **SHOULD** be capable of populating every choice for which the sending system might possess data
+- A receiving system **SHALL** be capable of meaningfully processing all supported identifier choices (since the receiver cannot anticipate which data type or profile might be populated) 
+- A persisting system **SHALL** be capable of persisting all supported identifier choices (since the persister cannot anticipate which data type or profile might be populated)
+
+*Must support between two elements that are a choice between CodeableConcept and Reference*
+A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html). Where both elements are optional and flagged with Must Support in a profile they **SHALL** be treated as a choice of data types:
 - A sending system **SHALL** be capable of populating at least one choice, and **SHOULD** be capable of populating every choice for which the sending system might possess data
 - A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which element might be populated) 
 - A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which element might be populated)
+
+*Must support elements with a choice of terminology bindings*
+A profile may slice an element that has a choice of terminology bindings to constrain the set of choices to be supported. For example, the profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) constrains the optional terminology choices for `Medication.code` defined in [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html) to support AMT and PBS:
+- A sending system that supplies a coded value **SHALL** be capable of populating the element with a value that conforms to at least one of those two terminology choices, and **SHOULD** be capable of populating every choice for which the sending system might possess data
+  - In this profile, a coded value is optional, a sending system that does not have the capability to supply a coded value from a terminology may supply a text value 
+- A receiving system **SHALL** be capable of meaningfully processing all supported terminology choices (since the receiver cannot anticipate which data type or profile might be populated) 
+- A persisting system **SHALL** be capable of persisting all supported terminology choices (since the persister cannot anticipate which data type or profile might be populated)
 
 ## Serialisation TBD Architecture Team
 
@@ -276,10 +295,21 @@ tbd
 > **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL NOT** define alternate elements for use in place of elements defined in a HL7 FHIR base resource
 
 
+> **ADHA-PROFILE-PROFILE-0X** An ADHA Core FHIR Asset **SHALL** conform to the applicable HL7 AU Base FHIR Asset
+
+
 > **ADHA-FHIR-PROFILE-0X** An ADHA FHIR Asset **SHALL** derive from an ADHA FHIR Core Asset in the first instance, if available, otherwise it **SHALL** derive from an applicable HL7 AU Base Asset  
 
 
 > **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL** derive from HL7 AU Base material in the first instance if available, otherwise derive
+
+
+> **ADHA-FHIR-PROFILE-0X** Use of extensions **SHALL** follow order of precedence:
+> 1. HL7 extension
+> 2. HL7 AU extension
+> 3. ADHA extension
+> 4. Other
+
 
 ## Publication 
 

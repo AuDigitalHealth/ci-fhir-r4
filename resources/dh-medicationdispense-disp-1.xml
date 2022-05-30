@@ -3,7 +3,7 @@
   <id value="dh-medicationdispense-disp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
   <version value="0.0.1"/>
-  <name value="DHMedicationDispenseCore"/>
+  <name value="ADHAMedicationDispenseCore"/>
   <title value="ADHA Dispense Record"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -65,14 +65,21 @@
       <path value="MedicationDispense.status"/>
       <patternCode value="completed"/>
     </element>
+    <element id="MedicationDispense.medication[x]">
+      <path value="MedicationDispense.medication[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <mustSupport value="true"/>
+    </element>
     <element id="MedicationDispense.medication[x]:medicationReference">
       <path value="MedicationDispense.medication[x]"/>
       <sliceName value="medicationReference"/>
       <min value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-      </type>
       <constraint>
         <key value="inv-dh-disp-02"/>
         <severity value="error"/>

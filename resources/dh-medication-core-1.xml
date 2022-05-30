@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medication-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-  <version value="0.0.2"/>
-  <name value="DHMedicationCore"/>
+  <version value="0.0.3"/>
+  <name value="ADHAMedicationCore"/>
   <title value="ADHA Core Medication"/>
   <status value="draft"/>
   <experimental value="true"/>
@@ -71,6 +71,26 @@
     <element id="Medication.code">
       <path value="Medication.code"/>
       <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="Medication.code.coding:pbs">
+      <path value="Medication.code.coding"/>
+      <sliceName value="pbs"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Medication.code.coding:amt">
+      <path value="Medication.code.coding"/>
+      <sliceName value="amt"/>
       <mustSupport value="true"/>
     </element>
     <element id="Medication.manufacturer">
