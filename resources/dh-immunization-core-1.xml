@@ -64,6 +64,17 @@
       <path value="Immunization.vaccineCode"/>
       <mustSupport value="true"/>
     </element>
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Immunization.vaccineCode.coding:amtVaccineCode">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="amtVaccineCode" />
