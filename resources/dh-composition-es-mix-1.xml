@@ -227,7 +227,7 @@
         <human
           value="At most one assertion of no relevant finding shall be present and it shall assert no known current medications"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
+          value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1234391000168107').exists())"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"
         />

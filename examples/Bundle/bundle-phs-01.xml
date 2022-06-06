@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="phs-01"/>
+    <meta>
+        <lastUpdated value="2022-11-28T11:01:00+10:00"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:10d91877-de54-4aa7-b5ec-63aebc189ac8"/>
+    </identifier>
+    <type value="collection"/>
+    <timestamp value="2022-11-28T11:01:00+10:00"/>
+    <!--    PATIENT    -->
+    <entry>
+        <fullUrl value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+        <resource>
+            <Patient>
+                <id value="hi-testdata-goodwin-bonny"/>
+                <identifier>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-status">
+                        <valueCoding>
+                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+                            <code value="active"/>
+                            <display value="Active"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-record-status">
+                        <valueCoding>
+                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+                            <code value="verified"/>
+                            <display value="Verified"/>
+                        </valueCoding>
+                    </extension>
+                    <use value="official"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NI"/>
+                            <display value="National unique individual identifier"/>
+                        </coding>
+                        <text value="IHI"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                    <value value="8003608000228445"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MC"/>
+                            <display value="Patient's Medicare number"/>
+                        </coding>
+                        <text value="Medicare Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+                    <value value="3951032981"/>
+                    <period>
+                        <end value="2024-08"/>
+                    </period>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Goodwin"/>
+                    <given value="Bonny"/>
+                    <prefix value="Mrs."/>
+                </name>
+                <gender value="female"/>    
+                <birthDate value="1986-11-13"/>
+                <address>
+                    <text value="108 Museum Qy AVALON VIC 3212"/>
+                </address>
+                <maritalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+                        <code value="M"/>
+                        <display value="Married"/>
+                    </coding>
+                    <text value="Married"/>
+                </maritalStatus>
+            </Patient>
+        </resource>
+    </entry>
+    <!--    ALLERGYINTOLERANCE (nofood-01) -->
+    <entry>
+        <fullUrl value="urn:uuid:6bfb46ad-1084-4496-8622-5ef86bf19ad9"/>
+        <resource>
+            <AllergyIntolerance>
+                <id value="nofood-01"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+                        <code value="active"/>
+                        <display value="Active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+                        <code value="unconfirmed"/>
+                        <display value="Unconfirmed"/>
+                    </coding>
+                </verificationStatus>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="429625007"/>
+                        <display value="No known food allergy"/>
+                    </coding>
+                    <text value="No food allergies"/>
+                </code>
+                <patient>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                <code value="NI"/>
+                                <display value="National unique individual identifier"/>
+                            </coding>
+                            <text value="IHI"/>
+                        </type>
+                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                        <value value="8003608000228445"/>
+                    </identifier>
+                </patient>
+                <recorder>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                </recorder>
+                <asserter>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                </asserter>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
+    <!--    ALLERGYINTOLERANCE (sulfonamide-01)    -->
+    <entry>
+        <fullUrl value="urn:uuid:9c960147-2d8a-41f7-b358-667ca942301a"/>
+        <resource>
+            <AllergyIntolerance>
+                <id value="sulfonamide-01"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+                        <code value="active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+                        <code value="confirmed"/>
+                    </coding>
+                </verificationStatus>
+                <category value="medication"/>
+                <criticality value="high"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="763875007"/>
+                        <display value="Sulfonamide-containing product"/>
+                    </coding>
+                    <text value="sulfonamide antibacterial"/>
+                </code>
+                <patient>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                <code value="NI"/>
+                                <display value="National unique individual identifier"/>
+                            </coding>
+                            <text value="IHI"/>
+                        </type>
+                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                        <value value="8003608000228445"/>
+                    </identifier>
+                </patient>
+                <recorder>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                </recorder>
+                <asserter>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                </asserter>
+                <reaction>
+                    <manifestation>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="271807003"/>
+                            <display value="skin rash"/>
+                        </coding>
+                        <text value="skin rash"/>
+                    </manifestation>
+                    <severity value="mild"/>
+                </reaction>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
+    <!--    OBSERVATION (no-current-meds-01)    -->
+    <entry>
+        <fullUrl value="urn:uuid:d062b7d5-c4cd-47f7-9dd8-c991692c30b5"/>
+        <resource>
+            <Observation>
+                <id value="no-current-meds-01"/>
+                <status value="final"/>
+                <!--    TBD - Determine appropriate category for observations of this nature    -->
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="365854008"/>
+                        <display value="History finding"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                        <code value="ASSERTION"/>
+                        <display value="Assertion"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                <code value="NI"/>
+                                <display value="National unique individual identifier"/>
+                            </coding>
+                            <text value="IHI"/>
+                        </type>
+                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                        <value value="8003608000228445"/>
+                    </identifier>
+                </subject>
+                <effectiveDateTime value="2021-09-21"/>
+                <performer>
+                    <reference value="urn:uuid:00f8933a-aebe-4856-a14a-e895e53422fb"/>
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1234391000168107"/>
+                        <display value="No known current medicines"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>

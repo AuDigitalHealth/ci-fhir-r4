@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="no-current-meds-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
+    </meta>
+    <status value="final"/>
+    <!--    TBD - Determine appropriate category for observations of this nature    -->
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="365854008"/>
+            <display value="History finding"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="ASSERTION"/>
+            <display value="Assertion"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/hi-testdata-goodwin-bonny"/>
+        <identifier>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="NI"/>
+                    <display value="National unique individual identifier"/>
+                </coding>
+                <text value="IHI"/>
+            </type>
+            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+            <value value="8003608000228445"/>
+        </identifier>
+    </subject>
+    <effectiveDateTime value="2021-09-21"/>
+    <performer>
+        <reference value="Patient/hi-testdata-goodwin-bonny"/>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1234391000168107"/>
+            <display value="No known current medicines"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

@@ -1161,6 +1161,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Bundle/phs-01"/>
+            </reference>
+            <name value="Personal Health Summary Payload Bundle for Mrs. Bonny Goodwin 2022-11-28"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/phs-doc-01"/>
+            </reference>
+            <name value="Personal Health Summary Document Bundle for Mrs. Bonny Goodwin 2022-11-28"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Bundle/po-01"/>
             </reference>
             <name value="Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months"/>
@@ -2772,6 +2786,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Observation/no-current-meds-01"/>
+            </reference>
+            <name value="Assertion of no current medicines for Mrs. Bonny Goodwin (2021)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/no-med-hist-01"/>
+            </reference>
+            <name value="Assertion of no medical history for Mr Zhang Wei (2018)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Observation/urineculture-es-02"/>
             </reference>
             <name value="Urine culture - E. coli for Mr Zhang Wei - follow up encounter (2020)"/>
@@ -2804,6 +2832,13 @@
                 <reference value="Organization/bondi-gp-medical-centre"/>
             </reference>
             <name value="Bondi GP Medical Centre NSW"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/devonport-clinic"/>
+            </reference>
+            <name value="Devonport Family Medicine Clinic"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <resource>
@@ -3146,6 +3181,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Practitioner/helpman-barry"/>
+            </reference>
+            <name value="Dr. Barry Helpman"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Practitioner/sarah-bondiali"/>
             </reference>
             <name value="Dr. Represetative Practitioner"/>
@@ -3291,6 +3333,13 @@
             </reference>
             <name value="Dr. George David, Oncologist, at Fred Hope Centre NSW"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/helpman-barry-gp"/>
+            </reference>
+            <name value="Dr. Barry Helpman, GP, at Devonport Family Medicine Clinic"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         </resource>
         <resource>
             <reference>

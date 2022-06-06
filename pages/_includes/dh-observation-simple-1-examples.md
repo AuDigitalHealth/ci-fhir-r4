@@ -12,6 +12,23 @@
       <td><a href="Observation-air-covid-imm-status-01.ttl.html">Turtle</a></td>
    </tr> 
    <tr>
+      <td colspan="5">No history finding examples:</td>
+   </tr>
+   <tr>
+      <td><a href="Observation-no-current-meds-01.html">Assertion of no current medicines for Mrs. Bonny Goodwin (2021)</a></td>
+      <td>no-current-meds-01</td>
+      <td><a href="Observation-no-current-meds-01.xml.html">XML</a></td>
+      <td><a href="Observation-no-current-meds-01.json.html">JSON</a></td>
+      <td><a href="Observation-no-current-meds-01.ttl.html">Turtle</a></td>
+   </tr> 
+   <tr>
+      <td><a href="Observation-no-med-hist-01.html">Assertion of no medical history for Mr Zhang Wei (2018)</a></td>
+      <td>no-med-hist-01</td>
+      <td><a href="Observation-no-med-hist-01.xml.html">XML</a></td>
+      <td><a href="Observation-no-med-hist-01.json.html">JSON</a></td>
+      <td><a href="Observation-no-med-hist-01.ttl.html">Turtle</a></td>
+   </tr> 
+   <tr>
       <td colspan="5">Vital signs examples:</td>
    </tr>
    <tr>
