@@ -9,26 +9,60 @@
 
 source pages/\_include/{{page.md_filename}}.md  file
 
-This section outlines conformance requirements
+<table class="list" width="100%">
+<tbody>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Conformance</th>
+    <th>Description</th>
+    <th>Path</th>
+  </tr>
+  <tr>
+        <td>category</td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
+        <td><b>SHALL</b></td>
+        <td>food | medication | environment | biologic</td>
+        <td>AllergyIntolerance.category</td>
+  </tr>
+  <tr>
+        <td>patient:identifier</td>
+        <td><a href="https://build.fhir.org/search.html#token">token</a></td>
+        <td><b>SHALL</b></td>
+        <td>Who the sensitivity is for by patient identifier</td>
+        <td>AllergyIntolerance.patient.identifier</td>
+  </tr>
+  <tr>
+        <td>code</td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
+        <td><b>SHALL</b></td>
+        <td>Code that identifies the allergy or intolerance</td>
+        <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
+  </tr>
+  <tr>
+        <td>clinical-status</td>
+        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
+        <td><b>SHALL</b></td>
+        <td>active | inactive | resolved</td>
+        <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
+  </tr>
+ </tbody>
+</table>
+
+<!--This section outlines conformance requirements
 
 
 ### Conformance requirements for Server
-<!-- 
-[Source Resource](CapabilityStatement-server.html)
--->
+[Source Resource](CapabilityStatement-dh-server-1.html)
 
 
-- FHIR Version: 1.9.0
-- Supported formats: xml, json
-- Published: 2017-03-08s
-- Published by: Health eData include
 
 etc
 
-### Conformance requirements for Client
-<!-- 
+ ### Conformance requirements for Client
+
 [Source Resource](CapabilityStatement-client.html)
--->
+
 - FHIR Version: 1.9.0
 - Supported formats: xml, json
 - Published: 2017-03-08
@@ -66,3 +100,4 @@ e.g.
 
 save CapabilityStatement file
 ```
+-->

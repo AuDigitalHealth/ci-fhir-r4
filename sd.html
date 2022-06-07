@@ -13,16 +13,16 @@ active: profiles
   <li class="active"><a href="#">Content</a></li>
   <li><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
   <li><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
-  <li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
+  <!--<li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>-->
   <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
   <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
   <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
 
-<h3><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}<a name="SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"> </a></span>{{[type]}}-{{[id]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.structuredefinitions.{{[id]}}.status | capitalize}}]</h3>
+<h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.{{[id]}}.status | capitalize}}]</h3>
 </a>
 <!-- introductiontext here-->
-<!--<p><b>These variables can be used in the template files (for example <code>sd.html</code>):</b></p>
+<!--<p><b>These variables can be used in the template files (for example <code>html</code>):</b></p>
 
 <ul>
   <li>A description of the content of the resource { {[title]}} = {{[title]}}</li>
@@ -44,8 +44,7 @@ active: profiles
 
 
 <a name="profile"> </a>
-<h4><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.1</span>
-  Formal Views of Profile Content
+<h4>Formal Views of Profile Content
   <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#profile"><img src="target.png"/></a>
 </h4>
 <!-- uri -->
@@ -158,22 +157,24 @@ active: profiles
 
 <p>&nbsp;</p>
 
+<!-- remove term and invarients sections-->
+
+<a name="tx"> </a>
+<h4>Terminology Bindings <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#tx"><img src="target.png"/></a></h4>
+  {% include {{[type]}}-{{[id]}}-tx.xhtml %}
+  
+<!-- remove term and invarients sections
+
+<h4>Constraints <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#D.4.1.3"><img src="target.png"/></a></h4>
+{% include {{[type]}}-{{[id]}}-inv.xhtml %}-->
+
+
 
 <!-- search text here-->
 <a name="search"> </a>
-<h4><span class="sectioncount">SD.{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}.2 - </span> Quick Start <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#search"><img src="target.png"/></a></h4>
+<h4>Search Parameters <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#search"><img src="target.png"/></a></h4>
 {% capture my-include %}{% include {{[id]}}-search.md %}{% endcapture %}{{ my-include | markdownify }}
 
-<!-- remove term and invarients sections
-
-<a name="tx"> </a>
-<h4><span class="sectioncount">D.4.1.3</span> Terminology Bindings <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#tx"><img src="target.png"/></a></h4>
-  {% include {{[type]}}-{{[id]}}-tx.xhtml %}
-
-<h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> Constraints <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#D.4.1.3"><img src="target.png"/></a></h4>
-{% include {{[type]}}-{{[id]}}-inv.xhtml %}
-
--->
 
 <!-- ==============END CONTENT END CONTENT=================== -->
 
