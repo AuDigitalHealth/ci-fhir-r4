@@ -15,9 +15,9 @@ The following capability statements form part of this implementation guide.
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
+        <td><a href="CapabilityStatement-dh-server-1.html">ADHA Server Requirements Capability Statement</a></td>
+        <td>http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-server-1</td>
+        <td>The requirements for capabilities of a server implementing Australian Digital Health Agency FHIR RESTful Endpoints (au.digitalhealth.r4).</td>
     </tr>
     <tr>
         <td><a href="TBD">TBD</a></td>
