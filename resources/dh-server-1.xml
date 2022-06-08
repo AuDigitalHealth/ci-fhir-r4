@@ -4,10 +4,17 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>ADHA Server Requirements Capability Statement</h2>
+            <h2>ADHACapabilityStatementServer</h2>
             <div>
                 <p>The requirements for capabilities of a server implementing Australian Digital
                     Health Agency FHIR RESTful Endpoints (au.digitalhealth.r4).</p>
+                <ul>
+                    <li>Official URL:
+                        <code>http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-server-1</code></li>
+                    <li>Official name: <code>ADHACapabilityStatementServer</code></li>
+                    <li>Implementation Guide Version: 0.1.0</li>
+                    <li>FHIR Version: 4.0.1</li>
+                </ul>
             </div>
             <h3 id="behavior">FHIR RESTful Capabilities</h3>
             <p>The Server <strong>SHALL</strong>:</p>
@@ -38,6 +45,15 @@
                 <li>Identify the ADHA profiles supported as part of the FHIR
                     <code>meta.profile</code> attribute for each instance.</li>
             </ol>
+            <p>
+                <strong>Summary of System Wide Interactions</strong>
+            </p>
+            <ul>
+                <li><strong>MAY</strong> support the <code>transaction</code> interaction.</li>
+                <li><strong>MAY</strong> support the <code>batch</code> interaction.</li>
+                <li><strong>MAY</strong> support the <code>search-system</code> interaction.</li>
+                <li><strong>MAY</strong> support the <code>history-system</code> interaction.</li>
+            </ul>
             <h3 id="resource-details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3>
             <h4>Summary</h4>
             <table class="list" width="100%">
@@ -91,15 +107,15 @@
                             >ADHA Core AllergyIntolerance</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>BodyStructure</td>
@@ -111,15 +127,15 @@
                         <a
                             href="StructureDefinition-dh-bodystructure-odr-1.html"
                             >ADHA Donatable Organ or Tissue BodyStructure</a></td>
-                    <td>y</td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Condition</td>
@@ -129,15 +145,15 @@
                             >ADHA Core Condition</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Bundle</td>
@@ -149,15 +165,15 @@
                         <a
                             href="StructureDefinition-dh-bundle-payload-1.html"
                             >ADHA Payload Bundle</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Composition</td>
@@ -210,15 +226,15 @@
                         <a
                             href="StructureDefinition-dh-composition-sml-1.html"
                             >ADHA Shared Medicines List Composition</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Consent</td>
@@ -227,15 +243,15 @@
                         <a
                             href="StructureDefinition-dh-consent-aodr-1.html"
                             >ADHA Record of Australian Organ Donor Register Consent</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Device</td>
@@ -250,15 +266,15 @@
                         <a
                             href="StructureDefinition-dh-device-system-1.html"
                             >ADHA System Device</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>DiagnosticReport</td>
@@ -269,15 +285,15 @@
                         <a
                             href="StructureDefinition-dh-diagnosticreport-path-1.html"
                             >ADHA Pathology Report</a></td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
-                    <td>y</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>DocumentReference</td>
@@ -288,15 +304,15 @@
                         <a
                             href="StructureDefinition-dh-documentreference-acp-1.html"
                             >ADHA Advance Care Planning Document DocumentReference</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Encounter</td>
@@ -306,15 +322,15 @@
                             >ADHA Core Encounter</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>ExplanationOfBenefit</td>
@@ -326,15 +342,15 @@
                         <a
                             href="StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html"
                             >ADHA Record of Claim against PBS or RPBS</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Flag</td>
@@ -345,15 +361,15 @@
                         <a
                             href="StructureDefinition-dh-flag-air-1.html"
                             >ADHA Australian Immunisation Register Notice</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>HealthcareService</td>
@@ -363,15 +379,15 @@
                             >ADHA Core HealthcareService</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Immunization</td>
@@ -382,15 +398,15 @@
                         <a
                             href="StructureDefinition-dh-immunization-air-1.html"
                             >ADHA Record of Immunisation from Australian Immunisation Register</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>List</td>
@@ -410,15 +426,15 @@
                         <a
                             href="StructureDefinition-dh-list-medication-use-pmr-1.html"
                             >ADHA Practitioner Medicine Review List</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Location</td>
@@ -428,15 +444,15 @@
                             >ADHA Core Location</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Media</td>
@@ -446,15 +462,15 @@
                             >ADHA Core Media</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Medication</td>
@@ -464,15 +480,15 @@
                             >ADHA Core Medication</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>MedicationAdministration</td>
@@ -482,15 +498,15 @@
                             >ADHA Core MedicationAdministration</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>MedicationDispense</td>
@@ -501,15 +517,15 @@
                         <a
                             href="StructureDefinition-dh-medicationdispense-disp-1.html"
                             >ADHA Dispense Record</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>MedicationRequest</td>
@@ -523,15 +539,15 @@
                         <a
                             href="StructureDefinition-dh-medicationrequest-pres-1.html"
                             >ADHA Prescription</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>MedicationStatement</td>
@@ -541,15 +557,15 @@
                             >ADHA Core MedicationStatement</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Observation</td>
@@ -571,16 +587,34 @@
                             >ADHA National Cancer Screening Program Participation Observation</a><br/>
                         <a
                             href="StructureDefinition-dh-observation-simple-1.html"
-                            >ADHA Simple Observation</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                            >ADHA Simple Observation</a>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-norelevantfinding.html">AU Assertion of No Relevant Finding</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-sexassignedatbirth.html">AU Biological Sex Assigned at Birth</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bloodpressure.html">AU Blood Pressure</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyweight.html">AU Body Weight</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyheight.html">AU Body Height</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bmi.html">AU Body Mass Index</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-oxygensat.html">AU Oxygen Saturation</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-headcircum.html">AU Head Circumference</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-heartrate.html">AU Heart Rate</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodytemp.html">AU Body Temperature</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a><br/>
+                        <a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-vitalspanel.html">AU Vital Signs Panel</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstatus.html">AU Smoking Status</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-gravidity.html">AU Gravidity</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-parity.html">AU Parity</a><br/>
+                        <a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a><br/>
+                    </td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Organization</td>
@@ -591,15 +625,15 @@
                         <a
                             href="StructureDefinition-dh-organization-contact-1.html"
                             >ADHA Organization Contact</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Patient</td>
@@ -610,15 +644,15 @@
                         <a
                             href="StructureDefinition-dh-patient-mhr-1.html"
                             >ADHA My Health Record Patient</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Practitioner</td>
@@ -628,15 +662,15 @@
                             >ADHA Core Practitioner</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>PractitionerRole</td>
@@ -650,15 +684,15 @@
                         <a
                             href="StructureDefinition-dh-practitionerrole-author-cae-1.html"
                             >ADHA Authoring Care Agency Employee</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Procedure</td>
@@ -668,15 +702,15 @@
                             >ADHA Core Procedure</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>RelatedPerson</td>
@@ -690,15 +724,15 @@
                         <a
                             href="StructureDefinition-dh-relatedperson-mhr-1.html"
                             >ADHA MHR RelatedPerson</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>ServiceRequest</td>
@@ -709,15 +743,15 @@
                         <a
                             href="StructureDefinition-dh-servicerequest-mbs-claim-1.html"
                             >ADHA MBS Service Claim Item</a></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Specimen</td>
@@ -727,15 +761,15 @@
                             >ADHA Core Specimen</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
                 <tr>
                     <td>Substance</td>
@@ -745,15 +779,15 @@
                             >ADHA Core Substance</a>
                     </td>
                     <td></td>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
-                    <td/>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHALL</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>MAY</td>
+                    <td>SHOULD</td>
+                    <td>MAY</td>
                 </tr>
             </table>
         </div>
@@ -792,27 +826,276 @@
         <resource>
             <type value="AllergyIntolerance" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="BodyStructure" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
             <interaction>
-                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
                     <valueCode value="SHALL"/>
                 </extension>
                 <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
             </interaction>
             <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Condition" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Bundle" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Composition" />
@@ -832,16 +1115,208 @@
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Consent" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Device" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-implantable-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="DiagnosticReport" />
@@ -916,29 +1391,413 @@
             <type value="DocumentReference" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-acp-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Encounter" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="ExplanationOfBenefit" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Flag" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="HealthcareService" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Immunization" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="List" />
@@ -947,37 +1806,549 @@
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-pdl-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Location" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Media" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Medication" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="MedicationAdministration" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationadministration-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="MedicationDispense" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="MedicationRequest" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="MedicationStatement" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Observation" />
@@ -987,49 +2358,706 @@
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-sexassignedatbirth"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bloodpressure"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodyweight"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodyheight"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bmi"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-oxygensat"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-headcircum"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-heartrate"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodytemp"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-resprate"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-vitalspanel"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-smokingstatus"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-estimateddateofdelivery"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-gravidity"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-parity"/>
+            <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-lastmenstrualperiod"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Organization" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-contact-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Patient" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Practitioner" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="PractitionerRole" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-cae-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Procedure" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="RelatedPerson" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="ServiceRequest" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Specimen" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
         <resource>
             <type value="Substance" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-substance-core-1" />
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHALL"/>
+                </extension>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="SHOULD"/>
+                </extension>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <extension
+                    url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+                    <valueCode value="MAY"/>
+                </extension>
+                <code value="history-type"/>
+            </interaction>
+            <referencePolicy value="resolves"/>
         </resource>
     </rest>
 </CapabilityStatement>
