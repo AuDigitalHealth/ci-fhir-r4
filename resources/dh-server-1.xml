@@ -1,6 +1,763 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="dh-server-1" />
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>ADHA Server Requirements Capability Statement</h2>
+            <div>
+                <p>The requirements for capabilities of a server implementing Australian Digital
+                    Health Agency FHIR RESTful Endpoints (au.digitalhealth.r4).</p>
+            </div>
+            <h3 id="behavior">FHIR RESTful Capabilities</h3>
+            <p>The Server <strong>SHALL</strong>:</p>
+            <ol>
+                <li>Support the ADHA Core Patient resource profile.</li>
+                <li>Implement the RESTful behavior according to the FHIR specification.</li>
+                <li>Follow the requirements documented in the <a href="policy.html"
+                    >Policy</a> page.</li>
+                <li>Return the following response classes: <ul>
+                    <li>(Status 400): invalid parameter</li>
+                    <li>(Status 401/4xx): unauthorized request</li>
+                    <li>(Status 403): insufficient scopes</li>
+                    <li>(Status 404): unknown resource</li>
+                </ul>
+                </li>
+                <li>Support JSON source formats for all ADHA interactions.</li>
+                <li>Declare a CapabilityStatement identifying the list of profiles,
+                    operations, and search parameters supported.</li>
+            </ol>
+            <p>The Server <strong>SHOULD</strong>:</p>
+            <ol>
+                <li>Follow the guidance documented in the <a href="guidance.html">
+                    Guidance</a> page</li>
+                <li>Support XML source formats for all ADHA interactions.</li>
+            </ol>
+            <p>The Server <strong>MAY</strong>:</p>
+            <ol>
+                <li>Identify the ADHA profiles supported as part of the FHIR
+                    <code>meta.profile</code> attribute for each instance.</li>
+            </ol>
+            <h3 id="resource-details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3>
+            <h4>Summary</h4>
+            <table class="list" width="100%">
+                <tr>
+                    <th>
+                        <b>Resource Type</b>
+                    </th>
+                    <th>
+                        <b>Canonical Profile</b>
+                    </th>
+                    <th>
+                        <b>Supported Profiles</b>
+                    </th>
+                    <th>
+                        <b title="GET a resource (read interaction)">Read</b>
+                    </th>
+                    <th>
+                        <b title="GET past versions of resources (vread interaction)">V-Read</b>
+                    </th>
+                    <th>
+                        <b title="GET all set of resources of the type (search interaction)"
+                            >Search</b>
+                    </th>
+                    <th>
+                        <b title="PUT a new resource version (update interaction)">Update</b>
+                    </th>
+                    <th>
+                        <b title="PATCH a new resource version (patch interaction)">Patch</b>
+                    </th>
+                    <th>
+                        <b title="POST a new resource (create interaction)">Create</b>
+                    </th>
+                    <th>
+                        <b title="DELETE a resource (delete interaction)">Delete</b>
+                    </th>
+                    <th>
+                        <b title="GET changes to a resource (history interaction on instance)"
+                            >Updates</b>
+                    </th>
+                    <th>
+                        <b
+                            title="GET changes for all resources of the type (history interaction on type)"
+                            >History</b>
+                    </th>
+                </tr>
+                <tr>
+                    <td>AllergyIntolerance</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-allergyintolerance-core-1.html"
+                            >ADHA Core AllergyIntolerance</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>BodyStructure</td>
+                    <td><a
+                            href="StructureDefinition-dh-bodystructure-core-1.html"
+                        >ADHA Core BodyStructure</a>
+                    </td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-bodystructure-odr-1.html"
+                            >ADHA Donatable Organ or Tissue BodyStructure</a></td>
+                    <td>y</td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Condition</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-condition-core-1.html"
+                            >ADHA Core Condition</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Bundle</td>
+                    <td></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-bundle-document-1.html"
+                            >ADHA Document Bundle</a><br/>
+                        <a
+                            href="StructureDefinition-dh-bundle-payload-1.html"
+                            >ADHA Payload Bundle</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Composition</td>
+                    <td><a
+                            href="StructureDefinition-dh-composition-core-1.html"
+                        >ADHA Core Composition</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-composition-document-1.html"
+                            >ADHA Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-acdcr-1.html"
+                            >ADHA Advance Care Directive Custodian Record Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-acp-1.html"
+                            >ADHA Advance Care Planning Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-acts-1.html"
+                            >ADHA Aged Care Transfer Summary Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-ds-1.html"
+                            >ADHA Discharge Summary Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-es-1.html"
+                            >ADHA Event Summary Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-mov-1.html"
+                            >ADHA Medicare Overview Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-ncspv-1.html"
+                            >ADHA National Cancer Screening Program Participation View</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-phn-1.html"
+                            >ADHA Personal Health Notes Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-phs-1.html"
+                            >ADHA Personal Health Summary Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-pdl-1.html"
+                            >ADHA Prescription and or Dispense History Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-psml-1.html"
+                            >ADHA Pharmacist Shared Medicines List Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-po-1.html"
+                            >ADHA Personal Observations Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-shs-1.html"
+                            >ADHA Shared Health Summary Document Composition</a><br/>
+                        <a
+                            href="StructureDefinition-dh-composition-sml-1.html"
+                            >ADHA Shared Medicines List Composition</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Consent</td>
+                    <td></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-consent-aodr-1.html"
+                            >ADHA Record of Australian Organ Donor Register Consent</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Device</td>
+                    <td></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-device-implantable-1.html"
+                            >ADHA Implantable Medical Device</a><br/>
+                        <a
+                            href="StructureDefinition-dh-device-participant-1.html"
+                            >ADHA Participant Device</a><br/>
+                        <a
+                            href="StructureDefinition-dh-device-system-1.html"
+                            >ADHA System Device</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>DiagnosticReport</td>
+                    <td><a
+                            href="StructureDefinition-dh-diagnosticreport-core-1.html"
+                        >ADHA Core DiagnosticReport</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-diagnosticreport-path-1.html"
+                            >ADHA Pathology Report</a></td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                    <td>y</td>
+                </tr>
+                <tr>
+                    <td>DocumentReference</td>
+                    <td><a
+                            href="StructureDefinition-dh-documentreference-core-1.html"
+                        >ADHA Core DocumentReference</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-documentreference-acp-1.html"
+                            >ADHA Advance Care Planning Document DocumentReference</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Encounter</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-encounter-core-1.html"
+                            >ADHA Core Encounter</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>ExplanationOfBenefit</td>
+                    <td></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html"
+                            >ADHA Record of Claim against MBS</a><br/>
+                        <a
+                            href="StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html"
+                            >ADHA Record of Claim against PBS or RPBS</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Flag</td>
+                    <td><a
+                            href="StructureDefinition-dh-flag-core-1.html"
+                        >ADHA Core Flag</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-flag-air-1.html"
+                            >ADHA Australian Immunisation Register Notice</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>HealthcareService</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-healthcareservice-core-1.html"
+                            >ADHA Core HealthcareService</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Immunization</td>
+                    <td><a
+                            href="StructureDefinition-dh-immunization-core-1.html"
+                        >ADHA Core Immunization</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-immunization-air-1.html"
+                            >ADHA Record of Immunisation from Australian Immunisation Register</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>List</td>
+                    <td><a
+                            href="StructureDefinition-dh-list-core-1.html"
+                        >ADHA Core List</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-list-immunization-1.html"
+                            >ADHA Immunisation History List</a><br/>
+                        <a
+                            href="StructureDefinition-dh-list-medication-pdl-1.html"
+                            >ADHA Prescription and or Dispense History List</a><br/>
+                        <a
+                            href="StructureDefinition-dh-list-medication-use-1.html"
+                            >ADHA Medication Use List</a><br/>
+                        <a
+                            href="StructureDefinition-dh-list-medication-use-pmr-1.html"
+                            >ADHA Practitioner Medicine Review List</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-location-core-1.html"
+                            >ADHA Core Location</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Media</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-media-core-1.html"
+                            >ADHA Core Media</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Medication</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-medication-core-1.html"
+                            >ADHA Core Medication</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>MedicationAdministration</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-medicationadministration-core-1.html"
+                            >ADHA Core MedicationAdministration</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>MedicationDispense</td>
+                    <td><a
+                            href="StructureDefinition-dh-medicationdispense-core-1.html"
+                        >ADHA Core MedicationDispense</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-medicationdispense-disp-1.html"
+                            >ADHA Dispense Record</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>MedicationRequest</td>
+                    <td><a
+                            href="StructureDefinition-dh-medicationrequest-core-1.html"
+                        >ADHA Core MedicationRequest</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html"
+                            >ADHA PBS Claim Item</a><br/>
+                        <a
+                            href="StructureDefinition-dh-medicationrequest-pres-1.html"
+                            >ADHA Prescription</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>MedicationStatement</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-medicationstatement-core-1.html"
+                            >ADHA Core MedicationStatement</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Observation</td>
+                    <td><a
+                            href="StructureDefinition-dh-observation-core-1.html"
+                        >ADHA Core Observation</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-observation-diagnosticresult-1.html"
+                            >ADHA Diagnostic Result Observation</a><br/>
+                        <a
+                            href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html"
+                            >ADHA Imaging Result Observation</a><br/>
+                        <a
+                            href="StructureDefinition-dh-observation-diagnosticresult-path-1.html"
+                            >ADHA Pathology Result Observation</a><br/>
+                        <a
+                            href="StructureDefinition-dh-observation-ncspp-1.html"
+                            >ADHA National Cancer Screening Program Participation Observation</a><br/>
+                        <a
+                            href="StructureDefinition-dh-observation-simple-1.html"
+                            >ADHA Simple Observation</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Organization</td>
+                    <td><a
+                            href="StructureDefinition-dh-organization-core-1.html"
+                        >ADHA Core Organization</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-organization-contact-1.html"
+                            >ADHA Organization Contact</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Patient</td>
+                    <td><a
+                            href="StructureDefinition-dh-patient-core-1.html"
+                        >ADHA Core Patient</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-patient-mhr-1.html"
+                            >ADHA My Health Record Patient</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Practitioner</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-practitioner-core-1.html"
+                            >ADHA Core Practitioner</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>PractitionerRole</td>
+                    <td><a
+                            href="StructureDefinition-dh-practitionerrole-core-1.html"
+                        >ADHA Core PractitionerRole</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-practitionerrole-author-1.html"
+                            >ADHA Authoring PractitionerRole</a><br/>
+                        <a
+                            href="StructureDefinition-dh-practitionerrole-author-cae-1.html"
+                            >ADHA Authoring Care Agency Employee</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Procedure</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-procedure-core-1.html"
+                            >ADHA Core Procedure</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>RelatedPerson</td>
+                    <td><a
+                            href="StructureDefinition-dh-relatedperson-core-1.html"
+                        >ADHA Core RelatedPerson</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-relatedperson-author-1.html"
+                            >ADHA Authoring RelatedPerson</a><br/>
+                        <a
+                            href="StructureDefinition-dh-relatedperson-mhr-1.html"
+                            >ADHA MHR RelatedPerson</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>ServiceRequest</td>
+                    <td><a
+                            href="StructureDefinition-dh-servicerequest-core-1.html"
+                        >ADHA Core ServiceRequest</a></td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-servicerequest-mbs-claim-1.html"
+                            >ADHA MBS Service Claim Item</a></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Specimen</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-specimen-core-1.html"
+                            >ADHA Core Specimen</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>Substance</td>
+                    <td>
+                        <a
+                            href="StructureDefinition-dh-substance-core-1.html"
+                            >ADHA Core Substance</a>
+                    </td>
+                    <td></td>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                    <td/>
+                </tr>
+            </table>
+        </div>
+    </text>
     <url value="http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-server-1" />
     <version value="0.0.1" />
     <name value="ADHACapabilityStatementServer" />
@@ -61,7 +818,6 @@
             <type value="Composition" />
             <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1" />
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
-            <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acdcr-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acp-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acts-1"/>
@@ -75,7 +831,7 @@
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
             <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
-            <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
+            <supportedProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
         </resource>
         <resource>
             <type value="Consent" />
