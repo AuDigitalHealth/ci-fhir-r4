@@ -123,6 +123,7 @@ For example, the profile [ADHA Core Immunization](StructureDefinition-dh-immuniz
 Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html). 
 The full set of subelements is visible in the "Snapshot Table" which shows the subelements defined in this profile (shown in the "Differential Table) and the subelements inherited from a base profile.
 
+
 *Must support elements of primitive type*
 
 - A sending system **SHALL** be capable of providing a meaningful, valid, value in the element
@@ -158,18 +159,23 @@ A profile may slice an element that has a choice of data types or profiles to co
 - A receiving system **SHALL** be capable of meaningfully processing all supported identifier choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all supported identifier choices (since the persister cannot anticipate which data type or profile might be populated)
 
+
 *Must support between two elements that are a choice between CodeableConcept and Reference*
+
 A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html). Where both elements are optional and flagged with Must Support in a profile they **SHALL** be treated as a choice of data types:
 - A sending system **SHALL** be capable of populating at least one choice, and **SHOULD** be capable of populating every choice for which the sending system might possess data
 - A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which element might be populated) 
 - A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which element might be populated)
 
+
 *Must support elements with a choice of terminology bindings*
+
 A profile may slice an element that has a choice of terminology bindings to constrain the set of choices to be supported. For example, the profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) constrains the optional terminology choices for `Medication.code` defined in [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html) to support AMT and PBS:
 - A sending system that supplies a coded value **SHALL** be capable of populating the element with a value that conforms to at least one of those two terminology choices, and **SHOULD** be capable of populating every choice for which the sending system might possess data
   - In this profile, a coded value is optional, a sending system that does not have the capability to supply a coded value from a terminology may supply a text value 
 - A receiving system **SHALL** be capable of meaningfully processing all supported terminology choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all supported terminology choices (since the persister cannot anticipate which data type or profile might be populated)
+
 
 ## Serialisation TBD Architecture Team
 

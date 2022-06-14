@@ -26,7 +26,7 @@ For ADHA profiles, the following identifier elements are populated with business
           
 Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier).  
 
-[HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**.
+[HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile.
 
 While national and registry / exchange service identifiers will define the namespace to use when sending an identifier, a local identifier requires the organisation to define their own namespace when exchanging identifiers they manage.  
 
@@ -159,9 +159,13 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## References between resources
 
-References between resources are supported as reference (literal reference), identifier (logical reference), and display (text description of target). Profiles define if one . provide examples TBD.
+References between resources are supported as reference (literal reference), identifier (logical reference), and display (text description of target). ADHA profiles may include constraints on elements of Reference type that limit what is considered valid. For example, the profile [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html) limits what is considered valid for the element `Composition.section.entry` by mandating to `Composition.section.entry.reference` to enforce population of a `reference` (literal reference) for each entry.
 
-References to a patient **SHOULD** be exchanged with a verified IHI in `identifier` and when applicable a `reference` to a Patient resource
+**References to a patient**
+
+References to a patient **SHALL** populate `identifier` and when applicable populate a `reference` to a Patient resource:
+- `identifier` **SHOULD** be populated with a verified IHI
+- if referencing a specific Patient resource instance `reference` **SHALL** be populated and it **SHALL** resolve
 
 Example: Observation resource with a Reference to a Patient resource as identifier and reference 
 ~~~
