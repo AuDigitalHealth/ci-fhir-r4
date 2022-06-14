@@ -9,7 +9,6 @@
     Patient reported reason as not comfortable with the process. 
     This information was recorded during a GP visit in 2019. -->
     <status value="final"/>
-    <!-- new code system & code proposed for this work -->
     <category>
         <coding>
             <system value="http://terminology.hl7.org.au/CodeSystem/observation-category"/>
@@ -41,12 +40,10 @@
             <value value="8003608000228445"/>
         </identifier>
     </subject>
-    <!--Records date this program participation information is asserted as 'true' -->
     <effectiveDateTime value="2019-12-12T06:54:00+10:00"/>
     <performer>
         <reference value="Organization/tas-family-clinic"/>
     </performer>
-    <!--1.	Program participation status -->
     <component>
         <code>
             <coding>
@@ -65,7 +62,6 @@
             <text value="Never participated"/>
         </valueCodeableConcept>
     </component>
-    <!--2.	Program participation status validity period : date opted out -->
     <component>
         <code>
             <coding>
@@ -79,7 +75,6 @@
             <start value="2017-09-22"/>
         </valuePeriod>
     </component>
-    <!--3.	Reason for not participating -->
     <component>
         <code>
             <coding>

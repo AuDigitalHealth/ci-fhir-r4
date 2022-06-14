@@ -127,7 +127,6 @@
                         <value value="8003608833564735"/>
                     </identifier>
                 </subject>
-                <!--Records date this program participation information is asserted as 'true' -->
                 <effectiveDateTime value="2021-05-22T10:01:00+10:00"/>
                 <performer>
                     <reference value="urn:uuid:d574e9a6-99b1-4959-b3fa-463f7b7f8677"/>
@@ -144,7 +143,6 @@
                         <value value="TBD"/>
                     </identifier>
                 </performer>
-                <!--1.	Program participation status -->
                 <component>
                     <code>
                         <coding>
@@ -163,7 +161,6 @@
                         <text value="Actively screening"/>
                     </valueCodeableConcept>
                 </component>
-                <!--2.	Program participation status validity period -->
                 <component>
                     <code>
                         <coding>
@@ -177,7 +174,6 @@
                         <start value="2021-05-22"/>
                     </valuePeriod>
                 </component>
-                <!--3.	Suspension of program participation -->
                 <component>
                     <code>
                         <coding>
@@ -190,8 +186,6 @@
                     <!--Patient has not deferred-->
                     <valueBoolean value="false"/>
                 </component>
-                <!--13. Forecast status is not provided in this scenario-->
-                <!--14.	Forecast status validity period -->
                 <component>
                     <code>
                         <coding>
@@ -202,9 +196,7 @@
                         <text value="Next screening action date"/>
                     </code>
                     <!--Next screening date for patient is in 1 year -->
-                    <valuePeriod>
-                        <start value="2022-05-22"/>
-                    </valuePeriod>
+                    <valueDateTime value="2022-05-22"/>
                 </component>
             </Observation>
         </resource>
@@ -257,7 +249,6 @@
                         <value value="8003608833564735"/>
                     </identifier>
                 </subject>
-                <!--Records date this program participation information is asserted as 'true' -->
                 <effectiveDateTime value="2021-05-22T07:01:00+10:00"/>
                 <performer>
                     <reference value="urn:uuid:d574e9a6-99b1-4959-b3fa-463f7b7f8677"/>
@@ -274,7 +265,6 @@
                         <value value="TBD"/>
                     </identifier>
                 </performer>
-                <!--1.	Program participation status -->
                 <component>
                     <code>
                         <coding>
@@ -293,7 +283,6 @@
                         <text value="Actively screening"/>
                     </valueCodeableConcept>
                 </component>
-                <!--2.	Program participation status validity period -->
                 <component>
                     <code>
                         <coding>
@@ -307,7 +296,6 @@
                         <start value="2021-05-22"/>
                     </valuePeriod>
                 </component>
-                <!--3.	Suspension of program participation -->
                 <component>
                     <code>
                         <coding>
@@ -320,7 +308,6 @@
                     <!--Patient has not deferred-->
                     <valueBoolean value="false"/>
                 </component>
-                <!--13. Forecast status -->
                 <component>
                     <code>
                         <coding>
@@ -334,7 +321,6 @@
                         <text value="Eligible On:"/>
                     </valueCodeableConcept>
                 </component>
-                <!--14.	Forecast status validity period -->
                 <component>
                     <code>
                         <coding>
@@ -345,9 +331,7 @@
                         <text value="Next screening action date"/>
                     </code>
                     <!--Next screening date patient is eligible for is in 2 years -->
-                    <valuePeriod>
-                        <start value="2023-05-22"/>
-                    </valuePeriod>
+                    <valueDateTime value="2023-05-22"/>
                 </component>
             </Observation>
         </resource>

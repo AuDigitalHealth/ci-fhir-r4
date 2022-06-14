@@ -13,7 +13,6 @@
         <value value="24fd20c0-5a07-4e5e-98da-d7d3d498613a"/>
     </identifier>
     <status value="final"/>
-    <!-- new code system & code proposed for this work -->
     <category>
         <coding>
             <system value="http://terminology.hl7.org.au/CodeSystem/observation-category"/>
@@ -45,7 +44,6 @@
             <value value="8003608000228437"/>
         </identifier>
     </subject>
-    <!--Records date this program participation information is asserted as 'true' -->
     <effectiveDateTime value="2022-05-14"/>
     <performer>
         <reference value="Organization/ncsr-operator"/>
@@ -62,7 +60,6 @@
             <value value="TBD"/>
         </identifier>
     </performer>
-    <!--1.	Program participation status -->
     <component>
         <code>
             <coding>
@@ -81,7 +78,6 @@
             <text value="Actively Screening"/>
         </valueCodeableConcept>
     </component>
-    <!--2.	Program participation status validity period -->
     <component>
         <code>
             <coding>
@@ -97,7 +93,6 @@
             <end value="2022-08-05"/>
         </valuePeriod>
     </component>
-    <!--10.	Suspension of program participation -->
     <component>
         <code>
             <coding>
@@ -110,7 +105,6 @@
         <!--Patient deferred-->
         <valueBoolean value="true"/>
     </component>
-    <!--8. Forecast status -->
     <component>
         <code>
             <coding>
@@ -124,5 +118,4 @@
             <text value="Due Now (eligible since 50th birthday)"/>
         </valueCodeableConcept>
     </component>
-    <!--9.	Forecast status validity period is not provided in this scenario-->
 </Observation>
