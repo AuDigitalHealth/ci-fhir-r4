@@ -606,7 +606,7 @@ The table below provides guidance on representing communication preferences for 
         <td>Preferred language is English</td>
         <td></td>
         <td></td>
-        <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/relatedperson-definitions.html#RelatedPerson.communication">Comments</a> of RelatedPerson.communication</td>
+        <td>No element sent, as per the guidance in the Comments</a> of RelatedPerson.communication</td>
       </tr>
       <tr>
         <td>Preferred language is other than English</td>

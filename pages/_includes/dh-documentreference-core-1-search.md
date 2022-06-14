@@ -24,7 +24,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>DocumentReference.category</td>
   </tr>
   <tr>
-        <td>patient:identifier</td>
+        <td>subject:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
         <td>Who/what is the subject of the document</td>
@@ -59,13 +59,13 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all document references for a patient using the **`patient:identifier`** search parameter:
+1. **SHALL** support searching for all document references for a patient using the **`subject:identifier`** search parameter:
 
-    `GET [base]/DocumentReference?patient:identifier={system|}[code]`
+    `GET [base]/DocumentReference?subject:identifier={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/DocumentReference?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all DocumentReference resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -81,37 +81,37 @@ The following search parameters and search parameter combinations **SHALL** be s
      *Implementation Notes:* Fetches a bundle containing any DocumentReference resources matching the identifier ([how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`category`** and **`status`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`category`** and **`status`** search parameter:
 - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 
-    `GET [base]/DocumentReference?patient:identifier={system|}[code]&category[code]&status={system|}[code]`
+    `GET [base]/DocumentReference?subject:identifier={system|}[code]&category[code]&status={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.16975&status=current
+    GET [base]/DocumentReference?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.16975&status=current
     ~~~
     *Implementation Notes:* Fetches a bundle of all DocumentReference resources with the category of "Advance Care Information" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`type`** and **`status`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`type`** and **`status`** search parameter:
 - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 
-    `GET [base]/DocumentReference?patient:identifier={system|}[code]&type={system|}[code]&status={system|}[code]`
+    `GET [base]/DocumentReference?subject:identifier={system|}[code]&type={system|}[code]&status={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.32016&status=current
+    GET [base]/DocumentReference?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.32016&status=current
     ~~~
     *Implementation Notes:* Fetches a bundle of all DocumentReference resources with the type of an 100.32016 (Goals of Care) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination of the **`patient:identifier`** and **`date`** and **`status`** search parameters:
+1. **SHALL** support searching using the combination of the **`subject:identifier`** and **`date`** and **`status`** search parameters:
 - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 
-    `GET [base]/DocumentReference?patient:identifier={system|}[code]&date=[date]&status={system|}[code]&status={system|}[code]`
+    `GET [base]/DocumentReference?subject:identifier={system|}[code]&date=[date]&status={system|}[code]&status={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=current
+    GET [base]/DocumentReference?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=current
     ~~~
     *Implementation Notes:* Fetches a bundle of all current DocumentReference resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

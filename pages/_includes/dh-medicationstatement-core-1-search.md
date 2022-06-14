@@ -52,37 +52,37 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all medication usage statements for a patient using the combination of the **`patient:identifier`**:
+1. **SHALL** support searching for all medication usage statements for a patient using the combination of the **`subject:identifier`**:
     - including support for *OR* search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
      
     `GET [base]/MedicationStatement?subject:identifier={system|}[code]&intent=order,plan`
 
     Example:
     ~~~
-    GET [base]/MedicationStatement?sibkect:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/MedicationStatement?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination of the **`patient:identifier`** and **`status`** search parameters:
+1. **SHALL** support searching using the combination of the **`subject:identifier`** and **`status`** search parameters:
     - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 
     `GET [base]/MedicationStatement?subject:identifier={system|}[code]&intent=order,plan&status={system|}[code]{,{system|}[code],...}`
 
     Example:
     ~~~
-    GET [base]/MedicationStatement?sibkect:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&status=active
+    GET [base]/MedicationStatement?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient and and status ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination of the **`patient:identifier`** and **`effective`** search parameters:
+1. **SHALL** support searching using the combination of the **`subject:identifier`** and **`effective`** search parameters:
     - including support for *OR* search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
     
     `GET [base]/MedicationStatement?subject:identifier={system|}[code]&effective=[date]`
 
     Example:
     ~~~
-    GET [base]/MedicationStatement?sibkect:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&effective=ge2013-03-14
+    GET [base]/MedicationStatement?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&effective=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))
