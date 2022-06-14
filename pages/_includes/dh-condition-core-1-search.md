@@ -65,7 +65,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/Condition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -76,7 +76,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item
+    GET [base]/Condition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources with the category of "Problem List Item" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -87,7 +87,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|68566005
+    GET [base]/Condition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|68566005
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources with the code of an 68566005 (Urinary tract infection) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -97,6 +97,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&clinical-status=http://terminology.hl7.org/CodeSystem/condition-clinical|active
+    GET [base]/Condition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&clinical-status=http://terminology.hl7.org/CodeSystem/condition-clinical|active
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources for the specified patient and status code.  This will not return any &#34;entered in error&#34; resources because of the conditional presence of the clinicalStatus element. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))

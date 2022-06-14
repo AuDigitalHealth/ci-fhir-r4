@@ -51,7 +51,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     
-      1. GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+      1. GET [base]/Observation?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
 
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -62,7 +62,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     
-      1. GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/observation-category|procedure
+      1. GET [base]/Observation?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/observation-category|procedure
 
     *Implementation Notes:* Fetches a bundle of all Observation resources with the category of "procedure" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -73,7 +73,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     
-      1. GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://loinc.org|90568-7
+      1. GET [base]/Observation?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://loinc.org|90568-7
 
     *Implementation Notes:* Fetches a bundle of all Observation resources with the code of an 90568-7 (Polysomnography panel) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -84,6 +84,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     
-      1. GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2010-01-01&date=le2011-12-31
+      1. GET [base]/Observation?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2010-01-01&date=le2011-12-31
 
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient that have a date greater than or equal to 1st Jan 2010, a date less than or equal to 31st Dec 2011. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

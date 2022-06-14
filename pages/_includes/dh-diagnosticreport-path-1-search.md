@@ -66,7 +66,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DiagnosticReport?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/DiagnosticReport?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -88,7 +88,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DiagnosticReport?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/v2-0074|CH
+    GET [base]/DiagnosticReport?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/v2-0074|CH
     ~~~
     *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources with the category of "Chemistry" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -99,7 +99,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DiagnosticReport?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://loinc.org|14683-7
+    GET [base]/DiagnosticReport?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://loinc.org|14683-7
     ~~~
     *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources with the code of an 14683-7 (Creatinine urine) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -110,6 +110,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DiagnosticReport?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
+    GET [base]/DiagnosticReport?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all DiagnosticReport resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

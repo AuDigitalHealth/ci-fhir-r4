@@ -65,7 +65,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all DocumentReference resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -88,7 +88,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.16975&status=current
+    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.16975&status=current
     ~~~
     *Implementation Notes:* Fetches a bundle of all DocumentReference resources with the category of "Advance Care Information" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -100,7 +100,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.32016&status=current
+    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|100.32016&status=current
     ~~~
     *Implementation Notes:* Fetches a bundle of all DocumentReference resources with the type of an 100.32016 (Goals of Care) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -112,6 +112,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/DocumentReference?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=current
+    GET [base]/DocumentReference?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=current
     ~~~
     *Implementation Notes:* Fetches a bundle of all current DocumentReference resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

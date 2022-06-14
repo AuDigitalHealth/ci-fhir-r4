@@ -65,7 +65,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/ExplanationOfBenefit?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/ExplanationOfBenefit?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all ExplanationOfBenefit resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -88,7 +88,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/ExplanationOfBenefit?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=http://terminology.hl7.org/CodeSystem/claim-type|pharmacy&status=active
+    GET [base]/ExplanationOfBenefit?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=http://terminology.hl7.org/CodeSystem/claim-type|pharmacy&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all active ExplanationOfBenefit resources with the type of "Pharmacy" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -100,7 +100,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/ExplanationOfBenefit?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&subType=https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1|pbs&status=active
+    GET [base]/ExplanationOfBenefit?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&subType=https://healthterminologies.gov.au/fhir/CodeSystem/australian-benefit-payment-category-1|pbs&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all active ExplanationOfBenefit resources with the subType of pbs (PBS) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -112,7 +112,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/ExplanationOfBenefit?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&created=ge2013-03-14&status=active
+    GET [base]/ExplanationOfBenefit?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&created=ge2013-03-14&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all active ExplanationOfBenefit resources for the specified patient that have a created date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))
     

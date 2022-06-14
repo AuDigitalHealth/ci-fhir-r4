@@ -59,7 +59,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/MedicationRequest?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/MedicationRequest?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationRequest resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -83,7 +83,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/MedicationRequest?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&status=active
+    GET [base]/MedicationRequest?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationRequest resources for the specified patient and intent code = `order,plan` and status ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -95,6 +95,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/MedicationRequest?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&authoredon=ge2013-03-14
+    GET [base]/MedicationRequest?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&authoredon=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationRequest resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

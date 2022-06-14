@@ -59,7 +59,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/MedicationStatement?subject=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/MedicationStatement?sibkect:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -71,7 +71,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/MedicationStatement?subject=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&status=active
+    GET [base]/MedicationStatement?sibkect:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient and and status ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -83,6 +83,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/MedicationStatement?subject=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&effective=ge2013-03-14
+    GET [base]/MedicationStatement?sibkect:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&effective=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationStatement resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

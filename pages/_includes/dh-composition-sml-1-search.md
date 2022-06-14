@@ -65,7 +65,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Composition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/Composition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all Composition resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -87,7 +87,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Composition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://loinc.org|56445-0
+    GET [base]/Composition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://loinc.org|56445-0
     ~~~
     *Implementation Notes:* Fetches a bundle of all Composition resources with the category of "Shared Medicines List" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -98,7 +98,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Composition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|101.32009
+    GET [base]/Composition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&type=https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1|101.32009
     ~~~
     *Implementation Notes:* Fetches a bundle of all Composition resources with the type of an 101.32009 (Current Medicine) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -109,6 +109,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Composition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
+    GET [base]/Composition?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all Composition resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))
