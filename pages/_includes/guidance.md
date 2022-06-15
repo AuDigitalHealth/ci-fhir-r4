@@ -7,9 +7,9 @@
 > <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
 
 
-## "Business" identifiers
+## Business identifiers
 
-["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA Profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
+["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
 
 For ADHA profiles, the following identifier elements are populated with business identifiers:
    - `Device.identifier`
@@ -159,7 +159,11 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## References between resources
 
-References between resources are supported as reference (literal reference), identifier (logical reference), and display (text description of target). ADHA profiles may include constraints on elements of Reference type that limit what is considered valid. For example, the profile [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html) limits what is considered valid for the element `Composition.section.entry` by mandating to `Composition.section.entry.reference` to enforce population of a `reference` (literal reference) for each entry.
+References between resources in ADHA profiles are supported as reference (literal reference), identifier (logical reference), and display (text description of target). 
+
+ADHA profiles may include constraints on elements of [Reference type](http://hl7.org/fhir/R4/references.html) that limit what is considered valid. For example, the profile [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html) limits what is considered valid for the element `Composition.section.entry` by mandating `Composition.section.entry.reference` to enforce population of a literal reference for each entry.
+
+If an identifier (logical reference) is supplied, that identifier **SHALL** be populated with a meaningful business identifier according to the section on [Business identifiers](guidance.html#business-identifiers) that identifies the logical entity across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more).
 
 **References to a patient**
 
@@ -191,6 +195,20 @@ Example: Observation resource with a Reference to a Patient resource as identifi
   ...
 }
 ~~~
+
+
+## Contained Resources
+In some circumstances, the content referred to in the resource reference does not have an independent existence apart from the resource that contains it - it cannot be identified independently, and nor can it have its own independent transaction scope. For example, use of a Medication resource to represent medicinal product identification within the context of a MedicationRequest. In these circumstances the resource should be [contained](http://hl7.org/fhir/R4/references.html#contained). 
+
+If referencing a contained resource, both the contained resource and the referencing resource **SHALL** conform to an ADHA profile. Further guidance about the general use case for [contained resources](http://hl7.org/fhir/R4/references.html#contained) can be found in the base FHIR specification.
+
+In ADHA profiles:
+- An [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html) (MedicationRequest resource) **SHOULD** be contained within the [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html) (ExplanationOfBenefit resource) 
+- An [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html) (ServiceRequest resource) **SHOULD** be contained within the [ ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html) (ExplanationOfBenefit resource)
+- Systems constructing a resource that represent medication or body structure information are encouraged to make use of contained resources. 
+  - Operations on Medication resources are expected to be within the context of a referencing resource query such as an ExplanationOfBenefit, Flag, MedicationAdministration, MedicationDipsense, MedicationRequest or MedicationStatement.
+  - Operations on BodyStructure resources are expected to be within the context of a referencing resource query such as a Consent, DiagnosticReport, Observation, or ServiceRequest.
+- Otherwise, when responding to a query, servers should not use inline contained resources to represent the returned data.
 
 ## Missing Data
 

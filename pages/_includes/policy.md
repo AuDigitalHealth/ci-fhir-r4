@@ -20,7 +20,7 @@ To support an ADHA profile:
   - including its official URL in the server’s `CapabilityStatement.rest.resource.supportedProfile` element 
   - listing the supported FHIR RESTful transactions
 
-To support an ADHA CapabiityStatement:
+To support an ADHA CapabilityStatement:
 - systems **SHALL** declare conformance with the **TBD CapabilityStatement**  by including its official URL in the server’s `CapabilityStatement.instantiates` element: `http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-tbd-1`
 - systems **SHALL** specify the full capability details for that CapabilityStatement it claims to implement by
   - TBC
