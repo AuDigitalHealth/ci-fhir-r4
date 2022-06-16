@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-acdcr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acdcr-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHACompositionACDCR"/>
   <title value="ADHA Advance Care Directive Custodian Record Composition"/>
   <status value="draft"/>
@@ -48,12 +48,8 @@
       <path value="Composition.category" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
-        </discriminator>
-        <discriminator>
-          <type value="value"/>
-          <path value="coding.code"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -64,20 +60,12 @@
       <short value="Advance Care Information"/>
       <min value="1"/>
       <max value="1" />
-    </element>
-    <element id="Composition.category:aci.coding">
-      <path value="Composition.category.coding"/>
-      <min value="1"/>
-    </element>
-    <element id="Composition.category:aci.coding.system">
-      <path value="Composition.category.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-    </element>
-    <element id="Composition.category:aci.coding.code">
-      <path value="Composition.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="100.16975" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="100.16975"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-flag-air-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1" />
-  <version value="0.0.3" />
+  <version value="0.0.4" />
   <name value="ADHAFlagAIRNotice" />
   <title value="ADHA Australian Immunisation Register Notice" />
   <status value="draft" />
@@ -41,12 +41,8 @@
       <path value="Flag.category" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
-        </discriminator>
-        <discriminator>
-          <type value="value"/>
-          <path value="coding.code"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -57,20 +53,12 @@
       <short value="Australian Immunisation Register notice"/>
       <min value="1"/>
       <max value="1" />
-    </element>
-    <element id="Flag.category:air.coding">
-      <path value="Flag.category.coding"/>
-      <min value="1"/>
-    </element>
-    <element id="Flag.category:air.coding.system">
-      <path value="Flag.category.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="http://snomed.info/sct"/>
-    </element>
-    <element id="Flag.category:air.coding.code">
-      <path value="Flag.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="1500551000168103" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1500551000168103"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Flag.subject">
       <path value="Flag.subject"/>

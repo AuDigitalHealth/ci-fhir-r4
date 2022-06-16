@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-consent-aodr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHAConsentAODR"/>
   <title value="ADHA Record of Consent from Australian Organ Donor Register"/>
   <status value="draft"/>
@@ -72,8 +72,8 @@
       <path value="Consent.category" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -86,20 +86,12 @@
       <sliceName value="aodr"/>
       <min value="1"/>
       <max value="1" />
-    </element>
-    <element id="Consent.category:aodr.coding">
-      <path value="Consent.category.coding"/>
-      <min value="1"/>
-    </element>
-    <element id="Consent.category:aodr.coding.system">
-      <path value="Consent.category.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="http://loinc.org"/>
-    </element>
-    <element id="Consent.category:aodr.coding.code">
-      <path value="Consent.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="64300-7" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="64300-7"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Consent.patient">
       <path value="Consent.patient"/>
