@@ -19,7 +19,7 @@ active: profiles
   <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
 
-<h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.{{[id]}}.status | capitalize}}]</a></h3>
+<h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.structuredefinitions.{{[id]}}.status | capitalize}}]</h3></a>
 </a>
 <!-- introductiontext here-->
 <!--<p><b>These variables can be used in the template files (for example <code>html</code>):</b></p>
