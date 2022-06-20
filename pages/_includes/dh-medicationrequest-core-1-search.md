@@ -17,10 +17,10 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>MedicationRequest.identifier</td>
   </tr>
   <tr>
-        <td>patient:identifier</td>
+        <td>subject:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
-        <td>Returns prescriptions for a specific patient</td>
+        <td>The identity of a patient to list orders for</td>
         <td>MedicationRequest.subject.identifier</td>
   </tr>
   <tr>
@@ -52,14 +52,14 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all medication requests for a patient using the combination of the **`patient:identifier`** and **`intent`** search parameters:
+1. **SHALL** support searching for all medication requests for a patient using the combination of the **`subject:identifier`** and **`intent`** search parameters:
     - including support for *OR* search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
      
-    `GET [base]/MedicationRequest?patient:identifier={system|}[code]&intent=order,plan`
+    `GET [base]/MedicationRequest?subject:identifier={system|}[code]&intent=order,plan`
 
     Example:
     ~~~
-    GET [base]/MedicationRequest?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/MedicationRequest?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationRequest resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -75,26 +75,26 @@ The following search parameters and search parameter combinations **SHALL** be s
      *Implementation Notes:* Fetches a bundle containing any MedicationRequest resources matching the identifier ([how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination of the **`patient:identifier`** and **`intent`** and **`status`** search parameters:
+1. **SHALL** support searching using the combination of the **`subject:identifier`** and **`intent`** and **`status`** search parameters:
     - including support for *OR* search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
     - including support for *OR* search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 
-    `GET [base]/MedicationRequest?patient:identifier={system|}[code]&intent=order,plan&status={system|}[code]{,{system|}[code],...}`
+    `GET [base]/MedicationRequest?subject:identifier={system|}[code]&intent=order,plan&status={system|}[code]{,{system|}[code],...}`
 
     Example:
     ~~~
-    GET [base]/MedicationRequest?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&status=active
+    GET [base]/MedicationRequest?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&status=active
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationRequest resources for the specified patient and intent code = `order,plan` and status ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination of the **`patient:identifier`** and **`intent`** and **`authoredon`** search parameters:
+1. **SHALL** support searching using the combination of the **`subject:identifier`** and **`intent`** and **`authoredon`** search parameters:
     - including support for *OR* search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
     
-    `GET [base]/MedicationRequest?patient:identifier={system|}[code]&intent=order,plan&authoredon=[date]`
+    `GET [base]/MedicationRequest?subject:identifier={system|}[code]&intent=order,plan&authoredon=[date]`
 
     Example:
     ~~~
-    GET [base]/MedicationRequest?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&authoredon=ge2013-03-14
+    GET [base]/MedicationRequest?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&intent=order,plan&authoredon=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all MedicationRequest resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

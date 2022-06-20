@@ -4,7 +4,8 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-> <p style="color:#DAA520;">This material is part of the May 2022 QA Preview snapshot and is not approved for external use.</p>
+> <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
+
 
 The policy for defining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency.
 
@@ -12,18 +13,20 @@ The policy for defining, using, maintaining, and implementing using FHIR version
 
 Systems may deploy, and support, one or more ADHA Profiles to represent clinical information. Each profile defines the FHIR structures required, the data element definitions, their associated rules of usage including the use of extensions and terminology, references the additional profiles necessary to assert conformance.
 
+A system **SHOULD** support all ADHA profiles unless the system does not anticipate supplying or consuming a certain type of data, usually by virtue of playing a limited or specialised role in clinical or information workflows. For example, a pathology laboratory may support [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), but not [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).
+
 To support an ADHA profile:
 - systems **SHALL** be able to populate all profile data elements that are mandatory and/or flagged as Must Support as defined by that profile’s StructureDefinition according to the section on [Must Support](policy.html#must-support)
   - systems **SHALL** support all referenced profiles necessary to implement this profile
+  - meta.profile **MAY** be populated in a resource to indicate the set of profiles a resource is declared to conform to 
 - systems **SHOUD** declare conformance with the profile(s) by specifying the full capability details for that profile it claims to implement by
   - including its official URL in the server’s `CapabilityStatement.rest.resource.supportedProfile` element 
   - listing the supported FHIR RESTful transactions
 
-To support an ADHA CapabiityStatement:
+To support an ADHA CapabilityStatement:
 - systems **SHALL** declare conformance with the **TBD CapabilityStatement**  by including its official URL in the server’s `CapabilityStatement.instantiates` element: `http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-tbd-1`
 - systems **SHALL** specify the full capability details for that CapabilityStatement it claims to implement by
   - TBC
-
 
 **General requirements**
 
@@ -119,8 +122,9 @@ A profile may include rules that:
 
 For example, the profile [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html) limits what is considered valid for the element `Immunization.patient` with the invariant "**inv-dh-imm-01:** At least reference or a valid identifier shall be present".
 
-Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html). 
+Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html). 
 The full set of subelements is visible in the "Snapshot Table" which shows the subelements defined in this profile (shown in the "Differential Table) and the subelements inherited from a base profile.
+
 
 *Must support elements of primitive type*
 
@@ -157,18 +161,23 @@ A profile may slice an element that has a choice of data types or profiles to co
 - A receiving system **SHALL** be capable of meaningfully processing all supported identifier choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all supported identifier choices (since the persister cannot anticipate which data type or profile might be populated)
 
+
 *Must support between two elements that are a choice between CodeableConcept and Reference*
+
 A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html). Where both elements are optional and flagged with Must Support in a profile they **SHALL** be treated as a choice of data types:
 - A sending system **SHALL** be capable of populating at least one choice, and **SHOULD** be capable of populating every choice for which the sending system might possess data
 - A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which element might be populated) 
 - A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which element might be populated)
 
+
 *Must support elements with a choice of terminology bindings*
+
 A profile may slice an element that has a choice of terminology bindings to constrain the set of choices to be supported. For example, the profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) constrains the optional terminology choices for `Medication.code` defined in [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html) to support AMT and PBS:
 - A sending system that supplies a coded value **SHALL** be capable of populating the element with a value that conforms to at least one of those two terminology choices, and **SHOULD** be capable of populating every choice for which the sending system might possess data
   - In this profile, a coded value is optional, a sending system that does not have the capability to supply a coded value from a terminology may supply a text value 
 - A receiving system **SHALL** be capable of meaningfully processing all supported terminology choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all supported terminology choices (since the persister cannot anticipate which data type or profile might be populated)
+
 
 ## Serialisation TBD Architecture Team
 

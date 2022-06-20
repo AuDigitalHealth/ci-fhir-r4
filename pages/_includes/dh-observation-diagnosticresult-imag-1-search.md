@@ -18,10 +18,10 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>Observation.category</td>
   </tr>
   <tr>
-        <td>patient:identifier</td>
+        <td>subject:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
-        <td>Who the sensitivity is for by patient identifier</td>
+        <td>The subject that the observation is about</td>
         <td>Observation.subject.identifier</td>
   </tr>
   <tr>
@@ -53,45 +53,45 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all observations for a patient using the **`patient:identifier`** search parameter:
+1. **SHALL** support searching for all observations for a patient using the **`subject:identifier`** search parameter:
 
-    `GET [base]/Observation?patient:identifier={system|}[code]`
+    `GET [base]/Observation?subject:identifier={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/Observation?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`category`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`category`** search parameter:
 
-    `GET [base]/Observation?patient:identifier={system|}[code]&category[code]`
+    `GET [base]/Observation?subject:identifier={system|}[code]&category[code]`
 
     Example:
     ~~~
-    GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/observation-category|imaging
+    GET [base]/Observation?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/observation-category|imaging
     ~~~
     *Implementation Notes:* Fetches a bundle of all Observation resources with the category of "imaging" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`code`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`code`** search parameter:
 
-    `GET [base]/Observation?patient:identifier={system|}[code]&code={system|}[code]`
+    `GET [base]/Observation?subject:identifier={system|}[code]&code={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|427407003
+    GET [base]/Observation?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|427407003
     ~~~
     *Implementation Notes:* Fetches a bundle of all Observation resources with the code of an 427407003 (X-ray of right knee) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
 
-1. **SHALL** support searching using the combination of the **`patient:identifier`** and **`date`** search parameters:
+1. **SHALL** support searching using the combination of the **`subject:identifier`** and **`date`** search parameters:
 
-    `GET [base]/Observation?patient:identifier={system|}[code]&date=[date]`
+    `GET [base]/Observation?subject:identifier={system|}[code]&date=[date]`
 
     Example:
     ~~~
-    GET [base]/Observation?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
+    GET [base]/Observation?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14
     ~~~
     *Implementation Notes:* Fetches a bundle of all Observation resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))

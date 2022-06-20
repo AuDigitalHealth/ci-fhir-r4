@@ -65,7 +65,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/Immunization?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all Immunization resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -88,7 +88,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&vaccine-code=https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|COMIRN&status=completed
+    GET [base]/Immunization?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&vaccine-code=https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|COMIRN&status=completed
     ~~~
     *Implementation Notes:* Fetches a bundle of all Immunization resources with the vaccine code of an COMIRN (Pfizer Comirnaty) and status for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
@@ -100,7 +100,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=completed
+    GET [base]/Immunization?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&date=ge2013-03-14&status=completed
     ~~~
     *Implementation Notes:* Fetches a bundle of all Immunization resources for the specified patient that have a date greater than or equal to 21st Jan 2013. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by date](http://hl7.org/fhir/R4/search.html#date))
     
@@ -112,6 +112,6 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     ~~~
-    GET [base]/Immunization?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&target-disease=http://snomed.info/sct|840539006&status=completed
+    GET [base]/Immunization?patient:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&target-disease=http://snomed.info/sct|840539006&status=completed
     ~~~
     *Implementation Notes:* Fetches a bundle of all Immunization resources with the target disease of an 840539006 (COVID-19) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))

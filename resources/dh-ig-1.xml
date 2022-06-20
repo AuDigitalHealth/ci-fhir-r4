@@ -2,8 +2,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="au.digitalhealth.r4"/>
     <url value="http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4"/>
-    <version value="1.0.0-qa-preview"/>
-    <name value="DHFHIR"/>
+    <version value="0.1.0"/>
+    <name value="ADHAFHIR"/>
     <title value="Australian Digital Health Agency FHIR"/>
     <status value="draft"/>
     <experimental value="false"/>
@@ -28,7 +28,7 @@
     <dependsOn id="aubaser4">
         <uri value="http://hl7.org.au/fhir/base"/>
         <packageId value="hl7.fhir.au.base"/>
-        <version value="4.0.0"/>
+        <version value="current"/>
     </dependsOn>
     <definition>
         <resource>
@@ -557,6 +557,13 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Bundle/air-02"/>
+            </reference>
+            <name value="Transaction Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Bundle/mds"/>
             </reference>
             <name value="R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715"/>
@@ -739,13 +746,6 @@
         <resource>
             <reference>
                 <reference value="ExplanationOfBenefit/pbs-cont-01"/>
-            </reference>
-            <name value="Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 JAN 2020"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ExplanationOfBenefit/pbs-cont-02"/>
             </reference>
             <name value="Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 FEB 2020"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
@@ -2218,7 +2218,7 @@
                 
         <page>
             <nameUrl value="index.html"/>
-            <title value="Australian Digital Health Agency FHIR"/>
+            <title value="Australian Digital Health Agency Core Asset"/>
             <generation value="html"/>
         </page>
     </definition>

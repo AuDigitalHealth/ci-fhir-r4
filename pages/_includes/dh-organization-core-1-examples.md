@@ -170,7 +170,7 @@
       <td><a href="Organization-metro-qld-path-lab.ttl.html">Turtle</a></td>
    </tr> 
    <tr>
-      <td colspan="5">Hospital examples:</td>
+      <td><a href="Organization-private-vic-path-lab.html">Private VIC Pathology</a></td>
    </tr>
    <tr>
       <td><a href="Organization-nsw-hospital.html">NSW Hospital (ABN, HPI-O, SNOMED CT + V3 type, Phone, Website, Address)</a></td>

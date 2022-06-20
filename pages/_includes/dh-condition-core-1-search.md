@@ -17,7 +17,7 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>Condition.category</td>
   </tr>
   <tr>
-        <td>patient:identifier</td>
+        <td>subject:identifier</td>
         <td><a href="https://build.fhir.org/search.html#token">token</a></td>
         <td><b>SHALL</b></td>
         <td>Who has the condition?</td>
@@ -59,44 +59,44 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL** support searching for all conditions for a patient using the **`patient:identifier`** search parameter:
+1. **SHALL** support searching for all conditions for a patient using the **`subject:identifier`** search parameter:
 
-    `GET [base]/Condition?patient:identifier={system|}[code]`
+    `GET [base]/Condition?subject:identifier={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
+    GET [base]/Condition?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`category`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`category`** search parameter:
 
-    `GET [base]/Condition?patient:identifier={system|}[code]&category={system|}[code]`
+    `GET [base]/Condition?subject:identifier={system|}[code]&category={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item
+    GET [base]/Condition?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&category=http://terminology.hl7.org/CodeSystem/condition-category|problem-list-item
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources with the category of "Problem List Item" for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`code`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`code`** search parameter:
 
-    `GET [base]/Condition?patient:identifier={system|}[code]&code={system|}[code]`
+    `GET [base]/Condition?subject:identifier={system|}[code]&code={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|68566005
+    GET [base]/Condition?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&code=http://snomed.info/sct|68566005
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources with the code of an 68566005 (Urinary tract infection) for the specified patient ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))
 
-1. **SHALL** support searching using the combination **`patient:identifier`** and **`clinical-status`** search parameter:
+1. **SHALL** support searching using the combination **`subject:identifier`** and **`clinical-status`** search parameter:
 
-    `GET [base]/Condition?patient:identifier={system|}[code]&clinical-status={system|}[code]`
+    `GET [base]/Condition?subject:identifier={system|}[code]&clinical-status={system|}[code]`
 
     Example:
     ~~~
-    GET [base]/Condition?patient=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&clinical-status=http://terminology.hl7.org/CodeSystem/condition-clinical|active
+    GET [base]/Condition?subject:identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608000228437&clinical-status=http://terminology.hl7.org/CodeSystem/condition-clinical|active
     ~~~
     *Implementation Notes:* Fetches a bundle of all Condition resources for the specified patient and status code.  This will not return any &#34;entered in error&#34; resources because of the conditional presence of the clinicalStatus element. ([how to search by :identifier](http://hl7.org/fhir/R4/search.html#reference) and [how to search by token](http://hl7.org/fhir/search.html#token))

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-system-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
-  <version value="0.0.3"/>
+  <version value="0.1.0"/>
   <name value="ADHADeviceSystem"/>
   <title value="ADHA System Device"/>
   <status value="draft"/>
@@ -65,6 +65,10 @@
     <element id="Device.type">
       <path value="Device.type"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/information-system-device-type-1" />
+      </binding>
     </element>
     <element id="Device.owner">
       <path value="Device.owner"/>

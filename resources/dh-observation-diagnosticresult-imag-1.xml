@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-imag-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAObservationImagingResult"/>
   <title value="ADHA Imaging Result Observation"/>
   <status value="draft"/>
@@ -31,7 +31,7 @@
       <constraint>
         <key value="inv-dh-obs-05"/>
         <severity value="error"/>
-        <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+        <human value="If there is no component or hasMember element then at least value or data absent reason shall be present"/>
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>

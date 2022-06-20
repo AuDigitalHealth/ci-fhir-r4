@@ -4,12 +4,12 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-> <p style="color:#DAA520;">This material is part of the May 2022 QA Preview snapshot and is not approved for external use.</p>
+> <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
 
 
-## "Business" identifiers
+## Business identifiers
 
-["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA Profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
+["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
 
 For ADHA profiles, the following identifier elements are populated with business identifiers:
    - `Device.identifier`
@@ -26,7 +26,7 @@ For ADHA profiles, the following identifier elements are populated with business
           
 Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier).  
 
-[HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile as per **ADHA-FHIR-IDENT-08**.
+[HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile.
 
 While national and registry / exchange service identifiers will define the namespace to use when sending an identifier, a local identifier requires the organisation to define their own namespace when exchanging identifiers they manage.  
 
@@ -151,7 +151,7 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-* All Australian address conforms to [AU Base Address](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-ihi.html)
+* All Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
 
 
 ## Person Names
@@ -159,9 +159,17 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## References between resources
 
-References between resources are supported as reference (literal reference), identifier (logical reference), and display (text description of target). Profiles define if one . provide examples TBD.
+References between resources in ADHA profiles are supported as reference (literal reference), identifier (logical reference), and display (text description of target). 
 
-References to a patient **SHOULD** be exchanged with a verified IHI in `identifier` and when applicable a `reference` to a Patient resource
+ADHA profiles may include constraints on elements of [Reference type](http://hl7.org/fhir/R4/references.html) that limit what is considered valid. For example, the profile [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html) limits what is considered valid for the element `Composition.section.entry` by mandating `Composition.section.entry.reference` to enforce population of a literal reference for each entry.
+
+If an identifier (logical reference) is supplied, that identifier **SHALL** be populated with a meaningful business identifier according to the section on [Business identifiers](guidance.html#business-identifiers) that identifies the logical entity across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more).
+
+**References to a patient**
+
+References to a patient **SHALL** populate `identifier` and when applicable populate a `reference` to a Patient resource:
+- `identifier` **SHOULD** be populated with a verified IHI
+- if referencing a specific Patient resource instance `reference` **SHALL** be populated and it **SHALL** resolve
 
 Example: Observation resource with a Reference to a Patient resource as identifier and reference 
 ~~~
@@ -187,6 +195,20 @@ Example: Observation resource with a Reference to a Patient resource as identifi
   ...
 }
 ~~~
+
+
+## Contained Resources
+In some circumstances, the content referred to in the resource reference does not have an independent existence apart from the resource that contains it - it cannot be identified independently, and nor can it have its own independent transaction scope. For example, use of a Medication resource to represent medicinal product identification within the context of a MedicationRequest. In these circumstances the resource should be [contained](http://hl7.org/fhir/R4/references.html#contained). 
+
+If referencing a contained resource, both the contained resource and the referencing resource **SHALL** conform to an ADHA profile. Further guidance about the general use case for [contained resources](http://hl7.org/fhir/R4/references.html#contained) can be found in the base FHIR specification.
+
+In ADHA profiles:
+- An [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html) (MedicationRequest resource) **SHOULD** be contained within the [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html) (ExplanationOfBenefit resource) 
+- An [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html) (ServiceRequest resource) **SHOULD** be contained within the [ ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html) (ExplanationOfBenefit resource)
+- Systems constructing a resource that represent medication or body structure information are encouraged to make use of contained resources. 
+  - Operations on Medication resources are expected to be within the context of a referencing resource query such as an ExplanationOfBenefit, Flag, MedicationAdministration, MedicationDipsense, MedicationRequest or MedicationStatement.
+  - Operations on BodyStructure resources are expected to be within the context of a referencing resource query such as a Consent, DiagnosticReport, Observation, or ServiceRequest.
+- Otherwise, when responding to a query, servers should not use inline contained resources to represent the returned data.
 
 ## Missing Data
 
@@ -270,6 +292,14 @@ There are situations when information for a particular data element is missing a
 <!-- If one of these status code is missing, in response to a read transaction on the resource a `404` http error code and an OperationOutcome **SHALL** be returned. If returning a response to a search, the problematic resource **SHALL** be excluded from the search set and a *warning* OperationOutcome **SHOULD** be included indicating that additional search results were found but could not be compliantly expressed and have been suppressed. -->
 
 
+## Suppressed Data
+In some circumstances, specific pieces of data may hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labeled Must Support), the element SHALL be omitted from the resource if they are suppressed.
+
+For mandatory elements (minimum cardinality is > 0), the element SHALL be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
+- where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
+- where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
+
+
 ## Extensibility – “additional” elements
 A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
@@ -324,11 +354,11 @@ In addition to the medication code, the majority of use cases support exchange o
 These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource. The guidance for how to support coded or text is summarised below: 
 
 1. For *coded* support for brand name, generic name, manufacturer, item form and strength:
-   - Fully coded support is provided using code.coding with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
-      - brand name = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `BPD` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
-      - generic name = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `UPD` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
-      - generic item form and strength = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `UPDSF` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
-      - branded item form and strength = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `BPDSF` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
+   - Fully coded support is provided using code.coding with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
+      - brand name = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `BPD` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
+      - generic name = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `UPD` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
+      - generic item form and strength = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `UPDSF` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
+      - branded item form and strength = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `BPDSF` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
    - If the resource is a Medication resource:
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
       - manufacturer = `manufacturer.identifer`
@@ -446,8 +476,8 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 1.  For *non-coded* support for brand name, generic name, manufacturer, item form and strength:
     - Fully non-coded support is provided using the Medication resource
-        - brand name = [Medication Brand Name extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-brand-name.html)
-        - generic name = [Medication Generic Name extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-generic-name.html)
+        - brand name = [Medication Brand Name extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-brand-name.html)
+        - generic name = [Medication Generic Name extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-generic-name.html)
         - item form and strength = `code.text`
         - manufacturer = `manufacturer.display`
   
@@ -602,7 +632,7 @@ The table below provides guidance on representing communication preferences for 
         <td>Preferred language is English</td>
         <td></td>
         <td></td>
-        <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/relatedperson-definitions.html#RelatedPerson.communication">Comments</a> of RelatedPerson.communication</td>
+        <td>No element sent, as per the guidance in the Comments</a> of RelatedPerson.communication</td>
       </tr>
       <tr>
         <td>Preferred language is other than English</td>
@@ -636,3 +666,37 @@ TBD - conformance rules
    a.	Direct population with data from the STU3 payload if possible
    b.	Population with an appropriate fixed value as demonstrated in Coverage.insurer and Coverage.scope
    c.	Only where neither of the above options is possible is the data to be handled as ‘missing data’
+   
+   
+**RIM Concept Descriptor (CD) to FHIR CodeableConcept**
+
+Converting from a data element of type RIM CD (source) data type to FHIR [CodeableConcept](http://hl7.org/fhir/R4/datatypes.html#CodeableConcept) data type (target). 
+
+The following CD attributes have no equivalent counterpart in CodeableConcept and are subject to complex rules: `nullFlavor`, `displayName`, and `qualifier`. 
+
+`qualifier` **SHALL** be handled using business rules to support a use case e.g. laterality for body sites.
+
+----------------------------------------------------------------------------------
+
+If source `nullFlavor` is present:
+1.	ignore source `nullFlavor` if both source `code` and `codeSystem` exist or source `originalText` exists 
+2.	otherwise, ignore if the target element is optional in the FHIR resource
+3.	otherwise, if the target element is mandatory in the FHIR resource then populate target `code` and `codeSystem` using unknown from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason)
+Copy source `originalText` to target `text`.
+
+Ignore invalid codings, i.e. if source `codeSystem` does not exist, ignore source `code`, `displayName` and `translation`.
+
+Convert valid codings:
+1.	copy source `code` to target `code`
+2.	transform source `codeSystem` to target `system`: coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri')
+3.	ignore source `codeSystemName`
+4.	copy source `codeSystemVersion` to target `version`
+5.	transform source `displayName`:
+    a.	ignore if source `originalText` is present, otherwise copy source `displayName` to target `text `
+    b.	if target `display` is mandatory in the FHIR resource then populate target `display` using terminology service lookup
+6.	transform source `translation` to target coding: 
+a.	ignore invalid codings
+b.	convert valid codings 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
