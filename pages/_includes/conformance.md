@@ -1,6 +1,6 @@
 # {{ page.title }}
 
-> <p style="color:#DAA520;">This material is part of the May 2022 QA Preview snapshot and is not approved for external use.</p>
+> <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p>
 
 
 **This content is to be provided by the Architecture Team.**
