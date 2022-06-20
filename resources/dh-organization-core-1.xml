@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-organization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHAOrganizationCore"/>
   <title value="ADHA Core Organization"/>
   <status value="draft"/>
@@ -38,16 +38,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </constraint>
-      <constraint>
-        <key value="inv-dh-org-02"/>
-        <severity value="error"/>
-        <human value="A National Organisation Identifier (type=NOI) shall be an HPI-O or PAI-O"/>
-        <expression
-          value="identifier.all(type.coding.code='NOI'.exists() implies (system='http://ns.electronichealth.net.au/id/hi/hpio/1.0' or system='http://ns.electronichealth.net.au/id/pcehr/paio/1.0'))"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
-        />
-      </constraint>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
@@ -61,6 +51,16 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
+      <constraint>
+        <key value="inv-dh-org-02"/>
+        <severity value="error"/>
+        <human value="A National Organisation Identifier (type=NOI) shall be an HPI-O or PAI-O"/>
+        <expression
+          value="where(type.coding.code = 'NOI').exists() implies (system='http://ns.electronichealth.net.au/id/hi/hpio/1.0') or (system='http://ns.electronichealth.net.au/id/pcehr/paio/1.0')"/>
+        <source
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
+        />
+      </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Organization.identifier:hpio">

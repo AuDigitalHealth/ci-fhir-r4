@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-sml-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="ADHACompositionSML"/>
   <title value="ADHA Shared Medicines List Composition"/>
   <status value="draft"/>
@@ -46,12 +46,8 @@
       <path value="Composition.category" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
-        </discriminator>
-        <discriminator>
-          <type value="value"/>
-          <path value="coding.code"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -62,20 +58,12 @@
       <short value="Medication summary"/>
       <min value="1"/>
       <max value="1" />
-    </element>
-    <element id="Composition.category:ms.coding">
-      <path value="Composition.category.coding"/>
-      <min value="1"/>
-    </element>
-    <element id="Composition.category:ms.coding.system">
-      <path value="Composition.category.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="http://loinc.org"/>
-    </element>
-    <element id="Composition.category:ms.coding.code">
-      <path value="Composition.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="56445-0" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="56445-0"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.section">
       <path value="Composition.section"/>

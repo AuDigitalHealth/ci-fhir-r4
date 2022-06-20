@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-diagnosticreport-path-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-path-1"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="ADHADiagnosticReportPath"/>
   <title value="ADHA Pathology Report"/>
   <status value="draft"/>
@@ -36,12 +36,8 @@
       <comment value="A fixed category denoting a laboratory report and supports handling and searching of reports. A second category to provide a finer grain of discipline, e.g. Haematology should be provided if possible."/>
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
-        </discriminator>
-        <discriminator>
-          <type value="value"/>
-          <path value="coding.code"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -56,20 +52,12 @@
       <sliceName value="Lab"/>
       <min value="1"/>
       <max value="1" />
-    </element>
-    <element id="DiagnosticReport.category:Lab.coding">
-      <path value="DiagnosticReport.category.coding"/>
-      <min value="1"/>
-    </element>
-    <element id="DiagnosticReport.category:Lab.coding.system">
-      <path value="DiagnosticReport.category.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
-    </element>
-    <element id="DiagnosticReport.category:Lab.coding.code">
-      <path value="DiagnosticReport.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="LAB" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+          <code value="LAB"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code"/>

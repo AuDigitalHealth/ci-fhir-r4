@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-po-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="ADHACompositionPO"/>
   <title value="ADHA Personal Observations Composition"/>
   <status value="draft"/>
@@ -45,12 +45,8 @@
       <path value="Composition.category" />
       <slicing>
         <discriminator>
-          <type value="value"/>
-          <path value="coding.system"/>
-        </discriminator>
-        <discriminator>
-          <type value="value"/>
-          <path value="coding.code"/>
+          <type value="pattern"/>
+          <path value="$this"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -61,20 +57,12 @@
       <short value="Consumer Entered Measurements"/>
       <min value="1"/>
       <max value="1" />
-    </element>
-    <element id="Composition.category:cem.coding">
-      <path value="Composition.category.coding"/>
-      <min value="1"/>
-    </element>
-    <element id="Composition.category:cem.coding.system">
-      <path value="Composition.category.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-    </element>
-    <element id="Composition.category:cem.coding.code">
-      <path value="Composition.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="100.16870" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
+          <code value="100.16870"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Composition.author">
       <path value="Composition.author"/>
