@@ -296,7 +296,7 @@ There are situations when information for a particular data element is missing a
 In some circumstances, specific pieces of data may hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labeled Must Support), the element SHALL be omitted from the resource if they are suppressed.
 
 For mandatory elements (minimum cardinality is > 0), the element SHALL be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
-- where a receiver does not have access rights to know that data is suppressed use code 'masked' from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
+- where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
 - where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
 
 
@@ -666,3 +666,37 @@ TBD - conformance rules
    a.	Direct population with data from the STU3 payload if possible
    b.	Population with an appropriate fixed value as demonstrated in Coverage.insurer and Coverage.scope
    c.	Only where neither of the above options is possible is the data to be handled as ‘missing data’
+   
+   
+**RIM Concept Descriptor (CD) to FHIR CodeableConcept**
+
+Converting from a data element of type RIM CD (source) data type to FHIR [CodeableConcept](http://hl7.org/fhir/R4/datatypes.html#CodeableConcept) data type (target). 
+
+The following CD attributes have no equivalent counterpart in CodeableConcept and are subject to complex rules: `nullFlavor`, `displayName`, and `qualifier`. 
+
+`qualifier` **SHALL** be handled using business rules to support a use case e.g. laterality for body sites.
+
+----------------------------------------------------------------------------------
+
+If source `nullFlavor` is present:
+1.	ignore source `nullFlavor` if both source `code` and `codeSystem` exist or source `originalText` exists 
+2.	otherwise, ignore if the target element is optional in the FHIR resource
+3.	otherwise, if the target element is mandatory in the FHIR resource then populate target `code` and `codeSystem` using unknown from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason)
+Copy source `originalText` to target `text`.
+
+Ignore invalid codings, i.e. if source `codeSystem` does not exist, ignore source `code`, `displayName` and `translation`.
+
+Convert valid codings:
+1.	copy source `code` to target `code`
+2.	transform source `codeSystem` to target `system`: coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri')
+3.	ignore source `codeSystemName`
+4.	copy source `codeSystemVersion` to target `version`
+5.	transform source `displayName`:
+    a.	ignore if source `originalText` is present, otherwise copy source `displayName` to target `text `
+    b.	if target `display` is mandatory in the FHIR resource then populate target `display` using terminology service lookup
+6.	transform source `translation` to target coding: 
+a.	ignore invalid codings
+b.	convert valid codings 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
