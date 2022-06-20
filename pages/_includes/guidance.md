@@ -292,6 +292,14 @@ There are situations when information for a particular data element is missing a
 <!-- If one of these status code is missing, in response to a read transaction on the resource a `404` http error code and an OperationOutcome **SHALL** be returned. If returning a response to a search, the problematic resource **SHALL** be excluded from the search set and a *warning* OperationOutcome **SHOULD** be included indicating that additional search results were found but could not be compliantly expressed and have been suppressed. -->
 
 
+## Suppressed Data
+In some circumstances, specific pieces of data may hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labeled Must Support), the element SHALL be omitted from the resource if they are suppressed.
+
+For mandatory elements (minimum cardinality is > 0), the element SHALL be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
+- where a receiver does not have access rights to know that data is suppressed use code 'masked' from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
+- where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
+
+
 ## Extensibility – “additional” elements
 A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
