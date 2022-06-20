@@ -22,6 +22,8 @@ Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-resul
 
 # The following code systems are external and not supported by terminology server
 Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/anzsco-designation-type-1' is unknown so the code cannot be validated
+Code System URI 'http://terminology.hl7.org.au/CodeSystem/observation-category' is unknown so the code cannot be validated
+
 
 # DataType profiles supporting a choice of open types (for downstream profiling)
 Found multiple matching profiles among choices: ; [http://hl7.org.au/fhir/StructureDefinition/au-address, http://hl7.org/fhir/StructureDefinition/Address]
@@ -120,6 +122,7 @@ ValueSet https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-cli
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/information-system-device-type-1 not found by validator
 
 # Terminology not available at HL7 tx server or in package dependency: attempt to resolve in StructureDefinition
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/smoking-status-1 on element Observation.value[x] could not be resolved
@@ -233,3 +236,4 @@ The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/service-
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 on element Observation.status could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 on element DiagnosticReport.status could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/imaging-anatomic-region-of-interest-1 on element Observation.category could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/information-system-device-type-1 on element Device.type could not be resolved
