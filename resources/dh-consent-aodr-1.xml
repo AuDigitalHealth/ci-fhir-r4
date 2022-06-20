@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-consent-aodr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
-  <version value="0.1.2"/>
+  <version value="0.2.0"/>
   <name value="ADHAConsentAODR"/>
   <title value="ADHA Record of Consent from Australian Organ Donor Register"/>
   <status value="draft"/>
@@ -79,6 +79,19 @@
       </slicing>
       <min value="1" />
       <mustSupport value="true"/>
+    </element>
+    <element id="Consent.category:health">
+      <path value="Consent.category"/>
+      <short value="Consent for healthcare service, procedure, or activity"/>
+      <sliceName value="health"/>
+      <min value="1"/>
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="59284-0"/>
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Consent.category:aodr">
       <path value="Consent.category"/>
