@@ -50,16 +50,16 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-document-1.html">ADHA Document Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-cocs-1.html">ADHA Continuity of Care Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a></li>
+                                <li>ADHA Continuity of Care Summary Composition</li>
+                                <li>ADHA Core DocumentReference</li>
                             </ul>
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a></li> 
-                                <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a></li> 
-                                <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a></li> 
-                                <li><a href="StructureDefinition-dh-bundle-core-1.html">ADHA Core Bundle</a></li>
+                                <li>ADHA Document Bundle</li> 
+                                <li>ADHA Message Bundle</li> 
+                                <li>ADHA Payload Bundle</li> 
+                                <li>ADHA Core Bundle</li>
                                 <li>ADHA MHR Bundle (CI &amp; Architecture Team)</li>
                                 <li>ADHA Core MessageHeader (Architecture Team)</li>  
                             </ul>
@@ -95,9 +95,9 @@ The following core FHIR profiles are defined in this implementation guide. These
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-device-participant-1.html">ADHA Device Participant</a></li>
+                                <li>ADHA Device Participant</li>
                                 <li><a href="StructureDefinition-dh-device-system-1.html">ADHA System Device</a></li>
-                                <li><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></li>
+                                <li>ADHA Core Substance</li>
 
                             </ul>
                         </td>                          
@@ -106,8 +106,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></li>
                                 <li>ADHA Core EpisodeOfCare</li>
-                                <li><a href="StructureDefinition-dh-flag-core-1.html">ADHA Core Flag</a></li>
-                                <li><a href="StructureDefinition-dh-list-core-1.html">ADHA Core List</a></li>
+                                <li>ADHA Core Flag</li>
+                                <li>ADHA Core List</li>
                             </ul>
                         </td>  
                     </tr>
@@ -123,7 +123,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></li>
+                                <li>ADHA Core AllergyIntolerance</li>
                                 <li><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></li>
                                 <li><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></li>
                                 <li>ADHA Core FamilyMemberHistory</li>
@@ -133,27 +133,27 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-observation-core-1.html">ADHA Core Observation</a></li>
-                                <li><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></li>
-                                <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
-                                <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
-                                <li><a href="StructureDefinition-dh-media-core-1.html">ADHA Core Media</a></li>
+                                <li>ADHA Core DiagnosticReport</li>
+                                <li>ADHA Core Specimen</li>
+                                <li>ADHA Core BodyStructure</li>
+                                <li>ADHA Core Media</li>
                                 <li>ADHA Core QuestionnaireResponse</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></li>
-                                <li><a href="StructureDefinition-dh-medicationadministration-core-1.html">ADHA Core MedicationAdministration</a></li>
-                                <li><a href="StructureDefinition-dh-medicationdispense-core-1.html">ADHA Core MedicationDispense</a></li>
-                                <li><a href="StructureDefinition-dh-medicationstatement-core-1.html">ADHA Core MedicationStatement</a></li>
-                                <li><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a></li>
-                                <li><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></li>
+                                <li>ADHA Core MedicationRequest/li>
+                                <li>ADHA Core MedicationAdministration</li>
+                                <li>ADHA Core MedicationDispense</li>
+                                <li>ADHA Core MedicationStatement</li>
+                                <li>ADHA Core Medication</li>
+                                <li>ADHA Core Immunization</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Core CarePlan</li>
-                                <li><a href="StructureDefinition-dh-servicerequest-core-1.html">ADHA Core ServiceRequest</a></li>
+                                <li>ADHA Core ServiceRequest</li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>
@@ -240,29 +240,29 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <ul class="frm-set">
                                 <li>Provenance profiles (TBD Architecture Team)</li>  
                                 <li>Provenance for Generation of a List</li>  
-                                <li><a href="StructureDefinition-dh-consent-aodr-1.html">ADHA Record of Consent from Australian Organ Donor Register</a></li>
+                                <li>ADHA Record of Consent from Australian Organ Donor Register</li>
                                 <li>AuditEvent profiles (TBD Architecture Team)</li> 
                             </ul>
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-acts-1.html">ADHA Aged Care Transfer Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-ds-1.html">ADHA Discharge Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-es-mix-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
-                                 <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
-                                 <li><a href="StructureDefinition-dh-composition-mov-1.html">ADHA Medicare Overview Composition</a></li>
+                                <li>ADHA Advance Care Directive Custodian Record Composition</li>
+                                <li>ADHA Advance Care Planning Composition</li>
+                                <li>ADHA Aged Care Transfer Summary Composition</li>
+                                <li>ADHA Discharge Summary Composition</li>
+                                <li>ADHA Event Summary Composition</li>
+                                <li>ADHA Event Summary Mixed Narrative and Structure</li>
+                                 <li>ADHA Event Summary Narrative</li>
+                                 <li>ADHA Medicare Overview Composition</li>
                                 <li><a href="StructureDefinition-dh-composition-ncspv-1.html">ADHA National Cancer Screening Program Participation View</a></li>
-                                <li><a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-phs-1.html">ADHA Personal Health Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-po-1.html">ADHA Personal Observations Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-psml-1.html">ADHA Pharmacist Shared Medicines List Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-pdl-1.html">ADHA Prescription and or Dispense History Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
-                                <li><a href="StructureDefinition-dh-composition-sml-1.html">ADHA Shared Medicines List Composition</a></li>
-                                <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
+                                <li>ADHA Personal Health Notes Composition</li>
+                                <li>ADHA Personal Health Summary Composition</li>
+                                <li>ADHA Personal Observations Composition</li>
+                                <li>ADHA Pharmacist Shared Medicines List Composition</li>
+                                <li>ADHA Prescription and or Dispense History Composition</li>
+                                <li>ADHA Shared Health Summary Composition</li>
+                                <li>ADHA Shared Medicines List Composition</li>
+                                <li>ADHA Advance Care Planning DocumentReference</li>
                                 <li>Architecture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
                         </td>  
@@ -293,11 +293,11 @@ FHIR profiles defined in this implementation guide for defined use cases.
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA MHR Patient</a></li>
-                                <li><a href="StructureDefinition-dh-patient-match-1.html">ADHA Patient Match</a></li>
-                                <li><a href="StructureDefinition-dh-patient-demographics-1.html">ADHA Patient Demographics</a></li>
-                                <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</a></li>
-                                <li><a href="StructureDefinition-dh-practitionerrole-author-cae-1.html">ADHA Authoring Care Agency Employee</a></li>
+                                <li>ADHA MHR Patient</li>
+                                <li>ADHA Patient Match</li>
+                                <li>ADHA Patient Demographics</li>
+                                <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</li>
+                                <li>ADHA Authoring Care Agency Employee</li>
                                 <li><a href="StructureDefinition-dh-relatedperson-mhr-1.html">ADHA MHR RelatedPerson</a></li>
                                 <li><a href="StructureDefinition-dh-relatedperson-author-1.html">ADHA Authoring RelatedPerson</a></li>
                             </ul>
@@ -305,25 +305,25 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                            <li><a href="StructureDefinition-dh-organization-contact-1.html">ADHA Organization Contact</a></li>
-                                <li><a href="StructureDefinition-dh-device-implantable-1.html">ADHA Implantable Medical Device</a></li>
+                            <li>ADHA Organization Contact</li>
+                                <li>ADHA Implantable Medical Device</li>
                             </ul>
                         </td>                          
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Hospitalisation Encounter</li>
-                                <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>
+                                <li>ADHA Australian Immunisation Register Notice</li>
                                 <li>ADHA Adverse Reactions List</li>
                                 <li>ADHA Allergies and Intolerances List</li>
                                 <li>ADHA Dispense List</li>
-                                <li><a href="StructureDefinition-dh-list-immunization-1.html">ADHA Immunisation History List</a></li>
+                                <li>ADHA Immunisation History List</li>
                                 <li>ADHA Medical History List</li>
-                                <li><a href="StructureDefinition-dh-list-medication-use-1.html">ADHA Medication Use List</a></li>
-                                <li><a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a></li>
+                                <li>ADHA Medication Use List</li>
+                                <li>ADHA Practitioner Medicine Review List</li>
                                 <li>ADHA Problem List</li>
                                 <li>ADHA Procedure List</li>
-                                <li><a href="StructureDefinition-dh-list-medication-pdl-1.html">ADHA Prescription and or Dispense History List</a></li>
+                                <li>ADHA Prescription and or Dispense History List</li>
                                 <li>ADHA Prescription List</li>
                             </ul>
                         </td>  
@@ -341,30 +341,30 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>   
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
-                                <li><a href="StructureDefinition-dh-diagnosticreport-path-1.html">ADHA Pathology Report</a></li>
+                                <li>ADHA Diagnostic Result Observation</li>
+                                <li>ADHA Imaging Result Observation</li>
+                                <li>ADHA Pathology Result Observation</li>
+                                <li>ADHA Simple Observation</li>
+                                <li>ADHA Pathology Report</li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
-                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
+                                <li>ADHA Organ or Tissue for Donation BodyStructure</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-medicationrequest-pres-1.html">ADHA Prescription</a></li>
-                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
-                                <li><a href="StructureDefinition-dh-medicationdispense-disp-1.html">ADHA Dispense Record</a></li>
+                                <li>ADHA Prescription</li>
+                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</li>
+                                <li>ADHA Dispense Record</li>
                                 <li>ADHA Record of Immunization</li>
-                                <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
+                                <li>ADHA Record of Immunisation from Australian Immunisation Register</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Referral</li>
-                                <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
-                                <li><a href="StructureDefinition-dh-servicerequest-modi-1.html">MODI Request for Diagnostic Imaging Service</a></li>
+                                <li>ADHA MBS Service Claim Item</li>
+                                <li>MODI Request for Diagnostic Imaging Service</li>
                             </ul>
                         </td>    
                         <td class="frm-null"/>
@@ -384,10 +384,10 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html">ADHA Record of Claim against MBS or DVA</a></li>
+                                <li>ADHA Record of Claim against MBS or DVA</li>
                             </ul>
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html">ADHA Record of Claim against PBS or RPBS</a></li>
+                                <li>ADHA Record of Claim against PBS or RPBS</li>
                             </ul>
                         </td>     
                         <td class="frm-null"/>
