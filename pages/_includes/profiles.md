@@ -296,7 +296,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li>ADHA MHR Patient</li>
                                 <li>ADHA Patient Match</li>
                                 <li>ADHA Patient Demographics</li>
-                                <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</li>
+                                <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</a></li>
                                 <li>ADHA Authoring Care Agency Employee</li>
                                 <li><a href="StructureDefinition-dh-relatedperson-mhr-1.html">ADHA MHR RelatedPerson</a></li>
                                 <li><a href="StructureDefinition-dh-relatedperson-author-1.html">ADHA Authoring RelatedPerson</a></li>
@@ -354,7 +354,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Prescription</li>
-                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</li>
+                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
                                 <li>ADHA Dispense Record</li>
                                 <li>ADHA Record of Immunization</li>
                                 <li>ADHA Record of Immunisation from Australian Immunisation Register</li>
