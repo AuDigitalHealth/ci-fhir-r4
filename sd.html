@@ -21,16 +21,6 @@ active: profiles
 
 <h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.structuredefinitions.{{[id]}}.status | capitalize}}]</h3></a>
 </a>
-<!-- introductiontext here-->
-<!--<p><b>These variables can be used in the template files (for example <code>html</code>):</b></p>
-
-<ul>
-  <li>A description of the content of the resource { {[title]}} = {{[title]}}</li>
-  <li>The path for the source fragment to include  { {[name]}} = {{[name]}}</li>
-  <li>The id of the resource { {[id]}} = {{[id]}}</li>
-  <li>The type of the resource { {[type]}} = {{[type]}}</li>
-  <li>Type-id (combination) { {[uid]}} = {{[uid]}}</li>
-</ul>-->
 
 {% capture my-include %}{% include {{[id]}}-intro.md %}{% endcapture %}{{ my-include | markdownify }}
 

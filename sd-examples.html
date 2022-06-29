@@ -2,29 +2,10 @@
 # jekyll header
 ---
 
-
 {% include header.html %}
-
 {% include container-start.html %}
 
-<!-- <div id="segment-breadcrumb" class="segmnt">  <!-\- segment-breadcrumb -\->
-  <div class="container">  <!-\- container -\->
-   <ul class="breadcrumb">
-       <li title="home"><a href="index.html"><b>Home</b></a></li>
-     <li><b>{{[title]}} Details</b></li>
-   </ul>
-  </div>  <!-\- /container -\->
- </div>  <!-\- /segment-breadcrumb -\->-->
-
-
-<div id="segment-content" class="segment">  <!-- segment-content -->
-  <div class="container">  <!-- container -->
-
-    <div class="row">
-      <div class="inner-wrapper">
-        <!-- CONTENT CONTENT -->        
-        
-        <div class="col-12">
+<!-- ============CONTENT CONTENT=============== -->
           <blockquote><p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p></blockquote>
           <ul class="nav nav-tabs">
             <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
@@ -45,13 +26,9 @@
           
          {% capture my-include %}{% include {{[id]}}-examples.md %}{% endcapture %}{{ my-include | markdownify }}
           
-        </div>
-        
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /row -->
-  </div>  <!-- /container -->
-  
-</div>  <!-- /segment-content -->
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
 {% include footer.html %}
 </body>
 </html>
