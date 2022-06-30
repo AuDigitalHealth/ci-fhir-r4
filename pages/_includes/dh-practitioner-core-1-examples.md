@@ -19,13 +19,6 @@
       <td><a href="Practitioner-brown-robert.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Practitioner-helpman-barry.html">Dr. Barry Helpman</a></td>
-      <td>helpman-barry</td>
-      <td><a href="Practitioner-helpman-barry.xml.html">XML</a></td>
-      <td><a href="Practitioner-helpman-barry.json.html">JSON</a></td>
-      <td><a href="Practitioner-helpman-barry.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Practitioner-algrester-greg.html">Dr. Greg Algrester</a></td>
       <td>algrester-greg</td>
       <td><a href="Practitioner-algrester-greg.xml.html">XML</a></td>

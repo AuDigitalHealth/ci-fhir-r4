@@ -15,13 +15,6 @@
       <td><a href="Organization-algrester-medical-centre.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Organization-devonport-clinic.html">Devonport Family Medicine Clinic</a></td>
-      <td>devonport-clinic</td>
-      <td><a href="Organization-devonport-clinic.xml.html">XML</a></td>
-      <td><a href="Organization-devonport-clinic.json.html">JSON</a></td>
-      <td><a href="Organization-devonport-clinic.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Organization-medium-vic-medical-clinic.html">Medium Sized Medical Clinic</a></td>
       <td>medium-vic-medical-clinic</td>
       <td><a href="Organization-medium-vic-medical-clinic.xml.html">XML</a></td>
