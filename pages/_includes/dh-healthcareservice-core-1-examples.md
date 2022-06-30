@@ -22,13 +22,6 @@
       <td><a href="HealthcareService-medium-vic-medical-clinic.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-med-regional-med-centre.html">Medium Sized Regional Medical Centre</a></td>
-      <td>med-regional-med-centre</td>
-      <td><a href="HealthcareService-med-regional-med-centre.xml.html">XML</a></td>
-      <td><a href="HealthcareService-med-regional-med-centre.json.html">JSON</a></td>
-      <td><a href="HealthcareService-med-regional-med-centre.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="HealthcareService-territory-medical-centre.html">Territory Medical Centre</a></td>
       <td>territory-medical-centre</td>
       <td><a href="HealthcareService-territory-medical-centre.xml.html">XML</a></td>
@@ -44,13 +37,6 @@
    </tr>  
    <tr>
       <td colspan="5">Pharmacy examples:</td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-nsw-hospital-pharmacy-in.html">Inpatient Pharmacy NSW Hospital</a></td>
-      <td>nsw-hospital-pharmacy-in</td>
-      <td><a href="HealthcareService-nsw-hospital-pharmacy-in.xml.html">XML</a></td>
-      <td><a href="HealthcareService-nsw-hospital-pharmacy-in.json.html">JSON</a></td>
-      <td><a href="HealthcareService-nsw-hospital-pharmacy-in.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="HealthcareService-qld-hospital-pharmacy-in.html">Inpatient Pharmacy QLD Hospital</a></td>
@@ -129,13 +115,6 @@
       <td><a href="HealthcareService-metro-qld-path-lab.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-lge-priv-nt-xray.html">Large Private Territory X-RAY</a></td>
-      <td>lge-priv-nt-xray</td>
-      <td><a href="HealthcareService-lge-priv-nt-xray.xml.html">XML</a></td>
-      <td><a href="HealthcareService-lge-priv-nt-xray.json.html">JSON</a></td>
-      <td><a href="HealthcareService-lge-priv-nt-xray.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="HealthcareService-metro-nsw-path-lab.html">Metropolitan Laboratories Sydney</a></td>
       <td>metro-nsw-path-lab</td>
       <td><a href="HealthcareService-metro-nsw-path-lab.xml.html">XML</a></td>
@@ -157,34 +136,6 @@
       <td><a href="HealthcareService-mssg-nsw-yerong-paedendo.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-mssg-qld-castle-endo.html">Metropolitan Specialist Services Group Castle QLD - Endocrinology services</a></td>
-      <td>mssg-qld-castle-endo</td>
-      <td><a href="HealthcareService-mssg-qld-castle-endo.xml.html">XML</a></td>
-      <td><a href="HealthcareService-mssg-qld-castle-endo.json.html">JSON</a></td>
-      <td><a href="HealthcareService-mssg-qld-castle-endo.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-mssg-qld-castle-paedendo.html">Metropolitan Specialist Services Group Castle QLD - Paediatric endocrinology services</a></td>
-      <td>mssg-qld-castle-paedendo</td>
-      <td><a href="HealthcareService-mssg-qld-castle-paedendo.xml.html">XML</a></td>
-      <td><a href="HealthcareService-mssg-qld-castle-paedendo.json.html">JSON</a></td>
-      <td><a href="HealthcareService-mssg-qld-castle-paedendo.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-mssg-qld-hospital-cardio.html">Metropolitan Specialist Services Group QLD Hospital - Cardiology services</a></td>
-      <td>mssg-qld-hospital-cardio</td>
-      <td><a href="HealthcareService-mssg-qld-hospital-cardio.xml.html">XML</a></td>
-      <td><a href="HealthcareService-mssg-qld-hospital-cardio.json.html">JSON</a></td>
-      <td><a href="HealthcareService-mssg-qld-hospital-cardio.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-mssg-qld-hospital-gastro.html">Metropolitan Specialist Services Group QLD Hospital - Gastroenterology services</a></td>
-      <td>mssg-qld-hospital-gastro</td>
-      <td><a href="HealthcareService-mssg-qld-hospital-gastro.xml.html">XML</a></td>
-      <td><a href="HealthcareService-mssg-qld-hospital-gastro.json.html">JSON</a></td>
-      <td><a href="HealthcareService-mssg-qld-hospital-gastro.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="HealthcareService-mssg-qld-hospital-radio.html">Metropolitan Specialist Services Group QLD Hospital - Radiololgy services</a></td>
       <td>mssg-qld-hospital-radio</td>
       <td><a href="HealthcareService-mssg-qld-hospital-radio.xml.html">XML</a></td>
@@ -192,32 +143,11 @@
       <td><a href="HealthcareService-mssg-qld-hospital-radio.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-mssg-nsw-hospital-cardio.html">Metropolitan Specialist Services Group NSW Hospital - Cardiology services</a></td>
-      <td>mssg-nsw-hospital-cardio</td>
-      <td><a href="HealthcareService-mssg-nsw-hospital-cardio.xml.html">XML</a></td>
-      <td><a href="HealthcareService-mssg-nsw-hospital-cardio.json.html">JSON</a></td>
-      <td><a href="HealthcareService-mssg-nsw-hospital-cardio.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-mssg-nsw-hospital-gastro.html">Metropolitan Specialist Services Group NSW Hospital - Gastroenterology services</a></td>
-      <td>mssg-nsw-hospital-gastro</td>
-      <td><a href="HealthcareService-mssg-nsw-hospital-gastro.xml.html">XML</a></td>
-      <td><a href="HealthcareService-mssg-nsw-hospital-gastro.json.html">JSON</a></td>
-      <td><a href="HealthcareService-mssg-nsw-hospital-gastro.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="HealthcareService-mssg-nsw-hospital-radio.html">Metropolitan Specialist Services Group NSW Hospital - Radiololgy services</a></td>
       <td>mssg-nsw-hospital-radio</td>
       <td><a href="HealthcareService-mssg-nsw-hospital-radio.xml.html">XML</a></td>
       <td><a href="HealthcareService-mssg-nsw-hospital-radio.json.html">JSON</a></td>
       <td><a href="HealthcareService-mssg-nsw-hospital-radio.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-private-vic-path-lab.html">Private VIC Pathology</a></td>
-      <td>private-vic-path-lab</td>
-      <td><a href="HealthcareService-private-vic-path-lab.xml.html">XML</a></td>
-      <td><a href="HealthcareService-private-vic-path-lab.json.html">JSON</a></td>
-      <td><a href="HealthcareService-private-vic-path-lab.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td colspan="5">Dental examples:</td>
@@ -239,35 +169,6 @@
       <td><a href="HealthcareService-hi-testdata-physiotherapy.json.html">JSON</a></td>
       <td><a href="HealthcareService-hi-testdata-physiotherapy.ttl.html">Turtle</a></td>
    </tr> 
-    <tr>
-      <td><a href="HealthcareService-nsw-hospital-er.html">Emergency Department NSW Hospital</a></td>
-      <td>nsw-hospital-er</td>
-      <td><a href="HealthcareService-nsw-hospital-er.xml.html">XML</a></td>
-      <td><a href="HealthcareService-nsw-hospital-er.json.html">JSON</a></td>
-      <td><a href="HealthcareService-nsw-hospital-er.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-qld-hospital-er.html">Emergency Department QLD Hospital</a></td>
-      <td>qld-hospital-er</td>
-      <td><a href="HealthcareService-qld-hospital-er.xml.html">XML</a></td>
-      <td><a href="HealthcareService-qld-hospital-er.json.html">JSON</a></td>
-      <td><a href="HealthcareService-qld-hospital-er.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-nbcsp.html">National Bowel Cancer Screening Program</a></td>
-      <td>nbcsp</td>
-      <td><a href="HealthcareService-nbcsp.xml.html">XML</a></td>
-      <td><a href="HealthcareService-nbcsp.json.html">JSON</a></td>
-      <td><a href="HealthcareService-nbcsp.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="HealthcareService-ncsp.html">National Cervical Screening Program</a></td>
-      <td>ncsp</td>
-      <td><a href="HealthcareService-ncsp.xml.html">XML</a></td>
-      <td><a href="HealthcareService-ncsp.json.html">JSON</a></td>
-      <td><a href="HealthcareService-ncsp.ttl.html">Turtle</a></td>
-   </tr>
-            
    <!--<tr>
       <td colspan="5">Bundle examples:</td>
    </tr>-->

@@ -1,1 +1,0 @@
-**No mandatory or optional search parameters for ADHA Authoring Care Agency Employee profile.**

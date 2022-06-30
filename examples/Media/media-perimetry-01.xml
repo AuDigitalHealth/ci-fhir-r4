@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Media xmlns="http://hl7.org/fhir">
-    <id value="perimetry"/>
+    <id value="perimetry-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
+    </meta>
     <status value="completed"/>
     <type>
         <coding>
@@ -25,9 +28,6 @@
         </identifier>
     </subject>
     <createdDateTime value="2021-08-14T11:45:10+10:00"/>
-    <operator>
-        <reference value="PractitionerRole/ophthalmologist"/>
-    </operator>
     <bodySite>
         <coding>
             <system value="http://snomed.info/sct"/>

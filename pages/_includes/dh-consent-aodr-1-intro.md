@@ -24,6 +24,5 @@ This profile is used by the following APIs:
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Medicare Overview Composition](StructureDefinition-dh-composition-mov-1.html).
+This profile is not referenced by another profile in this implementation guide.
 

@@ -18,8 +18,7 @@ None.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 
+This profile is not referenced by another profile in this implementation guide.
 
 These profiles build on this profile ([ADHA Core Flag](StructureDefinition-dh-flag-core-1.html)) to define specific flags:
 * [ADHA Australian Immunisation Register Notice](StructureDefinition-dh-flag-air-1.html)

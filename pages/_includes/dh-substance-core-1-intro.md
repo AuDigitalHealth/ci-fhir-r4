@@ -19,5 +19,4 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), and 
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html). 

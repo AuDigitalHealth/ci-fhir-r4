@@ -11,4 +11,14 @@
       <td><a href="ServiceRequest-claim-mbs-01.json.html">JSON</a></td>
       <td><a href="ServiceRequest-claim-mbs-01.ttl.html">Turtle</a></td>
    </tr>
+   <tr>
+      <td colspan="5">Examples with a contained ServiceRequest conforming to this profile:</td>
+   </tr>
+   <tr>
+      <td><a href="ExplanationOfBenefit-mbs-cont-01.html">Record of Claim against MBS for 15275 radiation oncology treatment for Mr. Zhang Wei</a></td>
+      <td>mbs-cont-01</td>
+      <td><a href="ExplanationOfBenefit-mbs-cont-01.xml.html">XML</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-cont-01.json.html">JSON</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-cont-01.ttl.html">Turtle</a></td>
+   </tr>
 </table>

@@ -17,10 +17,7 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html),
-[ADHA Authoring Care Agency Employee](StructureDefinition-dh-practitionerrole-author-cae-1.html),
 [Australian Digital Health Agency Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), 
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html), and
-[MODI Request for Diagnostic Imaging Service](StructureDefinition-dh-servicerequest-modi-1.html). 
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
+[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html).

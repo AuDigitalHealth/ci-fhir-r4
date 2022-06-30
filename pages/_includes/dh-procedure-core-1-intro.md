@@ -21,10 +21,6 @@ This profile is used by the following APIs:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html), 
-[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
-[ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), and 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html). 

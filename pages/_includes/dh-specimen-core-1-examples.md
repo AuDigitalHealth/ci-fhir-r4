@@ -22,13 +22,6 @@
       <td colspan="5">Bundle examples that include a Specimen entry conforming to this profile:</td>
    </tr> 
    <tr>
-      <td><a href="Bundle-es-02-doc.html">Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
-      <td>es-02-doc</td>
-      <td><a href="Bundle-es-02-doc.xml.html">XML</a></td>
-      <td><a href="Bundle-es-02-doc.json.html">JSON</a></td>
-      <td><a href="Bundle-es-02-doc.ttl.html">Turtle</a></td>
-   </tr> 
-   <tr>
       <td><a href="Bundle-report-covid-doc-01.html">Pathology Report Document Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson</a></td>
       <td>report-covid-doc-01</td>
       <td><a href="Bundle-report-covid-doc-01.xml.html">XML</a></td>

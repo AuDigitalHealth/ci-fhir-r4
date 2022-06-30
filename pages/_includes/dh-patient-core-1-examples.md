@@ -5,13 +5,6 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="Patient-baby-smith-trevor.html">Baby of Rosalia SMITH</a></td>
-      <td>baby-smith-trevor</td>
-      <td><a href="Patient-baby-smith-trevor.xml.html">XML</a></td>
-      <td><a href="Patient-baby-smith-trevor.json.html">JSON</a></td>
-      <td><a href="Patient-baby-smith-trevor.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Patient-p2p-anne-thompson.html">Mrs. Anne Thompson (P2P)</a></td>
       <td>p2p-anne-thompson</td>
       <td><a href="Patient-p2p-anne-thompson.xml.html">XML</a></td>
@@ -101,13 +94,6 @@
       <td><a href="Patient-mhr-smith-rosalia.xml.html">XML</a></td>
       <td><a href="Patient-mhr-smith-rosalia.json.html">JSON</a></td>
       <td><a href="Patient-mhr-smith-rosalia.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Patient-mhr-smith-trevor.html">Ms. Trevor SMITH (My Health Record Patient)</a></td>
-      <td>mhr-smith-trevor</td>
-      <td><a href="Patient-mhr-smith-trevor.xml.html">XML</a></td>
-      <td><a href="Patient-mhr-smith-trevor.json.html">JSON</a></td>
-      <td><a href="Patient-mhr-smith-trevor.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Patient-p2p-zhang-wei.html">Mr Zhang Wei (P2P)</a></td>

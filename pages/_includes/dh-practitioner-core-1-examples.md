@@ -47,20 +47,6 @@
       <td><a href="Practitioner-sallow-elenore.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Practitioner-howard-linda.html">Ms. Linda Howard</a></td>
-      <td>howard-linda</td>
-      <td><a href="Practitioner-howard-linda.xml.html">XML</a></td>
-      <td><a href="Practitioner-howard-linda.json.html">JSON</a></td>
-      <td><a href="Practitioner-howard-linda.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Practitioner-sallow-elenore.html">Dr. Fredrika Bremer</a></td>
-      <td>bremer-frederika</td>
-      <td><a href="Practitioner-sallow-elenore.xml.html">XML</a></td>
-      <td><a href="Practitioner-sallow-elenore.json.html">JSON</a></td>
-      <td><a href="Practitioner-sallow-elenore.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Practitioner-tulio-patricia.html">Dr. Patricia Tulio</a></td>
       <td>tulio-patricia</td>
       <td><a href="Practitioner-tulio-patricia.xml.html">XML</a></td>
