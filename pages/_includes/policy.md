@@ -4,8 +4,8 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-> <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p>
-> 
+<!-- <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p> -->
+ 
 
 The policy for defining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency.
 

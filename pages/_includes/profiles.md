@@ -4,7 +4,7 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-> <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p>
+<!-- <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p> -->
 
 
 ## Profiles

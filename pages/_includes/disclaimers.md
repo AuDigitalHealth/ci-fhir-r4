@@ -1,7 +1,5 @@
 # {{ page.title }}
 
-> <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p>
-
 
 **Disclaimer**
 
