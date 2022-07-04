@@ -2,6 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
     <id value="urineculture-es-02"/>
     <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
     </meta>
@@ -41,6 +42,9 @@
         </identifier>
     </subject>
     <effectiveDateTime value="2020-05-23T12:20:00+10:00"/>
+    <performer>
+        <display value="Metropolitan Laboratories Sydney"/>
+    </performer>
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
