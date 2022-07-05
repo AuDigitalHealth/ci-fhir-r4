@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-practitionerrole-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="ADHAPractitionerRoleCore"/>
   <title value="ADHA Core PractitionerRole"/>
   <status value="draft"/>
@@ -126,6 +126,7 @@
           value="At least a reference, identifier or display shall be present"/>
         <expression
           value="reference.exists() or identifier.exists() or display.exists()"/>
+        <xpath value="exists(f:reference) or exists(f:display) or exists(f:identifier)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"
         />

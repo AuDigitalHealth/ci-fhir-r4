@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medicationrequest-pbs-claim-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="ADHAMedicationRequestPBSClaim"/>
   <title value="ADHA PBS Claim Item"/>
   <status value="draft" />
@@ -78,6 +78,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
       </constraint>
       <mustSupport value="true"/>

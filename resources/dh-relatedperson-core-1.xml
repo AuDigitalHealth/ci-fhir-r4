@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-relatedperson-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
-  <version value="0.2.1"/>
+  <version value="0.2.2"/>
   <name value="ADHARelatedPersonCore"/>
   <title value="ADHA Core RelatedPerson"/>
   <status value="draft"/>
@@ -103,6 +103,7 @@
           value="At least a reference, identifier or display shall be present"/>
         <expression
           value="reference.exists() or identifier.exists() or display.exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier) or exists(f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />

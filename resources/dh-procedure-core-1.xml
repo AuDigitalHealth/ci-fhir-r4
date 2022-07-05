@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-procedure-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="ADHAProcedureCore"/>
   <title value="ADHA Core Procedure"/>
   <status value="draft"/>
@@ -71,6 +71,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -109,6 +110,7 @@
           value="At least reference or display or a valid identifier shall be present"/>
         <expression
           value="reference.exists() or display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:display) or exists(f:identifier)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </constraint>

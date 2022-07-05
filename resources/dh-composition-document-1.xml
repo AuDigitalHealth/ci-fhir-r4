@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-document-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHACompositionDocument"/>
   <title value="ADHA Document Composition"/>
   <status value="draft"/>
@@ -101,6 +101,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -121,6 +122,7 @@
         <severity value="error"/>
         <human value="Date shall be at least to day"/>
         <expression value="toString().length() &gt;= 10"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -144,6 +146,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -212,6 +215,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
       </constraint>
       <mustSupport value="true"/>
