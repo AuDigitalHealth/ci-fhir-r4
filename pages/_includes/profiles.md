@@ -520,7 +520,7 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-parity.html">AU Parity</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
-                                <li>AU Health Program Participation Summary</li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthprogramparticipation.html">AU Health Program Participation Summary</a></li>
                             </ul>
                         </td>   
                         <td class="frm-null"/>
