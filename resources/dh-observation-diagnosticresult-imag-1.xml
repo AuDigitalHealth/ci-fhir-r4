@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-imag-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.4"/>
   <name value="ADHAObservationImagingResult"/>
   <title value="ADHA Imaging Result Observation"/>
   <status value="draft"/>
@@ -33,6 +33,7 @@
         <severity value="error"/>
         <human value="If there is no component or hasMember element then at least value or data absent reason shall be present"/>
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
+        <xpath value="exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>
     </element>
@@ -72,6 +73,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -84,29 +86,32 @@
         <severity value="error"/>
         <human value="Date shall be at least to day"/>
         <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
       <constraint>
-        <key value="inv-dh-obs-02"/>
+        <key value="inv-dh-obs-03"/>
         <severity value="error"/>
-        <human value="At least reference or a valid identifier shall be present"/>
-        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <human value="At least reference or display or a valid identifier shall be present"/>
+        <expression value="reference.exists() or display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:display) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
       </constraint>
       <mustSupport value="true"/>

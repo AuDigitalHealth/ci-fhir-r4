@@ -80,6 +80,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-implantable-1"/>
       </constraint>
       <mustSupport value="true" />

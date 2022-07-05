@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-relatedperson-mhr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHARelatedPersonMHR"/>
   <title value="ADHA My Health Record RelatedPerson"/>
   <status value="draft"/>
@@ -32,6 +32,7 @@
         <severity value="error"/>
         <human value="At least one related person name shall have a family name"/>
         <expression value="name.family.exists()"/>
+        <xpath value="exists(f:name/f:family)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"
         />

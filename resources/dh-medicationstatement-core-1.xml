@@ -3,7 +3,7 @@
   <id value="dh-medicationstatement-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHAMedicationStatementCore"/>
   <title value="ADHA Core MedicationStatement"/>
   <status value="draft"/>
@@ -123,6 +123,7 @@
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -173,6 +174,7 @@
         <severity value="error"/>
         <human value="If present, the dosage shall at least have text or patient instructions"/>
         <expression value="text.exists() or patientInstruction.exists()"/>
+        <xpath value="exists(f:text) or exists(f:patientInstruction)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"
         />
