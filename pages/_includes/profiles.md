@@ -142,7 +142,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core MedicationRequest/li>
+                                <li>ADHA Core MedicationRequest</li>
                                 <li>ADHA Core MedicationAdministration</li>
                                 <li>ADHA Core MedicationDispense</li>
                                 <li>ADHA Core MedicationStatement</li>
@@ -354,7 +354,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Prescription</li>
-                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
+                                <li>ADHA PBS Prescription Claim Item</li>
                                 <li>ADHA Dispense Record</li>
                                 <li>ADHA Record of Immunization</li>
                                 <li>ADHA Record of Immunisation from Australian Immunisation Register</li>
