@@ -277,27 +277,6 @@ The following basePaths are to be used for national services:
 > **ADHA-FHIR-IDENT-07** An identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
 
 
-## Asset Naming TBD CI w Architecture Team
-
-> **ADHA-FHIR-ASSET-NAME-0X** An ADHA Core FHIR Asset name **SHALL** conform to an agreed, documented format
-
-insert format rules here for assets - profiles, extensions, value sets, code systems, concept maps, structure definitions, operation definitions, search parameters, naming systems, capability statements
-
-
-> **ADHA-FHIR-ASSET-NAME-0X** A FHIR Asset derived from an ADHA Core FHIR Asset **SHALL** conform to an agreed, documented format
-
-insert format rules here for assets - profiles, extensions, value sets, code systems, concept maps, structure definitions, operation definitions, search parameters, naming systems, capability statements
-
-
-
-## Asset URIs TBD CI w Architecture Team
-
-tbd
-
-> **ADHA-FHIR-ASSET-URI-0X** All ADHA Core FHIR resource URIs **SHOULD** be resolvable URLs
-
-
-
 ## Profiling
 
 > **ADHA-FHIR-PROFILE-0X** An ADHA Core FHIR Asset **SHALL NOT** define alternate elements for use in place of elements defined in a HL7 FHIR base resource
@@ -319,50 +298,122 @@ tbd
 > 4. Other
 
 
-## Publication 
+## Artefact identification, naming, versioning, and publication 
 
-> **ADHA-FHIR-PUB-0X** ADHA Core FHIR resource URIs **SHALL** be resolve - there are publication implications here
+### Publication
 
+An ADHA FHIR conformance artefact for public implementation **SHALL** be published in a public FHIR Implementation Guide or as a FHIR Package and **SHOULD** be published as both. 
 
-> **ADHA-FHIR-PUB-0X** ADHA FHIR materials published for public implementation **SHALL** be released as an [FHIR Package](https://registry.fhir.org/learn)
+Some implementation contexts will be supported by targeted conformance assets, e.g. Provider Connect Australia. The specifications and/or profiles that define a particular implementation context **SHALL** define requirements for publication and management of FHIR conformance artefacts for that context, and **SHALL** manage those artefacts accordingly. 
 
+ADHA FHIR conformance artefacts may be one of:
+- [CapabilityStatement](http://hl7.org/fhir/capabilitystatement.html)
+- [StructureDefinition](http://hl7.org/fhir/structuredefinition.html)
+- [ImplementationGuide](http://hl7.org/fhir/implementationguide.html)
+- [SearchParameter](http://hl7.org/fhir/searchparameter.html)
+- [OperationDefinition](http://hl7.org/fhir/operationdefinition.html)
+- [StructureMap](http://hl7.org/fhir/structuremap.html)
 
-> **ADHA-FHIR-PUB-0X** ADHA FHIR resources and supporting assets **SHALL** be published in a publicly available Australian Digital Health Agency
+FHIR conformance artefacts make use of [CodeSystem](http://hl7.org/fhir/codesystem.html), [ValueSet](http://hl7.org/fhir/valueset.html), and [ConceptMap](http://hl7.org/fhir/conceptmap.html) resources. ADHA FHIR resources of these types are published and managed by the [National Clinical Terminology Service](https://www.healthterminologies.gov.au/) 
 
 The GitHub repository for the Australian Digital Health Agency is https://github.com/AuDigitalHealth
 All FHIR materials relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) **SHALL** be held on a publicly available GitHub repository.
 Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site
 
 
-> **ADHA-FHIR-PUB-0X**
+ADHA FHIR publication and resource URIs **SHOULD** be resolvable URLs. The canonical URI and the resolved URL **MAY NOT** be the same.
 
 
+### Identification of FHIR artefacts
 
-## Versioning TBD Architecture Team w CI
+All FHIR conformance assets are identified by a globally unique URI. The ADHA FHIR conformance artefact URIs **SHALL** be in the form of:
 
-> **ADHA-FHIR-VER-0X** A FHIR endpoint URL **SHALL** include the HL7 FHIR version
+`[base]/[resource-type]/[id]`
+ 
+The base URI for ADHA FHIR artefacts is `http://ns.electronichealth.net.au/fhir`. The following table shows how URIs for each resource type may be constructed.
 
-**SHALL** follow the format: https://[baseurl]/FHIR/[fhir-version]
+<table class="list" width="100%">
+<tbody>
+  <tr>
+    <th>base</th>
+    <th>/Resource type</th>
+    <th>/id</th>
+  </tr>
+  <tr>
+        <td>http://ns.electronichealth.net.au/fhir</td>
+        <td>/CapabilityStatement</td>
+        <td>/[id]</td>
+  </tr>
+  <tr>
+        <td>http://ns.electronichealth.net.au/fhir</td>
+        <td>/StructureDefinition</td>
+        <td>/[id]</td>
+  </tr>
+  <tr>
+        <td>http://ns.electronichealth.net.au/fhir</td>
+        <td>/ImplementationGuide</td>
+        <td>/[id]</td>
+  </tr>
+  <tr>
+        <td>http://ns.electronichealth.net.au/fhir</td>
+        <td>/SearchParameter</td>
+        <td>/[id]</td>
+  </tr>
+  <tr>
+        <td>http://ns.electronichealth.net.au/fhir</td>
+        <td>/OperationDefinition</td>
+        <td>/[id]</td>
+  </tr>
+  <tr>
+        <td>http://ns.electronichealth.net.au/fhir</td>
+        <td>/StructureMap</td>
+        <td>/[id]</td>
+  </tr>
+ </tbody>
+</table>
+
+The [id] for an ImplementationGuide resource **SHALL** match the package id. 
+
+The [id] for a StructureDefinition is in the form of:
+
+`dh-[reource-type]-[use-case]-[major-version]`
+
+[major-version] is a non-negative integer, see the versioning section.
+
+### Versioning of FHIR artefacts
+
+The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a specification and not a software release.
+
+There is a single development version of the specification that undergoes cycles of development. At the completion of each cycle of development a new version of the specification is published. In version control terms, each published specification is a branch off the development trunk, which may then itself undergo further change as the Agency maintains the published specification (limited to necessary technical corrections or security alerts) and introduces new capabilities.
+
+Each version is identified by a string composed from 4 parts: major.minor.revision(-label):
+
+major	
+- Incremented when the Agency publishes an updated specification, e.g. a Trial Use or Approved version
+- Equivalence to a deprecated format such as CDA, is version 0
+- The first FHIR design is version 1.0.x
+
+minor	
+- Increments every time an updated release is made that contains one or more substantive changes (see below)
+- Resets to 0 any time the major version changes
+- Sometimes breaking changes may be made to particular features of the specification and characterised as minor changes. When this happens, the specification will clearly indicate the grounds on which this is considered a minor update
+
+revision	
+- Is set to 0 when a new release of FHIR is published
+- Increments when technical corrections and clarifications are made to an existing published specification
+- These changes are only made as technical corrections when it is agreed that they do not affect implementations
+
+label (optional)	
+- Labels are used to mark pre-releases of planned publications
+- Full publications have no label; the presence of a label automatically marks a version as work in progress
+- Common labels are draft[N], qa-preview[N] for formal review activities, snapshot[N], or trial-use[N]. Snapshot releases are used typically used to support a proof of concept, connectathon, or other implementation exploration activity. 
+- The label ci-build is used to mark the continuous integration build. This is a rolling version; changes may be made numerous times a day, generally driven by change requests or new development cycles
+
+Additional notes:
+
+- Changes to a formally published specification (except for minor publishing corrections, such as correcting broken external links) are only made via announced technical corrections
 
 
-> **ADHA-FHIR-VER-0X** A FHIR endpoint **SHALL** be versioned ....
-
-**SHALL** follow the format: https://[baseurl]/FHIR/[fhir-version]/[endpoint-version]
-
-
-> **ADHA-FHIR-VER-0X** ADHA FHIR resources **SHALL** be versioned 
-
-**SHALL** follow [semantic versioning standard](https://semver.org/).
-
-
-> **ADHA-FHIR-VER-0X** ADHA FHIR profiles **SHALL** URL include the major url
-
-**SHALL** follow the format: [baseurl]-[MAJOR] 
-
-
-## Packaging
-
-> **ADHA-FHIR-PACK-0X**
 
 
 

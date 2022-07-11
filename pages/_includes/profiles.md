@@ -618,7 +618,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/datatypes.html#ContactPoint">ContactPoint</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason.html">Data Absent Reason</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-data-absent-reason.html">Data Absent Reason</a></td>
         <td>data-absent-reason</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
         <td>Element</td>
