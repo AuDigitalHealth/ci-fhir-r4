@@ -35,30 +35,13 @@ The following core FHIR profiles are defined in this implementation guide. These
                     <tr class="frm-contents" height="80">
                         <td class="frm-null"/>
                         <td class="frm-null"/>
+                        <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core Provenance</li>  
-                                <li>ADHA Core Consent</li>  
-                            </ul>
-                        </td> 
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li>ADHA Core Composition</li>
-                                <li>ADHA Document Composition</li>
-                                <li>ADHA Continuity of Care Summary Composition</li>
-                                <li>ADHA Core DocumentReference</li>
+                                <li><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a></li>
                             </ul>
                         </td>  
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li>ADHA Document Bundle</li> 
-                                <li>ADHA Message Bundle</li> 
-                                <li>ADHA Payload Bundle</li> 
-                                <li>ADHA Core Bundle</li>
-                                <li>ADHA MHR Bundle</li>
-                                <li>ADHA Core MessageHeader</li>  
-                            </ul>
-                        </td> 
+                        <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break">
                         <td colspan="6"/>
@@ -93,16 +76,13 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li>ADHA Device Participant</li>
                                 <li><a href="StructureDefinition-dh-device-system-1.html">ADHA System Device</a></li>
                                 <li><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></li>
-
                             </ul>
                         </td>                          
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-encounter-core-1.html">ADHA Core Encounter</a></li>
-                                <li>ADHA Core EpisodeOfCare</li>
                                 <li><a href="StructureDefinition-dh-flag-core-1.html">ADHA Core Flag</a></li>
-                                <li>ADHA Core List</li>
                             </ul>
                         </td>  
                     </tr>
@@ -118,11 +98,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core AllergyIntolerance</li>
                                 <li><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></li>
                                 <li><a href="StructureDefinition-dh-procedure-core-1.html">ADHA Core Procedure</a></li>
-                                <li>ADHA Core FamilyMemberHistory</li>
-                                <li>ADHA Core DetectedIssue</li>
                             </ul>
                         </td>    
                         <td class="frm-set">
@@ -132,22 +109,17 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
                                 <li><a href="StructureDefinition-dh-media-core-1.html">ADHA Core Media</a></li>
-                                <li>ADHA Core QuestionnaireResponse</li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-medicationrequest-core-1.html">ADHA Core MedicationRequest</a></li>
-                                <li>ADHA Core MedicationAdministration</li>
-                                <li>ADHA Core MedicationDispense</li>
-                                <li>ADHA Core MedicationStatement</li>
                                 <li><a href="StructureDefinition-dh-medication-core-1.html">ADHA Core Medication</a></li>
                                 <li><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Core CarePlan</li>
                                 <li><a href="StructureDefinition-dh-servicerequest-core-1.html">ADHA Core ServiceRequest</a></li>
                             </ul>
                         </td>    
@@ -233,38 +205,11 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-set">
                         <ul class="frm-set">
-                                <li>Provenance for Generation of a List</li>  
                                 <li><a href="StructureDefinition-dh-consent-aodr-1.html">ADHA Record of Consent from Australian Organ Donor Register</a></li>
                             </ul>
                         </td> 
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li>ADHA Advance Care Directive Custodian Record Composition</li>
-                                <li>ADHA Advance Care Planning Composition</li>
-                                <li>ADHA Aged Care Transfer Summary Composition</li>
-                                <li>ADHA Discharge Summary Composition</li>
-                                <li>ADHA Event Summary Composition</li>
-                                 <li>ADHA Medicare Overview Composition</li>
-                                <li>ADHA National Cancer Screening Program Participation View</li>
-                                <li>ADHA Personal Health Notes Composition</li>
-                                <li>ADHA Personal Health Summary Composition</li>
-                                <li>ADHA Personal Observations Composition</li>
-                                <li>ADHA Pharmacist Shared Medicines List Composition</li>
-                                <li>ADHA Prescription and or Dispense History Composition</li>
-                                <li>ADHA Shared Health Summary Composition</li>
-                                <li>ADHA Shared Medicines List Composition</li>
-                                <li>ADHA Advance Care Planning DocumentReference</li>
-                            </ul>
-                        </td>  
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li>ADHA PDF Document Binary</li>
-                                <li>ADHA MHR CDA Document Package Binary</li>
-                                <li>ADHA MHR Document Bundle</li> 
-                                <li>ADHA MHR Message Bundle</li>
-                                <li>ADHA MHR Payload Bundle</li>   
-                            </ul>
-                        </td> 
+                        <td class="frm-null"/>
+                        <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break">
                         <td colspan="6"/>
@@ -280,36 +225,16 @@ FHIR profiles defined in this implementation guide for defined use cases.
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA MHR Patient</li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</a></li>
-                                <li>ADHA Authoring Care Agency Employee</li>
-                                <li>ADHA MHR RelatedPerson</li>
                                 <li><a href="StructureDefinition-dh-relatedperson-author-1.html">ADHA Authoring RelatedPerson</a></li>
                             </ul>
                         </td>  
                         <td class="frm-null"/>
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                            <li>ADHA Organization Contact</li>
-                            <li>ADHA Implantable Medical Device</li>
-                            </ul>
-                        </td>                          
+                        <td class="frm-null"/>                        
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Hospitalisation Encounter</li>
                                 <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>
-                                <li>ADHA Adverse Reactions List</li>
-                                <li>ADHA Allergies and Intolerances List</li>
-                                <li>ADHA Dispense List</li>
-                                <li>ADHA Immunisation History List</li>
-                                <li>ADHA Medical History List</li>
-                                <li>ADHA Medication Use List</li>
-                                <li>ADHA Practitioner Medicine Review List</li>
-                                <li>ADHA Problem List</li>
-                                <li>ADHA Procedure List</li>
-                                <li>ADHA Prescription and or Dispense History List</li>
-                                <li>ADHA Prescription List</li>
                             </ul>
                         </td>  
                     </tr>
@@ -329,25 +254,17 @@ FHIR profiles defined in this implementation guide for defined use cases.
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
-                                <li>ADHA Simple Observation</li>
-                                <li>ADHA Pathology Report</li>
-                                <li>ADHA Diagnostic Imaging DiagnosticReport</li>
-                                <li>ADHA National Cancer Screening Program Participation Observation</li>
                                 <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Prescription</li>
                                 <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
-                                <li>ADHA Dispense Record</li>
-                                <li>ADHA Record of Immunization</li>
                                 <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Referral</li>
                                 <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
                             </ul>
                         </td>    
@@ -443,7 +360,6 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-australianbusinessnumber.html">AU Australian Business Number</a></li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-australiancompanynumber.html">AU Australian Company Number</a></li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-australianregistredbodynumber.html">AU Australian Registered Body Number</a></li>
-                                <li>AU Australian Passport Number</li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-ahpraregistrationnumber.html">AU AHPRA Registration Number </a></li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-careagencyemployeeidentifier.html">AU Care Agency Employee Identifier</a></li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-cwlthseniorshealthcardnumber.html">AU Commonwealth Seniors Health Card Number</a></li>
@@ -560,12 +476,6 @@ The following extensions form part of this implementation guide:
         <td>patient-birthTime</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient.birthDate</a></td>
-    </tr>
-    <tr>
-        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-change-description.html">Change Description</a></td>
-        <td>change-description</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-        <td><a href="http://hl7.org/fhir/R4/list.html">List.entry</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-closing-the-gap-registration.html">Closing the Gap Registration</a></td>
