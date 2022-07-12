@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA Core Organization profile.**
+None defined.

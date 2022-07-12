@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA Core Substance profile.**
+None defined.

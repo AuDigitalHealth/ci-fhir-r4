@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA PBS Claim Item.**
+None defined.

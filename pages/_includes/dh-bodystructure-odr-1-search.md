@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA Organ or Tissue for Donation BodyStructure profile.**
+None defined.
