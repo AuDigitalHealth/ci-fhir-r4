@@ -4,8 +4,12 @@ The purpose of this profile is to provide a core representation of a body struct
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [BodyStructure](http://hl7.org/fhir/R4/bodystructure.html) that are supported. 
 
 This profile is designed to set a core BodyStructure for:
-* Insert ADHA API Endpoint
-* Insert ADHA API Endpoint
+* Recording or updating body structures
+* Reading body structures
+
+This profile is used by the following APIs:
+* [insert API endpoint](StructureDefinition-TBD-1.html)
+
 
 #### Profile specific guidance
 None.
