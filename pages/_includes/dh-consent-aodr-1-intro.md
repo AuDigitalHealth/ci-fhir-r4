@@ -7,9 +7,6 @@ This profile is designed to set a Consent standard for:
 * Query for a record of a record of consent from the Australian Organ Donor Register associated with a patient
 * Record or update a record of consent from the Australian Organ Donor Register associated with a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 * An individual's *decision not to be a donor* is represented as `Consent.provision.type` = "deny", see example [Australian Organ Donor Register Consent - Not willing to be a donor](Consent-aodr-01.html)

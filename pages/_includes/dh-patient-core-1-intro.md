@@ -7,9 +7,6 @@ This profile is designed to set a core Patient standard:
 * Querying for records associated with a patient
 * Record or update a record associated with a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace)

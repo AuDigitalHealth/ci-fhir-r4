@@ -7,9 +7,6 @@ This profile is designed to set an Observation standard for:
 * Query for diagnostic imaging related tests results for a patient
 * Record or update diagnostic imaging results belonging to a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches to “imaging” observations. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.

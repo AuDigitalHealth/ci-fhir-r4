@@ -9,9 +9,6 @@ This profile is designed to set a core MedicationRequest standard for:
 * Query medication orders or prescriptions for a patient (current and historical)
 * Record or update medication orders or prescriptions for a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - See the [Medicine information](guidance.html#medicine-information) section for guidance 

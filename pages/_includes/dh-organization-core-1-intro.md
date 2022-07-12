@@ -10,9 +10,6 @@ This profile is designed to set a core Organization standard for:
 * Recording or updating an organisation referenced by another resource
 * Reading organisations referenced by another resource
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.

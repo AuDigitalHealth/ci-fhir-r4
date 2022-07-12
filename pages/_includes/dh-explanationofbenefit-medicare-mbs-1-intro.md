@@ -7,9 +7,6 @@ This profile is designed to set an ExplanationOfBenefit standard for:
 * Query for a record of an MBS or DVA item claim associated with a patient
 * Record or update an MBS or DVA item claim associated with a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - In an exchange with the My Health Record system references to a ServiceRequest resource will be [contained](http://hl7.org/fhir/R4/references.html#contained).

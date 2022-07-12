@@ -10,9 +10,6 @@ This profile is designed to set a PractitionerRole standard for:
 * Recording or updating an authoring practitioner role referenced by another resource
 * Reading authoring practitioner roles referenced by another resource
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.

@@ -7,9 +7,6 @@ This profile is designed to set an Immunization standard for:
 * Query for a patient's immunisations as held on the Australian Immunisation Register
 * Record or update an immunisation record for a patient as held on the Australian Immunisation Register
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.

@@ -9,9 +9,6 @@ This profile is designed to set a core Immunization standard for:
 * Query for a patient's immunisations
 * Record or update an immunisation record for a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.

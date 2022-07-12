@@ -7,9 +7,6 @@ This profile is designed to set a core Media for:
 * Query for a generic observation for a patient
 * Record or update a generic observation belonging to a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - When generated during a diagnostic examination a Media resource may contain the same identifier in `Media.identifier` as in the order or report connecting the resources that are related to a single request fulfilment workflow
