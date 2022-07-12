@@ -1,4 +1,4 @@
-# {{ site.data.fhir.ig.title }}
+# {{ page.title }}
 <!-- <h3 style="color:#ff0000;">Draft for internal use</h3> -->
 {:.no_toc}
 
