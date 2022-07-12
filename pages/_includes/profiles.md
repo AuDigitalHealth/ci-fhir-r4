@@ -4,12 +4,7 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-<!-- <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p> -->
-
-
-## Profiles
-
-### ADHA Core FHIR Profiles 
+## ADHA core profiles 
 
 The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
@@ -177,9 +172,9 @@ The following core FHIR profiles are defined in this implementation guide. These
 </html>
 
 
-### ADHA Use Case FHIR Profiles 
+### ADHA use case profiles 
 
-FHIR profiles defined in this implementation guide for defined use cases.
+The following FHIR profiles are defined in this implementation guide to support one or more defined use cases.
 
 <html>
   <div id="segment-content" class="segment">
@@ -330,9 +325,9 @@ FHIR profiles defined in this implementation guide for defined use cases.
 
 
 
-### HL7 AU FHIR Profiles 
+## HL7 AU profiles 
 
-FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://hl7.org.au/fhir/4.0.0/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
+The following FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://hl7.org.au/fhir/4.0.0/index.html) form part of an Australian Digital Health Agency profile.
 
 <html>
   <div id="segment-content" class="segment">
