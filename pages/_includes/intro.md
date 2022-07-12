@@ -14,24 +14,24 @@ Wherever possible, material in this specification is based on existing standards
 
 ## Scope
 
-Release 1.0.0 of this guide is limited to the FHIR R4 conformance artefacts (i.e. [Profiles and Extensions](profiles.html)) that define the data structure of FHIR resources for the following record types: 
+Release 1.0.0 of this guide is limited to the FHIR conformance artefacts (i.e. [Profiles and Extensions](profiles.html)) that define the data structure of FHIR resources for the following record types: 
 - Australian Immunisation Register (AIR) information
 - Australian Organ Donor Register (AODR) information
 - Pharmaceutical Benefits Scheme (PBS) / Repatriation Pharmaceutical Benefits Scheme (RPBS) claims information
 - Medicare Benefits Schedule (MBS) / Department of Veterans' Affairs (DVA) claims information
 
-The FHIR R4 conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
+The FHIR conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
 
 The FHIR package contains the validation form (JSON + SCH) of the conformance artefacts for direct use in validation operations and example resource instances that demonstrate use cases and conformance requirements. This release of the implementation guide is scoped to the content of the Agency FHIR NPM package v1.0.0 and is provided to assist readers and users in understanding the content of that package.  
 
 
 ## How to read this guide
 
-This Guide is divided into several pages which are listed at the top of each page in the menu bar.
+This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
-- [Home](index.html): The home page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): These Conformance page describe the set of rules to claim conformance to this guide including the expectations for must support elements in the ADHA profiles.
-- [Guidance](guidance.html): The Guidance page provides guidance in using the profiles defined in this guide.
+- [Home](index.html): This page provides the introduction and scope for this guide.
+- [Conformance](conformance.html): This page describe the set of rules to claim conformance to this guide including the expectations for must support elements in the ADHA profiles.
+- [Guidance](guidance.html): This page provides guidance in using the profiles defined in this guide.
 - [Profiles and Extensions](profiles.html): This page lists the set of Profile and Extension that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarizes the supported search transactions for each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
 - [Downloads](downloads.html): This page provides links to downloadable artifacts including the Agency FHIR NPM package.
