@@ -96,7 +96,7 @@ A profile may include rules that:
 
 For example, the profile [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html) limits what is considered valid for the element `Immunization.patient` with the invariant "**inv-dh-imm-01:** At least reference or a valid identifier shall be present".
 
-Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html). 
+Typically ADHA profiles will extend the potential subelements by inheriting from an HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) from [AU Base Medication](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medication.html). 
 The full set of subelements is visible in the "Snapshot Table" which shows the subelements defined in this profile (shown in the "Differential Table) and the subelements inherited from a base profile.
 
 
@@ -130,7 +130,7 @@ For some complex types a meaningful, valid, value can be populated with only one
 - A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which data type or profile might be populated)
 
-A profile may slice an element that has a choice of data types or profiles to constrain the set of choices to be supported. For example, the profile [ADHA Core Patient](StructureDefinition-dh-patient-core-1.html) constrains the choices for `Patient.identifier` defined in [AU Base Patient](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-patient.html) to support Individual Healthcare Identifier (IHI), Medicare Card Number, Department of Veterans' Affairs (DVA) Number:
+A profile may slice an element that has a choice of data types or profiles to constrain the set of choices to be supported. For example, the profile [ADHA Core Patient](StructureDefinition-dh-patient-core-1.html) constrains the choices for `Patient.identifier` defined in [AU Base Patient](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-patient.html) to support Individual Healthcare Identifier (IHI), Medicare Card Number, Department of Veterans' Affairs (DVA) Number:
 - A sending system **SHALL** be capable of populating the element with a value that conforms to at least one of those three identifier choices, and **SHOULD** be capable of populating every choice for which the sending system might possess data
 - A receiving system **SHALL** be capable of meaningfully processing all supported identifier choices (since the receiver cannot anticipate which data type or profile might be populated) 
 - A persisting system **SHALL** be capable of persisting all supported identifier choices (since the persister cannot anticipate which data type or profile might be populated)
@@ -146,7 +146,7 @@ A resource may support two elements that are used to indicate a reason, e.g. `En
 
 *Must support elements with a choice of terminology bindings*
 
-A profile may slice an element that has a choice of terminology bindings to constrain the set of choices to be supported. For example, the profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) constrains the optional terminology choices for `Medication.code` defined in [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-medication.html) to support AMT and PBS:
+A profile may slice an element that has a choice of terminology bindings to constrain the set of choices to be supported. For example, the profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) constrains the optional terminology choices for `Medication.code` defined in [AU Base Medication](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medication.html) to support AMT and PBS:
 - A sending system that supplies a coded value **SHALL** be capable of populating the element with a value that conforms to at least one of those two terminology choices, and **SHOULD** be capable of populating every choice for which the sending system might possess data
   - In this profile, a coded value is optional, a sending system that does not have the capability to supply a coded value from a terminology may supply a text value 
 - A receiving system **SHALL** be capable of meaningfully processing all supported terminology choices (since the receiver cannot anticipate which data type or profile might be populated) 
