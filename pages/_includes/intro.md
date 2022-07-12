@@ -1,31 +1,43 @@
 # {{ site.data.fhir.ig.title }}
-<!-- <h3 style="color:#ff0000;">Draft for internal use</h3> -->
 {:.no_toc}
-
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
 <!-- end TOC -->
 
-<!--  <p style="color:#DAA520;">This material is part of the June 2022 QA Preview snapshot and is not approved for external use.</p>-->
+## Introduction
 
-<!-- <p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;"><b>June 2022 QA Preview</b><br>Release 1.0.0 is limited to the FHIR R4 conformance artefacts that define the controls on data persistence for the following record types: Australian Immunisation Register, Australian Organ Donor Register, PBS/RPBS Claim Information, MBS/DVA Claim Information.<br><br>The FHIR R4 conformance artefacts are a set of StructureDefinitions that define the FHIR structures required, the data element definitions, and their associated rules of usage including the use of extensions and terminology. These conformance artefacts will be published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. The FHIR package contains the validation form (JSON + SCH) of the conformance artefacts for direct use in validation operations and example resource instances that demonstrate use cases and conformance requirements.<br><br>While these artefacts and their package have been developed in conjunction with this Agency FHR implementation guide – publication and release of the implementation guide is not in scope. The implementation guide is provided to assist readers and users in understanding the Agency FHIR NPM package.</p>-->  
+The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. 
+
+Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
 
-This Australian Digital Health Agency Implementation Guide contains:
-* Australian Digital Health Agency FHIR [policy](policy.html): the policy for defining, using, maintaining, and implementing using FHIR version R4 within the Australian Digital Health Agency
-* Australian Digital Health Agency FHIR [guidance](guidance.html): guidance and clarification on how FHIR resources are used in accordance with the policy
-* Australian Digital Health Agency FHIR assets:
-  * [capability statements](conformance.html):
-  * [profiles](profiles.html): additional rules and constraints that build on and extend the HL7<sup>TM</sup> AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and HL7<sup>TM</sup> [FHIR<sup>&reg;</sup>, Release 4 (v{{ site.data.fhir.version }}) [HL7FHIR4]](#HL7FHIR4). 
-  * [extensions](extensions.html): that form part of an Australian Digital Health Agency FHIR Profiles.
-  * [terminology](terminology.html): 
-  * [maps](structuremaps.html): 
-  * [search parameters and operations](searchparams.html): 
-  * ....
-* Exchange standards:
-  * RESTful API A (FHIR) resource exchange framework. A set of core search parameters can be found on the resource profile pages (see Resource Index below)
-  * FHIR Messaging: A messaging exchange framework. The FHIR equivalent of HL7v2 messaging
-  * FHIR Documents: A document based exchange framework. The FHIR equivalent of HL7v3 CDA (clinical document architecture)
+## Scope
 
-This material forms the base standard for Australian Digital Health Agency FHIR R4 APIs. Each API will have additional conformance requirements, including FHIR profiles, extensions, and resources that are found in the API documentation in Australian Digital Health Agency API Catalogue[TBD](https://developer.digitalhealth.gov.au/taxonomy/term/361/all).
+Release 1.0.0 of this guide is limited to the FHIR R4 conformance artefacts (i.e. [Profiles and Extensions](profiles.html)) that define the data structure of FHIR resources for the following record types: 
+- Australian Immunisation Register (AIR) information
+- Australian Organ Donor Register (AODR) information
+- Pharmaceutical Benefits Scheme (PBS) / Repatriation Pharmaceutical Benefits Scheme (RPBS) claims information
+- Medicare Benefits Schedule (MBS) / Department of Veterans' Affairs (DVA) claims information
+
+The FHIR R4 conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
+
+The FHIR package contains the validation form (JSON + SCH) of the conformance artefacts for direct use in validation operations and example resource instances that demonstrate use cases and conformance requirements. This release of the implementation guide is scoped to the content of the Agency FHIR NPM package v1.0.0 and is provided to assist readers and users in understanding the content of that package.  
+
+
+## How to read this guide
+
+This Guide is divided into several pages which are listed at the top of each page in the menu bar.
+
+- [Home](index.html): The home page provides the introduction and scope for this guide.
+- [Conformance](conformance.html): These Conformance page describe the set of rules to claim conformance to this guide including the expectations for must support elements in the ADHA profiles.
+- [Guidance](guidance.html): The Guidance page provides guidance in using the profiles defined in this guide.
+- [Profiles and Extensions](profiles.html): This page lists the set of Profile and Extension that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarizes the supported search transactions for each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
+- [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
+- [Downloads](downloads.html): This page provides links to downloadable artifacts including the Agency FHIR NPM package.
+ 
+
+## Future of this guide
+
+
+TBD
