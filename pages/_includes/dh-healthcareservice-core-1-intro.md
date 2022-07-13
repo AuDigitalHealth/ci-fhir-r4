@@ -1,4 +1,3 @@
-#### ADHA Core HealthcareService
 The purpose of this profile is to define a core representation of a healthcare service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information an healthcare service is part of the context established for a set of healthcare-related information.
 

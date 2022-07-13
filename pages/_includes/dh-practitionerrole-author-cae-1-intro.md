@@ -1,4 +1,3 @@
-#### ADHA Authoring Care Agency Employee
 The purpose of this profile is to define a representation of a care agency employee (practitioner) acting as an author or observer, on behalf of an organisation, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information.
 
