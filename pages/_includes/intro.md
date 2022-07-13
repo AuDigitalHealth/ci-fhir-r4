@@ -5,6 +5,8 @@
 {:toc}
 <!-- end TOC -->
 
+ENSURE LATEST MASTER RESOURCES HAVE BEEN PUT INTO THIS BRANCH - AM WAITING ON MAKING THE CHANGES IN MASTER INCUDING STATUS CHANGE.
+
 ## Introduction
 
 The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. 
