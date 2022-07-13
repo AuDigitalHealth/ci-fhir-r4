@@ -45,6 +45,7 @@
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus"/>
       <mustSupport value="true"/>
+      <condition value="inv-dh-cond-05"/>
     </element>
     <element id="Condition.verificationStatus">
       <path value="Condition.verificationStatus"/>
@@ -74,6 +75,7 @@
     </element>
     <element id="Condition.bodySite">
       <path value="Condition.bodySite"/>
+      <condition value="inv-dh-cond-02"/>
       <constraint>
         <key value="inv-dh-cond-02"/>
         <severity value="error"/>
@@ -94,6 +96,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-cond-03"/>
       <constraint>
         <key value="inv-dh-cond-03"/>
         <severity value="error"/>
@@ -158,6 +161,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-cond-04"/>
       <constraint>
         <key value="inv-dh-cond-04"/>
         <severity value="error"/>
@@ -180,6 +184,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
+      <condition value="inv-dh-cond-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="Condition.note">

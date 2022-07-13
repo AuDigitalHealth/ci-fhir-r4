@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-path-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="ADHAObservationPathologyResult"/>
   <title value="ADHA Pathology Result Observation"/>
   <status value="draft"/>
@@ -70,6 +70,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-obs-01"/>
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
@@ -83,6 +84,7 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <short value="Time of specimen collection"/>
+      <condition value="inv-dh-obs-07"/>
       <constraint>
         <key value="inv-dh-obs-07"/>
         <severity value="error"/>
@@ -108,6 +110,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-obs-03"/>
       <constraint>
         <key value="inv-dh-obs-03"/>
         <severity value="error"/>
@@ -120,10 +123,12 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
+      <condition value="inv-dh-obs-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
+      <condition value="inv-dh-obs-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.interpretation">
@@ -207,10 +212,12 @@
     </element>
     <element id="Observation.component.value[x]">
       <path value="Observation.component.value[x]"/>
+      <condition value="inv-dh-obs-06"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.component.dataAbsentReason">
       <path value="Observation.component.dataAbsentReason"/>
+      <condition value="inv-dh-obs-06"/>
       <mustSupport value="true"/>
     </element>
   </differential>

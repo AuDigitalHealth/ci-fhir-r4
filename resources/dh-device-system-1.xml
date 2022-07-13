@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-system-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHADeviceSystem"/>
   <title value="ADHA System Device"/>
   <status value="draft"/>
@@ -79,6 +79,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-dev-01"/>
       <constraint>
         <key value="inv-dh-dev-01"/>
         <severity value="error"/>

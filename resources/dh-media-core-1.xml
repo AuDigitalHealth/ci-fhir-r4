@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-media-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHAMediaCore"/>
   <title value="ADHA Core Media"/>
   <status value="draft"/>
@@ -59,6 +59,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-media-01"/>
       <constraint>
         <key value="inv-dh-media-01"/>
         <severity value="error"/>
@@ -72,6 +73,7 @@
     <element id="Media.created">
       <path value="Media.created"/>
       <min value="1"/>
+      <condition value="inv-dh-media-03"/>
       <constraint>
         <key value="inv-dh-media-03"/>
         <severity value="error"/>
@@ -96,6 +98,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
       </type>
+      <condition value="inv-dh-media-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="Media.content">

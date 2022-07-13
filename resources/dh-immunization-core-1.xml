@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-immunization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHAImmunizationCore"/>
   <title value="ADHA Core Immunization"/>
   <status value="draft"/>
@@ -92,6 +92,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-imm-01"/>
       <constraint>
         <key value="inv-dh-imm-01"/>
         <severity value="error"/>
@@ -133,6 +134,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-imm-01"/>
       <constraint>
         <key value="inv-dh-imm-02"/>
         <severity value="error"/>

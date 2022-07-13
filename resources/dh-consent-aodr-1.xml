@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-consent-aodr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
-  <version value="0.2.2"/>
+  <version value="0.2.3"/>
   <name value="ADHAConsentAODR"/>
   <title value="ADHA Record of Consent from Australian Organ Donor Register"/>
   <status value="draft"/>
@@ -113,6 +113,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-cons-aodr-01"/>
       <constraint>
         <key value="inv-dh-cons-aodr-01"/>
         <severity value="error"/>
@@ -126,6 +127,7 @@
     <element id="Consent.dateTime">
       <path value="Consent.dateTime"/>
       <min value="1"/>
+      <condition value="inv-dh-cons-aodr-03"/>
       <constraint>
         <key value="inv-dh-cons-aodr-03"/>
         <severity value="error"/>
@@ -147,6 +149,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-cons-aodr-04"/>
       <constraint>
         <key value="inv-dh-cons-aodr-04"/>
         <severity value="error"/>
@@ -166,6 +169,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
       </type>
+      <condition value="inv-dh-cons-aodr-05"/>
       <constraint>
         <key value="inv-dh-cons-aodr-05"/>
         <severity value="error"/>
@@ -199,6 +203,7 @@
       <short value="Individual's decision about donation"/>
       <definition value="Individual's decision about donation."/>
       <min value="1"/>
+      <condition value="inv-dh-cons-aodr-02"/>
       <constraint>
         <key value="inv-dh-cons-aodr-02"/>
         <severity value="error"/>

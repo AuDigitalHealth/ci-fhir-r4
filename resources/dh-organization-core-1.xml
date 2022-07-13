@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-organization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="ADHAOrganizationCore"/>
   <title value="ADHA Core Organization"/>
   <status value="draft"/>
@@ -51,6 +51,7 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
+      <condition value="inv-dh-org-02"/>
       <constraint>
         <key value="inv-dh-org-02"/>
         <severity value="error"/>
@@ -126,6 +127,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-org-01"/>
       <mustSupport value="true"/>
     </element>
   </differential>

@@ -3,7 +3,7 @@
   <id value="dh-healthcareservice-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHAHealthcareServiceCore"/>
   <title value="ADHA Core HealthcareService"/>
   <status value="draft"/>
@@ -86,6 +86,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-heser-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="HealthcareService.category">
@@ -107,6 +108,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
       </type>
+      <condition value="inv-dh-heser-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="HealthcareService.name">

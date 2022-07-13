@@ -3,7 +3,7 @@
   <id value="dh-medicationadministration-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationadministration-core-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHAMedicationAdministrationCore"/>
   <title value="ADHA Core MedicationAdministration"/>
   <status value="draft"/>
@@ -94,6 +94,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-mad-01"/>
       <constraint>
         <key value="inv-dh-mad-01"/>
         <severity value="error"/>
@@ -147,6 +148,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-mad-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationAdministration.reasonCode">

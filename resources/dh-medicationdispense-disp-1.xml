@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medicationdispense-disp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAMedicationDispenseCore"/>
   <title value="ADHA Dispense Record"/>
   <status value="draft"/>
@@ -80,6 +80,7 @@
       <path value="MedicationDispense.medication[x]"/>
       <sliceName value="medicationReference"/>
       <min value="1"/>
+      <condition value="inv-dh-disp-02"/>
       <constraint>
         <key value="inv-dh-disp-02"/>
         <severity value="error"/>
@@ -115,6 +116,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"
         />
       </type>
+      <condition value="inv-dh-disp-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationDispense.daysSupply">

@@ -3,7 +3,7 @@
   <id value="dh-allergyintolerance-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHAAllergyIntoleranceCore"/>
   <title value="ADHA Core AllergyIntolerance"/>
   <status value="draft"/>
@@ -72,6 +72,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-ait-02"/>
       <constraint>
         <key value="inv-dh-ait-02"/>
         <severity value="error"/>
@@ -120,6 +121,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
+      <condition value="inv-dh-ait-02"/>
       <constraint>
         <key value="inv-dh-ait-03"/>
         <severity value="error"/>
@@ -142,6 +144,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"
         />
       </type>
+      <condition value="inv-dh-ait-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="AllergyIntolerance.note">

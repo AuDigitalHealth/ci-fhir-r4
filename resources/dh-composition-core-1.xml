@@ -53,6 +53,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-cmp-01"/>
       <constraint>
         <key value="inv-dh-cmp-01"/>
         <severity value="error"/>
@@ -74,6 +75,7 @@
     </element>
     <element id="Composition.date">
       <path value="Composition.date"/>
+      <condition value="inv-dh-cmp-03"/>
       <constraint>
         <key value="inv-dh-cmp-03"/>
         <severity value="error"/>
@@ -100,6 +102,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-cmp-02"/>
       <constraint>
         <key value="inv-dh-cmp-02"/>
         <severity value="error"/>

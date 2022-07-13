@@ -3,7 +3,7 @@
   <id value="dh-medicationstatement-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHAMedicationStatementCore"/>
   <title value="ADHA Core MedicationStatement"/>
   <status value="draft"/>
@@ -118,6 +118,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-mst-02"/>
       <constraint>
         <key value="inv-dh-mst-02"/>
         <severity value="error"/>
@@ -157,6 +158,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
+      <condition value="inv-dh-mst-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationStatement.reasonCode">
@@ -169,8 +171,9 @@
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage"/>
+      <condition value="inv-dh-mst-03"/>
       <constraint>
-        <key value="inv-dh-mst-01"/>
+        <key value="inv-dh-mst-03"/>
         <severity value="error"/>
         <human value="If present, the dosage shall at least have text or patient instructions"/>
         <expression value="text.exists() or patientInstruction.exists()"/>

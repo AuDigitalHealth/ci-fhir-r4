@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-specimen-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-  <version value="0.1.4"/>
+  <version value="0.1.5"/>
   <name value="ADHASpecimenCore"/>
   <title value="ADHA Core Specimen"/>
   <status value="draft"/>
@@ -45,14 +45,17 @@
     </element>
     <element id="Specimen.identifier">
       <path value="Specimen.identifier"/>
+      <condition value="inv-dh-spc-04"/>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.accessionIdentifier">
       <path value="Specimen.accessionIdentifier"/>
+      <condition value="inv-dh-spc-04"/>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.type">
       <path value="Specimen.type"/>
+      <condition value="inv-dh-spc-04"/>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.subject">
@@ -63,6 +66,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-spc-01"/>
       <constraint>
         <key value="inv-dh-spc-01"/>
         <severity value="error"/>
@@ -106,6 +110,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"
         />
       </type>
+      <condition value="inv-dh-spc-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.collection.collected[x]">
@@ -115,10 +120,12 @@
     </element>
     <element id="Specimen.collection.method">
       <path value="Specimen.collection.method"/>
+      <condition value="inv-dh-spc-04"/>
       <mustSupport value="true"/>
     </element>
     <element id="Specimen.collection.bodySite">
       <path value="Specimen.collection.bodySite"/>
+      <condition value="inv-dh-spc-03"/>
       <constraint>
         <key value="inv-dh-spc-03"/>
         <severity value="error"/>

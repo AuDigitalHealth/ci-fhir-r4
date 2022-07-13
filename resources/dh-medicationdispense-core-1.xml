@@ -3,7 +3,7 @@
   <id value="dh-medicationdispense-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="ADHAMedicationDispenseCore"/>
   <title value="ADHA Core MedicationDispense"/>
   <status value="draft"/>
@@ -119,6 +119,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-medisp-01"/>
       <constraint>
         <key value="inv-dh-medisp-01"/>
         <severity value="error"/>
@@ -141,7 +142,7 @@
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer"/>
       <constraint>
-        <key value="inv-dh-mad-02"/>
+        <key value="inv-dh-medisp-02"/>
         <severity value="error"/>
         <human value="The actor shall at least have a reference, an identifier or a display"/>
         <expression
@@ -173,6 +174,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-medisp-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationDispense.location">

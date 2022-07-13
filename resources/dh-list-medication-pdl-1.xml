@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-medication-pdl-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-pdl-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAListPrescriptionDispense"/>
   <title value="ADHA Prescription and or Dispense History List"/>
   <status value="draft" />
@@ -46,6 +46,8 @@
     </element>
     <element id="List.code">
       <path value="List.code" />
+      <condition value="inv-dh-pdl-01"/>
+      <condition value="inv-dh-pdl-02"/>
       <binding>
         <strength value="required" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1" />

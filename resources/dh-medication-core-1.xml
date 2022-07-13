@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medication-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHAMedicationCore"/>
   <title value="ADHA Core Medication"/>
   <status value="draft"/>
@@ -103,6 +103,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-med-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="Medication.form">
@@ -139,6 +140,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
+      <condition value="inv-dh-med-02"/>
     </element>
     <element id="Medication.ingredient.isActive">
       <path value="Medication.ingredient.isActive"/>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-location-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHALocationCore"/>
   <title value="ADHA Core Location"/>
   <status value="draft" />
@@ -45,7 +45,7 @@
         <key value="inv-dh-loc-03" />
         <severity value="error" />
         <human value="If present, a location this location is a part of shall at least have a reference, an identifier or a display" />
-        <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <expression value="partOf.exists() implies partOf.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
     </element>
@@ -53,6 +53,7 @@
       <path value="Location.identifier"/>
       <short value="Unique code or number identifying the location to its users" />
       <definition value="Unique code or number identifying the location to its users." />
+      <condition value="inv-dh-loc-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.name">
@@ -69,10 +70,12 @@
     </element>
     <element id="Location.type">
       <path value="Location.type"/>
+      <condition value="inv-dh-loc-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.address">
       <path value="Location.address" />
+      <condition value="inv-dh-loc-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.physicalType">
@@ -85,6 +88,7 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
+      <condition value="inv-dh-loc-02"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.partOf">
@@ -93,6 +97,7 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
+      <condition value="inv-dh-loc-03"/>
       <mustSupport value="true" />
     </element>
   </differential>

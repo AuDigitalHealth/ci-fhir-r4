@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHAServiceRequestCore"/>
   <title value="ADHA Core ServiceRequest"/>
   <status value="draft"/>
@@ -88,6 +88,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-srr-02"/>
       <constraint>
         <key value="inv-dh-srr-02"/>
         <severity value="error"/>
@@ -127,6 +128,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
       </type>
+      <condition value="inv-dh-srr-02"/>
       <constraint>
         <key value="inv-dh-srr-03"/>
         <severity value="error"/>
@@ -162,6 +164,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
+      <condition value="inv-dh-srr-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.reasonCode">

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-device-participant-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
-  <version value="0.0.2" />
+  <version value="0.0.3" />
   <name value="ADHADeviceParticipant" />
   <title value="ADHA Participant Device" />
   <status value="draft" />
@@ -65,6 +65,7 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
+      <condition value="inv-dh-dev-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Device.location">
@@ -73,6 +74,7 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
+      <condition value="inv-dh-dev-02"/>
       <mustSupport value="true" />
     </element>
   </differential>
