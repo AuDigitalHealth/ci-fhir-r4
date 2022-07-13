@@ -1,4 +1,3 @@
-#### ADHA System Device
 The purpose of this profile is to define a representation of a device as a system in the role of an author or exchange target or source for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information a system device is part of the context established for a set of healthcare-related information or it forms part of a target or source for the exchange.
 

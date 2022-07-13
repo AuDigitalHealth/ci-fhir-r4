@@ -1,4 +1,3 @@
-#### ADHA Authoring PractitionerRole
 The purpose of this profile is to define a core representation of a practitioner acting as an author or observer in a healthcare role, on behalf of an organisation, that is for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information.
 

@@ -1,4 +1,3 @@
-#### ADHA Imaging Result Observation
 The purpose of this profile is to represent a diagnostic imaging observation issued by the diagnostic service provider for the electronic exchange of imaging examination observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. The observation may represent the result of a simple examination or study series.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 

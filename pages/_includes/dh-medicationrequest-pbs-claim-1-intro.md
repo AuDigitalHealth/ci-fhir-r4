@@ -1,4 +1,3 @@
-#### ADHA PBS Claim Item
 The purpose of this profile is to define a representation of the prescription item claimed in a claim against the Pharmaceutical Benefits Schedule (PBS) or Repatriation Pharmaceutical Benefits Scheme (RPBS) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile is designed to set a MedicationRequest standard for:
