@@ -19,8 +19,9 @@ active: profiles
   <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
 
-<h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">{{site.data.structuredefinitions.{{[id]}}.status | capitalize}}]</h3></a>
-</a>
+<h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html"><img src="target.png"/></a></h3>
+
+<a name="introduction"> </a>
 
 {% capture my-include %}{% include {{[id]}}-intro.md %}{% endcapture %}{{ my-include | markdownify }}
 
