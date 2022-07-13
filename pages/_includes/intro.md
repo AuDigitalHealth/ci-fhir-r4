@@ -39,5 +39,6 @@ This guide is divided into several pages which are listed at the top of each pag
 
 ## Future of this guide
 
+The content published in this guide are designed to be a base set of requirements for FHIR implementation. 
 
-TBD
+This guide undergoes cycles of development to introduce new capabilities such as new record types, implementation contexts, or interactions. At the completion of each cycle of development a new version of this guide is published.
