@@ -16,12 +16,12 @@
             <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
             <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
           </ul>
+
+<h4>{{{[type]}}: {{[title]}} - Examples <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}-examples.html"><img src="target.png"/></a></h4>
           
-          <h4>{{[type]}}-{{[id]}} - Examples <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}-definitions.html#D.4.1.4"><img src="target.png"/></a></h4>
+<p>Examples includes links to example resources that conform to the profile or extension and that support implementation by demonstrating one or more usage scenarios supported by this implementation guide.</p>
           
-          <p>Examples includes links to example resources that conform to the profile or extension and that support implementation by demonstrating one or more usage scenarios supported by this implementation guide.</p>
-          
-          <blockquote>Most examples will include the profile in the meta.profile property. Resources from production systems may not include this property, and are not required to. They are included so that example resources will validate against the intended profiles, and highlight to the reader the example is demonstrating a specific profile.</blockquote>
+<blockquote>Most examples will include the profile in the meta.profile property. Resources from production systems may not include this property, and are not required to. They are included so that example resources will validate against the intended profiles, and highlight to the reader the example is demonstrating a specific profile.</blockquote>
           
           
          {% capture my-include %}{% include {{[id]}}-examples.md %}{% endcapture %}{{ my-include | markdownify }}
