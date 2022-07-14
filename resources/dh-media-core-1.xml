@@ -32,6 +32,7 @@
         <severity value="error"/>
         <human value="If present, an operator shall at least have a reference, an identifier or a display"/>
         <expression value="operator.exists() implies operator.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:operator)) or exists(f:operator/f:reference) or exists(f:operator/f:identifier) or exists(f:operator/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
       </constraint>
     </element>

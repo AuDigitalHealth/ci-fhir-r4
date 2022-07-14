@@ -39,6 +39,7 @@
         <severity value="error" />
         <human value="If present, the managing organization shall at least have a reference, an identifier or a display" />
         <expression value="managingOrganization.exists() implies managingOrganization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <xpath value="not(exists(f:managingOrganization)) or exists(f:managingOrganization/f:reference) or exists(f:managingOrganization/f:identifier) or exists(f:managingOrganization/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
       <constraint>
@@ -46,6 +47,7 @@
         <severity value="error" />
         <human value="If present, a location this location is a part of shall at least have a reference, an identifier or a display" />
         <expression value="partOf.exists() implies partOf.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <xpath value="not(exists(f:partOf)) or exists(f:partOf/f:reference) or exists(f:partOf/f:identifier) or exists(f:partOf/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
     </element>

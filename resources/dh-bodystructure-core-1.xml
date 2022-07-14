@@ -56,6 +56,7 @@
         <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
         <expression
           value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <xpath value="not(exists(f:coding/f:system)) or exists(f:coding/f:system[@value='http://snomed.info/sct'])"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
       </constraint>
@@ -74,6 +75,7 @@
         <human value="If a coded location qualifier is provided, at least one code shall be from SNOMED CT"/>
         <expression
           value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <xpath value="not(exists(f:coding/f:system)) or exists(f:coding/f:system[@value='http://snomed.info/sct'])"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1"/>
       </constraint>

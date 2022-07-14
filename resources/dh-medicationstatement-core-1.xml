@@ -35,6 +35,7 @@
           value="If present, an information source shall at least have a reference, an identifier or a display"/>
         <expression
           value="informationSource.exists() implies informationSource.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:informationSource)) or exists(f:informationSource/f:reference) or exists(f:informationSource/f:identifier) or exists(f:informationSource/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"
         />

@@ -127,6 +127,7 @@
           value="If present, an actor shall at least have a reference, an identifier or a display"/>
         <expression
           value="actor.exists() implies actor.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:actor)) or exists(f:actor/f:reference) or exists(f:actor/f:identifier) or exists(f:actor/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationadministration-core-1"
         />

@@ -34,6 +34,7 @@
           value="If present, the organization of which this organization forms a part shall at least have a reference, an identifier or a display"/>
         <expression
           value="partOf.exists() implies (partOf.reference.exists() or partOf.identifier.exists() or partOf.display.exists())"/>
+        <xpath value="not(exists(f:partOf)) or exists(f:partOf/f:reference) or exists(f:partOf/f:identifier) or exists(f:partOf/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />

@@ -35,6 +35,7 @@
           value="If present, an asserter shall at least have a reference, an identifier or a display"/>
         <expression
           value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:asserter)) or exists(f:asserter/f:reference) or exists(f:asserter/f:identifier) or exists(f:asserter/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />

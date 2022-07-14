@@ -35,6 +35,7 @@
           value="If present, a custodian shall at least have a reference or a valid identifier"/>
         <expression
           value="custodian.exists() implies custodian.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:custodian)) or exists(f:custodian/f:reference) or exists(f:custodian/f:identifier) or exists(f:custodian/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"
         />

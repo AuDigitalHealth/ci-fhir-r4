@@ -34,6 +34,7 @@
         <severity value="error"/>
         <human value="If present, the authorising prescription shall at least have a reference or a valid identifier"/>
         <expression value="authorizingPrescription.exists() implies authorizingPrescription.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:authorizingPrescription)) or exists(f:authorizingPrescription/f:reference) or exists(f:authorizingPrescription/f:identifier) or exists(f:authorizingPrescription/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationdispense-disp-1"/>
       </constraint>
     </element>

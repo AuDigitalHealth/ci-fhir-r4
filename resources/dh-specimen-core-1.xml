@@ -97,6 +97,7 @@
           value="If present, the collector shall at least have a reference or a valid identifier"/>
         <expression
           value="collector.exists() implies collector.reference.exists() or collector.identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="not(exists(f:collector)) or exists(f:collector/f:reference) or exists(f:collector/f:identifier) or exists(f:collector/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
       </constraint>
@@ -132,6 +133,7 @@
         <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
         <expression
           value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <xpath value="not(exists(f:coding/f:system)) or exists(f:coding/f:system[@value='http://snomed.info/sct'])"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
       </constraint>

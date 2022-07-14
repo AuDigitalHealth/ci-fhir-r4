@@ -30,6 +30,7 @@
         <severity value="error"/>
         <human value="If present, an owner shall at least have a reference or display or a valid identifier"/>
         <expression value="owner.exists() implies owner.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:owner)) or exists(f:owner/f:reference) or exists(f:owner/f:identifier) or exists(f:owner/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
       </constraint>
       <constraint>
@@ -37,6 +38,7 @@
         <severity value="error"/>
         <human value="If present, a location shall at least have a reference or display or a valid identifier"/>
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:location)) or exists(f:location/f:reference) or exists(f:location/f:identifier) or exists(f:location/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-participant-1" />
       </constraint>
     </element>

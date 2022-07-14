@@ -209,6 +209,7 @@
         <severity value="error"/>
         <human value="Specific provisions shall be specified if the individual is willing to donate, otherwise prohibited"/>
         <expression value="provision.exists() xor (type='deny')"/>
+        <xpath value="not(f:provision) or exists(f:type/@value = 'deny')"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
       </constraint>
       <mustSupport value="true"/>

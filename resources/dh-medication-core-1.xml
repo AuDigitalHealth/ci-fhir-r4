@@ -34,6 +34,7 @@
           value="If present, a manufacturer shall at least have a reference, an identifier or a display"/>
         <expression
           value="manufacturer.exists() implies manufacturer.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:manufacturer)) or exists(f:manufacturer/f:reference) or exists(f:manufacturer/f:identifier) or exists(f:manufacturer/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </constraint>

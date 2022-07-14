@@ -34,6 +34,7 @@
           value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
         <expression
           value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:informationRecipient)) or exists(f:informationRecipient/f:reference) or exists(f:informationRecipient/f:identifier) or exists(f:informationRecipient/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
         />

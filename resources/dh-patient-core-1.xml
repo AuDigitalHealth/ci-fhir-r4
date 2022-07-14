@@ -33,6 +33,7 @@
         <severity value="error"/>
         <human value="At least one patient identifier shall be valid"/>
         <expression value="identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:identifier/f:system)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"
         />
       </constraint>
@@ -53,6 +54,7 @@
           value="If present, a general practitioner shall at least have a reference, an identifier or a display"/>
         <expression
           value="generalPractitioner.exists() implies generalPractitioner.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:generalPractitioner)) or exists(f:generalPractitioner/f:reference) or exists(f:generalPractitioner/f:identifier) or exists(f:generalPractitioner/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"
         />
       </constraint>
