@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medicationrequest-pbs-claim-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.4"/>
   <name value="ADHAMedicationRequestPBSClaim"/>
   <title value="ADHA PBS Claim Item"/>
   <status value="draft" />
@@ -42,14 +42,6 @@
       <fixedCode value="order"/>
       <mustSupport value="true"/>
     </element>
-    <!--<element id="MedicationRequest.medication[x]">
-      <path value="MedicationRequest.medication[x]"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-      </type>
-      
-    </element>-->
     <element id="MedicationRequest.medication[x]:medicationReference">
       <path value="MedicationRequest.medication[x]"/>
       <sliceName value="medicationReference"/>
@@ -58,6 +50,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
+      <condition value="inv-dh-pbs-03"/>
       <constraint>
         <key value="inv-dh-pbs-03"/>
         <severity value="error"/>
@@ -73,11 +66,13 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1" />
       </type>
+      <condition value="inv-dh-medreq-01"/>
       <constraint>
         <key value="inv-dh-medreq-01"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -87,15 +82,6 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
-    <!--<element id="MedicationRequest.requester">
-      <path value="MedicationRequest.requester"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
-      </type>
-      <mustSupport value="true"/>
-    </element>-->
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest"/>
       <min value="1"/>

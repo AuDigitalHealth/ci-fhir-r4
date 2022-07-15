@@ -3,7 +3,7 @@
   <id value="dh-healthcareservice-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHAHealthcareServiceCore"/>
   <title value="ADHA Core HealthcareService"/>
   <status value="draft"/>
@@ -36,6 +36,7 @@
           value="If present, the organization providing the service shall at least have a reference, an identifier or a display"/>
         <expression
           value="providedBy.exists() implies providedBy.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:providedBy)) or exists(f:providedBy/f:reference) or exists(f:providedBy/f:identifier) or exists(f:providedBy/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"
         />
@@ -47,6 +48,7 @@
           value="If present, a location shall at least have a reference, an identifier or a display"/>
         <expression
           value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:location)) or exists(f:location/f:reference) or exists(f:location/f:identifier) or exists(f:location/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"
         />
@@ -86,6 +88,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-heser-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="HealthcareService.category">
@@ -107,6 +110,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
       </type>
+      <condition value="inv-dh-heser-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="HealthcareService.name">

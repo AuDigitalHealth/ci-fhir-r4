@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-media-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.4"/>
   <name value="ADHAMediaCore"/>
   <title value="ADHA Core Media"/>
   <status value="draft"/>
@@ -32,6 +32,7 @@
         <severity value="error"/>
         <human value="If present, an operator shall at least have a reference, an identifier or a display"/>
         <expression value="operator.exists() implies operator.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:operator)) or exists(f:operator/f:reference) or exists(f:operator/f:identifier) or exists(f:operator/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
       </constraint>
     </element>
@@ -59,11 +60,13 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-media-01"/>
       <constraint>
         <key value="inv-dh-media-01"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -71,11 +74,13 @@
     <element id="Media.created">
       <path value="Media.created"/>
       <min value="1"/>
+      <condition value="inv-dh-media-03"/>
       <constraint>
         <key value="inv-dh-media-03"/>
         <severity value="error"/>
         <human value="Date shall be at least to day"/>
         <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -94,6 +99,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
       </type>
+      <condition value="inv-dh-media-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="Media.content">

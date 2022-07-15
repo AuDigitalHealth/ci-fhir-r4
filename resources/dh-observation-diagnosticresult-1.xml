@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
-  <version value="0.1.5"/>
+  <version value="0.1.7"/>
   <name value="ADHAObservationDiagnosticResult"/>
   <title value="ADHA Diagnostic Result Observation"/>
   <status value="draft"/>
@@ -33,6 +33,7 @@
         <severity value="error"/>
         <human value="If there is no component or hasMember element then at least value or data absent reason shall be present"/>
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
+        <xpath value="exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
     </element>
@@ -68,11 +69,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-obs-01"/>
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -80,11 +83,13 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <min value="1"/>
+      <condition value="inv-dh-obs-07"/>
       <constraint>
         <key value="inv-dh-obs-07"/>
         <severity value="error"/>
         <human value="Date shall be at least to day"/>
         <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -104,21 +109,25 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-obs-03"/>
       <constraint>
         <key value="inv-dh-obs-03"/>
         <severity value="error"/>
         <human value="At least reference or display or a valid identifier shall be present"/>
         <expression value="reference.exists() or display.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:display) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
+      <condition value="inv-dh-obs-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
+      <condition value="inv-dh-obs-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.interpretation">
@@ -131,11 +140,13 @@
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite"/>
+      <condition value="inv-dh-obs-04"/>
       <constraint>
         <key value="inv-dh-obs-04"/>
         <severity value="error"/>
         <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
         <expression value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <xpath value="not(exists(f:coding/f:system)) or exists(f:coding/f:system[@value='http://snomed.info/sct'])"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -202,10 +213,12 @@
     </element>
     <element id="Observation.component.value[x]">
       <path value="Observation.component.value[x]"/>
+      <condition value="inv-dh-obs-06"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.component.dataAbsentReason">
       <path value="Observation.component.dataAbsentReason"/>
+      <condition value="inv-dh-obs-06"/>
       <mustSupport value="true"/>
     </element>
   </differential>

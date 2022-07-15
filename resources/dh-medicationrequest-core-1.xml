@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.7"/>
   <name value="ADHAMedicationRequestCore"/>
   <title value="ADHA Core MedicationRequest"/>
   <status value="draft"/>
@@ -102,11 +102,13 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-medreq-01"/>
       <constraint>
         <key value="inv-dh-medreq-01"/>
         <severity value="error"/>
         <human value="At least reference or a valid identifier shall be present"/>
         <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -123,11 +125,13 @@
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn"/>
       <min value="1"/>
+      <condition value="inv-dh-medreq-03"/>
       <constraint>
         <key value="inv-dh-medreq-03"/>
         <severity value="error"/>
         <human value="Date shall be at least to day"/>
         <expression value="toString().length() &gt;= 10"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -147,6 +151,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-medreq-02"/>
       <constraint>
         <key value="inv-dh-medreq-02"/>
         <severity value="error"/>

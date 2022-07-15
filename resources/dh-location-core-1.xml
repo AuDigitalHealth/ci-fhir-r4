@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-location-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.4"/>
   <name value="ADHALocationCore"/>
   <title value="ADHA Core Location"/>
   <status value="draft" />
@@ -31,6 +31,7 @@
         <severity value="error" />
         <human value="The location shall at least have a valid identifier or address or type" />
         <expression value="address.exists() or type.exists() or identifier.where(system.count() + value.count() &gt;1).exists()" />
+        <xpath value="exists(f:address) or exists(f:type) or exists(f:identifier)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
       <constraint>
@@ -38,13 +39,15 @@
         <severity value="error" />
         <human value="If present, the managing organization shall at least have a reference, an identifier or a display" />
         <expression value="managingOrganization.exists() implies managingOrganization.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <xpath value="not(exists(f:managingOrganization)) or exists(f:managingOrganization/f:reference) or exists(f:managingOrganization/f:identifier) or exists(f:managingOrganization/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
       <constraint>
         <key value="inv-dh-loc-03" />
         <severity value="error" />
         <human value="If present, a location this location is a part of shall at least have a reference, an identifier or a display" />
-        <expression value="location.exists() implies location.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <expression value="partOf.exists() implies partOf.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())" />
+        <xpath value="not(exists(f:partOf)) or exists(f:partOf/f:reference) or exists(f:partOf/f:identifier) or exists(f:partOf/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </constraint>
     </element>
@@ -52,6 +55,7 @@
       <path value="Location.identifier"/>
       <short value="Unique code or number identifying the location to its users" />
       <definition value="Unique code or number identifying the location to its users." />
+      <condition value="inv-dh-loc-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.name">
@@ -68,10 +72,12 @@
     </element>
     <element id="Location.type">
       <path value="Location.type"/>
+      <condition value="inv-dh-loc-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.address">
       <path value="Location.address" />
+      <condition value="inv-dh-loc-01"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.physicalType">
@@ -84,6 +90,7 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1" />
       </type>
+      <condition value="inv-dh-loc-02"/>
       <mustSupport value="true" />
     </element>
     <element id="Location.partOf">
@@ -92,6 +99,7 @@
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1" />
       </type>
+      <condition value="inv-dh-loc-03"/>
       <mustSupport value="true" />
     </element>
   </differential>
