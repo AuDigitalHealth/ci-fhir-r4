@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-sml-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHACompositionSML"/>
   <title value="ADHA Shared Medicines List Composition"/>
   <status value="draft"/>
@@ -126,9 +126,12 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />
       </type>
+      <condition value="inv-dh-sml-01"/>
+      <condition value="inv-dh-sml-02"/>
     </element>
     <element id="Composition.section:allergies.emptyReason">
       <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-sml-01"/>
       <binding>
         <strength value="required"/>
         <valueSet
@@ -144,22 +147,12 @@
         value="A list of medicines at a point in time that describes medicine item use for an individual. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
       <min value="1"/>
       <constraint>
-        <key value="inv-dh-sml-03"/>
-        <severity value="error"/>
-        <human
-          value="This section shall not contain a list of medicines and an assertion of no relevant finding"/>
-        <expression
-          value="entry.resolve().where($this is List).exists() xor entry.resolve().where($this is Observation ).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
-      </constraint>
-      <constraint>
         <key value="inv-dh-sml-04"/>
         <severity value="error"/>
         <human
-          value="At most one assertion of no relevant finding shall be present and it shall assert no known current medications"/>
+          value="If an assertion of no known current medications is provided, no other entry shall be present"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
+          value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) = '1200661000168107')"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
       </constraint>
@@ -190,9 +183,14 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
+      <condition value="inv-dh-sml-01"/>
+      <condition value="inv-dh-sml-02"/>
+      <condition value="inv-dh-sml-04"/>
+      <condition value="inv-dh-sml-05"/>
     </element>
     <element id="Composition.section:medicinesList.emptyReason">
       <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-sml-01"/>
       <binding>
         <strength value="required"/>
         <valueSet

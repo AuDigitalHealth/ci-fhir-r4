@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ds-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHACompositionDS"/>
   <title value="ADHA Discharge Summary Composition"/>
   <status value="draft"/>
@@ -105,6 +105,7 @@
     </element>
     <element id="Composition.section.emptyReason">
       <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
       <binding>
         <strength value="required"/>
         <valueSet
@@ -142,6 +143,8 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-acp-1"
         />
       </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
     </element>
     <element id="Composition.section:allergies">
       <path value="Composition.section"/>
@@ -168,6 +171,8 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />
       </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
     </element>
     <element id="Composition.section:dischargeMedicines">
       <path value="Composition.section"/>
@@ -177,21 +182,12 @@
         value="Information on the medicines that the patient is intended to take (or stop) after discharge. This may be a list, and the source may be indicated, for example, from a pharmacy system versus from the patient."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-ds-03"/>
-        <severity value="error"/>
-        <human value="This section shall not contain a mix of resource types"/>
-        <expression
-          value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-      </constraint>
-      <constraint>
         <key value="inv-dh-ds-04"/>
         <severity value="error"/>
         <human
           value="At most one assertion of no relevant finding shall be present"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2"/>
+          value="entry.resolve().where($this is Observation).exists() implies entry.count() &lt; 2"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
@@ -199,9 +195,9 @@
         <key value="inv-dh-ds-05"/>
         <severity value="error"/>
         <human
-          value="At most one list shall be present"/>
+          value="If a list is provided, no other entry shall be present"/>
         <expression
-          value="entry.resolve().where($this is List).exists() implies (entry.resolve().where($this is List).count() &lt; 2"/>
+          value="entry.resolve().where($this is List).exists() implies entry.resolve().where($this is List).count() &lt; 2"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
@@ -224,6 +220,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
+      <condition value="inv-dh-ds-04"/>
+      <condition value="inv-dh-ds-05"/>
     </element>
     <element id="Composition.section:admissionMedicines">
       <path value="Composition.section"/>
@@ -233,21 +233,12 @@
         value="Information on the patient's medicine item use on admission."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-ds-07"/>
-        <severity value="error"/>
-        <human value="This section shall not contain a mix of resource types"/>
-        <expression
-          value="entry.resolve().where($this is MedicationStatement).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-      </constraint>
-      <constraint>
         <key value="inv-dh-ds-08"/>
         <severity value="error"/>
         <human
-          value="At most one assertion of no relevant finding shall be present and it shall assert no known current medications"/>
+          value="If an assertion of no known current medications is provided, no other entry shall be present"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation.value and Observation.value.coding.code = '1200661000168107').exists())"/>
+          value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) = '1200661000168107')"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
@@ -255,7 +246,7 @@
         <key value="inv-dh-ds-09"/>
         <severity value="error"/>
         <human
-          value="At most one list shall be present"/>
+          value="If a list is provided, no other entry shall be present"/>
         <expression
           value="entry.resolve().where($this is List).exists() implies (entry.resolve().where($this is List).count() &lt; 2"/>
         <source
@@ -280,6 +271,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
+      <condition value="inv-dh-ds-08"/>
+      <condition value="inv-dh-ds-09"/>
     </element>
     <element id="Composition.section:vitalSigns">
       <path value="Composition.section"/>
@@ -333,6 +328,8 @@
           value="http://hl7.org.au/fhir/StructureDefinition/au-resprate"
         />
       </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
     </element>
     <element id="Composition.section:immunisations">
       <path value="Composition.section"/>
@@ -342,21 +339,12 @@
         value="Information about the immunisation history, i.e. administered vaccines, of a patient."/>
       <max value="1"/>
       <constraint>
-        <key value="inv-dh-ds-10"/>
-        <severity value="error"/>
-        <human value="This section shall not contain a mix of resource types"/>
-        <expression
-          value="entry.resolve().where($this is Immunization).exists() xor entry.resolve().where($this is Observation).exists() xor entry.resolve().where($this is List).exists()"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-      </constraint>
-      <constraint>
         <key value="inv-dh-ds-11"/>
         <severity value="error"/>
         <human
-          value="At most one assertion of no relevant finding shall be present and it shall assert no history of vaccination"/>
+          value="If an assertion of no history of immunisation is provided, no other entry shall be present"/>
         <expression
-          value="entry.resolve().where($this is Observation).exists() implies (entry.resolve().where($this is Observation).count() &lt; 2 and entry.resolve().where($this is Observation and Observation.value.coding.code='1234401000168109').exists())"/>
+          value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) ='1234401000168109')"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
@@ -364,9 +352,9 @@
         <key value="inv-dh-ds-12"/>
         <severity value="error"/>
         <human
-          value="At most one list shall be present"/>
+          value="If a list is provided, no other entry shall be present"/>
         <expression
-          value="entry.resolve().where($this is List).exists() implies (entry.resolve().where($this is List).count() &lt; 2"/>
+          value="entry.resolve().where($this is List).exists() implies entry.count() &lt; 2"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
@@ -389,6 +377,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
+      <condition value="inv-dh-ds-11"/>
+      <condition value="inv-dh-ds-12"/>
     </element>
   </differential>
 </StructureDefinition>

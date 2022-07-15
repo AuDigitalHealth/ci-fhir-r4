@@ -93,9 +93,11 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-pdl-1"/>
       </type>
+      <condition value="inv-dh-pdl-01"/>
     </element>
     <element id="Composition.section.emptyReason">
       <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-pdl-01"/>
       <binding>
         <strength value="required"/>
         <valueSet
