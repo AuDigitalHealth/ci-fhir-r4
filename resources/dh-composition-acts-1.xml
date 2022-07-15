@@ -79,8 +79,9 @@
       <constraint>
         <key value="inv-dh-acts-01"/>
         <severity value="error"/>
-        <human value="A section shall at least have an entry or an empty reason, but not both"/>
-        <expression value="entry.exists() xor emptyReason.exists()"/>
+        <human value="A section shall at least have an entry or an empty reason"/>
+        <expression value="entry.exists() or emptyReason.exists()"/>
+        <xpath value="exists(f:emptyReason) or exists(f:entry)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acts-1"/>
       </constraint>
