@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
-    <id value="01"/>
+    <id value="mds"/>
     <!--R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715-->
     <meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
@@ -13,7 +13,7 @@
     <status value="unknown"/>
     <intent value="order"/>
     <medicationReference>
-        <reference value="Medication/02"/>
+        <reference value="Medication/mmds"/>
     </medicationReference>
     <subject>
         <identifier>

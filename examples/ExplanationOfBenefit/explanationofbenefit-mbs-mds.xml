@@ -6,14 +6,14 @@
 	</meta>
 	<contained>
 		<PractitionerRole>
-			<id value="01"/>
+			<id value="mds"/>
 			<identifier>
 				<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
 					<valueCode value="unknown"/>
 				</extension>
 			</identifier>
 			<practitioner>
-				<reference value="#02"/>
+				<reference value="#mmds"/>
 			</practitioner>
 			<code>
 				<coding>
@@ -26,7 +26,7 @@
 	</contained>
 	<contained>
 		<Practitioner>
-			<id value="02"/>
+			<id value="mmds"/>
 			<name>
 				<use value="usual"/>
 				<family value="KILLER"/>
@@ -72,7 +72,7 @@
 		<reference value="Organization/healthau"/>
 	</insurer>
 	<provider>
-		<reference value="#01"/>
+		<reference value="#mds"/>
 	</provider>
 	<outcome value="complete"/>
 	<insurance>
