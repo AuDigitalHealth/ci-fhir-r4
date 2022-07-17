@@ -63,12 +63,10 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-organization-core-1.html">ADHA Core Organization</a></li>
                                 <li><a href="StructureDefinition-dh-healthcareservice-core-1.html">ADHA Core HealthcareService</a></li>
                                 <li><a href="StructureDefinition-dh-location-core-1.html">ADHA Core Location</a></li>
-                                <li>ADHA Core Endpoint</li>
                             </ul>
                         </td> 
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li>ADHA Device Participant</li>
                                 <li><a href="StructureDefinition-dh-device-system-1.html">ADHA System Device</a></li>
                                 <li><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></li>
                             </ul>
@@ -385,22 +383,6 @@ The following FHIR profiles defined in HL7 AU [Australian Base Implementation Gu
                         </td> 
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <tr class="frm-group">
-                        <td rowspan="2" class="frm-group rotate"><div>Clinical</div></td>
-                        <td class="frm-category">Summary</td>
-                        <td class="frm-category">Diagnostics</td>
-                        <td class="frm-category">Medications</td>
-                        <td class="frm-category">Care Provision</td>
-                        <td class="frm-category">Request &amp; Response</td>
-                    </tr>
-                    <tr class="frm-contents" height="80">
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                    </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
                 </table>
             </div>
       </div>
@@ -569,7 +551,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
     </tr>
     <tr>
-        <td><a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
         <td>vaccine-serial-number</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#strig">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td>

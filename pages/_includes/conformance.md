@@ -27,7 +27,6 @@ Labelling an element [Must Support]( https://www.hl7.org/fhir/conformance-rules.
 
 A sending system:
 - when making a request to an endpoint **SHALL** conform to the Conformance/Capability statement for that endpoint and conform to all applicable ADHA conformance requirements 
-- when responding to a request - TBD
 - when constructing a resource:
    - **SHALL** ensure the resource conforms to the applicable ADHA profile
    - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
