@@ -173,9 +173,9 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr>-->
+                    </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
                         <td class="frm-category">Public Health &amp; Research</td>
                         <td class="frm-category">Definitional Artifacts</td>
@@ -189,8 +189,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr> -->
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>-->
                 </table>
             </div>
       </div>
@@ -491,19 +491,23 @@ FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://bu
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">
-                        <td rowspan="2" class="frm-group rotate"><div>Clinical</div></td>
+                        <td rowspan="2" class="frm-group rotate"><div>Observations</div></td>
                         <td class="frm-category">Summary</td>
                         <td class="frm-category">Diagnostics</td>
-                        <td class="frm-category">Medications</td>
+                        <td class="frm-category">Lifestyle</td>
                         <td class="frm-category">Care Provision</td>
-                        <td class="frm-category">Request &amp; Response</td>
+                        <td class="frm-category">Pregnancy</td>
                     </tr>
                     <tr class="frm-contents" height="80">
-                        <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-norelevantfinding.html">AU Assertion of No Relevant Finding</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-sexassignedatbirth.html">AU Biological Sex Assigned at Birth</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthprogramparticipation.html">AU Health Program Participation Summary</a></li>
+                            </ul>
+                        </td>   
+                        <td class="frm-set">
+                            <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bloodpressure.html">AU Blood Pressure</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyweight.html">AU Body Weight</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyheight.html">AU Body Height</a></li>
@@ -514,18 +518,27 @@ FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://bu
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodytemp.html">AU Body Temperature</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a></li>
                                 <li>AU Level of Consciousness</li>
+                                <li>AU Waist Circumference</li>
                                 <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-vitalspanel.html">AU Vital Signs Panel</a></li>
+                            </ul>
+                        </td>   
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-alcoholstatus.html">AU Alcohol Status</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingceasedate.html">AU Smoking Cease Date</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstartdate.html">AU Smoking Start Date</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
+                            </ul>
+                        </td>   
+                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-parity.html">AU Parity</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
-                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthprogramparticipation.html">AU Health Program Participation Summary</a></li>
                             </ul>
                         </td>   
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
                     </tr>
                     <!--<tr class="frm-break"><td colspan="6"/></tr>-->
                 </table>
