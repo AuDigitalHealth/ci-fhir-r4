@@ -8,7 +8,7 @@ This profile is designed to set a core Encounter standard for:
 * Record or update an encounter and records associated with an encounter
 
 
-#### Profile specific guidance TBD
+#### Profile specific guidance
 - `Encounter.type` supports categorisation and provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. 
 - In an exchange with the My Health Record system `Encounter.status` is "finished"
 - The Encounter resource can represent a reason using either a code with `Encounter.reasonCode`, or a reference with `Encounter.reasonReference` to a Condition or other resource.
@@ -26,7 +26,7 @@ This profile is referenced by
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), 
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
 [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html). 
 

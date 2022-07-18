@@ -18,11 +18,4 @@
       <td><a href="RelatedPerson-mhr-smith-bob-oliver.json.html">JSON</a></td>
       <td><a href="RelatedPerson-mhr-smith-bob-oliver.ttl.html">Turtle</a></td>
    </tr>
-   <tr>
-      <td><a href="RelatedPerson-mhr-smith-rosalia-baby.html">Mrs. Rosalia SMITH - mother of Baby of Rosalia SMITH</a></td>
-      <td>mhr-smith-rosalia-baby</td>
-      <td><a href="RelatedPerson-mhr-smith-rosalia-baby.xml.html">XML</a></td>
-      <td><a href="RelatedPerson-mhr-smith-rosalia-baby.json.html">JSON</a></td>
-      <td><a href="RelatedPerson-mhr-smith-rosalia-baby.ttl.html">Turtle</a></td>
-   </tr>  
 </table>

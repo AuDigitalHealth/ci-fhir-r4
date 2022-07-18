@@ -90,13 +90,6 @@
       <td><a href="Location-metro-nsw-path-lab.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-metro-specialist-services-group-qld-castle.html">Metropolitan Specialist Services Group Castle QLD</a></td>
-      <td>metro-specialist-services-group-qld-castle</td>
-      <td><a href="Location-metro-specialist-services-group-qld-castle.xml.html">XML</a></td>
-      <td><a href="Location-metro-specialist-services-group-qld-castle.json.html">JSON</a></td>
-      <td><a href="Location-metro-specialist-services-group-qld-castle.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Location-metro-specialist-services-group-qld-hospital.html">Metropolitan Specialist Services Group QLD Hospital</a></td>
       <td>metro-specialist-services-group-qld-hospital</td>
       <td><a href="Location-metro-specialist-services-group-qld-hospital.xml.html">XML</a></td>

@@ -82,14 +82,7 @@
       <td><a href="Organization-mhr-operator.xml.html">XML</a></td>
       <td><a href="Organization-mhr-operator.json.html">JSON</a></td>
       <td><a href="Organization-mhr-operator.ttl.html">Turtle</a></td>
-   </tr> 
-   <tr>
-      <td><a href="Organization-ncsr-operator.html">National Cancer Screening Register system operator</a></td>
-      <td>ncsr-operator</td>
-      <td><a href="Organization-ncsr-operator.xml.html">XML</a></td>
-      <td><a href="Organization-ncsr-operator.json.html">JSON</a></td>
-      <td><a href="Organization-ncsr-operator.ttl.html">Turtle</a></td>
-   </tr>  
+   </tr>   
    <tr>
       <td colspan="5">Pharmacy examples:</td>
    </tr>
@@ -169,9 +162,6 @@
       <td><a href="Organization-metro-qld-path-lab.json.html">JSON</a></td>
       <td><a href="Organization-metro-qld-path-lab.ttl.html">Turtle</a></td>
    </tr> 
-   <tr>
-      <td><a href="Organization-private-vic-path-lab.html">Private VIC Pathology</a></td>
-   </tr>
    <tr>
       <td><a href="Organization-nsw-hospital.html">NSW Hospital (ABN, HPI-O, SNOMED CT + V3 type, Phone, Website, Address)</a></td>
       <td>nsw-hospital</td>

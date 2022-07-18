@@ -2,5 +2,5 @@ This extension applies to any resource and represents the date an individual fir
 
 
 #### Boundaries and relationships
-This profile is referenced by 
+This extension is referenced by 
 [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html).

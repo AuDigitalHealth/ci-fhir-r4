@@ -6,7 +6,7 @@
 
 ## ADHA core profiles 
 
-The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend [HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">
@@ -118,8 +118,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                         </td>    
                         <td class="frm-null"/>
                     </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <!--<tr class="frm-break"><td colspan="6"/></tr>
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
                         <td class="frm-category">Support</td>
                         <td class="frm-category">Billing</td>
@@ -133,9 +133,9 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr>-->
+                    </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
                         <td class="frm-category">Public Health &amp; Research</td>
                         <td class="frm-category">Definitional Artifacts</td>
@@ -325,7 +325,7 @@ The following FHIR profiles are defined in this implementation guide to support 
 
 ## HL7 AU profiles 
 
-The following FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://hl7.org.au/fhir/4.0.0/index.html) form part of an Australian Digital Health Agency profile.
+The following FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) form part of an Australian Digital Health Agency profile.
 
 <html>
   <div id="segment-content" class="segment">
@@ -367,7 +367,7 @@ The following FHIR profiles defined in HL7 AU [Australian Base Implementation Gu
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
                                 <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a></li>
-                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-insurancemembernumber.html">AU Insurance Member Number</a></li>
                             </ul>
                         </td>  
                         <td class="frm-set">
@@ -509,7 +509,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ihi-verified.html">IHI Verified</a></td>
+        <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ihi-verified-date.html">IHI Verified Date</a></td>
         <td>ihi-verified</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
