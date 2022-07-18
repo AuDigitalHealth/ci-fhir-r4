@@ -1,11 +1,8 @@
 # {{ page.title }}
-<!-- <h3 style="color:#ff0000;">Draft for internal use</h3> -->
 {:.no_toc}
-
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
-<!-- end TOC -->
 
 > <p style="color:#ff0000;">This material is under active development and content is added or updated on a regular basis.</p>
 
