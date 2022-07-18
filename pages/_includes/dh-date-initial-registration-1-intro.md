@@ -5,5 +5,5 @@ This extension is used by the following APIs:
 
 
 #### Boundaries and relationships
-This profile is referenced by 
+This extension is referenced by 
 [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html).

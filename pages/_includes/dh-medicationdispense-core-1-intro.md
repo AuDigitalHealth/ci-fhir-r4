@@ -2,7 +2,7 @@ The purpose of this profile is to provide a core representation of a dispense of
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html) that are supported. 
 
-Where a more specific profile is applicable, e.g. dispense record, an implementation **SHALL** ensure the resource conforms to that specific profile.
+Where a more specific MedicationDispense profile is applicable, e.g. dispense record, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core MedicationDispense standard for:
 * Query medications dispensed or intended to be dispensed for a patient

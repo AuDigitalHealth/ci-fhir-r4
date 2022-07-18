@@ -5,5 +5,5 @@ This extension is used by the following APIs:
 
 
 #### Boundaries and relationships
-This profile is referenced by 
+This extension is referenced by 
 [ADHA Practitioner Medicine Review List](StructureDefinition-dh-list-medication-use-pmr-1.html).

@@ -9,9 +9,9 @@
 
 ## Profiles
 
-### ADHA Core FHIR Profiles 
+### ADHA core profiles 
 
-The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">
@@ -210,7 +210,7 @@ The following core FHIR profiles are defined in this implementation guide. These
 </html>
 
 
-### ADHA Use Case FHIR Profiles 
+### ADHA use case profiles 
 
 FHIR profiles defined in this implementation guide for defined use cases.
 
@@ -392,8 +392,8 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         </td>     
                         <td class="frm-null"/>
                     </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <!--<tr class="frm-break"><td colspan="6"/></tr>
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Specialized</div></td>
                         <td class="frm-category">Public Health &amp; Research</td>
                         <td class="frm-category">Definitional Artifacts</td>
@@ -407,8 +407,8 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr> -->
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>-->
                 </table>
             </div>
       </div>
@@ -429,9 +429,9 @@ FHIR profiles defined in this implementation guide for defined use cases.
 
 
 
-### HL7 AU FHIR Profiles 
+### HL7 AU profiles 
 
-FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
+FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
 
 <html>
   <div id="segment-content" class="segment">
@@ -527,7 +527,7 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                     </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <!--<tr class="frm-break"><td colspan="6"/></tr>-->
                 </table>
             </div>
       </div>
@@ -672,8 +672,8 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified.html">IHI Verified</a></td>
-        <td>ihi-verified</td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified-date.html">IHI Verified Date</a></td>
+        <td>ihi-verified-date</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>

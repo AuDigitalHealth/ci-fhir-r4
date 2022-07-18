@@ -2,7 +2,7 @@ The purpose of this profile is to provide a core representation of a composition
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 
 
-Where a more specific document composition profile is applicable an implementation **SHALL** ensure the resource conforms to that specific profile.
+Where a more specific Composition profile is applicable an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core Composition standard for:
 * exchanging a clinical statement 
