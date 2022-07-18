@@ -3,9 +3,7 @@
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 * Do not remove this line (it will not be displayed)
 {:toc}
-<!-- end TOC -->
 
-ENSURE LATEST MASTER RESOURCES HAVE BEEN PUT INTO THIS BRANCH - AM WAITING ON MAKING THE CHANGES IN MASTER INCUDING STATUS CHANGE.
 
 ## Introduction
 
