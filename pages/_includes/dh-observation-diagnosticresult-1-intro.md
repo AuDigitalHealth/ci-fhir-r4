@@ -2,7 +2,7 @@ The purpose of this profile is to provide a representation of a diagnostic resul
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-Where a more specific Observation profile is applicable, e.g. pathology result observation or imaging result observation, an implementation **SHALL** ensure the Resource conforms to that specific profile.
+Where a more specific Observation profile is applicable, e.g. pathology result observation or imaging result observation, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set an Observation standard for:
 * Query for diagnostic examination results for a patient
