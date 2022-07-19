@@ -11,7 +11,7 @@
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:oid:1.2.36.1.2001.1007.11.8003640002000035.1000000000118810"/>
     </identifier>
-    <type value="transaction"/>
+    <type value="collection"/>
     <!--    IMMUNIZATION   -->
     <entry>
         <fullUrl value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7715"/>
@@ -64,10 +64,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request> 
     </entry>
     <!--    CDA REPOSITORY - pending design resolution of the STU3 Basic resource to enable persistence in R4 FHIR  -->
     <!--<entry>

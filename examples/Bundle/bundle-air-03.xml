@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="air-03"/>
-    <!--Transaction Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient Sally FIELD IHI 8003608833357361 -->
-    <type value="transaction"/>
+    <!--Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient Sally FIELD IHI 8003608833357361 -->
+    <type value="collection"/>
     <!--    FLAG (air-01) -->
     <entry>
         <fullUrl value="urn:uuid:949133cb-de9a-44a7-b3d3-bd0e9d9d2faf"/>
@@ -54,11 +54,6 @@
                 </author>
             </Flag>
         </resource>
-        <request> 
-            <!--    POST to /Flag - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Flag"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-covid-01)    -->
     <entry>
@@ -106,11 +101,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-covid-02)    -->
     <entry>
@@ -154,11 +144,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-covid-03)    -->
     <entry>
@@ -202,11 +187,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-01)    -->
     <entry>
@@ -266,11 +246,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-02)    -->
     <entry>
@@ -330,11 +305,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-03)    -->
     <entry>
@@ -394,11 +364,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-04)    -->
     <entry>
@@ -458,11 +423,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-05)    -->
     <entry>
@@ -521,11 +481,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-hepb-01)    -->
     <entry>
@@ -569,11 +524,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-infl-01)    -->
     <entry>
@@ -617,11 +567,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-02)    -->
     <entry>
@@ -665,11 +610,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    IMMUNIZATION (air-dip-03)    -->
     <entry>
@@ -713,11 +653,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    OBSERVATION (air-covid-imm-status-01)    -->
     <!--<entry>
@@ -775,10 +710,5 @@
                 </valueCodeableConcept>
             </Observation>
         </resource>
-        <request> 
-            <!-\-    POST to /Observation - that's a create - in a transaction you don't specify the [base]    -\->
-            <method value="POST"/> 
-            <url value="Observation"/> 
-        </request>
     </entry>-->
 </Bundle>

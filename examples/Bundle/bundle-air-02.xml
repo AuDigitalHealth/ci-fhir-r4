@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <!--Transaction Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028 -->
+    <!--Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028 -->
     <id value="air-02"/>
     <type value="transaction"/>
     <!--    IMMUNIZATION (air-infl-04)    -->
@@ -52,11 +52,6 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
     </entry>
     <!--    FLAG (air-03) -->
     <entry>
@@ -112,10 +107,5 @@
                 </author>
             </Flag>
         </resource>
-        <request> 
-            <!--    POST to /Flag - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Flag"/> 
-        </request>
     </entry>
 </Bundle>
