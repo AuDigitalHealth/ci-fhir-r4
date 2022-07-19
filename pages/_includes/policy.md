@@ -300,19 +300,36 @@ The following basePaths are to be used for national services:
 
 ## Artefact identification, naming, versioning, and publication 
 
-### Identification of FHIR conformance resources
+There are four primary artefacts provided to support implementations:
+1. FHIR implementation guide publication (human-readeable HTML)
+1. FHIR NPM package (machine-readable Tarball)
+1. FHIR conformance resources: published in a FHIR implementation guide and FHIR NPM package 
+1. FHIR terminology resoures: ADHA resources of these types are published and managed by the [National Clinical Terminology Service](https://www.healthterminologies.gov.au/)
+
+ADHA FHIR conformance resources may be one of:
+- [CapabilityStatement](http://hl7.org/fhir/capabilitystatement.html)
+- [StructureDefinition](http://hl7.org/fhir/structuredefinition.html)
+- [ImplementationGuide](http://hl7.org/fhir/implementationguide.html)
+- [SearchParameter](http://hl7.org/fhir/searchparameter.html)
+- [OperationDefinition](http://hl7.org/fhir/operationdefinition.html)
+- [StructureMap](http://hl7.org/fhir/structuremap.html)
+
+
+### Canonical identifiers (URI) for FHIR conformance resources
 
 FHIR conformance resources are identified by a canonical identifier that is a globally unique URI. 
 
 Canonical identifiers (URI) for ADHA FHIR conformance resources **SHALL** be in the form of [base-uri]/[resource-type]/[resource-id]:
  
-- [base-uri] for ADHA FHIR artefacts is `http://ns.electronichealth.net.au/fhir`
+- [base-uri] for ADHA FHIR conformance resources is `http://ns.electronichealth.net.au/fhir`*
 - [resource-type] is string of the resource type, e.g. `StructureDefinition`, `SearchParameter`
 - [resource-id] is the `resource.id` and is constructed in accordance with the rules for that resource type  
 
+*The canonical namespace (URI) for ADHA artefacts is `http://ns.electronichealth.net.au`. This is not limited to FHIR and includes national identifiers and service interfaces. 
+
 The following table shows how the canonical identifier (URI) for each resource type may be constructed.
 
-<table class="list" width="100%">
+<table class="list" width="80%">
 <tbody>
   <tr>
     <th>[base-uri]</th>
@@ -359,7 +376,7 @@ The [resource-id] for an ImplementationGuide **SHALL** match the FHIR NPM packag
 
 The [resource-id] for an ImplementationGuide and FHIR NPM package name **SHALL** be all lowercase in the form of [base-id].[fhir-version].[optional-subpackage-name]:
 
-- [base-id] for ADHA FHIR artefacts is `au.digitalhealth`
+- [base-id] is `au.digitalhealth`
 - [fhir-version] is in the form of `stu3` or `r4` or `r5`
 - [optional-subpackage-name] is optional and if present **SHALL** have individual words separated by `-`
   - It should be a business name that **MAY** be two or three words and **SHALL NOT** exceed five
@@ -492,50 +509,39 @@ Additional notes:
 
 ### Publication
 
-An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public FHIR Implementation Guide or as a FHIR Package and **SHOULD** be published as both. 
+An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public FHIR implementation guide or as a FHIR NPM package and **SHOULD** be published as both. 
 
 Some implementation contexts will be supported by targeted conformance assets, e.g. Provider Connect Australia. The specifications and/or profiles that define a particular implementation context **SHALL** define requirements for publication and management of FHIR conformance resources for that context, and **SHALL** manage those artefacts accordingly. 
 
-The canonical identifier for ADHA FHIR publication and conformance resources **SHOULD** be resolvable URLs. Resolution **SHOULD** behave as defined in the FHIR standard. The canonical URI and the resolved URL **MAY NOT** be the same.
+The canonical identifier for ADHA FHIR publication and conformance resources **SHOULD** be resolvable URLs. Resolution **SHOULD** behave as defined in the FHIR standard. The publication location for ADHA artefacts **MAY** be different and resolve by redirection. 
 
 All FHIR materials relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) **SHALL** be held on a publicly available GitHub repository published by the Australian Digital Health Agency. The location for Agency material in GitHub is: [https://github.com/AuDigitalHealth](https://github.com/AuDigitalHealth).
 
-Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site.
+Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site. 
 
-ADHA FHIR conformance resources may be one of:
-- [CapabilityStatement](http://hl7.org/fhir/capabilitystatement.html)
-- [StructureDefinition](http://hl7.org/fhir/structuredefinition.html)
-- [ImplementationGuide](http://hl7.org/fhir/implementationguide.html)
-- [SearchParameter](http://hl7.org/fhir/searchparameter.html)
-- [OperationDefinition](http://hl7.org/fhir/operationdefinition.html)
-- [StructureMap](http://hl7.org/fhir/structuremap.html)
+Publication requirements and the expected behaviour of resolution of canonical identifiers are summarised below:
+- An unversioned canonical identifier, if it resolves, **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
+- The canonical identifier of an ImplementationGuide resource, if it resolves, **SHALL** resolve to the Home page of that specification, see detailed expected resolution behaviour for publication URIs below
+- The publication location **SHOULD** be a FHIR server hosting resources so that a GET of [canonical-identifier] or [canonical]/[Type]/[id] returns a FHIR resource
+- If available, the FHIR NPM package
+  - **SHALL** be published at the root director of the publication URI for each specification, see notes on publication URIs below
+  - **SHALL** meet the [FHIR NPM Package Specification](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification)
+  - **SHALL** be 'published' on the [FHIR Package Registry](https://registry.fhir.org) 
 
-FHIR conformance resources make use of [CodeSystem](http://hl7.org/fhir/codesystem.html), [ValueSet](http://hl7.org/fhir/valueset.html), and [ConceptMap](http://hl7.org/fhir/conceptmap.html) resources. ADHA FHIR resources of these types are published and managed by the [National Clinical Terminology Service](https://www.healthterminologies.gov.au/) 
-
-**Publication location and canonical identifier (URI) resolution - TBD**
-
-The canonical namespace (URI) for ADHA artefacts is `http://ns.electronichealth.net.au`. This is not limited to FHIR and includes national identifiers and service interfaces. 
-
-The publication location for ADHA artefacts **MAY** be different and resolve by redirection. 
-
-The FHIR standard and HL7 IG Publisher documentation define expected behaviour of resolution of canonical identifiers, which is summarised below:
-- An unversioned canonical identifier will resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
-- The canonical identifier of an ImplementationGuide resource, if it resolves, **SHALL** resolve to the Home page of that specification, see notes on publication URIs below
-- The publication location **SHOULD** be a FHIR server so that a GET of [canonical]/[Type]/[id] for a FHIR conformance resource returns that FHIR resource
-- A FHIR NPM package is published at the root director of the publication URI for each specification, see notes on publication URIs below
+**Publication URIs**
 
 To account for a potential future need to concurrently actively support multiple major versions of FHIR, i.e. support a new capability like a record type or API or interaction in more than one FHIR version, publication locations **SHOULD** make content available in:
 - completely unversioned URIs, i.e. non-FHIR versioned and non-publication versioned
 - publication versioned URIs that are non-FHIR versioned
 - fully versioned URIs, i.e. FHIR versioned and publication versioned
 
-A publication URI may be made up of: [base-publication-uri]/fhir/[FHIR-version]/[publication-case]/[publication-version]
+Therefore, a publication URI may be made up of: [base-publication-uri]/fhir/[FHIR-version]/[publication-case]/[publication-version]
 
-Non-versioned and non-FHIR versioned should result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URIs. If this is a subsequent release it will replace the content that was present at the non-versioned URIs.
+Non-versioned and non-FHIR versioned result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URIs. If this is a subsequent release it will replace the content that was present at the non-versioned URIs.
 
 Taking the Medicare Records FHIR Implementation Guide. If that were, hypothetically (and this is not expected!), to be concurrently supported in two major versions of FHIR it may result in publication URIs like in the following table that associates expected content found at those URIs.
 
-<table class="list" border='none'>
+<table class="list" width="80%">
     <tr>
         <th>URL entered into browser</th>
         <th>Resolution behaviour</th>
@@ -564,7 +570,7 @@ Taking the Medicare Records FHIR Implementation Guide. If that were, hypothetica
 
 If the ADHA FHIR Implementation Guide is published only in FHIR R4 with two published versions 1.0.0 and 1.1.0: 
 
-<table class="list" border='none'>
+<table class="list" width="80%">
     <tr>
         <th>URL entered into browser</th>
         <th>Resolution behaviour</th>
