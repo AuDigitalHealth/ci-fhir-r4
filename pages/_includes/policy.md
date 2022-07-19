@@ -519,20 +519,76 @@ The canonical namespace (URI) for ADHA artefacts is `http://ns.electronichealth.
 The publication location for ADHA artefacts **MAY** be different and resolve by redirection. 
 
 The FHIR standard and HL7 IG Publisher documentation define expected behaviour of resolution of canonical identifiers, which is summarised below:
+- An unversioned canonical identifier will resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
+- The canonical identifier of an ImplementationGuide resource, if it resolves, **SHALL** resolve to the Home page of that specification, see notes on publication URIs below
+- The publication location **SHOULD** be a FHIR server so that a GET of [canonical]/[Type]/[id] for a FHIR conformance resource returns that FHIR resource
+- A FHIR NPM package is published at the root director of the publication URI for each specification, see notes on publication URIs below
 
-An implementation
+To account for a potential future need to concurrently actively support multiple major versions of FHIR, i.e. support a new capability like a record type or API or interaction in more than one FHIR version, publication locations **SHOULD** make content available in:
+- completely unversioned URIs, i.e. non-FHIR versioned and non-publication versioned
+- publication versioned URIs that are non-FHIR versioned
+- fully versioned URIs, i.e. FHIR versioned and publication versioned
 
+A publication URI may be made up of: [base-publication-uri]/fhir/[FHIR-version]/[publication-case]/[publication-version]
 
-An unversioned canonical identifier will resolve to the latest FHIR version and the latest structure version.
+Non-versioned and non-FHIR versioned should result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URIs. If this is a subsequent release it will replace the content that was present at the non-versioned URIs.
 
-The canonical 
+Taking the Medicare Records FHIR Implementation Guide. If that were, hypothetically (and this is not expected!), to be concurrently supported in two major versions of FHIR it may result in publication URIs like in the following table that associates expected content found at those URIs.
 
-[publication-uri]/fhir/
+<table class="list" border='none'>
+    <tr>
+        <th>URL entered into browser</th>
+        <th>Resolution behaviour</th>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/medicare-records</td>
+        <td>Display the Home page of the latest FHIR version and spec version = R4 v2.1.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/STU3/medicare-records/1.0.0</td>
+        <td>Display the Home page of the latest FHIR version of v1.0.0 = STU3 v1.0.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/medicare-records/2.1.0</td>
+        <td>Display the Home page of the latest FHIR version of v2.1.0 = R4 v2.1.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/STU3/medicare-records/2.1.0</td>
+        <td>Display the Home page of the specified FHIR version and spec version = STU3 v2.1.0</td>
+    </tr>
+    <tr>
+        <td>[publication-uri]/fhir/R4/medicare-records/2.1.0</td>
+        <td>Display the Home page of the specified FHIR version and spec version = R4 v2.1.0</td>
+    </tr>
+</table>
 
-  
-      
-Behaviour: canonical url resolves to latest version. Versions are published at permanent versioned links (redirects).
+If the ADHA FHIR Implementation Guide is published only in FHIR R4 with two published versions 1.0.0 and 1.1.0: 
 
-
+<table class="list" border='none'>
+    <tr>
+        <th>URL entered into browser</th>
+        <th>Resolution behaviour</th>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/adha</td>
+        <td>Display the Home page of the latest FHIR version and spec version = R4 v1.1.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/adha/1.0.0</td>
+        <td>Display the Home page of the latest FHIR version of spec version 1.0.0 = R4 v1.0.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/R4/adha/1.0.0</td>
+        <td>Display the Home page of the specified FHIR version and spec version = R4 v1.0.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/adha/1.1.0</td>
+        <td>Display the Home page of the latest FHIR version of spec version 1.1.0 = R4 v1.1.0</td>
+    </tr>
+    <tr>
+        <td>[base-publication-uri]/fhir/R4/adha/1.1.0</td>
+        <td>Display the Home page of the specified FHIR version and spec version = R4 v1.1.0</td>
+    </tr>
+</table>
 
 
