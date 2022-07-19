@@ -330,7 +330,7 @@ FHIR conformance resources are identified by a canonical identifier that is a gl
  
 - [base-uri] for ADHA FHIR artefacts is `http://ns.electronichealth.net.au/fhir`
 - [resource-type] is string of the resource type, e.g. `StructureDefinition`, `SearchParameter`
-- [resource-id] is the `resource.id` and is constructured in accordance with the rules for that resource type  
+- [resource-id] is the `resource.id` and is constructed in accordance with the rules for that resource type  
 
 
 The following table shows how the canonical identifier (URI) for each resource type may be constructed.
