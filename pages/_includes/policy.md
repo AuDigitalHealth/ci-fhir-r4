@@ -316,9 +316,9 @@ ADHA FHIR conformance artefacts may be one of:
 
 FHIR conformance artefacts make use of [CodeSystem](http://hl7.org/fhir/codesystem.html), [ValueSet](http://hl7.org/fhir/valueset.html), and [ConceptMap](http://hl7.org/fhir/conceptmap.html) resources. ADHA FHIR resources of these types are published and managed by the [National Clinical Terminology Service](https://www.healthterminologies.gov.au/) 
 
-The GitHub repository for the Australian Digital Health Agency is https://github.com/AuDigitalHealth
-All FHIR materials relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) **SHALL** be held on a publicly available GitHub repository.
-Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site
+All FHIR materials relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) **SHALL** be held on a publicly available GitHub repository published by the Australian Digital Health Agency. The location for Agency material in GitHub is: [https://github.com/AuDigitalHealth](https://github.com/AuDigitalHealth).
+
+Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site.
 
 
 ADHA FHIR publication and resource URIs **SHOULD** be resolvable URLs. The canonical URI and the resolved URL **MAY NOT** be the same.
@@ -372,13 +372,112 @@ The base URI for ADHA FHIR artefacts is `http://ns.electronichealth.net.au/fhir`
  </tbody>
 </table>
 
-The [id] for an ImplementationGuide resource **SHALL** match the package id. 
+**ImplementationGuide and FHIR NPM package [id]**
 
-The [id] for a StructureDefinition is in the form of:
+The [id] for an ImplementationGuide resource **SHALL** match the [id] of the FHIR NPM package. 
 
-`dh-[reource-type]-[use-case]-[major-version]`
+The [id] for an ImplementationGuide and FHIR NPM package **SHALL** be all lowercase in the form of:
 
-[major-version] is a non-negative integer, see the versioning section.
+`[base-id].[fhir-version].[optional-subpackage-name]`
+
+- [base-id] for ADHA FHIR artefacts is `au.digitalhealth`
+- [fhir-version] is in the form of `stu3` or `r4` or `r5`
+- [optional-subpackage-name] is optional and if present **SHALL** have individual words separated by `-`
+  - It should be a business name that **MAY** be two or three words and **SHALL NOT** exceed five
+  - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
+  - An ADHA FHIR NPM package for a fhir version, i.e. managed core and common ADHA FHIR materials, **SHALL NOT** have a subpackage id, i.e. the package id for this implementation guide **SHALL** be `au.digitalhealth.r4`
+  - A subpackage that manages ADHA FHIR materials for a specific implementation context **SHALL** have a subpackage name, e.g. `medicare-records` is the subpackage name that forms part of the packageId `au.digitalhealth.stu3.medicare-records` for the Medicare Records FHIR Implementation Guide. 
+
+
+In an ImplementationGuide resource this [id] **SHALL** be used in three places:
+
+- The exact value in id field:`ImplementationGuide.id`
+- Form part of the canonical URL: `ImplementationGuide.url`
+- The exact value in the packageId field: `ImplementationGuide.packageId`
+
+Example: ImplementationGuide resource with id, url, packageId
+~~~
+{
+  "resourceType": "ImplementationGuide",
+    "id": "au.digitalhealth.r4",
+    "url": "http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4",
+    ...
+    "packageId": "au.digitalhealth.r4",
+    ...
+}  
+~~~
+ 
+
+**StructureDefinition [id] - Profiles**
+
+The [id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of:
+
+`dh-[resource-type]-[use-case-name]-[optional-use-case-name2]-[structure-version]`
+
+- [resource-type] is the value in `StructureDefinition.type`.
+- [use-case-name] is a business name and **SHALL NOT** have individual words separated by `-`
+  - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
+- [optional-use-case-name2] is a business name for a case that is a specialism of the case represented by [use-case-name] and **SHALL NOT** have individual words separated by `-`
+  - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts).
+
+This [id] **SHALL** be used in three places:
+
+- Form part of the StructureDefinition's filename
+- The exact value in id field:`StructureDefinition.id`
+- Form part of the canonical URL: `StructureDefinition.url`
+
+
+Example: StructureDefinition resource that is a core profile
+~~~
+{
+  "resourceType": "StructureDefinition",
+    "id": "dh-bodystructure-core-1",
+    "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-core-1",
+    ...
+}  
+~~~  
+
+Example: StructureDefinition resource with a 2nd use case name
+~~~
+{
+  "resourceType": "StructureDefinition",
+    "id": "dh-explanationofbenefit-medicare-mbs-1",
+    "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1",
+    ...
+}  
+~~~  
+
+
+**StructureDefinition [id] - Extensions**
+
+The [id] for a StructureDefinition that is an extension **SHALL** be all lowercase in the form of:
+
+`dh-[element-name]-[structure-version]`
+
+- [element-name] **SHALL** have individual words separated by `-`
+  - **MAY** be two or three words and **SHALL NOT** exceed five
+  - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts).
+
+This [id] **SHALL** be used in three places:
+
+- Form part of the StructureDefinition's filename
+- The exact value in id field:`StructureDefinition.id`
+- Form part of the canonical URL: `StructureDefinition.url`
+
+Example: StructureDefinition resource that is an extension
+~~~
+{
+  "resourceType": "StructureDefinition",
+    "id": "dh-packed-in-daa",
+    "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-packed-in-daa",
+    ...
+}  
+~~~  
+
+Important Note: An exception to this policy has been accepted for the extension [Date of Initial Registration](StructureDefinition-dh-date-initial-registration-1.html) first implemented in 2018 in FHIR 3.0.1.
+
 
 ### Versioning of FHIR artefacts
 
