@@ -324,61 +324,62 @@ Comments, feedback and suggestions from developers on FHIR resources (and associ
 ADHA FHIR publication and resource URIs **SHOULD** be resolvable URLs. The canonical URI and the resolved URL **MAY NOT** be the same.
 
 
-### Identification of FHIR artefacts
+### Identification of FHIR conformance resources
 
-All FHIR conformance assets are identified by a globally unique URI. The ADHA FHIR conformance artefact URIs **SHALL** be in the form of:
-
-`[base]/[resource-type]/[id]`
+FHIR conformance resources are identified by a canonical identifier that is a globally unique URI. ADHA FHIR canonical identifiers (URI) **SHALL** be in the form of [base-uri]/[resource-type]/[resource-id]:
  
-The base URI for ADHA FHIR artefacts is `http://ns.electronichealth.net.au/fhir`. The following table shows how URIs for each resource type may be constructed.
+- [base-uri] for ADHA FHIR artefacts is `http://ns.electronichealth.net.au/fhir`
+- [resource-type] is string of the resource type, e.g. `StructureDefinition`, `SearchParameter`
+- [resource-id] is the `resource.id` and is constructured in accordance with the rules for that resource type  
+
+
+The following table shows how the canonical identifier (URI) for each resource type may be constructed.
 
 <table class="list" width="100%">
 <tbody>
   <tr>
-    <th>base</th>
-    <th>/Resource type</th>
-    <th>/id</th>
+    <th>[base-uri]</th>
+    <th>/[resource-type]</th>
+    <th>/[resource-id]</th>
   </tr>
   <tr>
         <td>http://ns.electronichealth.net.au/fhir</td>
         <td>/CapabilityStatement</td>
-        <td>/[id]</td>
+        <td>/[resource-id]</td>
   </tr>
   <tr>
         <td>http://ns.electronichealth.net.au/fhir</td>
         <td>/StructureDefinition</td>
-        <td>/[id]</td>
+        <td>/[resource-id]</td>
   </tr>
   <tr>
         <td>http://ns.electronichealth.net.au/fhir</td>
         <td>/ImplementationGuide</td>
-        <td>/[id]</td>
+        <td>/[resource-id]</td>
   </tr>
   <tr>
         <td>http://ns.electronichealth.net.au/fhir</td>
         <td>/SearchParameter</td>
-        <td>/[id]</td>
+        <td>/[resource-id]</td>
   </tr>
   <tr>
         <td>http://ns.electronichealth.net.au/fhir</td>
         <td>/OperationDefinition</td>
-        <td>/[id]</td>
+        <td>/[resource-id]</td>
   </tr>
   <tr>
         <td>http://ns.electronichealth.net.au/fhir</td>
         <td>/StructureMap</td>
-        <td>/[id]</td>
+        <td>/[resource-id]</td>
   </tr>
  </tbody>
 </table>
 
-**ImplementationGuide and FHIR NPM package [id]**
+**ImplementationGuide [resource-id] and FHIR NPM package name**
 
-The [id] for an ImplementationGuide resource **SHALL** match the [id] of the FHIR NPM package. 
+The [resource-id] for an ImplementationGuide **SHALL** match the FHIR NPM package name. 
 
-The [id] for an ImplementationGuide and FHIR NPM package **SHALL** be all lowercase in the form of:
-
-`[base-id].[fhir-version].[optional-subpackage-name]`
+The [resource-id] for an ImplementationGuide and FHIR NPM package name **SHALL** be all lowercase in the form of [base-id].[fhir-version].[optional-subpackage-name]:
 
 - [base-id] for ADHA FHIR artefacts is `au.digitalhealth`
 - [fhir-version] is in the form of `stu3` or `r4` or `r5`
@@ -389,7 +390,7 @@ The [id] for an ImplementationGuide and FHIR NPM package **SHALL** be all lowerc
   - A subpackage that manages ADHA FHIR materials for a specific implementation context **SHALL** have a subpackage name, e.g. `medicare-records` is the subpackage name that forms part of the packageId `au.digitalhealth.stu3.medicare-records` for the Medicare Records FHIR Implementation Guide. 
 
 
-In an ImplementationGuide resource this [id] **SHALL** be used in three places:
+In an ImplementationGuide resource this [resource-id] **SHALL** be used in three places:
 
 - The exact value in id field:`ImplementationGuide.id`
 - Form part of the canonical URL: `ImplementationGuide.url`
@@ -408,20 +409,18 @@ Example: ImplementationGuide resource with id, url, packageId
 ~~~
  
 
-**StructureDefinition [id] - Profiles**
+**StructureDefinition [resource-id] - Profiles**
 
-The [id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of:
+The [resource-id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of dh-[resource-profiled]-[use-case-name]-[optional-use-case-name2]-[structure-version]:
 
-`dh-[resource-type]-[use-case-name]-[optional-use-case-name2]-[structure-version]`
-
-- [resource-type] is the value in `StructureDefinition.type`.
+- [resource-profiled] is the value in `StructureDefinition.type`
 - [use-case-name] is a business name and **SHALL NOT** have individual words separated by `-`
   - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
 - [optional-use-case-name2] is a business name for a case that is a specialism of the case represented by [use-case-name] and **SHALL NOT** have individual words separated by `-`
   - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts).
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts)
 
-This [id] **SHALL** be used in three places:
+This [resource-id] **SHALL** be used in three places:
 
 - Form part of the StructureDefinition's filename
 - The exact value in id field:`StructureDefinition.id`
@@ -449,18 +448,18 @@ Example: StructureDefinition resource with a 2nd use case name
 ~~~  
 
 
-**StructureDefinition [id] - Extensions**
+**StructureDefinition [resource-id] - Extensions**
 
-The [id] for a StructureDefinition that is an extension **SHALL** be all lowercase in the form of:
+The [resource-id] for a StructureDefinition that is an extension **SHALL** be all lowercase in the form of:
 
 `dh-[element-name]-[structure-version]`
 
 - [element-name] **SHALL** have individual words separated by `-`
   - **MAY** be two or three words and **SHALL NOT** exceed five
   - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts).
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts)
 
-This [id] **SHALL** be used in three places:
+This [resource-id] **SHALL** be used in three places:
 
 - Form part of the StructureDefinition's filename
 - The exact value in id field:`StructureDefinition.id`
