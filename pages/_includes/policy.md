@@ -409,11 +409,11 @@ Example: ImplementationGuide resource with id, url, packageId
 The [resource-id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of dh-[resource-profiled]-[use-case-name]-[optional-use-case-name2]-[structure-version]:
 
 - [resource-profiled] is the value in `StructureDefinition.type`
-- [use-case-name] is a business name and **SHALL NOT** have individual words separated by `-`
+- [use-case-name] is a business name and **SHALL NOT** have individual words separated
   - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [optional-use-case-name2] is a business name for a case that is a specialism of the case represented by [use-case-name] and **SHALL NOT** have individual words separated by `-`
+- [optional-use-case-name2] is a business name for a case that is a specialism of the case represented by [use-case-name] and **SHALL NOT** have individual words separated
   - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts)
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning](policy.html#versioning)
 
 In a StructureDefinition this [resource-id] **SHALL** be used in three places:
 
@@ -450,7 +450,7 @@ The [resource-id] for a StructureDefinition that is an extension **SHALL** be al
 - [element-name] **SHALL** have individual words separated by `-`
   - **MAY** be two or three words and **SHALL NOT** exceed five
   - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts)
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning](policy.html#versioning)
 
 In a StructureDefinition this [resource-id] **SHALL** be used in three places:
 
@@ -462,8 +462,8 @@ Example: StructureDefinition resource that is an extension
 ~~~
 {
   "resourceType": "StructureDefinition",
-    "id": "dh-packed-in-daa",
-    "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-packed-in-daa",
+    "id": "dh-packed-in-daa-1",
+    "url": "http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-packed-in-daa-1",
     ...
 }  
 ~~~  
@@ -473,11 +473,97 @@ Important Note: An exception to this policy has been accepted for the extension 
 
 ### Naming
 
-In order to promote consistency and make it easier for implementers to locate suitable profiles, extensions, etc, for their projects, a naming strategy has been adopted.
+In order to promote consistency and make it easier for implementers to locate suitable profiles, extensions, etc, for their projects, a naming policy has been adopted.
+
+A conformance resource has two elements covered by a naming policy:
+1. the name element e.g. `StructureDefinition.name`
+1. the title element e.g. `StructureDefinition.title`
+
+In addition to the requirements defined in the FHIR standard this section defines conventions for ADHA FHIR conformance resources by resource type. 
 
 
+**StructureDefinition naming - Profiles**
 
-### Versioning of FHIR artefacts
+The name for a StructureDefinition that is a profile **SHALL** be in the form of ADHA[resource-profiled][computable-use-case-name]:
+
+- [resource-profiled] is the value in `StructureDefinition.type`
+- [computable-use-case-name] is a business name and **SHALL NOT** have individual words separated
+  - **SHALL** use UpperCamelCase
+  - **SHALL** be `Core` for all core profiles
+  - **SHOULD** be an abbreviations or acronyms
+
+The title for a StructureDefinition that is a profile **SHALL** be in the form of ADHA [human-readable-use-case-name]:
+
+- [human-readable-use-case-name] is a business name and **SHALL** have individual words separated by a whitespace
+  - **SHALL** use title case
+  - **SHALL** be `Core [resource-profiled]` for all core profiles e.g. `ADHA Core Patient`
+  - **SHOULD** otherwise provide a full name or acronym that describes the use context, project or operation and where possible include common use abbreviations or acronyms 
+
+Example: StructureDefinition resource that is a core profile
+~~~
+{
+  "resourceType": "StructureDefinition",
+    ...
+    "name": "ADHABodyStructureCore",
+    "title": "ADHA Core BodyStructure",
+    ...
+}  
+~~~  
+
+Example: StructureDefinition resource with a 2nd use case name
+~~~
+{
+  "resourceType": "StructureDefinition",
+    ...
+    "name": "ADHAExplanationofBenefitMBS",
+    "title": "ADHA Record of Claim against MBS or DVA",
+    ...
+}  
+~~~  
+
+
+**StructureDefinition naming - Extensions**
+
+The [resource-id] for a StructureDefinition that is an extension **SHALL** be all lowercase in the form of dh-[element-name]-[structure-version]:
+
+- [element-name] **SHALL** have individual words separated by `-`
+  - **MAY** be two or three words and **SHALL NOT** exceed five
+  - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
+- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning](policy.html#versioning)
+
+In a StructureDefinition this [resource-id] **SHALL** be used in three places:
+
+- Form part of the StructureDefinition's file name
+- The exact value in id field:`StructureDefinition.id`
+- Form part of the canonical identifier (URI): `StructureDefinition.url`
+
+
+The name for a StructureDefinition that is an extension **SHALL** be in the form of [computable-element-name]:
+
+- [computable-element-name] **SHALL** be the value of title with the following differences: 
+  - **SHALL** use UpperCamelCase
+  - **SHALL** contain no whitespace
+
+The title for a StructureDefinition that is an extension **SHALL** be in the form of ADHA [human-readable-element-name]:
+
+- [human-readable-use-case-name] is a business name and **SHALL** have individual words separated by a whitespace
+  - **SHALL** use title case
+  - **SHALL** be a meaningful element name in the style of the FHIR standard and that conveys the element meaning in the shortest set of words
+
+
+Example: StructureDefinition resource that is an extension
+~~~
+{
+  "resourceType": "StructureDefinition",
+    ...
+    "name": "MedicinesPackedInDAAIndicator",
+    "title": "Medicines Packed in Dose Administration Aid Indicator",
+    ...
+}  
+~~~  
+
+
+### Versioning
 
 The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a specification and not a software release.
 
@@ -551,7 +637,7 @@ Therefore, a publication URI may be made up of [base-publication-uri]/fhir/[fhir
 - [publication-name] **SHALL** be all lowercase and have individual words separated by `-`
   - **SHALL** be `dh` for a publication that manages the core and common ADHA FHIR materials for a FHIR version 
   - **SHALL** be the [optional-subpackage-name] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
-- [publication-version] is the `ImplementationGuide.version` string, see the section [Versioning of FHIR artefacts](policy.html#versioning-of-fhir-artefacts) 
+- [publication-version] is the `ImplementationGuide.version` string, see the section [Versioning](policy.html#versioning) 
 
 
 **Publication URI expected resolution behaviour**
