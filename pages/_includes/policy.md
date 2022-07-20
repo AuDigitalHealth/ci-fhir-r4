@@ -653,7 +653,7 @@ To account for a potential future need to concurrently actively support multiple
 - publication versioned URIs that are non-FHIR versioned
 - fully versioned URIs, i.e. FHIR versioned and publication versioned
 
-Therefore, a publication URI may be made up of [base-publication-uri]/fhir/[fhir-version]/[publication-name]/[publication-version]:
+Therefore, a publication URI may be made up of [base-publication-uri]/[fhir-version]/[publication-name]/[publication-version]:
 
 - [base-publication-uri] is `TBD`
 - [fhir-version] is in the form of `STU3` or `R4`
@@ -675,23 +675,23 @@ Taking the Medicare Records FHIR Implementation Guide. If it, hypothetically (an
         <th>Resolution behaviour</th>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/medicare-records</td>
+        <td>[base-publication-uri]/medicare-records</td>
         <td>Display the Home page of the latest FHIR version and spec version = R4 v2.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/STU3/medicare-records/1.0.0</td>
+        <td>[base-publication-uri]/STU3/medicare-records/1.0.0</td>
         <td>Display the Home page of the latest FHIR version of v1.0.0 = STU3 v1.0.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/medicare-records/2.1.0</td>
+        <td>[base-publication-uri]/medicare-records/2.1.0</td>
         <td>Display the Home page of the latest FHIR version of v2.1.0 = R4 v2.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/STU3/medicare-records/2.1.0</td>
+        <td>[base-publication-uri]/STU3/medicare-records/2.1.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = STU3 v2.1.0</td>
     </tr>
     <tr>
-        <td>[publication-uri]/fhir/R4/medicare-records/2.1.0</td>
+        <td>[base-publication-uri]/R4/medicare-records/2.1.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = R4 v2.1.0</td>
     </tr>
 </table>
@@ -704,23 +704,23 @@ Taking the ADHA FHIR Implementation Guide, if this specification was hypothetica
         <th>Resolution behaviour</th>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/dh</td>
+        <td>[base-publication-uri]/dh</td>
         <td>Display the Home page of the latest FHIR version and spec version = R4 v1.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/dh/1.0.0</td>
+        <td>[base-publication-uri]/dh/1.0.0</td>
         <td>Display the Home page of the latest FHIR version of spec version 1.0.0 = R4 v1.0.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/R4/dh/1.0.0</td>
+        <td>[base-publication-uri]/R4/dh/1.0.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = R4 v1.0.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/dh/1.1.0</td>
+        <td>[base-publication-uri]/dh/1.1.0</td>
         <td>Display the Home page of the latest FHIR version of spec version 1.1.0 = R4 v1.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/fhir/R4/dh/1.1.0</td>
+        <td>[base-publication-uri]/R4/dh/1.1.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = R4 v1.1.0</td>
     </tr>
 </table>
