@@ -374,11 +374,11 @@ The following table shows how the canonical identifier (URI) for each resource t
 
 The [resource-id] for an ImplementationGuide **SHALL** match the FHIR NPM package name. 
 
-The [resource-id] for an ImplementationGuide and FHIR NPM package name **SHALL** be all lowercase in the form of [base-id].[fhir-version].[optional-subpackage-name]:
+The [resource-id] for an ImplementationGuide and FHIR NPM package name **SHALL** be all lowercase in the form of [base-id].[fhir-version].[optional-subpackage-case]:
 
 - [base-id] is `au.digitalhealth`
 - [fhir-version] is in the form of `stu3` or `r4` or `r5`
-- [optional-subpackage-name] is optional and if present **SHALL** have individual words separated by `-`
+- [optional-subpackage-case] is optional and if present **SHALL** have individual words separated by `-`
   - It should be a business name that **MAY** be two or three words and **SHALL NOT** exceed five
   - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
   - **SHALL NOT** be present for a publication that manages the core and common ADHA FHIR materials for a FHIR version, i.e. the package id for this implementation guide **SHALL** be `au.digitalhealth.r4`
@@ -418,12 +418,12 @@ Example: ImplementationGuide resource for a subpackage with id, url, packageId
 
 **StructureDefinition [resource-id] - profiles**
 
-The [resource-id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of dh-[resource-profiled]-[use-case-name]-[optional-use-case-name2]-[structure-version]:
+The [resource-id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of dh-[resource-profiled]-[use-case]-[optional-use-case2]-[structure-version]:
 
 - [resource-profiled] is the value in `StructureDefinition.type`
-- [use-case-name] is a business name and **SHALL NOT** have individual words separated
+- [use-case] is a business name and **SHALL NOT** have individual words separated
   - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [optional-use-case-name2] is a business name for a case that is a specialism of the case represented by [use-case-name] and **SHALL NOT** have individual words separated
+- [optional-use-case2] is a business name for a case that is a specialism of the case represented by [use-case] and **SHALL NOT** have individual words separated
   - Common use abbreviations or acronyms **SHOULD** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
 - [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning](policy.html#versioning)
 
@@ -496,17 +496,17 @@ In addition to the requirements defined in the FHIR standard this section define
 
 **ImplementationGuide naming**
 
-The name for an ImplementationGuide **SHALL** be in the form of ADHA[optional-computable-use-case-name]FHIR:
+The name for an ImplementationGuide **SHALL** be in the form of ADHA[optional-computable-use-case]FHIR:
 
-- [optional-computable-use-case-name] if present **SHALL** be the value of the [optional-human-readable-use-case-name] from the title with the following differences: 
+- [optional-computable-use-case] if present **SHALL** be the value of the [optional-human-readable-use-case] from the title with the following differences: 
   - **SHALL** use UpperCamelCase
   - **SHALL** contain no whitespace
 
-The title for an ImplementationGuide **SHALL** be in the form of ADHA [optional-human-readable-use-case-name] FHIR:
+The title for an ImplementationGuide **SHALL** be in the form of ADHA [optional-human-readable-use-case] FHIR:
 
-- [human-readable-use-case-name] 
+- [human-readable-use-case] 
   - **SHALL NOT** be present for the implementation guide that manages the core and common ADHA FHIR materials for a FHIR version 
-  - **SHALL** be a title case version of the [optional-subpackage-name] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
+  - **SHALL** be a title case version of the [optional-subpackage-case] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
 
 Example: ImplementationGuide resource that manages the core and common ADHA FHIR materials
 ~~~
@@ -533,17 +533,17 @@ Example: ImplementationGuide resource with the optional human readable use case 
 
 **StructureDefinition naming - profiles**
 
-The name for a StructureDefinition that is a profile **SHALL** be in the form of ADHA[resource-profiled][computable-use-case-name]:
+The name for a StructureDefinition that is a profile **SHALL** be in the form of ADHA[resource-profiled][computable-use-case]:
 
 - [resource-profiled] is the value in `StructureDefinition.type`
-- [computable-use-case-name] is a business name and **SHALL NOT** have individual words separated
+- [computable-use-case] is a business name and **SHALL NOT** have individual words separated
   - **SHALL** use UpperCamelCase
   - **SHALL** be `Core` for all core profiles
   - **SHOULD** be an abbreviations or acronyms
 
-The title for a StructureDefinition that is a profile **SHALL** be in the form of ADHA [human-readable-use-case-name]:
+The title for a StructureDefinition that is a profile **SHALL** be in the form of ADHA [human-readable-use-case]:
 
-- [human-readable-use-case-name] is a business name and **SHALL** have individual words separated by a whitespace
+- [human-readable-use-case] is a business name and **SHALL** have individual words separated by a whitespace
   - **SHALL** use title case
   - **SHALL** be `Core [resource-profiled]` for all core profiles e.g. `ADHA Core Patient`
   - **SHOULD** otherwise provide a full name or acronym that describes the use context, project or operation and where possible include common use abbreviations or acronyms 
@@ -581,7 +581,7 @@ The name for a StructureDefinition that is an extension **SHALL** be in the form
 
 The title for a StructureDefinition that is an extension **SHALL** be in the form of ADHA [human-readable-element-name]:
 
-- [human-readable-use-case-name] is a business name and **SHALL** have individual words separated by a whitespace
+- [human-readable-use-case] is a business name and **SHALL** have individual words separated by a whitespace
   - **SHALL** use title case
   - **SHALL** be a meaningful element name in the style of the FHIR standard and that conveys the element meaning in the shortest set of words
 
@@ -676,25 +676,25 @@ The expected behaviour of resolution of canonical identifiers is summarised belo
 **Publication URLs**
 
 To account for a potential future need to concurrently actively support multiple major versions of FHIR, i.e. support a new capability like a record type or API or interaction in more than one FHIR version, publication locations **SHOULD** make content available in:
-- completely unversioned URIs, i.e. non-FHIR versioned and non-publication versioned
-- publication versioned URIs that are non-FHIR versioned
-- fully versioned URIs, i.e. FHIR versioned and publication versioned
+- unversioned URLs, i.e. non-FHIR versioned and non-publication versioned
+- publication versioned URLs that are non-FHIR versioned
+- fully versioned URLs, i.e. FHIR versioned and publication versioned
 
-Therefore, a publication URL may be made up of [base-publication-url]/[fhir-version]/[publication-name]/[publication-version]:
+Therefore, a publication URL may be made up of [base-publication-url]/[fhir-version]/[publication-case]/[publication-version]:
 
 - [base-publication-url] is `TBD`
 - [fhir-version] is in the form of `STU3` or `R4`
-- [publication-name] **SHALL** be all lowercase and have individual words separated by `-`
+- [publication-case] **SHALL** be all lowercase and have individual words separated by `-`
   - **SHALL** be `dh` for a publication that manages the core and common ADHA FHIR materials for a FHIR version 
-  - **SHALL** be the [optional-subpackage-name] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
+  - **SHALL** be the [optional-subpackage-case] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
 - [publication-version] is the `ImplementationGuide.version` string, see the section [Versioning](policy.html#versioning) 
 
 
 **Publication URL expected resolution behaviour**
 
-Non-versioned and non-FHIR versioned result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URIs. If this is a subsequent release it will replace the content that was present at the non-versioned URIs.
+Non-versioned and non-FHIR versioned result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URLs. If this is a subsequent release it will replace the content that was present at the non-versioned URLs.
 
-Taking the Medicare Records FHIR Implementation Guide. If it, hypothetically (and this is not expected!), concurrently supported two major versions of FHIR it may result in publication URLs like in the following table that associates expected content found at those URIs.
+Taking the Medicare Records FHIR Implementation Guide. If it, hypothetically (and this is not expected!), concurrently supported two major versions of FHIR it may result in publication URLs like in the following table that associates expected content found at those URLs.
 
 <table class="list" width="90%">
     <tr>
