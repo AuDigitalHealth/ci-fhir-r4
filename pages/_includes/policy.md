@@ -13,7 +13,7 @@ The policy for defining, using, maintaining, and implementing using FHIR version
 
 Systems may deploy, and support, one or more ADHA Profiles to represent clinical information. Each profile defines the FHIR structures required, the data element definitions, their associated rules of usage including the use of extensions and terminology, references the additional profiles necessary to assert conformance.
 
-A system **SHOULD** support all ADHA profiles unless the system does not anticipate supplying or consuming a certain type of data, usually by virtue of playing a limited or specialised role in clinical or information workflows. For example, a pathology laboratory may support [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), but not [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).
+A system **SHOULD** support all ADHA profiles unless the system does not anticipate supplying or consuming a certain type of data, usually by virtue of playing a limited or specialised role in clinical or information workflow. For example, a pathology laboratory may support [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), but not [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).
 
 To support an ADHA profile:
 - systems **SHALL** be able to populate all profile data elements that are mandatory and/or flagged as Must Support as defined by that profile’s StructureDefinition according to the section on [Must Support](policy.html#must-support)
@@ -404,7 +404,7 @@ Example: ImplementationGuide resource with id, url, packageId
 ~~~
  
 
-**StructureDefinition [resource-id] - Profiles**
+**StructureDefinition [resource-id] - profiles**
 
 The [resource-id] for a StructureDefinition that is a profile **SHALL** be all lowercase in the form of dh-[resource-profiled]-[use-case-name]-[optional-use-case-name2]-[structure-version]:
 
@@ -443,7 +443,7 @@ Example: StructureDefinition resource with a 2nd use case name
 ~~~  
 
 
-**StructureDefinition [resource-id] - Extensions**
+**StructureDefinition [resource-id] - extensions**
 
 The [resource-id] for a StructureDefinition that is an extension **SHALL** be all lowercase in the form of dh-[element-name]-[structure-version]:
 
@@ -519,7 +519,7 @@ Example: ImplementationGuide resource with the optional human readable use case 
 ~~~  
 
 
-**StructureDefinition naming - Profiles**
+**StructureDefinition naming - profiles**
 
 The name for a StructureDefinition that is a profile **SHALL** be in the form of ADHA[resource-profiled][computable-use-case-name]:
 
@@ -559,7 +559,7 @@ Example: StructureDefinition resource with a 2nd use case name
 ~~~  
 
 
-**StructureDefinition naming - Extensions**
+**StructureDefinition naming - extensions**
 
 The name for a StructureDefinition that is an extension **SHALL** be in the form of [computable-element-name]:
 
@@ -590,14 +590,17 @@ Example: StructureDefinition resource that is an extension
 
 The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a specification and not a software release.
 
+The four types of artefacts (publications, NPM packages, conformance resources, and terminology resources) are versioned. The publication version, ImplementationGuide resource version, and NPM package for that publication **SHALL** have the same version. Conformance and terminology resources published in or referenced by that publication **MAY** be versioned indepdendently.  
+
 There is a single development version of the specification that undergoes cycles of development. At the completion of each cycle of development a new version of the specification is published. In version control terms, each published specification is a branch off the development trunk, which may then itself undergo further change as the Agency maintains the published specification (limited to necessary technical corrections or security alerts) and introduces new capabilities.
 
-Each version is identified by a string composed from 4 parts: major.minor.revision(-label):
+The same [Semantic versioning](http://semver.org/) versioning standard is applied to the four types of ADHA arefacts. The version is identified by a string composed from 4 parts: major.minor.revision(-label):
+
 
 major	
-- Incremented when the Agency publishes an updated specification, e.g. a Trial Use or Approved version
+- Incremented every time an updated release is made that contains one or more breaking changes
 - Equivalence to a deprecated format such as CDA, is version 0
-- The initial FHIR-first design is version 1.0.x
+- The initial release of a FHIR-first design is version 1.0.x
 
 minor	
 - Increments every time an updated release is made that contains one or more substantive changes (see below)
@@ -615,9 +618,17 @@ label (optional)
 - Common labels are draft[N], qa-preview[N] for formal review activities, snapshot[N], or trial-use[N]. Snapshot releases are used typically used to support a proof of concept, connectathon, or other implementation exploration activity. 
 - The label ci-build is used to mark the continuous integration build. This is a rolling version; changes may be made numerous times a day, generally driven by change requests or new development cycles
 
-Additional notes:
+Changes to a formally published specification (except for minor publishing corrections, such as correcting broken external links) are **SHOULD** only be made via announced technical corrections.
 
-- Changes to a formally published specification (except for minor publishing corrections, such as correcting broken external links) are only made via announced technical corrections
+FHIR artefacts such as conformance resource or terminology resources **MAY** be versioned individually within a single ImplementationGuide in accordance with a change management process for each resource or **MAY** be kept in lock with the version of the ImplementationGuide. 
+
+**Types of change that may affect a version**
+
+In order to promote consistency and easy of maintenance the definition of change types defined in the FHIR standard is adopted, these are summarised below:
+
+- *Breaking changes* are changes that mean that previously conformant applications are no longer conformant to the updated artefact
+- *Substantive changes* are changes that introduce new functionality - changes to the artefact that create new capabilities - but would not render unchanged existing applications non-conformant
+- *Non-substantive changes* should not cause changes in any conformant application. For example, section renumbering, correcting broken links, changing styles, fixing typos, and providing clarifications that do not change the meaning. In addition, this covers corrections that are judged not to create any expectation of change to a conformant application
 
 
 ### Publication
