@@ -315,7 +315,7 @@ ADHA FHIR conformance resources may be one of:
 - [StructureMap](http://hl7.org/fhir/structuremap.html)
 
 
-### Canonical identifiers (URI) for FHIR conformance resources
+### Canonical identifiers (URI)
 
 FHIR conformance resources are identified by a canonical identifier that is a globally unique URI. 
 
@@ -469,6 +469,12 @@ Example: StructureDefinition resource that is an extension
 ~~~  
 
 Important Note: An exception to this policy has been accepted for the extension [Date of Initial Registration](StructureDefinition-dh-date-initial-registration-1.html) first implemented in 2018 in FHIR 3.0.1.
+
+
+### Naming
+
+In order to promote consistency and make it easier for implementers to locate suitable profiles, extensions, etc, for their projects, a naming strategy has been adopted.
+
 
 
 ### Versioning of FHIR artefacts
