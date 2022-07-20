@@ -482,6 +482,43 @@ A conformance resource has two elements covered by a naming policy:
 In addition to the requirements defined in the FHIR standard this section defines conventions for ADHA FHIR conformance resources by resource type. 
 
 
+**ImplementationGuide naming**
+
+The name for an ImplementationGuide **SHALL** be in the form of ADHA[optional-computable-use-case-name]FHIR:
+
+- [optional-computable-use-case-name] if present **SHALL** be the value of the [optional-human-readable-use-case-name] from the title with the following differences: 
+  - **SHALL** use UpperCamelCase
+  - **SHALL** contain no whitespace
+
+The title for an ImplementationGuide **SHALL** be in the form of ADHA [optional-human-readable-use-case-name] FHIR:
+
+- [human-readable-use-case-name] 
+  - **SHALL NOT** be present for the implementation guide that manages the core and common ADHA FHIR materials for a FHIR version 
+  - **SHALL** be a title case version of the [optional-subpackage-name] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
+
+Example: ImplementationGuide resource that manages the core and common ADHA FHIR materials
+~~~
+{
+  "resourceType": "ImplementationGuide",
+    ...
+    "name": "ADHAFHIR",
+    "title": "ADHA FHIR",
+    ...
+}  
+~~~  
+
+Example: ImplementationGuide resource with the optional human readable use case name
+~~~
+{
+  "resourceType": "ImplementationGuide",
+    ...
+    "name": "ADHAMedicareRecordsFHIR",
+    "title": "ADHA Medicare Records FHIR",
+    ...
+}  
+~~~  
+
+
 **StructureDefinition naming - Profiles**
 
 The name for a StructureDefinition that is a profile **SHALL** be in the form of ADHA[resource-profiled][computable-use-case-name]:
@@ -523,20 +560,6 @@ Example: StructureDefinition resource with a 2nd use case name
 
 
 **StructureDefinition naming - Extensions**
-
-The [resource-id] for a StructureDefinition that is an extension **SHALL** be all lowercase in the form of dh-[element-name]-[structure-version]:
-
-- [element-name] **SHALL** have individual words separated by `-`
-  - **MAY** be two or three words and **SHALL NOT** exceed five
-  - Common use abbreviations or acronyms **MAY** be used, punctuation such as apostrophe or ampersand **SHALL NOT** be used
-- [structure-version] is in the form of the major part of the StructureDefinition.version string, see the section [Versioning](policy.html#versioning)
-
-In a StructureDefinition this [resource-id] **SHALL** be used in three places:
-
-- Form part of the StructureDefinition's file name
-- The exact value in id field:`StructureDefinition.id`
-- Form part of the canonical identifier (URI): `StructureDefinition.url`
-
 
 The name for a StructureDefinition that is an extension **SHALL** be in the form of [computable-element-name]:
 
