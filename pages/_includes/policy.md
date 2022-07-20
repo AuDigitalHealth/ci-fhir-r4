@@ -49,7 +49,7 @@ For example, a Shared Health Summary is to conform to the specific profile gover
 
 ## Must Support
 
-Labelling an element [Must Support]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide "support" for the element in some meaningful way. ADHA profiles impose a core set of Must Support obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The specifications and/or profiles that define a particular implementation context **SHALL** make clear the required "support" for that context. 
+Labelling an element [Must Support]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide "support" for the element in some meaningful way. ADHA profiles impose a core set of Must Support obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The publications and/or profiles that define a particular implementation context **SHALL** make clear the required "support" for that context. 
 
 A sending system:
 - when making a request to an endpoint **SHALL** conform to the Conformance/Capability statement for that endpoint and conform to all applicable ADHA conformance requirements 
@@ -103,7 +103,7 @@ Example: ADHA Core AllergyIntolerance profile showing clinicalStatus and verific
 }
 ~~~
 
-When rendered in an implementation specification each profile is presented different formal views of all the must support elements in a tree format under tabs labeled "Differential Table" and "Snapshot Table".
+When rendered in an implementation publication each profile is presented different formal views of all the must support elements in a tree format under tabs labeled "Differential Table" and "Snapshot Table".
 
 The elements labeled *Must Support* in the "Differential Table" and "Snapshot Table" view are flagged with an <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>. To see the full set of Must Support elements a reader must use the "Snapshot Table". 
 The "Snapshot Table" present the must support elements defined in this profile (shown in the "Differential Table) and the must support elements inherited from a base profile (e.g. [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html) based on [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) 
@@ -112,10 +112,10 @@ Implementers should take note that the full set of constraints (i.e. invariants)
 
 **Interpreting profile elements labeled Must Support**
 
-Profiles defined in this specification flag Must Support only on elements and not on subelements of a data type. 
+Profiles defined in this publication flag Must Support only on elements and not on subelements of a data type. 
 The explanation on how to interpret Must Support for an element does not address rules defined in each profile - in implementation the rules defined in the profile must be applied and may limit or extend what is allowed for each element.
 
-The allowed subelements for each supported element in a profile are defined by a combination of the data type from the core specification and any additional rules included in the profile. 
+The allowed subelements for each supported element in a profile are defined by a combination of the data type from the core publication and any additional rules included in the profile. 
 A profile may include rules that:
 - limit what is considered 'valid'
 - extend the potential subelements by including an extension
@@ -402,6 +402,18 @@ Example: ImplementationGuide resource with id, url, packageId
     ...
 }  
 ~~~
+
+Example: ImplementationGuide resource for a subpackage with id, url, packageId
+~~~
+{
+  "resourceType": "ImplementationGuide",
+    "id": "au.digitalhealth.stu3.medicare-records",
+    "url": "http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.stu3.medicare-records",
+    ...
+    "packageId": "au.digitalhealth.stu3.medicare-records",
+    ...
+}  
+~~~
  
 
 **StructureDefinition [resource-id] - profiles**
@@ -588,11 +600,11 @@ Example: StructureDefinition resource that is an extension
 
 ### Versioning
 
-The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a specification and not a software release.
+The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a publication and not a software release.
 
-The four types of artefacts (publications, NPM packages, conformance resources, and terminology resources) are versioned. The publication version, ImplementationGuide resource version, and NPM package for that publication **SHALL** have the same version. Conformance and terminology resources published in or referenced by that publication **MAY** be versioned indepdendently.  
+The four types of artefacts (publications, NPM packages, conformance resources, and terminology resources) are versioned in accoradance with this policy. The visible publication version, ImplementationGuide resource version, and NPM package for that publication **SHALL** have the same version. Conformance and terminology resources published in, or referenced by, that publication **MAY** be versioned indepdendently.  
 
-There is a single development version of the specification that undergoes cycles of development. At the completion of each cycle of development a new version of the specification is published. In version control terms, each published specification is a branch off the development trunk, which may then itself undergo further change as the Agency maintains the published specification (limited to necessary technical corrections or security alerts) and introduces new capabilities.
+There is a single development version of the publication that undergoes cycles of development. At the completion of each cycle of development a new version of the publication is published. In version control terms, each published publication is a branch off the development trunk, which may then itself undergo further change as the Agency maintains the published publication (limited to necessary technical corrections or security alerts) and introduces new capabilities.
 
 The same [Semantic versioning](http://semver.org/) versioning standard is applied to the four types of ADHA arefacts. The version is identified by a string composed from 4 parts: major.minor.revision(-label):
 
@@ -605,11 +617,11 @@ major
 minor	
 - Increments every time an updated release is made that contains one or more substantive changes (see below)
 - Resets to 0 any time the major version changes
-- Sometimes breaking changes may be made to particular features of the specification and characterised as minor changes. When this happens, the specification will clearly indicate the grounds on which this is considered a minor update
+- Sometimes breaking changes may be made to particular features of the publication and characterised as minor changes. When this happens, the publication will clearly indicate the grounds on which this is considered a minor update
 
 revision	
 - Is set to 0 when a new release of FHIR is published
-- Increments when technical corrections and clarifications are made to an existing published specification
+- Increments when technical corrections and clarifications are made to an existing published publication
 - These changes are only made as technical corrections when it is agreed that they do not affect implementations
 
 label (optional)	
@@ -618,9 +630,11 @@ label (optional)
 - Common labels are draft[N], qa-preview[N] for formal review activities, snapshot[N], or trial-use[N]. Snapshot releases are used typically used to support a proof of concept, connectathon, or other implementation exploration activity. 
 - The label ci-build is used to mark the continuous integration build. This is a rolling version; changes may be made numerous times a day, generally driven by change requests or new development cycles
 
-Changes to a formally published specification (except for minor publishing corrections, such as correcting broken external links) are **SHOULD** only be made via announced technical corrections.
+Changes to a formally published publication (except for minor publishing corrections, such as correcting broken external links) are **SHOULD** only be made via announced technical corrections.
 
-FHIR artefacts such as conformance resource or terminology resources **MAY** be versioned individually within a single ImplementationGuide in accordance with a change management process for each resource or **MAY** be kept in lock with the version of the ImplementationGuide. 
+FHIR artefacts such as conformance resource or terminology resources **MAY** be versioned individually within a single ImplementationGuide in accordance with a change management process for each resource or **MAY** be kept in lock with the version of the ImplementationGuide.
+
+Examples provided as part of a publication are never normative, or versioned. 
 
 **Types of change that may affect a version**
 
@@ -630,17 +644,19 @@ In order to promote consistency and easy of maintenance the definition of change
 - *Substantive changes* are changes that introduce new functionality - changes to the artefact that create new capabilities - but would not render unchanged existing applications non-conformant
 - *Non-substantive changes* should not cause changes in any conformant application. For example, section renumbering, correcting broken links, changing styles, fixing typos, and providing clarifications that do not change the meaning. In addition, this covers corrections that are judged not to create any expectation of change to a conformant application
 
+Examples provided as part of a publication are never treated as normative or substantive. While every effort is made to ensure that example resources are correct, changes to the examples in a publication or NPM package **SHALL** be considered non-substantive.
+
 
 ### Publication
 
-An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public FHIR implementation guide or in a FHIR NPM package and **SHOULD** be published in both. 
+An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide or in an NPM package and **SHOULD** be published in both. 
 
-If available, the FHIR NPM package:
-- **SHALL** be published at the root director of the publication URI for each specification, see notes on publication URIs below
-- **SHALL** meet the [FHIR NPM Package Specification](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification)
+If available, the NPM package:
+- **SHALL** be published at the root director of the publication URL for each publication, see notes on publication URLs below
+- **SHALL** meet the [FHIR NPM Package publication](https://confluence.hl7.org/display/FHIR/NPM+Package+publication)
 - **SHALL** be 'published' on the [FHIR Package Registry](https://registry.fhir.org) 
 
-Some implementation contexts will be supported by targeted conformance assets, e.g. Provider Connect Australia. The specifications and/or profiles that define a particular implementation context **SHALL** define requirements for publication and management of FHIR conformance resources for that context, and **SHALL** manage those artefacts accordingly.
+Some implementation contexts will be supported by targeted conformance assets, e.g. Provider Connect Australia. The publications and/or profiles that define a particular implementation context **SHALL** define requirements for publication and management of FHIR conformance resources for that context, and **SHALL** manage those artefacts accordingly.
 
 All FHIR materials relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) **SHALL** be held on a publicly available GitHub repository published by the Australian Digital Health Agency. The location for Agency material in GitHub is: [https://github.com/AuDigitalHealth](https://github.com/AuDigitalHealth).
 
@@ -653,20 +669,20 @@ The canonical identifier for ADHA FHIR publication and conformance resources **S
  
 The expected behaviour of resolution of canonical identifiers is summarised below:
 - An unversioned canonical identifier, if it resolves, **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
-- The canonical identifier of an ImplementationGuide resource, if it resolves, **SHALL** resolve to the Home page of that specification, see detailed expected resolution behaviour for publication URIs below
+- The canonical identifier of an ImplementationGuide resource, if it resolves, **SHALL** resolve to the Home page of that publication, see detailed expected resolution behaviour for publication URLs below
 - The publication location **SHOULD** be a FHIR server hosting resources so that a GET of [canonical]/[Type]/[id] or the canonical identifier returns a FHIR resource
 
 
-**Publication URIs**
+**Publication URLs**
 
 To account for a potential future need to concurrently actively support multiple major versions of FHIR, i.e. support a new capability like a record type or API or interaction in more than one FHIR version, publication locations **SHOULD** make content available in:
 - completely unversioned URIs, i.e. non-FHIR versioned and non-publication versioned
 - publication versioned URIs that are non-FHIR versioned
 - fully versioned URIs, i.e. FHIR versioned and publication versioned
 
-Therefore, a publication URI may be made up of [base-publication-uri]/[fhir-version]/[publication-name]/[publication-version]:
+Therefore, a publication URL may be made up of [base-publication-url]/[fhir-version]/[publication-name]/[publication-version]:
 
-- [base-publication-uri] is `TBD`
+- [base-publication-url] is `TBD`
 - [fhir-version] is in the form of `STU3` or `R4`
 - [publication-name] **SHALL** be all lowercase and have individual words separated by `-`
   - **SHALL** be `dh` for a publication that manages the core and common ADHA FHIR materials for a FHIR version 
@@ -674,64 +690,64 @@ Therefore, a publication URI may be made up of [base-publication-uri]/[fhir-vers
 - [publication-version] is the `ImplementationGuide.version` string, see the section [Versioning](policy.html#versioning) 
 
 
-**Publication URI expected resolution behaviour**
+**Publication URL expected resolution behaviour**
 
 Non-versioned and non-FHIR versioned result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URIs. If this is a subsequent release it will replace the content that was present at the non-versioned URIs.
 
-Taking the Medicare Records FHIR Implementation Guide. If it, hypothetically (and this is not expected!), concurrently supported two major versions of FHIR it may result in publication URIs like in the following table that associates expected content found at those URIs.
+Taking the Medicare Records FHIR Implementation Guide. If it, hypothetically (and this is not expected!), concurrently supported two major versions of FHIR it may result in publication URLs like in the following table that associates expected content found at those URIs.
 
 <table class="list" width="90%">
     <tr>
-        <th>Specification URL entered into browser</th>
+        <th>publication URL entered into browser</th>
         <th>Resolution behaviour</th>
     </tr>
     <tr>
-        <td>[base-publication-uri]/medicare-records</td>
+        <td>[base-publication-url]/medicare-records</td>
         <td>Display the Home page of the latest FHIR version and spec version = R4 v2.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/STU3/medicare-records/1.0.0</td>
+        <td>[base-publication-url]/STU3/medicare-records/1.0.0</td>
         <td>Display the Home page of the latest FHIR version of v1.0.0 = STU3 v1.0.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/medicare-records/2.1.0</td>
+        <td>[base-publication-url]/medicare-records/2.1.0</td>
         <td>Display the Home page of the latest FHIR version of v2.1.0 = R4 v2.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/STU3/medicare-records/2.1.0</td>
+        <td>[base-publication-url]/STU3/medicare-records/2.1.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = STU3 v2.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/R4/medicare-records/2.1.0</td>
+        <td>[base-publication-url]/R4/medicare-records/2.1.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = R4 v2.1.0</td>
     </tr>
 </table>
 
-Taking the ADHA FHIR Implementation Guide, if this specification was hypothetically published only in FHIR R4 and had two published versions 1.0.0 and 1.1.0: 
+Taking the ADHA FHIR Implementation Guide, if this publication was hypothetically published only in FHIR R4 and had two published versions 1.0.0 and 1.1.0: 
 
 <table class="list" width="90%">
     <tr>
-        <th>Specification URL entered into browser</th>
+        <th>publication URL entered into browser</th>
         <th>Resolution behaviour</th>
     </tr>
     <tr>
-        <td>[base-publication-uri]/dh</td>
+        <td>[base-publication-url]/dh</td>
         <td>Display the Home page of the latest FHIR version and spec version = R4 v1.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/dh/1.0.0</td>
+        <td>[base-publication-url]/dh/1.0.0</td>
         <td>Display the Home page of the latest FHIR version of spec version 1.0.0 = R4 v1.0.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/R4/dh/1.0.0</td>
+        <td>[base-publication-url]/R4/dh/1.0.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = R4 v1.0.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/dh/1.1.0</td>
+        <td>[base-publication-url]/dh/1.1.0</td>
         <td>Display the Home page of the latest FHIR version of spec version 1.1.0 = R4 v1.1.0</td>
     </tr>
     <tr>
-        <td>[base-publication-uri]/R4/dh/1.1.0</td>
+        <td>[base-publication-url]/R4/dh/1.1.0</td>
         <td>Display the Home page of the specified FHIR version and spec version = R4 v1.1.0</td>
     </tr>
 </table>
