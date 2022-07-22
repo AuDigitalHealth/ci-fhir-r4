@@ -649,9 +649,9 @@ Examples provided as part of a publication are never treated as normative or sub
 
 ### Publication
 
-An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide or in an NPM package and **SHOULD** be published in both. 
+An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide and an NPM package. 
 
-If available, the NPM package:
+The NPM package:
 - **SHALL** be published at the root director of the publication URL for each publication, see notes on publication URLs below
 - **SHALL** meet the [FHIR NPM Package publication](https://confluence.hl7.org/display/FHIR/NPM+Package+publication)
 - **SHALL** be 'published' on the [FHIR Package Registry](https://registry.fhir.org) 
@@ -668,9 +668,9 @@ Comments, feedback and suggestions from developers on FHIR resources (and associ
 The canonical identifier for ADHA FHIR publication and conformance resources **SHOULD** be resolvable URLs. The publication location for ADHA artefacts **MAY** be different and resolve by redirection. Resolution **SHOULD** behave as defined in the FHIR standard. 
  
 The expected behaviour of resolution of canonical identifiers is summarised below:
-- An unversioned canonical identifier, if it resolves, **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
-- The canonical identifier of an ImplementationGuide resource (e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4`) **SHALL** resolve to the Home page of the latest version of that publication
-- The versioned canonical identifier of an ImplementationGuide resource (e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.0.0`) **SHALL** resolve to the Home page of the specified version of that publication
+- An unversioned canonical identifier **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
+- The canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4`, **SHALL** resolve to the Home page of the latest version of that publication
+- The versioned canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.0.0`, **SHALL** resolve to the Home page of the specified version of that publication
 - The publication location **SHOULD** be a FHIR server hosting resources so that a GET of [canonical]/[Type]/[id] or the canonical identifier returns a FHIR resource
 
 
