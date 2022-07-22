@@ -9,13 +9,11 @@
     </identifier>
     <type value="collection"/>
     <!--    IMMUNIZATION   -->
+    <!--A resource that doesn't have a persistent home / isn't a resource already on the server - but it does have a UUID assigned for this bundle "locally identified"-->
     <entry>
         <fullUrl value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7715"/>
         <resource>
             <Immunization>
-                <meta>
-                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
-                </meta>
                 <extension url="http://hl7.org.au/fhir/StructureDefinition/vaccine-serial-number">
                     <valueString value="12345678916"/>
                 </extension>
@@ -61,15 +59,4 @@
             </Immunization>
         </resource>
     </entry>
-    <!--    CDA REPOSITORY - pending design resolution of the STU3 Basic resource to enable persistence in R4 FHIR  -->
-    <!--<entry>
-        <fullUrl value="urn:uuid:cb799600-ba17-11ec-833a-b1763b0a7715"/>
-        <resource>
-            <!-\-TBD-\->
-        </resource>
-        <request> 
-            <method value="POST"/> 
-            <url value="TBD"/> 
-        </request>
-    </entry>-->
 </Bundle>

@@ -40,7 +40,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Maps](terminology.html): This page lists the concept maps and structure maps defined for profiles.
 - [Search Parameters and Operations](searchparams.html): This page page lists the defined Operations and Search Parameters that are used in US Core transactions.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
-- [Downloads](downloads.html): This page provides links to downloadable artifacts including the Agency FHIR NPM package.
+- [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
  
 
 ## Future of this guide

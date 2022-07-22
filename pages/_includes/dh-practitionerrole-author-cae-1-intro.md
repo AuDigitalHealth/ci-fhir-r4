@@ -3,7 +3,7 @@ In the context of an exchange of health information a practitioner role is part 
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) that are supported. 
 
-A [PractitionerRole](http://hl7.org/fhir/R4/organization.html) resource is used within the context of a referencing resource. 
+A [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) resource is used within the context of a referencing resource. 
 
 This profile is designed to set a PractitionerRole standard for:
 * Recording or updating an authoring care agency employee referenced by another resource
