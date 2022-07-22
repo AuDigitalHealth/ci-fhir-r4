@@ -37,6 +37,10 @@
 		<targetDisease>
 			<text value="Influenza"/>
 		</targetDisease>
-		<doseNumberPositiveInt value="1"/>
+		<doseNumberPositiveInt>
+			<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+				<valueCode value="unknown"/>
+			</extension>
+		</doseNumberPositiveInt>
 	</protocolApplied>
 </Immunization>
