@@ -669,7 +669,8 @@ The canonical identifier for ADHA FHIR publication and conformance resources **S
  
 The expected behaviour of resolution of canonical identifiers is summarised below:
 - An unversioned canonical identifier, if it resolves, **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
-- The canonical identifier of an ImplementationGuide resource, if it resolves, **SHALL** resolve to the Home page of that publication, see detailed expected resolution behaviour for publication URLs below
+- The canonical identifier of an ImplementationGuide resource (e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4`) **SHALL** resolve to the Home page of the latest version of that publication
+- The versioned canonical identifier of an ImplementationGuide resource (e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.0.0`) **SHALL** resolve to the Home page of the specified version of that publication
 - The publication location **SHOULD** be a FHIR server hosting resources so that a GET of [canonical]/[Type]/[id] or the canonical identifier returns a FHIR resource
 
 
