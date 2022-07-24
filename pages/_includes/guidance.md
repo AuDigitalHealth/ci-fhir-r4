@@ -151,10 +151,12 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-* All Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html)
+All Australian addresses **SHOULD** conform to the [Australian Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-adress.html) profile.
 
 
 ## Person Names
+
+*TBD: Insert guidance.*
 
 
 ## References between resources
@@ -508,7 +510,7 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 ## Lists
 
-*TBD*
+*TBD: Insert guidance.*
 
 
 ## Representing communication preferences

@@ -212,7 +212,7 @@ The following core FHIR profiles are defined in this implementation guide. These
 
 ### ADHA use case profiles 
 
-FHIR profiles defined in this implementation guide for defined use cases.
+The following FHIR profiles are defined in this implementation guide to support one or more defined use cases.
 
 <html>
   <div id="segment-content" class="segment">
@@ -431,7 +431,7 @@ FHIR profiles defined in this implementation guide for defined use cases.
 
 ### HL7 AU profiles 
 
-FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
+The following FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) form part of, or are referenced by, an Australian Digital Health Agency profile.
 
 <html>
   <div id="segment-content" class="segment">
@@ -474,12 +474,12 @@ FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://bu
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurancemembernumber.html">AU Insurance Member Number</a></li>
                             </ul>
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">Australian Address</a></li>
                             </ul>
                         </td>  
                         <td class="frm-null"/>
