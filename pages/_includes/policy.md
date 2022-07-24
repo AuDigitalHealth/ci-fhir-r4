@@ -671,7 +671,7 @@ The expected behaviour of resolution of canonical identifiers is summarised belo
 - An unversioned canonical identifier **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
 - The canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4`, **SHALL** resolve to the Home page of the latest version of that publication
 - The versioned canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.0.0`, **SHALL** resolve to the Home page of the specified version of that publication
-- The publication location **SHOULD** be a FHIR server hosting resources so that a GET of [canonical]/[Type]/[id] or the canonical identifier returns a FHIR resource
+- The publication location **SHOULD** be a FHIR server hosting resources so that the publication URL acts like a [ServICE Base URL](http://hl7.org/fhir/http.html#general) such that a GET of [publication-url]/[resource-type]/[id] returns a FHIR resource
 
 
 **Publication URLs**

@@ -693,14 +693,15 @@
       </Immunization>
     </resource>
   </entry>
-<!--     IMMUNIZATION (air-dip-02)     -->
+<!--     IMMUNIZATION (air-infl-02)     -->
   <entry>
     <fullUrl value="urn:uuid:a1ad9a53-6dda-4648-9227-b39fe806d6b1"/>
     <resource>
       <Immunization>
         <id value="air-infl-02"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "air-infl-02" </p></div><p><b>identifier</b>: id: urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: Panvax <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (air-vaccine-code-formats#PANVAX)</span></p><p><b>patient</b>: <a href="#Patient_mhr-field-sally">See above (urn:uuid:3fe721b9-2258-4707-a9cf-c13dd7d03747)</a></p><p><b>occurrence</b>: 2021-03-01</p><p><b>primarySource</b>: true</p><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td>Influenza <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>1</td></tr></table></div>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "air-infl-02" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></p></div><p><b>identifier</b>: id: urn:uuid:475db616-dfd5-43f3-b935-9f582233a38d</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: Panvax <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (air-vaccine-code-formats#PANVAX)</span></p><p><b>patient</b>: <a href="Patient-mhr-field-sally.html">Patient/mhr-field-sally</a> " FIELD"</p><p><b>occurrence</b>: 2021-03-01</p><p><b>primarySource</b>: true</p><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td>Influenza <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>??</td></tr></table></div>
         </text>
       <!-- identifier from Bundle uploaded from AIR Medicare repository -->
         <identifier>
@@ -736,12 +737,17 @@
           <targetDisease>
             <text value="Influenza"/>
           </targetDisease>
-          <doseNumberPositiveInt value="1"/>
+          <doseNumberPositiveInt>
+            <extension
+              url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+              <valueCode value="unknown"/>
+            </extension>
+          </doseNumberPositiveInt>
         </protocolApplied>
       </Immunization>
     </resource>
   </entry>
-<!--     IMMUNIZATION (air-dip-03)     -->
+<!--     IMMUNIZATION (air-infl-03)     -->
   <entry>
     <fullUrl value="urn:uuid:1bdf2ba0-59a5-4638-9ca6-4a961ed23a7b"/>
     <resource>

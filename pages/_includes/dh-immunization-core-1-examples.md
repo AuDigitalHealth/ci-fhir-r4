@@ -103,7 +103,7 @@
       <td><a href="Immunization-air-infl-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Immunization-air-infl-02.html">Record of Panvax in 2022 for Sally Field from AIR</a></td>
+      <td><a href="Immunization-air-infl-02.html">Record of Panvax in 2021 for Ms. Sally Field from AIR (dose number with data absent extension)</a></td>
       <td>air-infl-02</td>
       <td><a href="Immunization-air-infl-02.xml.html">XML</a></td>
       <td><a href="Immunization-air-infl-02.json.html">JSON</a></td>
