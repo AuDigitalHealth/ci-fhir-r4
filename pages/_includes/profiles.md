@@ -446,7 +446,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/extension-birthplace.html">Birth Place</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place</a></td>
         <td>birthPlace</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
