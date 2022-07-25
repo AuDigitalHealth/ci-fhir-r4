@@ -151,7 +151,7 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-All Australian addresses **SHOULD** conform to the [Australian Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-adress.html) profile.
+All Australian addresses **SHOULD** conform to the [Australian Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html) profile.
 
 
 ## Person Names
