@@ -149,17 +149,14 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-* All Australian address conforms to [AU Base Address](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-ihi.html)
-
-
-## Person Names
+All Australian addresses **SHOULD** conform to the [Australian Address](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-adress.html) profile.
 
 
 ## References between resources
 
 References between resources in ADHA profiles are supported as reference (literal reference), identifier (logical reference), and display (text description of target). 
 
-ADHA profiles may include constraints on elements of [Reference type](http://hl7.org/fhir/R4/references.html) that limit what is considered valid. For example, the profile [ADHA Document Composition](StructureDefinition-dh-composition-document-1.html) limits what is considered valid for the element `Composition.section.entry` by mandating `Composition.section.entry.reference` to enforce population of a literal reference for each entry.
+ADHA profiles may include constraints on elements of [Reference type](http://hl7.org/fhir/R4/references.html) that limit what is considered valid. For example, the profile [ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html) limits what is considered valid for the element `ExplanationOfBenefit.referral` by mandating `ExplanationOfBenefit.referral.reference` to enforce population of a literal reference if the referral element is provided.
 
 If an identifier (logical reference) is supplied, that identifier **SHALL** be populated with a meaningful business identifier according to the section on [Business identifiers](guidance.html#business-identifiers) that identifies the logical entity across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more).
 
@@ -343,7 +340,7 @@ For non-extemporaneous medications, the medication code (or set of codes) is the
 
 Australian Medicines Terminology (AMT) is the national terminology for identification and naming of medicines in clinical systems for Australia. 
 The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. 
-The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](www.healthterminologies.gov.au).
+The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](https://www.healthterminologies.gov.au).
 
 In addition to the medication code, the majority of use cases support exchange of structured medicine information as separate data elements covering brand name, generic name, item form and strength, and manufacturer.
 
