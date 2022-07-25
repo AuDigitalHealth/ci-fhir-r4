@@ -30,11 +30,11 @@ The FHIR package contains the validation form (JSON + SCH) of the conformance ar
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describe the set of rules to claim conformance to this guide including the expectations for must support elements in the ADHA profiles.
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in the ADHA profiles.
 - [Guidance](guidance.html): This page provides guidance in using the profiles defined in this guide.
-- [Profiles and Extensions](profiles.html): This page lists the set of Profile and Extension that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarizes the supported search transactions for each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
+- [Profiles and Extensions](profiles.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarizes the supported search transactions for each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
-- [Downloads](downloads.html): This page provides links to downloadable artifacts including the Agency FHIR NPM package.
+- [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
  
 
 ## Future of this guide
