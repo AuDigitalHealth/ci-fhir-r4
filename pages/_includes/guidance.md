@@ -149,7 +149,7 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-All Australian addresses **SHOULD** conform to the [Australian Address](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-adress.html) profile.
+All Australian addresses **SHOULD** conform to the [Australian Address](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-address.html) profile.
 
 
 ## References between resources
