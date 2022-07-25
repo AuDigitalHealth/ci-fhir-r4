@@ -3,7 +3,7 @@ In the context of an exchange of health information a practitioner role is part 
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) that are supported. 
 
-A [PractitionerRole](http://hl7.org/fhir/R4/organization.html) resource is used within the context of a referencing resource. 
+A [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) resource is used within the context of a referencing resource. 
 
 This profile is designed to set a PractitionerRole standard for:
 * Recording or updating an authoring practitioner role referenced by another resource
@@ -27,4 +27,3 @@ This profile is referenced by
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
 [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html).
-
