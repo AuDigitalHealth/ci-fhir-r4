@@ -201,14 +201,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-organization-core-1"/>
-            </reference>
-            <name value="ADHA Core Organization"/>
-            <description value="The purpose of this profile is to define a core representation of an organisation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-observation-core-1"/>
             </reference>
             <name value="ADHA Core Observation"/>
@@ -237,6 +229,14 @@
             </reference>
             <name value="ADHA Pathology Result Observation"/>
             <description value="The purpose of this profile is to represent a pathology test observation issued by the diagnostic service provider for the electronic exchange of pathology test observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for all pathology disciplines (e.g. including microbiology, histopathology, cytology, blood transfusion) with the exception of genomics."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-organization-core-1"/>
+            </reference>
+            <name value="ADHA Core Organization"/>
+            <description value="The purpose of this profile is to define a core representation of an organisation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -559,7 +559,14 @@
             <reference>
                 <reference value="Bundle/air-02"/>
             </reference>
-            <name value="Transaction Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028"/>
+            <name value="Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/air-03"/>
+            </reference>
+            <name value="Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient Sally FIELD"/>
             <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
         <resource>
@@ -733,14 +740,14 @@
             <reference>
                 <reference value="ExplanationOfBenefit/mbs-mds"/>
             </reference>
-            <name value="R4 conversion of MDS test data ExplanationOfBenefit.id d46a4133-ba17-11ec-833a-b1763b0a7715"/>
+            <name value="R4 conversion of STU3 PBS MDS test data (missing data asserted with data absent extension)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ExplanationOfBenefit/pbs-mds"/>
             </reference>
-            <name value="R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715"/>
+            <name value="R4 conversion of STU3 MBS MDS test data (missing data asserted with data absent extension)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
         </resource>
         <resource>
@@ -1002,7 +1009,7 @@
             <reference>
                 <reference value="Immunization/air-infl-02"/>
             </reference>
-            <name value="Record of Panvax in 2021 for Ms. Sally Field from AIR"/>
+            <name value="Record of Panvax in 2021 for Ms. Sally Field from AIR (dose number with data absent extension)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-air-1"/>
         </resource>
         <resource>

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <!--Transaction Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028 -->
+    <!--Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient with IHI 8003608000216028 -->
     <id value="air-02"/>
-    <type value="transaction"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.36.1.2001.1007.11.8003640002000035.212021023128" />
+    </identifier>
+    <type value="collection"/>
     <!--    IMMUNIZATION (air-infl-04)    -->
     <entry>
         <fullUrl value="urn:uuid:0db57fef-dee6-446a-af15-4dfb3fa4d0b5"/>
@@ -52,11 +56,27 @@
                 </protocolApplied>
             </Immunization>
         </resource>
-        <request> 
-            <!--    POST to /Immunization - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Immunization"/> 
-        </request>
+    </entry>
+    <!--PATIENT-->
+    <!--A resource that doesn't have a persistent home / isn't a resource already on the server - but it does have a UUID assigned for this bundle "locally identified"-->
+    <entry>
+        <fullUrl value="urn:uuid:c821dcb1-f09f-4fec-b205-1e6ae0046d37"/>
+        <resource>
+            <Patient>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NI"/>
+                            <display value="National unique individual identifier"/>
+                        </coding>
+                        <text value="IHI"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                    <value value="8003608000216028"/>
+                </identifier>
+            </Patient>
+        </resource>
     </entry>
     <!--    FLAG (air-03) -->
     <entry>
@@ -112,10 +132,5 @@
                 </author>
             </Flag>
         </resource>
-        <request> 
-            <!--    POST to /Flag - that's a create - in a transaction you don't specify the [base]    -->
-            <method value="POST"/> 
-            <url value="Flag"/> 
-        </request>
     </entry>
 </Bundle>

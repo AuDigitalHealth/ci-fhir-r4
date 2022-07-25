@@ -12,7 +12,7 @@
       <td><a href="ExplanationOfBenefit-pbs-cont-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-pbs-mds.html">R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715</a></td>
+      <td><a href="ExplanationOfBenefit-pbs-mds.html">R4 conversion of STU3 PBS MDS test data (missing data asserted with data absent extension)</a></td>
       <td>pbs-mds</td>
       <td><a href="ExplanationOfBenefit-pbs-mds.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-pbs-mds.json.html">JSON</a></td>
