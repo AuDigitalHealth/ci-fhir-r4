@@ -9,9 +9,9 @@
 
 ## Profiles
 
-### ADHA Core FHIR Profiles 
+### ADHA core profiles 
 
-The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend HL7 AU [Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">
@@ -158,8 +158,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                         </td>    
                         <td class="frm-null"/>
                     </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
-                    <!--<tr class="frm-group">
+                    <!--<tr class="frm-break"><td colspan="6"/></tr>
+                    <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Financial</div></td>
                         <td class="frm-category">Support</td>
                         <td class="frm-category">Billing</td>
@@ -189,8 +189,8 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr> -->
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr> -->
                 </table>
             </div>
       </div>
@@ -210,9 +210,9 @@ The following core FHIR profiles are defined in this implementation guide. These
 </html>
 
 
-### ADHA Use Case FHIR Profiles 
+### ADHA use case profiles 
 
-FHIR profiles defined in this implementation guide for defined use cases.
+The following FHIR profiles are defined in this implementation guide to support one or more defined use cases.
 
 <html>
   <div id="segment-content" class="segment">
@@ -407,8 +407,8 @@ FHIR profiles defined in this implementation guide for defined use cases.
                         <td class="frm-null"/>
                         <td class="frm-null"/>
                         <td class="frm-null"/>
-                    </tr> -->
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    </tr> 
+                    <tr class="frm-break"><td colspan="6"/></tr>-->
                 </table>
             </div>
       </div>
@@ -429,9 +429,9 @@ FHIR profiles defined in this implementation guide for defined use cases.
 
 
 
-### HL7 AU FHIR Profiles 
+### HL7 AU profiles 
 
-FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2)](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) that form part of an Australian Digital Health Agency Core Asset FHIR profile.
+The following FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) form part of, or are referenced by, an Australian Digital Health Agency profile.
 
 <html>
   <div id="segment-content" class="segment">
@@ -474,12 +474,12 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html">AU Medicare Provider Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html">AU Pensioner Concession Card Number</a></li>
                                 <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-residentialagedcareserviceidentifier.html">AU Residential Aged Care Service Identifier</a></li>
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurernumber.html">AU Private Health Insurance Member Number</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurancemembernumber.html">AU Insurance Member Number</a></li>
                             </ul>
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">AU Base Address</a></li>
+                                <li><a href ="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html">Australian Address</a></li>
                             </ul>
                         </td>  
                         <td class="frm-null"/>
@@ -491,19 +491,23 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
                     <tr class="frm-group">
-                        <td rowspan="2" class="frm-group rotate"><div>Clinical</div></td>
+                        <td rowspan="2" class="frm-group rotate"><div>Observations</div></td>
                         <td class="frm-category">Summary</td>
                         <td class="frm-category">Diagnostics</td>
-                        <td class="frm-category">Medications</td>
+                        <td class="frm-category">Lifestyle</td>
                         <td class="frm-category">Care Provision</td>
-                        <td class="frm-category">Request &amp; Response</td>
+                        <td class="frm-category">Pregnancy</td>
                     </tr>
                     <tr class="frm-contents" height="80">
-                        <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-norelevantfinding.html">AU Assertion of No Relevant Finding</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-sexassignedatbirth.html">AU Biological Sex Assigned at Birth</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthprogramparticipation.html">AU Health Program Participation Summary</a></li>
+                            </ul>
+                        </td>   
+                        <td class="frm-set">
+                            <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bloodpressure.html">AU Blood Pressure</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyweight.html">AU Body Weight</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyheight.html">AU Body Height</a></li>
@@ -514,20 +518,29 @@ FHIR profiles defined in HL7 AU [Australian Base Implementation Guide (AU Base 2
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodytemp.html">AU Body Temperature</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a></li>
                                 <li>AU Level of Consciousness</li>
+                                <li>AU Waist Circumference</li>
                                 <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-vitalspanel.html">AU Vital Signs Panel</a></li>
+                            </ul>
+                        </td>   
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-alcoholstatus.html">AU Alcohol Status</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingceasedate.html">AU Smoking Cease Date</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstartdate.html">AU Smoking Start Date</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
+                            </ul>
+                        </td>   
+                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-parity.html">AU Parity</a></li>
                                 <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
-                                <li>AU Health Program Participation Summary</li>
                             </ul>
                         </td>   
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
-                        <td class="frm-null"/>
                     </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <!--<tr class="frm-break"><td colspan="6"/></tr>-->
                 </table>
             </div>
       </div>
@@ -588,7 +601,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/extension-birthplace.html">Birth Place</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place</a></td>
         <td>birthPlace</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
@@ -618,7 +631,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/datatypes.html#ContactPoint">ContactPoint</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason.html">Data Absent Reason</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-data-absent-reason.html">Data Absent Reason</a></td>
         <td>data-absent-reason</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
         <td>Element</td>
@@ -642,7 +655,7 @@ The following extensions form part of this implementation guide:
         <td>Resource</td>
     </tr>
       <tr>
-        <td><a href="StructureDefinition-packed-in-daa-1.html">Dose Administration Aid Medicines Indicator</a></td>
+        <td><a href="StructureDefinition-dh-packed-in-daa-1.html">Dose Administration Aid Medicines Indicator</a></td>
         <td>dh-packed-in-daa-1</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
         <td><a href="http://hl7.org/fhir/R4/list.html">List</a></td>  
@@ -672,8 +685,8 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified.html">IHI Verified</a></td>
-        <td>ihi-verified</td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-ihi-verified-date.html">IHI Verified Date</a></td>
+        <td>ihi-verified-date</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
@@ -722,7 +735,7 @@ The following extensions form part of this implementation guide:
     <tr>
         <td><a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
         <td>vaccine-serial-number</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#strig">string</a></td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td>
     </tr>
 </table>

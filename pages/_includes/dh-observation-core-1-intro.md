@@ -1,9 +1,8 @@
-#### ADHA Core Observation
 The purpose of this profile is to provide a core representation of a generic observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-Where a more specific observation profile is applicable, e.g. diagnostic result or vital signs, an implementation **SHALL** ensure the resource conforms to that specific profile.
+Where a more specific Observation profile is applicable, e.g. diagnostic result or vital signs, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core Observation standard for:
 * Query for a generic observation for a patient

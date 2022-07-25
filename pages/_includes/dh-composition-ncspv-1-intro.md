@@ -1,4 +1,3 @@
-#### ADHA National Cancer Screening Program Participation View
 The purpose of this profile is to define a representation of a National Cancer Screening Program Participation View that describes an individual's participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Composition](http://hl7.org/fhir/R4/composition.html) that are supported. 

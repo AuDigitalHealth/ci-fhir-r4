@@ -17,5 +17,22 @@
       <td><a href="Condition-wound-es-01.xml.html">XML</a></td>
       <td><a href="Condition-wound-es-01.json.html">JSON</a></td>
       <td><a href="Condition-wound-es-01.ttl.html">Turtle</a></td>
+   </tr>
+    <tr>
+      <td colspan="5">Bundle examples that include a Condition entry conforming to this profile:</td>
+   </tr>
+   <tr>
+      <td><a href="Bundle-es-02-doc.html">Event Summary Document Bundle for Mr Zhang Wei (2020)</a></td>
+      <td>es-02-doc</td>
+      <td><a href="Bundle-es-02-doc.xml.html">XML</a></td>
+      <td><a href="Bundle-es-02-doc.json.html">JSON</a></td>
+      <td><a href="Bundle-es-02-doc.ttl.html">Turtle</a></td>
+   </tr>    
+   <tr>
+      <td><a href="Bundle-shs-02-doc.html">Shared Health Summary Document Bundle for Mr Zhang Wei (2019)</a></td>
+      <td>shs-02-doc</td>
+      <td><a href="Bundle-shs-02-doc.xml.html">XML</a></td>
+      <td><a href="Bundle-shs-02-doc.json.html">JSON</a></td>
+      <td><a href="Bundle-shs-02-doc.ttl.html">Turtle</a></td>
    </tr>             
 </table>

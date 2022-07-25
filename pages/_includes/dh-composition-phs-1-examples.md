@@ -6,7 +6,7 @@
    </tr>
    <tr>
       <td><a href="Composition-phs-01.html">Personal Health Summary Payload Bundle for Mrs. Bonny Goodwin 2022-11-28</a></td>
-      <td>po-01</td>
+      <td>phs-01</td>
       <td><a href="Composition-phs-01.xml.html">XML</a></td>
       <td><a href="Composition-phs-01.json.html">JSON</a></td>
       <td><a href="Composition-phs-01.ttl.html">Turtle</a></td>
@@ -16,7 +16,7 @@
    </tr>
    <tr>
       <td><a href="Bundle-phs-doc-01.html">Personal Health Summary Document Bundle for Mrs. Bonny Goodwin 2022-11-28</a></td>
-      <td>po-doc-01</td>
+      <td>phs-doc-01</td>
       <td><a href="Bundle-phs-doc-01.xml.html">XML</a></td>
       <td><a href="Bundle-phs-doc-01.json.html">JSON</a></td>
       <td><a href="Bundle-phs-doc-01.ttl.html">Turtle</a></td>

@@ -1,4 +1,3 @@
-#### ADHA Core Location
 The purpose of this profile is to define a core representation of a location for the electronic exchange of digital health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information a location is part of the context established for a set of healthcare-related information.
 

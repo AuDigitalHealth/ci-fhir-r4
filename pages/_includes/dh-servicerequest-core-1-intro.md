@@ -1,9 +1,8 @@
-#### ADHA Core ServiceRequest
 The purpose of this profile is to provide a core representation of a record of request for a service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
-This profile identifies the additional constraints, extensions, and value sets that build on and extend [ServiceRequest](http://hl7.org/fhir/R4/list.html) that are supported. 
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) that are supported. 
 
-Where a more specific service request profile is applicable an implementation **SHALL** ensure the resource conforms to that specific profile.
+Where a more specific ServiceRequest profile is applicable an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core ServiceRequest standard for:
 * Query for a request for a service associated with a patient
@@ -37,6 +36,6 @@ This profile is referenced by
 [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html),  and 
 [ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).
 
-These profiles build on this profile ([ADHA Core ServiceRequest](StructureDefinition-dh-list-core-1.html)) to define specific service requests:
+These profiles build on this profile ([ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html)) to define specific service requests:
 * [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html)
 

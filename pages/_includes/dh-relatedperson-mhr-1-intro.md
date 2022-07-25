@@ -1,4 +1,3 @@
-#### ADHA My Health Record RelatedPerson
 The purpose of this profile is to define a representation of a related person for exchange usage scenarios with the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information.
 

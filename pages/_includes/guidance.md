@@ -151,10 +151,12 @@ Example: Patient resource with a medical record number (local identifier)
 
 ## Addresses
 
-* All Australian address conforms to [AU Base Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
+All Australian addresses **SHOULD** conform to the [Australian Address](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-adress.html) profile.
 
 
 ## Person Names
+
+*TBD: Insert guidance.*
 
 
 ## References between resources
@@ -345,7 +347,7 @@ For non-extemporaneous medications, the medication code (or set of codes) is the
 
 Australian Medicines Terminology (AMT) is the national terminology for identification and naming of medicines in clinical systems for Australia. 
 The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. 
-The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](www.healthterminologies.gov.au).
+The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](https://www.healthterminologies.gov.au/).
 
 *TBD: Insert PBS.*
 
@@ -508,7 +510,7 @@ These data elements may be supported as coded, or text, and systems are likely t
 
 ## Lists
 
-*TBD*
+*TBD: Insert guidance.*
 
 
 ## Representing communication preferences
