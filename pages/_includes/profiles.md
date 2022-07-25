@@ -4,7 +4,10 @@
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-## ADHA core profiles 
+
+## Profiles
+
+### ADHA core profiles 
 
 The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend [HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
@@ -325,7 +328,7 @@ The following FHIR profiles are defined in this implementation guide to support 
 
 ## HL7 AU profiles 
 
-The following FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) form part of an Australian Digital Health Agency profile.
+The following FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) form part of, or are referenced by, an Australian Digital Health Agency profile.
 
 <html>
   <div id="segment-content" class="segment">
@@ -372,7 +375,7 @@ The following FHIR profiles defined in [HL7 AU Australian Base Implementation Gu
                         </td>  
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-address.html">AU Base Address</a></li>
+                                <li><a href ="http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-address.html">Australian Address</a></li>
                             </ul>
                         </td>  
                         <td class="frm-null"/>
@@ -510,7 +513,7 @@ The following extensions form part of this implementation guide:
     </tr>
     <tr>
         <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-ihi-verified-date.html">IHI Verified Date</a></td>
-        <td>ihi-verified</td>
+        <td>ihi-verified-date</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
@@ -553,7 +556,7 @@ The following extensions form part of this implementation guide:
     <tr>
         <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
         <td>vaccine-serial-number</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#strig">string</a></td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td>
     </tr>
 </table>
