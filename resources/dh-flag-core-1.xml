@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-flag-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-core-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHAFlagCore"/>
   <title value="ADHA Core Flag"/>
   <status value="draft"/>
@@ -61,6 +61,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
       </type>
+      <condition value="inv-dh-flg-01"/>
       <constraint>
         <key value="inv-dh-flg-01"/>
         <severity value="error"/>
@@ -99,6 +100,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
         />
       </type>
+      <condition value="inv-dh-flg-02"/>
       <constraint>
         <key value="inv-dh-flg-02"/>
         <severity value="error"/>

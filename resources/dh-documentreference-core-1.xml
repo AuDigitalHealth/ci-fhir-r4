@@ -3,7 +3,7 @@
   <id value="dh-documentreference-core-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="ADHADocumentReferenceCore"/>
   <title value="ADHA Core DocumentReference"/>
   <status value="draft"/>
@@ -35,6 +35,7 @@
           value="If present, a custodian shall at least have a reference or a valid identifier"/>
         <expression
           value="custodian.exists() implies custodian.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:custodian)) or exists(f:custodian/f:reference) or exists(f:custodian/f:identifier) or exists(f:custodian/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"
         />
@@ -75,6 +76,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-docref-01"/>
       <constraint>
         <key value="inv-dh-docref-01"/>
         <severity value="error"/>
@@ -107,6 +109,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-docref-02"/>
       <constraint>
         <key value="inv-dh-docref-02"/>
         <severity value="error"/>
@@ -137,6 +140,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-docref-03"/>
       <mustSupport value="true"/>
     </element>
     <element id="DocumentReference.description">

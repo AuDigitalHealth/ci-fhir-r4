@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-explanationofbenefit-medicare-mbs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHAExplanationofBenefitMBS"/>
   <title value="ADHA Record of Claim against MBS or DVA"/>
   <status value="draft"/>
@@ -66,6 +66,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-eob-01"/>
       <constraint>
         <key value="inv-dh-eob-01"/>
         <severity value="error"/>
@@ -78,6 +79,7 @@
     </element>
     <element id="ExplanationOfBenefit.created">
       <path value="ExplanationOfBenefit.created"/>
+      <condition value="inv-dh-eob-03"/>
       <constraint>
         <key value="inv-dh-eob-03"/>
         <severity value="error"/>
@@ -96,6 +98,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
       </type>
+      <condition value="inv-dh-eob-02"/>
       <constraint>
         <key value="inv-dh-eob-02"/>
         <severity value="error"/>

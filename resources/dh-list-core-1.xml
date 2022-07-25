@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHAListCore"/>
   <title value="ADHA Core List"/>
   <status value="draft"/>
@@ -42,6 +42,7 @@
           value="If present, a source shall at least have a reference or a valid identifier"/>
         <expression
           value="source.exists() implies source.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:source)) or exists(f:source/f:reference) or exists(f:source/f:identifier) or exists(f:source/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
       </constraint>
       <constraint>
@@ -73,6 +74,8 @@
         <code value="Extension"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/author-related-person"/>
       </type>
+      <condition value="inv-dh-lst-01"/>
+      <condition value="inv-dh-lst-03"/>
       <mustSupport value="true"/>
     </element>
     <element id="List.identifier">
@@ -101,6 +104,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <min value="1"/>
+      <condition value="inv-dh-lst-04"/>
       <constraint>
         <key value="inv-dh-lst-04"/>
         <severity value="error"/>
@@ -122,6 +126,7 @@
     </element>
     <element id="List.date">
       <path value="List.date"/>
+      <condition value="inv-dh-lst-06"/>
       <constraint>
         <key value="inv-dh-lst-06"/>
         <severity value="error"/>
@@ -144,6 +149,8 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
       </type>
+      <condition value="inv-dh-lst-01"/>
+      <condition value="inv-dh-lst-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="List.note">
@@ -168,6 +175,7 @@
     </element>
     <element id="List.entry.item">
       <path value="List.entry.item"/>
+      <condition value="inv-dh-lst-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="List.entry.item.reference">

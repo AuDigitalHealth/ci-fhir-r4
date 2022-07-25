@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-encounter-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="ADHAEncounterCore"/>
   <title value="ADHA Core Encounter"/>
   <status value="draft"/>
@@ -32,6 +32,7 @@
         <severity value="error"/>
         <human value="If present, the service provider shall at least have a reference or display or a valid identifier"/>
         <expression value="serviceProvider.exists() implies serviceProvider.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:serviceProvider)) or exists(f:serviceProvider/f:reference) or exists(f:serviceProvider/f:identifier) or exists(f:serviceProvider/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
     </element>
@@ -72,6 +73,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-enc-01"/>
       <constraint>
         <key value="inv-dh-enc-01"/>
         <severity value="error"/>
@@ -90,6 +92,7 @@
         <severity value="error"/>
         <human value="If present, an individual shall at least have a reference, an identifier or a display"/>
         <expression value="individual.exists() implies individual.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:individual)) or exists(f:individual/f:reference) or exists(f:individual/f:identifier) or exists(f:individual/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -108,6 +111,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
+      <condition value="inv-dh-enc-02"/>
       <mustSupport value="true"/>
     </element>
     <element id="Encounter.period">
@@ -147,6 +151,7 @@
         <severity value="error"/>
         <human value="If present, location shall at least have a reference or display or a valid identifier"/>
         <expression value="location.exists() implies location.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:location)) or exists(f:location/f:reference) or exists(f:location/f:identifier) or exists(f:location/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -158,6 +163,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
       </type>
+      <condition value="inv-dh-enc-03"/>
       <mustSupport value="true"/>
     </element>
     <element id="Encounter.serviceProvider">
@@ -167,6 +173,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
       </type>
+      <condition value="inv-dh-enc-04"/>
       <mustSupport value="true"/>
     </element>
   </differential>

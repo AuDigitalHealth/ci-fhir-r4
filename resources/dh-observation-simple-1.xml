@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-simple-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="ADHAObservationSimple"/>
   <title value="ADHA Simple Observation"/>
   <status value="draft"/>
@@ -49,6 +49,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-obs-01"/>
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
@@ -71,6 +72,7 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <min value="1"/>
+      <condition value="inv-dh-obs-07"/>
       <constraint>
         <key value="inv-dh-obs-07"/>
         <severity value="error"/>
@@ -96,6 +98,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-obs-02"/>
       <constraint>
         <key value="inv-dh-obs-02"/>
         <severity value="error"/>

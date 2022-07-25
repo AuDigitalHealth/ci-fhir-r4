@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-servicerequest-modi-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="MODIServiceRequest"/>
   <title value="MODI Request for Diagnostic Imaging Service"/>
   <status value="draft"/>
@@ -34,6 +34,7 @@
           value="If present, a performer shall at least have a reference or display or a valid identifier"/>
         <expression
           value="performer.exists() implies performer.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:performer)) or exists(f:performer/f:reference) or exists(f:performer/f:identifier) or exists(f:performer/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"
         />
@@ -147,6 +148,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
       </type>
+      <condition value="inv-dh-srr-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="ServiceRequest.reasonCode">

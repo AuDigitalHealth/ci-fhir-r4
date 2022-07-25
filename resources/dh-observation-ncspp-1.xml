@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-ncspp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-  <version value="0.2.2"/>
+  <version value="0.2.3"/>
   <name value="ADHAObservationNCSPP"/>
   <title value="ADHA National Cancer Screening Program Participation Observation"/>
   <status value="draft"/>
@@ -62,6 +62,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-obs-01"/>
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
@@ -87,6 +88,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-obs-02"/>
       <constraint>
         <key value="inv-dh-obs-02"/>
         <severity value="error"/>

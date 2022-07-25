@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-document-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHACompositionDocument"/>
   <title value="ADHA Document Composition"/>
   <status value="draft"/>
@@ -34,6 +34,7 @@
           value="If present, an information recipient shall at least have a reference, an identifier or a display"/>
         <expression
           value="informationRecipient.exists() implies informationRecipient.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:informationRecipient)) or exists(f:informationRecipient/f:reference) or exists(f:informationRecipient/f:identifier) or exists(f:informationRecipient/f:display)"/>
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"
         />
@@ -67,6 +68,7 @@
         <code value="Extension"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/information-recipient"/>
       </type>
+      <condition value="inv-dh-doc-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.identifier">
@@ -96,6 +98,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-doc-03"/>
       <constraint>
         <key value="inv-dh-doc-03"/>
         <severity value="error"/>
@@ -117,6 +120,7 @@
     </element>
     <element id="Composition.date">
       <path value="Composition.date"/>
+      <condition value="inv-dh-doc-07"/>
       <constraint>
         <key value="inv-dh-doc-07"/>
         <severity value="error"/>
@@ -141,6 +145,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-doc-04"/>
       <constraint>
         <key value="inv-dh-doc-04"/>
         <severity value="error"/>
@@ -199,6 +204,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-doc-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Composition.custodian">
@@ -210,6 +216,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
         />
       </type>
+      <condition value="inv-dh-doc-06"/>
       <constraint>
         <key value="inv-dh-doc-06"/>
         <severity value="error"/>

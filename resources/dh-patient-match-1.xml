@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-patient-match-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-match-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAPatientMatch"/>
   <title value="ADHA Match Patient"/>
   <status value="draft"/>
@@ -46,6 +46,7 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
+      <condition value="inv-dh-pat-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="Patient.identifier:ihi">

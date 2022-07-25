@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-pres-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="ADHAMedicationRequestPrescription"/>
   <title value="ADHA Prescription"/>
   <status value="draft"/>
@@ -35,6 +35,7 @@
         <severity value="error"/>
         <human value="If present, the prescription this is based on shall at least have a reference or a valid identifier"/>
         <expression value="basedOn.exists() implies basedOn.all($this.reference.exists() or $this.display.exists() or $this.identifier.where(system.count() + value.count() &gt;1).exists())"/>
+        <xpath value="not(exists(f:basedOn)) or exists(f:basedOn/f:reference) or exists(f:basedOn/f:identifier) or exists(f:basedOn/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
       </constraint>
     </element>
@@ -71,6 +72,7 @@
       <path value="MedicationRequest.medication[x]"/>
       <sliceName value="medicationReference"/>
       <min value="1"/>
+      <condition value="inv-dh-pres-02"/>
       <constraint>
         <key value="inv-dh-pres-02"/>
         <severity value="error"/>
@@ -109,6 +111,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
       </type>
+      <condition value="inv-dh-pres-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationRequest.dispenseRequest">

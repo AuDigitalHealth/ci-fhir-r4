@@ -32,6 +32,7 @@
         <severity value="error"/>
         <human value="If present, an asserter shall at least have a reference, an identifier or a display"/>
         <expression value="asserter.exists() implies asserter.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:asserter)) or exists(f:asserter/f:reference) or exists(f:asserter/f:identifier) or exists(f:asserter/f:display)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
       </constraint>
       <constraint> 
@@ -45,6 +46,7 @@
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus"/>
       <mustSupport value="true"/>
+      <condition value="inv-dh-cond-05"/>
     </element>
     <element id="Condition.verificationStatus">
       <path value="Condition.verificationStatus"/>
@@ -74,11 +76,13 @@
     </element>
     <element id="Condition.bodySite">
       <path value="Condition.bodySite"/>
+      <condition value="inv-dh-cond-02"/>
       <constraint>
         <key value="inv-dh-cond-02"/>
         <severity value="error"/>
         <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
         <expression value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <xpath value="not(exists(f:coding/f:system)) or exists(f:coding/f:system[@value='http://snomed.info/sct'])"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
       </constraint>
       <mustSupport value="true"/>
@@ -94,6 +98,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-cond-03"/>
       <constraint>
         <key value="inv-dh-cond-03"/>
         <severity value="error"/>
@@ -158,6 +163,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-cond-04"/>
       <constraint>
         <key value="inv-dh-cond-04"/>
         <severity value="error"/>
@@ -180,6 +186,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"
         />
       </type>
+      <condition value="inv-dh-cond-01"/>
       <mustSupport value="true"/>
     </element>
     <element id="Condition.note">

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="ADHAObservationCore"/>
   <title value="ADHA Core Observation"/>
   <status value="draft"/>
@@ -57,6 +57,7 @@
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
+      <condition value="inv-dh-obs-01"/>
       <constraint>
         <key value="inv-dh-obs-01"/>
         <severity value="error"/>
@@ -79,6 +80,7 @@
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <min value="1"/>
+      <condition value="inv-dh-obs-07"/>
       <constraint>
         <key value="inv-dh-obs-07"/>
         <severity value="error"/>
@@ -104,6 +106,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-author-1"
         />
       </type>
+      <condition value="inv-dh-obs-03"/>
       <constraint>
         <key value="inv-dh-obs-03"/>
         <severity value="error"/>
@@ -116,10 +119,12 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
+      <condition value="inv-dh-obs-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
+      <condition value="inv-dh-obs-05"/>
       <mustSupport value="true"/>
     </element>
     <element id="Observation.interpretation">
@@ -132,11 +137,13 @@
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite"/>
+      <condition value="inv-dh-obs-04"/>
       <constraint>
         <key value="inv-dh-obs-04"/>
         <severity value="error"/>
         <human value="If a coded body site is provided, at least one code shall be from SNOMED CT"/>
         <expression value="coding.exists() implies coding.where(system='http://snomed.info/sct').exists()"/>
+        <xpath value="not(exists(f:coding/f:system)) or exists(f:coding/f:system[@value='http://snomed.info/sct'])"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </constraint>
       <mustSupport value="true"/>
