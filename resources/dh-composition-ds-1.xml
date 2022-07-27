@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ds-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHACompositionDS"/>
   <title value="ADHA Discharge Summary Composition"/>
   <status value="draft"/>
@@ -100,10 +100,6 @@
       <path value="Composition.section.title"/>
       <min value="1"/>
     </element>
-    <element id="Composition.section.code">
-      <path value="Composition.section.code"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section.emptyReason">
       <path value="Composition.section.emptyReason"/>
       <condition value="inv-dh-ds-01"/>
@@ -123,6 +119,8 @@
     </element>
     <element id="Composition.section:advanceCareDirectives.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 42348-3 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -157,6 +155,8 @@
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 48765-2 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA), and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.20113 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data. &#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -205,6 +205,8 @@
     </element>
     <element id="Composition.section:dischargeMedicines.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 10183-2 adopted for this section is aligned with the vocabulary in Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16146.4.1.1 or 101.16146 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -256,6 +258,8 @@
     </element>
     <element id="Composition.section:admissionMedicines.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 42346-7 adopted for this section is aligned with the vocabulary in Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -287,6 +291,8 @@
     </element>
     <element id="Composition.section:vitalSigns.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 8716-3 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>
@@ -362,6 +368,8 @@
     </element>
     <element id="Composition.section:immunisations.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 11369-6 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16638 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org"/>

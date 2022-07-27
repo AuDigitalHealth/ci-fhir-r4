@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ncspv-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="DHCompositionNCSPV"/>
   <title value="ADHA National Cancer Screening Program Participation View"/>
   <status value="draft"/>
@@ -87,6 +87,7 @@
     </element>
     <element id="Composition.section.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;At this time there is no LOINC concept available scoped to health program information. When a concept in a national or international terminology is widely adopted then it will replace the use of a concept from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
       <min value="1"/>
       <patternCodeableConcept>
         <coding>

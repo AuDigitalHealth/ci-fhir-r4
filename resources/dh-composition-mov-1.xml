@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-mov-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHACompositionMOV"/>
   <title value="ADHA Medicare Overview Composition"/>
   <status value="draft"/>
@@ -88,10 +88,6 @@
       <path value="Composition.section.title"/>
       <min value="1"/>
     </element>
-    <element id="Composition.section.code">
-      <path value="Composition.section.code"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section.section">
       <path value="Composition.section.section"/>
       <max value="0"/>
@@ -110,6 +106,7 @@
     </element>
     <element id="Composition.section:pbs.code">
       <path value="Composition.section.code"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
@@ -146,6 +143,7 @@
     </element>
     <element id="Composition.section:air.code">
       <path value="Composition.section.code"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
@@ -184,6 +182,7 @@
     </element>
     <element id="Composition.section:aodr.code">
       <path value="Composition.section.code"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
@@ -220,6 +219,7 @@
     </element>
     <element id="Composition.section:mbs.code">
       <path value="Composition.section.code"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
           <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
