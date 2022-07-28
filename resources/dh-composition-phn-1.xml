@@ -39,8 +39,8 @@
       <path value="Composition.type"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="100.16681"/>
+          <system value="http://loinc.org"/>
+          <code value="51855-5"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -85,11 +85,12 @@
     </element>
     <element id="Composition.section.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 51855-5 adopted for this section is aligned with the vocabulary in Consolidated CDA (C-CDA).&#xa;&#xa;The use of concept 102.15513 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data. &#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
       <min value="1"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="102.15513"/>
+          <system value="http://loinc.org"/>
+          <code value="51855-5"/>
         </coding>
       </patternCodeableConcept>
     </element>

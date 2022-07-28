@@ -84,10 +84,6 @@
       </slicing>
       <min value="1"/>
     </element>
-    <element id="Composition.section.title">
-      <path value="Composition.section.title"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section.section">
       <path value="Composition.section.section"/>
       <max value="0"/>
@@ -102,6 +98,7 @@
     </element>
     <element id="Composition.section:pbs.title">
       <path value="Composition.section.title"/>
+      <min value="1"/>
       <fixedString value="Prescription Information - PBS and RPBS"/>
     </element>
     <element id="Composition.section:pbs.code">
@@ -139,6 +136,7 @@
     </element>
     <element id="Composition.section:air.title">
       <path value="Composition.section.title"/>
+      <min value="1"/>
       <fixedString value="Australian Immunisation Register - AIR"/>
     </element>
     <element id="Composition.section:air.code">
@@ -178,6 +176,7 @@
     </element>
     <element id="Composition.section:aodr.title">
       <path value="Composition.section.title"/>
+      <min value="1"/>
       <fixedString value="Australian Organ Donor Register - AODR"/>
     </element>
     <element id="Composition.section:aodr.code">
@@ -215,6 +214,7 @@
     </element>
     <element id="Composition.section:mbs.title">
       <path value="Composition.section.title"/>
+      <min value="1"/>
       <fixedString value="Medicare Services - MBS and DVA Items"/>
     </element>
     <element id="Composition.section:mbs.code">

@@ -115,43 +115,9 @@
         />
       </constraint>
     </element>
-    <element id="Composition.section.title">
-      <path value="Composition.section.title"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section.section">
       <path value="Composition.section.section"/>
       <max value="0"/>
-    </element>
-    <element id="Composition.section:eventOverview">
-      <path value="Composition.section"/>
-      <sliceName value="eventOverview"/>
-      <short value="Event Overview"/>
-      <definition value="Summary information concerning the event."/>
-      <min value="1"/>
-      <max value="1"/>
-    </element>
-    <element id="Composition.section:eventOverview.code">
-      <path value="Composition.section.code"/>
-      <min value="1"/>
-      <patternCodeableConcept>
-        <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="101.16672"/>
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Composition.section:eventOverview.entry">
-      <path value="Composition.section.entry"/>
-      <short value="Encounter summary"/>
-      <max value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-encounter-core-1"
-        />
-      </type>
-      <condition value="inv-dh-es-01"/>
     </element>
     <element id="Composition.section:allergies">
       <path value="Composition.section"/>
@@ -160,6 +126,10 @@
       <definition
         value="Information about allergies or intolerances identified or reported during this encounter. This may include statements that a patient does not have an allergy or category of allergies."/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:allergies.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
@@ -211,8 +181,13 @@
         />
       </constraint>
     </element>
+    <element id="Composition.section:medicines.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:medicines.code">
       <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 10160-0 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16146 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
       <min value="1"/>
       <patternCodeableConcept>
         <coding>
@@ -260,6 +235,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-mix-1"
         />
       </constraint>
+    </element>
+    <element id="Composition.section:medicalHistory.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:medicalHistory.code">
       <path value="Composition.section.code"/>
@@ -313,6 +292,10 @@
         />
       </constraint>
     </element>
+    <element id="Composition.section:immunisations.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:immunisations.code">
       <path value="Composition.section.code"/>
       <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 11369-6 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16638 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
@@ -354,6 +337,10 @@
         value="Information about diagnostic tests or procedures performed on or requested for an individual during this encounter, that are considered relevant to the individual's ongoing care. This does not include a full list of diagnostic tests and procedures performed on or request for the individual but only those that are relevant to the encounter."/>
       <min value="0"/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:diagnosticInvestigations.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:diagnosticInvestigations.code">
       <path value="Composition.section.code"/>

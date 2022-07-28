@@ -96,26 +96,16 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
-    <element id="Composition.section.title">
-      <path value="Composition.section.title"/>
-      <min value="1"/>
-    </element>
-    <element id="Composition.section.emptyReason">
-      <path value="Composition.section.emptyReason"/>
-      <condition value="inv-dh-ds-01"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet
-          value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
-        />
-      </binding>
-    </element>
     <element id="Composition.section:advanceCareDirectives">
       <path value="Composition.section"/>
       <sliceName value="advanceCareDirectives"/>
       <short value="Information on advance care directives."/>
       <definition value="TBD"/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:advanceCareDirectives.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:advanceCareDirectives.code">
       <path value="Composition.section.code"/>
@@ -145,6 +135,14 @@
       <condition value="inv-dh-ds-01"/>
       <condition value="inv-dh-ds-02"/>
     </element>
+    <element id="Composition.section:advanceCareDirectives.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
+    </element>
     <element id="Composition.section:allergies">
       <path value="Composition.section"/>
       <sliceName value="allergies"/>
@@ -152,6 +150,10 @@
       <definition
         value="Information about allergies or intolerances identified or reported during this encounter. This may include statements that a patient does not have an allergy or category of allergies."/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:allergies.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
@@ -174,6 +176,14 @@
       </type>
       <condition value="inv-dh-ds-01"/>
       <condition value="inv-dh-ds-02"/>
+    </element>
+    <element id="Composition.section:allergies.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
     </element>
     <element id="Composition.section:dischargeMedicines">
       <path value="Composition.section"/>
@@ -203,6 +213,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
+    <element id="Composition.section:dischargeMedicines.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:dischargeMedicines.code">
       <path value="Composition.section.code"/>
       <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 10183-2 adopted for this section is aligned with the vocabulary in Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16146.4.1.1 or 101.16146 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
@@ -227,6 +241,14 @@
       <condition value="inv-dh-ds-02"/>
       <condition value="inv-dh-ds-04"/>
       <condition value="inv-dh-ds-05"/>
+    </element>
+    <element id="Composition.section:dischargeMedicines.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
     </element>
     <element id="Composition.section:admissionMedicines">
       <path value="Composition.section"/>
@@ -256,6 +278,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
+    <element id="Composition.section:admissionMedicines.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:admissionMedicines.code">
       <path value="Composition.section.code"/>
       <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 42346-7 adopted for this section is aligned with the vocabulary in Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
@@ -281,6 +307,14 @@
       <condition value="inv-dh-ds-08"/>
       <condition value="inv-dh-ds-09"/>
     </element>
+    <element id="Composition.section:admissionMedicines.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
+    </element>
     <element id="Composition.section:vitalSigns">
       <path value="Composition.section"/>
       <sliceName value="vitalSigns"/>
@@ -288,6 +322,10 @@
       <definition
         value="Vital signs associated with a patient."/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:vitalSigns.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:vitalSigns.code">
       <path value="Composition.section.code"/>
@@ -338,6 +376,14 @@
       <condition value="inv-dh-ds-01"/>
       <condition value="inv-dh-ds-02"/>
     </element>
+    <element id="Composition.section:vitalSigns.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
+    </element>
     <element id="Composition.section:immunisations">
       <path value="Composition.section"/>
       <sliceName value="immunisations"/>
@@ -366,6 +412,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
+    <element id="Composition.section:immunisations.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:immunisations.code">
       <path value="Composition.section.code"/>
       <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 11369-6 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16638 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
@@ -390,6 +440,14 @@
       <condition value="inv-dh-ds-02"/>
       <condition value="inv-dh-ds-11"/>
       <condition value="inv-dh-ds-12"/>
+    </element>
+    <element id="Composition.section:immunisations.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

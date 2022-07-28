@@ -93,10 +93,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
       </constraint>
     </element>
-    <element id="Composition.section.title">
-      <path value="Composition.section.title"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section:allergies">
       <path value="Composition.section"/>
       <sliceName value="allergies"/>
@@ -104,6 +100,10 @@
       <definition
         value="Information about allergies and intolerances of the patient. This includes statements that a patient does not have an allergy or category of allergies."/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:allergies.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
@@ -165,6 +165,10 @@
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
       </constraint>
+    </element>
+    <element id="Composition.section:medicinesList.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:medicinesList.code">
       <path value="Composition.section.code"/>

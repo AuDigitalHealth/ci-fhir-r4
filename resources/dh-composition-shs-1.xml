@@ -116,10 +116,6 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
       </constraint>
     </element>
-    <element id="Composition.section.title">
-      <path value="Composition.section.title"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section.section">
       <path value="Composition.section.section"/>
       <max value="0"/>
@@ -131,6 +127,10 @@
       <definition value="Information about allergies and intolerances of the patient. This includes statements that a patient does not have an allergy or category of allergies."/>
       <min value="1"/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:allergies.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
@@ -175,6 +175,10 @@
         <expression value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) = '1234391000168107')"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
       </constraint>
+    </element>
+    <element id="Composition.section:currentMedicicines.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:currentMedicicines.code">
       <path value="Composition.section.code"/>
@@ -222,6 +226,10 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
       </constraint>
     </element>
+    <element id="Composition.section:medicalHistory.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:medicalHistory.code">
       <path value="Composition.section.code"/>
       <min value="1"/>
@@ -267,6 +275,10 @@
         <expression value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) = '1234401000168109')"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
       </constraint>
+    </element>
+    <element id="Composition.section:immunisations.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:immunisations.code">
       <path value="Composition.section.code"/>

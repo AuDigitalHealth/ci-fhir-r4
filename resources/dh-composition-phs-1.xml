@@ -103,10 +103,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
       </constraint>
     </element>
-    <element id="Composition.section.title">
-      <path value="Composition.section.title"/>
-      <min value="1"/>
-    </element>
     <element id="Composition.section.section">
       <path value="Composition.section.section"/>
       <max value="0"/>
@@ -119,6 +115,10 @@
         value="Information about allergies and intolerances of the patient. This includes statements that a patient does not have an allergy or category of allergies."/>
       <min value="1"/>
       <max value="1"/>
+    </element>
+    <element id="Composition.section:allergies.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:allergies.code">
       <path value="Composition.section.code"/>
@@ -172,6 +172,10 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
       </constraint>
     </element>
+    <element id="Composition.section:currentmedicicines.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
     <element id="Composition.section:currentmedicicines.code">
       <path value="Composition.section.code"/>
       <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;At this time there is no LOINC concept available scoped to only current medicines. When a concept in a national or international terminology is widely adopted then it will replace the use of a concept from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
@@ -224,6 +228,10 @@
         <source
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
       </constraint>
+    </element>
+    <element id="Composition.section:immunisations.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
     </element>
     <element id="Composition.section:immunisations.code">
       <path value="Composition.section.code"/>
