@@ -653,7 +653,7 @@ An ADHA FHIR conformance resource for public implementation **SHALL** be publish
 
 The NPM package:
 - **SHALL** be published at the root director of the publication URL for each publication, see notes on publication URLs below
-- **SHALL** meet the [FHIR NPM Package publication](https://confluence.hl7.org/display/FHIR/NPM+Package+publication)
+- **SHALL** meet the [FHIR NPM Package publication](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification)
 - **SHALL** be 'published' on the [FHIR Package Registry](https://registry.fhir.org) 
 
 Some implementation contexts will be supported by targeted conformance assets, e.g. Provider Connect Australia. The publications and/or profiles that define a particular implementation context **SHALL** define requirements for publication and management of FHIR conformance resources for that context, and **SHALL** manage those artefacts accordingly.
