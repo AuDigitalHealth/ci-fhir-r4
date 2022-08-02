@@ -161,11 +161,11 @@
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
       </binding>
     </element>
-    <element id="Composition.section:currentMedicicines">
+    <element id="Composition.section:medicines">
       <path value="Composition.section"/>
-      <sliceName value="currentMedicicines"/>
+      <sliceName value="medicines"/>
       <short value="Current Medicines"/>
-      <definition value="Medicines that the patient is currently taking including self-prescribed, clinician prescribed and nonprescription medication."/>
+      <definition value="Information about the medicines that the patient is currently taking and history of pertienent medications including self-prescribed, clinician prescribed and nonprescription medication."/>
       <min value="1"/>
       <max value="1"/>
       <constraint>
@@ -176,22 +176,22 @@
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
       </constraint>
     </element>
-    <element id="Composition.section:currentMedicicines.title">
+    <element id="Composition.section:medicines.title">
       <path value="Composition.section.title"/>
       <min value="1"/>
     </element>
-    <element id="Composition.section:currentMedicicines.code">
+    <element id="Composition.section:medicines.code">
       <path value="Composition.section.code"/>
-      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;At this time there is no LOINC concept available scoped to only current medicines. When a concept in a national or international terminology is widely adopted then it will replace the use of a concept from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 10160-0 adopted for this section is aligned with the vocabulary in Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of concept 101.16146 or 101.16022 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may also be supplied as an additional coding or it may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
       <min value="1"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-          <code value="101.32009"/>
+          <system value="http://loinc.org"/>
+          <code value="10160-0"/>
         </coding>
       </patternCodeableConcept>
     </element>
-    <element id="Composition.section:currentMedicicines.entry">
+    <element id="Composition.section:medicines.entry">
       <path value="Composition.section.entry"/>
       <short value="Medicines the patient is currently taking"/>
       <type>
@@ -203,7 +203,7 @@
       <condition value="inv-dh-shs-02"/>
       <condition value="inv-dh-shs-04"/>
     </element>
-    <element id="Composition.section:currentMedicicines.emptyReason">
+    <element id="Composition.section:medicines.emptyReason">
       <path value="Composition.section.emptyReason"/>
       <condition value="inv-dh-shs-01"/>
       <binding>

@@ -160,14 +160,13 @@
                     </entry>
                 </section>
 
-                <!-- Section: Medical History -->
+                <!-- Section: Problems -->
                 <section>
-                    <title value="Medical History"/>
+                    <title value="Problems"/>
                     <code>
                         <coding>
-                            <system
-                                value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-                            <code value="101.16117"/>
+                            <system value="http://loinc.org"/>
+                            <code value="11450-4"/>
                         </coding>
                     </code>
                     <text>
@@ -175,13 +174,28 @@
                         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
                             <p><b>Condition</b>: Puncture wound from stepping on a rusty nail, sole
                                 of left foot; onset = 30/03/2019</p>
-                            <p><b>Procedure</b>: dressing of wound; performed = 31/03/2019</p>
                         </div>
                     </text>
                     <!-- Condition: foot wound due to stepping on a rusty nail -->
                     <entry>
                         <reference value="urn:uuid:e11fd841-5200-4657-9260-3a041a98ae31"/>
                     </entry>
+                </section>
+                <!-- Section: Procedures -->
+                <section>
+                    <title value="Procedures"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="47519-4"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
+                            <p><b>Procedure</b>: dressing of wound; performed = 31/03/2019</p>
+                        </div>
+                    </text>
                     <!-- Procedure: wound dressing -->
                     <entry>
                         <reference value="urn:uuid:fed6e796-ac88-459c-af61-de718a48423d"/>

@@ -71,19 +71,18 @@
                     <reference value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
                 </custodian>
                 <section>
-                    <title value="Current Medications"/>
+                    <title value="Medicines"/>
                     <code>
                         <coding>
-                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-                            <code value="101.32009"/>
-                            <display value="Current Medicine"/>
+                            <system value="http://loinc.org"/>
+                            <code value="10160-0"/>
                         </coding>
                     </code>
                     <text>
                         <status value="additional"/>
                         <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
                             <table border="5">
-                                <caption>Medications</caption>
+                                <caption>Current Medicines</caption>
                                 <thead>
                                     <tr>
                                         <th>Medication</th>

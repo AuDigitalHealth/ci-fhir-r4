@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ds-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="ADHACompositionDS"/>
   <title value="ADHA Discharge Summary Composition"/>
   <status value="draft"/>
@@ -189,28 +189,21 @@
       <path value="Composition.section"/>
       <sliceName value="dischargeMedicines"/>
       <short value="Medicines on discharge"/>
-      <definition
-        value="Information on the medicines that the patient is intended to take (or stop) after discharge. This may be a list, and the source may be indicated, for example, from a pharmacy system versus from the patient."/>
+      <definition value="Information on the medicines that the patient is intended to take (or stop) after discharge. This may be a list, and the source may be indicated, for example, from a pharmacy system versus from the patient."/>
       <max value="1"/>
       <constraint>
         <key value="inv-dh-ds-04"/>
         <severity value="error"/>
-        <human
-          value="At most one assertion of no relevant finding shall be present"/>
-        <expression
-          value="entry.resolve().where($this is Observation).exists() implies entry.count() &lt; 2"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
+        <human value="At most one assertion of no relevant finding shall be present"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies entry.count() &lt; 2"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-ds-05"/>
         <severity value="error"/>
-        <human
-          value="If a list is provided, no other entry shall be present"/>
-        <expression
-          value="entry.resolve().where($this is List).exists() implies entry.count() &lt; 2"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
+        <human value="If a list is provided, no other entry shall be present"/>
+        <expression value="entry.resolve().where($this is List).exists() implies entry.count() &lt; 2"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
       </constraint>
     </element>
     <element id="Composition.section:dischargeMedicines.title">
@@ -442,6 +435,153 @@
       <condition value="inv-dh-ds-12"/>
     </element>
     <element id="Composition.section:immunisations.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
+    </element>
+    <element id="Composition.section:problems">
+      <path value="Composition.section"/>
+      <sliceName value="problems"/>
+      <short value="Problems or Diagnoses"/>
+      <definition value="Information about the clinical problems or conditions currently being monitored for a patient."/>
+      <comment value="The inclusion of a problems section adopted is in line with the section grouping in the International Patient Summary (IPS), Consolidated CDA (C-CDA), C-CDA on FHIR.&#xa;&#xa;The use of a single grouping Medical History section with concept 101.16117 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may be present in older data."/>
+      <max value="1"/>
+      <constraint>
+        <key value="inv-dh-ds-07"/>
+        <severity value="error"/>
+        <human value="At most one list shall be present"/>
+        <expression value="entry.resolve().where($this is List).exists() implies entry.count() &lt; 2"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
+      </constraint>
+    </element>
+    <element id="Composition.section:problems.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.section:problems.code">
+      <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 11450-4 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of a grouping Medical History section with concept 101.16117 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11450-4"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:problems.entry">
+      <path value="Composition.section.entry"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-condition-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
+      </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
+      <condition value="inv-dh-ds-07"/>
+    </element>
+    <element id="Composition.section:problems.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
+    </element>
+    <element id="Composition.section:pastMedicalHistory">
+      <path value="Composition.section"/>
+      <sliceName value="pastMedicalHistory"/>
+      <short value="Past medical history"/>
+      <definition value="Information about the history of past illness for a patient including the history related to their current complaints, problems, or diagnoses."/>
+      <comment value="The inclusion of a past medical history section adopted is in line with the section grouping in the International Patient Summary (IPS), Consolidated CDA (C-CDA), C-CDA on FHIR, and National guidelines for on-screen presentation of discharge summaries' published by the Australian Commission on Safety and Quality in Health Care in August 2016.&#xa;&#xa;The use of a single grouping Medical History section with concept 101.16117 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may be present in older data."/>
+      <max value="1"/>
+      <constraint>
+        <key value="inv-dh-ds-03"/>
+        <severity value="error"/>
+        <human value="At most one list shall be present"/>
+        <expression value="entry.resolve().where($this is List).exists() implies entry.count() &lt; 2"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
+      </constraint>
+    </element>
+    <element id="Composition.section:pastMedicalHistory.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.section:pastMedicalHistory.code">
+      <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 11348-0 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of a grouping Medical History section with concept 101.16117 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11348-0"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:pastMedicalHistory.entry">
+      <path value="Composition.section.entry"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-condition-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
+      </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
+      <condition value="inv-dh-ds-03"/>
+    </element>
+    <element id="Composition.section:pastMedicalHistory.emptyReason">
+      <path value="Composition.section.emptyReason"/>
+      <condition value="inv-dh-ds-01"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"/>
+      </binding>
+    </element>
+    <element id="Composition.section:procedures">
+      <path value="Composition.section"/>
+      <sliceName value="procedures"/>
+      <short value="Procedures"/>
+      <definition value="Information about the clinical problems or conditions currently being monitored for a patient."/>
+      <comment value="The inclusion of a problems section adopted is in line with the section grouping in the International Patient Summary (IPS), Consolidated CDA (C-CDA), C-CDA on FHIR, and National guidelines for on-screen presentation of discharge summaries' published by the Australian Commission on Safety and Quality in Health Care in August 2016.&#xa;&#xa;The use of a single grouping Medical History section with concept 101.16117 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may be present in older data."/>
+      <max value="1"/>
+      <constraint>
+        <key value="inv-dh-ds-06"/>
+        <severity value="error"/>
+        <human value="At most one list shall be present"/>
+        <expression value="entry.resolve().where($this is List).exists() implies entry.count() &lt; 2"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
+      </constraint>
+    </element>
+    <element id="Composition.section:procedures.title">
+      <path value="Composition.section.title"/>
+      <min value="1"/>
+    </element>
+    <element id="Composition.section:procedures.code">
+      <path value="Composition.section.code"/>
+      <comment value="The code identifies the section for an automated processor of the document. When sharing health records it is important that globally adopted vocabulary is supported to allow for ubiquitous discovery, access, and re-use. To meet this need, where a consistent vocabulary and common syntax to achieve semantic interoperability is widely adopted internationally that code is adopted in Agency materials.&#xa;&#xa;The LOINC concept 47519-4 adopted for this section is aligned with the vocabulary in International Patient Summary (IPS), Consolidated CDA (C-CDA) and C-CDA on FHIR.&#xa;&#xa;The use of a grouping Medical History section with concept 101.16117 from the Agency's NCTIS (National Clinical Terminology and Information Service) Data Components code system is deprecated but may be present in older data.&#xa;&#xa;If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code."/>
+      <min value="1"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="47519-4"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:procedures.entry">
+      <path value="Composition.section.entry"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-procedure-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
+      </type>
+      <condition value="inv-dh-ds-01"/>
+      <condition value="inv-dh-ds-02"/>
+      <condition value="inv-dh-ds-06"/>
+    </element>
+    <element id="Composition.section:procedures.emptyReason">
       <path value="Composition.section.emptyReason"/>
       <condition value="inv-dh-ds-01"/>
       <binding>

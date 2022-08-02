@@ -142,28 +142,21 @@
       <path value="Composition.section"/>
       <sliceName value="medicinesList"/>
       <short value="Medicines List"/>
-      <definition
-        value="A list of medicines at a point in time that describes medicine item use for an individual. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
+      <definition value="A list of medicines at a point in time that describes medicine item use for an individual. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
       <min value="1"/>
       <constraint>
         <key value="inv-dh-sml-04"/>
         <severity value="error"/>
-        <human
-          value="If an assertion of no known current medications is provided, no other entry shall be present"/>
-        <expression
-          value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) = '1200661000168107')"/>
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
+        <human value="If an assertion of no known current medications is provided, no other entry shall be present"/>
+        <expression value="entry.resolve().where($this is Observation).exists() implies (entry.count() &lt; 2 and (entry.resolve().valueCodeableConcept.coding.code) = '1200661000168107')"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
       </constraint>
       <constraint>
         <key value="inv-dh-sml-05"/>
         <severity value="error"/>
         <human value="If present, a list shall have the same code as the section"/>
-        <expression
-          value="entry.resolve().where($this is List).exists() implies ((entry.resolve().code.coding.code) = code.coding.code)"
-        />
-        <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
+        <expression value="entry.resolve().where($this is List).exists() implies ((entry.resolve().code.coding.code) = code.coding.code)"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
       </constraint>
     </element>
     <element id="Composition.section:medicinesList.title">
@@ -183,8 +176,7 @@
       <short value="Medicines list"/>
       <type>
         <code value="Reference"/>
-        <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
         <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
       </type>
       <condition value="inv-dh-sml-01"/>

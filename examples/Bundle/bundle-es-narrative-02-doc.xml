@@ -90,31 +90,6 @@
                 <reference value="urn:uuid:021fff67-c5ec-438f-9520-ce9bafee1306"/>
             </custodian>
             <section>
-                <title value="Event Details"/>
-                <code>
-                    <coding>
-                        <system
-                            value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
-                        <code value="101.16672"/>
-                    </coding>
-                </code>
-                <text>
-                    <status value="additional"/>
-                    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-AU">
-                        <p>Patient presented for follow-up with urinary tract infection on 30
-                            May.</p>
-                        <p>Complaining of frequent and painful urinating. Midstream urine test was
-                            done and revealed urinary infection.</p>
-                        <p>Culture and sensitivity test discovered escherichia coli sensitive to
-                            Bactrim.</p>
-                        <p>Patient was prescribed Bactrim 2 tablets twice a day, and Panadol one
-                            tablet 4 times a day.</p>
-                        <p>Patient has no allergies.</p>
-                    </div>
-                </text>
-            </section>
-
-            <section>
                 <title value="Allergies and Adverse Reactions"/>
                 <code>
                     <coding>
@@ -171,8 +146,12 @@
             </section>
 
             <section>
-                <title value="Medical History"/>
+                <title value="Problems"/>
                 <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="11450-4"/>
+                    </coding>
                     <coding>
                         <system
                             value="https://healthterminologies.gov.au/fhir/CodeSystem/nctis-data-components-1"/>
