@@ -652,7 +652,7 @@ Examples provided as part of a publication are never treated as normative or sub
 An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide and an NPM package. 
 
 The NPM package:
-- **SHALL** be published at the root director of the publication URL for each publication, see notes on publication URLs below
+- **SHALL** be published at the root directory of the publication URL for each publication, see notes on publication URLs below
 - **SHALL** meet the [FHIR NPM Package publication](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification)
 - **SHALL** be 'published' on the [FHIR Package Registry](https://registry.fhir.org) 
 
