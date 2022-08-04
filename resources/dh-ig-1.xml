@@ -3640,7 +3640,30 @@
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
         </resource>
-                
+        <!--NAMING SYSTEMS-->
+        <resource>
+            <reference>
+                <reference value="NamingSystem/ihi"/>
+            </reference>
+            <name value="Australian Individual Healthcare Identifier (IHI)"/>
+            <exampleBoolean value="false"/>
+        </resource>    
+        <resource>
+            <reference>
+                <reference value="NamingSystem/hpi-i"/>
+            </reference>
+            <name value="Australian Healthcare Provider Identifier - Individual (HPI-I)"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="NamingSystem/hpi-o"/>
+            </reference>
+            <name value="Australian Healthcare Provider Identifier - Organisation (HPI-O)"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        
+        
         <page>
             <nameUrl value="index.html"/>
             <title value="Australian Digital Health Agency FHIR"/>
