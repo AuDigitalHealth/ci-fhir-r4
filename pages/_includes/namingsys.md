@@ -30,4 +30,13 @@ Identifier systems are for use in the system element of the [Identifier](http://
     <tr>
         <td><a href="NamingSystem-hpi-o.html">Australian Healthcare Provider Identifier - Organisation (HPI-O)</a></td>
     </tr>
+    <tr>
+        <td><a href="NamingSystem-dva.html">Australian Department of Veterans’ Affairs (DVA) file number</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-crn.html">Centrelink Customer Reference Number (also referred to as unique identifier number (UIN))</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-pai-o.html">My Health Record Assigned Identity - Organisation (PAI-O)</a></td>
+    </tr>
  </table>

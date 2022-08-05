@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="hpi-o"/> 
-    <name value="AustalianHPIO"/> 
+    <id value="pai-o"/> 
+    <name value="AustalianPAIO"/> 
     <status value="draft"/> 
     <kind value="identifier"/> 
     <date value="2015-08-31"/> 
@@ -24,18 +24,18 @@
             <code value="XX"/> 
             <display value="Organization Identifier"/> 
         </coding>
-        <text value="HPI-O"/>  
+        <text value="PAI-O"/>  
     </type>   
-    <description value="Australian Healthcare Provider Identifier - Organisation (HPI-O). An HPI-O is assigned under the HI Service to an organisation (such as a hospital or medical clinic) where healthcare is provided."/> 
-    <usage value="Healthcare provider individual identification"/> 
+    <description value="My Health Record Assigned Identity - Organisation (PAI-O). A PAI-O may be issued to organisations who wish to participate in the My Health Record and who are not eligible for a Healthcare Provider Identifier - Organisation (HPI-O)."/> 
+    <usage value="Organisation identification"/> 
     <uniqueId> 
         <type value="oid"/> 
-        <value value="1.2.36.1.2001.1003.0"/> 
+        <value value="1.2.36.1.2001.1007.1"/> 
         <comment value="This value is used in Australian CDA documents and OID based systems."/> 
     </uniqueId> 
     <uniqueId> 
         <type value="uri"/> 
-        <value value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/> 
+        <value value="http://ns.electronichealth.net.au/id/pcehr/paio/1.0"/> 
         <preferred value="true"/> 
         <period> 
             <start value="2015-08-21"/> 

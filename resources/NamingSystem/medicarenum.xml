@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir">
+    <id value="medicarenum"/> 
+    <name value="MedicareNumber"/> 
+    <status value="draft"/> 
+    <kind value="identifier"/> 
+    <date value="2018-02-21"/> 
+    <publisher value="Australian Digital Health Agency"/> 
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>  
+    <responsible value="Services Australia"/> 
+    <type>  
+        <coding>  
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/> 
+            <code value="MC"/> 
+            <display value="Patient's Medicare number"/> 
+        </coding>
+        <text value="Medicare Card Number"/>
+    </type>   
+    <description value="Medicare Card Number. A Medicare card is provided to individuals who are enrolled in Medicare. This identifier system may be used for the 10 digit Medicare card number or the 11 digit number that includes the line number (the individual reference number (IRN))."/> 
+    <usage value="Patient identification"/>
+    <usage value="Government funding identification"/>
+    <uniqueId> 
+        <type value="oid"/> 
+        <value value="1.2.36.1.5001.1.0.7"/> 
+        <comment value="This value is used in Australian CDA documents and OID based systems. This for the 11 digit card number that includes the line number."/> 
+    </uniqueId>
+    <uniqueId> 
+        <type value="oid"/> 
+        <value value="1.2.36.1.5001.1.0.7.1"/> 
+        <comment value="This value is used in Australian CDA documents and OID based systems. This for the 10 digit card number."/> 
+    </uniqueId>
+    <uniqueId> 
+        <type value="uri"/> 
+        <value value="http://ns.electronichealth.net.au/id/medicare-number"/> 
+        <preferred value="true"/> 
+        <period> 
+            <start value="2018-02-21"/> 
+        </period> 
+    </uniqueId> 
+</NamingSystem>
