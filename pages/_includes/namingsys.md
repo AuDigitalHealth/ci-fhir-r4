@@ -1,0 +1,33 @@
+# {{ page.title }}
+{:.no_toc}
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+* Do not remove this line (it will not be displayed)
+{:toc}
+
+> <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
+
+## Identifier systems
+
+The following identifier systems are defined using a [NamingSystem](http://hl7.org/fhir/R4/namingsystem.html) resource and form part of this implementation guide.
+
+Identifier systems are for use in the system element of the [Identifier](http://hl7.org/fhir/R4/datatypes.html#Identifier) data type. If a URI is defined here, it **SHALL** be used in preference to any other identifying mechanism. If an identifier system is not listed here, the correct URI may be determined by working through the following list, in order:
+* HL7 AU Base Implementation Guide for the associated Identifier profile
+* the HL7 OID Registry or International OID Registry
+* the documentation associated with the identifier
+* consulting the owner of the identifier
+* requesting advice from the Australian Digital Health Agency
+
+<table class="list" width="100%">
+    <tr>
+        <th>NamingSystem</th>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-ihi.html">Australian Individual Healthcare Identifier (IHI)</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-hpi-i.html">Australian Healthcare Provider Identifier - Individual (HPI-I)</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-hpi-o.html">Australian Healthcare Provider Identifier - Organisation (HPI-O)</a></td>
+    </tr>
+ </table>

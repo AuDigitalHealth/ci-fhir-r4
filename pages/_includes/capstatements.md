@@ -1,53 +1,44 @@
 # {{ page.title }}
-
+{:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-<!-- end TOC -->
+> <p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p>
 
-source pages/\_include/{{page.md_filename}}.md  file
+
+**This content is to be provided by the Architecture Team.**
+
+
+The following capability statements form part of this implementation guide.
 
 <table class="list" width="100%">
-<tbody>
-  <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th>Conformance</th>
-    <th>Description</th>
-    <th>Path</th>
-  </tr>
-  <tr>
-        <td>category</td>
-        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
-        <td><b>SHALL</b></td>
-        <td>food | medication | environment | biologic</td>
-        <td>AllergyIntolerance.category</td>
-  </tr>
-  <tr>
-        <td>patient:identifier</td>
-        <td><a href="https://build.fhir.org/search.html#token">token</a></td>
-        <td><b>SHALL</b></td>
-        <td>Who the sensitivity is for by patient identifier</td>
-        <td>AllergyIntolerance.patient.identifier</td>
-  </tr>
-  <tr>
-        <td>code</td>
-        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
-        <td><b>SHALL</b></td>
-        <td>Code that identifies the allergy or intolerance</td>
-        <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
-  </tr>
-  <tr>
-        <td>clinical-status</td>
-        <td><a href="http://hl7.org/fhir/search.html#token">token</a></td>
-        <td><b>SHALL</b></td>
-        <td>active | inactive | resolved</td>
-        <td>AllergyIntolerance.code | AllergyIntolerance.reaction.substance</td>
-  </tr>
- </tbody>
-</table>
+    <tr>
+        <th>CapabilityStatement</th>
+        <th>URI</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><a href="CapabilityStatement-dh-server-1.html">ADHA Server Requirements Capability Statement</a></td>
+        <td>http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-server-1</td>
+        <td>The requirements for capabilities of a server implementing Australian Digital Health Agency FHIR RESTful Endpoints (au.digitalhealth.r4).</td>
+    </tr>
+    <tr>
+        <td><a href="TBD">TBD</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td><a href="TBD">TBD</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td><a href="TBD">TBD</a></td>
+        <td>TBD</td>
+        <td>TBD</td>
+    </tr>
+ </table>
 
 <!--This section outlines conformance requirements
 
