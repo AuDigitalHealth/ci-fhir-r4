@@ -37,6 +37,18 @@ Identifier systems are for use in the system element of the [Identifier](http://
         <td><a href="NamingSystem-crn.html">Centrelink Customer Reference Number (also referred to as unique identifier number (UIN))</a></td>
     </tr>
     <tr>
+        <td><a href="NamingSystem-medicarenum.html">Medicare Card Number</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-medicareprovidernum.html">Medicare Provider Number</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-pai-d.html">My Health Record Assigned Identity - Device (PAI-D)</a></td>
+    </tr>
+    <tr>
         <td><a href="NamingSystem-pai-o.html">My Health Record Assigned Identity - Organisation (PAI-O)</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-pbsprescribernum.html">Pharmaceutical Benefits Scheme (PBS) prescriber number</a></td>
     </tr>
  </table>
