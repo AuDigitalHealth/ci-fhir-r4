@@ -3,13 +3,10 @@
 active: capstatements
 level: 2
 ---
-{% include header.html %}
 
+{% include header.html %}
 {% include container-start.html %}
 
-<!-- ============BreadCrumb=============== -->
-
-{% include breadcrumbs.html %}
 
 <!-- ============CONTENT CONTENT=============== -->
 <blockquote><p style="color:#ff0000;">This material is under active development and content may be added or updated on a regular basis.</p></blockquote>
@@ -20,7 +17,7 @@ level: 2
     <li><a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a></li>
 </ul>
 
-<h3><span class="sectioncount">{{ site.data.{{[id]}}.index | plus: 1 }}<a name="{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"> </a></span>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">DRAFT</a>]</h3>
+<h3>{{[type]}}: {{[title]}}<a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#{{ site.data.structuredefinitions.{{[id]}}.index | plus: 1 }}"><img src="target.png"/></a> [<a href="http://hl7.org/fhir/r4/valueset-publication-status.html">DRAFT</a>]</h3>
 
 {% include {{[type]}}-{{[name]}}.xhtml %}
 
