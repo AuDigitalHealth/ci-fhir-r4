@@ -2,7 +2,7 @@ The purpose of this profile is to define a core representation of a diagnostic r
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [DiagnosticReport](http://hl7.org/fhir/R4/diagnosticreport.html) that are supported. 
 
-Where a more specific DiagnosticReport profile is applicable, e.g. pathology report or imaging report, an implementation **SHALL** ensure the Resource conforms to that specific profile.
+Where a more specific DiagnosticReport profile is applicable, e.g. pathology report or imaging report, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
 This profile is designed to set a core DiagnosticReport standard for:
 * Query for diagnostic reports for a patient
