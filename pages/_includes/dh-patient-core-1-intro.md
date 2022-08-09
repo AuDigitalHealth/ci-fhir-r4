@@ -17,7 +17,7 @@ This profile is designed to set a core Patient standard:
 #### Boundaries and relationships
 This profile is referenced by 
 [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html), 
-[ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-odr-1.html), 
+[ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html), 
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html), 
 [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 

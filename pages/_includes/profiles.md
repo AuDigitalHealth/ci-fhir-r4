@@ -250,7 +250,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-aodr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">

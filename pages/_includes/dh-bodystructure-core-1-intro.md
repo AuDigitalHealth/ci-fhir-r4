@@ -18,4 +18,4 @@ None.
 This profile is not referenced by another profile in this implementation guide.
 
 These profiles build on this profile ([ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html)) to define specific roles:
-* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-odr-1.html)
+* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html)

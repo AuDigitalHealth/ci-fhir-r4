@@ -14,7 +14,7 @@
             <value value="help@digitalhealth.gov.au"/>
         </telecom>
     </contact>
-    <description value="The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
+    <description value="The Australian Digital Health Agency (ADHA) FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41,9 +41,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-bodystructure-odr-1"/>
+                <reference value="StructureDefinition/dh-bodystructure-aodr-1"/>
             </reference>
-            <name value="ADHA Donatable Organ or Tissue BodyStructure"/>
+            <name value="ADHA Organ or Tissue for Donation BodyStructure"/>
             <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual’s death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -59,7 +59,7 @@
             <reference>
                 <reference value="StructureDefinition/dh-consent-aodr-1"/>
             </reference>
-            <name value="ADHA Record of Australian Organ Donor Register Consent"/>
+            <name value="(ADHA Record of Consent from Australian Organ Donor Register"/>
             <description value="The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -107,7 +107,7 @@
             <reference>
                 <reference value="StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
             </reference>
-            <name value="ADHA Record of Claim against MBS"/>
+            <name value="ADHA Record of Claim against MBS or DVA"/>
             <description value="The purpose of this profile is to define a representation of a record of a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans’ Affairs (DVA) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -348,189 +348,189 @@
                 <reference value="BodyStructure/bone"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Bone structure as part of aodr-02"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/bone-02"/>
             </reference>
             <name value="Bone structure as part of aodr-02"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/bone-03"/>
             </reference>
             <name value="Bone structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/eye"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Eye structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/eye-02"/>
             </reference>
             <name value="Eye structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/eye-03"/>
             </reference>
             <name value="Eye structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/skin"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Skin structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/skin-02"/>
             </reference>
             <name value="Skin structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/skin-03"/>
             </reference>
             <name value="Skin structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/heart"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Structure of heart"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/heart-02"/>
             </reference>
             <name value="Structure of heart"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/heart-03"/>
             </reference>
             <name value="Structure of heart"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/heart-valve"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Heart valve structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/heart-valve-02"/>
             </reference>
             <name value="Heart valve structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/heart-valve-03"/>
             </reference>
             <name value="Heart valve structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/pancreas"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Pancreatic structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/pancreas-02"/>
             </reference>
             <name value="Pancreatic structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/pancreas-03"/>
             </reference>
             <name value="Pancreatic structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/kidney"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Kidney structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/kidney-02"/>
             </reference>
             <name value="Kidney structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/kidney-03"/>
             </reference>
             <name value="Kidney structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/liver"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Liver structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/liver-02"/>
             </reference>
             <name value="Liver structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/liver-03"/>
             </reference>
             <name value="Liver structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/lungs"/>
             </reference>
             <name value="R4 transform of the MDS test data Consent.id a008d446-ba17-11ec-833a-b1763b0a7715: Lung structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/lungs-02"/>
             </reference>
             <name value="Lung structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="BodyStructure/lungs-03"/>
             </reference>
             <name value="Lung structure"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-odr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bodystructure-aodr-1"/>
         </resource>
         <!--CONDITION EXAMPLES-->
         <resource>
