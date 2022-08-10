@@ -21,7 +21,7 @@ This profile is used by the following APIs:
 This profile is referenced by 
 [ADHA Core AllergyIntolerance](StructureDefinition-dh-allergyintolerance-core-1.html), 
 [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html), 
-[ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-odr-1.html), 
+[ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html), 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Document Bundle](StructureDefinition-dh-bundle-document-1.html), 
 [ADHA Message Bundle](StructureDefinition-dh-bundle-message-1.html), 
