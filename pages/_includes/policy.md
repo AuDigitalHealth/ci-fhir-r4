@@ -324,19 +324,11 @@ A conformance resource has two elements covered by a naming policy:
 In addition to the requirements defined in the FHIR standard this section defines conventions for ADHA FHIR conformance resources by resource type. 
 
 
-**ImplementationGuide naming**
+**ImplementationGuide naming for base**
 
-The name for an ImplementationGuide **SHALL** be in the form of ADHA[optional-computable-use-case]FHIR:
+The name for an ImplementationGuide that manages the core and common ADHA FHIR materials for a FHIR version **SHALL** be "ADHAFHIR".
 
-- [optional-computable-use-case] if present **SHALL** be the value of the [optional-human-readable-use-case] from the title with the following differences: 
-  - **SHALL** use UpperCamelCase
-  - **SHALL** contain no whitespace
-
-The title for an ImplementationGuide **SHALL** be in the form of ADHA [optional-human-readable-use-case] FHIR:
-
-- [human-readable-use-case] 
-  - **SHALL NOT** be present for the implementation guide that manages the core and common ADHA FHIR materials for a FHIR version 
-  - **SHALL** be a title case version of the [optional-subpackage-case] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
+The title for an ImplementationGuide that manages the core and common ADHA FHIR materials for a FHIR version **SHALL** be "Australian Digital Health Agency FHIR".
 
 Example: ImplementationGuide resource that manages the core and common ADHA FHIR materials
 ~~~
@@ -344,10 +336,24 @@ Example: ImplementationGuide resource that manages the core and common ADHA FHIR
   "resourceType": "ImplementationGuide",
     ...
     "name": "ADHAFHIR",
-    "title": "ADHA FHIR",
+    "title": "Australian Digital Health Agency FHIR",
     ...
 }  
 ~~~  
+
+**ImplementationGuide naming for subpackage**
+
+The name for an ImplementationGuide that manages a subpackage **SHALL** be in the form of ADHA[optional-computable-use-case]FHIR:
+
+- [optional-computable-use-case] if present **SHALL** be the value of the [optional-human-readable-use-case] from the title with the following differences: 
+  - **SHALL** use UpperCamelCase
+  - **SHALL** contain no whitespace
+
+The title for an ImplementationGuide that manages a subpackage **SHALL** be in the form of ADHA [optional-human-readable-use-case] FHIR:
+
+- [human-readable-use-case] 
+  - **SHALL NOT** be present for the implementation guide that manages the core and common ADHA FHIR materials for a FHIR version 
+  - **SHALL** be a title case version of the [optional-subpackage-case] of the ImplementationGuide [resource-id]
 
 Example: ImplementationGuide resource with the optional human readable use case name
 ~~~
