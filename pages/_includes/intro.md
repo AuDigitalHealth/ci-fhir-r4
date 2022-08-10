@@ -7,7 +7,7 @@
 
 ## Introduction
 
-The Australian Digital Health Agency (ADHA) FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Australian Digital Health Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. 
+The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
@@ -20,7 +20,7 @@ Release 1.0.0 of this guide is limited to the FHIR conformance artefacts (i.e. [
 - Pharmaceutical Benefits Scheme (PBS) / Repatriation Pharmaceutical Benefits Scheme (RPBS) claims information
 - Medicare Benefits Schedule (MBS) / Department of Veterans' Affairs (DVA) claims information
 
-The FHIR conformance artefacts are published in an Agency FHIR NPM package for use with FHIR and FHIR-aware tools. 
+The FHIR conformance artefacts are published in a FHIR NPM package for use with FHIR and FHIR-aware tools. 
 
 The FHIR package contains the validation form (JSON + SCH) of the conformance artefacts for direct use in validation operations and example resource instances that demonstrate use cases and conformance requirements. This release of the implementation guide is scoped to the content of the Agency FHIR NPM package v1.0.0 and is provided to assist readers and users in understanding the content of that package.  
 
@@ -30,7 +30,7 @@ The FHIR package contains the validation form (JSON + SCH) of the conformance ar
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in the ADHA profiles.
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in the profiles govered by this guide, referred to as ADHA (Australian Digital Health Agency) profiles.
 - [Guidance](guidance.html): This page provides guidance in using the profiles defined in this guide.
 - [Profiles and Extensions](profiles.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each Profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarizes the supported search transactions for each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
