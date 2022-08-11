@@ -37,6 +37,9 @@ Identifier systems are for use in the system element of the [Identifier](http://
         <td><a href="NamingSystem-crn.html">Centrelink Customer Reference Number (also referred to as unique identifier number (UIN))</a></td>
     </tr>
     <tr>
+        <td><a href="NamingSystem-lspn.html">Location Specific Practice Number</a></td>
+    </tr>
+    <tr>
         <td><a href="NamingSystem-medicarenum.html">Medicare Card Number</a></td>
     </tr>
     <tr>
@@ -49,6 +52,15 @@ Identifier systems are for use in the system element of the [Identifier](http://
         <td><a href="NamingSystem-pai-o.html">My Health Record Assigned Identity - Organisation (PAI-O)</a></td>
     </tr>
     <tr>
-        <td><a href="NamingSystem-pbsprescribernum.html">Pharmaceutical Benefits Scheme (PBS) prescriber number</a></td>
+        <td><a href="NamingSystem-pai-r.html">My Health Record Assigned Identity - Repository (PAI-R)</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-pbsprescribernum.html">Pharmaceutical Benefits Scheme (PBS) Prescriber Number</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-phan.html">Pharmacy Approval Number</a></td>
+    </tr>
+    <tr>
+        <td><a href="NamingSystem-racs.html">Residential Aged Care Service identifier</a></td>
     </tr>
  </table>

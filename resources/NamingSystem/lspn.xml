@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir">
+    <id value="lspn"/> 
+    <name value="LSPN"/> 
+    <status value="draft"/> 
+    <kind value="identifier"/> 
+    <date value="2020-09-22"/> 
+    <publisher value="Australian Digital Health Agency"/> 
+    <contact>
+        <telecom>
+            <system value="email"/>
+            <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+    </contact>  
+    <responsible value="Australian Commonwealth Department of Health"/> 
+    <type>
+        <coding>  
+            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/> 
+            <code value="PAN"/> 
+            <display value="National Organisation Identifier"/> 
+        </coding>
+        <text value="Pharmacy approval number"/>  
+    </type>   
+    <description value="Location Specific Practice Number. A Location Specific Practice Number (LSPN) is an identifier assigned to a specific location by Services Australia under the Medicare program and identifies an accredited practice site that provides diagnostic imaging and radiation oncology services."/> 
+    <usage value="Location identification"/> 
+    <usage value="Healthcare service identification"/>
+    <uniqueId> 
+        <type value="oid"/> 
+        <value value="1.2.36.1.2001.1005.48"/> 
+        <comment value="This value is used in Australian CDA documents and OID based systems."/> 
+    </uniqueId> 
+    <uniqueId> 
+        <type value="uri"/> 
+        <value value="http://ns.electronichealth.net.au/id/location-specific-practice-number"/> 
+        <preferred value="true"/> 
+        <period> 
+            <start value="2020-09-22"/> 
+        </period> 
+    </uniqueId> 
+</NamingSystem>
