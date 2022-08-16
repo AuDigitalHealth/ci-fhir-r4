@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-explanationofbenefit-medicare-mbs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="ADHAExplanationofBenefitMBS"/>
   <title value="ADHA Record of Claim against MBS or DVA"/>
   <status value="draft"/>
@@ -123,18 +123,6 @@
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/process-priority"/>
       </binding>
-    </element>
-    <element id="ExplanationOfBenefit.referral">
-      <path value="ExplanationOfBenefit.referral"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="ExplanationOfBenefit.referral.reference">
-      <path value="ExplanationOfBenefit.referral.reference"/>
-      <min value="1"/>
     </element>
     <element id="ExplanationOfBenefit.outcome">
       <path value="ExplanationOfBenefit.outcome"/>

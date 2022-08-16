@@ -68,9 +68,8 @@ This profile is referenced by
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), 
 [ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), 
 [ADHA Authoring Care Agency Employee](StructureDefinition-dh-practitionerrole-author-cae-1.html), 
-[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html). 
+[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), and
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html). 
 
 These profiles build on this profile ([ADHA Core Organization](StructureDefinition-dh-organization-core-1.html)) to define specific roles:
 * [ADHA Organization Contact](StructureDefinition-dh-organization-contact-1.html)

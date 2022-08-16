@@ -85,7 +85,6 @@ This profile is referenced by
 [ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html), 
 [ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html), 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), 
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html), 
 [MODI Request for Diagnostic Imaging Service](StructureDefinition-dh-servicerequest-modi-1.html), and 
 [ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).
  

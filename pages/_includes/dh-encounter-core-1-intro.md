@@ -58,6 +58,5 @@ This profile is referenced by
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), 
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html). 
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html). 
 

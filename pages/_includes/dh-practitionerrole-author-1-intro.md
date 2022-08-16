@@ -63,8 +63,7 @@ This profile is referenced by
 [ADHA Simple Observation](StructureDefinition-dh-observation-simple-1.html), 
 [ADHA Core Patient](StructureDefinition-dh-patient-core-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html),  
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), 
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html), and
+[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
 [MODI Request for Diagnostic Imaging Service](StructureDefinition-dh-servicerequest-modi-1.html). 
 
 These profiles build on this profile ([ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html)) to define specific roles:

@@ -363,7 +363,6 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Referral</li>
-                                <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
                                 <li><a href="StructureDefinition-dh-servicerequest-modi-1.html">MODI Request for Diagnostic Imaging Service</a></li>
                             </ul>
                         </td>    

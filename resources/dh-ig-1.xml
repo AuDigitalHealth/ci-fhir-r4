@@ -709,15 +709,7 @@
             <name value="ADHA Core ServiceRequest"/>
             <description value="The purpose of this profile is to provide a core representation of a record of request for a service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-servicerequest-mbs-claim-1"/>
-            </reference>
-            <name value="ADHA MBS Service Claim Item"/>
-            <description value="The purpose of this profile is to define a representation of the service item claimed in a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans’ Affairs (DVA) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
+        </resource>        
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-servicerequest-modi-1"/>
@@ -3541,13 +3533,6 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
         </resource>
         <!--SERVICEREQUEST EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/claim-mbs-01"/>
-            </reference>
-            <name value="MBS claim item for radiation oncology service for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="ServiceRequest/order-ct-abpelcontrast-01"/>
