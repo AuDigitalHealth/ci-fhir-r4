@@ -124,14 +124,14 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/process-priority"/>
       </binding>
     </element>
-    <element id="ExplanationOfBenefit.referral">
+    <!--<element id="ExplanationOfBenefit.referral">
       <path value="ExplanationOfBenefit.referral"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
       </type>
       <mustSupport value="true"/>
-    </element>
+    </element>-->
     <element id="ExplanationOfBenefit.referral.reference">
       <path value="ExplanationOfBenefit.referral.reference"/>
       <min value="1"/>

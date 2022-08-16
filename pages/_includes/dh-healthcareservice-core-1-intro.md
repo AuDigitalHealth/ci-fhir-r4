@@ -16,7 +16,5 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html),
-[Australian Digital Health Agency Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html), 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html).
+[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html), and
+[Australian Digital Health Agency Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html).

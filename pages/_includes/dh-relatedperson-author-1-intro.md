@@ -19,6 +19,5 @@ This profile is referenced by
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
-[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).

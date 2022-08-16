@@ -20,27 +20,18 @@ This profile is referenced by
 [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html), 
 [ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
 [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html), 
-[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
-[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html), 
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), 
 [ADHA Australian Immunisation Register Notice](StructureDefinition-dh-flag-air-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
-[ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
-[ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html), 
-[ADHA Imaging Result Observation](StructureDefinition-dh-observation-diagnosticresult-imag-1.html),
-[ADHA Pathology Result Observation](StructureDefinition-dh-observation-diagnosticresult-path-1.html),
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
-[ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html), 
-[ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html), 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), 
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html), and 
-[ADHA Core Specimen](StructureDefinition-dh-specimen-core-1.html).
+[ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html), and
+[ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html).
  

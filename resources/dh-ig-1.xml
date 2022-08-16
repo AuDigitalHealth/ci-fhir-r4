@@ -81,14 +81,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-diagnosticreport-core-1"/>
-            </reference>
-            <name value="ADHA Core DiagnosticReport"/>
-            <description value="The purpose of this profile is to define a core representation of a diagnostic report issued by the diagnostic service provider to support the electronic exchange of the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines that are not pathology or imaging."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-documentreference-core-1"/>
             </reference>
             <name value="ADHA Core DocumentReference"/>
@@ -169,14 +161,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-media-core-1"/>
-            </reference>
-            <name value="ADHA Core Media"/>
-            <description value="The purpose of this profile is to provide a core representation of a media observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-medication-core-1"/>
             </reference>
             <name value="ADHA Core Medication"/>
@@ -205,30 +189,6 @@
             </reference>
             <name value="ADHA Core Observation"/>
             <description value="The purpose of this profile is to provide a core representation of a generic observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-diagnosticresult-1"/>
-            </reference>
-            <name value="ADHA Diagnostic Result Observation"/>
-            <description value="The purpose of this profile is to provide a representation of a diagnostic result observation made during a diagnostic investigation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
-            </reference>
-            <name value="ADHA Imaging Result Observation"/>
-            <description value="The purpose of this profile is to represent a diagnostic imaging observation issued by the diagnostic service provider for the electronic exchange of imaging examination observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. The observation may represent the result of a simple examination or study series."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-diagnosticresult-path-1"/>
-            </reference>
-            <name value="ADHA Pathology Result Observation"/>
-            <description value="The purpose of this profile is to represent a pathology test observation issued by the diagnostic service provider for the electronic exchange of pathology test observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for all pathology disciplines (e.g. including microbiology, histopathology, cytology, blood transfusion) with the exception of genomics."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -295,30 +255,6 @@
             <description value="The purpose of this profile is to provide a core representation of a related person for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource> 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-servicerequest-core-1"/>
-            </reference>
-            <name value="ADHA Core ServiceRequest"/>
-            <description value="The purpose of this profile is to provide a core representation of a record of request for a service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-servicerequest-mbs-claim-1"/>
-            </reference>
-            <name value="ADHA MBS Service Claim Item"/>
-            <description value="The purpose of this profile is to define a representation of the service item claimed in a claim against the Medicare Benefits Schedule (MBS) or Department of Veterans’ Affairs (DVA) for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-specimen-core-1"/>
-            </reference>
-            <name value="ADHA Core Specimen"/>
-            <description value="The purpose of this profile is to provide a core representation of a specimen for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports information about a collected specimen taken from a patient for diagnostic investigation."/>
-            <exampleBoolean value="false"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-substance-core-1"/>
@@ -576,20 +512,6 @@
             <name value="R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715"/>
             <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/report-covid-01"/>
-            </reference>
-            <name value="Pathology Report Payload Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/report-covid-doc-01"/>
-            </reference>
-            <name value="Pathology Report Document Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-        </resource>
         <!--CONSENT EXAMPLES-->
         <resource>
             <reference>
@@ -635,13 +557,13 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
         </resource>
         <!--DIAGNOSTICREPORT EXAMPLES-->
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="DiagnosticReport/covid-01"/>
             </reference>
             <name value="Pathology Report DOO3Q978 2019-Novel Coronavirus PCR for Mrs. Anne Thompson"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
-        </resource>
+        </resource>-->
         <!--DOCUMENTREFERENCE EXAMPLES-->
         <resource>
             <reference>
@@ -717,9 +639,9 @@
         <!--EXPLANATIONOFBENEFIT EXAMPLES-->
         <resource>
             <reference>
-                <reference value="ExplanationOfBenefit/mbs-cont-01"/>
+                <reference value="ExplanationOfBenefit/mbs-01"/>
             </reference>
-            <name value="CONTAINED Record of Claim against MBS for 15275 radiation oncology treatment for Mr. Zhang Wei"/>
+            <name value="Record of Claim against MBS for 15275 radiation oncology treatment for Mr. Zhang Wei"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
         </resource>
         <resource>
@@ -1252,13 +1174,13 @@
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
         <!--MEDIA EXAMPLES-->
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="Media/perimetry-01"/>
             </reference>
             <name value="Imaging of left eye from perimetry exam"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
-        </resource>
+        </resource>-->
         <!--MEDICATION EXAMPLES-->
         <resource>
             <reference>
@@ -1586,13 +1508,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/covid-01"/>
-            </reference>
-            <name value="Observation of SARS-CoV-2 RNA - Not Detected recorded for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/headcircum-01"/>
             </reference>
             <name value="Head Circumference of Mr. Oliver Smith recorded by Mother at 6 months"/>
@@ -1610,7 +1525,7 @@
                 <reference value="Observation/urineculture-es-02"/>
             </reference>
             <name value="Urine culture - E. coli for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <!-- ORGANIZATION EXAMPLES-->
         <resource>
@@ -2193,49 +2108,12 @@
             <name value="Mrs. Rosalia SMITH - stepmother of Mr. Oliver SMITH"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
         </resource>
-        <!--SERVICEREQUEST EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/claim-mbs-01"/>
-            </reference>
-            <name value="MBS claim item for radiation oncology service for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-mbs-claim-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-ct-abpelcontrast-01"/>
-            </reference>
-            <name value="Active order for CT of Abdomen and Pelvis with Contrast for Mrs. Anne Thompson (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-fbc-01"/>
-            </reference>
-            <name value="Completed order for Full Blood Count for Mrs. Anne Thompson (2016)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-covid-01"/>
-            </reference>
-            <name value="Completed order for COVID-19 for Mrs. Anne Thompson for use in DiagnosticReport covid-01"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <!--SPECIMEN EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="Specimen/naso-swab-01"/>
-            </reference>
-            <name value="Nasopharyngeal Swab for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="Specimen/urine-01"/>
             </reference>
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
         </resource>
                 
         <page>

@@ -15,6 +15,5 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).
 

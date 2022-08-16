@@ -101,10 +101,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-observation-core-1.html">ADHA Core Observation</a></li>
-                                <li><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></li>
-                                <li><a href="StructureDefinition-dh-specimen-core-1.html">ADHA Core Specimen</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-core-1.html">ADHA Core BodyStructure</a></li>
-                                <li><a href="StructureDefinition-dh-media-core-1.html">ADHA Core Media</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
@@ -114,11 +111,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-immunization-core-1.html">ADHA Core Immunization</a></li>
                             </ul>
                         </td>     
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-servicerequest-core-1.html">ADHA Core ServiceRequest</a></li>
-                            </ul>
-                        </td>    
+                        <td class="frm-null"/>   
                         <td class="frm-null"/>
                     </tr>
                     <!--<tr class="frm-break"><td colspan="6"/></tr>
@@ -247,10 +240,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-null"/>   
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
-                                <li><a href="StructureDefinition-dh-bodystructure-aodr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
@@ -259,11 +249,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                                 <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
                             </ul>
                         </td>     
-                        <td class="frm-set">
-                            <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-servicerequest-mbs-claim-1.html">ADHA MBS Service Claim Item</a></li>
-                            </ul>
-                        </td>    
+                        <td class="frm-null"/> 
                         <td class="frm-null"/>
                     </tr>
                     <tr class="frm-break"><td colspan="6"/></tr>
