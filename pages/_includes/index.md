@@ -32,20 +32,19 @@ The FHIR package contains the validation form (JSON + SCH) of the conformance ar
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in the profiles govered by this guide, referred to as ADHA (Australian Digital Health Agency) profiles.
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in the profiles governed by this guide, referred to as ADHA (Australian Digital Health Agency) profiles.
 - [Policy](policy.html): This page describes the policies for definition, use, implementation and management of FHIR.
-- [Guidance](guidance.html): This page provides guidance in using the profiles defined in this guide.
+- [Guidance](guidance.html): This page provides guidance on using the profiles defined in this guide.
 - FHIR Artefacts: These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
-  - [Profiles and Extensions](profiles.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each Profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
+  - [Profiles and Extensions](profiles.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
   - [Capability Statements](capstatements.html): This set of pages describes the expected FHIR capabilities of the various actors.
   - [NamingSystems](namingsys.html): This set of pages describes the identifier systems defined in this guide as formal artefact enabling inclusion in a registry for other systems to find and understand an identifier.
-  - [Search Parameters and Operations](searchparams.html): This page page lists the defined Operations and Search Parameters that are used in US Core transactions.
+  - [Search Parameters and Operations](searchparams.html): This page page lists the defined Operations and Search Parameters that are used in transactions.
   - [Terminology](terminology.html): This page lists the value sets and code system defined for profiles.
   - [Maps](terminology.html): This page lists the concept maps and structure maps defined for profiles.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
 
- 
 
 ## Future of this guide
 
