@@ -8,7 +8,7 @@ This profile is designed to set an ExplanationOfBenefit standard for:
 
 
 #### Profile specific guidance
-- In an exchange with the My Health Record system references to a ServiceRequest resource will be [contained](http://hl7.org/fhir/R4/references.html#contained).
+None.
 
 
 #### Boundaries and relationships
