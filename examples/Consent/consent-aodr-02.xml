@@ -1,8 +1,7 @@
 <Consent xmlns="http://hl7.org/fhir">
 	<id value="aodr-02"/>
 	<meta>
-		<profile
-			value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1"/>
 	</meta>
 	<contained>
 		<BodyStructure>
@@ -229,8 +228,7 @@
 			</patient>
 		</BodyStructure>
 	</contained>
-	<extension
-		url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-consent-aodr-1">
+	<extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-date-initial-registration-1">
 		<valueDateTime value="2015-11-18"/>
 	</extension>
 	<!--identifier for the AODR record from Medicare repository-->
