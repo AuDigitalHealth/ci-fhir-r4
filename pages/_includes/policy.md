@@ -415,7 +415,7 @@ The name for a StructureDefinition that is an extension **SHALL** be in the form
   - **SHALL** use UpperCamelCase
   - **SHALL** contain no whitespace
 
-The title for a StructureDefinition that is an extension **SHALL** be in the form of ADHA [human-readable-element-name]:
+The title for a StructureDefinition that is an extension **SHALL** be in the form of [human-readable-element-name]:
 
 - [human-readable-use-case] is a business name and **SHALL** have individual words separated by a whitespace
   - **SHALL** use title case
