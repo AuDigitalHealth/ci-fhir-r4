@@ -7,7 +7,7 @@
 
 ## Business identifiers
 
-["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA profiles to consistently identify real world entities across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more). 
+["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA profiles to consistently identify real world entities across systems, contexts of use, and other formats (e.g. HL7 v2 , CDA , XDS, and many more). 
 
 For ADHA profiles, the following identifier elements are populated with business identifiers:
    - `Device.identifier`
@@ -24,7 +24,7 @@ For ADHA profiles, the following identifier elements are populated with business
           
 Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier).  
 
-[HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier Profile.
+[HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pbsprescribernumber.html). An Identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
 
 While national and registry / exchange service identifiers will define the namespace to use when sending an identifier, a local identifier requires the organisation to define their own namespace when exchanging identifiers they manage.  
 
@@ -32,7 +32,7 @@ When constructing a local identifier it is preferable that an organisation uses 
 
 **HPI-O scoped identifiers**
 
-HPI-O scoped identifiers enable exchange of an organisation's local identifiers for items like a patient medical record or a pathology report by combining a dedicated Agency published namespace and their HPI-O to construct a legal, globally unique identifier system for their local identifiers.
+HPI-O scoped identifiers enable exchange of an organisation's local identifiers for items such as a patient medical record or a pathology report by combining a dedicated Agency published namespace and their HPI-O to construct a legal, globally unique identifier system for their local identifiers.
 
 The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are several HPI-O scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/hpio-scoped/accessionnumber/1.0
@@ -43,7 +43,7 @@ The full list of available identifier namespaces can be found by browsing the [n
    - http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0
 
-There are four parts to the using an HPI-O scoped identifier in FHIR: system, value, assigner, and depending on the identifier profile requirements a coded type. 
+There are four parts to the using a HPI-O scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
 
 The system value is constructed in the format of [baseURL]/HPI-O, e.g.:
 
@@ -56,7 +56,7 @@ The value contains the local identifier, e.g.:
 "value" : "AMC-GA-001"
 ~~~
 
-The assigner contains the name of the organisation that issues or manages the identifier.
+The assigner contains the name of the organisation that issues or manages the identifier, e.g.:
 
 ~~~
 assigner" : {
@@ -64,7 +64,7 @@ assigner" : {
 }
 ~~~
 
-Example: PractitionerRole resource with an employee number (local identifier)
+Example: PractitionerRole resource with an employee number (local identifier).
 ~~~
 {
   "resourceType" : "PractitionerRole",
@@ -93,13 +93,13 @@ Example: PractitionerRole resource with an employee number (local identifier)
 
 **ABN scoped identifier**
 
-ABN scoped identifiers enable exchange of an organisation's local identifiers for items like a patient medical record by combining a dedicated Agency published namespace and their ABN to construct a legal, globally unique identifier system for their local identifiers.
+ABN scoped identifiers enable exchange of an organisation's local identifiers for items such as a patient medical record by combining a dedicated Agency published namespace and their ABN to construct a legal, globally unique identifier system for their local identifiers.
 
 The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are two ABN-scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0
    - http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0
 
-There are four parts to the using an ABN scoped identifier in FHIR: system, value, assigner, and depending on the identifier profile requirements a coded type. 
+There are four parts to the using an ABN scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
 
 The system value is constructed in the format of [baseURL]/ABN, e.g.:
 
@@ -112,7 +112,7 @@ The value contains the local identifier, e.g.:
 "value" : "123456"
 ~~~
 
-The assigner contains the name of the organisation that issues or manages the identifier.
+The assigner contains the name of the organisation that issues or manages the identifier, e.g.:
 
 ~~~
 assigner" : {
@@ -120,7 +120,7 @@ assigner" : {
 }
 ~~~
 
-Example: Patient resource with a medical record number (local identifier)
+Example: Patient resource with a medical record number (local identifier).
 ~~~
 {
   "resourceType" : "Patient",
@@ -158,7 +158,7 @@ References between resources in ADHA profiles are supported as reference (litera
 
 ADHA profiles may include constraints on elements of [Reference type](http://hl7.org/fhir/R4/references.html) that limit what is considered valid. For example, the profile [ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html) limits what is considered valid for the element `ExplanationOfBenefit.referral` by mandating `ExplanationOfBenefit.referral.reference` to enforce population of a literal reference if the referral element is provided.
 
-If an identifier (logical reference) is supplied, that identifier **SHALL** be populated with a meaningful business identifier according to the section on [Business identifiers](guidance.html#business-identifiers) that identifies the logical entity across systems, contexts of use, and other formats (variously, HL7 v2 , CDA , XDS, and many more).
+If an identifier (logical reference) is supplied, that identifier **SHALL** be populated with a meaningful business identifier according to the section on [Business identifiers](guidance.html#business-identifiers) that identifies the logical entity across systems, contexts of use, and other formats (e.g. HL7 v2 , CDA , XDS, and many more).
 
 **References to a patient**
 
@@ -192,27 +192,27 @@ Example: Observation resource with a Reference to a Patient resource as identifi
 ~~~
 
 
-## Contained Resources
+## Contained resources
 In some circumstances, the content referred to in the resource reference does not have an independent existence apart from the resource that contains it - it cannot be identified independently, and nor can it have its own independent transaction scope. For example, use of a Medication resource to represent medicinal product identification within the context of a MedicationRequest. In these circumstances the resource should be [contained](http://hl7.org/fhir/R4/references.html#contained). 
 
 If referencing a contained resource, both the contained resource and the referencing resource **SHALL** conform to an ADHA profile. Further guidance about the general use case for [contained resources](http://hl7.org/fhir/R4/references.html#contained) can be found in the base FHIR specification.
 
 In ADHA profiles:
 - An [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html) (MedicationRequest resource) **SHOULD** be contained within the [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html) (ExplanationOfBenefit resource) 
-- An [ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html) (ServiceRequest resource) **SHOULD** be contained within the [ ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html) (ExplanationOfBenefit resource)
-- Systems constructing a resource that represent medication or body structure information are encouraged to make use of contained resources. 
+- An [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html) (BodyStructure resource) **SHOULD** be contained within the [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html) (Consent resource)
+- Systems constructing a resource that represents medication or body structure information are encouraged to make use of contained resources. 
   - Operations on Medication resources are expected to be within the context of a referencing resource query such as an ExplanationOfBenefit, Flag, MedicationAdministration, MedicationDipsense, MedicationRequest or MedicationStatement.
-  - Operations on BodyStructure resources are expected to be within the context of a referencing resource query such as a Consent, DiagnosticReport, Observation, or ServiceRequest.
+  - Operations on BodyStructure resources are expected to be within the context of a referencing resource query such as a Consent, DiagnosticReport, Observation or ServiceRequest.
 - Otherwise, when responding to a query, servers should not use inline contained resources to represent the returned data.
 
-## Missing Data
+## Missing data
 
-There are situations when information for a particular data element is missing and the source system does not know reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labeled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present for *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
+There are situations when information for a particular data element is missing and the source system does not know the reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labelled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
 
 1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), 
-  - use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type if the ADHA profile for that resource does not require a child element
-  - if the ADHA profile mandates a child element such as a valid identifier or reference then the resource must that element otherwise the instance will not be conformant
-  - use the code `unknown` - The value is expected to exist but is not known.
+  - use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type if the ADHA profile for that resource does not require a child element.
+  - if the ADHA profile mandates a child element, such as a valid identifier or reference, then the resource must contain that element otherwise the instance will not be conformant.
+  - use the code `unknown` where the value is expected to exist but is not known.
   
     Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available.
     ~~~
@@ -239,10 +239,10 @@ There are situations when information for a particular data element is missing a
 
 1. For *coded* data elements:
    - *example*, *preferred*, or *extensible* binding strengths (CodeableConcept , or Coding datatypes):
-      - if the source systems has text but no coded data, only the text element is used.
+      - if the source system has text but no coded data, only the text element is used.
           - for Coding datatypes, the text only data is represented as a `display` element.
       - if there is neither text or coded data:
-        - the appropriate "unknown" concept code **SHALL** be present if the binding strength is *extensible*
+        - the appropriate "unknown" concept code **SHALL** be present if the binding strength is *extensible*.
         - if the value set does not have an appropriate "unknown" concept code, use `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason).
 
         Example: AllergyIntolerance resource where the manifestation is unknown.
@@ -267,8 +267,8 @@ There are situations when information for a particular data element is missing a
         ~~~
 
    - *required* binding strength (CodeableConcept or code datatypes):
-      - the appropriate "unknown" concept code **SHALL** be present if available
-      - if the value set does not have the appropriate “unknown” concept code you must use a concept from the value set otherwise the instance will not be conformant
+      - the appropriate "unknown" concept code **SHALL** be present if available.
+      - if the value set does not have the appropriate “unknown” concept code you must use a concept from the value set otherwise the instance will not be conformant.
 
         - For ADHA Core profiles, the following mandatory or conditionally mandatory* status elements with required binding have no appropriate "unknown" concept code:
           - `AllergyIntolerance.clinicalStatus`*
@@ -287,34 +287,34 @@ There are situations when information for a particular data element is missing a
 <!-- If one of these status code is missing, in response to a read transaction on the resource a `404` http error code and an OperationOutcome **SHALL** be returned. If returning a response to a search, the problematic resource **SHALL** be excluded from the search set and a *warning* OperationOutcome **SHOULD** be included indicating that additional search results were found but could not be compliantly expressed and have been suppressed. -->
 
 
-## Suppressed Data
-In some circumstances, specific pieces of data may hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labeled Must Support), the element SHALL be omitted from the resource if they are suppressed.
+## Suppressed data
+In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled Must Support), the element **SHALL** be omitted from the resource if they are suppressed.
 
-For mandatory elements (minimum cardinality is > 0), the element SHALL be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
-- where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
-- where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data)
+For mandatory elements (minimum cardinality is > 0), the element **SHALL** be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
+- where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data).
+- where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data).
 
 
 ## Extensibility – “additional” elements
-A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
+A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, and only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
-Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling additional elements are summarised below: 
-- an additional element **SHALL** be part of a supported resource, it may be a canonical element or an extension
-- an additional element **SHALL** conform to the HL7 FHIR standard 
-- a resource referenced by an additional element **SHALL** conform to an ADHA profile and the HL7 FHIR standard
-- where the additional element is an extension 
-   - a system **SHALL** process a known extension according to it's definition
-   - a system **SHALL** process unknown extensions as per the [core specification guidance on exchanging extensions](https://www.hl7.org/fhir/extensibility.html#exchange)
+Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling "additional" elements are summarised below: 
+- an "additional" element **SHALL** be part of a supported resource, it may be a canonical element or an extension.
+- an "additional" element **SHALL** conform to the HL7 FHIR standard.
+- a resource referenced by an "additional" element **SHALL** conform to an ADHA profile and the HL7 FHIR standard.
+- where the "additional" element is an extension 
+   - a system **SHALL** process a known extension according to its definition.
+   - a system **SHALL** process unknown extensions as per the [core specification guidance on exchanging extensions](https://www.hl7.org/fhir/extensibility.html#exchange).
 
 Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed.
 
 System obligations on handling additional elements are:
-- Systems that construct or send information **SHALL** ensure that a resource meet all applicable ADHA conformance requirements
+- Systems that construct or send information **SHALL** ensure that a resource meets all applicable ADHA conformance requirements
 - Systems that receive or persist information, when sent a resource with an "additional" set of elements:
-  - **SHALL** meaningfully process the Must Support elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow 
-  - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension   
-  - **MAY** choose to ignore the additional elements
-  - **MAY** choose to reject non-conformant resources but are not required to
+  - **SHALL** meaningfully process the Must Support elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow.
+  - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension.
+  - **MAY** choose to ignore the additional elements.
+  - **MAY** choose to reject non-conformant resources but are not required to.
 
 
 ## Medicine information
@@ -334,9 +334,9 @@ ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to suppo
 
 **Medicinal Product Identification**
 
-For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain only a text list of ingredients or it may be a code from a medicines terminology.
+For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain may only a text list of ingredients or it may be a code from a medicines terminology.
 
-For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechanism to identify a medicine and it's defining attributes (by terminology lookup) including form and strength. 
+For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechanism to identify a medicine and its defining attributes (by terminology lookup) including form and strength. 
 
 Australian Medicines Terminology (AMT) is the national terminology for identification and naming of medicines in clinical systems for Australia. 
 The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. 
@@ -621,7 +621,7 @@ The table below provides guidance on representing communication preferences for 
         <td>Preferred language is English</td>
         <td></td>
         <td></td>
-        <td>No element sent, as per the guidance in the Comments</a> of RelatedPerson.communication</td>
+        <td>No element sent, as per the guidance in the <a href="http://hl7.org/fhir/relatedperson-definitions.html#RelatedPerson.communication">Comments</a> of RelatedPerson.communication</td>
       </tr>
       <tr>
         <td>Preferred language is other than English</td>

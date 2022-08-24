@@ -240,7 +240,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-null"/>   
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-bodystructure-odr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
+                                <li><a href="StructureDefinition-dh-bodystructure-aodr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
                             </ul>
                         </td>     
                         <td class="frm-set">
