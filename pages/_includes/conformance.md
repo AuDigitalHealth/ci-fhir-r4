@@ -30,7 +30,7 @@ A sending system:
 - when constructing a resource:
    - **SHALL** ensure the resource conforms to the applicable ADHA profile
    - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
-   - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing Data](guidance.html#missing-data)
+   - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing data](guidance.html#missing-data)
    - **SHALL** populate all Must Support elements where the sending system has that information unless:
       - there is a clinical reason why supplying the information would be unsafe, misleading, or otherwise clinically inappropriate
       - the data is suppressed due to a security or privacy reason 
@@ -44,7 +44,7 @@ A receiving system:
 A persisting system:
 - **SHALL** reject any request to create or update a resource that is not supported by the Conformance/CapabilityStatement, contains a modifier extension that is not supported by the Conformance/CapabilityStatement, or is a supported type but does not conform to the Conformance/CapabilityStatement resource for that endpoint  
 - in circumstances other than those specified above (request to create or update a resource), a persisting system **MAY** choose to reject non-conformant resources but is not required to do so
-- **SHALL** be able to persist resources containing data elements asserting missing information according to the section on [Missing Data](guidance.html#missing-data)
+- **SHALL** be able to persist resources containing data elements asserting missing information according to the section on [Missing data](guidance.html#missing-data)
 - **SHALL** be able to persist resources containing "additional" elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
 

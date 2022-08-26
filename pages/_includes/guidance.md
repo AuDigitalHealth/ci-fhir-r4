@@ -24,7 +24,7 @@ For ADHA profiles, the following identifier elements are populated with business
           
 Business identifiers will typically be a national identifier (ABN, Medicare Provider, IHI), registry / exchange service identifier (ETP, eRx), or local identifier (MRN, Placer Identifier).  
 
-[HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pbsprescribernumber.html). An Identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
+[HL7 AU Australian Base Implementation Guide](http://hl7.org.au/fhir/4.0.0/index.html) publishes and maintains rules on how to exchange various business identifiers in Australia as a set of Identifier data type profiles, e.g. [AU PBS Prescriber Number](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-pbsprescribernumber.html). An identifier data element **SHALL** conform to the applicable HL7 AU Identifier profile.
 
 While national and registry / exchange service identifiers will define the namespace to use when sending an identifier, a local identifier requires the organisation to define their own namespace when exchanging identifiers they manage.  
 
@@ -64,7 +64,7 @@ assigner" : {
 }
 ~~~
 
-Example: PractitionerRole resource with an employee number (local identifier).
+Example: PractitionerRole resource with an employee number (local identifier)
 ~~~
 {
   "resourceType" : "PractitionerRole",
@@ -120,7 +120,7 @@ assigner" : {
 }
 ~~~
 
-Example: Patient resource with a medical record number (local identifier).
+Example: Patient resource with a medical record number (local identifier)
 ~~~
 {
   "resourceType" : "Patient",
@@ -214,7 +214,7 @@ There are situations when information for a particular data element is missing a
   - if the ADHA profile mandates a child element, such as a valid identifier or reference, then the resource must contain that element otherwise the instance will not be conformant.
   - use the code `unknown` where the value is expected to exist but is not known.
   
-    Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available.
+    Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available
     ~~~
     {
       "resourceType" : "ExplanationOfBenefit",
@@ -245,7 +245,7 @@ There are situations when information for a particular data element is missing a
         - the appropriate "unknown" concept code **SHALL** be present if the binding strength is *extensible*.
         - if the value set does not have an appropriate "unknown" concept code, use `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason).
 
-        Example: AllergyIntolerance resource where the manifestation is unknown.
+        Example: AllergyIntolerance resource where the manifestation is unknown
         ~~~
         ...
         "reaction" : [
@@ -291,11 +291,11 @@ There are situations when information for a particular data element is missing a
 In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled Must Support), the element **SHALL** be omitted from the resource if they are suppressed.
 
 For mandatory elements (minimum cardinality is > 0), the element **SHALL** be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
-- where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data).
-- where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing Data](guidance.html#missing-data).
+- where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing data](guidance.html#missing-data).
+- where a receiver may know that the data is suppressed use the code `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing data](guidance.html#missing-data).
 
 
-## Extensibility – “additional” elements
+## Extensibility – "additional" elements
 A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, and only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
 Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling "additional" elements are summarised below: 
@@ -334,7 +334,7 @@ ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to suppo
 
 **Medicinal Product Identification**
 
-For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain may only a text list of ingredients or it may be a code from a medicines terminology.
+For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain only a text list of ingredients or it may be a code from a medicines terminology.
 
 For non-extemporaneous medications, the medication code (or set of codes) is the mandatory primary mechanism to identify a medicine and its defining attributes (by terminology lookup) including form and strength. 
 
@@ -356,7 +356,7 @@ These data elements may be supported as coded, or text, and systems are likely t
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
       - manufacturer = `manufacturer.identifer`
 
-    Example: Medication with coded brand name, generic name, manufacturer, item form and strength.
+    Example: Medication with coded brand name, generic name, manufacturer, item form and strength
     ~~~
     {
       "resourceType": "Medication",
@@ -474,7 +474,7 @@ These data elements may be supported as coded, or text, and systems are likely t
         - item form and strength = `code.text`
         - manufacturer = `manufacturer.display`
   
-    Example: Medication with text only brand name, generic name, item form and strength.
+    Example: Medication with text only brand name, generic name, item form and strength
     ~~~
     {
       "resourceType": "Medication",
