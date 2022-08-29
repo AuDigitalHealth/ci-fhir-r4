@@ -201,7 +201,7 @@ In ADHA profiles:
 - An [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html) (MedicationRequest resource) **SHOULD** be contained within the [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html) (ExplanationOfBenefit resource) 
 - An [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html) (BodyStructure resource) **SHOULD** be contained within the [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html) (Consent resource)
 - Systems constructing a resource that represents medication or body structure information are encouraged to make use of contained resources. 
-  - Operations on Medication resources are expected to be within the context of a referencing resource query such as an ExplanationOfBenefit, Flag, MedicationAdministration, MedicationDipsense, MedicationRequest or MedicationStatement.
+  - Operations on Medication resources are expected to be within the context of a referencing resource query such as an ExplanationOfBenefit, Flag, MedicationAdministration, MedicationDispense, MedicationRequest or MedicationStatement.
   - Operations on BodyStructure resources are expected to be within the context of a referencing resource query such as a Consent, DiagnosticReport, Observation or ServiceRequest.
 - Otherwise, when responding to a query, servers should not use inline contained resources to represent the returned data.
 
@@ -329,7 +329,7 @@ The FHIR standard defines the following resources for exchanging medicine inform
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is profiled to support medicinal product identification in an Australian healthcare context.
 ADHA profiles of MedicationStatement (with ADHA Core Medication) are used to support summary statements of medicine use. 
 ADHA profiles of MedicationAdministration (with ADHA Core Medication) are used to support medication chart and other administration use cases.
-ADHA profiles of MedicationDipsense (with ADHA Core Medication) are used to support to support dispense records and ePrescribing use cases.
+ADHA profiles of MedicationDispense (with ADHA Core Medication) are used to support to support dispense records and ePrescribing use cases.
 ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to support prescription, ordering, and ePrescribing use cases.
 
 **Medicinal Product Identification**
@@ -567,7 +567,7 @@ The table below provides guidance on representing communication preferences for 
     </tbody>
 </table>
 
-Example: Patient resource with intepreter required and language is known
+Example: Patient resource with interpreter required and language is known
 ~~~
 {
   "resourceType" : "Patient",
