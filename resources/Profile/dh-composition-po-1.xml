@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-po-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHACompositionPO"/>
   <title value="ADHA Personal Observations Composition"/>
   <status value="draft"/>
@@ -93,9 +93,9 @@
       <path value="Composition.section.entry"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-headcircum"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodyweight"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodyheight"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-headcircum"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyweight"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight"/>
       </type>
       <condition value="inv-dh-po-01"/>
       <condition value="inv-dh-po-02"/>

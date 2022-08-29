@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ds-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ds-1"/>
-  <version value="0.0.7"/>
+  <version value="0.0.8"/>
   <name value="ADHACompositionDS"/>
   <title value="ADHA Discharge Summary Composition"/>
   <status value="draft"/>
@@ -228,7 +228,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-ds-01"/>
       <condition value="inv-dh-ds-02"/>
@@ -293,7 +293,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-ds-01"/>
       <condition value="inv-dh-ds-02"/>
@@ -336,34 +336,34 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-vitalspanel"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-vitalspanel"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bloodpressure"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bloodpressure"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bodyweight"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyweight"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bodyheight"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bmi"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bmi"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-oxygensat"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-oxygensat"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-headcircum"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-headcircum"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-heartrate"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-heartrate"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bodytemp"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodytemp"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-resprate"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-resprate"
         />
       </type>
       <condition value="inv-dh-ds-01"/>
@@ -427,7 +427,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-immunization-1"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-ds-01"/>
       <condition value="inv-dh-ds-02"/>

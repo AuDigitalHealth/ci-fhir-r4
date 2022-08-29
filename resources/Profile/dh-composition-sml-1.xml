@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-sml-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-sml-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHACompositionSML"/>
   <title value="ADHA Shared Medicines List Composition"/>
   <status value="draft"/>
@@ -177,7 +177,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-sml-01"/>
       <condition value="inv-dh-sml-02"/>

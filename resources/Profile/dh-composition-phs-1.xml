@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-phs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
-  <version value="0.0.7"/>
+  <version value="0.0.8"/>
   <name value="ADHACompositionPHS"/>
   <title value="ADHA Personal Health Summary Composition"/>
   <status value="draft"/>
@@ -194,7 +194,7 @@
         <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-phs-01"/>
       <condition value="inv-dh-phs-02"/>
@@ -250,7 +250,7 @@
         <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
     </element>
     <element id="Composition.section:immunisations.emptyReason">

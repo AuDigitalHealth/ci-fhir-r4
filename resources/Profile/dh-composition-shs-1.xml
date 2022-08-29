@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-shs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHACompositionSHS"/>
   <title value="ADHA Shared Health Summary Composition"/>
   <status value="draft"/>
@@ -197,7 +197,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-shs-01"/>
       <condition value="inv-dh-shs-02"/>
@@ -247,7 +247,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-procedure-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-shs-01"/>
       <condition value="inv-dh-shs-02"/>
@@ -297,7 +297,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-shs-01"/>
       <condition value="inv-dh-shs-02"/>

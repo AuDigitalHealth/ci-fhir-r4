@@ -11,7 +11,7 @@
 
 ### ADHA core profiles 
 
-The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
+The following core FHIR profiles are defined in this implementation guide. These profiles set a core standard for a FHIR R4 resource identifying additional constraints, extensions, and value sets that build on and extend [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html), [HL7 AU Australian Core Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/index.html), and core HL7 [FHIR R4](http://hl7.org/fhir/R4/index.html).  
 
 <html>
   <div id="segment-content" class="segment">
@@ -428,7 +428,7 @@ The following FHIR profiles are defined in this implementation guide to support 
 
 
 
-### HL7 AU profiles 
+### HL7 AU Base profiles 
 
 The following FHIR profiles defined in [HL7 AU Australian Base Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-base/index.html) form part of, or are referenced by, an Australian Digital Health Agency profile.
 
@@ -488,7 +488,41 @@ The following FHIR profiles defined in [HL7 AU Australian Base Implementation Gu
                             </ul>
                         </td> 
                     </tr>
-                    <tr class="frm-break"><td colspan="6"/></tr>
+                    <!--<tr class="frm-break"><td colspan="6"/></tr>-->
+                </table>
+            </div>
+      </div>
+    
+  </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /row -->
+  </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+
+</div>
+</div>
+</html>
+
+
+### HL7 AU Core profiles 
+
+The following FHIR profiles defined in [HL7 AU Australian Core Implementation Guide](http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/index.html) form part of, or are referenced by, an Australian Digital Health Agency profile.
+
+<html>
+  <div id="segment-content" class="segment">
+  <div class="container">
+  <div class="row">
+  <div class="inner-wrapper">
+
+<div class="col-12">
+    <div style="border-right-style: none;" id="tabs">
+      <div style="border-right-style: none;" id="tabs">
+          <div>
+                <table width="100%">
                     <tr class="frm-group">
                         <td rowspan="2" class="frm-group rotate"><div>Observations</div></td>
                         <td class="frm-category">Summary</td>
@@ -500,42 +534,43 @@ The following FHIR profiles defined in [HL7 AU Australian Base Implementation Gu
                     <tr class="frm-contents" height="80">
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-norelevantfinding.html">AU Assertion of No Relevant Finding</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-sexassignedatbirth.html">AU Biological Sex Assigned at Birth</a></li>
-                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthprogramparticipation.html">AU Health Program Participation Summary</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-norelevantfinding.html">AU Core Assertion of No Relevant Finding</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-sexassignedatbirth.html">AU Core Biological Sex Assigned at Birth</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-healthprogramparticipation.html">AU Core Health Program Participation Summary</a></li>
                             </ul>
                         </td>   
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bloodpressure.html">AU Blood Pressure</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyweight.html">AU Body Weight</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodyheight.html">AU Body Height</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bmi.html">AU Body Mass Index</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-oxygensat.html">AU Oxygen Saturation</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-headcircum.html">AU Head Circumference</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-heartrate.html">AU Heart Rate</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-bodytemp.html">AU Body Temperature</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-au-respirationrate.html">AU Respiration Rate</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-bodyheight.html">AU Core Body Height</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-bmi.html">AU Core Body Mass Index</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-bloodpressure.html">AU Core Blood Pressure</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-bodytemp.html">AU Core Body Temperature</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-bodyweight.html">AU Core Body Weight</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-headcircum.html">AU Core Head Circumference</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-heartrate.html">AU Core Heart Rate</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-oxygensat.html">AU Core Oxygen Saturation</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-respirationrate.html">AU Core Respiration Rate</a></li>
                                 <li>AU Level of Consciousness</li>
                                 <li>AU Waist Circumference</li>
-                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-vitalspanel.html">AU Vital Signs Panel</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-vitalspanel.html">AU Core Vital Signs Panel</a></li>
                             </ul>
                         </td>   
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-alcoholstatus.html">AU Alcohol Status</a></li>
-                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingceasedate.html">AU Smoking Cease Date</a></li>
-                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstartdate.html">AU Smoking Start Date</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-smokingstatus.html">AU Smoking Status</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-alcoholstatus.html">AU Core Alcohol Status</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-smokingceasedate.html">AU Core Smoking Cease Date</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-smokingstartdate.html">AU Core Smoking Start Date</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-smokingstatus.html">AU Core Smoking Status</a></li>
                             </ul>
                         </td>   
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-estimateddateofdelivery.html">AU Estimated Date of Delivery </a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-gravidity.html">AU Gravidity</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-parity.html">AU Parity</a></li>
-                                <li><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-lastmenstrualperiod.html">AU Last Menstrual Period</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-estimateddateofdelivery.html">AU Core Estimated Date of Delivery </a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-gestationalage.html">AU Core Gestational Age</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-gravidity.html">AU Core Gravidity</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-lastmenstrualperiod.html">AU Core Last Menstrual Period</a></li>
+                                <li><a href="http://build.fhir.org/ig/hl7au/au-fhir-core/branches/main/StructureDefinition-au-core-parity.html">AU Core Parity</a></li>
                             </ul>
                         </td>   
                     </tr>
@@ -557,6 +592,7 @@ The following FHIR profiles defined in [HL7 AU Australian Base Implementation Gu
 </div>
 </div>
 </html>
+
 
 ## Extensions
 
@@ -732,7 +768,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
     </tr>
     <tr>
-        <td><a href="https://build.fhir.org/ig/ci-collaborative/au-fhir-base-r4/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
+        <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-vaccine-serial-number.html">Vaccine Vial Serial Number</a></td>
         <td>vaccine-serial-number</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-cocs-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-cocs-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHACompositionCOCS"/>
   <title value="ADHA Continuity of Care Summary Composition"/>
   <status value="draft"/>
@@ -231,34 +231,34 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-vitalspanel"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-vitalspanel"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bloodpressure"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bloodpressure"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bodyweight"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyweight"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bodyheight"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bmi"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bmi"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-oxygensat"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-oxygensat"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-headcircum"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-headcircum"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-heartrate"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-heartrate"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-bodytemp"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodytemp"
         />
         <targetProfile
-          value="http://hl7.org.au/fhir/StructureDefinition/au-resprate"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-resprate"
         />
       </type>
       <condition value="inv-dh-cocs-01"/>
@@ -315,7 +315,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-cocs-01"/>
       <condition value="inv-dh-cocs-02"/>
@@ -372,7 +372,7 @@
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-immunization-1"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-cocs-01"/>
       <condition value="inv-dh-cocs-02"/>
@@ -641,10 +641,10 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-alcoholstatus"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-smokingstatus"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-smokingstartdate"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-smokingceasedate"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-alcoholstatus"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingstatus"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingstartdate"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-smokingceasedate"/>
       </type>
     </element>
     <element id="Composition.section:socialHistory.emptyReason">
@@ -696,7 +696,7 @@
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-wearable-1"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-deviceusestatement-core-1"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding"/>
       </type>
       <condition value="inv-dh-cocs-01"/>
       <condition value="inv-dh-cocs-02"/>
