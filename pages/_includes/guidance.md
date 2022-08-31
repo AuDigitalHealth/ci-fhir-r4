@@ -34,7 +34,7 @@ When constructing a local identifier it is preferable that an organisation uses 
 
 HPI-O scoped identifiers enable exchange of an organisation's local identifiers for items such as a patient medical record or a pathology report by combining a dedicated Agency published namespace and their HPI-O to construct a legal, globally unique identifier system for their local identifiers.
 
-The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are several HPI-O scoped identifier namespaces available:
+The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au Identifier](http://ns.electronichealth.net.au/browse-identifiers.html) namespaces; there are several HPI-O scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/hpio-scoped/accessionnumber/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/dispense/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0
@@ -43,7 +43,7 @@ The full list of available identifier namespaces can be found by browsing the [n
    - http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0
 
-There are four parts to the using a HPI-O scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
+There are four parts to using a HPI-O scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
 
 The system value is constructed in the format of [baseURL]/HPI-O, e.g.:
 
@@ -64,7 +64,7 @@ assigner" : {
 }
 ~~~
 
-Example: PractitionerRole resource with an employee number (local identifier)
+Example: PractitionerRole resource with an employee number (local identifier).
 ~~~
 {
   "resourceType" : "PractitionerRole",
@@ -95,11 +95,11 @@ Example: PractitionerRole resource with an employee number (local identifier)
 
 ABN scoped identifiers enable exchange of an organisation's local identifiers for items such as a patient medical record by combining a dedicated Agency published namespace and their ABN to construct a legal, globally unique identifier system for their local identifiers.
 
-The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are two ABN-scoped identifier namespaces available:
+The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au Identifier](http://ns.electronichealth.net.au/browse-identifiers.html) namespaces; there are two ABN-scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0
    - http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0
 
-There are four parts to the using an ABN scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
+There are four parts to using an ABN scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
 
 The system value is constructed in the format of [baseURL]/ABN, e.g.:
 
@@ -120,7 +120,7 @@ assigner" : {
 }
 ~~~
 
-Example: Patient resource with a medical record number (local identifier)
+Example: Patient resource with a medical record number (local identifier).
 ~~~
 {
   "resourceType" : "Patient",
@@ -166,7 +166,7 @@ References to a patient **SHALL** populate `identifier` and when applicable popu
 - `identifier` **SHOULD** be populated with a verified IHI
 - if referencing a specific Patient resource instance `reference` **SHALL** be populated and it **SHALL** resolve
 
-Example: Observation resource with a Reference to a Patient resource as identifier and reference 
+Example: Observation resource with a Reference to a Patient resource as identifier and reference.
 ~~~
 {
   "resourceType" : "Observation",
@@ -198,8 +198,8 @@ In some circumstances, the content referred to in the resource reference does no
 If referencing a contained resource, both the contained resource and the referencing resource **SHALL** conform to an ADHA profile. Further guidance about the general use case for [contained resources](http://hl7.org/fhir/R4/references.html#contained) can be found in the base FHIR specification.
 
 In ADHA profiles:
-- An [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html) (MedicationRequest resource) **SHOULD** be contained within the [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html) (ExplanationOfBenefit resource) 
-- An [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html) (BodyStructure resource) **SHOULD** be contained within the [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html) (Consent resource)
+- An [ADHA PBS Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html) (MedicationRequest resource) **SHOULD** be contained within the [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html) (ExplanationOfBenefit resource).
+- An [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html) (BodyStructure resource) **SHOULD** be contained within the [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html) (Consent resource).
 - Systems constructing a resource that represents medication or body structure information are encouraged to make use of contained resources. 
   - Operations on Medication resources are expected to be within the context of a referencing resource query such as an ExplanationOfBenefit, Flag, MedicationAdministration, MedicationDispense, MedicationRequest or MedicationStatement.
   - Operations on BodyStructure resources are expected to be within the context of a referencing resource query such as a Consent, DiagnosticReport, Observation or ServiceRequest.
@@ -214,7 +214,7 @@ There are situations when information for a particular data element is missing a
   - if the ADHA profile mandates a child element, such as a valid identifier or reference, then the resource must contain that element otherwise the instance will not be conformant.
   - use the code `unknown` where the value is expected to exist but is not known.
   
-    Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available
+    Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available.
     ~~~
     {
       "resourceType" : "ExplanationOfBenefit",
@@ -238,14 +238,14 @@ There are situations when information for a particular data element is missing a
     ~~~
 
 1. For *coded* data elements:
-   - *example*, *preferred*, or *extensible* binding strengths (CodeableConcept , or Coding datatypes):
+   - *example*, *preferred*, or *extensible* binding strengths (CodeableConcept or Coding datatypes):
       - if the source system has text but no coded data, only the text element is used.
           - for Coding datatypes, the text only data is represented as a `display` element.
       - if there is neither text or coded data:
         - the appropriate "unknown" concept code **SHALL** be present if the binding strength is *extensible*.
         - if the value set does not have an appropriate "unknown" concept code, use `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason).
 
-        Example: AllergyIntolerance resource where the manifestation is unknown
+        Example: AllergyIntolerance resource where the manifestation is unknown.
         ~~~
         ...
         "reaction" : [
@@ -288,7 +288,7 @@ There are situations when information for a particular data element is missing a
 
 
 ## Suppressed data
-In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled Must Support), the element **SHALL** be omitted from the resource if they are suppressed.
+In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled Must Support) **SHALL** be omitted from the resource if they are suppressed.
 
 For mandatory elements (minimum cardinality is > 0), the element **SHALL** be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
 - where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing data](guidance.html#missing-data).
@@ -309,8 +309,8 @@ Depending on local requirements, a receiving or persisting system may ignore the
 Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed.
 
 System obligations on handling additional elements are:
-- Systems that construct or send information **SHALL** ensure that a resource meets all applicable ADHA conformance requirements
-- Systems that receive or persist information, when sent a resource with an "additional" set of elements:
+- systems that construct or send information **SHALL** ensure that a resource meets all applicable ADHA conformance requirements
+- systems that receive or persist information, when sent a resource with an "additional" set of elements:
   - **SHALL** meaningfully process the Must Support elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow.
   - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension.
   - **MAY** choose to ignore the additional elements.
@@ -356,7 +356,7 @@ These data elements may be supported as coded, or text, and systems are likely t
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
       - manufacturer = `manufacturer.identifer`
 
-    Example: Medication with coded brand name, generic name, manufacturer, item form and strength
+    Example: Medication with coded brand name, generic name, manufacturer, item form and strength.
     ~~~
     {
       "resourceType": "Medication",
@@ -474,7 +474,7 @@ These data elements may be supported as coded, or text, and systems are likely t
         - item form and strength = `code.text`
         - manufacturer = `manufacturer.display`
   
-    Example: Medication with text only brand name, generic name, item form and strength
+    Example: Medication with text only brand name, generic name, item form and strength.
     ~~~
     {
       "resourceType": "Medication",
