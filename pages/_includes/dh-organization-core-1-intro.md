@@ -27,13 +27,12 @@ This profile is referenced by
 [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core Location](StructureDefinition-dh-location-core-1.html), 
-[ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA Core Patient](StructureDefinition-dh-patient-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), 
-[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html), and
+[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html) and
 [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html). 
 
 

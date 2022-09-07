@@ -20,5 +20,5 @@ This profile is referenced by
 [ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html), and
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html).
 
-These profiles build on this profile ([ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html)) to define specific roles:
-* [ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html)
+The following profiles build on the [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html) profile to define specific roles:
+* [ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html).

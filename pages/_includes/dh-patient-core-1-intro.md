@@ -2,7 +2,7 @@ The purpose of this profile is to provide a core representation of a patient for
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Patient](http://hl7.org/fhir/R4/patient.html) that are supported. 
 
-This profile is designed to set a core Patient standard:
+This profile is designed to set a core Patient standard for:
 * Querying for records associated with a patient
 * Record or update a record associated with a patient
 

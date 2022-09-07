@@ -16,5 +16,5 @@ None.
 #### Boundaries and relationships
 This profile is not referenced by another profile in this implementation guide.
 
-These profiles build on this profile ([ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) to define specific immunisation record types:
-* [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html)
+The following profiles build on the [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html) profile to define specific immunisation record types:
+* [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html).

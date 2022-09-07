@@ -49,7 +49,7 @@
       <td><a href="PractitionerRole-meyer-adam-microbiologist.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="PractitionerRole-george-david-oncologist.html">Dr. George David, Oncologist, at Fred Hope Cencer Centre NSW</a></td>
+      <td><a href="PractitionerRole-george-david-oncologist.html">Dr. George David, Oncologist, at Fred Hope Cancer Centre NSW</a></td>
       <td>george-david-oncologist</td>
       <td><a href="PractitionerRole-george-david-oncologist.xml.html">XML</a></td>
       <td><a href="PractitionerRole-george-david-oncologist.json.html">JSON</a></td>
@@ -81,11 +81,11 @@
       <td><a href="PractitionerRole-hi-testdata-dental-therapist.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="PractitionerRole-hi-testdata-mothercraft-dentist.html">Gertie KEATON, Dentist (Vendor Environment HI Test Data)</a></td>
-      <td>hi-testdata-mothercraft-dentist</td>
-      <td><a href="PractitionerRole-hi-testdata-mothercraft-dentist.xml.html">XML</a></td>
-      <td><a href="PractitionerRole-hi-testdata-mothercraft-dentist.json.html">JSON</a></td>
-      <td><a href="PractitionerRole-hi-testdata-mothercraft-dentist.ttl.html">Turtle</a></td>
+      <td><a href="PractitionerRole-hi-testdata-dentist.html">Gertie KEATON, Dentist (Vendor Environment HI Test Data)</a></td>
+      <td>hi-testdata-dentist</td>
+      <td><a href="PractitionerRole-hi-testdata-dentist.xml.html">XML</a></td>
+      <td><a href="PractitionerRole-hi-testdata-dentist.json.html">JSON</a></td>
+      <td><a href="PractitionerRole-hi-testdata-dentist.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td colspan="5">Nursing examples:</td>

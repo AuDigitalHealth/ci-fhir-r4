@@ -10,13 +10,10 @@ This profile is designed to set a core MedicationRequest standard for:
 
 
 #### Profile specific guidance
-- See the [Medicine information](guidance.html#medicine-information) section for guidance 
-- MedicationRequest resources can represent a medication using either a code, or reference a [Medication](http://hl7.org/fhir/R4/medication.html) resource
-  - When referencing a Medication resource, it is preferred the resource is [contained](http://hl7.org/fhir/R4/references.html#contained) but it may be an external resource
+- See the [Medicine information](guidance.html#medicine-information) section for guidance. 
+- MedicationRequest resources can represent a medication using either a code, or reference a [Medication](http://hl7.org/fhir/R4/medication.html) resource.
+  - When referencing a Medication resource, it is preferred the resource is [contained](http://hl7.org/fhir/R4/references.html#contained) but it may be an external resource.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html), and 
-[ADHA MBS Service Claim Item](StructureDefinition-dh-servicerequest-mbs-claim-1.html).
+This profile is referenced by [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).

@@ -4,7 +4,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 Where a more specific BodyStructure profile is applicable, e.g. diagnostic result or vital signs, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
-This profile is designed to set a core BodyStructure for:
+This profile is designed to set a core BodyStructure standard for:
 * Recording or updating body structures
 * Reading body structures
 
@@ -17,5 +17,5 @@ None.
 #### Boundaries and relationships
 This profile is not referenced by another profile in this implementation guide.
 
-These profiles build on this profile ([ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html)) to define specific roles:
-* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html)
+The following profiles build on the [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html) profile to define specific roles:
+* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html).

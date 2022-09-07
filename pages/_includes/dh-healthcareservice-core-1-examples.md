@@ -77,14 +77,14 @@
       <td colspan="5">Residential aged care examples:</td>
    </tr> 
    <tr>
-      <td><a href="HealthcareService-racs-nsw-01.html">LARCSG Care Randwick Home for the Aged 120011</a></td>
+      <td><a href="HealthcareService-racs-nsw-01.html">LRACSG Care Randwick Home for the Aged 120011</a></td>
       <td>racs-nsw-01</td>
       <td><a href="HealthcareService-racs-nsw-01.xml.html">XML</a></td>
       <td><a href="HealthcareService-racs-nsw-01.json.html">JSON</a></td>
       <td><a href="HealthcareService-racs-nsw-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-racs-qld-01.html">LARCSG Care Sunnybank Home for the Aged 130011</a></td>
+      <td><a href="HealthcareService-racs-qld-01.html">LRACSG Care Sunnybank Home for the Aged 130011</a></td>
       <td>racs-qld-01</td>
       <td><a href="HealthcareService-racs-qld-01.xml.html">XML</a></td>
       <td><a href="HealthcareService-racs-qld-01.json.html">JSON</a></td>

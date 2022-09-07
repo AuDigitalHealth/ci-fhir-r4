@@ -3,7 +3,7 @@ In the context of an exchange of health information a system device is part of t
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Device](http://hl7.org/fhir/R4/device.html) that are supported. 
 
-The [Device](http://hl7.org/fhir/R4/device.html) resource as profiled as a system device is used within the context of a referencing resource. 
+The [Device](http://hl7.org/fhir/R4/device.html) resource, profiled as a SystemDevice, is used within the context of a referencing resource. 
 
 This profile is designed to set a Device standard for:
 * Recording or updating a system device referenced by another resource
@@ -16,7 +16,5 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
-[ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
-[ADHA Core Media](StructureDefinition-dh-media-core-1.html), and
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+[ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html) and 
+[ADHA Core Flag](StructureDefinition-dh-flag-core-1.html).

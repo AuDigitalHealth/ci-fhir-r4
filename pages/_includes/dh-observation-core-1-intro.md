@@ -10,8 +10,8 @@ This profile is designed to set a core Observation standard for:
 
 
 #### Profile specific guidance
-- `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
-- Antenatal observations will represent the pregnant individual as `Observation.subject` and the fetus as `Observation.focus`
+- `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers should understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
+- Antenatal observations will represent the pregnant individual as `Observation.subject` and the fetus as `Observation.focus`.
 
 
 #### Boundaries and relationships

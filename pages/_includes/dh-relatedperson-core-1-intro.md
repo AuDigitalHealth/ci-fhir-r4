@@ -5,7 +5,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 A [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) resource is used within the context of a referencing resource. 
 
-This profile is designed to set a core RelatedPerson standard:
+This profile is designed to set a core RelatedPerson standard for:
 * Recording or updating a related person referenced by another resource
 * Reading related persons referenced by another resource
  
@@ -16,8 +16,8 @@ This profile is designed to set a core RelatedPerson standard:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), and
-[ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html).
+[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html) and
+[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html).
 
-These profiles build on this profile ([ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html)) to define specific roles:
+The following profiles build on the [ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html) profile to define specific roles:
 * [ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html)
