@@ -8,10 +8,10 @@ This profile is designed to set a core Patient standard for:
 
 
 #### Profile specific guidance
-- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace)
-  - A sytem may use `address.text` if they birth place address is not stored in discrete elements
+- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/R4/extension-patient-birthplace.html)
+  - A system may use `address.text` if birth place address is not stored in discrete elements
 - See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance
-- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-sexassignedatbirth.html)
+- A patient's biological sex is represented as a separate Observation resource
 
 
 #### Boundaries and relationships
@@ -22,12 +22,12 @@ This profile is referenced by
 [ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
+[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), 
 [ADHA Australian Immunisation Register Notice](StructureDefinition-dh-flag-air-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
-[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
 [ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
