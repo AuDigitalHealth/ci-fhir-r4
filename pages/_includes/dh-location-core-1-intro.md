@@ -16,7 +16,6 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA System Device](StructureDefinition-dh-device-system-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
