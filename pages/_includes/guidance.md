@@ -207,7 +207,7 @@ In ADHA profiles:
 
 ## Missing data
 
-There are situations when information for a particular data element is missing and the source system does not know the reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labelled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
+There are situations when information for a particular data element is missing and the source system does not know the reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labelled *MustSupport*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
 
 1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), 
   - use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type if the ADHA profile for that resource does not require a child element.
@@ -288,7 +288,7 @@ There are situations when information for a particular data element is missing a
 
 
 ## Suppressed data
-In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled Must Support) **SHALL** be omitted from the resource if they are suppressed.
+In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled MustSupport) **SHALL** be omitted from the resource if they are suppressed.
 
 For mandatory elements (minimum cardinality is > 0), the element **SHALL** be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
 - where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing data](guidance.html#missing-data).
@@ -311,7 +311,7 @@ Orphaned resources, i.e. not referenced by an element in supported resource, **S
 System obligations on handling additional elements are:
 - systems that construct or send information **SHALL** ensure that a resource meets all applicable ADHA conformance requirements
 - systems that receive or persist information, when sent a resource with an "additional" set of elements:
-  - **SHALL** meaningfully process the Must Support elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow.
+  - **SHALL** meaningfully process the MustSupport elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow.
   - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension.
   - **MAY** choose to ignore the additional elements.
   - **MAY** choose to reject non-conformant resources but are not required to.
@@ -332,7 +332,7 @@ ADHA profiles of MedicationAdministration (with ADHA Core Medication) are used t
 ADHA profiles of MedicationDispense (with ADHA Core Medication) are used to support to support dispense records and ePrescribing use cases.
 ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to support prescription, ordering, and ePrescribing use cases.
 
-**Medicinal Product Identification**
+**Medicinal product identification**
 
 For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain only a text list of ingredients or it may be a code from a medicines terminology.
 
@@ -600,7 +600,7 @@ Example: Patient resource with interpreter required and language is known
 
 **RelatedPerson**
 
-The table below provides guidance on representing communication preferences for a related person. Blank cells in the indicate that the given element is absent from the resource.
+The table below provides guidance on representing communication preferences for a related person. Blank cells in the table indicate that the given element is absent from the resource.
 
 <table class="list" style="width:100%">
     <colgroup>
@@ -637,5 +637,3 @@ The table below provides guidance on representing communication preferences for 
       </tr>
     </tbody>
 </table>
-
-Blank cells in the above table indicate that the given element is absent from the resource.
