@@ -21,7 +21,7 @@ This profile is referenced by
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
 [ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html),
-[ADHA Core Patient](StructureDefinition-dh-patient-core-1.html) and
+[ADHA Core Patient](StructureDefinition-dh-patient-core-1.html), and
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).
 
 The following profiles build on the [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html) profile to define specific roles:
