@@ -5,14 +5,14 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="MedicationRequest-claim-pbs-01.html">PBS claim item for for cephalexin 500 mg capsule, 20 for for Ms. Sally Field</a></td>
+      <td><a href="MedicationRequest-claim-pbs-01.html">PBS claim item for cephalexin 500 mg capsule, 20 for Ms. Sally Field</a></td>
       <td>claim-pbs-01</td>
       <td><a href="MedicationRequest-claim-pbs-01.xml.html">XML</a></td>
       <td><a href="MedicationRequest-claim-pbs-01.json.html">JSON</a></td>
       <td><a href="MedicationRequest-claim-pbs-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="MedicationRequest-claim-pbs-02.html">PBS claim item for for cephalexin 500 mg capsule, 20 for for Ms. Sally Field</a></td>
+      <td><a href="MedicationRequest-claim-pbs-02.html">PBS claim item for cephalexin 500 mg capsule, 20 for Ms. Sally Field</a></td>
       <td>claim-pbs-02</td>
       <td><a href="MedicationRequest-claim-pbs-02.xml.html">XML</a></td>
       <td><a href="MedicationRequest-claim-pbs-02.json.html">JSON</a></td>
