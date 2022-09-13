@@ -32,7 +32,7 @@ This profile is referenced by
 [ADHA Core Patient](StructureDefinition-dh-patient-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Core Organization](StructureDefinition-dh-organization-core-1.html), 
-[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html) and
+[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html), and
 [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html). 
 
 

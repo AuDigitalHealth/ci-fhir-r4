@@ -64,7 +64,7 @@ assigner" : {
 }
 ~~~
 
-Example: PractitionerRole resource with an employee number (local identifier).
+Example: PractitionerRole resource with an employee number (local identifier)
 ~~~
 {
   "resourceType" : "PractitionerRole",
@@ -120,7 +120,7 @@ assigner" : {
 }
 ~~~
 
-Example: Patient resource with a medical record number (local identifier).
+Example: Patient resource with a medical record number (local identifier)
 ~~~
 {
   "resourceType" : "Patient",
@@ -166,7 +166,7 @@ References to a patient **SHALL** populate `identifier` and when applicable popu
 - `identifier` **SHOULD** be populated with a verified IHI
 - if referencing a specific Patient resource instance `reference` **SHALL** be populated and it **SHALL** resolve
 
-Example: Observation resource with a Reference to a Patient resource as identifier and reference.
+Example: Observation resource with a Reference to a Patient resource as identifier and reference
 ~~~
 {
   "resourceType" : "Observation",
@@ -214,7 +214,7 @@ There are situations when information for a particular data element is missing a
   - if the ADHA profile mandates a child element, such as a valid identifier or reference, then the resource must contain that element otherwise the instance will not be conformant.
   - use the code `unknown` where the value is expected to exist but is not known.
   
-    Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available.
+    Example: ExplanationOfBenefit resource where the patient's insurance coverage is not available
     ~~~
     {
       "resourceType" : "ExplanationOfBenefit",
@@ -245,7 +245,7 @@ There are situations when information for a particular data element is missing a
         - the appropriate "unknown" concept code **SHALL** be present if the binding strength is *extensible*.
         - if the value set does not have an appropriate "unknown" concept code, use `unknown` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason).
 
-        Example: AllergyIntolerance resource where the manifestation is unknown.
+        Example: AllergyIntolerance resource where the manifestation is unknown
         ~~~
         ...
         "reaction" : [
@@ -356,7 +356,7 @@ These data elements may be supported as coded, or text, and systems are likely t
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
       - manufacturer = `manufacturer.identifer`
 
-    Example: Medication with coded brand name, generic name, manufacturer, item form and strength.
+    Example: Medication with coded brand name, generic name, manufacturer, item form and strength
     ~~~
     {
       "resourceType": "Medication",
@@ -474,7 +474,7 @@ These data elements may be supported as coded, or text, and systems are likely t
         - item form and strength = `code.text`
         - manufacturer = `manufacturer.display`
   
-    Example: Medication with text only brand name, generic name, item form and strength.
+    Example: Medication with text only brand name, generic name, item form and strength
     ~~~
     {
       "resourceType": "Medication",
