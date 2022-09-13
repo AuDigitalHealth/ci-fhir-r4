@@ -38,28 +38,28 @@
       <td colspan="5">Residential aged care examples:</td>
    </tr>
    <tr>
-      <td><a href="Location-large-racs-nsw-01.html">LRACSG Care Randwick NSW</a></td>
+      <td><a href="Location-large-racs-nsw-01.html">LARCSG Care Randwick NSW</a></td>
       <td>large-racs-nsw-01</td>
       <td><a href="Location-large-racs-nsw-01.xml.html">XML</a></td>
       <td><a href="Location-large-racs-nsw-01.json.html">JSON</a></td>
       <td><a href="Location-large-racs-nsw-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-large-racs-nsw-02.html">LRACSG Care Bondi Junction NSW</a></td>
+      <td><a href="Location-large-racs-nsw-02.html">LARCSG Care Bondi Junction NSW</a></td>
       <td>large-racs-nsw-02</td>
       <td><a href="Location-large-racs-nsw-02.xml.html">XML</a></td>
       <td><a href="Location-large-racs-nsw-02.json.html">JSON</a></td>
       <td><a href="Location-large-racs-nsw-02.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-large-racs-qld-01.html">LRACSG Care Sunnybank QLD</a></td>
+      <td><a href="Location-large-racs-qld-01.html">LARCSG Care Sunnybank QLD</a></td>
       <td>large-racs-qld-01</td>
       <td><a href="Location-large-racs-qld-01.xml.html">XML</a></td>
       <td><a href="Location-large-racs-qld-01.json.html">JSON</a></td>
       <td><a href="Location-large-racs-qld-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Location-large-racs-qld-02.html">LRACSG Care Toowong QLD</a></td>
+      <td><a href="Location-large-racs-qld-02.html">LARCSG Care Toowong QLD</a></td>
       <td>large-racs-qld-02</td>
       <td><a href="Location-large-racs-qld-02.xml.html">XML</a></td>
       <td><a href="Location-large-racs-qld-02.json.html">JSON</a></td>
