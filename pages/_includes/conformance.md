@@ -12,7 +12,7 @@ A system **SHOULD** support all ADHA profiles unless the system does not anticip
 
 To support an ADHA profile:
 - systems **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
-- systems **SHALL** be able to populate all profile data elements that are mandatory and/or flagged as MustSupport as defined by that profile’s StructureDefinition according to the section on [MustSupport](conformance.html#must-support)
+- systems **SHALL** be able to populate all profile data elements that are mandatory and/or labelled MustSupport as defined by that profile’s StructureDefinition according to the section on [Must support](conformance.html#must-support)
   - systems **SHALL** support all referenced profiles necessary to implement this profile
   - meta.profile **MAY** be populated in a resource to indicate the set of profiles a resource is declared to conform to 
 - systems **SHOUD** declare conformance with the profile(s) by specifying the full capability details for that profile it claims to implement by
@@ -21,9 +21,9 @@ To support an ADHA profile:
 - systems **SHALL NOT** conform to a Core profile where a more specific profile is applicable
 
 
-## MustSupport
+## Must support
 
-Labelling an element [MustSupport]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide "support" for the element in some meaningful way. ADHA profiles impose a core set of "support" obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The specifications and/or profiles that define a particular implementation context **SHALL** make clear the required "support" for that context. 
+Labelling an element [MustSupport]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide support for the element in some meaningful way. ADHA profiles impose a core set of support obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The specifications and/or profiles that define a particular implementation context **SHALL** make clear the required support for that context. 
 
 A sending system:
 - when making a request to an endpoint **SHALL** conform to the Conformance/CapabilityStatement for that endpoint and conform to all applicable ADHA conformance requirements 
@@ -31,12 +31,12 @@ A sending system:
    - **SHALL** ensure the resource conforms to the applicable ADHA profile
    - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
    - **SHALL** implement the guidance on missing data if asserting a mandatory element is missing according to the section on [Missing data](guidance.html#missing-data)
-   - **SHALL** populate all elements flagged with MustSupport where the sending system has that information unless:
+   - **SHALL** populate all elements labelled MustSupport where the sending system has that information unless:
       - there is a clinical reason why supplying the information would be unsafe, misleading, or otherwise clinically inappropriate
       - the data is suppressed due to a security or privacy reason 
 
 A receiving system:
-- **SHALL** be capable of meaningfully processing the elements flagged with MustSupport where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow
+- **SHALL** be capable of meaningfully processing the elements labelled MustSupport where the resource has been constructed in accordance with ADHA conformance requirements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow
 - **MAY** choose to reject non-conformant resources 
 - **SHALL** interpret missing data elements within resource instances as data not present in the source system
 - **SHALL** be able to process resources containing “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
@@ -48,11 +48,11 @@ A persisting system:
 - **SHALL** be able to persist resources containing "additional" elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
 
 
-**Presentation of elements flagged with MustSupport in profile views**
+**Presentation of elements labelled MustSupport in profile views**
 
-When viewing the raw JSON of a profile, elements labelled *MustSupport* are flagged with a boolean element `mustSupport` set to "true". 
+When viewing the raw JSON of a profile, elements labelled *MustSupport* are flagged as `mustSupport` set to "true". 
 
-Example: ADHA Core AllergyIntolerance profile showing clinicalStatus and verificationStatus flagged with MustSupport
+Example: ADHA Core AllergyIntolerance profile showing clinicalStatus and verificationStatus labelled MustSupport
 ~~~
 {
     "resourceType" : "StructureDefinition",
@@ -79,13 +79,13 @@ Example: ADHA Core AllergyIntolerance profile showing clinicalStatus and verific
 When rendered in an implementation publication each profile is presented different formal views of all the elements that must be supported in a tree format under tabs labelled "Differential Table" and "Snapshot Table".
 
 The elements labelled *MustSupport* in the "Differential Table" and "Snapshot Table" view are flagged with an <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>. To see the full set of elements that must be supported a reader must use the "Snapshot Table". 
-The "Snapshot Table" presents the elements flagged with MustSupport in this profile (shown in the "Differential Table") and the elements flagged with MustSupport inherited from a base profile (e.g. [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html) based on [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) 
+The "Snapshot Table" presents the elements labelled MustSupport in this profile (shown in the "Differential Table") and the elements labelled MustSupport inherited from a base profile (e.g. [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html) based on [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) 
 
 Implementers should take note that the full set of constraints (i.e. invariants) defined in a profile are only presented in the "Detailed Descriptions" tab or the raw representation (e.g. XML or JSON) of the profile. The "Differential Table" only presents constraints introduced in this profile in addition to the constraints present in the base profile and base resource. The "Snapshot Table" only presents the constraints visible in the "Differential Table" and additionally presents those constraints set in slices in the base profile.
 
 **Interpreting profile elements labelled MustSupport**
 
-Profiles defined in this implementation publication flag MustSupport only on elements and not on subelements of a data type. 
+Profiles defined in this implementation publication flag MustSupport on elements and not part subelements of a data type. 
 The explanation on how to interpret MustSupport for an element does not address rules defined in each profile - in implementation the rules defined in the profile must be applied and may limit or extend what is allowed for each element.
 
 The allowed subelements for each supported element in a profile are defined by a combination of the data type from the core specification and any additional rules included in the profile. 
@@ -137,7 +137,7 @@ A profile may slice an element that has a choice of data types or profiles to co
 
 *MustSupport for elements where there is a choice between an element of type CodeableConcept and type Reference*
 
-A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html). Where both elements are optional and flagged with MustSupport in a profile they **SHALL** be treated as a choice of data types:
+A resource may support two elements that are used to indicate a reason, e.g. `Encounter.reasonCode` and `Encounter.reasonReference` in the profile [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html). Where both elements are optional and labelled MustSupport in a profile they **SHALL** be treated as a choice of data types:
 - A sending system **SHALL** be capable of populating at least one choice, and **SHOULD** be capable of populating every choice for which the sending system might possess data
 - A receiving system **SHALL** be capable of meaningfully processing all choices (since the receiver cannot anticipate which element might be populated) 
 - A persisting system **SHALL** be capable of persisting all choices (since the persister cannot anticipate which element might be populated)
