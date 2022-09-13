@@ -16,8 +16,10 @@ This profile is designed to set a core RelatedPerson standard for:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html) and
-[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html).
+[ADHA Core Condition](StructureDefinition-dh-condition-core-1.html), 
+[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html),
+[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html) and
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).
 
 The following profiles build on the [ADHA Core RelatedPerson](StructureDefinition-dh-relatedperson-core-1.html) profile to define specific roles:
 * [ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html)
