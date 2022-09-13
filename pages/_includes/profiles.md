@@ -433,12 +433,12 @@ The following extensions form part of this implementation guide:
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place</a></td>
-        <td>birthPlace</td>
+        <td>patient-birthPlace</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/extension-patient-birthtime.html">birthTime</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-patient-birthtime.html">Birth Time</a></td>
         <td>patient-birthTime</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient.birthDate</a></td>
@@ -476,7 +476,7 @@ The following extensions form part of this implementation guide:
     <tr>
         <td><a href="StructureDefinition-dh-date-initial-registration-1.html">Date of Initial Registration</a></td>
         <td>dh-date-initial-registration-1</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td>Resource</td>
     </tr>
     <tr>
@@ -504,7 +504,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/extension-patient-interpreterrequired.html">Interpreter Required</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-patient-interpreterrequired.html">interpreterRequired</a></td>
         <td>patient-interpreterRequired</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
@@ -513,13 +513,13 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-brand-name.html">Medication Brand Name</a></td>
         <td>medication-brand-name</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-        <td><a href="http://hl7.org/fhir/R4/Medication">Medication</a>, <a href="http://hl7.org/fhir/R4/MedicationRequest">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/MedicationDispense">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/MedicationStatement">MedicationStatement</a></td>
+        <td><a href="http://hl7.org/fhir/R4/Medication.html">Medication</a>, <a href="http://hl7.org/fhir/R4/MedicationRequest.html">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/MedicationDispense.html">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/MedicationStatement.html">MedicationStatement</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-generic-name.html">Medication Generic Name</a></td>
         <td>medication-generic-name</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-        <td><a href="http://hl7.org/fhir/R4/Medication">Medication</a>, <a href="http://hl7.org/fhir/R4/MedicationRequest">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/MedicationDispense">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/MedicationStatement">MedicationStatement</a></td>
+        <td><a href="http://hl7.org/fhir/R4/Medication.html">Medication</a>, <a href="http://hl7.org/fhir/R4/MedicationRequest.html">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/MedicationDispense.html">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/MedicationStatement.html">MedicationStatement</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html">Medication Type</a></td>
