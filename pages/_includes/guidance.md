@@ -347,7 +347,7 @@ In addition to the medication code, the majority of use cases support exchange o
 These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource. The guidance for how to support coded or text is summarised below: 
 
 1. For *coded* support for brand name, generic name, manufacturer, item form and strength:
-   - Fully coded support is provided using code.coding with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
+   - Fully coded support is provided using code.coding with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
       - brand name = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `BPD` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
       - generic name = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `UPD` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
       - generic item form and strength = `code.coding` with [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) using `UPDSF` from the [Medication Type code system](http://hl7.org.au/fhir/4.0.0/CodeSystem-medication-type.html)
