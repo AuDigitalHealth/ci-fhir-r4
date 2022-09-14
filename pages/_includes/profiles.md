@@ -637,12 +637,12 @@ The following extensions form part of this implementation guide:
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place</a></td>
-        <td>birthPlace</td>
+        <td>patient-birthPlace</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/extension-patient-birthtime.html">birthTime</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-patient-birthtime.html">Birth Time</a></td>
         <td>patient-birthTime</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient.birthDate</a></td>
@@ -686,7 +686,7 @@ The following extensions form part of this implementation guide:
     <tr>
         <td><a href="StructureDefinition-dh-date-initial-registration-1.html">Date of Initial Registration</a></td>
         <td>dh-date-initial-registration-1</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
         <td>Resource</td>
     </tr>
       <tr>
@@ -732,7 +732,7 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/composition.html">Composition</a></td>
     </tr>
     <tr>
-        <td><a href="http://hl7.org/fhir/R4/extension-patient-interpreterrequired.html">Interpreter Required</a></td>
+        <td><a href="http://hl7.org/fhir/R4/extension-patient-interpreterrequired.html">interpreterRequired</a></td>
         <td>patient-interpreterRequired</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>

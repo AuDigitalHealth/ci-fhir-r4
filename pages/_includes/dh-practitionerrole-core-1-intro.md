@@ -21,7 +21,7 @@ None.
 This profile is referenced by 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
-[ADHA Record of Claim against MBS](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),  
+[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),  
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), 
 [ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
 [ADHA Diagnostic Result Observation](StructureDefinition-dh-observation-diagnosticresult-1.html), 

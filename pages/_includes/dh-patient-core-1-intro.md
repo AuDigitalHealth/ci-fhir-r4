@@ -12,9 +12,9 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace)
-  - A sytem may use `address.text` if they birth place address is not stored in discrete elements
+  - A system may use `address.text` if birth place address is not stored in discrete elements
 - See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance
-- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html)
+- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Core Biological Sex Assigned at Birth](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-sexassignedatbirth.html)
 
 
 #### Boundaries and relationships
@@ -70,7 +70,7 @@ This profile is referenced by
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Dispense Record](StructureDefinition-dh-medicationdispense-disp-1.html),
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
-[ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
+[ADHA PBS Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
 [ADHA Prescription](StructureDefinition-dh-medicationrequest-pres-1.html),  
 [ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
