@@ -29,7 +29,7 @@ This profile is referenced by
 [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html), 
 [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
-[ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
+[ADHA PBS Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
 [ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), 
 [ADHA Authoring RelatedPerson](StructureDefinition-dh-relatedperson-author-1.html), and
