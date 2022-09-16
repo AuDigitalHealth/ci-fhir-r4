@@ -32,7 +32,7 @@ The FHIR package contains the validation form (JSON + SCH) of the conformance ar
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in the profiles governed by this guide, referred to as ADHA (Australian Digital Health Agency) profiles.
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the support obligations for elements labelled MustSupport in the profiles in this guide, referred to as ADHA (Australian Digital Health Agency) profiles.
 - [Policy](policy.html): This page describes the policies for definition, use, implementation and management of FHIR.
 - [Guidance](guidance.html): This page provides guidance on using the profiles defined in this guide.
 - FHIR Artefacts: These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.

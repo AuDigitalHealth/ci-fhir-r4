@@ -354,7 +354,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-medicationrequest-pres-1.html">ADHA Prescription</a></li>
-                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Prescription Claim Item</a></li>
+                                <li><a href="StructureDefinition-dh-medicationrequest-pbs-claim-1.html">ADHA PBS Claim Item</a></li>
                                 <li><a href="StructureDefinition-dh-medicationdispense-disp-1.html">ADHA Dispense Record</a></li>
                                 <li>ADHA Record of Immunization</li>
                                 <li><a href="StructureDefinition-dh-immunization-air-1.html">ADHA Record of Immunisation from Australian Immunisation Register</a></li>
