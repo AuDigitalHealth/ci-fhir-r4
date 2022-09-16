@@ -43,7 +43,7 @@ The full list of available identifier namespaces can be found by browsing the [n
    - http://ns.electronichealth.net.au/id/hpio-scoped/report/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0
 
-There are four parts to the using a HPI-O scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
+There are four parts to using a HPI-O scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
 
 The system value is constructed in the format of [baseURL]/HPI-O, e.g.:
 
@@ -99,7 +99,7 @@ The full list of available identifier namespaces can be found by browsing the [n
    - http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0
    - http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0
 
-There are four parts to the using an ABN scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
+There are four parts to using an ABN scoped identifier in FHIR: system, value, assigner and depending on the identifier profile requirements, a coded type. 
 
 The system value is constructed in the format of [baseURL]/ABN, e.g.:
 
@@ -212,7 +212,7 @@ In ADHA profiles:
 
 ## Missing data
 
-There are situations when information for a particular data element is missing and the source system does not know the reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labelled *Must Support*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present for *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
+There are situations when information for a particular data element is missing and the source system does not know the reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labelled *MustSupport*), the data element **SHALL** be omitted from the resource.  If the data element is a *Mandatory* element (in other words, where the minimum cardinality is > 0), it **SHALL** be present for *even if* the source system does not have data. The core specification provides guidance for what to do in this situation, which is summarised below:
 
 1.  For *non-coded* data elements including type [Reference](http://hl7.org/fhir/R4/references.html#Reference), 
   - use the [DataAbsentReason extension](http://hl7.org/fhir/StructureDefinition/data-absent-reason) in the data type if the ADHA profile for that resource does not require a child element.
@@ -243,7 +243,7 @@ There are situations when information for a particular data element is missing a
     ~~~
 
 1. For *coded* data elements:
-   - *example*, *preferred*, or *extensible* binding strengths (CodeableConcept , or Coding datatypes):
+   - *example*, *preferred*, or *extensible* binding strengths (CodeableConcept or Coding datatypes):
       - if the source system has text but no coded data, only the text element is used.
           - for Coding datatypes, the text only data is represented as a `display` element.
       - if there is neither text or coded data:
@@ -293,7 +293,7 @@ There are situations when information for a particular data element is missing a
 
 
 ## Suppressed data
-In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled Must Support), the element **SHALL** be omitted from the resource if they are suppressed.
+In some circumstances, specific pieces of data may be hidden due to security or privacy reasons. Elements with a minimum cardinality = 0 (including elements labelled MustSupport) **SHALL** be omitted from the resource if they are suppressed.
 
 For mandatory elements (minimum cardinality is > 0), the element **SHALL** be populated but it may exceed the data receiver’s access rights to know that the data is suppressed:
 - where a receiver does not have access rights to know that data is suppressed use the code `masked` from the [DataAbsentReason Code System](http://terminology.hl7.org/CodeSystem/data-absent-reason) following the section on [Missing data](guidance.html#missing-data).
@@ -301,7 +301,7 @@ For mandatory elements (minimum cardinality is > 0), the element **SHALL** be po
 
 
 ## Extensibility – "additional" elements
-A sending system may send "additional" elements beyond those flagged with Must Support in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, and only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
+A sending system may send "additional" elements beyond those labelled with MustSupport in an ADHA profile. Additional elements allow local requirements to be reflected including technical and workflow context for the resource, and extending the health information supported in exchanges. For this reason extensibility is generally allowed in ADHA profiles, and only in some use case profiles are the rules tightened to limit the nature of additional information that can be sent.
 
 Depending on local requirements, a receiving or persisting system may ignore these "additional" elements, may treat the data as for rendering only, or be capable of recognising and using the element. A resource exchanged containing an additional element **SHALL** conform to ADHA conformance requirements. Requirements applicable to handling "additional" elements are summarised below: 
 - an "additional" element **SHALL** be part of a supported resource, it may be a canonical element or an extension.
@@ -314,9 +314,9 @@ Depending on local requirements, a receiving or persisting system may ignore the
 Orphaned resources, i.e. not referenced by an element in supported resource, **SHALL NOT** be allowed.
 
 System obligations on handling additional elements are:
-- Systems that construct or send information **SHALL** ensure that a resource meets all applicable ADHA conformance requirements
-- Systems that receive or persist information, when sent a resource with an "additional" set of elements:
-  - **SHALL** meaningfully process the Must Support elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow.
+- systems that construct or send information **SHALL** ensure that a resource meets all applicable ADHA conformance requirements
+- systems that receive or persist information, when sent a resource with an "additional" set of elements:
+  - **SHALL** meaningfully process the MustSupport elements; depending on local requirements this may mean display, persist, index, or action in an event or request workflow.
   - **SHOULD** persist additional elements where the system is capable of doing so, and the additional element is not a modifier extension.
   - **MAY** choose to ignore the additional elements.
   - **MAY** choose to reject non-conformant resources but are not required to.
@@ -337,7 +337,7 @@ ADHA profiles of MedicationAdministration (with ADHA Core Medication) are used t
 ADHA profiles of MedicationDispense (with ADHA Core Medication) are used to support to support dispense records and ePrescribing use cases.
 ADHA profiles of MedicationRequest (with ADHA Core Medication) are used to support prescription, ordering, and ePrescribing use cases.
 
-**Medicinal Product Identification**
+**Medicinal product identification**
 
 For extemporaneous medications, the medication code is the mandatory primary mechanism to identify a medicine but contain only a text list of ingredients or it may be a code from a medicines terminology.
 
@@ -345,7 +345,7 @@ For non-extemporaneous medications, the medication code (or set of codes) is the
 
 Australian Medicines Terminology (AMT) is the national terminology for identification and naming of medicines in clinical systems for Australia. 
 The AMT is published monthly to include new items on the Australian Register of Therapeutic Goods from the TGA, as well as items listed on the Pharmaceutical Benefits Scheme. 
-The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](https://www.healthterminologies.gov.au/).
+The AMT is published as part of SNOMED CT-AU (Australian edition of SNOMED CT) and can be downloaded in a variety of formats from the [National Clinical Terminology Service (NCTS)](https://www.healthterminologies.gov.au).
 
 *TBD: Insert PBS.*
 
@@ -354,7 +354,7 @@ In addition to the medication code, the majority of use cases support exchange o
 These data elements may be supported as coded, or text, and systems are likely to use a combination of coded and text elements when constructing a Medication resource. The guidance for how to support coded or text is summarised below: 
 
 1. For *coded* support for brand name, generic name, manufacturer, item form and strength:
-   - Fully coded support is provided using code.coding with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) extension in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
+   - Fully coded support is provided using code.coding with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) in the resource (i.e. MedicationAdministration, MedicationStatement, MedicationDispense, MedicationRequest, Medication):
       - brand name = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `BPD` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
       - generic name = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `UPD` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
       - generic item form and strength = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `UPDSF` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
@@ -611,7 +611,7 @@ Example: Patient resource with interpreter required and language is known
 
 **RelatedPerson**
 
-The table below provides guidance on representing communication preferences for a related person. Blank cells in the indicate that the given element is absent from the resource.
+The table below provides guidance on representing communication preferences for a related person. Blank cells in the table indicate that the given element is absent from the resource.
 
 <table class="list" style="width:100%">
     <colgroup>
