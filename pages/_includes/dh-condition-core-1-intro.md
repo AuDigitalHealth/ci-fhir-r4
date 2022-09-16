@@ -25,7 +25,5 @@ This profile is referenced by
 [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
 [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html),
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
-[ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html),  
-[ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html), 
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).

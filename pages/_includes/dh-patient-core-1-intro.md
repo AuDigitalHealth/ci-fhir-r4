@@ -65,7 +65,6 @@ This profile is referenced by
 [ADHA Practitioner Medicine Review List](StructureDefinition-dh-list-medication-use-pmr-1.html), 
 [ADHA Prescription List](StructureDefinition-dh-list-pres-1.html), 
 [ADHA Core Media](StructureDefinition-dh-media-core-1.html), 
-[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html), 
 [ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html), 
 [ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
 [ADHA Dispense Record](StructureDefinition-dh-medicationdispense-disp-1.html),

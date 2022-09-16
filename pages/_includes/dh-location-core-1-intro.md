@@ -18,7 +18,6 @@ None.
 This profile is referenced by 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
-[ADHA System Device](StructureDefinition-dh-device-system-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
