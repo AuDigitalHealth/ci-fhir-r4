@@ -21,4 +21,4 @@ Operations on Medication resources are expected to be within the context of an E
 This profile is referenced by 
 [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
 [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), and
-[ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html).
+[ADHA PBS Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html).

@@ -16,5 +16,6 @@ This profile is designed to set a core Observation standard for:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html) and
+[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html),
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and
 [ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).

@@ -16,4 +16,4 @@ This profile is designed to set a core MedicationRequest standard for:
 
 
 #### Boundaries and relationships
-This profile is referenced by [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).
+This profile is not referenced by another profile in this implementation guide.
