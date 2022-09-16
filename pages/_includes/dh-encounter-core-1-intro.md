@@ -12,10 +12,10 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance TBD
 - `Encounter.type` supports categorisation and provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. 
-- In an exchange with the My Health Record system `Encounter.status` is "finished"
+- In an exchange with the My Health Record system `Encounter.status` is "finished".
 - The Encounter resource can represent a reason using either a code with `Encounter.reasonCode`, or a reference with `Encounter.reasonReference` to a Condition or other resource.
-  - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements
-  - A receiving or persisting system **SHALL** support both elements
+  - Although both are marked as must support, sending systems are not required to support both a code and a reference, but they **SHALL** support *at least one* of these elements.
+  - A receiving or persisting system **SHALL** support both elements.
 
 
 #### Boundaries and relationships

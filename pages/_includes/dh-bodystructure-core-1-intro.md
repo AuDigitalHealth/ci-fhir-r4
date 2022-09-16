@@ -4,7 +4,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 Where a more specific BodyStructure profile is applicable, e.g. diagnostic result or vital signs, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
-This profile is designed to set a core BodyStructure for:
+This profile is designed to set a core BodyStructure standard for:
 * Recording or updating body structures
 * Reading body structures
 

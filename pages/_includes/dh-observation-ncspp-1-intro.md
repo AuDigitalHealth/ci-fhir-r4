@@ -13,12 +13,12 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- `Observation.code` identifies the health program and nature of the observation (e.g. 1602081000168109 \|National bowel cancer screening program participation\| or 1602101000168102 \|National cervical cancer screening program participation	\|)
+- `Observation.code` identifies the health program and nature of the observation (e.g. 1602081000168109 \|National bowel cancer screening program participation\| or 1602101000168102 \|National cervical cancer screening program participation	\|).
 - Participant status is represented as a SNOMED CT-AU coded value in `Observation.component.valueCodeableConcept` with `Observation.component.code`= "1603781000168102" 
-  - guidance on mapping participant status value domain to SNOMED CT-AU is in the table below   
+  - Guidance on mapping participant status value domain to SNOMED CT-AU is in the table below.   
 - Next screening action is represented as:
-  - text in `Observation.component.valueCodeableConcept.text` with `Observation.component.code`= "1604041000168107" 
-  - date in `Observation.component.valueDateTime` with `Observation.component.code`= "1604051000168109" 
+  - text in `Observation.component.valueCodeableConcept.text` with `Observation.component.code`= "1604041000168107". 
+  - date in `Observation.component.valueDateTime` with `Observation.component.code`= "1604051000168109". 
 
 Mapping from the participant status value domain to the concepts in the <a href="https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1">Health Program Participation Status</a> value set is provided below.
 

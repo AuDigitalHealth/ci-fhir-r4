@@ -13,9 +13,9 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- This profile supports a view of the information held about an individual's participation in one or more national cancer screening program at a point in time 
-  - it is generated in response to a request if a system holds information about a program for an individual
-  - information about each program is a separate Observation in `Composition.section.entry`
+- This profile supports a view of the information held about an individual's participation in one or more national cancer screening program at a point in time.
+  - It is generated in response to a request if a system holds information about a program for an individual.
+  - Information about each program is a separate Observation in `Composition.section.entry`.
 
 
 #### Boundaries and relationships

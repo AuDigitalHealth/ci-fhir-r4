@@ -5,7 +5,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 A [Practitioner](http://hl7.org/fhir/R4/practitioner.html) resource is used within the context of a referencing resource (most commonly a PractitionerRole resource). 
 
-This profile is designed to set a core Practitioner for:
+This profile is designed to set a core Practitioner standard for:
 * Querying practitioners referenced in PractitionerRole or other resources
 * Recording or updating a practitioner referenced by a PractitionerRole or other resource
 

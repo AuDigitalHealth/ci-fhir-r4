@@ -2,7 +2,7 @@ The purpose of this profile is to provide a core representation of a patient for
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Patient](http://hl7.org/fhir/R4/patient.html) that are supported. 
 
-This profile is designed to set a core Patient standard:
+This profile is designed to set a core Patient standard for:
 * Querying for records associated with a patient
 * Record or update a record associated with a patient
 
@@ -11,10 +11,10 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace)
-  - A system may use `address.text` if birth place address is not stored in discrete elements
-- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance
-- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Core Biological Sex Assigned at Birth](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-sexassignedatbirth.html)
+- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace).
+  - A system may use `address.text` if birth place address is not stored in discrete elements.
+- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance.
+- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Core Biological Sex Assigned at Birth](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-sexassignedatbirth.html).
 
 
 #### Boundaries and relationships

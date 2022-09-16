@@ -1,4 +1,5 @@
-<table class="list" width="100%">            
+<t
+able class="list" width="100%">            
    <tr>
      <th>Example name</th>
      <th>id</th>
@@ -103,7 +104,7 @@
       <td><a href="Medication-chloramphenicol-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Medication-chloramphenicol-02.html">Chlorsig Chloramphenicol 1% eye ointment</a></td>
+      <td><a href="Medication-chloramphenicol-02.html">Chlorsig Chloramphenicol 1% eye drop</a></td>
       <td>chloramphenicol-02</td>
       <td><a href="Medication-chloramphenicol-02.xml.html">XML</a></td>
       <td><a href="Medication-chloramphenicol-02.json.html">JSON</a></td>

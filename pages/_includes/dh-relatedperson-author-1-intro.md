@@ -14,7 +14,7 @@ This profile is used by the following APIs:
  
 
 #### Profile specific guidance
-- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance
+- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance.
 
 
 #### Boundaries and relationships

@@ -10,10 +10,10 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace)
-  - A sytem may use `address.text` if they birth place address is not stored in discrete elements
-- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance
-- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html)
+- Country of birth is represented using `Patient.extension` [birthPlace extension](http://hl7.org/fhir/StructureDefinition/patient-birthPlace).
+  - A sytem may use `address.text` if they birth place address is not stored in discrete elements.
+- See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance.
+- A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html).
 
 
 #### Boundaries and relationships
