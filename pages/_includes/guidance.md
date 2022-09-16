@@ -34,7 +34,7 @@ When constructing a local identifier it is preferable that an organisation uses 
 
 HPI-O scoped identifiers enable exchange of an organisation's local identifiers for items such as a patient medical record or a pathology report by combining a dedicated Agency published namespace and their HPI-O to construct a legal, globally unique identifier system for their local identifiers.
 
-The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au Identifier](http://ns.electronichealth.net.au/browse-identifiers.html) namespaces; there are several HPI-O scoped identifier namespaces available:
+The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are several HPI-O scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/hpio-scoped/accessionnumber/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/dispense/1.0
    - http://ns.electronichealth.net.au/id/hpio-scoped/medicalrecord/1.0
@@ -95,7 +95,7 @@ Example: PractitionerRole resource with an employee number (local identifier)
 
 ABN scoped identifiers enable exchange of an organisation's local identifiers for items such as a patient medical record by combining a dedicated Agency published namespace and their ABN to construct a legal, globally unique identifier system for their local identifiers.
 
-The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au Identifier](http://ns.electronichealth.net.au/browse-identifiers.html) namespaces; there are two ABN-scoped identifier namespaces available:
+The full list of available identifier namespaces can be found by browsing the [ns.electronichealth.net.au identifier namespaces](http://ns.electronichealth.net.au/browse-identifiers.html); there are two ABN-scoped identifier namespaces available:
    - http://ns.electronichealth.net.au/id/abn-scoped/medicalrecord/1.0
    - http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0
 
