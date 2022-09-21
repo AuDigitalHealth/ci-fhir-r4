@@ -529,12 +529,12 @@ https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0
 **Publication URL expected resolution behaviour**
 
 The expected resolution behaviour of publication URLs is summarised below:
-- Non-versioned URLs **SHALL** resolve to the Home page of the latest version of that publication. 
-- Versioned URLS **SHALL** resolve to the Home page of the specified version of that publication.
+- Non-versioned URLs **SHALL** resolve to the Home page of the latest version of that publication 
+- Versioned URLS **SHALL** resolve to the Home page of the specified version of that publication
 
-Thhis behaviour **SHOULD** be supported by managing publication of a versioned and non-versioned URL:
+This behaviour **SHOULD** be supported by managing publication of a versioned and non-versioned URL:
 - The first approved release of a publication is at a versioned URL and a non-versioned URL
-- Each subseqent release of a publication is published at a URL for that version, and also replaces the content published at the non-versioned URL 
+- Each subsequent release of a publication is published at a URL for that version, and also replaces the content published at the non-versioned URL 
 
 Taking the ADHA FHIR Implementation Guide, if this publication was hypothetically published only in FHIR R4 and had two published versions 1.0.0 and 1.1.0: 
 
@@ -563,7 +563,7 @@ Taking the ADHA FHIR Implementation Guide, if this publication was hypotheticall
 The canonical identifier for ADHA FHIR publication and conformance resources **SHOULD** be resolvable URLs. The publication location for ADHA artefacts **MAY** be different and resolve by redirection. Resolution **SHOULD** behave as defined in the FHIR standard. 
  
 The expected behaviour of resolution of canonical identifiers is summarised below:
-- An unversioned canonical identifier **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
+- An non-versioned canonical identifier **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
 - The canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4`, **SHALL** resolve to the Home page of the latest version of that publication
 - The versioned canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.0.0`, **SHALL** resolve to the Home page of the specified version of that publication
 - The publication location **SHOULD** be a FHIR server hosting resources so that the publication URL acts like a [Service Base URL](http://hl7.org/fhir/http.html#general) such that a GET of [publication-url]/[resource-type]/[id] returns a FHIR resource
@@ -581,7 +581,7 @@ Taking the ADHA FHIR Implementation Guide, if this publication was hypotheticall
     </tr>
     <tr>
         <td>http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.1.0</td>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0/index.html</td>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.1.0/index.html</td>
     </tr>
     <tr>
         <td>http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1</td>
