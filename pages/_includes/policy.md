@@ -485,7 +485,7 @@ Examples provided as part of a publication are never treated as normative or sub
 
 ### Publication
 
-An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide and an NPM package. 
+An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide and an NPM package. The latest release of a publication **SHALL** be published at a fully versioned URL and a non-versioned URL (see the section Publication URLs below).
 
 The NPM package:
 - **SHALL** be published at the root directory of the publication URL for each publication, see notes on publication URLs below
@@ -499,6 +499,65 @@ All FHIR materials relating to national systems and other nationally defined FHI
 Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) **SHOULD** be managed through **TBD** using the standard features for raising and tracking issues on the site. 
 
 
+**Publication URLs**
+
+To account for a potential future need to concurrently actively support multiple major versions of FHIR, i.e. support a new capability like a record type or API or interaction in more than one FHIR version, publication locations **SHOULD** make content available in:
+- non-versioned URLs, i.e. non-FHIR versioned and non-publication versioned
+- publication versioned URLs that are non-FHIR versioned
+- fully versioned URLs, i.e. FHIR versioned and publication versioned
+ 
+Therefore, a publication URL may be made up of [base-publication-url]/[fhir-version]/[publication-case]/[publication-version]:
+
+- [base-publication-url] is `https://www.digitalhealth.gov.au/fhir`
+- [fhir-version] is in the form of `STU3` or `R4`
+- [publication-case] **SHALL** be all lowercase and have individual words separated by `-`
+  - **SHALL** be `dh` for a publication that manages the core and common ADHA FHIR materials for a FHIR version 
+  - **SHALL** be the [optional-subpackage-case] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
+- [publication-version] is the `ImplementationGuide.version` string, see the section [Versioning](policy.html#versioning) 
+
+Example: Non-versioned publication URL for this ImplementationGuide
+~~~
+https://www.digitalhealth.gov.au/fhir/dh
+~~~  
+
+Example: Fully versioned publication URL for this ImplementationGuide
+~~~
+https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0
+~~~
+
+
+**Publication URL expected resolution behaviour**
+
+The expected resolution behaviour of publication URLs is summarised below:
+- Non-versioned URLs **SHALL** resolve to the Home page of the latest version of that publication. 
+- Versioned URLS **SHALL** resolve to the Home page of the specified version of that publication.
+
+Thhis behaviour **SHOULD** be supported by managing publication of a versioned and non-versioned URL:
+- The first approved release of a publication is at a versioned URL and a non-versioned URL
+- Each subseqent release of a publication is published at a URL for that version, and also replaces the content published at the non-versioned URL 
+
+Taking the ADHA FHIR Implementation Guide, if this publication was hypothetically published only in FHIR R4 and had two published versions 1.0.0 and 1.1.0: 
+
+<table class="list">
+    <tr>
+        <th>Publication URL entered into browser</th>
+        <th>Resolves to</th>
+    </tr>
+    <tr>
+        <td>https://www.digitalhealth.gov.au/fhir/dh</td>
+        <td>https://www.digitalhealth.gov.au/fhir/dh/index.html</td>
+    </tr>
+    <tr>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0</td>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0/index.html</td>
+    </tr>
+    <tr>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.1.0</td>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.1.0/index.html</td>
+    </tr>
+</table>
+
+
 **Canonical identifier (URI) expected resolution behaviour**
 
 The canonical identifier for ADHA FHIR publication and conformance resources **SHOULD** be resolvable URLs. The publication location for ADHA artefacts **MAY** be different and resolve by redirection. Resolution **SHOULD** behave as defined in the FHIR standard. 
@@ -507,86 +566,29 @@ The expected behaviour of resolution of canonical identifiers is summarised belo
 - An unversioned canonical identifier **SHALL** resolve to the latest FHIR version and the latest published version of that resource with exception of an ImplementationGuide resource
 - The canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4`, **SHALL** resolve to the Home page of the latest version of that publication
 - The versioned canonical identifier of an ImplementationGuide resource, e.g. `http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.0.0`, **SHALL** resolve to the Home page of the specified version of that publication
-- The publication location **SHOULD** be a FHIR server hosting resources so that the publication URL acts like a [ServICE Base URL](http://hl7.org/fhir/http.html#general) such that a GET of [publication-url]/[resource-type]/[id] returns a FHIR resource
-
-
-**Publication URLs**
-
-To account for a potential future need to concurrently actively support multiple major versions of FHIR, i.e. support a new capability like a record type or API or interaction in more than one FHIR version, publication locations **SHOULD** make content available in:
-- unversioned URLs, i.e. non-FHIR versioned and non-publication versioned
-- publication versioned URLs that are non-FHIR versioned
-- fully versioned URLs, i.e. FHIR versioned and publication versioned
-
-Therefore, a publication URL may be made up of [base-publication-url]/[fhir-version]/[publication-case]/[publication-version]:
-
-- [base-publication-url] is `TBD`
-- [fhir-version] is in the form of `STU3` or `R4`
-- [publication-case] **SHALL** be all lowercase and have individual words separated by `-`
-  - **SHALL** be `dh` for a publication that manages the core and common ADHA FHIR materials for a FHIR version 
-  - **SHALL** be the [optional-subpackage-case] of the ImplementationGuide [resource-id] for a publication that manages a subpackage
-- [publication-version] is the `ImplementationGuide.version` string, see the section [Versioning](policy.html#versioning) 
-
-
-**Publication URL expected resolution behaviour**
-
-Non-versioned and non-FHIR versioned result in the latest being displayed. This behaviour **SHOULD** be supported by publication of the latest version at the versioned and non-versioned URLs. If this is a subsequent release it will replace the content that was present at the non-versioned URLs.
-
-Taking the Medicare Records FHIR Implementation Guide. If it, hypothetically (and this is not expected!), concurrently supported two major versions of FHIR it may result in publication URLs like in the following table that associates expected content found at those URLs.
-
-<table class="list" width="90%">
-    <tr>
-        <th>publication URL entered into browser</th>
-        <th>Resolution behaviour</th>
-    </tr>
-    <tr>
-        <td>[base-publication-url]/medicare-records</td>
-        <td>Display the Home page of the latest FHIR version and spec version = R4 v2.1.0</td>
-    </tr>
-    <tr>
-        <td>[base-publication-url]/STU3/medicare-records/1.0.0</td>
-        <td>Display the Home page of the latest FHIR version of v1.0.0 = STU3 v1.0.0</td>
-    </tr>
-    <tr>
-        <td>[base-publication-url]/medicare-records/2.1.0</td>
-        <td>Display the Home page of the latest FHIR version of v2.1.0 = R4 v2.1.0</td>
-    </tr>
-    <tr>
-        <td>[base-publication-url]/STU3/medicare-records/2.1.0</td>
-        <td>Display the Home page of the specified FHIR version and spec version = STU3 v2.1.0</td>
-    </tr>
-    <tr>
-        <td>[base-publication-url]/R4/medicare-records/2.1.0</td>
-        <td>Display the Home page of the specified FHIR version and spec version = R4 v2.1.0</td>
-    </tr>
-</table>
+- The publication location **SHOULD** be a FHIR server hosting resources so that the publication URL acts like a [Service Base URL](http://hl7.org/fhir/http.html#general) such that a GET of [publication-url]/[resource-type]/[id] returns a FHIR resource
 
 Taking the ADHA FHIR Implementation Guide, if this publication was hypothetically published only in FHIR R4 and had two published versions 1.0.0 and 1.1.0: 
 
-<table class="list" width="90%">
+<table class="list">
     <tr>
-        <th>publication URL entered into browser</th>
-        <th>Resolution behaviour</th>
+        <th>Canonical URL entered into browser</th>
+        <th>Resolves to</th>
     </tr>
     <tr>
-        <td>[base-publication-url]/dh</td>
-        <td>Display the Home page of the latest FHIR version and spec version = R4 v1.1.0</td>
+        <td>http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4</td>
+        <td>https://www.digitalhealth.gov.au/fhir/dh/index.html</td>
     </tr>
     <tr>
-        <td>[base-publication-url]/dh/1.0.0</td>
-        <td>Display the Home page of the latest FHIR version of spec version 1.0.0 = R4 v1.0.0</td>
+        <td>http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.1.0</td>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0/index.html</td>
     </tr>
     <tr>
-        <td>[base-publication-url]/R4/dh/1.0.0</td>
-        <td>Display the Home page of the specified FHIR version and spec version = R4 v1.0.0</td>
+        <td>http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1</td>
+        <td>https://www.digitalhealth.gov.au/fhir/dh/StructureDefinition-dh-patient-core-1.html</td>
     </tr>
     <tr>
-        <td>[base-publication-url]/dh/1.1.0</td>
-        <td>Display the Home page of the latest FHIR version of spec version 1.1.0 = R4 v1.1.0</td>
-    </tr>
-    <tr>
-        <td>[base-publication-url]/R4/dh/1.1.0</td>
-        <td>Display the Home page of the specified FHIR version and spec version = R4 v1.1.0</td>
+        <td>http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1/1.0.0</td>
+        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0/StructureDefinition-dh-patient-core-1.html</td>
     </tr>
 </table>
-
-
