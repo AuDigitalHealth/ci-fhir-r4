@@ -508,7 +508,7 @@ To account for a potential future need to concurrently actively support multiple
  
 Therefore, a publication URL may be made up of [base-publication-url]/[fhir-version]/[publication-case]/[publication-version]:
 
-- [base-publication-url] is `https://www.digitalhealth.gov.au/fhir`
+- [base-publication-url] is `https://fhir.digitalhealth.gov.au`
 - [fhir-version] is in the form of `STU3` or `R4`
 - [publication-case] **SHALL** be all lowercase and have individual words separated by `-`
   - **SHALL** be `dh` for a publication that manages the core and common ADHA FHIR materials for a FHIR version 
@@ -517,12 +517,12 @@ Therefore, a publication URL may be made up of [base-publication-url]/[fhir-vers
 
 Example: Non-versioned publication URL for this ImplementationGuide
 ~~~
-https://www.digitalhealth.gov.au/fhir/dh
+https://fhir.digitalhealth.gov.au/dh
 ~~~  
 
 Example: Fully versioned publication URL for this ImplementationGuide
 ~~~
-https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0
+https://fhir.digitalhealth.gov.au/R4/dh/1.0.0
 ~~~
 
 
@@ -544,16 +544,16 @@ Taking the ADHA FHIR Implementation Guide, if this publication was hypotheticall
         <th>Resolves to</th>
     </tr>
     <tr>
-        <td>https://www.digitalhealth.gov.au/fhir/dh</td>
-        <td>https://www.digitalhealth.gov.au/fhir/dh/index.html</td>
+        <td>https://fhir.digitalhealth.gov.au/dh</td>
+        <td>https://fhir.digitalhealth.gov.au/dh/index.html</td>
     </tr>
     <tr>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0</td>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0/index.html</td>
+        <td>https://fhir.digitalhealth.gov.au/R4/dh/1.0.0</td>
+        <td>https://fhir.digitalhealth.gov.au/R4/dh/1.0.0/index.html</td>
     </tr>
     <tr>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.1.0</td>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.1.0/index.html</td>
+        <td>https://fhir.digitalhealth.gov.au/R4/dh/1.1.0</td>
+        <td>https://fhir.digitalhealth.gov.au/R4/dh/1.1.0/index.html</td>
     </tr>
 </table>
 
@@ -577,18 +577,18 @@ Taking the ADHA FHIR Implementation Guide, if this publication was hypotheticall
     </tr>
     <tr>
         <td>http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4</td>
-        <td>https://www.digitalhealth.gov.au/fhir/dh/index.html</td>
+        <td>https://fhir.digitalhealth.gov.au/dh/index.html</td>
     </tr>
     <tr>
         <td>http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.1.0</td>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.1.0/index.html</td>
+        <td>https://fhir.digitalhealth.gov.au/R4/dh/1.1.0/index.html</td>
     </tr>
     <tr>
         <td>http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1</td>
-        <td>https://www.digitalhealth.gov.au/fhir/dh/StructureDefinition-dh-patient-core-1.html</td>
+        <td>https://fhir.digitalhealth.gov.au/dh/StructureDefinition-dh-patient-core-1.html</td>
     </tr>
     <tr>
         <td>http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1/1.0.0</td>
-        <td>https://www.digitalhealth.gov.au/fhir/R4/dh/1.0.0/StructureDefinition-dh-patient-core-1.html</td>
+        <td>https://fhir.digitalhealth.gov.au/R4/dh/1.0.0/StructureDefinition-dh-patient-core-1.html</td>
     </tr>
 </table>
