@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-document-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-document-1"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="ADHACompositionDocument"/>
   <title value="ADHA Document Composition"/>
   <status value="draft"/>
@@ -84,11 +84,19 @@
       <path value="Composition.type"/>
       <short value="Document sub type"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/mhr-record-type-1"/>
+      </binding>
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/mhr-record-class-1"/>
+      </binding>
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject"/>

@@ -27,3 +27,4 @@ This profile is referenced by
 
 These profiles build on this profile ([ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html)) to define specific document compositions:
 * [ADHA Advance Care Planning Document DocumentReference](StructureDefinition-dh-documentreference-acp-1.html).
+* [ADHA Diagnostic Report DocumentReference](StructureDefinition-dh-documentreference-dr-1.html).

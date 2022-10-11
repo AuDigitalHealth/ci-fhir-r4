@@ -28,6 +28,7 @@ This profile is used by the following APIs:
 This profile is referenced by 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
 [ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
+[ADHA Discharge Report Composition](StructureDefinition-dh-composition-dr-1.html), 
 [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), and 
 [ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
 

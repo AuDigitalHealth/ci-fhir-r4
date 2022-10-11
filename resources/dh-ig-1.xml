@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="au.digitalhealth.r4"/>
     <url value="http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4"/>
-    <version value="0.1.0"/>
+    <version value="0.0.1"/>
     <name value="ADHAFHIR"/>
     <title value="Australian Digital Health Agency FHIR"/>
     <status value="draft"/>
@@ -157,6 +157,14 @@
             </reference>
             <name value="ADHA Discharge Summary Composition"/>
             <description value="The purpose of this profile is to define a representation of an Discharge Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care following discharge. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-composition-dr-1"/>
+            </reference>
+            <name value="ADHA Diagnostic Report Document Composition"/>
+            <description value="The purpose of this profile is to define a representation of a Diagnostic Report document tfor the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines, pathology disciplines, and imaging discliplines."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -325,6 +333,14 @@
             </reference>
             <name value="ADHA Advance Care Planning Document DocumentReference"/>
             <description value="The purpose of this profile is to provide a representation of an Advance Care Planning Document document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-documentreference-dr-1"/>
+            </reference>
+            <name value="ADHA Diagnostic Report DocumentReference"/>
+            <description value="The purpose of this profile is to provide a representation of a Diagnsotic Report document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines, pathology disciplines, and imaging discliplines."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

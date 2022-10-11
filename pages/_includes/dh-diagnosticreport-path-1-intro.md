@@ -19,4 +19,5 @@ This profile is used by the following APIs:
 
 
 #### Boundaries and relationships
-This profile is not referenced by another profile in this implementation guide.  
+This profile is referenced by  
+[ADHA Discharge Report Composition](StructureDefinition-dh-composition-dr-1.html). 

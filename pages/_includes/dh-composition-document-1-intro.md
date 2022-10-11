@@ -25,6 +25,7 @@ These profiles build on this profile ([ADHA Document Composition](StructureDefin
 * [ADHA Advance Care Planning Composition](StructureDefinition-dh-composition-acp-1.html) 
 * [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html)
 * [ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html)
+* [ADHA Diagnostic Report Composition](StructureDefinition-dh-composition-dr-1.html)
 * [ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html) 
 * [ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html) 
 * [ADHA Event Summary Narrative](StructureDefinition-dh-composition-es-narrative-1.html) 
