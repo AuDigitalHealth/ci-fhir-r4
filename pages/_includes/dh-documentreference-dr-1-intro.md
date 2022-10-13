@@ -1,4 +1,4 @@
-The purpose of this profile is to provide a representation of a Diagnsotic Report document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines, pathology disciplines, and imaging discliplines.
+The purpose of this profile is to provide a representation of a Diagnostic Report document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines, pathology disciplines, and imaging disciplines.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [DocumentReference](http://hl7.org/fhir/R4/documentreference.html) that are supported. 
 

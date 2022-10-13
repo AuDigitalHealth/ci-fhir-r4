@@ -353,6 +353,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-episodeofcare-mygp-1"/>
+            </reference>
+            <name value="ADHA GP Practice Registration Entry"/>
+            <description value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a current entry or a historical entry."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
             </reference>
             <name value="ADHA Record of Claim against MBS or DVA"/>
@@ -1272,6 +1280,27 @@
             </reference>
             <name value="Pathology Report Document Bundle SARS-CoV-2 (COVID-19) PCR for Mrs Anne Thompson"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/vpr-01"/>
+            </reference>
+            <name value="Patient's registered GP practice"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/vpr-02"/>
+            </reference>
+            <name value="Patient's registered GP practice and practitioner"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/vpr-03"/>
+            </reference>
+            <name value="History of patient's registered GP practices"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
         <!--CONSENT EXAMPLES-->
         <resource>
