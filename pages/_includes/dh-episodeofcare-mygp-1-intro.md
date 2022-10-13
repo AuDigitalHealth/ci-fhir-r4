@@ -12,8 +12,8 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - This profile supports exchange of current and historical patient GP practice registration information.
-  - *current* is represented with status `active` and only period.start sent, see example [Patient's registered GP practice](Bundle-vpr-01.html)
-  - *historial* is represented with status `finished`, and both period.start and period.end, see example [History of patient's registered GP practices](Bundle-vpr-03.html)
+  - *current* is represented with status `active` and only registration start date (period.start) sent, see example [Patient's registered GP practice](Bundle-vpr-01.html)
+  - *historial* is represented with status `finished`, and both registration start date (period.start) and registration end date (period.end) included, see example [History of patient's registered GP practices](Bundle-vpr-03.html)
 
 
 #### Boundaries and relationships

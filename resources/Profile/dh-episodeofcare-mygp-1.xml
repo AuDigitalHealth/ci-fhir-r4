@@ -101,7 +101,7 @@
     </element>
     <element id="EpisodeOfCare.period">
       <path value="EpisodeOfCare.period"/>
-      <short value="Registration start date and only if historical registration end date"/>
+      <short value="Registration start date; only if historical is registration end date present"/>
       <comment value="In the context of a MyGP registration, a patient's current registered GP practice will only have period.start. A historical entry will have both period.start and period.end."/>
       <min value="1"/>
       <condition value="inv-dh-epoc-04"/>
