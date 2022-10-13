@@ -24,6 +24,7 @@ This profile is used by the following APIs:
 - *Practitioner name* is represented in `Patient.generalPractitioner.display` with `Patient.generalPractitioner.type`="PractitionerRole", see example [Patient's registered GP practice and practitioner name](Bundle-vpr-02.html)
 - In an exchange with the My Health Record system the set of resources that make up patient GP practice registration information are collected in a Bundle.
 
+
 #### Boundaries and relationships
 This profile is not referenced by another profile in this implementation guide.  
 
