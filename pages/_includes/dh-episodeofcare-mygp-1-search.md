@@ -23,6 +23,13 @@ Below is an overview of the mandatory and optional search parameters. FHIR searc
         <td>The current status of the Episode of Care as provided (does not check the status history collection) active | finished</td>
         <td>EpisodeOfCare.status</td>
   </tr>
+  <tr>
+        <td>date</td>
+        <td><a href="https://build.fhir.org/search.html#date">date</a></td>        
+        <td><b>SHOULD</b></td>
+        <td>The provided date search value falls within the episode of care's period</td>
+        <td>EpisodeOfCare.period</td>
+  </tr>
  </tbody>
 </table>
 

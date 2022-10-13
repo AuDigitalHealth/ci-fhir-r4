@@ -25,12 +25,12 @@
   <differential>
     <element id="EpisodeOfCare">
       <path value="EpisodeOfCare"/>
-      <short value="GP practice registration entry"/>
-      <definition value="Information about a GP practice that is or has been registered for a patient in the MyGP system."/>
+      <short value="GP practice registration information"/>
+      <definition value="Information about a GP practice that is or has been registered for the patient in the MyGP system."/>
       <constraint>
         <key value="inv-dh-epoc-03"/>
         <severity value="error"/>
-        <human value="Status shall be active or finished"/>
+        <human value="status shall be active or finished"/>
         <expression value="(status='active') or (status='finished')"/>
         <xpath value="(f:status/@value = 'active') or (f:status/@value = 'finished')"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
@@ -53,18 +53,32 @@
     </element>
     <element id="EpisodeOfCare.type">
       <path value="EpisodeOfCare.type"/>
-      <short value="GP practice - primary care management"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
       <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="EpisodeOfCare.type:primaryCare">
+      <path value="EpisodeOfCare.type"/>
+      <short value="GP practice - primary care management"/>
+      <sliceName value="primaryCare"/>
+      <min value="1"/>
+      <max value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct"/>
           <code value="737470001"/>
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true"/>
     </element>
     <element id="EpisodeOfCare.patient">
       <path value="EpisodeOfCare.patient"/>
+      <short value="The patient"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
@@ -82,7 +96,7 @@
     </element>
     <element id="EpisodeOfCare.managingOrganization">
       <path value="EpisodeOfCare.managingOrganization"/>
-      <short value="GP practice that is now, or was once, registered for a patient"/>
+      <short value="GP practice that is now, or was once, registered for the patient"/>
       <min value="1"/>
       <type>
         <code value="Reference"/>
@@ -101,7 +115,7 @@
     </element>
     <element id="EpisodeOfCare.period">
       <path value="EpisodeOfCare.period"/>
-      <short value="Registration start date; only if historical is registration end date present"/>
+      <short value="Registration start date and, if historical, the registration end date"/>
       <comment value="In the context of a MyGP registration, a patient's current registered GP practice will only have period.start. A historical entry will have both period.start and period.end."/>
       <min value="1"/>
       <condition value="inv-dh-epoc-04"/>

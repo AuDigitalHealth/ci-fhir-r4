@@ -4,7 +4,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 This profile is designed to set an EpisodeOfCare standard for:
 * Query for a patient's registered GP practice information from MyGP
-* Reading a patien'ts registered GP practice information from MyGP
+* Reading a patient’s registered GP practice information from MyGP
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
@@ -12,9 +12,17 @@ This profile is used by the following APIs:
 
 #### Profile specific guidance
 - This profile supports exchange of current and historical patient GP practice registration information.
-  - *current* is represented with status `active` and only registration start date (period.start) sent, see example [Patient's registered GP practice](Bundle-vpr-01.html)
-  - *historical* is represented with status `finished`, and both registration start date (period.start) and registration end date (period.end) included, see example [History of patient's registered GP practices](Bundle-vpr-03.html)
-
+   - *current* is represented with
+      - `EpisodeOfCare.status`="active" 
+      - *registration start date* is sent in `EpisodeOfCare.period.start`
+      - see example [Patient's registered GP practice](Bundle-vpr-01.html)
+   - *historical* is represented with 
+      - `EpisodeOfCare.status`="finished"
+      - *registration start date* (`EpisodeOfCare.period.start`) and *registration end date* (`EpisodeOfCare.period.end`) **SHALL** be included
+      - see example [History of patient's registered GP practices](Bundle-vpr-03.html)
+- Information about the *GP Practice* is represented with an Organization resource that is referenced in `EpisodeOfCare.managingOrganization` and `Paient.generalPractitioner`
+- *Practitioner name* is represented in `Patient.generalPractitioner.display` with `Patient.generalPractitioner.type`="PractitionerRole", see example [Patient's registered GP practice and practitioner name](Bundle-vpr-02.html)
+- In an exchange with the My Health Record system the set of resources that make up patient GP practice registration information are collected in a Bundle.
 
 #### Boundaries and relationships
 This profile is not referenced by another profile in this implementation guide.  
