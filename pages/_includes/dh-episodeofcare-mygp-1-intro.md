@@ -3,7 +3,8 @@ The purpose of this profile is to define a representation of GP practice registr
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [EpisodeOfCare](http://hl7.org/fhir/R4/episodeofcare.html) that are supported. 
 
 This profile is designed to set an EpisodeOfCare standard for:
-* Query for a patient's registered GP Practice information from MyGP
+* Query for a patient's registered GP practice information from MyGP
+* Reading a patien'ts registered GP practice information from MyGP
 
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)

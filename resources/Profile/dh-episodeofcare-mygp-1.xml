@@ -38,7 +38,7 @@
       <constraint>
         <key value="inv-dh-epoc-04"/>
         <severity value="error"/>
-        <human value="A patien'ts current GP practice shall not have a registration end date"/>
+        <human value="A patient’s current GP practice shall not have a registration end date"/>
         <expression value="period.end.empty() xor (status = 'finished')"/>
         <xpath value="not(f:period.end) or exists(f:status/@value = 'finished')"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
