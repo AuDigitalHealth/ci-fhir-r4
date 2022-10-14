@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-bundle-payload-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-  <version value="0.0.1"/>
+  <version value="0.1.0"/>
   <name value="ADHABundlePayload"/>
   <title value="ADHA Payload Bundle"/>
   <status value="draft" />
@@ -37,6 +37,7 @@
     </element>
     <element id="Bundle.timestamp">
       <path value="Bundle.timestamp"/>
+      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Bundle.link">
