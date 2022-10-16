@@ -92,7 +92,7 @@
       <sliceName value="diagnosticInvestigations"/>
       <short value="Results of diagnostic investigations."/>
       <definition value="Results of diagnostic investigations and/or laboratory data."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Composition.section:diagnosticInvestigations.title">
@@ -113,6 +113,7 @@
     <element id="Composition.section:diagnosticInvestigations.entry">
       <path value="Composition.section.entry"/>
       <short value="Diagnostic investigations"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
@@ -121,16 +122,6 @@
       </type>
       <condition value="inv-dh-dr-01"/>
       <condition value="inv-dh-dr-02"/>
-    </element>
-    <element id="Composition.section:diagnosticInvestigations.emptyReason">
-      <path value="Composition.section.emptyReason"/>
-      <condition value="inv-dh-dr-01"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet
-          value="https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2"
-        />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

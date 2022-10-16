@@ -250,6 +250,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                                 <li><a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-acts-1.html">ADHA Aged Care Transfer Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-ds-1.html">ADHA Discharge Summary Composition</a></li>
+                                <li><a href="StructureDefinition-dh-composition-dr-1.html">ADHA Diagnostic Report Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-es-mix-1.html">ADHA Event Summary Mixed Narrative and Structure</a></li>
                                  <li><a href="StructureDefinition-dh-composition-es-narrative-1.html">ADHA Event Summary Narrative</a></li>
@@ -263,6 +264,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                                 <li><a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Composition</a></li>
                                 <li><a href="StructureDefinition-dh-composition-sml-1.html">ADHA Shared Medicines List Composition</a></li>
                                 <li><a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning DocumentReference</a></li>
+                                <li><a href="StructureDefinition-dh-documentreference-dr-1.html">ADHA Diagnostic Report DocumentReference</a></li>
                                 <li>Architecture related DocumentReference profiles (TBD Architecture Team)</li>                               
                             </ul>
                         </td>  
