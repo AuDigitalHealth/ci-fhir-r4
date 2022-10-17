@@ -1,4 +1,4 @@
-The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a current entry or a historical entry.
+The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [EpisodeOfCare](http://hl7.org/fhir/R4/episodeofcare.html) that are supported. 
 
@@ -11,15 +11,6 @@ This profile is used by the following APIs:
 
 
 #### Profile specific guidance
-- This profile supports exchange of current and historical patient GP practice registration information.
-   - *current* is represented with
-      - `EpisodeOfCare.status`="active" 
-      - *registration start date* is sent in `EpisodeOfCare.period.start`
-      - see example [Patient's registered GP practice](Bundle-vpr-01.html)
-   - *historical* is represented with 
-      - `EpisodeOfCare.status`="finished"
-      - *registration start date* (`EpisodeOfCare.period.start`) and *registration end date* (`EpisodeOfCare.period.end`) **SHALL** be included
-      - see example [History of patient's registered GP practices](Bundle-vpr-03.html)
 - Information about the *GP Practice* is represented with an Organization resource that is referenced in `EpisodeOfCare.managingOrganization` and `Paient.generalPractitioner`
 - *Practitioner name* is represented in `Patient.generalPractitioner.display` with `Patient.generalPractitioner.type`="PractitionerRole", see example [Patient's registered GP practice and practitioner name](Bundle-vpr-02.html)
 - In an exchange with the My Health Record system the set of resources that make up patient GP practice registration information are collected in a Bundle.

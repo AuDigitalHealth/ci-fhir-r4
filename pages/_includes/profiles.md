@@ -315,7 +315,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li>ADHA Hospitalisation Encounter</li>
-                                <li><a href="StructureDefinition-dh-episodeofcare-mygp-1.html">ADHA GP Practice Registration Entry</a></li>
+                                <li><a href="StructureDefinition-dh-episodeofcare-mygp-1.html">ADHA GP Practice Registration Information</a></li>
                                 <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>
                                 <li>ADHA Adverse Reactions List</li>
                                 <li>ADHA Allergies and Intolerances List</li>
