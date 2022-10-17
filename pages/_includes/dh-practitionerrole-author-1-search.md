@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA Authoring PractitionerRole profile.**
+None defined.

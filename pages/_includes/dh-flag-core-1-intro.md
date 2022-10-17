@@ -8,17 +8,13 @@ This profile is designed to set a core Flag standard for:
 * Query for a flag (alert or notice) associated with a patient
 * Record or update a flag (alert or notice) associated with a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 
+This profile is not referenced by another profile in this implementation guide.
 
-These profiles build on this profile ([ADHA Core Flag](StructureDefinition-dh-flag-core-1.html)) to define specific flags:
-* [ADHA Australian Immunisation Register Notice](StructureDefinition-dh-flag-air-1.html)
+The following profiles build on the [ADHA Core Flag](StructureDefinition-dh-flag-core-1.html) profile to define specific flags:
+* [ADHA Australian Immunisation Register Notice](StructureDefinition-dh-flag-air-1.html).

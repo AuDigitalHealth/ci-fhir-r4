@@ -9,16 +9,13 @@ This profile is designed to set a core BodyStructure standard for:
 * Reading body structures
 
 Operations, including querying, on body structures are expected to be within the context of another resource query.
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 
+This profile is not referenced by another profile in this implementation guide.
 
-These profiles build on this profile ([ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html)) to define specific roles:
-* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html)
+The following profiles build on the [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html) profile to define specific roles:
+* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html).

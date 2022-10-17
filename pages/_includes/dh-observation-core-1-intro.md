@@ -8,9 +8,6 @@ This profile is designed to set a core Observation standard for:
 * Query for a generic observation for a patient
 * Record or update a generic observation belonging to a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
@@ -19,8 +16,6 @@ This profile is used by the following APIs:
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
-[ADHA Core List](StructureDefinition-dh-list-core-1.html), 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
+[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html),
+[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and
+[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html).

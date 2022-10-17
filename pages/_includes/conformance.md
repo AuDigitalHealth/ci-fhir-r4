@@ -8,7 +8,7 @@
 
 Systems may deploy, and support, one or more ADHA profiles (i.e. the profiles governed by this guide) to represent clinical information. Each profile defines the FHIR structures required, the data element definitions, their associated rules of usage including the use of extensions and terminology, and references the additional profiles necessary to assert conformance.
 
-A system **SHOULD** support all ADHA profiles unless the system does not anticipate supplying or consuming a certain type of data, usually by virtue of playing a limited or specialised role in clinical or information workflows. For example, a pathology laboratory may support [ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), but not [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).
+A system **SHOULD** support all ADHA profiles unless the system does not anticipate supplying or consuming a certain type of data, usually by virtue of playing a limited or specialised role in clinical or information workflows. For example, a pathology laboratory may support [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html), but not [ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html).
 
 To support an ADHA profile:
 - systems **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
@@ -20,37 +20,13 @@ To support an ADHA profile:
   - listing the supported FHIR RESTful transactions
 - systems **SHALL NOT** conform to a Core profile where a more specific profile is applicable
 
-To support an ADHA CapabilityStatement:
-- systems **SHALL** declare conformance with the **TBD CapabilityStatement**  by including its official URL in the server’s `CapabilityStatement.instantiates` element: `http://ns.electronichealth.net.au/fhir/CapabilityStatement/dh-tbd-1`
-- systems **SHALL** specify the full capability details for that CapabilityStatement it claims to implement by
-  - TBC
-
-**General requirements**
-
-> **ADHA-FHIR-CONF-0X** A system **SHALL** comply with the applicable [HL7 FHIR standard](https://www.hl7.org/fhir/)
-
-
-> **ADHA-FHIR-CONF-0X** A system **SHALL** reject any request to create or update a resource that contains a resource that is not supported by the Conformance/CapabilityStatement resource for that endpoint
-
-
-> **ADHA-FHIR-CONF-0X** A system **SHALL** reject any request to create or update a resource that contains a modifier extension that is not supported by the Conformance/CapabilityStatement resource for that endpoint
-
-
-> **ADHA-FHIR-CONF-0X** A system **SHALL** reject any request to create or update a resource that contains a resource that does not conform to the Conformance/CapabilityStatement resource for that endpoint
-
-
-> **ADHA-FHIR-CONF-07** An ADHA Core profile **SHALL NOT** be used where a more specific profile is applicable. An implementation SHALL ensure the resource conforms to that specific profile.
-
-For example, a Shared Health Summary is to conform to the specific profile governing conformance of Shared Health Summary rather than only conform to ADHA Document Composition. 
-
 
 ## Must support
 
-Labelling an element [MustSupport]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide support for the element in some meaningful way. ADHA profiles impose a core set of must support obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The specifications and/or profiles that define a particular implementation context **SHALL** make clear the required support for that context. 
+Labelling an element [MustSupport]( https://www.hl7.org/fhir/conformance-rules.html#mustSupport) means that implementations that produce or consume resources **SHALL** provide support for the element in some meaningful way. ADHA profiles impose a core set of support obligations on classes of implementations based on roles and data services. Some implementation contexts require additional support, e.g. ePrescribing. The specifications and/or profiles that define a particular implementation context **SHALL** make clear the required support for that context. 
 
 A sending system:
 - when making a request to an endpoint **SHALL** conform to the Conformance/CapabilityStatement for that endpoint and conform to all applicable ADHA conformance requirements 
-- when responding to a request - TBD
 - when constructing a resource:
    - **SHALL** ensure the resource conforms to the applicable ADHA profile
    - **SHALL** implement the guidance on extensibility if including “additional” elements according to section on [Extensibility – “additional” elements](guidance.html#extensibility--additional-elements)
@@ -119,7 +95,7 @@ A profile may include rules that:
 
 For example, the profile [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html) limits what is considered valid for the element `Immunization.patient` with the invariant "**inv-dh-imm-01:** At least reference or a valid identifier shall be present".
 
-Typically ADHA profiles will extend the potential subelements by inheriting from a HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) from [AU Base Medication](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medication.html). 
+Typically ADHA profiles will extend the potential subelements by inheriting from a HL7 AU Base profile, e.g. the element `Medication.code` in profile [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html) is of type CodeableConcept and is extended by inheriting a medicine specific subelement `Medication.code.coding.extension` [Medication Type extension](http://hl7.org.au/fhir/4.0.0/StructureDefinition-medication-type.html) from [AU Base Medication](http://hl7.org.au/fhir/4.0.0/StructureDefinition-au-medication.html). 
 The full set of subelements is visible in the "Snapshot Table" which shows the subelements defined in this profile (shown in the "Differential Table") and the subelements inherited from a base profile.
 
 

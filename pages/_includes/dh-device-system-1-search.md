@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA System Device profile.**
+None defined.

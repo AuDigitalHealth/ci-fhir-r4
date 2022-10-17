@@ -1,1 +1,1 @@
-**No mandatory or optional search parameters for ADHA Core RelatedPerson profile.**
+None defined.

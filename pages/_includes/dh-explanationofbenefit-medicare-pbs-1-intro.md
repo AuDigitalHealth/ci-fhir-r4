@@ -6,15 +6,11 @@ This profile is designed to set an ExplanationOfBenefit standard for:
 * Query for a record of a PBS or RPBS item claim associated with a patient
 * Record or update a PBS or RPBS item claim associated with a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 - In an exchange with the My Health Record system references to a MedicationRequest resource will be [contained](http://hl7.org/fhir/R4/references.html#contained).
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Medicare Overview Composition](StructureDefinition-dh-composition-mov-1.html).
+This profile is not referenced by another profile in this implementation guide.
 

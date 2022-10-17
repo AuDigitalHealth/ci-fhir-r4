@@ -16,8 +16,5 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Advance Care Directive Custodian Record Composition](StructureDefinition-dh-composition-acdcr-1.html), 
-[ADHA Authoring Care Agency Employee](StructureDefinition-dh-practitionerrole-author-cae-1.html), 
-[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html), and 
+[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html) and 
 [ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html).

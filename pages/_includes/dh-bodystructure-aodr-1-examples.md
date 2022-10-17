@@ -5,14 +5,14 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="BodyStructure-bone.html">Bone</a></td>
+      <td><a href="BodyStructure-bone.html">Bone structure</a></td>
       <td>bone</td>
       <td><a href="BodyStructure-bone.xml.html">XML</a></td>
       <td><a href="BodyStructure-bone.json.html">JSON</a></td>
       <td><a href="BodyStructure-bone.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="BodyStructure-eye.html">Eye</a></td>
+      <td><a href="BodyStructure-eye.html">Eye structure</a></td>
       <td>eye</td>
       <td><a href="BodyStructure-eye.xml.html">XML</a></td>
       <td><a href="BodyStructure-eye.json.html">JSON</a></td>
@@ -20,27 +20,6 @@
    </tr>
    <tr>
       <td colspan="5">Examples with a contained BodyStructure conforming to this profile:</td>
-   </tr>
-   <tr>
-      <td><a href="ServiceRequest-order-lk-xray-01.html">Completed order for Left Knee X-Ray for Cleo Moss Esq. (2022)</a></td>
-      <td>order-lk-xray-01</td>
-      <td><a href="ServiceRequest-order-lk-xray-01.xml.html">XML</a></td>
-      <td><a href="ServiceRequest-order-lk-xray-01.json.html">JSON</a></td>
-      <td><a href="ServiceRequest-order-lk-xray-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="ServiceRequest-order-rk-ct-contrast-01.html">Revoked order for CT of Right Knee with Contrast for Cleo Moss Esq. (2021)</a></td>
-      <td>order-rk-ct-contrast-01</td>
-      <td><a href="ServiceRequest-order-rk-ct-contrast-01.xml.html">XML</a></td>
-      <td><a href="ServiceRequest-order-rk-ct-contrast-01.json.html">JSON</a></td>
-      <td><a href="ServiceRequest-order-rk-ct-contrast-01.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Consent-aodr-01.html">Australian Organ Donor Register Consent - Not willing to be a donor</a></td>
-      <td>aodr-01</td>
-      <td><a href="Consent-aodr-01.xml.html">XML</a></td>
-      <td><a href="Consent-aodr-01.json.html">JSON</a></td>
-      <td><a href="Consent-aodr-01.ttl.html">Turtle</a></td>
    </tr>
    <tr>
       <td><a href="Consent-aodr-02.html">Australian Organ Donor Register Consent - Willing to be a donor, donate all</a></td>

@@ -3,13 +3,10 @@ The purpose of this profile is to define a representation of the prescription it
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) that are supported. 
 
 This profile is designed to set a MedicationRequest standard for:
-* Recording or updating a prescription item in an PBS claim (ExplanationOfBenefit resource)
-* Reading a prescription items in an RPBS claim (ExplanationOfBenefit resource) 
+* Recording or updating a prescription item in a PBS claim (ExplanationOfBenefit resource)
+* Reading a prescription items in an RPBS claim (ExplanationOfBenefit resource)
 
-Operations, including querying, on prescription items in PBS claims (MedicationRequest resource) are expected to be within the context of an ExplanationOfBenefit resource query.
-
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+Operations, including querying, on prescription items in PBS claims (MedicationRequest resources) are expected to be within the context of an ExplanationOfBenefit resource query.
 
 
 #### Profile specific guidance

@@ -15,26 +15,12 @@
       <td><a href="Organization-algrester-medical-centre.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="Organization-devonport-clinic.html">Devonport Family Medicine Clinic</a></td>
-      <td>devonport-clinic</td>
-      <td><a href="Organization-devonport-clinic.xml.html">XML</a></td>
-      <td><a href="Organization-devonport-clinic.json.html">JSON</a></td>
-      <td><a href="Organization-devonport-clinic.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
       <td><a href="Organization-medium-vic-medical-clinic.html">Medium Sized Medical Clinic</a></td>
       <td>medium-vic-medical-clinic</td>
       <td><a href="Organization-medium-vic-medical-clinic.xml.html">XML</a></td>
       <td><a href="Organization-medium-vic-medical-clinic.json.html">JSON</a></td>
       <td><a href="Organization-medium-vic-medical-clinic.ttl.html">Turtle</a></td>
    </tr>
-   <tr>
-      <td><a href="Organization-med-regional-med-centre.html">Medium Sized Regional Medical Centre</a></td>
-      <td>med-regional-med-centre</td>
-      <td><a href="Organization-med-regional-med-centre.xml.html">XML</a></td>
-      <td><a href="Organization-med-regional-med-centre.json.html">JSON</a></td>
-      <td><a href="Organization-med-regional-med-centre.ttl.html">Turtle</a></td>
-   </tr> 
    <tr>
       <td><a href="Organization-tas-family-clinic.html">Tasmanian Family Medicine Clinic</a></td>
       <td>tas-family-clinic</td>
@@ -96,14 +82,7 @@
       <td><a href="Organization-mhr-operator.xml.html">XML</a></td>
       <td><a href="Organization-mhr-operator.json.html">JSON</a></td>
       <td><a href="Organization-mhr-operator.ttl.html">Turtle</a></td>
-   </tr> 
-   <tr>
-      <td><a href="Organization-ncsr-operator.html">National Cancer Screening Register system operator</a></td>
-      <td>ncsr-operator</td>
-      <td><a href="Organization-ncsr-operator.xml.html">XML</a></td>
-      <td><a href="Organization-ncsr-operator.json.html">JSON</a></td>
-      <td><a href="Organization-ncsr-operator.ttl.html">Turtle</a></td>
-   </tr>  
+   </tr>   
    <tr>
       <td colspan="5">Pharmacy examples:</td>
    </tr>
@@ -183,23 +162,6 @@
       <td><a href="Organization-metro-qld-path-lab.json.html">JSON</a></td>
       <td><a href="Organization-metro-qld-path-lab.ttl.html">Turtle</a></td>
    </tr> 
-   <tr>
-      <td><a href="Organization-private-vic-path-lab.html">Private VIC Pathology</a></td>
-      <td>private-vic-path-lab</td>
-      <td><a href="Organization-private-vic-path-lab.xml.html">XML</a></td>
-      <td><a href="Organization-private-vic-path-lab.json.html">JSON</a></td>
-      <td><a href="Organization-private-vic-path-lab.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td><a href="Organization-regional-qld-path-lab.html">Regional QLD Pathology Lab</a></td>
-      <td>regional-qld-path-lab</td>
-      <td><a href="Organization-regional-qld-path-lab.xml.html">XML</a></td>
-      <td><a href="Organization-regional-qld-path-lab.json.html">JSON</a></td>
-      <td><a href="Organization-regional-qld-path-lab.ttl.html">Turtle</a></td>
-   </tr>
-   <tr>
-      <td colspan="5">Hosptial examples:</td>
-   </tr>
    <tr>
       <td><a href="Organization-nsw-hospital.html">NSW Hospital (ABN, HPI-O, SNOMED CT + V3 type, Phone, Website, Address)</a></td>
       <td>nsw-hospital</td>

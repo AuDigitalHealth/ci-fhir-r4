@@ -6,15 +6,11 @@ This profile is designed to set an ExplanationOfBenefit standard for:
 * Query for a record of an MBS or DVA item claim associated with a patient
 * Record or update an MBS or DVA item claim associated with a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.
 
 
 #### Boundaries and relationships
-This profile is referenced by 
-[ADHA Medicare Overview Composition](StructureDefinition-dh-composition-mov-1.html).
+This profile is not referenced by another profile in this implementation guide.
 

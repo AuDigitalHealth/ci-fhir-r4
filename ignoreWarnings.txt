@@ -1,15 +1,29 @@
 == Suppressed Messages ==
 
+# Misc
 Attempt to use Terminology server when no Terminology server is available
-
 A Reference without an actual reference or identifier should have a display
-
+The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no explicitly linked examples for this profile
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1
+This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1
+Found multiple matching profiles for urn:uuid:21b82b5b-9acc-49c8-8634-2fdb7b18b283 among choices: http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1, http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1
 This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1
-This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1
-This element does not match any known slice defined in the profile http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1
+
+# Binding cannot be located
+Binding https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 could not be located
+Binding https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 could not be located
 
 # The following code systems are external and not supported by terminology server
 Code System URI 'https://healthterminologies.gov.au/fhir/CodeSystem/anzsco-designation-type-1' is unknown so the code cannot be validated
+Code System URI 'http://terminology.hl7.org.au/CodeSystem/observation-category' is unknown so the code cannot be validated
+
 
 # DataType profiles supporting a choice of open types (for downstream profiling)
 Found multiple matching profiles among choices: ; [http://hl7.org.au/fhir/StructureDefinition/au-address, http://hl7.org/fhir/StructureDefinition/Address]
@@ -61,7 +75,6 @@ Code System URI 'http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0' is unknown s
 Code System URI 'http://www.mims.com.au/codes' is unknown so the code cannot be validated
 
 # Terminology not available at HL7 tx server or in package dependency: ValueSet
-ValueSet https://healthterminologies.gov.au/fhir/ValueSet/adverse-reaction-agent-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medication-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2 not found by validator
@@ -100,18 +113,16 @@ ValueSet https://healthterminologies.gov.au/fhir/ValueSet/concurrent-supply-grou
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/participation-in-health-program-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-event-2 not found by validator
-ValueSet https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-from-practitioner-medicines-review-2 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/service-type-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/medication-reason-taken-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 not found by validator
-ValueSet https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 not found by validator
 ValueSet https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 not found by validator
-ValueSet https://healthterminologies.gov.au/fhir/ValueSet/indicator-of-medicines-packed-in-daa-1 not found by validator
+ValueSet https://healthterminologies.gov.au/fhir/ValueSet/information-system-device-type-1 not found by validator
 
 # Terminology not available at HL7 tx server or in package dependency: attempt to resolve in StructureDefinition
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/smoking-status-1 on element Observation.value[x] could not be resolved
@@ -214,21 +225,15 @@ The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/particip
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1 on element List.code could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-event-2 on element List.entry.flag could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1 on element List.code could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2 on element List.emptyReason could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2 on element List.emptyReason could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/organ-donation-body-site-1 on element BodyStructure.location could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1 on element Composition.type could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/health-program-participation-status-1 on element Observation.component.value[x] could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/health-summary-non-clinical-empty-reason-2 on element Composition.section.emptyReason could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1 on element Composition.type could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1 on element Composition.category could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1 on element Composition.section.code could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1 on element Composition.type could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/advance-care-planning-document-type-1 on element DocumentReference.type could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.subType could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/australian-medicare-benefit-claim-category-1 on element ExplanationOfBenefit.item.category could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/prescription-dispense-list-type-1 on element List.code could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/medicine-item-change-from-practitioner-medicines-review-2 on element List.entry.flag could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/encounter-type-1 on element Encounter.type could not be resolved
 The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/service-type-1 on element Encounter.serviceType could not be resolved
-The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/history-of-medication-use-list-type-1 on element Composition.section.code could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1 on element Observation.status could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1 on element DiagnosticReport.status could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/imaging-anatomic-region-of-interest-1 on element Observation.category could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/information-system-device-type-1 on element Device.type could not be resolved

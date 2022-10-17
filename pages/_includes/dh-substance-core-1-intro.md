@@ -8,9 +8,6 @@ This profile is designed to set a core Substance standard in the context of:
 * Querying substances referenced in Medication resources
 * Recording or updating a substance referenced by a Medication resource
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
 None.
@@ -18,5 +15,4 @@ None.
 
 #### Boundaries and relationships
 This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html) and 
 [ADHA Core Medication](StructureDefinition-dh-medication-core-1.html). 

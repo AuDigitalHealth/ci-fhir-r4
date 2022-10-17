@@ -2,13 +2,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
     <id value="au.digitalhealth.r4"/>
     <url value="http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4"/>
-    <version value="0.0.1"/>
+    <version value="1.1.0"/>
     <name value="ADHAFHIR"/>
     <title value="Australian Digital Health Agency FHIR"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Australian Digital Health Agency"/>
     <contact>
+        <name value="Australian Digital Health Agency"/>
         <telecom>
             <system value="email"/>
             <value value="help@digitalhealth.gov.au"/>
@@ -25,28 +26,12 @@
     <packageId value="au.digitalhealth.r4"/>
     <license value="Apache-2.0"/>
     <fhirVersion value="4.0.1"/>
-    <dependsOn id="aucore">
-        <uri value="http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core"/>
-        <packageId value="hl7.fhir.au.core"/>
-        <version value="current"/>
+    <dependsOn id="aubaser4">
+        <uri value="http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base"/>
+        <packageId value="hl7.fhir.au.base"/>
+        <version value="4.0.0"/>
     </dependsOn>
     <definition>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/dh-server-1"/>
-            </reference>
-            <name value="ADHA Server Requirements Capability Statement"/>
-            <description value="The requirements for capabilities of a server implementing Australian Digital Health Agency FHIR RESTful Endpoints (au.digitalhealth.r4)."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-allergyintolerance-core-1"/>
-            </reference>
-            <name value="ADHA Core AllergyIntolerance"/>
-            <description value="The purpose of this profile is to provide a core representation of an allergy or intolerance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a summary statement relating to an allergy or intolerance including asserting negation for a specific allergy or intolerance, a category, or that a patient has no known allergies or intolerances."/>
-            <exampleBoolean value="false"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-bodystructure-core-1"/>
@@ -59,40 +44,8 @@
             <reference>
                 <reference value="StructureDefinition/dh-bodystructure-aodr-1"/>
             </reference>
-            <name value="ADHA Donatable Organ or Tissue BodyStructure"/>
+            <name value="ADHA Organ or Tissue for Donation BodyStructure"/>
             <description value="The purpose of this profile is to represent an organ or tissue that may be donated in the event of an individual’s death for the electronic exchange of organ donation as recorded on the Australian Organ Donor Register between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-bundle-core-1"/>
-            </reference>
-            <name value="ADHA Core Bundle"/>
-            <description value="The purpose of this profile is to validate that a collection of resources conforms to the set of core standard for resources of interest and is suitable for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-bundle-document-1"/>
-            </reference>
-            <name value="ADHA Document Bundle"/>
-            <description value="The purpose of this profile is to provide a collection of resources handled as a document for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-bundle-message-1"/>
-            </reference>
-            <name value="ADHA Message Bundle"/>
-            <description value="The purpose of this profile is to provide a collection of resources handled as a message for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-bundle-payload-1"/>
-            </reference>
-            <name value="ADHA Payload Bundle"/>
-            <description value="The purpose of this profile is to provide a collection of resources handled as a single collection for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -105,169 +58,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-composition-core-1"/>
-            </reference>
-            <name value="ADHA Core Composition"/>
-            <description value="The purpose of this profile is to provide a core representation of a composition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-document-1"/>
-            </reference>
-            <name value="ADHA Document Composition"/>
-            <description value="The purpose of this profile is to provide a document composition for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-acdcr-1"/>
-            </reference>
-            <name value="ADHA Advance Care Directive Custodian Record Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of an Advance Care Directive Custodian Record document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-acp-1"/>
-            </reference>
-            <name value="ADHA Advance Care Planning Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of an Advance Care Planning document that includes an attached Advance Care Plan for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-acts-1"/>
-            </reference>
-            <name value="ADHA Aged Care Transfer Summary Composition"/>
-            <description value="The purpose of this profile is to define a representation of an Aged Care Transfer Summary for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A transfer summary includes critical information for exchange of information between providers of care when a patient moves between health care settings. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-cocs-1"/>
-            </reference>
-            <name value="ADHA Continuity of Care Summary Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Continuity of Care Summary Document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care across encounters and healthcare settings. Specific use cases are supported by defined profiles for those use cases such as Shared Health Summary, Event Summary, Discharge Summary, Transfer Summary, Referral; where available the most specific applicable profile should be used. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-ds-1"/>
-            </reference>
-            <name value="ADHA Discharge Summary Composition"/>
-            <description value="The purpose of this profile is to define a representation of an Discharge Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile standardises the core, common or critical information for exchange of information between healthcare providers, and individual, to support continuity of care following discharge. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-dr-1"/>
-            </reference>
-            <name value="ADHA Diagnostic Report Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Diagnostic Report document tfor the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines, pathology disciplines, and imaging discliplines."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-es-1"/>
-            </reference>
-            <name value="ADHA Event Summary Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-es-mix-1"/>
-            </reference>
-            <name value="ADHA Event Summary Mixed Narrative and Structure"/>
-            <description value="The purpose of this profile is to define a representation of a mixed narrative and structured data Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-es-narrative-1"/>
-            </reference>
-            <name value="ADHA Event Summary Narrative"/>
-            <description value="The purpose of this profile is to define a representation of a narrative only Event Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-mov-1"/>
-            </reference>
-            <name value="ADHA Medicare Overview Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Medicare Overview document for an individual for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-ncspv-1"/>
-            </reference>
-            <name value="ADHA National Cancer Screening Program Participation View"/>
-            <description value="The purpose of this profile is to define a representation of a National Cancer Screening Program Participation View that describes an individual’s participation in one or more national cancer screening programs at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-phn-1"/>
-            </reference>
-            <name value="ADHA Personal Health Notes Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Personal Health Notes document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-phs-1"/>
-            </reference>
-            <name value="ADHA Personal Health Summary Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Personal Health Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-pdl-1"/>
-            </reference>
-            <name value="ADHA Prescription and or Dispense History Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Prescription and or Dispense History document that describes a patient’s prescription history, or dispense history, or both, at a point in time the for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. The list may be partial, or complete, and may be a full history or scoped to an active script list. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-psml-1"/>
-            </reference>
-            <name value="ADHA Pharmacist Shared Medicines List Composition"/>
-            <description value="The purpose of this profile is to define a document representation of a Shared Medicines List document that describes a patient’s medicine item use at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-po-1"/>
-            </reference>
-            <name value="ADHA Personal Observations Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Personal Observations document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A Personal Observations document allows for a nominated or authorised representative to record and viewing of childhood measurement information such as a child’s height, weight and head circumference. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-shs-1"/>
-            </reference>
-            <name value="ADHA Shared Health Summary Document Composition"/>
-            <description value="The purpose of this profile is to define a representation of a Shared Health Summary document for a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. A composition is a set of resources composed into a single coherent clinical statement that may have clinical attestation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-composition-sml-1"/>
-            </reference>
-            <name value="ADHA Shared Medicines List Composition"/>
-            <description value="TBD"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-consent-aodr-1"/>
             </reference>
-            <name value="ADHA Record of Australian Organ Donor Register Consent"/>
+            <name value="(ADHA Record of Consent from Australian Organ Donor Register"/>
             <description value="The purpose of this profile is to define a representation of a record of organ and tissue donation decision held by the Australian Organ Donor Register for the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -281,42 +74,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-device-implantable-1"/>
-                <description value="The purpose of this profile is to define a representation of an implantable medical device for a patient for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia."/>
-            </reference>
-            <name value="ADHA Implantable Medical Device"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-device-participant-1"/>
-            </reference>
-            <name value="ADHA Participant Device"/>
-            <description value="The purpose of this profile is to define a representation of a device acting as an observer or performer for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a participant device is part of the context established for a set of healthcare-related information or it forms part of a target or source for the exchange."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-device-system-1"/>
             </reference>
             <name value="ADHA System Device"/>
             <description value="The purpose of this profile is to define a representation of a device as a system in the role of an author or exchange target or source for exchange usage scenarios to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a system device is part of the context established for a set of healthcare-related information or it forms part of a target or source for the exchange."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-diagnosticreport-core-1"/>
-            </reference>
-            <name value="ADHA Core DiagnosticReport"/>
-            <description value="The purpose of this profile is to define a core representation of a diagnostic report issued by the diagnostic service provider to support the electronic exchange of the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines that are not pathology or imaging."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-diagnosticreport-path-1"/>
-            </reference>
-            <name value="ADHA Pathology Report"/>
-            <description value="The purpose of this profile is to represent a pathology report issued by a diagnostic service provider to support the electronic exchange of the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for all pathology disciplines (e.g. including microbiology, histopathology, cytology, blood transfusion) with the exception of genomics."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -329,34 +90,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-documentreference-acp-1"/>
-            </reference>
-            <name value="ADHA Advance Care Planning Document DocumentReference"/>
-            <description value="The purpose of this profile is to provide a representation of an Advance Care Planning Document document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-documentreference-dr-1"/>
-            </reference>
-            <name value="ADHA Diagnostic Report DocumentReference"/>
-            <description value="The purpose of this profile is to provide a representation of a Diagnsotic Report document reference for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for specialist and other diagnostic disciplines, pathology disciplines, and imaging discliplines."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-encounter-core-1"/>
             </reference>
             <name value="ADHA Core Encounter"/>
             <description value="The purpose of this profile is to provide a core representation of an encounter for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-episodeofcare-mygp-1"/>
-            </reference>
-            <name value="ADHA GP Practice Registration Entry"/>
-            <description value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a current entry or a historical entry."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -399,29 +136,6 @@
             <description value="The purpose of this profile is to define a core representation of a healthcare service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an healthcare service is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
-        <!--<resource>
-            <reference>
-                <reference value="StructureDefinition/dh-attachment-hl7-base64-1"/>
-            </reference>
-            <name value="ADHA Alternate HL7 Format as Attachment Base64 Encoded - Declined for use by MODI; if to be re-instated will need addition to ig.json"/>
-            <exampleBoolean value="false"/>
-        </resource>-->
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-hl7-v2-base64-1"/>
-            </reference>
-            <name value="ADHA HL7 V2 as Base64"/>
-            <description value="This extension applies to the ServiceRequest resource and is provided for use in the MODI proof of concept. It is used to provide an alternate HL7 V2 format of the Order represented by the associated ServiceRequest as a data directly inline, base64 encoded."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <!--<resource>
-            <reference>
-                <reference value="StructureDefinition/dh-attachment-hl7-v2-base64-1"/>
-            </reference>
-            <name value="ADHA HL7 V2 as Attachment Base64 Encoded - Declined for use by MODI; if to be re-instated will need addition to ig.json"/>
-            <description value="TBD"/>
-            <exampleBoolean value="false"/>
-        </resource>-->
         <resource>
             <reference>
                 <reference value="StructureDefinition/dh-immunization-air-1"/>
@@ -440,46 +154,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-list-core-1"/>
-            </reference>
-            <name value="ADHA Core List"/>
-            <description value="The purpose of this profile is to provide a core representation of a list for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-list-immunization-1"/>
-            </reference>
-            <name value="ADHA Immunisation History List"/>
-            <description value="The purpose of this profile is to define a representation of list that describes a patient’s immunisation history at a point in time for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. The list may be partial, or complete, and may be scoped to a single source of vaccination information."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-list-medication-pdl-1"/>
-            </reference>
-            <name value="ADHA Prescription and or Dispense History List"/>
-            <description value="The purpose of this profile is to define a representation of list that describes a patient’s prescription and/or dispense history for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient. The list may be partial, or complete, and may be a full history or scoped to an active script list."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-list-medication-use-1"/>
-            </reference>
-            <name value="ADHA Medication Use List"/>
-            <description value="The purpose of this profile is to define a representation of list that describes a patient’s medicine item use at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. This profile is used to group individual statements of medicine item use in the List resource to construct various types of medication usage lists for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-list-medication-use-pmr-1"/>
-            </reference>
-            <name value="ADHA Practitioner Medicine Review List"/>
-            <description value="The purpose of this profile is to define a representation of list from a review of a patient’s medicines by a practitioner at a point in time. The list may be partial, or complete, and may be a history or scoped to may be taking the medication now or has taken the medication in the past or will be taking the medication in the future. This profile is used to group individual statements of medicine item use in the List resource to construct various types of medication usage lists for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-location-core-1"/>
             </reference>
             <name value="ADHA Core Location"/>
@@ -488,50 +162,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-media-core-1"/>
-            </reference>
-            <name value="ADHA Core Media"/>
-            <description value="The purpose of this profile is to provide a core representation of a media observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-medication-core-1"/>
             </reference>
             <name value="ADHA Core Medication"/>
             <description value="The purpose of this profile is to provide a core representation of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-medicationadministration-core-1"/>
-            </reference>
-            <name value="ADHA Core MedicationAdministration"/>
-            <description value="The purpose of this profile is to provide a core representation of a medication administration for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-medicationdispense-core-1"/>
-            </reference>
-            <name value="ADHA Core MedicationDispense"/>
-            <description value="The purpose of this profile is to provide a core representation of a dispense of a medication for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-medicationdispense-disp-1"/>
-            </reference>
-            <name value="ADHA Dispense Record"/>
-            <description value="The purpose of this profile is to provide a representation of a dispense record for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-medicationstatement-core-1"/>
-            </reference>
-            <name value="ADHA Core MedicationStatement"/>
-            <description value="The purpose of this profile is to provide a core representation of a medication statement for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a statement of medication usage for a known medicine including asserting negation for a specific medicine."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -552,66 +186,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-medicationrequest-pres-1"/>
-            </reference>
-            <name value="ADHA Prescription"/>
-            <description value="The purpose of this profile is to provide a representation of a prescription for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-observation-core-1"/>
             </reference>
             <name value="ADHA Core Observation"/>
             <description value="The purpose of this profile is to provide a core representation of a generic observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-diagnosticresult-1"/>
-            </reference>
-            <name value="ADHA Diagnostic Result Observation"/>
-            <description value="The purpose of this profile is to provide a representation of a diagnostic result observation made during a diagnostic investigation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-diagnosticresult-imag-1"/>
-            </reference>
-            <name value="ADHA Imaging Result Observation"/>
-            <description value="The purpose of this profile is to represent a diagnostic imaging observation issued by the diagnostic service provider for the electronic exchange of imaging examination observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. The observation may represent the result of a simple examination or study series."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-diagnosticresult-path-1"/>
-            </reference>
-            <name value="ADHA Pathology Result Observation"/>
-            <description value="The purpose of this profile is to represent a pathology test observation issued by the diagnostic service provider for the electronic exchange of pathology test observations between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile is intended to be capable of supporting reporting for all pathology disciplines (e.g. including microbiology, histopathology, cytology, blood transfusion) with the exception of genomics."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-ncspp-1"/>
-            </reference>
-            <name value="ADHA National Cancer Screening Program Participation Observation"/>
-            <description value="The purpose of this profile is to provide a representation of an individual’s participation in a national cancer screening program, e.g. national bowel cancer screening program for the electronic exchange of health information between individuals, healthcare providers, the National Cancer Screening Register, and the My Health Record system infrastructure in Australia. Participation information may include information on an individual’s eligibility for a program, suspension of participation in a program, or status of participation in a program."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-observation-simple-1"/>
-            </reference>
-            <name value="ADHA Simple Observation"/>
-            <description value="The purpose of this profile is to provide a representation of an observation, for simple measurements or assertions, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-organization-contact-1"/>
-            </reference>
-            <name value="ADHA Organization Contact"/>
-            <description value="The purpose of this profile is to provide an organisation with contact information for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -624,42 +202,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-packed-in-daa-1"/>
-            </reference>
-            <name value="ADHA Medicines Packed in Dose Administration Aid Indicator"/>
-            <description value="TBD"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-patient-core-1"/>
             </reference>
             <name value="ADHA Core Patient"/>
             <description value="The purpose of this profile is to provide a core representation of a patient for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set, including country of birth, year of arrival and preferred language."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-patient-demographics-1"/>
-            </reference>
-            <name value="ADHA Patient Demographics"/>
-            <description value="The purpose of this profile is to provide a representation of a patient’s demographics to support the electronic exchange of health information between healthcare providers, and between healthcare providers and the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set, including country of birth, year of arrival and preferred language."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-patient-match-1"/>
-            </reference>
-            <name value="ADHA Patient Match"/>
-            <description value="The purpose of this profile is to provide a representation of a patient to check and match patient identity the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-patient-mhr-1"/>
-            </reference>
-            <name value="ADHA My Health Record Patient"/>
-            <description value="The purpose of this profile is to define a representation of a patient for exchange usage scenarios with the My Health Record system infrastructure in Australia. This profile supports Cultural and Linguistic Diversity (CALD) data set, including country of birth, year of arrival and preferred language."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -676,14 +222,6 @@
             </reference>
             <name value="ADHA Authoring PractitionerRole"/>
             <description value="The purpose of this profile is to define a core representation of a practitioner acting as an author or observer in a healthcare role, on behalf of an organisation, that is for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-practitionerrole-author-cae-1"/>
-            </reference>
-            <name value="ADHA Authoring Care Agency Employee"/>
-            <description value="The purpose of this profile is to define a representation of a care agency employee (practitioner) acting as an author or observer, on behalf of an organisation, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information a practitioner role is part of the context established for a set of healthcare-related information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -720,38 +258,6 @@
         </resource> 
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-relatedperson-mhr-1"/>
-            </reference>
-            <name value="ADHA MHR RelatedPerson"/>
-            <description value="The purpose of this profile is to define a representation of a related person for exchange usage scenarios with the My Health Record system infrastructure in Australia. In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information."/>
-            <exampleBoolean value="false"/>
-        </resource> 
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-servicerequest-core-1"/>
-            </reference>
-            <name value="ADHA Core ServiceRequest"/>
-            <description value="The purpose of this profile is to provide a core representation of a record of request for a service for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
-            <exampleBoolean value="false"/>
-        </resource>        
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-servicerequest-modi-1"/>
-            </reference>
-            <name value="MODI Request for Diagnostic Imaging Service"/>
-            <description value="The purpose of this profile is to provide a representation of a request for a diagnostic imaging service for use in the Modernisation of Diagnostic Imaging (MODI) Proof of Concept."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dh-specimen-core-1"/>
-            </reference>
-            <name value="ADHA Core Specimen"/>
-            <description value="The purpose of this profile is to provide a core representation of a specimen for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports information about a collected specimen taken from a patient for diagnostic investigation."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dh-substance-core-1"/>
             </reference>
             <name value="ADHA Core Substance"/>
@@ -759,35 +265,6 @@
             <exampleBoolean value="false"/>
         </resource>
         <!--EXAMPLES-->
-        <!--ALLERGYINTEROLANCE EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="AllergyIntolerance/ibuprofen-psml-03"/>
-            </reference>
-            <name value="Ibuprofen allergy entry for Mac PRIEST - Community pharmacy medicine review (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="AllergyIntolerance/noneknown-es-02"/>
-            </reference>
-            <name value="No known allergy for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="AllergyIntolerance/nofood-01"/>
-            </reference>
-            <name value="Patient reports no food allergies for Mrs. Bonny Goodwin"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="AllergyIntolerance/sulfonamide-01"/>
-            </reference>
-            <name value="Patient reported sulfonamide antibacterial allergy for Mrs. Bonny Goodwin"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"/>
-        </resource>
         <!--BODYSTRUCTURE EXAMPLES-->
         <resource>
             <reference>
@@ -1013,7 +490,7 @@
                 <reference value="Bundle/air-01"/>
             </reference>
             <name value="Payload Bundle of Australian Immunisation Register for Patient Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
         <resource>
             <reference>
@@ -1027,279 +504,13 @@
                 <reference value="Bundle/air-03"/>
             </reference>
             <name value="Bundle from Medicare Repository to MHR system of the set of resources that make up the AIR for Patient Sally FIELD"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/shs-01-doc"/>
-            </reference>
-            <name value="Shared Health Summary Document Bundle for Mr Zhang Wei (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/shs-02-doc"/>
-            </reference>
-            <name value="Shared Health Summary Document Bundle for Mr Zhang Wei (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-shs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/es-02-doc"/>
-            </reference>
-            <name value="Event Summary Document Bundle for Mr Zhang Wei (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/es-narrative-02-doc"/>
-            </reference>
-            <name value="Narrative Only version of the Event Summary Document Bundle for Mr Zhang Wei (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-es-narrative-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/goc-doc-01"/>
-            </reference>
-            <name value="Goals of Care Document Bundle for Mr Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-acp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/goc-01"/>
-            </reference>
-            <name value="Goals of Care Payload Bundle for Mr Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <!--<resource>
-            <reference>
-                <reference value="Bundle/fbc-doc-01"/>
-            </reference>
-            <name value="Full Blood Count Document Bundle for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
-        </resource>-->
-        <resource>
-            <reference>
-                <reference value="Bundle/medicare-view-01"/>
-            </reference>
-            <name value="Payload Bundle of Medicare Overview for Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/medicare-view-cont-01"/>
-            </reference>
-            <name value="CONTAINED Payload Bundle of Medicare Overview for Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/medicare-view-doc-01"/>
-            </reference>
-            <name value="Document Bundle of Medicare Overview for Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/medicare-view-doc-01"/>
-            </reference>
-            <name value="Medicare Overview (Composition) for Sally FIELD generated by MHR system (28 MARCH 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-mov-1"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Bundle/mds"/>
             </reference>
             <name value="R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/ncspv-01"/>
-            </reference>
-            <name value="National Cancer Screening Program Participation View (Composition) for Cleo Moss Esq. (15 FEB 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/ncsr-01"/>
-            </reference>
-            <name value="National Cancer Screening Register (NCSR) Program Participation Information (Payload Bundle) for Cleo Moss Esq. (22 MAY 2021)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/ncspv-doc-01"/>
-            </reference>
-            <name value="National Cancer Screening Program Participation View (Bundle) for Cleo Moss Esq. (15 FEB 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/ncspv-02"/>
-            </reference>
-            <name value="National Cancer Screening Program Participation View (Composition) for Mr Zhang Wei (06 FEB 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/ncsr-02"/>
-            </reference>
-            <name value="National Cancer Screening Register (NCSR) Program Participation Information (Payload Bundle) for Mr Zhang Wei (05 FEB 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/ncspv-doc-02"/>
-            </reference>
-            <name value="National Cancer Screening Program Participation View (Composition) for Mr Zhang Wei (06 FEB 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/ncspv-03"/>
-            </reference>
-            <name value="National Cancer Screening Program Participation View (Composition) for Mr Zhang Wei (16 MAY 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/ncsr-03"/>
-            </reference>
-            <name value="National Cancer Screening Register (NCSR) Program Participation Information (Payload Bundle) for Mr Zhang Wei (15 MAY 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/ncspv-doc-03"/>
-            </reference>
-            <name value="National Cancer Screening Program Participation View (Bundle) for Mr Zhang Wei (16 MAY 2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/phn-01"/>
-            </reference>
-            <name value="Personal Health Notes Document Composition with contained resources"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phn-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/po-01"/>
-            </reference>
-            <name value="Personal Observations Document Composition for Mr. Oliver Smith recorded by Mother at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/phs-01"/>
-            </reference>
-            <name value="Personal Health Summary Payload Bundle for Mrs. Bonny Goodwin 2022-11-28"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/phs-doc-01"/>
-            </reference>
-            <name value="Personal Health Summary Document Bundle for Mrs. Bonny Goodwin 2022-11-28"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/phs-01"/>
-            </reference>
-            <name value="Personal Health Summary Document Composition for Mrs. Bonny Goodwin 2022-11-28"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-phs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/po-01"/>
-            </reference>
-            <name value="Personal Observations Payload Bundle for Mr. Oliver Smith recorded by Mother at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/po-doc-01"/>
-            </reference>
-            <name value="Personal Observations Document Bundle for Mr. Oliver Smith recorded by Mother at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-po-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/psml-01-doc"/>
-            </reference>
-            <name value="Pharmacist Shared Medicines List Document Bundle for Mrs Bonny Goodwin"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/psml-01"/>
-            </reference>
-            <name value="Pharmacist Shared Medicines List Payload Bundle for Mrs Bonny Goodwin"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/psml-02"/>
-            </reference>
-            <name value="Home Medicines Review Payload Bundle for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/psml-02"/>
-            </reference>
-            <name value="Home Medicines Review Document Composition for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/psml-03-doc"/>
-            </reference>
-            <name value="Pharmacist Shared Medicines List Document Bundle for Mac PRIEST"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/psml-03"/>
-            </reference>
-            <name value="Pharmacist Shared Medicines List Document Composition for Mac PRIEST"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-psml-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/report-covid-01"/>
-            </reference>
-            <name value="Pathology Report Payload Bundle SARS-CoV-2 (COVID-19) PCR for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/report-covid-doc-01"/>
-            </reference>
-            <name value="Pathology Report Document Bundle SARS-CoV-2 (COVID-19) PCR for Mrs Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-document-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/vpr-01"/>
-            </reference>
-            <name value="Patient's registered GP practice"/>
-            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/vpr-02"/>
-            </reference>
-            <name value="Patient's registered GP practice and practitioner name"/>
-            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/vpr-03"/>
-            </reference>
-            <name value="History of patient's registered GP practices"/>
             <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
         <!--CONSENT EXAMPLES-->
@@ -1346,36 +557,15 @@
             <name value="My Health Record system"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Device/ncsr-01"/>
-            </reference>
-            <name value="National Cancer Screening Register repository service"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
-        </resource>
         <!--DIAGNOSTICREPORT EXAMPLES-->
-        <resource>
+        <!--<resource>
             <reference>
                 <reference value="DiagnosticReport/covid-01"/>
             </reference>
             <name value="Pathology Report DOO3Q978 2019-Novel Coronavirus PCR for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-path-1"/>
-        </resource>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-diagnosticreport-core-1"/>
+        </resource>-->
         <!--DOCUMENTREFERENCE EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="DocumentReference/acp-payload-01"/>
-            </reference>
-            <name value="Advance Care Planning document as attachment for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-acp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/acp-payload-02"/>
-            </reference>
-            <name value="Goals of Care document as attachment for Mr Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-acp-1"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="DocumentReference/air-01"/>
@@ -1409,34 +599,6 @@
                 <reference value="DocumentReference/pbs-02"/>
             </reference>
             <name value="Metadata for Pharmaceutical Benefits Report record.identifier 73f7a30b-add3-4673-a4e9-65b0d8670a36 (pbs-02)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/nbcsp-01"/>
-            </reference>
-            <name value="Metadata for NBCSP Participation Record record.identifier d36d2cf5-6dfb-4d10-811f-1e2229489423"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/nbcsp-02"/>
-            </reference>
-            <name value="Metadata for NBCSP Participation Record record.identifier 24fd20c0-5a07-4e5e-98da-d7d3d498613a"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/nbcsp-03"/>
-            </reference>
-            <name value="Metadata for NBCSP Participation Record record.identifier 4732293f-40e4-45a3-81b5-9cc2ae8b2f38"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DocumentReference/ncsp-01"/>
-            </reference>
-            <name value="Metadata for NCSP Participation Record record.identifier 28c02479-27ed-4d95-957b-d6703c2bcc97"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-documentreference-core-1"/>
         </resource>
         <!--ENCOUNTER EXAMPLES-->
@@ -1483,13 +645,6 @@
             <name value="Record of Claim against MBS for 15275 radiation oncology treatment for Mr. Zhang Wei"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
         </resource>
-        <!--<resource>
-            <reference>
-                <reference value="ExplanationOfBenefit/mbs-cont-01"/>
-            </reference>
-            <name value="CONTAINED Record of Claim against MBS for 15275 radiation oncology treatment for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-mbs-1"/>
-        </resource>-->
         <resource>
             <reference>
                 <reference value="ExplanationOfBenefit/mbs-02"/>
@@ -1520,30 +675,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ExplanationOfBenefit/pbs-01"/>
-            </reference>
-            <name value="Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 JAN 2020"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ExplanationOfBenefit/pbs-cont-01"/>
             </reference>
-            <name value="CONTAINED Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 JAN 2020"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ExplanationOfBenefit/pbs-02"/>
-            </reference>
             <name value="Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 FEB 2020"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ExplanationOfBenefit/pbs-cont-02"/>
-            </reference>
-            <name value="CONTAINED Record of Claim against PBS for 03119E cephalexin 500 mg capsule, 20 for Ms. Sally Field 16 FEB 2020"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-explanationofbenefit-medicare-pbs-1"/>
         </resource>
         <!--FLAG EXAMPLES-->
@@ -1634,23 +768,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="HealthcareService/lge-priv-nt-xray"/>
-            </reference>
-            <name value="Large Private Territory X-RAY"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="HealthcareService/medium-vic-medical-clinic"/>
             </reference>
             <name value="Medium Sized Medical Clinic"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/med-regional-med-centre"/>
-            </reference>
-            <name value="Medium Sized Regional Medical Centre"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
         </resource>
         <resource>
@@ -1665,34 +785,6 @@
                 <reference value="HealthcareService/metro-qld-path-lab"/>
             </reference>
             <name value="Metropolitan Pathology QLD"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/private-vic-path-lab"/>
-            </reference>
-            <name value="Private VIC Pathology"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/nsw-hospital-er"/>
-            </reference>
-            <name value="Emergency Department NSW Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/nsw-hospital-pharmacy-in"/>
-            </reference>
-            <name value="Inpatient Pharmacy NSW Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/qld-hospital-er"/>
-            </reference>
-            <name value="Emergency Department QLD Hospital"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
         </resource>
         <resource>
@@ -1739,34 +831,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="HealthcareService/mssg-qld-castle-endo"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group Castle QLD - Endocrinology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/mssg-qld-castle-paedendo"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group Castle QLD - Paediatric endocrinology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/mssg-nsw-hospital-cardio"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group NSW Hospital - Gastroenterology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/mssg-nsw-hospital-gastro"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group NSW Hospital - Cardiology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="HealthcareService/mssg-nsw-hospital-radio"/>
             </reference>
             <name value="Metropolitan Specialist Services Group NSW Hospital - Radiology services"/>
@@ -1774,37 +838,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="HealthcareService/mssg-qld-hospital-cardio"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group QLD Hospital - Gastroenterology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/mssg-qld-hospital-gastro"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group QLD Hospital - Cardiology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="HealthcareService/mssg-qld-hospital-radio"/>
             </reference>
             <name value="Metropolitan Specialist Services Group QLD Hospital - Radiology services"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/nbcsp"/>
-            </reference>
-            <name value="National Bowel Cancer Screening Program"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="HealthcareService/ncsp"/>
-            </reference>
-            <name value="National Cervical Screening Program"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
         </resource>
         <resource>
@@ -1941,35 +977,6 @@
             <name value="R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
         </resource>
-        <!--LIST EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="List/ceased-meds-01"/>
-            </reference>
-            <name value="Ceased medicines list for Mrs. Anne THOMPSON (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="List/current-psml-02"/>
-            </reference>
-            <name value="Current medicines list from Home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="List/ceased-psml-02"/>
-            </reference>
-            <name value="Ceased medicines list from Home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="List/psml-03"/>
-            </reference>
-            <name value="Medicines List from Community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
-        </resource>
         <!--LOCATION EXAMPLES-->
         <resource>
             <reference>
@@ -2078,13 +1085,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Location/large-racs-nsw-03"/>
-            </reference>
-            <name value="LARCSG Care Tamworth NSW"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Location/large-racs-qld-01"/>
             </reference>
             <name value="LARCSG Care Sunnybank QLD"/>
@@ -2099,9 +1099,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Location/large-racs-qld-03"/>
+                <reference value="Location/metro-nsw-path-lab"/>
             </reference>
-            <name value="LARCSG Care Toowoomba QLD"/>
+            <name value="Building of Metropolitan Laboratories Sydney Randwick"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
         <resource>
@@ -2113,23 +1113,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Location/metro-nsw-path-lab"/>
-            </reference>
-            <name value="Building of Metropolitan Laboratories Sydney Randwick"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Location/metro-specialist-services-group"/>
             </reference>
             <name value="Metropolitan Specialist Services Group Head Office"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/metro-specialist-services-group-qld-castle"/>
-            </reference>
-            <name value="Metropolitan Specialist Services Group Castle QLD"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
         <resource>
@@ -2162,20 +1148,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Location/nsw-hospital-er"/>
-            </reference>
-            <name value="Emergency Department NSW Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/nsw-hospital-pharmacy-in"/>
-            </reference>
-            <name value="Pharmacy NSW Hospital - North Building A of NSW Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Location/patient-home-01"/>
             </reference>
             <name value="Patient Home"/>
@@ -2183,23 +1155,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Location/private-vic-path-lab"/>
-            </reference>
-            <name value="Building of Flemington Private VIC Pathology"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Location/qld-hospital"/>
             </reference>
             <name value="QLD Hospital"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Location/qld-hospital-er"/>
-            </reference>
-            <name value="QLD Hospital ER"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
         <resource>
@@ -2216,6 +1174,14 @@
             <name value="Friends Pharmacy - QLD Hospital - Suite 14, Building 31 of QLD Hospital"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-location-core-1"/>
         </resource>
+        <!--MEDIA EXAMPLES-->
+        <!--<resource>
+            <reference>
+                <reference value="Media/perimetry-01"/>
+            </reference>
+            <name value="Imaging of left eye from perimetry exam"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
+        </resource>-->
         <!--MEDICATION EXAMPLES-->
         <resource>
             <reference>
@@ -2243,13 +1209,6 @@
                 <reference value="Medication/amoxicillin-02"/>
             </reference>
             <name value="Amoxicillin 875 mg + clavulanic acid 125 mg tablet, Augmentin Duo Forte (form + ingredient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/amoxicillin-03"/>
-            </reference>
-            <name value="Amoxil Amoxicillin for ePrescribing MedicationRequest etp-06"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
         <resource>
@@ -2340,14 +1299,7 @@
             <reference>
                 <reference value="Medication/atorvastatin-01"/>
             </reference>
-            <name value="ATORVASTATIN LIPITOR for ePrescriging MedicationRequest etp-cont-01"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/atorvastatin-02"/>
-            </reference>
-            <name value="ATORVASTATIN LIPITOR for ePrescriging MedicationRequest etp-cont-03"/>
+            <name value="ATORVASTATIN LIPITOR"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
         <resource>
@@ -2387,16 +1339,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Medication/morphine-02"/>
-            </reference>
-            <name value="Morphine sulfate pentahydrate for ePrescribing MedicationRequest etp-cont-04"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Medication/morphine-01"/>
             </reference>
-            <name value="Sevredol Morphine sulfate pentahydrate for ePrescribing MedicationRequest etp-cont-04"/>
+            <name value="Sevredol Morphine sulfate pentahydrate"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
         <resource>
@@ -2431,7 +1376,7 @@
             <reference>
                 <reference value="Medication/oxybutynin-01"/>
             </reference>
-            <name value="DITROPAN OXYBUTYNIN for ePrescribing MedicationRequest etp-05"/>
+            <name value="DITROPAN OXYBUTYNIN"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
         <resource>
@@ -2460,20 +1405,6 @@
                 <reference value="Medication/perindopril-arginine-01"/>
             </reference>
             <name value="perindopril arginine 10 mg + amLODIPIne 10 mg – tablet"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/proxymetacaine-01"/>
-            </reference>
-            <name value="ALCAINE PROXYMETACAINE for ePrescriging MedicationRequest etp-orig-scid-01"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/proxymetacaine-02"/>
-            </reference>
-            <name value="PROXYMETACAINE ALCAINE for ePrescriging MedicationRequest etp-orig-scid-03"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
         </resource>
         <resource>
@@ -2507,214 +1438,10 @@
         </resource>
         <resource>
             <reference>
-                <reference value="MedicationRequest/etp-01"/>
-            </reference>
-            <name value="ePrescribing prescription with reference to prior prescription for Bert Gainey"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-02"/>
-            </reference>
-            <name value="ePrescribing prescription with reference to prior prescription for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-orig-scid-01"/>
-            </reference>
-            <name value="ePrescribing prior Prescription for MedicationRequest etp-01 for Bert Gainey"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-orig-scid-03"/>
-            </reference>
-            <name value="ePrescribing prior prescription for MedicationRequest etp-cont-03 for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-orig-02"/>
-            </reference>
-            <name value="ePrescribing prior Prescription for MedicationRequest etp-02 for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-cont-01"/>
-            </reference>
-            <name value="CONTAINED: ePrescribing MedicationRequest etp-01 for Bert Gainey"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-cont-02"/>
-            </reference>
-            <name value="CONTAINED: ePrescribing MedicationRequest etp-02 for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-cont-03"/>
-            </reference>
-            <name value="CONTAINED: ePrescribing MedicationRequest etp-03 for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-cont-04"/>
-            </reference>
-            <name value="CONTAINED: ePrescribing MedicationRequest etp-04 for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/medReqDispensed-etp-04"/>
-            </reference>
-            <name value="ePrescribing basedOn prescription for etp-cont-04 for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-05"/>
-            </reference>
-            <name value="ePrescribing MedicationRequest etp-05 for Billy Tjakamarra"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/etp-06"/>
-            </reference>
-            <name value="ePrescribing MedicationRequest etp-06 for Billy Tjakamarra"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="MedicationRequest/mds"/>
             </reference>
             <name value="R4 conversion of MDS test data ExplanationOfBenefit.id 9b28d09f-ba17-11ec-833a-b1763b0a7715"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pbs-claim-1"/>
-        </resource>
-        <!--MEDICATIONSTATEMENT EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-amoxicillin-psml-03"/>
-            </reference>
-            <name value="Active Amoxicillin 875 mg use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-ironsup-psml-03"/>
-            </reference>
-            <name value="Active Ferro-Grad C use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-metformin-psml-03"/>
-            </reference>
-            <name value="Active Metformin 500mg tablet use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-multivitamins-psml-03"/>
-            </reference>
-            <name value="Active Multi-vitamins use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-paracetamol-psml-03"/>
-            </reference>
-            <name value="Active Panadol Osteo use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-bisoprolol-psml-02"/>
-            </reference>
-            <name value="Active Bisoprolol 2.5mg tab use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/active-amiodarone-psml-02"/>
-            </reference>
-            <name value="Active Amiodarone 200mg tab use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/completed-aldara-psml-02"/>
-            </reference>
-            <name value="Completed Aldara 5% cream use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/completed-chloramphenicol-psml-02"/>
-            </reference>
-            <name value="Completed Chloramphenicol 1% eye ointment use recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/completed-atorvastatin-01"/>
-            </reference>
-            <name value="Completed ATORVASTATIN(TAB) 80 mg use for Mrs. Anne Thompson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/completed-docusate-01"/>
-            </reference>
-            <name value="Completed DOCUSATE SENNA(TAB) 50 mg use for Mrs. Anne Thompson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/completed-rampiril-01"/>
-            </reference>
-            <name value="Completed RAMIPRIL(TAB) 2.5 mg use for Mrs. Anne Thompson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/intended-bactrim-es-02"/>
-            </reference>
-            <name value="Intended Bactrim DS tablet use for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/intended-panadol-es-02"/>
-            </reference>
-            <name value="Intended Panadol 500 mg tablet use for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/intended-coq10-psml-02"/>
-            </reference>
-            <name value="Intended CoQ10 150mg tab recorded in home medicines review for Mr. Lenny Matterson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/stopped-ibuprofen-psml-03"/>
-            </reference>
-            <name value="Stopped Ibuprofen use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationStatement/stopped-paracetamol-psml-03"/>
-            </reference>
-            <name value="Stopped Paracetamol 500 mg tablet use recorded in community pharmacy medicine review for Mac PRIEST (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationstatement-core-1"/>
         </resource>
         <!--OBSERVATION EXAMPLES-->
         <resource>
@@ -2722,161 +1449,84 @@
                 <reference value="Observation/air-covid-imm-status-01"/>
             </reference>
             <name value="Australian Immunisation Register COVID-19 Immunisation Status"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyheight-01"/>
             </reference>
             <name value="Length of Mr. Oliver Smith recorded by Mother at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyheight-02"/>
             </reference>
             <name value="Length of Mr. Oliver Smith recorded by Mother at 10 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyheight-03"/>
             </reference>
             <name value="Length of Mr. Oliver Smith recorded by GP at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyheight-04"/>
             </reference>
             <name value="Length of Mr. Oliver Smith recorded by GP at 10 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyweight-01"/>
             </reference>
             <name value="Weight of Mr. Oliver Smith recorded by Mother at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyweight-02"/>
             </reference>
             <name value="Weight of Mr. Oliver Smith recorded by Mother at 10 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyweight-03"/>
             </reference>
                 <name value="Weight of Mr. Oliver Smith recorded by GP at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/bodyweight-04"/>
             </reference>
             <name value="Weight of Mr. Oliver Smith recorded by GP at 10 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/covid-01"/>
-            </reference>
-            <name value="Observation of SARS-CoV-2 RNA - Not Detected recorded for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/headcircum-01"/>
             </reference>
             <name value="Head Circumference of Mr. Oliver Smith recorded by Mother at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/headcircum-02"/>
             </reference>
             <name value="Head Circumference of Mr. Oliver Smith recorded by GP at 6 months"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/bcsp-01"/>
-            </reference>
-            <name value="Breast cancer screening program participation information for Mrs. Bonny Goodwin - Opted Out (2017)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/nbcsp-01"/>
-            </reference>
-            <name value="NBCSP participation information for Mr Zhang Wei - New to NBCSP (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/nbcsp-02"/>
-            </reference>
-            <name value="NBCSP participation information for Mr Zhang Wei - New to NBCSP, deferred participation (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/nbcsp-03"/>
-            </reference>
-            <name value="NBCSP participation information for Cleo Moss Esq. - Active screening, next due in 2 years (2021)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/nbcsp-04"/>
-            </reference>
-            <name value="NBCSP participation information for Mr Daniel CRAIG - Excluded, inactive (2021)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/ncsp-01"/>
-            </reference>
-            <name value="NCSP participation information for Cleo Moss Esq. - Active screening, next action in 1 year (2021)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/ncsp-02"/>
-            </reference>
-            <name value="NCSP participation information for Ms. Sally FIELD - Not eligible, Commence at 25 (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/ncsp-03"/>
-            </reference>
-                <name value="NCSP participation information for Mrs. Bonny Goodwin - Overdue for Screening (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/no-current-meds-01"/>
-            </reference>
-            <name value="Assertion of no current medicines for Mrs. Bonny Goodwin (2021)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/no-med-hist-01"/>
-            </reference>
-            <name value="Assertion of no medical history for Mr Zhang Wei (2018)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-simple-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/urineculture-es-02"/>
             </reference>
             <name value="Urine culture - E. coli for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
         </resource>
         <!-- ORGANIZATION EXAMPLES-->
         <resource>
@@ -2905,13 +1555,6 @@
                 <reference value="Organization/bondi-gp-medical-centre"/>
             </reference>
             <name value="Bondi GP Medical Centre NSW"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/devonport-clinic"/>
-            </reference>
-            <name value="Devonport Family Medicine Clinic"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <resource>
@@ -2986,13 +1629,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/med-regional-med-centre"/>
-            </reference>
-            <name value="Medium Sized Regional Medical Centre"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Organization/medicare-rs-operator"/>
             </reference>
             <name value="Medicare Australia repository services operator"/>
@@ -3007,16 +1643,16 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/metro-qld-path-lab"/>
+                <reference value="Organization/metro-nsw-path-lab"/>
             </reference>
-            <name value="Metropolitan Pathology QLD"/>
+            <name value="Metropolitan Laboratories Sydney"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/metro-nsw-path-lab"/>
+                <reference value="Organization/metro-qld-path-lab"/>
             </reference>
-            <name value="Metropolitan Laboratories Sydney"/>
+            <name value="Metropolitan Pathology QLD"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <resource>
@@ -3035,13 +1671,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/ncsr-operator"/>
-            </reference>
-            <name value="National Cancer Screening Register system operator"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Organization/nsw-hospital"/>
             </reference>
             <name value="NSW Hospital (ABN, HPI-O, SNOMED CT + V3 type, Phone, Website, Address)"/>
@@ -3056,23 +1685,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/private-vic-path-lab"/>
-            </reference>
-            <name value="Private VIC Pathology"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Organization/qld-hospital"/>
             </reference>
             <name value="QLD Hospital (ABN, HPI-O, SNOMED CT + V3 type, alias, Phone, Address)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/regional-qld-path-lab"/>
-            </reference>
-            <name value="Regional QLD Pathology Lab"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
         </resource>
         <resource>
@@ -3106,13 +1721,6 @@
         <!--PATIENT EXAMPLES-->
         <resource>
             <reference>
-                <reference value="Patient/baby-smith-trevor"/>
-            </reference>
-            <name value="Baby of Rosalia SMITH"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Patient/hi-testdata-frazier-brady"/>
             </reference>
             <name value="Brady FRAZIER (Vendor Environment HI Test Data plus date accuracy indicator)"/>
@@ -3130,7 +1738,7 @@
                 <reference value="Patient/hi-testdata-goodwin-bonny"/>
             </reference>
             <name value="Mrs. Bonny Goodwin (Vendor Environment HI Test Data plus marital status)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
@@ -3158,7 +1766,7 @@
                 <reference value="Patient/mhr-zhang-wei"/>
             </reference>
             <name value="Mr Zhang Wei (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
@@ -3172,56 +1780,49 @@
                 <reference value="Patient/mhr-anne-thompson"/>
             </reference>
             <name value="Mrs. Anne Thompson (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/mhr-craig-daniel"/>
             </reference>
             <name value="Mr. Daniel CRAIG (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/mhr-jones-olivia"/>
             </reference>
             <name value="Mr. Daniel CRAIG (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/mhr-field-sally"/>
             </reference>
             <name value="Ms. Sally FIELD (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/mhr-smith-oliver"/>
             </reference>
             <name value="Mr. Oliver SMITH (My Health Record Patient) (Child)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/mhr-tjakamarra-billy"/>
             </reference>
             <name value="Billy Tjakamarra (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/mhr-smith-rosalia"/>
             </reference>
             <name value="Rosalia SMITH (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/mhr-smith-trevor"/>
-            </reference>
-            <name value="Trevor SMITH (My Health Record Patient)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-mhr-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
         </resource>
         <resource>
             <reference>
@@ -3240,25 +1841,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Practitioner/bremer-frederika"/>
-            </reference>
-            <name value="Dr. Fredrika Bremer"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Practitioner/brown-robert"/>
             </reference>
             <name value="Dr. Robert Brown"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/helpman-barry"/>
-            </reference>
-            <name value="Dr. Barry Helpman"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
-        </resource>
+
         <resource>
             <reference>
                 <reference value="Practitioner/sarah-bondiali"/>
@@ -3299,13 +1887,6 @@
                 <reference value="Practitioner/tulio-patricia"/>
             </reference>
             <name value="Dr. Patricia Tulio"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/howard-linda"/>
-            </reference>
-            <name value="Ms. Linda Howard"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
         </resource>
         <resource>
@@ -3381,13 +1962,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/bremer-frederika-cardiologist"/>
-            </reference>
-            <name value="Dr. Fredrika Bremer, Cardiologist, NSW Hospital - Cardiology"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="PractitionerRole/brown-robert-haematologist"/>
             </reference>
             <name value="Dr. Robert Brown, Haematologist, Metropolitan Laboratories Sydney"/>
@@ -3406,13 +1980,6 @@
             </reference>
             <name value="Dr. George David, Oncologist, at Fred Hope Centre NSW"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/helpman-barry-gp"/>
-            </reference>
-            <name value="Dr. Barry Helpman, GP, at Devonport Family Medicine Clinic"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         </resource>
         <resource>
             <reference>
@@ -3455,13 +2022,6 @@
             </reference>
             <name value="Theodore GUTHRIDGE, Mothercraft Nurse (Vendor Environment HI Test Data)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/howard-linda-sonographer"/>
-            </reference>
-            <name value="Ms. Linda Howard, Sonographer, NSW Hospital - Cardiology"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"/>
         </resource>
         <resource>
             <reference>
@@ -3523,13 +2083,6 @@
         <!--RELATEDPERSON EXAMPLES-->
         <resource>
             <reference>
-                <reference value="RelatedPerson/baby-smith-trevor"/>
-            </reference>
-            <name value="Baby of Rosalia SMITH - child of Mrs. Rosalia SMITH"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="RelatedPerson/mhr-field-sally"/>
             </reference>
             <name value="Ms. Sally FIELD - mother of Mr. Oliver SMITH"/>
@@ -3551,239 +2104,24 @@
         </resource>
         <resource>
             <reference>
-                <reference value="RelatedPerson/mhr-smith-bob-trevor"/>
-            </reference>
-            <name value="Mr. Bob SMITH - father of Trevor SMITH"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/mhr-smith-rosalia-baby"/>
-            </reference>
-            <name value="Mrs. Rosalia SMITH - mother of Baby of Rosalia SMITH"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="RelatedPerson/mhr-smith-rosalia-oliver"/>
             </reference>
             <name value="Mrs. Rosalia SMITH - stepmother of Mr. Oliver SMITH"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="RelatedPerson/mhr-smith-rosalia-trevor"/>
-            </reference>
-            <name value="Mrs. Rosalia SMITH - mother of Trevor SMITH"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-mhr-1"/>
-        </resource>
-        <!--SERVICEREQUEST EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-ct-abpelcontrast-01"/>
-            </reference>
-            <name value="Active order for CT of Abdomen and Pelvis with Contrast for Mrs. Anne Thompson (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-echo-01"/>
-            </reference>
-            <name value="Completed order for pre-chemotherapy echocardiography for Mr. Zhang Wei"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-fbc-01"/>
-            </reference>
-            <name value="Completed order for Full Blood Count for Mrs. Anne Thompson (2016)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-covid-01"/>
-            </reference>
-            <name value="Completed order for COVID-19 for Mrs. Anne Thompson for use in DiagnosticReport covid-01"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-lk-xray-01"/>
-            </reference>
-            <name value="Completed order for Left Knee X-Ray for Cleo Moss Esq. (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-rk-xray-01"/>
-            </reference>
-            <name value="Completed order for Right Knee X-Ray for Mac PRIEST (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-perimetry-01"/>
-            </reference>
-            <name value="Completed order for Perimetry for Mrs. Anne Thompson (2019)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-core-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-lk-ct-contrast-01"/>
-            </reference>
-            <name value="Revoked order for CT of Left Knee with Contrast for Mac PRIEST (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-rk-ct-contrast-01"/>
-            </reference>
-            <name value="Revoked order for CT of Right Knee with Contrast for Cleo Moss Esq. (2021)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-chest-ct-01"/>
-            </reference>
-            <name value="Active order for Chest CT for Billy Tjakamarra (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/order-chest-xray-01"/>
-            </reference>
-            <name value="Active order for Chest X-Ray for Billy Tjakamarra (2022)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-servicerequest-modi-1"/>
-        </resource>
-        <!--SPECIMEN EXAMPLES-->
-        <resource>
-            <reference>
-                <reference value="Specimen/naso-swab-01"/>
-            </reference>
-            <name value="Nasopharyngeal Swab for Mrs. Anne Thompson"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Specimen/urine-01"/>
             </reference>
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
-            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
         </resource>
-        <!--NAMING SYSTEMS-->
-        <resource>
-            <reference>
-                <reference value="NamingSystem/crn"/>
-            </reference>
-            <name value="Centrelink Customer Reference Number (also referred to as unique identifier number (UIN))"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/dva"/>
-            </reference>
-            <name value="Australian Department of Veterans’ Affairs (DVA) file number"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/ihi"/>
-            </reference>
-            <name value="Australian Individual Healthcare Identifier (IHI)"/>
-            <exampleBoolean value="false"/>
-        </resource>    
-        <resource>
-            <reference>
-                <reference value="NamingSystem/hpi-i"/>
-            </reference>
-            <name value="Australian Healthcare Provider Identifier - Individual (HPI-I)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/hpi-o"/>
-            </reference>
-            <name value="Australian Healthcare Provider Identifier - Organisation (HPI-O)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/lspn"/>
-            </reference>
-            <name value="Location Specific Practice Number"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/medicarenum"/>
-            </reference>
-            <name value="Medicare Card Number"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/medicareprovidernum"/>
-            </reference>
-            <name value="Medicare Provider Number"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/pai-d"/>
-            </reference>
-            <name value="My Health Record Assigned Identity - Device (PAI-D)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/pai-o"/>
-            </reference>
-            <name value="My Health Record Assigned Identity - Organisation (PAI-O)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/pai-r"/>
-            </reference>
-            <name value="My Health Record Assigned Identity - Repository (PAI-R)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/pbsprescribernum"/>
-            </reference>
-            <name value="Pharmaceutical Benefits Scheme (PBS) prescriber number"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/phan"/>
-            </reference>
-            <name value="Pharmacy Approval Number"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/racs"/>
-            </reference>
-            <name value="Residential Aged Care Service identifier"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        
-        
+                
         <page>
             <nameUrl value="index.html"/>
             <title value="Australian Digital Health Agency FHIR"/>
             <generation value="html"/>
         </page>
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2022+"/>
-        </parameter>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
-        </parameter>
     </definition>
     
 </ImplementationGuide>

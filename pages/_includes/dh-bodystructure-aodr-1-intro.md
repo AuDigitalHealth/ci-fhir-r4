@@ -6,10 +6,7 @@ This profile is designed to set a BodyStructure standard for:
 * Recording or updating body structures in an AODR record of consent (Consent resource)
 * Reading body structures in an AODR record of consent (Consent resource)
 
-Operations, including querying, on body structures in an AODR record of consent (BodyStructure resource) are expected to be within the context of a Consent resource query.
-
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+Operations, including querying, on body structures in an AODR record of consent (BodyStructure resources) are expected to be within the context of a Consent resource query.
 
 
 #### Profile specific guidance
