@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-episodeofcare-mygp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAEpisodeOfCareMyGP"/>
-  <title value="ADHA GP Practice Registration Entry"/>
+  <title value="ADHA GP Practice Registration Information"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a current entry or a historical entry."/>
+  <description value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
@@ -30,14 +30,6 @@
       <constraint>
         <key value="inv-dh-epoc-03"/>
         <severity value="error"/>
-        <human value="status shall be active or finished"/>
-        <expression value="(status='active') or (status='finished')"/>
-        <xpath value="(f:status/@value = 'active') or (f:status/@value = 'finished')"/>
-        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
-      </constraint>
-      <constraint>
-        <key value="inv-dh-epoc-04"/>
-        <severity value="error"/>
         <human value="A patient’s current GP practice shall not have a registration end date"/>
         <expression value="period.end.empty() xor (status = 'finished')"/>
         <xpath value="not(f:period.end) or exists(f:status/@value = 'finished')"/>
@@ -46,9 +38,7 @@
     </element>
     <element id="EpisodeOfCare.status">
       <path value="EpisodeOfCare.status"/>
-      <short value="active | finished"/>
-      <comment value="In the context of a patient's GP practice registered with MyGP. The current registered practice has status=active, historical GP practice registration entries have status=finished."/>
-      <condition value="inv-dh-epoc-03"/>
+      <fixedCode value="active"/>
       <mustSupport value="true"/>
     </element>
     <element id="EpisodeOfCare.type">
@@ -115,10 +105,15 @@
     </element>
     <element id="EpisodeOfCare.period">
       <path value="EpisodeOfCare.period"/>
-      <short value="Registration start date and, if historical, the registration end date"/>
       <comment value="In the context of a MyGP registration, a patient's current registered GP practice will only have period.start. A historical entry will have both period.start and period.end."/>
       <min value="1"/>
-      <condition value="inv-dh-epoc-04"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="EpisodeOfCare.period.start">
+      <path value="EpisodeOfCare.period.start"/>
+      <short value="Registration start date"/>
+      <min value="1"/>
+      <condition value="inv-dh-epoc-03"/>
       <mustSupport value="true"/>
     </element>
   </differential>
