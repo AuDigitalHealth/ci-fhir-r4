@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="vpr-03"/>
+    <!--Sample design for Voluntary Patient Registration project - provides a history-->
+    <type value="collection"/>
+    <timestamp value="2022-10-28T11:01:00+10:00"/>
+    <!--    PATIENT   -->
+    <entry>
+        <fullUrl value="urn:uuid:4ebd1a59-fc0e-4433-93d9-f0c226cabaf6"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+                </meta>
+                <identifier>
+                    <use value="official"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NI"/>
+                        </coding>
+                        <text value="IHI"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                    <value value="8003608833564727"/>
+                </identifier>
+                <identifier>
+                    <use value="secondary"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MC"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+                    <value value="29533070311"/>
+                    <period>
+                        <end value="2023-11-30"/>
+                    </period>
+                </identifier>
+                <name>
+                    <use value="usual"/>
+                    <text value="Bert Gainey"/>
+                    <family value="Gainey"/>
+                </name>
+                <gender value="male"/>
+                <birthDate value="1971-09-24"/>
+                <generalPractitioner> 
+                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/> 
+                </generalPractitioner>
+                <!--Practitioner's name - only if additional data is shared should this be a full PractitionerRole resource-->
+                <generalPractitioner> 
+                    <type value="PractitionerRole"/>
+                    <display value="Dr Sophia Yu"/> 
+                </generalPractitioner>
+            </Patient>
+        </resource>
+    </entry>
+    <!--GP Practice is an Organization resource-->
+    <entry>
+        <fullUrl value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+                </meta>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394761003"/>
+                    </coding>
+                    <text value="GP practice"/>
+                </type>
+                <name value="ABC Medical Clinic"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(02) 5550 2427"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <line value="Andrew Fisher Building"/>
+                    <line value="1 National Circuit"/>
+                    <city value="Barton"/>
+                    <state value="ACT"/>
+                    <postalCode value="2600"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:2441c7b9-1cb9-400d-bc12-70e8644dfb0e"/>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+                </meta>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394761003"/>
+                    </coding>
+                    <text value="GP practice"/>
+                </type>
+                <name value="Family Medical Practice"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(02) 5550 2433"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <line value="114 Denison St"/>
+                    <city value="Deakin"/>
+                    <state value="ACT"/>
+                    <postalCode value="2600"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <!--Represents current GP Practice using EpisodeOfCare-->
+    <entry>
+        <fullUrl value="urn:uuid:63a81c87-dd27-436e-aff2-157865c9aa48"/>
+        <resource>
+            <EpisodeOfCare>
+                <meta>
+                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
+                </meta>
+                <!--current represented by status=active-->
+                <status value="active"/> 
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="737470001"/>
+                        <display value="Primary care management"/>
+                    </coding>
+                </type> 
+                <patient> 
+                    <reference value="urn:uuid:4ebd1a59-fc0e-4433-93d9-f0c226cabaf6"/>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                <code value="NI"/>
+                            </coding>
+                            <text value="IHI"/>
+                        </type>
+                        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                        <value value="8003608833564727"/>
+                    </identifier> 
+                </patient> 
+                <managingOrganization> 
+                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/> 
+                </managingOrganization> 
+                <!--current represented by no period.end-->
+                <period> 
+                    <start value="2021-06-13"/> 
+                </period> 
+            </EpisodeOfCare>
+        </resource>
+    </entry>
+        <!--Represents history entry of GP Practice using EpisodeOfCare-->
+        <entry>
+            <fullUrl value="urn:uuid:e907a08c-5e3b-4689-9460-c0769f712c6e"/>
+            <resource>
+                <EpisodeOfCare>
+                    <meta>
+                        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
+                    </meta>
+                    <!--history entry represented by status=finished-->
+                    <status value="finished"/> 
+                    <type>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="737470001"/>
+                            <display value="Primary care management"/>
+                        </coding>
+                    </type> 
+                    <patient> 
+                        <reference value="urn:uuid:4ebd1a59-fc0e-4433-93d9-f0c226cabaf6"/>
+                        <identifier>
+                            <type>
+                                <coding>
+                                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                    <code value="NI"/>
+                                </coding>
+                                <text value="IHI"/>
+                            </type>
+                            <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                            <value value="8003608833564727"/>
+                        </identifier> 
+                    </patient> 
+                    <managingOrganization> 
+                        <reference value="urn:uuid:2441c7b9-1cb9-400d-bc12-70e8644dfb0e"/> 
+                    </managingOrganization> 
+                    <!--history entry has period.end-->
+                    <period> 
+                        <start value="2021-01-09"/> 
+                        <end value="2021-06-10"/>
+                    </period> 
+                </EpisodeOfCare>
+            </resource>
+    </entry>
+</Bundle>

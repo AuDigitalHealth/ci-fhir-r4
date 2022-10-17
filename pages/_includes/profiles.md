@@ -39,7 +39,11 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a></li>
                             </ul>
                         </td>  
-                        <td class="frm-null"/>
+                        <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a></li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr class="frm-break">
                         <td colspan="6"/>
@@ -222,6 +226,9 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-null"/>                        
                         <td class="frm-null"/>
                         <td class="frm-set">
+                            <ul class="frm-set">
+                                <li><a href="StructureDefinition-dh-episodeofcare-mygp-1.html">ADHA GP Practice Registration Information</a></li>
+                            </ul>
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>
                             </ul>

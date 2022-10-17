@@ -14,11 +14,12 @@ Wherever possible, material in this specification is based on existing standards
 
 ## Scope
 
-Release 1.0.0 of this guide is limited to the FHIR conformance artefacts (i.e. [Profiles and Extensions](profiles.html)) that define the data structure of FHIR resources for the following record types: 
+Release 1.1.0 of this guide is limited to the FHIR conformance artefacts (i.e. [Profiles and Extensions](profiles.html)) that define the data structure of FHIR resources for the following record types: 
 - Australian Immunisation Register (AIR) information
 - Australian Organ Donor Register (AODR) information
 - Pharmaceutical Benefits Scheme (PBS) / Repatriation Pharmaceutical Benefits Scheme (RPBS) claims information
 - Medicare Benefits Schedule (MBS) / Department of Veterans' Affairs (DVA) claims information
+- MyGP registered practice information
 
 The FHIR conformance artefacts are published in a FHIR NPM package for use with FHIR and FHIR-aware tools. 
 
@@ -35,6 +36,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Profiles and Extensions](profiles.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
+- [Change Log](changes.html): This page documents the changes across versions of this implementation guide.
 
 
 ## Future of this guide

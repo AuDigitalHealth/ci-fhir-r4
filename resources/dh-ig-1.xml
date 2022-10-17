@@ -50,6 +50,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-bundle-payload-1"/>
+            </reference>
+            <name value="ADHA Payload Bundle"/>
+            <description value="The purpose of this profile is to provide a collection of resources handled as a single collection for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-condition-core-1"/>
             </reference>
             <name value="ADHA Core Condition"/>
@@ -94,6 +102,14 @@
             </reference>
             <name value="ADHA Core Encounter"/>
             <description value="The purpose of this profile is to provide a core representation of an encounter for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-episodeofcare-mygp-1"/>
+            </reference>
+            <name value="ADHA GP Practice Registration Information"/>
+            <description value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -511,6 +527,20 @@
                 <reference value="Bundle/mds"/>
             </reference>
             <name value="R4 conversion of MDS test data Bundle.id cb7921cb-ba17-11ec-833a-b1763b0a7715"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/vpr-01"/>
+            </reference>
+            <name value="Patient's registered GP practice"/>
+            <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/vpr-02"/>
+            </reference>
+            <name value="Patient's registered GP practice and practitioner name"/>
             <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
         </resource>
         <!--CONSENT EXAMPLES-->
