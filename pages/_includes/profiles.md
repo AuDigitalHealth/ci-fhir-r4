@@ -227,7 +227,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-null"/>
                         <td class="frm-set">
                             <ul class="frm-set">
-                                <li><a href="StructureDefinition-dh-episodeofcare-mygp-1.html">ADHA GP Practice Registration Information</a></li>
+                                <li><a href="StructureDefinition-dh-episodeofcare-mygp-1.html">ADHA GP Practice Registration Entry</a></li>
                             </ul>
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-flag-air-1.html">ADHA Australian Immunisation Register Notice</a></li>

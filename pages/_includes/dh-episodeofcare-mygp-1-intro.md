@@ -6,12 +6,9 @@ This profile is designed to set an EpisodeOfCare standard for:
 * Query for a patient's registered GP practice information from MyGP
 * Reading a patient’s registered GP practice information from MyGP
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
 
 #### Profile specific guidance
-- Information about the *GP Practice* is represented with an Organization resource that is referenced in `EpisodeOfCare.managingOrganization` and `Paient.generalPractitioner`
+- Information about the *GP Practice* is represented with an Organization resource that is referenced in `EpisodeOfCare.managingOrganization` and `Paient.generalPractitioner`, see example [Patient's registered GP practice](Bundle-vpr-01.html)
 - *Practitioner name* is represented in `Patient.generalPractitioner.display` with `Patient.generalPractitioner.type`="PractitionerRole", see example [Patient's registered GP practice and practitioner name](Bundle-vpr-02.html)
 - In an exchange with the My Health Record system the set of resources that make up patient GP practice registration information are collected in a Bundle.
 

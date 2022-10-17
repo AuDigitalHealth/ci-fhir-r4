@@ -8,17 +8,16 @@
 ### Version = 1.1.0
 - Publication date: IN PROGRESS
 - Publication status: IN PROGRESS
-- url: <TBD>
+- url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.1.0>
 - Based on FHIR version: 4.0.1
-- Archived release location: <TBD>
 
 This version is developed for the MyGP project.
 
 **Changes in this version**
 
 Added:
-- profile ADHA Payload Bundle
-- profile ADHA GP Practice Registration Information
+- profile ADHA Payload Bundle [ci-medicare-records #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA GP Practice Registration Information [ci-medicare-records #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
 
 ---
 

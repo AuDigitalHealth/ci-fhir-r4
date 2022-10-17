@@ -20,6 +20,7 @@ This profile is referenced by
 [ADHA System Device](StructureDefinition-dh-device-system-1.html), 
 [ADHA Core DocumentReference](StructureDefinition-dh-documentreference-core-1.html), 
 [ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
+[ADHA GP Practice Registration Entry](StructureDefinition-dh-episodeofcare-mygp-1.html), 
 [ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html),
 [ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html), 
 [ADHA Australian Immunisation Register Notice](StructureDefinition-dh-flag-air-1.html), 
