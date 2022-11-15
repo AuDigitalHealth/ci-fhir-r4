@@ -95,4 +95,25 @@
       <td><a href="Bundle-report-covid-01.json.html">JSON</a></td>
       <td><a href="Bundle-report-covid-01.ttl.html">Turtle</a></td>
    </tr>
+   <tr>
+      <td><a href="Bundle-vpr-01.html">Patient's registered GP practice</a></td>
+      <td>vpr-01</td>
+      <td><a href="Bundle-vpr-01.xml.html">XML</a></td>
+      <td><a href="Bundle-vpr-01.json.html">JSON</a></td>
+      <td><a href="Bundle-vpr-01.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Bundle-vpr-02.html">Patient's registered GP practice and practitioner name</a></td>
+      <td>vpr-02</td>
+      <td><a href="Bundle-vpr-02.xml.html">XML</a></td>
+      <td><a href="Bundle-vpr-02.json.html">JSON</a></td>
+      <td><a href="Bundle-vpr-02.ttl.html">Turtle</a></td>
+   </tr>
+   <tr>
+      <td><a href="Bundle-vpr-03.html">History of patient's registered GP practices</a></td>
+      <td>vpr-03</td>
+      <td><a href="Bundle-vpr-03.xml.html">XML</a></td>
+      <td><a href="Bundle-vpr-03.json.html">JSON</a></td>
+      <td><a href="Bundle-vpr-03.ttl.html">Turtle</a></td>
+   </tr>
 </table>
