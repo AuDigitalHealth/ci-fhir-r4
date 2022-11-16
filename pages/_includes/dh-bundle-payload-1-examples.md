@@ -109,11 +109,4 @@
       <td><a href="Bundle-vpr-02.json.html">JSON</a></td>
       <td><a href="Bundle-vpr-02.ttl.html">Turtle</a></td>
    </tr>
-   <tr>
-      <td><a href="Bundle-vpr-03.html">History of patient's registered GP practices</a></td>
-      <td>vpr-03</td>
-      <td><a href="Bundle-vpr-03.xml.html">XML</a></td>
-      <td><a href="Bundle-vpr-03.json.html">JSON</a></td>
-      <td><a href="Bundle-vpr-03.ttl.html">Turtle</a></td>
-   </tr>
 </table>
