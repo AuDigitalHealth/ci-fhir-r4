@@ -41,7 +41,7 @@ This guide is divided into several pages which are listed at the top of each pag
   - [NamingSystems](namingsys.html): This set of pages describes the identifier systems defined in this guide as formal artefact enabling inclusion in a registry for other systems to find and understand an identifier.
   - [Search Parameters and Operations](searchparams.html): This page page lists the defined Operations and Search Parameters that are used in transactions.
   - [Terminology](terminology.html): This page lists the value sets and code system defined for profiles.
-  - [Maps](terminology.html): This page lists the concept maps and structure maps defined for profiles.
+  - [Maps](structuremaps.html): This page lists the concept maps and structure maps defined for profiles.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the Agency FHIR NPM package.
 - [Disclaimers](disclaimers.html): This page lists the licensing, copyright, and disclaimers under which this guide is issued. 
 
