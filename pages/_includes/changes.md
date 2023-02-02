@@ -10,6 +10,7 @@
 - Publication status: IN PROGRESS
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.1.0>
 - Based on FHIR version: 4.0.1
+- Applied 2022 Agency style and branding to the implementation guide
 
 This version is developed for the MyGP project.
 
