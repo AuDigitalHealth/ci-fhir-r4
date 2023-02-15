@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
-  <version value="0.0.7"/>
+  <version value="1.0.0"/>
   <name value="ADHAObservationCore"/>
   <title value="ADHA Core Observation"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="Australian Digital Health Agency"/>
   <contact>
@@ -86,7 +86,7 @@
         <severity value="error"/>
         <human value="Date shall be at least to day"/>
         <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
-        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
+        <xpath value="f:effectiveDateTime[matches(@value, '^\d{4}-\d{2}-\d{2}')]"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-core-1"/>
       </constraint>
       <mustSupport value="true"/>
