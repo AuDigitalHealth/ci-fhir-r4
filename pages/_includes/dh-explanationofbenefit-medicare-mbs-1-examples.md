@@ -33,7 +33,7 @@
       <td><a href="ExplanationOfBenefit-mbs-03.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="ExplanationOfBenefit-mbs-mds.html">R4 conversion of STU3 PBS MDS test data (missing data asserted with data absent extension)</a></td>
+      <td><a href="ExplanationOfBenefit-mbs-mds.html">R4 conversion of STU3 MBS MDS test data (missing data asserted with data absent extension)</a></td>
       <td>mbs-mds</td>
       <td><a href="ExplanationOfBenefit-mbs-mds.xml.html">XML</a></td>
       <td><a href="ExplanationOfBenefit-mbs-mds.json.html">JSON</a></td>

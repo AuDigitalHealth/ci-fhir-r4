@@ -20,5 +20,5 @@ None.
 This profile is referenced by 
 [ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 
 
-These profiles build on this profile ([ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html)) to define specific roles:
-* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html)
+The following profiles build on the [ADHA Core BodyStructure](StructureDefinition-dh-bodystructure-core-1.html) profile to define specific roles:
+* [ADHA Organ or Tissue for Donation BodyStructure](StructureDefinition-dh-bodystructure-aodr-1.html).
