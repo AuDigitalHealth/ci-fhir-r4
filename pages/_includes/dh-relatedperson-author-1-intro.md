@@ -6,7 +6,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 A [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) resource is used within the context of a referencing resource. 
 
 This profile is designed to set a RelatedPerson standard for:
-* Recording or updating am authoring related person referenced by another resource
+* Recording or updating an authoring related person referenced by another resource
 * Reading authoring related persons referenced by another resource
 
 This profile is used by the following APIs:
