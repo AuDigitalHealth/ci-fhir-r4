@@ -21,7 +21,7 @@
             <code value="AU"/>
         </coding>
     </jurisdiction>
-    <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
     <packageId value="au.digitalhealth.r4"/>
     <license value="Apache-2.0"/>
     <fhirVersion value="4.0.1"/>
@@ -93,6 +93,14 @@
             </reference>
             <name value="ADHA Payload Bundle"/>
             <description value="The purpose of this profile is to provide a collection of resources handled as a single collection for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-bundle-mygp-1"/>
+            </reference>
+            <name value="ADHA MyGP Bundle"/>
+            <description value="The purpose of this profile is to provide a collection of resources handled as a message for the electronic exchange of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -624,6 +632,14 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/dh-operationoutcome-mygp-1"/>
+            </reference>
+            <name value="ADHA GP Practice Operation Outcome"/>
+            <description value="TBD"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/dh-packed-in-daa-1"/>
             </reference>
             <name value="ADHA Medicines Packed in Dose Administration Aid Indicator"/>
@@ -758,6 +774,7 @@
             <description value="The purpose of this profile is to provide a core representation of a substance for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
+        
         <!--EXAMPLES-->
         <!--ALLERGYINTEROLANCE EXAMPLES-->
         <resource>
@@ -3669,6 +3686,28 @@
             </reference>
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-specimen-core-1"/>
+        </resource>
+        <!--OPERATIONOUTCOME EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="OperationOutcome/vpr-04"/>
+            </reference>
+            <name value="Successful operation - no MyGP information returned"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="OperationOutcome/vpr-05"/>
+            </reference>
+            <name value="Functional error"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="OperationOutcome/vpr-06"/>
+            </reference>
+            <name value="Technical error"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"/>
         </resource>
         <!--NAMING SYSTEMS-->
         <resource>

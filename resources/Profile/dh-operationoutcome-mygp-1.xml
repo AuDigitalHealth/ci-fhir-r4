@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-operationoutcome-mygp-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"/>
+  <version value="0.0.1"/>
+  <name value="ADHAOperationOutcomeMyGP"/>
+  <title value="ADHA GP Practice Operation Outcome"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="The purpose of this profile is to define a representation of the outcome of the operation to retrieve GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="OperationOutcome"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="OperationOutcome">
+      <path value="OperationOutcome"/>
+      <short value="TBD"/>
+    </element>
+    <element id="OperationOutcome.issue">
+      <path value="OperationOutcome.issue"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="OperationOutcome.issue.severity">
+      <path value="OperationOutcome.issue.severity"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="OperationOutcome.issue.code">
+      <path value="OperationOutcome.issue.code"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="OperationOutcome.issue.details">
+      <path value="OperationOutcome.issue.details"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

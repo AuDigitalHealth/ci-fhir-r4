@@ -1,0 +1,14 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+    <id value="vpr-05" />
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"/>
+    </meta>
+    <issue>  
+        <severity value="error"/> 
+        <code value="business-rule"/> 
+        <details> 
+            <text value="Request for MyGP information for less than 14 year old"/> 
+        </details> 
+    </issue>  
+</OperationOutcome >
+
