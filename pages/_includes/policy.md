@@ -438,11 +438,11 @@ Example: StructureDefinition resource that is an extension
 
 The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a publication and not a software release.
 
-The four types of artefacts (publications, NPM packages, conformance resources, and terminology resources) are versioned in accoradance with this policy. The visible publication version, ImplementationGuide resource version, and NPM package for that publication **SHALL** have the same version. Conformance and terminology resources published in, or referenced by, that publication **MAY** be versioned indepdendently.  
+The four types of artefacts (publications, NPM packages, conformance resources, and terminology resources) are versioned in accordance with this policy. The visible publication version, ImplementationGuide resource version, and NPM package for that publication **SHALL** have the same version. Conformance and terminology resources published in, or referenced by, that publication **MAY** be versioned independently.  
 
 There is a single development version of the publication that undergoes cycles of development. At the completion of each cycle of development a new version of the publication is published. In version control terms, each published publication is a branch off the development trunk, which may then itself undergo further change as the Agency maintains the published publication (limited to necessary technical corrections or security alerts) and introduces new capabilities.
 
-The same [Semantic versioning](http://semver.org/) versioning standard is applied to the four types of ADHA arefacts. The version is identified by a string composed from 4 parts: major.minor.revision(-label):
+The same [Semantic versioning](http://semver.org/) versioning standard is applied to the four types of ADHA artefacts. The version is identified by a string composed from 4 parts: major.minor.revision(-label):
 
 
 major	
