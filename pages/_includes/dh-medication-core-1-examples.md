@@ -1,5 +1,4 @@
-<t
-able class="list" width="100%">            
+<table class="list" width="100%">            
    <tr>
      <th>Example name</th>
      <th>id</th>

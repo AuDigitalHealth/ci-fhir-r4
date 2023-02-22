@@ -10,7 +10,7 @@ This profile is designed to set a core Encounter standard for:
 This profile is used by the following APIs:
 * [insert API endpoint](StructureDefinition-TBD-1.html)
 
-#### Profile specific guidance TBD
+#### Profile specific guidance
 - `Encounter.type` supports categorisation and provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations. 
 - In an exchange with the My Health Record system `Encounter.status` is "finished".
 - The Encounter resource can represent a reason using either a code with `Encounter.reasonCode`, or a reference with `Encounter.reasonReference` to a Condition or other resource.

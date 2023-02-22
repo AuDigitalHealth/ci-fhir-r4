@@ -28,5 +28,5 @@ This profile is referenced by
 [ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html), and
 [ADHA Immunisation History List](StructureDefinition-dh-list-immunization-1.html).
 
-These profiles build on this profile ([ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html)) to define specific immunisation record types:
-* [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html)
+The following profiles build on the [ADHA Core Immunization](StructureDefinition-dh-immunization-core-1.html) profile to define specific immunisation record types:
+* [ADHA Record of Immunisation from Australian Immunisation Register](StructureDefinition-dh-immunization-air-1.html).

@@ -5,14 +5,14 @@
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="BodyStructure-bone.html">Bone</a></td>
+      <td><a href="BodyStructure-bone.html">Bone structure</a></td>
       <td>bone</td>
       <td><a href="BodyStructure-bone.xml.html">XML</a></td>
       <td><a href="BodyStructure-bone.json.html">JSON</a></td>
       <td><a href="BodyStructure-bone.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="BodyStructure-eye.html">Eye</a></td>
+      <td><a href="BodyStructure-eye.html">Eye structure</a></td>
       <td>eye</td>
       <td><a href="BodyStructure-eye.xml.html">XML</a></td>
       <td><a href="BodyStructure-eye.json.html">JSON</a></td>
