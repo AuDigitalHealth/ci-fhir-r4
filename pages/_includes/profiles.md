@@ -58,7 +58,6 @@ The following core FHIR profiles are defined in this implementation guide. These
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-bundle-document-1.html">ADHA Document Bundle</a></li> 
                                 <li><a href="StructureDefinition-dh-bundle-message-1.html">ADHA Message Bundle</a></li> 
-                                 <li><a href="StructureDefinition-dh-bundle-mygp-1.html">ADHA MyGP Practice Registration Bundle</a></li> 
                                 <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a></li> 
                                 <li><a href="StructureDefinition-dh-bundle-core-1.html">ADHA Core Bundle</a></li>
                                 <li>ADHA MHR Bundle (CI &amp; Architecture Team)</li>

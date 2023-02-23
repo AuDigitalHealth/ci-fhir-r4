@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="vpr-02"/>
-    <meta>
+    <id value="vpr-test-01"/>
+    <!--<meta>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-mygp-1"/>
-    </meta>
-    <!--Sample design for Voluntary Patient Registration project - patient has a registered GP practice and practitioner-->
+    </meta>-->
+    <!--Sample design for Voluntary Patient Registration project - patient has a registered GP practice-->
     <type value="collection"/>
     <timestamp value="2022-10-28T11:01:00+10:00"/>
     <!--    PATIENT   -->
     <entry>
-        <fullUrl value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7715"/>
+        <fullUrl value="urn:uuid:1f1e3fc0-768f-4c76-ac1a-77345c890321"/>
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
                 <meta>
-                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+                    <profile
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
                 </meta>
                 <identifier>
                     <use value="official"/>
@@ -35,19 +36,29 @@
                 <gender value="male"/>
                 <birthDate value="1971-09-24"/>
                 <generalPractitioner> 
-                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/> 
-                </generalPractitioner>
-                <!--Practitioner's name - only if additional data is shared should this be a full PractitionerRole resource-->
-                <generalPractitioner> 
-                    <type value="PractitionerRole"/>
-                    <display value="Dr Sophia Yu"/> 
+                    <reference value="urn:uuid:2250beff-bf54-492f-a8fa-6ea6d1d7f78f"/> 
                 </generalPractitioner>
             </Patient>
         </resource>
+        <response>
+            <status value="active"/>
+            <outcome>
+                <OperationOutcome> 
+                    <issue> 
+                        <severity value="warning"/> 
+                        <code value="not-found"/> 
+                        <details> 
+                            <text value="The Managing organization was not known and was deleted"/> 
+                        </details>  
+                        <expression value="Patient.managingOrganization"/> 
+                    </issue> 
+                </OperationOutcome> 
+            </outcome>
+        </response>
     </entry>
     <!--GP Practice is an Organization resource-->
     <entry>
-        <fullUrl value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/>
+        <fullUrl value="urn:uuid:2250beff-bf54-492f-a8fa-6ea6d1d7f78f"/>
         <resource>
             <Organization>
                 <meta>
@@ -80,7 +91,7 @@
     </entry>
     <!--Represents current GP Practice using EpisodeOfCare-->
     <entry>
-        <fullUrl value="urn:uuid:cec6e9d8-6b61-432a-85e5-93c0558e66eb"/>
+        <fullUrl value="urn:uuid:75c257b4-eb01-4c29-a01e-9a154a36370a"/>
         <resource>
             <EpisodeOfCare>
                 <meta>
@@ -96,7 +107,7 @@
                     </coding>
                 </type> 
                 <patient> 
-                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7715"/>
+                    <reference value="urn:uuid:1f1e3fc0-768f-4c76-ac1a-77345c890321"/>
                     <identifier>
                         <type>
                             <coding>
@@ -110,7 +121,7 @@
                     </identifier> 
                 </patient> 
                 <managingOrganization> 
-                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/> 
+                    <reference value="urn:uuid:2250beff-bf54-492f-a8fa-6ea6d1d7f78f"/> 
                 </managingOrganization> 
                 <!--current represented by no period.end-->
                 <period> 

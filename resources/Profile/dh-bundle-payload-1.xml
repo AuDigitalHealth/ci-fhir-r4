@@ -50,7 +50,12 @@
     </element>
     <element id="Bundle.entry.fullUrl">
       <path value="Bundle.entry.fullUrl" />
-      <min value="1" />
+    <!--  <min value="1" />-->
+      <mustSupport value="true"/>
+    </element>
+    <element id="Bundle.entry.resource">
+      <path value="Bundle.entry.resource" />
+      <!--  <min value="1" />-->
       <mustSupport value="true"/>
     </element>
   </differential>
