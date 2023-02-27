@@ -16,8 +16,9 @@ This version is developed for the MyGP project.
 **Changes in this version**
 
 Added:
-- profile ADHA Payload Bundle [ci-medicare-records #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
-- profile ADHA GP Practice Registration Information [ci-medicare-records #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA Payload Bundle [ci-fhir-r4 #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA GP Practice Registration Information [ci-fhir-r4 #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA Core OperationOutcome [ci-fhir-r4 #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
 
 ---
 
