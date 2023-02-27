@@ -62,7 +62,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                                 <li><a href="StructureDefinition-dh-bundle-core-1.html">ADHA Core Bundle</a></li>
                                 <li>ADHA MHR Bundle (CI &amp; Architecture Team)</li>
                                 <li>ADHA Core MessageHeader (Architecture Team)</li> 
-                                <li><a href="StructureDefinition-dh-operationoutcome-mygp-1.html">ADHA GP Practice Operation Outcome</a></li> 
+                                <li><a href="StructureDefinition-dh-operationoutcome-core-1.html">ADHA Core OperationOutcome</a></li> 
                             </ul>
                         </td> 
                     </tr>
