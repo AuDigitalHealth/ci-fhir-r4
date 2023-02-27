@@ -22,7 +22,7 @@
             <code value="AU"/>
         </coding>
     </jurisdiction>
-    <copyright value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
     <packageId value="au.digitalhealth.r4"/>
     <license value="Apache-2.0"/>
     <fhirVersion value="4.0.1"/>
@@ -214,6 +214,14 @@
             </reference>
             <name value="ADHA Core Organization"/>
             <description value="The purpose of this profile is to define a core representation of an organisation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. In the context of an exchange of health information an organisation is part of the context established for a set of healthcare-related information."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-operationoutcome-core-1"/>
+            </reference>
+            <name value="ADHA Core OperationOutcome"/>
+            <description value="The purpose of this profile is to define a representation of the outcome of an attempted system operation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -2145,6 +2153,34 @@
             </reference>
             <name value="Urine specimen for Mr Zhang Wei - follow up encounter (2020)"/>
             <exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+        </resource>
+        <!--OPERATIONOUTCOME EXAMPLES-->
+        <resource>
+            <reference>
+                <reference value="OperationOutcome/vpr-04"/>
+            </reference>
+            <name value="Patient not registered for MyGP"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="OperationOutcome/vpr-05"/>
+            </reference>
+            <name value="MyGP functional error"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="OperationOutcome/vpr-06"/>
+            </reference>
+            <name value="Technical error"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-mygp-1"
+            />
         </resource>
                 
         <page>

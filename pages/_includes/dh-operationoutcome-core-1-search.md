@@ -1,0 +1,1 @@
+Below is an overview of the mandatory and optional search parameters. FHIR search operations and the syntax used to describe the interactions is described here.

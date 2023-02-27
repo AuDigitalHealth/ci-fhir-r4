@@ -42,6 +42,7 @@ The following core FHIR profiles are defined in this implementation guide. These
                         <td class="frm-set">
                             <ul class="frm-set">
                                 <li><a href="StructureDefinition-dh-bundle-payload-1.html">ADHA Payload Bundle</a></li>
+                                <li><a href="StructureDefinition-dh-operationoutcome-core-1.html">ADHA Core OperationOutcome</a></li> 
                             </ul>
                         </td>
                     </tr>
