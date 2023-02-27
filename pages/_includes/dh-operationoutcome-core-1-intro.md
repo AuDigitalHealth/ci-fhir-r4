@@ -8,6 +8,3 @@ This profile is designed to set an OperationOutcome standard for:
 #### Boundaries and relationships
 This profile is not referenced by another profile in this implementation guide.  
 
-
-#### Examples
-<a href="OperationOutcome-vpr-04.html">Patient not registered for MyGP</a>, <a href="OperationOutcome-vpr-05.html">MyGP functional error </a>, <a href="OperationOutcome-vpr-06.html">Technical error</a>
