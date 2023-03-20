@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-episodeofcare-mygp-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
-  <version value="0.0.2"/>
+  <version value="0.0.3"/>
   <name value="ADHAEpisodeOfCareMyGP"/>
   <title value="ADHA GP Practice Registration Entry"/>
   <status value="draft"/>
@@ -31,8 +31,8 @@
         <key value="inv-dh-epoc-03"/>
         <severity value="error"/>
         <human value="A patient’s current GP practice shall not have a registration end date"/>
-        <expression value="period.end.empty() xor (status = 'finished')"/>
-        <xpath value="not(f:period.end) or exists(f:status/@value = 'finished')"/>
+        <expression value="(status = 'active') implies period.end.empty()"/>
+        <xpath value="not(exists(f:status/@value = 'active')) or not(f:period.end)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
       </constraint>
     </element>
