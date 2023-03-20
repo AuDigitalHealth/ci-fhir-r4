@@ -19,7 +19,3 @@ This profile is used by the following APIs:
 #### Boundaries and relationships
 This profile is not referenced by another profile in this implementation guide.  
 
-
-#### Examples
-Bundle examples that include an EpisodeOfCare entry conforming to this profile: <a href="Bundle-vpr-01.html">Patient's registered GP practice</a>, <a href="Bundle-vpr-02.html">Patient's registered GP practice and practitioner name</a>, <a href="Bundle-vpr-03.html">History of patient's registered GP practices</a>
-      
