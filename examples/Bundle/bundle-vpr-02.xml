@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="vpr-02"/>
-    <meta>
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-bundle-payload-1"/>
-    </meta>
     <!--Sample design for Voluntary Patient Registration project - patient has a registered GP practice and practitioner-->
     <type value="collection"/>
     <timestamp value="2022-10-28T11:01:00+10:00"/>
@@ -13,7 +10,9 @@
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
                 <meta>
-                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+                    <profile
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"
+                    />
                 </meta>
                 <identifier>
                     <use value="official"/>
@@ -34,13 +33,13 @@
                 </name>
                 <gender value="male"/>
                 <birthDate value="1971-09-24"/>
-                <generalPractitioner> 
-                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/> 
+                <generalPractitioner>
+                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/>
                 </generalPractitioner>
                 <!--Practitioner's name - only if additional data is shared should this be a full PractitionerRole resource-->
-                <generalPractitioner> 
+                <generalPractitioner>
                     <type value="PractitionerRole"/>
-                    <display value="Dr Sophia Yu"/> 
+                    <display value="Dr Sophia Yu"/>
                 </generalPractitioner>
             </Patient>
         </resource>
@@ -52,7 +51,8 @@
             <Organization>
                 <meta>
                     <profile
-                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
+                    />
                 </meta>
                 <type>
                     <coding>
@@ -84,18 +84,20 @@
         <resource>
             <EpisodeOfCare>
                 <meta>
-                    <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
+                    <profile
+                        value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"
+                    />
                 </meta>
                 <!--current represented by status=active-->
-                <status value="active"/> 
+                <status value="active"/>
                 <type>
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="737470001"/>
                         <display value="Primary care management"/>
                     </coding>
-                </type> 
-                <patient> 
+                </type>
+                <patient>
                     <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7715"/>
                     <identifier>
                         <type>
@@ -107,15 +109,15 @@
                         </type>
                         <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
                         <value value="8003608833564727"/>
-                    </identifier> 
-                </patient> 
-                <managingOrganization> 
-                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/> 
-                </managingOrganization> 
+                    </identifier>
+                </patient>
+                <managingOrganization>
+                    <reference value="urn:uuid:cb7921cc-ba17-11ec-833a-b1763b0a7716"/>
+                </managingOrganization>
                 <!--current represented by no period.end-->
-                <period> 
-                    <start value="2021-06-13"/> 
-                </period> 
+                <period>
+                    <start value="2021-06-13"/>
+                </period>
             </EpisodeOfCare>
         </resource>
     </entry>
