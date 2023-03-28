@@ -417,7 +417,7 @@ The name for a StructureDefinition that is an extension **SHALL** be in the form
 
 The title for a StructureDefinition that is an extension **SHALL** be in the form of [human-readable-element-name]:
 
-- [human-readable-use-case] is a business name and **SHALL** have individual words separated by a whitespace
+- [human-readable-element-name] is a business name and **SHALL** have individual words separated by a whitespace
   - **SHALL** use title case
   - **SHALL** be a meaningful element name in the style of the FHIR standard and that conveys the element meaning in the shortest set of words
 
