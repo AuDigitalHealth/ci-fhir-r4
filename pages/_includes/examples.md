@@ -838,14 +838,14 @@
       <td><a href="HealthcareService-mssg-nsw-yerong-paedendo.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-mssg-qld-hospital-radio.html">Metropolitan Specialist Services Group QLD Hospital - Radiololgy services</a></td>
+      <td><a href="HealthcareService-mssg-qld-hospital-radio.html">Metropolitan Specialist Services Group QLD Hospital - Radiology services</a></td>
       <td>mssg-qld-hospital-radio</td>
       <td><a href="HealthcareService-mssg-qld-hospital-radio.xml.html">XML</a></td>
       <td><a href="HealthcareService-mssg-qld-hospital-radio.json.html">JSON</a></td>
       <td><a href="HealthcareService-mssg-qld-hospital-radio.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="HealthcareService-mssg-nsw-hospital-radio.html">Metropolitan Specialist Services Group NSW Hospital - Radiololgy services</a></td>
+      <td><a href="HealthcareService-mssg-nsw-hospital-radio.html">Metropolitan Specialist Services Group NSW Hospital - Radiology services</a></td>
       <td>mssg-nsw-hospital-radio</td>
       <td><a href="HealthcareService-mssg-nsw-hospital-radio.xml.html">XML</a></td>
       <td><a href="HealthcareService-mssg-nsw-hospital-radio.json.html">JSON</a></td>
