@@ -1,10 +1,10 @@
-The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
+The purpose of this profile is to define a representation of GP practice registration information for a patient from MyMedicare for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [EpisodeOfCare](http://hl7.org/fhir/R4/episodeofcare.html) that are supported. 
 
 This profile is designed to set an EpisodeOfCare standard for:
-* Query for a patient's registered GP practice information from MyGP
-* Reading a patient’s registered GP practice information from MyGP
+* Query for a patient's registered GP practice information from MyMedicare
+* Reading a patient’s registered GP practice information from MyMedicare
 
 
 #### Profile specific guidance
