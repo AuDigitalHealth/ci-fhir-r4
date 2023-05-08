@@ -395,11 +395,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-episodeofcare-mygp-1"/>
+                <reference value="StructureDefinition/dh-episodeofcare-mymedicare-1"/>
             </reference>
             <name value="ADHA GP Practice Registration Entry"/>
             <description
-                value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a current entry or a historical entry."/>
+                value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyMedicare for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a current entry or a historical entry."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -4700,7 +4700,7 @@
             <reference>
                 <reference value="OperationOutcome/vpr-04"/>
             </reference>
-            <name value="Patient not registered for MyGP"/>
+            <name value="Patient not registered for MyMedicare"/>
             <exampleCanonical
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-core-1"
             />
@@ -4709,7 +4709,7 @@
             <reference>
                 <reference value="OperationOutcome/vpr-05"/>
             </reference>
-            <name value="MyGP functional error"/>
+            <name value="MyMedicare functional error"/>
             <exampleCanonical
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-core-1"
             />

@@ -1,4 +1,4 @@
-# {{ page.title }}
+# my{{ page.title }}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -561,14 +561,14 @@ See specialised profiles for examples.
      <th colspan="3">Format</th>
    </tr>
    <tr>
-      <td><a href="OperationOutcome-vpr-04.html">Patient not registered for MyGP</a></td>
+      <td><a href="OperationOutcome-vpr-04.html">Patient not registered for MyMedicare</a></td>
       <td>vpr-04</td>
       <td><a href="OperationOutcome-vpr-04.xml.html">XML</a></td>
       <td><a href="OperationOutcome-vpr-04.json.html">JSON</a></td>
       <td><a href="OperationOutcome-vpr-04.ttl.html">Turtle</a></td>
    </tr>
    <tr>
-      <td><a href="OperationOutcome-vpr-05.html">MyGP functional error</a></td>
+      <td><a href="OperationOutcome-vpr-05.html">MyMedicare functional error</a></td>
       <td>vpr-05</td>
       <td><a href="OperationOutcome-vpr-05.xml.html">XML</a></td>
       <td><a href="OperationOutcome-vpr-05.json.html">JSON</a></td>
