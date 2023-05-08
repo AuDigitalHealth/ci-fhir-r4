@@ -11,14 +11,14 @@
 - url: <http://ns.electronichealth.net.au/fhir/ImplementationGuide/au.digitalhealth.r4/1.1.0>
 - Based on FHIR version: 4.0.1
 
-This version is developed for the MyGP project.
+This version is developed for the MyMedicare project.
 
 **Changes in this version**
 
 Added:
-- profile ADHA Payload Bundle [ci-fhir-r4 #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
-- profile ADHA GP Practice Registration Information [ci-fhir-r4 #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
-- profile ADHA Core OperationOutcome [ci-fhir-r4 #153](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA Payload Bundle [ci-fhir-r4 #152](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA GP Practice Registration Information [ci-fhir-r4 #152](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
+- profile ADHA Core OperationOutcome [ci-fhir-r4 #152](https://github.com/AuDigitalHealth/ci-fhir-r4/issues/152)
 
 ---
 

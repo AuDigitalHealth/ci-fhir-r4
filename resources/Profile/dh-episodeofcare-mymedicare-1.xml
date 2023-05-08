@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-episodeofcare-mygp-1"/>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"/>
+  <id value="dh-episodeofcare-mymedicare-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mymedicare-1"/>
   <version value="1.0.0"/>
-  <name value="ADHAEpisodeOfCareMyGP"/>
+  <name value="ADHAEpisodeOfCareMyMedicare"/>
   <title value="ADHA GP Practice Registration Entry"/>
   <status value="active"/>
   <experimental value="false"/>
@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description
-    value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyGP for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+    value="The purpose of this profile is to define a representation of GP practice registration information for a patient from MyMedicare for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright
     value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
   <fhirVersion value="4.0.1"/>
@@ -29,14 +29,14 @@
       <path value="EpisodeOfCare"/>
       <short value="GP practice registration information"/>
       <definition
-        value="Information about a GP practice that is or has been registered for the patient in the MyGP system."/>
+        value="Information about a GP practice that is or has been registered for the patient in the MyMedicare system."/>
       <constraint>
         <key value="inv-dh-epoc-03"/>
         <severity value="error"/>
         <human value="A patient’s current GP practice shall not have a registration end date"/>
         <expression value="(status = 'active') implies period.end.empty()"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mymedicare-1"
         />
       </constraint>
     </element>
@@ -87,7 +87,7 @@
           value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mymedicare-1"
         />
       </constraint>
       <mustSupport value="true"/>
@@ -111,7 +111,7 @@
           value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
         <xpath value="exists(f:reference) or exists(f:identifier)"/>
         <source
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mygp-1"
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mymedicare-1"
         />
       </constraint>
       <mustSupport value="true"/>
@@ -119,7 +119,7 @@
     <element id="EpisodeOfCare.period">
       <path value="EpisodeOfCare.period"/>
       <comment
-        value="In the context of a MyGP registration, a patient's current registered GP practice will only have period.start. A historical entry will have both period.start and period.end."/>
+        value="In the context of a MyMedicare registration, a patient's current registered GP practice will only have period.start. A historical entry will have both period.start and period.end."/>
       <min value="1"/>
       <mustSupport value="true"/>
     </element>

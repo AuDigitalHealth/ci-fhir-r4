@@ -24,7 +24,7 @@
             "examples/MedicationRequest",
             "examples/Observation",
             "examples/Organization",
-             "examples/OperationOutcome",
+            "examples/OperationOutcome",
             "examples/Patient",
             "examples/Practitioner",
             "examples/PractitionerRole",
@@ -38,16 +38,14 @@
         "txCache": "txCache"
     },
     "sct-edition": "http://snomed.info/sct/32506021000036107",
-    "special-urls": [
-        "http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration"
-    ],
+    "special-urls": ["http://ns.electronichealth.net.au/ci/fhir/StructureDefinition/extension-dateinitialregistration"],
     "extraTemplates": [
         "mappings",
         "examples"
     ],
     "source": "dh-ig-1.xml",
     "npm-name": "au.digitalhealth.r4",
-    "jurisdiction" : "AU",
+    "jurisdiction": "AU",
     "tool": "jekyll",
     "suppressedWarningFile": "ignoreWarnings.txt",
     "license": "Apache-2.0",
@@ -199,7 +197,7 @@
             "template-base": "ex.html",
             "template-format": "ex-format.html"
         },
-         "MedicationDispense": {
+        "MedicationDispense": {
             "template-base": "ex.html",
             "template-format": "ex-format.html"
         },
@@ -290,9 +288,9 @@
             "base": "StructureDefinition-dh-encounter-core-1.html",
             "defns": "StructureDefinition-dh-encounter-core-1-definitions.html"
         },
-        "StructureDefinition/dh-episodeofcare-mygp-1": {
-            "base": "StructureDefinition-dh-episodeofcare-mygp-1.html",
-            "defns": "StructureDefinition-dh-episodeofcare-mygp-1-definitions.html"
+        "StructureDefinition/dh-episodeofcare-mymedicare-1": {
+            "base": "StructureDefinition-dh-episodeofcare-mymedicare-1.html",
+            "defns": "StructureDefinition-dh-episodeofcare-mymedicare-1-definitions.html"
         },
         "StructureDefinition/dh-explanationofbenefit-medicare-mbs-1": {
             "base": "StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html",
@@ -361,7 +359,7 @@
         "StructureDefinition/dh-practitionerrole-author-1": {
             "base": "StructureDefinition-dh-practitionerrole-author-1.html",
             "defns": "StructureDefinition-dh-practitionerrole-author-1-definitions.html"
-       },
+        },
         "StructureDefinition/dh-practitionerrole-core-1": {
             "base": "StructureDefinition-dh-practitionerrole-core-1.html",
             "defns": "StructureDefinition-dh-practitionerrole-core-1-definitions.html"
