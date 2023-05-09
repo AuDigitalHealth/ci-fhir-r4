@@ -19,7 +19,7 @@ Release 1.1.0 of this guide is limited to the FHIR conformance artefacts (i.e. [
 - Australian Organ Donor Register (AODR) information
 - Pharmaceutical Benefits Scheme (PBS) / Repatriation Pharmaceutical Benefits Scheme (RPBS) claims information
 - Medicare Benefits Schedule (MBS) / Department of Veterans' Affairs (DVA) claims information
-- MyGP registered practice information
+- MyMedicare registered practice information
 
 The FHIR conformance artefacts are published in a FHIR NPM package for use with FHIR and FHIR-aware tools. 
 
