@@ -15,7 +15,7 @@ To support an ADHA profile:
 - systems **SHALL** be able to populate all profile data elements that are mandatory and/or labelled MustSupport as defined by that profile’s StructureDefinition according to the section on [Must support](conformance.html#must-support)
   - systems **SHALL** support all referenced profiles necessary to implement this profile
   - meta.profile **MAY** be populated in a resource to indicate the set of profiles a resource is declared to conform to 
-- systems **SHOUD** declare conformance with the profile(s) by specifying the full capability details for that profile it claims to implement by
+- systems **SHOULD** declare conformance with the profile(s) by specifying the full capability details for that profile it claims to implement by
   - including its official URL in the server’s `CapabilityStatement.rest.resource.supportedProfile` element 
   - listing the supported FHIR RESTful transactions
 - systems **SHALL NOT** conform to a Core profile where a more specific profile is applicable
