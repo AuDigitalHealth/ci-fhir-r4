@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-media-core-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
+  <version value="0.0.4"/>
+  <name value="ADHAMediaCore"/>
+  <title value="ADHA Core Media"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="The purpose of this profile is to provide a core representation of a media observation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Media"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Media"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Media">
+      <path value="Media"/>
+      <constraint>
+        <key value="inv-dh-media-02"/>
+        <severity value="error"/>
+        <human value="If present, an operator shall at least have a reference, an identifier or a display"/>
+        <expression value="operator.exists() implies operator.all($this.reference.exists() or $this.identifier.exists() or $this.display.exists())"/>
+        <xpath value="not(exists(f:operator)) or exists(f:operator/f:reference) or exists(f:operator/f:identifier) or exists(f:operator/f:display)"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
+      </constraint>
+    </element>
+    <element id="Media.identifier">
+      <path value="Media.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.status">
+      <path value="Media.status"/>
+      <patternCode value="completed"/>
+    </element>
+    <element id="Media.type">
+      <path value="Media.type"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.modality">
+      <path value="Media.modality"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.subject">
+      <path value="Media.subject"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+      </type>
+      <condition value="inv-dh-media-01"/>
+      <constraint>
+        <key value="inv-dh-media-01"/>
+        <severity value="error"/>
+        <human value="At least reference or a valid identifier shall be present"/>
+        <expression value="reference.exists() or identifier.where(system.count() + value.count() &gt;1).exists()"/>
+        <xpath value="exists(f:reference) or exists(f:identifier)"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
+      </constraint>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.created">
+      <path value="Media.created[x]"/>
+      <min value="1"/>
+      <condition value="inv-dh-media-03"/>
+      <constraint>
+        <key value="inv-dh-media-03"/>
+        <severity value="error"/>
+        <human value="Date shall be at least to day"/>
+        <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
+        <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-media-core-1"/>
+      </constraint>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.issued">
+      <path value="Media.issued"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.operator">
+      <path value="Media.operator"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-device-system-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
+      </type>
+      <condition value="inv-dh-media-02"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.content">
+      <path value="Media.content"/>
+      <comment value="Recommended content types: image/jpeg, image/png, image/tiff, video/mpeg, audio/mp4, application/dicom. Application/dicom can contain the transfer syntax as a parameter.  For media that covers a period of time (video/sound), the content.creationTime is the end time. Creation time is used for tracking, organizing versions and searching. &#xa;&#xa; The set of MIME types allowed as attachments in the My Health Record system may be limited to: image/jpeg, image/png, image/tiff, image/gif, application/pdf."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Media.note">
+      <path value="Media.note"/>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

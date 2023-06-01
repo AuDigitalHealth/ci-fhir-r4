@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="ophthalmologist"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1" />
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NPI"/>
+                <display value="National provider identifier"/>
+            </coding>
+            <text value="HPI-I"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+        <value value="8003618233375103"/>
+    </identifier>
+    <!--<practitioner>
+        <reference value="urn:uuid:567dec38-0a98-441e-9de2-ba1e8688dcc4"/>
+    </practitioner>-->
+    <organization>
+        <reference value="Organization/ophthalmology-clinic"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="422234006"/>
+            <display value="Ophthalmologist"/>
+        </coding>
+    </code>
+    <telecom>
+        <system value="phone"/>
+        <value value="(07) 5550 1234"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="contact@eyetest.example.com"/>
+    </telecom>
+</PractitionerRole>
