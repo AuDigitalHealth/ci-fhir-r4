@@ -1,10 +1,3 @@
-{{ page.title }}
-{:.no_toc}
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-
 ### Business identifiers
 
 ["Business" identifiers](http://hl7.org/fhir/R4/resource.html#identifiers) are used extensively in ADHA profiles to consistently identify real world entities across systems, contexts of use, and other formats (e.g. HL7 v2 , CDA , XDS, and many more). 

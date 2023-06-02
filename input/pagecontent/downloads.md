@@ -1,5 +1,3 @@
-{{ page.title }}
-
 ### Downloadable copy of entire specification
 
 A downloadable version of the entire implementation guide is available so it can be hosted locally:
