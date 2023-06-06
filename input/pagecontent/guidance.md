@@ -150,7 +150,7 @@ All Australian addresses **SHOULD** conform to the [Australian Address](http://b
 *TBD: Insert guidance.*
 
 
-## References between resources
+### References between resources
 
 References between resources in ADHA profiles are supported as reference (literal reference), identifier (logical reference), and display (text description of target). 
 
