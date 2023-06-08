@@ -78,7 +78,7 @@ The following basePaths are to be used for national services:
 
 
 
-### Identification
+#### Identification
 
 > **ADHA-FHIR-IDENT-01** At least one well formed patient identifier **SHALL** be provided
 
@@ -139,7 +139,7 @@ ADHA FHIR conformance resources may be one of:
 - [StructureMap](http://hl7.org/fhir/structuremap.html)
 
 
-### Canonical identifiers (URI)
+#### Canonical identifiers (URI)
 
 FHIR conformance resources are identified by a canonical identifier that is a globally unique URI. 
 
@@ -307,7 +307,7 @@ Example: StructureDefinition resource that is an extension
 Important Note: An exception to this policy has been accepted for the extension [Date of Initial Registration](StructureDefinition-dh-date-initial-registration-1.html) first implemented in 2018 in FHIR 3.0.1.
 
 
-### Naming
+#### Naming
 
 In order to promote consistency and make it easier for implementers to locate suitable profiles, extensions, etc, for their projects, a naming policy has been adopted.
 
@@ -428,7 +428,7 @@ Example: StructureDefinition resource that is an extension
 ~~~  
 
 
-### Versioning
+#### Versioning
 
 The version policy follows [Semantic versioning](http://semver.org/) with some changes to account for a publication and not a software release.
 
@@ -477,7 +477,7 @@ In order to promote consistency and easy of maintenance the definition of change
 Examples provided as part of a publication are never treated as normative or substantive. While every effort is made to ensure that example resources are correct, changes to the examples in a publication or NPM package **SHALL** be considered non-substantive.
 
 
-### Publication
+#### Publication
 
 An ADHA FHIR conformance resource for public implementation **SHALL** be published in a public implementation guide and an NPM package. The latest release of a publication **SHALL** be published at a fully versioned URL and a non-versioned URL (see the section Publication URLs below).
 
