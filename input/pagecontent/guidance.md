@@ -354,7 +354,7 @@ These data elements may be supported as coded, or text, and systems are likely t
       - branded item form and strength = `code.coding` with [Medication Type extension](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-medication-type.html) using `BPDSF` from the [Medication Type code system](http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html)
    - If the resource is a Medication resource:
       - form and strength are also provided in `form`, `ingredient.itemCodeableConcept` and `ingredient.strength`
-      - manufacturer = `manufacturer.identifer`
+      - manufacturer = `manufacturer.identifier`
 
     Example: Medication with coded brand name, generic name, manufacturer, item form and strength
     ~~~
