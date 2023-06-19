@@ -8,10 +8,6 @@ This profile is designed to set a Composition standard for:
 * Query for an Advance Care Custodian Record document for a patient
 * Record of update an Advance Care Custodian Record document for a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
-
 
 ### Profile specific guidance
 None.

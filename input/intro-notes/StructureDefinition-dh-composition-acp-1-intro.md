@@ -10,10 +10,6 @@ This profile is designed to set a Composition standard for:
 * Record or update a advance care planning document composition belonging to a patient
 * Record of update a Goals of Care document for a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
-
-
 ### Profile specific guidance
 None.
 
