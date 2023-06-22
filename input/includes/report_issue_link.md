@@ -1,0 +1,1 @@
+<a style="color: var(--footer-hyperlink-text-color); font-size: 12px; font-family: verdana" target="_blank" href="https://github.com/AuDigitalHealth/ci-fhir-r4/issues/new/choose">Report an issue or propose a change</a>
