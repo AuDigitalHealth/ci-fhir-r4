@@ -8,8 +8,7 @@ This profile is designed to set a ServiceRequest standard for:
 
 Operations, including querying, on service items in MBS or DVA claims (ServiceRequest resource) are expected to be within the context of an ExplanationOfBenefit resource query.
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

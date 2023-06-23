@@ -6,8 +6,7 @@ This profile is designed to set a DiagnosticReport standard for:
 * Query for pathology reports for a patient
 * Record or update pathology reports belonging to a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

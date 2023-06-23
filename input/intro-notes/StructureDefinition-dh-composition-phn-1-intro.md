@@ -8,6 +8,8 @@ This profile is designed to set a Composition standard for:
 * Query for a Personal Health Notes document for a patient
 * Record or update a Personal Health Notes document for a patient
 
+This profile may be referred to by APIs, which will be listed here when available.
+
 
 ### Profile specific guidance
 None.

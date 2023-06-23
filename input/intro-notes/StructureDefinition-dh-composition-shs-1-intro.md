@@ -8,7 +8,14 @@ This profile is designed to set a Composition standard for:
 * Query for a Shared Health Summary document for a patient
 * Record or update a Shared Health Summary document for a patient
 
+This profile may be referred to by APIs, which will be listed here when available.
 
 ### Profile specific guidance
 None.
+
+
+### Boundaries and relationships
+This profile is not referenced by another profile in this implementation guide.  
+
+This profile ([ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html)) is a specialised use case profile of an [ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html).
 

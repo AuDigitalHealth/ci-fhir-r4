@@ -6,8 +6,7 @@ This profile is designed to set a core Specimen standard for:
 * Querying specimens referenced in Observation resources
 * Recording or updating a specimen referenced by an Observation resource
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

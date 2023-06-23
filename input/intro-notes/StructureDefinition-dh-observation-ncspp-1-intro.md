@@ -8,8 +8,7 @@ This profile is designed to set an Observation standard for:
 * Record or update a national bowel cancer screening program participation observation for a patient
 * Record or update a national cervical cancer screening program participation observation for a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

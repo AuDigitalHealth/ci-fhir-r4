@@ -8,6 +8,8 @@ This profile is designed to set a Composition standard for:
 * Query for an Advance Care Custodian Record document for a patient
 * Record of update an Advance Care Custodian Record document for a patient
 
+This profile may be referred to by APIs, which will be listed here when available.
+
 
 ### Profile specific guidance
 None.

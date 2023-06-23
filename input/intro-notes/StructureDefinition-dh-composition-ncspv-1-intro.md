@@ -8,6 +8,9 @@ This profile is designed to set a Composition standard for:
 * Query for a National Cancer Program Participation View for a patient
 * Record or update a National Cancer Program Participation View for a patient
 
+This profile may be referred to by APIs, which will be listed here when available.
+
+
 ### Profile specific guidance
 - This profile supports a view of the information held about an individual's participation in one or more national cancer screening program at a point in time.
   - It is generated in response to a request if a system holds information about a program for an individual.

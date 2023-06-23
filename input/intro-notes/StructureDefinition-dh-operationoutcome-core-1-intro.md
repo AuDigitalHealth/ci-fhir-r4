@@ -5,8 +5,7 @@ This profile identifies the additional constraints, extensions, and value sets t
 This profile is designed to set an OperationOutcome standard for:
 * all FHIR system responses 
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Boundaries and relationships

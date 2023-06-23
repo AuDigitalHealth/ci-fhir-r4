@@ -6,8 +6,7 @@ This profile is designed to set a Patient standard:
 * for checking patient identity
 * matching a patient against a Master Patient Index (MPI) 
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Boundaries and relationships

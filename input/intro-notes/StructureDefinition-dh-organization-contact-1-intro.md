@@ -9,8 +9,7 @@ This profile is designed to set an Organization standard for:
 * Recording or updating an organisation with contect information referenced by another resource
 * Reading organisations with contact information referenced by another resource
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

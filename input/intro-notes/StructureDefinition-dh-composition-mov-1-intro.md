@@ -7,6 +7,8 @@ This profile supports the equivalent of a HL7 CDA instance with a Level 2, Level
 This profile is designed to set a Composition standard for:
 * Query for a Medicare Overview document for a patient
 
+This profile may be referred to by APIs, which will be listed here when available.
+
 
 ### Profile specific guidance
 - A narrative only Medicare Overview (Level 2) is supplied by populating section.text for each section but not populating any section.entry or section.emptyReason.

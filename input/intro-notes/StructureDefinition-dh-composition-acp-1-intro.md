@@ -10,6 +10,9 @@ This profile is designed to set a Composition standard for:
 * Record or update a advance care planning document composition belonging to a patient
 * Record of update a Goals of Care document for a patient
 
+This profile may be referred to by APIs, which will be listed here when available.
+
+
 ### Profile specific guidance
 None.
 

@@ -9,8 +9,7 @@ This profile is designed to set a RelatedPerson standard:
 * Recording or updating a related person referenced by another resource in the context of the MHR system
 * Reading related persons referenced by another resource in the context of the MHR system
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 ### Profile specific guidance
 - See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance

@@ -6,8 +6,7 @@ This profile is designed to set a Patient standard:
 * Querying for records associated with a patient in the My Health Record infrastructure
 * Record or update a record associated with a patient in the My Health Record system infrastructure
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

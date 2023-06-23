@@ -8,8 +8,7 @@ This profile is designed to set a core DocumentReference standard for:
 * Query for a generic document reference for a patient
 * Record or update a generic document reference belonging to a patient
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

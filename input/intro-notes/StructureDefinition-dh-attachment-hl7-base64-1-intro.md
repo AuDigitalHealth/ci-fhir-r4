@@ -1,7 +1,6 @@
 This extension applies to any resource and is provided. It is used to provide an alternate HL7 format of the content represented by the associated FHIR Resource it is sent as an attachment with. The data is represented directly inline, base64 encoded.
 
-This extension is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

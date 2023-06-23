@@ -9,7 +9,8 @@ This profile is designed to set a core BodyStructure standard for:
 * Reading body structures
 
 Operations, including querying, on body structures are expected to be within the context of another resource query.
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance

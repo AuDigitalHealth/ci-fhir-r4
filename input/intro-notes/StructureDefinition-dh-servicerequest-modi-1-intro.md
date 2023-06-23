@@ -6,8 +6,7 @@ This profile is designed to:
 * Query for a request for a diagnostic imaging service associated with a patient as part of the MODI proof of concept
 * Record or update a request for a diagnostic imaging service associated with a patient as part of the MODI proof of concept
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 NOTE: Must support to be defined handled by MODI documentation.
 

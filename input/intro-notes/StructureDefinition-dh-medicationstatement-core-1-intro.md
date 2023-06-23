@@ -6,8 +6,7 @@ This profile is designed to set a core MedicationStatement standard in the conte
 * Querying a patient's medications (current and historical)
 * Recording or updating a record of a medication the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future
 
-This profile is used by the following APIs:
-* [insert API endpoint](StructureDefinition-TBD-1.html)
+This profile may be referred to by APIs, which will be listed here when available.
 
 
 ### Profile specific guidance
