@@ -1,5 +1,3 @@
-The purpose of this profile is to provide a core representation of a flag (e.g. warning or notification) for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
-
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Flag](http://hl7.org/fhir/R4/flag.html) that are supported. 
 
 Where a more specific Flag profile is applicable, e.g. AIR notice, an implementation **SHALL** ensure the resource conforms to that specific profile.

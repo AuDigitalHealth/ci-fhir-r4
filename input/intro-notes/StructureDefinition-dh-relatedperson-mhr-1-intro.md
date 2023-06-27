@@ -1,4 +1,3 @@
-The purpose of this profile is to define a representation of a related person for exchange usage scenarios with the My Health Record system infrastructure in Australia.
 In the context of an exchange of health information a related person is part of the context established for a set of healthcare-related information.
 
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [RelatedPerson](http://hl7.org/fhir/R4/relatedperson.html) that are supported. 

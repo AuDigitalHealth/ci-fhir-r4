@@ -1,6 +1,3 @@
-### ADHA HL7 V2 as Base64
-This extension applies to the [ServiceRequest](https://www.hl7.org/fhir/servicerequest.html) resource and is provided for use in the MODI proof of concept. It is used to provide an alternate HL7 V2 format of the Order represented by the associated ServiceRequest as a data directly inline, base64 encoded.
-
 This profile may be referred to by APIs, which will be listed here when available.
 
 
