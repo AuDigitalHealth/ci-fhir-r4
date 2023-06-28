@@ -16,9 +16,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 ### Profile specific guidance
 None.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Prescription and or Dispense History Composition](StructureDefinition-dh-composition-pdl-1.html). 
-
- 

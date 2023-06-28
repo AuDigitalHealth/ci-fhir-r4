@@ -11,10 +11,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 ### Profile specific guidance
 None.
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Core Observation](StructureDefinition-dh-observation-core-1.html), and 
-[ADHA Pathology Result Observation](StructureDefinition-dh-observation-diagnosticresult-path-1.html). 

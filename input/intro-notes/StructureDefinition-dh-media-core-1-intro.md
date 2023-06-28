@@ -12,8 +12,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 ### Profile specific guidance
 - When generated during a diagnostic examination a Media resource may contain the same identifier in `Media.identifier` as in the order or report connecting the resources that are related to a single request fulfilment workflow.
 
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html). 

@@ -16,16 +16,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 ### Profile specific guidance
 - See the [Medicine information](guidance.html#medicine-information) section for guidance on constructing a resource and the use of medicines terminology.
 - Manufacturer information will commonly be exchanged as a PBS code, this information can be represented as an external resource of by using `Medication.manufacturer.identifier` to carry the PBS code and `Medication.manufacturer.display` to carry the name of the manufacturer.
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
-[ADHA Core MedicationAdministration](StructureDefinition-dh-medicationadministration-core-1.html),
-[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html), 
-[ADHA Dispense Record](StructureDefinition-dh-medicationdispense-disp-1.html),
-[ADHA Core MedicationRequest](StructureDefinition-dh-medicationrequest-core-1.html), 
-[ADHA PBS Prescription Claim Item](StructureDefinition-dh-medicationrequest-pbs-claim-1.html), 
-[ADHA Prescription](StructureDefinition-dh-medicationrequest-pres-1.html), and 
-[ADHA Core MedicationStatement](StructureDefinition-dh-medicationstatement-core-1.html).

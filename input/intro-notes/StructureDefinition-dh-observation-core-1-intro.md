@@ -15,11 +15,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 - `Observation.category` provides an efficient way of supporting system interactions, e.g. restricting searches. Implementers need to understand that data categorisation is somewhat subjective. The categorisation applied by the source may not align with a receiver’s expectations.
 - Antenatal observations will represent the pregnant individual as `Observation.subject` and the fetus as `Observation.focus`.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
-[ADHA Core List](StructureDefinition-dh-list-core-1.html), 
-[ADHA Core Procedure](StructureDefinition-dh-procedure-core-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).

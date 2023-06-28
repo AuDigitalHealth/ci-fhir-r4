@@ -16,7 +16,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
   - Although both are marked as must support, sending systems are not required to support both a text and a set of codes, but they **SHALL** support *at least one* of these elements.
   - A receiving or persisting system **SHALL** support both elements.
 
-
-### Boundaries and relationships
-This profile is referenced by  
-[ADHA Discharge Report Composition](StructureDefinition-dh-composition-dr-1.html). 

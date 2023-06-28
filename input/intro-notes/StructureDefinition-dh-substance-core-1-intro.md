@@ -14,8 +14,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 ### Profile specific guidance
 None.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html) and 
-[ADHA Core Medication](StructureDefinition-dh-medication-core-1.html). 

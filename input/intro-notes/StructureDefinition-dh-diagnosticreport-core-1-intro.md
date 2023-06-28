@@ -24,12 +24,5 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 
 ### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
-[ADHA Discharge Report Composition](StructureDefinition-dh-composition-dr-1.html), 
-[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), and 
-[ADHA Core ServiceRequest](StructureDefinition-dh-servicerequest-core-1.html).
-
 These profiles build on this profile ([ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html)) to define specific roles:
 * [ADHA Pathology Report](StructureDefinition-dh-diagnosticreport-path-1.html)

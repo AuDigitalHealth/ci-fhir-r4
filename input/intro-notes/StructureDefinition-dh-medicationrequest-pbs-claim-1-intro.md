@@ -13,7 +13,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 ### Profile specific guidance
 None.
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Record of Claim against PBS or RPBS](StructureDefinition-dh-explanationofbenefit-medicare-pbs-1.html).

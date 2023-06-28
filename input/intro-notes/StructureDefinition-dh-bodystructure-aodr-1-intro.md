@@ -13,8 +13,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 ### Profile specific guidance
 None.
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Record of Consent from Australian Organ Donor Register](StructureDefinition-dh-consent-aodr-1.html).

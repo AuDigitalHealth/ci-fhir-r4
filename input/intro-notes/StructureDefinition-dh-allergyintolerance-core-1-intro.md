@@ -16,18 +16,4 @@ This profile may be referred to by APIs, which will be listed here when availabl
 - Where only substance is known (e.g. 111088007 \|Latex\|) and not a statement of allergy or intolerance (e.g. 300916003 \|Allergy to latex\|), the substance will be sent in `AllergyIntolerance.code` and optionally in `AllergyIntolerance.reaction.substance`.
 
 
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html), 
-[ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), 
-[ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
-[ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html), 
-[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
-[ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html), 
-[ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html), 
-[ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html), and
-[ADHA Shared Medicines List Composition](StructureDefinition-dh-composition-sml-1.html). 
-
-
 

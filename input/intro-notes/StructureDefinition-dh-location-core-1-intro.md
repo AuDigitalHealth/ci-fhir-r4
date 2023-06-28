@@ -12,16 +12,3 @@ This profile is designed to set a core Location standard for:
 
 ### Profile specific guidance
 None.
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Participant Device](StructureDefinition-dh-device-participant-1.html), 
-[ADHA Core Encounter](StructureDefinition-dh-encounter-core-1.html), 
-[ADHA Core Flag](StructureDefinition-dh-flag-core-1.html), 
-[ADHA Core HealthcareService](StructureDefinition-dh-healthcareservice-core-1.html), 
-[ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-1.html),
-[ADHA Authoring PractitionerRole](StructureDefinition-dh-practitionerrole-author-1.html), 
-[ADHA Authoring Care Agency Employee](StructureDefinition-dh-practitionerrole-author-cae-1.html), and
-[ADHA Core PractitionerRole](StructureDefinition-dh-practitionerrole-core-1.html).

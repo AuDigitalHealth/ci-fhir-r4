@@ -15,7 +15,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 - See the [Representing communication preferences](guidance.html#representing-communication-preferences) section for guidance.
 - A patient's biological sex is a separate Observation resource, e.g. biological sex assigned at birth conforms to [AU Sex Assigned At Birth](http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-sexassignedatbirth.html).
 
-
-### Boundaries and relationships
-This profile is referenced by
-[ADHA My Health Record RelatedPerson](StructureDefinition-dh-relatedperson-mhr-1.html).
