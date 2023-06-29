@@ -10,8 +10,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 ### Profile specific guidance
 None.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Pharmacist Shared Medicines List Composition](StructureDefinition-dh-composition-psml-1.html).
-

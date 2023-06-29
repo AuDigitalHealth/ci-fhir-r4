@@ -11,8 +11,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 ### Profile specific guidance
 None.
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Record of Claim against MBS or DVA](StructureDefinition-dh-explanationofbenefit-medicare-mbs-1.html).

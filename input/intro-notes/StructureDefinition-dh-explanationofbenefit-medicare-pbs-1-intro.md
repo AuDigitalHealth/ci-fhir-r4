@@ -9,9 +9,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 ### Profile specific guidance
 - In an exchange with the My Health Record system references to a MedicationRequest resource will be [contained](http://hl7.org/fhir/R4/references.html#contained).
-
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Medicare Overview Composition](StructureDefinition-dh-composition-mov-1.html).
-

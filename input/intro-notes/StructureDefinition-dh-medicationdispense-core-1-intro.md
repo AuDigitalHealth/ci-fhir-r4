@@ -16,8 +16,5 @@ This profile may be referred to by APIs, which will be listed here when availabl
 
 
 ### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html).
-
 These profiles build on this profile ([ADHA Core MedicationDispense](StructureDefinition-dh-medicationdispense-core-1.html)) to define specific roles:
 * [ADHA Dispense Record](StructureDefinition-dh-medicationdispense-disp-1.html)

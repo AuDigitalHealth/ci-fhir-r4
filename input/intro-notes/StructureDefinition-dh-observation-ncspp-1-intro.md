@@ -70,6 +70,4 @@ Mapping from the participant status value domain to the concepts in the <a href=
 </table>
 
 
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA National Cancer Screening Program Participation View](StructureDefinition-dh-composition-ncspv-1.html). 
+

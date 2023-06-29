@@ -14,13 +14,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
   - A receiving or persisting system **SHALL** support both elements.
 - `Observation.identifier` may contain the same identifier as in the order or report connecting the resources that are related to a single request fulfilment workflow.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Aged Care Transfer Summary Composition](StructureDefinition-dh-composition-acts-1.html), 
-[ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), 
-[ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
-[ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html), 
-[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
-[ADHA Core DiagnosticReport](StructureDefinition-dh-diagnosticreport-core-1.html), and 
-[ADHA Pathology Report](StructureDefinition-dh-diagnosticreport-path-1.html).

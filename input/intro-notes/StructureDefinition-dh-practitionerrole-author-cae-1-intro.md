@@ -13,9 +13,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 ### Profile specific guidance
 None.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Personal Health Notes Composition](StructureDefinition-dh-composition-phn-1.html), 
-[ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html), and 
-[ADHA Personal Observations Composition](StructureDefinition-dh-composition-po-1.html). 

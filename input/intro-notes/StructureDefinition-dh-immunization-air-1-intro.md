@@ -11,6 +11,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 None.
 
 
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Medicare Overview Composition](StructureDefinition-dh-composition-mov-1.html).

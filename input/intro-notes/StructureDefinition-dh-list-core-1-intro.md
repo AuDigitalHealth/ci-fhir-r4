@@ -14,9 +14,6 @@ None.
 
 
 ### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html). 
-
 These profiles build on this profile ([ADHA Core List](StructureDefinition-dh-list-core-1.html)) to define specific lists:
 * [ADHA Immunisation History List](StructureDefinition-dh-list-immunization-1.html)
 * [ADHA Medication Use List](StructureDefinition-dh-list-medication-use-1.html) 

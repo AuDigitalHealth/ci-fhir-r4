@@ -12,15 +12,3 @@ This profile may be referred to by APIs, which will be listed here when availabl
 - MedicationStatement resources can represent a medication using either a code, or reference a [Medication](http://hl7.org/fhir/R4/medication.html) resource.
   - When referencing a Medication resource, it is preferred the resource is [contained](http://hl7.org/fhir/R4/references.html#contained) but it may be an external resource.
 
-
-### Boundaries and relationships
-This profile is referenced by 
-[ADHA Core Bundle](StructureDefinition-dh-bundle-core-1.html), 
-[ADHA Continuity of Care Summary Composition](StructureDefinition-dh-composition-cocs-1.html), 
-[ADHA Discharge Summary Composition](StructureDefinition-dh-composition-ds-1.html), 
-[ADHA Event Summary Composition](StructureDefinition-dh-composition-es-1.html), 
-[ADHA Event Summary Mixed Narrative and Structure](StructureDefinition-dh-composition-es-mix-1.html), 
-[ADHA Personal Health Summary Composition](StructureDefinition-dh-composition-phs-1.html),
-[ADHA Shared Health Summary Composition](StructureDefinition-dh-composition-shs-1.html),
-[ADHA Medication Use List](StructureDefinition-dh-list-medication-use-1.html), and
-[ADHA Practitioner Medicine Review List](StructureDefinition-dh-list-medication-use-pmr-1.html).
