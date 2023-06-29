@@ -1,4 +1,4 @@
-# myg{{ page.title }}
+# {{ page.title }}
 {:.no_toc}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
