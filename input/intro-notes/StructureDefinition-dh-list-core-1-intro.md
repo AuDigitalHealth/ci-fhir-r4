@@ -1,5 +1,3 @@
-The purpose of this profile is to provide a core representation of a list for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
-
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [List](http://hl7.org/fhir/R4/list.html) that are supported. 
 
 Where a more specific List profile is applicable, e.g. prescription or dispense history list, an implementation **SHALL** ensure the resource conforms to that specific profile.

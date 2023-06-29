@@ -1,6 +1,3 @@
-### ADHA Prescription and or Dispense History List
-The purpose of this profile is to define a representation of list that describes a patient's prescription and/or dispense history for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This profile supports a prescription list, or a dispense list, or a mixed list of prescription and dispense records for a patient. The list may be partial, or complete, and may be a full history or scoped to an active script list.
-
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [List](http://hl7.org/fhir/R4/list.html) that are supported. 
 
 This profile is designed to set a List standard for:

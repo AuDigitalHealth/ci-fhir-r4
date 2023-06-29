@@ -1,5 +1,3 @@
-The purpose of this profile is to provide a representation of a diagnostic result observation made during a diagnostic investigation for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia.
-
 This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
 Where a more specific Observation profile is applicable, e.g. pathology result observation or imaging result observation, an implementation **SHALL** ensure the resource conforms to that specific profile.
