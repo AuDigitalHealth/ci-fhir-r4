@@ -5321,14 +5321,6 @@
             <value value="input/examples"/>
         </parameter>
         <parameter>
-            <code value="apply-copyright"/>
-            <value value="false"/>
-        </parameter>
-        <parameter>
-            <code value="default-copyright"/>
-            <value value="true"/>
-        </parameter>
-        <parameter>
             <code value="path-pages"/>
             <value value="input/intro-notes"/>
         </parameter>
@@ -5348,13 +5340,28 @@
             <code value="show-inherited-invariants"/>
             <value value="false"/>
         </parameter>
+        <!-- default value is true -->
+        <!-- ImplementationGuide.contact value is propagated to generated StructureDefinition.contact -->
         <parameter>
             <code value="apply-contact"/>
             <value value="true"/>
-        </parameter>
+        </parameter>  
+        <!-- default value is true -->
+        <!-- ImplementationGuide.version value is NOT globally propagated to generated StructureDefinition.version-->
         <parameter>
             <code value="apply-version"/>
             <value value="false"/>
+        </parameter>
+        <!-- default value is true -->
+        <!-- ImplementationGuide.copyright value is NOT globally propagated to generated StructureDefinition.copyright -->
+        <parameter>
+            <code value="apply-copyright"/>
+            <value value="false"/>
+        </parameter>
+        <!-- ImplementationGuide.copyright value is propagated to generated StructureDefinition.copyright only when one is empty -->
+        <parameter>
+            <code value="default-copyright"/>
+            <value value="true"/>
         </parameter>
         <parameter>
             <code value="excludemap"/>
