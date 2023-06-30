@@ -5308,73 +5308,120 @@
                 <generation value="markdown"/>
             </page>
         </page>
+
+        <!-- PARAMETER VALUES -->
+        <!-- refer to master list http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html -->
+
+        <!-- The copyright year text to include in the IG footer -->
         <parameter>
             <code value="copyrightyear"/>
             <value value="2023+"/>
         </parameter>
+
+        <!-- Relative path to a location in the IG repository from which to load resources -->
+        <!-- As the path ends in /*, then include all resource sub-folders -->
         <parameter>
             <code value="path-resource"/>
             <value value="input/resources/*"/>
         </parameter>
+
+        <!-- Relative path to a location in the IG repository from which to load example resources -->
         <parameter>
             <code value="path-resource"/>
             <value value="input/examples"/>
         </parameter>
+
+        <!-- Relative path in which profile pages (intro and notes) are found -->
         <parameter>
             <code value="path-pages"/>
             <value value="input/intro-notes"/>
         </parameter>
+
+        <!-- Relative path in which main menu pages are found -->
         <parameter>
             <code value="path-pages"/>
             <value value="input/pagecontent"/>
         </parameter>
+
+        <!-- Relative path in which various pages that are shared across the IG are found -->
         <parameter>
             <code value="path-pages"/>
             <value value="input/includes"/>
         </parameter>
+
+        <!-- Determines whether the next/previous navigation tabs are shown in the header and footer -->
         <parameter>
             <code value="shownav"/>
             <value value="false"/>
         </parameter>
+
+        <!-- If true, render inherited constraints in the full details and invariants view -->
         <parameter>
             <code value="show-inherited-invariants"/>
             <value value="false"/>
         </parameter>
+
+        <!-- default value is true -->
+        <!-- ImplementationGuide.contact value is propagated to generated artefacts eg StructureDefinition.contact -->
         <parameter>
             <code value="apply-contact"/>
             <value value="true"/>
         </parameter>
+
+        <!-- default value is true -->
+        <!-- ImplementationGuide.version value is NOT globally propagated to generated artefacts eg StructureDefinition.version -->
         <parameter>
             <code value="apply-version"/>
             <value value="false"/>
         </parameter>
+
+        <!-- If true, causes the mapping tab to be excluded from all StructureDefinition artifact pages -->
         <parameter>
             <code value="excludemap"/>
             <value value="true"/>
         </parameter>
+
+        <!-- The relative path to a parameters resource that contains expansion parameters used when the IG publisher expands a value set -->
+        <!-- Specifically, this parameter resource configures the edition of SNOMED to be Australian -->
         <parameter>
             <code value="path-expansion-params"/>
             <value value="../input/_resources/terminology-settings.json"/>
         </parameter>
+
+        <!-- IG publisher logging output -->
+        <!-- init: Messages describing the start up process -->
         <parameter>
             <code value="logging"/>
             <value value="init"/>
         </parameter>
+
+        <!-- IG publisher output logging -->
+        <!-- progress: Overall progress messages -->
         <parameter>
             <code value="logging"/>
             <value value="progress"/>
         </parameter>
+
+        <!-- IG publisher output logging -->
+        <!-- tx:  Messages describing the use of the terminology server -->
         <parameter>
             <code value="logging"/>
             <value value="tx"/>
         </parameter>
+
+        <!-- IG publisher output logging -->
+        <!-- generate: Log when producing an individual resource -->
         <parameter>
             <code value="logging"/>
             <value value="generate"/>
         </parameter>
+
+        <!-- IG publisher output logging -->
+        <!-- html: Log when validating an html page -->
         <parameter>
             <code value="logging"/>
             <value value="html"/>
         </parameter>
+
     </definition>
 </ImplementationGuide>
