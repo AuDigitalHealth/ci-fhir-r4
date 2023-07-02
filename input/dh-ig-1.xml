@@ -5375,6 +5375,19 @@
             <value value="false"/>
         </parameter>
 
+        <!-- default value is true -->
+        <!-- ImplementationGuide.copyright value is NOT globally propagated to generated StructureDefinition.copyright -->
+        <parameter>
+            <code value="apply-copyright"/>
+            <value value="false"/>
+        </parameter>
+        
+        <!-- ImplementationGuide.copyright value is propagated to generated StructureDefinition.copyright only when one is empty -->
+        <parameter>
+            <code value="default-copyright"/>
+            <value value="true"/>
+        </parameter>
+
         <!-- If true, causes the mapping tab to be excluded from all StructureDefinition artifact pages -->
         <parameter>
             <code value="excludemap"/>
