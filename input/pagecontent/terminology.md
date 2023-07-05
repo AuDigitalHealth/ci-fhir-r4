@@ -232,7 +232,7 @@ The following value sets form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a></td>
         <td>HL7</td>
         <td>	http://hl7.org/fhir/ValueSet/document-reference-status</td>
-        <td><a href="StructureDefinition-dh-documentreference-1.html">ADHA Core DocumentReference</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">Advance Care Planning Document DocumentReference</a></td>
+        <td><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">Advance Care Planning Document DocumentReference</a></td>
     </tr>  
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a></td>
