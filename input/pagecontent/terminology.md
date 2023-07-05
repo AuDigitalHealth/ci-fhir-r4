@@ -615,7 +615,7 @@ The following code systems form part of this implementation guide.
         <td>1.2.36.1.2001.1001.101.104.16085</td>
     </tr>    
     <tr>
-        <td><a href="http://terminology.hl7.org.au/CodeSystem/contact-purpose">Contact Purpose</a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-contact-purpose.html">Contact Purpose</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/contact-purpose</td>
         <td>2.16.840.1.113883.2.3.4.1.4.19</td>
@@ -802,7 +802,7 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.1379</td>
     </tr>
      <tr>
-        <td><a href="http://terminology.hl7.org.au/CodeSystem/medication-type">Medication type</a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html">Medication type</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/medication-type</td>
         <td>2.16.840.1.113883.2.3.4.1.4.1</td>
