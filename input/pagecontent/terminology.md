@@ -418,7 +418,7 @@ The following value sets form part of this implementation guide.
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1">ObservationStatus Result Available</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1</td>
-        <td><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a>, <a href="StructureDefinition-dh-observation-diagnosticresultgroup-1.html">ADHA  Diagnostic Result Group</a> </td>
+        <td><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></td>
     </tr>
         <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">Participant type</a></td>
