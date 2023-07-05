@@ -67,13 +67,14 @@
       <min value="1" />
       <mustSupport value="true"/>
     </element>
-    <element id="Bundle.entry.resource:message">
+    <!-- commented out as the profile dh-messageheader-core-1 does not yet exist -->
+    <!-- <element id="Bundle.entry.resource:message">
       <path value="Bundle.entry.resource" />
       <type>
         <code value="MessageHeader" />
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-messageheader-core-1" />
       </type>
-    </element>
+    </element> -->
     <element id="Bundle.entry:patient">
       <path value="Bundle.entry" />
       <sliceName value="patient" />
