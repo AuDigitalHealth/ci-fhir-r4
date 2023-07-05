@@ -487,10 +487,10 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
         <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td>TBD</td>
+        <td>ADHA Core TBD</td>
     </tr>
  </table>
 
@@ -578,7 +578,7 @@ The following code systems form part of this implementation guide.
         <td>1.2.36.1.2001.1005.17</td>
     </tr>
     <tr>
-        <td><a href="TBD">Australian Indigenous Status</a></td>
+        <td>Australian Indigenous Status</td>
         <td>ADHA (METeOR AIHW)</td>
         <td>https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1</td>
         <td>1.2.36.1.2001.1004.200.10012</td>
@@ -922,7 +922,7 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.5.111</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
+        <td>TBD</td>
         <td>TBD</td>
         <td>TBD</td>
         <td>TBD</td>

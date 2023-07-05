@@ -14,22 +14,7 @@ The following search parameters form part of this implementation guide.
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
         <td>TBD</td>
     </tr>
@@ -48,22 +33,7 @@ The following operation definitions form part of this implementation guide.
         <th>Description</th>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
         <td>TBD</td>
     </tr>

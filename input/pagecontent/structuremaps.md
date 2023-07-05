@@ -12,33 +12,8 @@ The following structure maps form part of this implementation guide.
         <th>URI</th>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
     </tr>
  </table>
@@ -126,12 +101,12 @@ The following concept maps form part of this implementation guide.
         <td>https://healthterminologies.gov.au/fhir/ConceptMap/med-statement-status-fhir-to-med-act-status-v3-1</td>
     </tr> 
     <tr>
-        <td><a href="TBD">METeOR Indigenous Status 291036</a></td>
+        <td>METeOR Indigenous Status 291036</td>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1">Australian Indigenous Status</a></td>
         <td>https://healthterminologies.gov.au/fhir/ConceptMap/meteor-indigenous-291036-to-australian-indigenous-status-1</td>
     </tr>
     <tr>
-        <td><a href="TBD">METeOR Person Gender 635994</a></td>
+        <td>METeOR Person Gender 635994</td>
         <td><a href="http://hl7.org/fhir/administrative-gender">HL7 FHIR AdministrativeGender</a></td>
         <td>https://healthterminologies.gov.au/fhir/ConceptMap/meteor-person-gender-635994-to-hl7-fhir-administrativegender-1</td>
     </tr>
