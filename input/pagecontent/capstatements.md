@@ -18,17 +18,7 @@ The following capability statements form part of this implementation guide.
         <td>The requirements for capabilities of a server implementing Australian Digital Health Agency FHIR RESTful Endpoints (au.digitalhealth.r4).</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
-        <td>TBD</td>
-        <td>TBD</td>
-    </tr>
-    <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
         <td>TBD</td>
     </tr>

@@ -232,7 +232,7 @@ The following value sets form part of this implementation guide.
         <td><a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a></td>
         <td>HL7</td>
         <td>	http://hl7.org/fhir/ValueSet/document-reference-status</td>
-        <td><a href="StructureDefinition-dh-documentreference-1.html">ADHA Core DocumentReference</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">Advance Care Planning Document DocumentReference</a></td>
+        <td><a href="StructureDefinition-dh-documentreference-core-1.html">ADHA Core DocumentReference</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">Advance Care Planning Document DocumentReference</a></td>
     </tr>  
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a></td>
@@ -418,7 +418,7 @@ The following value sets form part of this implementation guide.
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1">ObservationStatus Result Available</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/observationstatus-result-available-1</td>
-        <td><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a>, <a href="StructureDefinition-dh-observation-diagnosticresultgroup-1.html">ADHA  Diagnostic Result Group</a> </td>
+        <td><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></td>
     </tr>
         <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">Participant type</a></td>
@@ -487,10 +487,10 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
         <td>TBD</td>
         <td>TBD</td>
-        <td><a href="StructureDefinition-dh-TBD-core-1.html">ADHA Core TBD</a></td>
+        <td>TBD</td>
+        <td>ADHA Core TBD</td>
     </tr>
  </table>
 
@@ -578,7 +578,7 @@ The following code systems form part of this implementation guide.
         <td>1.2.36.1.2001.1005.17</td>
     </tr>
     <tr>
-        <td><a href="TBD">Australian Indigenous Status</a></td>
+        <td>Australian Indigenous Status</td>
         <td>ADHA (METeOR AIHW)</td>
         <td>https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1</td>
         <td>1.2.36.1.2001.1004.200.10012</td>
@@ -615,7 +615,7 @@ The following code systems form part of this implementation guide.
         <td>1.2.36.1.2001.1001.101.104.16085</td>
     </tr>    
     <tr>
-        <td><a href="http://terminology.hl7.org.au/CodeSystem/contact-purpose">Contact Purpose</a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-contact-purpose.html">Contact Purpose</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/contact-purpose</td>
         <td>2.16.840.1.113883.2.3.4.1.4.19</td>
@@ -802,7 +802,7 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.4.642.4.1379</td>
     </tr>
      <tr>
-        <td><a href="http://terminology.hl7.org.au/CodeSystem/medication-type">Medication type</a></td>
+        <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-medication-type.html">Medication type</a></td>
         <td>HL7 AU</td>
         <td>http://terminology.hl7.org.au/CodeSystem/medication-type</td>
         <td>2.16.840.1.113883.2.3.4.1.4.1</td>
@@ -922,7 +922,7 @@ The following code systems form part of this implementation guide.
         <td>2.16.840.1.113883.5.111</td>
     </tr>
     <tr>
-        <td><a href="TBD">TBD</a></td>
+        <td>TBD</td>
         <td>TBD</td>
         <td>TBD</td>
         <td>TBD</td>
