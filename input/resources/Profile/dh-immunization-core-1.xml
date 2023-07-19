@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-immunization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="ADHAImmunizationCore"/>
   <title value="ADHA Core Immunization"/>
   <status value="active"/>
@@ -41,11 +41,11 @@
     <element id="Immunization.extension:vaccine-serial-number">
       <path value="Immunization.extension"/>
       <sliceName value="vaccine-serial-number"/>
+      <max value="1"/>
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/vaccine-serial-number"/>
       </type>
-      <max value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="Immunization.identifier">

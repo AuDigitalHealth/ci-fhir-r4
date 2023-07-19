@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-condition-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-condition-core-1"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="ADHAConditionCore"/>
   <title value="ADHA Core Condition"/>
   <status value="active"/>
@@ -45,8 +45,8 @@
     </element>
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus"/>
-      <mustSupport value="true"/>
       <condition value="inv-dh-cond-05"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Condition.verificationStatus">
       <path value="Condition.verificationStatus"/>

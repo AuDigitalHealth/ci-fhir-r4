@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-patient-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="ADHAPatientCore"/>
   <title value="ADHA Core Patient"/>
   <status value="active"/>
@@ -129,8 +129,8 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
-      <min value="1"/>
       <comment value="A patient may have multiple names with different uses or applicable periods. At least one name SHOULD be the name the patient is considered to have for administrative and record keeping purposes - family name is used to enable matching against patient records."/>
+      <min value="1"/>
       <condition value="inv-dh-pat-02"/>
       <condition value="inv-dh-pat-04"/>
       <constraint>

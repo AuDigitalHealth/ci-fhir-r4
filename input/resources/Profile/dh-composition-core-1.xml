@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-core-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHACompositionCore"/>
   <title value="ADHA Core Composition"/>
   <status value="draft"/>
@@ -43,8 +43,8 @@
     </element>
     <element id="Composition.category">
       <path value="Composition.category"/>
-      <mustSupport value="true"/>
       <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject"/>

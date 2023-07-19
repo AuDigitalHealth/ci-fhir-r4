@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-episodeofcare-mymedicare-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-episodeofcare-mymedicare-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHAEpisodeOfCareMyMedicare"/>
   <title value="ADHA GP Practice Registration Entry"/>
   <status value="draft"/>
@@ -59,8 +59,8 @@
     </element>
     <element id="EpisodeOfCare.type:primaryCare">
       <path value="EpisodeOfCare.type"/>
-      <short value="GP practice - primary care management"/>
       <sliceName value="primaryCare"/>
+      <short value="GP practice - primary care management"/>
       <min value="1"/>
       <max value="1"/>
       <patternCodeableConcept>

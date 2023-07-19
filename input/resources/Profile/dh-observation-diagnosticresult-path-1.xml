@@ -3,7 +3,7 @@
   <id value="dh-observation-diagnosticresult-path-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-diagnosticresult-path-1"/>
-  <version value="0.0.7"/>
+  <version value="0.0.8"/>
   <name value="ADHAObservationPathologyResult"/>
   <title value="ADHA Pathology Result Observation"/>
   <status value="draft"/>
@@ -204,11 +204,11 @@
     </element>
     <element id="Observation.component.code">
       <path value="Observation.component.code"/>
+      <mustSupport value="true"/>
       <binding>
         <strength value="extensible" />
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/spia-pathology-reporting-1" />
       </binding>
-      <mustSupport value="true"/>
     </element>
     <element id="Observation.component.value[x]">
       <path value="Observation.component.value[x]"/>

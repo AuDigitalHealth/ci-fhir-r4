@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-practitioner-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitioner-core-1"/>
-  <version value="1.0.1"/>
+  <version value="1.0.2"/>
   <name value="ADHAPractitionerCore"/>
   <title value="ADHA Core Practitioner"/>
   <status value="active"/>
@@ -31,7 +31,6 @@
     </element>
     <element id="Practitioner.identifier">
       <path value="Practitioner.identifier"/>
-      <definition value="An identifier that applies to this person in this role."/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
@@ -39,6 +38,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
+      <definition value="An identifier that applies to this person in this role."/>
       <mustSupport value="true"/>
     </element>
     <element id="Practitioner.identifier:hpii">
