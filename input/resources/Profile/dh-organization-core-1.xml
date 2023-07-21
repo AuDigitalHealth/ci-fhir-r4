@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-organization-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="ADHAOrganizationCore"/>
   <title value="ADHA Core Organization"/>
   <status value="active"/>
@@ -42,8 +42,6 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
-      <definition
-        value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
@@ -52,6 +50,8 @@
         <ordered value="false"/>
         <rules value="open"/>
       </slicing>
+      <definition
+        value="Identifier for the organization that is used to identify the organization across multiple disparate systems."/>
       <condition value="inv-dh-org-02"/>
       <constraint>
         <key value="inv-dh-org-02"/>

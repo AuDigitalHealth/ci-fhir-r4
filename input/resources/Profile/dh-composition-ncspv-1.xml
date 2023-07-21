@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-composition-ncspv-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-composition-ncspv-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="DHCompositionNCSPV"/>
   <title value="ADHA National Cancer Screening Program Participation View"/>
   <status value="draft"/>
@@ -99,12 +99,12 @@
     <element id="Composition.section.entry">
       <path value="Composition.section.entry"/>
       <short value="National cancer screening program participation observation"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-ncspp-1"/>
       </type>
-      <min value="1"/>
     </element>
     <element id="Composition.section.emptyReason">
       <path value="Composition.section.emptyReason"/>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-medication-use-pmr-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-medication-use-pmr-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAListPractitionerMedicineReview"/>
   <title value="ADHA Practitioner Medicine Review List"/>
   <status value="draft" />
@@ -48,20 +48,20 @@
     <element id="List.extension:sourceRelatedPerson">
       <path value="List.extension"/>
       <sliceName value="sourceRelatedPerson"/>
+      <max value="0" />
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/author-related-person"/>
       </type>
-      <max value="0" />
     </element>
     <element id="List.extension:packed-in-daa">
       <path value="List.extension"/>
       <sliceName value="packed-in-daa"/>
+      <max value="1" />
       <type>
         <code value="Extension"/>
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-packed-in-daa-1"/>
       </type>
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="List.title">
@@ -74,11 +74,11 @@
     </element>
     <element id="List.source">
       <path value="List.source"/>
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1" />
       </type>
-      <min value="1" />
     </element>
     <element id="List.entry">
       <path value="List.entry" />

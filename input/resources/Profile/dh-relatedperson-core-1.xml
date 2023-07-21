@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-relatedperson-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-relatedperson-core-1"/>
-  <version value="1.0.0"/>
+  <version value="1.0.1"/>
   <name value="ADHARelatedPersonCore"/>
   <title value="ADHA Core RelatedPerson"/>
   <status value="active"/>
@@ -45,7 +45,6 @@
     </element>
     <element id="RelatedPerson.identifier">
       <path value="RelatedPerson.identifier"/>
-      <definition value="Identifier for a person within a particular scope."/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
@@ -53,6 +52,7 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
+      <definition value="Identifier for a person within a particular scope."/>
       <mustSupport value="true"/>
     </element>
     <element id="RelatedPerson.identifier:ihi">

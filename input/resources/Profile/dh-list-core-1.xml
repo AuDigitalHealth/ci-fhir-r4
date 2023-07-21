@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
-  <version value="0.0.6"/>
+  <version value="0.0.7"/>
   <name value="ADHAListCore"/>
   <title value="ADHA Core List"/>
   <status value="draft"/>
@@ -98,12 +98,12 @@
     </element>
     <element id="List.subject">
       <path value="List.subject"/>
+      <min value="1"/>
       <type>
         <code value="Reference"/>
         <targetProfile
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
-      <min value="1"/>
       <condition value="inv-dh-lst-04"/>
       <constraint>
         <key value="inv-dh-lst-04"/>
@@ -126,6 +126,7 @@
     </element>
     <element id="List.date">
       <path value="List.date"/>
+      <min value="1"/>
       <condition value="inv-dh-lst-06"/>
       <constraint>
         <key value="inv-dh-lst-06"/>
@@ -135,7 +136,6 @@
         <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
         <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-core-1"/>
       </constraint>
-      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="List.source">
