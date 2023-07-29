@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="visualacuity-03"/>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+        </coding>
+    </category>
+    <category>
+        <text value="Vision"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="251739003"/>
+        </coding>
+        <text value="Distance visual acuity"/>
+    </code>
+    <subject>
+        <display value="child"/>
+    </subject>
+    <effectiveDateTime value="2022-02-01T22:05:00Z"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="422256009"/>
+            <display value="Counts fingers - distance vision"/>
+        </coding>
+        <text value="CF @ 4m"/>
+    </valueCodeableConcept>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="362503005"/>
+        </coding>
+        <text value="Entire left eye"/>
+    </bodySite>
+</Observation>

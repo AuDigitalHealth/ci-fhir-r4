@@ -858,6 +858,294 @@
             <exampleBoolean value="false"/>
         </resource>
 
+        <!--Child Health POC-->
+<!--        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-apgarscore-1"/>
+            </reference>
+            <name value="DH Observation APGAR Score"/>
+            <description
+                value="A set of observations made on the baby following birth to check adaptation to life outside the womb."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/apgarcolourfinding-supplement-1"/>
+            </reference>
+            <name value="Apgar Colour Finding Supplement"/>
+            <description
+                value="The Apgar Colour Finding Supplement code system defines supplementary properties for LOINC Apgar answer codes."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarcolourfinding-1"/>
+            </reference>
+            <name value="Apgar Colour Finding"/>
+            <description
+                value="The Apgar Colour Finding value set includes values that cover findings of Apgar colour."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarheartratefinding-1"/>
+            </reference>
+            <name value="Apgar Heart Rate Finding"/>
+            <description
+                value="The Apgar Heart Rate Finding value set includes values that cover findings of Apgar heart rate."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarmuscletonefinding-1"/>
+            </reference>
+            <name value="Apgar Muscle Tone Finding"/>
+            <description
+                value="The Apgar Muscle Tone Finding value set includes values that cover findings of Apgar muscle tone (activity)."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarreflexirritabilityfinding-1"/>
+            </reference>
+            <name value="Apgar Reflex Irritability Finding"/>
+            <description
+                value="The Apgar Reflex Irritability Finding value set includes values that cover findings of Apgar reflex irritability (response to stimulus, grimace)."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarrespiratoryeffortfinding-1"/>
+            </reference>
+            <name value="Apgar Respiratory Effort Finding"/>
+            <description
+                value="The Apgar Respiratory Effort Finding value set includes values that cover findings of Apgar respiratory effort."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarscoretypeloinc-1"/>
+            </reference>
+            <name value="Apgar Score Type LOINC"/>
+            <description
+                value="The Apgar Score Type value set includes LOINC values that cover common timings of Apgar scores."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/apgarscoretypesnomedct-1"/>
+            </reference>
+            <name value="Apgar Score Type SNOMED CT"/>
+            <description
+                value="The Apgar Score Type value set includes SNOMED CT values that cover common timings of Apgar scores."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/apgarscore-01"/>
+            </reference>
+            <name value="Apgar score, 1 minute"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-apgarscore-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/apgarscore-02"/>
+            </reference>
+            <name value="Apgar score, 5 minutes"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-apgarscore-1"
+            />
+        </resource>-->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-birthcomplication-1"/>
+            </reference>
+            <name value="DH Observation Birth Complication"/>
+            <description
+                value="Observation of a condition arising after the onset of labour and before the completed delivery of the baby and placenta. May affect mother or baby."/>
+            <exampleBoolean value="false"/>
+        </resource>
+   <!--     <resource>
+            <reference>
+                <reference value="ValueSet/birthcomplication-1"/>
+            </reference>
+            <name value="Birth Complication"/>
+            <description
+                value="The Birth Complication value set includes values that cover conditions arising after the onset of labour and before the completed delivery of the baby and placenta."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-birthmethod-1"/>
+            </reference>
+            <name value="DH Observation Birth Method"/>
+            <description
+                value="Observation of the method of expulsion or extraction of a fetus from its mother."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/birthmethod-1"/>
+            </reference>
+            <name value="Birth Method"/>
+            <description
+                value="The Birth Method value set includes values that cover common methods of expulsion or extraction of a fetus from its mother."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-birthpresentation-1"/>
+            </reference>
+            <name value="DH Observation Birth Presentation"/>
+            <description value="Observation of the presenting part of a fetus at birth."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/birthpresentation-1"/>
+            </reference>
+            <name value="Birth Presentation"/>
+            <description
+                value="The Birth Presentation value set includes values that cover common presentations of a fetus at birth."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-congenitalabnormality-1"/>
+            </reference>
+            <name value="DH Observation Congenital Abnormality"/>
+            <description
+                value="Observation of an anomaly that is present at birth. This includes structural and functional anomalies. It includes anomalies that are not impairments."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/congenitalabnormality-1"/>
+            </reference>
+            <name value="Congenital Abnormality"/>
+            <description
+                value="The Congenital Abnormality value set includes values that cover common anomalies, including malformations, that are present at birth."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-labourinductionmethod-1"/>
+            </reference>
+            <name value="DH Observation Labour Induction Method"/>
+            <description
+                value="Observation of a method used to induce labour. This includes methods of cervical ripening."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/labourinductionmethod-1"/>
+            </reference>
+            <name value="Labour Induction Method"/>
+            <description
+                value="The Labour Induction Method value set includes values that cover common methods of inducing labour."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-labouronsettype-1"/>
+            </reference>
+            <name value="DH Observation Labour Onset Type"/>
+            <description value="Observation of the manner in which labour started."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/labouronsettype-1"/>
+            </reference>
+            <name value="Labour Onset Type"/>
+            <description
+                value="The Labour Onset Type value set includes values that cover common manners in which labour starts."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/labouronsettype-01"/>
+            </reference>
+            <name value="Labour onset type for patient 1"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-labouronsettype-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/labouronsettype-02"/>
+            </reference>
+            <name value="Labour onset type for patient 2"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-labouronsettype-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/dh-observation-visualacuity-1"/>
+            </reference>
+            <name value="DH Observation Visual Acuity"/>
+            <description value="Sharpness or acuteness of vision."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/visualacuity-01"/>
+            </reference>
+            <name value="Distance visual acuity, both eyes, as a ratio"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/visualacuity-02"/>
+            </reference>
+            <name value="Distance visual acuity, corrected, left eye, in LogMAR notation"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/visualacuity-03"/>
+            </reference>
+            <name value="Distance visual acuity, left eye, as a code"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/visualacuity-04"/>
+            </reference>
+            <name value="Distance visual acuity, ocularity in code, as a ratio"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/visualacuity-05"/>
+            </reference>
+            <name
+                value="Distance visual acuity, corrected, with pinhole, left eye, using a Snellen chart, as a ratio"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/visualacuity-06"/>
+            </reference>
+            <name value="Near visual acuity, right eye, in N-point notation"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1"
+            />
+        </resource>-->
+
         <!--ALLERGYINTEROLANCE EXAMPLES-->
         <resource>
             <reference>
@@ -2037,7 +2325,8 @@
             <reference>
                 <reference value="Flag/air-02"/>
             </reference>
-            <name value="Australian Immunisation Register notice: Natural immunity to Measles recorded on 28 Oct 2020"/>
+            <name
+                value="Australian Immunisation Register notice: Natural immunity to Measles recorded on 28 Oct 2020"/>
             <description value="TBD"/>
             <exampleCanonical
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1"/>
@@ -2046,7 +2335,8 @@
             <reference>
                 <reference value="Flag/air-03"/>
             </reference>
-            <name value="Australian Immunisation Register notice: Natural immunity to Influenza recorded on 01 January 2019"/>
+            <name
+                value="Australian Immunisation Register notice: Natural immunity to Influenza recorded on 01 January 2019"/>
             <description value="TBD"/>
             <exampleCanonical
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-flag-air-1"/>
@@ -4833,7 +5123,8 @@
             <reference>
                 <reference value="PractitionerRole/nsw-gp"/>
             </reference>
-            <name value="Dr Sarah Bondiali, GP, at Bondi GP Medical Centre (with references for Practitioner and Organization)"/>
+            <name
+                value="Dr Sarah Bondiali, GP, at Bondi GP Medical Centre (with references for Practitioner and Organization)"/>
             <description value="TBD"/>
             <exampleCanonical
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-author-1"
@@ -5138,7 +5429,7 @@
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-core-1"
             />
         </resource>
-        
+
         <!--NAMING SYSTEMS-->
         <resource>
             <reference>
@@ -5239,7 +5530,7 @@
             <name value="Residential Aged Care Service identifier"/>
             <exampleBoolean value="false"/>
         </resource>
-        
+
         <page>
             <nameUrl value="toc.html"/>
             <title value="Table of Contents"/>
@@ -5383,7 +5674,7 @@
             <code value="apply-copyright"/>
             <value value="false"/>
         </parameter>
-        
+
         <!-- ImplementationGuide.copyright value is propagated to generated StructureDefinition.copyright only when one is empty -->
         <parameter>
             <code value="default-copyright"/>

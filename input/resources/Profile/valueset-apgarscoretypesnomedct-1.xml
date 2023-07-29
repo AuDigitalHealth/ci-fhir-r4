@@ -1,0 +1,52 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="apgarscoretypesnomedct-1"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <url value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarscoretypesnomedct-1"/>
+  <version value="0.1.0"/>
+  <name value="ApgarScoreTypeSnomedCt"/>
+  <title value="Apgar Score Type SNOMED CT"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="The Apgar Score Type value set includes SNOMED CT values that cover common timings of Apgar scores."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <copyright
+    value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="169895004"/>
+      </concept>
+      <concept>
+        <code value="169909004"/>
+      </concept>
+      <concept>
+        <code value="169922007"/>
+      </concept>
+      <concept>
+        <code value="443848000"/>
+      </concept>
+      <concept>
+        <code value="443849008"/>
+      </concept>
+      <concept>
+        <code value="249228009"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

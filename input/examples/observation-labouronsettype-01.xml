@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="labouronsettype-01"/>
+	<meta>
+		<profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-labouronsettype-1"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="exam"/>
+		</coding>
+	</category>
+	<category>
+		<text value="Perinatal"/>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="20236002"/>
+			<display value="Labour established"/>
+		</coding>
+		<text value="Labour onset type"/>
+	</code>
+	<subject>
+		<display value="patient 1"/>
+	</subject>
+	<effectiveDateTime value="2022-01-02"/>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="84457005"/>
+			<display value="Spontaneous onset of labour"/>
+		</coding>
+	</valueCodeableConcept>	
+</Observation>

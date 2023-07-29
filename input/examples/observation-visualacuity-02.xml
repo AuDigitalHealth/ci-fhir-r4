@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="visualacuity-02"/>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+        </coding>
+    </category>
+    <category>
+        <text value="Vision"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="251739003"/>
+            <display value="Distance visual acuity"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="397536007"/>
+            <display value="Corrected visual acuity"/>
+        </coding>
+        <text value="Distance visual acuity, corrected"/>
+    </code>
+    <subject>
+        <display value="child"/>
+    </subject>
+    <effectiveDateTime value="2022-02-01T22:05:00Z"/>
+    <valueQuantity>
+        <value value="0.3" />
+        <unit value="LogMAR" />
+    </valueQuantity>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="362503005"/>
+        </coding>
+        <text value="Entire left eye"/>
+    </bodySite>
+</Observation>

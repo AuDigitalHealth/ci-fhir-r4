@@ -1,0 +1,57 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="apgarcolourfinding-supplement-1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+	</meta>
+	<url value="http://ns.electronichealth.net.au/fhir/CodeSystem/apgarcolourfinding-supplement-1"/>
+	<version value="0.1.0"/>
+	<name value="ApgarColourFindingSupplement"/>
+	<title value="Apgar Colour Finding Supplement"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="Australian Digital Health Agency"/>
+	<contact>
+		<telecom>
+			<system value="email"/>
+			<value value="help@digitalhealth.gov.au"/>
+    	</telecom>
+	</contact>
+	<description
+		value="The Apgar Colour Finding Supplement code system defines supplementary properties for LOINC Apgar answer codes."/>
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="AU"/>
+		</coding>
+	</jurisdiction>
+	<copyright value="This resource contains content from LOINC™ (http://loinc.org). The LOINC Table, LOINC Table Core, LOINC Panels and Forms File, LOINC Answer File, LOINC Part File, LOINC Group File, LOINC Document Ontology File, LOINC Hierarchies, LOINC Linguistic Variants File, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright © 1995-2017, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license."/>
+	<content value="supplement"/>
+	<!--<supplements value="http://loinc.org|2.71"/>-->
+	<supplements value="http://loinc.org"/>
+	<property>
+		<code value="ordinal-value"/>
+		<description value="A numeric value that allows the comparison (less than, greater than) or other numerical manipulation of a concept (e.g. Adding up components of a score)."/>
+		<type value="integer"/>
+	</property>
+	<concept>
+		<code value="LA6722-8"/>
+		<property>
+			<code value="ordinal-value"/>
+			<valueInteger value="0"/>
+		</property>
+	</concept>
+	<concept>
+		<code value="LA6723-6"/>
+		<property>
+			<code value="ordinal-value"/>
+			<valueInteger value="1"/>
+		</property>
+	</concept>
+	<concept>
+		<code value="LA6724-4"/>
+		<property>
+			<code value="ordinal-value"/>
+			<valueInteger value="2"/>
+		</property>
+	</concept>
+</CodeSystem>

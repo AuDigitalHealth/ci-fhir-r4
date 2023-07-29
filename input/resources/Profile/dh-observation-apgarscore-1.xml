@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dh-observation-apgarscore-1" />
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-apgarscore-1"/>
+  <version value="0.1.0"/>
+  <name value="DHObservationAPGARScore" />
+  <title value="DH Observation APGAR Score" />
+  <status value="draft" />
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="A set of observations made on the baby following birth to check adaptation to life outside the womb. This includes 1 minute, 5 minute and 10 minute observations."/>
+  <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <short value="APGAR Score Observation" />
+      <definition value="An APGAR Score Observation."/>
+      <constraint>
+        <key value="inv-apgar01" />
+        <severity value="error" />
+        <human value="APGAR 1 minute component codes must match observation type" />
+        <expression value="(component.where(code.coding.where(code='32406-1').exists()).exists() or component.where(code.coding.where(code='32407-9').exists()).exists() or component.where(code.coding.where(code='32408-7').exists()).exists() or component.where(code.coding.where(code='32410-3').exists()).exists() or component.where(code.coding.where(code='32409-5').exists()).exists()) implies code.coding.where(code='9272-6').exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-apgar02" />
+        <severity value="error" />
+        <human value="APGAR 5 minute component codes must match observation type" />
+        <expression value="(component.where(code.coding.where(code='32406-1').exists()).exists() or component.where(code.coding.where(code='32407-9').exists()).exists() or component.where(code.coding.where(code='32408-7').exists()).exists() or component.where(code.coding.where(code='32410-3').exists()).exists() or component.where(code.coding.where(code='32409-5').exists()).exists()) implies code.coding.where(code='9272-6').exists()" />
+      </constraint>
+      <constraint>
+        <key value="inv-apgar03" />
+        <severity value="error" />
+        <human value="APGAR 10 minute component codes must match observation type" />
+        <expression value="(component.where(code.coding.where(code='32401-2').exists()).exists() or component.where(code.coding.where(code='32402-0').exists()).exists() or component.where(code.coding.where(code='32403-8').exists()).exists() or component.where(code.coding.where(code='32405-3').exists()).exists() or component.where(code.coding.where(code='32404-6').exists()).exists()) implies code.coding.where(code='9271-8').exists()" />
+      </constraint>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <short value="APGAR score observation type" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:scoreTypeLoinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="scoreTypeLoinc" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="APGAR score type (LOINC)" />
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarscoretypeloinc-1" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding:scoreTypeLoinc.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.code.coding:scoreTypeSnomedCt">
+      <path value="Observation.code.coding" />
+      <sliceName value="scoreTypeSnomedCt" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="APGAR score type (SNOMED CT)" />
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarscoretypesnomedct-1" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding:scoreTypeSnomedCt.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Observation.effective">
+      <path value="Observation.effective[x]" />
+      <min value="1"/>
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Observation.value">
+      <path value="Observation.value[x]" />
+      <min value="1"/>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.value:valueInteger">
+      <path value="Observation.valueInteger" />
+      <sliceName value="valueInteger" />
+      <constraint>
+        <key value="inv-apgar04" />
+        <severity value="error" />
+        <human value="The value shall be an integer from 0 to 10" />
+        <expression value="$this &gt;= 0 and $this &lt;= 10" />
+      </constraint>
+    </element>
+    <element id="Observation.value:valueQuantity">
+      <path value="Observation.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <constraint>
+        <key value="inv-apgar05" />
+        <severity value="error" />
+        <human value="The value shall be an integer from 0 to 10" />
+        <expression value="value.value.toString().matches('^[0-9]$|^10$')" />
+      </constraint>
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="5" />
+    </element>
+    <element id="Observation.component:colourScore">
+      <path value="Observation.component" />
+      <sliceName value="colourScore" />
+      <short value="APGAR colour" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:colourScore.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="249227004" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:colourScore.value[x]:valueCodeableConcept">
+      <path value="Observation.component.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Colour finding values" />
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarcolourfinding-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:heartRateScore">
+      <path value="Observation.component" />
+      <sliceName value="heartRateScore" />
+      <short value="APGAR heart rate" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:heartRateScore.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="249223000" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:heartRateScore.value[x]:valueCodeableConcept">
+      <path value="Observation.component.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Heart rate finding values" />
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarheartratefinding-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:muscleToneScore">
+      <path value="Observation.component" />
+      <sliceName value="muscleToneScore" />
+      <short value="APGAR muscle tone" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:muscleToneScore.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="249225007" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:muscleToneScore.value[x]:valueCodeableConcept">
+      <path value="Observation.component.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Muscle tone finding values" />
+        <valueSet  value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarmuscletonefinding-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:respiratoryEffortScore">
+      <path value="Observation.component" />
+      <sliceName value="respiratoryEffortScore" />
+      <short value="APGAR respiratory effort" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:respiratoryEffortScore.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="249224006" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:respiratoryEffortScore.value[x]:valueCodeableConcept">
+      <path value="Observation.component.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Respiratory effort finding values" />
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarrespiratoryeffortfinding-1" />
+      </binding>
+    </element>
+    <element id="Observation.component:reflexIrritabilityScore">
+      <path value="Observation.component" />
+      <sliceName value="reflexIrritabilityScore" />
+      <short value="APGAR reflex irritability" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:reflexIrritabilityScore.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="249226008" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:reflexIrritability.value[x]:valueCodeableConcept">
+      <path value="Observation.component.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Reflex irritability finding values" />
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/apgarreflexirritabilityfinding-1" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

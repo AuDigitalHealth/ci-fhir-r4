@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="visualacuity-05"/>
+    <contained>
+        <Device>
+            <id value ="dev1" />
+            <type>
+                <coding>
+                    <system value="http://snomed.info/sct" />
+                    <code value="400913005" />
+                    <display value="Snellen chart" />
+                </coding>
+            </type>
+        </Device>
+    </contained>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+        </coding>
+    </category>
+    <category>
+        <text value="Vision"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="251739003"/>
+            <display value="Distance visual acuity"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="397536007"/>
+            <display value="Corrected visual acuity"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="419475002"/>
+            <display value="Pinhole visual acuity"/>
+        </coding>
+        <text value="Distance visual acuity, corrected, using pinhole"/>
+    </code>
+    <subject>
+        <display value="child"/>
+    </subject>
+    <effectiveDateTime value="2022-02-01T22:05:00Z"/>
+    <valueRatio>
+        <numerator>
+            <value value="6" />
+        </numerator>
+        <denominator>
+            <value value="9" />
+        </denominator>
+    </valueRatio>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="362503005"/>
+        </coding>
+        <text value="Entire left eye"/>
+    </bodySite>
+    <device>
+        <reference value="#dev1" />
+    </device>
+</Observation>

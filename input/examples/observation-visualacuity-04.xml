@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="visualacuity-04"/>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+        </coding>
+    </category>
+    <category>
+        <text value="Vision"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="251742009"/>
+        </coding>
+        <text value="Distance visual acuity - binocular"/>
+    </code>
+    <subject>
+        <display value="child"/>
+    </subject>
+    <effectiveDateTime value="2022-02-01T22:05:00Z"/>
+    <valueRatio>
+        <numerator>
+            <value value="6" />
+        </numerator>
+        <denominator>
+            <value value="12" />
+        </denominator>
+    </valueRatio>
+</Observation>

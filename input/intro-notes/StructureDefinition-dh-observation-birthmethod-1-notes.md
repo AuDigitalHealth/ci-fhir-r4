@@ -1,0 +1,1 @@
+**No mandatory or optional search parameters for ADHA Birth Method Observation profile.**

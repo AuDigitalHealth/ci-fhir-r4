@@ -1,0 +1,50 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="labourinductionmethod-1"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <url value="http://ns.electronichealth.net.au/fhir/ValueSet/labourinductionmethod-1"/>
+  <version value="0.1.0"/>
+  <name value="LabourInductionMethod"/>
+  <title value="Labour Induction Method"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="The Labour Induction Method value set includes values that cover common methods of inducing labour.
+    &#xA;&#xA;As this is to support the METeOR concept [Birth event—labour induction method](https://meteor.aihw.gov.au/content/index.phtml/itemId/695352) and that covers two SNOMED CT concepts, [cervical ripening](https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236959001&amp;edition=MAIN/2022-01-31&amp;release=&amp;languages=en) and [induction of labour](https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236958009&amp;edition=MAIN/2022-01-31&amp;release=&amp;languages=en), the selection of codes may need adjusting."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <copyright
+    value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="177135005"/> <!--Oxytocin induction of labour-->
+      </concept>
+      <concept>
+        <code value="177136006"/> <!--Prostaglandin -->
+      </concept>
+      <concept>
+        <code value="408818004"/> <!--Artificial rupture of membranes-->
+      </concept>
+      <concept>
+        <code value="87431004"/> <!--Dilation procedure-->
+      </concept>
+      <concept>
+        <code value="236959001"/> <!--Cervical ripening procedure-->
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

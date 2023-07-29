@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="visualacuity-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-visualacuity-1" />
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+        </coding>
+    </category>
+    <category>
+        <text value="Vision"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="251739003"/>
+        </coding>
+        <text value="Distance visual acuity"/>
+    </code>
+    <subject>
+        <display value="child"/>
+    </subject>
+    <effectiveDateTime value="2022-02-01T22:05:00Z"/>
+    <valueRatio>
+        <numerator>
+            <value value="6" />
+            <system value="http://unitsofmeasure.org"/>
+            <code value="m"/>
+        </numerator>
+        <denominator>
+            <value value="12" />
+            <system value="http://unitsofmeasure.org"/>
+            <code value="m"/>
+        </denominator>
+    </valueRatio>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="362508001"/>
+        </coding>
+        <text value="Both eyes, entire"/>
+    </bodySite>
+</Observation>

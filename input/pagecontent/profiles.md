@@ -339,14 +339,22 @@ The following FHIR profiles are defined in this implementation guide to support 
                         <td class="frm-null"/>   
                         <td class="frm-set">
                             <ul class="frm-set">
+                            <li><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA APGAR Score</a></li>
+                                <li><a href="StructureDefinition-dh-observation-birthcomplication-1.html">ADHA Birth Complication</a></li>
+                                <li><a href="StructureDefinition-dh-observation-birthmethod-1.html">ADHA Birth Method</a></li>
+                                <li><a href="StructureDefinition-dh-observation-birthpresentation-1.html">ADHA Birth Presentation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-congenitalabnormality-1.html">ADHA Congenital Abnormality</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-1.html">ADHA Diagnostic Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-imag-1.html">ADHA Imaging Result Observation</a></li>
+                                <li><a href="StructureDefinition-dh-observation-labourinductionmethod-1.html">ADHA Labour Induction Method</a></li>
+                                <li><a href="StructureDefinition-dh-observation-labouronsettype-1.html">ADHA Labour Onset Type</a></li>
                                 <li><a href="StructureDefinition-dh-observation-diagnosticresult-path-1.html">ADHA Pathology Result Observation</a></li>
                                 <li><a href="StructureDefinition-dh-observation-simple-1.html">ADHA Simple Observation</a></li>
                                 <li><a href="StructureDefinition-dh-diagnosticreport-path-1.html">ADHA Pathology Report</a></li>
                                 <li>ADHA Diagnostic Imaging DiagnosticReport</li>
                                 <li><a href="StructureDefinition-dh-observation-ncspp-1.html">ADHA National Cancer Screening Program Participation Observation</a></li>
                                 <li><a href="StructureDefinition-dh-bodystructure-aodr-1.html">ADHA Organ or Tissue for Donation BodyStructure</a></li>
+                                <li><a href="StructureDefinition-dh-observation-visualacuity-1.html">ADHA Visual Acuity</a></li> 
                             </ul>
                         </td>     
                         <td class="frm-set">

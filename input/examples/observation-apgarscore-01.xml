@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="apgarscore-01"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-apgarscore-1" />
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="169895004"/>
+            <display value="Apgar at 1 minute"/>
+        </coding>
+        <text value="Apgar at 1 minute"/>
+    </code>
+    <subject>
+        <display value="child"/>
+    </subject>
+    <effectiveDateTime value="2022-02-01T22:05:00Z"/>
+    <valueInteger value="3"/>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="249227004"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="LA6722-8"/>
+            </coding>
+            <text value="0. The baby's whole body is completely bluish-gray or pale"/>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="249223000"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="LA6716-0"/>
+            </coding>
+            <text value="0. No heart rate"/>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="249226008"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="LA6720-2"/>
+            </coding>
+            <text value="1. Grimace during suctioning"/>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="249225007"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="LA6714-5"/>
+            </coding>
+            <text value="1. Some flexion of arms and legs"/>
+        </valueCodeableConcept>
+    </component>
+    <component>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="249224006"/>
+            </coding>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="LA6726-9"/>
+            </coding>
+            <text value="1. Weak cry; may sound like whimpering, slow or irregular breathing"/>
+        </valueCodeableConcept>
+    </component>
+</Observation>
