@@ -4,7 +4,7 @@
 
 ### Introduction
 
-The Australian Digital Health Agency FHIR Implementation Guide contains HL7™ FHIR® Release 4 (R4) artefacts authored and maintained by the Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. 
+The Australian Digital Health Agency FHIR Implementation Guide contains HL7® FHIR® standard Release 4 (R4) artefacts authored and maintained by the Agency to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. 
 
 Wherever possible, material in this specification is based on existing standards. All efforts have been made to minimise divergence from the HL7 Australia profiles of HL7 International standards to provide for system interoperability and compatibility with other profiles.
 
