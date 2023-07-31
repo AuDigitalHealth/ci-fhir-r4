@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-labouronsettype-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-labouronsettype-1"/>
-  <version value="0.1.0"/>
-  <name value="DHObservationLabourOnsetType"/>
-  <title value="DH Observation Labour Onset Type"/>
+  <version value="0.1.1"/>
+  <name value="ADHAObservationLabourOnsetType"/>
+  <title value="ADHA Labour Onset Type Observation"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -27,8 +27,9 @@
       <path value="Observation"/>
       <short value="Manner in which labour started" />
       <definition value="An observation of the manner in which labour started."/>
+      <comment value="The Australian Institute of Health and Welfare (AIHW) equivalent to this concept is [Birth event - labour onset type](https://meteor.aihw.gov.au/content/index.phtml/itemId/696197)."/>
     <constraint>
-        <key value="au-core-obs-02"/>
+        <key value="inv-dh-obs-02"/>
         <severity value="error"/>
         <human value="At least value or data absent reason shall be present"/>
         <expression value="dataAbsentReason.exists() or value.exists()"/>
@@ -81,7 +82,7 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <condition value="au-core-obs-02"/>
+      <condition value="inv-dh-obs-02"/>
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
@@ -90,7 +91,7 @@
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason"/>
-      <condition value="au-core-obs-02"/>
+      <condition value="inv-dh-obs-02"/>
       <mustSupport value="true"/>
     </element>
   </differential>

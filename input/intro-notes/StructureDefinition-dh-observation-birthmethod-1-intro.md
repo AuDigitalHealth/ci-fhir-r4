@@ -1,10 +1,12 @@
-Observation of the method of expulsion or extraction of a fetus from its mother.
- 
-#### Guidance
-TBD
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-#### Boundaries and relationships
-The Australian Institute of Health and Welfare (AIHW) equivalent to this concept is [Birth event - birth method](https://meteor.aihw.gov.au/content/index.phtml/itemId/695369)
+This profile is designed to set an Observation standard for:
+* TBD
+
+This profile may be referred to by APIs, which will be listed here when available.
+ 
+### Profile specific guidance
+TBD
 
 #### Known Issues
 This is an observation and the closest relevant SNOMED CT code is a procedure. A different code may be required.

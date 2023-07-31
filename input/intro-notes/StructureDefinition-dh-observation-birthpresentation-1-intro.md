@@ -1,7 +1,10 @@
-Observation of the presenting part of a fetus at birth.
- 
-#### Guidance
-TBD
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-#### Boundaries and relationships
-The Australian Institute of Health and Welfare (AIHW) equivalent to this concept is [Birth event - birth presentation](https://meteor.aihw.gov.au/content/index.phtml/itemId/695415)
+This profile is designed to set an Observation standard for:
+* TBD
+
+This profile may be referred to by APIs, which will be listed here when available.
+
+
+### Profile specific guidance
+TBD

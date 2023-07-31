@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-observation-apgarscore-1" />
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-observation-apgarscore-1"/>
-  <version value="0.1.0"/>
-  <name value="DHObservationAPGARScore" />
-  <title value="DH Observation APGAR Score" />
+  <version value="0.1.1"/>
+  <name value="ADHAObservationAPGARScore" />
+  <title value="ADHA APGAR Score Observation" />
   <status value="draft" />
   <experimental value="true"/>
   <publisher value="Australian Digital Health Agency"/>
@@ -14,7 +14,7 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>
-  <description value="A set of observations made on the baby following birth to check adaptation to life outside the womb. This includes 1 minute, 5 minute and 10 minute observations."/>
+  <description value="The purpose of this profile is to provide a representation of set of observations made on the baby following birth to check adaptation to life outside the womb, for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia. This includes 1 minute, 5 minute and 10 minute observations."/>
   <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource" />
@@ -25,22 +25,23 @@
   <differential>
     <element id="Observation">
       <path value="Observation" />
-      <short value="APGAR Score Observation" />
-      <definition value="An APGAR Score Observation."/>
+      <short value="APGAR score observation" />
+      <definition value="An APGAR score observation."/>
+      <comment value="See [Product of birth - Apgar score at 1 minute](https://meteor.aihw.gov.au/content/index.phtml/itemId/696340) and [Product of birth - Apgar score at 5 minutes](https://meteor.aihw.gov.au/content/index.phtml/itemId/733374)"/>
       <constraint>
-        <key value="inv-apgar01" />
+        <key value="inv-dh-apg-01" />
         <severity value="error" />
         <human value="APGAR 1 minute component codes must match observation type" />
         <expression value="(component.where(code.coding.where(code='32406-1').exists()).exists() or component.where(code.coding.where(code='32407-9').exists()).exists() or component.where(code.coding.where(code='32408-7').exists()).exists() or component.where(code.coding.where(code='32410-3').exists()).exists() or component.where(code.coding.where(code='32409-5').exists()).exists()) implies code.coding.where(code='9272-6').exists()" />
       </constraint>
       <constraint>
-        <key value="inv-apgar02" />
+        <key value="inv-dh-apg-02" />
         <severity value="error" />
         <human value="APGAR 5 minute component codes must match observation type" />
         <expression value="(component.where(code.coding.where(code='32406-1').exists()).exists() or component.where(code.coding.where(code='32407-9').exists()).exists() or component.where(code.coding.where(code='32408-7').exists()).exists() or component.where(code.coding.where(code='32410-3').exists()).exists() or component.where(code.coding.where(code='32409-5').exists()).exists()) implies code.coding.where(code='9272-6').exists()" />
       </constraint>
       <constraint>
-        <key value="inv-apgar03" />
+        <key value="inv-dh-apg-03" />
         <severity value="error" />
         <human value="APGAR 10 minute component codes must match observation type" />
         <expression value="(component.where(code.coding.where(code='32401-2').exists()).exists() or component.where(code.coding.where(code='32402-0').exists()).exists() or component.where(code.coding.where(code='32403-8').exists()).exists() or component.where(code.coding.where(code='32405-3').exists()).exists() or component.where(code.coding.where(code='32404-6').exists()).exists()) implies code.coding.where(code='9271-8').exists()" />
@@ -120,7 +121,7 @@
       <path value="Observation.valueInteger" />
       <sliceName value="valueInteger" />
       <constraint>
-        <key value="inv-apgar04" />
+        <key value="inv-dh-apg-04" />
         <severity value="error" />
         <human value="The value shall be an integer from 0 to 10" />
         <expression value="$this &gt;= 0 and $this &lt;= 10" />
@@ -130,7 +131,7 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <constraint>
-        <key value="inv-apgar05" />
+        <key value="inv-dh-apg-05" />
         <severity value="error" />
         <human value="The value shall be an integer from 0 to 10" />
         <expression value="value.value.toString().matches('^[0-9]$|^10$')" />

@@ -1,13 +1,11 @@
-This profile provides an observation information structure for a measurement of patient’s visual acuity. Visual acuity is the ability to recognize small details with precision. The most common measurement of visual acuity asseses vision of stationary shapes on a standard chart at a distance in a good light. 
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-Results of a distance visual acuity measurement may be recorded as a ratio (e.g. 6/12), as a decimal number (e.g. 0.5 /arcmin), or as a code (e.g. 422256009\|Counts fingers - distance vision\|).
+This profile is designed to set an Observation standard for:
+* TBD
 
-Results of a near vision visual acuity measurement may be recorded as the [point](https://en.wikipedia.org/wiki/Point_(typography)) size of text able to be read.  
+This profile may be referred to by APIs, which will be listed here when available.
 
-#### Extensions
-No extensions are used in this profile.
-
-#### Usage Notes
+### Profile specific guidance
 
 Whether the measured vision is corrected or uncorrected should be recorded in the observation code.
 

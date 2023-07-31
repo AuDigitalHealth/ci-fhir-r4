@@ -1,7 +1,11 @@
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
 
-Observation of a condition arising after the onset of labour and before the completed delivery of the baby and placenta. May affect mother or baby.
+This profile is designed to set an Observation standard for:
+* TBD
 
-#### Guidance
+This profile may be referred to by APIs, which will be listed here when available.
+
+#### Profile specific guidance
 TBD
 
 #### Boundaries and relationships

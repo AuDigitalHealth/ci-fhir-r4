@@ -1,15 +1,13 @@
-Observation of the manner in which labour started.
+This profile identifies the additional constraints, extensions, and value sets that build on and extend [Observation](http://hl7.org/fhir/R4/observation.html) that are supported. 
+
+This profile is designed to set an Observation standard for:
+* Query for observations of the type of onset of labour associated with a patient
+* Record or update an observation of the type of onset of labour associated with a patient
+
+This profile may be referred to by APIs, which will be listed here when available.
  
-#### Usage scenarios
-The following are supported usage scenarios for this profile:
-
-- Query for observations of the type of onset of labour associated with a patient.
-- Record or update an observation of the type of onset of labour associated with a patient.
-
-#### Profile specific implementation guidance
+### Profile specific guidance
 TBD
 
-#### Notes
-The Australian Institute of Health and Welfare (AIHW) equivalent to this concept is [Birth event - labour onset type](https://meteor.aihw.gov.au/content/index.phtml/itemId/696197)
-
-TBD: This is awaiting a SNOMED CT code to precisly represent Labour onset type. 
+### Known issues
+This is awaiting a SNOMED CT code to precisly represent Labour onset type. 
