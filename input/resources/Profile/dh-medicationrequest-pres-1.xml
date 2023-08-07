@@ -3,7 +3,7 @@
   <id value="dh-medicationrequest-pres-1"/>
   <url
     value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-pres-1"/>
-  <version value="0.0.3"/>
+  <version value="0.0.4"/>
   <name value="ADHAMedicationRequestPrescription"/>
   <title value="ADHA Prescription"/>
   <status value="draft"/>
@@ -18,7 +18,7 @@
   <description
     value="The purpose of this profile is to provide a representation of a prescription for the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright
-    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -87,7 +87,7 @@
       <sliceName value="bodyHeight"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodyheight"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight"/>
       </type>
     </element>
     <element id="MedicationRequest.supportingInformation:bodyWeight">
@@ -95,7 +95,7 @@
       <sliceName value="bodyWeight"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-bodyweight"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyweight"/>
       </type>
     </element>
     <element id="MedicationRequest.requester">
@@ -109,7 +109,7 @@
       <path value="MedicationRequest.basedOn"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationrequest"/>
       </type>
       <condition value="inv-dh-pres-01"/>
       <mustSupport value="true"/>
@@ -134,7 +134,7 @@
       <path value="MedicationRequest.priorPrescription"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medicationrequest-core-1"/>
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medicationrequest"/>
       </type>
       <mustSupport value="true"/>
     </element>

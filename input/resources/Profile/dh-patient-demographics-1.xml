@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-patient-demographics-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-demographics-1"/>
-  <version value="0.0.4"/>
+  <version value="0.0.5"/>
   <name value="ADHAPatientDemographics"/>
   <title value="ADHA Patient Demographics"/>
   <status value="draft"/>
@@ -17,7 +17,7 @@
   <description
     value="The purpose of this profile is to provide a representation of a patient's demographics to support the electronic exchange of health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
   <copyright
-    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+    value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -187,7 +187,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization"
         />
       </type>
       <mustSupport value="true"/>
@@ -209,9 +209,9 @@
       <type>
         <code value="Reference"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-organization-core-1"/>
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization"/>
         <targetProfile
-          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole"
         />
       </type>
       <condition value="inv-dh-pat-03"/>

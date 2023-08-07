@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-list-immunization-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-list-immunization-1"/>
-  <version value="0.0.1"/>
+  <version value="0.0.2"/>
   <name value="ADHAListImmunisation"/>
   <title value="ADHA Immunisation History List"/>
   <status value="draft" />
@@ -44,8 +44,8 @@
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-immunization-core-1" />
-        <targetProfile value="http://hl7.org.au/fhir/StructureDefinition/au-norelevantfinding" />
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-immunization" />
+        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-norelevantfinding" />
       </type>
     </element>
   </differential>
