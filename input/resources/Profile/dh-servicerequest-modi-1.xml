@@ -75,8 +75,6 @@
     </element>
     <element id="ServiceRequest.category">
       <path value="ServiceRequest.category"/>
-      <short value="Classification of the service requested as diagnostic imaging + modality where available"/>
-      <comment value="A fixed category denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
       <slicing>
         <discriminator>
           <type value="pattern"/>
@@ -84,6 +82,8 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
+      <short value="Classification of the service requested as diagnostic imaging + modality where available"/>
+      <comment value="A fixed category denoting Diagnostic imaging service identifies the type of order and supports macro handling of requests. A second category to provide the modality should be provided where possible."/>
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
@@ -115,7 +115,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-core-1"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -145,8 +145,8 @@
       <path value="ServiceRequest.performer"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole"/>
-        <targetProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-healthcareservice"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-practitionerrole-core-1"/>
+        <targetProfile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-healthcareservice-core-1"/>
       </type>
       <condition value="inv-dh-srr-01"/>
       <mustSupport value="true"/>
