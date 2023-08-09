@@ -5,9 +5,12 @@
 
 The following value sets form part of this implementation guide.
 
+<p class="stu-note">This guide includes some value sets that support profiles to be taken for discussion with HL7 Australia: Apgar Score Type LOINC, Apgar Score Type SNOMED, Apgar Colour Finding, Apgar Heart Rate Finding, Apgar Muscle Tone Finding, Apgar Respiratory Effort Finding, Apgar Reflex Irritability Finding, Birth Complication, Birth Method, Birth Presentation, Congenital Abnormality, Labour Induction Method, Labour Onset Type. These profile, and the associated terminology, may be removed or changed.</p>
+
 <table class="list" width="100%">
     <tr>
         <th>ValueSet</th>
+        <th>Publisher</th>
         <th>URI</th>
         <th>Usage</th>
     </tr>
@@ -89,6 +92,44 @@ The following value sets form part of this implementation guide.
         <td>http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality</td>
         <td><a href="StructureDefinition-dh-allergyintolerance-core-1.html">ADHA Core AllergyIntolerance</a></td>
     </tr>
+     <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarheartratefinding-1.html">Apgar Heart Rate Finding</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarheartratefinding-1</td>
+        <td><a href="StructureDefinition-dh-observation-apgarheartratefinding-1.html">ADHA Observation APGAR Score</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarreflexirritabilityfinding-1.html">Apgar Reflex Irritability Finding</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarreflexirritabilityfinding-1</td>
+        <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
+    </tr>
+     <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarrespiratoryeffortfinding-1.html">Apgar Respiratory Effort Finding</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarrespiratoryeffortfinding-1</td>
+        <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
+    </tr>
+   
+     <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarmuscletonefinding-1.html">Apgar Muscle Tone Finding</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarmuscletonefinding-1</td>
+        <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
+    </tr>   
+    
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarscoretypeloinc-1.html">Apgar Score Type LOINC</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarscoretypeloinc-1</td>
+        <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarscoretypesnomedct-1.html">Apgar Score Type SNOMED CT</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarscoretypesnomedct-1</td>
+        <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
+    </tr>
         <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-timezone.html">AU Time Zone</a></td>
         <td>HL7 AU</td>
@@ -125,6 +166,25 @@ The following value sets form part of this implementation guide.
         <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2</td>
         <td><a href="StructureDefinition-dh-condition-core-1.html">Australian Address</a></td>
     </tr>
+    
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-birthcomplication-1.html">Birth Complication</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/birthcomplication-1</td>
+        <td><a href="StructureDefinition-dh-observation-birthcomplication-1.html">ADHA Observation Birth Complication</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-birthmethod-1.html">Birth Method</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/birthmethod-1</td>
+        <td><a href="StructureDefinition-dh-observation-birthmethod-1.html">ADHA Birth Method Observation</a></td>
+    </tr>  
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-birthpresentation-1.html">Birth Presentation</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/birthpresentation-1</td>
+        <td><a href="StructureDefinition-dh-observation-birthmethod-1.html">ADHA Birth Presentation Observation</a></td>
+    </tr>   
     <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1">Body Site</a></td>
         <td>ADHA</td>
@@ -161,7 +221,7 @@ The following value sets form part of this implementation guide.
         <td>http://hl7.org/fhir/ValueSet/composition-status</td>
         <td><a href="StructureDefinition-dh-composition-core-1.html">ADHA Core Composition</a>, <a href="StructureDefinition-dh-composition-acdcr-1.html">ADHA Advance Care Directive Custodian Record Document Composition</a>, <a href="StructureDefinition-dh-composition-acp-1.html">ADHA Advance Care Planning Document Composition</a>, <a href="StructureDefinition-dh-composition-es-1.html">ADHA Event Summary Document Composition</a>, <a href="StructureDefinition-dh-composition-phn-1.html">ADHA Personal Health Notes Document Composition</a>, <a href="StructureDefinition-dh-composition-shs-1.html">ADHA Shared Health Summary Document Composition</a>, <a href="StructureDefinition-dh-documentreference-acp-1.html">ADHA Advance Care Planning Document DocumentReference</a></td>
     </tr>
-   <tr>
+    <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1">Clinical Condition</a></td>
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/clinical-condition-1</td>
@@ -190,6 +250,12 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/condition-ver-status</td>
         <td><a href="StructureDefinition-dh-condition-core-1.html">ADHA Core Condition</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-congenitalabnormality-1.html">Congenital Abnormality</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/congenitalabnormality-1</td>
+        <td><a href="StructureDefinition-dh-observation-congenitalabnormality-1.html">ADHA Congenital Abnormality Observation</a></td>
     </tr>
     <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-contact-purpose.html">Contact Purpose</a></td>
@@ -485,6 +551,18 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/ValueSet/substance-category</td>
         <td><a href="StructureDefinition-dh-substance-core-1.html">ADHA Core Substance</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-labourinductionmethod-1.html">Labour Induction Method</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/labourinductionmethod-1</td>
+        <td><a href="StructureDefinition-dh-observation-labourinductionmethod-1.html">ADHA Labour Induction Method Observation</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-labouronsettype-1.html">Labour Onset Type</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/labouronsettype-1</td>
+        <td><a href="StructureDefinition-dh-observation-labouronsettype-1.html">ADHA Labour Onset Type Observation</a></td>
     </tr>
     <tr>
         <td>TBD</td>
