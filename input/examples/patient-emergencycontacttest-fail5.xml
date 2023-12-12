@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-emergencycontacttest-fail5"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    </meta>
+    <!--  Emergency contact type with full name, phone number, no email, no relationship text   -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+                <code value="C"/>
+                <display value="Emergency Contact"/>
+            </coding>
+        </relationship>
+        <name>
+            <text value="John Smith"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="07 5550 0000"/>
+        </telecom>
+    </contact>
+</Patient>

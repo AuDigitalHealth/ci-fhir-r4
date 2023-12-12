@@ -5429,6 +5429,111 @@
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-operationoutcome-core-1"
             />
         </resource>
+        
+        <!-- EMERGENCY CONTACT EXAMPLES AND VALUESET -->
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-pass1"/>
+            </reference>
+            <name value="Emergency Contact pass 1"/>
+            <description value="Emergency contact type with relationship text, full name, phone number, no email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-pass2"/>
+            </reference>
+            <name value="Emergency Contact pass 2"/>
+            <description value="Carer type with full name, phone number, email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-pass3"/>
+            </reference>
+            <name value="Emergency Contact pass 3"/>
+            <description value="Next of kin type with relationship text, full name, phone number, email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-pass4"/>
+            </reference>
+            <name value="Emergency Contact pass 4"/>
+            <description value="Additional BP relationship code, Next of kin type with relationship text, full name, phone number, no email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-pass5"/>
+            </reference>
+            <name value="Emergency Contact pass 5"/>
+            <description value="Two valid contact types (pass 1 + pass 2)"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail1"/>
+            </reference>
+            <name value="Emergency Contact fail 1"/>
+            <description value="Emergency contact type with relationship text, full name, no telecom"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail2"/>
+            </reference>
+            <name value="Emergency Contact fail 2"/>
+            <description value="Billing contact person type with relationship text, full name, phone number"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail3"/>
+            </reference>
+            <name value="Emergency Contact fail 3"/>
+            <description value="Additional 'Neighbour' relationship code not in the ValueSet, Next of kin type with relationship text, full name, phone number, no email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail4"/>
+            </reference>
+            <name value="Emergency Contact fail 4"/>
+            <description value="Carer type with text, full name, phone number, email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail5"/>
+            </reference>
+            <name value="Emergency Contact fail 5"/>
+            <description value="Emergency contact type with no relationship text"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail6"/>
+            </reference>
+            <name value="Emergency Contact fail 6"/>
+            <description value="'Neighbour' relationship code not in the ValueSet, with relationship text, full name, phone number, no email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/patient-emergencycontacttest-fail7"/>
+            </reference>
+            <name value="Emergency Contact fail 7"/>
+            <description value="Emergency contact type with relationship text in the same element, full name, phone number, no email"/>
+            <exampleCanonical value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/valueset-emergency-contact-type"/>
+            </reference>
+            <name value="Emergency Contact Type ValueSet"/>
+            <description value=" The Emergency Contact Type ValueSet includes values that identify the type of emergency contact. (manual text in ig.xml)"/>
+        </resource>
 
         <!--NAMING SYSTEMS-->
         <resource>

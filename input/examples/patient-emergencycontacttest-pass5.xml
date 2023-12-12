@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-emergencycontacttest-pass5"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    </meta>
+    <!--  Two valid contact types (pass 1 + pass 2)   -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+                <code value="C"/>
+                <display value="Emergency Contact"/>
+            </coding>
+        </relationship>
+        <relationship>
+            <text value="brother"/>
+        </relationship>
+        <name>
+            <text value="John Smith"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="07 5550 0000"/>
+        </telecom>
+    </contact>
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="133932002"/>
+                <display value="Carer"/>
+            </coding>
+        </relationship>
+        <name>
+            <text value="Mary Brown"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="0491 576 801"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="mb@example.com"/>
+        </telecom>
+    </contact>
+</Patient>

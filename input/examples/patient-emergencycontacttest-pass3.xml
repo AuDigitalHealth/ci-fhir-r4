@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-emergencycontacttest-pass3"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    </meta>
+    <!--  Next of kin type with relationship text, full name, phone number, no email   -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+                <code value="N"/>
+                <display value="Next-of-Kin"/>
+            </coding>
+        </relationship>
+        <relationship>
+            <text value="cousin"/>
+        </relationship>
+        <name>
+            <text value="Jo Lee"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="+61370102222"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="jl@example.com"/>
+        </telecom>
+    </contact>
+</Patient>

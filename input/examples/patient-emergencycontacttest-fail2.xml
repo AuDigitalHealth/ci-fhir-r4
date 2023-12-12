@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-emergencycontacttest-fail2"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    </meta>
+    <!--  Billing contact person type with relationship text, full name, phone number   -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+                <code value="BP"/>
+                <display value="Billing contact person"/>
+            </coding>
+        </relationship>
+        <relationship>
+            <text value="tax"/>
+        </relationship>
+        <name>
+            <text value="Bill Mee"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="02 5550 0000"/>
+        </telecom>
+    </contact>
+</Patient>

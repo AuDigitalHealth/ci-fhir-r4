@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-emergencycontacttest-pass2"/>
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    </meta>
+    <!--  Carer type with full name, phone number, email   -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="133932002"/>
+                <display value="Carer"/>
+            </coding>
+        </relationship>
+        <name>
+            <text value="Mary Brown"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="0491 576 801"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="mb@example.com"/>
+        </telecom>
+    </contact>
+</Patient>

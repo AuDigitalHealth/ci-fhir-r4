@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="dh-patient-emergency-contact-1"/>
+    <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    <version value="0.0.1"/>
+    <name value="ADHAPatientEmergencyContact"/>
+    <title value="ADHA Patient Emergency Contact"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <description value="The purpose of this profile is to support the provision of patient emergency contact details in the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Patient"/>
+    <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient.contact">
+            <path value="Patient.contact"/>
+            <constraint>
+                <key value="inv-rel-1"/>
+                <severity value="error"/>
+                <human
+                    value="If the code = C or N, then there must be relationship text"/>
+                <expression
+                    value="relationship.coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and (code = 'C' or code = 'N')).exists() implies relationship.text.exists"/>
+                <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1" />
+            </constraint>
+        </element>
+        <!-- Setting up the slicing on relationship, not yet complete -->
+        <element id="Patient.contact.relationship">
+            <path value="Patient.contact.relationship"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="coding"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+       <!-- Binding usually placed here on CodeableConcept but placed on coding instead -->
+<!--            <binding>
+                <strength value="required"/>
+                <valueSet
+                    value="http://ns.electronichealth.net.au/fhir/ValueSet/valueset-emergency-contact-type"/>
+            </binding> -->
+        </element>
+        
+        <!-- First relationship slice -->
+        <element id="Patient.contact.relationship:type">
+            <path value="Patient.contact.relationship"/>
+            <sliceName value="type"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Patient.contact.relationship:type.coding">
+            <path value="Patient.contact.relationship.coding"/>
+            <min value="1"/>
+            <!-- Binding placed here because the discriminator is on coding  -->
+            <binding>
+                <strength value="required"/>
+                <valueSet
+                    value="http://ns.electronichealth.net.au/fhir/ValueSet/valueset-emergency-contact-type"/>
+            </binding>
+        </element>
+        <element id="Patient.contact.relationship:type.coding.system">
+            <path value= "Patient.contact.relationship.coding.system"/>
+            <min value="1"/>
+        </element>
+        <element id="Patient.contact.relationship:type.coding.code">
+            <path value="Patient.contact.relationship.coding.code"/>
+            <min value="1"/>
+        </element>
+        
+        <!-- Second relationship slice -->
+<!--        <element id="Patient.contact.relationship:text">
+            <path value="Patient.contact.relationship"/>
+            <sliceName value ="text"/>            
+        </element>
+        <element id="Patient.contact.relationship:text.text">
+            <path value="Patient.contact.relationship.text"/>
+            <min value="1"/>
+        </element>-->
+
+        <!-- Mandatory name but haven't specified if it should be text or family+given -->
+        <element id ="Patient.contact.name">
+            <path value="Patient.contact.name"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+
+        <!-- Setting up the slicing on contact.telecom -->
+        <element id="Patient.contact.telecom">
+            <path value="Patient.contact.telecom"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="system"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <!-- First telecom slice on phone -->
+        <element id="Patient.contact.telecom:phone">
+            <path value="Patient.contact.telecom"/>
+            <sliceName value="phone"/>
+            <min value="1"/>
+        </element>
+        <element id="Patient.contact.telecom:phone.system">
+            <path value="Patient.contact.telecom.system"/>
+            <min value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="phone"/>
+        </element>
+        <element id="Patient.contact.telecom:phone.value">
+            <path value="Patient.contact.telecom.value"/>
+            <min value="1"/>
+        </element>
+        <!-- Second telecom slice on email -->
+        <element id="Patient.contact.telecom:email">
+            <path value="Patient.contact.telecom"/>   
+            <sliceName value ="email"/>
+        </element> 
+        <element id="Patient.contact.telecom:email.system">
+            <path value="Patient.contact.telecom.system"/>
+            <min value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="email"/>
+        </element>
+        <element id="Patient.contact.telecom:email.value">
+            <path value="Patient.contact.telecom.value"/>
+            <min value="1"/>
+        </element>
+    </differential>
+</StructureDefinition>
