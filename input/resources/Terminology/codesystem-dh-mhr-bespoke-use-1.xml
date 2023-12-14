@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="dh-mhr-bespoke-use-1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="0"/>
+	</extension>
+	<url value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-bespoke-use-1"/>
+<!--	<identifier> 
+		<system value="urn:ietf:rfc:3986"/> 
+		<value value="urn:oid:2.16.840.1.113883.2.3.4.???"/> 
+	</identifier> -->
+    <version value="1.0.0"/>
+	<name value="ADHAMyHealthRecordBespokeUse"/>
+	<title value="ADHA My Health Record Bespoke Use"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<description value="A My Health Record system bespoke use of an element."/>
+	<caseSensitive value="true"/>
+	<compositional value="false"/>
+	<versionNeeded value="false"/>
+	<content value="complete"/>
+	<concept>
+		<code value="emergency-contact"/>
+		<display value="Emergency Contact"/>
+		<definition value="The element is relevant to MHR processing of patient emergency contacts."/>
+	</concept>
+</CodeSystem>
