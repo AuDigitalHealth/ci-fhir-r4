@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="emergency-contact-john-smith"/>
+    <!--  Emergency contact type with relationship text, full name, phone number, no email   -->
+    <meta>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NI"/>
+            </coding>
+            <text value="IHI"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+        <value value="8003608833357361"/>
+    </identifier>
+    <name>
+        <family value="Dan"/>
+        <given value="Harry"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1939-08-25"/>
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+                <code value="C"/>
+                <display value="Emergency Contact"/>
+            </coding>
+        </relationship>
+        <relationship>
+            <text value="brother"/>
+        </relationship>
+        <name>
+            <text value="John Smith"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="07 5550 0000"/>
+        </telecom>
+    </contact>
+</Patient>
