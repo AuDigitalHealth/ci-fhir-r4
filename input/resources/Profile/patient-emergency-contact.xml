@@ -22,7 +22,7 @@
                 <human
                     value="If the code = C or N, then there must be relationship text"/>
                 <expression
-                    value="relationship.coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and (code = 'C' or code = 'N')).exists() implies relationship.text.exists"/>
+                    value="relationship.coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and (code = 'C' or code = 'N')).exists() implies relationship.text.exists()"/>
                 <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1" />
             </constraint>
         </element>
