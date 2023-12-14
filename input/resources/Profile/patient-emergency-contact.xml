@@ -54,10 +54,12 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.contact.relationship:type.coding">
             <path value="Patient.contact.relationship.coding"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <!-- Binding placed here because the discriminator is on coding  -->
             <binding>
                 <strength value="required"/>
@@ -68,10 +70,12 @@
         <element id="Patient.contact.relationship:type.coding.system">
             <path value= "Patient.contact.relationship.coding.system"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.contact.relationship:type.coding.code">
             <path value="Patient.contact.relationship.coding.code"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         
         <!-- Second relationship slice -->
@@ -88,6 +92,7 @@
         <element id ="Patient.contact.name">
             <path value="Patient.contact.name"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <mustSupport value="true"/>
         </element>
 
@@ -109,6 +114,7 @@
             <path value="Patient.contact.telecom"/>
             <sliceName value="phone"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.contact.telecom:phone.system">
             <path value="Patient.contact.telecom.system"/>
@@ -117,19 +123,23 @@
                 <code value="code"/>
             </type>
             <fixedCode value="phone"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.contact.telecom:phone.value">
             <path value="Patient.contact.telecom.value"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <!-- Second telecom slice on email -->
         <element id="Patient.contact.telecom:email">
             <path value="Patient.contact.telecom"/>   
             <sliceName value ="email"/>
+            <mustSupport value="true"/>
         </element> 
         <element id="Patient.contact.telecom:email.system">
             <path value="Patient.contact.telecom.system"/>
             <min value="1"/>
+            <mustSupport value="true"/>
             <type>
                 <code value="code"/>
             </type>
@@ -138,6 +148,7 @@
         <element id="Patient.contact.telecom:email.value">
             <path value="Patient.contact.telecom.value"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
