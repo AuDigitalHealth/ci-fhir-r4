@@ -2,7 +2,8 @@
 <Patient xmlns="http://hl7.org/fhir">
     <id value="patient-emergencycontacttest-pass1"/>
     <meta>
-        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
+        <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"
+        />
     </meta>
     <!--  Emergency contact type with relationship text, full name, phone number, no email   -->
     <contact>
@@ -14,6 +15,12 @@
             </coding>
         </relationship>
         <relationship>
+            <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-bespoke-use-1">
+                <valueCoding>
+                    <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-bespoke-use"/>
+                    <code value="emergency-contact"/>
+                </valueCoding>
+            </extension>
             <text value="brother"/>
         </relationship>
         <name>
