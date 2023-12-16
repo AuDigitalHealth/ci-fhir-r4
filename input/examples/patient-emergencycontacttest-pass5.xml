@@ -5,6 +5,23 @@
         <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
     </meta>
     <!--  Two valid contact types (pass 1 + pass 2)   -->
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="NI"/>
+            </coding>
+            <text value="IHI"/>
+        </type>
+        <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+        <value value="8003608833357361"/>
+    </identifier>
+    <name>
+        <family value="Dan"/>
+        <given value="Harry"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1939-08-25"/>
     <contact>
         <relationship>
             <coding>
