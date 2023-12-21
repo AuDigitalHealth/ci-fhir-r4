@@ -16,22 +16,24 @@
     <differential>
         <element id="Patient.contact">
             <path value="Patient.contact"/>
-            <constraint>
-                <key value="inv-rel-1"/>
+            <min value="1"/>
+            <constraint>                
+                <key value="inv-dh-pec-01"/>
                 <severity value="error"/>
                 <human
-                    value="If the code = C or N, then there must be relationship text"/>
+                    value="If a relationship is either 'Next of kin' or 'Emergency Contact', there shall be a second relationship representing additional information, identified using the Emergency Contact Flag extension."/>
                 <expression
-                    value="relationship.coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and (code = 'C' or code = 'N')).exists() implies relationship.text.exists()"/>
+                    value="relationship.where(coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and code='C') or coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and code='N')).exists() implies relationship.where(extension.url='http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-bespoke-use-1').exists()"/>
                 <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1" />
             </constraint>
+            <mustSupport value="true"/>
         </element>
         <!-- Setting up the slicing on relationship, not yet complete -->
         <element id="Patient.contact.relationship">
             <path value="Patient.contact.relationship"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="exists"/>
                     <path value="coding"/>
                 </discriminator>
                 <rules value="open"/>
