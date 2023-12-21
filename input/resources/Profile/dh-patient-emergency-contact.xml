@@ -77,22 +77,60 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        
-        <!-- Second relationship slice -->
-<!--        <element id="Patient.contact.relationship:text">
-            <path value="Patient.contact.relationship"/>
-            <sliceName value ="text"/>            
+
+        <element id="Patient.contact.relationship:type.text">
+            <path value="Patient.contact.relationship.text"/>
+            <max value="0"/>
         </element>
+        
+        <!-- Second relationship slice with an extension -->
+        <element id="Patient.contact.relationship:text">
+            <path value="Patient.contact.relationship"/>
+            <sliceName value="text"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+        </element> 
+        <element id="Patient.contact.relationship:text.extension">
+            <path value="Patient.contact.relationship.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.contact.relationship:text.extension:emergency-contact-text">
+            <path value="Patient.contact.relationship.extension" />
+            <sliceName value="emergency-contact-text" />
+            <short value="Emergency contact qualifier" />
+            <min value="1"/>
+            <type>
+                <code value="Extension" />
+                <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-bespoke-use-1" />
+            </type>
+            <mustSupport value="true"/>
+        </element>
+
+        <element id="Patient.contact.relationship:text.coding">
+            <path value="Patient.contact.relationship.coding"/>
+            <max value="0"/>
+        </element>
+
         <element id="Patient.contact.relationship:text.text">
             <path value="Patient.contact.relationship.text"/>
             <min value="1"/>
-        </element>-->
+            <mustSupport value="true"/>
+        </element>
 
         <!-- Mandatory name but haven't specified if it should be text or family+given -->
         <element id ="Patient.contact.name">
             <path value="Patient.contact.name"/>
             <min value="1"/>
-            <mustSupport value="true"/>
             <mustSupport value="true"/>
         </element>
 
@@ -139,11 +177,11 @@
         <element id="Patient.contact.telecom:email.system">
             <path value="Patient.contact.telecom.system"/>
             <min value="1"/>
-            <mustSupport value="true"/>
             <type>
                 <code value="code"/>
             </type>
             <fixedCode value="email"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.contact.telecom:email.value">
             <path value="Patient.contact.telecom.value"/>
