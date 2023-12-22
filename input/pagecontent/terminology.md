@@ -109,15 +109,13 @@ The following value sets form part of this implementation guide.
         <td>ADHA</td>
         <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarrespiratoryeffortfinding-1</td>
         <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
-    </tr>
-   
+    </tr>   
      <tr>
         <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarmuscletonefinding-1.html">Apgar Muscle Tone Finding</a></td>
         <td>ADHA</td>
         <td>http://ns.electronichealth.net.au/fhir/ValueSet/apgarmuscletonefinding-1</td>
         <td><a href="StructureDefinition-dh-observation-apgarscore-1.html">ADHA Observation APGAR Score</a></td>
-    </tr>   
-    
+    </tr>     
     <tr>
         <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-apgarscoretypeloinc-1.html">Apgar Score Type LOINC</a></td>
         <td>ADHA</td>
@@ -165,8 +163,7 @@ The following value sets form part of this implementation guide.
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2</td>
         <td><a href="StructureDefinition-dh-condition-core-1.html">Australian Address</a></td>
-    </tr>
-    
+    </tr>    
     <tr>
         <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-birthcomplication-1.html">Birth Complication</a></td>
         <td>ADHA</td>
@@ -286,8 +283,7 @@ The following value sets form part of this implementation guide.
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/diagnosticreportstatus-report-available-1</td>
         <td><a href="StructureDefinition-dh-diagnosticreport-core-1.html">ADHA Core DiagnosticReport</a></td>
-    </tr>
-  
+    </tr>  
      <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">Diagnostic Service Section Codes</a></td>
         <td>HL7</td>
@@ -311,6 +307,12 @@ The following value sets form part of this implementation guide.
         <td>HL7</td>
         <td>http://terminology.hl7.org.au/ValueSet/dva-entitlement</td>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dvanumber.html">AU DVA Number</a></td>
+    </tr> 
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-emergency-contact-type-1.html">Emergency Contact Type</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/emergency-contact-type-1</td>
+        <td><a href="StructureDefinition-dh-patient-emergency-contact-1.html">Patient Emergency Contact</a></td>
     </tr> 
     <tr>
         <td><a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a></td>
@@ -461,6 +463,12 @@ The following value sets form part of this implementation guide.
         <td>ADHA</td>
         <td>https://healthterminologies.gov.au/fhir/ValueSet/medicines-review-type-2</td>
         <td><a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-dh-mhr-emergency-contact-flag-1.html">My Health Record Emergency Contact Flag</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-emergency-contact-flag-1</td>
+        <td><a href="StructureDefinition-dh-mhr-emergency-contact-flag-1.html">My Health Record Emergency Contact Flag Extension</a></td>
     </tr>
      <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2">Non-Clinical Empty Reason</a></td>
@@ -672,8 +680,7 @@ The following code systems form part of this implementation guide.
         <td>HL7</td>
         <td>http://hl7.org/fhir/bundle-type</td>
         <td>2.16.840.1.113883.4.642.4.621</td>
-    </tr>
-  
+    </tr>  
     <tr>
         <td><a href="http://hl7.org/fhir/R4/codesystem-composition-attestation-mode.html">CompositionAttestationMode</a></td>
         <td>HL7</td>
@@ -739,8 +746,7 @@ The following code systems form part of this implementation guide.
         <td>HL7</td>
         <td>http://terminology.hl7.org/CodeSystem/v2-0360</td>
         <td>2.16.840.1.113883.18.220</td>
-    </tr>
-   
+    </tr>   
     <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-au-v2-0360.html">DegreeLicenseCertificate AU</a></td>
         <td>HL7 AU</td>
@@ -901,6 +907,12 @@ The following code systems form part of this implementation guide.
         <td><a href="https://tools.ietf.org/search/bcp13">Multipurpose Internet Mail Extensions (MIME)</a></td>
         <td>IETP</td>
         <td>urn:ietf:bcp:13</td>
+        <td> </td>
+    </tr>
+    <tr>
+    <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/CodeSystem-dh-mhr-emergency-contact-flag-1.html">My Health Record Emergency Contact Flag</a></td>
+        <td>ADHA</td>
+        <td>http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-emergency-contact-flag-1</td>
         <td> </td>
     </tr>
    <tr>
