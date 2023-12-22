@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-mhr-bespoke-use-1"/>
-  <extension
-    url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
-  </extension>
+  <id value="dh-mhr-emergency-contact-flag-1"/>
   <extension
     url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft">
@@ -15,28 +11,28 @@
       </extension>
     </valueCode>
   </extension>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-bespoke-use-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1"/>
   <version value="1.0.0"/>
-  <name value="ADHAMyHealthRecordBespokeUse"/>
-  <title value="ADHA My Health Record Bespoke Use"/>
+  <name value="ADHAMyHealthRecordEmergencyContactFlag"/>
+  <title value="ADHA My Health Record Emergency Contact Flag"/>
   <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2022-03-10"/>
+  <experimental value="false"/>
+  <date value="2023-12-22"/>
   <publisher value="Australian Digital Health Agency"/>
-  <contact>
+    <contact>
     <telecom>
       <system value="email"/>
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
-  </contact>
-  <description value="This extension applies to the [CodeableConcept](http://hl7.org/fhir/datatypes.html#CodeableConcept) data type and is used to represent a My Health Record usage that applies to this element."/>
+  </contact>  
+  <description value="This extension applies to the Patient.contact.relationship element and is used to represent a My Health Record usage that applies to this element."/>
   <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="CodeableConcept"/>
+    <expression value="Patient.contact.relationship"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -44,13 +40,13 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Special MHR use of the element"/>
-      <definition value="A My Health Record system bespoke use of the element."/>
+      <short value="MHR emergency contact flag"/>
+      <definition value="An emergency contact flag for the My Health Record system."/>
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-bespoke-use-1"/>
+      <fixedUri value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
@@ -61,7 +57,7 @@
       <binding>
         <strength value="required"/>
         <valueSet
-          value="http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-bespoke-use-1"/>
+          value="http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-emergency-contact-flag-1"/>
       </binding>
     </element>
   </differential>

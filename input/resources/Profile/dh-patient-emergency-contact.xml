@@ -2,12 +2,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="dh-patient-emergency-contact-1"/>
     <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"/>
-    <version value="0.0.1"/>
+    <version value="1.0.0"/>
     <name value="ADHAPatientEmergencyContact"/>
     <title value="ADHA Patient Emergency Contact"/>
     <status value="draft"/>
-    <experimental value="true"/>
-    <description value="The purpose of this profile is to support the provision of patient emergency contact details in the electronic exchange of digital health information between individuals, healthcare providers, and the My Health Record system infrastructure in Australia."/>
+    <experimental value="false"/>
+    <date value="2023-12-22"/>
+    <publisher value="Australian Digital Health Agency"/>
+    <contact>
+        <telecom>
+          <system value="email"/>
+          <value value="help@digitalhealth.gov.au"/>
+        </telecom>
+     </contact>
+    <description value="The purpose of this profile is to support the exchange of patient emergency contact information between My Health App and My Health Record."/>
+    <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+    <fhirVersion value="4.0.1" />
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Patient"/>
@@ -16,34 +26,29 @@
     <differential>
         <element id="Patient.contact">
             <path value="Patient.contact"/>
-            <constraint>
-                <key value="inv-rel-1"/>
+            <min value="1"/>
+            <constraint>                
+                <key value="inv-dh-pec-01"/>
                 <severity value="error"/>
                 <human
-                    value="If the code = C or N, then there must be relationship text"/>
+                    value="If a relationship is either 'Next of kin' or 'Emergency Contact', there shall be a second relationship representing additional information, identified using the Emergency Contact Flag extension."/>
                 <expression
-                    value="relationship.coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and (code = 'C' or code = 'N')).exists() implies relationship.text.exists()"/>
+                    value="relationship.where(coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and code='C') or coding.where(system='http://terminology.hl7.org/CodeSystem/v2-0131' and code='N')).exists() implies relationship.where(extension.url='http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1').exists()"/>
                 <source value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1" />
             </constraint>
+            <mustSupport value="true"/>
         </element>
-        <!-- Setting up the slicing on relationship, not yet complete -->
         <element id="Patient.contact.relationship">
             <path value="Patient.contact.relationship"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="exists"/>
                     <path value="coding"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
             <min value="1"/>
             <mustSupport value="true"/>
-       <!-- Binding usually placed here on CodeableConcept but placed on coding instead -->
-<!--            <binding>
-                <strength value="required"/>
-                <valueSet
-                    value="http://ns.electronichealth.net.au/fhir/ValueSet/valueset-emergency-contact-type"/>
-            </binding> -->
         </element>
         
         <!-- First relationship slice -->
@@ -60,11 +65,10 @@
             <path value="Patient.contact.relationship.coding"/>
             <min value="1"/>
             <mustSupport value="true"/>
-            <!-- Binding placed here because the discriminator is on coding  -->
             <binding>
                 <strength value="required"/>
                 <valueSet
-                    value="http://ns.electronichealth.net.au/fhir/ValueSet/valueset-emergency-contact-type"/>
+                    value="http://ns.electronichealth.net.au/fhir/ValueSet/emergency-contact-type-1"/>
             </binding>
         </element>
         <element id="Patient.contact.relationship:type.coding.system">
@@ -77,22 +81,59 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        
-        <!-- Second relationship slice -->
-<!--        <element id="Patient.contact.relationship:text">
-            <path value="Patient.contact.relationship"/>
-            <sliceName value ="text"/>            
+
+        <element id="Patient.contact.relationship:type.text">
+            <path value="Patient.contact.relationship.text"/>
+            <max value="0"/>
         </element>
+        
+        <!-- Second relationship slice with an extension -->
+        <element id="Patient.contact.relationship:text">
+            <path value="Patient.contact.relationship"/>
+            <sliceName value="text"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+        </element> 
+        <element id="Patient.contact.relationship:text.extension">
+            <path value="Patient.contact.relationship.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Patient.contact.relationship:text.extension:emergency-contact-text">
+            <path value="Patient.contact.relationship.extension" />
+            <sliceName value="emergencyContactFlag" />
+            <short value="Emergency contact flag" />
+            <min value="1"/>
+            <type>
+                <code value="Extension" />
+                <profile value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1" />
+            </type>
+            <mustSupport value="true"/>
+        </element>
+
+        <element id="Patient.contact.relationship:text.coding">
+            <path value="Patient.contact.relationship.coding"/>
+            <max value="0"/>
+        </element>
+
         <element id="Patient.contact.relationship:text.text">
             <path value="Patient.contact.relationship.text"/>
             <min value="1"/>
-        </element>-->
+            <mustSupport value="true"/>
+        </element>
 
-        <!-- Mandatory name but haven't specified if it should be text or family+given -->
         <element id ="Patient.contact.name">
             <path value="Patient.contact.name"/>
             <min value="1"/>
-            <mustSupport value="true"/>
             <mustSupport value="true"/>
         </element>
 
@@ -139,11 +180,11 @@
         <element id="Patient.contact.telecom:email.system">
             <path value="Patient.contact.telecom.system"/>
             <min value="1"/>
-            <mustSupport value="true"/>
             <type>
                 <code value="code"/>
             </type>
             <fixedCode value="email"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Patient.contact.telecom:email.value">
             <path value="Patient.contact.telecom.value"/>

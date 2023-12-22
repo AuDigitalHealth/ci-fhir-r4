@@ -293,6 +293,7 @@ The following FHIR profiles are defined in this implementation guide to support 
                                 <li><a href="StructureDefinition-dh-patient-mhr-1.html">ADHA MHR Patient</a></li>
                                 <li><a href="StructureDefinition-dh-patient-match-1.html">ADHA Patient Match</a></li>
                                 <li><a href="StructureDefinition-dh-patient-demographics-1.html">ADHA Patient Demographics</a></li>
+                                <li><a href="StructureDefinition-dh-patient-emergency-contact-1.html">ADHA Patient Emergency Contact</a></li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-author-1.html">ADHA Authoring PractitionerRole</a></li>
                                 <li><a href="StructureDefinition-dh-practitionerrole-author-cae-1.html">ADHA Authoring Care Agency Employee</a></li>
                                 <li><a href="StructureDefinition-dh-relatedperson-mhr-1.html">ADHA MHR RelatedPerson</a></li>
@@ -706,6 +707,12 @@ The following extensions form part of this implementation guide:
         <td>encounter-description</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-dh-mhr-emergency-contact-flag-1.html">ADHA Emergency Contact Flag</a></td>
+        <td>dh-mhr-emergency-contact-flag-1</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+        <td><a href="http://hl7.org/fhir/R4/patient.html">Patient.contact.relationship</a></td>
     </tr>
     <tr>
         <td><a href="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">genderIdentity</a></td>
