@@ -465,10 +465,10 @@ The following value sets form part of this implementation guide.
         <td><a href="StructureDefinition-dh-list-medication-use-pmr-1.html">ADHA Practitioner Medicine Review List</a></td>
     </tr>
     <tr>
-        <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/ValueSet-dh-mhr-emergency-contact-flag-1.html">My Health Record Emergency Contact Flag</a></td>
+        <td><a href="ValueSet-dh-mhr-special-processing-1.html">My Health Record Special Processing</a></td>
         <td>ADHA</td>
-        <td>http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-emergency-contact-flag-1</td>
-        <td><a href="StructureDefinition-dh-mhr-emergency-contact-flag-1.html">My Health Record Emergency Contact Flag Extension</a></td>
+        <td>http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-special-processing-1</td>
+        <td><a href="StructureDefinition-dh-mhr-special-processing-1.html">My Health Record Special Processing Extension</a></td>
     </tr>
      <tr>
         <td><a href="https://healthterminologies.gov.au/fhir/ValueSet/non-clinical-empty-reason-2">Non-Clinical Empty Reason</a></td>
@@ -910,9 +910,9 @@ The following code systems form part of this implementation guide.
         <td> </td>
     </tr>
     <tr>
-    <td><a href="https://build.fhir.org/ig/AuDigitalHealth/ci-fhir-r4/CodeSystem-dh-mhr-emergency-contact-flag-1.html">My Health Record Emergency Contact Flag</a></td>
+    <td><a href="CodeSystem-dh-mhr-special-processing-1.html">My Health Record Special Processing</a></td>
         <td>ADHA</td>
-        <td>http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-emergency-contact-flag-1</td>
+        <td>http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-special-processing-1</td>
         <td> </td>
     </tr>
    <tr>

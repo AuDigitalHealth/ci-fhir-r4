@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dh-mhr-emergency-contact-flag-1"/>
+  <id value="dh-mhr-special-processing-1"/>
   <extension
     url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft">
@@ -11,13 +11,13 @@
       </extension>
     </valueCode>
   </extension>
-  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-special-processing-1"/>
   <version value="1.0.0"/>
-  <name value="ADHAMyHealthRecordEmergencyContactFlag"/>
-  <title value="ADHA My Health Record Emergency Contact Flag"/>
+  <name value="ADHAMyHealthRecordSpecialProcessing"/>
+  <title value="ADHA My Health Record Special Processing"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-12-22"/>
+  <date value="2024-01-16"/>
   <publisher value="Australian Digital Health Agency"/>
     <contact>
     <telecom>
@@ -25,14 +25,14 @@
       <value value="help@digitalhealth.gov.au"/>
     </telecom>
   </contact>  
-  <description value="This extension applies to the Patient.contact.relationship element and is used to represent a My Health Record usage that applies to this element."/>
-  <copyright value="Copyright © 2023 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <description value="This extension applies to elements and indicates that My Health Record special processing is relevant. The nature of special processing is indicated by the value."/>
+  <copyright value="Copyright © 2024 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Patient.contact.relationship"/>
+    <expression value="Element"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -40,13 +40,13 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="MHR emergency contact flag"/>
-      <definition value="An emergency contact flag for the My Health Record system."/>
+      <short value="MHR special processing is relevent to the element"/>
+      <definition value="Used by the My Health Record system to identify elements for special processing."/>
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1"/>
+      <fixedUri value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-special-processing-1"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
@@ -57,7 +57,7 @@
       <binding>
         <strength value="required"/>
         <valueSet
-          value="http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-emergency-contact-flag-1"/>
+          value="http://ns.electronichealth.net.au/fhir/ValueSet/dh-mhr-special-processing-1"/>
       </binding>
     </element>
   </differential>

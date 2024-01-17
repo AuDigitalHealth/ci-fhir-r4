@@ -709,12 +709,6 @@ The following extensions form part of this implementation guide:
         <td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
     </tr>
     <tr>
-        <td><a href="StructureDefinition-dh-mhr-emergency-contact-flag-1.html">ADHA Emergency Contact Flag</a></td>
-        <td>dh-mhr-emergency-contact-flag-1</td>
-        <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-        <td><a href="http://hl7.org/fhir/R4/patient.html">Patient.contact.relationship</a></td>
-    </tr>
-    <tr>
         <td><a href="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">genderIdentity</a></td>
         <td>patient-genderIdentity</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
@@ -779,6 +773,12 @@ The following extensions form part of this implementation guide:
         <td>patient-mothersMaidenName</td>
         <td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
+    </tr>
+    <tr>
+        <td><a href="StructureDefinition-dh-mhr-special-processing-1.html">My Health Record Special Processing</a></td>
+        <td>dh-mhr-special-processing-1</td>
+        <td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+        <td>Element</td>
     </tr>
     <tr>
         <td><a href="http://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-no-fixed-address.html">No Fixed Address</a></td>

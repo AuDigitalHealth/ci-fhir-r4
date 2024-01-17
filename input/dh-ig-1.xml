@@ -5440,17 +5440,17 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/dh-mhr-emergency-contact-flag-1"/>
+                <reference value="ValueSet/dh-mhr-special-processing-1"/>
             </reference>
-            <name value="My Health Record Emergency Contact Flag ValueSet"/>
-            <description value="The ADHA My Health Record Emergency Contact Flag value set includes values used to flag emergency contact relationship text in My Health Record."/>
+            <name value="ADHA My Health Record Special Processing ValueSet"/>
+            <description value="The ADHA My Health Record Special Processing value set includes values that indicate a My Health Record special use of an element."/>
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/dh-mhr-emergency-contact-flag-1"/>
+                <reference value="CodeSystem/dh-mhr-special-processing-1"/>
             </reference>
-            <name value="My Health Record Emergency Contact Flag CodeSystem"/>
-            <description value="The ADHA My Health Record Emergency Contact Flag code system defines values used to flag emergency contact relationship text in My Health Record."/>
+            <name value="ADHA My Health Record Special Processing"/>
+            <description value="The ADHA My Health Record Special Processing code system defines values that indicate a My Health Record special use of an element."/>
         </resource>
         <resource>
             <reference>
@@ -5463,11 +5463,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dh-mhr-emergency-contact-flag-1"/>
+                <reference value="StructureDefinition/dh-mhr-special-processing-1"/>
             </reference>
-            <name value="ADHA My Health Record Emergency Contact Flag"/>
+            <name value="ADHA My Health Record Special Processing"/>
             <description
-                value="This extension applies to the Patient.contact.relationship element and is used to represent a My Health Record usage that applies to this element."/>
+                value="This extension applies to elements and indicates that My Health Record special processing is relevant. The nature of special processing is indicated by the value."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -5475,6 +5475,16 @@
                 <reference value="Patient/carer-mary-brown"/>
             </reference>
             <name value="Patient emergency contact is a carer"/>
+            <description value="TBD"/>
+            <exampleCanonical
+                value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"
+            />
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/contact-jo-mee"/>
+            </reference>
+            <name value="Patient contact that is not an emergency contact"/>
             <description value="TBD"/>
             <exampleCanonical
                 value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-patient-emergency-contact-1"

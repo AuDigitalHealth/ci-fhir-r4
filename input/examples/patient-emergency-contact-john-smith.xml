@@ -24,6 +24,12 @@
     <birthDate value="1939-08-25"/>
     <contact>
         <relationship>
+            <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-special-processing-1">
+                <valueCoding>
+                    <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-special-processing-1"/>
+                    <code value="emergency-contact"/>
+                </valueCoding>
+            </extension>
             <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
                 <code value="C"/>
@@ -31,9 +37,9 @@
             </coding>
         </relationship>
         <relationship>
-            <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-emergency-contact-flag-1">
+            <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-special-processing-1">
                 <valueCoding>
-                    <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-emergency-contact-flag-1"/>
+                    <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-special-processing-1"/>
                     <code value="emergency-contact"/>
                 </valueCoding>
             </extension>
