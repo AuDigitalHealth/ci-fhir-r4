@@ -10,9 +10,10 @@
     <date value="2024-01-16"/>
     <publisher value="Australian Digital Health Agency"/>
     <contact>
+        <name value="Australian Digital Health Agency"/>
         <telecom>
           <system value="email"/>
-          <value value="help@digitalhealth.gov.au"/>
+          <value value="mailto:help@digitalhealth.gov.au"/>
         </telecom>
      </contact>
     <description value="The purpose of this profile is to support the exchange of patient emergency contact information between My Health App and My Health Record."/>
@@ -24,7 +25,10 @@
     <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Patient.contact">
+      <element id="Patient">
+        <path value="Patient"/>
+      </element>
+      <element id="Patient.contact">
             <path value="Patient.contact"/>
             <slicing>
                 <discriminator>
@@ -170,7 +174,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Patient.contact:mhr-ec.relationship:ec-type.extension:special-processing.valueCoding">
+        <element id="Patient.contact:mhr-ec.relationship:ec-description.extension:special-processing.valueCoding">
             <path value="Patient.contact.relationship.extension.valueCoding"/>
             <patternCoding>
                 <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-special-processing-1"/>
@@ -190,14 +194,14 @@
             <mustSupport value="true"/>
         </element>
 
-        <element id ="Patient.contact.name">
+        <element id="Patient.contact:mhr-ec.name">
             <path value="Patient.contact.name"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
 
         <!-- Setting up the slicing on contact.telecom -->
-        <element id="Patient.contact.telecom">
+        <element id="Patient.contact:mhr-ec.telecom">
             <path value="Patient.contact.telecom"/>
             <slicing>
                 <discriminator>
@@ -210,13 +214,13 @@
             <mustSupport value="true"/>
         </element>
         <!-- First telecom slice on phone -->
-        <element id="Patient.contact.telecom:phone">
+        <element id="Patient.contact:mhr-ec.telecom:phone">
             <path value="Patient.contact.telecom"/>
             <sliceName value="phone"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Patient.contact.telecom:phone.system">
+        <element id="Patient.contact:mhr-ec.telecom:phone.system">
             <path value="Patient.contact.telecom.system"/>
             <min value="1"/>
             <type>
@@ -225,18 +229,18 @@
             <fixedCode value="phone"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Patient.contact.telecom:phone.value">
+        <element id="Patient.contact:mhr-ec.telecom:phone.value">
             <path value="Patient.contact.telecom.value"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <!-- Second telecom slice on email -->
-        <element id="Patient.contact.telecom:email">
+        <element id="Patient.contact:mhr-ec.telecom:email">
             <path value="Patient.contact.telecom"/>   
             <sliceName value ="email"/>
             <mustSupport value="true"/>
         </element> 
-        <element id="Patient.contact.telecom:email.system">
+        <element id="Patient.contact:mhr-ec.telecom:email.system">
             <path value="Patient.contact.telecom.system"/>
             <min value="1"/>
             <type>
@@ -245,7 +249,7 @@
             <fixedCode value="email"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Patient.contact.telecom:email.value">
+        <element id="Patient.contact:mhr-ec.telecom:email.value">
             <path value="Patient.contact.telecom.value"/>
             <min value="1"/>
             <mustSupport value="true"/>
