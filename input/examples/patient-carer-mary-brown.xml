@@ -20,13 +20,13 @@
     <gender value="male"/>
     <birthDate value="1939-08-25"/>
     <contact>
+        <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-special-processing-1">
+            <valueCoding>
+                <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-special-processing-1"/>
+                <code value="emergency-contact"/>
+            </valueCoding>
+        </extension>
         <relationship>
-            <extension url="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-mhr-special-processing-1">
-                <valueCoding>
-                    <system value="http://ns.electronichealth.net.au/fhir/CodeSystem/dh-mhr-special-processing-1"/>
-                    <code value="emergency-contact"/>
-                </valueCoding>
-            </extension>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="133932002"/>
