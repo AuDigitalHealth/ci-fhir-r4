@@ -71,32 +71,6 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <!-- Derive from Au core change 25-03-2024 -->
-    <!-- <element id="Medication.code">
-      <path value="Medication.code"/>
-      <min value="1"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.code.coding">
-      <path value="Medication.code.coding"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="system"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-    </element>
-    <element id="Medication.code.coding:pbs">
-      <path value="Medication.code.coding"/>
-      <sliceName value="pbs"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.code.coding:amt">
-      <path value="Medication.code.coding"/>
-      <sliceName value="amt"/>
-      <mustSupport value="true"/>
-    </element> -->
     <element id="Medication.manufacturer">
       <path value="Medication.manufacturer"/>
       <type>
@@ -108,14 +82,6 @@
       <condition value="inv-dh-med-01"/>
       <mustSupport value="true"/>
     </element>
-<!-- <element id="Medication.form">
-      <path value="Medication.form"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.amount">
-      <path value="Medication.amount"/>
-      <mustSupport value="true"/>
-    </element> -->
     <element id="Medication.ingredient">
       <path value="Medication.ingredient"/>
       <constraint>
@@ -144,13 +110,5 @@
       <condition value="inv-dh-med-02"/>
       <mustSupport value="true"/>
     </element>
-    <!-- <element id="Medication.ingredient.isActive">
-      <path value="Medication.ingredient.isActive"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.ingredient.strength">
-      <path value="Medication.ingredient.strength"/>
-      <mustSupport value="true"/>
-    </element> -->
   </differential>
 </StructureDefinition>
