@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dh-medication-core-1"/>
   <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
-  <version value="1.0.1"/>
+  <version value="1.0.2"/>
   <name value="ADHAMedicationCore"/>
   <title value="ADHA Core Medication"/>
   <status value="active"/>
@@ -22,7 +22,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Medication"/>
-  <baseDefinition value="http://hl7.org.au/fhir/StructureDefinition/au-medication"/>
+  <baseDefinition value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-medication"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Medication">
@@ -71,31 +71,6 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="Medication.code">
-      <path value="Medication.code"/>
-      <min value="1"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.code.coding">
-      <path value="Medication.code.coding"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="system"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-    </element>
-    <element id="Medication.code.coding:pbs">
-      <path value="Medication.code.coding"/>
-      <sliceName value="pbs"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.code.coding:amt">
-      <path value="Medication.code.coding"/>
-      <sliceName value="amt"/>
-      <mustSupport value="true"/>
-    </element>
     <element id="Medication.manufacturer">
       <path value="Medication.manufacturer"/>
       <type>
@@ -105,14 +80,6 @@
         />
       </type>
       <condition value="inv-dh-med-01"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.form">
-      <path value="Medication.form"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.amount">
-      <path value="Medication.amount"/>
       <mustSupport value="true"/>
     </element>
     <element id="Medication.ingredient">
@@ -141,14 +108,6 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-medication-core-1"/>
       </type>
       <condition value="inv-dh-med-02"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.ingredient.isActive">
-      <path value="Medication.ingredient.isActive"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Medication.ingredient.strength">
-      <path value="Medication.ingredient.strength"/>
       <mustSupport value="true"/>
     </element>
   </differential>
