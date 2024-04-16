@@ -39,9 +39,7 @@
           value="http://ns.electronichealth.net.au/fhir/StructureDefinition/dh-allergyintolerance-core-1"
         />
       </constraint>
-    </element>
-    
-    
+    </element>    
     <element id="AllergyIntolerance.type">
       <path value="AllergyIntolerance.type"/>
       <mustSupport value="true"/>
@@ -56,6 +54,11 @@
     </element>
     <element id="AllergyIntolerance.patient">
       <path value="AllergyIntolerance.patient"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile
+          value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
+      </type>
       <constraint>
         <key value="inv-dh-ait-02"/>
         <severity value="error"/>
