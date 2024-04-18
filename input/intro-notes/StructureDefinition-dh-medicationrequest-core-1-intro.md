@@ -2,10 +2,6 @@ This profile identifies the additional constraints, extensions, and value sets t
 
 Where a more specific MedicationRequest profile is applicable, e.g. prescription, an implementation **SHALL** ensure the resource conforms to that specific profile.
 
-This profile is designed to set a core MedicationRequest standard for:
-* Query medication orders or prescriptions for a patient (current and historical)
-* Record or update medication orders or prescriptions for a patient
-
 This profile may be referred to by APIs, which will be listed here when available.
 
 
